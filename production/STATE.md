@@ -858,3 +858,10 @@ Later 2026-10-22, owner: "Ok I think we can do much better. Bette flat out. Bett
 ## Basic hero V3 direction - 2026-10-22
 
 Owner requests all 24 basic heroes approximately halfway between their first and second images, preferring V1 pen texture and V2 maintained clothing and individual character. All 24 briefs and prompts updated, targeted pair-review fixes included, and all 48 native originals preserved under assets/art/variants as hash-bound V1/V2 references, in that order. All 24 returned to the generation queue. Prompt preparation only; no V3 generated or approved, no manuscript change or publication build.
+
+
+## 2026-10-22: owner selected all 24 V1 basic hero portraits
+
+Owner instruction: "Honestly I like v1 of each hero the best. Commit all v1 basic hero portraits." Promoted the exact V1 bytes from `assets/art/variants/ART-HER-*/v1.png` to the active hero masters in `assets/art/incoming/`, regenerated matching ink derivatives, and marked all 24 selections approved. Each active master is hash-bound to its original V1 variant and historical generation receipt; V2/V3 are not selected. This is an owner-directed art selection after comparison, not a new generation.
+
+All 24 V1 figures were inspected in the received-art contact sheet; the owner selected V1 after viewing the three-version comparisons. Existing V1 limitations remain as recorded in their original generation receipts and the comparison review, including ragged clothing on several figures and the old scroll marks on Crowwick. No attempt was made to alter the selected images. No manuscript or PDF build changed; the last delivery remains RC492-build-37, and physical print remains **NOT TESTED**.

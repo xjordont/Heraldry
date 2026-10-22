@@ -9359,16 +9359,16 @@
   "heading_id": "h-ashborn",
   "route": "gpt",
   "spec_sha256": "0c01886faf5cd54e23d7e224cc7943323848d57d59319433bd2d3fcb9258ec6a",
-  "prompt_sha256": "b9bd2a25ca6fbc47880dfabf5bc871ded38e42714d2ccf5746d638dfb03ede87",
-  "status": "received",
-  "received_at": "2026-10-22T15:06:30+00:00",
+  "prompt_sha256": "d812f9983b8c68ead3a213c202a0f6d84e0cae1aa1cbae5636cce02739bd1f6a",
+  "status": "approved",
+  "received_at": "2026-10-22T17:38:58+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Maximum resolution and quality requested; tool exposes no size or quality selectors.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "Tripwire warned of 9.36% mid-gray pixels; visual inspection found high-contrast ink hatching on white paper, not a visible grey wash. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-ASHBORN.png",
-   "sha256": "162ffd4c35c6a1d718e3c3807c2e66eb6c8a17d3c21eda190f8eccf456afd964",
+   "sha256": "bd622b27cf260136aa3c66e38a1a12a8fdbc0b29cce447226dc0371305c37e64",
    "px": [
     1024,
     1536
@@ -9376,15 +9376,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-ASHBORN.png",
-   "sha256": "fbadd00d4efa6e0aebff4e3bf5d3e875447039402547bfa9ce4eabf619fb32e0",
+   "sha256": "02f72207f352eed59e01199570eb7dbbae00e89e2a237bd2374ffa03b71a3553",
    "px": [
-    877,
-    1478
+    863,
+    1479
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.923
+   "max_print_w_in_300ppi": 2.877
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-ASHBORN/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-ASHBORN/v1.png",
+   "sha256": "bd622b27cf260136aa3c66e38a1a12a8fdbc0b29cce447226dc0371305c37e64",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-BLACKKNIFE": {
   "family": "hero",
@@ -9392,16 +9407,16 @@
   "heading_id": "h-blackknife",
   "route": "gpt",
   "spec_sha256": "823ded0a6247457bb0eaa08ba139b00d62ca8292d336534d9d4d1e0e7e8e1514",
-  "prompt_sha256": "2dad6d79ce496ba72d00612fce239b7a2e9bc4f6395ac4d216573f58dc0765b2",
-  "status": "received",
-  "received_at": "2026-10-22T15:08:44+00:00",
+  "prompt_sha256": "623f3e55f2d101e2ab9e02fffb45d5777471303c92fb1bb79be20820a5a6f478",
+  "status": "approved",
+  "received_at": "2026-10-22T17:38:58+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-BLACKKNIFE.png",
-   "sha256": "fce296063984b89579574226501d5c7f171b76ee8b0157cd153a6aea84d3446e",
+   "sha256": "9d36ed712393ee78637eadd359e2ccfc5cef07c0ccda31649c4cb25678f702be",
    "px": [
     1024,
     1536
@@ -9409,15 +9424,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-BLACKKNIFE.png",
-   "sha256": "913f05fb919a306ee57e3b00b035fb62a52f41a0ab0c99a6e64fce5d0cdb1b40",
+   "sha256": "5b3deabb674c3b12da5c59a6c4341fae2041bf6595f7df9b755737141af8b686",
    "px": [
-    765,
-    1453
+    762,
+    1490
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.55
+   "max_print_w_in_300ppi": 2.54
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-BLACKKNIFE/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-BLACKKNIFE/v1.png",
+   "sha256": "9d36ed712393ee78637eadd359e2ccfc5cef07c0ccda31649c4cb25678f702be",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-CAIRNWRATH": {
   "family": "hero",
@@ -9425,16 +9455,16 @@
   "heading_id": "h-cairnwrath",
   "route": "gpt",
   "spec_sha256": "95b52cbc9b134b11543ea18be3e461ac23c80eb3b8cf11b65c6e95c40af61ade",
-  "prompt_sha256": "4aece5159fd032f1eee8ae2bfc10e7edd6b8442af30b2d2e492e9aa0dbb70a06",
-  "status": "received",
-  "received_at": "2026-10-22T15:10:42+00:00",
+  "prompt_sha256": "16b91bdd204b3d1d63a22cdc799389ca6429d720b2ae326fd83d4685f69bc2ee",
+  "status": "approved",
+  "received_at": "2026-10-22T17:38:59+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Automated midtone and margin warnings: inspected native and print preview; hatching rather than grey wash, entire axe and boots inside image with no edge contact.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flagged possible grey wash or soft shading (10%), stray edge marks (0.18%), and narrow margin (3.3% of outer 6% band). Visual review: bold black hatch on white paper, all required items visible, full figure and axe uncut, no disallowed content. Preserve warnings for review; no retry. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-CAIRNWRATH.png",
-   "sha256": "bfd244239a9ebaf889ff5786182f51195f32c4e2e475190059990e379181bab0",
+   "sha256": "bc755be0f96fadfc72234332a22f679fa05d54de0edf8c6cb0066a33d6a78ff4",
    "px": [
     1024,
     1536
@@ -9442,15 +9472,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-CAIRNWRATH.png",
-   "sha256": "2278cb547c66053cb60bc63338f858b96bd4a6361be79551ccf62ec617d44c90",
+   "sha256": "79a7d34a698d714fc546f857eea966e10c4bfb6da6b0cfad0d30a439726c70a6",
    "px": [
-    959,
-    1511
+    985,
+    1520
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.197
+   "max_print_w_in_300ppi": 3.283
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-CAIRNWRATH/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-CAIRNWRATH/v1.png",
+   "sha256": "bc755be0f96fadfc72234332a22f679fa05d54de0edf8c6cb0066a33d6a78ff4",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-CROWWICK": {
   "family": "hero",
@@ -9458,16 +9503,16 @@
   "heading_id": "h-crowwick",
   "route": "gpt",
   "spec_sha256": "1421c80d7947c73ac771f8bbffdfe2503fa83ae9628f8527d95fc7bf44414262",
-  "prompt_sha256": "7d57a5fea705acfd5bf4a462fed4d7443aedd0ab3d1fab20b9d4e88d987836b5",
-  "status": "received",
-  "received_at": "2026-10-22T15:12:51+00:00",
+  "prompt_sha256": "7c3c448b92fa781ad2aa9ee838c2ba7234cd8b35713825afb2613a35cea527d7",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:00+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Correction used: targeted blank-scroll requirement supersedes older wavy-lines phrase. Inner shirt tails remain ragged; outer coat intact. Automated midtone/edge warnings inspected: hatch marks, no crop.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Visually checked full image and print-size preview; required items present and listed prohibitions absent. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-CROWWICK.png",
-   "sha256": "5ca8727b5d7820ba966f9bc56b3d301310fc1690e5cc0f634dcb51fbfd646f44",
+   "sha256": "8806016beb31c58a23f4cbb1e21b38ee88dbfea5f5f3c8ae066753f1d4a3ac6a",
    "px": [
     1024,
     1536
@@ -9475,15 +9520,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-CROWWICK.png",
-   "sha256": "01a59f32387c80277800e83b9e243e5d86845f7a866f9a7e7a17a9a1a50fc200",
+   "sha256": "610d8dbb2366424f369312d2753127a4eb88e89e365584ead9695e977fcf8dda",
    "px": [
-    990,
-    1424
+    984,
+    1457
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.3
+   "max_print_w_in_300ppi": 3.28
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-CROWWICK/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-CROWWICK/v1.png",
+   "sha256": "8806016beb31c58a23f4cbb1e21b38ee88dbfea5f5f3c8ae066753f1d4a3ac6a",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-DAWNWARDEN": {
   "family": "hero",
@@ -9491,16 +9551,16 @@
   "heading_id": "h-dawnwarden",
   "route": "gpt",
   "spec_sha256": "f59a9b9b2491e3863a2d438dd49698a60707919b99adc9e08686e4d9d60b0408",
-  "prompt_sha256": "aabbb5efca1d613781611cc7c4d9767449dad8b87b27063ebc38bba497c967bd",
-  "status": "received",
-  "received_at": "2026-10-22T15:14:50+00:00",
+  "prompt_sha256": "b9db165c3fd3996b8c19464fb45a88fc0f24d04dcef5d1e553658a83a7b6f05f",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:00+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Round shield appears oversized for the specified small targe; delivered for reviewer decision.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker warned narrow margin (2.4% of outer 6% band); visually full figure and weapons are uncut. Required details visible; preserve warning for review. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-DAWNWARDEN.png",
-   "sha256": "fddd94dcf834fe27b2a7d8b86db577e8c729e381726e522a37be473f5930f96f",
+   "sha256": "46e4303fde50c6e27bcd83c46fce1b93429522fea1a5f6af025439cb6ce99c23",
    "px": [
     1024,
     1536
@@ -9508,15 +9568,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-DAWNWARDEN.png",
-   "sha256": "65e813a7929612ea7b4226a498724cadd207ecf38f33fb4d71bb2d6d8d3d315c",
+   "sha256": "99ac89b0b00faa6fab9ffd28b9427b581bf0e70f63cd63b8c9b02f54a5187f56",
    "px": [
-    922,
-    1403
+    976,
+    1446
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.073
+   "max_print_w_in_300ppi": 3.253
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-DAWNWARDEN/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-DAWNWARDEN/v1.png",
+   "sha256": "46e4303fde50c6e27bcd83c46fce1b93429522fea1a5f6af025439cb6ce99c23",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-EMBERVOW": {
   "family": "hero",
@@ -9524,16 +9599,16 @@
   "heading_id": "h-embervow",
   "route": "gpt",
   "spec_sha256": "ab274de92c2c63d66e935cf8c8600d6a67f20c00b5a1e7cf09c751255047d782",
-  "prompt_sha256": "07fe9b1780849074ac89cd9b2cc94b03a5baac28d644404bc19eecee98bff6b6",
-  "status": "received",
-  "received_at": "2026-10-22T15:16:51+00:00",
+  "prompt_sha256": "80c146caff53e3a195e7b8b0205869d0e7bbeac39e3114a7832bec5858d5c25d",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:01+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Automated midtone and narrow-margin advisories inspected: ink hatching, no smooth grey wash, no edge contact or crop.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flagged stray edge marks (0.15%) and narrow margin (3.2% of outer 6% band); visual review confirms full figure, tail, and staff are uncut. Preserve warnings. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-EMBERVOW.png",
-   "sha256": "05180cf69295836e6b5e5e6d3341090f8cc04dc46800a05dd10f1e752f85d856",
+   "sha256": "0e2c009ed357a225488d724b0bdf1f57cb5ed06c331d07eea1c8eadd67f42a69",
    "px": [
     1024,
     1536
@@ -9541,15 +9616,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-EMBERVOW.png",
-   "sha256": "8d612c626548003c3f2fca07bf45b5aabfdf106dddc8d17cc0568b64a2733228",
+   "sha256": "e15d6548e1db4f7f4108df0d2f5261291d13ad3e13e1b0a004d79ac80caef1d0",
    "px": [
-    844,
-    1492
+    813,
+    1503
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.813
+   "max_print_w_in_300ppi": 2.71
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-EMBERVOW/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-EMBERVOW/v1.png",
+   "sha256": "0e2c009ed357a225488d724b0bdf1f57cb5ed06c331d07eea1c8eadd67f42a69",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-FURROWROOT": {
   "family": "hero",
@@ -9557,16 +9647,16 @@
   "heading_id": "h-furrowroot",
   "route": "gpt",
   "spec_sha256": "dda5b6c34d8bb4047190bf4aae688d674e61fe69162ff60edfc8417a8dcc68aa",
-  "prompt_sha256": "8457c2c991d050db2f71bbc86cedda487f1cb986c2dacba01e95607915911da8",
-  "status": "received",
-  "received_at": "2026-10-22T15:18:50+00:00",
+  "prompt_sha256": "fae49a05fbf62b4aaac1e39770ff4c868699b74e58718f5afb56b42b20825f02",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:01+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Midtone and narrow-margin warnings inspected: local hatch texture, all subject edges complete without contact.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flagged possible grey wash (11% midtones) and narrow margin (2.5% of outer 6% band); visual review confirms listed details and full uncut figure. Preserve warnings. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-FURROWROOT.png",
-   "sha256": "2bd41c43878f218c49b4214745ef6f759f275f78b9025fa7d0c6c80c2a7cc90f",
+   "sha256": "9f8358dedb28ee1cbbc940d9ea59386958eac5591d6fc57f48eb10b5921e2061",
    "px": [
     1024,
     1536
@@ -9574,15 +9664,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-FURROWROOT.png",
-   "sha256": "06b5dd5abdea6de8e983d8422380267b9d1ff6fdd6c32574d7aaaae816462145",
+   "sha256": "78db41983f3b24c42f0d784cde8fd50b02473425a70bac8fc08d1d35bb601f9b",
    "px": [
-    946,
-    1460
+    942,
+    1477
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.153
+   "max_print_w_in_300ppi": 3.14
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-FURROWROOT/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-FURROWROOT/v1.png",
+   "sha256": "9f8358dedb28ee1cbbc940d9ea59386958eac5591d6fc57f48eb10b5921e2061",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-GALEFLETCH": {
   "family": "hero",
@@ -9590,16 +9695,16 @@
   "heading_id": "h-galefletch",
   "route": "gpt",
   "spec_sha256": "bef639ce79ae184f84963b7d9e4bcc1b864ef69d2754ea2ca9b8559e5860f5ec",
-  "prompt_sha256": "ace6bee53c0508997fa23083d4e28ff8511012abe0a2a5f4e325fc9321b8ba15",
-  "status": "received",
-  "received_at": "2026-10-22T15:21:05+00:00",
+  "prompt_sha256": "f17220947a27a2c4fdb88fe27b9a8b6fe909ec7396bc6114326346df974c426b",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:02+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Narrow-margin advisory inspected: complete bow, scarf and figure, no crop or edge contact.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker warned narrow margin (2.6% outer 6% band); visual review shows no crop and all required gear. Preserve warning. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-GALEFLETCH.png",
-   "sha256": "1168494ee2f008002fc7899f595cae518375540dc8fcc474907ae00ad115eea5",
+   "sha256": "2b24f764f78ff2d2719523a088024112db82e28f5f837806129233b1629da594",
    "px": [
     1024,
     1536
@@ -9607,15 +9712,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-GALEFLETCH.png",
-   "sha256": "22f36c18938dffa089796d7d21d9b8f5767bf9d8d6f3eca7939dc2b0429b0721",
+   "sha256": "eeb325b7c49546924c9f32a4d5c5277631af0ea1f018254117991bc395855e3a",
    "px": [
-    960,
-    1450
+    1000,
+    1475
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.2
+   "max_print_w_in_300ppi": 3.333
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-GALEFLETCH/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-GALEFLETCH/v1.png",
+   "sha256": "2b24f764f78ff2d2719523a088024112db82e28f5f837806129233b1629da594",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-GALLOWTUSK": {
   "family": "hero",
@@ -9623,16 +9743,16 @@
   "heading_id": "h-gallowtusk",
   "route": "gpt",
   "spec_sha256": "3630343e6c87a26fd70b0f0c35f961eebc7ace0138aa092dcbf844aabeab412b",
-  "prompt_sha256": "090aab86ca48bf909783b86ec4c1cf3acf844398647796c586a8af587190be7f",
-  "status": "received",
-  "received_at": "2026-10-22T15:24:16+00:00",
+  "prompt_sha256": "42129eb4c3b0683a79d193b465e81eb6dff8bc3dab1e94be4b5b7248737724dd",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:03+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Automated midtone and margin warnings inspected: textured ink strokes and rings, complete blade tip with no edge contact.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flagged possible grey wash or soft shading (13% midtones); visual review finds old-school black ink hatching. Record for reviewer. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-GALLOWTUSK.png",
-   "sha256": "6e137d69ae3202a4162d281d5cea13819767698e3851c7defdf83ecf2df1c78c",
+   "sha256": "acac74f04b45074cc574c773bf4c9157a12797c4f1ee0ae2ba3d2def05a13bd7",
    "px": [
     1024,
     1536
@@ -9640,15 +9760,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-GALLOWTUSK.png",
-   "sha256": "ae85643dedfa7c6a073c82ff636ffa48a63f44e6ff884999aff55dacd43c660d",
+   "sha256": "b22878e44ccf3780ae470dfb72ca7f1c5f311bc088ba8ec374fd17dd2ce88a68",
    "px": [
-    909,
-    1468
+    1003,
+    1487
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.03
+   "max_print_w_in_300ppi": 3.343
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-GALLOWTUSK/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-GALLOWTUSK/v1.png",
+   "sha256": "acac74f04b45074cc574c773bf4c9157a12797c4f1ee0ae2ba3d2def05a13bd7",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-GILDMIRROR": {
   "family": "hero",
@@ -9656,16 +9791,16 @@
   "heading_id": "h-gildmirror",
   "route": "gpt",
   "spec_sha256": "d4e7f190f2410d7133a3f52051ab8f7b3f88e295e8ad9fbaf02d628dddd8354c",
-  "prompt_sha256": "5bb28e77f3a03bb09b7f6d35fee27ebf89721911ca985be441755c985c2262f3",
-  "status": "received",
-  "received_at": "2026-10-22T15:26:39+00:00",
+  "prompt_sha256": "9b26ac8f96e993f5d4777410d0369688c01899419c39c0d6007702d458eec666",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:03+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Visually checked full image and print-size preview; required items present and prohibitions absent. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-GILDMIRROR.png",
-   "sha256": "735bb6357e6acde9174877f38ebeaae1d1ec8a23b9947d7a3f5dc87a727e574f",
+   "sha256": "fbdeccb2f3e6e23381d7bfa349e778412342e209cf1368a733cc05010eb40c75",
    "px": [
     1024,
     1536
@@ -9673,15 +9808,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-GILDMIRROR.png",
-   "sha256": "ac6c0254d7368c535f9c37498e397ac54e27d60277606ce083314b63e6bc15cb",
+   "sha256": "57de2b806a724868a8e1ccd2e3d2cb4f4ef34f0629b4c98b433d9e17949fe981",
    "px": [
-    986,
-    1348
+    984,
+    1342
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.287
+   "max_print_w_in_300ppi": 3.28
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-GILDMIRROR/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-GILDMIRROR/v1.png",
+   "sha256": "fbdeccb2f3e6e23381d7bfa349e778412342e209cf1368a733cc05010eb40c75",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-GNAWTHOUGHT": {
   "family": "hero",
@@ -9689,16 +9839,16 @@
   "heading_id": "h-gnawthought",
   "route": "gpt",
   "spec_sha256": "50864242f72b08a060368b7ab60eb1daf562995f0352f31d69470796fc5d99fd",
-  "prompt_sha256": "cd08c747d3f9c6d063f542746c677b4616ca7515ae0e863f5fa0eeca6a867f60",
-  "status": "received",
-  "received_at": "2026-10-22T15:28:43+00:00",
+  "prompt_sha256": "0ad42621ef5d6b81a883432979323ad09c844ed74417a7585df91371247dd307",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:04+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Faint warm tint persists on nose, fingers and tail; recorded for reviewer. Midtone warning otherwise reflects dense ink hatching.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Visually checked full image and print-size preview; all required features present and prohibitions absent. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-GNAWTHOUGHT.png",
-   "sha256": "5c4f9867fd47d7f6a6d9167e24283a17a76ebfc2e11a2ea006a64047741fdab2",
+   "sha256": "0d00efe36ce8f698d000bd5ae5027de00196e1ee27a0a9a0d376c99b6a802883",
    "px": [
     1024,
     1536
@@ -9706,15 +9856,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-GNAWTHOUGHT.png",
-   "sha256": "478ad81076581c2105868ee56819ca44713287cbf12267b8c2499720d298194d",
+   "sha256": "510d138d7f7a8f7950ce3b6f1514733f8bfe5e24e7db2204981549843123cdf5",
    "px": [
-    959,
-    1321
+    964,
+    1320
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.197
+   "max_print_w_in_300ppi": 3.213
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-GNAWTHOUGHT/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-GNAWTHOUGHT/v1.png",
+   "sha256": "0d00efe36ce8f698d000bd5ae5027de00196e1ee27a0a9a0d376c99b6a802883",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-GRAVEGLASS": {
   "family": "hero",
@@ -9722,16 +9887,16 @@
   "heading_id": "h-graveglass",
   "route": "gpt",
   "spec_sha256": "f47a826c9ee5c175c10d124cb5eacbc6d91701d8434c79ea6941c5a268659e84",
-  "prompt_sha256": "367ef4b36c25697dbdf8329978107954fbf23254800eea223714fed428bf1600",
-  "status": "received",
-  "received_at": "2026-10-22T15:31:04+00:00",
+  "prompt_sha256": "257429363aff6b7566bc53392736706dc4902d20b4a36876201cbfb187e37a79",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:04+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Narrow-margin advisory inspected: flame and complete figure remain inside image without edge contact.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Visually checked full image and print-size preview; required items visible and prohibitions absent. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-GRAVEGLASS.png",
-   "sha256": "1186e919be1f6a6b35a0ed61bd9816891ea5f7c0ac2fb1e1677a0e58409ee5f6",
+   "sha256": "9c0a339446348f3721d2bbbb75f1f170d6deac3fe5ddfb086a39868ebd682d1c",
    "px": [
     1024,
     1536
@@ -9739,15 +9904,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-GRAVEGLASS.png",
-   "sha256": "5e67d7e715504bf9abc41c71797f58c1b606dc675002f1bb7f3684fdcb195192",
+   "sha256": "4807e1f944f1fb7615fd80d469d9b177d87f17eb35bb0b9b471d739cb9700bee",
    "px": [
-    924,
-    1475
+    959,
+    1492
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.08
+   "max_print_w_in_300ppi": 3.197
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-GRAVEGLASS/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-GRAVEGLASS/v1.png",
+   "sha256": "9c0a339446348f3721d2bbbb75f1f170d6deac3fe5ddfb086a39868ebd682d1c",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-HEARTHBELL": {
   "family": "hero",
@@ -9755,16 +9935,16 @@
   "heading_id": "h-hearthbell",
   "route": "gpt",
   "spec_sha256": "311e8e335714b498aea1baab8204aecf4989678b9cdc27c3c69221a954b9be51",
-  "prompt_sha256": "b731ff87a50c74da8ae31261976e15de2adf031bf201ab04348011b94b57af06",
-  "status": "received",
-  "received_at": "2026-10-22T15:33:06+00:00",
+  "prompt_sha256": "86a72e0bad824595cbc6dcf1e5c70d930c08e48c7a88d2f7f3cc6d52e1047cb8",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:05+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Midtone advisory inspected: directional ink strokes and rings, no visible smooth grey wash.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flags possible grey wash (11% midtones); visually seen as crosshatching. Preserve warning for review. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-HEARTHBELL.png",
-   "sha256": "833cd9ce7b1b411e9ecb4ba1f54f4702799a99b8ba44ed18f1079eac183b2295",
+   "sha256": "9bd16f0fbc638714a51181d7f46a34f25a5a06a9d04e54666ef2c12b2b7241ac",
    "px": [
     1024,
     1536
@@ -9772,15 +9952,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-HEARTHBELL.png",
-   "sha256": "5a565867110105b78cb93eafa73edc336a7c6c9f45ea8a65f1c3116be39d89b3",
+   "sha256": "654d2d1605973519e0180f89359db5ce809b6eb846e818ffba70ca036603c7d5",
    "px": [
-    937,
-    1421
+    916,
+    1424
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.123
+   "max_print_w_in_300ppi": 3.053
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-HEARTHBELL/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-HEARTHBELL/v1.png",
+   "sha256": "9bd16f0fbc638714a51181d7f46a34f25a5a06a9d04e54666ef2c12b2b7241ac",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-IRONSCAR": {
   "family": "hero",
@@ -9788,16 +9983,16 @@
   "heading_id": "h-ironscar",
   "route": "gpt",
   "spec_sha256": "ccf11f7dcd1387ae3be17bcdacacf20bbf6ec810be59222ab191911abb6608d1",
-  "prompt_sha256": "ffcc6e15101a80c6592c64fc5ea5f8121780df630e63df37fe3be54fa2c48855",
-  "status": "received",
-  "received_at": "2026-10-22T15:35:29+00:00",
+  "prompt_sha256": "7056a9ebff8167284ed8636618eee710678ea0c36caa8c4fa6374429815b8941",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:06+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Faint reddish scar and warm tint on pale cloth/shield recorded; midtone advisory otherwise reflects hatching.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flagged possible grey wash (12% midtones); visual review shows ink hatch. All required details visible. Preserve warning. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-IRONSCAR.png",
-   "sha256": "c8a28e16f4413cea06bdf92d1d29b22f3b60b0b36bedcfe6888012b5f58abe6a",
+   "sha256": "fe1fb49acd5e2db04b5d0851b85c89e1077fa12cd4bfecb0a07cc01770c9ef9b",
    "px": [
     1024,
     1536
@@ -9805,15 +10000,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-IRONSCAR.png",
-   "sha256": "50c4d99e960bd21d16a2ddb805f4b22daf67deabc5a2ba1fee18982b339f1362",
+   "sha256": "4489c3e8030cb0accb5cd932a7b8e4ba458a3a9634f2be7ea8bf747759f1bc91",
    "px": [
-    976,
-    1373
+    990,
+    1381
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.253
+   "max_print_w_in_300ppi": 3.3
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-IRONSCAR/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-IRONSCAR/v1.png",
+   "sha256": "fe1fb49acd5e2db04b5d0851b85c89e1077fa12cd4bfecb0a07cc01770c9ef9b",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-MOSSGRAVE": {
   "family": "hero",
@@ -9821,16 +10031,16 @@
   "heading_id": "h-mossgrave",
   "route": "gpt",
   "spec_sha256": "436d0b04095aa51189f81c128bf78b1e8716e9dd258409cf8412a21ae6abbd00",
-  "prompt_sha256": "e0ae2d82fd685e3a9756cda605a913ff1aba58eedb55632deff3500fba47292b",
-  "status": "received",
-  "received_at": "2026-10-22T15:37:51+00:00",
+  "prompt_sha256": "7d07ccc9e622e37afec4fd27fbb427318c1e8f4e974f3f8ca2c68dd8e3a5a5f2",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:06+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Olive tint on shoulder moss and herb bundle persists; recorded for reviewer. Midtone advisory reflects dense local hatching.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Visible faint olive tint in moss violates strict black-and-white requirement; checker also flagged possible grey wash (12% midtones). Preserve both issues for review. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-MOSSGRAVE.png",
-   "sha256": "ebb60018deacfc0f78d5f3641c2e75fffa4a6ced22b0b80e24eb56a446a811a3",
+   "sha256": "ab45ed8643b312936600df1ae2cf777312b7f0ef951a1cee20c46da3d4ad8738",
    "px": [
     1024,
     1536
@@ -9838,15 +10048,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-MOSSGRAVE.png",
-   "sha256": "8efcdb9cfdc708071de02a1033ad450042b86b4ee7f99119528e782efa10033f",
+   "sha256": "ed7977494919907e9e46e093d4bdfbd3a820934c5c5819413a72548410bac139",
    "px": [
-    909,
-    1462
+    927,
+    1447
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.03
+   "max_print_w_in_300ppi": 3.09
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-MOSSGRAVE/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-MOSSGRAVE/v1.png",
+   "sha256": "ab45ed8643b312936600df1ae2cf777312b7f0ef951a1cee20c46da3d4ad8738",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-NIGHTLOOM": {
   "family": "hero",
@@ -9854,16 +10079,16 @@
   "heading_id": "h-nightloom",
   "route": "gpt",
   "spec_sha256": "78113a9b06149a45d7f5e920c22276d5293cc03471cab48aa14027468e4959cb",
-  "prompt_sha256": "544f41aa0f2b8344ce864925c5d5d6790ac66563ac91aef4e2a008b85d90bad5",
-  "status": "received",
-  "received_at": "2026-10-22T15:40:02+00:00",
+  "prompt_sha256": "97733bc73c2e0be1052219b3615cbf4ccd9019f1a5eddf1ea74b13a2ef96f0d5",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:07+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Midtone warning inspected: ink hatch marks, no visible smooth grey wash. Additional sheathed belt blade present.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flagged possible grey wash (10% midtones); visual review sees crosshatching. Required details present; preserve warning. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-NIGHTLOOM.png",
-   "sha256": "2c4142d2f3c445aea797e21ba0247c755ea6cf9536991b7a2145990a6d204c85",
+   "sha256": "5c62940c8e61286fbb833dc91395f3b2ec347d16ee242c66feffd1fe5301250f",
    "px": [
     1024,
     1536
@@ -9871,15 +10096,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-NIGHTLOOM.png",
-   "sha256": "cd2ae9d783ea13d6f3a983de68cc50394ded813794bfb3d0417c8de4c7b55541",
+   "sha256": "1b552c200c7360f73b5d714f1ea392b4c803eb0a5eef06a9197ecfbdaaa59154",
    "px": [
-    970,
-    1425
+    980,
+    1466
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.233
+   "max_print_w_in_300ppi": 3.267
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-NIGHTLOOM/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-NIGHTLOOM/v1.png",
+   "sha256": "5c62940c8e61286fbb833dc91395f3b2ec347d16ee242c66feffd1fe5301250f",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-OATHSCALE": {
   "family": "hero",
@@ -9887,16 +10127,16 @@
   "heading_id": "h-oathscale",
   "route": "gpt",
   "spec_sha256": "09eb892ae692be9a0c91cadafd390a9728160eac401f7507d0bcf359af559cef",
-  "prompt_sha256": "2bf69576ee26f39137eb4c1c42a2f83b7aa79fff62bc2d44d5ee0abe47484c5f",
-  "status": "received",
-  "received_at": "2026-10-22T15:52:23+00:00",
+  "prompt_sha256": "3480e661863b6077dbb370ea8655bcd775841291212efef4b8ef9d6c86a79842",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:08+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Narrow-margin advisory inspected: all equipment and complete figure inside image; unlisted dagger removed.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Required belt dagger is not clearly visible; face has a strongly draconic snout that may conflict with no full dragon head. Checker warned narrow margin (2.1%). Preserve for review. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-OATHSCALE.png",
-   "sha256": "71bcefc6ca309e531a86b5981ed8143b7162a710339040339ee177d71f1b6517",
+   "sha256": "610c84389f201b9c9b0e297a196e95cb71024dd22eb92dec0fb009d38c3416b1",
    "px": [
     1024,
     1536
@@ -9904,15 +10144,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-OATHSCALE.png",
-   "sha256": "f12d15fd5cf2ad3a20564c8c83add78887088ca8a06237251cc8849584df97d9",
+   "sha256": "7a562566e8e594771ea596adff8b3029ea88f0a106c2f5f31f36b0457208af7f",
    "px": [
-    840,
-    1493
+    811,
+    1494
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.8
+   "max_print_w_in_300ppi": 2.703
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-OATHSCALE/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-OATHSCALE/v1.png",
+   "sha256": "610c84389f201b9c9b0e297a196e95cb71024dd22eb92dec0fb009d38c3416b1",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-REDHAND": {
   "family": "hero",
@@ -9920,16 +10175,16 @@
   "heading_id": "h-redhand",
   "route": "gpt",
   "spec_sha256": "44753671ab3b2ab85f81bc876099cca4dbf43ac590b7ec261338784fedd6c132",
-  "prompt_sha256": "9c07214a5048b68d1099acc17a46ae74fe19442079671c8b879a9ecc318b0400",
-  "status": "received",
-  "received_at": "2026-10-22T15:57:51+00:00",
+  "prompt_sha256": "bc61ffd00f0cce88755178f1b284763a50121be011908073a958cfd21387ff7b",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:09+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Hide cuirass fix achieved. Hanging waist cloth remains ragged. Automated edge/margin warnings inspected: no crop or edge contact.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flagged stray edge marks (0.29%) and narrow margin (3.4% of outer 6% band); visual review confirms complete uncut figure and axe. Preserve warnings. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-REDHAND.png",
-   "sha256": "fc20428a60b8ff07b6cbae7f698d5c96a93405b58410c2e012338e055a61642c",
+   "sha256": "ec83404a0ff93b75202293fef9d36b2e23708ba87fd8552238da00f4c6f2310b",
    "px": [
     1024,
     1536
@@ -9937,15 +10192,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-REDHAND.png",
-   "sha256": "cded637a6b0bc270b1692a64faf0a101f8ee93764d5717c9d83fc9e396467b5c",
+   "sha256": "4ccd5e9454b3404d699672c61d6f56b372b58c0c50e9c6eeda9a359cf107f49d",
    "px": [
-    907,
-    1494
+    884,
+    1507
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.023
+   "max_print_w_in_300ppi": 2.947
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-REDHAND/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-REDHAND/v1.png",
+   "sha256": "ec83404a0ff93b75202293fef9d36b2e23708ba87fd8552238da00f4c6f2310b",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-SILKSHADE": {
   "family": "hero",
@@ -9953,16 +10223,16 @@
   "heading_id": "h-silkshade",
   "route": "gpt",
   "spec_sha256": "56928bbd28f3872ece5831aa0dc9bc46333d6e4eef0f679b54e98cb2cf1fa947",
-  "prompt_sha256": "aae7a5bee4fcef50b8563b2e65f90c43266d73b28dd614a9408115e29b8a9fd2",
-  "status": "received",
-  "received_at": "2026-10-22T16:04:01+00:00",
+  "prompt_sha256": "71cc5f9d51793a934e82ea72c91238c0c4290293940945dc4acff6045a8f8036",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:09+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Turned-up collar and ragged rear waist cloth recorded for reviewer. Narrow margin inspected: complete figure, no edge contact.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker warned narrow margin (2.7% outer 6% band); visual review confirms full figure and sash uncut. Preserve warning. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-SILKSHADE.png",
-   "sha256": "8a056a44e76a31346232b7e2a489b713411f47291d61978c5b6b9f8c88013162",
+   "sha256": "fbda4ed0a83389762aca3bdae3b9e7a32d0c04c8d28398a6b302476e30a66f6a",
    "px": [
     1024,
     1536
@@ -9970,15 +10240,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-SILKSHADE.png",
-   "sha256": "e4fbe6b7a38d08dc4bfd37eb796cdc9575df435927753a7cc5410695c63102b2",
+   "sha256": "967664db7dfc478c834aed53df27d625b6fd4ab0171426c4ea2d9ea6d1d30ba6",
    "px": [
-    839,
-    1484
+    854,
+    1496
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.797
+   "max_print_w_in_300ppi": 2.847
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-SILKSHADE/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-SILKSHADE/v1.png",
+   "sha256": "fbda4ed0a83389762aca3bdae3b9e7a32d0c04c8d28398a6b302476e30a66f6a",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-SOOTFINGER": {
   "family": "hero",
@@ -9986,16 +10271,16 @@
   "heading_id": "h-sootfinger",
   "route": "gpt",
   "spec_sha256": "27ad728f36924529f1178cea9419078b83cdc1b115873f995ba001ba52c99238",
-  "prompt_sha256": "5d9e3dcf59247a0b45dcc0f035d81af15b4d4a072f2cb7c669667bfeab310988",
-  "status": "received",
-  "received_at": "2026-10-22T16:11:48+00:00",
+  "prompt_sha256": "be62a00d3e75bff36179f76f5b7c1fb5058ecc08e3cfa355cf489c130fc5764b",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:10+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Face correction incomplete: oversized youthful eyes retain cartoon character; faint warm tint on skin and cloth.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Visually checked full image and print-size preview; required details present and prohibitions absent. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-SOOTFINGER.png",
-   "sha256": "cb91945f863b432a01da3e50aaefd127130e4e1cb707520384e349f11a37f4eb",
+   "sha256": "73d86b01bf0570f896e51b7ebdd3fcfd92f15d9d5423d0059984540a22cc50d1",
    "px": [
     1024,
     1536
@@ -10003,15 +10288,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-SOOTFINGER.png",
-   "sha256": "7e20c59791c3daa5b13d8bdbefa64fc696699ab126327159ffbae34834fd1f6f",
+   "sha256": "4689ebc07078439feae60e1f57946088c22f6631953d951f114d9a4fb61e56ad",
    "px": [
-    991,
-    1382
+    987,
+    1398
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.303
+   "max_print_w_in_300ppi": 3.29
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-SOOTFINGER/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-SOOTFINGER/v1.png",
+   "sha256": "73d86b01bf0570f896e51b7ebdd3fcfd92f15d9d5423d0059984540a22cc50d1",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-STARCINDER": {
   "family": "hero",
@@ -10019,16 +10319,16 @@
   "heading_id": "h-starcinder",
   "route": "gpt",
   "spec_sha256": "a830805d90d118312425f6fb0d9d440c85cb92193fb19f3203066000b44374c6",
-  "prompt_sha256": "4c98973170faa8e15fdd9cf5262709a26c73f1b8f1721da9f822212ab8c5ad95",
-  "status": "received",
-  "received_at": "2026-10-22T16:18:23+00:00",
+  "prompt_sha256": "211f3f29b31ed02af2812f8e4835b40018c3fd234870ae19f0b3facfa599f6d6",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:10+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Narrow-margin advisory inspected: complete staff and figure inside image without edge contact.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker warned narrow margin (3.0% of outer 6% band); visual review confirms full figure and staff are uncut. Preserve warning. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-STARCINDER.png",
-   "sha256": "4b485bf4e236f3fd9b1ef9acd3882b1971f7a4210ae84e7ec39fc1afbbd5485f",
+   "sha256": "67232b84fd1a43bc0324f0a921d2861595599f293da8d8327e375732de9f0a35",
    "px": [
     1024,
     1536
@@ -10036,15 +10336,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-STARCINDER.png",
-   "sha256": "9b8dafc4786a5fdb07042b229ab4756170486b647abb09ffb4d1e13e4f1fc141",
+   "sha256": "dbffe7e36b44728e79c3a2f59c7ec64e1e9bcfd991176fb580b3ef732f739536",
    "px": [
-    750,
-    1474
+    782,
+    1492
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.5
+   "max_print_w_in_300ppi": 2.607
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-STARCINDER/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-STARCINDER/v1.png",
+   "sha256": "67232b84fd1a43bc0324f0a921d2861595599f293da8d8327e375732de9f0a35",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-STORMCROOK": {
   "family": "hero",
@@ -10052,16 +10367,16 @@
   "heading_id": "h-stormcrook",
   "route": "gpt",
   "spec_sha256": "5a26e554a67f7be50fa3f5788ef6e008644102a9ae1eee2929b289e56d26a1be",
-  "prompt_sha256": "8593661bcf8f721aae451313420e35ca5906121ce2cf9c5e0041d6da0046f158",
-  "status": "received",
-  "received_at": "2026-10-22T16:24:53+00:00",
+  "prompt_sha256": "658a614dd455cf74703661080bb11b1ccfbb3c853e96925277fd3a0a75abb40b",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:11+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Ridge-horn correction achieved. Midtone advisory inspected: ink hatching without visible grey wash.",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Visually checked full image and print-size preview; required items present and prohibitions absent. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-STORMCROOK.png",
-   "sha256": "439d72e45d1260f79b89640bef2b5cbc49de00924fb13277c8bd53a164e0ec51",
+   "sha256": "3136fede17378a565137cdb9bfded7d600017bd975b9a4d358c37dd1b61ebc5e",
    "px": [
     1024,
     1536
@@ -10069,15 +10384,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-STORMCROOK.png",
-   "sha256": "c31be10dd49f5a66d593cc80a773da3fa9241a2b66ba774451ff2ef48020232f",
+   "sha256": "024c26c8c7ed1b2c4fcb52b8b5acedd66d48e3eef1b67122292807d5231be333",
    "px": [
-    989,
-    1437
+    979,
+    1449
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.297
+   "max_print_w_in_300ppi": 3.263
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-STORMCROOK/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-STORMCROOK/v1.png",
+   "sha256": "3136fede17378a565137cdb9bfded7d600017bd975b9a4d358c37dd1b61ebc5e",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-THORNMERE": {
   "family": "hero",
@@ -10085,16 +10415,16 @@
   "heading_id": "h-thornmere",
   "route": "gpt",
   "spec_sha256": "5b7deb10d7331aaa29ecb2178540833c7464da84561980e33b98c35a9d07c5b3",
-  "prompt_sha256": "15b382829dcd6937579bcfe1a8031efc81860153b7eaa60754592fd1d5ea70b1",
-  "status": "received",
-  "received_at": "2026-10-22T16:33:23+00:00",
+  "prompt_sha256": "9c7ead821ce2eb77492080e7c7a8f1e8da9d5f438a7ded257e1a6804896a33a8",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:12+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Automated edge warning inspected: complete bow and arrow point inside image with no edge contact.",
+  "model": "Imagegen default model (no model label exposed)",
+  "notes": "Print-size visual review: full Human Ranger Scout, bow with nocked arrow, quiver, belt sickle, leather coat and hooded cloak are present; full figure/equipment uncut. Preserve automated stray edge marks 0.06% and narrow margin 2.1% warnings. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-THORNMERE.png",
-   "sha256": "fff8ddb216146db6f2d83757878be4fe9bf4922ab3767be02419cecbe31466bb",
+   "sha256": "0cd92a9051ddf6bff2e41ce2cd225ec4f4f8854c513fe91bd1ea2b2a246ac31a",
    "px": [
     1024,
     1536
@@ -10102,15 +10432,30 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-THORNMERE.png",
-   "sha256": "1f8330c0333845e34400c5cdc982e328315b09b0b195525519eeed90b244d478",
+   "sha256": "505533e9fb631a7e2f5a461be30396c9210bf57795ad05d4442eaf35280b2b8b",
    "px": [
-    907,
-    1490
+    992,
+    1495
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.023
+   "max_print_w_in_300ppi": 3.307
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-THORNMERE/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-THORNMERE/v1.png",
+   "sha256": "0cd92a9051ddf6bff2e41ce2cd225ec4f4f8854c513fe91bd1ea2b2a246ac31a",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  },
  "ART-HER-THOUGHTWAKE": {
   "family": "hero",
@@ -10118,16 +10463,16 @@
   "heading_id": "h-thoughtwake",
   "route": "gpt",
   "spec_sha256": "cba67c2ca2f612f5ff8a3bc4855101cc2adb224bf69b31eb67ad2c238c664ebd",
-  "prompt_sha256": "e3481d4a5cd506fee26e3d75a78f221e1b77555276b673395042336fff1f4bba",
-  "status": "received",
-  "received_at": "2026-10-22T16:40:52+00:00",
+  "prompt_sha256": "b33f1b738ea076bd99476548771eadc2809198d60943a6baf9fe2b8c2b38e2ae",
+  "status": "approved",
+  "received_at": "2026-10-22T17:39:13+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "",
+  "model": "Imagegen default model (no model label exposed)",
+  "notes": "Print-size visual review: required club, leather coat and temple gesture are present; whole figure and equipment remain uncut. Preserve automated narrow-margin warning 2.7%. Owner selected version 1 after comparing all three versions on 2026-10-22.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-THOUGHTWAKE.png",
-   "sha256": "48d022ffd8ce37698384d28d09bceed5eab90f1fc52d40b6bb3b5354288c1bea",
+   "sha256": "5bea35a5e93dfc7a602103a2c42da2ca15dbd60dadd34c66e7afb6fa5b9875cd",
    "px": [
     1024,
     1536
@@ -10135,14 +10480,29 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-THOUGHTWAKE.png",
-   "sha256": "37a34fb4a89df2e5a98f207622da4758bb78848f26bf7172fffdf07fb67c3103",
+   "sha256": "f7c9c7b307817b37c557c684390d8acea938549dbdbeeb1bf4c2aa4e4f67c744",
    "px": [
-    765,
-    1459
+    856,
+    1478
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.55
+   "max_print_w_in_300ppi": 2.853
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex on 2026-10-21; owner-selected V1 from assets/art/variants/ART-HER-THOUGHTWAKE/v1.png after comparison with V2 and V3.",
+  "selection_source": {
+   "version": 1,
+   "path": "assets/art/variants/ART-HER-THOUGHTWAKE/v1.png",
+   "sha256": "5bea35a5e93dfc7a602103a2c42da2ca15dbd60dadd34c66e7afb6fa5b9875cd",
+   "generated_at_utc": "2026-10-21"
+  },
+  "selection_decision": {
+   "selected_by": "owner",
+   "selected_at": "2026-10-22",
+   "basis": "Owner instruction: V1 is preferred for each basic hero; commit all V1 basic hero portraits.",
+   "approved_as_active_art": true,
+   "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
+  },
+  "approved_at": "2026-10-22T17:39:56+00:00",
+  "approved_by": "owner (explicit selection, 2026-10-22)"
  }
 }
