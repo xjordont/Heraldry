@@ -9853,17 +9853,17 @@
   "title": "Nightloom",
   "heading_id": "h-nightloom",
   "route": "gpt",
-  "spec_sha256": "91991a97c9ca5f90a36e7f4dd14dea90d2edede0ff64dcbf1b2ad97a416f2777",
-  "prompt_sha256": "97733bc73c2e0be1052219b3615cbf4ccd9019f1a5eddf1ea74b13a2ef96f0d5",
-  "status": "rejected",
-  "received_at": "2026-10-21T20:17:05+00:00",
+  "spec_sha256": "30e16462acb539b5cc5c44416b3737047a463da35e44523d5b387c9e5a51d5c1",
+  "prompt_sha256": "c2c48e248ce96c24b1a87487c1e34179e57e4fdd9896739e0f8cdd832e2cc9a6",
+  "status": "received",
+  "received_at": "2026-10-22T02:01:40+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool gave no model label)",
-  "notes": "One generation, 1024x1536. Checker flagged possible grey wash (10% midtones); visual review sees crosshatching. Required details present; preserve warning.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Reviewer correction: closed cloak has a bold lattice and neat hem; rapier tip, hood and boots remain under 10% margin.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-NIGHTLOOM.png",
-   "sha256": "5c62940c8e61286fbb833dc91395f3b2ec347d16ee242c66feffd1fe5301250f",
+   "sha256": "004eff2485cbc4fe35738f0071fcef65cf093e2ba66e7343ac28ee6128a334de",
    "px": [
     1024,
     1536
@@ -9871,17 +9871,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-NIGHTLOOM.png",
-   "sha256": "ed9942f39259df0f17b8f8684ed86799c08096fd8e38c91b8e5d15c38e8ed072",
+   "sha256": "4f537f3e3df8ac1c328832cbc23b81d16b77fe5957e78e3ba0145b568da91d8b",
    "px": [
-    980,
-    1466
+    941,
+    1406
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.267
+   "max_print_w_in_300ppi": 3.137
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:25+00:00",
-  "rejected_reason": "Remove the fringed, ragged cloak: a closed cloak with a bold woven diamond lattice and a neat straight hem, with the rapier, dagger, vials and smokestick. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-OATHSCALE": {
   "family": "hero",
