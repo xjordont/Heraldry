@@ -9985,17 +9985,17 @@
   "title": "Sootfinger",
   "heading_id": "h-sootfinger",
   "route": "gpt",
-  "spec_sha256": "afca817254946254512cc930b14f4863a4bc9dbb30f119a319ccf2a21a33c18b",
-  "prompt_sha256": "8ef3d8c7414a679840c28d2d50b407c3d6069a68805bd85691511d1a9444dd57",
-  "status": "rejected",
-  "received_at": "2026-10-22T02:08:50+00:00",
+  "spec_sha256": "27ad728f36924529f1178cea9419078b83cdc1b115873f995ba001ba52c99238",
+  "prompt_sha256": "5d9e3dcf59247a0b45dcc0f035d81af15b4d4a072f2cb7c669667bfeab310988",
+  "status": "received",
+  "received_at": "2026-10-22T16:11:48+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Reviewer correction: short waistcoat, rolled sleeves, knotted headscarf and listed gear are present. Rapier tip, head and feet leave less than 10% margin.",
+  "model": "not shown",
+  "notes": "Face correction incomplete: oversized youthful eyes retain cartoon character; faint warm tint on skin and cloth.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-SOOTFINGER.png",
-   "sha256": "090f16f78fbd3e310a3f625c030b05b73207a6958c9302c8d9c5df7ed7f08741",
+   "sha256": "cb91945f863b432a01da3e50aaefd127130e4e1cb707520384e349f11a37f4eb",
    "px": [
     1024,
     1536
@@ -10003,17 +10003,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-SOOTFINGER.png",
-   "sha256": "54305ced3bab0e285484538281cf1e6bfd83b6c13d9df19977d580783bdb6943",
+   "sha256": "7e20c59791c3daa5b13d8bdbefa64fc696699ab126327159ffbae34834fd1f6f",
    "px": [
-    979,
-    1364
+    991,
+    1382
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.263
+   "max_print_w_in_300ppi": 3.303
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-STARCINDER": {
   "family": "hero",
