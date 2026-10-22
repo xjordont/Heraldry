@@ -9721,17 +9721,17 @@
   "title": "Graveglass",
   "heading_id": "h-graveglass",
   "route": "gpt",
-  "spec_sha256": "1a298f13c6618538f49a856b79cd7963b9ce00f9111462777726ec37a1f30dd3",
-  "prompt_sha256": "5df511e22c99d629fcb911ef38a36975a8d7e23ae01493ab32bb6c7ead367fbc",
-  "status": "rejected",
-  "received_at": "2026-10-22T01:53:21+00:00",
+  "spec_sha256": "f47a826c9ee5c175c10d124cb5eacbc6d91701d8434c79ea6941c5a268659e84",
+  "prompt_sha256": "367ef4b36c25697dbdf8329978107954fbf23254800eea223714fed428bf1600",
+  "status": "received",
+  "received_at": "2026-10-22T15:31:04+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Correction: use an intact belted robe with only light dust smudges at the hem; keep the lit torch, club, second torch and single flip-down lens. Correction: keep garments cleanly hemmed, bold simple shapes, sparse hatching, pure black ink, at least 10% clean margin and no stray specks; keep full figure and all items visible. Automated narrow-margin warning 2.8%; no crop or edge contact.",
+  "model": "not shown",
+  "notes": "Narrow-margin advisory inspected: flame and complete figure remain inside image without edge contact.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-GRAVEGLASS.png",
-   "sha256": "cdae7e90619bad97506831343440f09d068d30cd4b02cbd9ebece37466825202",
+   "sha256": "1186e919be1f6a6b35a0ed61bd9816891ea5f7c0ac2fb1e1677a0e58409ee5f6",
    "px": [
     1024,
     1536
@@ -9739,17 +9739,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-GRAVEGLASS.png",
-   "sha256": "e0be32b622a1395e69dc9ccae25ec1bd3c3351379745515632623ecb0e5530aa",
+   "sha256": "5e67d7e715504bf9abc41c71797f58c1b606dc675002f1bb7f3684fdcb195192",
    "px": [
-    918,
-    1480
+    924,
+    1475
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.06
+   "max_print_w_in_300ppi": 3.08
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-HEARTHBELL": {
   "family": "hero",
