@@ -9886,17 +9886,17 @@
   "title": "Oathscale",
   "heading_id": "h-oathscale",
   "route": "gpt",
-  "spec_sha256": "f365836989906b11018f47e7f124da4816aaff33891658e6b6017317e5963650",
-  "prompt_sha256": "61289856c1b032fdbc4c31862a61437f8b0b2ac606c3d7f581c9905fa3361b32",
-  "status": "rejected",
-  "received_at": "2026-10-22T02:03:16+00:00",
+  "spec_sha256": "09eb892ae692be9a0c91cadafd390a9728160eac401f7507d0bcf359af559cef",
+  "prompt_sha256": "2bf69576ee26f39137eb4c1c42a2f83b7aa79fff62bc2d44d5ee0abe47484c5f",
+  "status": "received",
+  "received_at": "2026-10-22T15:52:23+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Reviewer correction: face is human-shaped with localized jaw/neck/hand scales, and dagger is sheathed at belt. Margin remains under 10% at mace and ground.",
+  "model": "not shown",
+  "notes": "Narrow-margin advisory inspected: all equipment and complete figure inside image; unlisted dagger removed.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-OATHSCALE.png",
-   "sha256": "708fd66719096bd62e3d9d1dfe684f8f9e71d3a6ffbe3ebeb0c3efe54ceafe41",
+   "sha256": "71bcefc6ca309e531a86b5981ed8143b7162a710339040339ee177d71f1b6517",
    "px": [
     1024,
     1536
@@ -9904,17 +9904,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-OATHSCALE.png",
-   "sha256": "3789dfb946f827bfdf47621ca9f5fd4d661ee635eec9ae4c2bb1cd665e8842ee",
+   "sha256": "f12d15fd5cf2ad3a20564c8c83add78887088ca8a06237251cc8849584df97d9",
    "px": [
-    820,
-    1439
+    840,
+    1493
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.733
+   "max_print_w_in_300ppi": 2.8
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-REDHAND": {
   "family": "hero",
