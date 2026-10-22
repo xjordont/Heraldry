@@ -9360,7 +9360,7 @@
   "route": "gpt",
   "spec_sha256": "e451613fdeeec3a88794d7c04ff7b0560081391c1c194dbee65d1247a168653a",
   "prompt_sha256": "59e3504c291be6dfe7e1cc96244644c6b8b5d22d42c1ab13f0a1972f57ba79e1",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T01:33:27+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9384,7 +9384,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.91
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-BLACKKNIFE": {
   "family": "hero",
@@ -9393,7 +9395,7 @@
   "route": "gpt",
   "spec_sha256": "77171a570a59f7a4d9833bdf6182a76e3fbcad8a8459f80af9e3141e183db280",
   "prompt_sha256": "c4bc053fcab718fa243ee7b462bade0cd7321913876e565dd284dba92147c341",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T01:35:13+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9417,7 +9419,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.783
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-CAIRNWRATH": {
   "family": "hero",
@@ -9426,7 +9430,7 @@
   "route": "gpt",
   "spec_sha256": "4c05966cee729cffa97838e89cab5031f6c1399b819a08b660aedbc5118647c5",
   "prompt_sha256": "dec8a8f19f2cbbd7d66e05232dffa2dc1dc178fd13bca1c02b18d9afee48659a",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T01:37:26+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9450,7 +9454,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.147
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-CROWWICK": {
   "family": "hero",
@@ -9459,7 +9465,7 @@
   "route": "gpt",
   "spec_sha256": "32217352d178f17537c86cf06460420f4885a17fbff70921e24abf6d9ddf9ade",
   "prompt_sha256": "88aa82f970eecf13baf7f53d60e0728cdd5c1d089dc36439cb0e3de48c56cda9",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T01:38:58+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9483,7 +9489,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.203
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-DAWNWARDEN": {
   "family": "hero",
@@ -9492,7 +9500,7 @@
   "route": "gpt",
   "spec_sha256": "1ed14362002cfe7ccfa8a0f6bf7c42ceaf22068c2205d1e63407b25f125176a7",
   "prompt_sha256": "be1530defcb5a9417f1f73a548a4c69abd43b1896d85ed3450f52edd1bb44cff",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T01:40:44+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9516,7 +9524,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.973
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-EMBERVOW": {
   "family": "hero",
@@ -9525,7 +9535,7 @@
   "route": "gpt",
   "spec_sha256": "244471ca46026e3c7d205b874e7be13b9f85cecffde206a7ba96275fb80ddaa3",
   "prompt_sha256": "56c6f74380e84c443c221e8b0c7cb1775a99fb507e270b317984c5af61d9db28",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T01:42:29+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9549,7 +9559,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.017
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-FURROWROOT": {
   "family": "hero",
@@ -9558,7 +9570,7 @@
   "route": "gpt",
   "spec_sha256": "4ce6af200cf7a2611787bfb4341ae7f03336337dd009547e8b16a3cd5fd1f49e",
   "prompt_sha256": "e6f94df8e15736e0cbad7c7e7c434ee227e5f2245bf78f8f4f5628e9a87398ba",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T01:44:02+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9582,7 +9594,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.13
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-GALEFLETCH": {
   "family": "hero",
@@ -9591,7 +9605,7 @@
   "route": "gpt",
   "spec_sha256": "26a338bf0d807d52eb70991180e62aea41d53fe3355b53b6221c5a895493b35c",
   "prompt_sha256": "d2975d67674a20d8de2094fb145c2c0ae07a31ec6b79db66f624029903aef87b",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T01:45:36+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9615,7 +9629,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.173
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-GALLOWTUSK": {
   "family": "hero",
@@ -9624,7 +9640,7 @@
   "route": "gpt",
   "spec_sha256": "bb0d8cb4ed5169063463646d424954f7236535d958232c46f8251e2916a909c0",
   "prompt_sha256": "4bc2e137a1db2b491ed75e1313b4c16f7d085929481a54d613931af23c58202e",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T01:47:34+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9648,7 +9664,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.14
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-GILDMIRROR": {
   "family": "hero",
@@ -9657,7 +9675,7 @@
   "route": "gpt",
   "spec_sha256": "c41e67ab924e301c07cccc7a87549785f7f6c2cdf2c68cd1d97aa7ada2d8440c",
   "prompt_sha256": "d584d1181bdcf42a7fdd0352416b4310be7cf0ec62438552d89ab0ad611871f6",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T01:49:48+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9681,7 +9699,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.277
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-GNAWTHOUGHT": {
   "family": "hero",
@@ -9690,7 +9710,7 @@
   "route": "gpt",
   "spec_sha256": "3b82f85499395ed5e4ffdcd68550a6cbef6404fa0f4e8a7d6c174b0e3c0ef378",
   "prompt_sha256": "8f0d427a685f01c025f9d20fcf21d1ddc8929ac98dfd5374d2d754532e6267f2",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T01:51:28+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9714,7 +9734,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.09
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-GRAVEGLASS": {
   "family": "hero",
@@ -9723,7 +9745,7 @@
   "route": "gpt",
   "spec_sha256": "1a298f13c6618538f49a856b79cd7963b9ce00f9111462777726ec37a1f30dd3",
   "prompt_sha256": "5df511e22c99d629fcb911ef38a36975a8d7e23ae01493ab32bb6c7ead367fbc",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T01:53:21+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9747,7 +9769,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.06
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-HEARTHBELL": {
   "family": "hero",
@@ -9756,7 +9780,7 @@
   "route": "gpt",
   "spec_sha256": "ae524d7469550eb029e6f037c3d980b914bdb809055fc3db3ecdd04a65692569",
   "prompt_sha256": "28be3cd22c33f93412ad443ef3e4394c4002f15eaefb571a623d96a820485b88",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T01:55:13+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9780,7 +9804,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.953
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-IRONSCAR": {
   "family": "hero",
@@ -9789,7 +9815,7 @@
   "route": "gpt",
   "spec_sha256": "391e6acb71ffeb9f35ea400b002e92fab75141aedce638a18049f593bfd4443b",
   "prompt_sha256": "9c844e0e26fe3ef1763365b8191634a10a3eda6c5e77da94c143170a7f05d290",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T01:57:44+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9813,7 +9839,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.183
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-MOSSGRAVE": {
   "family": "hero",
@@ -9822,7 +9850,7 @@
   "route": "gpt",
   "spec_sha256": "01e5983023718b92283c073d361131e6ba276a27506faee47ac90a298b619d4c",
   "prompt_sha256": "b37f76475ddd7440f0b7a73066c417bc6e5965e24ce6983b07e81e4f64a3d9a4",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T01:59:40+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9846,7 +9874,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.07
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-NIGHTLOOM": {
   "family": "hero",
@@ -9855,7 +9885,7 @@
   "route": "gpt",
   "spec_sha256": "30e16462acb539b5cc5c44416b3737047a463da35e44523d5b387c9e5a51d5c1",
   "prompt_sha256": "c2c48e248ce96c24b1a87487c1e34179e57e4fdd9896739e0f8cdd832e2cc9a6",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T02:01:40+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9879,7 +9909,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.137
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-OATHSCALE": {
   "family": "hero",
@@ -9888,7 +9920,7 @@
   "route": "gpt",
   "spec_sha256": "f365836989906b11018f47e7f124da4816aaff33891658e6b6017317e5963650",
   "prompt_sha256": "61289856c1b032fdbc4c31862a61437f8b0b2ac606c3d7f581c9905fa3361b32",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T02:03:16+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9912,7 +9944,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.733
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-REDHAND": {
   "family": "hero",
@@ -9921,7 +9955,7 @@
   "route": "gpt",
   "spec_sha256": "d57a03476d8d1512a170c5d6b4b3f6034905e0845dc4c8b1bc4b788f0c3c1186",
   "prompt_sha256": "575da11078d9f6e8bad83eaf963aa0c7fda9256b584c544093049505813d9ce1",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T02:05:09+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9945,7 +9979,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.887
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-SILKSHADE": {
   "family": "hero",
@@ -9954,7 +9990,7 @@
   "route": "gpt",
   "spec_sha256": "b15c34dbe40360301eeaf76b788094359814ba8a4e6f2b2f0169b0a937b3eedd",
   "prompt_sha256": "885f0063cd8ac58c4dad853a7dd81101e8a4c2e75c5f01367ebbc14c0196a5fe",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T02:07:26+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -9978,7 +10014,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.79
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-SOOTFINGER": {
   "family": "hero",
@@ -9987,7 +10025,7 @@
   "route": "gpt",
   "spec_sha256": "afca817254946254512cc930b14f4863a4bc9dbb30f119a319ccf2a21a33c18b",
   "prompt_sha256": "8ef3d8c7414a679840c28d2d50b407c3d6069a68805bd85691511d1a9444dd57",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T02:08:50+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -10011,7 +10049,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.263
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-STARCINDER": {
   "family": "hero",
@@ -10020,7 +10060,7 @@
   "route": "gpt",
   "spec_sha256": "c9774636c090a78fd3f2a347bd07a28c0fca35492ef51908d4f9d4a535b6192a",
   "prompt_sha256": "f35428628281f871616c6b6874b0db582f3d6c88e2d207b204226e2c7effb8f9",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T02:10:35+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -10044,7 +10084,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.27
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-STORMCROOK": {
   "family": "hero",
@@ -10053,7 +10095,7 @@
   "route": "gpt",
   "spec_sha256": "0161932afe008704e7b9b6ec1cb797d0bfb0372cbc86ba57a4c355bf0907be13",
   "prompt_sha256": "35024184146dc8e8c0ee9512603cbfaa9db0ca66cc2b2a70ac10e63bd2bfe957",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T02:11:56+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -10077,7 +10119,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.067
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-THORNMERE": {
   "family": "hero",
@@ -10086,7 +10130,7 @@
   "route": "gpt",
   "spec_sha256": "aee9bce76d6411bae7483cb30a1659059f55f50ed1acc009a90159b6ffe7b3bd",
   "prompt_sha256": "5ea0697b1e2592fd1bd63b666b421f8172ef700f13f959ec1e9fff3b6a19854b",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T02:13:38+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -10110,7 +10154,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.98
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  },
  "ART-HER-THOUGHTWAKE": {
   "family": "hero",
@@ -10119,7 +10165,7 @@
   "route": "gpt",
   "spec_sha256": "744d9c5f3b44c6f1fefccc3b455e884a510a577225bedb9b7055f3932788f024",
   "prompt_sha256": "a969c5f631191e1ce446dca5dc1ae5049deb72b2957afdbba8524ac0058543e2",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-22T02:15:03+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool exposed no model label)",
@@ -10143,6 +10189,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.267
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-22T14:17:58+00:00",
+  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
  }
 }

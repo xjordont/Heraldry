@@ -125,7 +125,7 @@ def prompt_for(e, with_refs, guided=False):
     final.append(fam.get("final") or v2["final_" + ("scene" if kind == "scene" else "figure")])
     out.append("FINAL VISUAL REQUIREMENTS\n" + "\n".join(final))
     if with_refs:
-        out.append("STYLE REFERENCES\n" + v2["reference"])
+        out.append("STYLE REFERENCES\n" + (b.get("reference_direction") or v2["reference"]))
         if guided and guide_path(e["id"]):
             out.append(GUIDE_TEXT)
     return "\n\n".join(out)

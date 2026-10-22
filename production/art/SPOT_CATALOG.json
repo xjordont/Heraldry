@@ -12108,7 +12108,7 @@
      "No horned helmet",
      "Not a comic dwarf: serious proportions, no oversized nose",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -12123,9 +12123,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-IRONSCAR/v1.png",
+      "sha256": "fe1fb49acd5e2db04b5d0851b85c89e1077fa12cd4bfecb0a07cc01770c9ef9b",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-IRONSCAR/v2.png",
+      "sha256": "024180ae79e40ebb518ab3c775af0cc67a63b8e009d3f43f3272e92c2b6935b2",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "391e6acb71ffeb9f35ea400b002e92fab75141aedce638a18049f593bfd4443b"
+   "spec_sha256": "ccf11f7dcd1387ae3be17bcdacacf20bbf6ec810be59222ab191911abb6608d1"
   },
   {
    "id": "ART-HER-GALLOWTUSK",
@@ -12176,7 +12189,7 @@
      "No horned helm or fantasy barbarian cliche",
      "No shield",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -12191,9 +12204,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-GALLOWTUSK/v1.png",
+      "sha256": "acac74f04b45074cc574c773bf4c9157a12797c4f1ee0ae2ba3d2def05a13bd7",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-GALLOWTUSK/v2.png",
+      "sha256": "11c3044aaaaccfd484a5405c586b7ffac035bda060be40c2cd4d1e713eb6e30d",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "bb0d8cb4ed5169063463646d424954f7236535d958232c46f8251e2916a909c0"
+   "spec_sha256": "3630343e6c87a26fd70b0f0c35f961eebc7ace0138aa092dcbf844aabeab412b"
   },
   {
    "id": "ART-HER-BLACKKNIFE",
@@ -12242,7 +12268,7 @@
      "No mask clichés",
      "Do not show a drawn rapier",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -12257,9 +12283,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-BLACKKNIFE/v1.png",
+      "sha256": "9d36ed712393ee78637eadd359e2ccfc5cef07c0ccda31649c4cb25678f702be",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-BLACKKNIFE/v2.png",
+      "sha256": "647cd0289b2ffb358fde1aa182d34844b96c7a18ed5b0cf2251019b755b2ed31",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "77171a570a59f7a4d9833bdf6182a76e3fbcad8a8459f80af9e3141e183db280"
+   "spec_sha256": "823ded0a6247457bb0eaa08ba139b00d62ca8292d336534d9d4d1e0e7e8e1514"
   },
   {
    "id": "ART-HER-SOOTFINGER",
@@ -12296,7 +12335,8 @@
      "Rapier with a swept hilt in the leading hand; dagger tucked into the belt at the back",
      "A short leather waistcoat over a plain shirt with the sleeves rolled to the elbow, one neat square patch, hems neat",
      "Plain short trousers and bare lower legs with rope-tied cloth shoes",
-     "Roll of lockpicks at the belt, a short smokestick (a tube with a trailing wisp) in the off hand"
+     "Roll of lockpicks at the belt, a short smokestick (a tube with a trailing wisp) in the off hand",
+     "Use version 1's grim, grounded adult goblin face with version 2's headscarf, waistcoat and clear tools. Avoid oversized cute eyes, toy proportions, chibi styling or a polished cartoon face."
     ],
     "must": [
      "Rapier in the leading hand",
@@ -12309,7 +12349,7 @@
      "Not a rag-wearing raider: clean, mended clothing",
      "Do not make it toy-like or cartoonish",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -12324,9 +12364,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-SOOTFINGER/v1.png",
+      "sha256": "73d86b01bf0570f896e51b7ebdd3fcfd92f15d9d5423d0059984540a22cc50d1",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-SOOTFINGER/v2.png",
+      "sha256": "090f16f78fbd3e310a3f625c030b05b73207a6958c9302c8d9c5df7ed7f08741",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "afca817254946254512cc930b14f4863a4bc9dbb30f119a319ccf2a21a33c18b"
+   "spec_sha256": "27ad728f36924529f1178cea9419078b83cdc1b115873f995ba001ba52c99238"
   },
   {
    "id": "ART-HER-HEARTHBELL",
@@ -12377,7 +12430,7 @@
      "No halo or holy symbol lettering",
      "Not a comic dwarf",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -12392,9 +12445,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-HEARTHBELL/v1.png",
+      "sha256": "9bd16f0fbc638714a51181d7f46a34f25a5a06a9d04e54666ef2c12b2b7241ac",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-HEARTHBELL/v2.png",
+      "sha256": "cee2f7b5b51a2b6b126b5ee1966a1c134f8d15df40cf9639ced9567857f20822",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "ae524d7469550eb029e6f037c3d980b914bdb809055fc3db3ecdd04a65692569"
+   "spec_sha256": "311e8e335714b498aea1baab8204aecf4989678b9cdc27c3c69221a954b9be51"
   },
   {
    "id": "ART-HER-EMBERVOW",
@@ -12431,7 +12497,8 @@
      "No cloak: the coat is the whole outer garment",
      "Quarterstaff with plain wooden ends",
      "Two stoppered holy water flasks hanging at the belt",
-     "A knotted vow cord at the wrist with burnt-black ends, a signet ring"
+     "A knotted vow cord at the wrist with burnt-black ends, a signet ring",
+     "Eyes, skin and holy-water flasks are black ink and white paper only; no red eye tint."
     ],
     "must": [
      "Quarterstaff held with both hands",
@@ -12445,7 +12512,7 @@
      "Not an Imp or Demon monster",
      "No sword",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -12460,9 +12527,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-EMBERVOW/v1.png",
+      "sha256": "0e2c009ed357a225488d724b0bdf1f57cb5ed06c331d07eea1c8eadd67f42a69",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-EMBERVOW/v2.png",
+      "sha256": "b3f6b459d4438550f1d6dabb42e707bc79b2d06c285ae6d2b2fad6f0ce651e75",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "244471ca46026e3c7d205b874e7be13b9f85cecffde206a7ba96275fb80ddaa3"
+   "spec_sha256": "ab274de92c2c63d66e935cf8c8600d6a67f20c00b5a1e7cf09c751255047d782"
   },
   {
    "id": "ART-HER-GRAVEGLASS",
@@ -12510,7 +12590,7 @@
      "No spell effects",
      "Do not give it a staff",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -12525,9 +12605,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-GRAVEGLASS/v1.png",
+      "sha256": "9c0a339446348f3721d2bbbb75f1f170d6deac3fe5ddfb086a39868ebd682d1c",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-GRAVEGLASS/v2.png",
+      "sha256": "cdae7e90619bad97506831343440f09d068d30cd4b02cbd9ebece37466825202",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "1a298f13c6618538f49a856b79cd7963b9ce00f9111462777726ec37a1f30dd3"
+   "spec_sha256": "f47a826c9ee5c175c10d124cb5eacbc6d91701d8434c79ea6941c5a268659e84"
   },
   {
    "id": "ART-HER-STARCINDER",
@@ -12575,7 +12668,7 @@
      "No spell effects, fire or ice drawn",
      "Not a court elf: no ornate finery",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -12590,9 +12683,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-STARCINDER/v1.png",
+      "sha256": "67232b84fd1a43bc0324f0a921d2861595599f293da8d8327e375732de9f0a35",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-STARCINDER/v2.png",
+      "sha256": "0ff8c1a6f59a089e7e204aa76a00a377f304025b72b03b0e5a66df8856679902",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "c9774636c090a78fd3f2a347bd07a28c0fca35492ef51908d4f9d4a535b6192a"
+   "spec_sha256": "a830805d90d118312425f6fb0d9d440c85cb92193fb19f3203066000b44374c6"
   },
   {
    "id": "ART-HER-REDHAND",
@@ -12628,7 +12734,8 @@
      "A large handprint painted solid black across the chest, fingers spread",
      "Baggy homespun trousers tied at the shin with straw rope, heavy farm boots",
      "Dagger at the belt",
-     "No cloak"
+     "No cloak",
+     "The hide cuirass must be unmistakable armour with visible cut edges, seams and side lacing, distinct from bare skin. Paint the handprint on the hide armour, never on a bare muscular chest."
     ],
     "must": [
      "Greataxe held with both hands",
@@ -12641,7 +12748,7 @@
      "No gore",
      "Do not give the figure a shield",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -12656,9 +12763,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-REDHAND/v1.png",
+      "sha256": "ec83404a0ff93b75202293fef9d36b2e23708ba87fd8552238da00f4c6f2310b",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-REDHAND/v2.png",
+      "sha256": "71a01756feeff2da7489cbcd343e6783fee5272c8f7ed286831194950d547b78",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "d57a03476d8d1512a170c5d6b4b3f6034905e0845dc4c8b1bc4b788f0c3c1186"
+   "spec_sha256": "44753671ab3b2ab85f81bc876099cca4dbf43ac590b7ec261338784fedd6c132"
   },
   {
    "id": "ART-HER-CAIRNWRATH",
@@ -12708,7 +12828,7 @@
      "Not a comic dwarf",
      "No gore",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -12723,9 +12843,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-CAIRNWRATH/v1.png",
+      "sha256": "bc755be0f96fadfc72234332a22f679fa05d54de0edf8c6cb0066a33d6a78ff4",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-CAIRNWRATH/v2.png",
+      "sha256": "bde8c0209e02624ad70a954ea2845062e8edd4bdaf76e64c726cd6f815a7c128",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "4c05966cee729cffa97838e89cab5031f6c1399b819a08b660aedbc5118647c5"
+   "spec_sha256": "95b52cbc9b134b11543ea18be3e461ac23c80eb3b8cf11b65c6e95c40af61ade"
   },
   {
    "id": "ART-HER-THORNMERE",
@@ -12773,7 +12906,7 @@
      "No animal companion",
      "No target or enemy drawn",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -12788,9 +12921,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-THORNMERE/v1.png",
+      "sha256": "0cd92a9051ddf6bff2e41ce2cd225ec4f4f8854c513fe91bd1ea2b2a246ac31a",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-THORNMERE/v2.png",
+      "sha256": "520659cb3c0c6a209afa461fc7bc8aafcef7673446277e55e50a8156eb998183",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "aee9bce76d6411bae7483cb30a1659059f55f50ed1acc009a90159b6ffe7b3bd"
+   "spec_sha256": "5b7deb10d7331aaa29ecb2178540833c7464da84561980e33b98c35a9d07c5b3"
   },
   {
    "id": "ART-HER-GALEFLETCH",
@@ -12839,7 +12985,7 @@
      "Not a court elf: no ornate finery",
      "No animal companion",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -12854,9 +13000,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-GALEFLETCH/v1.png",
+      "sha256": "2b24f764f78ff2d2719523a088024112db82e28f5f837806129233b1629da594",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-GALEFLETCH/v2.png",
+      "sha256": "4bda1a730369785325a1e0ea44b14788f82644cc50c935d7b0d97b167e2ae71d",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "26a338bf0d807d52eb70991180e62aea41d53fe3355b53b6221c5a895493b35c"
+   "spec_sha256": "bef639ce79ae184f84963b7d9e4bcc1b864ef69d2754ea2ca9b8559e5860f5ec"
   },
   {
    "id": "ART-HER-OATHSCALE",
@@ -12891,14 +13050,13 @@
      "Breastplate (plate cuirass) over a padded coat, with a short plain white surcoat tied at the waist, clean hem",
      "Heater shield (flat-topped, pointed at the foot) on the left arm, plain face with a bold black border",
      "Flanged mace in the right hand with a knotted oath cord on the haft",
-     "A dagger in a plain sheath clearly visible on the belt at the hip",
-     "Soldier's open kettle helm hanging at the belt on a strap; no cloak"
+     "Soldier's open kettle helm hanging at the belt on a strap; no cloak",
+     "Keep a human face with localized jaw, neck and hand scales and a small crown horn ridge. Show only the listed mace, heater shield and breastplate; no extra dagger."
     ],
     "must": [
      "Mace in the right hand",
      "Heater shield on the left arm",
      "Breastplate (plate cuirass)",
-     "A dagger in a sheath clearly visible at the belt",
      "Ridge horns and scales on a human-shaped face"
     ],
     "avoid": [
@@ -12907,7 +13065,7 @@
      "Not the Demonborn horns-and-tail look: use ridge horns and scales",
      "No glowing weapon",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -12922,9 +13080,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-OATHSCALE/v1.png",
+      "sha256": "610c84389f201b9c9b0e297a196e95cb71024dd22eb92dec0fb009d38c3416b1",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-OATHSCALE/v2.png",
+      "sha256": "708fd66719096bd62e3d9d1dfe684f8f9e71d3a6ffbe3ebeb0c3efe54ceafe41",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "f365836989906b11018f47e7f124da4816aaff33891658e6b6017317e5963650"
+   "spec_sha256": "09eb892ae692be9a0c91cadafd390a9728160eac401f7507d0bcf359af559cef"
   },
   {
    "id": "ART-HER-DAWNWARDEN",
@@ -12973,7 +13144,7 @@
      "No glowing sword, halo or wings",
      "No readable lettering on the shield",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -12988,9 +13159,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-DAWNWARDEN/v1.png",
+      "sha256": "46e4303fde50c6e27bcd83c46fce1b93429522fea1a5f6af025439cb6ce99c23",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-DAWNWARDEN/v2.png",
+      "sha256": "b215df9214290e6ccb067ea212ea1e51323d23250cd59562a843ddd437d5632d",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "1ed14362002cfe7ccfa8a0f6bf7c42ceaf22068c2205d1e63407b25f125176a7"
+   "spec_sha256": "f59a9b9b2491e3863a2d438dd49698a60707919b99adc9e08686e4d9d60b0408"
   },
   {
    "id": "ART-HER-MOSSGRAVE",
@@ -13036,7 +13220,7 @@
      "No animal companion",
      "No grey or olive tone: the moss is drawn in black line and solid black only",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -13051,9 +13235,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-MOSSGRAVE/v1.png",
+      "sha256": "ab45ed8643b312936600df1ae2cf777312b7f0ef951a1cee20c46da3d4ad8738",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-MOSSGRAVE/v2.png",
+      "sha256": "07c9a7b6ad2b111ffc4b005019d4353517ac294ad7bcd2538fde1672ef4a7ef2",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "01e5983023718b92283c073d361131e6ba276a27506faee47ac90a298b619d4c"
+   "spec_sha256": "436d0b04095aa51189f81c128bf78b1e8716e9dd258409cf8412a21ae6abbd00"
   },
   {
    "id": "ART-HER-FURROWROOT",
@@ -13103,7 +13300,7 @@
      "Not toy-like or cartoonish",
      "No magical effects",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -13118,9 +13315,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-FURROWROOT/v1.png",
+      "sha256": "9f8358dedb28ee1cbbc940d9ea59386958eac5591d6fc57f48eb10b5921e2061",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-FURROWROOT/v2.png",
+      "sha256": "2c3989ede53e9d4a72802a61400a78a5be3e14280cf70ba97342fa992febefb5",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "4ce6af200cf7a2611787bfb4341ae7f03336337dd009547e8b16a3cd5fd1f49e"
+   "spec_sha256": "dda5b6c34d8bb4047190bf4aae688d674e61fe69162ff60edfc8417a8dcc68aa"
   },
   {
    "id": "ART-HER-THOUGHTWAKE",
@@ -13166,7 +13376,7 @@
      "No glowing eyes, aura or floating objects",
      "No spell effects",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -13181,9 +13391,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-THOUGHTWAKE/v1.png",
+      "sha256": "5bea35a5e93dfc7a602103a2c42da2ca15dbd60dadd34c66e7afb6fa5b9875cd",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-THOUGHTWAKE/v2.png",
+      "sha256": "3c04c57c4b541a146966e8ba1de429cc72ed060e2ad62347f5add8941fb124a3",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "744d9c5f3b44c6f1fefccc3b455e884a510a577225bedb9b7055f3932788f024"
+   "spec_sha256": "cba67c2ca2f612f5ff8a3bc4855101cc2adb224bf69b31eb67ad2c238c664ebd"
   },
   {
    "id": "ART-HER-GNAWTHOUGHT",
@@ -13234,7 +13457,7 @@
      "No glowing eyes or aura",
      "No staff or books",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -13249,9 +13472,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-GNAWTHOUGHT/v1.png",
+      "sha256": "0d00efe36ce8f698d000bd5ae5027de00196e1ee27a0a9a0d376c99b6a802883",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-GNAWTHOUGHT/v2.png",
+      "sha256": "38fc8e71f4d69703e511a159419247dd3a89f959b44419c9fd2ac76a773ee39e",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "3b82f85499395ed5e4ffdcd68550a6cbef6404fa0f4e8a7d6c174b0e3c0ef378"
+   "spec_sha256": "50864242f72b08a060368b7ab60eb1daf562995f0352f31d69470796fc5d99fd"
   },
   {
    "id": "ART-HER-ASHBORN",
@@ -13300,7 +13536,7 @@
      "Not an Imp or Demon monster",
      "No ritual dagger or staff",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -13315,9 +13551,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-ASHBORN/v1.png",
+      "sha256": "bd622b27cf260136aa3c66e38a1a12a8fdbc0b29cce447226dc0371305c37e64",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-ASHBORN/v2.png",
+      "sha256": "f55db96d34572d8e20a9abe0d043e20dc95961733e98775804a5855827fb0577",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "e451613fdeeec3a88794d7c04ff7b0560081391c1c194dbee65d1247a168653a"
+   "spec_sha256": "0c01886faf5cd54e23d7e224cc7943323848d57d59319433bd2d3fcb9258ec6a"
   },
   {
    "id": "ART-HER-STORMCROOK",
@@ -13353,7 +13602,8 @@
      "Quarterstaff with a hooked shepherd's crook at the top",
      "Sling and a pouch of stones coiled at the belt",
      "A heavy hooded travelling cloak with a clean cut edge, blown out sideways in a few bold sweeping folds; this is the only windblown cloak in the series",
-     "A leather coat beneath, a roll of bandages at the belt, wrapped herder's boots"
+     "A leather coat beneath, a roll of bandages at the belt, wrapped herder's boots",
+     "Drakeblood has a human face with localized jaw, neck and hand scales and a short ridge of small horns across brow and crown, not two separated Demonborn horns and not a reptile snout."
     ],
     "must": [
      "Quarterstaff with a hooked crook top held with both hands",
@@ -13367,7 +13617,7 @@
      "Do not copy the Demonborn look: use ridge horns and scales",
      "No sheep or animals",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -13382,9 +13632,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-STORMCROOK/v1.png",
+      "sha256": "3136fede17378a565137cdb9bfded7d600017bd975b9a4d358c37dd1b61ebc5e",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-STORMCROOK/v2.png",
+      "sha256": "cc3ddbde493c6171ee604550a5f5b44ef47cf22a4bd4c738f4c5677ac63e1e83",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "0161932afe008704e7b9b6ec1cb797d0bfb0372cbc86ba57a4c355bf0907be13"
+   "spec_sha256": "5a26e554a67f7be50fa3f5788ef6e008644102a9ae1eee2929b289e56d26a1be"
   },
   {
    "id": "ART-HER-SILKSHADE",
@@ -13434,7 +13697,7 @@
      "Not the Blackknife rogue: no stalking crouch, no turned collar, no long coat",
      "Do not show the target or gore",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -13449,9 +13712,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-SILKSHADE/v1.png",
+      "sha256": "fbda4ed0a83389762aca3bdae3b9e7a32d0c04c8d28398a6b302476e30a66f6a",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-SILKSHADE/v2.png",
+      "sha256": "ee0d178ab3cdcfe9ef791cb03902fd361a3a8f0b8d38860d0be873bd6ea477c5",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "b15c34dbe40360301eeaf76b788094359814ba8a4e6f2b2f0169b0a937b3eedd"
+   "spec_sha256": "56928bbd28f3872ece5831aa0dc9bc46333d6e4eef0f679b54e98cb2cf1fa947"
   },
   {
    "id": "ART-HER-NIGHTLOOM",
@@ -13503,7 +13779,7 @@
      "No spider imagery",
      "Do not draw the cloak ragged or fringed",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -13518,9 +13794,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-NIGHTLOOM/v1.png",
+      "sha256": "5c62940c8e61286fbb833dc91395f3b2ec347d16ee242c66feffd1fe5301250f",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-NIGHTLOOM/v2.png",
+      "sha256": "004eff2485cbc4fe35738f0071fcef65cf093e2ba66e7343ac28ee6128a334de",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "30e16462acb539b5cc5c44416b3737047a463da35e44523d5b387c9e5a51d5c1"
+   "spec_sha256": "78113a9b06149a45d7f5e920c22276d5293cc03471cab48aa14027468e4959cb"
   },
   {
    "id": "ART-HER-CROWWICK",
@@ -13556,7 +13845,8 @@
      "A half-unrolled scroll with a ribbon seal held out in one hand, covered in blank wavy lines (no lettering)",
      "Plain short club in the other hand",
      "A stub of candle in a small tin holder clipped to the belt, its wick burnt",
-     "Ink-black fingertips"
+     "Ink-black fingertips",
+     "Scroll face is completely blank white, without pseudo-writing, wavy lines, glyphs or letters; retain the rolled ends and seal."
     ],
     "must": [
      "A half-unrolled scroll in one hand",
@@ -13570,7 +13860,7 @@
      "No readable writing on the scroll",
      "No magical effects or double of the figure",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -13585,9 +13875,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-CROWWICK/v1.png",
+      "sha256": "8806016beb31c58a23f4cbb1e21b38ee88dbfea5f5f3c8ae066753f1d4a3ac6a",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-CROWWICK/v2.png",
+      "sha256": "541fe32cd6dfe8e2f483c66924b89537d34473f8d79e1f84e18aecb996f5b89c",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "32217352d178f17537c86cf06460420f4885a17fbff70921e24abf6d9ddf9ade"
+   "spec_sha256": "1421c80d7947c73ac771f8bbffdfe2503fa83ae9628f8527d95fc7bf44414262"
   },
   {
    "id": "ART-HER-GILDMIRROR",
@@ -13622,7 +13925,8 @@
      "Hand mirror with an ornate gilt frame and a blank oval face, raised in the off hand",
      "A fine knee-length leather frock coat with a row of large gilt buttons, trimmed cuffs, a merchant's moneybag at the belt, clean hems",
      "A roll of bandages tucked into the belt",
-     "A bunched merchant's cap, polished buckled boots"
+     "A bunched merchant's cap, polished buckled boots",
+     "Mirror frame uses black line and white paper only, without gilt, yellow or metallic colour."
     ],
     "must": [
      "Elven rapier extended in one hand",
@@ -13636,7 +13940,7 @@
      "Do not duplicate the Graveglass gnome's lens and satchel silhouette",
      "Not toy-like or cartoonish",
      "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
-     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights",
      "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
@@ -13651,9 +13955,22 @@
      "6.9 Ancestries",
      "6.10 Backgrounds",
      "6.13 Hero Classes"
-    ]
+    ],
+    "reference_images": [
+     {
+      "path": "assets/art/variants/ART-HER-GILDMIRROR/v1.png",
+      "sha256": "fbdeccb2f3e6e23381d7bfa349e778412342e209cf1368a733cc05010eb40c75",
+      "version": 1
+     },
+     {
+      "path": "assets/art/variants/ART-HER-GILDMIRROR/v2.png",
+      "sha256": "26cf3ee0123f9172f805122ffc92bf7b8d97bb6f7eb4b3994434f7d4acec0e5e",
+      "version": 2
+     }
+    ],
+    "reference_direction": "Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people."
    },
-   "spec_sha256": "c41e67ab924e301c07cccc7a87549785f7f6c2cdf2c68cd1d97aa7ada2d8440c"
+   "spec_sha256": "d4e7f190f2410d7133a3f52051ab8f7b3f88e295e8ad9fbaf02d628dddd8354c"
   }
  ]
 }

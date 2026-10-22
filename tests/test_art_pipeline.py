@@ -89,6 +89,11 @@ class ArtPipeline(unittest.TestCase):
                 if "/" in cand:
                     (root / cand).parent.mkdir(parents=True, exist_ok=True)
                     (root / cand).write_bytes(b"stand-in")
+        for entry in g.entries():
+            for ref in (entry.get("brief") or {}).get("reference_images", []):
+                path = root / ref["path"]
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text("version https://git-lfs.github.com/spec/v1\noid sha256:" + ref["sha256"] + "\nsize 1\n", newline="\n")
         import art_composition
         for i in art_composition.guides():
             (root / art_composition.guide_path(i)).parent.mkdir(parents=True, exist_ok=True)
@@ -144,6 +149,21 @@ class ArtPipeline(unittest.TestCase):
             self.assertIn(it["size"], ("1536x1024", "1024x1536", "1024x1024"))
             self.assertEqual(it["print_w_in"], g.CFG["families"][it["family"]]["print_w_in"])
         self.assertEqual({it["max_attempts"] for it in q["items"]}, {1})       # one generation per item (owner 2026-10-12)
+
+    def test_hero_pair_references_are_ordered_and_hash_bound(self):
+        import art_gpt_pack as pack, art_generate as g
+        root = self._reference_root()
+        heroes = [e for e in g.entries() if e["family"] == "hero"]
+        self.assertEqual(len(heroes), 24)
+        for e in heroes:
+            refs = e["brief"]["reference_images"]
+            self.assertEqual([r["version"] for r in refs], [1, 2])
+            self.assertEqual(pack.references_for(e, {}, root), [r["path"] for r in refs])
+            self.assertIn("reference 1 is version 1", g.prompt_for(e, True))
+        e = heroes[0]
+        (root / e["brief"]["reference_images"][0]["path"]).write_bytes(b"changed")
+        with self.assertRaisesRegex(SystemExit, "hash mismatch"):
+            pack.references_for(e, {}, root)
 
     def test_every_monster_has_exactly_one_kind(self):
         import copy
