@@ -9952,17 +9952,17 @@
   "title": "Silkshade",
   "heading_id": "h-silkshade",
   "route": "gpt",
-  "spec_sha256": "5d919e4589c6254e72f61f6550752ddc93e5f28e458d1e46419c4047b84a238a",
-  "prompt_sha256": "71cc5f9d51793a934e82ea72c91238c0c4290293940945dc4acff6045a8f8036",
-  "status": "rejected",
-  "received_at": "2026-10-21T20:28:14+00:00",
+  "spec_sha256": "b15c34dbe40360301eeaf76b788094359814ba8a4e6f2b2f0169b0a937b3eedd",
+  "prompt_sha256": "885f0063cd8ac58c4dad853a7dd81101e8a4c2e75c5f01367ebbc14c0196a5fe",
+  "status": "received",
+  "received_at": "2026-10-22T02:07:26+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool gave no model label)",
-  "notes": "One generation, 1024x1536. Checker warned narrow margin (2.7% outer 6% band); visual review confirms full figure and sash uncut. Preserve warning.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Reviewer correction: stitched diamond jacket and bold trailing sash with requested weapons and vial. Hair, sash and boot margins remain below 10%.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-SILKSHADE.png",
-   "sha256": "fbda4ed0a83389762aca3bdae3b9e7a32d0c04c8d28398a6b302476e30a66f6a",
+   "sha256": "ee0d178ab3cdcfe9ef791cb03902fd361a3a8f0b8d38860d0be873bd6ea477c5",
    "px": [
     1024,
     1536
@@ -9970,17 +9970,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-SILKSHADE.png",
-   "sha256": "ce78c8b6a5f69e323951a838d27fc67d120a7ac64bcf1fa1158304be42be26f8",
+   "sha256": "3dba975788d96439dd13f7f2534b9c6fc2da74eae7205f4bfaba6f9ab161d0a2",
    "px": [
-    854,
-    1496
+    837,
+    1464
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.847
+   "max_print_w_in_300ppi": 2.79
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:25+00:00",
-  "rejected_reason": "Use a stitched harlequin-diamond tumbler's jacket with a bold trailing sash; keep the mask, dagger, knives and venom vial; more margin. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-SOOTFINGER": {
   "family": "hero",
