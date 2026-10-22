@@ -9556,17 +9556,17 @@
   "title": "Furrowroot",
   "heading_id": "h-furrowroot",
   "route": "gpt",
-  "spec_sha256": "4ce6af200cf7a2611787bfb4341ae7f03336337dd009547e8b16a3cd5fd1f49e",
-  "prompt_sha256": "e6f94df8e15736e0cbad7c7e7c434ee227e5f2245bf78f8f4f5628e9a87398ba",
-  "status": "rejected",
-  "received_at": "2026-10-22T01:44:02+00:00",
+  "spec_sha256": "dda5b6c34d8bb4047190bf4aae688d674e61fe69162ff60edfc8417a8dcc68aa",
+  "prompt_sha256": "8457c2c991d050db2f71bbc86cedda487f1cb986c2dacba01e95607915911da8",
+  "status": "received",
+  "received_at": "2026-10-22T15:18:50+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Correction: show the smock, apron and open leather coat with a wide straw hat, while keeping the elven sickle, sling and belt bandages; avoid the gnome-like bandolier and lens silhouette. Correction: keep hems clean, use bold simple shapes with sparse hatching and pure black ink, and leave at least 10% clear margin with no stray specks; keep the full figure and listed equipment visible.",
+  "model": "not shown",
+  "notes": "Midtone and narrow-margin warnings inspected: local hatch texture, all subject edges complete without contact.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-FURROWROOT.png",
-   "sha256": "2c3989ede53e9d4a72802a61400a78a5be3e14280cf70ba97342fa992febefb5",
+   "sha256": "2bd41c43878f218c49b4214745ef6f759f275f78b9025fa7d0c6c80c2a7cc90f",
    "px": [
     1024,
     1536
@@ -9574,17 +9574,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-FURROWROOT.png",
-   "sha256": "ce7d9bcaaf99a16541adb75f60bd75734c9b06d8b7b7bbe88e04677ed4be62e9",
+   "sha256": "06b5dd5abdea6de8e983d8422380267b9d1ff6fdd6c32574d7aaaae816462145",
    "px": [
-    939,
-    1439
+    946,
+    1460
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.13
+   "max_print_w_in_300ppi": 3.153
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-GALEFLETCH": {
   "family": "hero",
