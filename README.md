@@ -10,11 +10,11 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 
 <!-- BEGIN AUTO:status -->
 
-- **Manuscript:** [RC513](source/Heraldry_RC513.md) (`source/versions.json`). Earlier snapshots are immutable.
-- **Last recorded delivery:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages. RC513 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
+- **Manuscript:** [RC514](source/Heraldry_RC514.md) (`source/versions.json`). Earlier snapshots are immutable.
+- **Last recorded delivery:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages. RC514 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
 - **Illustration records:** 299 approved of 299; 24 generation-queue items.
-- **Rules figures:** 57; 57/57 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
+- **Rules figures:** 57; 56/57 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
 <!-- END AUTO:status -->
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`b6b5c79f`](https://github.com/xjordont/Heraldry/commit/b6b5c79f4417a740fad0e3ef0e0ed18de3a0537d) manuscript: RC514 Basic Mode starting coins and background items
 - [`8214f250`](https://github.com/xjordont/Heraldry/commit/8214f25006ed03c87814a90520296f96913782e7) hero record: populate the illustrated record for the 24 Basic Mode Heroes
 - [`20cb13bc`](https://github.com/xjordont/Heraldry/commit/20cb13bc5787ec2402fa407a52923b1f7f5378cb) ci: fetch Hero portraits for card tests; skip Work package test without LFS images
 - [`98ca8910`](https://github.com/xjordont/Heraldry/commit/98ca8910374392d874a5e1dde9794ab6e4df8255) hero record: add illustrated blank Hero Record, front and Powers & Talents reverse
 - [`86ce6f1d`](https://github.com/xjordont/Heraldry/commit/86ce6f1d4eb729cf1f6f6305340b7ddf1d1b6c19) layout: restore black visual anchors on blank Hero record
 - [`3006eb12`](https://github.com/xjordont/Heraldry/commit/3006eb124720854a231cb20276ec0830259d6215) layout: refine blank Hero record with book typography and open ledgers
-- [`4293a055`](https://github.com/xjordont/Heraldry/commit/4293a055d7953d194bf8f3640e4e27ba2066ff93) layout: standardize expanded Hero records with attached field labels
 
 <!-- END AUTO:recent -->
 
