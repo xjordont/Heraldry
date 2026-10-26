@@ -1,0 +1,34 @@
+@page{size:8.5in 11in;margin:0}
+@font-face{font-family:'Grenze Gotisch';font-weight:100 900;src:url('../../fonts/static/GrenzeGotisch[wght].ttf') format('truetype')}
+@font-face{font-family:'Source Sans 3';font-weight:400;src:url('../../fonts/static/SourceSans3-Regular.ttf') format('truetype')}
+@font-face{font-family:'Source Sans 3';font-weight:600;src:url('../../fonts/static/SourceSans3-Semibold.ttf') format('truetype')}
+@font-face{font-family:'Source Sans 3';font-weight:700;src:url('../../fonts/static/SourceSans3-Bold.ttf') format('truetype')}
+@font-face{font-family:'Source Serif 4';font-weight:700;src:url('../../fonts/static/SourceSerif4-Bold.ttf') format('truetype')}
+body{margin:0;background:#fff}
+a{color:#000}a:hover{color:#000}
+.hr-l{position:absolute;margin:0;font-family:'Source Sans 3',sans-serif;font-weight:600;line-height:1;white-space:nowrap;color:#000}
+.hr-c{text-align:center}
+.hr-rule{position:absolute;height:0;border-top:1px solid #000}
+.hr-prod{position:absolute;margin:0;font-family:'Source Serif 4',serif;font-weight:700;line-height:1;white-space:nowrap;color:#000}
+.hr-title{position:absolute;margin:0;font-family:'Grenze Gotisch',serif;font-weight:700;line-height:1;white-space:nowrap;color:#000}
+.hr-stat{position:absolute;margin:0;font-family:'Source Sans 3',sans-serif;font-weight:700;line-height:1;text-align:center;white-space:nowrap;color:#fff}
+.hr-res{position:absolute;margin:0;font-family:'Source Serif 4',serif;font-weight:700;line-height:1;text-align:center;white-space:nowrap;color:#000}
+.hr-band{position:absolute;margin:0;font-family:'Grenze Gotisch',serif;font-weight:700;line-height:1;white-space:nowrap;color:#fff}
+.hr-head2{position:absolute;margin:0;font-family:'Grenze Gotisch',serif;font-weight:700;line-height:1;white-space:nowrap;color:#000}
+.hr-cap{position:absolute;margin:0;box-sizing:border-box;padding-left:0.16em;font-family:'Source Sans 3',sans-serif;font-weight:600;line-height:1;text-align:center;text-transform:uppercase;letter-spacing:0.16em;white-space:nowrap;color:#000}
+.hr-legend{position:absolute;margin:0;padding:0 4px 0 3px;background:#fff;font-family:'Source Sans 3',sans-serif;font-weight:700;font-size:12px;line-height:13px;letter-spacing:0.16em;text-transform:uppercase;white-space:nowrap;color:#000}
+.hr-lz{display:inline-block;width:4.4px;height:4.4px;background:#000;transform:rotate(45deg);vertical-align:2.4px;margin:0 6px 0 1px}
+.hr-lz-r{margin:0 0 0 4px}
+/* filled values (populated sheets) */
+.hf{position:absolute;margin:0;font-family:'Source Sans 3',sans-serif;font-weight:400;color:#000;white-space:nowrap}
+.hf b{font-weight:600}
+.hf.wrap{white-space:normal;overflow-wrap:break-word}
+.hf.nm{font-weight:600}
+.hv{position:absolute;margin:0;font-family:'Source Sans 3',sans-serif;font-weight:700;color:#000;text-align:center;white-space:nowrap;line-height:1}
+.hres{position:absolute;margin:0;font-family:'Source Serif 4',serif;font-weight:700;color:#000;text-align:center;white-space:nowrap;line-height:1}
+.hname{position:absolute;margin:0;font-family:'Grenze Gotisch',serif;font-weight:700;color:#000;white-space:nowrap;line-height:1}
+.hid{position:absolute;margin:0;font-family:'Source Serif 4',serif;font-weight:700;color:#000;white-space:nowrap;line-height:1}
+/* small captions at the top of the DEX and SPD fields */
+.hr-fcap{position:absolute;margin:0;font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:12px;line-height:1;text-align:center;white-space:nowrap;color:#000}
+.hr-fcap .lbl{letter-spacing:0.16em;text-transform:uppercase}
+.hr-fcap .ln{display:inline-block;width:20px;height:0;border-bottom:1px solid #000;margin-left:3px;vertical-align:0}
