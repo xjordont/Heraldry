@@ -1844,9 +1844,16 @@
      "issue": "Resting suffix was not decoded in local key.",
      "fix": "Expanded local key; normalised minus signs without altering arithmetic.",
      "review_report": "production/qa/figure-review-core-rc493.md"
+    },
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "RC514 re-review (2026-10-26): Appendix B changed only in B.4 (Coins in each stat line, background starting items, carried-only notes, and the intro sentence on Coins). Rendered FIG-19 inspected against RC514: Ironscar SPD 4\" unchanged (B.4 stat line); Strongbox 12c, 3 Satchels at 4c, -2\" Speed to a minimum of 1\", extraction through the own edge, and Monster Coin Value scoring unchanged (B.6, RC514 lines 17622-17675); Goblin 1c, Skeleton Warrior 1c, Bandit 3c unchanged (B.5). The new starting Coins are not part of a side's score (B.4 intro), so the example score 12 + 4 + 2 + 3 = 21c stands. SVG and caption unchanged.",
+     "evidence_source_line": "RC514 16622; 16666; 17622-17675",
+     "fix": "None; source line references in Appendix B after B.4 shift by +40."
     }
    ],
-   "rules_sha256": "646f12a93778563b65910440762130a36112fd7a477c752b9ab72f068e7984af",
+   "rules_sha256": "933872bce04ebb63272fcff966ea9bf9c21f4953e9d7067e6fce9c2e61695cc1",
    "reviewed_at": "2026-10-07T10:58:00Z",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1910,6 +1917,17 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc514_review": {
+    "reviewed_at": "2026-10-26",
+    "reviewer": "Claude Code integration owner; model review of the rendered SVG against the RC514 source, not independent human proof",
+    "source": "source/Heraldry_RC514.md",
+    "source_sha256": "fa433e49b017eeb4b5fa16de4883e9955dc82b7c9ec151d1ad0cc835be2fe4cd",
+    "checked_source_sections": [
+     "B"
+    ],
+    "verdict": "PASS",
+    "summary": "Only B.4 changed (starting Coins and background items). Every value the figure shows is unchanged; starting Coins are not part of a side's score."
    }
   },
   {
