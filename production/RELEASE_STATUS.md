@@ -1,4 +1,8 @@
-# Release status - RC513 source / RC492 delivery
+# Release status - RC514 source / RC492 delivery
+
+## RC514 manuscript - 2026-10-26
+
+RC514 (Basic Mode starting coins and background items) is the active manuscript. It has not been built or released; the published delivery remains RC492-build-37 and predates RC513 and RC514. FIG-19 needs a semantic review before the next release. Physical print **NOT TESTED**.
 
 ## Blank Hero record visual-weight adjustment - 2026-10-22
 

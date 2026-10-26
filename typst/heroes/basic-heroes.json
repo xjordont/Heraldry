@@ -1,5 +1,5 @@
 {
- "b4_sha256": "240eb96ef46394c8489fdcf6f7c8805a194d1c36c710bcdfc0583dfa9bbdcc60",
+ "b4_sha256": "cc3a25840de6faa84836c9fdb237dc9b3909e94e5e9339b9476997c21fe2e15c",
  "reminders": {
   "Darkvision": {
    "head": "Darkvision (12\") Reminder",
@@ -103,6 +103,7 @@
     "AP": "3",
     "Luck": "1",
     "NRG": "0",
+    "Coins": "1c",
     "Senses": "Darkvision (12\")"
    },
    "scores": {
@@ -227,6 +228,23 @@
         [".", false]
        ],
        "sub": []
+      },
+      {
+       "runs": [
+        ["Spear:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR piercing damage", true],
+        [" one-handed or ", false],
+        ["1d8 + STR piercing damage", true],
+        [" two-handed, ", false],
+        ["Reach", true],
+        [", ", false],
+        ["Thrown 6\"", true],
+        [", ", false],
+        ["Versatile", true],
+        [". Carried only: this Hero does not meet its DEX Req 1.", false]
+       ],
+       "sub": []
       }
      ]
     },
@@ -331,6 +349,7 @@
     "AP": "3",
     "Luck": "2",
     "NRG": "0",
+    "Coins": "1c",
     "Senses": "Darkvision (12\")"
    },
    "scores": {
@@ -586,7 +605,8 @@
     "Sz": "M",
     "AP": "3",
     "Luck": "2",
-    "NRG": "0"
+    "NRG": "0",
+    "Coins": "1c"
    },
    "scores": {
     "STR": "+1",
@@ -847,7 +867,8 @@
     "Sz": "S",
     "AP": "3",
     "Luck": "3",
-    "NRG": "0"
+    "NRG": "0",
+    "Coins": "0c"
    },
    "scores": {
     "STR": "-1",
@@ -982,6 +1003,15 @@
         [" until the end of the round. One use.", false]
        ],
        "sub": []
+      },
+      {
+       "runs": [
+        ["Club:", true],
+        [" ", false],
+        ["1d4 + STR blunt damage", true],
+        [". One hand. No requirement. No traits.", false]
+       ],
+       "sub": []
       }
      ]
     },
@@ -1094,6 +1124,7 @@
     "AP": "3",
     "Luck": "1",
     "NRG": "9",
+    "Coins": "1c",
     "Senses": "Darkvision (12\")"
    },
    "scores": {
@@ -1214,6 +1245,23 @@
         [". On a success, remove ", false],
         ["Bleeding", true],
         [" from this Hero or 1 adjacent ally. Each Bandage is one use.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Spear:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR piercing damage", true],
+        [" one-handed or ", false],
+        ["1d8 + STR piercing damage", true],
+        [" two-handed, ", false],
+        ["Reach", true],
+        [", ", false],
+        ["Thrown 6\"", true],
+        [", ", false],
+        ["Versatile", true],
+        [". Carried only: this Hero does not meet its DEX Req 1.", false]
        ],
        "sub": []
       }
@@ -1352,6 +1400,7 @@
     "AP": "3",
     "Luck": "1",
     "NRG": "9",
+    "Coins": "0c",
     "Senses": "Darkvision (12\")"
    },
    "scores": {
@@ -1453,6 +1502,21 @@
         [" combatants in the area suffer ", false],
         ["1d6 holy damage", true],
         [". Other combatants are unaffected. Each flask is one use.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Rapier:", true],
+        [" Melee weapon, ", false],
+        ["1d8 + DEX piercing damage", true],
+        [", ", false],
+        ["Agile", true],
+        [", ", false],
+        ["Finesse", true],
+        [", ", false],
+        ["Parrying", true],
+        [". Carried only: this Hero does not meet its DEX Req 3.", false]
        ],
        "sub": []
       }
@@ -1606,6 +1670,7 @@
     "AP": "3",
     "Luck": "1",
     "NRG": "15",
+    "Coins": "1c",
     "Senses": "Darkvision (12\")"
    },
    "scores": {
@@ -1697,6 +1762,19 @@
         ["Light Source", true],
         [" with ", false],
         ["Aura 3\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Quarterstaff:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR blunt damage", true],
+        [", two-handed, ", false],
+        ["Parrying", true],
+        [", ", false],
+        ["Trip", true],
         [".", false]
        ],
        "sub": []
@@ -1812,6 +1890,29 @@
        "sub": []
       }
      ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Parrying:", true],
+        [" You may use the ", false],
+        ["Parry", true],
+        [" Reaction with this weapon.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Trip:", true],
+        [" You may use this weapon to take the ", false],
+        ["Trip", true],
+        [" action.", false]
+       ],
+       "sub": []
+      }
+     ]
     }
    ],
    "art": "ART-HER-GRAVEGLASS"
@@ -1833,7 +1934,8 @@
     "Sz": "M",
     "AP": "3",
     "Luck": "1",
-    "NRG": "11"
+    "NRG": "11",
+    "Coins": "1c"
    },
    "scores": {
     "STR": "-2",
@@ -1919,6 +2021,17 @@
         [". On a success, remove ", false],
         ["Bleeding", true],
         [" from this Hero or 1 adjacent ally. One use.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Hammer:", true],
+        [" Used to break objects with a ", false],
+        ["STR Check", true],
+        ["; also functions as a one-handed melee weapon that deals ", false],
+        ["1d2 blunt damage", true],
+        [".", false]
        ],
        "sub": []
       }
@@ -2089,6 +2202,7 @@
     "AP": "3",
     "Luck": "1",
     "NRG": "0",
+    "Coins": "1c",
     "Senses": "Darkvision (12\")"
    },
    "scores": {
@@ -2194,6 +2308,32 @@
         [", ", false],
         ["Agile", true],
         [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Sickle:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR slashing damage", true],
+        [", ", false],
+        ["Light", true],
+        [", ", false],
+        ["Trip", true],
+        [". Carried only: this Hero does not meet its DEX Req 2.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Bandages:", true],
+        [" ", false],
+        ["Interact [1 AP]:", true],
+        [" Make an ", false],
+        ["INT Check", true],
+        [". On a success, remove ", false],
+        ["Bleeding", true],
+        [" from this Hero or 1 adjacent ally. One use.", false]
        ],
        "sub": []
       }
@@ -2344,6 +2484,7 @@
     "AP": "3",
     "Luck": "1",
     "NRG": "0",
+    "Coins": "1c",
     "Senses": "Darkvision (12\")"
    },
    "scores": {
@@ -2455,6 +2596,21 @@
         [", ", false],
         ["Agile", true],
         [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Scimitar:", true],
+        [" Melee weapon, ", false],
+        ["1d8 + DEX slashing damage", true],
+        [", ", false],
+        ["Agile", true],
+        [", ", false],
+        ["Finesse", true],
+        [", ", false],
+        ["Graze", true],
+        [". Carried only: this Hero does not meet its DEX Req 3.", false]
        ],
        "sub": []
       }
@@ -2582,7 +2738,8 @@
     "Sz": "M",
     "AP": "3",
     "Luck": "2",
-    "NRG": "3"
+    "NRG": "3",
+    "Coins": "1c"
    },
    "scores": {
     "STR": "+0",
@@ -2841,7 +2998,8 @@
     "Sz": "M",
     "AP": "3",
     "Luck": "1",
-    "NRG": "3"
+    "NRG": "3",
+    "Coins": "1c"
    },
    "scores": {
     "STR": "-1",
@@ -3101,7 +3259,8 @@
     "Sz": "M",
     "AP": "3",
     "Luck": "1",
-    "NRG": "5"
+    "NRG": "5",
+    "Coins": "1c"
    },
    "scores": {
     "STR": "+3",
@@ -3194,6 +3353,23 @@
         [", ", false],
         ["Max Speed 7\"", true],
         [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Spear:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR piercing damage", true],
+        [" one-handed or ", false],
+        ["1d8 + STR piercing damage", true],
+        [" two-handed, ", false],
+        ["Reach", true],
+        [", ", false],
+        ["Thrown 6\"", true],
+        [", ", false],
+        ["Versatile", true],
+        [". Carried only: this Hero does not meet its DEX Req 1.", false]
        ],
        "sub": []
       }
@@ -3308,7 +3484,8 @@
     "Sz": "M",
     "AP": "3",
     "Luck": "2",
-    "NRG": "5"
+    "NRG": "5",
+    "Coins": "1c"
    },
    "scores": {
     "STR": "+2",
@@ -3438,7 +3615,7 @@
       },
       {
        "runs": [
-        ["2 Holy Water [1 AP]:", true],
+        ["3 Holy Water [1 AP]:", true],
         [" ", false],
         ["Thrown 6\"", true],
         [" (", false],
@@ -3450,6 +3627,19 @@
         [" combatants in the area suffer ", false],
         ["1d6 holy damage", true],
         [". Other combatants are unaffected. Each flask is one use.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Lantern (Hooded):", true],
+        [" Counts as a carried or placed ", false],
+        ["Light Source", true],
+        [" with ", false],
+        ["Aura 4\"", true],
+        [" while held or placed and unhooded. Hooding or unhooding it costs ", false],
+        ["[0 AP]", true],
+        [" during your activation.", false]
        ],
        "sub": []
       }
@@ -3566,7 +3756,8 @@
     "Sz": "M",
     "AP": "3",
     "Luck": "2",
-    "NRG": "9"
+    "NRG": "9",
+    "Coins": "0c"
    },
    "scores": {
     "STR": "+0",
@@ -3655,6 +3846,19 @@
         ["DEX Pen 0", true],
         [", ", false],
         ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Quarterstaff:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR blunt damage", true],
+        [", two-handed, ", false],
+        ["Parrying", true],
+        [", ", false],
+        ["Trip", true],
         [".", false]
        ],
        "sub": []
@@ -3892,6 +4096,29 @@
        "sub": []
       }
      ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Parrying:", true],
+        [" You may use the ", false],
+        ["Parry", true],
+        [" Reaction with this weapon.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Trip:", true],
+        [" You may use this weapon to take the ", false],
+        ["Trip", true],
+        [" action.", false]
+       ],
+       "sub": []
+      }
+     ]
     }
    ],
    "art": "ART-HER-MOSSGRAVE"
@@ -3913,7 +4140,8 @@
     "Sz": "S",
     "AP": "3",
     "Luck": "2",
-    "NRG": "9"
+    "NRG": "9",
+    "Coins": "1c"
    },
    "scores": {
     "STR": "-1",
@@ -4220,7 +4448,8 @@
     "Sz": "M",
     "AP": "3",
     "Luck": "2",
-    "NRG": "9"
+    "NRG": "9",
+    "Coins": "1c"
    },
    "scores": {
     "STR": "-1",
@@ -4309,6 +4538,19 @@
         ["DEX Pen 0", true],
         [", ", false],
         ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Quarterstaff:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR blunt damage", true],
+        [", two-handed, ", false],
+        ["Parrying", true],
+        [", ", false],
+        ["Trip", true],
         [".", false]
        ],
        "sub": []
@@ -4430,6 +4672,29 @@
        "sub": []
       }
      ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Parrying:", true],
+        [" You may use the ", false],
+        ["Parry", true],
+        [" Reaction with this weapon.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Trip:", true],
+        [" You may use this weapon to take the ", false],
+        ["Trip", true],
+        [" action.", false]
+       ],
+       "sub": []
+      }
+     ]
     }
    ],
    "art": "ART-HER-THOUGHTWAKE"
@@ -4452,6 +4717,7 @@
     "AP": "3",
     "Luck": "1",
     "NRG": "7",
+    "Coins": "1c",
     "Senses": "Darkvision (12\")"
    },
    "scores": {
@@ -4543,23 +4809,23 @@
       },
       {
        "runs": [
-        ["Acid (Phosphoric) [1 AP]:", true],
+        ["2 Acid (Phosphoric) [1 AP]:", true],
         [" ", false],
         ["Thrown 6\"", true],
         [" (", false],
         ["Aura 1\"", true],
         ["): All affected combatants suffer ", false],
         ["1d6 acid damage", true],
-        [". One use.", false]
+        [". Each flask is one use.", false]
        ],
        "sub": []
       },
       {
        "runs": [
-        ["Healing Potion [1 AP]:", true],
-        [" Drink it, or give it to 1 adjacent ally to drink. The drinker regains ", false],
+        ["2 Healing Potions [1 AP]:", true],
+        [" Drink one, or give one to 1 adjacent ally to drink. The drinker regains ", false],
         ["1d6 HP", true],
-        [". One use.", false]
+        [". Each potion is one use.", false]
        ],
        "sub": []
       }
@@ -4742,6 +5008,7 @@
     "AP": "3",
     "Luck": "0",
     "NRG": "9",
+    "Coins": "1c",
     "Senses": "Darkvision (12\")"
    },
    "scores": {
@@ -4815,6 +5082,32 @@
         ["DEX Pen 0", true],
         [", ", false],
         ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Dagger:", true],
+        [" Melee weapon, ", false],
+        ["1d4 + DEX piercing damage", true],
+        [", ", false],
+        ["Light", true],
+        [", ", false],
+        ["Finesse", true],
+        [", ", false],
+        ["Agile", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Torch:", true],
+        [" A carried torch is a ", false],
+        ["Light Source", true],
+        [" with ", false],
+        ["Aura 3\"", true],
         [".", false]
        ],
        "sub": []
@@ -4981,6 +5274,50 @@
        "sub": []
       }
      ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Light:", true],
+        [" This weapon may be dual-wielded. To attack with two ", false],
+        ["Light", true],
+        [" weapons, declare both weapons, their damage types, and one target; both weapons must be legal for that attack. Declare Reactions before rolling either weapon. A Reaction may be declared if legal against either weapon, but fails without refund if illegal against the weapon finally chosen. Roll each weapon separately, choose one total, and discard the other. Only the chosen weapon's damage type, traits, qualities, poison, and other attack effects apply. ", false],
+        ["Luck", true],
+        [" rerolls both weapon rolls before choosing again. This is one attack for Reaction limits and ", false],
+        ["Multiple Attacks", true],
+        [", and it is not an ", false],
+        ["Off-Hand Weapon", true],
+        [" attack (", false],
+        ["6.13", true],
+        [").", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Finesse:", true],
+        [" Attacks use your ", false],
+        ["DEX", true],
+        [" modifier instead of your ", false],
+        ["STR", true],
+        [" modifier for damage calculations.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Agile:", true],
+        [" The second weapon attack you make with this weapon during an activation does not suffer ", false],
+        ["Disadvantage", true],
+        [" from ", false],
+        ["Multiple Attacks", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
     }
    ],
    "art": "ART-HER-ASHBORN"
@@ -5002,7 +5339,8 @@
     "Sz": "M",
     "AP": "3",
     "Luck": "1",
-    "NRG": "9"
+    "NRG": "9",
+    "Coins": "1c"
    },
    "scores": {
     "STR": "+0",
@@ -5344,7 +5682,8 @@
     "Sz": "M",
     "AP": "3",
     "Luck": "2",
-    "NRG": "0"
+    "NRG": "0",
+    "Coins": "1c"
    },
    "scores": {
     "STR": "-1",
@@ -5454,7 +5793,7 @@
       },
       {
        "runs": [
-        ["2 Throwing Knives:", true],
+        ["3 Throwing Knives:", true],
         [" Thrown weapon, ", false],
         ["1d4 + DEX piercing damage", true],
         [", ", false],
@@ -5586,6 +5925,7 @@
     "AP": "3",
     "Luck": "1",
     "NRG": "0",
+    "Coins": "1c",
     "Senses": "Superior Darkvision (18\")"
    },
    "scores": {
@@ -5745,6 +6085,21 @@
         [" until the end of the round. One use.", false]
        ],
        "sub": []
+      },
+      {
+       "runs": [
+        ["Lockpicks:", true],
+        [" ", false],
+        ["Interact", true],
+        [" ", false],
+        ["Checks", true],
+        [" made to inspect a treasure marker for a trap in the ", false],
+        ["Traps", true],
+        [" variant are rolled with ", false],
+        ["Advantage", true],
+        [".", false]
+       ],
+       "sub": []
       }
      ]
     },
@@ -5858,7 +6213,8 @@
     "Sz": "S",
     "AP": "3",
     "Luck": "2",
-    "NRG": "7"
+    "NRG": "7",
+    "Coins": "1c"
    },
    "scores": {
     "STR": "-2",
@@ -6119,6 +6475,7 @@
     "AP": "3",
     "Luck": "2",
     "NRG": "7",
+    "Coins": "1c",
     "Senses": "Darkvision (12\")"
    },
    "scores": {
@@ -6236,6 +6593,19 @@
         [". On a success, remove ", false],
         ["Bleeding", true],
         [" from this Hero or 1 adjacent ally. One use.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Sickle:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR slashing damage", true],
+        [", ", false],
+        ["Light", true],
+        [", ", false],
+        ["Trip", true],
+        [".", false]
        ],
        "sub": []
       }
@@ -6391,6 +6761,32 @@
         [" You may use the ", false],
         ["Parry", true],
         [" Reaction with this weapon.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Light:", true],
+        [" This weapon may be dual-wielded. To attack with two ", false],
+        ["Light", true],
+        [" weapons, declare both weapons, their damage types, and one target; both weapons must be legal for that attack. Declare Reactions before rolling either weapon. A Reaction may be declared if legal against either weapon, but fails without refund if illegal against the weapon finally chosen. Roll each weapon separately, choose one total, and discard the other. Only the chosen weapon's damage type, traits, qualities, poison, and other attack effects apply. ", false],
+        ["Luck", true],
+        [" rerolls both weapon rolls before choosing again. This is one attack for Reaction limits and ", false],
+        ["Multiple Attacks", true],
+        [", and it is not an ", false],
+        ["Off-Hand Weapon", true],
+        [" attack (", false],
+        ["6.13", true],
+        [").", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Trip:", true],
+        [" You may use this weapon to take the ", false],
+        ["Trip", true],
+        [" action.", false]
        ],
        "sub": []
       }

@@ -70,9 +70,10 @@
         grid(columns: (1fr, 1fr, 1fr), column-gutter: 0pt,
           cell("Class", value: get(hr, "class")), cell("Ancestry", value: get(hr, "ancestry")),
           cell("Background", value: get(hr, "background"))),
-        grid(columns: (37pt, 71pt, 69pt, 71pt, 1fr), column-gutter: 0pt,
+        grid(columns: (37pt, 64pt, 58pt, 60pt, 42pt, 1fr), column-gutter: 0pt,
           cell("Level", value: get(hr, "level")), cell("Archetype", value: get(hr, "archetype"), size: 11pt),
           cell("Casting", value: get(hr, "casting")), cell("HP/Level", value: get(hr, "hp_per_level")),
+          cell("Coins", value: if hr == none { none } else { hr.stats.at("Coins", default: none) }),
           cell("Senses", value: st("Senses"), size: 10pt))),
       block(width: 108pt, height: 108pt, stroke: 0.55pt + rule-ink, {
         place(top + center, dy: 3pt, arch-path(102pt, 103pt, stroke: 0.65pt + rule-ink))
