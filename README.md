@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`a26e28f8`](https://github.com/xjordont/Heraldry/commit/a26e28f8bdbad6e04263dd9321a45d73ddb7d945) hero record: one generator for blank and Heroes; effective DEX/SPD; martial reverse
 - [`b6b5c79f`](https://github.com/xjordont/Heraldry/commit/b6b5c79f4417a740fad0e3ef0e0ed18de3a0537d) manuscript: RC514 Basic Mode starting coins and background items
 - [`8214f250`](https://github.com/xjordont/Heraldry/commit/8214f25006ed03c87814a90520296f96913782e7) hero record: populate the illustrated record for the 24 Basic Mode Heroes
 - [`20cb13bc`](https://github.com/xjordont/Heraldry/commit/20cb13bc5787ec2402fa407a52923b1f7f5378cb) ci: fetch Hero portraits for card tests; skip Work package test without LFS images
 - [`98ca8910`](https://github.com/xjordont/Heraldry/commit/98ca8910374392d874a5e1dde9794ab6e4df8255) hero record: add illustrated blank Hero Record, front and Powers & Talents reverse
 - [`86ce6f1d`](https://github.com/xjordont/Heraldry/commit/86ce6f1d4eb729cf1f6f6305340b7ddf1d1b6c19) layout: restore black visual anchors on blank Hero record
-- [`3006eb12`](https://github.com/xjordont/Heraldry/commit/3006eb124720854a231cb20276ec0830259d6215) layout: refine blank Hero record with book typography and open ledgers
 
 <!-- END AUTO:recent -->
 
