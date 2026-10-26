@@ -58,3 +58,7 @@ Blank-only QA checks Letter geometry, exactly two pages, minimum type size, esse
 ## Review status
 
 Author review and automated checks do not establish owner aesthetic approval. This iteration remains subject to owner review. Physical printing, handwriting, erasing, and duplex registration are **NOT TESTED**. The current manuscript remains RC513; the published book release remains RC492-build-37. This work does not rebuild or release the book.
+
+## Illustrated blank record (2026-10-26)
+
+`assets/hero-record/` holds a second, illustrated blank Hero record (front and Powers & Talents reverse) authored as HTML and rendered by `assets/hero-record/render.py`. It uses the repository's fonts, signature mark, and ink art direction, and keeps all printed type at 9 pt or larger. It does not replace the Typst blank above, and no manuscript rule changed. Owner approval of this version and physical printing are **NOT TESTED**.
