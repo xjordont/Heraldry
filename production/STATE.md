@@ -1,5 +1,11 @@
 # Production state - RC514 source, main
 
+## Illustrated Hero record: one generator, effective DEX/SPD, martial reverse - 2026-10-26
+
+Owner requests: show effective DEX (DEX + worse equipped DEX Pen) and effective SPD (lowest of base and every Max Speed) in the attribute shields, with the base at the top of the field; centre attribute values in the shield headings' face; drop the P/O column; print starting coins small along the top of the Coins ring; give purely martial Heroes a reverse without Powers; stop repeating weapon trait rules (universal rules); restate Senses briefly; centre and slightly reduce portraits; streamline the implementation.
+
+`assets/hero-record/sheet.py` now builds both the blank sides and the 24 populated Basic Mode Heroes from one geometry spec, static `parts/` templates, and a shared `sheet.css` (generated pages reach shared art and fonts through `<base href>`). It replaces `populate.py` and `render.py`. Starting coins and every item come from RC514 B.4. `tests/test_hero_record.py` requires the committed blank to equal the generator's output and every Hero to parse into the fields. `sheet.py heroes` passed its fit (9 pt minimum, no overflow) and fidelity (every B.4 rule, item and coin value) checks for all 24 Heroes and the Wild Shape card; all 49 pages were inspected on contact sheets. Populated PDFs remain build products. Owner approval and physical print are **NOT TESTED**.
+
 ## RC514 Basic Mode starting coins and background items - 2026-10-26
 
 Owner decisions in session: Basic Mode Heroes start with their background's coins from 6.10, which are not part of a side's score, and gain the background starting items their B.4 profile lacked. The owner approved the exact RC513-to-RC514 diff (+69 / -29 lines) before it was applied through `manuscript apply`. RC514 SHA-256 `fa433e49b017eeb4b5fa16de4883e9955dc82b7c9ec151d1ad0cc835be2fe4cd`.

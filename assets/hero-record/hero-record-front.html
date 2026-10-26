@@ -3,34 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>Hero Record, front</title>
-<style>
-@page{size:8.5in 11in;margin:0}
-@font-face{font-family:'Grenze Gotisch';font-weight:100 900;src:url('../../fonts/static/GrenzeGotisch[wght].ttf') format('truetype')}
-@font-face{font-family:'Source Sans 3';font-weight:600;src:url('../../fonts/static/SourceSans3-Semibold.ttf') format('truetype')}
-@font-face{font-family:'Source Sans 3';font-weight:700;src:url('../../fonts/static/SourceSans3-Bold.ttf') format('truetype')}
-@font-face{font-family:'Source Serif 4';font-weight:700;src:url('../../fonts/static/SourceSerif4-Bold.ttf') format('truetype')}
-body{margin:0;background:#fff}
-a{color:#000}a:hover{color:#000}
-.hr-l{position:absolute;margin:0;font-family:'Source Sans 3',sans-serif;font-weight:600;line-height:1;white-space:nowrap;color:#000}
-.hr-c{text-align:center}
-.hr-rule{position:absolute;height:0;border-top:1px solid #000}
-.hr-prod{position:absolute;margin:0;font-family:'Source Serif 4',serif;font-weight:700;line-height:1;white-space:nowrap;color:#000}
-.hr-title{position:absolute;margin:0;font-family:'Grenze Gotisch',serif;font-weight:700;line-height:1;white-space:nowrap;color:#000}
-.hr-stat{position:absolute;margin:0;font-family:'Source Sans 3',sans-serif;font-weight:700;line-height:1;text-align:center;white-space:nowrap;color:#fff}
-.hr-res{position:absolute;margin:0;font-family:'Source Serif 4',serif;font-weight:700;line-height:1;text-align:center;white-space:nowrap;color:#000}
-.hr-band{position:absolute;margin:0;font-family:'Grenze Gotisch',serif;font-weight:700;line-height:1;white-space:nowrap;color:#fff}
-.hr-head2{position:absolute;margin:0;font-family:'Grenze Gotisch',serif;font-weight:700;line-height:1;white-space:nowrap;color:#000}
-.hr-cap{position:absolute;margin:0;box-sizing:border-box;padding-left:0.16em;font-family:'Source Sans 3',sans-serif;font-weight:600;line-height:1;text-align:center;text-transform:uppercase;letter-spacing:0.16em;white-space:nowrap;color:#000}
-.hr-legend{position:absolute;margin:0;padding:0 4px 0 3px;background:#fff;font-family:'Source Sans 3',sans-serif;font-weight:700;font-size:12px;line-height:13px;letter-spacing:0.16em;text-transform:uppercase;white-space:nowrap;color:#000}
-.hr-lz{display:inline-block;width:4.4px;height:4.4px;background:#000;transform:rotate(45deg);vertical-align:2.4px;margin:0 6px 0 1px}
-.hr-lz-r{margin:0 0 0 4px}
-</style>
+<base href="./">
+<link rel="stylesheet" href="sheet.css">
 </head>
 <body>
 <div style="position: relative; width: 816px; height: 1056px; overflow: hidden; background: #ffffff; color: #000000; font-family: 'Source Sans 3', sans-serif">
-
 <div aria-hidden="true" style="position: absolute; left: 34.61px; top: 37.81px; width: 745.72px; height: 980.38px; box-sizing: border-box; border: 2px solid #000000"></div>
-
 <img src="art/hr-flag3.svg" alt="Hanging banner" style="position: absolute; left: 37.38px; top: 40.94px; width: 87.33px; height: 179.63px">
 <img src="art/hr-logo.svg" alt="Heraldry Skirmish logo" style="position: absolute; left: 53.33px; top: 65.08px; width: 51.18px; height: 58.93px">
 <img src="art/hr-ruinsF-hd.png" alt="" aria-hidden="true" style="position: absolute; left: 343px; top: 45.9px; width: 260.19px; height: 158px">
@@ -38,6 +16,7 @@ a{color:#000}a:hover{color:#000}
 <h1 class="hr-title" style="left: 121.3px; top: 75.74px; font-size: 66px">Hero Record</h1>
 <svg role="img" aria-label="Level" width="68" height="68" viewBox="0 0 68 68" style="position: absolute; left: 708.8px; top: 184.7px; overflow: visible"><circle cx="34" cy="34" r="29" fill="#ffffff" stroke="#000000" stroke-width="2.2"></circle><circle cx="34" cy="34" r="25.5" fill="none" stroke="#000000" stroke-width="1"></circle><defs><path id="hr-level-arc" d="M19 34 A15 15 0 0 1 49 34"></path></defs><text font-family="'Source Sans 3', sans-serif" font-weight="700" font-size="12" letter-spacing="0.2" text-anchor="middle" fill="#000000"><textPath href="#hr-level-arc" startOffset="50%">LEVEL</textPath></text></svg>
 <img src="art/hr-shield5.svg" alt="Blank shield for heraldry or a portrait" style="position: absolute; left: 587.63px; top: 44.49px; width: 185.31px; height: 197.38px">
+
 <img src="art/hr-stats3.svg" alt="" aria-hidden="true" style="position: absolute; left: 47.32px; top: 256.07px; width: 722.78px; height: 106.5px">
 <img src="art/hr-resources3.svg" alt="" aria-hidden="true" style="position: absolute; left: 39.51px; top: 368.25px; width: 736.27px; height: 102.24px">
 <img src="art/hr-armour2.svg" alt="" aria-hidden="true" style="position: absolute; left: 40.22px; top: 467.65px; width: 477.12px; height: 53.96px">
@@ -45,8 +24,6 @@ a{color:#000}a:hover{color:#000}
 <img src="art/hr-inventory2.svg" alt="" aria-hidden="true" style="position: absolute; left: 40.22px; top: 723.25px; width: 566.58px; height: 53.96px">
 <img src="art/hr-coinring3.svg" alt="" aria-hidden="true" style="position: absolute; left: 592.6px; top: 760.17px; width: 183.18px; height: 171.82px">
 <img src="art/hr-treasure-hd.png" alt="" aria-hidden="true" style="position: absolute; left: 594.73px; top: 890.81px; width: 185.31px; height: 124.25px">
-
-
 <div class="hr-stat" style="left: 57.02px; top: 264.72px; width: 80px; font-size: 23.5px">STR</div>
 <div class="hr-stat" style="left: 160.86px; top: 264.72px; width: 80px; font-size: 23.5px">DEX</div>
 <div class="hr-stat" style="left: 263.81px; top: 264.72px; width: 80px; font-size: 23.5px">INT</div>
@@ -54,7 +31,6 @@ a{color:#000}a:hover{color:#000}
 <div class="hr-stat" style="left: 468.11px; top: 264.72px; width: 80px; font-size: 23.5px">INIT</div>
 <div class="hr-stat" style="left: 572.84px; top: 264.72px; width: 80px; font-size: 23.5px">SPD</div>
 <div class="hr-stat" style="left: 675.78px; top: 264.72px; width: 80px; font-size: 23.5px">SIZE</div>
-
 <h2 class="hr-res" style="left: 129.32px; top: 376.24px; width: 120px; font-size: 19px">Hit Points</h2>
 <h2 class="hr-res" style="left: 379.24px; top: 376.24px; width: 120px; font-size: 19px">Energy</h2>
 <h2 class="hr-res" style="left: 600.76px; top: 376.24px; width: 120px; font-size: 19px">Luck</h2>
@@ -64,25 +40,19 @@ a{color:#000}a:hover{color:#000}
 <div class="hr-cap" style="left: 446.78px; top: 438.76px; width: 90px; font-size: 12px">Max</div>
 <div class="hr-cap" style="left: 558.61px; top: 438.76px; width: 90px; font-size: 12px">Current</div>
 <div class="hr-cap" style="left: 665.82px; top: 438.76px; width: 90px; font-size: 12px">Max</div>
-
 <h2 class="hr-band" style="left: 56.5px; top: 470.92px; font-size: 28px">Armour</h2>
 <h2 class="hr-band" style="left: 56.5px; top: 608.24px; font-size: 28px">Weapons</h2>
 <h2 class="hr-band" style="left: 56.5px; top: 727.62px; font-size: 28px">Inventory</h2>
 <h2 class="hr-head2" style="left: 524px; top: 471.6px; font-size: 28px">Wounds</h2>
 <h2 class="hr-head2 hr-c" style="left: 626.67px; top: 729.35px; width: 120px; font-size: 28px">Coins</h2>
-
-
-
-
-<!-- identity -->
 <svg aria-hidden="true" width="499" height="86" viewBox="89 158 499 86" style="position: absolute; left: 89px; top: 158px; overflow: visible"><path d="M100 161H332A8 8 0 0 0 340 169V188A8 8 0 0 0 332 196H100A8 8 0 0 0 92 188V169A8 8 0 0 0 100 161Z" fill="#ffffff" stroke="#000000" stroke-width="2.6"></path><path d="M103.03 164.6H328.97A11.6 11.6 0 0 0 336.4 172.03V184.97A11.6 11.6 0 0 0 328.97 192.4H103.03A11.6 11.6 0 0 0 95.6 184.97V172.03A11.6 11.6 0 0 0 103.03 164.6Z" fill="none" stroke="#000000" stroke-width="1.0"></path><path d="M100 211H241.67A8 8 0 0 0 249.67 219V233A8 8 0 0 0 241.67 241H100A8 8 0 0 0 92 233V219A8 8 0 0 0 100 211Z" fill="#ffffff" stroke="#000000" stroke-width="2.6"></path><path d="M103.03 214.6H238.64A11.6 11.6 0 0 0 246.07 222.03V229.97A11.6 11.6 0 0 0 238.64 237.4H103.03A11.6 11.6 0 0 0 95.6 229.97V222.03A11.6 11.6 0 0 0 103.03 214.6Z" fill="none" stroke="#000000" stroke-width="1.0"></path><path d="M267.67 211H409.33A8 8 0 0 0 417.33 219V233A8 8 0 0 0 409.33 241H267.67A8 8 0 0 0 259.67 233V219A8 8 0 0 0 267.67 211Z" fill="#ffffff" stroke="#000000" stroke-width="2.6"></path><path d="M270.69 214.6H406.31A11.6 11.6 0 0 0 413.73 222.03V229.97A11.6 11.6 0 0 0 406.31 237.4H270.69A11.6 11.6 0 0 0 263.27 229.97V222.03A11.6 11.6 0 0 0 270.69 214.6Z" fill="none" stroke="#000000" stroke-width="1.0"></path><path d="M435.33 211H577A8 8 0 0 0 585 219V233A8 8 0 0 0 577 241H435.33A8 8 0 0 0 427.33 233V219A8 8 0 0 0 435.33 211Z" fill="#ffffff" stroke="#000000" stroke-width="2.6"></path><path d="M438.36 214.6H573.97A11.6 11.6 0 0 0 581.4 222.03V229.97A11.6 11.6 0 0 0 573.97 237.4H438.36A11.6 11.6 0 0 0 430.93 229.97V222.03A11.6 11.6 0 0 0 438.36 214.6Z" fill="none" stroke="#000000" stroke-width="1.0"></path></svg>
 <div class="hr-legend" style="left: 106px; top: 154.5px"><span class="hr-lz"></span>Name<span class="hr-lz hr-lz-r"></span></div>
 <div class="hr-legend" style="left: 106px; top: 204.5px"><span class="hr-lz"></span>Class<span class="hr-lz hr-lz-r"></span></div>
 <div class="hr-legend" style="left: 273.67px; top: 204.5px"><span class="hr-lz"></span>Ancestry<span class="hr-lz hr-lz-r"></span></div>
 <div class="hr-legend" style="left: 441.33px; top: 204.5px"><span class="hr-lz"></span>Background<span class="hr-lz hr-lz-r"></span></div>
-
-<!-- armour + wounds -->
-<svg aria-hidden="true" width="460.98" height="88" viewBox="0 0 460.98 88" style="position: absolute; left: 46.87px; top: 508.8px; overflow: visible"><path d="M4 16H45.4M50.6 16H156.9M162.1 16H190.9M196.1 16H224.9M230.1 16H284.9M290.1 16H344.9M350.1 16H454.38M4 51H45.4M50.6 51H156.9M162.1 51H190.9M196.1 51H224.9M230.1 51H284.9M290.1 51H344.9M350.1 51H454.38M4 86H45.4M50.6 86H156.9M162.1 86H190.9M196.1 86H224.9M230.1 86H284.9M290.1 86H344.9M350.1 86H454.38" fill="none" stroke="#000000" stroke-width="1.0"></path><path d="M48 2V86M159.5 2V86M193.5 2V86M227.5 2V86M287.5 2V86M347.5 2V86M456.98 2V86" fill="none" stroke="#000000" stroke-width="2.5"></path></svg>
+<div class="hr-fcap" style="left: 160.8px; top: 297.3px; width: 80px;"><span class="lbl">Base</span><span class="ln"></span></div>
+<div class="hr-fcap" style="left: 572.96px; top: 297.3px; width: 80px;"><span class="lbl">Base</span><span class="ln"></span></div>
+<svg aria-hidden="true" width="460.98" height="88" viewBox="0 0 460.98 88" style="position: absolute; left: 46.87px; top: 508.8px; overflow: visible"><path d="M4 16H45.4M50.6 16H156.9M162.1 16H190.9M196.1 16H224.9M230.1 16H284.9M290.1 16H344.9M350.1 16H454.38M4 51H45.4M50.6 51H156.9M162.1 51H190.9M196.1 51H224.9M230.1 51H284.9M290.1 51H344.9M350.1 51H454.38M4 86H45.4M50.6 86H156.9M162.1 86H190.9M196.1 86H224.9M230.1 86H284.9M290.1 86H344.9M350.1 86H454.38" fill="none" stroke="#000000" stroke-width="1"></path><path d="M48 2V86M159.5 2V86M193.5 2V86M227.5 2V86M287.5 2V86M347.5 2V86M456.98 2V86" fill="none" stroke="#000000" stroke-width="2.5"></path></svg>
 <div class="hr-l hr-c" style="left: 50.87px; top: 508.2px; width: 44px; font-size: 13px">Type</div>
 <div class="hr-l hr-c" style="left: 94.87px; top: 508.2px; width: 111.5px; font-size: 13px">Name</div>
 <div class="hr-l hr-c" style="left: 206.37px; top: 508.2px; width: 34px; font-size: 13px">AD</div>
@@ -92,27 +62,22 @@ a{color:#000}a:hover{color:#000}
 <div class="hr-l hr-c" style="left: 394.37px; top: 508.2px; width: 109.48px; font-size: 13px">Traits</div>
 <div class="hr-l hr-c" style="left: 50.87px; top: 543.2px; width: 44px; font-size: 13px">Chest</div>
 <div class="hr-l hr-c" style="left: 50.87px; top: 578.2px; width: 44px; font-size: 13px">Shield</div>
-<svg role="img" aria-label="Three wound markers" width="28" height="101" viewBox="538 496.8 28 101" style="position: absolute; left: 538px; top: 496.8px; overflow: visible"><polygon points="552,499.8 563,512.3 552,524.8 541,512.3" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-linejoin="miter"></polygon><polygon points="552,534.8 563,547.3 552,559.8 541,547.3" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-linejoin="miter"></polygon><polygon points="552,569.8 563,582.3 552,594.8 541,582.3" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-linejoin="miter"></polygon></svg>
+<svg role="img" aria-label="Three wound markers" width="28" height="101" viewBox="538 496.8 28 101" style="position: absolute; left: 538px; top: 496.8px; overflow: visible"><polygon points="552.0,499.8 563,512.3 552.0,524.8 541,512.3" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-linejoin="miter"></polygon><polygon points="552.0,534.8 563,547.3 552.0,559.8 541,547.3" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-linejoin="miter"></polygon><polygon points="552.0,569.8 563,582.3 552.0,594.8 541,582.3" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-linejoin="miter"></polygon></svg>
 <div class="hr-rule" style="left: 574.85px; top: 524.3px; width: 188.86px"></div>
 <div class="hr-rule" style="left: 574.85px; top: 559.3px; width: 188.86px"></div>
 <div class="hr-rule" style="left: 574.85px; top: 594.3px; width: 188.86px"></div>
-
-<!-- weapons -->
-<svg aria-hidden="true" width="720.84" height="73.2" viewBox="0 0 720.84 73.2" style="position: absolute; left: 46.87px; top: 644px; overflow: visible"><path d="M4 16H45.4M50.6 16H225.4M230.6 16H271.4M276.6 16H421.4M426.6 16H501.4M506.6 16H716.84M4 34.4H45.4M50.6 34.4H225.4M230.6 34.4H271.4M276.6 34.4H421.4M426.6 34.4H501.4M506.6 34.4H716.84M4 52.8H45.4M50.6 52.8H225.4M230.6 52.8H271.4M276.6 52.8H421.4M426.6 52.8H501.4M506.6 52.8H716.84M4 71.2H45.4M50.6 71.2H225.4M230.6 71.2H271.4M276.6 71.2H421.4M426.6 71.2H501.4M506.6 71.2H716.84" fill="none" stroke="#000000" stroke-width="1.0"></path><path d="M48 2V71.2M228 2V71.2M274 2V71.2M424 2V71.2M504 2V71.2" fill="none" stroke="#000000" stroke-width="2.5"></path></svg>
-<div class="hr-l hr-c" style="left: 50.87px; top: 643.4px; width: 44px; font-size: 13px">P / O</div>
-<div class="hr-l hr-c" style="left: 94.87px; top: 643.4px; width: 180px; font-size: 13px">Weapon</div>
+<svg aria-hidden="true" width="720.84" height="73.2" viewBox="0 0 720.84 73.2" style="position: absolute; left: 46.87px; top: 644px; overflow: visible"><path d="M4 16H225.4M230.6 16H271.4M276.6 16H421.4M426.6 16H501.4M506.6 16H716.84M4 34.4H225.4M230.6 34.4H271.4M276.6 34.4H421.4M426.6 34.4H501.4M506.6 34.4H716.84M4 52.8H225.4M230.6 52.8H271.4M276.6 52.8H421.4M426.6 52.8H501.4M506.6 52.8H716.84M4 71.2H225.4M230.6 71.2H271.4M276.6 71.2H421.4M426.6 71.2H501.4M506.6 71.2H716.84" fill="none" stroke="#000000" stroke-width="1"></path><path d="M228 2V71.2M274 2V71.2M424 2V71.2M504 2V71.2" fill="none" stroke="#000000" stroke-width="2.5"></path></svg>
+<div class="hr-l hr-c" style="left: 50.87px; top: 643.4px; width: 224px; font-size: 13px">Weapon</div>
 <div class="hr-l hr-c" style="left: 274.87px; top: 643.4px; width: 46px; font-size: 13px">Hands</div>
 <div class="hr-l hr-c" style="left: 320.87px; top: 643.4px; width: 150px; font-size: 13px">Damage and Type</div>
 <div class="hr-l hr-c" style="left: 470.87px; top: 643.4px; width: 80px; font-size: 13px">Range</div>
 <div class="hr-l hr-c" style="left: 550.87px; top: 643.4px; width: 212.84px; font-size: 13px">Traits</div>
-
-<!-- inventory -->
-<svg aria-hidden="true" width="550.44" height="254.79" viewBox="0 0 550.44 254.79" style="position: absolute; left: 46.87px; top: 764.4px; overflow: visible"><path d="M4 16H45.4M50.6 16H225.4M230.6 16H483.84M489.04 16H543.84M4 32.84H45.4M50.6 32.84H225.4M230.6 32.84H483.84M489.04 32.84H543.84M4 49.68H45.4M50.6 49.68H225.4M230.6 49.68H483.84M489.04 49.68H543.84M4 66.53H45.4M50.6 66.53H225.4M230.6 66.53H483.84M489.04 66.53H543.84M4 83.37H45.4M50.6 83.37H225.4M230.6 83.37H483.84M489.04 83.37H543.84M4 100.21H45.4M50.6 100.21H225.4M230.6 100.21H483.84M489.04 100.21H543.84M4 117.05H45.4M50.6 117.05H225.4M230.6 117.05H483.84M489.04 117.05H543.84M4 133.9H45.4M50.6 133.9H225.4M230.6 133.9H483.84M489.04 133.9H543.84M4 150.74H45.4M50.6 150.74H225.4M230.6 150.74H483.84M489.04 150.74H543.84M4 167.58H45.4M50.6 167.58H225.4M230.6 167.58H483.84M489.04 167.58H543.84M4 184.42H45.4M50.6 184.42H225.4M230.6 184.42H483.84M489.04 184.42H543.84M4 201.26H45.4M50.6 201.26H225.4M230.6 201.26H483.84M489.04 201.26H543.84M4 218.11H45.4M50.6 218.11H225.4M230.6 218.11H483.84M489.04 218.11H543.84M4 234.95H45.4M50.6 234.95H225.4M230.6 234.95H483.84M489.04 234.95H543.84" fill="none" stroke="#000000" stroke-width="1.0"></path><path d="M48 2V252.79M228 2V252.79M486.44 2V252.79M546.44 2V252.79" fill="none" stroke="#000000" stroke-width="2.5"></path></svg>
+<svg aria-hidden="true" width="550.44" height="254.79" viewBox="0 0 550.44 254.79" style="position: absolute; left: 46.87px; top: 764.4px; overflow: visible"><path d="M4 16H45.4M50.6 16H225.4M230.6 16H483.84M489.04 16H543.84M4 32.84H45.4M50.6 32.84H225.4M230.6 32.84H483.84M489.04 32.84H543.84M4 49.68H45.4M50.6 49.68H225.4M230.6 49.68H483.84M489.04 49.68H543.84M4 66.53H45.4M50.6 66.53H225.4M230.6 66.53H483.84M489.04 66.53H543.84M4 83.37H45.4M50.6 83.37H225.4M230.6 83.37H483.84M489.04 83.37H543.84M4 100.21H45.4M50.6 100.21H225.4M230.6 100.21H483.84M489.04 100.21H543.84M4 117.05H45.4M50.6 117.05H225.4M230.6 117.05H483.84M489.04 117.05H543.84M4 133.9H45.4M50.6 133.9H225.4M230.6 133.9H483.84M489.04 133.9H543.84M4 150.74H45.4M50.6 150.74H225.4M230.6 150.74H483.84M489.04 150.74H543.84M4 167.58H45.4M50.6 167.58H225.4M230.6 167.58H483.84M489.04 167.58H543.84M4 184.42H45.4M50.6 184.42H225.4M230.6 184.42H483.84M489.04 184.42H543.84M4 201.26H45.4M50.6 201.26H225.4M230.6 201.26H483.84M489.04 201.26H543.84M4 218.11H45.4M50.6 218.11H225.4M230.6 218.11H483.84M489.04 218.11H543.84M4 234.95H45.4M50.6 234.95H225.4M230.6 234.95H483.84M489.04 234.95H543.84" fill="none" stroke="#000000" stroke-width="1"></path><path d="M48 2V252.79M228 2V252.79M486.44 2V252.79M546.44 2V252.79" fill="none" stroke="#000000" stroke-width="2.5"></path></svg>
 <div class="hr-l hr-c" style="left: 50.87px; top: 763.8px; width: 44px; font-size: 13px">Qty</div>
 <div class="hr-l hr-c" style="left: 94.87px; top: 763.8px; width: 180px; font-size: 13px">Item</div>
 <div class="hr-l hr-c" style="left: 274.87px; top: 763.8px; width: 258.44px; font-size: 13px">Effect</div>
 <div class="hr-l hr-c" style="left: 533.31px; top: 763.8px; width: 60px; font-size: 13px">Location</div>
-
+<svg role="img" aria-label="Starting coins" width="99" height="49.5" viewBox="631.6 795.1 99 49.5" style="position: absolute; left: 631.6px; top: 795.1px; overflow: visible"><defs><path id="hr-coin-arc" d="M631.6 844.6 A49.5 49.5 0 0 1 730.6 844.6"></path></defs><text font-family="'Source Sans 3', sans-serif" font-weight="600" font-size="12" letter-spacing="1.9" text-anchor="middle" fill="#000000"><textPath href="#hr-coin-arc" startOffset="50%">START<tspan letter-spacing="0">  ______</tspan></textPath></text></svg>
 </div>
 </body>
 </html>
