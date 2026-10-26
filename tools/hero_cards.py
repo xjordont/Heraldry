@@ -23,7 +23,7 @@ OUT = ROOT / "build" / "heroes"
 
 SECTIONS = ["Ancestry Traits", "Background Rule", "Equipment and Items",
             "Talents, Powers, and Special Rules", "Weapon Trait Rules"]
-STAT_KEYS = ["HP", "AD", "SPD", "Sz", "AP", "Luck", "NRG", "Senses"]
+STAT_KEYS = ["HP", "AD", "SPD", "Sz", "AP", "Luck", "NRG", "Coins", "Senses"]
 SCORES = ["STR", "DEX", "INT", "SPI"]
 
 

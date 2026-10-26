@@ -1,4 +1,12 @@
-# Production state - RC513 source, main
+# Production state - RC514 source, main
+
+## RC514 Basic Mode starting coins and background items - 2026-10-26
+
+Owner decisions in session: Basic Mode Heroes start with their background's coins from 6.10, which are not part of a side's score, and gain the background starting items their B.4 profile lacked. The owner approved the exact RC513-to-RC514 diff (+69 / -29 lines) before it was applied through `manuscript apply`. RC514 SHA-256 `fa433e49b017eeb4b5fa16de4883e9955dc82b7c9ec151d1ad0cc835be2fe4cd`.
+
+Every B.4 stat line gains **Coins** (0c for Sootfinger, Embervow and Mossgrave; 1c otherwise). Added usable items: Club (Sootfinger), Quarterstaff (Graveglass, Thoughtwake, Mossgrave), Hammer (Starcinder), Bandages (Redhand), Lantern (Dawnwarden), Dagger and Torch (Ashborn), Lockpicks (Nightloom), Sickle (Gildmirror); counts raised to the package for Holy Water, Acid, Healing Potions and Throwing Knives. Items whose requirements the Hero does not meet are listed as carried only (6.3): Spear (Ironscar, Hearthbell, Oathscale), Rapier (Embervow), Sickle (Redhand), Scimitar (Cairnwrath). Elven variants satisfy their package item. Weapon trait rules were added only for newly usable weapons, using existing B.4 wording; Reach uses the 7.7 text. The B.4 intro states the Coins and carried-only rules.
+
+`tools/hero_cards.py` accepts the Coins stat; `typst/heroes/basic-heroes.json` was re-extracted and rebuilds every profile line for line. The Typst expanded record prints Coins. FIG-19 depends on B.4 and needs a semantic review before the next release. No PDF build or release; last delivered PDFs remain RC492-build-37; physical print **NOT TESTED**.
 
 ## Black visual anchors restored to blank Hero record - 2026-10-22
 

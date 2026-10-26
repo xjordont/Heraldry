@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 513,
+  "current": 514,
   "revisions": [
     {
       "number": 484,
@@ -311,6 +311,21 @@
       ],
       "patch_file": "editorial/history/RC513.json",
       "patch_sha256": "b7515c766cb0affcebcd32b30e46f007c231c813f7d6341f37e9a21ab01c45be"
+    },
+    {
+      "number": 514,
+      "path": "source/Heraldry_RC514.md",
+      "sha256": "fa433e49b017eeb4b5fa16de4883e9955dc82b7c9ec151d1ad0cc835be2fe4cd",
+      "bytes": 1534803,
+      "parent_sha256": "f106082c78fdee60edf0943f3962581290ab5c4127aaa6bd455cbb00ebc118b1",
+      "created_at": "2026-10-26T22:36:21.354106+00:00",
+      "reason": "Basic Mode Heroes start with their background's coins (not part of a side's score) and gain the background starting items their B.4 profile lacked; carried-only items noted where a Hero does not meet an item's requirements",
+      "authorization": "Owner (Jordon) approved the exact RC513-to-RC514 B.4 diff in session, 2026-10-26",
+      "patch_ids": [
+        "IMPORT-001"
+      ],
+      "patch_file": "editorial/history/RC514.json",
+      "patch_sha256": "c7d41edba0da8a3629540993aa17aa99342e71ab18d92c8212a28c30767138e2"
     }
   ]
 }
