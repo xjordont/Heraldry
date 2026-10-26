@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`8214f250`](https://github.com/xjordont/Heraldry/commit/8214f25006ed03c87814a90520296f96913782e7) hero record: populate the illustrated record for the 24 Basic Mode Heroes
 - [`20cb13bc`](https://github.com/xjordont/Heraldry/commit/20cb13bc5787ec2402fa407a52923b1f7f5378cb) ci: fetch Hero portraits for card tests; skip Work package test without LFS images
 - [`98ca8910`](https://github.com/xjordont/Heraldry/commit/98ca8910374392d874a5e1dde9794ab6e4df8255) hero record: add illustrated blank Hero Record, front and Powers & Talents reverse
 - [`86ce6f1d`](https://github.com/xjordont/Heraldry/commit/86ce6f1d4eb729cf1f6f6305340b7ddf1d1b6c19) layout: restore black visual anchors on blank Hero record
 - [`3006eb12`](https://github.com/xjordont/Heraldry/commit/3006eb124720854a231cb20276ec0830259d6215) layout: refine blank Hero record with book typography and open ledgers
 - [`4293a055`](https://github.com/xjordont/Heraldry/commit/4293a055d7953d194bf8f3640e4e27ba2066ff93) layout: standardize expanded Hero records with attached field labels
-- [`06ab3e62`](https://github.com/xjordont/Heraldry/commit/06ab3e62874246d8ca69f9e9492039acc85f047f) layout: redesign compact Hero sheets with complete profile coverage
 
 <!-- END AUTO:recent -->
 
