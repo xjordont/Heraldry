@@ -49,6 +49,11 @@ jobs:
           python-version: '3.12'
       - name: Install locked dependencies
         run: python -m pip install -r requirements.lock
+      - name: Fetch the Hero portraits the Hero card tests compile
+        # only the 24 portraits named in basic-heroes.json (about 8 MB), not the full art library
+        run: |
+          INC=$(python -c "import json; d=json.load(open('typst/heroes/basic-heroes.json')); h=d if isinstance(d, list) else d.get('heroes', d); print(','.join(sorted({'assets/art/ink/' + x['art'] + '.png' for x in h if x.get('art')})))")
+          git lfs pull --include="$INC" --exclude=""
       - name: Check contracts and run required pre-push tests
         run: |
           python tools/preflight.py --baseline

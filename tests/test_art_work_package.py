@@ -28,7 +28,15 @@ class OfflineRun(unittest.TestCase):
         with open(os.devnull, "w") as null:
             import contextlib
             with contextlib.redirect_stdout(null):
-                assert awp.main(["build", "--out", str(cls.zip), "--allow-dirty"]) == 0
+                try:
+                    assert awp.main(["build", "--out", str(cls.zip), "--allow-dirty"]) == 0
+                except SystemExit as e:
+                    # A checkout without LFS image bytes (CI) cannot build the package. Skip instead of
+                    # letting SystemExit end the whole test run, as the other image-dependent tests do.
+                    if "Git LFS pointer" in str(e):
+                        cls._tmp.cleanup()
+                        raise unittest.SkipTest(f"needs the repo images (LFS): {e}")
+                    raise
 
     @classmethod
     def tearDownClass(cls):

@@ -41,6 +41,12 @@ jobs:
         run: python -m unittest discover -s production/art/skill/heraldry-classic-ink-art/tests -p 'test_*.py'
       - name: Check immutable manuscript chain and production contracts
         run: python tools/preflight.py --baseline
+      - name: Fetch the Hero portraits the Hero card tests compile
+        # only the 24 portraits named in basic-heroes.json (about 8 MB), not the full art library
+        shell: bash
+        run: |
+          INC=$(python -c "import json; d=json.load(open('typst/heroes/basic-heroes.json')); h=d if isinstance(d, list) else d.get('heroes', d); print(','.join(sorted({'assets/art/ink/' + x['art'] + '.png' for x in h if x.get('art')})))")
+          git lfs pull --include="$INC" --exclude=""
       - name: Check revision and failure gates
         run: python -m unittest discover -s tests
       - name: Protect prior snapshots and revision records
