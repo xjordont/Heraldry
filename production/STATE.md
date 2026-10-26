@@ -1,5 +1,9 @@
 # Production state - RC514 source, main
 
+## Hero record captions and back-page balance - 2026-10-26
+
+Owner feedback: the underlined "Base ___" and "START ___" captions were ugly. Captions are now small, light (secondary-ink) text that follows the arched top of the DEX and SPD fields and the inside of the Coins ring, with no writing lines. A Hero's DEX shows "Base +n" when nothing imposes a DEX Pen. The populated reverse now sizes the Powers and Talents tables to each Hero (spare rows shared), so no ability is moved into the wrong table (formerly Conviction, Breath Weapon, Tumble). FIG-19 was re-reviewed against RC514 from its rendered SVG and re-bound: the figure gate is 57/57. All 24 Heroes pass the fit and fidelity checks; the 16 caster reverses and changed fronts were inspected. Physical print **NOT TESTED**.
+
 ## Illustrated Hero record: one generator, effective DEX/SPD, martial reverse - 2026-10-26
 
 Owner requests: show effective DEX (DEX + worse equipped DEX Pen) and effective SPD (lowest of base and every Max Speed) in the attribute shields, with the base at the top of the field; centre attribute values in the shield headings' face; drop the P/O column; print starting coins small along the top of the Coins ring; give purely martial Heroes a reverse without Powers; stop repeating weapon trait rules (universal rules); restate Senses briefly; centre and slightly reduce portraits; streamline the implementation.

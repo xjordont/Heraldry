@@ -21,15 +21,14 @@ Type follows `config/design_tokens.json`: Grenze Gotisch (titles and banners), S
 ## Front
 
 - Identity cartouches (Name, Class, Ancestry, Background), Level, and a portrait field.
-- Attribute shields. Values are centred on each white field's optical centre in the shield headings' face (Source Sans 3 Bold). DEX and SPD show the effective value: the top of the field carries the base (blank: "Base ___"; populated DEX: base and the worse equipped DEX Pen, for example "+2 − 3" over "−1"; SPD: "Base 7"" over the lowest of base SPD and every equipped Max Speed).
-- Hit Points, Energy, Luck (maximums printed, current left for play), Armour, Wounds, Weapons (no P/O column), Inventory, and Coins. The starting coins run along the inside top of the Coins ring ("Start ___" on the blank); the rest of the field is for the current total.
+- Attribute shields. Values are centred on each white field's optical centre in the shield headings' face (Source Sans 3 Bold). DEX and SPD show the effective value. The base sits in small, light text following the arched top of the field (blank: "Base"; populated DEX: base and the worse equipped DEX Pen, for example "+2 − 3" over "−1", or "Base +3" when nothing imposes a penalty; SPD: "Base 7"" over the lowest of base SPD and every equipped Max Speed).
+- Hit Points, Energy, Luck (maximums printed, current left for play), Armour, Wounds, Weapons (no P/O column), Inventory, and Coins. The starting coins run in the same small text along the inside top of the Coins ring ("Start" on the blank, "Start 1c" on a Hero); the rest of the field is for the current total.
 
 ## Reverse
 
-- Heroes with Powers: Powers (Tier, Cost, Range broken out) and Talents & Special Abilities, 14 rows each.
+- Heroes with Powers: Powers (Tier, Cost, Range broken out) and Talents & Special Abilities. The blank has 14 rows each; on a Hero the boundary moves so each table gets the rows its entries need, with the spare rows shared for notes.
 - Purely martial Heroes (no Powers): the reverse is titled "Talents & Abilities" and Talents & Special Abilities fill the whole page.
 - Every word of each ancestry trait, background rule, talent, Power and special rule prints at 9 pt, two text lines per ruled row, ruled between entries. Weapon trait rules are universal rules and are not repeated (owner decision 2026-10-26); the Weapons table names every trait. Senses restate a brief rule (for example "Within 12", ignore Cover and visual penalties from nonmagical Darkness. Does not reveal Hidden or Invisible combatants; magical Darkness still applies.").
-- If Talents overflow, an ability with an AP cost moves into spare Powers rows.
 - Mossgrave's Wild Shape Form Rules and Novice Beast Forms print on a separate one-third-page card (owner decision 2026-10-26); his sheet points to it.
 
 ## Populated Heroes

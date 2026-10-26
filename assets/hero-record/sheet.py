@@ -187,22 +187,33 @@ def value_top(px, centre):
     return centre - baseline_in_box(px, px) + CAP_H * px / 2
 
 
-def field_caption(key, inner):
-    """Small caption at the top of a DEX or SPD field."""
-    return div("hr-fcap", STAT_AXIS[key] - 40, STAT_FIELD_TOP + 7.5, 80, inner)
+CAPTION = {"size": 12, "weight": 400, "fill": "#333333", "spacing": 0.4}   # secondary ink (design tokens: 0.2 grey)
+STAT_ARCH_R = 104.0      # the white field's top edge is a gentle arch of about this radius
+COIN_ARCH_R = COIN_R     # the Coins ring's inner circle
 
 
-def arc_caption(text, blank_line=False):
-    """Caption along the inside top of the Coins ring, centred, like LEVEL in its circle. The blank's
-    writing line is a run of underscores on the same arc, so it follows the curve."""
-    cx, cy = COIN_C
-    r = COIN_R - 12.5
+def curved_caption(ident, cx, cy, r, text, label):
+    """Small, quiet text that follows a field's curved top: baseline on a circle of radius r about (cx, cy),
+    centred on the axis. Used for the attribute fields' base and the Coins ring's starting coins."""
     path = f"M{R(cx-r)} {R(cy)} A{R(r)} {R(r)} 0 0 1 {R(cx+r)} {R(cy)}"
-    line = '<tspan letter-spacing="0"> \u2009______</tspan>' if blank_line else ""
-    return (f'<svg role="img" aria-label="Starting coins" width="{R(2*r)}" height="{R(r)}" viewBox="{R(cx-r)} {R(cy-r)} {R(2*r)} {R(r)}" '
-            f'style="position: absolute; left: {R(cx-r)}px; top: {R(cy-r)}px; overflow: visible"><defs><path id="hr-coin-arc" d="{path}"></path></defs>'
-            f'<text font-family="\'Source Sans 3\', sans-serif" font-weight="600" font-size="12" letter-spacing="1.9" '
-            f'text-anchor="middle" fill="#000000"><textPath href="#hr-coin-arc" startOffset="50%">{text}{line}</textPath></text></svg>')
+    c = CAPTION
+    return (f'<svg role="img" aria-label="{label}" class="hr-arc" width="{R(2*r)}" height="{R(r)}" '
+            f'viewBox="{R(cx-r)} {R(cy-r)} {R(2*r)} {R(r)}" style="position: absolute; left: {R(cx-r)}px; top: {R(cy-r)}px; '
+            f'overflow: visible"><defs><path id="{ident}" d="{path}"></path></defs>'
+            f'<text font-family="\'Source Sans 3\', sans-serif" font-weight="{c["weight"]}" font-size="{c["size"]}" '
+            f'letter-spacing="{c["spacing"]}" text-anchor="middle" fill="{c["fill"]}">'
+            f'<textPath href="#{ident}" startOffset="50%">{text}</textPath></text></svg>')
+
+
+def field_caption(key, text):
+    """Top of a DEX or SPD field: the base value, following the arched top edge."""
+    r = STAT_ARCH_R
+    return curved_caption(f"hr-cap-{key.lower()}", STAT_AXIS[key], STAT_FIELD_TOP + r, r - 13.0, text, f"{key} base")
+
+
+def arc_caption(text):
+    """Inside top of the Coins ring: the starting coins, like LEVEL in its circle."""
+    return curved_caption("hr-coin-arc", COIN_C[0], COIN_C[1], COIN_ARCH_R - 12.5, text, "Starting coins")
 
 
 # ================================================================ B.4 profile parsing
@@ -445,7 +456,7 @@ def front_body(h=None, m=None):
     # attribute fields: DEX and SPD carry their base at the top; every value is centred in its field
     if h is None:
         for k in ("DEX", "SPD"):
-            out.append(field_caption(k, '<span class="lbl">Base</span><span class="ln"></span>'))
+            out.append(field_caption(k, "Base"))
     # armour + wounds
     arm, ae = ledger(X0, ARM_X1, ARM_RULE, ARM_PITCH, 2, ARM_COLS, end_bar=True)
     arm_ys = [ARM_RULE + ARM_PITCH * i for i in range(3)]
@@ -460,7 +471,7 @@ def front_body(h=None, m=None):
     inv, ie = ledger(X0, INV_X1, INV_RULE, INV_PITCH, INV_ROWS, INV_COLS, rule_rows=range(INV_ROWS),
                      end_bar=True, bar_to=FRAME_BOTTOM + 1)
     out += wpn + inv
-    out.append(arc_caption("START" if h is None else f"START {esc(h['stats']['Coins'])}", blank_line=h is None))
+    out.append(arc_caption("Start" if h is None else f"Start {esc(h['stats']['Coins'])}"))
     portrait = ""
     if h is not None:
         fill, portrait = front_values(h, m, ae, we, ie)
@@ -492,8 +503,9 @@ def front_values(h, m, ae, we, ie):
             "SPI": signed(int(sc["SPI"])), "INIT": signed(init), "SPD": f'{eff_spd}"', "SIZE": h["stats"]["Sz"]}
     for k, cx in STAT_AXIS.items():
         out.append(div("hv", cx - 40, value_top(STAT_PX, STAT_CENTRE), 80, esc(vals[k]), f" font-size: {R(STAT_PX)}px;"))
-    out.append(field_caption("DEX", f"{signed(base_dex)} {'+' if pen >= 0 else chr(0x2212)} {abs(pen)}"))
-    out.append(field_caption("SPD", f'<span class="lbl">Base</span> {base_spd}"'))
+    # DEX: base and the worse equipped DEX Pen (just the base when nothing equipped imposes one)
+    out.append(field_caption("DEX", f"{signed(base_dex)} \u2212 {-pen}" if pen < 0 else f"Base {signed(base_dex)}"))
+    out.append(field_caption("SPD", f'Base {base_spd}"'))
     # resources: maximums printed, current left for play
     for k, (cur, mx) in RES_CX.items():
         out.append(div("hres", mx - 40, RES_CY - 14, 80, esc(h["stats"][k]), " font-size: 28px;"))
@@ -644,34 +656,29 @@ def reverse_body(h=None, m=None):
         out += back_table(ents, need, rows, TAL_COLS, rule0, pitch, n_rows, True)
         return static + "\n".join(out)
     pow_rule = POW_TOP + BAND_TO_RULE
-    tal_top = pow_rule + BACK_ROWS * BACK_PITCH + SECTION_GAP
+    if h is None:
+        p_n = BACK_ROWS
+    else:
+        # The boundary between Powers and Talents moves per Hero: each table gets the rows its entries
+        # need, and the spare rows are shared out for notes, so nothing has to move to the wrong table.
+        p_ents, t_ents = [pcell(p) for p in powers], [tcell(t) for t in talents]
+        p_need, p_rows = back_layout(p_ents, POW_COLS, m, BACK_PITCH)
+        t_need, t_rows = back_layout(t_ents, TAL_COLS, m, BACK_PITCH)
+        spare = 2 * BACK_ROWS - sum(p_rows) - sum(t_rows)
+        if spare < 0:
+            raise SystemExit(f"{h['name']}: Powers need {sum(p_rows)} rows and Talents {sum(t_rows)}; "
+                             f"the reverse has {2 * BACK_ROWS}")
+        p_n = sum(p_rows) + spare // 2
+    t_n = 2 * BACK_ROWS - p_n
+    tal_top = pow_rule + p_n * BACK_PITCH + SECTION_GAP
     tal_rule = tal_top + BAND_TO_RULE
     out += band("powers", POW_TOP) + band("talents", tal_top)
     if h is None:
         out += ledger(X0, X1, pow_rule, BACK_PITCH, BACK_ROWS, POW_COLS)[0]
         out += ledger(X0, X1, tal_rule, BACK_PITCH, BACK_ROWS, TAL_COLS, rule_rows=range(BACK_ROWS), bar_to=FRAME_BOTTOM + 1)[0]
         return static + "\n".join(out)
-    p_ents = [pcell(p) for p in powers]
-    t_ents = [tcell(t) for t in talents]
-    p_need, p_rows = back_layout(p_ents, POW_COLS, m, BACK_PITCH)
-    t_need, t_rows = back_layout(t_ents, TAL_COLS, m, BACK_PITCH)
-    if sum(t_rows) > BACK_ROWS:
-        # Talents overflow: an ability with an AP cost moves into spare Powers rows, largest first
-        for k in sorted([k for k, t in enumerate(talents) if "AP" in t["cost"]], key=lambda k: -t_rows[k]):
-            if sum(t_rows) <= BACK_ROWS:
-                break
-            if sum(p_rows) + t_rows[k] <= BACK_ROWS:
-                t = talents[k]
-                p_ents.append({0: (esc(t["name"]), 600, False), 1: ("—", 400, True), 2: (cost_html(t["cost"]), 400, True),
-                               3: ("—", 400, True), 4: (t["html"], 400, False)})
-                p_need, p_rows = back_layout(p_ents, POW_COLS, m, BACK_PITCH)
-                t_ents[k], t_rows[k] = None, 0
-        keep = [i for i, e in enumerate(t_ents) if e is not None]
-        t_ents, t_need, t_rows = [t_ents[i] for i in keep], [t_need[i] for i in keep], [t_rows[i] for i in keep]
-    if sum(p_rows) > BACK_ROWS or sum(t_rows) > BACK_ROWS:
-        raise SystemExit(f"{h['name']}: Powers need {sum(p_rows)} rows and Talents {sum(t_rows)}; each table has {BACK_ROWS}")
-    out += back_table(p_ents, p_need, p_rows, POW_COLS, pow_rule, BACK_PITCH, BACK_ROWS, False)
-    out += back_table(t_ents, t_need, t_rows, TAL_COLS, tal_rule, BACK_PITCH, BACK_ROWS, True)
+    out += back_table(p_ents, p_need, p_rows, POW_COLS, pow_rule, BACK_PITCH, p_n, False)
+    out += back_table(t_ents, t_need, t_rows, TAL_COLS, tal_rule, BACK_PITCH, t_n, True)
     return static + "\n".join(out)
 
 
@@ -755,11 +762,11 @@ def fidelity(h, files):
     for it in section(h, "Equipment and Items"):
         name, cost, rest = split_head(it["runs"])
         need("item", re.sub(r"^\d+\s+", "", name))
-    need("coins", "START " + h["stats"]["Coins"])
+    need("coins", "Start " + h["stats"]["Coins"])
     return missing
 
 
-FIT_JS = """() => [...document.querySelectorAll('.hf, .hv, .hres, .hid, .hname, .hr-fcap')].flatMap(d => {
+FIT_JS = """() => [...document.querySelectorAll('.hf, .hv, .hres, .hid, .hname, .hr-arc text')].flatMap(d => {
     const cs = getComputedStyle(d), lead = parseFloat(cs.lineHeight) || parseFloat(cs.fontSize), out = [];
     if (d.dataset.lines) {
         const n = Math.round(d.getBoundingClientRect().height / lead);

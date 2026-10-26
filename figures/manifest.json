@@ -563,7 +563,7 @@
     "title": "Basic Mode: The Courier's Strongbox setup and an example score",
     "purpose": "Show the Appendix B setup constraints (zones, Monster Entry band, terrain types) and one source-supported carrying and scoring example.",
     "source_refs": [
-      "Appendix B. Basic Mode (current source lines 16549-17635)"
+      "Appendix B. Basic Mode (current source lines 16549-17675)"
     ],
     "geometry_spec": "Left: the 24\"x24\" battlefield drawn by the shared map renderer (scenario_specs.json, section appendix, 7.5 pt per inch): 4\" zones on opposite edges (north and south drawn grey dashed, because the source does not say which edges), road band across the centre (width not stated, grey dashed), Strongbox at the centre, three Monster Entry markers 6\" from the centre (inside the 5-7\" ring pair, more than 4\" apart, outside both zones) each with one Monster group and one Satchel drawn beside it, two 3\"x3\" pieces within 4\" of the centre (Blocking ruin, Impassable cart or low wall) and four 3\"x3\" Cover pieces one per quarter, all grey dashed; exit arrows through the own deployment edges. Right: placement rules and the example 4\" - 2\" = 2\"; 12\" / 2\" = 6 Moves; 12 + 4 + 2 + 3 = 21c. A compact key strip at the bottom lists exactly the glyphs used; the full key is FIG-20.",
     "caption": "Basic Mode setup for The Courier's Strongbox on a 24\"×24\" battlefield, with one complete Monster group per Entry marker, assigned at random. Assumed example: carrying the Strongbox cuts Ironscar's SPD 4\" by 2\" to 2\" per Move; extracting it with 1 Satchel, having defeated 2 Goblins and 1 Bandit, scores 12 + 4 + 2 + 3 = 21c; key: FIG-20 (see B.6).",
