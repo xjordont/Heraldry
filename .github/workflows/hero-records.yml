@@ -1,0 +1,43 @@
+name: Build Hero records
+# On request: the illustrated blank Hero record and the 24 populated Basic Mode Heroes as print PDFs.
+# They are build outputs and are never committed (docs/LARGE_FILES.md); download them from this run's
+# artifact. The build fails if the committed blank differs from the generator, or if any Hero's text
+# overflows, falls below 9 pt, or misses B.4 rules, items or coins (assets/hero-record/sheet.py).
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - name: Install locked dependencies and the renderer
+        run: |
+          python -m pip install -r requirements.lock playwright==1.63.0
+          python -m playwright install --with-deps chromium
+      - name: Fetch the Hero portraits
+        # only the 24 portraits named in basic-heroes.json, not the full art library
+        run: |
+          INC=$(python -c "import json; d=json.load(open('typst/heroes/basic-heroes.json')); print(','.join(sorted('assets/art/ink/' + h['art'] + '.png' for h in d['heroes'])))")
+          git lfs pull --include="$INC" --exclude=""
+      - name: Blank sides are current
+        run: |
+          python assets/hero-record/sheet.py blank --pdf build/hero-records/hero-record-blank.pdf
+          git diff --exit-code -- assets/hero-record/hero-record-front.html assets/hero-record/hero-record-reverse.html
+      - name: Populated Basic Mode Heroes
+        run: python assets/hero-record/sheet.py heroes --no-png --pdf build/hero-records/basic-heroes.pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: heraldry-hero-records
+          path: build/hero-records/*.pdf
+          retention-days: 30
+          if-no-files-found: error

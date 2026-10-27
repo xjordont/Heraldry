@@ -798,6 +798,7 @@ def render(browser, pages, png=True, pdf=None):
         pg.close()
     if pdf:
         from pypdf import PdfReader, PdfWriter
+        pathlib.Path(pdf).parent.mkdir(parents=True, exist_ok=True)
         w = PdfWriter()
         for f in parts:
             w.add_page(PdfReader(str(f)).pages[0])

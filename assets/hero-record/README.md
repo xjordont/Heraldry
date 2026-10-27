@@ -37,4 +37,6 @@ Type follows `config/design_tokens.json`: Grenze Gotisch (titles and banners), S
 
 Output goes to `build/hero-records/` and is never committed (docs/LARGE_FILES.md): each Hero's front and reverse in B.4 order, then any reference cards, so duplex pairs stay aligned. The build fails if any text overflows its cell, falls below 9 pt, or if any B.4 rules text, item, or coin value is missing from a Hero's pages.
 
+To build both PDFs without a local browser, run the **Build Hero records** workflow (Actions, `.github/workflows/hero-records.yml`) and download its `heraldry-hero-records` artifact; it also fails if the committed blank differs from the generator. `tests/test_hero_record.py` checks that every B.4 weapon, armour and shield agrees with the 7.8-7.12 tables (Hands, damage die, traits, AD, DEX Pen, Max Speed) and that the Hero meets each requirement.
+
 Print actual size (100%), Letter portrait, duplex, flip on the long edge. Do not commit PDFs; publish through a GitHub Release. Owner approval of this version and physical print, handwriting, and duplex registration are **NOT TESTED**.
