@@ -19,6 +19,7 @@ Git history is permanent: earlier commits still hold old PDFs and ZIPs (about 49
 | Style references `assets/art/style/` (owner samples and public-domain prints) | plain Git, 0.1–4.5 MB each | the owner | every clone: the art worker attaches them and the tests read them |
 | Owner reference books `references/private/pdfs/` | Git LFS, private | the owner | only on purpose, one book at a time (`references/README.md`); never by the art worker; never packaged |
 | Built PDFs and the release ZIP | a **GitHub Release** per requested build (tag `RC###-build-N`) | the `Rebuild verified delivery` workflow | the owner, from the Releases page |
+| Illustrated Hero record PDFs (blank and 24 Basic Mode Heroes) | a **GitHub pre-release** per run (tag `RC###-hero-records-N`) | the `Build Hero records` workflow, on request | the owner, from the Releases page; not a book release |
 | Build ledgers (`production/qa/`, provenance, inventory) and `dist/RELEASE.json` | plain Git | the same workflow | everyone; the ledgers are bound to the released files' SHA-256 |
 | Skill ZIP and offline Work input package | not stored: `build/art/` | `make art-packages` (about 5 s), or the `Build art packages` workflow (a 30-day download) | the owner, only for the ChatGPT Work fallback |
 | Review contact sheets | not stored: `build/art/review/` | `tools/art_intake.py pending --sheet` (it fetches just the pending ink files) | Claude Code, when reviewing |
