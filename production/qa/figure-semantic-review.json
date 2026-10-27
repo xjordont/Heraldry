@@ -17,7 +17,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "56a48b41a40cdd53ca545294012b97d8420a359d01c8255c404161d798652c61",
+   "rules_sha256": "792cc34c520428af68f0f320c208dc7dc24f105b5fa438e8c0c360af61ce3cc0",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -77,6 +77,21 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc517_review": {
+    "reviewed_at": "2026-10-26",
+    "reviewer": "Claude Code integration owner; model review of every SVG text node and caption against the RC517 source, not independent human proof",
+    "source": "source/Heraldry_RC517.md",
+    "source_sha256": "0924aa5093ac4ea442dc51640b66b589a28d84206207d34073ac83dd8c09eaff",
+    "checked_source_sections": [
+     "3"
+    ],
+    "verdict": "PASS",
+    "summary": "RC516-RC517 changed 3.3.1 only by adding a fourth activation-end bullet (a Hero reduced to 0 HP during their own activation). The four phase cards, loop, and Monster-first exception do not depict activation-end conditions; every label and citation remains correct.",
+    "limits": [
+     "SVG and caption bytes unchanged since the last rendered inspection; no re-render required.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -101,7 +116,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "cf872f906caad58e0701379c277c10fb9f7577d8dc52aee0465ab5d5ed023009",
+   "rules_sha256": "09c9eb1173b5f698b081fa3ad19a3d617fe15f7e08de2150a6eee602a1e53411",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
@@ -167,6 +182,25 @@
      "Standalone figures; full-book placement and pagination untested for RC512.",
      "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
+   },
+   "rc517_review": {
+    "reviewed_at": "2026-10-26",
+    "reviewer": "Claude Code integration owner; model review of every SVG text node and caption against the RC517 source, not independent human proof",
+    "source": "source/Heraldry_RC517.md",
+    "source_sha256": "0924aa5093ac4ea442dc51640b66b589a28d84206207d34073ac83dd8c09eaff",
+    "checked_source_sections": [
+     "3.3",
+     "3.3.1",
+     "3.3.2",
+     "4.5",
+     "5.5.1"
+    ],
+    "verdict": "PASS",
+    "summary": "Panel A's five-step activation procedure and eligibility list are verbatim-consistent with RC517 3.3.1; the new 0 HP activation-end bullet adds a case the figure does not depict. Panel B's Move, Attack, Block AP example is unchanged by RC516 or RC517.",
+    "limits": [
+     "SVG and caption bytes unchanged since the last rendered inspection; no re-render required.",
      "Physical print NOT TESTED."
     ]
    }
@@ -753,7 +787,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "e9c96038057b53da43bffab2b7c48117664df4388e251b352f68494520ebaf9a",
+   "rules_sha256": "9ea3463a361aa37ba8d478663ef556ff327589f14f9f621b425ffe2bec2cf902",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -803,6 +837,23 @@
      "Standalone figures; full-book placement and pagination untested for RC512.",
      "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
+   },
+   "rc517_review": {
+    "reviewed_at": "2026-10-26",
+    "reviewer": "Claude Code integration owner; model review of every SVG text node and caption against the RC517 source, not independent human proof",
+    "source": "source/Heraldry_RC517.md",
+    "source_sha256": "0924aa5093ac4ea442dc51640b66b589a28d84206207d34073ac83dd8c09eaff",
+    "checked_source_sections": [
+     "9.3",
+     "9.4",
+     "5.9 (Hide distance)"
+    ],
+    "verdict": "PASS",
+    "summary": "RC516 changed 5.9 only by renaming 'permanent injury' to 'lingering injury' in the negative-condition sentence. Hide distance (2\") and the Hidden wake-up text the figure shows are unchanged; 9.3 and 9.4 are unchanged.",
+    "limits": [
+     "SVG and caption bytes unchanged since the last rendered inspection; no re-render required.",
      "Physical print NOT TESTED."
     ]
    }
@@ -1598,7 +1649,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "e2e645314b3dbdc970bc329704886e585d7868c4239f68eb8ec480efba84f08b",
+   "rules_sha256": "c93836888dac752d136271e2ae4055c61aa0ad93b7fa58bf7af16facfc72c95e",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
@@ -1656,6 +1707,24 @@
      "Standalone figures; full-book placement and pagination untested for RC512.",
      "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
+   },
+   "rc517_review": {
+    "reviewed_at": "2026-10-26",
+    "reviewer": "Claude Code integration owner; model review of every SVG text node and caption against the RC517 source, not independent human proof",
+    "source": "source/Heraldry_RC517.md",
+    "source_sha256": "0924aa5093ac4ea442dc51640b66b589a28d84206207d34073ac83dd8c09eaff",
+    "checked_source_sections": [
+     "11.2",
+     "11.2.1",
+     "11.2.3",
+     "11.2.4"
+    ],
+    "verdict": "PASS",
+    "summary": "RC516 changed 11.2.4 only in the Cleanse Affliction service text (names lingering injuries). The figure's checklist item 'any lingering injuries' and the Chapel summary ('restores the injured, removes afflictions, petitions for miracles') match RC517 exactly; 4 TAP default unchanged.",
+    "limits": [
+     "SVG and caption bytes unchanged since the last rendered inspection; no re-render required.",
      "Physical print NOT TESTED."
     ]
    }
@@ -1853,7 +1922,7 @@
      "fix": "None; source line references in Appendix B after B.4 shift by +40."
     }
    ],
-   "rules_sha256": "c867aada0576139125240ac32d9a9d254a02d1fa7aa69dd1b266df6187f31903",
+   "rules_sha256": "7be97499cc7218dce0afeb07d3ccc18dfb0dbd4d4ce9cc5edf5f49bb6a69f53a",
    "reviewed_at": "2026-10-07T10:58:00Z",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1939,6 +2008,21 @@
     ],
     "verdict": "PASS",
     "summary": "RC515 adds 'two-handed' to Redhand's Greataxe and Thornmere's Shortbow in B.4 only. FIG-19 shows neither Hero nor weapon; every value it shows is unchanged."
+   },
+   "rc517_review": {
+    "reviewed_at": "2026-10-26",
+    "reviewer": "Claude Code integration owner; model review of every SVG text node and caption against the RC517 source, not independent human proof",
+    "source": "source/Heraldry_RC517.md",
+    "source_sha256": "0924aa5093ac4ea442dc51640b66b589a28d84206207d34073ac83dd8c09eaff",
+    "checked_source_sections": [
+     "B"
+    ],
+    "verdict": "PASS",
+    "summary": "RC516 changed B.4 only in the six Human Determined Resolve traits (True Death to Decapitated). FIG-19 depicts B.6 setup, B.5 Coin Values, and Ironscar's SPD; no trait, Wound, or Injuries Table rule appears. Every value shown is unchanged.",
+    "limits": [
+     "SVG and caption bytes unchanged since the last rendered inspection; no re-render required.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {

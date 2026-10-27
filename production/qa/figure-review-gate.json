@@ -16,12 +16,12 @@
    "current": {
     "svg_sha256": "673a6cd908691f01526d71949229ac9fd68a83892bd890c984cc451415a6682e",
     "caption_sha256": "52861a6881d4605007bb65dbf1b5fdc4e48ae089709972c007b9e373633557d6",
-    "rules_sha256": "56a48b41a40cdd53ca545294012b97d8420a359d01c8255c404161d798652c61"
+    "rules_sha256": "792cc34c520428af68f0f320c208dc7dc24f105b5fa438e8c0c360af61ce3cc0"
    },
    "reviewed": {
     "svg_sha256": "673a6cd908691f01526d71949229ac9fd68a83892bd890c984cc451415a6682e",
     "caption_sha256": "52861a6881d4605007bb65dbf1b5fdc4e48ae089709972c007b9e373633557d6",
-    "rules_sha256": "56a48b41a40cdd53ca545294012b97d8420a359d01c8255c404161d798652c61"
+    "rules_sha256": "792cc34c520428af68f0f320c208dc7dc24f105b5fa438e8c0c360af61ce3cc0"
    },
    "reviewed_present": true,
    "stale": false,
@@ -37,12 +37,12 @@
    "current": {
     "svg_sha256": "77870340690440f89f1576e9edb91e35a2a40a6ef0e58581fec216cfe7c4f0b2",
     "caption_sha256": "ed4ed4f46d21fef9323d26e776d16e5dec23538dd2debe48cc8b8963d4e216ab",
-    "rules_sha256": "cf872f906caad58e0701379c277c10fb9f7577d8dc52aee0465ab5d5ed023009"
+    "rules_sha256": "09c9eb1173b5f698b081fa3ad19a3d617fe15f7e08de2150a6eee602a1e53411"
    },
    "reviewed": {
     "svg_sha256": "77870340690440f89f1576e9edb91e35a2a40a6ef0e58581fec216cfe7c4f0b2",
     "caption_sha256": "ed4ed4f46d21fef9323d26e776d16e5dec23538dd2debe48cc8b8963d4e216ab",
-    "rules_sha256": "cf872f906caad58e0701379c277c10fb9f7577d8dc52aee0465ab5d5ed023009"
+    "rules_sha256": "09c9eb1173b5f698b081fa3ad19a3d617fe15f7e08de2150a6eee602a1e53411"
    },
    "reviewed_present": true,
    "stale": false,
@@ -205,12 +205,12 @@
    "current": {
     "svg_sha256": "38d5f9c1879deda527706abbf229630d9273d9adaaef694011ae6a9c8208932a",
     "caption_sha256": "4839eb469dc7059f722eddbb959d8140ea89a8c3e1e8c69be21a6d1102f90ab8",
-    "rules_sha256": "e9c96038057b53da43bffab2b7c48117664df4388e251b352f68494520ebaf9a"
+    "rules_sha256": "9ea3463a361aa37ba8d478663ef556ff327589f14f9f621b425ffe2bec2cf902"
    },
    "reviewed": {
     "svg_sha256": "38d5f9c1879deda527706abbf229630d9273d9adaaef694011ae6a9c8208932a",
     "caption_sha256": "4839eb469dc7059f722eddbb959d8140ea89a8c3e1e8c69be21a6d1102f90ab8",
-    "rules_sha256": "e9c96038057b53da43bffab2b7c48117664df4388e251b352f68494520ebaf9a"
+    "rules_sha256": "9ea3463a361aa37ba8d478663ef556ff327589f14f9f621b425ffe2bec2cf902"
    },
    "reviewed_present": true,
    "stale": false,
@@ -352,12 +352,12 @@
    "current": {
     "svg_sha256": "c2d2eaae5ed8a465b4b5f92d4e9d92298827624fd8f4c3d24fb395d504d91087",
     "caption_sha256": "9bbff0ec3080c708ed8841aacc21de7f3ab9e2b3496f5307f163a768e14c3b43",
-    "rules_sha256": "e2e645314b3dbdc970bc329704886e585d7868c4239f68eb8ec480efba84f08b"
+    "rules_sha256": "c93836888dac752d136271e2ae4055c61aa0ad93b7fa58bf7af16facfc72c95e"
    },
    "reviewed": {
     "svg_sha256": "c2d2eaae5ed8a465b4b5f92d4e9d92298827624fd8f4c3d24fb395d504d91087",
     "caption_sha256": "9bbff0ec3080c708ed8841aacc21de7f3ab9e2b3496f5307f163a768e14c3b43",
-    "rules_sha256": "e2e645314b3dbdc970bc329704886e585d7868c4239f68eb8ec480efba84f08b"
+    "rules_sha256": "c93836888dac752d136271e2ae4055c61aa0ad93b7fa58bf7af16facfc72c95e"
    },
    "reviewed_present": true,
    "stale": false,
@@ -394,12 +394,12 @@
    "current": {
     "svg_sha256": "8595cd625d2a4ae5f9fc0c337bc9e13203915f7f274d627a574c104048a23d74",
     "caption_sha256": "fe49806f43a98b023b889e149ab5d124fada5cd1ddb23fceae5a6a02f9988d64",
-    "rules_sha256": "c867aada0576139125240ac32d9a9d254a02d1fa7aa69dd1b266df6187f31903"
+    "rules_sha256": "7be97499cc7218dce0afeb07d3ccc18dfb0dbd4d4ce9cc5edf5f49bb6a69f53a"
    },
    "reviewed": {
     "svg_sha256": "8595cd625d2a4ae5f9fc0c337bc9e13203915f7f274d627a574c104048a23d74",
     "caption_sha256": "fe49806f43a98b023b889e149ab5d124fada5cd1ddb23fceae5a6a02f9988d64",
-    "rules_sha256": "c867aada0576139125240ac32d9a9d254a02d1fa7aa69dd1b266df6187f31903"
+    "rules_sha256": "7be97499cc7218dce0afeb07d3ccc18dfb0dbd4d4ce9cc5edf5f49bb6a69f53a"
    },
    "reviewed_present": true,
    "stale": false,

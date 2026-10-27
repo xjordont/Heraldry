@@ -73,7 +73,9 @@ def find_make(root: Path) -> str:
 
 def run_tests(root: Path, python: str = sys.executable) -> None:
     """Run the required make test with this interpreter; raise PublishError on failure."""
-    executable = str(Path(python).resolve()).replace("\\", "/")
+    # absolute(), not resolve(): a POSIX venv's python is a symlink, and resolving it
+    # would run the tests on the base interpreter without the venv's packages.
+    executable = str(Path(python).absolute()).replace("\\", "/")
     # Keep the interpreter quoted in the recipe, including Windows paths with spaces.
     command = [find_make(root), "test", f'PY="{executable.replace("$", "$$")}"']
     env = dict(os.environ, PYTHONUTF8="1")
