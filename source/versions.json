@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 514,
+  "current": 515,
   "revisions": [
     {
       "number": 484,
@@ -326,6 +326,22 @@
       ],
       "patch_file": "editorial/history/RC514.json",
       "patch_sha256": "c7d41edba0da8a3629540993aa17aa99342e71ab18d92c8212a28c30767138e2"
+    },
+    {
+      "number": 515,
+      "path": "source/Heraldry_RC515.md",
+      "sha256": "086d53bba0f0268fc4617da97ff0c92ff2643045dba4dc943583051dcde1d6bf",
+      "bytes": 1534827,
+      "parent_sha256": "fa433e49b017eeb4b5fa16de4883e9955dc82b7c9ec151d1ad0cc835be2fe4cd",
+      "created_at": "2026-10-27T00:19:35.006012+00:00",
+      "reason": "B.4: Redhand's Greataxe and Thornmere's Shortbow state two-handed, matching the 7.8 and 7.9 tables (Hands 2)",
+      "authorization": "Owner (Jordon) approved the exact RC514-to-RC515 two-line diff in session, 2026-10-26",
+      "patch_ids": [
+        "IMPORT-001",
+        "IMPORT-002"
+      ],
+      "patch_file": "editorial/history/RC515.json",
+      "patch_sha256": "a2bb450a01dbc4c709b76bf7888bd1fd72fff35c263b2ef08cf4899418015414"
     }
   ]
 }

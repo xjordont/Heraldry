@@ -1,4 +1,8 @@
-# Production state - RC514 source, main
+# Production state - RC515 source, main
+
+## RC515 two-handed corrections in B.4 - 2026-10-26
+
+An audit of every B.4 weapon, armour and shield line against the 7.8-7.12 tables found two omissions: Redhand's Greataxe and Thornmere's Shortbow are two-handed (Hands 2) but their profiles did not say so, so their sheets printed Hands 1. The owner approved the exact two-line RC514-to-RC515 diff, applied through `manuscript apply`; RC515 SHA-256 `086d53bba0f0268fc4617da97ff0c92ff2643045dba4dc943583051dcde1d6bf`. `basic-heroes.json` was re-extracted. `tests/test_hero_record.py` now checks every B.4 weapon, armour and shield (Hands, damage die, traits, AD, DEX Pen, Max Speed) against the equipment tables and every usable item's STR and DEX requirements. FIG-19 was re-reviewed against RC515 (unaffected) and re-bound. No PDF build; physical print **NOT TESTED**.
 
 ## Hero record captions and back-page balance - 2026-10-26
 

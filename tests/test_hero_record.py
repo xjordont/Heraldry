@@ -56,5 +56,70 @@ class HeroesParse(unittest.TestCase):
             self.assertFalse([t for t in talents if t["type"] == "Weapon trait"], h["name"])
 
 
+def _active_manuscript():
+    import json
+    v = json.loads((ROOT / "source/versions.json").read_text(encoding="utf-8"))
+    rev = next(r for r in v["revisions"] if r["number"] == v["current"])
+    return (ROOT / rev["path"]).read_text(encoding="utf-8").split("\n")
+
+
+def _table(lines, first_header):
+    import re
+    i = next(k for k, l in enumerate(lines) if l.startswith(first_header))
+    hdr = [c.strip() for c in lines[i].strip("|").split("|")]
+    rows, j = {}, i + 2
+    while j < len(lines) and lines[j].startswith("|"):
+        r = dict(zip(hdr, [c.strip() for c in lines[j].strip("|").split("|")]))
+        rows[re.sub(r"\s*\(.*\)", "", r[hdr[0]]).strip()] = r
+        j += 1
+    return rows
+
+
+class B4GearMatchesTheEquipmentTables(unittest.TestCase):
+    """A B.4 profile is used in isolation, so its gear must agree with 7.8-7.12 (Hands, damage die,
+    traits, AD, DEX Pen, Max Speed), and every item a Hero can use must meet its requirements."""
+
+    @classmethod
+    def setUpClass(cls):
+        lines = _active_manuscript()
+        cls.weapons = {**_table(lines, "| Weapon | Cost (c) | Hands | STR Req | DEX Req | Damage"),
+                       **_table(lines, "| Weapon | Cost (c) | Hands | Range")}
+        cls.armour = _table(lines, "| Armour | Cost (c) | AD")
+        cls.shields = _table(lines, "| Shield | Cost (c) | AD")
+
+    def weapon(self, name):
+        import re
+        base = re.sub(r"^(Elven|Masterwork) ", "", re.sub(r" \(\d+\)$", "", name))
+        return self.weapons.get(base) or next(v for k, v in self.weapons.items() if k.startswith(base) or base.startswith(k))
+
+    def test_weapons_armour_and_shields(self):
+        import re
+        req = lambda v: None if v in ("-", "") else int(v)
+        for h in sheet.DATA["heroes"]:
+            sc = {k: int(v) for k, v in h["scores"].items()}
+            chest, shield, weapons, _inv = sheet.parse_equipment(h)
+            for w in weapons:
+                with self.subTest(hero=h["name"], weapon=w["name"]):
+                    t = self.weapon(w["name"])
+                    self.assertEqual(w["hands"], t["Hands"], "Hands")
+                    self.assertEqual(w["damage"].split(" ")[0], t["Damage"].split(" ")[0], "damage die")
+                    listed = {x.strip() for x in w["traits"].split(",") if x.strip() and not x.startswith("Carried")}
+                    table = set(re.findall(r"\*\*(\w+)\*\*", t["Traits"])) - {"Ranged"}
+                    if listed:
+                        self.assertEqual(listed - {"Elven", "Masterwork"}, table, "traits")
+                    if not w["traits"].startswith("Carried"):
+                        s, d = req(t.get("STR Req", "-")), req(t.get("DEX Req", "-"))
+                        if d is not None and w["name"].startswith("Elven "):
+                            d = d - 1 if d > 1 else None
+                        self.assertTrue((s is None or sc["STR"] >= s) and (d is None or sc["DEX"] >= d), "requirements")
+            for a, tab in ((chest, self.armour), (shield, self.shields)):
+                if a:
+                    with self.subTest(hero=h["name"], armour=a["name"]):
+                        t = tab[a["name"]]
+                        self.assertEqual((a["ad"], a["pen"], f'{a["spd"]}"'), (t["AD"], int(t["DEX Pen"]), t["Max Speed"]))
+                        s = req(t["STR Req"])
+                        self.assertTrue(s is None or sc["STR"] >= s, "STR requirement")
+
+
 if __name__ == "__main__":
     unittest.main()
