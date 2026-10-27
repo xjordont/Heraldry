@@ -10,8 +10,8 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 
 <!-- BEGIN AUTO:status -->
 
-- **Manuscript:** [RC514](source/Heraldry_RC514.md) (`source/versions.json`). Earlier snapshots are immutable.
-- **Last recorded delivery:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages. RC514 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
+- **Manuscript:** [RC515](source/Heraldry_RC515.md) (`source/versions.json`). Earlier snapshots are immutable.
+- **Last recorded delivery:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages. RC515 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
 - **Illustration records:** 299 approved of 299; 24 generation-queue items.
 - **Rules figures:** 57; 57/57 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`9a8ce525`](https://github.com/xjordont/Heraldry/commit/9a8ce525dbfe7f239da91107c817ea6d428561fe) manuscript: RC515 marks Redhand's Greataxe and Thornmere's Shortbow two-handed
 - [`61ae9b75`](https://github.com/xjordont/Heraldry/commit/61ae9b75599125bca8395a16901da95b54c7c4d6) hero record: quiet curved captions; per-Hero Powers/Talents split; FIG-19 re-review
 - [`a26e28f8`](https://github.com/xjordont/Heraldry/commit/a26e28f8bdbad6e04263dd9321a45d73ddb7d945) hero record: one generator for blank and Heroes; effective DEX/SPD; martial reverse
 - [`b6b5c79f`](https://github.com/xjordont/Heraldry/commit/b6b5c79f4417a740fad0e3ef0e0ed18de3a0537d) manuscript: RC514 Basic Mode starting coins and background items
 - [`8214f250`](https://github.com/xjordont/Heraldry/commit/8214f25006ed03c87814a90520296f96913782e7) hero record: populate the illustrated record for the 24 Basic Mode Heroes
 - [`20cb13bc`](https://github.com/xjordont/Heraldry/commit/20cb13bc5787ec2402fa407a52923b1f7f5378cb) ci: fetch Hero portraits for card tests; skip Work package test without LFS images
-- [`98ca8910`](https://github.com/xjordont/Heraldry/commit/98ca8910374392d874a5e1dde9794ab6e4df8255) hero record: add illustrated blank Hero Record, front and Powers & Talents reverse
 
 <!-- END AUTO:recent -->
 
