@@ -39,14 +39,15 @@ class HeroesParse(unittest.TestCase):
                                  - len(sheet.natural_weapons(h)) + len(inventory), "every item has one place")
                 self.assertRegex(h["stats"]["Coins"], r"^\d+c$")
                 base_dex, pen, eff_dex, base_spd, eff_spd = sheet.effective(h, chest, shield)
-                self.assertEqual(eff_dex, base_dex + min([a["pen"] for a in (chest, shield) if a] or [0]))
+                self.assertEqual(eff_dex, base_dex + sum(a["pen"] for a in (chest, shield) if a))
                 self.assertLessEqual(eff_spd, base_spd)
 
-    def test_effective_values_follow_the_worse_pen_and_lowest_max_speed(self):
+    def test_effective_values_add_pens_and_follow_the_lowest_max_speed(self):
         h = next(x for x in sheet.DATA["heroes"] if x["name"] == "Hearthbell")
         chest, shield, _w, _i = sheet.parse_equipment(h)
-        # DEX -2; Ring Shirt -2 and Heater Shield -1 do not stack; SPD 4" under Max Speed 6" and 7"
-        self.assertEqual(sheet.effective(h, chest, shield), (-2, -2, -4, 4, 4))
+        # DEX -2; Ring Shirt -2 and Heater Shield -1 add to -3; SPD 4" under Max Speed 5" and 6"
+        self.assertEqual(sheet.effective(h, chest, shield), (-2, -3, -5, 4, 4))
+        self.assertEqual((chest["spd"], shield["spd"]), (5, 6))
 
     def test_martial_heroes_have_no_powers_and_traits_are_not_repeated(self):
         for h in sheet.DATA["heroes"]:

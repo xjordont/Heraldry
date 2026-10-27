@@ -89,7 +89,7 @@
     #pencil-table(("", "Item", "AD", "AV", "DEX Pen", "Max SPD"), (44pt, 1fr, 36pt, 36pt, 50pt, 52pt), 2, row: 20pt,
       aligns: (left, left, center, center, center, center), first: ("Chest", "Shield"))
     #v(4pt)
-    #text(size: 9pt, fill: ink3)[Shield AD and AV only through Block · use only the worse DEX Pen]
+    #text(size: 9pt, fill: ink3)[Shield AD and AV only through Block · Chest and shield DEX Pen add together]
   ],
   plate(title: "Wounds", h: 92pt, inset: (x: 10pt, top: 15pt, bottom: 7pt))[
     #align(center)[#wound(s: 17pt) #h(6pt) #wound(s: 17pt) #h(6pt) #wound(s: 17pt)]

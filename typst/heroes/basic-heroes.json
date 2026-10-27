@@ -1,5 +1,5 @@
 {
- "b4_sha256": "7566b01446c21c4411cbb087edaf4638e8f3f0e9ab967a6ac2344f3a05a919a1",
+ "b4_sha256": "d098c6ffa86de2b034d64001879c88ab943c1560a6d89687dfa8f35fa69f3e60",
  "reminders": {
   "Darkvision": {
    "head": "Darkvision (12\") Reminder",
@@ -64,7 +64,7 @@
    ["7.2", true],
    [". Printed ability scores exclude ", false],
    ["DEX Pen", true],
-   ["; apply only the worse equipped Chest or shield penalty when resolving a DEX-based value.", false]
+   ["; add the equipped Chest and shield penalties together when resolving a DEX-based value.", false]
   ],
   "knocked_out": [
    ["When a Hero reaches ", false],
@@ -186,10 +186,10 @@
         [", ", false],
         ["DEX Pen -1", true],
         [", ", false],
-        ["Max Speed 7\"", true],
-        [". Use only the worse of this penalty and Chest armour ", false],
+        ["Max Speed 6\"", true],
+        [". Add this penalty to any Chest armour ", false],
         ["DEX Pen", true],
-        ["; they do not stack.", false]
+        [".", false]
        ],
        "sub": []
       },
@@ -201,7 +201,7 @@
         [", ", false],
         ["DEX Pen -1", true],
         [", ", false],
-        ["Max Speed 7\"", true],
+        ["Max Speed 6\"", true],
         [". Apply the ", false],
         ["DEX Pen", true],
         [" to your ", false],
@@ -438,7 +438,7 @@
         [", ", false],
         ["DEX Pen -2", true],
         [", ", false],
-        ["Max Speed 6\"", true],
+        ["Max Speed 5\"", true],
         [". Apply the ", false],
         ["DEX Pen", true],
         [" to your ", false],
@@ -700,7 +700,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 8\"", true],
+        ["Max Speed 7\"", true],
         [".", false]
        ],
        "sub": []
@@ -973,7 +973,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 8\"", true],
+        ["Max Speed 7\"", true],
         [".", false]
        ],
        "sub": []
@@ -1207,10 +1207,10 @@
         [", ", false],
         ["DEX Pen -1", true],
         [", ", false],
-        ["Max Speed 7\"", true],
-        [". Use only the worse of this penalty and Chest armour ", false],
+        ["Max Speed 6\"", true],
+        [". Add this penalty to any Chest armour ", false],
         ["DEX Pen", true],
-        ["; they do not stack.", false]
+        [".", false]
        ],
        "sub": []
       },
@@ -1222,7 +1222,7 @@
         [", ", false],
         ["DEX Pen -2", true],
         [", ", false],
-        ["Max Speed 6\"", true],
+        ["Max Speed 5\"", true],
         [". Apply the ", false],
         ["DEX Pen", true],
         [" to your ", false],
@@ -1475,7 +1475,7 @@
         [", ", false],
         ["DEX Pen -1", true],
         [", ", false],
-        ["Max Speed 7\"", true],
+        ["Max Speed 6\"", true],
         [". Apply the ", false],
         ["DEX Pen", true],
         [" to your ", false],
@@ -2283,7 +2283,7 @@
         [", ", false],
         ["DEX Pen -2", true],
         [", ", false],
-        ["Max Speed 7\"", true],
+        ["Max Speed 6\"", true],
         [". Apply the ", false],
         ["DEX Pen", true],
         [" to your ", false],
@@ -2571,7 +2571,7 @@
         [", ", false],
         ["DEX Pen -2", true],
         [", ", false],
-        ["Max Speed 7\"", true],
+        ["Max Speed 6\"", true],
         [". Apply the ", false],
         ["DEX Pen", true],
         [" to your ", false],
@@ -2846,7 +2846,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 8\"", true],
+        ["Max Speed 7\"", true],
         [".", false]
        ],
        "sub": []
@@ -3096,7 +3096,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 8\"", true],
+        ["Max Speed 7\"", true],
         [".", false]
        ],
        "sub": []
@@ -3336,10 +3336,10 @@
         [", ", false],
         ["DEX Pen -1", true],
         [", ", false],
-        ["Max Speed 7\"", true],
-        [". Use only the worse of this penalty and Chest armour ", false],
+        ["Max Speed 6\"", true],
+        [". Add this penalty to any Chest armour ", false],
         ["DEX Pen", true],
-        ["; they do not stack.", false]
+        [".", false]
        ],
        "sub": []
       },
@@ -3351,7 +3351,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 7\"", true],
+        ["Max Speed 6\"", true],
         [".", false]
        ],
        "sub": []
@@ -3581,7 +3581,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 8\"", true],
+        ["Max Speed 7\"", true],
         [". When you use ", false],
         ["Block", true],
         [" with a Targe against a melee weapon attack, add ", false],
@@ -3600,7 +3600,7 @@
         [", ", false],
         ["DEX Pen -2", true],
         [", ", false],
-        ["Max Speed 6\"", true],
+        ["Max Speed 5\"", true],
         [". Apply the ", false],
         ["DEX Pen", true],
         [" to your ", false],
@@ -3845,7 +3845,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 8\"", true],
+        ["Max Speed 7\"", true],
         [".", false]
        ],
        "sub": []
@@ -4242,7 +4242,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 8\"", true],
+        ["Max Speed 7\"", true],
         [".", false]
        ],
        "sub": []
@@ -4537,7 +4537,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 8\"", true],
+        ["Max Speed 7\"", true],
         [".", false]
        ],
        "sub": []
@@ -4802,7 +4802,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 8\"", true],
+        ["Max Speed 7\"", true],
         [".", false]
        ],
        "sub": []
@@ -5081,7 +5081,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 8\"", true],
+        ["Max Speed 7\"", true],
         [".", false]
        ],
        "sub": []
@@ -5445,7 +5445,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 8\"", true],
+        ["Max Speed 7\"", true],
         [".", false]
        ],
        "sub": []
@@ -5777,7 +5777,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 8\"", true],
+        ["Max Speed 7\"", true],
         [".", false]
        ],
        "sub": []
@@ -6059,7 +6059,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 8\"", true],
+        ["Max Speed 7\"", true],
         [".", false]
        ],
        "sub": []
@@ -6294,7 +6294,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 8\"", true],
+        ["Max Speed 7\"", true],
         [".", false]
        ],
        "sub": []
@@ -6578,7 +6578,7 @@
         [", ", false],
         ["DEX Pen 0", true],
         [", ", false],
-        ["Max Speed 8\"", true],
+        ["Max Speed 7\"", true],
         [".", false]
        ],
        "sub": []

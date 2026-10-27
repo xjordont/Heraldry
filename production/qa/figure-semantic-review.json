@@ -1922,7 +1922,7 @@
      "fix": "None; source line references in Appendix B after B.4 shift by +40."
     }
    ],
-   "rules_sha256": "7be97499cc7218dce0afeb07d3ccc18dfb0dbd4d4ce9cc5edf5f49bb6a69f53a",
+   "rules_sha256": "3d030aad7abd4f2dbeb4c1c092dfc53a7a82b6da28573089b3ce774b1ea67c17",
    "reviewed_at": "2026-10-07T10:58:00Z",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2021,6 +2021,21 @@
     "summary": "RC516 changed B.4 only in the six Human Determined Resolve traits (True Death to Decapitated). FIG-19 depicts B.6 setup, B.5 Coin Values, and Ironscar's SPD; no trait, Wound, or Injuries Table rule appears. Every value shown is unchanged.",
     "limits": [
      "SVG and caption bytes unchanged since the last rendered inspection; no re-render required.",
+     "Physical print NOT TESTED."
+    ]
+   },
+   "rc518_review": {
+    "reviewed_at": "2026-10-26",
+    "reviewer": "Claude Code integration owner; model review of every SVG text node and caption against the RC518 source, not independent human proof",
+    "source": "source/Heraldry_RC518.md",
+    "source_sha256": "2ebb6deecbd6ab5d90c888a73dd983ea1a0bdedf594a0b31c2c11e2598c890bf",
+    "checked_source_sections": [
+     "B"
+    ],
+    "verdict": "PASS",
+    "summary": "RC518 changes B.4 only in equipment Max Speed values (each 1 inch lower) and the Heater Shield DEX Pen stacking note. FIG-19's example uses Ironscar's base SPD 4\", which stays below his new caps (Mail Shirt 6\", Heater Shield 6\"); 4\" - 2\" = 2\" per Move is unchanged. No DEX value is shown.",
+    "limits": [
+     "SVG and caption bytes unchanged.",
      "Physical print NOT TESTED."
     ]
    }

@@ -1,4 +1,8 @@
-# Release status - RC517 source / RC492 delivery
+# Release status - RC518 source / RC492 delivery
+
+## RC518 manuscript - 2026-10-26
+
+RC518 is the active manuscript: Chest armour and shield DEX Pen add together, and every equipment-imposed Max Speed is 1" lower. Hero records were rebuilt from RC518. The figure gate is 57/57. The book has not been built or released; the published delivery remains RC492-build-37. Physical print **NOT TESTED**.
 
 ## RC517 manuscript - 2026-10-26
 

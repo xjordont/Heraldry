@@ -122,7 +122,7 @@
   "specimen-wide-table": {
     "section": "h-tier-5-legendary-artifact-armour-and-shields-d20",
     "type": "table",
-    "prefix": "d20 | Name | Equipment Type | AD/AV | STR | DEX | INT | SPI | DEX Pen | Max Speed | Cost (c) | Description | 1 | Sunforged Full Plate | Chest | d12+5 | 8 | - | - | - | -5 | 5\" | 12"
+    "prefix": "d20 | Name | Equipment Type | AD/AV | STR | DEX | INT | SPI | DEX Pen | Max Speed | Cost (c) | Description | 1 | Sunforged Full Plate | Chest | d12+5 | 8 | - | - | - | -5 | 4\" | 12"
   },
   "FIG-20": {
     "section": "h-104-core-scenario-outlines",
