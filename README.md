@@ -27,7 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
-- [`cf48cfc6`](https://github.com/xjordont/Heraldry/commit/cf48cfc66f4e62c07457daf3cf72e17c03bfd469) docs: refresh generated README
+- [`34167daf`](https://github.com/xjordont/Heraldry/commit/34167daf1c6b2204a8a0a3a6c1a78ae4d52bbd30) RC516: replace the Injuries Table, add Lingering Injuries, and sync cross-references
+- [`f3dda590`](https://github.com/xjordont/Heraldry/commit/f3dda5905091c974f4b9f3eb1f52e18db927cc18) state: Hero record build workflow and canvas sync
+- [`1992b914`](https://github.com/xjordont/Heraldry/commit/1992b914e798745f4aa397edb3dd4387ca50301e) hero record: publish the Hero record PDFs as a pre-release
+- [`62f76723`](https://github.com/xjordont/Heraldry/commit/62f76723d25f70daf39e973a15753dce3ebb8776) hero record: on-demand Build Hero records workflow
+- [`9a8ce525`](https://github.com/xjordont/Heraldry/commit/9a8ce525dbfe7f239da91107c817ea6d428561fe) manuscript: RC515 marks Redhand's Greataxe and Thornmere's Shortbow two-handed
+- [`61ae9b75`](https://github.com/xjordont/Heraldry/commit/61ae9b75599125bca8395a16901da95b54c7c4d6) hero record: quiet curved captions; per-Hero Powers/Talents split; FIG-19 re-review
 
 <!-- END AUTO:recent -->
 
