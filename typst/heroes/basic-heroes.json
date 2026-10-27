@@ -1,5 +1,5 @@
 {
- "b4_sha256": "17b14fa07f3e40e373810c9240974d55cef38b7d28f016a8b8bbf6f7f37ddd49",
+ "b4_sha256": "7566b01446c21c4411cbb087edaf4638e8f3f0e9ab967a6ac2344f3a05a919a1",
  "reminders": {
   "Darkvision": {
    "head": "Darkvision (12\") Reminder",
@@ -647,7 +647,7 @@
         [". This use of ", false],
         ["Luck", true],
         [" is not a reroll. This trait cannot prevent ", false],
-        ["True Death", true],
+        ["Decapitated", true],
         [", a third Wound, or death caused by a rule that causes immediate death. Basic Mode does not use Wounds or the ", false],
         ["Injuries Table", true],
         [", so this trait has no effect in Basic Mode.", false]
@@ -2780,7 +2780,7 @@
         [". This use of ", false],
         ["Luck", true],
         [" is not a reroll. This trait cannot prevent ", false],
-        ["True Death", true],
+        ["Decapitated", true],
         [", a third Wound, or death caused by a rule that causes immediate death. Basic Mode does not use Wounds or the ", false],
         ["Injuries Table", true],
         [", so this trait has no effect in Basic Mode.", false]
@@ -3526,7 +3526,7 @@
         [". This use of ", false],
         ["Luck", true],
         [" is not a reroll. This trait cannot prevent ", false],
-        ["True Death", true],
+        ["Decapitated", true],
         [", a third Wound, or death caused by a rule that causes immediate death. Basic Mode does not use Wounds or the ", false],
         ["Injuries Table", true],
         [", so this trait has no effect in Basic Mode.", false]
@@ -3798,7 +3798,7 @@
         [". This use of ", false],
         ["Luck", true],
         [" is not a reroll. This trait cannot prevent ", false],
-        ["True Death", true],
+        ["Decapitated", true],
         [", a third Wound, or death caused by a rule that causes immediate death. Basic Mode does not use Wounds or the ", false],
         ["Injuries Table", true],
         [", so this trait has no effect in Basic Mode.", false]
@@ -4490,7 +4490,7 @@
         [". This use of ", false],
         ["Luck", true],
         [" is not a reroll. This trait cannot prevent ", false],
-        ["True Death", true],
+        ["Decapitated", true],
         [", a third Wound, or death caused by a rule that causes immediate death. Basic Mode does not use Wounds or the ", false],
         ["Injuries Table", true],
         [", so this trait has no effect in Basic Mode.", false]
@@ -5724,7 +5724,7 @@
         [". This use of ", false],
         ["Luck", true],
         [" is not a reroll. This trait cannot prevent ", false],
-        ["True Death", true],
+        ["Decapitated", true],
         [", a third Wound, or death caused by a rule that causes immediate death. Basic Mode does not use Wounds or the ", false],
         ["Injuries Table", true],
         [", so this trait has no effect in Basic Mode.", false]
