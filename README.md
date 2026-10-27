@@ -10,8 +10,8 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 
 <!-- BEGIN AUTO:status -->
 
-- **Manuscript:** [RC518](source/Heraldry_RC518.md) (`source/versions.json`). Earlier snapshots are immutable.
-- **Last recorded delivery:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages. RC518 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
+- **Manuscript:** [RC519](source/Heraldry_RC519.md) (`source/versions.json`). Earlier snapshots are immutable.
+- **Last recorded delivery:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages. RC519 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
 - **Illustration records:** 299 approved of 299; 24 generation-queue items.
 - **Rules figures:** 57; 57/57 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
@@ -30,9 +30,7 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 - [`5c870a7b`](https://github.com/xjordont/Heraldry/commit/5c870a7b2a36bb944f3680897fed58eaf6fcb37a) RC518: cumulative DEX Pen; equipment Max Speed reduced by 1 inch
 - [`a5e7f39b`](https://github.com/xjordont/Heraldry/commit/a5e7f39b27cdbc18807ee03cc585d2f9d2d5b637) RC517: define 0 HP activation timing; re-bind figures; fix POSIX venv tests
 - [`34167daf`](https://github.com/xjordont/Heraldry/commit/34167daf1c6b2204a8a0a3a6c1a78ae4d52bbd30) RC516: replace the Injuries Table, add Lingering Injuries, and sync cross-references
-- [`f3dda590`](https://github.com/xjordont/Heraldry/commit/f3dda5905091c974f4b9f3eb1f52e18db927cc18) state: Hero record build workflow and canvas sync
-- [`1992b914`](https://github.com/xjordont/Heraldry/commit/1992b914e798745f4aa397edb3dd4387ca50301e) hero record: publish the Hero record PDFs as a pre-release
-- [`62f76723`](https://github.com/xjordont/Heraldry/commit/62f76723d25f70daf39e973a15753dce3ebb8776) hero record: on-demand Build Hero records workflow
+- [`cf48cfc6`](https://github.com/xjordont/Heraldry/commit/cf48cfc66f4e62c07457daf3cf72e17c03bfd469) docs: refresh generated README
 
 <!-- END AUTO:recent -->
 
