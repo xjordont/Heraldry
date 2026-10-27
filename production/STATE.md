@@ -1,5 +1,9 @@
 # Production state - RC515 source, main
 
+## Hero record build workflow and canvas sync - 2026-10-26
+
+Owner request: fix any outstanding issues with the character design and Basic Hero workflow. Added the on-demand `Build Hero records` workflow (`.github/workflows/hero-records.yml`): it fetches only the 24 portraits, fails if the committed blank differs from `sheet.py`, builds the blank and the 24 populated Heroes with the fit and fidelity checks, and publishes both PDFs with SHA-256 sums as a pre-release `RC###-hero-records-N` (the account's Actions artifact quota is full, so a run artifact could not be stored). Run 2 published `RC515-hero-records-2`; its 49 pages match the local build apart from sub-pixel line-wrap differences in the hosted Chromium, and all checks passed there. `render()` now creates the PDF's folder. The claude.ai design canvas was re-synced from the generated blank sides (no P / O column, current captions and reverse title). Mossgrave's Wild Shape card remains the one approved off-sheet item. Not a book release; owner approval and physical print **NOT TESTED**.
+
 ## RC515 two-handed corrections in B.4 - 2026-10-26
 
 An audit of every B.4 weapon, armour and shield line against the 7.8-7.12 tables found two omissions: Redhand's Greataxe and Thornmere's Shortbow are two-handed (Hands 2) but their profiles did not say so, so their sheets printed Hands 1. The owner approved the exact two-line RC514-to-RC515 diff, applied through `manuscript apply`; RC515 SHA-256 `086d53bba0f0268fc4617da97ff0c92ff2643045dba4dc943583051dcde1d6bf`. `basic-heroes.json` was re-extracted. `tests/test_hero_record.py` now checks every B.4 weapon, armour and shield (Hands, damage die, traits, AD, DEX Pen, Max Speed) against the equipment tables and every usable item's STR and DEX requirements. FIG-19 was re-reviewed against RC515 (unaffected) and re-bound. No PDF build; physical print **NOT TESTED**.
