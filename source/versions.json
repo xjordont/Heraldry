@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 515,
+  "current": 516,
   "revisions": [
     {
       "number": 484,
@@ -342,6 +342,21 @@
       ],
       "patch_file": "editorial/history/RC515.json",
       "patch_sha256": "a2bb450a01dbc4c709b76bf7888bd1fd72fff35c263b2ef08cf4899418015414"
+    },
+    {
+      "number": 516,
+      "path": "source/Heraldry_RC516.md",
+      "sha256": "dbe9e38ca9bde3726b6469b5bffe185394fc1659789a0d9fdd37aaca4aaa574f",
+      "bytes": 1535772,
+      "parent_sha256": "086d53bba0f0268fc4617da97ff0c92ff2643045dba4dc943583051dcde1d6bf",
+      "created_at": "2026-10-27T02:18:11.114092+00:00",
+      "reason": "Integrate the owner-supplied RC516 Section 5 injury overhaul: activation ends at 0 HP, new Injuries Table (Decapitated through Adrenaline Surge), Lingering Injuries rules, and synchronized 6.9, 10.2 #16, 11.1, 11.2.4, B.4, and C.11 cross-references",
+      "authorization": "Owner instruction 2026-10-26 in claude.ai session: 'update it with changes as follows. Ensure seamless and comprehensive integration of the changes I've proposed to create a new definitive manuscript version.'",
+      "patch_ids": [
+        "IMPORT-001"
+      ],
+      "patch_file": "editorial/history/RC516.json",
+      "patch_sha256": "de5d78af79a042b86262f6f9ba9e2efd5fd14ff53588a6c70ecb7984ef3e09e9"
     }
   ]
 }

@@ -1,4 +1,8 @@
-# Release status - RC515 source / RC492 delivery
+# Release status - RC516 source / RC492 delivery
+
+## RC516 manuscript - 2026-10-26
+
+RC516 is the active manuscript: it replaces the Injuries Table, adds Lingering Injuries, ends a Hero's activation when they are reduced to 0 HP, and synchronizes 6.9, 10.2, 11.1, 11.2.4, B.4, and C.11. It has not been built or released; the published delivery remains RC492-build-37. FIG-10, FIG-17, and FIG-19 need semantic review against RC516 before the next release. Physical print **NOT TESTED**.
 
 ## RC515 manuscript - 2026-10-26
 
