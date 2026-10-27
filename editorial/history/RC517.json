@@ -1,0 +1,28 @@
+{
+  "base_sha256": "dbe9e38ca9bde3726b6469b5bffe185394fc1659789a0d9fdd37aaca4aaa574f",
+  "import": {
+    "input_sha256": "0924aa5093ac4ea442dc51640b66b589a28d84206207d34073ac83dd8c09eaff",
+    "candidate_sha256": "0924aa5093ac4ea442dc51640b66b589a28d84206207d34073ac83dd8c09eaff",
+    "normalisations": {
+      "incoming_rc": 517,
+      "utf8_bom_removed": false,
+      "line_endings_normalised": false
+    }
+  },
+  "patches": [
+    {
+      "id": "IMPORT-001",
+      "status": "approved",
+      "find": "\nWhen a **Hero** is reduced to **0 HP**, resolve the following in order:\n\n1. The Hero becomes **Knocked Out** and **Prone**, and loses all remaining **Temporary HP** (**5.4.2**). If this occurs during the Hero's own activation, that activation ends immediately (skipping remaining actions and end-of-activation effects); any unspent **AP** is retained for **Reactions** as normal.\n2. The Hero marks **1 Wound**.\n3. If this is the Hero's **third Wound**, that Hero dies immediately and is removed from play. Do not roll on the **Injuries Table**.\n4. Otherwise, the Hero makes an **Injuries Roll**: roll **1d20** and apply that result from the **Injuries Table** in **5.8.1**.\n",
+      "replace": "\nWhen a **Hero** is reduced to **0 HP**, resolve the following in order:\n\n1. The Hero becomes **Knocked Out** and **Prone**, and loses all remaining **Temporary HP** (**5.4.2**). If this occurs during the Hero's own activation, that activation ends immediately: skip the Hero's remaining actions and step 4 of **3.3.1**, then mark them as having activated this round. Effects that would trigger at the end of that activation, such as **Bleeding** HP loss or **Poisoned [dX]** damage, do not trigger; a **Poisoned [dX]** condition skipped this way remains. Effects that last until the end of that activation still end. Any unspent **AP** is retained for **Reactions** as normal.\n2. The Hero marks **1 Wound**.\n3. If this is the Hero's **third Wound**, that Hero dies immediately and is removed from play. Do not roll on the **Injuries Table**.\n4. Otherwise, the Hero makes an **Injuries Roll**: roll **1d20** and apply that result from the **Injuries Table** in **5.8.1**.\n",
+      "expected_count": 1
+    },
+    {
+      "id": "IMPORT-002",
+      "status": "approved",
+      "find": "\n- they have spent all the AP they will spend during that activation,\n- they can no longer perform further actions,\n- or their controller ends the activation after the combatant has spent at least **1 AP**.\n\nA combatant cannot activate again during the same round after their activation ends.\n\n",
+      "replace": "\n- they have spent all the AP they will spend during that activation,\n- they can no longer perform further actions,\n- their controller ends the activation after the combatant has spent at least **1 AP**,\n- or a Hero is reduced to **0 HP** during their own activation (**5.8**).\n\nA combatant cannot activate again during the same round after their activation ends.\n\n",
+      "expected_count": 1
+    }
+  ]
+}

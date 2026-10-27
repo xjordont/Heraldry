@@ -1,4 +1,8 @@
-# Release status - RC516 source / RC492 delivery
+# Release status - RC517 source / RC492 delivery
+
+## RC517 manuscript - 2026-10-26
+
+RC517 is the active manuscript. It defines the timing when a Hero is reduced to 0 HP during their own activation (3.3.1 and 5.8). The figure gate is 57/57 against RC517. Hero records were rebuilt from RC517 and pass fit and fidelity checks. The book has not been built or released; the published delivery remains RC492-build-37. Physical print **NOT TESTED**.
 
 ## RC516 manuscript - 2026-10-26
 

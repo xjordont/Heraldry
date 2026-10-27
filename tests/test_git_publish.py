@@ -215,8 +215,23 @@ class TestCommand(unittest.TestCase):
                 patch.object(publish.subprocess, "run", return_value=subprocess.CompletedProcess([], 0)) as run:
             publish.run_tests(root, python)
         args, kwargs = run.call_args
-        self.assertEqual(args[0], ["fixture-make", "test", f'PY="{str(Path(python).resolve()).replace(chr(92), "/")}"'])
+        self.assertEqual(args[0], ["fixture-make", "test", f'PY="{str(Path(python).absolute()).replace(chr(92), "/")}"'])
         self.assertEqual(kwargs["env"]["PYTHONUTF8"], "1")
+
+    def test_make_keeps_a_symlinked_venv_interpreter(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            real = Path(tmp) / "base-python"
+            real.write_text("")
+            link = Path(tmp) / "venv/bin/python"
+            link.parent.mkdir(parents=True)
+            try:
+                link.symlink_to(real)
+            except (OSError, NotImplementedError):
+                self.skipTest("symlinks unavailable")
+            with patch.object(publish, "find_make", return_value="fixture-make"), \
+                    patch.object(publish.subprocess, "run", return_value=subprocess.CompletedProcess([], 0)) as run:
+                publish.run_tests(Path(tmp), str(link))
+            self.assertIn("venv/bin/python", run.call_args[0][0][2])
 
     def test_missing_make_or_failed_tests_refuses_publication(self):
         with patch.object(publish.shutil, "which", return_value=None), \

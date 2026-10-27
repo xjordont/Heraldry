@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 516,
+  "current": 517,
   "revisions": [
     {
       "number": 484,
@@ -357,6 +357,22 @@
       ],
       "patch_file": "editorial/history/RC516.json",
       "patch_sha256": "de5d78af79a042b86262f6f9ba9e2efd5fd14ff53588a6c70ecb7984ef3e09e9"
+    },
+    {
+      "number": 517,
+      "path": "source/Heraldry_RC517.md",
+      "sha256": "0924aa5093ac4ea442dc51640b66b589a28d84206207d34073ac83dd8c09eaff",
+      "bytes": 1536140,
+      "parent_sha256": "dbe9e38ca9bde3726b6469b5bffe185394fc1659789a0d9fdd37aaca4aaa574f",
+      "created_at": "2026-10-27T02:32:06.479928+00:00",
+      "reason": "Resolve the RC516 open timing question: a Hero reduced to 0 HP during their own activation skips end-of-activation triggers but durations still end; add the matching 3.3.1 activation-end bullet",
+      "authorization": "Owner instruction 2026-10-26 in claude.ai session: 'Use your best judgment to fix all outstanding issues to the best of your ability'",
+      "patch_ids": [
+        "IMPORT-001",
+        "IMPORT-002"
+      ],
+      "patch_file": "editorial/history/RC517.json",
+      "patch_sha256": "cf7111e0aad0d0b05c1ba609b6e6f7a00033575353100e58bb8cac240ee61e39"
     }
   ]
 }

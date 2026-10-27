@@ -1,10 +1,18 @@
-# Production state - RC516 source, main
+# Production state - RC517 source, main
+
+## RC517 0 HP timing, figure re-review, and POSIX check fix - 2026-10-26
+
+Owner instruction: "Use your best judgment to fix all outstanding issues." RC517 (`manuscript apply`, +3 / -2 lines; SHA-256 `0924aa5093ac4ea442dc51640b66b589a28d84206207d34073ac83dd8c09eaff`) resolves the RC516 open question. When a Hero is reduced to 0 HP during their own activation, they skip their remaining actions and step 4 of 3.3.1 and are marked as activated. End-of-activation triggers (such as Bleeding HP loss and Poisoned [dX] damage) do not fire, and a Poisoned condition skipped this way remains. Effects that last until the end of that activation still end. 3.3.1 gains the matching activation-end bullet.
+
+FIG-01, FIG-02, FIG-10, FIG-17, and FIG-19 were re-reviewed against RC517 from every SVG text node and caption (SVG and caption bytes unchanged) and re-bound; the figure gate is 57/57. The Hero records were rebuilt locally from RC517: the blank is current, and all 24 Heroes pass the fit and fidelity checks. The six Human reverses were inspected and print Decapitated. `Build Hero records` was dispatched for the published pre-release.
+
+`tools/git_publish.run_tests` resolved the interpreter path, which on POSIX follows a venv's `bin/python` symlink to the base interpreter and ran `make test` without the venv's packages (54 spurious errors in Linux sessions). It now uses `absolute()`, with a regression test. `python tools/dev.py check` PASS on Linux, 345 tests. No PDF build; physical print **NOT TESTED**.
 
 ## RC516 Injuries Table overhaul and lingering injuries - 2026-10-26
 
 Owner instruction: integrate the supplied RC516 Section 5 and its cross-reference updates into a new definitive manuscript. Applied through `manuscript apply` (+48 / -38 lines); RC516 SHA-256 `dbe9e38ca9bde3726b6469b5bffe185394fc1659789a0d9fdd37aaca4aaa574f`. Section 5 changed only in 5.8 and one 5.9 sentence: a Hero reduced to 0 HP during their own activation ends that activation; the 5.8.1 Injuries Table is replaced (Decapitated through Adrenaline Surge); a new **Lingering Injuries** subsection defines results 3-19. Synchronized: 6.9 and the six B.4 Human **Determined Resolve** traits and 10.2 #16 (True Death to Decapitated), 11.1 persistence note and 11.2.4 **Cleanse Affliction**, 5.9 and C.11 (lingering injury), new C.11 **Lingering Injury** entry, and the C.11 **Wound** entry. Editorial corrections to the supplied text: the em dash in the reroll sentence was rewritten, "seventeen" became **17**, and the lowest-value rule now covers **LOS** as well as **Max Speed** (Gouged Eye and Split Brow). `basic-heroes.json` was re-extracted. FIG-10, FIG-17, and FIG-19 need semantic review before the next release; Hero record PDFs need a rebuild for the six Human profiles. No PDF build; physical print **NOT TESTED**.
 
-Validation: `make test` PASS (344 tests), `preflight.py --baseline` PASS, `check_history.py --base origin/main` PASS, whitespace PASS. In this Linux session `python tools/dev.py check` reports 54 environment errors in layout/typst tests (identical before the revision); direct `make test` with the locked venv passes.
+Validation: `make test` PASS (344 tests), `preflight.py --baseline` PASS, `check_history.py --base origin/main` PASS, whitespace PASS. The `dev.py check` errors seen in this session were the POSIX venv bug fixed in the RC517 entry.
 
 ## Hero record build workflow and canvas sync - 2026-10-26
 
