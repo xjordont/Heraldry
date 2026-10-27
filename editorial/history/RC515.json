@@ -1,0 +1,28 @@
+{
+  "base_sha256": "fa433e49b017eeb4b5fa16de4883e9955dc82b7c9ec151d1ad0cc835be2fe4cd",
+  "import": {
+    "input_sha256": "086d53bba0f0268fc4617da97ff0c92ff2643045dba4dc943583051dcde1d6bf",
+    "candidate_sha256": "086d53bba0f0268fc4617da97ff0c92ff2643045dba4dc943583051dcde1d6bf",
+    "normalisations": {
+      "incoming_rc": 515,
+      "utf8_bom_removed": false,
+      "line_endings_normalised": false
+    }
+  },
+  "patches": [
+    {
+      "id": "IMPORT-001",
+      "status": "approved",
+      "find": "\n**Equipment and Items**\n\n- **Shortbow:** Ranged weapon, **1d6 + DEX piercing damage**, **Ranged 12\"**.\n- **Elven Sickle:** Melee weapon, **1d6 + STR slashing damage**, **Elven**, **Light**, **Trip**. This weapon does not count as metal for the restrictions in **8.2**.\n- **Leather Coat:** Chest **AD d2**, **DEX Pen 0**, **Max Speed 8\"**.\n\n",
+      "replace": "\n**Equipment and Items**\n\n- **Shortbow:** Ranged weapon, **1d6 + DEX piercing damage**, two-handed, **Ranged 12\"**.\n- **Elven Sickle:** Melee weapon, **1d6 + STR slashing damage**, **Elven**, **Light**, **Trip**. This weapon does not count as metal for the restrictions in **8.2**.\n- **Leather Coat:** Chest **AD d2**, **DEX Pen 0**, **Max Speed 8\"**.\n\n",
+      "expected_count": 1
+    },
+    {
+      "id": "IMPORT-002",
+      "status": "approved",
+      "find": "\n**Equipment and Items**\n\n- **Greataxe:** Melee weapon, **1d12+1 + STR slashing damage**, **Heavy**, **Cleave**, **Fatal**.\n- **Hide Cuirass:** Chest **AD d4**, **DEX Pen -2**, **Max Speed 7\"**. Apply the **DEX Pen** to your **DEX Checks**, including **Dodge**, and to any damage total that adds your **DEX**.\n- **Dagger:** Melee weapon, **1d4 + DEX piercing damage**, **Light**, **Finesse**, **Agile**.\n- **Sickle:** Melee weapon, **1d6 + STR slashing damage**, **Light**, **Trip**. Carried only: this Hero does not meet its DEX Req 2.\n",
+      "replace": "\n**Equipment and Items**\n\n- **Greataxe:** Melee weapon, **1d12+1 + STR slashing damage**, two-handed, **Heavy**, **Cleave**, **Fatal**.\n- **Hide Cuirass:** Chest **AD d4**, **DEX Pen -2**, **Max Speed 7\"**. Apply the **DEX Pen** to your **DEX Checks**, including **Dodge**, and to any damage total that adds your **DEX**.\n- **Dagger:** Melee weapon, **1d4 + DEX piercing damage**, **Light**, **Finesse**, **Agile**.\n- **Sickle:** Melee weapon, **1d6 + STR slashing damage**, **Light**, **Trip**. Carried only: this Hero does not meet its DEX Req 2.\n",
+      "expected_count": 1
+    }
+  ]
+}

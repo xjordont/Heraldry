@@ -1,8 +1,8 @@
-# Release status - RC514 source / RC492 delivery
+# Release status - RC515 source / RC492 delivery
 
-## RC514 manuscript - 2026-10-26
+## RC515 manuscript - 2026-10-26
 
-RC514 (Basic Mode starting coins and background items) is the active manuscript. It has not been built or released; the published delivery remains RC492-build-37 and predates RC513 and RC514. FIG-19 needs a semantic review before the next release. Physical print **NOT TESTED**.
+RC515 is the active manuscript: RC514 added Basic Mode starting coins and background items, and RC515 marks Redhand's Greataxe and Thornmere's Shortbow two-handed. Neither has been built or released; the published delivery remains RC492-build-37 and predates RC513-RC515. The figure gate is 57/57 against RC515. Physical print **NOT TESTED**.
 
 ## Blank Hero record visual-weight adjustment - 2026-10-22
 

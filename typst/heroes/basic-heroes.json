@@ -1,5 +1,5 @@
 {
- "b4_sha256": "cc3a25840de6faa84836c9fdb237dc9b3909e94e5e9339b9476997c21fe2e15c",
+ "b4_sha256": "17b14fa07f3e40e373810c9240974d55cef38b7d28f016a8b8bbf6f7f37ddd49",
  "reminders": {
   "Darkvision": {
    "head": "Darkvision (12\") Reminder",
@@ -2265,7 +2265,7 @@
         ["Greataxe:", true],
         [" Melee weapon, ", false],
         ["1d12+1 + STR slashing damage", true],
-        [", ", false],
+        [", two-handed, ", false],
         ["Heavy", true],
         [", ", false],
         ["Cleave", true],
@@ -2815,7 +2815,7 @@
         ["Shortbow:", true],
         [" Ranged weapon, ", false],
         ["1d6 + DEX piercing damage", true],
-        [", ", false],
+        [", two-handed, ", false],
         ["Ranged 12\"", true],
         [".", false]
        ],

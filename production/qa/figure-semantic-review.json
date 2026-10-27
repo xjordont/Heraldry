@@ -1853,7 +1853,7 @@
      "fix": "None; source line references in Appendix B after B.4 shift by +40."
     }
    ],
-   "rules_sha256": "933872bce04ebb63272fcff966ea9bf9c21f4953e9d7067e6fce9c2e61695cc1",
+   "rules_sha256": "c867aada0576139125240ac32d9a9d254a02d1fa7aa69dd1b266df6187f31903",
    "reviewed_at": "2026-10-07T10:58:00Z",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1928,6 +1928,17 @@
     ],
     "verdict": "PASS",
     "summary": "Only B.4 changed (starting Coins and background items). Every value the figure shows is unchanged; starting Coins are not part of a side's score."
+   },
+   "rc515_review": {
+    "reviewed_at": "2026-10-26",
+    "reviewer": "Claude Code integration owner; model review against the RC515 source, not independent human proof",
+    "source": "source/Heraldry_RC515.md",
+    "source_sha256": "086d53bba0f0268fc4617da97ff0c92ff2643045dba4dc943583051dcde1d6bf",
+    "checked_source_sections": [
+     "B"
+    ],
+    "verdict": "PASS",
+    "summary": "RC515 adds 'two-handed' to Redhand's Greataxe and Thornmere's Shortbow in B.4 only. FIG-19 shows neither Hero nor weapon; every value it shows is unchanged."
    }
   },
   {

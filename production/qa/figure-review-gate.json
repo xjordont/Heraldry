@@ -394,12 +394,12 @@
    "current": {
     "svg_sha256": "8595cd625d2a4ae5f9fc0c337bc9e13203915f7f274d627a574c104048a23d74",
     "caption_sha256": "fe49806f43a98b023b889e149ab5d124fada5cd1ddb23fceae5a6a02f9988d64",
-    "rules_sha256": "933872bce04ebb63272fcff966ea9bf9c21f4953e9d7067e6fce9c2e61695cc1"
+    "rules_sha256": "c867aada0576139125240ac32d9a9d254a02d1fa7aa69dd1b266df6187f31903"
    },
    "reviewed": {
     "svg_sha256": "8595cd625d2a4ae5f9fc0c337bc9e13203915f7f274d627a574c104048a23d74",
     "caption_sha256": "fe49806f43a98b023b889e149ab5d124fada5cd1ddb23fceae5a6a02f9988d64",
-    "rules_sha256": "933872bce04ebb63272fcff966ea9bf9c21f4953e9d7067e6fce9c2e61695cc1"
+    "rules_sha256": "c867aada0576139125240ac32d9a9d254a02d1fa7aa69dd1b266df6187f31903"
    },
    "reviewed_present": true,
    "stale": false,
