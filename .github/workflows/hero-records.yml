@@ -1,12 +1,13 @@
 name: Build Hero records
 # On request: the illustrated blank Hero record and the 24 populated Basic Mode Heroes as print PDFs.
-# They are build outputs and are never committed (docs/LARGE_FILES.md); download them from this run's
-# artifact. The build fails if the committed blank differs from the generator, or if any Hero's text
+# They are build outputs and are never committed (docs/LARGE_FILES.md); they are published as a
+# pre-release tagged RC###-hero-records-N (a Release, not an Actions artifact, so the account's
+# artifact storage quota cannot block delivery). The build fails if the committed blank differs from the generator, or if any Hero's text
 # overflows, falls below 9 pt, or misses B.4 rules, items or coins (assets/hero-record/sheet.py).
 on:
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,9 +36,16 @@ jobs:
           git diff --exit-code -- assets/hero-record/hero-record-front.html assets/hero-record/hero-record-reverse.html
       - name: Populated Basic Mode Heroes
         run: python assets/hero-record/sheet.py heroes --no-png --pdf build/hero-records/basic-heroes.pdf
-      - uses: actions/upload-artifact@v4
-        with:
-          name: heraldry-hero-records
-          path: build/hero-records/*.pdf
-          retention-days: 30
-          if-no-files-found: error
+      - name: Publish the PDFs as a pre-release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION=$(python tools/manuscript.py --version)
+          TAG="$VERSION-hero-records-$GITHUB_RUN_NUMBER"
+          if [ "${GITHUB_RUN_ATTEMPT:-1}" != "1" ]; then TAG="$TAG-attempt-$GITHUB_RUN_ATTEMPT"; fi
+          (cd build/hero-records && sha256sum basic-heroes.pdf hero-record-blank.pdf > SHA256SUMS.txt)
+          gh release create "$TAG" build/hero-records/basic-heroes.pdf build/hero-records/hero-record-blank.pdf \
+            build/hero-records/SHA256SUMS.txt --prerelease --target "$GITHUB_SHA" \
+            --title "Hero records from $VERSION (run $GITHUB_RUN_NUMBER)" \
+            --notes "Illustrated blank Hero record and the 24 populated Basic Mode Heroes from $VERSION at $GITHUB_SHA. Not a book release. Print at 100%, Letter, duplex, flip on the long edge. Owner approval and physical printing: NOT TESTED."
+          echo "Published https://github.com/$GITHUB_REPOSITORY/releases/tag/$TAG" >> "$GITHUB_STEP_SUMMARY"
