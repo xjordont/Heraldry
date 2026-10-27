@@ -1,4 +1,12 @@
-# Production state - RC518 source, main
+# Production state - RC519 source, main
+
+## RC519 verified subset of an external balance critique - 2026-10-27
+
+Owner instruction: assess a 14-item external balance critique of RC518 and decide which changes to implement. Every claim was checked against RC518 text, the bestiary AV curve, and a computed lockout table for all 220 ancestry and background pairs per class. Applied through `manuscript apply` (+15 / -15 lines); RC519 SHA-256 `5b6b81ddcda665da8b633c073ee238b6b320e5be6eee6c39cea952f12511c87e`.
+
+Adopted: Elite Monsters impose Casting Check Disadvantage for Powers and scrolls (2.3, 7.15 Scroll Rules, 8.2 twice, C.7, and C.14; `docs/CANON_AUTHORITY.md` convention 5 updated to match); Heartseeker loses its auto-max die (now +2, or +3 against the Marked for Death target) and Death Mark gains it in place of +4; Shadow Jump costs 1 AP; Commanding Presence costs 1 AP, once per round; Turn Undead once per round; Breath Weapon deals 1d6 + half Level (unchanged at Level 1, so B.4 is unaffected); Noble reward 2c × APL; Fighter Package B swaps Javelin for Handaxe and Psion Package A swaps Hide Cuirass for Gambeson.
+
+Rejected with reasons in `claude/Heraldry_RC519_Change_Log.md` (claude.ai Project): Sunder, Caster Supremacy, Martial Supremacy merge, Summon AP, AoE height, Vanish restriction, Wolf Shape, War Master, Inspiration, Twin Hunt, Searing Blood, Tumble, Impossible Fortune, Apprentice, weapon requirement and price changes, and the 9.5 tie-breaker (already Random Determination). FIG-08, FIG-12, and FIG-15 re-reviewed and re-bound; gate 57/57. B.4 unchanged, so Hero records need no rebuild. No PDF build; physical print **NOT TESTED**.
 
 ## RC518 cumulative DEX Pen and lower equipment Max Speed - 2026-10-26
 

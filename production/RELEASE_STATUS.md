@@ -1,4 +1,8 @@
-# Release status - RC518 source / RC492 delivery
+# Release status - RC519 source / RC492 delivery
+
+## RC519 manuscript - 2026-10-27
+
+RC519 is the active manuscript: it adopts a verified subset of an external balance critique (Elite Casting Check Disadvantage, Assassin burst moved to Master, and several talent, background, and package fixes). B.4 and the Hero records are unchanged. The figure gate is 57/57. The book has not been built or released; the published delivery remains RC492-build-37. Physical print **NOT TESTED**.
 
 ## RC518 manuscript - 2026-10-26
 

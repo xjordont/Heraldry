@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 518,
+  "current": 519,
   "revisions": [
     {
       "number": 484,
@@ -388,6 +388,33 @@
       ],
       "patch_file": "editorial/history/RC518.json",
       "patch_sha256": "86b6715d29e924e70b8dc7806ca1021e7634c49b074b54dee3dc0cc3ddda861e"
+    },
+    {
+      "number": 519,
+      "path": "source/Heraldry_RC519.md",
+      "sha256": "5b6b81ddcda665da8b633c073ee238b6b320e5be6eee6c39cea952f12511c87e",
+      "bytes": 1536357,
+      "parent_sha256": "2ebb6deecbd6ab5d90c888a73dd983ea1a0bdedf594a0b31c2c11e2598c890bf",
+      "created_at": "2026-10-27T21:28:24.383810+00:00",
+      "reason": "Adopt the verified subset of the RC518 balance critique: Elite Monsters impose Casting Check Disadvantage; Assassin auto-max die moves from Heartseeker to Death Mark and Shadow Jump costs 1 AP; Commanding Presence costs 1 AP; Turn Undead once per round; Breath Weapon adds half Level; Noble reward 2c x APL; Fighter B and Psion A package swaps",
+      "authorization": "Owner instruction 2026-10-27 in claude.ai session: 'Assess the following critique and decide if all or some changes should be implemented.'",
+      "patch_ids": [
+        "IMPORT-001",
+        "IMPORT-002",
+        "IMPORT-003",
+        "IMPORT-004",
+        "IMPORT-005",
+        "IMPORT-006",
+        "IMPORT-007",
+        "IMPORT-008",
+        "IMPORT-009",
+        "IMPORT-010",
+        "IMPORT-011",
+        "IMPORT-012",
+        "IMPORT-013"
+      ],
+      "patch_file": "editorial/history/RC519.json",
+      "patch_sha256": "53b3bf100374c0da6f9597aa6cf571bd7b32cc068b1ca111a718f1595ee57c5f"
     }
   ]
 }
