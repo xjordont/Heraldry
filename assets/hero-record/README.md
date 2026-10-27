@@ -21,7 +21,7 @@ Type follows `config/design_tokens.json`: Grenze Gotisch (titles and banners), S
 ## Front
 
 - Identity cartouches (Name, Class, Ancestry, Background), Level, and a portrait field.
-- Attribute shields. Values are centred on each white field's optical centre in the shield headings' face (Source Sans 3 Bold). DEX and SPD show the effective value. The base sits in small, light text following the arched top of the field (blank: "Base"; populated DEX: base and the worse equipped DEX Pen, for example "+2 − 3" over "−1", or "Base +3" when nothing imposes a penalty; SPD: "Base 7"" over the lowest of base SPD and every equipped Max Speed).
+- Attribute shields. Values are centred on each white field's optical centre in the shield headings' face (Source Sans 3 Bold). DEX and SPD show the effective value. The base sits in small, light text following the arched top of the field (blank: "Base"; populated DEX: base and the total of the equipped Chest and shield DEX Pen, for example "+2 − 3" over "−1", or "Base +3" when nothing imposes a penalty; SPD: "Base 7"" over the lowest of base SPD and every equipped Max Speed).
 - Hit Points, Energy, Luck (maximums printed, current left for play), Armour, Wounds, Weapons (no P/O column), Inventory, and Coins. The starting coins run in the same small text along the inside top of the Coins ring ("Start" on the blank, "Start 1c" on a Hero); the rest of the field is for the current total.
 
 ## Reverse

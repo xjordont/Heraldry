@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 517,
+  "current": 518,
   "revisions": [
     {
       "number": 484,
@@ -373,6 +373,21 @@
       ],
       "patch_file": "editorial/history/RC517.json",
       "patch_sha256": "cf7111e0aad0d0b05c1ba609b6e6f7a00033575353100e58bb8cac240ee61e39"
+    },
+    {
+      "number": 518,
+      "path": "source/Heraldry_RC518.md",
+      "sha256": "2ebb6deecbd6ab5d90c888a73dd983ea1a0bdedf594a0b31c2c11e2598c890bf",
+      "bytes": 1536232,
+      "parent_sha256": "0924aa5093ac4ea442dc51640b66b589a28d84206207d34073ac83dd8c09eaff",
+      "created_at": "2026-10-27T02:44:23.162555+00:00",
+      "reason": "Make Chest armour and shield DEX Pen cumulative and reduce every equipment-imposed Max Speed by 1 inch (7.10, 7.12, 7.17 items, Tier 5 artifacts, B.4 profiles, and C.11 glossary)",
+      "authorization": "Owner instruction 2026-10-26 in claude.ai session: 'I think the DEX penalty from armour and shields should be cumulative/additive. All equipment imposed MAX SPD should be reduced by 1 inch ... Please update all relevant aspects of the manuscript, rules, systems, references, character sheets, and basic hero sheets.'",
+      "patch_ids": [
+        "IMPORT-001"
+      ],
+      "patch_file": "editorial/history/RC518.json",
+      "patch_sha256": "86b6715d29e924e70b8dc7806ca1021e7634c49b074b54dee3dc0cc3ddda861e"
     }
   ]
 }

@@ -1,4 +1,10 @@
-# Production state - RC517 source, main
+# Production state - RC518 source, main
+
+## RC518 cumulative DEX Pen and lower equipment Max Speed - 2026-10-26
+
+Owner instruction: armour and shield DEX Pen are cumulative, and every equipment-imposed Max Speed drops by 1". Applied through `manuscript apply` (+75 / -75 lines); RC518 SHA-256 `2ebb6deecbd6ab5d90c888a73dd983ea1a0bdedf594a0b31c2c11e2598c890bf`. 7.10 and 7.12 now add Chest and shield DEX Pen (with an example), and the B.4 intro, three Heater Shield lines, and C.11 DEX Pen entry match. 70 Max Speed values fell by 1": 16 armour, 11 shields, 4 special armours, 13 Tier 5 artifacts, and 26 B.4 equipment lines. The Ruptured Hamstring injury cap (Max Speed 4") is not equipment and is unchanged. The C.11 Max Speed entry now covers shields and the lowest-cap rule. The `specimen-wide-table` content anchor was updated to the new Sunforged Full Plate value.
+
+`assets/hero-record/sheet.py` sums DEX Pen; the Hearthbell test and README were updated, and the Typst hero card reminder now says DEX Pen values add. Effective DEX changes for Ironscar (-1 to -2) and Hearthbell (-4 to -5) only; no Basic Hero's effective SPD changes. `basic-heroes.json` was re-extracted, the Hero records were rebuilt (all 24 pass fit and fidelity), and the armoured fronts were inspected. FIG-19 was re-reviewed against RC518 and re-bound; the figure gate is 57/57. `python tools/dev.py check` PASS. No book PDF build; physical print **NOT TESTED**.
 
 ## RC517 0 HP timing, figure re-review, and POSIX check fix - 2026-10-26
 

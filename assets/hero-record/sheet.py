@@ -396,10 +396,9 @@ def card_items(h):
 
 
 def effective(h, chest, shield):
-    """Effective DEX (printed DEX plus the worse equipped DEX Pen) and SPD (capped by every Max Speed)."""
+    """Effective DEX (printed DEX plus the sum of equipped DEX Pen values) and SPD (capped by every Max Speed)."""
     base_dex = int(h["scores"]["DEX"])
-    pens = [a["pen"] for a in (chest, shield) if a]
-    pen = min(pens) if pens else 0
+    pen = sum(a["pen"] for a in (chest, shield) if a)  # Chest and shield DEX Pen add together (7.10)
     base_spd = int(h["stats"]["SPD"].rstrip('"'))
     caps = [a["spd"] for a in (chest, shield) if a and a["spd"] is not None]
     return base_dex, pen, base_dex + pen, base_spd, min([base_spd] + caps)
@@ -503,7 +502,7 @@ def front_values(h, m, ae, we, ie):
             "SPI": signed(int(sc["SPI"])), "INIT": signed(init), "SPD": f'{eff_spd}"', "SIZE": h["stats"]["Sz"]}
     for k, cx in STAT_AXIS.items():
         out.append(div("hv", cx - 40, value_top(STAT_PX, STAT_CENTRE), 80, esc(vals[k]), f" font-size: {R(STAT_PX)}px;"))
-    # DEX: base and the worse equipped DEX Pen (just the base when nothing equipped imposes one)
+    # DEX: base and the total equipped DEX Pen (just the base when nothing equipped imposes one)
     out.append(field_caption("DEX", f"{signed(base_dex)} \u2212 {-pen}" if pen < 0 else f"Base {signed(base_dex)}"))
     out.append(field_caption("SPD", f'Base {base_spd}"'))
     # resources: maximums printed, current left for play
