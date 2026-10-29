@@ -1,5 +1,5 @@
 {
- "b4_sha256": "8ad6aa85d8fd8ab81c5b5ea20a86e64e123fa5ba38b181997f1d3439e7bf8df5",
+ "b4_sha256": "5652350ab36304d7be09ffca6e455a0e5590ebf791a9794dd48d5ca1b95740e5",
  "reminders": {
   "Darkvision": {
    "head": "Darkvision (12\") Reminder",
@@ -3959,9 +3959,11 @@
          ["AV 1", true],
          [", ", false],
          ["Bite:", true],
-         [" 1d6 piercing damage. When you declare ", false],
+         [" 1d6 piercing damage. ", false],
          ["Bite", true],
-         [" against an enemy adjacent to at least 1 of your allies, the attack rolls 1 additional base damage die.", false]
+         [" deals ", false],
+         ["+2 piercing damage", true],
+         [" against an enemy adjacent to at least 1 of your allies.", false]
         ],
         [
          ["Boar:", true],

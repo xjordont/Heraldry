@@ -1,4 +1,8 @@
-# Release status - RC520 source / RC492 delivery
+# Release status - RC521 source / RC492 delivery
+
+## RC521 manuscript - 2026-10-28
+
+RC521 is the active manuscript: it tones down Wolf Shape and Great Shape, reprices enhanced Bucklers, and removes the Heartseeker and Perfect Ambush Cover overlap. Hero records were rebuilt from RC521. The figure gate is 57/57. The book has not been built or released; the published delivery remains RC492-build-37. Physical print **NOT TESTED**.
 
 ## RC520 manuscript - 2026-10-28
 

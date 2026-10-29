@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 520,
+  "current": 521,
   "revisions": [
     {
       "number": 484,
@@ -447,6 +447,25 @@
       ],
       "patch_file": "editorial/history/RC520.json",
       "patch_sha256": "5a4cd05291435b0e37ff97e8cc484d5b49b3960dfb56438fdeaaea7bcaaffeb0"
+    },
+    {
+      "number": 521,
+      "path": "source/Heraldry_RC521.md",
+      "sha256": "74899e129e8510a66db2721fe7da3ba1156768b44381c27a8073632275d192fd",
+      "bytes": 1535712,
+      "parent_sha256": "bec8d47334c4db7d5902154389d69b0ef9755d94d062f132bd6e5d9bb7c859fc",
+      "created_at": "2026-10-29T02:21:19.336171+00:00",
+      "reason": "Resolve RC520 outstanding items: Wolf Shape flank bonus becomes +2 piercing; Great Shape keeps +1 AV and the Apex Form but loses its extra die and NRG cost; enhanced Bucklers keep a 2c premium; Perfect Ambush drops its Cover clause (now on Heartseeker) and deals +5",
+      "authorization": "Owner instruction 2026-10-28 in claude.ai session: 'Fix all of those outstanding issues using your best budget. Ensure we keep it simple and avoid rules bloat.'",
+      "patch_ids": [
+        "IMPORT-001",
+        "IMPORT-002",
+        "IMPORT-003",
+        "IMPORT-004",
+        "IMPORT-005"
+      ],
+      "patch_file": "editorial/history/RC521.json",
+      "patch_sha256": "2dca3e57b88a0e354a6676ffbf93098c93e3812379134f8082a1ea82791a9c1f"
     }
   ]
 }
