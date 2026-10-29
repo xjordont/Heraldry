@@ -1,4 +1,8 @@
-# Release status - RC519 source / RC492 delivery
+# Release status - RC520 source / RC492 delivery
+
+## RC520 manuscript - 2026-10-28
+
+RC520 is the active manuscript: it reverts the RC519 Elite clause, simplifies Commanding Presence, applies the owner's Tumble and Heartseeker text, and adopts the critique's equipment changes. Hero records were rebuilt from RC520. The figure gate is 57/57. The book has not been built or released; the published delivery remains RC492-build-37. Physical print **NOT TESTED**.
 
 ## RC519 manuscript - 2026-10-27
 

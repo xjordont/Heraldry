@@ -1,4 +1,15 @@
-# Production state - RC519 source, main
+# Production state - RC520 source, main
+
+## RC520 owner revisions to RC519 - 2026-10-28
+
+Owner instructions: revert the Elite Monster change; rework the Fighter talent change to the original or simpler; use the owner's Tumble and Heartseeker wording; accept the critique's equipment changes. Applied through `manuscript apply` (+27 / -27 lines); RC520 SHA-256 `bec8d47334c4db7d5902154389d69b0ef9755d94d062f132bd6e5d9bb7c859fc`.
+
+- The six Casting Check sentences and `docs/CANON_AUTHORITY.md` convention 5 are back to the RC518 text (LVL only).
+- Commanding Presence is now a passive once-per-round trigger with no AP cost. War Master and Inspiration were never changed and keep their original text.
+- Tumble (6.12 and Gildmirror in B.4) upgrades the universal Shift [1 AP]; Heartseeker is +3 damage while Hidden and ignores Cover. Death Mark (auto-max die) and Shadow Jump [1 AP] from RC519 remain.
+- Equipment: Sabre loses Light (STR 1, DEX 3), and Silvered Sabre loses Light to match. Shortsword, Handaxe, Great Falchion, and Throwing Knives lose their DEX Req. Javelin needs DEX 1, and Mace needs STR 1. Great Falchion costs 10c, Scythe 12c, Glaive 14c, and Composite Bow 22c. Repeating Crossbow becomes 20c, STR 2, 1d6, and loses Heavy. Buckler costs 3c, Full Plate 52c, and Steel Lamellar 64c. Cleric Package A takes Hide Cuirass, and Fighter Package B gets its original Javelin back.
+
+`basic-heroes.json` re-extracted and Hero records rebuilt (all 24 pass). FIG-08, FIG-12, FIG-15, and FIG-19 re-reviewed and re-bound; gate 57/57. A Druid Wild Shape damage review with proposed fixes is held for owner approval (`claude/Heraldry_Druid_Forms_Review.md` in the claude.ai Project). No PDF build; physical print **NOT TESTED**.
 
 ## RC519 verified subset of an external balance critique - 2026-10-27
 

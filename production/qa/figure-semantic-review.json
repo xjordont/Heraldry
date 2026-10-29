@@ -638,7 +638,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "494c098baeb9700464bacce97c35d5d14551a0532e49f25e3c297b6f334f136c",
+   "rules_sha256": "00f71fc99238f5fb6f764a90cc32230d76875cc492d954edc8f8c9444574ea25",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -709,6 +709,25 @@
     ],
     "verdict": "PASS",
     "summary": "RC519 changes 8.2 only in the Casting Check sentences (Elite Monsters now impose Disadvantage). FIG-08 depicts AoE templates, Grid square counts, blocking, and the shared-damage sequence; no Casting Check or Monster Check rule appears. 2.7.3 is unchanged.",
+    "limits": [
+     "SVG and caption bytes unchanged.",
+     "Physical print NOT TESTED."
+    ]
+   },
+   "rc520_review": {
+    "reviewed_at": "2026-10-28",
+    "reviewer": "Claude Code integration owner; model review of every SVG text node and caption against the RC520 source, not independent human proof",
+    "source": "source/Heraldry_RC520.md",
+    "source_sha256": "bec8d47334c4db7d5902154389d69b0ef9755d94d062f132bd6e5d9bb7c859fc",
+    "checked_source_sections": [
+     "2.7.3",
+     "4.5",
+     "5.1.1",
+     "5.4.3",
+     "8.2"
+    ],
+    "verdict": "PASS",
+    "summary": "RC520 reverts the RC519 Elite clause, restoring the RC518 Casting Check sentences in 2.3 and 8.2. FIG-08 shows AoE templates and the shared-damage sequence, not Casting Checks; unchanged.",
     "limits": [
      "SVG and caption bytes unchanged.",
      "Physical print NOT TESTED."
@@ -1018,7 +1037,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "01c46cd1b6f1dcc338dde011bba7ed4404f2dc2911e622cb7bb3505312626514",
+   "rules_sha256": "4496675c5fabca3ddfb00b73ee086e9bbf84d55c878e04d0e75c35e4b5769c6e",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
@@ -1107,6 +1126,24 @@
     ],
     "verdict": "PASS",
     "summary": "RC519 changes 2.3 only by adding the Elite Role to the Casting Check Disadvantage sentence. FIG-12 depicts Primary Target selection, the HP, Most Recent Attacker, and Random Determination tie-breakers, and Blocked Route; all match RC519 9.5, which is unchanged.",
+    "limits": [
+     "SVG and caption bytes unchanged.",
+     "Physical print NOT TESTED."
+    ]
+   },
+   "rc520_review": {
+    "reviewed_at": "2026-10-28",
+    "reviewer": "Claude Code integration owner; model review of every SVG text node and caption against the RC520 source, not independent human proof",
+    "source": "source/Heraldry_RC520.md",
+    "source_sha256": "bec8d47334c4db7d5902154389d69b0ef9755d94d062f132bd6e5d9bb7c859fc",
+    "checked_source_sections": [
+     "9.5",
+     "2.6",
+     "2.9.1",
+     "2.3"
+    ],
+    "verdict": "PASS",
+    "summary": "RC520 reverts the RC519 Elite clause, restoring the RC518 Casting Check sentences in 2.3 and 8.2. FIG-12 shows Primary Target selection and tie-breakers from 9.5, which is unchanged.",
     "limits": [
      "SVG and caption bytes unchanged.",
      "Physical print NOT TESTED."
@@ -1427,7 +1464,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "b52159439f53a174ccde59858ee47bba189fd068471463a08dae79e8b66b2a5f",
+   "rules_sha256": "d7bec4e4543435d94a0314bf9463c3209d38dae4bdc55ba41be2926bbd74d8fe",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1533,6 +1570,23 @@
     ],
     "verdict": "PASS",
     "summary": "RC519 changes 2.3 only by adding the Elite Role to the Casting Check Disadvantage sentence. FIG-15's only Check is a Hero's Crumbling Ledge DEX Check; terrain rules and the scenario setup it depicts are unchanged.",
+    "limits": [
+     "SVG and caption bytes unchanged.",
+     "Physical print NOT TESTED."
+    ]
+   },
+   "rc520_review": {
+    "reviewed_at": "2026-10-28",
+    "reviewer": "Claude Code integration owner; model review of every SVG text node and caption against the RC520 source, not independent human proof",
+    "source": "source/Heraldry_RC520.md",
+    "source_sha256": "bec8d47334c4db7d5902154389d69b0ef9755d94d062f132bd6e5d9bb7c859fc",
+    "checked_source_sections": [
+     "10.4",
+     "4.4.9",
+     "2.3"
+    ],
+    "verdict": "PASS",
+    "summary": "RC520 reverts the RC519 Elite clause, restoring the RC518 Casting Check sentences in 2.3 and 8.2. FIG-15's only Check is a Hero's Crumbling Ledge DEX Check; unchanged.",
     "limits": [
      "SVG and caption bytes unchanged.",
      "Physical print NOT TESTED."
@@ -1976,7 +2030,7 @@
      "fix": "None; source line references in Appendix B after B.4 shift by +40."
     }
    ],
-   "rules_sha256": "3d030aad7abd4f2dbeb4c1c092dfc53a7a82b6da28573089b3ce774b1ea67c17",
+   "rules_sha256": "1cbb1d95d01c19d90975cb24facd2d13331ab13385ea38de77a4c01e10e2418b",
    "reviewed_at": "2026-10-07T10:58:00Z",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2088,6 +2142,21 @@
     ],
     "verdict": "PASS",
     "summary": "RC518 changes B.4 only in equipment Max Speed values (each 1 inch lower) and the Heater Shield DEX Pen stacking note. FIG-19's example uses Ironscar's base SPD 4\", which stays below his new caps (Mail Shirt 6\", Heater Shield 6\"); 4\" - 2\" = 2\" per Move is unchanged. No DEX value is shown.",
+    "limits": [
+     "SVG and caption bytes unchanged.",
+     "Physical print NOT TESTED."
+    ]
+   },
+   "rc520_review": {
+    "reviewed_at": "2026-10-28",
+    "reviewer": "Claude Code integration owner; model review of every SVG text node and caption against the RC520 source, not independent human proof",
+    "source": "source/Heraldry_RC520.md",
+    "source_sha256": "bec8d47334c4db7d5902154389d69b0ef9755d94d062f132bd6e5d9bb7c859fc",
+    "checked_source_sections": [
+     "B"
+    ],
+    "verdict": "PASS",
+    "summary": "RC520 changes Appendix B only in Gildmirror's Tumble text. FIG-19 depicts B.6 setup, B.5 Coin Values, and Ironscar's SPD example; no talent appears. Every value shown is unchanged.",
     "limits": [
      "SVG and caption bytes unchanged.",
      "Physical print NOT TESTED."

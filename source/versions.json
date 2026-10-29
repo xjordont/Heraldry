@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 519,
+  "current": 520,
   "revisions": [
     {
       "number": 484,
@@ -415,6 +415,38 @@
       ],
       "patch_file": "editorial/history/RC519.json",
       "patch_sha256": "53b3bf100374c0da6f9597aa6cf571bd7b32cc068b1ca111a718f1595ee57c5f"
+    },
+    {
+      "number": 520,
+      "path": "source/Heraldry_RC520.md",
+      "sha256": "bec8d47334c4db7d5902154389d69b0ef9755d94d062f132bd6e5d9bb7c859fc",
+      "bytes": 1535963,
+      "parent_sha256": "5b6b81ddcda665da8b633c073ee238b6b320e5be6eee6c39cea952f12511c87e",
+      "created_at": "2026-10-29T01:20:34.523833+00:00",
+      "reason": "Owner revisions to RC519: revert the Elite Casting Check clause; simplify Commanding Presence to a once-per-round trigger; owner wording for Tumble and Heartseeker; adopt the critique's equipment changes (Sabre loses Light, weapon requirement, stat, and price changes, Buckler, Full Plate, and Steel Lamellar prices, Cleric Package A armour); restore Fighter Package B's Javelin",
+      "authorization": "Owner instruction 2026-10-28 in claude.ai session: 'Revert elite monsters change ... fighter talents ... should be reworked to be either the same as they were written before or simpler ... [Tumble and Heartseeker text] ... accept the proposed changes to equipment such as removing light from Saber etc'",
+      "patch_ids": [
+        "IMPORT-001",
+        "IMPORT-002",
+        "IMPORT-003",
+        "IMPORT-004",
+        "IMPORT-005",
+        "IMPORT-006",
+        "IMPORT-007",
+        "IMPORT-008",
+        "IMPORT-009",
+        "IMPORT-010",
+        "IMPORT-011",
+        "IMPORT-012",
+        "IMPORT-013",
+        "IMPORT-014",
+        "IMPORT-015",
+        "IMPORT-016",
+        "IMPORT-017",
+        "IMPORT-018"
+      ],
+      "patch_file": "editorial/history/RC520.json",
+      "patch_sha256": "5a4cd05291435b0e37ff97e8cc484d5b49b3960dfb56438fdeaaea7bcaaffeb0"
     }
   ]
 }
