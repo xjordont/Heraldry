@@ -1,5 +1,5 @@
 {
- "pdf": "Heraldry_RC492_inkjet-borderless.pdf",
+ "pdf": "Heraldry_RC522_inkjet-borderless.pdf",
  "covers": [
   {
    "file": "cover-front.jpg",
@@ -9,11 +9,11 @@
   {
    "file": "cover-back.jpg",
    "role": "back",
-   "sha256": "2ede027c7934652fe486b15dd33bf0e7a8e5826d8661a0dbff38b87955630027"
+   "sha256": "6807ba83c44e7a18dedcc0806b5c9f5ce1d45289f6cbdd7d154ff9673433d549"
   }
  ],
- "pdf_sha256": "10e4f8bea8cff69404a6ee1385077e0533b767ff1815714cd0b2532e245a8e78",
- "pages": 672,
+ "pdf_sha256": "22c63dcc6db000704dde2eb711bb6dda7af4d5964f6fcabfd6e268bd3acfe7bf",
+ "pages": 588,
  "sheets": [
   {
    "file": "sheet-01.jpg",
@@ -21,7 +21,7 @@
     1,
     24
    ],
-   "sha256": "397f600db2011be67344f70ea5bfa544aad46b9e6eaf50aea99d3ed6c0d007f2"
+   "sha256": "a7986d8d7dcbf8da94a0040449603c2d89a40771d1e0156de5a853c1b30a85ef"
   },
   {
    "file": "sheet-02.jpg",
@@ -29,7 +29,7 @@
     25,
     48
    ],
-   "sha256": "cf22d20c36a5856a5e09f8c3af26c2fd30fd435c9f3e7a69ebb70a6a606b5b5a"
+   "sha256": "25b3000073d22e7285f01372b017ac8f537bbfedbf8802d0d8fd1268305e838f"
   },
   {
    "file": "sheet-03.jpg",
@@ -37,7 +37,7 @@
     49,
     72
    ],
-   "sha256": "d7afc084e623c8aef8a13d96e8734dd9896fc35e8cd18ab19ef01bafd134e366"
+   "sha256": "2a00d9fa609aec3715071a37dcc9b3f82e8b06cc646f5dd6e2fecec54ff7061d"
   },
   {
    "file": "sheet-04.jpg",
@@ -45,7 +45,7 @@
     73,
     96
    ],
-   "sha256": "2fea597575f23bca7ebd60f3c21edcd247cbc75d2ccc04718020a465093a21ee"
+   "sha256": "b782a52a46661762f9943be706ae620b18fc5968c08ff7970ca3469e6e0cdfaa"
   },
   {
    "file": "sheet-05.jpg",
@@ -53,7 +53,7 @@
     97,
     120
    ],
-   "sha256": "1ce389a73ab2811a693dc94f6a9ced1d5975109492801f57f9217ca5a9d98739"
+   "sha256": "bc164a62b3af130a7d4a6f162ffd642c4c070178b01f7f3d647d5c2a71db4357"
   },
   {
    "file": "sheet-06.jpg",
@@ -61,7 +61,7 @@
     121,
     144
    ],
-   "sha256": "467ef0e0efa9eae0d2691071097e3b6a399b7f06cc06e90848d9c81d39a6b487"
+   "sha256": "49fe20507bd9c075dd4fe8e6e019f971e1d1e4313d0511cff92772332bd0ff0e"
   },
   {
    "file": "sheet-07.jpg",
@@ -69,7 +69,7 @@
     145,
     168
    ],
-   "sha256": "48eaadfebdf145f11697ec8a04fba44018470ac72a489f72fa5547e152adb797"
+   "sha256": "c979ad958832754d4412c972fb46d6ee46fe068f4dc4479476674a0340a9c918"
   },
   {
    "file": "sheet-08.jpg",
@@ -77,7 +77,7 @@
     169,
     192
    ],
-   "sha256": "dc76212b6b2e1b62dc5ec2e575f7adf26d3b003f8c8a16b7e1361f4958fa9b9d"
+   "sha256": "5406452874802024ab08030f675dcb6b560e278ee9731108f76eb7ecd4c55e4b"
   },
   {
    "file": "sheet-09.jpg",
@@ -85,7 +85,7 @@
     193,
     216
    ],
-   "sha256": "a5c088ce17f586e87c45e044cd91c8dbe521cb77710aaca39c90abf996063e4e"
+   "sha256": "fa7752c02c69211329c37f5db310a72379c9d2bb1614de6657891f780f08b0ec"
   },
   {
    "file": "sheet-10.jpg",
@@ -93,7 +93,7 @@
     217,
     240
    ],
-   "sha256": "5054433ae64a18016c8ff6a329f81dd2f0027ac7485c7824f0c6619192f38bad"
+   "sha256": "f01cd39affa7630ed4a301e4d5b01c4c29c8d0632f6ddfe514686389502864c7"
   },
   {
    "file": "sheet-11.jpg",
@@ -101,7 +101,7 @@
     241,
     264
    ],
-   "sha256": "fe931ecb321dfd3b81baad026ee2c60f7a4ef86d2fbfbd0411c7ad0ac2813efc"
+   "sha256": "e7d16e9eeb3bcf494a40266c006dc856eb43b1f9b6348f0a5cf71e637d08ba82"
   },
   {
    "file": "sheet-12.jpg",
@@ -109,7 +109,7 @@
     265,
     288
    ],
-   "sha256": "f61aeae4544842fdc0c1edeb87c6acb0e9420f5ff3933b5a612e5a7a0a4ac7ac"
+   "sha256": "0c5c988be2b2f3af5c202de16f91a51373ecf7f5c4812151c9299dde2d54fed8"
   },
   {
    "file": "sheet-13.jpg",
@@ -117,7 +117,7 @@
     289,
     312
    ],
-   "sha256": "124faf4e281b93f1fbbfd34e7b41f5fbc27db09c03d5709f34248773a6db0f9a"
+   "sha256": "1827f221e2a8d4cdd1f61cf5a8324390b0f15c484c4f807a36404eab5c4f8f8d"
   },
   {
    "file": "sheet-14.jpg",
@@ -125,7 +125,7 @@
     313,
     336
    ],
-   "sha256": "7487d66f84de274604149ce0c81a0e6a02b4e422dea152f018522f92cc934397"
+   "sha256": "72cd6e1fa9a7bba267bac4cc0ef9ef73dc567a4fa81092e882a112db0d073924"
   },
   {
    "file": "sheet-15.jpg",
@@ -133,7 +133,7 @@
     337,
     360
    ],
-   "sha256": "5e11df40557900475bc413e801ae696ef8fed19c3de1dbee67ccc640edac5b7e"
+   "sha256": "f03eed152445beebf545143bfc218fd4027db444353ba5effe6040bab6024123"
   },
   {
    "file": "sheet-16.jpg",
@@ -141,7 +141,7 @@
     361,
     384
    ],
-   "sha256": "947f8d62ee191cbf4d75b358142c66167f4fab4da4b998d06cfa2cead6d453a0"
+   "sha256": "04a225c255b51b8d171b9f2d526af3ba9d25568d4680d62375068cd44e05a42f"
   },
   {
    "file": "sheet-17.jpg",
@@ -149,7 +149,7 @@
     385,
     408
    ],
-   "sha256": "91c4e64588481de20404fb8c74fe07f55e07a450dc97c65ec7b008c95e0c5551"
+   "sha256": "a13acdafb66ab3a065fafed88e5e625e467659889809d0af58e04b07d0fd5e0b"
   },
   {
    "file": "sheet-18.jpg",
@@ -157,7 +157,7 @@
     409,
     432
    ],
-   "sha256": "0cd447c63ad2dbd5e64074fc80ca35f16da47e71761e9e7ba02c3113169b362e"
+   "sha256": "a115180ead5f6d0042faebc9e593beea2c1458d028a7115914c7eb07169768fd"
   },
   {
    "file": "sheet-19.jpg",
@@ -165,7 +165,7 @@
     433,
     456
    ],
-   "sha256": "76fbb3188105fe799c1e66f3494b0ba9f20a8e93deda958a880db5b0621199cf"
+   "sha256": "f5272f942f66cc172b6dc5320d139a891ecfd2e6f15248f4a12ab26c2f966fe2"
   },
   {
    "file": "sheet-20.jpg",
@@ -173,7 +173,7 @@
     457,
     480
    ],
-   "sha256": "02735d0901bc0b09dfe6edcce89923961ed80766c64906738e0acda027aeee17"
+   "sha256": "7d74b48db07ff848a3989b03812f8bd1622c07429aed16abaad45b7587f321c6"
   },
   {
    "file": "sheet-21.jpg",
@@ -181,7 +181,7 @@
     481,
     504
    ],
-   "sha256": "23e19aef887ade8c7391609217fa85e9592c7b97327661f2ffd3aa0e19b3b0cd"
+   "sha256": "77d79c33d0832a391994743408b7c525f954dc41a6ff26b82893151f60118f54"
   },
   {
    "file": "sheet-22.jpg",
@@ -189,7 +189,7 @@
     505,
     528
    ],
-   "sha256": "9c7316ea88009cd1394709e6616912fd770b09c8b6bef5fa2b84ce1160c59912"
+   "sha256": "af7781c82bc222a5f4e55f3cad529fff4b97111b2f458a767d2370640ff78fc4"
   },
   {
    "file": "sheet-23.jpg",
@@ -197,7 +197,7 @@
     529,
     552
    ],
-   "sha256": "8c2b25e476c4e7129e827b6bb655c18b68a3e2c0f8f8bce5494a6ee10ac941f0"
+   "sha256": "d77e6b496d06e2b70d9e1113fc9ab6df735d9fe218b451c16f635d2662722e93"
   },
   {
    "file": "sheet-24.jpg",
@@ -205,39 +205,15 @@
     553,
     576
    ],
-   "sha256": "65e1b88a175647cb5706c950fb66e8b3157c433adef64311eecdda896fa236c1"
+   "sha256": "6eec047f368641a14ab6b5924029af2a481b8428de86e9f4810faa0095f3cf38"
   },
   {
    "file": "sheet-25.jpg",
    "pages": [
     577,
-    600
+    588
    ],
-   "sha256": "8acef38bb7340ca33a12637d5e3ae80d3d7b623d4337005fcd2e31cea06a38ac"
-  },
-  {
-   "file": "sheet-26.jpg",
-   "pages": [
-    601,
-    624
-   ],
-   "sha256": "d41dfed532600896cb90058ec36385e7f8f80d96c43fcc3dee3258039d9a17aa"
-  },
-  {
-   "file": "sheet-27.jpg",
-   "pages": [
-    625,
-    648
-   ],
-   "sha256": "b954cff4f82014b9a6a90b126fa2848ff3677f7ca7618bb1f81cd5caf3addebe"
-  },
-  {
-   "file": "sheet-28.jpg",
-   "pages": [
-    649,
-    672
-   ],
-   "sha256": "deff21df3944edd56daeb518eda0e9f983d46299bb9c79a971b59d406ea65a4b"
+   "sha256": "24005c305a9bad5359565f6148e1178bc15ef96b1e9dc182c652fa15ee7efac3"
   }
  ],
  "details": [
@@ -245,180 +221,174 @@
    "file": "page-0001.jpg",
    "page": 1,
    "reason": "first page (title page; the covers are in the covers PDF)",
-   "sha256": "a23fec4c953f0ebf1cbe515ac2b29c8a4d25b6383d4972f698bd9a920336eb33"
+   "sha256": "748b09370cadc412128bc6ca62c71bf52d54dca59fc88e7011c4ca1b951ef401"
   },
   {
    "file": "page-0007.jpg",
    "page": 7,
    "reason": "chapter opener: The World of Heraldry",
-   "sha256": "b2b62dac703477928afcd61327cbb89adf2b4804c13fcc1c4f61df74ba6c2ee7"
+   "sha256": "dda9e057d140314573a5df9effd236b288b6d327ce82076850aadf6e5517d09f"
   },
   {
-   "file": "page-0028.jpg",
-   "page": 28,
+   "file": "page-0024.jpg",
+   "page": 24,
    "reason": "chapter opener: Core Mechanics",
-   "sha256": "b117ce2efc2a221d0d40edf537ae913092a65baef515e591c62d4fd8212acc98"
+   "sha256": "bd7655229e19c349440b21a8b69c8130a84bdb3e9d113e14d312ecb5c40a8cbd"
+  },
+  {
+   "file": "page-0048.jpg",
+   "page": 48,
+   "reason": "chapter opener: The Game Round",
+   "sha256": "6263165f6e2fc41bc4059983e57a24f3797e48d5503158365c79e376239a2036"
   },
   {
    "file": "page-0050.jpg",
    "page": 50,
    "reason": "every 50th page",
-   "sha256": "5ac72c9991e9bee35be345848259873999b3dce25a4c45664e484e20d9643696"
+   "sha256": "0c03bd4cbf6b9f741e0e8f6d9733369d7bf04417604a23bcbcacb49e8588ce6c"
   },
   {
-   "file": "page-0052.jpg",
-   "page": 52,
-   "reason": "chapter opener: The Game Round",
-   "sha256": "855969ab99006c90bb9df8065cfcfae4bb4736c524e649fd75efef391bc7b632"
-  },
-  {
-   "file": "page-0061.jpg",
-   "page": 61,
+   "file": "page-0057.jpg",
+   "page": 57,
    "reason": "chapter opener: Actions and Movement",
-   "sha256": "59cb0c012d44f820bdc4a826613d7911995bd766da05fca22b85edcc94a5c973"
+   "sha256": "203fa73fb855a3a6d423eb3217ba9c2b7332b794c9f4ed2263a7265c12d0ce0e"
   },
   {
-   "file": "page-0076.jpg",
-   "page": 76,
+   "file": "page-0072.jpg",
+   "page": 72,
    "reason": "chapter opener: Combat",
-   "sha256": "e7d2d09e4d34c1ac4a62a5fbd89cd70de3f9bfb93c7bf7e3607cd0d9f9a931d5"
+   "sha256": "d95637ba7b30acf7a183cb06b321de2ecba9cb331c65528828141d1f0eae6732"
   },
   {
-   "file": "page-0097.jpg",
-   "page": 97,
+   "file": "page-0092.jpg",
+   "page": 92,
    "reason": "chapter opener: Your Adventuring Party",
-   "sha256": "ef94eafd533dd4198fd3b75f881e569aa11fc0e14ed7658e621981568736bd8e"
+   "sha256": "0dbcaa72287eb68ce42abc0ae45fd912f01e29ff824e74c998638976b847df8d"
   },
   {
    "file": "page-0100.jpg",
    "page": 100,
    "reason": "every 50th page",
-   "sha256": "f3fa245ee89139d4d2b7ad78e54efada3994f22d5429a1b9d54bddaf41fc8262"
+   "sha256": "48d62986553f26028e2fa9a4f4ff44977b5b61fbdbd5c08794a4dd40b32b643d"
+  },
+  {
+   "file": "page-0133.jpg",
+   "page": 133,
+   "reason": "chapter opener: Equipment and Items",
+   "sha256": "174ebfcff22479e80ded3bd6939b02f1b2099f9c5325dbf17b6eb52d82885235"
   },
   {
    "file": "page-0150.jpg",
    "page": 150,
-   "reason": "chapter opener: Equipment and Items",
-   "sha256": "e5fa742e5159da763d81b0f8a0d1ab053c145a95e013b90777ba96c5b32a94f2"
+   "reason": "every 50th page",
+   "sha256": "96b6d5082ceb00116e2860f7931269195ff1e1e79cdc602b282d6adfdb3ba01f"
+  },
+  {
+   "file": "page-0197.jpg",
+   "page": 197,
+   "reason": "chapter opener: Powers and Traditions",
+   "sha256": "d07ae14c76c05bbc6eb28a3f30f022fe8330d56b2ef43c419a75dd170e14a6bc"
   },
   {
    "file": "page-0200.jpg",
    "page": 200,
    "reason": "every 50th page",
-   "sha256": "75270a9e120e8f797b6401f9951ebb23f2a96307f0e88d447370d7d8a5459d7f"
+   "sha256": "cf81b030ca6b82640046740f809182fee3fc46c4c95bea0512de00b6da3d3985"
   },
   {
-   "file": "page-0226.jpg",
-   "page": 226,
-   "reason": "chapter opener: Powers and Traditions",
-   "sha256": "3574a5e007e045b2d8b6f318677b84528f52cebf089f0ca6791bbe0ee573d6ea"
+   "file": "page-0237.jpg",
+   "page": 237,
+   "reason": "chapter opener: Monsters",
+   "sha256": "763340bba7c57be8bfbf488ad7c342a004a94fd514eb2e9160f19e5cd358a11a"
   },
   {
    "file": "page-0250.jpg",
    "page": 250,
    "reason": "every 50th page",
-   "sha256": "d2b13f997b39f2ceb38fae71adfe24c35c2b6ff5e0c25b1b96597e7277ddaa07"
-  },
-  {
-   "file": "page-0274.jpg",
-   "page": 274,
-   "reason": "chapter opener: Monsters",
-   "sha256": "d92f3ec81b2a0583beef56d7fb0678b92b88a9565daecbf9542a890b26fd9e05"
+   "sha256": "5b38f7f729a1f3dc6a1c77189d45d6869bb5f305161920e61daa4144100c0855"
   },
   {
    "file": "page-0300.jpg",
    "page": 300,
    "reason": "every 50th page",
-   "sha256": "326040bbcf6b0f1580f0472b04d4d0d3e32f41ad1fe63fe838cca6a5e060c448"
+   "sha256": "fb8ec4c3d0ec9b8e53381a11340c27d755c75da9091588b63cdc5ee55e1dc840"
+  },
+  {
+   "file": "page-0334.jpg",
+   "page": 334,
+   "reason": "chapter opener: Scenarios",
+   "sha256": "4ddc96f8845691b8f138e7b691014fc6c4ef899fd253e5ce9e34808cd6af0143"
   },
   {
    "file": "page-0350.jpg",
    "page": 350,
    "reason": "every 50th page",
-   "sha256": "b474b9d917e996e2280d96e90232d45a546b5c64ce5078ae9db78518608fed13"
+   "sha256": "50823a5629b6b8b264511d3708b7c3eef56f18f8248dbce477ce88dd95deeddb"
   },
   {
    "file": "page-0400.jpg",
    "page": 400,
    "reason": "every 50th page",
-   "sha256": "b9c3a13ad08c85e15e29b97b8e13d45434a9a68a75888b590c71d9b0a31c5d24"
-  },
-  {
-   "file": "page-0405.jpg",
-   "page": 405,
-   "reason": "chapter opener: Scenarios",
-   "sha256": "929b8448fa03789a6a1e95ea032f40d036c8cc8264a19d10ee7f847ca2eb5f98"
+   "sha256": "84b36ae146c34987f97a967262f22c1c4804c0735ac562448cf6d11c1cfdd30c"
   },
   {
    "file": "page-0450.jpg",
    "page": 450,
    "reason": "every 50th page",
-   "sha256": "eb061d18ec1c809dbcbdb73d0d3448172a79fd0b9b922c930a65b0d93d6a3ef4"
+   "sha256": "e8135c1e85afeb0cf6198018ff91c906e548e64d5985683d53d2207281272eb0"
+  },
+  {
+   "file": "page-0463.jpg",
+   "page": 463,
+   "reason": "chapter opener: Campaign Play",
+   "sha256": "a799ad9cf0ffc145b887e6dc373db95f22799c82896d3a9f8eb29ae0dbb8b804"
+  },
+  {
+   "file": "page-0496.jpg",
+   "page": 496,
+   "reason": "chapter opener: Learn to Play",
+   "sha256": "10fba53cfe742ca0299955409fcf29a1acba326cbb7b5518cf68b5c3375daf2d"
   },
   {
    "file": "page-0500.jpg",
    "page": 500,
    "reason": "every 50th page",
-   "sha256": "5d876b51ca5abf770cd24a4aa2a45f9c54d1dac8d31253d60dc39b56fe7ed655"
+   "sha256": "5b2a5c6bf5de1887de527ffea7f018cfd5d15f029eba33a95906d963eb79dc34"
+  },
+  {
+   "file": "page-0514.jpg",
+   "page": 514,
+   "reason": "chapter opener: Basic Mode",
+   "sha256": "4c5251695bc77ba9bbb9c321c829d3aa1b3bd7b17e8129454510a2b8b7af8bab"
+  },
+  {
+   "file": "page-0549.jpg",
+   "page": 549,
+   "reason": "chapter opener: Rules Reference",
+   "sha256": "5446822f0ea355776d5cc51a8bef843e37c30ebf6e743d0c78a9a7449d8699d9"
   },
   {
    "file": "page-0550.jpg",
    "page": 550,
    "reason": "every 50th page",
-   "sha256": "b99cd46f629858cb5b9052d2a578ae528df083764920cdeacd923028e9473d89"
+   "sha256": "bbc769eb5f23e97d4b05b699d276333933746956e36d6bc8b4cbe357816b37ab"
   },
   {
-   "file": "page-0551.jpg",
-   "page": 551,
-   "reason": "chapter opener: Campaign Play",
-   "sha256": "d472f10f718a91fe962b75f0c9175d761a695d634fecef7d735095b819025e0e"
-  },
-  {
-   "file": "page-0589.jpg",
-   "page": 589,
-   "reason": "chapter opener: Learn to Play",
-   "sha256": "0634171c0e35e663c0f22985243e010385bdf2a3e319cb354d05c64eb587e5c3"
-  },
-  {
-   "file": "page-0600.jpg",
-   "page": 600,
-   "reason": "every 50th page",
-   "sha256": "bd2bf0d4ce88a81f689c96bd026d123563adda815901c97a96f1d5ed02f8f011"
-  },
-  {
-   "file": "page-0607.jpg",
-   "page": 607,
-   "reason": "chapter opener: Basic Mode",
-   "sha256": "0a938099e4bf4021d48872c755a38839a0ddefe920cdbf849d3e0ae4e39d5c43"
-  },
-  {
-   "file": "page-0630.jpg",
-   "page": 630,
-   "reason": "chapter opener: Rules Reference",
-   "sha256": "1f4ea21f840a8cdcdeac9c62877c91c3b057391d81f5131cfd46f42ff3107413"
-  },
-  {
-   "file": "page-0650.jpg",
-   "page": 650,
-   "reason": "every 50th page",
-   "sha256": "ca5d4dbf21a8e6b2bca4347f2359c38b8a9d3ff409f07b7fd83bdf843ca8d4b5"
-  },
-  {
-   "file": "page-0669.jpg",
-   "page": 669,
+   "file": "page-0585.jpg",
+   "page": 585,
    "reason": "chapter opener: Index",
-   "sha256": "9831deea083b20fee6a536ca396e7100c7d5cf06340cbac9370ab3ba94272dc1"
+   "sha256": "c4ce7cfa25cb0dc91d1eb541432a6e8793f6b6243dab41a369b727824d67f354"
   },
   {
-   "file": "page-0672.jpg",
-   "page": 672,
+   "file": "page-0588.jpg",
+   "page": 588,
    "reason": "last page",
-   "sha256": "7ee0a5cdcb16b288033c80fd39f861134676c220dbe94a461aec305028063490"
+   "sha256": "e8d85007456a43ade7a0a098ecc3196524d95fa5adc2c302e382afbb00f26eb3"
   }
  ],
  "calibration": {
   "file": "calibration.jpg",
-  "sha256": "eb8b5e6b5ce7d3b4715a2934ca1283107c7599e7eadc9441c77caaf5ab94c164"
+  "sha256": "5d115191b08698e6baeaafac72d82535cf6f06dd3385dd256d65689202916757"
  },
- "note": "28 contact sheets of 24 pages at 34 dpi cover every page; 29 detail pages at 100 dpi."
+ "note": "25 contact sheets of 24 pages at 34 dpi cover every page; 28 detail pages at 100 dpi."
 }
