@@ -24,7 +24,9 @@ Owner instruction after the RC522 design review: "Fix everything to the best of 
 
 **Workflow.** The verified release now also builds and attaches the blank Hero record and the 24 Basic Mode Heroes (`Rebuild verified delivery`, timeout 40 minutes). The shipped print instructions list the digital edition and Hero records and no longer use em dashes. `config/indesign.json` matches the approved compact profile. Player aids remain outside the release: six of the ten sheets are stale against RC522 (`tools/aids_fidelity.py`).
 
-**Evidence.** A local proof from a clean balance start (no cached plan, as on GitHub) passes every local stage with no layout flag: 627 pages (the earlier repaired proof was 632), 274 distinct images. Long B.4 profiles now keep their name, identification lines, and first subsection together. `python tools/dev.py check` passes 364 tests. With a 12 GB swap file the full local `layout run` now completes in about 13 minutes. Physical print **NOT TESTED**.
+**Evidence.** A local proof from a clean balance start (no cached plan, as on GitHub) passes every local stage with no layout flag: 627 pages (the earlier repaired proof was 632), 274 distinct images. Long B.4 profiles now keep their name, identification lines, and first subsection together.
+
+**Status.** Candidate request `20261029T214330Z` (commit `c0922f4`) is committed, but GitHub did not start it: "The job was not started because an Actions budget is preventing further use." Every workflow since about 15:55 UTC on 2026-10-29 stopped the same way (Build candidate, Repository checks, Update GitHub README). No candidate, visual review, or release exists for these repairs; the published delivery remains RC492-build-37. When the Actions budget is raised or resets, rerun Build candidate run `40960375047` (or request again), review every page, bind, and the delivery workflow publishes. `python tools/dev.py check` passes 364 tests. With a 12 GB swap file the full local `layout run` now completes in about 13 minutes. Physical print **NOT TESTED**.
 
 ## Figure source citations remapped to RC522; remap tool fixed - 2026-10-29
 
