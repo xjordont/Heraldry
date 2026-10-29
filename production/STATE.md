@@ -1,5 +1,13 @@
 # Production state - RC522 source, main
 
+## Figure source citations remapped to RC522; remap tool fixed - 2026-10-29
+
+Owner request: double-check layout, design, typography, art, and the publication workflow before publishing. A local `layout run` failed at the figures stage: 277 figure source-line citations still pointed at RC513 lines, stale since RC514 shifted B.4 and later lines. Any candidate build would have failed at this step. Trial remaps found RC513 as the matching base; `tools/remap_figure_lines.py --old source/Heraldry_RC513.md --new source/Heraldry_RC522.md` now validates all figures (`make_figures.py`: validation OK) and re-keys `figures/placements.json` to the current block IDs.
+
+The remap tool rewrote every 4–5 digit number in the figure scripts. That included the SVG namespace (`http://www.w3.org/2000/svg` became `2009`, which would have made all 57 SVGs invalid) and the `2026-10-06`/`2026-10-07` dates in figure notes (which became `2035`). Both were restored; figure SVG bytes are unchanged and the semantic gate stays 57/57. The tool now matches only real citations (not YYYY-MM-DD years or numbers inside URLs, paths, or decimals), and `tests/test_remap_figure_lines.py` guards it. A clean re-run of the fixed tool from HEAD reproduces the corrected files exactly.
+
+A full local proof cannot finish in an 8 GB Linux session: `measure_units.py` is killed for running out of memory. The GitHub candidate build is the route for rendering. The cream composer also warns that 10 reviewed table-width policies (potion and poison tiers T055–T063, Equipment Quick Reference T333) no longer match their content, so those tables fall back to default widths until re-reviewed.
+
 ## Hero record General Talent labels; owner publication decisions - 2026-10-28
 
 The populated Hero records labelled every non-NRG talent "Class / 1", including each Hero's Level 1 General Talent (22 Heroes, for example Ironscar's Bulwark and Gildmirror's Tumble). `assets/hero-record/sheet.py` now reads the General Talent names from 6.12 of the active manuscript and labels those talents "General / 1"; a parenthetical choice such as Weapon Specialist (Slashing) still matches. Starcinder's Sharp Mind costs NRG, so it stays in the Powers table under the existing rule. A new test requires every General Talent to be labelled General and no other talent to be. All 24 Heroes pass fit and fidelity; three reverses were inspected. No manuscript change.
