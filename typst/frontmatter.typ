@@ -133,25 +133,70 @@
     }
     out.join(", ")
   }
-  columns(3, gutter: 14pt)[
-    #let letter = ""
-    #for e in index-data.entries {
-      let l = upper(e.term.first())
-      if l != letter {
-        letter = l
-        block(above: 10pt, below: 4pt, sticky: true, grid(columns: (auto, 1fr), column-gutter: 5pt, align: horizon,
-          box(fill: ink, inset: (x: 4pt, y: 2.5pt), text(font: goth, weight: 600, size: 13pt, fill: paper, l)), line(length: 100%, stroke: 0.4pt + ink3)))
-      }
-      block(above: 2.5pt, below: 0pt, breakable: false)[
-        #text(weight: 600, e.term)#if e.keys.len() > 0 [, #context e.keys.map(k => pages-for(k)).join(", ")]#if e.at("see", default: none) != none [. #emph[See] #e.see]#if e.at("also", default: none) != none [. #emph[See also] #e.also]
-      ]
-      for s in e.at("sub", default: ()) {
-        block(above: 1.5pt, below: 0pt, inset: (left: 9pt), breakable: false)[
-          #s.term, #context s.keys.map(k => pages-for(k)).join(", ")
-        ]
+  // Index items in reading order: letter heads ("h"), main entries ("e"), and sub-entries ("s").
+  let items = ()
+  let letter = ""
+  for e in index-data.entries {
+    let l = upper(e.term.first())
+    if l != letter {
+      letter = l
+      items.push((kind: "h", above: 10pt, below: 4pt, inset: 0pt, body: grid(columns: (auto, 1fr), column-gutter: 5pt, align: horizon,
+        box(fill: ink, inset: (x: 4pt, y: 2.5pt), text(font: goth, weight: 600, size: 13pt, fill: paper, l)), line(length: 100%, stroke: 0.4pt + ink3))))
+    }
+    items.push((kind: "e", above: 2.5pt, below: 0pt, inset: 0pt, body: [
+      #text(weight: 600, e.term)#if e.keys.len() > 0 [, #context e.keys.map(k => pages-for(k)).join(", ")]#if e.at("see", default: none) != none [. #emph[See] #e.see]#if e.at("also", default: none) != none [. #emph[See also] #e.also]
+    ]))
+    for s in e.at("sub", default: ()) {
+      items.push((kind: "s", above: 1.5pt, below: 0pt, inset: 9pt, body: [
+        #s.term, #context s.keys.map(k => pages-for(k)).join(", ")
+      ]))
+    }
+  }
+  let ix-gap = 14pt
+  let ix-col = (frame-w - 2 * ix-gap) / 3
+  let piece(i, it) = block(above: it.above, below: it.below, inset: (left: it.inset),
+    sticky: it.kind == "h", breakable: false, [#metadata(i) <ix-item>#it.body])
+  // The last index page is balanced: its items are split into three whole-entry columns of near-equal
+  // height. A column never starts with a sub-entry or ends with a letter head. Pages before the last
+  // fill normally, so the split points depend only on where the previous layout pass began that page.
+  context {
+    let marks = query(<ix-item>)
+    let breaks = ()
+    if marks.len() == items.len() and items.len() > 0 {
+      let last = marks.last().location().page()
+      let s = marks.position(m => m.location().page() == last)
+      let n = items.len()
+      if n - s >= 6 {
+        let h = items.map(it => measure(block(width: ix-col, inset: (left: it.inset), breakable: false, it.body)).height)
+        let gap-before(j) = calc.max(items.at(j - 1).below, items.at(j).above)
+        // pre.at(j): stacked height of items s..j-1 as one run, including the gaps between them
+        let pre = (0pt,)
+        for j in range(s, n) { pre.push(pre.last() + h.at(j) + if j > s { gap-before(j) } else { 0pt }) }
+        let run(a, b) = pre.at(b - s) - pre.at(a - s) - if a > s { gap-before(a) } else { 0pt }
+        let ok(j) = items.at(j).kind != "s" and items.at(j - 1).kind != "h"
+        let avail = body-bottom - marks.at(s).location().position().y - 2pt
+        let best = (pre.last(), none, none)
+        for k1 in range(s + 1, n - 1) {
+          if not ok(k1) { continue }
+          let a = run(s, k1)
+          if a >= best.at(0) { break }
+          for k2 in range(k1 + 1, n) {
+            if not ok(k2) { continue }
+            let m = calc.max(a, run(k1, k2), run(k2, n))
+            if m < best.at(0) { best = (m, k1, k2) }
+            if run(k1, k2) >= best.at(0) { break }
+          }
+        }
+        if best.at(1) != none and best.at(0) <= avail { breaks = (best.at(1), best.at(2)) }
       }
     }
-  ]
+    columns(3, gutter: ix-gap, {
+      for (i, it) in items.enumerate() {
+        if i in breaks { colbreak() }
+        piece(i, it)
+      }
+    })
+  }
 }
 
 #let backmatter() = {

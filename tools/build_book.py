@@ -60,7 +60,11 @@ NOBREAK = [
     re.compile(r"\b(?:STR|DEX|INT|SPI) [+−-]?\d+\b"),        # STR +1
     re.compile(r"\bAPL \d+(?:–\d+|\+)?"),                    # APL 1–3
     re.compile(r"\bRound \d+\b"),
+    re.compile(r"\b\w+ \(c\)"),                            # Cost (c): the coin stays with its label
 ]
+# A numeric range never breaks after its en dash ("4–8 rounds"); boxed in layout only, so the
+# text layer keeps the source characters exactly.
+RANGE = re.compile(r"\d+(?:\.\d+)?–\d+(?:\.\d+)?")
 NBSP = " "
 
 
@@ -137,7 +141,7 @@ def apply_table_scope_override(table, classification, policy):
     if policy.get('scope') != 'full' or classification.get('rep') != 'table':
         raise ValueError('Unsupported table scope override: ' + table['id'])
     mins, maxs, _ = measure_table(table)
-    widths, _ = allocate(mins, maxs, FULL_W)
+    widths, _ = allocate(mins, maxs, FULL_W, [table])
     if widths is None:
         raise ValueError('Reviewed table no longer fits full width: ' + table['id'])
     return classification | {'scope':'full', 'widths':[round(x,2) for x in widths],
@@ -161,7 +165,15 @@ class Emitter:
             prev = t
             if t == "text":
                 if n["v"]:
-                    out.append("#" + lit(nobreak(n["v"])))
+                    v = nobreak(n["v"])
+                    at = 0
+                    for m in RANGE.finditer(v):
+                        if m.start() > at:
+                            out.append("#" + lit(v[at:m.start()]))
+                        out.append("#box[#" + lit(m.group(0)) + "]")
+                        at = m.end()
+                    if at < len(v):
+                        out.append("#" + lit(v[at:]))
             elif t == "code":
                 out.append("#raw(" + lit(n["v"]) + ")")
             elif t == "soft":
@@ -292,7 +304,8 @@ class Book:
         self.table_titles = {}
         mf = BUILD / "unit_measure.json"
         self.measures = json.loads(mf.read_text()) if mf.exists() else {}
-        self.piece_heads = {}
+        self.piece_heads = {}   # heading-led pieces: start positions come from the heading query
+        self.bare_heads = set()  # pieces that are only a heading and must travel with the next piece
         self.table_map = []
         self.block_map = []   # (block id, src span, representation, segment)
         self.out = []
@@ -300,6 +313,29 @@ class Book:
         self.index_targets = json.loads((BUILD / "index_targets.json").read_text()) if (BUILD / "index_targets.json").exists() else {}
         self.tclass = self._classify_all()
         self.spot_art, self.art_ids = load_spot_art()
+        self._check_art_anchors()
+
+    def _check_art_anchors(self):
+        """Spot art attaches by flavour-block id. After a manuscript revision renumbers blocks, a stale
+        catalogue would hang an illustration above another entry's flavour; refuse instead."""
+        if not self.spot_art:
+            return
+        catalogue = json.loads((ROOT / "production/art/SPOT_CATALOG.json").read_text())["entries"]
+        expected = {e["flavour_block"]: e["heading_id"] for e in catalogue if e.get("flavour_block")}
+        follows = {}
+        def walk(blocks):
+            for i, b in enumerate(blocks):
+                if b["type"] == "heading" and i + 1 < len(blocks):
+                    follows[blocks[i + 1]["id"]] = b["id"]
+                for item in b.get("items", []):
+                    walk(item["blocks"])
+                walk(b.get("blocks", []))
+        for chapter in self.model["chapters"]:
+            walk(chapter["blocks"])
+        wrong = sorted(block for block in self.spot_art if follows.get(block) != expected.get(block))
+        if wrong:
+            raise SystemExit(f"Art catalogue is stale for {len(wrong)} flavour blocks (first: {wrong[:5]}); "
+                             "run tools/art_catalog.py and review any changed specs")
 
     def _classify_all(self):
         """Classify every table, then unify families (same header signature within the
@@ -345,7 +381,7 @@ class Book:
             scope = "full" if any(c["scope"] == "full" for c in cs) else "column"
             mins = [max(x) for x in zip(*[measure_table(m)[0] for m in members])]
             maxs = [max(x) for x in zip(*[measure_table(m)[1] for m in members])]
-            w, _ = allocate(mins, maxs, FULL_W if scope == "full" else COL_W)
+            w, _ = allocate(mins, maxs, FULL_W if scope == "full" else COL_W, members)
             if w is None:
                 continue
             for m, c in zip(members, cs):
@@ -588,7 +624,29 @@ class Book:
         # Further chapter-intro paragraphs continue in the full-width page flow.
         # Packing them into the unbreakable title/art opener can overflow a page.
         introduction = bool(rest_blocks and is_flavour(rest_blocks[0]))
+        # A short plain introduction before the first section reads as one standfirst at the
+        # opener's measure rather than a few loosely justified lines in two columns.
+        intro = []
+        for b in rest_blocks:
+            if b["type"] == "para" and is_flavour(b) and not intro:
+                continue
+            if b["type"] == "para" and not (is_flavour(b) or is_example(b) or is_caption(b)):
+                intro.append(b)
+                continue
+            if b["type"] != "heading":
+                intro = []
+            break
+        if not (1 <= len(intro) <= 3 and sum(len(first_text_full(b)) for b in intro) <= 700):
+            intro = []
+        intro_ids = {b["id"] for b in intro}
         for k, b in enumerate(rest_blocks):
+            if b["id"] in intro_ids:
+                if b is intro[0]:
+                    body = "#parbreak()".join(self.para(x).rstrip("\n") for x in intro)
+                    items.append(dict(b=b, s=f"#chapter-intro[{body}]\n", kind="f", id=b["id"], typ="para"))
+                else:
+                    self.block_map.append((b["id"], b["src"], "chapter-intro", None))
+                continue
             nxt = rest_blocks[k + 1] if k + 1 < len(rest_blocks) else None
             if b["type"] == "hr" and nxt is None:
                 self.block_map.append((b["id"], b["src"], "hr-absorbed-by-chapter-break", None))
@@ -676,7 +734,11 @@ class Book:
                     for index, fragment in enumerate(self.list_fragments(n['b'])):
                         add(n['kind'], (prefix if index == 0 else '') + fragment)
                 else:
-                    add(n["kind"], inject(n["s"], prefix) if prefix else n["s"], n["s"].startswith("#runin["))
+                    # Only a bare run-in label glues to what follows. A label already merged with its
+                    # list or table is a complete piece; gluing it chained every later piece of a
+                    # profile into one unbreakable block (design review 2026-10-29, PDF p. 531).
+                    add(n["kind"], inject(n["s"], prefix) if prefix else n["s"],
+                        n["s"].startswith("#runin[") and n["typ"] == "para")
             if tracked:
                 self.log_unit(n, 'contained')
                 parts[-1][1][-1] += f"#umark({lit(n['id'])}, \"e\")"
@@ -913,25 +975,40 @@ class Book:
             self.block_map.append((b["id"], b["src"], "column", sid))
             if b["type"] == "heading":
                 self.piece_heads[f"{sid}:{j}"] = b["id"]
+                # A complete column unit that opens with its heading (an ancestry, a Monster, an item)
+                # is a whole piece. Only a bare heading glues to what follows; treating whole units as
+                # bare merged every unit of a tail into one piece and walked the tail back to the
+                # segment start, stranding short section openers (design review 2026-10-29, PDF p. 101).
+                if not is_unit_piece(s):
+                    self.bare_heads.add(f"{sid}:{j}")
                 parts.append(s)
             else:
                 parts.append(inject(s, f"#pm({sid}, {j}, \"s\")"))
         end = f"#place(pm({sid}, {len(pieces)}, \"e\"))"
-        if tail is None or tail >= len(pieces):
-            self.out.append("#seg[" + "".join(parts) + end + "]\n")
-        else:
-            if tail > 0:
-                self.out.append("#seg[" + "".join(parts[:tail]) + "]\n")
-            tp = []
+        tp = []
+        if tail is not None and tail < len(pieces):
             carry = ""
             for j in range(tail, len(parts)):
-                if f"{sid}:{j}" in self.piece_heads and j < len(parts) - 1:
+                if f"{sid}:{j}" in self.bare_heads and j < len(parts) - 1:
                     carry += parts[j]
+                    continue
+                if pieces[j][0].get("type") == "marker" and tp and not carry:
+                    tp[-1] += parts[j]           # a zero-size end marker is never a balancing piece
                     continue
                 tp.append(carry + parts[j])
                 carry = ""
             if carry:
                 tp.append(carry)
+        if len(tp) == 1 and is_rigid(tp[0]):
+            # One whole unit cannot be balanced against anything. As a separate run it would start a new
+            # column region below the segment's last column and could not use the empty column beside it
+            # (design review 2026-10-29: Drakeblood fell to its own page beside an empty column).
+            tp = []
+        if not tp:
+            self.out.append("#seg[" + "".join(parts) + end + "]\n")
+        else:
+            if tail > 0:
+                self.out.append("#seg[" + "".join(parts[:tail]) + "]\n")
             tp[-1] = tp[-1] + end
             if all(not is_rigid(piece) for piece in tp):
                 # Zero-size terminal markers do not turn a prose tail into a
@@ -967,7 +1044,13 @@ FRAME_FIT = FRAME_H - 12                 # measured component overhead and a doc
 BODY_BOTTOM = PAGE_HEIGHT_PT - MARGIN_BOTTOM_PT
 
 
-def compute_balance(pm, prev, sigs, heads=None, hpos=None):
+def is_unit_piece(s):
+    """True when a rendered piece is a complete keep unit rather than a bare heading."""
+    return s.lstrip().startswith(("#keepcol[", "#keepfigure["))
+
+
+def compute_balance(pm, prev, sigs, heads=None, hpos=None, bare=None):
+    bare = set(heads or {}) if bare is None else bare
     segs = {}
     for m in pm:
         segs.setdefault(m["seg"], []).append(m)
@@ -1013,7 +1096,7 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None):
                     continue
         res[str(sid)] = [sigs[str(sid)], t]
     for k, (sig, t) in list(res.items()):
-        while t > 0 and f"{k}:{t-1}" in (heads or {}):
+        while t > 0 and f"{k}:{t-1}" in bare:
             t -= 1
         res[k] = [sig, t]
     return res
@@ -1156,7 +1239,7 @@ def main():
         warnings = getattr(compile_book, 'last_warnings', [])
         warnings = list(warnings) if isinstance(warnings, (list, tuple)) else []
         compile_warnings.extend(warnings)
-        new = compute_balance(pm, balance, book.seg_sigs, book.piece_heads, hpos) if not a.no_balance else {}
+        new = compute_balance(pm, balance, book.seg_sigs, book.piece_heads, hpos, book.bare_heads) if not a.no_balance else {}
         raw_changes = sum(1 for k in set(new) | set(balance) if new.get(k) != balance.get(k))
         new = stabilize_balance(new, balance, flips, excluded)
         changes = sum(1 for k in set(new) | set(balance) if new.get(k) != balance.get(k))
@@ -1169,7 +1252,7 @@ def main():
             converged = True
             break
         for k, (sig, t) in list(new.items()):
-            while t > 0 and f"{k}:{t-1}" in book.piece_heads:
+            while t > 0 and f"{k}:{t-1}" in book.bare_heads:
                 t -= 1
             new[k] = [sig, t]
         if p == a.passes - 1 or new == balance:

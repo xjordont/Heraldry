@@ -74,7 +74,7 @@
   "title": "Skeleton Warrior",
   "heading_id": "h-skeleton-warrior-minion",
   "route": "gpt",
-  "spec_sha256": "394b849d6fd798d8857726955c97cd4e95ffce429a193b394598d2096237cec0",
+  "spec_sha256": "8a78a4e27ab7830533aa99c0828d198811e344f32e6358d9da8a48a838686c63",
   "prompt_sha256": "3aeb9fc2b93240aed54e2603cedf6869eedfc29b7b3a4fd2062d45502c107369",
   "status": "approved",
   "received_at": "2026-10-12T04:42:58+00:00",
@@ -101,7 +101,16 @@
    "max_print_w_in_300ppi": 3.88
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "394b849d6fd798d8857726955c97cd4e95ffce429a193b394598d2096237cec0",
+    "to": "8a78a4e27ab7830533aa99c0828d198811e344f32e6358d9da8a48a838686c63",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-DIRE-WOLF": {
   "family": "monster",
@@ -142,7 +151,7 @@
   "title": "Orc",
   "heading_id": "h-orc-soldier",
   "route": "gpt",
-  "spec_sha256": "86a860fa50a78d64bde733a2f063281c3f2f2cb6c25ddd1f25b3ca8c9747d61a",
+  "spec_sha256": "5844a1dd46504d0e9d261c668fd29e28c00c1beb22a64a85b7e572af6a3a9ef6",
   "prompt_sha256": "b97cbf5864880e238dc0ddc245d6c1a82dbe40d71795cbecaffcd259caaff060",
   "status": "approved",
   "received_at": "2026-10-12T04:46:33+00:00",
@@ -169,14 +178,23 @@
    "max_print_w_in_300ppi": 3.397
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "86a860fa50a78d64bde733a2f063281c3f2f2cb6c25ddd1f25b3ca8c9747d61a",
+    "to": "5844a1dd46504d0e9d261c668fd29e28c00c1beb22a64a85b7e572af6a3a9ef6",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-GARGOYLE": {
   "family": "monster",
   "title": "Gargoyle",
   "heading_id": "h-gargoyle-skirmisher",
   "route": "gpt",
-  "spec_sha256": "0c25595efed661104f38ca4142324b62006d9ffe728ad74014a4ca25f44d613c",
+  "spec_sha256": "f3b59a9533ae2ec9ef8c1a0fe046d291a54264911e5cf7e0989a14a63c70e624",
   "prompt_sha256": "4738ef0fd0199628b2719ac0a104b399ea475cd375ff3b9fa485b9d1f59db7eb",
   "status": "approved",
   "received_at": "2026-10-12T04:48:35+00:00",
@@ -203,7 +221,16 @@
    "max_print_w_in_300ppi": 3.927
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "0c25595efed661104f38ca4142324b62006d9ffe728ad74014a4ca25f44d613c",
+    "to": "f3b59a9533ae2ec9ef8c1a0fe046d291a54264911e5cf7e0989a14a63c70e624",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-CLA-RANGER": {
   "family": "class",
@@ -346,7 +373,7 @@
   "title": "Giant Scorpion",
   "heading_id": "h-giant-scorpion-soldier",
   "route": "gpt",
-  "spec_sha256": "cdac724b69225f17ffbab49f53cfb85a8ffa4a4cc187ae9758e8ff1c87eb5d67",
+  "spec_sha256": "6baa0d7956b868131ec374394363cfec042d7cf1e846de18068cac9e223b9a40",
   "prompt_sha256": "481ba14be36c5a2ce78a27741f108ae9a03de1224ec6d9b3ab7adc0776b6f893",
   "status": "approved",
   "received_at": "2026-10-12T05:06:57+00:00",
@@ -373,14 +400,23 @@
    "max_print_w_in_300ppi": 4.073
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "cdac724b69225f17ffbab49f53cfb85a8ffa4a4cc187ae9758e8ff1c87eb5d67",
+    "to": "6baa0d7956b868131ec374394363cfec042d7cf1e846de18068cac9e223b9a40",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST": {
   "family": "scenario",
   "title": "Scenario 1: Hunt the Wild Beast",
   "heading_id": "h-scenario-1-hunt-the-wild-beast-intro",
   "route": "gpt",
-  "spec_sha256": "680178edb44f2202b4f0c72f0cde17032943e169c2abd7b20e49966f2d74f1fc",
+  "spec_sha256": "6458c4e570d0dd6a922d55c3220c308fb802a51a6819784eb1cc53583feb8953",
   "prompt_sha256": "2346e424e7f234ac06da33c4e5b1f62b493f24ad5d7e02c08f847c3700962240",
   "status": "approved",
   "received_at": "2026-10-12T05:11:31+00:00",
@@ -407,14 +443,23 @@
    "max_print_w_in_300ppi": 5.11
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "680178edb44f2202b4f0c72f0cde17032943e169c2abd7b20e49966f2d74f1fc",
+    "to": "6458c4e570d0dd6a922d55c3220c308fb802a51a6819784eb1cc53583feb8953",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-THE-LAST-COLOSSUS": {
   "family": "boss",
   "title": "The Last Colossus",
   "heading_id": "h-the-last-colossus-boss",
   "route": "gpt",
-  "spec_sha256": "b6d0c1db7e394bab27a63cc3c4c3684d076eedcdcdab12b1b6e8b23a40625636",
+  "spec_sha256": "0237f6922d8630af5298b12fc3284babb58ea44b2362bc109bcc6455ae6f52b0",
   "prompt_sha256": "2611867ae22cd1817c17d515c403c757651361ce69a4511a4ba4d1fde49d6363",
   "status": "approved",
   "received_at": "2026-10-12T17:20:51+00:00",
@@ -441,7 +486,16 @@
    "max_print_w_in_300ppi": 5.11
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T02:18:39+00:00"
+  "approved_at": "2026-10-13T02:18:39+00:00",
+  "spec_rebinds": [
+   {
+    "from": "b6d0c1db7e394bab27a63cc3c4c3684d076eedcdcdab12b1b6e8b23a40625636",
+    "to": "0237f6922d8630af5298b12fc3284babb58ea44b2362bc109bcc6455ae6f52b0",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-WOR-1-2-THE-GRIM-WORLD": {
   "family": "world",
@@ -890,7 +944,7 @@
   "title": "Ashen Revenant",
   "heading_id": "h-ashen-revenant-elite",
   "route": "gpt",
-  "spec_sha256": "e38f1fb900325b01942dbd061bf7ef1b67ef4b31891a5fd47e3caf5a87fb65da",
+  "spec_sha256": "8a6ca24a06f2e685f30eb416b26ca2d571bb3329f3f5dbadb9d3fa6fe5679029",
   "prompt_sha256": "3a771949fe4f7dc045823609079e4dc4be83d1abb845ec00597b142ef31efe9f",
   "status": "approved",
   "received_at": "2026-10-12T06:23:55+00:00",
@@ -917,7 +971,16 @@
    "max_print_w_in_300ppi": 3.883
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "e38f1fb900325b01942dbd061bf7ef1b67ef4b31891a5fd47e3caf5a87fb65da",
+    "to": "8a6ca24a06f2e685f30eb416b26ca2d571bb3329f3f5dbadb9d3fa6fe5679029",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-BANDIT": {
   "family": "monster",
@@ -992,7 +1055,7 @@
   "title": "Banshee",
   "heading_id": "h-banshee-controller",
   "route": "gpt",
-  "spec_sha256": "9d1ab4b11065f12cda95c45d6c9ed5893223f1f7a8d9cf2d4aed5b8b78a1cbed",
+  "spec_sha256": "299ec2b6ad2168add77c3d25feca883e9e112c81d682f9d948d63f5721ff00e5",
   "prompt_sha256": "ff53309a4ee1c524ffb0ee4f3796190b379c054e456f156d6f0e2b9eff502d14",
   "status": "approved",
   "received_at": "2026-10-12T06:33:02+00:00",
@@ -1019,14 +1082,23 @@
    "max_print_w_in_300ppi": 3.227
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "9d1ab4b11065f12cda95c45d6c9ed5893223f1f7a8d9cf2d4aed5b8b78a1cbed",
+    "to": "299ec2b6ad2168add77c3d25feca883e9e112c81d682f9d948d63f5721ff00e5",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-BASILISK": {
   "family": "monster",
   "title": "Basilisk",
   "heading_id": "h-basilisk-elite",
   "route": "gpt",
-  "spec_sha256": "c1b5b0133ce6d011443b07157a62e6aef18613eb363b413a8a6debf0acb99f21",
+  "spec_sha256": "d6ecfd22f90062263cfafd9e9401aba06189c53a6e9d05109170e3b58dd7ed07",
   "prompt_sha256": "aa648b6417dba26ff11efbf6aa095309397463f79897a6b155aa5cea08ac7d23",
   "status": "approved",
   "received_at": "2026-10-12T06:37:37+00:00",
@@ -1053,14 +1125,23 @@
    "max_print_w_in_300ppi": 4.177
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "c1b5b0133ce6d011443b07157a62e6aef18613eb363b413a8a6debf0acb99f21",
+    "to": "d6ecfd22f90062263cfafd9e9401aba06189c53a6e9d05109170e3b58dd7ed07",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-BEASTMAN": {
   "family": "monster",
   "title": "Beastman",
   "heading_id": "h-beastman-minion",
   "route": "gpt",
-  "spec_sha256": "d6355f0c64ad9a44fa8c812081ab4570f19bd5947f6a8d51f5f64d01e7c2a583",
+  "spec_sha256": "25d6646450c73c01f4baf9d6990ea9fc102f0ab4f8906704c46e95726bbc5479",
   "prompt_sha256": "dd439dc28b08edbb1319b7fe550e7b89d6c918e3d39df6152fcbf18d6071893e",
   "status": "approved",
   "received_at": "2026-10-12T06:40:52+00:00",
@@ -1087,14 +1168,23 @@
    "max_print_w_in_300ppi": 3.74
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "d6355f0c64ad9a44fa8c812081ab4570f19bd5947f6a8d51f5f64d01e7c2a583",
+    "to": "25d6646450c73c01f4baf9d6990ea9fc102f0ab4f8906704c46e95726bbc5479",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-BLACK-DRAGON": {
   "family": "monster",
   "title": "Black Dragon",
   "heading_id": "h-black-dragon-elite",
   "route": "gpt",
-  "spec_sha256": "9341cffe5e2183d3049419c20c450f7cdfbe72bffb40f1ae5643b1a59075decf",
+  "spec_sha256": "469cc911aff374946ba5c31003f5bfd4403a87d56f9c672a0e21e536738d1325",
   "prompt_sha256": "63259e608f35922a2da626a936ee039a294450b15fe33ecab2d5e89333a065d2",
   "status": "approved",
   "received_at": "2026-10-12T06:44:07+00:00",
@@ -1121,14 +1211,23 @@
    "max_print_w_in_300ppi": 4.043
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "9341cffe5e2183d3049419c20c450f7cdfbe72bffb40f1ae5643b1a59075decf",
+    "to": "469cc911aff374946ba5c31003f5bfd4403a87d56f9c672a0e21e536738d1325",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-BLACKFIRE-HOUND": {
   "family": "monster",
   "title": "Blackfire Hound",
   "heading_id": "h-blackfire-hound-skirmisher",
   "route": "gpt",
-  "spec_sha256": "33f59e26fdac1dce201b36a512b5469930fe6f9508ab8357aff1f7e7e344acff",
+  "spec_sha256": "b05473b2adfc771f342f8774d94cc7b086f3d7a63d5d053f78d131d48faffefa",
   "prompt_sha256": "f07e31869ac556c91318abd4c28618c627c67587aafdee709357603bad004b91",
   "status": "approved",
   "received_at": "2026-10-12T06:47:19+00:00",
@@ -1155,14 +1254,23 @@
    "max_print_w_in_300ppi": 3.983
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "33f59e26fdac1dce201b36a512b5469930fe6f9508ab8357aff1f7e7e344acff",
+    "to": "b05473b2adfc771f342f8774d94cc7b086f3d7a63d5d053f78d131d48faffefa",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-BLACKWATER-WIGHT": {
   "family": "monster",
   "title": "Blackwater Wight",
   "heading_id": "h-blackwater-wight-elite",
   "route": "gpt",
-  "spec_sha256": "9163e99ceeb224ab0a239145222f6ffadc3898679795528f52cf73d5cc7c5070",
+  "spec_sha256": "f19ef04d1001598eb8217869a4e3e899ad1d9d3b9cefafc3132149d52673691e",
   "prompt_sha256": "b30702a64eeddf69da277debfa7749a6c439d24f25148e6fed5c64bedc88598c",
   "status": "approved",
   "received_at": "2026-10-12T06:51:30+00:00",
@@ -1189,14 +1297,23 @@
    "max_print_w_in_300ppi": 3.86
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "9163e99ceeb224ab0a239145222f6ffadc3898679795528f52cf73d5cc7c5070",
+    "to": "f19ef04d1001598eb8217869a4e3e899ad1d9d3b9cefafc3132149d52673691e",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-BLOOD-APE": {
   "family": "monster",
   "title": "Blood Ape",
   "heading_id": "h-blood-ape-soldier",
   "route": "gpt",
-  "spec_sha256": "ad0e26ab4823a3fe7517c40e6238ea53cc26ce440c9527a81bfb239e89f5f5d5",
+  "spec_sha256": "b61a1cf04da8805769c94300aca3f5fdc3001ed20617ed532eb1f3b6602968f7",
   "prompt_sha256": "93b4a1562dd0844ce0436fa27d14e11d01ccb95261efd216c7c61ce69d060d20",
   "status": "approved",
   "received_at": "2026-10-12T06:55:40+00:00",
@@ -1223,14 +1340,23 @@
    "max_print_w_in_300ppi": 4.027
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "ad0e26ab4823a3fe7517c40e6238ea53cc26ce440c9527a81bfb239e89f5f5d5",
+    "to": "b61a1cf04da8805769c94300aca3f5fdc3001ed20617ed532eb1f3b6602968f7",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-BLUE-DRAGON": {
   "family": "monster",
   "title": "Blue Dragon",
   "heading_id": "h-blue-dragon-elite",
   "route": "gpt",
-  "spec_sha256": "c058b16fba44b9a0d01f7c77811d68ab91bb7ffb28929ea9e5476edc839d5306",
+  "spec_sha256": "285937734bb44dadc27d140d3d2fe0947d6654b553ed6da7c30d756b092aa490",
   "prompt_sha256": "18f77f2dccc1dc67c1a3cea057832c9a343b2555b820a5aeae7b3f9fd5847645",
   "status": "approved",
   "received_at": "2026-10-12T06:59:20+00:00",
@@ -1257,7 +1383,16 @@
    "max_print_w_in_300ppi": 4.117
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "c058b16fba44b9a0d01f7c77811d68ab91bb7ffb28929ea9e5476edc839d5306",
+    "to": "285937734bb44dadc27d140d3d2fe0947d6654b553ed6da7c30d756b092aa490",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-BOGLING": {
   "family": "monster",
@@ -1298,7 +1433,7 @@
   "title": "Brass Golem",
   "heading_id": "h-brass-golem-brute",
   "route": "gpt",
-  "spec_sha256": "b937201ab94d2bff95caecb4c62fe506b82371c2cddeaf6187082dde2ae7343b",
+  "spec_sha256": "cdafe6a29d45e1d98a0d71c19f4dec7950b7056fb08ffd7f72cd9d8617aa8343",
   "prompt_sha256": "fd05a9d057c86001ce82429cb3fd31c03009086096630bb17722d8210e9a95e6",
   "status": "approved",
   "received_at": "2026-10-12T07:06:51+00:00",
@@ -1325,14 +1460,23 @@
    "max_print_w_in_300ppi": 3.783
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "b937201ab94d2bff95caecb4c62fe506b82371c2cddeaf6187082dde2ae7343b",
+    "to": "cdafe6a29d45e1d98a0d71c19f4dec7950b7056fb08ffd7f72cd9d8617aa8343",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-BRIARLING": {
   "family": "monster",
   "title": "Briarling",
   "heading_id": "h-briarling-minion",
   "route": "gpt",
-  "spec_sha256": "a38dc8c319ca3db0e2d7ecfbf4fe32764295dbb2baee39b91132ed01b9d99ca9",
+  "spec_sha256": "d2a824860943d4ba045a0b2fc53a64333078fbd672897071a6aa8c6d794ffe22",
   "prompt_sha256": "81c26f50a9180751ed814db7acb021d9e32865275f6f497f0fdde00fbed64796",
   "status": "approved",
   "received_at": "2026-10-12T07:10:35+00:00",
@@ -1359,14 +1503,23 @@
    "max_print_w_in_300ppi": 4.04
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "a38dc8c319ca3db0e2d7ecfbf4fe32764295dbb2baee39b91132ed01b9d99ca9",
+    "to": "d2a824860943d4ba045a0b2fc53a64333078fbd672897071a6aa8c6d794ffe22",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-BUGBEAR": {
   "family": "monster",
   "title": "Bugbear",
   "heading_id": "h-bugbear-soldier",
   "route": "gpt",
-  "spec_sha256": "0410ba32daa97dbdacf54439eaa634c17fbe9a59ab408f3932ce455b764c43f7",
+  "spec_sha256": "4b977662c0373719f72430bb17c1f5d37f00cebde988dd2ac6fd31219a9a5ad6",
   "prompt_sha256": "d94a860fbbb0825536ea1d4135755e276de6f4351c72dd7bad30ff165a6e2916",
   "status": "approved",
   "received_at": "2026-10-12T07:15:14+00:00",
@@ -1393,14 +1546,23 @@
    "max_print_w_in_300ppi": 3.82
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "0410ba32daa97dbdacf54439eaa634c17fbe9a59ab408f3932ce455b764c43f7",
+    "to": "4b977662c0373719f72430bb17c1f5d37f00cebde988dd2ac6fd31219a9a5ad6",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-BURROWMAW": {
   "family": "monster",
   "title": "Burrowmaw",
   "heading_id": "h-burrowmaw-brute",
   "route": "gpt",
-  "spec_sha256": "f4421cd987854600a0acc6896af4527550062b111c894cc299a21c6df28ca02a",
+  "spec_sha256": "106126948983e93d7c2b98757f5e38d0c31b49f88cfef660db5f653929aaa079",
   "prompt_sha256": "75d0801872e62c66f4dc87fb720fb58534d94a1420811af740f013162c69a84b",
   "status": "approved",
   "received_at": "2026-10-12T07:20:20+00:00",
@@ -1427,7 +1589,16 @@
    "max_print_w_in_300ppi": 4.077
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "f4421cd987854600a0acc6896af4527550062b111c894cc299a21c6df28ca02a",
+    "to": "106126948983e93d7c2b98757f5e38d0c31b49f88cfef660db5f653929aaa079",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-CAVE-GOBLIN": {
   "family": "monster",
@@ -1468,7 +1639,7 @@
   "title": "Corpsehound",
   "heading_id": "h-corpsehound-skirmisher",
   "route": "gpt",
-  "spec_sha256": "e4c67588021dd38d74b7dbfc2b19b6be0ae60df20483a3ff85827e029b50de0f",
+  "spec_sha256": "5c15a1a296db8f4ce0836d6680e908018841a249e9ded8bc1c800b841a7c1942",
   "prompt_sha256": "61c96683362ea61c1ce7c989de6896b85331919bf95411d9647d77a6720938c7",
   "status": "approved",
   "received_at": "2026-10-12T07:29:00+00:00",
@@ -1495,14 +1666,23 @@
    "max_print_w_in_300ppi": 3.48
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "e4c67588021dd38d74b7dbfc2b19b6be0ae60df20483a3ff85827e029b50de0f",
+    "to": "5c15a1a296db8f4ce0836d6680e908018841a249e9ded8bc1c800b841a7c1942",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-CROCODILE": {
   "family": "monster",
   "title": "Crocodile",
   "heading_id": "h-crocodile-skirmisher",
   "route": "gpt",
-  "spec_sha256": "f10c98fa12ee8f576235997e6edc98abc69a817c8e2f9f2822fe687c9b9ae6c6",
+  "spec_sha256": "3191b6cae4d2047faafae35cb29bbbe756d794732b67da1aee2676e076cc71aa",
   "prompt_sha256": "2e274947c1cd1e8f27fe217d79d83a44f8e9f9891fc9cba6fa6c4c592c6809d5",
   "status": "approved",
   "received_at": "2026-10-12T07:34:14+00:00",
@@ -1529,14 +1709,23 @@
    "max_print_w_in_300ppi": 4.127
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "f10c98fa12ee8f576235997e6edc98abc69a817c8e2f9f2822fe687c9b9ae6c6",
+    "to": "3191b6cae4d2047faafae35cb29bbbe756d794732b67da1aee2676e076cc71aa",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-CRYPTSTRANGLER": {
   "family": "monster",
   "title": "Cryptstrangler",
   "heading_id": "h-cryptstrangler-controller",
   "route": "gpt",
-  "spec_sha256": "9c219304bdb8f0b6d18ac5acf0aa293800e5079a2dcc0c530e37f969e799cdb9",
+  "spec_sha256": "c47faabf68cb7c6ae096021497f97df6c25eee51639e5e1a9d57d16aa9aec521",
   "prompt_sha256": "7e49b8837bf6763382e67002611844ee49251be7b225b395d8fdf6a21012a127",
   "status": "approved",
   "received_at": "2026-10-12T07:39:27+00:00",
@@ -1563,14 +1752,23 @@
    "max_print_w_in_300ppi": 3.857
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "9c219304bdb8f0b6d18ac5acf0aa293800e5079a2dcc0c530e37f969e799cdb9",
+    "to": "c47faabf68cb7c6ae096021497f97df6c25eee51639e5e1a9d57d16aa9aec521",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-DEEP-ELF-PRIEST": {
   "family": "monster",
   "title": "Deep Elf Priest",
   "heading_id": "h-deep-elf-priest-controller",
   "route": "gpt",
-  "spec_sha256": "91521ec74fb36aac6a7bcbc9d707059a548b4beef33b958616a19076c01d7587",
+  "spec_sha256": "9020c6a76d31ae793fe6a117b249c1aa0f02f0a8984e8c978faaa950c4304b19",
   "prompt_sha256": "af9febcf271400590fbdb1fd18681282edd422ca7451f51b5f7a62963cffc353",
   "status": "approved",
   "received_at": "2026-10-12T07:44:28+00:00",
@@ -1597,7 +1795,16 @@
    "max_print_w_in_300ppi": 3.487
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "91521ec74fb36aac6a7bcbc9d707059a548b4beef33b958616a19076c01d7587",
+    "to": "9020c6a76d31ae793fe6a117b249c1aa0f02f0a8984e8c978faaa950c4304b19",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-DEEP-ELF-WARRIOR": {
   "family": "monster",
@@ -1638,7 +1845,7 @@
   "title": "Demon",
   "heading_id": "h-demon-elite",
   "route": "gpt",
-  "spec_sha256": "e24f9fb17131d66af0e20eca51aeb416146f89a4ee65b89b7f077df77ab553f3",
+  "spec_sha256": "3cdf4db4e510ef242c86442699072aa0bee0e006ee36c25d0a167a7a0ca50df7",
   "prompt_sha256": "5ecc52b024adb92952cb7f3c9184c1b52626782baac3bbd8a2fdc0bc50b26699",
   "status": "approved",
   "received_at": "2026-10-12T07:51:37+00:00",
@@ -1665,14 +1872,23 @@
    "max_print_w_in_300ppi": 4.03
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "e24f9fb17131d66af0e20eca51aeb416146f89a4ee65b89b7f077df77ab553f3",
+    "to": "3cdf4db4e510ef242c86442699072aa0bee0e006ee36c25d0a167a7a0ca50df7",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-DESERT-NAGA": {
   "family": "monster",
   "title": "Desert Naga",
   "heading_id": "h-desert-naga-controller",
   "route": "gpt",
-  "spec_sha256": "e57d593dba7c57938314bb8622c8a50d343055026a2e92bab1bd029de1995455",
+  "spec_sha256": "cd086907f36f397ed1e9f5ea77b991aa743ee95d068a1a87db0f473f356577db",
   "prompt_sha256": "30a073b564a98968460792bbc54d93d98278eda930cc93395ad4c0c31142be5c",
   "status": "approved",
   "received_at": "2026-10-12T07:54:29+00:00",
@@ -1699,14 +1915,23 @@
    "max_print_w_in_300ppi": 4.093
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "e57d593dba7c57938314bb8622c8a50d343055026a2e92bab1bd029de1995455",
+    "to": "cd086907f36f397ed1e9f5ea77b991aa743ee95d068a1a87db0f473f356577db",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-DIRE-BEAR": {
   "family": "monster",
   "title": "Dire Bear",
   "heading_id": "h-dire-bear-brute",
   "route": "gpt",
-  "spec_sha256": "96593b84db8c277f3736c949dbee1c563ef2d8b24452616b0626a1f212905d35",
+  "spec_sha256": "3dc3ccd1c7e5f9cb742c9be692f78b8729334425bea322d2bbb8dcdc8279a6a5",
   "prompt_sha256": "ac489b74e60fb82858e5dd24320d8e02563f2302ca3e9f806e306d7d4513944d",
   "status": "approved",
   "received_at": "2026-10-12T07:56:29+00:00",
@@ -1733,14 +1958,23 @@
    "max_print_w_in_300ppi": 4.003
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "96593b84db8c277f3736c949dbee1c563ef2d8b24452616b0626a1f212905d35",
+    "to": "3dc3ccd1c7e5f9cb742c9be692f78b8729334425bea322d2bbb8dcdc8279a6a5",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-DRYAD-GROVEWARDEN": {
   "family": "monster",
   "title": "Dryad Grovewarden",
   "heading_id": "h-dryad-grovewarden-controller",
   "route": "gpt",
-  "spec_sha256": "33d86390a154143bf0534d32d4e4ef49910593e8c69f5af3b8dd0cd9c321111d",
+  "spec_sha256": "abedf07f8d9791215ffccd176f94391bc18219fefaae9cb5d6fc5e9b98697f5a",
   "prompt_sha256": "d693a578225e6ec6ebdf63e8f6a9acb00f8a7012ec1cd38a35cfad937562775e",
   "status": "approved",
   "received_at": "2026-10-12T12:40:00+00:00",
@@ -1767,14 +2001,23 @@
    "max_print_w_in_300ppi": 3.377
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "33d86390a154143bf0534d32d4e4ef49910593e8c69f5af3b8dd0cd9c321111d",
+    "to": "abedf07f8d9791215ffccd176f94391bc18219fefaae9cb5d6fc5e9b98697f5a",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-ELDER-VRYMK": {
   "family": "monster",
   "title": "Elder Vrymk",
   "heading_id": "h-elder-vrymk-elite",
   "route": "gpt",
-  "spec_sha256": "246f821d9aca88d3ab26e85c5636e4afbcd9f8ff521058fe22bff0825423b0e8",
+  "spec_sha256": "4b8d58f6e696f667202da2fd2267bbab16d87c1b94bade7c85ae9effc624783f",
   "prompt_sha256": "d71f9e89d028b73565044139c89b346448dfcad571aee5735a3a07c971b356a7",
   "status": "approved",
   "received_at": "2026-10-12T08:01:24+00:00",
@@ -1801,14 +2044,23 @@
    "max_print_w_in_300ppi": 4.117
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "246f821d9aca88d3ab26e85c5636e4afbcd9f8ff521058fe22bff0825423b0e8",
+    "to": "4b8d58f6e696f667202da2fd2267bbab16d87c1b94bade7c85ae9effc624783f",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-EMBER-SKULL": {
   "family": "monster",
   "title": "Ember Skull",
   "heading_id": "h-ember-skull-cannon",
   "route": "gpt",
-  "spec_sha256": "b5aec3057dce8c56c0cf7eeb51e60d29f53bd1d89e236e784c39f4f2202bc3d0",
+  "spec_sha256": "f6ea052671e3a813bff7a187e96f6cc6dc05bcf4bbe3562a8f2f5d7c931b200b",
   "prompt_sha256": "dbbf129237d2768fb85b5c0da4e9fd26250818120937b53467af561a24b90336",
   "status": "approved",
   "received_at": "2026-10-12T08:03:37+00:00",
@@ -1835,14 +2087,23 @@
    "max_print_w_in_300ppi": 3.647
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "b5aec3057dce8c56c0cf7eeb51e60d29f53bd1d89e236e784c39f4f2202bc3d0",
+    "to": "f6ea052671e3a813bff7a187e96f6cc6dc05bcf4bbe3562a8f2f5d7c931b200b",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-EVIL-EYE": {
   "family": "monster",
   "title": "Evil Eye",
   "heading_id": "h-evil-eye-elite",
   "route": "gpt",
-  "spec_sha256": "c63a779a1267f5b8c6cb22874e4436dfa47cb66c0812f8d173bf1ee6d373f55b",
+  "spec_sha256": "92c19a6333903718a871b92588a8e065fa386c074b89a4bf956efee1a897bf7e",
   "prompt_sha256": "b23a6ce4963a64a884ce45d2873a04c87299833f37d743243b770fd4e8523ee5",
   "status": "approved",
   "received_at": "2026-10-12T08:05:50+00:00",
@@ -1869,14 +2130,23 @@
    "max_print_w_in_300ppi": 3.877
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "c63a779a1267f5b8c6cb22874e4436dfa47cb66c0812f8d173bf1ee6d373f55b",
+    "to": "92c19a6333903718a871b92588a8e065fa386c074b89a4bf956efee1a897bf7e",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-FALLEN-PALADIN": {
   "family": "monster",
   "title": "Fallen Paladin",
   "heading_id": "h-fallen-paladin-elite",
   "route": "gpt",
-  "spec_sha256": "4c18e30c34d8b7072df71dc2e01ee530b562dfa3ae4c9ef52ba68167a14c3de3",
+  "spec_sha256": "3040d0b916f37d55b4dce0eb81c7f5ef7aaaa3f950a750c024254d19cb5f59a0",
   "prompt_sha256": "6f728b0aa518801999fe680c89e475da0d8569afde53051d3de8f3e4ad0f7efd",
   "status": "approved",
   "received_at": "2026-10-12T08:08:24+00:00",
@@ -1903,14 +2173,23 @@
    "max_print_w_in_300ppi": 3.493
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "4c18e30c34d8b7072df71dc2e01ee530b562dfa3ae4c9ef52ba68167a14c3de3",
+    "to": "3040d0b916f37d55b4dce0eb81c7f5ef7aaaa3f950a750c024254d19cb5f59a0",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-FIRE-BEETLE": {
   "family": "monster",
   "title": "Fire Beetle",
   "heading_id": "h-fire-beetle-minion",
   "route": "gpt",
-  "spec_sha256": "8830937758c7f3a098db970bf171236a50d7d3c9818d90eb10047240bdfdd7b7",
+  "spec_sha256": "1b88ec08141a96a90a2ffab6b941db173bb714013d66f228e3f89f1d8f742ea0",
   "prompt_sha256": "72905ebe87bc2518c8cd5b60c38ef8fa788b1db0b8bd946ee72ebbfac3fb780b",
   "status": "approved",
   "received_at": "2026-10-12T08:12:02+00:00",
@@ -1937,14 +2216,23 @@
    "max_print_w_in_300ppi": 4.097
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "8830937758c7f3a098db970bf171236a50d7d3c9818d90eb10047240bdfdd7b7",
+    "to": "1b88ec08141a96a90a2ffab6b941db173bb714013d66f228e3f89f1d8f742ea0",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-FIRE-ELEMENTAL": {
   "family": "monster",
   "title": "Fire Elemental",
   "heading_id": "h-fire-elemental-cannon",
   "route": "gpt",
-  "spec_sha256": "f2c884f0ce4181c6a098ae3b769a82faa9aa6a8aad311d83449b7d6834a6248f",
+  "spec_sha256": "6b88760fe75ac43bbc92e5ccf1e14de90e8476d5757ee83ddcdb4a80eec0e917",
   "prompt_sha256": "e75fd4712b94104f4666dce62242be8507159975238e7099d583c605366e5f62",
   "status": "approved",
   "received_at": "2026-10-12T08:14:45+00:00",
@@ -1971,14 +2259,23 @@
    "max_print_w_in_300ppi": 3.823
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "f2c884f0ce4181c6a098ae3b769a82faa9aa6a8aad311d83449b7d6834a6248f",
+    "to": "6b88760fe75ac43bbc92e5ccf1e14de90e8476d5757ee83ddcdb4a80eec0e917",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-FOREST-TROLL": {
   "family": "monster",
   "title": "Forest Troll",
   "heading_id": "h-forest-troll-brute",
   "route": "gpt",
-  "spec_sha256": "d5fc81804a082332832d65c9517ca4b403b54a8f8872c8300519513788d28798",
+  "spec_sha256": "d49dd16b235b6273dc92e939f2ec7909c969a69a9ec81dc96951263f6916cd16",
   "prompt_sha256": "9e2393365fb122424d3a57c4abc5cb46071b1f4d7d2895625f1189323ff4787b",
   "status": "approved",
   "received_at": "2026-10-12T08:18:17+00:00",
@@ -2005,14 +2302,23 @@
    "max_print_w_in_300ppi": 4.087
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "d5fc81804a082332832d65c9517ca4b403b54a8f8872c8300519513788d28798",
+    "to": "d49dd16b235b6273dc92e939f2ec7909c969a69a9ec81dc96951263f6916cd16",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-FORSAKEN-ARCHER": {
   "family": "monster",
   "title": "Forsaken Archer",
   "heading_id": "h-forsaken-archer-cannon",
   "route": "gpt",
-  "spec_sha256": "dbf48bcf03ea33fe4b9dcb11c3c0ce8d59138aea665fad5c3cb6b4c5e65a4d08",
+  "spec_sha256": "1d67333ec3d134382f96f47eb337a5be6a36b1988fb70ee0a149a84b86ac149d",
   "prompt_sha256": "9a211995c5d99ec80ea381f04d0edea0ed406ae634d497aeceb4cf110b0df8ee",
   "status": "approved",
   "received_at": "2026-10-12T08:22:09+00:00",
@@ -2039,14 +2345,23 @@
    "max_print_w_in_300ppi": 3.63
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "dbf48bcf03ea33fe4b9dcb11c3c0ce8d59138aea665fad5c3cb6b4c5e65a4d08",
+    "to": "1d67333ec3d134382f96f47eb337a5be6a36b1988fb70ee0a149a84b86ac149d",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-FORSAKEN-DUELIST": {
   "family": "monster",
   "title": "Forsaken Duelist",
   "heading_id": "h-forsaken-duelist-skirmisher",
   "route": "gpt",
-  "spec_sha256": "d38374f161edbf5fa15fc60488ba78d3ceee2181a12442addaa442613a49e8be",
+  "spec_sha256": "c887dd0163d5f75b31ee1236f96c35fb3c5649b3941563ea2e2103c286ac2da6",
   "prompt_sha256": "ffd87b8fcb6e426e99fd53113268318079da7b2cf3765849a7be119a3e3b8df9",
   "status": "approved",
   "received_at": "2026-10-12T08:25:12+00:00",
@@ -2073,14 +2388,23 @@
    "max_print_w_in_300ppi": 3.857
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "d38374f161edbf5fa15fc60488ba78d3ceee2181a12442addaa442613a49e8be",
+    "to": "c887dd0163d5f75b31ee1236f96c35fb3c5649b3941563ea2e2103c286ac2da6",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-FORSAKEN-KNIGHT": {
   "family": "monster",
   "title": "Forsaken Knight",
   "heading_id": "h-forsaken-knight-soldier",
   "route": "gpt",
-  "spec_sha256": "565fab370da53d97c4b100580978c94d43396fcd9d0a4bd7cb1f90f75e753c9b",
+  "spec_sha256": "bbbed1cacbfbcf0362a50681538f1ae98adfbc5070a7e6f7d1cb5c38f9ec4702",
   "prompt_sha256": "6cc9385859165fd81d0a94abe57eb2578bef50b01b0f53ebefeafdda6b708ee7",
   "status": "approved",
   "received_at": "2026-10-12T08:27:56+00:00",
@@ -2107,14 +2431,23 @@
    "max_print_w_in_300ppi": 3.933
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "565fab370da53d97c4b100580978c94d43396fcd9d0a4bd7cb1f90f75e753c9b",
+    "to": "bbbed1cacbfbcf0362a50681538f1ae98adfbc5070a7e6f7d1cb5c38f9ec4702",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-FROST-GHOUL": {
   "family": "monster",
   "title": "Frost Ghoul",
   "heading_id": "h-frost-ghoul-minion",
   "route": "gpt",
-  "spec_sha256": "a048adb397650ce3505adc84c739410af8d8e218ed497d78d8ab97fa62f202e1",
+  "spec_sha256": "a49630bb682a040e9ac1cc6c86e72c71ab06c45368082e3d407c900cc697ca27",
   "prompt_sha256": "4500abbaa1904a134de562f60bae7b63441fbd8a77a8485c90c4bd5f635d69ab",
   "status": "approved",
   "received_at": "2026-10-12T08:31:17+00:00",
@@ -2141,14 +2474,23 @@
    "max_print_w_in_300ppi": 3.953
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "a048adb397650ce3505adc84c739410af8d8e218ed497d78d8ab97fa62f202e1",
+    "to": "a49630bb682a040e9ac1cc6c86e72c71ab06c45368082e3d407c900cc697ca27",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-FROST-GIANT": {
   "family": "monster",
   "title": "Frost Giant",
   "heading_id": "h-frost-giant-elite",
   "route": "gpt",
-  "spec_sha256": "b4deff544a6e6bb3b7c06b72b7847e0df87c175a3e9ac2b76c5bbc503ab047f8",
+  "spec_sha256": "50bdf2329f922b843263be7403f7fa6652106e7b73a55450d8fb2e1dd84d7501",
   "prompt_sha256": "71a8f28e74993ac04c6c61913a7494e284c7963071e278f142a9eeecc3b2a02c",
   "status": "approved",
   "received_at": "2026-10-12T08:34:37+00:00",
@@ -2175,14 +2517,23 @@
    "max_print_w_in_300ppi": 3.557
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "b4deff544a6e6bb3b7c06b72b7847e0df87c175a3e9ac2b76c5bbc503ab047f8",
+    "to": "50bdf2329f922b843263be7403f7fa6652106e7b73a55450d8fb2e1dd84d7501",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-FROST-WYVERN": {
   "family": "monster",
   "title": "Frost Wyvern",
   "heading_id": "h-frost-wyvern-elite",
   "route": "gpt",
-  "spec_sha256": "3cf559baa9e8897f2ece0c8592219152904e3cf86f4444f98d336ab8aff52d1e",
+  "spec_sha256": "6d8e549bd8f16f027c4d35f873887b329b32e0b96ee94df3b205eaed3c9a2d34",
   "prompt_sha256": "99b16077dc156802725f8f9185a7d6cd128343100f99130e012c7a9b9139759b",
   "status": "approved",
   "received_at": "2026-10-12T08:39:18+00:00",
@@ -2209,14 +2560,23 @@
    "max_print_w_in_300ppi": 4.117
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "3cf559baa9e8897f2ece0c8592219152904e3cf86f4444f98d336ab8aff52d1e",
+    "to": "6d8e549bd8f16f027c4d35f873887b329b32e0b96ee94df3b205eaed3c9a2d34",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-FROZEN-SKELETON": {
   "family": "monster",
   "title": "Frozen Skeleton",
   "heading_id": "h-frozen-skeleton-minion",
   "route": "gpt",
-  "spec_sha256": "2ae578aa07c83d4179d7945ed7d5908a83bf50f2fea8c06c5a1fce6c75cff5ff",
+  "spec_sha256": "225046d8439825734d9135b1cf8a2349caffb5730740a5ee5130577ecd125fbb",
   "prompt_sha256": "90180eb1640d846d49bf754b6b27c5788fb957557363a7ce22f3513cc658a828",
   "status": "approved",
   "received_at": "2026-10-12T08:42:55+00:00",
@@ -2243,14 +2603,23 @@
    "max_print_w_in_300ppi": 3.41
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "2ae578aa07c83d4179d7945ed7d5908a83bf50f2fea8c06c5a1fce6c75cff5ff",
+    "to": "225046d8439825734d9135b1cf8a2349caffb5730740a5ee5130577ecd125fbb",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-GELID-FIEND": {
   "family": "monster",
   "title": "Gelid Fiend",
   "heading_id": "h-gelid-fiend-brute",
   "route": "gpt",
-  "spec_sha256": "bbffdeecbed098c73859a64770f5eb03e28e6c81fb44a1a860562b8b46f40e55",
+  "spec_sha256": "f37d67b70ac4e0da9f14d357dca5d35fe476a93b4d84772cb5ad099d7c53acca",
   "prompt_sha256": "2ccb8d7e28bf7e3a9519d4b28fb25ca73d0205373f6f9b894fa1fc2af2f854b8",
   "status": "approved",
   "received_at": "2026-10-12T08:46:15+00:00",
@@ -2277,14 +2646,23 @@
    "max_print_w_in_300ppi": 4.037
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "bbffdeecbed098c73859a64770f5eb03e28e6c81fb44a1a860562b8b46f40e55",
+    "to": "f37d67b70ac4e0da9f14d357dca5d35fe476a93b4d84772cb5ad099d7c53acca",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-GHOUL": {
   "family": "monster",
   "title": "Ghoul",
   "heading_id": "h-ghoul-minion",
   "route": "gpt",
-  "spec_sha256": "3dcc71b898057887bb79beb8ff8fddf63d5335f1754e4a4772892e8a31f5987e",
+  "spec_sha256": "d42cb256b662b44b45f0db69c663ff27a6d3def47daf1ebf6ac2fefc22ae4ad7",
   "prompt_sha256": "9de51a7dc768529f3872b482d66c16f841cb3bdead17894ab5d21fc428d26c4a",
   "status": "approved",
   "received_at": "2026-10-12T08:50:11+00:00",
@@ -2311,14 +2689,23 @@
    "max_print_w_in_300ppi": 3.603
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "3dcc71b898057887bb79beb8ff8fddf63d5335f1754e4a4772892e8a31f5987e",
+    "to": "d42cb256b662b44b45f0db69c663ff27a6d3def47daf1ebf6ac2fefc22ae4ad7",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-GIANT-BAT": {
   "family": "monster",
   "title": "Giant Bat",
   "heading_id": "h-giant-bat-minion",
   "route": "gpt",
-  "spec_sha256": "f22fd5ddecdd822bea42c8913b17fee88a087d02eb3e1255e8af73b344a86d84",
+  "spec_sha256": "18e0b865bedc4ec2d7f8c1d810f21f273dd33be24975e2353b7ce2f836fed2db",
   "prompt_sha256": "5cea0eb02b5f9a8118b7be7e863bcf1a0ab891b617936395bad334d99b019f69",
   "status": "approved",
   "received_at": "2026-10-12T08:53:42+00:00",
@@ -2345,14 +2732,23 @@
    "max_print_w_in_300ppi": 4.113
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "f22fd5ddecdd822bea42c8913b17fee88a087d02eb3e1255e8af73b344a86d84",
+    "to": "18e0b865bedc4ec2d7f8c1d810f21f273dd33be24975e2353b7ce2f836fed2db",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-GIANT-BLACK-WIDOW": {
   "family": "monster",
   "title": "Giant Black Widow",
   "heading_id": "h-giant-black-widow-controller",
   "route": "gpt",
-  "spec_sha256": "cd89e5637e8f74da388d7c7e6c934da9eb9af11779df680fc249bfca7539e531",
+  "spec_sha256": "cc07ba0e9a7bd099c1709a7d4396bedc5c35761b424c5947432d51de29757912",
   "prompt_sha256": "e57aa822e92d160e2f706584ceab5f83e686ef1af90f331af0def152c02c840b",
   "status": "approved",
   "received_at": "2026-10-12T08:58:43+00:00",
@@ -2379,14 +2775,23 @@
    "max_print_w_in_300ppi": 3.94
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "cd89e5637e8f74da388d7c7e6c934da9eb9af11779df680fc249bfca7539e531",
+    "to": "cc07ba0e9a7bd099c1709a7d4396bedc5c35761b424c5947432d51de29757912",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-GIANT-CENTIPEDE": {
   "family": "monster",
   "title": "Giant Centipede",
   "heading_id": "h-giant-centipede-skirmisher",
   "route": "gpt",
-  "spec_sha256": "91c0b8be1f72f32fa63c4152a9c02ea5df4f76f77ca17e7d503b0c266c34f008",
+  "spec_sha256": "f417522217049642c06ae4000bd519976922b52067daef3180790c0a8a28805b",
   "prompt_sha256": "7041a458d6f6dbaa75b31ff073214f058db730fe192a570099d1209a6eea8a9e",
   "status": "approved",
   "received_at": "2026-10-12T09:03:08+00:00",
@@ -2413,14 +2818,23 @@
    "max_print_w_in_300ppi": 4.01
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "91c0b8be1f72f32fa63c4152a9c02ea5df4f76f77ca17e7d503b0c266c34f008",
+    "to": "f417522217049642c06ae4000bd519976922b52067daef3180790c0a8a28805b",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-GIANT-CONSTRICTOR": {
   "family": "monster",
   "title": "Giant Constrictor",
   "heading_id": "h-giant-constrictor-skirmisher",
   "route": "gpt",
-  "spec_sha256": "bd19a3aa502f329098a00f9ac4c076b013c3a774257f30ed77aa05fa9d6698f7",
+  "spec_sha256": "792ab5a42ab178f9457b7e96abdf2366bd4953e482640965e84c2d2f2fbc3aee",
   "prompt_sha256": "62d777009a30edfd45fe3cb2af2ca8e4bfdb870553cc24f05b1ff5d23105680f",
   "status": "approved",
   "received_at": "2026-10-12T09:06:53+00:00",
@@ -2447,14 +2861,23 @@
    "max_print_w_in_300ppi": 3.74
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "bd19a3aa502f329098a00f9ac4c076b013c3a774257f30ed77aa05fa9d6698f7",
+    "to": "792ab5a42ab178f9457b7e96abdf2366bd4953e482640965e84c2d2f2fbc3aee",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-GIANT-SKELETON": {
   "family": "monster",
   "title": "Giant Skeleton",
   "heading_id": "h-giant-skeleton-brute",
   "route": "gpt",
-  "spec_sha256": "45a1184fc607525f70099ba42bff925d44f8910bcbb1fb1b46630fb20515fd7a",
+  "spec_sha256": "1b22caa6ef310e92f1ae2f948d88e90da157c46ddb906ca1732301b4c62c8685",
   "prompt_sha256": "088136ccae43ee51ccd1b40586b6d7ab2efb35aebaf9b584acbd52403e3ba4ee",
   "status": "approved",
   "received_at": "2026-10-12T09:11:43+00:00",
@@ -2481,14 +2904,23 @@
    "max_print_w_in_300ppi": 3.687
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "45a1184fc607525f70099ba42bff925d44f8910bcbb1fb1b46630fb20515fd7a",
+    "to": "1b22caa6ef310e92f1ae2f948d88e90da157c46ddb906ca1732301b4c62c8685",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-GIANT-TARANTULA": {
   "family": "monster",
   "title": "Giant Tarantula",
   "heading_id": "h-giant-tarantula-skirmisher",
   "route": "gpt",
-  "spec_sha256": "260303c507c39bec7038b92afdcdd054b0506e3d9c6fe7adfd9d84f6d01fb065",
+  "spec_sha256": "91030d5b652b5d3d5489cfd350517f5b6c5c7169a615f43a4b7aefaddd4ff200",
   "prompt_sha256": "93f0fa234f4424331338914ba32091547681e581c7bcb80bfdcff85fafd8f5b7",
   "status": "approved",
   "received_at": "2026-10-12T09:17:11+00:00",
@@ -2515,14 +2947,23 @@
    "max_print_w_in_300ppi": 4.05
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "260303c507c39bec7038b92afdcdd054b0506e3d9c6fe7adfd9d84f6d01fb065",
+    "to": "91030d5b652b5d3d5489cfd350517f5b6c5c7169a615f43a4b7aefaddd4ff200",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-GLOOM-HULK": {
   "family": "monster",
   "title": "Gloom Hulk",
   "heading_id": "h-gloom-hulk-brute",
   "route": "gpt",
-  "spec_sha256": "4fcc37ad7f742c1db2b8a9fb0c8aeb357646640cad6447b07e5c2d3eb068b013",
+  "spec_sha256": "72c24bc231c1828d66bfcaf88041b7b4346950417cbc41c0f494e6310a67f50d",
   "prompt_sha256": "5c6dde942d1c967b4b8e8eade35004772d9ca123f54dec4614e187facebcef2c",
   "status": "approved",
   "received_at": "2026-10-12T09:19:19+00:00",
@@ -2549,14 +2990,23 @@
    "max_print_w_in_300ppi": 4.1
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "4fcc37ad7f742c1db2b8a9fb0c8aeb357646640cad6447b07e5c2d3eb068b013",
+    "to": "72c24bc231c1828d66bfcaf88041b7b4346950417cbc41c0f494e6310a67f50d",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-GLOOMSPORE-JELLY": {
   "family": "monster",
   "title": "Gloomspore Jelly",
   "heading_id": "h-gloomspore-jelly-brute",
   "route": "gpt",
-  "spec_sha256": "6ff848da92d680907a79172581ea53389b466e9c19c49b61dff23c0828dd9ddd",
+  "spec_sha256": "772826848f76b964bd61b08c1bf059aacaa938b463d1a78b07b84691fc5ce5a7",
   "prompt_sha256": "02993f5fa6076054ea8e97104a8ae0e20faa4e14eab8099c417c3f1196b667da",
   "status": "approved",
   "received_at": "2026-10-12T09:21:12+00:00",
@@ -2583,7 +3033,16 @@
    "max_print_w_in_300ppi": 4.09
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "6ff848da92d680907a79172581ea53389b466e9c19c49b61dff23c0828dd9ddd",
+    "to": "772826848f76b964bd61b08c1bf059aacaa938b463d1a78b07b84691fc5ce5a7",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-GNOLL": {
   "family": "monster",
@@ -2624,7 +3083,7 @@
   "title": "Goblin",
   "heading_id": "h-goblin-minion",
   "route": "gpt",
-  "spec_sha256": "5fcca7af336c8bf391d2e6a40c11aed59195676cb1c054624ecce5709606afa2",
+  "spec_sha256": "1fa5fd281871415270c3b4cc119cc562431e9dcbb3da5bc346065423493dd970",
   "prompt_sha256": "bda63921ae58f83faca16c084decce8f816630dbff4683d0b89b3e38f2491705",
   "status": "approved",
   "received_at": "2026-10-12T09:25:32+00:00",
@@ -2651,14 +3110,23 @@
    "max_print_w_in_300ppi": 3.933
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "5fcca7af336c8bf391d2e6a40c11aed59195676cb1c054624ecce5709606afa2",
+    "to": "1fa5fd281871415270c3b4cc119cc562431e9dcbb3da5bc346065423493dd970",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-GOBLIN-SHAMAN": {
   "family": "monster",
   "title": "Goblin Shaman",
   "heading_id": "h-goblin-shaman-controller",
   "route": "gpt",
-  "spec_sha256": "84cff244de05590178e3b1ac7cb937fa2e5629e6d895ba63cba5ff401fbd62c1",
+  "spec_sha256": "e29363bd209b5d7af31dc12d2a9057e86b6c2174ba0d16a0597ed0d38b88ce67",
   "prompt_sha256": "1a6541075d813ce40b1a0c1247c9f821efde7d1c1780fe6f2f420e935a3dfdda",
   "status": "approved",
   "received_at": "2026-10-12T09:27:31+00:00",
@@ -2685,14 +3153,23 @@
    "max_print_w_in_300ppi": 4.003
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "84cff244de05590178e3b1ac7cb937fa2e5629e6d895ba63cba5ff401fbd62c1",
+    "to": "e29363bd209b5d7af31dc12d2a9057e86b6c2174ba0d16a0597ed0d38b88ce67",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-GOREBEAK-BEAR": {
   "family": "monster",
   "title": "Gorebeak Bear",
   "heading_id": "h-gorebeak-bear-brute",
   "route": "gpt",
-  "spec_sha256": "f855ff3b4a9d6d0b9f2a620793301079ca90d7774617f85ed49fee5257186e8a",
+  "spec_sha256": "92b2bb4143fcde8fbfe2e6db80d0f72c4a70dda6f9ee52e8d6823bb1e33caaae",
   "prompt_sha256": "b8c101dfeb2cbd23baf5305ca00ab8142e14cfec85f972b39e72c88973e3b243",
   "status": "approved",
   "received_at": "2026-10-12T09:30:40+00:00",
@@ -2719,14 +3196,23 @@
    "max_print_w_in_300ppi": 4.18
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "f855ff3b4a9d6d0b9f2a620793301079ca90d7774617f85ed49fee5257186e8a",
+    "to": "92b2bb4143fcde8fbfe2e6db80d0f72c4a70dda6f9ee52e8d6823bb1e33caaae",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-GREEN-DRAGON": {
   "family": "monster",
   "title": "Green Dragon",
   "heading_id": "h-green-dragon-elite",
   "route": "gpt",
-  "spec_sha256": "4a570edb6419c8119de98825f8f937ecb8a0e30904a71e5c784d3cf2218bbb58",
+  "spec_sha256": "793f18bfc1383984b23ea7c1c6ccf10fed02844524b092050829c85dd1d95bf6",
   "prompt_sha256": "9de71ab6b9a4d983028e79385d4e8f0e0a532ef19cea67ca884e2cd758d12ebc",
   "status": "approved",
   "received_at": "2026-10-12T09:32:53+00:00",
@@ -2753,14 +3239,23 @@
    "max_print_w_in_300ppi": 4.09
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "4a570edb6419c8119de98825f8f937ecb8a0e30904a71e5c784d3cf2218bbb58",
+    "to": "793f18bfc1383984b23ea7c1c6ccf10fed02844524b092050829c85dd1d95bf6",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-HYDRA": {
   "family": "monster",
   "title": "Hydra",
   "heading_id": "h-hydra-elite",
   "route": "gpt",
-  "spec_sha256": "cb096e48c8e342f4ae1a609d51027e024dadf4559529c7ccb1a23857fd110a39",
+  "spec_sha256": "8ad9b88d605f9c6019d6892e7a560a2195a93a1cbdc8f60d89a26877a2659ec9",
   "prompt_sha256": "1b484a9928a472c4ac2492480ce3f3f43ebbfb1ef1fdd7ba9d4bfe1b8b91732b",
   "status": "approved",
   "received_at": "2026-10-12T12:43:34+00:00",
@@ -2787,14 +3282,23 @@
    "max_print_w_in_300ppi": 4.093
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "cb096e48c8e342f4ae1a609d51027e024dadf4559529c7ccb1a23857fd110a39",
+    "to": "8ad9b88d605f9c6019d6892e7a560a2195a93a1cbdc8f60d89a26877a2659ec9",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-ICE-ELEMENTAL": {
   "family": "monster",
   "title": "Ice Elemental",
   "heading_id": "h-ice-elemental-controller",
   "route": "gpt",
-  "spec_sha256": "ba4e6239c14014341781672f98eb3b5ef139d294f295f20c1e05c612c6afa3d8",
+  "spec_sha256": "48dc7aa5c4eb3aed3838c661dbb1e69067e6ad4a7d4eb44a604faa17f49aa191",
   "prompt_sha256": "8a6d144980bb201caf87579165681440ca0ca46bff0719c96a35ff89c8dbdc94",
   "status": "approved",
   "received_at": "2026-10-12T12:46:18+00:00",
@@ -2821,14 +3325,23 @@
    "max_print_w_in_300ppi": 3.98
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "ba4e6239c14014341781672f98eb3b5ef139d294f295f20c1e05c612c6afa3d8",
+    "to": "48dc7aa5c4eb3aed3838c661dbb1e69067e6ad4a7d4eb44a604faa17f49aa191",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-ICE-WRAITH": {
   "family": "monster",
   "title": "Ice Wraith",
   "heading_id": "h-ice-wraith-cannon",
   "route": "gpt",
-  "spec_sha256": "cd38363e09b650c214bf0351d207e75b57dcb6d024b5a1cb6adb84f56251f054",
+  "spec_sha256": "8fe01cc5e4c5365487e093232bb917fb9a5f81427dde0b87d8ad9a3788948d56",
   "prompt_sha256": "fe48d9d5794aa327cb10b1835e9680a0c68bec905fcad085da4e088a2beae672",
   "status": "approved",
   "received_at": "2026-10-12T12:49:20+00:00",
@@ -2855,14 +3368,23 @@
    "max_print_w_in_300ppi": 3.823
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "cd38363e09b650c214bf0351d207e75b57dcb6d024b5a1cb6adb84f56251f054",
+    "to": "8fe01cc5e4c5365487e093232bb917fb9a5f81427dde0b87d8ad9a3788948d56",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-IMP": {
   "family": "monster",
   "title": "Imp",
   "heading_id": "h-imp-skirmisher",
   "route": "gpt",
-  "spec_sha256": "9aed3894b905d63e9d74bbe4322b930d7142baba0ae529cef102b1c0d16d20e1",
+  "spec_sha256": "c8f0d40cb011e9bd115f87ca440b32bde593c9b905b6d025db7e7c4ceb9731d6",
   "prompt_sha256": "e0552baf3a52f2d3879615a987dce60e82510c1f8a8196cf163e5ed759355e75",
   "status": "approved",
   "received_at": "2026-10-12T12:52:24+00:00",
@@ -2889,14 +3411,23 @@
    "max_print_w_in_300ppi": 3.943
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "9aed3894b905d63e9d74bbe4322b930d7142baba0ae529cef102b1c0d16d20e1",
+    "to": "c8f0d40cb011e9bd115f87ca440b32bde593c9b905b6d025db7e7c4ceb9731d6",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-IRON-GOLEM": {
   "family": "monster",
   "title": "Iron Golem",
   "heading_id": "h-iron-golem-brute",
   "route": "gpt",
-  "spec_sha256": "6cffe6c6b053f9a3e3de2a795a84beda7f79669f34471d0258274b735cf3dfe8",
+  "spec_sha256": "980599384535fa39c07364c2db3862de992792274585d5d6c335c3d3b7248e2a",
   "prompt_sha256": "7ebe905ea16de2d7f703eaea7850a430929f724e06354bef1bda8607c436bead",
   "status": "approved",
   "received_at": "2026-10-12T12:55:26+00:00",
@@ -2923,14 +3454,23 @@
    "max_print_w_in_300ppi": 3.907
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "6cffe6c6b053f9a3e3de2a795a84beda7f79669f34471d0258274b735cf3dfe8",
+    "to": "980599384535fa39c07364c2db3862de992792274585d5d6c335c3d3b7248e2a",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-KOBOLD": {
   "family": "monster",
   "title": "Kobold",
   "heading_id": "h-kobold-minion",
   "route": "gpt",
-  "spec_sha256": "b2ca3c169335d238c1f561d6008e4fc87913b158f1aa2cea7c8ae564317a4e5c",
+  "spec_sha256": "c0efb9521377146c76b8a5aeecf89f19ab5d3e0b1867ba842a40488aa3256277",
   "prompt_sha256": "e5d3b5b6d908d86bd6d6f875328df22940895ded3e5c05bdc661edb34aed707c",
   "status": "approved",
   "received_at": "2026-10-12T12:58:46+00:00",
@@ -2957,7 +3497,16 @@
    "max_print_w_in_300ppi": 3.767
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "b2ca3c169335d238c1f561d6008e4fc87913b158f1aa2cea7c8ae564317a4e5c",
+    "to": "c0efb9521377146c76b8a5aeecf89f19ab5d3e0b1867ba842a40488aa3256277",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-LICH": {
   "family": "monster",
@@ -2998,7 +3547,7 @@
   "title": "Lizardfolk Hunter",
   "heading_id": "h-lizardfolk-hunter-cannon",
   "route": "gpt",
-  "spec_sha256": "697d1f0ccfa10af4902eb7362132bdaa96983699563f1cfb563116496ef748bc",
+  "spec_sha256": "6a4bb3f5c24b5b84d9b62362020c188cab5882e8c7848c37cd595943ba0129a4",
   "prompt_sha256": "4673b9fc307681e70bb9d9983ff54fec56207583c728a83dc29e42fb58733991",
   "status": "approved",
   "received_at": "2026-10-12T13:06:43+00:00",
@@ -3025,14 +3574,23 @@
    "max_print_w_in_300ppi": 4.023
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "697d1f0ccfa10af4902eb7362132bdaa96983699563f1cfb563116496ef748bc",
+    "to": "6a4bb3f5c24b5b84d9b62362020c188cab5882e8c7848c37cd595943ba0129a4",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-LIZARDFOLK-SHAMAN": {
   "family": "monster",
   "title": "Lizardfolk Shaman",
   "heading_id": "h-lizardfolk-shaman-controller",
   "route": "gpt",
-  "spec_sha256": "fefbc3920bfa7237941a1283727d10ca91c5b52e5e4cb685679d1a71c8166126",
+  "spec_sha256": "aaccedb13d51765bcace32b776475c8b04920a96d479471bf47acc2dcd69a8bc",
   "prompt_sha256": "5032ae1903499095006f98647868553c10f4ac7e554ead6b21480cd542ea4d99",
   "status": "approved",
   "received_at": "2026-10-12T13:09:05+00:00",
@@ -3059,7 +3617,16 @@
    "max_print_w_in_300ppi": 3.93
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "fefbc3920bfa7237941a1283727d10ca91c5b52e5e4cb685679d1a71c8166126",
+    "to": "aaccedb13d51765bcace32b776475c8b04920a96d479471bf47acc2dcd69a8bc",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-LIZARDFOLK-WARRIOR": {
   "family": "monster",
@@ -3100,7 +3667,7 @@
   "title": "Manticore",
   "heading_id": "h-manticore-elite",
   "route": "gpt",
-  "spec_sha256": "5f3fdfe2a9412308947af8ced48bc67258f599e6eaf1a57e849ef74aedf4c399",
+  "spec_sha256": "56a4fe9fdaaa0544145dde2a2322fdb98dbb3550a8ede8b6e3707939caea4602",
   "prompt_sha256": "4291414167d5d886df2907a1f25d8e80fe52300e52fc543c19eb37a53e0976d6",
   "status": "approved",
   "received_at": "2026-10-12T13:13:39+00:00",
@@ -3127,14 +3694,23 @@
    "max_print_w_in_300ppi": 4.07
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "5f3fdfe2a9412308947af8ced48bc67258f599e6eaf1a57e849ef74aedf4c399",
+    "to": "56a4fe9fdaaa0544145dde2a2322fdb98dbb3550a8ede8b6e3707939caea4602",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-MEDUSA": {
   "family": "monster",
   "title": "Medusa",
   "heading_id": "h-medusa-elite",
   "route": "gpt",
-  "spec_sha256": "ebd576e0a4a0a4b4dad80b916f8d3891033cdbe1a60b9a66c2f2e8b4c9bbecce",
+  "spec_sha256": "e3dfb11dc090b9c4da14e0f2f2aa84ef32fe1a57dcf52f7268d663f224dbb10c",
   "prompt_sha256": "97d18857963f6166782977c39af4fbcdc00ca895f17694b7ca20ea95dc2cbf58",
   "status": "approved",
   "received_at": "2026-10-12T13:16:01+00:00",
@@ -3161,14 +3737,23 @@
    "max_print_w_in_300ppi": 3.21
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "ebd576e0a4a0a4b4dad80b916f8d3891033cdbe1a60b9a66c2f2e8b4c9bbecce",
+    "to": "e3dfb11dc090b9c4da14e0f2f2aa84ef32fe1a57dcf52f7268d663f224dbb10c",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-MIASMA-SERPENT": {
   "family": "monster",
   "title": "Miasma Serpent",
   "heading_id": "h-miasma-serpent-skirmisher",
   "route": "gpt",
-  "spec_sha256": "7479086eb2a7885f4925da69c58bb59700df603cb2b2e87a7902d6c04cf326d4",
+  "spec_sha256": "72e7468988b2ea84d90395bddefb30a24709a6e67220c2e7a82618aed4808b9d",
   "prompt_sha256": "28eb42bd79c50dff9d3cd430bcbe6647f8af5b2619054983d0fd3056f9215f44",
   "status": "approved",
   "received_at": "2026-10-12T13:18:52+00:00",
@@ -3195,14 +3780,23 @@
    "max_print_w_in_300ppi": 4.157
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "7479086eb2a7885f4925da69c58bb59700df603cb2b2e87a7902d6c04cf326d4",
+    "to": "72e7468988b2ea84d90395bddefb30a24709a6e67220c2e7a82618aed4808b9d",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-MINOTAUR": {
   "family": "monster",
   "title": "Minotaur",
   "heading_id": "h-minotaur-elite",
   "route": "gpt",
-  "spec_sha256": "da9a8903ad701348fe6c9647d4740f2847e0005e85801c037c0d5a5135bc44ff",
+  "spec_sha256": "875c317d05159e29e6652e55c3e171fe0c5d45b98b1978a5af8a07f8b993a899",
   "prompt_sha256": "ab7e66236ca385460de1fcad5c160a8824af3d63b5ed15c449a291692b1ee905",
   "status": "approved",
   "received_at": "2026-10-12T13:21:38+00:00",
@@ -3229,14 +3823,23 @@
    "max_print_w_in_300ppi": 3.99
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "da9a8903ad701348fe6c9647d4740f2847e0005e85801c037c0d5a5135bc44ff",
+    "to": "875c317d05159e29e6652e55c3e171fe0c5d45b98b1978a5af8a07f8b993a899",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-MIRE-TITAN": {
   "family": "monster",
   "title": "Mire Titan",
   "heading_id": "h-mire-titan-brute",
   "route": "gpt",
-  "spec_sha256": "02ab9e9853f4b8f35e011e95efa54ca15b2ca8c13af83e7327e5e0c0ea3ec833",
+  "spec_sha256": "406ad65aa62f86417f9d15d52eba402265d6763c817e6295e63270d4091a8167",
   "prompt_sha256": "b2d2cceadbacca59ae8aafaaf3e925ff2fe98e55ef7a4090df5add245b36ac5e",
   "status": "approved",
   "received_at": "2026-10-12T13:24:40+00:00",
@@ -3263,14 +3866,23 @@
    "max_print_w_in_300ppi": 4.03
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "02ab9e9853f4b8f35e011e95efa54ca15b2ca8c13af83e7327e5e0c0ea3ec833",
+    "to": "406ad65aa62f86417f9d15d52eba402265d6763c817e6295e63270d4091a8167",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-MUMMY": {
   "family": "monster",
   "title": "Mummy",
   "heading_id": "h-mummy-controller",
   "route": "gpt",
-  "spec_sha256": "896ff1f53e3e7d48fc343b84ee0baf605f91815d1228f3304269972e42da418e",
+  "spec_sha256": "70aff4f20f57aafc60f775d500b18f852a04996dd6fe3c821155bbb2438d7768",
   "prompt_sha256": "4ea39e5b60a6b30041da3c86baedc24ad94fbebd8b332cbe30e6e761f2509741",
   "status": "approved",
   "received_at": "2026-10-12T13:28:06+00:00",
@@ -3297,7 +3909,16 @@
    "max_print_w_in_300ppi": 2.497
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "896ff1f53e3e7d48fc343b84ee0baf605f91815d1228f3304269972e42da418e",
+    "to": "70aff4f20f57aafc60f775d500b18f852a04996dd6fe3c821155bbb2438d7768",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-NIGHT-HAG": {
   "family": "monster",
@@ -3338,7 +3959,7 @@
   "title": "Noxcloth",
   "heading_id": "h-noxcloth-controller",
   "route": "gpt",
-  "spec_sha256": "55760314a30293def055485eae1400e979104b81cde45fa20d4da85a5e1f9573",
+  "spec_sha256": "e5bf56b3a076631c2d4f97e9335c7e069819181447971d91619a1dd394791695",
   "prompt_sha256": "529d35e8a2f6d3f394bfd26afe18e62cf8c3bed7582c7da6b4cd705f88b00383",
   "status": "approved",
   "received_at": "2026-10-12T13:35:18+00:00",
@@ -3365,14 +3986,23 @@
    "max_print_w_in_300ppi": 4.04
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "55760314a30293def055485eae1400e979104b81cde45fa20d4da85a5e1f9573",
+    "to": "e5bf56b3a076631c2d4f97e9335c7e069819181447971d91619a1dd394791695",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour 'blind itself' became 'sightless' (same meaning); image re-viewed: an eyeless floating shroud, still matches. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-OGRE": {
   "family": "monster",
   "title": "Ogre",
   "heading_id": "h-ogre-brute",
   "route": "gpt",
-  "spec_sha256": "df997501c734dd1f97a8ccee33312e559ac1fac1ee849a06863d60c24e0f7a6f",
+  "spec_sha256": "f529039929af52abc7f1411a1cc2291345b205a54d76251759d6960c04986f8e",
   "prompt_sha256": "a2e850a607a4eb7827d4d6ea2a63b564095c9b8dd912a1ec7445d359bc1aada7",
   "status": "approved",
   "received_at": "2026-10-12T13:39:39+00:00",
@@ -3399,14 +4029,23 @@
    "max_print_w_in_300ppi": 4.027
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "df997501c734dd1f97a8ccee33312e559ac1fac1ee849a06863d60c24e0f7a6f",
+    "to": "f529039929af52abc7f1411a1cc2291345b205a54d76251759d6960c04986f8e",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-POSSESSED-CORPSE": {
   "family": "monster",
   "title": "Possessed Corpse",
   "heading_id": "h-possessed-corpse-minion",
   "route": "gpt",
-  "spec_sha256": "e899dd04a06152780f963160afec3a06814734a28946ad6bc52c946b8cdebe8e",
+  "spec_sha256": "8c182f0ea42c2d54c8a8ef6c6ba62fd39adf252adb2a4d084934c231b86543ec",
   "prompt_sha256": "99ec191cecee65686f51fd0f300f6118fae9e4b5ed7f345330d8334fc31ac33f",
   "status": "approved",
   "received_at": "2026-10-12T13:43:46+00:00",
@@ -3433,7 +4072,16 @@
    "max_print_w_in_300ppi": 3.177
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "e899dd04a06152780f963160afec3a06814734a28946ad6bc52c946b8cdebe8e",
+    "to": "8c182f0ea42c2d54c8a8ef6c6ba62fd39adf252adb2a4d084934c231b86543ec",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-RATKIN-SCAVENGER": {
   "family": "monster",
@@ -3474,7 +4122,7 @@
   "title": "Ratkin Seer",
   "heading_id": "h-ratkin-seer-controller",
   "route": "gpt",
-  "spec_sha256": "115d8d50882e94e95cc2b11e91e73ef06fa588af6455ac85c6a5ce217b016eb4",
+  "spec_sha256": "89730c2a4a57fd26d4d297e1227a74336bee6a4de0b9b389642615ac58314b81",
   "prompt_sha256": "9cdb2589966bf6316b4c6d5f325cf11577e691623c14724dbd693b3b6ec3d661",
   "status": "approved",
   "received_at": "2026-10-12T13:51:51+00:00",
@@ -3501,14 +4149,23 @@
    "max_print_w_in_300ppi": 3.797
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "115d8d50882e94e95cc2b11e91e73ef06fa588af6455ac85c6a5ce217b016eb4",
+    "to": "89730c2a4a57fd26d4d297e1227a74336bee6a4de0b9b389642615ac58314b81",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-RATKIN-WARRIOR": {
   "family": "monster",
   "title": "Ratkin Warrior",
   "heading_id": "h-ratkin-warrior-soldier",
   "route": "gpt",
-  "spec_sha256": "df6e4c69865b60d08b2a9e542278495f2215a7a2c96bb63753b72a5a4fe3efd3",
+  "spec_sha256": "4a40e7144fa7a4fe7bb82dfc554af16248b16a6fd2c6c09ecb935d052fb26b1d",
   "prompt_sha256": "d80863223b8bc826716d679f61c89888c9eb8ebf2f1cb8557e289b5862df5cbe",
   "status": "approved",
   "received_at": "2026-10-12T13:56:03+00:00",
@@ -3535,7 +4192,16 @@
    "max_print_w_in_300ppi": 4.013
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "df6e4c69865b60d08b2a9e542278495f2215a7a2c96bb63753b72a5a4fe3efd3",
+    "to": "4a40e7144fa7a4fe7bb82dfc554af16248b16a6fd2c6c09ecb935d052fb26b1d",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-SATYR-REVELER": {
   "family": "monster",
@@ -3576,7 +4242,7 @@
   "title": "Shambling Mound",
   "heading_id": "h-shambling-mound-brute",
   "route": "gpt",
-  "spec_sha256": "ca1ecbef7b61f22db7f0ccc4ce4e2e8d3f94992be12d2054def904c4402f299b",
+  "spec_sha256": "9c9ed2874671918ff074577467d7f5eb20c6a14aeeabb23925cb417b91c86519",
   "prompt_sha256": "83643f97f5a9f1fd5309d1416b0a1dd0569821c0c1c0133bb319f320bd9905e6",
   "status": "approved",
   "received_at": "2026-10-12T14:05:12+00:00",
@@ -3603,14 +4269,23 @@
    "max_print_w_in_300ppi": 3.953
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "ca1ecbef7b61f22db7f0ccc4ce4e2e8d3f94992be12d2054def904c4402f299b",
+    "to": "9c9ed2874671918ff074577467d7f5eb20c6a14aeeabb23925cb417b91c86519",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-SKELETAL-BEAST": {
   "family": "monster",
   "title": "Skeletal Beast",
   "heading_id": "h-skeletal-beast-skirmisher",
   "route": "gpt",
-  "spec_sha256": "2c0216d72a373618855271ea6619df86b0769221139d0c10b4dff014a0874123",
+  "spec_sha256": "3435d80923f08a70cd121dac7ae75811fc7aa36530eb34e41f0eeca270444a33",
   "prompt_sha256": "5dd0f99c035d4f9946508e7fd70b09833976a7d6b5db44b0f24b18481c59d42d",
   "status": "approved",
   "received_at": "2026-10-12T14:10:29+00:00",
@@ -3637,7 +4312,16 @@
    "max_print_w_in_300ppi": 3.863
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "2c0216d72a373618855271ea6619df86b0769221139d0c10b4dff014a0874123",
+    "to": "3435d80923f08a70cd121dac7ae75811fc7aa36530eb34e41f0eeca270444a33",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-SKELETON-ARCHER": {
   "family": "monster",
@@ -3712,7 +4396,7 @@
   "title": "Spectre",
   "heading_id": "h-spectre-controller",
   "route": "gpt",
-  "spec_sha256": "dac7ef2a01a37c3bd5c2c8526168845c454b5c90ec42ac6a79156ad1eb98ba80",
+  "spec_sha256": "585c60e149aaf12137dbc84283852cbf93b79b7e38cdaef2bd78166617468ed7",
   "prompt_sha256": "bd469c49b43218cb2ed64d95cc1343b476d17e23d97955567aedc9774bb2f260",
   "status": "approved",
   "received_at": "2026-10-12T14:28:07+00:00",
@@ -3739,14 +4423,23 @@
    "max_print_w_in_300ppi": 2.493
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "dac7ef2a01a37c3bd5c2c8526168845c454b5c90ec42ac6a79156ad1eb98ba80",
+    "to": "585c60e149aaf12137dbc84283852cbf93b79b7e38cdaef2bd78166617468ed7",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-STIRGE": {
   "family": "monster",
   "title": "Stirge",
   "heading_id": "h-stirge-minion",
   "route": "gpt",
-  "spec_sha256": "4c45e8ab0a567bc4c2a0079392bfbe41cf093b8adba4b7b55f5241c3a06404fa",
+  "spec_sha256": "68622de23029441ccb6d06b4a21b3fce9d40552d1fadbceee8d2f49fe4d671a5",
   "prompt_sha256": "bc2919060e6eb821b9830b3f0a81afbab50c369c970807722e2d4d2004edfe41",
   "status": "approved",
   "received_at": "2026-10-12T14:33:09+00:00",
@@ -3773,14 +4466,23 @@
    "max_print_w_in_300ppi": 3.633
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "4c45e8ab0a567bc4c2a0079392bfbe41cf093b8adba4b7b55f5241c3a06404fa",
+    "to": "68622de23029441ccb6d06b4a21b3fce9d40552d1fadbceee8d2f49fe4d671a5",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-STONE-SENTINEL": {
   "family": "monster",
   "title": "Stone Sentinel",
   "heading_id": "h-stone-sentinel-brute",
   "route": "gpt",
-  "spec_sha256": "fe392cd7d292028945eb283a77a34cfd04a54ea1761892f7809243672a85ef8c",
+  "spec_sha256": "c601d8711145a914b897ed1f19e067539c45e8527a7ff8e401f42561b42191b7",
   "prompt_sha256": "5a1a50f71f460da47a41c851ab9dee5f2f5d4eec6d59c33470cc61b179388ded",
   "status": "approved",
   "received_at": "2026-10-12T14:38:57+00:00",
@@ -3807,7 +4509,16 @@
    "max_print_w_in_300ppi": 3.377
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "fe392cd7d292028945eb283a77a34cfd04a54ea1761892f7809243672a85ef8c",
+    "to": "c601d8711145a914b897ed1f19e067539c45e8527a7ff8e401f42561b42191b7",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-SWAMP-GOBLIN": {
   "family": "monster",
@@ -3882,7 +4593,7 @@
   "title": "Swamp Naga",
   "heading_id": "h-swamp-naga-controller",
   "route": "gpt",
-  "spec_sha256": "78fb2713f3d11c4f9bf916e9c52a6f9a9e7e8d7c9fa1be4176a55c82594b7452",
+  "spec_sha256": "fa70a25408ae1a47278df2ae26fb916b09abddbe12d989bc193ce08002b56b65",
   "prompt_sha256": "37a130fa1356ec96310e224f8d55e93740d2b28a1572adbaebd6786b7aa19260",
   "status": "approved",
   "received_at": "2026-10-12T14:49:14+00:00",
@@ -3909,14 +4620,23 @@
    "max_print_w_in_300ppi": 4.11
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "78fb2713f3d11c4f9bf916e9c52a6f9a9e7e8d7c9fa1be4176a55c82594b7452",
+    "to": "fa70a25408ae1a47278df2ae26fb916b09abddbe12d989bc193ce08002b56b65",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-SWAMP-TROLL": {
   "family": "monster",
   "title": "Swamp Troll",
   "heading_id": "h-swamp-troll-brute",
   "route": "gpt",
-  "spec_sha256": "9746e92fce1ec2bfd76331089d69ed08ab7d1346c83631031dfd4a16656d5520",
+  "spec_sha256": "39c5602f94ca80880ec009c5eb67de2a3f0e6820e784f9cf8965d20c1dd26433",
   "prompt_sha256": "09328eb8a8c63fa670e86712924ceae8ba1b55ed6cb6e876b1cc66f7636321ef",
   "status": "approved",
   "received_at": "2026-10-12T14:52:01+00:00",
@@ -3943,14 +4663,23 @@
    "max_print_w_in_300ppi": 4.14
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "9746e92fce1ec2bfd76331089d69ed08ab7d1346c83631031dfd4a16656d5520",
+    "to": "39c5602f94ca80880ec009c5eb67de2a3f0e6820e784f9cf8965d20c1dd26433",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-THOUGHT-EATER": {
   "family": "monster",
   "title": "Thought-Eater",
   "heading_id": "h-thought-eater-elite",
   "route": "gpt",
-  "spec_sha256": "a9d789d23a6692c419053cc0e79d3485a14d754217b64d32d4b272605d5d27ae",
+  "spec_sha256": "ba7cfc50ebef70b690c74d6cb52a6b4919a44137e4db8f0b7009cb39934ece78",
   "prompt_sha256": "4b4ad978f329e9f510bfa4ae95aa8c772ac44cc47d5b61ee842343dd916d217e",
   "status": "approved",
   "received_at": "2026-10-12T14:54:34+00:00",
@@ -3977,14 +4706,23 @@
    "max_print_w_in_300ppi": 3.21
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "a9d789d23a6692c419053cc0e79d3485a14d754217b64d32d4b272605d5d27ae",
+    "to": "ba7cfc50ebef70b690c74d6cb52a6b4919a44137e4db8f0b7009cb39934ece78",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-TOMB-GUARDIAN": {
   "family": "monster",
   "title": "Tomb Guardian",
   "heading_id": "h-tomb-guardian-soldier",
   "route": "gpt",
-  "spec_sha256": "00e0e84d8f5bc00405ca9c8cdfc7d9cc65597fa2048b68330609e3ab4f43191d",
+  "spec_sha256": "0b017b6a8c4b859e57ffd40dd98ddcd2ff0a5c540cbd036cb6e038e9897e6a91",
   "prompt_sha256": "d912d4d5875766c50313757790a5b0bef0ada83136120c0cd257e4cc584a4ad1",
   "status": "approved",
   "received_at": "2026-10-12T14:57:27+00:00",
@@ -4011,14 +4749,23 @@
    "max_print_w_in_300ppi": 2.727
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "00e0e84d8f5bc00405ca9c8cdfc7d9cc65597fa2048b68330609e3ab4f43191d",
+    "to": "0b017b6a8c4b859e57ffd40dd98ddcd2ff0a5c540cbd036cb6e038e9897e6a91",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-TOMB-NECROMANCER": {
   "family": "monster",
   "title": "Tomb Necromancer",
   "heading_id": "h-tomb-necromancer-controller",
   "route": "gpt",
-  "spec_sha256": "339f583101797dffd907c523ba35f5456d04927a1a1a7831b031b6e5a2a4f891",
+  "spec_sha256": "55896acde62c88879e5118636a1c5b5280f14da0bcc0c51b2431f3b94421de0c",
   "prompt_sha256": "c44010610abe4927923864d4350b0b7448fb8a8cdbc2ce48b489ab13fa593c64",
   "status": "approved",
   "received_at": "2026-10-12T15:00:01+00:00",
@@ -4045,7 +4792,16 @@
    "max_print_w_in_300ppi": 3.66
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "339f583101797dffd907c523ba35f5456d04927a1a1a7831b031b6e5a2a4f891",
+    "to": "55896acde62c88879e5118636a1c5b5280f14da0bcc0c51b2431f3b94421de0c",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-TROGLODYTE": {
   "family": "monster",
@@ -4086,7 +4842,7 @@
   "title": "Troglodyte Shaman",
   "heading_id": "h-troglodyte-shaman-controller",
   "route": "gpt",
-  "spec_sha256": "83efabb08c1cbc8fa7fd09c87f75b450ab8b5cdb192b4382ad80721aa6f03c5e",
+  "spec_sha256": "ad7e814f2f6df467e11b414b9757f38b26d6f0c8bf5bca90df37ef8145f6d272",
   "prompt_sha256": "08e2d6703abbba03e94305244daa15d400351a9e91eb8769edfc4afcbfd5651b",
   "status": "approved",
   "received_at": "2026-10-12T15:04:50+00:00",
@@ -4113,14 +4869,23 @@
    "max_print_w_in_300ppi": 3.923
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "83efabb08c1cbc8fa7fd09c87f75b450ab8b5cdb192b4382ad80721aa6f03c5e",
+    "to": "ad7e814f2f6df467e11b414b9757f38b26d6f0c8bf5bca90df37ef8145f6d272",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-TUNDRA-WOLF": {
   "family": "monster",
   "title": "Tundra Wolf",
   "heading_id": "h-tundra-wolf-skirmisher",
   "route": "gpt",
-  "spec_sha256": "fb7f2739440311555d9b9c63daa8252c12ab4eca89e424011568ddc242bb385b",
+  "spec_sha256": "c998906dd671cf0d40d598dabe263d193354789e2cee062c9a40fe0851c97807",
   "prompt_sha256": "53afde654a61838a95ec3f9af405ebbed16375faf053bb92ede207fff6bc31c5",
   "status": "approved",
   "received_at": "2026-10-12T15:08:08+00:00",
@@ -4147,14 +4912,23 @@
    "max_print_w_in_300ppi": 4.073
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "fb7f2739440311555d9b9c63daa8252c12ab4eca89e424011568ddc242bb385b",
+    "to": "c998906dd671cf0d40d598dabe263d193354789e2cee062c9a40fe0851c97807",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-UNDEAD-CHAMPION": {
   "family": "monster",
   "title": "Undead Champion",
   "heading_id": "h-undead-champion-soldier",
   "route": "gpt",
-  "spec_sha256": "6450423260b7218005c888a9dcbcd4ad11ca24b9528ffa2ca3b071913ec933e3",
+  "spec_sha256": "c2a840c4c1e651dceeba0cab3cd3936778fb81bbe9359ab16119fae4016c5151",
   "prompt_sha256": "17926ad0a885ff36caf79527850b410ea5c1d889547986df7230bb32ecee3789",
   "status": "approved",
   "received_at": "2026-10-12T15:11:12+00:00",
@@ -4181,7 +4955,16 @@
    "max_print_w_in_300ppi": 3.067
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "6450423260b7218005c888a9dcbcd4ad11ca24b9528ffa2ca3b071913ec933e3",
+    "to": "c2a840c4c1e651dceeba0cab3cd3936778fb81bbe9359ab16119fae4016c5151",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-UNDEAD-CROSSBOWMAN": {
   "family": "monster",
@@ -4222,7 +5005,7 @@
   "title": "Undead Sentinel",
   "heading_id": "h-undead-sentinel-soldier",
   "route": "gpt",
-  "spec_sha256": "d0b64b63bb388f5644bf4e2f7451628f3fb0c64b95208bc09b30f51c27e0e9e2",
+  "spec_sha256": "57519433e33e1fcb234267c5c2c15c97ca550935891994cf72db8c0517a9beeb",
   "prompt_sha256": "8be4b80bd91d45057d89f9efa1d09a54ff446a5ff7dced4bdbf2193ba8f04810",
   "status": "approved",
   "received_at": "2026-10-12T15:18:18+00:00",
@@ -4249,14 +5032,23 @@
    "max_print_w_in_300ppi": 3.677
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "d0b64b63bb388f5644bf4e2f7451628f3fb0c64b95208bc09b30f51c27e0e9e2",
+    "to": "57519433e33e1fcb234267c5c2c15c97ca550935891994cf72db8c0517a9beeb",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-UNDEAD-WARRIOR": {
   "family": "monster",
   "title": "Undead Warrior",
   "heading_id": "h-undead-warrior-minion",
   "route": "gpt",
-  "spec_sha256": "59c941d1eae53b954411029af609b59ff20c77c3d56dd2c37ca349f8f5334356",
+  "spec_sha256": "ec539c2b733a54d14ae834eeee407e4e23141f948fd2c0d7a83364fe7eb4d27e",
   "prompt_sha256": "c07b40b0f85dcfda25ef5575243cf886d63123d67046a97099c5d7e020838b3d",
   "status": "approved",
   "received_at": "2026-10-12T15:37:33+00:00",
@@ -4283,14 +5075,23 @@
    "max_print_w_in_300ppi": 3.477
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:57:37+00:00"
+  "approved_at": "2026-10-12T15:57:37+00:00",
+  "spec_rebinds": [
+   {
+    "from": "59c941d1eae53b954411029af609b59ff20c77c3d56dd2c37ca349f8f5334356",
+    "to": "ec539c2b733a54d14ae834eeee407e4e23141f948fd2c0d7a83364fe7eb4d27e",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-VAULT-OOZE": {
   "family": "monster",
   "title": "Vault Ooze",
   "heading_id": "h-vault-ooze-brute",
   "route": "gpt",
-  "spec_sha256": "6a807251e7b339aff08ddbcc1b8c06f8703b1601a6419d05bf1b463972e2e907",
+  "spec_sha256": "57c3302db1857dc610b8020537e25b959f5a74692b1d8e72d7e5d667e3a4cce8",
   "prompt_sha256": "8f05b412a741452256cee3b8a1135f4fe89993d76e066a38f23012090e29207c",
   "status": "approved",
   "received_at": "2026-10-12T15:25:29+00:00",
@@ -4317,14 +5118,23 @@
    "max_print_w_in_300ppi": 4.043
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:57:37+00:00"
+  "approved_at": "2026-10-12T15:57:37+00:00",
+  "spec_rebinds": [
+   {
+    "from": "6a807251e7b339aff08ddbcc1b8c06f8703b1601a6419d05bf1b463972e2e907",
+    "to": "57c3302db1857dc610b8020537e25b959f5a74692b1d8e72d7e5d667e3a4cce8",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-VAULTFANG": {
   "family": "monster",
   "title": "Vaultfang",
   "heading_id": "h-vaultfang-cannon",
   "route": "gpt",
-  "spec_sha256": "1f3ff7f8557e6aa73bb575a5cd54a9abf735c4b401efde933a562558b731ef3b",
+  "spec_sha256": "103ba96b4f2a4884dde91528f9cf4be81f31373b5232c660b9509f8126b4d9a7",
   "prompt_sha256": "48d7804f4195ce10c64e61e6c5e6edca962947e4514f7b01ecf17e0d71fedff5",
   "status": "approved",
   "received_at": "2026-10-12T15:42:35+00:00",
@@ -4351,14 +5161,23 @@
    "max_print_w_in_300ppi": 2.25
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:57:37+00:00"
+  "approved_at": "2026-10-12T15:57:37+00:00",
+  "spec_rebinds": [
+   {
+    "from": "1f3ff7f8557e6aa73bb575a5cd54a9abf735c4b401efde933a562558b731ef3b",
+    "to": "103ba96b4f2a4884dde91528f9cf4be81f31373b5232c660b9509f8126b4d9a7",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-VRYMK": {
   "family": "monster",
   "title": "Vrymk",
   "heading_id": "h-vrymk-skirmisher",
   "route": "gpt",
-  "spec_sha256": "9e8a859fc6ed7d5dcfb3368505b34d9a5cceb2900828c1fe7a6ae522a12ac060",
+  "spec_sha256": "8ed2d54ef101e43d30e6357e8d1589f02651eb59c2023e6ecb659bea603e4bb9",
   "prompt_sha256": "9d1d91910a5795a2b1cb0c77f4c3ac087dda93c2840f7f4ee89ea6496328ce79",
   "status": "approved",
   "received_at": "2026-10-12T16:12:02+00:00",
@@ -4385,7 +5204,16 @@
    "max_print_w_in_300ppi": 3.827
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T17:10:42+00:00"
+  "approved_at": "2026-10-12T17:10:42+00:00",
+  "spec_rebinds": [
+   {
+    "from": "9e8a859fc6ed7d5dcfb3368505b34d9a5cceb2900828c1fe7a6ae522a12ac060",
+    "to": "8ed2d54ef101e43d30e6357e8d1589f02651eb59c2023e6ecb659bea603e4bb9",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-ITE-7-8-MELEE-WEAPONS": {
   "family": "item",
@@ -4426,7 +5254,7 @@
   "title": "Harpy",
   "heading_id": "h-harpy-cannon",
   "route": "gpt",
-  "spec_sha256": "4bda9dd7832fc15fd77c661edb8c600af231058257273b57f4900b4f5c154269",
+  "spec_sha256": "e5d362ebd9d556be1d0a92f65b0ae659b1f0c4edfdda2a56de9a5eca249d14b2",
   "prompt_sha256": "4880e543a516d81f65857d774b76d707a8fad56e895778b40080f5350b263476",
   "status": "approved",
   "received_at": "2026-10-12T16:21:22+00:00",
@@ -4453,14 +5281,23 @@
    "max_print_w_in_300ppi": 4.07
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T17:10:42+00:00"
+  "approved_at": "2026-10-12T17:10:42+00:00",
+  "spec_rebinds": [
+   {
+    "from": "4bda9dd7832fc15fd77c661edb8c600af231058257273b57f4900b4f5c154269",
+    "to": "e5d362ebd9d556be1d0a92f65b0ae659b1f0c4edfdda2a56de9a5eca249d14b2",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-WEREBEAR": {
   "family": "monster",
   "title": "Werebear",
   "heading_id": "h-werebear-brute",
   "route": "gpt",
-  "spec_sha256": "a8ef0fc0a3f228085232b1969a884ac2817d54894618df77661fb778a6c5533b",
+  "spec_sha256": "6003772bb02e36d7f622a16d134af54429bf455b593ee851b25998d693e1152b",
   "prompt_sha256": "cc24d20d921afcb44697f6ccc761e3535688b1078af369633ce827eaa76deb22",
   "status": "approved",
   "received_at": "2026-10-12T16:23:54+00:00",
@@ -4487,14 +5324,23 @@
    "max_print_w_in_300ppi": 4.057
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T17:10:42+00:00"
+  "approved_at": "2026-10-12T17:10:42+00:00",
+  "spec_rebinds": [
+   {
+    "from": "a8ef0fc0a3f228085232b1969a884ac2817d54894618df77661fb778a6c5533b",
+    "to": "6003772bb02e36d7f622a16d134af54429bf455b593ee851b25998d693e1152b",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-WERERAT": {
   "family": "monster",
   "title": "Wererat",
   "heading_id": "h-wererat-skirmisher",
   "route": "gpt",
-  "spec_sha256": "eb4301807e3df58f56e694b8433e05c0921683aa137696a26578bb3e2734750c",
+  "spec_sha256": "63a956522f9f25bd6fb77937d544c81b77effc1946f326e371c107251c1f8189",
   "prompt_sha256": "61973cc8a7b9d52d20c30e58ec0853ab60807aa0ab5c292e5a579906f943c420",
   "status": "approved",
   "received_at": "2026-10-12T16:26:43+00:00",
@@ -4521,14 +5367,23 @@
    "max_print_w_in_300ppi": 3.953
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T17:10:42+00:00"
+  "approved_at": "2026-10-12T17:10:42+00:00",
+  "spec_rebinds": [
+   {
+    "from": "eb4301807e3df58f56e694b8433e05c0921683aa137696a26578bb3e2734750c",
+    "to": "63a956522f9f25bd6fb77937d544c81b77effc1946f326e371c107251c1f8189",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-WEREWOLF": {
   "family": "monster",
   "title": "Werewolf",
   "heading_id": "h-werewolf-elite",
   "route": "gpt",
-  "spec_sha256": "0361331049b76fb871b613af9add0f232274fe98e43495091f067ce787ef1fc9",
+  "spec_sha256": "22e1f3a26a329f7852aed1ca0ba588dca34cab4cee980f55b629e9d8a03cebf6",
   "prompt_sha256": "b63c8a497a26d9b3bba6d626e488c65853509e72009a2534b32f6cbb988e8094",
   "status": "approved",
   "received_at": "2026-10-12T16:29:43+00:00",
@@ -4555,7 +5410,16 @@
    "max_print_w_in_300ppi": 3.013
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T17:10:42+00:00"
+  "approved_at": "2026-10-12T17:10:42+00:00",
+  "spec_rebinds": [
+   {
+    "from": "0361331049b76fb871b613af9add0f232274fe98e43495091f067ce787ef1fc9",
+    "to": "22e1f3a26a329f7852aed1ca0ba588dca34cab4cee980f55b629e9d8a03cebf6",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-WHITE-COURT-ARCHER": {
   "family": "monster",
@@ -4596,7 +5460,7 @@
   "title": "White Court Executioner",
   "heading_id": "h-white-court-executioner-elite",
   "route": "gpt",
-  "spec_sha256": "33ee8f08ff8e653eebb8b6364cadeebb49fa6a38385e7600b870e50fc874d36b",
+  "spec_sha256": "3f32f9740050c3ba22652b30cb092159b9ff1fe2b247db584bc98ad547974ca2",
   "prompt_sha256": "1a4384072d7bcbff04cd00a9602dc1a97143242777d9547b8290056ba3859fed",
   "status": "approved",
   "received_at": "2026-10-12T16:35:41+00:00",
@@ -4623,7 +5487,16 @@
    "max_print_w_in_300ppi": 2.717
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T17:10:42+00:00"
+  "approved_at": "2026-10-12T17:10:42+00:00",
+  "spec_rebinds": [
+   {
+    "from": "33ee8f08ff8e653eebb8b6364cadeebb49fa6a38385e7600b870e50fc874d36b",
+    "to": "3f32f9740050c3ba22652b30cb092159b9ff1fe2b247db584bc98ad547974ca2",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-WHITE-COURT-GUARD": {
   "family": "monster",
@@ -4664,7 +5537,7 @@
   "title": "White Court Sentinel",
   "heading_id": "h-white-court-sentinel-brute",
   "route": "gpt",
-  "spec_sha256": "c7e365f659045423be2c16dba67701397ed7c6cc255fe43651965c87487935ff",
+  "spec_sha256": "3a87338bcd96b2f1fda4626516ad36b83f1e4f869e956460adaac01e7d53c5a8",
   "prompt_sha256": "edbb83e812f075218318e2a08478c2fac539268f6d4e5f5393ac1a8764c4a690",
   "status": "approved",
   "received_at": "2026-10-12T16:43:26+00:00",
@@ -4691,14 +5564,23 @@
    "max_print_w_in_300ppi": 3.807
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T17:10:42+00:00"
+  "approved_at": "2026-10-12T17:10:42+00:00",
+  "spec_rebinds": [
+   {
+    "from": "c7e365f659045423be2c16dba67701397ed7c6cc255fe43651965c87487935ff",
+    "to": "3a87338bcd96b2f1fda4626516ad36b83f1e4f869e956460adaac01e7d53c5a8",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-WHITE-DRAGON": {
   "family": "monster",
   "title": "White Dragon",
   "heading_id": "h-white-dragon-elite",
   "route": "gpt",
-  "spec_sha256": "c4f26c906e745f72bb0aa7a17576382519c5a88ea00dc7ea9c21c3afec764888",
+  "spec_sha256": "df875fd049d37b38a9fa0c2ab2e8b4070331f2ba873da867b24156950fc3e458",
   "prompt_sha256": "afe4c481e147292ada495f97f859c963b8a6461aedb51efcec713fd80438ebae",
   "status": "approved",
   "received_at": "2026-10-12T16:47:07+00:00",
@@ -4725,14 +5607,23 @@
    "max_print_w_in_300ppi": 3.953
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T17:10:42+00:00"
+  "approved_at": "2026-10-12T17:10:42+00:00",
+  "spec_rebinds": [
+   {
+    "from": "c4f26c906e745f72bb0aa7a17576382519c5a88ea00dc7ea9c21c3afec764888",
+    "to": "df875fd049d37b38a9fa0c2ab2e8b4070331f2ba873da867b24156950fc3e458",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-WILL-O-WISP": {
   "family": "monster",
   "title": "Will-o'-Wisp",
   "heading_id": "h-will-o-wisp-cannon",
   "route": "gpt",
-  "spec_sha256": "c306d966eccc084124d6d219e8f5128a3957198bd12d8548e0e1359f2722df03",
+  "spec_sha256": "92ce6162f3d6af57947a262b7bda7c574d0afc0821781fdc9bf8795828ba0548",
   "prompt_sha256": "929a3fe3aaadaca39a9a22d7ce68863015e764e640b6a33647bc4563be399c9e",
   "status": "approved",
   "received_at": "2026-10-12T16:50:26+00:00",
@@ -4759,14 +5650,23 @@
    "max_print_w_in_300ppi": 2.853
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T17:10:42+00:00"
+  "approved_at": "2026-10-12T17:10:42+00:00",
+  "spec_rebinds": [
+   {
+    "from": "c306d966eccc084124d6d219e8f5128a3957198bd12d8548e0e1359f2722df03",
+    "to": "92ce6162f3d6af57947a262b7bda7c574d0afc0821781fdc9bf8795828ba0548",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-WIND-ELEMENTAL": {
   "family": "monster",
   "title": "Wind Elemental",
   "heading_id": "h-wind-elemental-skirmisher",
   "route": "gpt",
-  "spec_sha256": "cd79c88c1e4b2121c2a14d442604d4e08d67096dd8f7982bd445e7f703b40398",
+  "spec_sha256": "89fb2fe757a330251ec4784671aa33de4371a59f49d6328dea42fd48a8eabb04",
   "prompt_sha256": "4fdac1f67711d0e8935350f67b50a27988945b0f5d2f8382240b93462cd805e1",
   "status": "approved",
   "received_at": "2026-10-12T16:54:09+00:00",
@@ -4793,14 +5693,23 @@
    "max_print_w_in_300ppi": 3.853
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T17:10:42+00:00"
+  "approved_at": "2026-10-12T17:10:42+00:00",
+  "spec_rebinds": [
+   {
+    "from": "cd79c88c1e4b2121c2a14d442604d4e08d67096dd8f7982bd445e7f703b40398",
+    "to": "89fb2fe757a330251ec4784671aa33de4371a59f49d6328dea42fd48a8eabb04",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-ZOMBIE": {
   "family": "monster",
   "title": "Zombie",
   "heading_id": "h-zombie-minion",
   "route": "gpt",
-  "spec_sha256": "e136020372028394ff0bebe835c9e3bc1d9486d4e4a4688854558dc8ba5b091c",
+  "spec_sha256": "727d071aa98ab5eb3af2d3710dde88ebaee59e63354b9f39d39bd4787f8b4643",
   "prompt_sha256": "fc17ebe6a11217eeb338f64227971697798debfc5fa1b43178a0c6d0e7dac73d",
   "status": "approved",
   "received_at": "2026-10-12T17:22:47+00:00",
@@ -4827,7 +5736,16 @@
    "max_print_w_in_300ppi": 3.617
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T02:18:39+00:00"
+  "approved_at": "2026-10-13T02:18:39+00:00",
+  "spec_rebinds": [
+   {
+    "from": "e136020372028394ff0bebe835c9e3bc1d9486d4e4a4688854558dc8ba5b091c",
+    "to": "727d071aa98ab5eb3af2d3710dde88ebaee59e63354b9f39d39bd4787f8b4643",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-CLA-ASSASSIN": {
   "family": "class",
@@ -5582,7 +6500,7 @@
   "title": "Avatar of the Old Growth",
   "heading_id": "h-avatar-of-the-old-growth-boss",
   "route": "gpt",
-  "spec_sha256": "6894b209b0ebb165516df774fffac91a908bf5adec2949642d9e9ff7c874a05d",
+  "spec_sha256": "56bc3f2895d8311dec74ce60fa7e0be63ae1d3a2e0201252df045fcb8ad61796",
   "prompt_sha256": "b936c30f647e3318bb22af32308d560cbe05bb4611fd0971491e364365950ad0",
   "status": "approved",
   "received_at": "2026-10-12T18:20:23+00:00",
@@ -5609,7 +6527,16 @@
    "max_print_w_in_300ppi": 5.04
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T02:18:39+00:00"
+  "approved_at": "2026-10-13T02:18:39+00:00",
+  "spec_rebinds": [
+   {
+    "from": "6894b209b0ebb165516df774fffac91a908bf5adec2949642d9e9ff7c874a05d",
+    "to": "56bc3f2895d8311dec74ce60fa7e0be63ae1d3a2e0201252df045fcb8ad61796",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN": {
   "family": "boss",
@@ -5650,7 +6577,7 @@
   "title": "Khorrun the Dracolich",
   "heading_id": "h-khorrun-the-dracolich-boss",
   "route": "gpt",
-  "spec_sha256": "6d24dabc0c45583c2e21925a4001ae7c754aae3a4a7e896bc3ec4bc426ab9ed3",
+  "spec_sha256": "119cadc228cd1f4e677745d6037d506fcb1474ac9fcc6ccb382f440b46401d93",
   "prompt_sha256": "860f17e03c396273984fa240b3fbf44b3f1e4973be3a8752b8216cb68dd40741",
   "status": "approved",
   "received_at": "2026-10-12T18:28:34+00:00",
@@ -5677,14 +6604,23 @@
    "max_print_w_in_300ppi": 5.107
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T02:18:39+00:00"
+  "approved_at": "2026-10-13T02:18:39+00:00",
+  "spec_rebinds": [
+   {
+    "from": "6d24dabc0c45583c2e21925a4001ae7c754aae3a4a7e896bc3ec4bc426ab9ed3",
+    "to": "119cadc228cd1f4e677745d6037d506fcb1474ac9fcc6ccb382f440b46401d93",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-MAELTHORN-THE-VERDANT": {
   "family": "boss",
   "title": "Maelthorn the Verdant",
   "heading_id": "h-maelthorn-the-verdant-boss",
   "route": "gpt",
-  "spec_sha256": "b348e710eea9e8b4009219fe37884e78b1a1dbf7cd3fd10b41fdfdfaa6f38480",
+  "spec_sha256": "baeb2b87283a013b981c38f5832587d567bbc0015cb74a1d1e2331899a5cea57",
   "prompt_sha256": "6fb2b2ba410c98470544fb29482959038036b95b93f332702047e91a312cb22f",
   "status": "approved",
   "received_at": "2026-10-12T18:33:20+00:00",
@@ -5711,14 +6647,23 @@
    "max_print_w_in_300ppi": 5.113
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T02:18:39+00:00"
+  "approved_at": "2026-10-13T02:18:39+00:00",
+  "spec_rebinds": [
+   {
+    "from": "b348e710eea9e8b4009219fe37884e78b1a1dbf7cd3fd10b41fdfdfaa6f38480",
+    "to": "baeb2b87283a013b981c38f5832587d567bbc0015cb74a1d1e2331899a5cea57",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-SIRRACH-THE-BLACK": {
   "family": "boss",
   "title": "Sirrach the Black",
   "heading_id": "h-sirrach-the-black-boss",
   "route": "gpt",
-  "spec_sha256": "91ac76f3d0d1845d822938d69ae4db4fd9b87ab7e65e4a1de1bce7f3ee6274c3",
+  "spec_sha256": "b2c50d2bc2fb254c235e79aa016f752086777ab1e85649b85261b48aff63e38c",
   "prompt_sha256": "482ee9b4a8864ea728017e4612cd11210622134157e12f01777efc92cb61f99e",
   "status": "approved",
   "received_at": "2026-10-12T18:37:42+00:00",
@@ -5745,14 +6690,23 @@
    "max_print_w_in_300ppi": 5.05
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T02:18:39+00:00"
+  "approved_at": "2026-10-13T02:18:39+00:00",
+  "spec_rebinds": [
+   {
+    "from": "91ac76f3d0d1845d822938d69ae4db4fd9b87ab7e65e4a1de1bce7f3ee6274c3",
+    "to": "b2c50d2bc2fb254c235e79aa016f752086777ab1e85649b85261b48aff63e38c",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-THE-ANCIENT-VOID-DRAGON": {
   "family": "boss",
   "title": "The Ancient Void Dragon",
   "heading_id": "h-the-ancient-void-dragon-boss",
   "route": "gpt",
-  "spec_sha256": "fd608a5f78e5e5ee7d606852a1034449660597f2aea0de3583352fa45d4a7cfb",
+  "spec_sha256": "3d2275f121fc59539ad77e439679f69b1e5ca7edd771d4512564ec322be029b1",
   "prompt_sha256": "d0ba863f39267c5580f874f321489a753d5f3786e1241ea2525286b6f5d95861",
   "status": "approved",
   "received_at": "2026-10-12T18:41:52+00:00",
@@ -5779,14 +6733,23 @@
    "max_print_w_in_300ppi": 5.09
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T02:18:39+00:00"
+  "approved_at": "2026-10-13T02:18:39+00:00",
+  "spec_rebinds": [
+   {
+    "from": "fd608a5f78e5e5ee7d606852a1034449660597f2aea0de3583352fa45d4a7cfb",
+    "to": "3d2275f121fc59539ad77e439679f69b1e5ca7edd771d4512564ec322be029b1",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE": {
   "family": "boss",
   "title": "The Antlered Warden of the Tithe",
   "heading_id": "h-the-antlered-warden-of-the-tithe-boss",
   "route": "gpt",
-  "spec_sha256": "48e9ba7f59ebc2af9fb5e1d1ae5f716965ebe8fb50351cfe778383ecf9bd0e64",
+  "spec_sha256": "415b5d54b623114f6829a660d20f3acdf4a6c7644eb815b7e97d6c1bb91534ab",
   "prompt_sha256": "ae1ceedfb1e1fcdd9d06452855c1fe68035760283995e161ea867b2efea39670",
   "status": "approved",
   "received_at": "2026-10-12T18:49:07+00:00",
@@ -5813,14 +6776,23 @@
    "max_print_w_in_300ppi": 5.09
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T02:18:39+00:00"
+  "approved_at": "2026-10-13T02:18:39+00:00",
+  "spec_rebinds": [
+   {
+    "from": "48e9ba7f59ebc2af9fb5e1d1ae5f716965ebe8fb50351cfe778383ecf9bd0e64",
+    "to": "415b5d54b623114f6829a660d20f3acdf4a6c7644eb815b7e97d6c1bb91534ab",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-THE-BROODMOTHER-PRIME": {
   "family": "boss",
   "title": "The Broodmother Prime",
   "heading_id": "h-the-broodmother-prime-boss",
   "route": "gpt",
-  "spec_sha256": "e4e1b8e15cc97acec5c88dab49858da0e0faf28dd07e9328cad80af1701bade2",
+  "spec_sha256": "1f187dadef476c4e99425d632c14792c8bec48d9059bf7449a81d76af8f01848",
   "prompt_sha256": "667d79ed2354128b4f0e4f8191d15f3fcb28b2bb6624c01bc4a4f98be5acdb07",
   "status": "approved",
   "received_at": "2026-10-12T22:08:15+00:00",
@@ -5847,14 +6819,23 @@
    "max_print_w_in_300ppi": 5.117
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T02:18:39+00:00"
+  "approved_at": "2026-10-13T02:18:39+00:00",
+  "spec_rebinds": [
+   {
+    "from": "e4e1b8e15cc97acec5c88dab49858da0e0faf28dd07e9328cad80af1701bade2",
+    "to": "1f187dadef476c4e99425d632c14792c8bec48d9059bf7449a81d76af8f01848",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-THE-FROST-BAILIFF-MAGISTRATE": {
   "family": "boss",
   "title": "The Frost Bailiff Magistrate",
   "heading_id": "h-the-frost-bailiff-magistrate-boss",
   "route": "gpt",
-  "spec_sha256": "82219337332a43ed2f4813413cc65e49c4d5a000788c73c6e0be7ebf98876610",
+  "spec_sha256": "0da26632bfcf0e6be3040df1131418697be469c1ef46c133a4d7577f54923ef1",
   "prompt_sha256": "6b6f10703fd6341ae10b01fb7611f66fcf103206ef72b72b56a34a4d5a7065c3",
   "status": "approved",
   "received_at": "2026-10-12T22:11:47+00:00",
@@ -5881,14 +6862,23 @@
    "max_print_w_in_300ppi": 5.073
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T02:18:39+00:00"
+  "approved_at": "2026-10-13T02:18:39+00:00",
+  "spec_rebinds": [
+   {
+    "from": "82219337332a43ed2f4813413cc65e49c4d5a000788c73c6e0be7ebf98876610",
+    "to": "0da26632bfcf0e6be3040df1131418697be469c1ef46c133a4d7577f54923ef1",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS": {
   "family": "boss",
   "title": "The Hollow Crown of the Ashlands",
   "heading_id": "h-the-hollow-crown-of-the-ashlands-boss",
   "route": "gpt",
-  "spec_sha256": "d6ef9f2ccd392d0eaffed36784b7a388d4c0d501dbd17c80d01afc065282b419",
+  "spec_sha256": "229fb369dfe768e670b9d3fb98f009d888fb55bcbdc6e3792ffee49e1e6dbcae",
   "prompt_sha256": "dc0d1f11260c6cf632278ab5e00975c51e5906f44a98b091af49c055d6ea1fcf",
   "status": "approved",
   "received_at": "2026-10-12T22:16:00+00:00",
@@ -5915,7 +6905,16 @@
    "max_print_w_in_300ppi": 5.033
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T02:18:39+00:00"
+  "approved_at": "2026-10-13T02:18:39+00:00",
+  "spec_rebinds": [
+   {
+    "from": "d6ef9f2ccd392d0eaffed36784b7a388d4c0d501dbd17c80d01afc065282b419",
+    "to": "229fb369dfe768e670b9d3fb98f009d888fb55bcbdc6e3792ffee49e1e6dbcae",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-THE-SUN-CROWNED-PRINCE": {
   "family": "boss",
@@ -5956,7 +6955,7 @@
   "title": "The Voice Beneath the Bells",
   "heading_id": "h-the-voice-beneath-the-bells-boss",
   "route": "gpt",
-  "spec_sha256": "42e36ee4ce493024bdfa9a25551046521f9d08c2e8a5a214f7261bbd4e8d5b42",
+  "spec_sha256": "396f99d609e4a96e50f2e063716ced3f3e83185d2f7604f69146ec526d7249a0",
   "prompt_sha256": "22b758fca45a49c9556639c15243f4621b6417c7d99206f0b1bfedf4d8e2b892",
   "status": "approved",
   "received_at": "2026-10-12T22:23:52+00:00",
@@ -5983,14 +6982,23 @@
    "max_print_w_in_300ppi": 5.097
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T02:18:39+00:00"
+  "approved_at": "2026-10-13T02:18:39+00:00",
+  "spec_rebinds": [
+   {
+    "from": "42e36ee4ce493024bdfa9a25551046521f9d08c2e8a5a214f7261bbd4e8d5b42",
+    "to": "396f99d609e4a96e50f2e063716ced3f3e83185d2f7604f69146ec526d7249a0",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-VISATH-THE-WHITE": {
   "family": "boss",
   "title": "Visath the White",
   "heading_id": "h-visath-the-white-boss",
   "route": "gpt",
-  "spec_sha256": "6293c783ba1eb27a98cd2e3c4c1831e49b8142f1e040c52c370fb63d54e9550f",
+  "spec_sha256": "06c966d6b272e22cc6ee92a5e3bcc091fcb2b92c5906980c3ad947bff4b0b185",
   "prompt_sha256": "b44f2190e9496270e9da4b517a6ed613f8cf6d31132c7b61eb049e7888d43bdb",
   "status": "approved",
   "received_at": "2026-10-12T22:28:10+00:00",
@@ -6017,14 +7025,23 @@
    "max_print_w_in_300ppi": 5.093
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T02:18:39+00:00"
+  "approved_at": "2026-10-13T02:18:39+00:00",
+  "spec_rebinds": [
+   {
+    "from": "6293c783ba1eb27a98cd2e3c4c1831e49b8142f1e040c52c370fb63d54e9550f",
+    "to": "06c966d6b272e22cc6ee92a5e3bcc091fcb2b92c5906980c3ad947bff4b0b185",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL": {
   "family": "boss",
   "title": "Vossegar of the Flooded Cathedral",
   "heading_id": "h-vossegar-of-the-flooded-cathedral-boss",
   "route": "gpt",
-  "spec_sha256": "af254a12b92e58d080a6ddaf038b09790131e63942bb7b6f96d1797b9ff30e09",
+  "spec_sha256": "03e7259267d39b69c27a531f98221a0339ebd85003f71c2dec9d8862261ce3a5",
   "prompt_sha256": "b537881bf1e509e221377a2910009985077fea25fa472aaf88006b81c4251235",
   "status": "approved",
   "received_at": "2026-10-12T22:31:53+00:00",
@@ -6051,7 +7068,16 @@
    "max_print_w_in_300ppi": 5.093
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T02:18:39+00:00"
+  "approved_at": "2026-10-13T02:18:39+00:00",
+  "spec_rebinds": [
+   {
+    "from": "af254a12b92e58d080a6ddaf038b09790131e63942bb7b6f96d1797b9ff30e09",
+    "to": "03e7259267d39b69c27a531f98221a0339ebd85003f71c2dec9d8862261ce3a5",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI": {
   "family": "scenario",
@@ -6534,7 +7560,7 @@
   "title": "Scenario 3: The Mire Titan's Fen",
   "heading_id": "h-scenario-3-the-mire-titans-fen",
   "route": "gpt",
-  "spec_sha256": "c51c8169e049f1a83dda1c5133c33f2aa9c7b9682435da41a70b44f8db3c9e55",
+  "spec_sha256": "724c06f9bb27bafdfc3fb74944da7793186cb2afc03b8b086717bd1ac2fa35b8",
   "prompt_sha256": "86499778a81485f2bcc36f753db93cc7af1363d765ec9c57d3cbfc56204207c5",
   "status": "approved",
   "received_at": "2026-10-13T08:17:23+00:00",
@@ -6561,7 +7587,16 @@
    "max_print_w_in_300ppi": 5.11
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T12:42:49+00:00"
+  "approved_at": "2026-10-13T12:42:49+00:00",
+  "spec_rebinds": [
+   {
+    "from": "c51c8169e049f1a83dda1c5133c33f2aa9c7b9682435da41a70b44f8db3c9e55",
+    "to": "724c06f9bb27bafdfc3fb74944da7793186cb2afc03b8b086717bd1ac2fa35b8",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-SCE-SCENARIO-3-THE-QUAKE": {
   "family": "scenario",
@@ -6738,7 +7773,7 @@
   "title": "Scenario 4: The Sandwyrm's Lair",
   "heading_id": "h-scenario-4-the-sandwyrms-lair",
   "route": "gpt",
-  "spec_sha256": "edad176384025f19f312977fdebba67d760729ee48fbfd8085765abb90b4aef0",
+  "spec_sha256": "eb97590521e1e33639ba74813860d697fee4d463b1f72b373478143d51b3207b",
   "prompt_sha256": "2cd198c4a4fdb3de7fa41179b478c141daaa9b7f1edd21a2cb3bd117787e158e",
   "status": "approved",
   "received_at": "2026-10-13T08:54:44+00:00",
@@ -6765,14 +7800,23 @@
    "max_print_w_in_300ppi": 5.07
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T12:42:49+00:00"
+  "approved_at": "2026-10-13T12:42:49+00:00",
+  "spec_rebinds": [
+   {
+    "from": "edad176384025f19f312977fdebba67d760729ee48fbfd8085765abb90b4aef0",
+    "to": "eb97590521e1e33639ba74813860d697fee4d463b1f72b373478143d51b3207b",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE": {
   "family": "scenario",
   "title": "Scenario 4: The Sealed Archive",
   "heading_id": "h-scenario-4-the-sealed-archive",
   "route": "gpt",
-  "spec_sha256": "9dac6ce3357de7a83e1f94144ec0ffe6e9234917c624d811d9a69e067ac32862",
+  "spec_sha256": "ad1a111d04377bf8473d4cc0f754042df8563cb09234611ab723cbfe9b4a2acf",
   "prompt_sha256": "74115583a9f7ed4fd100b660b48f59bcbae925d28db33ab1d15a1d82749dfc2d",
   "status": "approved",
   "received_at": "2026-10-13T09:01:14+00:00",
@@ -6799,7 +7843,16 @@
    "max_print_w_in_300ppi": 5.077
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T12:42:49+00:00"
+  "approved_at": "2026-10-13T12:42:49+00:00",
+  "spec_rebinds": [
+   {
+    "from": "9dac6ce3357de7a83e1f94144ec0ffe6e9234917c624d811d9a69e067ac32862",
+    "to": "ad1a111d04377bf8473d4cc0f754042df8563cb09234611ab723cbfe9b4a2acf",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE": {
   "family": "scenario",
@@ -6942,7 +7995,7 @@
   "title": "Scenario 5: The Cursed Colossus of the Waste",
   "heading_id": "h-scenario-5-the-cursed-colossus-of-the-waste",
   "route": "gpt",
-  "spec_sha256": "8bde30b4ecc32e980b36b1c77e0d6e809b66de563de602ceac3f56502329901d",
+  "spec_sha256": "cc7a756f503c040dc4770430ac6e04ac1bcc6ce6f7d6c51d355d52508c9b5948",
   "prompt_sha256": "996a69a24c5e5e876284974ff6e48ab8f88f9e4558007b7fc6b4eebe70ab353e",
   "status": "approved",
   "received_at": "2026-10-13T09:25:03+00:00",
@@ -6969,7 +8022,16 @@
    "max_print_w_in_300ppi": 5.093
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T12:42:49+00:00"
+  "approved_at": "2026-10-13T12:42:49+00:00",
+  "spec_rebinds": [
+   {
+    "from": "8bde30b4ecc32e980b36b1c77e0d6e809b66de563de602ceac3f56502329901d",
+    "to": "cc7a756f503c040dc4770430ac6e04ac1bcc6ce6f7d6c51d355d52508c9b5948",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD": {
   "family": "scenario",
@@ -7112,7 +8174,7 @@
   "title": "Scenario 6: The Cinder Lord's Obsidian Prison",
   "heading_id": "h-scenario-6-the-cinder-lords-obsidian-prison",
   "route": "gpt",
-  "spec_sha256": "fc397da05d82faf7a58ce2bf71206cdefe8f61cb0f2a1fa5e3193db76ee93d32",
+  "spec_sha256": "dcfff5d2e247b69e53f1a96e4141861cf4625d4bba5d4654ea82864861de4f61",
   "prompt_sha256": "212ac0973dc24d7da1536572b7274da188ed00823420c59e9ed34d1eb653a55f",
   "status": "approved",
   "received_at": "2026-10-13T09:51:59+00:00",
@@ -7139,7 +8201,16 @@
    "max_print_w_in_300ppi": 5.02
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T12:42:49+00:00"
+  "approved_at": "2026-10-13T12:42:49+00:00",
+  "spec_rebinds": [
+   {
+    "from": "fc397da05d82faf7a58ce2bf71206cdefe8f61cb0f2a1fa5e3193db76ee93d32",
+    "to": "dcfff5d2e247b69e53f1a96e4141861cf4625d4bba5d4654ea82864861de4f61",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT": {
   "family": "scenario",
@@ -7180,7 +8251,7 @@
   "title": "Scenario 6: The Iron-Vein Vault",
   "heading_id": "h-scenario-6-the-iron-vein-vault",
   "route": "gpt",
-  "spec_sha256": "dee2808a1a8656dac9481e99a61439a469ac7d04d408506a4398697ea2600bd7",
+  "spec_sha256": "e06fc0a81ed0f3d7595d9beff03bc83d51b56c1da2f310e5c5fd47c9e3172581",
   "prompt_sha256": "f0a2e6968b92787b0cc62e3622d672aa1a19623e33fe85264160cc43f1e69397",
   "status": "approved",
   "received_at": "2026-10-13T10:06:32+00:00",
@@ -7207,7 +8278,16 @@
    "max_print_w_in_300ppi": 5.097
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T12:42:49+00:00"
+  "approved_at": "2026-10-13T12:42:49+00:00",
+  "spec_rebinds": [
+   {
+    "from": "dee2808a1a8656dac9481e99a61439a469ac7d04d408506a4398697ea2600bd7",
+    "to": "e06fc0a81ed0f3d7595d9beff03bc83d51b56c1da2f310e5c5fd47c9e3172581",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING": {
   "family": "scenario",
@@ -7248,7 +8328,7 @@
   "title": "Scenario 6: The Serpent's Sunken Hoard",
   "heading_id": "h-scenario-6-the-serpents-sunken-hoard",
   "route": "gpt",
-  "spec_sha256": "7a033584a07affccb9fa21a49f1b18aa6c292f8e3cd9ef8254056221eefe932d",
+  "spec_sha256": "ec3be4ac62ddfd38805c311921d72844af45f019f1a93f10881dd8f8aec7feee",
   "prompt_sha256": "30217de446c92df89c71f58a24a4d4f0d56b8441dd06e43d78241e6cd02cf64b",
   "status": "approved",
   "received_at": "2026-10-13T10:20:57+00:00",
@@ -7275,7 +8355,16 @@
    "max_print_w_in_300ppi": 5.04
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T12:42:49+00:00"
+  "approved_at": "2026-10-13T12:42:49+00:00",
+  "spec_rebinds": [
+   {
+    "from": "7a033584a07affccb9fa21a49f1b18aa6c292f8e3cd9ef8254056221eefe932d",
+    "to": "ec3be4ac62ddfd38805c311921d72844af45f019f1a93f10881dd8f8aec7feee",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-WOR-1-3-1-THE-FALL": {
   "family": "world",
@@ -8644,7 +9733,7 @@
   "title": "Noble",
   "heading_id": "h-noble",
   "route": "gpt",
-  "spec_sha256": "e07b70492cd7f2165bedbeedf104a8f85c9971050eb8c49fce7248937cd1c146",
+  "spec_sha256": "78132509f56c3a57236cd608dc94f633b5110b2cea1609ee9d2e64978f2f05e8",
   "prompt_sha256": "56df74322bb2a824bf38d408a22b3b83563f2dd18447ef7d8d259c87dc4be2cc",
   "status": "approved",
   "received_at": "2026-10-13T20:55:29+00:00",
@@ -8671,14 +9760,23 @@
    "max_print_w_in_300ppi": 4.113
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "spec_rebinds": [
+   {
+    "from": "e07b70492cd7f2165bedbeedf104a8f85c9971050eb8c49fce7248937cd1c146",
+    "to": "78132509f56c3a57236cd608dc94f633b5110b2cea1609ee9d2e64978f2f05e8",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "brief gained the correction notes this redo already follows; image re-viewed: rapier lies on the tabletop with cushion, ring, banner, and goblet. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-BAC-NOMAD": {
   "family": "background",
   "title": "Nomad",
   "heading_id": "h-nomad",
   "route": "gpt",
-  "spec_sha256": "d6e9f8fe00ea8a7645b90709a3cf63a4b848fa1e6ac6fe0ca009bcb2ee0d7371",
+  "spec_sha256": "4f32dbca93b5462fbf3bd259b4b39397d1f95bfec441e3c0907824fb6798dc75",
   "prompt_sha256": "d4d3a5ec92800aede6ff19bc146a10d66847bb0e21220467c57887b98954509c",
   "status": "approved",
   "received_at": "2026-10-14T02:30:42+00:00",
@@ -8705,7 +9803,16 @@
    "max_print_w_in_300ppi": 4.18
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-14T03:07:13+00:00"
+  "approved_at": "2026-10-14T03:07:13+00:00",
+  "spec_rebinds": [
+   {
+    "from": "d6e9f8fe00ea8a7645b90709a3cf63a4b848fa1e6ac6fe0ca009bcb2ee0d7371",
+    "to": "4f32dbca93b5462fbf3bd259b4b39397d1f95bfec441e3c0907824fb6798dc75",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "brief gained the correction notes this redo already follows; image re-viewed: soft rolled hide bundle with cords and a curved sheathed scimitar. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-BAC-PAUPER": {
   "family": "background",
@@ -8848,7 +9955,7 @@
   "title": "Scout",
   "heading_id": "h-scout",
   "route": "gpt",
-  "spec_sha256": "c981240625aa67bba11cc363495cd732926f092b42fa5bf349aca87051e2ff6e",
+  "spec_sha256": "758802f163fa6fe6858976c73e05700e6417bbd218ac1f8bace3f84b145d585d",
   "prompt_sha256": "1833ccf92036ff0c1962775a5a74776ade9eaf1c4455ee374dc40eda66980999",
   "status": "approved",
   "received_at": "2026-10-13T21:13:44+00:00",
@@ -8875,7 +9982,16 @@
    "max_print_w_in_300ppi": 4.113
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "spec_rebinds": [
+   {
+    "from": "c981240625aa67bba11cc363495cd732926f092b42fa5bf349aca87051e2ff6e",
+    "to": "758802f163fa6fe6858976c73e05700e6417bbd218ac1f8bace3f84b145d585d",
+    "at": "2026-10-29T14:57:24+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "brief gained the correction notes this redo already follows; image re-viewed: plain wool cloak, shortbow, paw-print stone, compass, and knife. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   }
+  ]
  },
  "ART-BAC-SHEPHERD": {
   "family": "background",
@@ -9358,7 +10474,7 @@
   "title": "Ashborn",
   "heading_id": "h-ashborn",
   "route": "gpt",
-  "spec_sha256": "0c01886faf5cd54e23d7e224cc7943323848d57d59319433bd2d3fcb9258ec6a",
+  "spec_sha256": "7cb666b49c493871a27f942da907eb0ccf32529c1ced9ac2651cfde824a6abb1",
   "prompt_sha256": "d812f9983b8c68ead3a213c202a0f6d84e0cae1aa1cbae5636cce02739bd1f6a",
   "status": "approved",
   "received_at": "2026-10-22T17:38:58+00:00",
@@ -9399,7 +10515,16 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "0c01886faf5cd54e23d7e224cc7943323848d57d59319433bd2d3fcb9258ec6a",
+    "to": "7cb666b49c493871a27f942da907eb0ccf32529c1ced9ac2651cfde824a6abb1",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-BLACKKNIFE": {
   "family": "hero",
@@ -9454,7 +10579,7 @@
   "title": "Cairnwrath",
   "heading_id": "h-cairnwrath",
   "route": "gpt",
-  "spec_sha256": "95b52cbc9b134b11543ea18be3e461ac23c80eb3b8cf11b65c6e95c40af61ade",
+  "spec_sha256": "2abc0a06997378c74013a4c6c1f3f3738b1267b0584fa0b00f1889bb534f0467",
   "prompt_sha256": "16b91bdd204b3d1d63a22cdc799389ca6429d720b2ae326fd83d4685f69bc2ee",
   "status": "approved",
   "received_at": "2026-10-22T17:38:59+00:00",
@@ -9495,7 +10620,16 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "95b52cbc9b134b11543ea18be3e461ac23c80eb3b8cf11b65c6e95c40af61ade",
+    "to": "2abc0a06997378c74013a4c6c1f3f3738b1267b0584fa0b00f1889bb534f0467",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-CROWWICK": {
   "family": "hero",
@@ -9550,7 +10684,7 @@
   "title": "Dawnwarden",
   "heading_id": "h-dawnwarden",
   "route": "gpt",
-  "spec_sha256": "f59a9b9b2491e3863a2d438dd49698a60707919b99adc9e08686e4d9d60b0408",
+  "spec_sha256": "89d9ef58939104ffc2caa5df35f63c7de4ba8182a198db94f5f8b5eb013ebc81",
   "prompt_sha256": "b9db165c3fd3996b8c19464fb45a88fc0f24d04dcef5d1e553658a83a7b6f05f",
   "status": "approved",
   "received_at": "2026-10-22T17:39:00+00:00",
@@ -9591,14 +10725,23 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "f59a9b9b2491e3863a2d438dd49698a60707919b99adc9e08686e4d9d60b0408",
+    "to": "89d9ef58939104ffc2caa5df35f63c7de4ba8182a198db94f5f8b5eb013ebc81",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-EMBERVOW": {
   "family": "hero",
   "title": "Embervow",
   "heading_id": "h-embervow",
   "route": "gpt",
-  "spec_sha256": "ab274de92c2c63d66e935cf8c8600d6a67f20c00b5a1e7cf09c751255047d782",
+  "spec_sha256": "824a2c74febcc0cf004a771edca6ac3fcd28e6737f09c9e56282f6d8a409609e",
   "prompt_sha256": "80c146caff53e3a195e7b8b0205869d0e7bbeac39e3114a7832bec5858d5c25d",
   "status": "approved",
   "received_at": "2026-10-22T17:39:01+00:00",
@@ -9639,7 +10782,16 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "ab274de92c2c63d66e935cf8c8600d6a67f20c00b5a1e7cf09c751255047d782",
+    "to": "824a2c74febcc0cf004a771edca6ac3fcd28e6737f09c9e56282f6d8a409609e",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-FURROWROOT": {
   "family": "hero",
@@ -9790,7 +10942,7 @@
   "title": "Gildmirror",
   "heading_id": "h-gildmirror",
   "route": "gpt",
-  "spec_sha256": "d4e7f190f2410d7133a3f52051ab8f7b3f88e295e8ad9fbaf02d628dddd8354c",
+  "spec_sha256": "9375d72bb109d77e8b0f3da8081fae8639ad8c08856d954e1eec30624deddaef",
   "prompt_sha256": "9b26ac8f96e993f5d4777410d0369688c01899419c39c0d6007702d458eec666",
   "status": "approved",
   "received_at": "2026-10-22T17:39:03+00:00",
@@ -9831,14 +10983,23 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "d4e7f190f2410d7133a3f52051ab8f7b3f88e295e8ad9fbaf02d628dddd8354c",
+    "to": "9375d72bb109d77e8b0f3da8081fae8639ad8c08856d954e1eec30624deddaef",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-GNAWTHOUGHT": {
   "family": "hero",
   "title": "Gnawthought",
   "heading_id": "h-gnawthought",
   "route": "gpt",
-  "spec_sha256": "50864242f72b08a060368b7ab60eb1daf562995f0352f31d69470796fc5d99fd",
+  "spec_sha256": "bec861a90d70f3caf1486e0e3bb2bacb914b45681b8ed40011bc9c21cb538791",
   "prompt_sha256": "0ad42621ef5d6b81a883432979323ad09c844ed74417a7585df91371247dd307",
   "status": "approved",
   "received_at": "2026-10-22T17:39:04+00:00",
@@ -9879,14 +11040,23 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "50864242f72b08a060368b7ab60eb1daf562995f0352f31d69470796fc5d99fd",
+    "to": "bec861a90d70f3caf1486e0e3bb2bacb914b45681b8ed40011bc9c21cb538791",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-GRAVEGLASS": {
   "family": "hero",
   "title": "Graveglass",
   "heading_id": "h-graveglass",
   "route": "gpt",
-  "spec_sha256": "f47a826c9ee5c175c10d124cb5eacbc6d91701d8434c79ea6941c5a268659e84",
+  "spec_sha256": "1f0ad387c407837befdc07c5cfaf5e2cd9177c2c450b6aabd1f9dfcc4abb23d5",
   "prompt_sha256": "257429363aff6b7566bc53392736706dc4902d20b4a36876201cbfb187e37a79",
   "status": "approved",
   "received_at": "2026-10-22T17:39:04+00:00",
@@ -9927,14 +11097,23 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "f47a826c9ee5c175c10d124cb5eacbc6d91701d8434c79ea6941c5a268659e84",
+    "to": "1f0ad387c407837befdc07c5cfaf5e2cd9177c2c450b6aabd1f9dfcc4abb23d5",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-HEARTHBELL": {
   "family": "hero",
   "title": "Hearthbell",
   "heading_id": "h-hearthbell",
   "route": "gpt",
-  "spec_sha256": "311e8e335714b498aea1baab8204aecf4989678b9cdc27c3c69221a954b9be51",
+  "spec_sha256": "96bab5dca6f4e29e1c969db09585020e7aa29e9ed5feb2a5d1bfa031cc2c219c",
   "prompt_sha256": "86a72e0bad824595cbc6dcf1e5c70d930c08e48c7a88d2f7f3cc6d52e1047cb8",
   "status": "approved",
   "received_at": "2026-10-22T17:39:05+00:00",
@@ -9975,14 +11154,23 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "311e8e335714b498aea1baab8204aecf4989678b9cdc27c3c69221a954b9be51",
+    "to": "96bab5dca6f4e29e1c969db09585020e7aa29e9ed5feb2a5d1bfa031cc2c219c",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-IRONSCAR": {
   "family": "hero",
   "title": "Ironscar",
   "heading_id": "h-ironscar",
   "route": "gpt",
-  "spec_sha256": "ccf11f7dcd1387ae3be17bcdacacf20bbf6ec810be59222ab191911abb6608d1",
+  "spec_sha256": "f62be25af417246bac5b28f7b3146a8fd9fd0bc41e64be80a3e19c1bfc39374b",
   "prompt_sha256": "7056a9ebff8167284ed8636618eee710678ea0c36caa8c4fa6374429815b8941",
   "status": "approved",
   "received_at": "2026-10-22T17:39:06+00:00",
@@ -10023,14 +11211,23 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "ccf11f7dcd1387ae3be17bcdacacf20bbf6ec810be59222ab191911abb6608d1",
+    "to": "f62be25af417246bac5b28f7b3146a8fd9fd0bc41e64be80a3e19c1bfc39374b",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-MOSSGRAVE": {
   "family": "hero",
   "title": "Mossgrave",
   "heading_id": "h-mossgrave",
   "route": "gpt",
-  "spec_sha256": "436d0b04095aa51189f81c128bf78b1e8716e9dd258409cf8412a21ae6abbd00",
+  "spec_sha256": "17f9a7cff9167313720b12bd4488934c429e5ed7074e3f3e307308a5f583c51d",
   "prompt_sha256": "7d07ccc9e622e37afec4fd27fbb427318c1e8f4e974f3f8ca2c68dd8e3a5a5f2",
   "status": "approved",
   "received_at": "2026-10-22T17:39:06+00:00",
@@ -10071,14 +11268,23 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "436d0b04095aa51189f81c128bf78b1e8716e9dd258409cf8412a21ae6abbd00",
+    "to": "17f9a7cff9167313720b12bd4488934c429e5ed7074e3f3e307308a5f583c51d",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-NIGHTLOOM": {
   "family": "hero",
   "title": "Nightloom",
   "heading_id": "h-nightloom",
   "route": "gpt",
-  "spec_sha256": "78113a9b06149a45d7f5e920c22276d5293cc03471cab48aa14027468e4959cb",
+  "spec_sha256": "f10f184c6a52924d0c8c96c3b9d238e2eeaeef69b996d5b4843f6ebaef9b9d8a",
   "prompt_sha256": "97733bc73c2e0be1052219b3615cbf4ccd9019f1a5eddf1ea74b13a2ef96f0d5",
   "status": "approved",
   "received_at": "2026-10-22T17:39:07+00:00",
@@ -10119,14 +11325,23 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "78113a9b06149a45d7f5e920c22276d5293cc03471cab48aa14027468e4959cb",
+    "to": "f10f184c6a52924d0c8c96c3b9d238e2eeaeef69b996d5b4843f6ebaef9b9d8a",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-OATHSCALE": {
   "family": "hero",
   "title": "Oathscale",
   "heading_id": "h-oathscale",
   "route": "gpt",
-  "spec_sha256": "09eb892ae692be9a0c91cadafd390a9728160eac401f7507d0bcf359af559cef",
+  "spec_sha256": "5444c8e0d159f7beb03d850f9b1cb5f5c9a5ea4436533fb8ed02919683ae88ef",
   "prompt_sha256": "3480e661863b6077dbb370ea8655bcd775841291212efef4b8ef9d6c86a79842",
   "status": "approved",
   "received_at": "2026-10-22T17:39:08+00:00",
@@ -10167,14 +11382,23 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "09eb892ae692be9a0c91cadafd390a9728160eac401f7507d0bcf359af559cef",
+    "to": "5444c8e0d159f7beb03d850f9b1cb5f5c9a5ea4436533fb8ed02919683ae88ef",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-REDHAND": {
   "family": "hero",
   "title": "Redhand",
   "heading_id": "h-redhand",
   "route": "gpt",
-  "spec_sha256": "44753671ab3b2ab85f81bc876099cca4dbf43ac590b7ec261338784fedd6c132",
+  "spec_sha256": "8243f3314a702034968e79b5f70a5ae123ee4f4e89bcde67e31469e8a1900688",
   "prompt_sha256": "bc61ffd00f0cce88755178f1b284763a50121be011908073a958cfd21387ff7b",
   "status": "approved",
   "received_at": "2026-10-22T17:39:09+00:00",
@@ -10215,14 +11439,23 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "44753671ab3b2ab85f81bc876099cca4dbf43ac590b7ec261338784fedd6c132",
+    "to": "8243f3314a702034968e79b5f70a5ae123ee4f4e89bcde67e31469e8a1900688",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-SILKSHADE": {
   "family": "hero",
   "title": "Silkshade",
   "heading_id": "h-silkshade",
   "route": "gpt",
-  "spec_sha256": "56928bbd28f3872ece5831aa0dc9bc46333d6e4eef0f679b54e98cb2cf1fa947",
+  "spec_sha256": "27de15758f5416a857429f514f2be1b77cd209a12154dbe67754dbb6f2bba3a9",
   "prompt_sha256": "71cc5f9d51793a934e82ea72c91238c0c4290293940945dc4acff6045a8f8036",
   "status": "approved",
   "received_at": "2026-10-22T17:39:09+00:00",
@@ -10263,14 +11496,23 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "56928bbd28f3872ece5831aa0dc9bc46333d6e4eef0f679b54e98cb2cf1fa947",
+    "to": "27de15758f5416a857429f514f2be1b77cd209a12154dbe67754dbb6f2bba3a9",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-SOOTFINGER": {
   "family": "hero",
   "title": "Sootfinger",
   "heading_id": "h-sootfinger",
   "route": "gpt",
-  "spec_sha256": "27ad728f36924529f1178cea9419078b83cdc1b115873f995ba001ba52c99238",
+  "spec_sha256": "0d42410c1a918e312e461a2d99ce57706f300d5a5bd11253881c9db8a36d34ef",
   "prompt_sha256": "be62a00d3e75bff36179f76f5b7c1fb5058ecc08e3cfa355cf489c130fc5764b",
   "status": "approved",
   "received_at": "2026-10-22T17:39:10+00:00",
@@ -10311,14 +11553,23 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "27ad728f36924529f1178cea9419078b83cdc1b115873f995ba001ba52c99238",
+    "to": "0d42410c1a918e312e461a2d99ce57706f300d5a5bd11253881c9db8a36d34ef",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-STARCINDER": {
   "family": "hero",
   "title": "Starcinder",
   "heading_id": "h-starcinder",
   "route": "gpt",
-  "spec_sha256": "a830805d90d118312425f6fb0d9d440c85cb92193fb19f3203066000b44374c6",
+  "spec_sha256": "06f17531a20bc1364d69e4c24c0273b90d65ffd75858ff1a75cc2fa677f66545",
   "prompt_sha256": "211f3f29b31ed02af2812f8e4835b40018c3fd234870ae19f0b3facfa599f6d6",
   "status": "approved",
   "received_at": "2026-10-22T17:39:10+00:00",
@@ -10359,7 +11610,16 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "a830805d90d118312425f6fb0d9d440c85cb92193fb19f3203066000b44374c6",
+    "to": "06f17531a20bc1364d69e4c24c0273b90d65ffd75858ff1a75cc2fa677f66545",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  },
  "ART-HER-STORMCROOK": {
   "family": "hero",
@@ -10462,7 +11722,7 @@
   "title": "Thoughtwake",
   "heading_id": "h-thoughtwake",
   "route": "gpt",
-  "spec_sha256": "cba67c2ca2f612f5ff8a3bc4855101cc2adb224bf69b31eb67ad2c238c664ebd",
+  "spec_sha256": "c985b0caff97f7642bcc3c48967791f2e5bdb8c303ded99fbd35171f5be6665a",
   "prompt_sha256": "b33f1b738ea076bd99476548771eadc2809198d60943a6baf9fe2b8c2b38e2ae",
   "status": "approved",
   "received_at": "2026-10-22T17:39:13+00:00",
@@ -10503,6 +11763,15 @@
    "approval_basis": "Owner reviewed V1, V2, and V3 comparisons and directed that all V1 basic hero portraits be committed."
   },
   "approved_at": "2026-10-22T17:39:56+00:00",
-  "approved_by": "owner (explicit selection, 2026-10-22)"
+  "approved_by": "owner (explicit selection, 2026-10-22)",
+  "spec_rebinds": [
+   {
+    "from": "cba67c2ca2f612f5ff8a3bc4855101cc2adb224bf69b31eb67ad2c238c664ebd",
+    "to": "c985b0caff97f7642bcc3c48967791f2e5bdb8c303ded99fbd35171f5be6665a",
+    "at": "2026-10-29T14:58:35+00:00",
+    "by": "Claude (Opus 5.5), design review 2026-10-29",
+    "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
+   }
+  ]
  }
 }

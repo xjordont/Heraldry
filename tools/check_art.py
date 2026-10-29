@@ -41,6 +41,19 @@ def main():
             if hashlib.sha256(ink.read_bytes()).hexdigest() != s["ink"]["sha256"]:
                 raise ValueError(f"{aid}: ink derivative differs from its selection record")
         print(f"PASS: {len(sels)} generated ink derivatives match SELECTIONS.json")
+        # An approval bound to an older catalogue spec is silently left out of the book by the
+        # placement filter (124 pieces were, until the 2026-10-29 design review). Fail instead, so a
+        # changed source is reviewed and re-bound, or the piece is redone.
+        cat_path = ROOT / "production/art/SPOT_CATALOG.json"
+        if cat_path.exists():
+            cat = {e["id"]: e["spec_sha256"] for e in json.loads(cat_path.read_text())["entries"]}
+            stale = sorted(aid for aid, s in sels.items()
+                           if s.get("status") in {"approved", "anchor-approved", "auto-selected"}
+                           and aid in cat and s.get("spec_sha256") != cat[aid])
+            if stale:
+                raise ValueError(f"{len(stale)} approved pieces are bound to an outdated catalogue spec and "
+                                 f"would be omitted from the book; review and re-bind or redo: {', '.join(stale[:12])}")
+            print("PASS: every approved piece is bound to its current catalogue spec")
 
 
 if __name__ == "__main__":

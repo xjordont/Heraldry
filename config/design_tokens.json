@@ -11,7 +11,8 @@
     "outside_margin_pt": 42,
     "top_margin_pt": 45,
     "bottom_margin_pt": 45,
-    "column_gap_pt": 16.2
+    "column_gap_pt": 16.2,
+    "thumb_tab_clearance_pt": 3
   },
   "substrate": {
     "default": "warm_cream",
@@ -110,8 +111,8 @@
           ]
         },
         "scope": "full",
-        "reviewed_content_sha256": "1161a8b4b084f22883426b5903ea3b976a31b2f05af0804f468c25b8f1fc805a",
-        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
+        "reviewed_content_sha256": "844bdfcfa263fdb62f27900ed8a883e7d70c5799f7d596e4b54ec0344703119a",
+        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents. Re-reviewed 2026-10-29 against RC522 cells: full width still required; widths now from the cell-aware allocator."
       },
       "potions-tier-2": {
         "selector": {
@@ -128,8 +129,8 @@
           ]
         },
         "scope": "full",
-        "reviewed_content_sha256": "27bd69652e090363dcc9d9902b2676d5df21afb81932e4a54130804daf8a1aa8",
-        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
+        "reviewed_content_sha256": "c740703dd54a1eab948ec67f0e69f9b9eb96a971373a0eb59aeed43fd7ea9ad4",
+        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents. Re-reviewed 2026-10-29 against RC522 cells: full width still required; widths now from the cell-aware allocator."
       },
       "potions-tier-3": {
         "selector": {
@@ -164,8 +165,8 @@
           ]
         },
         "scope": "full",
-        "reviewed_content_sha256": "bac57fb61703d1dbb13795bc9f689e5cccb5d07cb15f9ba7ef51cd63e4a59cff",
-        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
+        "reviewed_content_sha256": "f49ba833e13d5c9ce411f6be0907427bae73405d24bbe29b45fcee0dc737028f",
+        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents. Re-reviewed 2026-10-29 against RC522 cells: full width still required; widths now from the cell-aware allocator."
       },
       "potions-tier-5": {
         "selector": {
@@ -182,8 +183,8 @@
           ]
         },
         "scope": "full",
-        "reviewed_content_sha256": "00865077eee3efe31ee52475a84c32af6680866c13fb2945e260b0e8e68c5757",
-        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
+        "reviewed_content_sha256": "524b86231d9000a73cfe061fee9e39fd4ecd0789a4cdcad7ef186ccb12d13238",
+        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents. Re-reviewed 2026-10-29 against RC522 cells: full width still required; widths now from the cell-aware allocator."
       },
       "poisons-tier-1": {
         "selector": {
@@ -200,8 +201,8 @@
           ]
         },
         "scope": "full",
-        "reviewed_content_sha256": "498816830fd9489631fb4d191aa28d1dc4eabf73735d4517dec671c290c3825e",
-        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
+        "reviewed_content_sha256": "3576627ad25921b7bfca07349208832401482f2bdf6a57c93a24245818091099",
+        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents. Re-reviewed 2026-10-29 against RC522 cells: full width still required; widths now from the cell-aware allocator."
       },
       "poisons-tier-2": {
         "selector": {
@@ -218,8 +219,8 @@
           ]
         },
         "scope": "full",
-        "reviewed_content_sha256": "0e7dbef21e38da0c34833047a8874bfb3906b1238c6d3ea4172126355f9f317d",
-        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
+        "reviewed_content_sha256": "b45873f371ca3a2ddb3cf0d021c0d6f60b432e2ff9dcc53557607845af5a55df",
+        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents. Re-reviewed 2026-10-29 against RC522 cells: full width still required; widths now from the cell-aware allocator."
       },
       "poisons-tier-3": {
         "selector": {
@@ -236,8 +237,8 @@
           ]
         },
         "scope": "full",
-        "reviewed_content_sha256": "15b3ef6a3d7b8613144022f65c472c75e7073859bbefdd995c78233ce7b105c3",
-        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
+        "reviewed_content_sha256": "1e8ef00ccc3e5bff431a7e95ca8e2b4c87f6c4dff526db98e75dd73c34926fea",
+        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents. Re-reviewed 2026-10-29 against RC522 cells: full width still required; widths now from the cell-aware allocator."
       },
       "poisons-tier-4": {
         "selector": {
@@ -254,8 +255,8 @@
           ]
         },
         "scope": "full",
-        "reviewed_content_sha256": "d474cf9a9978c75adc9440e7b63781cd5a0a31ad7961c8b214fc70f202807e5c",
-        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
+        "reviewed_content_sha256": "237b5e1c4ac879ca5eb3861288f68e7bec1317c405b121d7d149863d604e0dd3",
+        "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents. Re-reviewed 2026-10-29 against RC522 cells: full width still required; widths now from the cell-aware allocator."
       },
       "poisons-tier-5": {
         "selector": {
@@ -287,8 +288,27 @@
           ]
         },
         "scope": "full",
-        "reviewed_content_sha256": "e5c4b5339f002fc63b6bfd1779740536e5b6d8fd2e1d872ba460f5757b34eed4",
-        "reason": "Actual-source 9 pt width trial, 2026-10-20: complete C.14 heading, intro, table and notes fit in 488.595 pt at full width. Preserve every cell and source paragraph."
+        "reviewed_content_sha256": "20def73eed5e65c5e54a6b1692964eb6199e49834a5a100792ed326e3306b37b",
+        "reason": "Actual-source 9 pt width trial, 2026-10-20: complete C.14 heading, intro, table and notes fit in 488.595 pt at full width. Preserve every cell and source paragraph. Re-reviewed 2026-10-29 against RC522 cells: full width still required; widths now from the cell-aware allocator."
+      },
+      "combat-reactions-summary": {
+        "selector": {
+          "heading_path": [
+            "Rules Reference",
+            "Single-Sheet Rules Summary",
+            "Side A: Round, Actions, and Combat",
+            "Combat Reactions"
+          ],
+          "headers": [
+            "Reaction",
+            "Cost",
+            "Trigger",
+            "Summary"
+          ]
+        },
+        "scope": "full",
+        "reviewed_content_sha256": "35c13eae2429e83a81d777b0356ccf431ee4804a4cffd6476b24767ae7c31133",
+        "reason": "Design review 2026-10-29: four columns in one 254 pt text column set the Reflex Attack trigger at 12 lines. Full width keeps every cell and reads as one ledger."
       }
     }
   }

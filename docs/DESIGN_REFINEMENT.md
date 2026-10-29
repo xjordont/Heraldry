@@ -51,7 +51,7 @@ The owner's objective is coherent sections, with breaks before significant new h
 | Heading followed by prose | Keep at least three body lines, or the whole short opening paragraph, with the heading |
 | Heading followed by list/procedure | Keep two complete short items, or the first substantive step if steps are lengthy; do not strand a step label |
 | Short table/stat profile | Keep caption/header/rows/necessary note together if the measured unit fits an empty destination column/page |
-| Long table | Split at row or logical group boundaries; repeat headers and identifying continuation label; avoid an isolated first/last row where feasible |
+| Long table | Split at row or logical group boundaries; repeat headers and identifying continuation label; the first three and last three rows always travel together (a table of five rows or fewer never splits), carried by an invisible zero-width spanning cell |
 | Figure | Keep graphic, legend and caption together; keep deployment figure with the relevant setup rather than an unrelated later scenario |
 
 Do not force every minor heading to a fresh page: it would fragment the reference material and inflate the print stack. Body paragraphs should retain natural flow with a two-line start/end target for widows/orphans. Fit-capable sections, scenarios, tables and entries are mandatory one-page keeps; genuinely over-height parents continue without breaking fit-capable children. A unit taller than the available frame must have a documented continuation path. Do not shrink essential type below 9 pt, omit content, clip a frame or use a landscape fallback.
@@ -96,3 +96,17 @@ Measure rendered height, not manuscript length or character counts. A section ex
 Only genuinely over-height units may continue to another page, with repeat table headers or identifying continuation and intact smaller child units. Record their source IDs, measured dimensions and reason. Never shrink type, omit notes/maps, clip content or artificially enlarge a unit to evade the keep rule. Intentional whitespace left by moving a complete unit is acceptable.
 
 Required release evidence: a current input/PDF-hash-bound audit covering every applicable stable source ID, its measured height and frame width/height, fit classification and actual PDF page set. Any fit-capable unit appearing on more than one page is a hard failure; missing audit coverage also fails the gate. Inspect boundary cases and actual pages, not just metadata. Implement this check in the renderer/layout audit and mandatory verification gate before the next illustrated release.
+
+
+## Design review repairs - 2026-10-29
+
+Owner instruction after the RC522 design review: "Fix everything to the best of your ability using your best judgment and best design layout principles." Layout and art repairs only; no manuscript text changed.
+
+- Thumb tabs end 3 pt short of the text frame (`thumb_tab_clearance_pt`). Rotated keywords sit with their glyph ink between the 27 pt safe line and the tab's engraved inner line; the inkjet verifier, layout QA, and tests measure rotated keywords by glyph outlines because Grenze Gotisch's 1.1 em ascender metric is far taller than its letters.
+- Tables: a hidden duplicate title no longer leaves a blank line under its heading; `Cost (c)` keeps its coin on one line; numeric ranges never break after the en dash; the closing brush takes no height, so it cannot fall alone onto the next page; column widths go where they remove the most wrapped lines (scope decisions keep the reviewed proportional rule).
+- Basic Mode profiles: a run-in label merged with its list no longer glues the following piece, so profile subsections balance as separate pieces instead of one block.
+- Short chapter introductions (one to three plain paragraphs, at most 700 characters, before the first section) are set as one standfirst at the opener's 82% measure.
+- Balanced tails: a complete column unit that opens with its heading (an ancestry, a Monster, an item) is a whole balancing piece. Only a bare heading travels with the next piece. Treating whole units as bare headings had merged every unit of a tail into one piece and walked the tail back to the segment start, which stranded the 6.9 Ancestries introduction alone on its page.
+- Index: the last index page is balanced into three whole-entry columns of near-equal height; a column never starts with a sub-entry or ends with a letter head.
+- Back cover: the approved ART-COVER-002 party scene sits between the blurb and the game facts; the crest flourish under the frame's own crest is omitted, and the blurb is set at 4.8 in for an even rag.
+- Fresh pages for numbered sections are kept, as the owner instructed on 2026-10-12. The Bestiary keeps one Monster per column (BOOK_DESIGN_PLAN 6.15); its half-empty columns came mainly from missing portraits, now restored.

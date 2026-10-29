@@ -1,10 +1,13 @@
 # Printing HERALDRY SKIRMISH {{VERSION}} at home (borderless US Letter)
 
 Files
-* `Heraldry_{{VERSION}}_inkjet-borderless.pdf` — interior, warm cream page tone to every edge.
-* `Heraldry_{{VERSION}}_inkjet-borderless-white.pdf` — identical interior on paper white (use on cream stock or to save ink). Same pages, same page numbers.
-* `Heraldry_{{VERSION}}_covers-front-back.pdf` (and `-white`) — front cover (page 1) and back cover (page 2), Letter portrait.
-* `Heraldry_{{VERSION}}_inkjet-calibration.pdf` — one diagnostic sheet. Print it first.
+* `Heraldry_{{VERSION}}_inkjet-borderless.pdf`: interior, warm cream page tone to every edge.
+* `Heraldry_{{VERSION}}_inkjet-borderless-white.pdf`: identical interior on paper white (use on cream stock or to save ink). Same pages, same page numbers.
+* `Heraldry_{{VERSION}}_covers-front-back.pdf` (and `-white`): front cover (page 1) and back cover (page 2), Letter portrait.
+* `Heraldry_{{VERSION}}_inkjet-calibration.pdf`: one diagnostic sheet. Print it first.
+* `Heraldry_{{VERSION}}_digital.pdf`: the screen edition, with covers, bookmarks, and links. Read it on screen; print from the inkjet files.
+* `Heraldry_{{VERSION}}_hero-record-blank.pdf`: the illustrated blank Hero record, one double-sided sheet.
+* `Heraldry_{{VERSION}}_basic-heroes.pdf`: the 24 ready-to-play Basic Mode Heroes, one double-sided sheet each.
 
 Settings (application print dialog)
 1. Paper size **Letter**, orientation **portrait**, **one PDF page per sheet**.
@@ -17,6 +20,9 @@ Calibration check (before printing the book)
 * The 1-inch square measures 1 inch.
 * The solid **3/8 SAFE** frame is fully visible on all four sides. The book keeps all text, folios and diagram labels at least 3/8 inch from every edge; if your printer crops into this frame, reduce borderless expansion.
 * 9 pt text and the 0.3 pt rule are legible; table bands are visible but light; hatch lines stay separate; the cream tone reaches every edge.
+
+Hero records
+Print the Hero record files at **100%** on Letter, double-sided, flipping on the **long edge**. They are not borderless; ordinary printer margins are fine.
 
 Double-sided printing
 The interior has facing-page margins (wider inside margin on the binding side; odd pages are right-hand pages). Test duplex on 4 pages first: confirm flip on the **long edge** and that page 2 backs page 1 the right way up. If automatic duplex is not available for borderless printing on your printer, print odd pages, reinsert the stack as the manual-duplex instructions of your printer describe, then print even pages.
