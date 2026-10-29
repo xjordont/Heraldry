@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`b34c456f`](https://github.com/xjordont/Heraldry/commit/b34c456fd4675c9b812f53f744b9e60076eca4b6) Figures: remap source-line citations to RC522; stop the remapper corrupting dates and URLs
 - [`35633762`](https://github.com/xjordont/Heraldry/commit/35633762404dad9f15edcdc586658f56deb69e7f) Hero records: label General Talents as General, not Class
 - [`6607c718`](https://github.com/xjordont/Heraldry/commit/6607c718bc3c56b11c16ad8e45054603b1135499) RC522: injury clarity fixes; Split Brow no longer applies Bleeding
 - [`0aaae67a`](https://github.com/xjordont/Heraldry/commit/0aaae67a4f42edbf466ef155a5979bf6f9fb9482) RC521: tone down Wolf and Great Shape; reprice enhanced Bucklers; end Cover overlap
 - [`50587055`](https://github.com/xjordont/Heraldry/commit/50587055bab56a7e4e484f000e774fbcec122492) RC520: revert Elite clause; simplify Commanding Presence; owner Tumble and Heartseeker; critique equipment changes
 - [`90c17069`](https://github.com/xjordont/Heraldry/commit/90c17069c376968e20ab3f1082154c70fccd5415) RC519: adopt the verified subset of the RC518 balance critique
-- [`5c870a7b`](https://github.com/xjordont/Heraldry/commit/5c870a7b2a36bb944f3680897fed58eaf6fcb37a) RC518: cumulative DEX Pen; equipment Max Speed reduced by 1 inch
 
 <!-- END AUTO:recent -->
 
