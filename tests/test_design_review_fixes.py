@@ -125,6 +125,40 @@ class BalanceTails(unittest.TestCase):
         self.assertNotIn("#bal(", out)
         self.assertEqual(out.count("#seg["), 1)
 
+    def test_short_balanced_last_page_pulls_back_the_previous_piece(self):
+        from build_book import compute_balance, BODY_BOTTOM
+        pm = [{"seg": 1, "piece": 0, "edge": "s", "page": 1, "x": 42, "y": 45},
+              {"seg": 1, "piece": 1, "edge": "s", "page": 1, "x": 316, "y": BODY_BOTTOM - 150},
+              {"seg": 1, "piece": 2, "edge": "s", "page": 2, "x": 42, "y": 45},
+              {"seg": 1, "piece": 3, "edge": "s", "page": 2, "x": 316, "y": 45},
+              {"seg": 1, "piece": 4, "edge": "e", "page": 2, "x": 316, "y": 75}]
+        sig = "v2:" + "a" * 64
+        self.assertEqual(compute_balance(pm, {"1": [sig, 2]}, {"1": sig}), {"1": [sig, 1]})
+        # a balanced tail of normal length keeps its start
+        pm[-1]["y"] = 400
+        self.assertEqual(compute_balance(pm, {"1": [sig, 2]}, {"1": sig}), {"1": [sig, 2]})
+
+    def test_table_too_tall_to_share_a_column_with_its_heading_splits_under_it(self):
+        book = Book.__new__(Book)
+        table = {"id": "T", "kind": "c", "typ": "table"}
+        book.measures = {"T": {"h1": 686.0}}
+        self.assertTrue(book.splits_under_heading([table]))
+        book.measures = {"T": {"h1": 600.0}}
+        self.assertFalse(book.splits_under_heading([table]))
+        book.measures = {"T": {"h1": 720.0}}
+        self.assertFalse(book.splits_under_heading([table]))
+
+    def test_refining_tail_is_not_mistaken_for_oscillation(self):
+        from build_book import stabilize_balance
+        flips, excluded, plan = {}, set(), {}
+        for tail in (6, 5, 4):
+            proposed = {"9": ["sig", tail]}
+            self.assertEqual(stabilize_balance(proposed, plan, flips, excluded), proposed)
+            plan = proposed
+        self.assertEqual(excluded, set())
+        self.assertEqual(stabilize_balance({"9": ["sig", 5]}, plan, flips, excluded), {})
+        self.assertEqual(excluded, {"9"})
+
     def test_walk_back_skips_only_bare_headings(self):
         from build_book import compute_balance
         pm = [{"seg": 1, "piece": 0, "edge": "s", "page": 1, "x": 42, "y": 45},
@@ -133,6 +167,15 @@ class BalanceTails(unittest.TestCase):
         heads = {"1:1": "a", "1:2": "b"}
         self.assertEqual(compute_balance(pm, {}, {"1": "sig"}, heads, hpos, set()), {"1": ["sig", 2]})
         self.assertEqual(compute_balance(pm, {}, {"1": "sig"}, heads, hpos, {"1:1"}), {"1": ["sig", 1]})
+
+
+class ProfileOpenings(unittest.TestCase):
+    def test_identification_lines_are_recognised(self):
+        from build_book import is_statline
+        line = lambda text: {"typ": "para", "kind": "c", "b": {"type": "para", "c": [{"t": "text", "v": text}]}}
+        self.assertTrue(is_statline(line("HP: 13 | AD: d2 (Chest) | SPD: 5\" | AP: 3")))
+        self.assertFalse(is_statline(line("A plain sentence without fields.")))
+        self.assertFalse(is_statline({"head": {}, "typ": "para", "kind": "c"}))
 
 
 class TypstComponents(unittest.TestCase):
