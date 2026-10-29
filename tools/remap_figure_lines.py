@@ -6,12 +6,15 @@
 Builds an exact old->new line map from a diff of the two immutable snapshots (equal and
 same-length replaced runs only) and applies it to every line citation in
 figures/src/scenario_specs.json (keys lines, shared, spans, insert_after_line, board_line) and
-to 4-5 digit line numbers in figures/src/*.py and inside free-text spec notes. A citation whose line was deleted is a hard
+to 4-5 digit line numbers in figures/src/*.py and inside free-text spec notes (dates and URLs are left alone). A citation whose line was deleted is a hard
 error: re-cite it by hand. Run `make figures` afterwards; its selfcheck verifies the cited text."""
 import argparse, difflib, json, re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+# A 4-5 digit line citation; never a year in a YYYY-MM-DD date or a number inside a URL or path
+# (e.g. the SVG namespace "http://www.w3.org/2000/svg").
+CITE = r"(?<![\w/.])\d{4,5}(?!-\d{2}-\d{2})(?![\w/])(?!\.\w)"
 
 
 def line_map(old, new):
@@ -48,7 +51,7 @@ def main():
                 elif k in ("insert_after_line", "board_line") and isinstance(v, int):
                     o[k] = mp(v, where)
                 elif isinstance(v, str) and k not in ("id", "label", "kind", "glyph", "status"):
-                    o[k] = re.sub(r"\b\d{4,5}\b", lambda mo: str(m.get(int(mo.group(0)), int(mo.group(0))))
+                    o[k] = re.sub(CITE, lambda mo: str(m.get(int(mo.group(0)), int(mo.group(0))))
                                   if int(mo.group(0)) <= n_old else mo.group(0), v)
                 else:
                     fix(v, o.get("id", where) if isinstance(o.get("id"), str) else where)
@@ -70,7 +73,7 @@ def main():
                 changed += 1
                 return str(m[v])
             return mo.group(0)
-        t2 = re.sub(r"\b\d{4,5}\b", r, t)
+        t2 = re.sub(CITE, r, t)
         if t2 != t:
             f.write_text(t2)
     if lost:
