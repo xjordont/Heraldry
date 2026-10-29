@@ -1,4 +1,15 @@
-# Production state - RC521 source, main
+# Production state - RC522 source, main
+
+## RC522 injury clarity fixes - 2026-10-28
+
+Owner instruction: apply the five injury fixes, keep the Hero record's "Wounds" label, and reconsider Bleeding at 1 HP on Lacerated and Split Brow. Applied through `manuscript apply` (+14 / -14 lines); RC522 SHA-256 `fad164ee8adf3fb6739d79945773a3283919ae504d731d980f3270ae3304a59e`.
+
+- Perforated Bowel counts only healing after the injury. Crushed Windpipe has a Max NRG floor of 0 and limits only the Hero's own activations. Broken Ribs has an AV floor of 0.
+- The inapplicable Decapitated clause is removed from the 5.8 avoidance sentence, 6.9 Determined Resolve, and the six B.4 Human profiles. The Ancient Tree keeps it, because that Hero still rolls.
+- Ruptured Eardrum gives Disadvantage on Spot Checks and Dodge, instead of -2 Initiative Bonus.
+- Split Brow no longer applies Bleeding (Lacerated keeps it), and the 5.8 example is updated.
+
+Hero records rebuilt (all 24 pass). FIG-19 re-bound; gate 57/57. No PDF build; physical print **NOT TESTED**.
 
 ## RC521 outstanding RC520 items resolved - 2026-10-28
 

@@ -1,4 +1,8 @@
-# Release status - RC521 source / RC492 delivery
+# Release status - RC522 source / RC492 delivery
+
+## RC522 manuscript - 2026-10-28
+
+RC522 is the active manuscript: it clarifies five Injuries Table entries and removes Bleeding from Split Brow. Hero records were rebuilt from RC522. The figure gate is 57/57. The book has not been built or released; the published delivery remains RC492-build-37. Physical print **NOT TESTED**.
 
 ## RC521 manuscript - 2026-10-28
 
