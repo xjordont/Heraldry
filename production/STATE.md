@@ -1,4 +1,15 @@
-# Production state - RC520 source, main
+# Production state - RC521 source, main
+
+## RC521 outstanding RC520 items resolved - 2026-10-28
+
+Owner instruction: "Fix all of those outstanding issues ... keep it simple and avoid rules bloat." Applied through `manuscript apply` (+7 / -7 lines); RC521 SHA-256 `74899e129e8510a66db2721fe7da3ba1156768b44381c27a8073632275d192fd`.
+
+- Wolf Shape (6.13 table and Mossgrave in B.4): a flanking **Bite** deals +2 piercing damage instead of rolling an extra die.
+- Great Shape keeps +1 AV and the chosen Apex Form; its extra natural-attack die and 1 NRG Wild Shape cost are removed. Forms now roll 1 die at Levels 1–3 and 2 from Level 4, with no third die.
+- Masterwork, Silvered, and Cold Iron Bucklers are valued at 5c, keeping the usual 2c premium over the new 3c Buckler.
+- Perfect Ambush deals +5 and no longer ignores Cover, which now belongs to Heartseeker.
+
+Hero records rebuilt (all 24 pass; Mossgrave's Wild Shape card prints the new Wolf text). FIG-19 re-bound; gate 57/57. No PDF build; physical print **NOT TESTED**.
 
 ## RC520 owner revisions to RC519 - 2026-10-28
 
@@ -9,7 +20,7 @@ Owner instructions: revert the Elite Monster change; rework the Fighter talent c
 - Tumble (6.12 and Gildmirror in B.4) upgrades the universal Shift [1 AP]; Heartseeker is +3 damage while Hidden and ignores Cover. Death Mark (auto-max die) and Shadow Jump [1 AP] from RC519 remain.
 - Equipment: Sabre loses Light (STR 1, DEX 3), and Silvered Sabre loses Light to match. Shortsword, Handaxe, Great Falchion, and Throwing Knives lose their DEX Req. Javelin needs DEX 1, and Mace needs STR 1. Great Falchion costs 10c, Scythe 12c, Glaive 14c, and Composite Bow 22c. Repeating Crossbow becomes 20c, STR 2, 1d6, and loses Heavy. Buckler costs 3c, Full Plate 52c, and Steel Lamellar 64c. Cleric Package A takes Hide Cuirass, and Fighter Package B gets its original Javelin back.
 
-`basic-heroes.json` re-extracted and Hero records rebuilt (all 24 pass). FIG-08, FIG-12, FIG-15, and FIG-19 re-reviewed and re-bound; gate 57/57. A Druid Wild Shape damage review with proposed fixes is held for owner approval (`claude/Heraldry_Druid_Forms_Review.md` in the claude.ai Project). No PDF build; physical print **NOT TESTED**.
+`basic-heroes.json` re-extracted and Hero records rebuilt (all 24 pass). FIG-08, FIG-12, FIG-15, and FIG-19 re-reviewed and re-bound; gate 57/57. A Druid Wild Shape damage review is in `claude/Heraldry_Druid_Forms_Review.md` (claude.ai Project); its fixes landed in RC521. No PDF build; physical print **NOT TESTED**.
 
 ## RC519 verified subset of an external balance critique - 2026-10-27
 
