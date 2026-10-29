@@ -67,6 +67,9 @@
 }
 
 #let version-text = json("../build/cover.json").version
+// Edition text names the current manuscript, so the colophon and How to Use never go stale.
+#let rc-code = version-text.find(regex("RC\d+"))
+#let edition-text(p) = p.replace("{{VERSION}}", version-text).replace("{{RC}}", if rc-code == none { version-text } else { rc-code })
 #let frontmatter(title: ("HERALDRY SKIRMISH", "THE DYING LANDS"), subtitle: [], version: []) = {
   if edition == "digital" {
     front-cover(title, emph(subtitle), version)
@@ -81,7 +84,7 @@
     #set text(font: sans, size: 9pt, fill: ink)
     #set par(leading: 3pt, spacing: 6pt)
     #block(width: 70%)[
-      #for p in how-to-use.colophon [#p #parbreak()]
+      #for p in how-to-use.colophon [#edition-text(p) #parbreak()]
     ]
   ]
   // How to use this book
@@ -90,7 +93,7 @@
   columns(2, gutter: gap)[
     #for s in how-to-use.sections [
       #heading(level: 4, outlined: false, bookmarked: false, s.heading)
-      #for p in s.paras [#p #parbreak()]
+      #for p in s.paras [#edition-text(p) #parbreak()]
     ]
   ]
   toc-page()

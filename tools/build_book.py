@@ -869,6 +869,17 @@ class Book:
                         and len(kids) > 1 and "head" not in kids[1] and kids[1]["kind"] == "c"
                         and small(kids[1])):
                     lead.append(kids[1])
+                elif is_statline(kids[0]):
+                    # A long profile's identification lines ("Class: ... | Level: 1", "HP: ... | AP: 3")
+                    # and its first subsection stay with its name, so the entry never opens at a column
+                    # foot with only its name and stats (design review 2026-10-29, B.4 profiles).
+                    j = 1
+                    while j < len(kids) and is_statline(kids[j]):
+                        lead.append(kids[j])
+                        j += 1
+                    if (j < len(kids) and "head" not in kids[j] and kids[j]["kind"] == "c"
+                            and kids[j]["typ"] == "list" and small(kids[j])):
+                        lead.append(kids[j])
             if lead:
                 for l in lead:
                     self.record(l, "keep-with-heading")
@@ -882,6 +893,19 @@ class Book:
                 cur.append((x["head"]["b"], f"#keepcol[{body.rstrip()}]\n"))
                 kids = kids[len(lead):]
                 after = False
+            elif self.splits_under_heading(kids):
+                # The first table fits a column but not beside its heading. Kept whole, Typst's sticky
+                # heading skipped a column and left the heading alone on its page (design review
+                # 2026-10-29, Climate 5 journey table). Start the pair where both columns of one page
+                # hold it, and let the table continue into the second column under its header.
+                self.flush(cur)
+                cur = []
+                need = self.measures[x["id"]]["h1"] + SPLIT_RESERVE
+                self.out.append(f"#split-start({need:.1f}pt)\n")
+                cur.append((x["head"]["b"], head))
+                cur = self.emit_leaf(kids[0], cur, split=True)
+                kids = kids[1:]
+                after = False
             else:
                 cur.append((x["head"]["b"], head))
                 after = after_heading
@@ -891,7 +915,14 @@ class Book:
                     f"#umark({lit(x['id'])}, \"e\")"))
         return cur, False
 
-    def emit_leaf(self, x, cur):
+    def splits_under_heading(self, kids):
+        """True when a node's first child is a fit-capable table too tall to share a column with the heading."""
+        if not kids or "head" in kids[0] or kids[0]["kind"] != "c" or kids[0]["typ"] != "table":
+            return False
+        m = self.measures.get(kids[0]["id"])
+        return bool(m) and m["h1"] <= FRAME_FIT < m["h1"] + HEADING_ALLOWANCE
+
+    def emit_leaf(self, x, cur, split=False):
         mid = x["id"]
         if x["kind"] == "f":
             self.flush(cur)
@@ -921,7 +952,7 @@ class Book:
         s = x["s"].rstrip("\n")
         body = f"#umark({lit(mid)}, \"s\"){s}#umark({lit(mid)}, \"e\")"
         wrapper = '#keepfigure' if x['typ'] == 'figure' else '#keepcol'
-        cur.append((x["b"], (f"{wrapper}[{body}]" if cls == "col" else body) + "\n"))
+        cur.append((x["b"], (f"{wrapper}[{body}]" if cls == "col" and not split else body) + "\n"))
         return cur
 
     def figs_for(self, b):
@@ -1038,10 +1069,24 @@ def compile_book(variant="cream", out=None, query=True, edition="print"):
 
 
 STRADDLE_MAX = 250
+MAX_TAIL_CHANGES = 5                     # within the cream build's 8 passes
+TINY_TAIL_PT = 180
+# Room a table split under its heading needs beyond its measured height: the repeated header in the
+# second column and the row group that cannot divide at the column break.
+SPLIT_RESERVE = 120
+HEADING_ALLOWANCE = 24                   # a run-in section heading and its spacing (measured 21.2 pt at level 4)
 TOP_Y = MARGIN_TOP_PT
 FRAME_H = BODY_HEIGHT_PT
 FRAME_FIT = FRAME_H - 12                 # measured component overhead and a documented boundary tolerance
 BODY_BOTTOM = PAGE_HEIGHT_PT - MARGIN_BOTTOM_PT
+
+
+def is_statline(k):
+    """A short identification line of an entry: plain paragraph with "Label: value | Label: value" fields."""
+    if "head" in k or k.get("typ") != "para" or k.get("kind") != "c":
+        return False
+    text = first_text_full(k["b"])
+    return len(text) < 300 and " | " in text
 
 
 def is_unit_piece(s):
@@ -1069,7 +1114,14 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None, bare=None):
         pt = pt[1] if valid_balance_entry(pt, sigs.get(str(sid))) else None
         byp = {m["piece"]: m for m in starts}
         on_last = [m for m in starts if m["page"] == L]
-        tiny_tail = (end.get('x', 0) < PAGE_WIDTH_PT / 2 and end['y'] < TOP_Y + 90 and len(on_last) <= 5)
+        # A short last page (about a dozen lines in one column, or half that in a tail already balanced
+        # over two) pulls back the piece that starts near the foot of the previous page; the run then
+        # either fits that page or gives the last page a fuller close (design review 2026-10-29,
+        # Scenario 1 tail). A natural run that merely spills into the second column is not short.
+        balanced = pt is not None and pt in byp and byp[pt]["page"] == L
+        in_first = end.get('x', 0) < PAGE_WIDTH_PT / 2
+        tiny_tail = len(on_last) <= 5 and ((in_first and end['y'] < TOP_Y + TINY_TAIL_PT)
+                                           or (balanced and not in_first and end['y'] < TOP_Y + TINY_TAIL_PT / 2))
         if pt is not None and pt in byp and byp[pt]["page"] == L and not tiny_tail:
             res[str(sid)] = [sigs[str(sid)], pt]
             continue
@@ -1112,9 +1164,15 @@ def stabilize_balance(proposed, previous, flips, excluded):
     result = dict(proposed)
     for key in set(result) | set(previous):
         if result.get(key) != previous.get(key) and key not in excluded:
-            flips[key] = flips.get(key, 0) + 1
-            if flips[key] > 2:
+            # A tail that returns to a plan it already had is oscillating. A tail that keeps moving to
+            # new plans is refining (a short last page pulls back one piece per pass) and may continue
+            # up to a bounded number of changes (design review 2026-10-29, Scenario 2 tail).
+            state = flips.setdefault(key, {'changes': 0, 'seen': [repr(previous.get(key))]})
+            state['changes'] += 1
+            value = repr(result.get(key))
+            if value in state['seen'] or state['changes'] > MAX_TAIL_CHANGES:
                 excluded.add(key)
+            state['seen'].append(value)
     for key in excluded:
         result.pop(key, None)
     return result

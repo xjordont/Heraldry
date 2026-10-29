@@ -385,6 +385,12 @@
   }
 }
 
+// A heading whose first table cannot share a column with it starts only where both columns of the
+// current page can hold the pair, so the table may continue into the second column but never onto
+// another page (`need`: measured height plus the repeated header and an undividable row group).
+#let split-start(need) = context {
+  if 2 * (body-bottom - here().position().y) < need { pagebreak(weak: true) }
+}
 #let full(body) = block(width: 100%, above: 6pt, below: 8pt, body)
 #let full-opening(body) = context {
   let height = measure(block(width: frame-w, body)).height

@@ -3,17 +3,17 @@
   "authority": "Edition navigation text added by the publication build (authorized addition). It describes the book's structure only and adds no rules.",
   "colophon": [
     "HERALDRY SKIRMISH: THE DYING LANDS",
-    "Release Candidate 484 (RC484).",
-    "This edition is typeset from the RC484 manuscript with seven authorized clarifications to its rules text (area-of-effect sources, Impassable Terrain Cover, default party deployment, and three setup placements). Contents, running heads, page numbers, figures, bookmarks and the index are navigation and explanatory additions of this edition.",
-    "Art-light edition: atmospheric illustrations are not included in this release; ornaments and rules diagrams are original vector drawings.",
-    "Typeset in Source Serif 4, Source Sans 3 and Cinzel, used under the SIL Open Font License 1.1.",
+    "{{VERSION}}.",
+    "This edition is typeset from the {{RC}} manuscript. Contents, running heads, page numbers, figures, bookmarks, and the index are navigation and explanatory additions of this edition.",
+    "Rules diagrams are original vector drawings.",
+    "Typeset in Source Serif 4, Source Sans 3, Grenze Gotisch, and IM FELL English, used under the SIL Open Font License 1.1.",
     "Formatted for borderless US Letter (8.5 × 11 in) printing."
   ],
   "sections": [
     {
       "heading": "Finding your way",
       "paras": [
-        "The rules are presented in eleven numbered chapters followed by Appendices A, B and C. Chapter and section numbers are those of the RC484 manuscript, and every cross-reference in the text uses them. This edition adds page numbers, running heads, a contents list, PDF bookmarks, hyperlinks and an index."
+        "The rules are presented in eleven numbered chapters followed by Appendices A, B, and C. Chapter and section numbers are those of the {{RC}} manuscript, and every cross-reference in the text uses them. This edition adds page numbers, running heads, a contents list, PDF bookmarks, hyperlinks, and an index."
       ]
     },
     {
@@ -27,7 +27,7 @@
       "heading": "Reading the page",
       "paras": [
         "Passages set entirely in italics describe the world. Worked examples are marked by a rule in the left margin.",
-        "Monster profiles open with a six-field stat line: HP, AV, SPD, LVL, CV and Sz. A few wide tables whose rows contain long rules text are set as entries: each source row becomes one entry, and every column heading is kept as a field label in its original order."
+        "Monster profiles carry a six-field stat line: HP, AV, SPD, LVL, CV, and Sz. A few wide tables whose rows contain long rules text are set as entries: each source row becomes one entry, and every column heading is kept as a field label in its original order."
       ]
     },
     {
@@ -39,7 +39,7 @@
     {
       "heading": "Index",
       "paras": [
-        "The index lists game terms, conditions, actions, terrain, procedures and campaign concepts with the pages where they are defined or applied. Page numbers refer to this edition only."
+        "The index lists game terms, conditions, actions, terrain, procedures, and campaign concepts with the pages where they are defined or applied. Page numbers refer to this edition only."
       ]
     }
   ]
