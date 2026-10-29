@@ -1,5 +1,11 @@
 # Production state - RC522 source, main
 
+## Hero record General Talent labels; owner publication decisions - 2026-10-28
+
+The populated Hero records labelled every non-NRG talent "Class / 1", including each Hero's Level 1 General Talent (22 Heroes, for example Ironscar's Bulwark and Gildmirror's Tumble). `assets/hero-record/sheet.py` now reads the General Talent names from 6.12 of the active manuscript and labels those talents "General / 1"; a parenthetical choice such as Weapon Specialist (Slashing) still matches. Starcinder's Sharp Mind costs NRG, so it stays in the Powers table under the existing rule. A new test requires every General Talent to be labelled General and no other talent to be. All 24 Heroes pass fit and fidelity; three reverses were inspected. No manuscript change.
+
+Owner decisions: title-page version line, author credit, publisher, copyright holder, and ISBN are on hold. A physical print proof is not required for this hobby project; physical print stays recorded as **NOT TESTED** but does not block a release. Stacked Chest and shield DEX Pen (for example, Full Plate plus Tower Shield at -8) is confirmed as written, closing that RC518 watch item.
+
 ## RC522 injury clarity fixes - 2026-10-28
 
 Owner instruction: apply the five injury fixes, keep the Hero record's "Wounds" label, and reconsider Bleeding at 1 HP on Lacerated and Split Brow. Applied through `manuscript apply` (+14 / -14 lines); RC522 SHA-256 `fad164ee8adf3fb6739d79945773a3283919ae504d731d980f3270ae3304a59e`.
