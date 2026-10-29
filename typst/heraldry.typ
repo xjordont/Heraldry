@@ -220,7 +220,7 @@
 }
 
 #let book(body) = {
-  set document(title: publication.verified_publication_metadata.title + " — " + publication.verified_publication_metadata.version)
+  set document(title: publication.verified_publication_metadata.title + ", " + publication.verified_publication_metadata.version)
   set page(
     width: page-w, height: page-h,
     fill: substrate,
@@ -459,6 +459,10 @@
 #let flavour(body) = block(above: 4pt, below: 7pt, v4.flavour-set(fell-body(body)))
 // Semantic opening only: generator emits this outside the ordinary two-column run.
 #let section-lead(body, width: 82%) = v4.lead-block(fell-body(body), width: width)
+// Short plain chapter introduction (one to three paragraphs before the first section): rules
+// prose in the body face at the opener's 82% measure, instead of a few lines in two columns.
+#let chapter-intro(body) = block(width: 100%, above: space-token.lead_above * 1pt, below: space-token.lead_below * 1pt + 4pt,
+  align(center, block(width: 82%, align(left, body))))
 // generated pen-and-ink spot art (transparent ink, so the page substrate shows through)
 #let spotart(path, w) = block(width: 100%, above: 4pt, below: 2pt, breakable: false, align(center, image(path, width: w)))
 
@@ -494,40 +498,67 @@
   if initial-title or is-continuation { identity } else { hide(identity) }
 }
 
+// Rows that never stand alone at a break: the first and last few rows of a long table travel
+// together, carried by an invisible zero-width column whose unbreakable cells span them (Typst
+// keeps every row a breakable: false cell spans in one region). A short table is one group.
+#let row-groups(n) = if n <= 5 { ((0, n),) } else { ((0, 3), (n - 3, n)) }
+#let grouped-rows(rows, n-cols, groups) = {
+  let out = ()
+  for (y, r) in rows.enumerate() {
+    let g = groups.find(((a, b)) => a <= y and y < b)
+    let extra = if g == none { (table.cell(inset: 0pt)[],) }
+      else if g.at(0) == y { (table.cell(rowspan: g.at(1) - g.at(0), breakable: false, inset: 0pt)[],) }
+      else { () }
+    out += r + extra
+  }
+  out
+}
+
 #let htable(id, widths, aligns, header, rows, kind: "table", title: none, initial-title: true, pre: none) = {
   set text(font: sans, size: table-size, top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining", number-width: "tabular", hyphenate: false)
   set par(leading: table-lead, spacing: 4pt, justify: false)
   set strong(delta: 200)
-  let al(x) = { let a = aligns.at(x); if a == left { left } else if a == right { right } else { center } }
-  let identity = table.cell(colspan: header.len(), fill: none, inset: (x: 0pt, top: 0pt, bottom: 3pt), align: left, table-identity(id, title, initial-title: initial-title))
+  let n-cols = header.len()
+  let al(x) = { if x >= n-cols { return left }; let a = aligns.at(x); if a == left { left } else if a == right { right } else { center } }
+  let identity = table.cell(colspan: n-cols + 1, fill: none, inset: (x: 0pt, top: 0pt, bottom: 3pt), align: left, table-identity(id, title, initial-title: initial-title))
+  let columns = widths.map(w => w * 1pt) + (0pt,)
+  let body = rows.map(r => r.enumerate().map(((x, c)) => if x == 0 and aligns.at(0) == left { strong(c) } else { c }))
+  let head-row = header.enumerate().map(((x, h)) => table.cell(fill: ink, align: al(x) + horizon, head-cell(h))) + (table.cell(inset: 0pt)[],)
   set table.cell(breakable: false)   // keep ordinary rows intact
-  block(width: 100%, above: space-token.table_above * 1pt, below: space-token.table_below * 1pt, breakable: true)[
+  block(width: 100%, above: space-token.table_above * 1pt, below: space-token.table_below * 1pt + 4pt, breakable: true)[
     #pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")
-    // the opening (rule, header band and about two rows) never splits from the heading above it
-    // The reserve measures the identity, header band, and first row at the actual profile, so a
-    // table with a tall first row cannot leave its heading and rule alone at the bottom of a column
+    // The opening (heading, header band and its first row group) never splits from the heading
+    // above it; the reserve measures them at the actual profile. When the table's own title is
+    // hidden because it repeats that heading, the table rises by the hidden row so that no blank
+    // line separates heading and header. The geometry never depends on the queried page.
     #context {
+      let groups = row-groups(body.len())
+      let opening = groups.first()
       let probe = coin-text(table(
-        columns: widths.map(w => w * 1pt),
+        columns: columns,
         inset: (x: table-x, y: table-y),
-        table.header(identity, ..header.enumerate().map(((x, h)) => table.cell(fill: ink, head-cell(h)))),
-        ..rows.slice(0, calc.min(1, rows.len())).map(r => r.enumerate().map(((x, c)) => if x == 0 and aligns.at(0) == left { strong(c) } else { c })).flatten(),
+        table.header(identity, ..head-row),
+        ..grouped-rows(body.slice(0, opening.at(1)), n-cols, ((0, opening.at(1)),)),
       ))
-      let reserve = measure(probe).height + 2.2pt
+      let lift = if initial-title { 0pt } else {
+        calc.max(0pt, measure(block(width: widths.sum() * 1pt, table-identity(id, title, initial-title: false))).height + 3pt - 4pt)
+      }
+      let reserve = measure(probe).height + 2.2pt - lift
+      v(-lift)
       block(breakable: false, height: reserve, above: 0pt, below: 0pt, none)
       v(-reserve)
     }
     #coin-text(table(
-      columns: widths.map(w => w * 1pt),
+      columns: columns,
       align: (x, y) => al(x) + horizon,
       inset: (x: table-x, y: table-y),
-      fill: (x, y) => if y < 2 { none } else if calc.even(y) { tint } else { none },
-      stroke: (x, y) => (bottom: if y < 2 { none } else { 0.35pt + hair }),
-      table.header(repeat: true, identity, ..header.enumerate().map(((x, h)) => table.cell(fill: ink, align: al(x) + horizon, head-cell(h)))),
-      ..rows.map(r => r.enumerate().map(((x, c)) => if x == 0 and aligns.at(0) == left { strong(c) } else { c })).flatten(),
+      fill: (x, y) => if y < 2 or x >= n-cols { none } else if calc.even(y) { tint } else { none },
+      stroke: (x, y) => (bottom: if y < 2 or x >= n-cols { none } else { 0.35pt + hair }),
+      table.header(repeat: true, identity, ..head-row),
+      ..grouped-rows(body, n-cols, row-groups(body.len())),
     ))
-    #v(-1pt)
-    #brush(weight: 2.2pt, seed: 5)
+    // The closing brush takes no height, so it can never fall alone onto the next page.
+    #block(height: 0pt, above: 0pt, below: 0pt, sticky: false)[#v(-1pt)#brush(weight: 2.2pt, seed: 5)]
     #tmark(id, "e")
   ]
 }
@@ -586,7 +617,7 @@
     }
   ]
   let continuation-height = measure(block(width: size.width, table-identity(id, title-label, continued: true))).height + 3pt
-  block(width: 100%, above: space-token.table_above * 1pt, below: space-token.table_below * 1pt, breakable: true)[
+  block(width: 100%, above: space-token.table_above * 1pt, below: space-token.table_below * 1pt + 4pt, breakable: true)[
     #pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")
     #coin-text(table(columns: (1fr,), inset: 0pt, stroke: none,
       table.header(repeat: true, table.cell(inset: (bottom: 3pt), table-identity(id, title-label))),
@@ -594,7 +625,7 @@
         // A genuinely over-height entry may continue; fit-capable entries remain intact.
         breakable: measure(block(width: size.width, entry(e))).height > page-h - m-top - m-bot - continuation-height, entry(e))),
     ))
-    #brush(weight: 2.2pt, seed: 13)
+    #block(height: 0pt, above: 0pt, below: 0pt)[#brush(weight: 2.2pt, seed: 13)]
     #tmark(id, "e")
   ]
 })

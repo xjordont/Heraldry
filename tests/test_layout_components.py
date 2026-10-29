@@ -138,8 +138,10 @@ This second paragraph checks the compact rhythm without removing rules.]
     def test_all_rotated_keywords_and_running_heads_clear_safe_frame(self):
         with pymupdf.open(stream=self.furniture_pdf, filetype="pdf") as doc:
             self.assertEqual(len(doc), 15)
+            flags = pymupdf.TEXTFLAGS_DICT | pymupdf.TEXT_ACCURATE_BBOXES
             for page in doc:
-                spans = [s for b in page.get_text("dict")["blocks"]
+                # glyph ink: Grenze Gotisch's 1.1 em ascender metric is far taller than its letters
+                spans = [s for b in page.get_text("dict", flags=flags)["blocks"]
                          for line in b.get("lines", []) for s in line["spans"] if s["text"].strip()]
                 for span in spans:
                     x0, y0, x1, y1 = span["bbox"]
@@ -158,7 +160,9 @@ This second paragraph checks the compact rhythm without removing rules.]
                 self.assertEqual(len(labels), 1, keyword)
                 self.assertEqual(labels[0]["size"], 9, keyword)
             shapes = [d["rect"] for d in doc[-1].get_drawings() if d["type"] == "f"]
-            tab = next(r for r in shapes if abs(r.width - profile.MARGIN_OUTSIDE_PT) < 0.1 and r.y0 > 680)
+            tab_w = profile.MARGIN_OUTSIDE_PT - profile.TOKENS["page"]["thumb_tab_clearance_pt"]
+            self.assertGreaterEqual(profile.TOKENS["page"]["thumb_tab_clearance_pt"], 3, "Tabs must clear the text frame")
+            tab = next(r for r in shapes if abs(r.width - tab_w) < 0.1 and r.y0 > 680)
             folio = next(r for r in shapes if abs(r.width - 23) < 0.1 and r.y0 > 740)
             self.assertLessEqual(tab.y1, profile.PAGE_HEIGHT_PT - profile.MARGIN_BOTTOM_PT - 12)
             self.assertGreaterEqual(folio.y0 - tab.y1, 12)

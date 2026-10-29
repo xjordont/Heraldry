@@ -16,9 +16,13 @@ TAB = 0.42 * 72   # design v4 thumb-tab strip
 
 def lines_of(page, fonts=False):
     out = []
-    d = page.get_text("dict")
-    for b in d["blocks"]:
-        for l in b.get("lines", []):
+    flat = page.get_text("dict")
+    # rotated navigation keywords are measured by their glyph ink, not the font's tall metric box
+    ink = page.get_text("dict", flags=pymupdf.TEXTFLAGS_DICT | pymupdf.TEXT_ACCURATE_BBOXES)
+    lines = [l for b in flat["blocks"] for l in b.get("lines", []) if abs(l["dir"][0]) >= 0.5]
+    lines += [l for b in ink["blocks"] for l in b.get("lines", []) if abs(l["dir"][0]) < 0.5]
+    for l in lines:
+        if True:
             txt = "".join(s["text"] for s in l["spans"]).strip()
             if not txt:
                 continue

@@ -164,7 +164,9 @@
   let tab-bottom = page-h - m-bot - 12pt
   let slot-h = (tab-bottom - top0) / tab-keys.len()
   let y = top0 + slot-h * (n - 1)
-  let w = m-out                                // decoration remains wholly outside the body frame
+  // Decoration remains wholly outside the body frame, with clearance so that full-measure
+  // lines and table rules never touch the tab (design review 2026-10-29).
+  let w = m-out - profile.page.thumb_tab_clearance_pt * 1pt
   let h = slot-h - 3pt
   let k = 4.5pt                                 // bevelled inner corners
   let pts = if recto { ((w, 0pt), (k, 0pt), (0pt, k), (0pt, h - k), (k, h), (w, h)) }
@@ -179,12 +181,17 @@
     assert(measure(t).width <= avail, message: "Navigation keyword exceeds its slot at the approved size")
     t
   }
-  // the visible face is the part inside the trim's 0.04in overscan allowance
-  let face = w - profile.page.essential_edge_safe_pt * 1pt // lettering inside the essential safe line
+  // The lettering sits against the essential safe line, 27 pt in from the trim, and reaches toward
+  // the text frame; the tab itself stops short of the frame by the clearance token.
+  let safe = profile.page.essential_edge_safe_pt * 1pt
+  let face = 12.9pt                              // the keyword's line box at 9 pt Grenze Gotisch
   place(top + left, dx: if recto { page-w - w } else { 0pt }, dy: y, box(width: w, height: h, {
     place(polygon(fill: ink, ..pts))
     place(polygon(fill: none, stroke: 0.45pt + paper, ..inner))
-    place(top + left, dx: if recto { 0pt } else { w - face }, box(width: face, height: h,
+    // 1.5 pt outward centres the ink (not the font's tall metric box) between the safe line and
+    // the engraved inner line; the verifiers check rotated keywords by their glyph outlines.
+    let shift = 1.5pt
+    place(top + left, dx: if recto { w - safe - face + shift } else { safe - shift }, box(width: face, height: h,
       align(center + horizon, rotate(if recto { 90deg } else { -90deg }, reflow: true,
         box(width: h, align(center, word))))))
   }))
@@ -192,7 +199,7 @@
 
 // Running head: label at the outer end with the chapter's arms; a thick-and-thin rule.
 #let running-head(left-text, right-text, recto, tab: none) = {
-  set text(font: sans, size: 7.4pt, weight: 600, tracking: 0.16em, fill: ink2)
+  set text(font: sans, size: type-token.navigation * 1pt, weight: 600, tracking: 0.12em, fill: ink2)
   let a = if tab != none { box(baseline: 30%, arms(tab, w: 15pt)) } else { lozenge(size: 4.4pt) }
   block(width: 100%, below: 0pt, {
     if recto [#h(1fr)#upper(right-text)#h(6pt)#a] else [#a#h(6pt)#upper(left-text)#h(1fr)]
@@ -205,7 +212,7 @@
 
 // Folio: page number in an engraved black shield at the outer corner, a short brush toward the gutter.
 #let folio(n, recto) = {
-  let sh = shield(w: 19pt, inner: true, body: text(font: sans, size: 7.6pt, weight: 700, fill: paper, number-type: "lining", str(n)))
+  let sh = shield(w: 23pt, inner: true, body: text(font: sans, size: type-token.navigation * 1pt, weight: 700, fill: paper, number-type: "lining", str(n)))
   let b = box(width: 40pt, baseline: -6pt, brush(weight: 1.2pt, seed: n))
   if recto { align(right)[#b#h(5pt)#sh] } else { align(left)[#sh#h(5pt)#b] }
 }

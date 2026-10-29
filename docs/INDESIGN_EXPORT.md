@@ -35,7 +35,7 @@ Alternatively, use Actions > **Export editable InDesign project** > **Run workfl
 
 SVG artwork is not decomposed into native InDesign paths/text frames. Placement and scale are editable in InDesign; individual paths/labels are edited in the SVG. Figures are not rasterised, and raster illustrations do not become vectors. Adobe documents [IDML support](https://helpx.adobe.com/in/indesign/desktop/get-started/system-and-product-info/supported-file-formats.html) and [live linked graphics](https://www.adobe.com/learn/indesign/web/link-graphics).
 
-`config/indesign.json` initially follows the active v4 page size, margins, gutter and 11 pt body. This is a separate native layout with recomposed pagination. It does not promise the Typst PDF's exact pages, conditional keeps, drop caps, table transformations, generated index, or final page design. The source TOC remains editable and clickable. No rules are rewritten or omitted to fit. The original cover's low print resolution remains unchanged.
+`config/indesign.json` follows the approved compact profile: Letter page, 45/42/45/45 pt margins, a 16.2 pt gutter, 10.5 pt body, and 9 pt tables (synchronised 2026-10-29). This is a separate native layout with recomposed pagination. It does not promise the Typst PDF's exact pages, conditional keeps, drop caps, table transformations, generated index, or final page design. The source TOC remains editable and clickable. No rules are rewritten or omitted to fit. The original cover's low print resolution remains unchanged.
 
 ## Finish in InDesign
 

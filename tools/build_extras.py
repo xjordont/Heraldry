@@ -31,6 +31,20 @@ def cover_art():
     return {"path": "../assets/art/incoming/ART-COVER-001.png", "w_in": 4.767, "h_in": 3.667}
 
 
+def back_cover_art():
+    """The approved ink party scene (ART-COVER-002) for the back cover once the owner's full-page
+    picture fronts the book: at most 4.4 in wide and never above native 300 ppi."""
+    from PIL import Image
+    from build_book import load_spot_art
+    _, ids = load_spot_art()
+    if "ART-COVER-002" not in ids:
+        return None
+    rel, w = ids["ART-COVER-002"]
+    wpx, hpx = Image.open(ROOT / rel[3:]).size
+    w = min(4.4, wpx / 300)
+    return {"path": rel, "w_in": round(w, 3), "h_in": round(w * hpx / wpx, 3)}
+
+
 def cover_data():
     m = json.loads((ROOT / "build/blocks.json").read_text())
     blocks = {}
@@ -54,6 +68,8 @@ def cover_data():
         facts.append(txt if take is None else txt.split(". ")[0] + ".")
     data = {"title": [t1, t2], "subtitle": plain(fr[1]["c"]), "version": plain(fr[2]["c"]),
             "lead": lead, "facts": facts, "art": cover_art(), "source_blocks": ["h-heraldry-skirmish-the-dying-lands", "B00003", "B00005", "B00163", "B00169", "B00173", "B00175"]}
+    if data["art"].get("full_page"):
+        data["back_art"] = back_cover_art()
     (ROOT / "build/cover.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
     return data
 

@@ -18,7 +18,7 @@
   place(top + left, dx: 1.2in + k * 1.1in, dy: d + 1.5pt, text(size: 6.5pt, lbl + " in"))
 }
 #place(top + left, dx: 0.75in, dy: 0.75in, block(width: page-w - 1.5in)[
-  #text(font: display, weight: 700, size: 20pt)[Inkjet Calibration — #("RC" + str(revision))]
+  #text(font: display, weight: 700, size: 20pt)[Inkjet Calibration: #("RC" + str(revision))]
   #v(-4pt)
   #text(size: 9.5pt)[Print at Letter portrait, 100% / Actual size, borderless on. Diagnostic sheet only (edge markers intentionally violate the book's 0.375 in safe edge). Substrate of this file: #substrate-name.]
   #v(8pt)
@@ -39,11 +39,11 @@
       })
       #v(10pt)
       *Type sizes* \
-      #text(font: serif, size: 9pt)[9 pt Source Serif 4 — 1d6 + APL/2 [1 AP] 36"×36" ±−×] \
-      #text(font: serif, size: 9.5pt)[9.5 pt Source Serif 4 — Advantage, Cover, Engaged] \
-      #text(font: serif, size: body-size)[#pt-label(body-size) #serif - body text size] \
-      #text(font: sans, size: minimum-size)[#pt-label(minimum-size) #sans - essential minimum 0123456789] \
-      #text(font: sans, size: table-size)[#pt-label(table-size) #sans - table text 0123456789] \
+      #text(font: serif, size: 9pt)[9 pt Source Serif 4: 1d6 + APL/2 [1 AP] 36"×36" ±×] \
+      #text(font: serif, size: 9.5pt)[9.5 pt Source Serif 4: Advantage, Cover, Engaged] \
+      #text(font: serif, size: body-size)[#pt-label(body-size) #serif: body text size] \
+      #text(font: sans, size: minimum-size)[#pt-label(minimum-size) #sans: essential minimum 0123456789] \
+      #text(font: sans, size: table-size)[#pt-label(table-size) #sans: table text 0123456789] \
       #text(font: display, size: 21pt, weight: 600)[21 pt Grenze Gotisch section heading]
       #v(10pt)
       *Current source sample (1.1)* \
@@ -96,5 +96,5 @@
   )
   #v(10pt)
   #line(length: 100%, stroke: 0.5pt)
-  #text(size: 9pt)[Check after printing: the 1-inch square measures 1 in; the solid 3/8 in SAFE frame is fully visible on all four sides (if the driver's borderless expansion crops it, the book's folios and text may be at risk — reduce expansion); 9 pt type and 0.3 pt rules are legible; bands are visible but light; hatch lines remain separate; the cream tone reaches all edges without white bands.]
+  #text(size: 9pt)[Check after printing: the 1-inch square measures 1 in; the solid 3/8 in SAFE frame is fully visible on all four sides (if the driver's borderless expansion crops it, the book's folios and text may be at risk, so reduce expansion); 9 pt type and 0.3 pt rules are legible; bands are visible but light; hatch lines remain separate; the cream tone reaches all edges without white bands.]
 ])

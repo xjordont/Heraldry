@@ -7,6 +7,22 @@ from pathlib import Path
 import sys
 
 
+def span_key(span):
+    return (span['text'], round(span['origin'][0], 1), round(span['origin'][1], 1))
+
+
+def rotated_ink(page, flags):
+    """Glyph-outline boxes of rotated text (thumb-tab keywords), keyed by text and origin."""
+    import fitz
+    out = {}
+    for block in page.get_text('dict', flags=flags | fitz.TEXT_ACCURATE_BBOXES)['blocks']:
+        for line in block.get('lines', []):
+            if abs(line['dir'][0]) < 0.5:
+                for span in line['spans']:
+                    out[span_key(span)] = tuple(span['bbox'])
+    return out
+
+
 def inspect(pdf: Path, config: dict) -> dict:
     import fitz
     profile = config['inkjet']
@@ -40,6 +56,7 @@ def inspect(pdf: Path, config: dict) -> dict:
                 if not equal_box(rect):
                     fail('page_box', n, {'box': name, 'actual': list(rect)})
             flags = fitz.TEXTFLAGS_DICT & ~fitz.TEXT_PRESERVE_IMAGES
+            ink = rotated_ink(page, flags)
             for block in page.get_text('dict', flags=flags)['blocks']:
                 for line in block.get('lines', []):
                     for span in line['spans']:
@@ -47,6 +64,9 @@ def inspect(pdf: Path, config: dict) -> dict:
                             continue
                         text_spans += 1
                         x0, y0, x1, y1 = span['bbox']
+                        if abs(line['dir'][0]) < 0.5:
+                            # rotated navigation keyword: its glyph ink, not the font's tall metric box
+                            x0, y0, x1, y1 = ink.get(span_key(span), span['bbox'])
                         if span['size'] < minimum - 0.1:
                             fail('small_type', n, {'size_pt': span['size'], 'text': span['text'][:80]})
                         # Thumb tab (design v4): the rotated chapter keyword in the outer 0.42 in strip is

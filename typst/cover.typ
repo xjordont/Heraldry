@@ -35,24 +35,39 @@
 
 #let back-cover(copy, version) = cover-page[
   #frame-border(false)
-  #place(top + center, dy: 1.25in, block(width: 5.4in)[
+  // Numeric ranges ("4–8 rounds") never break after the dash; the text is unchanged.
+  #show regex("\d+–\d+"): it => box(it)
+  #let bart = json("../build/cover.json").at("back_art", default: none)
+  // With the party scene, the frame's crest already heads the page; a second crest flourish
+  // directly beneath it would repeat the motif, so the blurb opens the composition instead.
+  #place(top + center, dy: if bart != none { 1.3in } else { 1.25in }, block(width: 5.4in)[
     #set align(center)
-    #flourish(len: 70pt)
-    #v(16pt)
+    #if bart == none {
+      flourish(len: 70pt)
+      v(14pt)
+    }
     #set par(leading: 5pt, justify: false)
     #set text(font: fell, size: 13pt)
     #show emph: it => it.body
-    #copy.lead
-    #v(18pt)
-    #brush(weight: 1.8pt, seed: 21)
-    #v(14pt)
+    // A slightly narrower measure gives the blurb an even rag instead of a two-word last line.
+    #block(width: 4.8in, copy.lead)
+    #if bart != none {
+      // the approved ink party scene carries the eye from the lead to the game facts
+      v(16pt)
+      image(bart.path, width: bart.w_in * 1in, height: bart.h_in * 1in)
+      v(16pt)
+    } else {
+      v(18pt)
+      brush(weight: 1.8pt, seed: 21)
+      v(14pt)
+    }
     #set text(font: serif, size: 11pt)
     #set par(leading: 4pt, spacing: 9pt)
     #for p in copy.facts [#p #parbreak()]
   ])
-  #place(bottom + center, dy: -1.05in)[
+  #place(bottom + center, dy: if bart != none { -0.85in } else { -1.05in })[
     #set align(center)
-    #signature(s: 70pt)
+    #signature(s: if bart != none { 56pt } else { 70pt })
     #v(10pt)
     #text(font: sans, size: 10pt, weight: 600, tracking: 0.12em, version)
   ]

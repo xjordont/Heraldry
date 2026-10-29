@@ -277,6 +277,7 @@ Short tables are mandatory keeps. Long tables continue with the repeated header 
 - **Climate groups:** each climate group (Greenmark, Ashlands...) opens with its group heading and the group's random table where the source places it.
 - **Bosses:** use the same entry at full width, with a larger portrait.
 - **Missing art:** the portrait box collapses, and the entry still owns its column.
+- **2026-10-29:** 100 approved Monster portraits (and 24 other pieces) had silently dropped out after a pronoun normalisation changed their catalogue specs; they were reviewed, re-bound, and restored. `tools/check_art.py` now fails on an approval bound to an outdated spec, and the composer refuses a stale flavour-block anchor.
 - **Effect:** this replaces today's half-empty bestiary pages with full ones.
 
 ### 6.16 Scenario (specimen 10; 36 core scenarios and the two tutorial scenarios)

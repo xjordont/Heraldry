@@ -108,7 +108,7 @@ class LayoutEmitter(unittest.TestCase):
                 book.emit.return_value='#content'
                 book.measure_requests=[];book.table_scope_diagnostics=[]
                 book.table_map=[];book.block_map=[];book.unit_log=[];book.fig_slots={}
-                book.seg_count=1;book.seg_sigs={'0':signature};book.piece_heads={};book.em.links=[]
+                book.seg_count=1;book.seg_sigs={'0':signature};book.piece_heads={};book.bare_heads=set();book.em.links=[]
                 for name,value in [('ROOT',root),('BUILD',build),('MAP',mapping)]:
                     stack.enter_context(patch.object(build_book,name,value))
                 stack.enter_context(patch.object(build_book,'Book',return_value=book))
@@ -149,7 +149,7 @@ class LayoutEmitter(unittest.TestCase):
         def emit(pieces,entry):
             book=Book.__new__(Book)
             book.seg_count=0;book.seg_sigs={};book.balance={'0':entry}
-            book.block_map=[];book.piece_heads={};book.out=[]
+            book.block_map=[];book.piece_heads={};book.bare_heads=set();book.out=[]
             book.flush(pieces)
             return ''.join(book.out)
         self.assertIn('#flowtail(',emit(original,[signature,0]))
@@ -183,7 +183,7 @@ class LayoutEmitter(unittest.TestCase):
                 book=MagicMock();book.emit.return_value='#content'
                 book.measure_requests=[];book.table_scope_diagnostics=[]
                 book.table_map=[];book.block_map=[];book.unit_log=[];book.fig_slots={}
-                book.seg_count=1;book.seg_sigs={'0':signature};book.piece_heads={};book.em.links=[]
+                book.seg_count=1;book.seg_sigs={'0':signature};book.piece_heads={};book.bare_heads=set();book.em.links=[]
                 for key,value in [('ROOT',root),('BUILD',build),('MAP',root/'mappings')]:
                     stack.enter_context(patch.object(build_book,key,value))
                 stack.enter_context(patch.object(build_book,'Book',return_value=book))

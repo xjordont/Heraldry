@@ -21,7 +21,7 @@ jobs:
   rebuild:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     permissions:
       contents: write
     steps:
@@ -71,6 +71,17 @@ jobs:
       - name: Rebuild and verify against the committed review ledger
         id: build
         run: make PY=python test clean all verify package
+      - name: Hero records for the release
+        # The illustrated blank Hero record and the 24 Basic Mode Heroes ship with the book (design
+        # review 2026-10-29). Same generator and checks as the Build Hero records workflow.
+        id: heroes
+        run: |
+          python -m pip install playwright==1.63.0
+          python -m playwright install --with-deps chromium
+          VERSION=$(python tools/manuscript.py --version)
+          python assets/hero-record/sheet.py blank --pdf "dist/Heraldry_${VERSION}_hero-record-blank.pdf"
+          git diff --exit-code -- assets/hero-record/hero-record-front.html assets/hero-record/hero-record-reverse.html
+          python assets/hero-record/sheet.py heroes --no-png --pdf "dist/Heraldry_${VERSION}_basic-heroes.pdf"
       - name: Publish the PDFs as a GitHub Release
         id: release
         shell: bash
