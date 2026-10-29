@@ -1,5 +1,5 @@
 {
- "b4_sha256": "d098c6ffa86de2b034d64001879c88ab943c1560a6d89687dfa8f35fa69f3e60",
+ "b4_sha256": "8ad6aa85d8fd8ab81c5b5ea20a86e64e123fa5ba38b181997f1d3439e7bf8df5",
  "reminders": {
   "Darkvision": {
    "head": "Darkvision (12\") Reminder",
@@ -6639,16 +6639,16 @@
       },
       {
        "runs": [
-        ["Tumble [0 AP]:", true],
-        [" Once during each activation, ", false],
+        ["Tumble:", true],
+        [" When you take the universal ", false],
+        ["Shift [1 AP]", true],
+        [" action, you may ", false],
         ["Shift 2\"", true],
-        [". During this ", false],
+        [" instead of ", false],
+        ["1\"", true],
+        [" and may move through enemy spaces during that ", false],
         ["Shift", true],
-        [", you may move through enemy spaces, but you cannot end this movement in an enemy space. This ", false],
-        ["Shift", true],
-        [" does not trigger ", false],
-        ["Reflex Attack", true],
-        [" from enemies whose spaces you move through.", false]
+        [", but you cannot end this movement in an enemy space.", false]
        ],
        "sub": []
       },
