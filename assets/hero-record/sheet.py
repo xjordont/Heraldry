@@ -26,6 +26,20 @@ import sys
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 DATA = json.loads((ROOT / "typst/heroes/basic-heroes.json").read_text())
+
+
+def _general_talents():
+    """Names of the General Talents in 6.12 of the active manuscript, so a Hero's Level 1
+    General Talent is labelled General rather than Class."""
+    src = json.loads((ROOT / "config/production.json").read_text())["source"]
+    lines = (ROOT / src).read_text(encoding="utf-8").split("\n")
+    start = next(i for i, line in enumerate(lines) if line.startswith("### 6.12 "))
+    end = next(i for i, line in enumerate(lines) if i > start and line.startswith("### "))
+    return {m.group(1).strip() for line in lines[start:end]
+            if (m := re.match(r"- \*\*([^*\[]+?)(?: \[[^\]]*\])?:\*\*", line))}
+
+
+GENERAL = _general_talents()
 esc = html.escape
 R = lambda v: f"{v:.2f}".rstrip("0").rstrip(".")
 
@@ -379,7 +393,8 @@ def parse_rules(h):
             powers.append({"name": name, "tier": tier, "cost": cost, "range": rng or ("Varies" if TIER0.search(name) else "—"),
                            "html": runs_html(rest2), "text": flat(rest2)})
         else:
-            e = entry(name, f"Class / {h['level']}", cost, rest)
+            kind = "General" if re.sub(r" \(.*\)$", "", name) in GENERAL else "Class"  # e.g. Weapon Specialist (Slashing)
+            e = entry(name, f"{kind} / {h['level']}", cost, rest)
             if it["sub"]:
                 e["html"] += f"<br>See the {esc(name)} card for {CARD_POINTER}."
             talents.append(e)

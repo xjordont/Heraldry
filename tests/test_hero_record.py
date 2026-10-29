@@ -4,6 +4,7 @@ The committed blank sides must equal the generator's output, so the blank and th
 cannot drift apart, and every B.4 Hero must parse into the sheet's fields. Rendering, fit and
 fidelity checks run in `sheet.py heroes` (they need a browser)."""
 import importlib.util
+import re
 import unittest
 from pathlib import Path
 
@@ -48,6 +49,19 @@ class HeroesParse(unittest.TestCase):
         # DEX -2; Ring Shirt -2 and Heater Shield -1 add to -3; SPD 4" under Max Speed 5" and 6"
         self.assertEqual(sheet.effective(h, chest, shield), (-2, -3, -5, 4, 4))
         self.assertEqual((chest["spd"], shield["spd"]), (5, 6))
+
+    def test_general_talents_are_labelled_general(self):
+        self.assertGreater(len(sheet.GENERAL), 30, "6.12 General Talents were not parsed")
+        found = 0
+        for h in sheet.DATA["heroes"]:
+            _powers, talents = sheet.parse_rules(h)
+            for t in talents:
+                if re.sub(r" \(.*\)$", "", t["name"]) in sheet.GENERAL:
+                    found += 1
+                    self.assertEqual(t["type"], f"General / {h['level']}", (h["name"], t["name"]))
+                else:
+                    self.assertFalse(t["type"].startswith("General"), (h["name"], t["name"]))
+        self.assertGreaterEqual(found, 20)
 
     def test_martial_heroes_have_no_powers_and_traits_are_not_repeated(self):
         for h in sheet.DATA["heroes"]:
