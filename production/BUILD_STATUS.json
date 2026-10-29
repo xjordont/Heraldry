@@ -1,39 +1,39 @@
 {
- "request_id": "20261014T211936Z",
+ "request_id": "20261029T034753Z",
  "result": "CANDIDATE_READY",
  "note": "all automated checks pass; the all-page visual review of this exact PDF is still pending",
  "failed_checks": [
   "visual_review_currency"
  ],
- "source_commit": "47355f984e8211ca2936c878a169f33909df3ebb",
- "run_url": "https://github.com/xjordont/Heraldry/actions/runs/38639402967",
- "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC492-candidate-4",
+ "source_commit": "a6f22d3601b46780311e5e062f50b8dc2c7995ca",
+ "run_url": "https://github.com/xjordont/Heraldry/actions/runs/40814250484",
+ "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC522-candidate-5",
  "pdfs": {
-  "Heraldry_RC492_covers-front-back-white.pdf": {
-   "bytes": 4246081,
-   "sha256": "a3fa906543dba5da083dfb68fd33b897ac82a90ce641801626fb9f64999103a0"
+  "Heraldry_RC522_covers-front-back-white.pdf": {
+   "bytes": 4245986,
+   "sha256": "0decaaaca318452e2b451d01f92ef538e4d267a218293f0c64701f2cee664006"
   },
-  "Heraldry_RC492_covers-front-back.pdf": {
-   "bytes": 4246146,
-   "sha256": "f496c129176ee3d543100347e64b028e7fc7c530c0e6a05ff20178a6cab087a9"
+  "Heraldry_RC522_covers-front-back.pdf": {
+   "bytes": 4246051,
+   "sha256": "10e7dedd7a9791e2663a8e618af380f81202f3436e9acc8fe42247c29cb35e22"
   },
-  "Heraldry_RC492_digital.pdf": {
-   "bytes": 152931880,
-   "sha256": "bc53109ef539e3ac21c8bd37f342ca1abb01b28a6544909f0f22fb5373ee879b"
+  "Heraldry_RC522_digital.pdf": {
+   "bytes": 57619175,
+   "sha256": "9c7ad7deea4765286c5401382b13a8237495b98302f7f13b059c5cdc215add18"
   },
-  "Heraldry_RC492_inkjet-borderless-white.pdf": {
-   "bytes": 148680881,
-   "sha256": "53885dc43b4bbbad156910fc985f6487aee938c3bef683c9f58921094658ceb9"
+  "Heraldry_RC522_inkjet-borderless-white.pdf": {
+   "bytes": 53371452,
+   "sha256": "a4b13b8d8f4defd77c359e45521e1d764ad2cd558a8f1af095e44134ab67c326"
   },
-  "Heraldry_RC492_inkjet-borderless.pdf": {
-   "bytes": 148711078,
-   "sha256": "10e4f8bea8cff69404a6ee1385077e0533b767ff1815714cd0b2532e245a8e78"
+  "Heraldry_RC522_inkjet-borderless.pdf": {
+   "bytes": 53398697,
+   "sha256": "22c63dcc6db000704dde2eb711bb6dda7af4d5964f6fcabfd6e268bd3acfe7bf"
   },
-  "Heraldry_RC492_inkjet-calibration.pdf": {
-   "bytes": 40596,
-   "sha256": "708a8ea248284c7568e30b01deaf2a27e28113c9b8427ccdd9ad055fe2697748"
+  "Heraldry_RC522_inkjet-calibration.pdf": {
+   "bytes": 43392,
+   "sha256": "7c9548e083572d6e4ef0064f7f9e1a60f4f2366ef8fe2124c226068ae9d45713"
   }
  },
  "physical_print": "NOT TESTED",
- "next": "Claude Code reproduces this build, reviews every page and binds the visual ledger; pushing production/qa/visual-review.json then releases."
+ "next": "The assigned reviewer inspects every review image and binds the exact PDF; pushing production/qa/visual-review.json starts release."
 }
