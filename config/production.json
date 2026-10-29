@@ -1,5 +1,5 @@
 {
-  "source": "source/Heraldry_RC521.md",
+  "source": "source/Heraldry_RC522.md",
   "source_authority": "Active immutable snapshot in source/versions.json; prior snapshots retained",
   "models": {
     "orchestrator": "claude-opus-5-5",
@@ -47,7 +47,7 @@
   },
   "verified_publication_metadata": {
     "title": "HERALDRY SKIRMISH: THE DYING LANDS",
-    "version": "Release Candidate 521 (RC521)",
+    "version": "Release Candidate 522 (RC522)",
     "author_credit": null,
     "publisher": null,
     "isbn": null,

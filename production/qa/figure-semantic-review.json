@@ -2030,7 +2030,7 @@
      "fix": "None; source line references in Appendix B after B.4 shift by +40."
     }
    ],
-   "rules_sha256": "1aa4de4145102f9bd76b37055abc1c6e50f394d60ff88dc40cc7cce891a732db",
+   "rules_sha256": "b726cbdec0a6c931c435fac11da987c6b5f26ce7faae7a1588c4baf66c8c8747",
    "reviewed_at": "2026-10-07T10:58:00Z",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2172,6 +2172,21 @@
     ],
     "verdict": "PASS",
     "summary": "RC521 changes Appendix B only in Mossgrave's Wolf Shape trait. FIG-19 depicts B.6 setup, B.5 Coin Values, and Ironscar's SPD example; no Druid form appears. Every value shown is unchanged.",
+    "limits": [
+     "SVG and caption bytes unchanged.",
+     "Physical print NOT TESTED."
+    ]
+   },
+   "rc522_review": {
+    "reviewed_at": "2026-10-28",
+    "reviewer": "Claude Code integration owner; model review of every SVG text node and caption against the RC522 source, not independent human proof",
+    "source": "source/Heraldry_RC522.md",
+    "source_sha256": "fad164ee8adf3fb6739d79945773a3283919ae504d731d980f3270ae3304a59e",
+    "checked_source_sections": [
+     "B"
+    ],
+    "verdict": "PASS",
+    "summary": "RC522 changes Appendix B only in the six Human Determined Resolve traits (removes the Decapitated clause). FIG-19 depicts B.6 setup, B.5 Coin Values, and Ironscar's SPD example; no trait appears. Every value shown is unchanged.",
     "limits": [
      "SVG and caption bytes unchanged.",
      "Physical print NOT TESTED."
