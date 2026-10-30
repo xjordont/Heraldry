@@ -1,37 +1,37 @@
 {
- "request_id": "20261029T034753Z",
+ "request_id": "20261030T042522Z",
  "result": "CANDIDATE_READY",
  "note": "all automated checks pass; the all-page visual review of this exact PDF is still pending",
  "failed_checks": [
   "visual_review_currency"
  ],
- "source_commit": "a6f22d3601b46780311e5e062f50b8dc2c7995ca",
- "run_url": "https://github.com/xjordont/Heraldry/actions/runs/40814250484",
- "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC522-candidate-5",
+ "source_commit": "da191be8cb6f547248b65eec6860d0c7a0f4fa78",
+ "run_url": "https://github.com/xjordont/Heraldry/actions/runs/41002893645",
+ "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC522-candidate-7",
  "pdfs": {
   "Heraldry_RC522_covers-front-back-white.pdf": {
-   "bytes": 4245986,
-   "sha256": "0decaaaca318452e2b451d01f92ef538e4d267a218293f0c64701f2cee664006"
+   "bytes": 4857888,
+   "sha256": "1ad12b971abab4047b43db3ccf23c180f24812cf789f841579e983eab8cb982c"
   },
   "Heraldry_RC522_covers-front-back.pdf": {
-   "bytes": 4246051,
-   "sha256": "10e7dedd7a9791e2663a8e618af380f81202f3436e9acc8fe42247c29cb35e22"
+   "bytes": 4857932,
+   "sha256": "344e32e7e7bcfb955fcdf2313705d4b672199634a708d7e60eb99d4e4dd2bd3d"
   },
   "Heraldry_RC522_digital.pdf": {
-   "bytes": 57619175,
-   "sha256": "9c7ad7deea4765286c5401382b13a8237495b98302f7f13b059c5cdc215add18"
+   "bytes": 152895402,
+   "sha256": "04f3ded2d062853bec7e0fca9fe66ceb7a77d84e13f818b1f21549f0dd6640b1"
   },
   "Heraldry_RC522_inkjet-borderless-white.pdf": {
-   "bytes": 53371452,
-   "sha256": "a4b13b8d8f4defd77c359e45521e1d764ad2cd558a8f1af095e44134ab67c326"
+   "bytes": 148039997,
+   "sha256": "91c8c98b27ec251f11fd4314fa749fd69243e8836a37ea5f4fa26738ee98936c"
   },
   "Heraldry_RC522_inkjet-borderless.pdf": {
-   "bytes": 53398697,
-   "sha256": "22c63dcc6db000704dde2eb711bb6dda7af4d5964f6fcabfd6e268bd3acfe7bf"
+   "bytes": 148068364,
+   "sha256": "dc58f769b4a05adfd95e9841115acbc9da63a412f699472969eb1350c691a616"
   },
   "Heraldry_RC522_inkjet-calibration.pdf": {
-   "bytes": 43392,
-   "sha256": "7c9548e083572d6e4ef0064f7f9e1a60f4f2366ef8fe2124c226068ae9d45713"
+   "bytes": 43654,
+   "sha256": "9bc5a846d4f33d23eab631c27edf626bf5650be93b06c2b58dc2530450844710"
   }
  },
  "physical_print": "NOT TESTED",
