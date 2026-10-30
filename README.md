@@ -11,7 +11,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 <!-- BEGIN AUTO:status -->
 
 - **Manuscript:** [RC522](source/Heraldry_RC522.md) (`source/versions.json`). Earlier snapshots are immutable.
-- **Last recorded delivery:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages. RC522 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
+- **Last recorded delivery:** [RC522-build-38](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-38), 627 interior pages. Newer source/tooling changes may await a separately requested build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
 - **Illustration records:** 299 approved of 299; 0 generation-queue items.
 - **Rules figures:** 57; 57/57 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`11207a27`](https://github.com/xjordont/Heraldry/commit/11207a2779d909fcfae21386963a4574751066bd) Record release workflow result
+- [`29c669d1`](https://github.com/xjordont/Heraldry/commit/29c669d18d6cc101108c5b0608389bd4145196f4) Rebuild verified RC522 delivery
+- [`649e1532`](https://github.com/xjordont/Heraldry/commit/649e1532b8bc3702734c28a62f1409bf21786ad4) review: bind the all-page visual review for candidate 20261030T042522Z
 - [`5c740e74`](https://github.com/xjordont/Heraldry/commit/5c740e7448a24384d334fcb9d942b0d1f5350364) Build candidate status (20261030T042522Z)
 - [`da191be8`](https://github.com/xjordont/Heraldry/commit/da191be8cb6f547248b65eec6860d0c7a0f4fa78) build: request candidate build 20261030T042522Z
 - [`56696bf4`](https://github.com/xjordont/Heraldry/commit/56696bf4ef15b25f5d8872bf0d6d69a6285f4ae0) Tests: create build/ before compiling design-review fixtures (clean checkouts)
-- [`b79f923b`](https://github.com/xjordont/Heraldry/commit/b79f923b3aa9c9839e8a10240a2fbd856ad1c2c5) Imprint, opener spreads, back-cover blurb, current player aids, 300 ppi gate
-- [`d7c911d7`](https://github.com/xjordont/Heraldry/commit/d7c911d7d829e020aff85587d9d01d8b29ad86c0) State: candidate request 20261029T214330Z blocked by the GitHub Actions budget
-- [`c0922f42`](https://github.com/xjordont/Heraldry/commit/c0922f4251e7469dd4e51397c3ea9e9d52c29e8b) build: request candidate build 20261029T214330Z
 
 <!-- END AUTO:recent -->
 
