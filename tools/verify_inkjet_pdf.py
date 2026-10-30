@@ -23,6 +23,9 @@ def rotated_ink(page, flags):
     return out
 
 
+MIN_ART_PPI = 300
+
+
 def inspect(pdf: Path, config: dict) -> dict:
     import fitz
     profile = config['inkjet']
@@ -43,6 +46,7 @@ def inspect(pdf: Path, config: dict) -> dict:
 
     seen_fonts = set()
     text_spans = 0
+    lowest_ppi = float('inf')
     with fitz.open(pdf) as doc:
         if doc.is_encrypted:
             raise ValueError('Encrypted PDF is not inspectable')
@@ -81,6 +85,16 @@ def inspect(pdf: Path, config: dict) -> dict:
                                  (y1 - height/2)*scale + height/2]
                         if min(grown[0], grown[1], width-grown[2], height-grown[3]) < -0.1:
                             fail('overscan_text_clip', n, {'scale': scale, 'text': span['text'][:80]})
+            # Every placed raster must reach the 300 ppi print floor at its placed size (owner, 2026-10-29).
+            for image in page.get_image_info():
+                box = fitz.Rect(image['bbox'])
+                if box.width < 2 or box.height < 2:
+                    continue
+                ppi = min(image['width'] / (box.width / 72), image['height'] / (box.height / 72))
+                lowest_ppi = min(lowest_ppi, ppi)
+                if ppi < MIN_ART_PPI - 0.5:
+                    fail('art_below_300_ppi', n, {'ppi': round(ppi, 1), 'pixels': [image['width'], image['height']],
+                                                  'placed_in': [round(box.width / 72, 3), round(box.height / 72, 3)]})
             for font in page.get_fonts(full=True):
                 xref = font[0]
                 if xref in seen_fonts:
@@ -97,8 +111,10 @@ def inspect(pdf: Path, config: dict) -> dict:
         pages = len(doc)
     return {'status': 'FAIL' if counts else 'PASS', 'pdf': str(pdf), 'pages': pages,
             'text_spans_checked': text_spans, 'font_resources_checked': len(seen_fonts),
+            'lowest_art_ppi': round(lowest_ppi, 1) if lowest_ppi < float('inf') else None,
             'checks': ['Letter portrait boxes/rotation', 'minimum text size', 'text edge safety',
-                       'simulated centred overscan text clipping', 'referenced font embedding', 'searchable text present'],
+                       'simulated centred overscan text clipping', 'referenced font embedding', 'searchable text present',
+                       'placed raster art at 300 ppi or more'],
             'failure_counts': counts, 'failure_examples_first_50': examples,
             'physical_inkjet_proof': 'NOT TESTED',
             'limits': 'Not source reconciliation, art/background/raster/mark inspection, all-page visual QA, or physical printer certification',

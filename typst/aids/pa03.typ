@@ -74,7 +74,7 @@
     Base damage dice only.
     #v(4pt)
     #caps[Advantage]
-    #dot[Attacker 2″+ higher]
+    #dot[Attacker 2"+ higher]
     #dot[First qualifying attack while Hidden]
     #dot[Melee against a Prone target]
     #v(6pt)
@@ -83,7 +83,7 @@
     #dot[Attacker swimming in Deep Water]
     #dot[Target in Cover: ranged or thrown weapon, non-area ranged Power]
     #dot[Target Invisible and adjacent]
-    #dot[Ranged against a Prone target over 2″ away]
+    #dot[Ranged against a Prone target over 2" away]
     #dot[Reflex Attack; 2nd+ weapon attack in an activation]
   ])
 ]

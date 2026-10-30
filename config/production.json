@@ -48,10 +48,14 @@
   "verified_publication_metadata": {
     "title": "HERALDRY SKIRMISH: THE DYING LANDS",
     "version": "Release Candidate 522 (RC522)",
-    "author_credit": null,
-    "publisher": null,
+    "author_credit": "Jordon",
+    "publisher": "Escutcheon Press",
     "isbn": null,
-    "copyright_holder": null
+    "copyright_holder": "Jordon",
+    "isbn_policy": "Omitted (owner, 2026-10-29)",
+    "copyright_year": 2026,
+    "illustration_credit": "None (owner, 2026-10-29)",
+    "authority": "Owner instruction 2026-10-29: version is the manuscript version; author Jordon; publisher Escutcheon Press; omit ISBN; no illustration credits."
   },
   "inkjet": {
     "primary_output": "home inkjet borderless Letter",

@@ -8,6 +8,7 @@ Files
 * `Heraldry_{{VERSION}}_digital.pdf`: the screen edition, with covers, bookmarks, and links. Read it on screen; print from the inkjet files.
 * `Heraldry_{{VERSION}}_hero-record-blank.pdf`: the illustrated blank Hero record, one double-sided sheet.
 * `Heraldry_{{VERSION}}_basic-heroes.pdf`: the 24 ready-to-play Basic Mode Heroes, one double-sided sheet each.
+* `Heraldry_{{VERSION}}_player-aids.pdf` (and `-white`): the ten double-sided player aids (round, Monster AI, combat, the fallen, conditions, movement, sight and ground, campaign, town, and setup).
 
 Settings (application print dialog)
 1. Paper size **Letter**, orientation **portrait**, **one PDF page per sheet**.
@@ -21,8 +22,8 @@ Calibration check (before printing the book)
 * The solid **3/8 SAFE** frame is fully visible on all four sides. The book keeps all text, folios and diagram labels at least 3/8 inch from every edge; if your printer crops into this frame, reduce borderless expansion.
 * 9 pt text and the 0.3 pt rule are legible; table bands are visible but light; hatch lines stay separate; the cream tone reaches every edge.
 
-Hero records
-Print the Hero record files at **100%** on Letter, double-sided, flipping on the **long edge**. They are not borderless; ordinary printer margins are fine.
+Hero records and player aids
+Print the Hero record and player aid files at **100%** on Letter, double-sided, flipping on the **long edge**. They are not borderless; ordinary printer margins are fine. Matte card stock (65 to 110 lb cover) suits the player aids. Fill in Hero records in pencil.
 
 Double-sided printing
 The interior has facing-page margins (wider inside margin on the binding side; odd pages are right-hand pages). Test duplex on 4 pages first: confirm flip on the **long edge** and that page 2 backs page 1 the right way up. If automatic duplex is not available for borderless printing on your printer, print odd pages, reinsert the stack as the manual-duplex instructions of your printer describe, then print even pages.

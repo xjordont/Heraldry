@@ -49,8 +49,8 @@
     #set par(leading: 5pt, justify: false)
     #set text(font: fell, size: 13pt)
     #show emph: it => it.body
-    // A slightly narrower measure gives the blurb an even rag instead of a two-word last line.
-    #block(width: 4.8in, copy.lead)
+    // Measure chosen so the blurb ends on a full last line (no runt).
+    #block(width: 5.2in, copy.lead)
     #if bart != none {
       // the approved ink party scene carries the eye from the lead to the game facts
       v(16pt)
@@ -65,10 +65,13 @@
     #set par(leading: 4pt, spacing: 9pt)
     #for p in copy.facts [#p #parbreak()]
   ])
-  #place(bottom + center, dy: if bart != none { -0.85in } else { -1.05in })[
+  #let pub = json("../build/cover.json").at("publisher", default: none)
+  #place(bottom + center, dy: if bart != none { -0.8in } else { -1.05in })[
     #set align(center)
-    #signature(s: if bart != none { 56pt } else { 70pt })
-    #v(10pt)
+    #signature(s: if bart != none { 50pt } else { 70pt })
+    #v(8pt)
+    // Imprint (owner, 2026-10-29) over the manuscript version.
+    #if pub != none [#text(font: serif, weight: 600, size: 10.5pt, tracking: 0.22em, upper(pub)) #v(4pt)]
     #text(font: sans, size: 10pt, weight: 600, tracking: 0.12em, version)
   ]
 ]

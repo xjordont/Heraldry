@@ -10,14 +10,14 @@
       (1, [Any AI Step valid?], [Resolve the *first* valid one, lowest number first. *on d6 N+:* roll 1d6, need N or higher. #h(1fr) #text(size: 9.5pt)[_Says it continues? Go to step 2._]]),
       (2, [Engaged?], [Attack the Engaged enemy with the *lowest current HP*. Use Multi-Attack if listed; otherwise melee, or ranged if it has no melee attack.]),
       (3, [Enemy visible?], [Move toward the Primary Target; attack if Engaged on arrival. *Ranged, and able to fire without becoming Engaged:* move to the nearest legal firing position, then attack. *Knocked Out target:* stop within melee distance and attack.]),
-      (4, [Hidden enemy within 12″ and LOS?], [*Search:* the nearest one's controller makes a DEX Check. On a failure, that enemy is no longer Hidden.]),
+      (4, [Hidden enemy within 12" and LOS?], [*Search:* the nearest one's controller makes a DEX Check. On a failure, that enemy is no longer Hidden.]),
     ),
     end: (5, [Move toward the Guard Point, objective, patrol route, or scenario destination.]))
   #v(6pt)
   #grid(columns: (1fr, 1fr, 1fr), column-gutter: 18pt,
   [
     #aside-head(seed: 1)[Primary Target]
-    The *nearest visible enemy*: in perception range (12″, or a sense's range) and LOS. Hidden and Invisible enemies don't count unless a rule says so. Re-pick if it stops being legal.
+    The *nearest visible enemy*: in perception range (12", or a sense's range) and LOS. Hidden and Invisible enemies don't count unless a rule says so. Re-pick if it stops being legal.
     #v(4pt)
     #caps[Ties, in order]
     #steps[Lowest current HP][Last to damage this Monster][Random Determination]
@@ -49,23 +49,23 @@
     #gap-v
     #aside-head(seed: 4)[Wake-up Triggers]
     A *Resting* Group does not activate. It wakes, and stays Awake for the adventure, when:
-    #dot[an enemy moves within *6″* (no LOS needed);]
-    #dot[a visible enemy enters its LOS within *12″*;]
+    #dot[an enemy moves within *6"* (no LOS needed);]
+    #dot[a visible enemy enters its LOS within *12"*;]
     #dot[the Group suffers damage;]
-    #dot[an Explosion, collapsing terrain, or a loud effect occurs within *6″*;]
+    #dot[an Explosion, collapsing terrain, or a loud effect occurs within *6"*;]
     #dot[a scenario rule wakes it.]
     #v(4pt)
-    Measure from any Monster in the Group. A Hidden enemy trips the 6″ trigger only within its Hide distance, and stays Hidden. Hidden or Invisible enemies trip the 12″ trigger only if a rule makes them visible.
+    Measure from any Monster in the Group. A Hidden enemy trips the 6" trigger only within its Hide distance, and stays Hidden. Hidden or Invisible enemies trip the 12" trigger only if a rule makes them visible.
   ],
   [
     #aside-head(seed: 6)[Setup]
-    Unless the scenario says otherwise, each Group starts *Resting*, within *3″* of its starting point, with a *Guard Point*: the nearest scenario landmark, else the nearest designated major terrain, else its start. Ties: random.
+    Unless the scenario says otherwise, each Group starts *Resting*, within *3"* of its starting point, with a *Guard Point*: the nearest scenario landmark, else the nearest designated major terrain, else its start. Ties: random.
     #gap-v
     #aside-head(seed: 8)[Allegiance]
     Neutral Groups are allied to each other and hostile to every party. They never target, engage, or wake because of allied Monsters. *Hostile to all:* every other combatant is an enemy, except its own Group.
     #gap-v
     #aside-head(seed: 9)[Bosses]
-    Unless the scenario says otherwise, start *Awake* and use *Relentless Assault*, not the Monster Phase: after each hostile Hero's activation, the Boss takes 1 activation. A Hero left at 0 AP by a Reaction before activating triggers it after the current activation or effect. At most one per starting hostile Hero each round. AI Steps and start-of-activation abilities only on the first activation each round; every attack step uses the full Multi-Attack. *Immune* to Stunned, Sleeping, Immobilized, Silenced, and Frightened; an enemy effect that would make it Stunned, Sleeping, or Immobilized, set its Speed to 0″, skip or end its activation, stop its attacks, control it, or remove it without 0 HP instead blocks its AI Steps and gives Disadvantage to its first attack damage roll, until the end of its next activation. Forced movement works normally.
+    Unless the scenario says otherwise, start *Awake* and use *Relentless Assault*, not the Monster Phase: after each hostile Hero's activation, the Boss takes 1 activation. A Hero left at 0 AP by a Reaction before activating triggers it after the current activation or effect. At most one per starting hostile Hero each round. AI Steps and start-of-activation abilities only on the first activation each round; every attack step uses the full Multi-Attack. *Immune* to Stunned, Sleeping, Immobilized, Silenced, and Frightened; an enemy effect that would make it Stunned, Sleeping, or Immobilized, set its Speed to 0", skip or end its activation, stop its attacks, control it, or remove it without 0 HP instead blocks its AI Steps and gives Disadvantage to its first attack damage roll, until the end of its next activation. Forced movement works normally.
     #gap-v
     #aside-head(seed: 10)[Areas]
     Origin in LOS. Cover the most enemies, then the fewest allies, then include the Primary Target; then random.

@@ -1,8 +1,8 @@
 {
- "rc": 513,
- "source_sha256": "f106082c78fdee60edf0943f3962581290ab5c4127aaa6bd455cbb00ebc118b1",
- "recorded_at": "2026-10-21",
- "reviewer": "Claude, 2026-10-21, third pass: Oxford commas added across all sheets and the PA-2 casting note moved to the back; wording otherwise unchanged; author's review, not independent",
+ "rc": 522,
+ "source_sha256": "fad164ee8adf3fb6739d79945773a3283919ae504d731d980f3270ae3304a59e",
+ "recorded_at": "2026-10-29",
+ "reviewer": "Claude (Opus 5.5), 2026-10-29, owner instruction to bring every player aid current with RC522: diffed every RC513 to RC522 change in the sheets' sections (3.3.1, 5.8, 5.8.1, 5.9, 11.2, 11.2.4) and in sections the sheets quote (7.10, 7.12, C.11); rewrote PA-4 (activation ends at 0 HP, Determined Resolve, new Injuries Table, Lingering Injuries, Chapel), and updated PA-1 (activation end), PA-5 (lingering injury), PA-8 (record list), and PA-9 (Cleanse Affliction). PA-7 draws only on 5.9 Hidden, unchanged. Author review, not an independent review.",
  "sheets": {
   "pa01": {
    "2.3": "fb3609d369c04cdddefde65ea6dd0c92d41b5f8f7c60345b879c8909860b6e85",
@@ -10,7 +10,7 @@
    "2.10": "07b6cb62066bde75f932b95235877af537790814481a69b90a0a38a907725485",
    "3.1": "6a061e577fedf3943152c576a9df62fade5bb7e5b4ad2429342c758f133f4e64",
    "3.2": "c23cf34fbda4d17780d8f051becc99e09c54cd1de6002c69e77c5e8ddd671f2f",
-   "3.3": "286b173d0d4c8cf3fb79ad18a920607d4882406e126547035ea877c8f9b1aadc",
+   "3.3": "87315a40f4f7f35fee6db6256e064594e719d017279072d69793c75426cb8e1b",
    "3.4": "73043a74b47aeccf5cfe3be969c6d42046a27dc09da3601b1a91895000ee8ed9",
    "3.5": "46d9bb8b1cb4cd204e0ec1c4c53ece10d353c89d558a1f37a332f52854ebb299",
    "3.6": "8efec5e8bf54bab83d9e1b3f3966606eee1e7b9e15d01c5d5e46e2f01982434d",
@@ -43,15 +43,15 @@
    "C.6": "5166e0f47af3e1c2865b048d95502b24ea4fb7cc8990b3b6b54343e206e6fe77"
   },
   "pa04": {
-   "5.8": "3f4909f656b327249c44a29c35893c771b8c456f3d3afabf920f7bda039fa632",
-   "5.9": "ba1874fba740b1814c65bfe8691cbf27fd725e70c56aa6c9a53f06b4ff1db329",
+   "5.8": "b936365037fbdc4882c4b186659e1ce04079c9b4806bb9e0929ae6b14b1b5db8",
+   "5.9": "33fcdf07025cf99e3192c8597381d7954ad8117fe5ec3bacea25b3b4b45757bd",
    "11.1.5": "411904d94c58f0acb041211fe5b0aa7338f105da58421757a439ef989fa20e25",
-   "11.2.4": "3bc73e086cfbe5dca794cfe97f8015f05dd0b138995998a9e686a8b5ffce6c9a",
+   "11.2.4": "43c3cc3aba81eff4e778b4b00be3096c425c67a22980b3e9ec0249f8427a47ce",
    "C.10": "a7ca692943d5dfc5a1b1dc472e212e2dc9b856f2819d3ad6f418eaca6eedd75c"
   },
   "pa05": {
    "2.8.5": "6fe0c2db6cd05dcf9e32ecbe0bf32aed3e44322dc25fa4b9b549fa610c5eb8d6",
-   "5.9": "ba1874fba740b1814c65bfe8691cbf27fd725e70c56aa6c9a53f06b4ff1db329",
+   "5.9": "33fcdf07025cf99e3192c8597381d7954ad8117fe5ec3bacea25b3b4b45757bd",
    "C.3": "27c70f8b707129accf2a313cb7f2e60a79a85e88a573537a7d0246c62c9a6b7d"
   },
   "pa06": {
@@ -67,16 +67,16 @@
    "2.8": "dd386b2df8147816dea45ae4c50ce577605f9c92deb96ee8153a39562b688d31",
    "2.9": "218c8874bb28d7f1b51a474c0858dab5091c628d4a451bd96ab554133e777937",
    "4.3": "68a1895dbd7312629a586f18b31516e8d2f4a535c8e5ee059a536184c960cb0b",
-   "5.9": "ba1874fba740b1814c65bfe8691cbf27fd725e70c56aa6c9a53f06b4ff1db329"
+   "5.9": "33fcdf07025cf99e3192c8597381d7954ad8117fe5ec3bacea25b3b4b45757bd"
   },
   "pa08": {
    "11.1.5": "411904d94c58f0acb041211fe5b0aa7338f105da58421757a439ef989fa20e25",
-   "11.2": "4ffb2a9034125fdd36db63e8d47e12365a8dac1ef9afd56b4579550b91dc805d",
+   "11.2": "ba5e7427b715a19012141361f88b7c983fd03277a38931643fa3a7d5dbe1d123",
    "11.3": "c6d581c1eaa93276a5a0e48d0aa4f27ac6d099fb94124136f1881e059e1860a2",
    "C.10": "a7ca692943d5dfc5a1b1dc472e212e2dc9b856f2819d3ad6f418eaca6eedd75c"
   },
   "pa09": {
-   "11.2.4": "3bc73e086cfbe5dca794cfe97f8015f05dd0b138995998a9e686a8b5ffce6c9a",
+   "11.2.4": "43c3cc3aba81eff4e778b4b00be3096c425c67a22980b3e9ec0249f8427a47ce",
    "11.2.5": "759745d2be2b355f171b2cee7289e528eceeb4275f5be2a4f4872731ddccb8fb",
    "11.2.6": "db56b1cc0e073db709992ab68c1979ec9bac20b59e188bcbd990e5bfb530a203",
    "11.3": "c6d581c1eaa93276a5a0e48d0aa4f27ac6d099fb94124136f1881e059e1860a2",

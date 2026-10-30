@@ -66,8 +66,16 @@ def cover_data():
     for bid, take in ((anchors["cover-fact-1"], None), (anchors["cover-fact-2"], 1), (anchors["cover-fact-3"], None)):
         txt = plain(blocks[bid]["c"])
         facts.append(txt if take is None else txt.split(". ")[0] + ".")
+    # The back cover opens with its own blurb (editorial/back_cover.json), so the first words a reader
+    # sees outside the book are not repeated word for word as the Chapter 1 lead (design review 2026-10-29).
+    blurb = ROOT / "editorial/back_cover.json"
+    if blurb.exists():
+        lead = json.loads(blurb.read_text(encoding="utf-8"))["blurb"]
+    meta = json.loads((ROOT / "config/production.json").read_text(encoding="utf-8"))["verified_publication_metadata"]
     data = {"title": [t1, t2], "subtitle": plain(fr[1]["c"]), "version": plain(fr[2]["c"]),
-            "lead": lead, "facts": facts, "art": cover_art(), "source_blocks": ["h-heraldry-skirmish-the-dying-lands", "B00003", "B00005", "B00163", "B00169", "B00173", "B00175"]}
+            "lead": lead, "facts": facts, "art": cover_art(), "publisher": meta.get("publisher"),
+            "author": meta.get("author_credit"),
+            "source_blocks": ["h-heraldry-skirmish-the-dying-lands", "B00003", "B00005", "B00169", "B00173", "B00175"]}
     if data["art"].get("full_page"):
         data["back_art"] = back_cover_art()
     (ROOT / "build/cover.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
