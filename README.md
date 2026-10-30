@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`5c740e74`](https://github.com/xjordont/Heraldry/commit/5c740e7448a24384d334fcb9d942b0d1f5350364) Build candidate status (20261030T042522Z)
+- [`da191be8`](https://github.com/xjordont/Heraldry/commit/da191be8cb6f547248b65eec6860d0c7a0f4fa78) build: request candidate build 20261030T042522Z
 - [`56696bf4`](https://github.com/xjordont/Heraldry/commit/56696bf4ef15b25f5d8872bf0d6d69a6285f4ae0) Tests: create build/ before compiling design-review fixtures (clean checkouts)
 - [`b79f923b`](https://github.com/xjordont/Heraldry/commit/b79f923b3aa9c9839e8a10240a2fbd856ad1c2c5) Imprint, opener spreads, back-cover blurb, current player aids, 300 ppi gate
 - [`d7c911d7`](https://github.com/xjordont/Heraldry/commit/d7c911d7d829e020aff85587d9d01d8b29ad86c0) State: candidate request 20261029T214330Z blocked by the GitHub Actions budget
 - [`c0922f42`](https://github.com/xjordont/Heraldry/commit/c0922f4251e7469dd4e51397c3ea9e9d52c29e8b) build: request candidate build 20261029T214330Z
-- [`ea616a9a`](https://github.com/xjordont/Heraldry/commit/ea616a9afba8b2a786d0dc53829dccd851f5dd87) Layout: split a tall table under its heading, pull back short last pages, keep profile openings, current colophon
-- [`45f326fc`](https://github.com/xjordont/Heraldry/commit/45f326fc00f7dfd2696e587d297ea1ec136683e4) Design review repairs: restore spot art, tab clearance, table breaks, balanced tails and index
 
 <!-- END AUTO:recent -->
 
