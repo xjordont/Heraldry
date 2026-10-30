@@ -1,9 +1,9 @@
 {
- "ledger_commit": "649e1532b8bc3702734c28a62f1409bf21786ad4",
+ "ledger_commit": "1cabee70afb4f4a27ca34342f55e78e41adec391",
  "result": "RELEASED",
  "note": "released and verified",
- "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC522-build-38",
- "tag": "RC522-build-38",
- "run_url": "https://github.com/xjordont/Heraldry/actions/runs/41005119209",
+ "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39",
+ "tag": "RC522-build-39",
+ "run_url": "https://github.com/xjordont/Heraldry/actions/runs/41105879953",
  "physical_print": "NOT TESTED"
 }
