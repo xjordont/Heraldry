@@ -237,7 +237,7 @@
     top-edge: 0.8em, bottom-edge: -0.25em, hyphenate: true, overhang: false, number-type: "lining",
     costs: (hyphenation: 100%, runt: 160%, widow: 1000%, orphan: 1000%))
   set par(leading: body-lead, spacing: v4.par-space, justify: true, first-line-indent: 0pt,
-    justification-limits: (spacing: (min: 90%, max: 140%), tracking: (min: -0.005em, max: 0.02em)))
+    justification-limits: (spacing: (min: 85%, max: 140%), tracking: (min: -0.02em, max: 0.02em)))
   set strong(delta: 200)
   set list(marker: (box(baseline: -1.2pt, lozenge(size: 4.4pt)), [–], [·]), indent: 1pt, body-indent: 6pt, spacing: v4.list-space)
   set enum(indent: 1pt, body-indent: 6pt, spacing: v4.list-space, numbering: n => text(font: sans, weight: 700, size: 9pt)[#n.])
@@ -282,12 +282,31 @@
 // Marks the end of a chapter's opening flavour (emitted by the composer after the last opening block).
 // A zero-height block keeps the mark where the flavour ends; a bare metadata tag would travel with the
 // next block onto the next page and report an overflow that did not happen.
-#let intro-end() = {
-  block(height: 0pt, above: 0pt, below: 0pt, sticky: false)[#metadata("intro-end") <intro-end>]
-  // On an opener spread the introduction page is centred, like the display page it faces.
+// `solo`: true when the composer found that the first section after the introduction starts a fresh
+// page; "auto" when the first section follows directly and may or may not fit beside the opener.
+// A solo opener page holds nothing but the opener and its introduction.
+#let solo-intro(end) = {
+  let s = if type(end.value) == dictionary { end.value.at("solo", default: false) } else { false }
+  if s == "auto" {
+    let hs = query(selector(heading).after(end.location()))
+    hs.len() > 0 and hs.first().location().page() > end.location().page()
+  } else { s == true }
+}
+#let intro-end(solo: false) = {
+  block(height: 0pt, above: 0pt, below: 0pt, sticky: false)[#metadata((solo: solo)) <intro-end>]
   context {
     let os = query(selector(<chapter-opener>).before(here()))
-    if os.len() > 0 and type(os.last().value) == dictionary and os.last().value.at("spread", default: false) { v(1fr) }
+    let ends = query(selector(<intro-end>).before(here()))
+    if os.len() > 0 and type(os.last().value) == dictionary and ends.len() > 0 {
+      let o = os.last()
+      // On an opener spread the introduction page is centred, like the display page it faces.
+      if o.value.at("spread", default: false) { v(1fr) }
+      // A solo opener page is set as a composed chapter title page: the art, title, and introduction
+      // sit at the optical centre of the frame instead of leaving the lower half empty.
+      // The mark's own page decides: this context yields only spacing, so its location tag travels
+      // to the next block, which on a solo page is already on the following page.
+      else if solo-intro(ends.last()) and o.location().page() == ends.last().location().page() { v(1.4fr) }
+    }
   }
 }
 #let chapter-opener(num, title, anchor, lead: none, art: none) = {
@@ -331,6 +350,7 @@
       v(1fr)
       if lead != none { v4.lead-block(fell-body(lead), width: 82%) }
     } else {
+      if ends.len() > 0 and solo-intro(ends.first()) { v(1fr) }
       block(width: 100%, above: 0pt, below: 14pt, breakable: false, {
         [#metadata((anchor: anchor, tab: t)) <chapter-opener>]
         display
@@ -427,6 +447,8 @@
 #let split-start(need) = context {
   if 2 * (body-bottom - here().position().y) < need { pagebreak(weak: true) }
 }
+// Escutcheon Press, the publisher's device (owner-supplied 2026-10-30; ink prepared by tools/brand_ink.py).
+#let publisher-logo(w) = image("/assets/art/brand/escutcheon-press-logo.png", width: w, alt: "Escutcheon Press")
 #let full(body) = block(width: 100%, above: 6pt, below: 8pt, body)
 #let full-opening(body) = context {
   let height = measure(block(width: frame-w, body)).height

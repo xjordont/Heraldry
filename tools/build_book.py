@@ -793,16 +793,22 @@ class Book:
         cur = []
         prev_heading_only = True     # chapter opener counts as the start of the opening composition
         intro_open = True
+        mark = None
         for c in root["children"]:
             if intro_open and ("head" in c or c["kind"] != "f"):
                 # End of the chapter's opening flavour: the opener uses this mark to see whether its
                 # introduction fits beside the art or needs an opener spread.
-                self.out.append("#intro-end()\n")
+                mark = len(self.out)
+                self.out.append('#intro-end(solo: "auto")\n' if "head" in c else "#intro-end()\n")
                 intro_open = False
             cur, prev_heading_only = self.emit_x(c, cur, prev_heading_only)
         self.flush(cur)
         if intro_open:
+            mark = len(self.out)
             self.out.append("#intro-end()\n")
+        if mark is not None and (mark + 1 == len(self.out) or self.out[mark + 1].startswith("#pagebreak")):
+            # Nothing but the opener shares its page: the first section starts a fresh page.
+            self.out[mark] = "#intro-end(solo: true)\n"
 
     def request_measure(self, u):
         if u['id'] not in self.requested_units:

@@ -261,12 +261,14 @@
 // Paragraph policy (docs/BOOK_DESIGN_PLAN.md section 13): no widows or orphans, no one-word last
 // lines ("runts"), hyphenation discouraged but allowed in narrow columns. Body text is justified
 // within limits (owner 2026-10-12); --body rag in the specimen renderer shows the ragged alternative.
+// Letter spacing may tighten or loosen by up to 2% and word spacing may tighten to 85% before a line
+// is set loose (design review polish 2026-10-30: the common book-setting range of -2% to +2%).
 #let base(body) = {
   set text(font: serif, size: body-size, lang: "en", region: "CA", fill: ink, hyphenate: true, overhang: false,
     top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining",
     costs: (hyphenation: 100%, runt: 160%, widow: 1000%, orphan: 1000%))
   set par(leading: body-lead, spacing: par-space, justify: sys.inputs.at("body", default: "justify") == "justify", first-line-indent: 0pt,
-    justification-limits: (spacing: (min: 90%, max: 140%), tracking: (min: -0.005em, max: 0.02em)))
+    justification-limits: (spacing: (min: 85%, max: 140%), tracking: (min: -0.02em, max: 0.02em)))
   set strong(delta: 200)
   set list(marker: (box(baseline: -1.2pt, lozenge(size: 4.4pt)), [–]), indent: 1pt, body-indent: 6pt, spacing: list-space)
   set enum(indent: 1pt, body-indent: 6pt, spacing: list-space, numbering: n => text(font: sans, weight: 700, size: 9pt)[#n.])
@@ -323,7 +325,7 @@
 #let lead-mode = sys.inputs.at("lead", default: "justify")
 #let flavour-set(body) = {
   set par(justify: lead-mode == "justify", leading: space-token.flavour_leading_additive * 1pt, spacing: space-token.flavour_paragraph_after * 1pt,
-    justification-limits: (spacing: (min: 90%, max: 140%), tracking: (min: -0.005em, max: 0.02em)))
+    justification-limits: (spacing: (min: 85%, max: 140%), tracking: (min: -0.02em, max: 0.02em)))
   set text(font: fell, size: flav-size, fill: ink2, hyphenate: lead-mode == "justify")
   body
 }
