@@ -9,8 +9,11 @@ usage: python tools/render_aids.py [--paper cream|white|both] [--png] [--only pa
 import argparse
 from pathlib import Path
 
+import json
+import sys
+
 import typst
-from pypdf import PdfReader
+from pypdf import PdfReader, PdfWriter
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "typst" / "aids"
@@ -27,12 +30,28 @@ def compile_one(src, paper, png):
     _, warnings = c.compile_with_warnings(output=str(stem) + ".pdf")
     for w in warnings:
         print(f"WARN {src.name}: {str(w)[:300]}")
+        FAILURES.append(f"{src.name}: compiler warning")
     if png:
         c.compile(output=str(stem) + "-{p}.png", format="png", ppi=110)
-    pages = len(PdfReader(str(stem) + ".pdf").pages)
+    pdf = stem.with_suffix(".pdf")
+    pages = len(PdfReader(str(pdf)).pages)
     if src.parent == SRC and pages != 2:
         print(f"FAIL {src.name}: {pages} pages; every sheet must be exactly one front and one back")
-    return stem.with_suffix(".pdf")
+        FAILURES.append(f"{src.name}: {pages} pages")
+    stamp(pdf, "Player Aids" if src.parent != SRC else f"Player Aid {int(src.stem[2:])}")
+    return pdf
+
+
+def stamp(pdf, subject):
+    """Document metadata matching the book's imprint (owner, 2026-10-29)."""
+    meta = json.loads((ROOT / "config/production.json").read_text(encoding="utf-8"))["verified_publication_metadata"]
+    writer = PdfWriter(clone_from=str(pdf))
+    writer.add_metadata({"/Title": f"{meta['title']}, {subject}, {meta['version']}",
+                         "/Author": meta.get("author_credit") or "", "/Subject": subject})
+    writer.write(str(pdf))
+
+
+FAILURES = []
 
 
 def main():
@@ -51,6 +70,8 @@ def main():
             combined = OUT / "all.typ"
             combined.write_text("".join(f'#include "/typst/aids/{s.name}"\n' for s in sheets), encoding="utf-8")
             print("ok", compile_one(combined, paper, False).relative_to(ROOT))
+    if FAILURES:
+        sys.exit("FAIL: " + "; ".join(FAILURES))
 
 
 if __name__ == "__main__":

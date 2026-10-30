@@ -113,3 +113,13 @@ Owner instruction after the RC522 design review: "Fix everything to the best of 
 - Index: the last index page is balanced into three whole-entry columns of near-equal height; a column never starts with a sub-entry or ends with a letter head.
 - Back cover: the approved ART-COVER-002 party scene sits between the blurb and the game facts; the crest flourish under the frame's own crest is omitted, and the blurb is set at 4.8 in for an even rag.
 - Fresh pages for numbered sections are kept, as the owner instructed on 2026-10-12. The Bestiary keeps one Monster per column (BOOK_DESIGN_PLAN 6.15); its half-empty columns came mainly from missing portraits, now restored.
+
+## Imprint, opener spreads, and companion outputs - 2026-10-29
+
+Owner instruction: version is the manuscript version; author Jordon; publisher Escutcheon Press; no ISBN; no illustration credits; player aids and Basic Mode Hero records current and to the book's standard; all art at 300 ppi or more.
+
+- Title page: title, subtitle, and the author's name as a tracked byline in the title's serif; at the foot, the castle mark, the publisher's imprint, and the manuscript version. The colophon carries the author, publisher, copyright, and the type credits; the back cover carries the imprint.
+- Opener spreads: a chapter whose introduction cannot share its opener page opens on a display page (art, arms, number, and title, centred) with the whole introduction on the facing page. A zero-height probe after the opening flavour decides it from the first layout iteration; Chapters 8 and 11 use it.
+- Back cover: an edition blurb replaces the repeated Chapter 1 lead, set to end on a full line.
+- Typography: smart quotes are off in every Typst document, and the player aids and Hero records use the manuscript's hyphen-minus for negatives and empty cells.
+- Art: every placed raster prints at 300 ppi or more; `tools/check_art_ppi.py` gates each release PDF.

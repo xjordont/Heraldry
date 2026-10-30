@@ -1,5 +1,23 @@
 # Production state - RC522 source, main
 
+## Owner metadata, current player aids, and release completeness - 2026-10-29
+
+Owner instruction: "Fix all outstanding issues in the best way you see fit ... Version should be the manuscript version. Author "Jordon". Publisher "Escutcheon Press". Omit ISBN. No illustration credits. Update all the player aids and basic hero sheets to ensure they are not only UpToDate with the latest manuscript but also follow the same premium design and layout rigour. I removed the budget constraints in GitHub. Ensure all art is at least 300dpi and if not use AI upscaling to 300dpi at least." No manuscript text changed (RC522 stays active).
+
+**Metadata.** `config/production.json` records the author (Jordon), publisher (Escutcheon Press), copyright holder (Jordon, 2026), no ISBN, and no illustration credit. The title page carries the byline and the imprint above the manuscript version line. The colophon names the author, the publisher, and the copyright, and drops the "Rules diagrams are original vector drawings" line. The back cover carries the imprint. Every PDF (book, covers, calibration, player aids, and Hero records) carries the book's title and author metadata.
+
+**Back cover.** The back cover opens with its own blurb (`editorial/back_cover.json`, an edition addition that adds no rules) instead of repeating the Chapter 1 lead; the game facts stay verbatim from 1.1. The blurb is set to end on a full line.
+
+**Chapter openers.** A chapter whose introduction cannot share the opener page (Chapters 8 and 11) now opens as a spread: a display page with the art and title, centred, then the whole introduction on the facing page. Before, the introduction ran onto a second page that ended mostly empty before the first section's fresh page.
+
+**Player aids.** All ten sheets are current with RC522 and recorded in `production/aids/fidelity.json`. PA-4 The Fallen is rewritten for the RC516 Injuries Table and Lingering Injuries, the RC517 activation ending at 0 HP, and the RC522 clarifications; PA-1, PA-5, PA-8, and PA-9 carry the related changes. The sheets now follow the style lock (straight quotes and inch marks, hyphen-minus, no em dashes). Every verified release attaches them on cream and white.
+
+**Hero records.** The 24 Basic Mode Heroes match B.4 of RC522 (`tools/hero_cards.py check`). Their empty cells and negative values now use the hyphen-minus instead of an em dash and a Unicode minus.
+
+**Art resolution.** Every placed raster already prints at 300 ppi or more at its placed size: book 336 ppi lowest (chapter art), covers 348, player aids 425, Hero records 383. No image needed upscaling. `tools/check_art_ppi.py` now gates every release PDF, and the inkjet verifier reports the book's lowest placed resolution.
+
+**Typography.** Smart quotes are off in every Typst document, so the calibration sheet and the player aids no longer print curly apostrophes or double primes.
+
 ## Design review repairs; spot art restored throughout - 2026-10-29
 
 Owner instruction after the RC522 design review: "Fix everything to the best of your ability using your best judgment and best design layout principles ... Continue working until the final product is publication ready." Layout, art-binding, workflow, and documentation repairs only; no manuscript text changed (RC522 stays active).

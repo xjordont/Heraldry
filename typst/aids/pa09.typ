@@ -1,11 +1,6 @@
 // PA-9 The Town. Wording condensed from §11.2.4–11.2.6, §11.3 and C.10.
 #import "kit.typ": *
 #let head = (11, "9", "The Town", "§ 11.2.4–11.2.6 · § 11.3 · C.10")
-#let act(name, tap, body) = block(above: 7pt, below: 0pt, breakable: false, {
-  grid(columns: (1fr, auto), column-gutter: 6pt, align: horizon, text(weight: 800, name), cost(tap))
-  v(2pt)
-  body
-})
 #let place-head(t, sub, seed: 1) = { aside-head(seed: seed, size: 18pt, t); v(-3pt); text(size: 9.5pt, fill: ink3, sub) }
 
 #side(..head, face: "front")[
@@ -18,7 +13,7 @@
     #gap-v
     #place-head([The Chapel], [Healing, afflictions, miracles], seed: 3)
     #act([Chirurgeon's Care], [1 TAP])[Remove 1 Wound from one Hero. 6c × Level.]
-    #act([Cleanse Affliction], [1 TAP])[Remove one lasting Injuries Table (or similar) result. 3c.]
+    #act([Cleanse Affliction], [1 TAP])[Remove one lingering injury or other permanent effect of the Injuries Table or a similar injury rule. 3c.]
     #act([Quiet the Bells], [1 TAP])[Remove Heard the Song from one Hero. 0c.]
     #act([Resurrection], [2 TAP])[A Hero with a retained death record returns with 1 Wound. 8c × Level. Not past the roster maximum; once per Hero per campaign.]
   ],
@@ -53,7 +48,7 @@
   ],
   [
     #place-head([The Guild of Keys], [Contracts, maps, logistics], seed: 8)
-    #act([Accept Contract], [1 TAP])[One active side contract. After the next adventure is generated, before deployment, roll 1d6: *1–2 Monster Writ:* defeat 1+ Monster Group and 1+ Hero extracts. *3–4 Salvage Writ:* extract 1+ treasure, relic, clue, captive, or object beyond the primary objective. *5–6 Survey Writ:* a Hero not Engaged uses Interact (1 AP) adjacent to a feature or marker within 6″ of the centre. No extraction route: a living Hero on any edge at the end meets the extraction part. Reroll an impossible term; none possible: cancel and refund 1 TAP next Town Phase. Done, with a Hero extracted: *5c × APL* (start-of-adventure APL) in Aftermath. Never changes victory conditions; not for the Triumph Finale.]
+    #act([Accept Contract], [1 TAP])[One active side contract. After the next adventure is generated, before deployment, roll 1d6: *1–2 Monster Writ:* defeat 1+ Monster Group and 1+ Hero extracts. *3–4 Salvage Writ:* extract 1+ treasure, relic, clue, captive, or object beyond the primary objective. *5–6 Survey Writ:* a Hero not Engaged uses Interact (1 AP) adjacent to a feature or marker within 6" of the centre. No extraction route: a living Hero on any edge at the end meets the extraction part. Reroll an impossible term; none possible: cancel and refund 1 TAP next Town Phase. Done, with a Hero extracted: *5c × APL* (start-of-adventure APL) in Aftermath. Never changes victory conditions; not for the Triumph Finale.]
     #act([Map Room], [1 TAP])[Competitive: win the next Setup Roll-off. Solo or co-op: roll a second Core Scenario from the Climate and choose. Fixed adventure: Advantage on the party's first Setup Roll-off, search, or scenario Interact Check.]
     #gap-v
     #aid-table((1fr, 1fr), ("c", "c"), ("Built", "Next Component"), (

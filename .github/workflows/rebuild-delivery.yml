@@ -82,6 +82,18 @@ jobs:
           python assets/hero-record/sheet.py blank --pdf "dist/Heraldry_${VERSION}_hero-record-blank.pdf"
           git diff --exit-code -- assets/hero-record/hero-record-front.html assets/hero-record/hero-record-reverse.html
           python assets/hero-record/sheet.py heroes --no-png --pdf "dist/Heraldry_${VERSION}_basic-heroes.pdf"
+      - name: Player aids for the release
+        # The ten double-sided player aids, current with the manuscript (production/aids/fidelity.json),
+        # on cream and on paper white. The renderer fails on any warning or any sheet that is not two sides.
+        id: aids
+        run: |
+          VERSION=$(python tools/manuscript.py --version)
+          python tools/aids_fidelity.py
+          python tools/render_aids.py --paper both
+          cp build/aids/all-cream.pdf "dist/Heraldry_${VERSION}_player-aids.pdf"
+          cp build/aids/all-white.pdf "dist/Heraldry_${VERSION}_player-aids-white.pdf"
+      - name: Every placed raster at 300 ppi or more
+        run: python tools/check_art_ppi.py dist/Heraldry_*.pdf
       - name: Publish the PDFs as a GitHub Release
         id: release
         shell: bash

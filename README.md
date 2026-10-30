@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
-- [`e79ba3f4`](https://github.com/xjordont/Heraldry/commit/e79ba3f4e983fd73fcaab3cc840c629a77fa103a) Art queue: regenerate after the owner's V1 Hero portrait approvals
-- [`b34c456f`](https://github.com/xjordont/Heraldry/commit/b34c456fd4675c9b812f53f744b9e60076eca4b6) Figures: remap source-line citations to RC522; stop the remapper corrupting dates and URLs
-- [`35633762`](https://github.com/xjordont/Heraldry/commit/35633762404dad9f15edcdc586658f56deb69e7f) Hero records: label General Talents as General, not Class
-- [`6607c718`](https://github.com/xjordont/Heraldry/commit/6607c718bc3c56b11c16ad8e45054603b1135499) RC522: injury clarity fixes; Split Brow no longer applies Bleeding
-- [`0aaae67a`](https://github.com/xjordont/Heraldry/commit/0aaae67a4f42edbf466ef155a5979bf6f9fb9482) RC521: tone down Wolf and Great Shape; reprice enhanced Bucklers; end Cover overlap
-- [`50587055`](https://github.com/xjordont/Heraldry/commit/50587055bab56a7e4e484f000e774fbcec122492) RC520: revert Elite clause; simplify Commanding Presence; owner Tumble and Heartseeker; critique equipment changes
+- [`d7c911d7`](https://github.com/xjordont/Heraldry/commit/d7c911d7d829e020aff85587d9d01d8b29ad86c0) State: candidate request 20261029T214330Z blocked by the GitHub Actions budget
+- [`c0922f42`](https://github.com/xjordont/Heraldry/commit/c0922f4251e7469dd4e51397c3ea9e9d52c29e8b) build: request candidate build 20261029T214330Z
+- [`ea616a9a`](https://github.com/xjordont/Heraldry/commit/ea616a9afba8b2a786d0dc53829dccd851f5dd87) Layout: split a tall table under its heading, pull back short last pages, keep profile openings, current colophon
+- [`45f326fc`](https://github.com/xjordont/Heraldry/commit/45f326fc00f7dfd2696e587d297ea1ec136683e4) Design review repairs: restore spot art, tab clearance, table breaks, balanced tails and index
+- [`1acabb8f`](https://github.com/xjordont/Heraldry/commit/1acabb8f1419c952c5a4a3d62b110b57f85bcbca) Build candidate status (20261029T034753Z)
+- [`a6f22d36`](https://github.com/xjordont/Heraldry/commit/a6f22d3601b46780311e5e062f50b8dc2c7995ca) build: request candidate build 20261029T034753Z
 
 <!-- END AUTO:recent -->
 

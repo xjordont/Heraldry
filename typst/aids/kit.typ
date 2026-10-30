@@ -33,6 +33,10 @@
 #let side(arm, code, title, refs, face: "front", art: none, art-w: 130pt, art-at: right, art-dx: 0pt, art-dy: 9pt, body) = page(
   width: page-w, height: page-h, margin: (x: M, top: M, bottom: MB), fill: paper)[
   #set text(font: sans, size: body-pt, hyphenate: false, lang: "en", region: "CA", fill: ink, top-edge: 0.8em, bottom-edge: -0.25em)
+  // The book's style lock: straight apostrophes, quotes, and inch marks; never curly quotes or primes.
+  #set smartquote(enabled: false)
+  // Markup turns "-4" into a Unicode minus; the style lock keeps the manuscript's hyphen-minus.
+  #show "\u{2212}": "-"
   #set par(justify: false, leading: 3.4pt, spacing: 5pt)
   #set strong(delta: 200)
   #iron-band(arm, code, title, refs)
@@ -129,6 +133,12 @@
 #let note(body) = block(width: 100%, above: 7pt, below: 8pt, breakable: false, fill: tint, stroke: (left: 2.6pt + ink),
   inset: (x: 8pt, y: 6pt))[#tag("Rules Note", size: 8.6pt) #v(3pt) #body]
 #let cost(t) = cost-tag(text(size: 9pt, t))
+// A named Town action with its TAP cost tag, then its effect.
+#let act(name, tap, body) = block(above: 7pt, below: 0pt, breakable: false, {
+  grid(columns: (1fr, auto), column-gutter: 6pt, align: horizon, text(weight: 800, name), cost(tap))
+  v(2pt)
+  body
+})
 
 // Reference table at aid size (the book's ledger table).
 #let aid-table(widths, aligns, header, rows, title: none, size: 9.5pt, notes: none) = block(above: 0pt, below: 4pt, {

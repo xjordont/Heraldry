@@ -792,9 +792,17 @@ class Book:
             self.request_measure(u)
         cur = []
         prev_heading_only = True     # chapter opener counts as the start of the opening composition
+        intro_open = True
         for c in root["children"]:
+            if intro_open and ("head" in c or c["kind"] != "f"):
+                # End of the chapter's opening flavour: the opener uses this mark to see whether its
+                # introduction fits beside the art or needs an opener spread.
+                self.out.append("#intro-end()\n")
+                intro_open = False
             cur, prev_heading_only = self.emit_x(c, cur, prev_heading_only)
         self.flush(cur)
+        if intro_open:
+            self.out.append("#intro-end()\n")
 
     def request_measure(self, u):
         if u['id'] not in self.requested_units:

@@ -220,7 +220,10 @@
 }
 
 #let book(body) = {
-  set document(title: publication.verified_publication_metadata.title + ", " + publication.verified_publication_metadata.version)
+  let meta = publication.verified_publication_metadata
+  set document(title: meta.title + ", " + meta.version, author: meta.author_credit,
+    keywords: ("Heraldry Skirmish", "tabletop miniature skirmish", "rulebook", meta.publisher))
+  set smartquote(enabled: false)   // style lock: straight quotes and inch marks
   set page(
     width: page-w, height: page-h,
     fill: substrate,
@@ -276,17 +279,27 @@
 }
 
 // ---------------------------------------------------------------- chapter opener
+// Marks the end of a chapter's opening flavour (emitted by the composer after the last opening block).
+// A zero-height block keeps the mark where the flavour ends; a bare metadata tag would travel with the
+// next block onto the next page and report an overflow that did not happen.
+#let intro-end() = {
+  block(height: 0pt, above: 0pt, below: 0pt, sticky: false)[#metadata("intro-end") <intro-end>]
+  // On an opener spread the introduction page is centred, like the display page it faces.
+  context {
+    let os = query(selector(<chapter-opener>).before(here()))
+    if os.len() > 0 and type(os.last().value) == dictionary and os.last().value.at("spread", default: false) { v(1fr) }
+  }
+}
 #let chapter-opener(num, title, anchor, lead: none, art: none) = {
   pagebreak(weak: true)
   let t = tab-of(num)
-  block(width: 100%, above: 0pt, below: 14pt, breakable: false)[
-    #metadata((anchor: anchor, tab: t)) <chapter-opener>
-    #if art != none {
+  let display = {
+    if art != none {
       let (file, w, h) = art
       align(center, image(file, width: calc.min(w, frame-w * 0.84)))   // never above native 300 ppi size
       v(-8pt)
     } else { v(0.9in) }
-    #align(center)[
+    align(center)[
       #if t != none { arms(t, w: 52pt) }
       #v(-2pt)
       #if num != none {
@@ -300,8 +313,31 @@
       #v(-6pt)
       #flourish(len: 90pt)
     ]
-    #if lead != none { v4.lead-block(fell-body(lead), width: 82%) }
-  ]
+  }
+  // An introduction too long to share the opener page would end on a mostly empty page before the
+  // first section's fresh page. Such a chapter opens as a spread instead: a display page with the art
+  // and title, centred, then the whole introduction on the facing page (design review 2026-10-29).
+  context {
+    let ends = query(selector(<intro-end>).after(here()))
+    let spread = ends.len() > 0 and ends.first().location().page() > here().page()
+    if spread {
+      block(width: 100%, height: body-bottom - m-top - 1pt, above: 0pt, below: 0pt, breakable: false, {
+        [#metadata((anchor: anchor, tab: t, spread: true)) <chapter-opener>]
+        v(1fr)
+        display
+        v(1.3fr)
+      })
+      pagebreak()
+      v(1fr)
+      if lead != none { v4.lead-block(fell-body(lead), width: 82%) }
+    } else {
+      block(width: 100%, above: 0pt, below: 14pt, breakable: false, {
+        [#metadata((anchor: anchor, tab: t)) <chapter-opener>]
+        display
+        if lead != none { v4.lead-block(fell-body(lead), width: 82%) }
+      })
+    }
+  }
 }
 
 // ---------------------------------------------------------------- segments

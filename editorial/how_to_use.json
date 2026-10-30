@@ -4,8 +4,9 @@
   "colophon": [
     "HERALDRY SKIRMISH: THE DYING LANDS",
     "{{VERSION}}.",
+    "Written by {{AUTHOR}}. Published by {{PUBLISHER}}.",
+    "Copyright © {{YEAR}} {{HOLDER}}. All rights reserved.",
     "This edition is typeset from the {{RC}} manuscript. Contents, running heads, page numbers, figures, bookmarks, and the index are navigation and explanatory additions of this edition.",
-    "Rules diagrams are original vector drawings.",
     "Typeset in Source Serif 4, Source Sans 3, Grenze Gotisch, and IM FELL English, used under the SIL Open Font License 1.1.",
     "Formatted for borderless US Letter (8.5 × 11 in) printing."
   ],

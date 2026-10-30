@@ -315,7 +315,7 @@ def armour_row(name, text, shield=False):
         traits.append("Block only")
     if "add +1 to the Targe's AD roll" in text:
         traits.append("+1 AD vs melee")
-    return {"name": name, "ad": re.search(r"AD (d\d+)", text).group(1), "av": "—",
+    return {"name": name, "ad": re.search(r"AD (d\d+)", text).group(1), "av": "-",
             "pen": int(pen.group(1)) if pen else 0, "spd": int(spd.group(1)) if spd else None, "traits": ", ".join(traits)}
 
 
@@ -367,7 +367,7 @@ CARD_POINTER = "Form Rules and the Novice Beast Forms"
 
 
 def entry(name, kind, cost, rest):
-    return {"name": name, "type": kind, "cost": cost or "—", "html": runs_html(rest), "text": flat(rest)}
+    return {"name": name, "type": kind, "cost": cost or "-", "html": runs_html(rest), "text": flat(rest)}
 
 
 def parse_rules(h):
@@ -380,7 +380,7 @@ def parse_rules(h):
     sense = h["stats"].get("Senses")
     if sense:
         m = re.match(r"(.*?Darkvision) \((\d+\")\)", sense)
-        talents.append({"name": sense, "type": "Senses", "cost": "—", "text": SENSES["Darkvision"].format(r=m.group(2)),
+        talents.append({"name": sense, "type": "Senses", "cost": "-", "text": SENSES["Darkvision"].format(r=m.group(2)),
                         "html": esc(SENSES["Darkvision"].format(r=m.group(2)))})
     for it in section(h, "Background Rule"):
         name, cost, rest = split_head(it["runs"])
@@ -389,8 +389,8 @@ def parse_rules(h):
         name, cost, rest = split_head(it["runs"])
         if "NRG" in cost:
             rng, rest2 = take_prefix(rest, "Range")
-            tier = "0" if TIER0.search(name) else ("1" if rng else "—")
-            powers.append({"name": name, "tier": tier, "cost": cost, "range": rng or ("Varies" if TIER0.search(name) else "—"),
+            tier = "0" if TIER0.search(name) else ("1" if rng else "-")
+            powers.append({"name": name, "tier": tier, "cost": cost, "range": rng or ("Varies" if TIER0.search(name) else "-"),
                            "html": runs_html(rest2), "text": flat(rest2)})
         else:
             kind = "General" if re.sub(r" \(.*\)$", "", name) in GENERAL else "Class"  # e.g. Weapon Specialist (Slashing)
@@ -420,7 +420,7 @@ def effective(h, chest, shield):
 
 
 def signed(n):
-    return f"+{n}" if n >= 0 else f"−{-n}"
+    return f"+{n}" if n >= 0 else f"-{-n}"
 
 
 # ================================================================ text measurement (real fonts, Chromium)
@@ -518,7 +518,7 @@ def front_values(h, m, ae, we, ie):
     for k, cx in STAT_AXIS.items():
         out.append(div("hv", cx - 40, value_top(STAT_PX, STAT_CENTRE), 80, esc(vals[k]), f" font-size: {R(STAT_PX)}px;"))
     # DEX: base and the total equipped DEX Pen (just the base when nothing equipped imposes one)
-    out.append(field_caption("DEX", f"{signed(base_dex)} \u2212 {-pen}" if pen < 0 else f"Base {signed(base_dex)}"))
+    out.append(field_caption("DEX", f"{signed(base_dex)} - {-pen}" if pen < 0 else f"Base {signed(base_dex)}"))
     out.append(field_caption("SPD", f'Base {base_spd}"'))
     # resources: maximums printed, current left for play
     for k, (cur, mx) in RES_CX.items():
@@ -529,7 +529,7 @@ def front_values(h, m, ae, we, ie):
             continue
         y = ARM_RULE + ARM_PITCH * (i + 1)
         cells = [(row["name"], False, "hf nm"), (row["ad"], True, "hf"), (row["av"], True, "hf"),
-                 (signed(row["pen"]) if row["pen"] else "0", True, "hf"), (f'{row["spd"]}"' if row["spd"] else "—", True, "hf")]
+                 (signed(row["pen"]) if row["pen"] else "0", True, "hf"), (f'{row["spd"]}"' if row["spd"] else "-", True, "hf")]
         for j, (t, c, cls) in enumerate(cells):
             out.append(on_rule(cls, ae[j + 1], ae[j + 2], y, esc(t), center=c))
         if row["traits"]:
@@ -816,6 +816,11 @@ def render(browser, pages, png=True, pdf=None):
         w = PdfWriter()
         for f in parts:
             w.add_page(PdfReader(str(f)).pages[0])
+        # Document metadata matches the book's imprint (owner, 2026-10-29).
+        meta = json.loads((ROOT / "config/production.json").read_text(encoding="utf-8"))["verified_publication_metadata"]
+        w.add_metadata({"/Title": f"{meta['title']}, Hero Record, {meta['version']}",
+                        "/Author": meta.get("author_credit") or "", "/Subject": "Hero record",
+                        "/Creator": meta.get("publisher") or ""})
         w.write(str(pdf))
         for f in parts:
             f.unlink()

@@ -42,16 +42,16 @@
 
 #side(..head, face: "back", art: "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD", art-w: 260pt)[
   #aid-table((30pt, 120pt, 1fr), ("roll", "key", "text"), ("d10", "Event", "Effect"), (
-    ([1], [Ambush on the Road], [Your side has −1 on its Initiative roll in Round 1.]),
+    ([1], [Ambush on the Road], [Your side has -1 on its Initiative roll in Round 1.]),
     ([2], [Foul Weather], [Treat this adventure's Weather roll as 1. No effect if the weather is set without a roll.]),
     ([3], [Treacherous Path], [One chosen Hero in your Active Party starts having lost 1d4 HP (not below 1 HP).]),
     ([4], [Lost and Delayed], [The opposing party automatically wins the Setup Roll-off.]),
     ([5], [Uneventful Journey], [No effect.]),
     ([6], [Wandering Peddler], [Buy one Tier 1 or 2 consumable at 50% now for an eligible Hero in the Active Party. It cannot be sold.]),
     ([7], [A Moment of Rest], [One chosen Hero starts with +1 Luck Point, up to 1 above their maximum this adventure.]),
-    ([8], [Scout's Vantage], [Reposition one random Monster Group up to 4″ before Hero deployment.]),
+    ([8], [Scout's Vantage], [Reposition one random Monster Group up to 4" before Hero deployment.]),
     ([9], [Omen of Blood], [The first time your party reduces an enemy Hero or an Elite Monster to 0 HP, add 1c to unbanked rewards.]),
-    ([10], [Shortcut], [Your Heroes may deploy up to 2″ outside their deployment zone.]),
+    ([10], [Shortcut], [Your Heroes may deploy up to 2" outside their deployment zone.]),
   ), title: [Expedition Events], size: 10.5pt)
   #text(size: 9.5pt)[Solo or co-op: a result that names an opposing party uses the solo conversion in §10.5.5.]
   #v(10pt)
@@ -66,6 +66,6 @@
     #dot[the Roster and Active Party;]
     #dot[each Hero's Level, Wounds, advancement, and lasting rewards;]
     #dot[Treasury and Storage; Hirelings and Animal Companions;]
-    #dot[Stronghold Components; any death, retirement, Journey result, or injury that still matters.]
+    #dot[Stronghold Components; lingering injuries; any death, retirement, or Journey result that still matters.]
   ])
 ]

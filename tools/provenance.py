@@ -2,7 +2,7 @@
 import json
 from manuscript import ROOT, sha256, version, check as check_source
 
-INPUTS = ["config", "source", "editorial/patches.json", "editorial/how_to_use.json", "editorial/history", "tools", "typst", "fonts", "figures/src", "figures/out",
+INPUTS = ["config", "source", "editorial/patches.json", "editorial/how_to_use.json", "editorial/back_cover.json", "editorial/history", "tools", "typst", "fonts", "figures/src", "figures/out",
           "figures/manifest.json", "figures/placements.json", "assets", "production/art/SELECTIONS.json", "production/art/SPOT_CATALOG.json",
           "Makefile", "requirements.lock", "docs/PRINT_INSTRUCTIONS_TEMPLATE.md"]
 # generated raw masters are bound by SHA256 in production/art/SELECTIONS.json; builds use only the ink derivatives

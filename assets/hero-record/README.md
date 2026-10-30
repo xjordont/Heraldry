@@ -21,7 +21,7 @@ Type follows `config/design_tokens.json`: Grenze Gotisch (titles and banners), S
 ## Front
 
 - Identity cartouches (Name, Class, Ancestry, Background), Level, and a portrait field.
-- Attribute shields. Values are centred on each white field's optical centre in the shield headings' face (Source Sans 3 Bold). DEX and SPD show the effective value. The base sits in small, light text following the arched top of the field (blank: "Base"; populated DEX: base and the total of the equipped Chest and shield DEX Pen, for example "+2 − 3" over "−1", or "Base +3" when nothing imposes a penalty; SPD: "Base 7"" over the lowest of base SPD and every equipped Max Speed).
+- Attribute shields. Values are centred on each white field's optical centre in the shield headings' face (Source Sans 3 Bold). DEX and SPD show the effective value. The base sits in small, light text following the arched top of the field (blank: "Base"; populated DEX: base and the total of the equipped Chest and shield DEX Pen, for example "+2 - 3" over "-1", or "Base +3" when nothing imposes a penalty; SPD: "Base 7"" over the lowest of base SPD and every equipped Max Speed).
 - Hit Points, Energy, Luck (maximums printed, current left for play), Armour, Wounds, Weapons (no P/O column), Inventory, and Coins. The starting coins run in the same small text along the inside top of the Coins ring ("Start" on the blank, "Start 1c" on a Hero); the rest of the field is for the current total.
 
 ## Reverse
@@ -39,4 +39,6 @@ Output goes to `build/hero-records/` and is never committed (docs/LARGE_FILES.md
 
 To build both PDFs without a local browser, run the **Build Hero records** workflow (Actions, `.github/workflows/hero-records.yml`) and download the PDFs from the pre-release it publishes (tag `RC###-hero-records-N`); it also fails if the committed blank differs from the generator. `tests/test_hero_record.py` checks that every B.4 weapon, armour and shield agrees with the 7.8-7.12 tables (Hands, damage die, traits, AD, DEX Pen, Max Speed) and that the Hero meets each requirement.
 
-Print actual size (100%), Letter portrait, duplex, flip on the long edge. Do not commit PDFs; publish through a GitHub Release. Owner approval of this version and physical print, handwriting, and duplex registration are **NOT TESTED**.
+Print actual size (100%), Letter portrait, duplex, flip on the long edge. Do not commit PDFs; publish through a GitHub Release. Every verified book release also attaches the blank record and the 24 Heroes (`Rebuild verified delivery`).
+
+Typography follows the manuscript's style lock: empty cells and negative values use the hyphen-minus ("-", "-2"), never an em dash or a Unicode minus. The merged PDFs carry the book's title and author metadata. Owner approval of this version and physical print, handwriting, and duplex registration are **NOT TESTED**.

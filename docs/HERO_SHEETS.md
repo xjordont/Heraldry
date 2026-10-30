@@ -1,5 +1,7 @@
 # Expanded Hero records
 
+**Current release outputs (2026-10-29):** the illustrated Hero record in `assets/hero-record/` (last section) is the record that ships. Every verified book release attaches its blank (`Heraldry_RC###_hero-record-blank.pdf`) and the 24 Basic Mode Heroes (`Heraldry_RC###_basic-heroes.pdf`), built from B.4 of the active manuscript (RC522: `tools/hero_cards.py check` passes). The Typst records described below are the earlier design and are not released.
+
 Owner direction, 2026-10-22: use one consistent expanded record, always one US Letter sheet printed front and back. The owner rejected the preceding mixed one-/two-side draft and its detached headings and writing lines. That version is superseded.
 
 Latest direction: finish the blank record before adapting Basic Mode Heroes. The blank now imports the book's type and marks directly, removes nested frames and grey writing fields, merges equipped and carried possessions into one Inventory, and removes reminders. Basic Mode PDFs and their template remain at the preceding checkpoint.
@@ -57,7 +59,7 @@ Blank-only QA checks Letter geometry, exactly two pages, minimum type size, esse
 
 ## Review status
 
-Author review and automated checks do not establish owner aesthetic approval. This iteration remains subject to owner review. Physical printing, handwriting, erasing, and duplex registration are **NOT TESTED**. The current manuscript remains RC513; the published book release remains RC492-build-37. This work does not rebuild or release the book.
+Author review and automated checks do not establish owner aesthetic approval. This iteration remains subject to owner review. Physical printing, handwriting, erasing, and duplex registration are **NOT TESTED**. This section records the 2026-10-22 iteration; see the note at the top for what currently ships.
 
 ## Illustrated Hero record (2026-10-26)
 

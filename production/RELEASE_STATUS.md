@@ -1,5 +1,9 @@
 # Release status - RC522 source / RC492 delivery
 
+## RC522 imprint and companion outputs - 2026-10-29
+
+The book now carries the owner's imprint (author Jordon, publisher Escutcheon Press, no ISBN, manuscript version line), an edition back-cover blurb, and opener spreads for Chapters 8 and 11. The verified release also attaches the ten player aids (current with RC522) on cream and white, the blank Hero record, and the 24 Basic Mode Heroes. Every placed raster prints at 300 ppi or more. The GitHub Actions budget limit is lifted; a new candidate build and an all-page visual review precede the release. Physical print **NOT TESTED**.
+
 ## RC522 design review repairs - 2026-10-29
 
 Layout, art-binding, and workflow repairs from the RC522 design review; the manuscript is unchanged. The repairs restore the approved spot art (the RC522 candidate placed about 31 distinct images), protect the thumb-tab edge, make tables and balanced columns break better, balance the last index page, and add the party scene to the back cover. The verified release now also attaches the blank Hero record and the 24 Basic Mode Heroes. A new candidate build and an all-page visual review are required before release; the published delivery remains RC492-build-37 until then. Candidate request `20261029T214330Z` is committed but did not start, because a GitHub Actions budget is preventing further use. Physical print **NOT TESTED**.

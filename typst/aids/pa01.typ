@@ -22,10 +22,12 @@
       #steps[Resolve end-of-round effects (timing order, back).][End "until the end of the round" effects; remove Temporary HP.][Remove unspent AP.][Resolve scoring, extraction, round limits, and victory.]]),
     arms(3, w: 46pt))
   #v(12pt)
-  #grid(columns: (1fr, 1fr, 1fr), column-gutter: 18pt,
+  #grid(columns: (1.3fr, 1fr, 0.95fr), column-gutter: 16pt,
   [
     #aside-head(seed: 1)[Activating]
     #steps[Choose an eligible allied combatant.][Resolve start-of-activation effects.][Spend AP on actions in any order.][Resolve end-of-activation effects.][Mark it as activated.]
+    #v(4pt)
+    #small[A Hero reduced to 0 HP in their own activation ends it at once (Player Aid 4).]
   ],
   [
     #aside-head(seed: 3)[Eligible If]
@@ -46,9 +48,9 @@
   [
     #aid-table((auto, auto, 1fr), ("key", "c", "text"), ("Action", "AP", "Effect"), (
       ([Move], [1], [Move up to your Speed.]),
-      ([Shift], [1], [Move 1″ without triggering Reflex Attack.]),
+      ([Shift], [1], [Move 1" without triggering Reflex Attack.]),
       ([Attack], [1], [One melee or ranged attack. A Hero's 2nd+ weapon attack in an activation: Disadvantage.]),
-      ([Push], [1], [Adjacent target; STR Check with Disadvantage. Success: Push it 2″.]),
+      ([Push], [1], [Adjacent target; STR Check with Disadvantage. Success: Push it 2".]),
       ([Trip], [1], [Needs a Trip weapon; target your Sz or smaller. STR or DEX Check with Disadvantage. Success: Prone.]),
       ([Power], [var.], [Use one Power you know.]),
       ([Read Scroll], [1], [Use one equipped scroll.]),

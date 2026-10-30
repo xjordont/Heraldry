@@ -1,6 +1,6 @@
 # Player aids: design and art direction
 
-Status: direction proposed 2026-10-21 and Route A chosen the same day (section 10). All ten sheets, PA-1 to PA-10, were composed on 2026-10-21 from RC513 (section 12). Their wording was checked against the source by the author, not yet by an independent review. Built PDFs are not committed. Physical print is **NOT TESTED**.
+Status: direction proposed 2026-10-21 and Route A chosen the same day (section 10). All ten sheets, PA-1 to PA-10, were composed on 2026-10-21 from RC513 and brought current with RC522 on 2026-10-29 (section 13). Their wording was checked against the source by the author, not yet by an independent review. Every verified book release attaches the full set on cream and on paper white (`Heraldry_RC###_player-aids.pdf`, `-white`). Built PDFs are not committed. Physical print is **NOT TESTED**.
 
 The player aids are a companion series of printable reference sheets for the table. They are not part of the manuscript, and they do not advance the RC number. Adding them, or a pointer to them, inside the book's appendices is a manuscript change that needs its own owner decision.
 
@@ -154,5 +154,13 @@ Each sheet is `typst/aids/paNN.typ`, built on the shared kit `typst/aids/kit.typ
 - Fidelity: `python tools/aids_fidelity.py` compares each sheet's source sections with those recorded in `production/aids/fidelity.json` and lists the stale sheets after a manuscript revision. After re-reviewing a sheet's wording, run `record` with an honest `--reviewer` note. A hash only shows what was reviewed; it is not a review.
 - Art used (all approved inks): Minotaur, Fighter, Berserker, Ghoul, Night Hag, Ranger, Assassin, the Road, Hearthhold, and Greenmark, at most one per side.
 - Rulebook figures were tried and left out: below 504 pt wide their labels fall under the 9 pt minimum, and no side has room at full width.
-- The true-scale area templates planned for PA-7 are not included: a 6″ cone does not fit beside the rules on one side. They would need a sheet of their own.
+- The true-scale area templates planned for PA-7 are not included: a 6" cone does not fit beside the rules on one side. They would need a sheet of their own.
 - Hero sheets, the party ledger, and the 24 Basic Mode hero cards share this kit and are documented in [HERO_SHEETS.md](HERO_SHEETS.md).
+
+## 13. RC522 update and release (2026-10-29)
+
+Owner instruction: "Update all the player aids ... to ensure they are not only up to date with the latest manuscript but also follow the same premium design and layout rigour."
+
+- **Wording:** every RC513 to RC522 change in the sheets' sections was diffed and applied. PA-4 was rewritten for RC516's Injuries Table and Lingering Injuries, the RC517 rule that a Hero's activation ends at 0 HP, and the RC522 clarifications (Determined Resolve, Cleanse Affliction). PA-1 states the new activation ending, PA-5 the lingering-injury exclusion, PA-8 the record list, and PA-9 Cleanse Affliction. `production/aids/fidelity.json` is recorded against RC522.
+- **Typography:** the sheets follow the manuscript's style lock. Smart quotes are off, so apostrophes, quotes, and inch marks are straight (they were curly quotes and double primes). Markup no longer turns "-2" into a Unicode minus, and empty cells use "-", never an em dash.
+- **Release:** `Rebuild verified delivery` renders both papers, fails on any compiler warning or any sheet that is not exactly two sides, checks every placed raster at 300 ppi or more (`tools/check_art_ppi.py`), and attaches the sets. Each PDF carries the book's title and author metadata.

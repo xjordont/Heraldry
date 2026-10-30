@@ -10,6 +10,8 @@
 #assert(body-samples.len() == 1, message: "Calibration source sample must resolve exactly once in the active manuscript.")
 #set page(width: page-w, height: page-h, fill: substrate, margin: 0pt)
 #set text(font: sans, size: 9.5pt, fill: ink)
+#set smartquote(enabled: false)   // style lock: straight quotes and inch marks
+#set document(title: publication.verified_publication_metadata.title + ", Inkjet Calibration, " + publication.verified_publication_metadata.version, author: publication.verified_publication_metadata.author_credit)
 
 // inset distance markers on all four edges at 0.125/0.25/0.375/0.5 in
 #for (k, (d, lbl)) in ((0.125in, "1/8"), (0.25in, "1/4"), (0.375in, "3/8 SAFE"), (0.5in, "1/2")).enumerate() {

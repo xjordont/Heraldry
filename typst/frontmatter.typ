@@ -20,11 +20,19 @@
     #flourish(len: 96pt)
     #v(16pt)
     #block(width: 80%)[#set par(leading: 5pt, justify: false); #set text(font: fell, size: 13pt); #show emph: it => it.body; #subtitle]
+    #v(0.7in)
+    // Author credit (owner, 2026-10-29), set as the book's byline in the title's face.
+    #text(font: serif, weight: 600, size: 17pt, tracking: 0.16em, upper(publication.verified_publication_metadata.author_credit))
     #v(1fr)
   ]
+  // Imprint and version at the foot: publisher (owner, 2026-10-29) over the manuscript version.
   #place(bottom + center, dy: -0.4in)[
-    #set text(font: sans, size: 9pt, weight: 600)
-    #version
+    #set align(center)
+    #signature(s: 26pt)
+    #v(4pt)
+    #text(font: serif, weight: 600, size: 10.5pt, tracking: 0.22em, upper(publication.verified_publication_metadata.publisher))
+    #v(8pt)
+    #text(font: sans, size: 9pt, weight: 600, version)
   ]
 ]
 
@@ -69,7 +77,8 @@
 #let version-text = json("../build/cover.json").version
 // Edition text names the current manuscript, so the colophon and How to Use never go stale.
 #let rc-code = version-text.find(regex("RC\d+"))
-#let edition-text(p) = p.replace("{{VERSION}}", version-text).replace("{{RC}}", if rc-code == none { version-text } else { rc-code })
+#let pub-meta = publication.verified_publication_metadata
+#let edition-text(p) = p.replace("{{VERSION}}", version-text).replace("{{RC}}", if rc-code == none { version-text } else { rc-code }).replace("{{AUTHOR}}", pub-meta.author_credit).replace("{{PUBLISHER}}", pub-meta.publisher).replace("{{YEAR}}", str(pub-meta.copyright_year)).replace("{{HOLDER}}", pub-meta.copyright_holder)
 #let frontmatter(title: ("HERALDRY SKIRMISH", "THE DYING LANDS"), subtitle: [], version: []) = {
   if edition == "digital" {
     front-cover(title, emph(subtitle), version)
