@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`2cd6f8dd`](https://github.com/xjordont/Heraldry/commit/2cd6f8dd30a08cb9c7d8702c98cdd66d1336cfab) Design review polish: justification, centred openers, Escutcheon Press device
 - [`11207a27`](https://github.com/xjordont/Heraldry/commit/11207a2779d909fcfae21386963a4574751066bd) Record release workflow result
 - [`29c669d1`](https://github.com/xjordont/Heraldry/commit/29c669d18d6cc101108c5b0608389bd4145196f4) Rebuild verified RC522 delivery
 - [`649e1532`](https://github.com/xjordont/Heraldry/commit/649e1532b8bc3702734c28a62f1409bf21786ad4) review: bind the all-page visual review for candidate 20261030T042522Z
 - [`5c740e74`](https://github.com/xjordont/Heraldry/commit/5c740e7448a24384d334fcb9d942b0d1f5350364) Build candidate status (20261030T042522Z)
 - [`da191be8`](https://github.com/xjordont/Heraldry/commit/da191be8cb6f547248b65eec6860d0c7a0f4fa78) build: request candidate build 20261030T042522Z
-- [`56696bf4`](https://github.com/xjordont/Heraldry/commit/56696bf4ef15b25f5d8872bf0d6d69a6285f4ae0) Tests: create build/ before compiling design-review fixtures (clean checkouts)
 
 <!-- END AUTO:recent -->
 
