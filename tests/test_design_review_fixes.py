@@ -34,6 +34,7 @@ POTIONS = {
 
 
 def compile_fixture(source):
+    (ROOT / "build").mkdir(exist_ok=True)
     with tempfile.TemporaryDirectory(dir=ROOT / "build") as folder:
         path = Path(folder) / "fixture.typ"
         path.write_text(source, encoding="utf-8")
