@@ -55,7 +55,8 @@
     "isbn_policy": "Omitted (owner, 2026-10-29)",
     "copyright_year": 2026,
     "illustration_credit": "None (owner, 2026-10-29)",
-    "authority": "Owner instruction 2026-10-29: version is the manuscript version; author Jordon; publisher Escutcheon Press; omit ISBN; no illustration credits."
+    "authority": "Owner instruction 2026-10-29: version is the manuscript version; author Jordon; publisher Escutcheon Press; omit ISBN; no illustration credits.",
+    "publisher_logo": "assets/art/brand/escutcheon-press-logo.png (owner-supplied 2026-10-30; source escutcheon-press-logo-source.jpg; ink by tools/brand_ink.py)"
   },
   "inkjet": {
     "primary_output": "home inkjet borderless Letter",

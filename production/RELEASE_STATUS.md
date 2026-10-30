@@ -1,4 +1,8 @@
-# Release status - RC522 source / RC492 delivery
+# Release status - RC522 source / RC522-build-38 delivery
+
+## RC522 design review polish and publisher device - 2026-10-30
+
+**RC522-build-38** is the verified delivery: the book on cream and white, the digital edition, covers, calibration, the ten player aids on cream and white, the blank Hero record, and the 24 Basic Mode Heroes, all from candidate `20261030T042522Z` after an all-page visual review. Since then, source changes widen the justification limits (loose lines 430 to 83, about 9 fewer pages), centre short chapter openers that stand alone on their page, and place the owner's Escutcheon Press logo on the title page, the colophon, and the back cover. These changes need a new candidate build and an all-page visual review before they are released. Physical print **NOT TESTED**.
 
 ## RC522 imprint and companion outputs - 2026-10-29
 

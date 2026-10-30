@@ -1,5 +1,17 @@
 # Production state - RC522 source, main
 
+## Design review polish and the Escutcheon Press device - 2026-10-30
+
+Owner instructions: "Fix all the issues and add all the polish in the rc522 design review" and "Also incorporate the attached image in the colophon as the Escutcheon Press company logo. We could also put the logo on the back cover." No manuscript text changed (RC522 stays active).
+
+**Review items.** Every item in the RC522 design review is now fixed or kept by an earlier owner decision. `docs/INKJET_PRINT.md` names the current 10.5 pt body and 9 pt table text.
+
+**Justification.** Body and table paragraphs may stretch interword spacing to 140% and shrink it to 85%, with at most 2% letter-spacing adjustment. Loose lines fell from 430 to 83 across the book (including the Appendix A line the review flagged), and the local proof is 618 pages, down from 627.
+
+**Chapter openers.** A short opening flavour alone on its page is optically centred instead of hanging at the top of an empty page (Chapters 2 to 5 and 7, for example; Chapters 1 and 9, whose first section follows directly but cannot share the page, now centre as well). The decision reads the page of the zero-height intro mark itself; the surrounding context's own location travels with the next block and had reported the following page, which left Chapters 1 and 9 bottom-heavy. Openers that share their page with the first section, and the Chapter 8 and 11 spreads, keep their layout.
+
+**Publisher device.** The owner's Escutcheon Press logo (`assets/art/brand/`, plain Git) is set as ink on the paper by `tools/brand_ink.py`. It stands at the foot of the title page above the version line, heads the colophon, and closes the back cover in place of the castle mark and publisher line. At 1.3 in it prints at over 800 ppi. Tests check the file, its resolution, and its three placements.
+
 ## Owner metadata, current player aids, and release completeness - 2026-10-29
 
 Owner instruction: "Fix all outstanding issues in the best way you see fit ... Version should be the manuscript version. Author "Jordon". Publisher "Escutcheon Press". Omit ISBN. No illustration credits. Update all the player aids and basic hero sheets to ensure they are not only UpToDate with the latest manuscript but also follow the same premium design and layout rigour. I removed the budget constraints in GitHub. Ensure all art is at least 300dpi and if not use AI upscaling to 300dpi at least." No manuscript text changed (RC522 stays active).

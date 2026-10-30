@@ -25,12 +25,10 @@
     #text(font: serif, weight: 600, size: 17pt, tracking: 0.16em, upper(publication.verified_publication_metadata.author_credit))
     #v(1fr)
   ]
-  // Imprint and version at the foot: publisher (owner, 2026-10-29) over the manuscript version.
-  #place(bottom + center, dy: -0.4in)[
+  // Imprint at the foot: the Escutcheon Press device (owner, 2026-10-30) over the manuscript version.
+  #place(bottom + center, dy: -0.35in)[
     #set align(center)
-    #signature(s: 26pt)
-    #v(4pt)
-    #text(font: serif, weight: 600, size: 10.5pt, tracking: 0.22em, upper(publication.verified_publication_metadata.publisher))
+    #publisher-logo(0.95in)
     #v(8pt)
     #text(font: sans, size: 9pt, weight: 600, version)
   ]
@@ -92,6 +90,9 @@
     #v(1fr)
     #set text(font: sans, size: 9pt, fill: ink)
     #set par(leading: 3pt, spacing: 6pt)
+    // The publisher's device heads the imprint (owner, 2026-10-30).
+    #publisher-logo(1.3in)
+    #v(14pt)
     #block(width: 70%)[
       #for p in how-to-use.colophon [#edition-text(p) #parbreak()]
     ]

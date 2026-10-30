@@ -34,6 +34,22 @@ class Imprint(unittest.TestCase):
         for banned in ("—", "’", "“", "…"):
             self.assertNotIn(banned, blurb)
 
+    def test_publisher_logo_prints_sharp_where_it_is_placed(self):
+        from PIL import Image
+        logo = ROOT / "assets/art/brand/escutcheon-press-logo.png"
+        self.assertTrue((ROOT / "assets/art/brand/escutcheon-press-logo-source.jpg").is_file())
+        with Image.open(logo) as image:
+            self.assertEqual(image.mode, "LA")             # ink plus transparency: the paper shows through
+            width, height = image.size
+        widest = 1.3                                        # inches wide, the colophon placement
+        self.assertGreaterEqual(width / widest, 300)
+        self.assertGreater(height, width)                   # the shield and banner stand upright
+        self.assertIn("publisher-logo(w)", (ROOT / "typst/heraldry.typ").read_text())
+        front = (ROOT / "typst/frontmatter.typ").read_text()
+        self.assertEqual(front.count("publisher-logo("), 2)    # the title page and the colophon
+        self.assertIn("publisher-logo(", (ROOT / "typst/cover.typ").read_text())
+        self.assertIn("`assets/art/brand/`", (ROOT / "docs/LARGE_FILES.md").read_text())   # plain Git, not LFS
+
 
 class ArtResolution(unittest.TestCase):
     def test_low_resolution_placement_fails(self):
@@ -84,7 +100,29 @@ class OpenerSpread(unittest.TestCase):
         book.flush = lambda cur: None
         book.emit_chapter_body([{"id": "lead", "kind": "f"}, {"id": "more", "kind": "f"},
                                 {"id": "h", "head": {}, "kind": "c"}])
-        self.assertEqual(book.out, ["lead", "more", "#intro-end()\n", "h"])
+        self.assertEqual(book.out, ["lead", "more", "#intro-end(solo: \"auto\")\n", "h"])
+
+    def test_opener_with_a_fresh_first_section_is_marked_solo(self):
+        from build_book import Book
+        book = Book.__new__(Book)
+        book.chapter_items = lambda blocks: blocks
+        book.build_tree = lambda items: {"children": items}
+        book.collect_units = lambda c, acc: None
+        book.request_measure = lambda u: None
+        book.extra_units = {}
+        book.out = []
+        def emit_x(c, cur, after):
+            if "head" in c:
+                book.out.append("#pagebreak(weak: true)\n")
+            book.out.append(c["id"])
+            return cur, False
+        book.emit_x = emit_x
+        book.flush = lambda cur: None
+        book.emit_chapter_body([{"id": "lead", "kind": "f"}, {"id": "h", "head": {}, "kind": "c"}])
+        self.assertEqual(book.out, ["lead", "#intro-end(solo: true)\n", "#pagebreak(weak: true)\n", "h"])
+        book.out = []
+        book.emit_chapter_body([{"id": "lead", "kind": "f"}, {"id": "p", "kind": "c"}])
+        self.assertEqual(book.out, ["lead", "#intro-end()\n", "p"])
 
 
 if __name__ == "__main__":

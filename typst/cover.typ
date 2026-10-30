@@ -66,12 +66,12 @@
     #for p in copy.facts [#p #parbreak()]
   ])
   #let pub = json("../build/cover.json").at("publisher", default: none)
-  #place(bottom + center, dy: if bart != none { -0.8in } else { -1.05in })[
+  #place(bottom + center, dy: if bart != none { -0.75in } else { -1.05in })[
     #set align(center)
-    #signature(s: if bart != none { 50pt } else { 70pt })
+    // The Escutcheon Press device (owner, 2026-10-30) replaces the book's castle mark here: the frame
+    // already carries the castle at its head, and the foot of a back cover is the publisher's place.
+    #if pub != none { publisher-logo(1.15in) } else { signature(s: 70pt) }
     #v(8pt)
-    // Imprint (owner, 2026-10-29) over the manuscript version.
-    #if pub != none [#text(font: serif, weight: 600, size: 10.5pt, tracking: 0.22em, upper(pub)) #v(4pt)]
     #text(font: sans, size: 10pt, weight: 600, tracking: 0.12em, version)
   ]
 ]
