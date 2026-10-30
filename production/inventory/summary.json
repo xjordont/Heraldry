@@ -1,27 +1,27 @@
 {
- "sha256": "f106082c78fdee60edf0943f3962581290ab5c4127aaa6bd455cbb00ebc118b1",
- "bytes": 1529651,
- "lines": 18498,
- "words_whitespace": 253446,
+ "sha256": "fad164ee8adf3fb6739d79945773a3283919ae504d731d980f3270ae3304a59e",
+ "bytes": 1535554,
+ "lines": 18549,
+ "words_whitespace": 254350,
  "headings_by_level": {
   "1": 1,
   "2": 15,
   "3": 134,
-  "4": 414,
+  "4": 415,
   "5": 281
  },
- "headings": 845,
+ "headings": 846,
  "tables": 333,
  "max_table_columns": 12,
  "tables_ragged_rows": [],
  "constructs": {
-  "heading": 845,
-  "inline_text": 59319,
-  "para": 8042,
-  "inline_strong": 24583,
+  "heading": 846,
+  "inline_text": 59635,
+  "para": 8079,
+  "inline_strong": 24741,
   "hr": 42,
-  "list": 1575,
-  "list_item": 4364,
+  "list": 1579,
+  "list_item": 4393,
   "inline_link": 149,
   "inline_em": 448,
   "table": 333,
@@ -63,7 +63,7 @@
   {
    "id": "h-5-combat",
    "title": "5. Combat",
-   "blocks": 216
+   "blocks": 220
   },
   {
    "id": "h-6-your-adventuring-party",
@@ -103,12 +103,12 @@
   {
    "id": "h-appendix-b-basic-mode",
    "title": "Appendix B. Basic Mode",
-   "blocks": 408
+   "blocks": 416
   },
   {
    "id": "h-appendix-c-rules-reference",
    "title": "Appendix C. Rules Reference",
-   "blocks": 328
+   "blocks": 329
   }
  ],
  "patches_applied": [],
