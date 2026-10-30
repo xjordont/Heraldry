@@ -529,6 +529,27 @@
   align(center, block(width: 82%, align(left, body))))
 // generated pen-and-ink spot art (transparent ink, so the page substrate shows through)
 #let spotart(path, w) = block(width: 100%, above: 4pt, below: 2pt, breakable: false, align(center, image(path, width: w)))
+// End-of-unit art (owner 2026-10-30: fill section-end white space with art). Placed only where a
+// unit's last page is left empty because the next heading starts a later page, so it never moves
+// text. `aspect` is height / width; the art prints at `w` or smaller to fit, but never below
+// `min-h`, and is omitted when even that does not fit. A zero-height probe keeps the measuring
+// point on this page (a context that yields nothing would report the following page).
+#let endart(id, path, w, aspect, min-h: 1.6in, gap: 16pt) = {
+  block(height: 0pt, above: 0pt, below: 0pt, sticky: false)[#metadata(id) <endart-probe>]
+  context {
+    let probe = query(selector(<endart-probe>).before(here())).last()
+    let at = probe.location()
+    let next = query(selector(heading).after(at))
+    if next.len() > 0 and next.first().location().page() == at.page() { return }
+    let avail = body-bottom - at.position().y - gap - 6pt
+    let h = calc.min(w * aspect, avail)
+    if h >= min-h {
+      v(gap)
+      block(width: 100%, above: 0pt, below: 0pt, breakable: false,
+        align(center, [#image(path, height: h, alt: id)#metadata((id: id, page: at.page(), h: h.pt())) <endart>]))
+    }
+  }
+}
 
 // Worked example and rules note: one panel (tinted field, black spine). The source's own label
 // ("Example:", "Recommended First Party:") leads in bold, so no word is added or repeated.
@@ -696,12 +717,14 @@
 
 // ---------------------------------------------------------------- figures
 // Caption welded to the figure: a black band with the number, the caption beneath, a rule.
-#let figure-block(id, file, caption, width: 100%, anchor: none, pre: none) = block(width: 100%, above: 10pt, below: 12pt, breakable: false)[
+// `shown`: the printed number in book order (the composer numbers figures as they appear); `id` stays
+// the figure's registry id for its file, marks, and review.
+#let figure-block(id, file, caption, width: 100%, anchor: none, pre: none, shown: none) = block(width: 100%, above: 10pt, below: 12pt, breakable: false)[
   #pre#metadata(id) #label("fig-" + id)#tmark(id, "s")
   #align(center, image(file, width: width))
   #v(4pt)
   #block(width: 100%, fill: ink, inset: (x: 7pt, y: 3.6pt), spacing: 0pt,
-    text(font: sans, size: tokens.type_pt.caption * 1pt, weight: 700, fill: paper)[#id])
+    text(font: sans, size: tokens.type_pt.caption * 1pt, weight: 700, fill: paper)[#if shown != none { shown } else { id }])
   #block(width: 100%, inset: (x: 6pt, top: 4.5pt, bottom: 5pt), spacing: 0pt, {
     set text(font: sans, size: tokens.type_pt.caption * 1pt, fill: ink)
     set par(leading: 2.5pt, justify: false)

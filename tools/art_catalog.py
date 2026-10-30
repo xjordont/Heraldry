@@ -72,6 +72,25 @@ def hero_entries(model):
     return out
 
 
+def end_art_entries(model):
+    """Section-end tailpieces (owner 2026-10-30: fill the white space a section's last page leaves
+    with art). `production/art/END_ART_PLAN.json` names each section, family, and subject; the brief
+    in `production/art/briefs/end_art.json` gives the art direction. The book sets an approved
+    tailpiece below the section's text only where the page would otherwise stay empty."""
+    plan = ROOT / "production/art/END_ART_PLAN.json"
+    if not plan.exists():
+        return []
+    heads = {b["id"]: (ch["title"], b) for ch in model["chapters"] for b in ch["blocks"] if b["type"] == "heading"}
+    out = []
+    for p in json.loads(plan.read_text())["entries"]:
+        if p["heading_id"] not in heads:
+            raise SystemExit(f"{p['id']}: heading {p['heading_id']} is not in the active manuscript")
+        chapter, head = heads[p["heading_id"]]
+        out.append({"id": p["id"], "family": p["family"], "heading_id": p["heading_id"], "end_art": True,
+                    "title": p["title"], "context": [chapter, head["title"]], "facts": {}, "src_lines": head["src"]})
+    return out
+
+
 PLAN = ROOT / "production/art/SUBJECT_PLAN.json"
 OWNER = ROOT / "production/art/OWNER_PROMPTS.json"
 
@@ -140,6 +159,7 @@ def main():
                             "flavour": text(blocks[i + 1]["c"]).strip(), "facts": facts,
                             "src_lines": b["src"]})
     entries += hero_entries(model)
+    entries += end_art_entries(model)
     # orchestrator art direction: fresh chapter subjects, boss family, per-entry unique subjects
     plan = json.loads(PLAN.read_text()) if PLAN.exists() else {"chapters": {}, "direction": {}}
     for e in entries:
@@ -165,6 +185,9 @@ def main():
     unbriefed = [e["id"] for e in entries if e["family"] == "hero" and "brief" not in e]
     if unbriefed:
         raise SystemExit(f"Hero entries without a brief in production/art/briefs/heroes.json: {unbriefed}")
+    unbriefed = [e["id"] for e in entries if e.get("end_art") and "brief" not in e]
+    if unbriefed:
+        raise SystemExit(f"Tailpieces without a brief in production/art/briefs/end_art.json: {unbriefed}")
     audit(entries)
     counts = {}
     for e in entries:

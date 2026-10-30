@@ -127,3 +127,40 @@ class OpenerSpread(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SectionEndFill(unittest.TestCase):
+    """Owner 2026-10-30: fill the white space a section's last page leaves with art, diagrams, and figures."""
+
+    def test_figures_print_in_book_order_and_relabel_their_references(self):
+        from build_book import number_figures
+        text = ('#figure-block("FIG-08", "../figures/out/FIG-08.svg", [#"A (see 2.7)."], width: 100%)\n'
+                '#figure-block("FIG-20", "../figures/out/FIG-20.svg", [#"Key (see 10.4)."], width: 100%)\n'
+                '#figure-block("FIG-07", "../figures/out/FIG-07.svg", [#"key: FIG-20 (see 2.8)."], width: 100%)\n')
+        out = number_figures(text)
+        self.assertIn('shown: "FIG-01"', out.splitlines()[0])
+        self.assertIn('[#"key: FIG-02 (see 2.8)."], shown: "FIG-03"', out.splitlines()[2])
+        self.assertIn('#figure-block("FIG-07", "../figures/out/FIG-07.svg"', out)   # registry id and file unchanged
+
+    def test_end_figures_are_registered_with_anchors(self):
+        sys.path.insert(0, str(ROOT / "figures/src"))
+        import figdata
+        anchors = json.loads((ROOT / "config/content_anchors.json").read_text())
+        for n in range(58, 78):
+            fid = f"FIG-{n}"
+            self.assertIn(fid, figdata.META)
+            self.assertIn(fid, anchors)
+            self.assertTrue((ROOT / "figures/out" / f"{fid}.svg").is_file())
+
+    def test_tailpieces_are_catalogued_and_briefed(self):
+        cat = json.loads((ROOT / "production/art/SPOT_CATALOG.json").read_text())["entries"]
+        ends = [e for e in cat if e.get("end_art")]
+        self.assertEqual(len(ends), len(json.loads((ROOT / "production/art/END_ART_PLAN.json").read_text())["entries"]))
+        for e in ends:
+            self.assertIn("brief", e)
+            self.assertIn("No lettering, numbers, dice, game tokens, or rulebook pages", e["brief"]["avoid"])
+
+    def test_end_art_never_moves_text(self):
+        source = (ROOT / "typst/heraldry.typ").read_text()
+        self.assertIn("#let endart(", source)
+        self.assertIn("next.first().location().page() == at.page()", source)   # only where the next heading starts a later page

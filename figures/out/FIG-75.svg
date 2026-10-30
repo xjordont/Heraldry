@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="274.9pt" viewBox="0 0 504 274.9">
+<title>Party building guidelines for matched one-off play</title>
+<desc>Gather the ten matched one-off party building rules of 6.17, keeping each timing phrase the source gives, with a Level ladder example for creating above Level 1.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="246" height="19" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="11" cy="9.5" r="6.6" fill="#fff"/>
+<text x="11" y="12.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">1</text>
+<text x="22" y="12.8" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Building each party</text>
+<rect x="0" y="24" width="246" height="29.7" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="5" y="36.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Both sides field the same number of Heroes unless the</text>
+<text x="5" y="47" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">scenario says otherwise.</text>
+<rect x="0" y="57.7" width="246" height="29.7" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="5" y="70.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Before creating Heroes:</tspan><tspan font-weight="400"> choose a Hero Level from </tspan><tspan font-weight="700">1–10</tspan><tspan font-weight="400">. Every</tspan></text>
+<text x="5" y="80.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hero begins at that Level unless the scenario says otherwise.</text>
+<rect x="0" y="91.4" width="246" height="40.3" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="5" y="103.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Above Level 1:</tspan><tspan font-weight="400"> first complete Hero creation at Level 1. Then</tspan></text>
+<text x="5" y="114.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">resolve </tspan><tspan font-weight="700">Gaining a Level</tspan><tspan font-weight="400"> once for each additional Level without</tspan></text>
+<text x="5" y="125" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">paying Training Costs.</text>
+<rect x="0" y="135.7" width="246" height="61.5" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="5" y="148.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Before deployment:</tspan><tspan font-weight="400"> pool all starting coins. Each party may</tspan></text>
+<text x="5" y="158.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">spend those coins at list price on items or equipment normally</text>
+<text x="5" y="169.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">available through </tspan><tspan font-weight="700">Buy and Sell Goods</tspan><tspan font-weight="400"> in </tspan><tspan font-weight="700">11.2.4</tspan><tspan font-weight="400">. Assign</tspan></text>
+<text x="5" y="179.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">purchased items to Hero inventories and equip them legally.</text>
+<text x="5" y="190.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Discard all unspent coins when the adventure begins.</text>
+<rect x="0" y="201.2" width="246" height="40.3" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="5" y="213.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">After completing all creation, advancement, purchases,</tspan></text>
+<text x="5" y="224.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">and equipment choices:</tspan><tspan font-weight="400"> set each Hero's current HP, NRG,</tspan></text>
+<text x="5" y="234.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">and Luck equal to their final maximum values.</text>
+<rect x="258" y="0" width="246" height="19" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="269" cy="9.5" r="6.6" fill="#fff"/>
+<text x="269" y="12.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">2</text>
+<text x="280" y="12.8" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Limits that also apply</text>
+<rect x="258" y="24" width="246" height="40.3" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="263" y="36.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Rules that resolve during a Town Phase, Aftermath Phase, or</text>
+<text x="263" y="47" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">later adventure have no effect unless the scenario says</text>
+<text x="263" y="57.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">otherwise.</text>
+<rect x="258" y="68.3" width="246" height="29.7" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="263" y="80.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Matched one-off play does not use Hirelings unless the</text>
+<text x="263" y="91.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">scenario explicitly allows them.</text>
+<rect x="258" y="102" width="246" height="19.1" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="263" y="114.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Both sides use the same campaign restrictions, if any.</text>
+<rect x="258" y="125.1" width="246" height="29.7" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="263" y="137.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Apply the rare ancestry limit in </tspan><tspan font-weight="700">6.9 Ancestries</tspan><tspan font-weight="400">: each party may</tspan></text>
+<text x="263" y="148.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">field no more than </tspan><tspan font-weight="700">1 Hero</tspan><tspan font-weight="400"> with a rare ancestry.</tspan></text>
+<rect x="258" y="158.8" width="246" height="50.9" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="263" y="171.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">If using random creation, apply the matched-play restrictions</text>
+<text x="263" y="181.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">in </tspan><tspan font-weight="700">6.5</tspan><tspan font-weight="400">: matched competitive play ignores all Random Ancestry,</tspan></text>
+<text x="263" y="192.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Random Background, Random Class, and Random Starting</text>
+<text x="263" y="203" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Package Bonuses.</text>
+<text x="258" y="223.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Example (assumed value): Hero Level 4 chosen</text>
+<rect x="258" y="229.7" width="46" height="17" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="281" y="241.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Level 1</text>
+<line x1="305.5" y1="238.2" x2="316.5" y2="238.2" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="322.5,238.2 315.5,235 315.5,241.4" fill="#000"/>
+<rect x="324" y="229.7" width="46" height="17" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="347" y="241.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Level 2</text>
+<line x1="371.5" y1="238.2" x2="382.5" y2="238.2" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="388.5,238.2 381.5,235 381.5,241.4" fill="#000"/>
+<rect x="390" y="229.7" width="46" height="17" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="413" y="241.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Level 3</text>
+<line x1="437.5" y1="238.2" x2="448.5" y2="238.2" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="454.5,238.2 447.5,235 447.5,241.4" fill="#000"/>
+<rect x="456" y="229.7" width="46" height="17" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="479" y="241.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Level 4</text>
+<text x="258" y="258.7" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Create at Level 1, then resolve </tspan><tspan font-weight="700">Gaining a Level</tspan><tspan font-weight="400"> 3 times (4 - 1),</tspan></text>
+<text x="258" y="269.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">with no Training Costs.</text>
+</svg>

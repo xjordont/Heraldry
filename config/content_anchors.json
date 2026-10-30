@@ -313,5 +313,105 @@
     "section": "h-preparation-steps",
     "type": "list",
     "prefix": "Determine Average Party Level (APL). Determine each party's APL as described in Section 6.14. Choose Climate. Select or "
+  },
+  "FIG-58": {
+    "section": "h-14-what-you-need-to-play",
+    "type": "list",
+    "prefix": "1–8 players. One battlefield in either Tabletop Mode or Grid Mode. Tabletop Mode uses an open 36\"×36\" surface measured in inches, a suitable collection of terrain, and a tape measu"
+  },
+  "FIG-59": {
+    "section": "h-151-campaign-goals-and-the-three-fates",
+    "type": "list",
+    "prefix": "Die: A Hero who dies and is not returned to life before the next adventure is removed from the campaign permanently. Retire: A Hero may retire during the Town Phase. A retired Hero"
+  },
+  "FIG-60": {
+    "section": "h-16-rules-hierarchy-and-precedence",
+    "type": "para",
+    "prefix": "For reading rules text, must marks a required instruction, may marks a permission or choice, and cannot marks a prohibition. These words do not create a separate precedence system:"
+  },
+  "FIG-61": {
+    "section": "h-22-ability-scores",
+    "type": "list",
+    "prefix": "Strength (STR): melee force, physical power, climbing, forcing objects, and resisting bodily harm. Dexterity (DEX): ranged accuracy, speed, balance, stealth, dodging, and delicate "
+  },
+  "FIG-62": {
+    "section": "h-23-ability-checks",
+    "type": "para",
+    "prefix": "The one exception is a Terrain Check: a Check required by the Climb or Jump rules, by a Terrain Type or Terrain Tag, or by a terrain feature or hazard marker that a scenario or Sec"
+  },
+  "FIG-63": {
+    "section": "h-285-hidden-and-invisible",
+    "type": "para",
+    "prefix": "If a rule explicitly removes Hidden or Invisible from a combatant, that combatant cannot regain the removed condition until the end of the round unless a more specific rule says ot"
+  },
+  "FIG-64": {
+    "section": "h-210-luck-points",
+    "type": "para",
+    "prefix": "Example: One damage roll from an Explosion affects one Hero from each side, so both sides could spend Luck on the same roll. The side that won Initiative this round decides first a"
+  },
+  "FIG-65": {
+    "section": "h-32-initiative-phase",
+    "type": "para",
+    "prefix": "Example: At the start of Round 3, both sides refresh AP. The Road Wardens roll 1d20 + Party Leader's INT + Party Leader's SPI for 17. The opposing side rolls 14. The Road Wardens w"
+  },
+  "FIG-66": {
+    "section": "h-35-end-of-round",
+    "type": "list",
+    "prefix": "Resolve ongoing damage, conditions, terrain, weather, Power effects, item effects, Monster effects, and scenario effects that occur at the end of the round. Use 3.6 Timing Rules if"
+  },
+  "FIG-67": {
+    "section": "h-36-timing-rules",
+    "type": "para",
+    "prefix": "If these rules still leave 2 or more simultaneous effects tied, use Random Determination to choose the next effect to resolve, then repeat until no tied effects remain."
+  },
+  "FIG-68": {
+    "section": "h-45-reactions",
+    "type": "para",
+    "prefix": "An ongoing effect created by a Reaction to an earlier source is not a Reaction to a later source. Its ongoing modifiers apply normally without using the one-Reaction limit against "
+  },
+  "FIG-69": {
+    "section": "h-46-illegal-actions",
+    "type": "para",
+    "prefix": "Combat attacks and combat manoeuvres are resolved in Section 5. Powers are resolved in Section 8."
+  },
+  "FIG-70": {
+    "section": "h-562-trip-1-ap",
+    "type": "para",
+    "prefix": "A rule may make a target fixed, anchored, or otherwise immune to Trip."
+  },
+  "FIG-71": {
+    "section": "h-57-multiple-attacks",
+    "type": "para",
+    "prefix": "Monsters do not use AP. Summons and Monsters do not use this rule. A Summon may make each weapon attack their AP allows unless their own entry limits them. A Monster with Multi-Att"
+  },
+  "FIG-72": {
+    "section": "h-62-character-creation-procedure",
+    "type": "para",
+    "prefix": "After calculating each base value, apply every applicable ancestry, background, class, Talent, item, and random-generation modifier. Use 6.4 Hero Attributes for Initiative Bonus an"
+  },
+  "FIG-73": {
+    "section": "h-64-hero-attributes",
+    "type": "para",
+    "prefix": "Carried Coins records only coins currently carried on the battlefield. In campaign play, secured coins belong to the party's shared Treasury, not to an individual Hero. Record curr"
+  },
+  "FIG-74": {
+    "section": "h-614-average-party-level-apl",
+    "type": "para",
+    "prefix": "Hirelings, Summons, and Heroes on the Bench do not count toward APL."
+  },
+  "FIG-75": {
+    "section": "h-617-party-building-guidelines",
+    "type": "list",
+    "prefix": "Both sides field the same number of Heroes unless the scenario says otherwise. Before creating Heroes, choose a Hero Level from 1–10. Every Hero begins at that Level unless the sce"
+  },
+  "FIG-76": {
+    "section": "h-73-reading-item-entries",
+    "type": "para",
+    "prefix": "When an item entry includes rules text beyond its table fields, that information appears in this order when applicable: action or cost, range or target, procedure, effect, duration"
+  },
+  "FIG-77": {
+    "section": "h-74-stacking-and-precedence",
+    "type": "list",
+    "prefix": "If 2 item effects would modify the same statistic, Reaction, Check, or non-damage roll, apply only the single highest bonus and the single worst penalty unless a rule explicitly sa"
   }
 }

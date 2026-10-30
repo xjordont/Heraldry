@@ -1,5 +1,9 @@
 # Release status - RC522 source / RC522-build-38 delivery
 
+## Section-end figures and art - 2026-10-30
+
+Twenty new rules figures fill the white space at the end of short sections in Chapters 1 to 7, and 13 Basic Mode Hero portraits close their B.4 profiles; the book stays 618 pages in the local proof. Printed figure numbers follow book order. 47 section-end tailpieces are briefed and queued for the owner's art worker. These changes, and the earlier polish round, need a candidate build and an all-page visual review before release. Physical print **NOT TESTED**.
+
 ## RC522 design review polish and publisher device - 2026-10-30
 
 **RC522-build-38** is the verified delivery: the book on cream and white, the digital edition, covers, calibration, the ten player aids on cream and white, the blank Hero record, and the 24 Basic Mode Heroes, all from candidate `20261030T042522Z` after an all-page visual review. Since then, source changes widen the justification limits (loose lines 430 to 83, about 9 fewer pages), centre short chapter openers that stand alone on their page, and place the owner's Escutcheon Press logo on the title page, the colophon, and the back cover. These changes need a new candidate build and an all-page visual review before they are released. Physical print **NOT TESTED**.

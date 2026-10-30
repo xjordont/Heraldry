@@ -47,6 +47,51 @@ def load_spot_art():
     return by_block, by_id
 
 
+FIG_CALL = re.compile(r'#figure-block\((?P<pre>pre: \[#umark\("FIG-\d+", "s"\)\], )?"(?P<id>FIG-\d+)", (?P<path>"[^"]+"), \[#"(?P<cap>(?:[^"\\]|\\.)*)"\]')
+
+
+def number_figures(text):
+    """Figures print in book order: FIG-01 is the first figure a reader meets. The figure's
+    registry id (its file, manifest record, review, and position marks) is unchanged; only the
+    printed label and the caption references follow book order (owner 2026-10-30 polish)."""
+    order = list(dict.fromkeys(m.group("id") for m in FIG_CALL.finditer(text)))
+    shown = {fid: f"FIG-{i:02d}" for i, fid in enumerate(order, 1)}
+    relabel = lambda s: re.sub(r"FIG-\d+", lambda m: shown.get(m.group(0), m.group(0)), s)
+    (BUILD / "figure_labels.json").write_text(json.dumps(shown, indent=1) + "\n")
+    # A drawing that names another figure (the setup diagrams' "key: FIG-20") gets a relabelled copy.
+    copies = BUILD / "figures"
+    copies.mkdir(parents=True, exist_ok=True)
+    def path_for(fid, path):
+        svg = (ROOT / "figures/out" / f"{fid}.svg").read_text(encoding="utf-8")
+        new = relabel(svg)
+        if new == svg:
+            return path
+        (copies / f"{fid}.svg").write_text(new, encoding="utf-8", newline="\n")
+        return lit(f"../build/figures/{fid}.svg")
+    return FIG_CALL.sub(lambda m: f'#figure-block({m.group("pre") or ""}"{m.group("id")}", {path_for(m.group("id"), m.group("path"))}, '
+                                  f'[#"{relabel(m.group("cap"))}"], shown: "{shown[m.group("id")]}"', text)
+
+
+def load_end_art(art_ids):
+    """Art set at the end of a unit, in white space its last page would otherwise leave empty
+    (owner 2026-10-30). Basic Mode Hero portraits close their profiles; catalogue tailpieces
+    (`end_art`, from production/art/END_ART_PLAN.json) close their sections once approved.
+    Returns {heading id: (art id, path, width pt, aspect)}."""
+    from PIL import Image
+    cat = json.loads((ROOT / "production/art/SPOT_CATALOG.json").read_text())["entries"]
+    wanted = {e["heading_id"]: e["id"] for e in cat
+              if (e.get("family") == "hero" or e.get("end_art")) and e.get("heading_id")}
+    out = {}
+    for head, aid in wanted.items():
+        if aid not in art_ids:
+            continue                   # not approved yet: the space stays white
+        rel, w_in = art_ids[aid]
+        with Image.open(ROOT / rel[3:]) as image:
+            aspect = image.size[1] / image.size[0]
+        out[head] = (aid, rel, w_in * 72, aspect)
+    return out
+
+
 FLOAT_FIGS = set(json.loads((ROOT / "config/design_tokens.json").read_text()).get("layout", {}).get("float_figures", []))
 TABLE_SCOPE_POLICIES = json.loads((ROOT / "config/design_tokens.json").read_text()).get('layout', {}).get('table_scope_policies', {})
 BUILD = ROOT / "build"
@@ -314,6 +359,7 @@ class Book:
         self.tclass = self._classify_all()
         self.spot_art, self.art_ids = load_spot_art()
         self._check_art_anchors()
+        self.end_art = load_end_art(self.art_ids)
 
     def _check_art_anchors(self):
         """Spot art attaches by flavour-block id. After a manuscript revision renumbers blocks, a stale
@@ -581,7 +627,7 @@ class Book:
         want = {f["id"] for v in self.fig_slots.values() for f in v}
         if want - self.placed_figs:
             raise SystemExit(f"figures not placed (unknown insert_after ids): {sorted(want - self.placed_figs)}")
-        return "".join(o)
+        return number_figures("".join(o))
 
     def chapter(self, ch):
         blocks = ch["blocks"]
@@ -850,6 +896,7 @@ class Book:
             self.record(x, "keep-page")
             self.flush(cur)
             self.out.append(f"#keeppage(id: {lit(x['id'])}, {self.parts_typst(self.flat_parts(x, marked=True))})\n")
+            self.emit_end_art(x)
             return [], False
         # over-height: heading sticks to its content; children keep their own units
         self.block_map.append((x["head"]["id"], x["head"]["b"]["src"], "column", None))
@@ -927,7 +974,16 @@ class Book:
             cur, after = self.emit_x(c, cur, after)
         cur.append(({"type": "marker", "id": x["id"] + ":end", "src": x["head"]["b"]["src"]},
                     f"#umark({lit(x['id'])}, \"e\")"))
+        if x["id"] in getattr(self, "end_art", {}):
+            self.flush(cur)
+            self.emit_end_art(x)
+            return [], False
         return cur, False
+
+    def emit_end_art(self, x):
+        if x["id"] in getattr(self, "end_art", {}):
+            aid, rel, w, aspect = self.end_art[x["id"]]
+            self.out.append(f"#endart({lit(aid)}, {lit(rel)}, {w:.1f}pt, {aspect:.4f})\n")
 
     def splits_under_heading(self, kids):
         """True when a node's first child is a fit-capable table too tall to share a column with the heading."""

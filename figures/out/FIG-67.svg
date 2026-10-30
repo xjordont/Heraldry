@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="242.7pt" viewBox="0 0 504 242.7">
+<title>Timing terms and simultaneous-effect order</title>
+<desc>Place the five timing terms along a round and show the priority order for effects that would resolve at the same time, including the solo/cooperative replacement, same-side choice, and the Random Determination fallback.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="13" height="13" fill="#000"/>
+<text x="6.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">A</text>
+<text x="18" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Five timing terms, default phase order (3.1, 3.6)</text>
+<circle cx="78" cy="28.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="78" y="31.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<text x="90" y="31.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">At the start of the round:</tspan><tspan font-weight="400"> after AP is</tspan></text>
+<text x="90" y="41.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">refreshed and Initiative is determined, but</text>
+<text x="90" y="52.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">before the first activation of the round.</text>
+<circle cx="78" cy="65.2" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="78" y="68.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<text x="90" y="68.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">At the start of an activation:</tspan><tspan font-weight="400"> after a</tspan></text>
+<text x="90" y="78.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">combatant is chosen to activate and before</text>
+<text x="90" y="89" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">they perform actions. Occurs each time a</text>
+<text x="90" y="99.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">combatant activates.</text>
+<circle cx="78" cy="112.3" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="78" y="115.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<text x="90" y="115.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">During an activation:</tspan><tspan font-weight="400"> while that combatant</tspan></text>
+<text x="90" y="125.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">is spending AP and resolving actions during</text>
+<text x="90" y="136.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">that activation.</text>
+<circle cx="78" cy="149" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="78" y="152.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
+<text x="90" y="152" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">At the end of an activation:</tspan><tspan font-weight="400"> after that</tspan></text>
+<text x="90" y="162.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">combatant finishes acting during that</text>
+<text x="90" y="172.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">activation. Occurs each time a combatant</text>
+<text x="90" y="183.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">activates.</text>
+<text x="90" y="197.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#333">Monster Phase: not drawn against the terms.</text>
+<circle cx="78" cy="211.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="78" y="214.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">5</text>
+<text x="90" y="214.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">At the end of the round:</tspan><tspan font-weight="400"> during the distinct</tspan></text>
+<text x="90" y="225" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">End of Round phase, after both the Party</text>
+<text x="90" y="235.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Phase and Monster Phase are complete.</text>
+<rect x="0" y="20" width="64" height="35.7" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="32" y="40.85" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Initiative Phase</text>
+<rect x="0" y="56.7" width="64" height="129.9" fill="#d9d9d9" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="32" y="119.65" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Party Phase:</text>
+<text x="32" y="129.65" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">each activation</text>
+<rect x="0" y="187.6" width="64" height="14.5" fill="#fff" stroke="#000" stroke-width="0.9" stroke-dasharray="3 2" rx="2.5"/>
+<text x="32" y="197.85" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Monster Phase</text>
+<rect x="0" y="203.1" width="64" height="35.7" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="32" y="223.95" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">End of Round</text>
+<rect x="278" y="0" width="13" height="13" fill="#000"/>
+<text x="284.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
+<text x="296" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Two or more effects at the same time (3.6)</text>
+<text x="278" y="27" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">A more specific rule takes priority.</tspan><tspan font-weight="400"> If none is more</tspan></text>
+<text x="278" y="37.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">specific, resolve in this order:</text>
+<circle cx="286" cy="56.3" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="286" y="59.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<text x="298" y="59.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Initiative winner's side effects.</text>
+<circle cx="286" cy="70.7" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="286" y="74" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<text x="298" y="73.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Non-Initiative side effects.</text>
+<circle cx="286" cy="85.1" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="286" y="88.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<text x="298" y="88.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Monster Group effects in ascending Monster Group</text>
+<text x="298" y="98.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">number.</text>
+<circle cx="286" cy="109.9" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="286" y="113.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
+<text x="298" y="113" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Terrain, weather, hazard, and scenario effects in the</text>
+<text x="298" y="123.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">order listed by the relevant rule.</text>
+<rect x="278" y="129.2" width="226" height="70.3" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="281.5" y="140.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Solo and cooperative play:</tspan><tspan font-weight="400"> the round's resolved phase</tspan></text>
+<text x="281.5" y="150.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">order replaces steps 1 and 2. Party Phase first: allied-side</text>
+<text x="281.5" y="161.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">effects, then Monster Group effects. Monster Phase first:</text>
+<text x="281.5" y="172.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Monster Group effects, then allied-side effects. Monster</text>
+<text x="281.5" y="183.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Group effects stay in ascending number; terrain, weather,</text>
+<text x="281.5" y="194.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">hazard, and scenario effects stay last.</text>
+<text x="278" y="209.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Same side, same time:</tspan><tspan font-weight="400"> the Party Leader's controller</tspan></text>
+<text x="278" y="219.9" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">chooses the order. </tspan><tspan font-weight="700">Still tied:</tspan><tspan font-weight="400"> use Random Determination to</tspan></text>
+<text x="278" y="230.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">choose the next effect, then repeat until none are tied.</text>
+</svg>

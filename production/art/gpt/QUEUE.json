@@ -1,12 +1,1342 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-29T03:43:12+00:00",
+ "generated_at": "2026-10-30T16:22:07+00:00",
  "max_references": 5,
  "push_every": 1,
  "review_every": 10,
  "receipts_base": 425,
  "target_pixels": 1572864,
- "count": 0,
- "items": []
+ "count": 47,
+ "items": [
+  {
+   "id": "ART-END-ACTION-BASICS",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The dropped torch",
+   "prompt": "production/art/gpt/prompts/ART-END-ACTION-BASICS.txt",
+   "prompt_sha256": "19451045394c049d417f90ca6ff11896fcc811475ff2f598d4245e7eda95b7d1",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "One Hero only; the shapes stay vague"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No detailed Monster.",
+    "Not the Undercroft or the Shadowed Under Passage.",
+    "No glow effect around the torch."
+   ]
+  },
+  {
+   "id": "ART-END-ACTION-POINTS-AND-SUMMONS",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The imp dispelled",
+   "prompt": "production/art/gpt/prompts/ART-END-ACTION-POINTS-AND-SUMMONS.txt",
+   "prompt_sha256": "098ba2725b5e5626fa65d350d057ac5a5945f52f3ca9042108aa359ef3c4fb90",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Only the imp and the column drum; no caster in frame"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the Sun-Drowned Imp bestiary portrait: no tomb setting, no flying pose.",
+    "No glow, grey wash or airbrushed smoke.",
+    "No summoning circle with symbols."
+   ]
+  },
+  {
+   "id": "ART-END-ADVANTAGES-AND-DISADVANTAGES",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The higher ground",
+   "prompt": "production/art/gpt/prompts/ART-END-ADVANTAGES-AND-DISADVANTAGES.txt",
+   "prompt_sha256": "1270c6b2872791552a0e3e9fe04e94eca174d2eaca81484dca46934500a5c93a",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The archer is clearly well above the Beastman"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No longbow, staff or plate armour on the archer.",
+    "Not the aqueduct of the chapter 4 opener.",
+    "No gore."
+   ]
+  },
+  {
+   "id": "ART-END-ADVENTURE-PREPARATION-SEQUENCE",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The scout on the ridge",
+   "prompt": "production/art/gpt/prompts/ART-END-ADVENTURE-PREPARATION-SEQUENCE.txt",
+   "prompt_sha256": "5829b569ae7346b8ba7c87c01279871948eb3c12bdb833c1252ab34c0a4c8fe8",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The ruin stays small and lightly drawn; the Scout is the focal point"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the chapter 10 crossroads or the chapter 1 pass.",
+    "No banners.",
+    "No Monsters drawn in detail."
+   ]
+  },
+  {
+   "id": "ART-END-BACKGROUNDS",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The life left behind",
+   "prompt": "production/art/gpt/prompts/ART-END-BACKGROUNDS.txt",
+   "prompt_sha256": "cfec69e9c9c7cce919647cbdc58e7a80f8be62b7197e65956c1b17f8873e3d09",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "No figures"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the Farmer or Vagabond still lifes.",
+    "Not the Grim World burnt farmstead.",
+    "No banners or smoke."
+   ]
+  },
+  {
+   "id": "ART-END-COMBAT-BASICS",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "Arm's reach",
+   "prompt": "production/art/gpt/prompts/ART-END-COMBAT-BASICS.txt",
+   "prompt_sha256": "f0c751b8f18f2cffd63521762108a2dfcfb87bedbfd297650e8459aedcde3057",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The Bugbear's reach visibly exceeds the Hero's"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the Bugbear bestiary portrait: this is a two-figure clash.",
+    "No goblins.",
+    "No gore."
+   ]
+  },
+  {
+   "id": "ART-END-COMMON-TRAIT-RULES",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "Eyes in the dark",
+   "prompt": "production/art/gpt/prompts/ART-END-COMMON-TRAIT-RULES.txt",
+   "prompt_sha256": "0fabd94666ce8213b30b885ed8ae7cbac1868a6d3d969ab14dae272f31ec628b",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "No light source in the picture"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No glowing eyes beams or glow effects.",
+    "Not the Undermarches climate cutaway or the Quake scenario.",
+    "No monsters."
+   ]
+  },
+  {
+   "id": "ART-END-CONDITIONS",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "Frightened",
+   "prompt": "production/art/gpt/prompts/ART-END-CONDITIONS.txt",
+   "prompt_sha256": "433fc6d3b64d47bdf8c6c7c599b2e0dcc22dff70e03c31d016f705ceeefacd9e",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The Spectre appears only as a shadow"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No visible ghost body, face or glow.",
+    "Not the chapter 8 library or the Shadowed Under Passage.",
+    "No gore."
+   ]
+  },
+  {
+   "id": "ART-END-CORE-HERO-CREATION-RULES",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The bow too big",
+   "prompt": "production/art/gpt/prompts/ART-END-CORE-HERO-CREATION-RULES.txt",
+   "prompt_sha256": "328814f957f8de321a88321fa82271ab1face161278990bdf8e0af0f237f456d",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The Halfling is child-sized with adult proportions; the bow towers over them"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Do not make the Halfling a cute child or cartoon.",
+    "Not the Halfling ancestry figure: no crouch, no sling throw.",
+    "No armour."
+   ]
+  },
+  {
+   "id": "ART-END-CORE-TERMS",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "Hero, Hireling, and Monster",
+   "prompt": "production/art/gpt/prompts/ART-END-CORE-TERMS.txt",
+   "prompt_sha256": "18f56de09e737175fa413fa0ee629b894d83661806f143207fe73df42b04e9cb",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Three combatants only: one Dwarf Hero, one shield-bearing Guard, one Ghoul"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the Undercroft room (no hidden door, no cloaked figure) and not the Shadowed Under Passage scenario.",
+    "Do not draw the Ghoul as a zombie or a skeleton.",
+    "No gore."
+   ]
+  },
+  {
+   "id": "ART-END-DETERMINING-MONSTERS-FOR-AN-ADVENTURE",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "Goblin-sign on the road",
+   "prompt": "production/art/gpt/prompts/ART-END-DETERMINING-MONSTERS-FOR-AN-ADVENTURE.txt",
+   "prompt_sha256": "8b6f49927e1a51c72d7a1a01501540df89879f1c645aba2bedc5d3fd36a6af90",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "No goblins in the picture"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No goblins or other Monsters.",
+    "Not the Broken Courier road or the Bandit's Toll barricade.",
+    "No gore."
+   ]
+  },
+  {
+   "id": "ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The ratkin swarm",
+   "prompt": "production/art/gpt/prompts/ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING.txt",
+   "prompt_sha256": "e268021c7dc93a99ffec4a095e7a47a805baa2b04a41f00ef07e28083460d688",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The ratkin read as one swarm, not separate portraits"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the Ratkin ancestry or bestiary portraits.",
+    "No gore.",
+    "No Heroes in frame."
+   ]
+  },
+  {
+   "id": "ART-END-GENERAL-TALENTS",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "Camouflage",
+   "prompt": "production/art/gpt/prompts/ART-END-GENERAL-TALENTS.txt",
+   "prompt_sha256": "5c2c20f1cb35e3f0292f65d87f7fd9b2f9e785ec39d92bf5f435eb40c3ed8d02",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The Hero is mostly hidden; the cover dominates"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No full figure.",
+    "Not the Scout background or the Ranger class figure.",
+    "No enemies."
+   ]
+  },
+  {
+   "id": "ART-END-HERO-ADVANCEMENT",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "Paying for training",
+   "prompt": "production/art/gpt/prompts/ART-END-HERO-ADVANCEMENT.txt",
+   "prompt_sha256": "2dd6671dbd9c4014f4562c06d9e32de30cb56e1baa9b1b6fb444a60ced09b7cb",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Hands only; no faces"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the Expedition Hall training yard.",
+    "No ledgers or writing.",
+    "No full figures."
+   ]
+  },
+  {
+   "id": "ART-END-HERO-CLASSES",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "Wild Shape: the stag",
+   "prompt": "production/art/gpt/prompts/ART-END-HERO-CLASSES.txt",
+   "prompt_sha256": "f10f156747c24410f231192e53082eaf1e5a4850339466e666c58939eaea9a06",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "An ordinary stag in build, not monstrous"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No half-human transformation.",
+    "Not the Antlered Warden of the Tithe or any Monster.",
+    "No glow."
+   ]
+  },
+  {
+   "id": "ART-END-HIRELINGS",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The porter's drag",
+   "prompt": "production/art/gpt/prompts/ART-END-HIRELINGS.txt",
+   "prompt_sha256": "4a0ee73a3b04b2fbec7cde9717d1b2e8bdcc498823747b7a6e55411b7462a431",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The Porter carries no weapon"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No gore.",
+    "Not the Barracks room or the chapter 6 hall.",
+    "No enemies in frame."
+   ]
+  },
+  {
+   "id": "ART-END-LEGENDARY-VETERANS",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "Warden of the Threshold",
+   "prompt": "production/art/gpt/prompts/ART-END-LEGENDARY-VETERANS.txt",
+   "prompt_sha256": "9741382a329913805742db1869c9bdf2e2aa9f6941a2e431befb74a5f574d768",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "One figure, plainly old"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the Expedition Hall yard or the Outer Walls night view.",
+    "No banners.",
+    "No Monsters."
+   ]
+  },
+  {
+   "id": "ART-END-MONSTER-PHASE",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The goblin tide",
+   "prompt": "production/art/gpt/prompts/ART-END-MONSTER-PHASE.txt",
+   "prompt_sha256": "1dc15910ca120c64aac97a29004aa779a548558c03980a4d0c321cec8e76aa13",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The mob reads as one mass, not as separate portraits"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the Goblin bestiary portrait: no single isolated goblin.",
+    "No goblin shaman, no bugbear.",
+    "No gore."
+   ]
+  },
+  {
+   "id": "ART-END-MONSTER-PLACEMENT-AND-INITIAL-STATE",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "Wolves resting at the wagon",
+   "prompt": "production/art/gpt/prompts/ART-END-MONSTER-PLACEMENT-AND-INITIAL-STATE.txt",
+   "prompt_sha256": "614d92772dbed1f2ab023c285edfe68d934f61cc7d1d39c9055b4a3a31db16cc",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The wolves are resting, not attacking"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the Dire Wolf bestiary portrait and not the Broken Courier race.",
+    "No human figures or corpses.",
+    "No gore."
+   ]
+  },
+  {
+   "id": "ART-END-MOVEMENT-RULES",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The leap between roofs",
+   "prompt": "production/art/gpt/prompts/ART-END-MOVEMENT-RULES.txt",
+   "prompt_sha256": "3d8f8f6462c11580de2a06b81e89e758bb04c19937e55c8ab326b91241279884",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The landing point is level with or below the take-off point"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the chapter 4 aqueduct or a chasm in a cave.",
+    "No rope or grappling hook.",
+    "No flying or magic."
+   ]
+  },
+  {
+   "id": "ART-END-PARTY-PHASE",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "One moves, one waits",
+   "prompt": "production/art/gpt/prompts/ART-END-PARTY-PHASE.txt",
+   "prompt_sha256": "f6c466420bc40d4344de6bbc4602ceb961aabafdd1b39c388d306b7eeb31b538",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Two Heroes only, clearly on the same side"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No enemies in frame.",
+    "Not the chapter 3 dawn gathering.",
+    "No banners."
+   ]
+  },
+  {
+   "id": "ART-END-PARTY-STRUCTURE",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The Party Leader's halt",
+   "prompt": "production/art/gpt/prompts/ART-END-PARTY-STRUCTURE.txt",
+   "prompt_sha256": "16487e9cc05f211f5a9cd30a29a6743a8dfb8aac79de8f0b5075094f01e450a6",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Four Heroes, one clearly leading"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the cover party in rain, the postern gate departure or the chapter 1 pass.",
+    "No banners.",
+    "No monsters."
+   ]
+  },
+  {
+   "id": "ART-END-RANDOM-ANCESTRY-TABLES",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "Travellers of five peoples",
+   "prompt": "production/art/gpt/prompts/ART-END-RANDOM-ANCESTRY-TABLES.txt",
+   "prompt_sha256": "daffd7e5a95db5ffff66c23f842109c604edacc00ce38e32239e2820acadac9d",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Five figures, clearly different in height and build"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No rare ancestries (no horns, tusks, scales or rat features).",
+    "Not the four-Hero cover party.",
+    "No glow halo around the fire."
+   ]
+  },
+  {
+   "id": "ART-END-RANDOM-MONSTER-GENERATION-TABLES",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "Tracks at the water's edge",
+   "prompt": "production/art/gpt/prompts/ART-END-RANDOM-MONSTER-GENERATION-TABLES.txt",
+   "prompt_sha256": "77dc498cb105cd4649e04de31285f9fd563c4f2dc72ab33917aaa31bea111083",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "No creatures shown, only their tracks"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No figures.",
+    "Not the Mire climate walkway or the Mire Titan's Fen.",
+    "No readable symbols in the tracks."
+   ]
+  },
+  {
+   "id": "ART-END-SOLO-AND-COOPERATIVE-PLAY",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The costly escape",
+   "prompt": "production/art/gpt/prompts/ART-END-SOLO-AND-COOPERATIVE-PLAY.txt",
+   "prompt_sha256": "1778fa5f0de7c4f206c9fe27fc77dce5c2137868aebfc014eef46609f5b4fe46",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Both the escaping Hero and the fallen companion read clearly"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No gore.",
+    "No enemies.",
+    "Not the Reliquary of Broken Saints nave."
+   ]
+  },
+  {
+   "id": "ART-END-TERRAIN",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The ford and the fallen column",
+   "prompt": "production/art/gpt/prompts/ART-END-TERRAIN.txt",
+   "prompt_sha256": "b5669458df22bc839b6a4d2b2859b76ae424b565a231764e57ea4742d8853494",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "No figures and no creatures"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the chapter 1 pass, the Greenmark climate road or the Mire walkway.",
+    "No bridge of planks, no buildings.",
+    "No square grid or measured lines."
+   ]
+  },
+  {
+   "id": "ART-END-THE-ATTACK-SEQUENCE",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The bind",
+   "prompt": "production/art/gpt/prompts/ART-END-THE-ATTACK-SEQUENCE.txt",
+   "prompt_sha256": "7757e1b04899281d6486ef080b24a0db816f9ec2d4fc00d7eca68548aa4e5fe8",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Hands and blades only; no faces"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No full figures.",
+    "No glow or motion blur.",
+    "No gore."
+   ]
+  },
+  {
+   "id": "ART-END-THE-BESTIARY",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The drowned bell tower",
+   "prompt": "production/art/gpt/prompts/ART-END-THE-BESTIARY.txt",
+   "prompt_sha256": "e0556cab1693dda00481f10a1452a30d2ddd5825bcf7f3c224769e29684f11a8",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Only one coil of the wyrm is visible; no head, wings or full body"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No full dragon and no breath.",
+    "Not the Black Dragon or Vossegar portraits, and not the Serpent's Sunken Hoard sinkhole.",
+    "No figures."
+   ]
+  },
+  {
+   "id": "ART-END-THE-CAMPAIGN-CYCLE",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The Antlered Path cairn",
+   "prompt": "production/art/gpt/prompts/ART-END-THE-CAMPAIGN-CYCLE.txt",
+   "prompt_sha256": "e9275954a9665b912fb591cd4e4d4d96620c7394f3f0e175bf5a50bc6640c388",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Exactly three stones; no figures"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the Whispering Grove standing stones.",
+    "No carved symbols or runes.",
+    "No glow."
+   ]
+  },
+  {
+   "id": "ART-END-UNIVERSAL-ACTIONS",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "The shield shove",
+   "prompt": "production/art/gpt/prompts/ART-END-UNIVERSAL-ACTIONS.txt",
+   "prompt_sha256": "9977cb831a1db503bc398fffb9da2ccd00ff5e7927f2763da39f2f0f8178dcf7",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The Dwarf is pushing, not striking; the Orc is falling back"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the chapter 5 bridge clash and no undead.",
+    "Do not give the Dwarf a greataxe or a horned helm.",
+    "No gore."
+   ]
+  },
+  {
+   "id": "ART-END-WEATHER-TABLES-BY-CLIMATE",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "Whiteout",
+   "prompt": "production/art/gpt/prompts/ART-END-WEATHER-TABLES-BY-CLIMATE.txt",
+   "prompt_sha256": "1e7cc13b6a8a60aaf52c47e28b846a76143abbb83642cbcc3080cb0669c90447",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The storm is drawn in line only; the white is the paper"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No grey wash or tonal fog.",
+    "Not the Pale City climate gate.",
+    "No Monsters."
+   ]
+  },
+  {
+   "id": "ART-END-WHAT-IS-HERALDRY-SKIRMISH",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "Rivals at the chest",
+   "prompt": "production/art/gpt/prompts/ART-END-WHAT-IS-HERALDRY-SKIRMISH.txt",
+   "prompt_sha256": "51f85d96d2b3a5f40195486803dad909e1ae23b734183c4553005890a186ba97",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Exactly two rival figures and one chest; the Monster shows only as one clawed arm and shoulder"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Do not repeat the chapter 2 sighting across a fog valley or the cover's shrine arch.",
+    "No full Monster figure, face or portrait.",
+    "No banners or heraldic devices.",
+    "No gore."
+   ]
+  },
+  {
+   "id": "ART-END-DIVINE-PRAYERS",
+   "family": "tradition",
+   "register": "scene",
+   "ref_set": "tradition",
+   "title": "Steadfast Word",
+   "prompt": "production/art/gpt/prompts/ART-END-DIVINE-PRAYERS.txt",
+   "prompt_sha256": "0e194eaf83f0e241d67e43e9acb0ab21e402bdb465bf8b3ffdfcbcb4e4742d77",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
+    "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Exactly two figures; the Paladin is lifting, not striking"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No halo, sunburst or radiant glow.",
+    "Not the Tier 1 lantern-healing priest or the Tier 2 roadside shrine.",
+    "No longsword drawn and no enemy in frame."
+   ]
+  },
+  {
+   "id": "ART-END-DRUIDIC-RITUALS",
+   "family": "tradition",
+   "register": "scene",
+   "ref_set": "tradition",
+   "title": "Vine Lash",
+   "prompt": "production/art/gpt/prompts/ART-END-DRUIDIC-RITUALS.txt",
+   "prompt_sha256": "dae9668f66cfe075b8906d18e7ec7b4ce42f5584b6855a661c9f411f8803cdfb",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
+    "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The vine visibly links Druid and Bandit"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No metal weapon, armour or shield on the Druid.",
+    "Not the Tier 1 kneeling root ritual or the Tier 2 bending trees.",
+    "No gore."
+   ]
+  },
+  {
+   "id": "ART-END-PSYCHIC-ABILITIES",
+   "family": "tradition",
+   "register": "scene",
+   "ref_set": "tradition",
+   "title": "Telekinetic Hand",
+   "prompt": "production/art/gpt/prompts/ART-END-PSYCHIC-ABILITIES.txt",
+   "prompt_sha256": "284b1c11f3435710398fdfee1a7c9f4c7d10365f23d28f3aa4fab1556efca9c0",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
+    "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The latch moves with no hand touching it"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No glow beams or lightning.",
+    "Not the Tier 1 hovering-pebble meditation.",
+    "No treasure chest or trap."
+   ]
+  },
+  {
+   "id": "ART-END-SORCERIES",
+   "family": "tradition",
+   "register": "scene",
+   "ref_set": "tradition",
+   "title": "Blood Flicker",
+   "prompt": "production/art/gpt/prompts/ART-END-SORCERIES.txt",
+   "prompt_sha256": "048f6a4cc42c2e2430874ab0c1b27416ef5dc384cb89204a904bba61f18e8ce7",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
+    "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "One Sorcerer only, drawn once (not as a double image)"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No metal Chest armour on the Sorcerer.",
+    "No glow, motion blur or ghost image.",
+    "Not the Tier 1 cut-palm close-up or the Tier 2 storm between the hands.",
+    "No gore."
+   ]
+  },
+  {
+   "id": "ART-END-ADVENTURING-EQUIPMENT",
+   "family": "item",
+   "register": "still",
+   "ref_set": "item",
+   "title": "Hook, rope, and spikes",
+   "prompt": "production/art/gpt/prompts/ART-END-ADVENTURING-EQUIPMENT.txt",
+   "prompt_sha256": "0478848ef06b508b3af25b88e043f23edb23eb71b450181d9de70e4cce9771f4",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
+    "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
+    "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
+    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
+    "assets/art/style/STYLE-REF-56-weapons-sheet.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Only these items"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No lantern.",
+    "Not the background still lifes.",
+    "No labels."
+   ]
+  },
+  {
+   "id": "ART-END-ARMOUR",
+   "family": "item",
+   "register": "still",
+   "ref_set": "item",
+   "title": "Brigandine on the stand",
+   "prompt": "production/art/gpt/prompts/ART-END-ARMOUR.txt",
+   "prompt_sha256": "01f5c0d944f4143027ce3a31a6334ed9bdd6b075179dfcbeb21b6320aaab5088",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
+    "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
+    "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
+    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
+    "assets/art/style/STYLE-REF-56-weapons-sheet.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "One stand, no wearer"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the Armoury room.",
+    "No full plate or knight's helm.",
+    "No heraldic devices."
+   ]
+  },
+  {
+   "id": "ART-END-CHOSEN-AND-RANDOM-CREATION",
+   "family": "item",
+   "register": "still",
+   "ref_set": "item",
+   "title": "Three starting bundles",
+   "prompt": "production/art/gpt/prompts/ART-END-CHOSEN-AND-RANDOM-CREATION.txt",
+   "prompt_sha256": "04f21e0caa417d50c4309b6c0107b53f4b92122769abe8f81b998602f1c06c43",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
+    "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
+    "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
+    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
+    "assets/art/style/STYLE-REF-56-weapons-sheet.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Exactly three bundles"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the chapter 6 hiring hall interior.",
+    "No labels or tags.",
+    "No figures."
+   ]
+  },
+  {
+   "id": "ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE",
+   "family": "item",
+   "register": "still",
+   "ref_set": "item",
+   "title": "The pierced breastplate",
+   "prompt": "production/art/gpt/prompts/ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE.txt",
+   "prompt_sha256": "2a30b28129d167ecdab1124d724fa82878ab359071568b2b2b9d59ca6b9b35db",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
+    "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
+    "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
+    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
+    "assets/art/style/STYLE-REF-56-weapons-sheet.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "No wearer and no body"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No blood or gore.",
+    "Not the Armoury room racks or the armour still life.",
+    "No maker's marks."
+   ]
+  },
+  {
+   "id": "ART-END-EQUIPMENT-OVERVIEW",
+   "family": "item",
+   "register": "still",
+   "ref_set": "item",
+   "title": "The full pack",
+   "prompt": "production/art/gpt/prompts/ART-END-EQUIPMENT-OVERVIEW.txt",
+   "prompt_sha256": "79060821d8047985264afeaf375723d392b59df386e20d2d7dcfe74090836523",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
+    "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
+    "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
+    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
+    "assets/art/style/STYLE-REF-56-weapons-sheet.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "One pack only"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No weapons in the arrangement.",
+    "Not the background still lifes.",
+    "No labels."
+   ]
+  },
+  {
+   "id": "ART-END-ITEM-AVAILABILITY",
+   "family": "item",
+   "register": "still",
+   "ref_set": "item",
+   "title": "The broker's scale",
+   "prompt": "production/art/gpt/prompts/ART-END-ITEM-AVAILABILITY.txt",
+   "prompt_sha256": "2ba9e5173238b62b96649b534f848473ed2476669a43695c89bb8f9831546189",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
+    "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
+    "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
+    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
+    "assets/art/style/STYLE-REF-56-weapons-sheet.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The single ring outweighs the coins"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the Treasure Tables still life.",
+    "No sparkle effects.",
+    "No readable marks."
+   ]
+  },
+  {
+   "id": "ART-END-PERMANENT-SPECIAL-ITEMS",
+   "family": "item",
+   "register": "still",
+   "ref_set": "item",
+   "title": "The Bell's Tongue",
+   "prompt": "production/art/gpt/prompts/ART-END-PERMANENT-SPECIAL-ITEMS.txt",
+   "prompt_sha256": "60553690963a2ca4887e292c6d5dd6dfc5bba203abbc6a633e5bdf6ff446c337",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
+    "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
+    "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
+    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
+    "assets/art/style/STYLE-REF-56-weapons-sheet.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Only the clapper and the charm"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No ringing lines or sound effects.",
+    "Not the Voice Beneath the Bells boss.",
+    "No runes."
+   ]
+  },
+  {
+   "id": "ART-END-RANDOM-CLASS-TABLE",
+   "family": "item",
+   "register": "still",
+   "ref_set": "item",
+   "title": "Staff, sword, and symbol",
+   "prompt": "production/art/gpt/prompts/ART-END-RANDOM-CLASS-TABLE.txt",
+   "prompt_sha256": "45e70a360948ef9d2efd03ea848fe4062d7c2b2fb2e3104912e323d63d16c406",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
+    "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
+    "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
+    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
+    "assets/art/style/STYLE-REF-56-weapons-sheet.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Only these three objects"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the Magic in the Dying Lands altar still life.",
+    "No runes or glyphs.",
+    "No glow."
+   ]
+  },
+  {
+   "id": "ART-END-RANGED-WEAPONS",
+   "family": "item",
+   "register": "still",
+   "ref_set": "item",
+   "title": "Lesser missiles",
+   "prompt": "production/art/gpt/prompts/ART-END-RANGED-WEAPONS.txt",
+   "prompt_sha256": "76c0ffee8a9143146a72f82c14b41f4df1b64a23622c70cbfca10d968e5d8ca7",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
+    "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
+    "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
+    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
+    "assets/art/style/STYLE-REF-56-weapons-sheet.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Only the four named weapons; no bows"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "Not the Melee Weapons still life.",
+    "No shortbow, longbow or greatbow.",
+    "No maker's marks."
+   ]
+  },
+  {
+   "id": "ART-END-READING-A-SCENARIO-BEFORE-SETUP",
+   "family": "item",
+   "register": "still",
+   "ref_set": "item",
+   "title": "The contract and the map",
+   "prompt": "production/art/gpt/prompts/ART-END-READING-A-SCENARIO-BEFORE-SETUP.txt",
+   "prompt_sha256": "0166c0a50b489f8d7ee9005e271e0e0707564d94b5032f102dd5f999ff7f394b",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
+    "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
+    "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
+    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
+    "assets/art/style/STYLE-REF-56-weapons-sheet.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "No legible writing, numbers or symbols on map or contract"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No compass rose or grid on the map.",
+    "Not the War Room interior.",
+    "No figures."
+   ]
+  },
+  {
+   "id": "ART-END-SCROLLS",
+   "family": "item",
+   "register": "still",
+   "ref_set": "item",
+   "title": "The spent scroll",
+   "prompt": "production/art/gpt/prompts/ART-END-SCROLLS.txt",
+   "prompt_sha256": "dc3157e731a4e15abdeb32886993d097fa93604373527c62bc02aea25695307e",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
+    "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
+    "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
+    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
+    "assets/art/style/STYLE-REF-56-weapons-sheet.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "No legible writing anywhere"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No runes or glyphs.",
+    "No glow.",
+    "Not the Tier 2 Arcane copying scene."
+   ]
+  }
+ ]
 }

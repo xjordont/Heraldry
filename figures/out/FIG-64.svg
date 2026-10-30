@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="265pt" viewBox="0 0 504 265">
+<title>Luck Points</title>
+<desc>Show when a Hero may spend Luck, what the reroll does, who decides when several Heroes could spend Luck, and when Luck refreshes.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="504" height="19" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="11" cy="9.5" r="6.6" fill="#fff"/>
+<text x="11" y="12.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">1</text>
+<text x="22" y="12.9" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">When a Hero may spend Luck</text>
+<text x="499" y="12.9" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">2.10</text>
+<rect x="5" y="25" width="148.67" height="64.4" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="5" y="25" width="148.67" height="14" fill="#d9d9d9" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="79.33" y="35.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">The roll</text>
+<text x="9" y="49.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">A d20 </tspan><tspan font-weight="700">Check</tspan><tspan font-weight="400"> made by or against a</tspan></text>
+<text x="9" y="59.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hero, or one damage roll whose</text>
+<text x="9" y="70.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">source is that Hero or that directly</text>
+<text x="9" y="81.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">affects that Hero.</text>
+<line x1="156.67" y1="57.2" x2="168.67" y2="57.2" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="174.67,57.2 167.67,54 167.67,60.4" fill="#000"/>
+<rect x="177.67" y="25" width="148.67" height="64.4" fill="#f0f0f0" stroke="#000" stroke-width="1.2" rx="2.5"/>
+<rect x="177.67" y="25" width="148.67" height="14" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="252" y="35.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">Luck window</text>
+<text x="181.67" y="49.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">A Hero may spend </tspan><tspan font-weight="700">1 Luck Point</tspan><tspan font-weight="400"> after</tspan></text>
+<text x="181.67" y="59.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">seeing the result, but before applying</text>
+<text x="181.67" y="70.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">consequences from that roll.</text>
+<line x1="329.33" y1="57.2" x2="341.33" y2="57.2" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="347.33,57.2 340.33,54 340.33,60.4" fill="#000"/>
+<rect x="350.33" y="25" width="148.67" height="64.4" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="350.33" y="25" width="148.67" height="14" fill="#d9d9d9" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="424.67" y="35.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Consequences</text>
+<text x="354.33" y="49.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">The result is applied. For a shared</text>
+<text x="354.33" y="59.9" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">damage roll, the </tspan><tspan font-weight="700">Luck</tspan><tspan font-weight="400"> window closes</tspan></text>
+<text x="354.33" y="70.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">when defence or mitigation begins</text>
+<text x="354.33" y="81.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">(</tspan><tspan font-weight="700">2.7.3</tspan><tspan font-weight="400">).</tspan></text>
+<text x="5" y="101.7" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">A </tspan><tspan font-weight="700">Check</tspan><tspan font-weight="400"> is made against a Hero if that Hero is the target of the </tspan><tspan font-weight="700">Check</tspan><tspan font-weight="400">, is directly affected by it, or would suffer its consequences.</tspan></text>
+<rect x="0" y="0" width="504" height="110" fill="none" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="0" y="118" width="248" height="19" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="11" cy="127.5" r="6.6" fill="#fff"/>
+<text x="11" y="130.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">2</text>
+<text x="22" y="130.9" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">The reroll</text>
+<text x="243" y="130.9" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">2.10</text>
+<text x="5" y="150.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="14" y="150.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Reroll the entire </tspan><tspan font-weight="700">Check</tspan><tspan font-weight="400"> or damage roll.</tspan></text>
+<text x="5" y="162.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="14" y="162.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">If the original roll had </tspan><tspan font-weight="700">Advantage</tspan><tspan font-weight="400"> or </tspan><tspan font-weight="700">Disadvantage</tspan><tspan font-weight="400">, the</tspan></text>
+<text x="14" y="173" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">reroll uses the same one.</text>
+<text x="5" y="185.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="14" y="185.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">A rerolled damage roll is rerolled completely. Determine</text>
+<text x="14" y="195.7" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Total Misses</tspan><tspan font-weight="400">, </tspan><tspan font-weight="700">Critical Hits</tspan><tspan font-weight="400">, exploding dice, and total damage</tspan></text>
+<text x="14" y="206.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">from the new result.</text>
+<text x="5" y="218.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="14" y="218.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">If one roll affects more than one combatant, apply the new</text>
+<text x="14" y="229" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">result to every combatant affected by that roll.</text>
+<text x="5" y="241.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="14" y="241.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">A roll can be rerolled by </tspan><tspan font-weight="700">Luck</tspan><tspan font-weight="400"> only once.</tspan></text>
+<text x="5" y="253.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="14" y="253.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">The new result must be used, even if it is worse.</text>
+<rect x="0" y="118" width="248" height="145" fill="none" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="256" y="118" width="248" height="19" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="267" cy="127.5" r="6.6" fill="#fff"/>
+<text x="267" y="130.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">3</text>
+<text x="278" y="130.9" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Competing Heroes and refresh</text>
+<text x="499" y="130.9" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">2.10</text>
+<text x="261" y="150.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">If more than one Hero could spend </tspan><tspan font-weight="700">Luck</tspan><tspan font-weight="400"> on the same roll:</tspan></text>
+<circle cx="267.6" cy="161.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="267.6" y="164.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<text x="280.2" y="162.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">The side that won </tspan><tspan font-weight="700">Initiative</tspan><tspan font-weight="400"> decides first.</tspan></text>
+<circle cx="267.6" cy="178.8" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="267.6" y="182.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<text x="280.2" y="179.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Within a side, the </tspan><tspan font-weight="700">Party Leader's</tspan><tspan font-weight="400"> controller chooses the</tspan></text>
+<text x="280.2" y="190.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">decision order.</text>
+<circle cx="267.6" cy="203.8" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="267.6" y="207.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<text x="280.2" y="204.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Once one Hero spends </tspan><tspan font-weight="700">Luck</tspan><tspan font-weight="400">, no other Hero can spend</tspan></text>
+<text x="280.2" y="215.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Luck</tspan><tspan font-weight="400"> on that roll.</tspan></text>
+<text x="261" y="232.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Luck Points</tspan><tspan font-weight="400"> refresh to their maximum at the start of each new</tspan></text>
+<text x="261" y="242.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">adventure unless a rule says otherwise.</text>
+<rect x="256" y="118" width="248" height="145" fill="none" stroke="#000" stroke-width="0.9" rx="2.5"/>
+</svg>

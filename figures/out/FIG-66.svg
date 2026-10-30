@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="425.9pt" viewBox="0 0 504 425.9">
+<title>End of Round: four steps, the scenario-end branch and an example</title>
+<desc>Show when the End of Round begins, its four ordered steps with what each resolves, the branch after step 4, and one assumed worked example of Temporary HP, an until-end-of-round effect, and unspent AP.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="13" height="13" fill="#000"/>
+<text x="6.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">A</text>
+<text x="18" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">When End of Round begins (3.5)</text>
+<rect x="0" y="20" width="69.96" height="16" fill="#fff" stroke="#000" stroke-width="0.8" rx="2.5"/>
+<text x="34.98" y="31.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Initiative Phase</text>
+<line x1="71.96" y1="28" x2="77.96" y2="28" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="83.96,28 76.96,24.8 76.96,31.2" fill="#000"/>
+<rect x="85.96" y="20" width="56.09" height="16" fill="#fff" stroke="#000" stroke-width="0.8" rx="2.5"/>
+<text x="114" y="31.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Party Phase</text>
+<line x1="144.05" y1="28" x2="150.05" y2="28" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="156.05,28 149.05,24.8 149.05,31.2" fill="#000"/>
+<rect x="158.05" y="20" width="66.88" height="16" fill="#fff" stroke="#000" stroke-width="0.8" rx="2.5"/>
+<text x="191.49" y="31.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Monster Phase</text>
+<line x1="226.93" y1="28" x2="232.93" y2="28" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="238.93,28 231.93,24.8 231.93,31.2" fill="#000"/>
+<rect x="240.93" y="20" width="61.74" height="16" fill="#000" stroke="#000" stroke-width="0.8" rx="2.5"/>
+<text x="271.8" y="31.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">End of Round</text>
+<text x="308.67" y="31.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Default order shown (3.1).</text>
+<text x="0" y="49" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">The </tspan><tspan font-weight="700">End of Round</tspan><tspan font-weight="400"> begins after both the </tspan><tspan font-weight="700">Party Phase</tspan><tspan font-weight="400"> and </tspan><tspan font-weight="700">Monster Phase</tspan><tspan font-weight="400"> have resolved, including when a specific rule places the</tspan></text>
+<text x="0" y="59.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Monster Phase first (3.1, 3.4.3). Resolve it in the order below unless a more specific rule says otherwise.</text>
+<rect x="0" y="73.2" width="130" height="54.8" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="12" cy="85.2" r="6.6" fill="#fff"/>
+<text x="12" y="88.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">1</text>
+<text x="24" y="87.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">End-of-round effects</text>
+<rect x="138" y="73.2" width="366" height="54.8" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="143" y="78.2" width="74.67" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="180.34" y="88.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">ongoing damage</text>
+<rect x="221.67" y="78.2" width="51.04" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="247.19" y="88.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">conditions</text>
+<rect x="276.71" y="78.2" width="36.57" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="295" y="88.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">terrain</text>
+<rect x="317.28" y="78.2" width="42.13" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="338.35" y="88.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">weather</text>
+<rect x="363.41" y="78.2" width="62.75" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="394.79" y="88.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Power effects</text>
+<rect x="430.16" y="78.2" width="55.67" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="458" y="88.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">item effects</text>
+<rect x="143" y="96.2" width="69.65" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="177.83" y="106.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Monster effects</text>
+<rect x="216.65" y="96.2" width="70.86" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="252.08" y="106.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">scenario effects</text>
+<text x="144" y="122.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">that occur at the end of the round. If 2 or more resolve at the same time, use 3.6 Timing Rules.</text>
+<line x1="65" y1="128.5" x2="65" y2="130.5" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="65,136.5 61.8,129.5 68.2,129.5" fill="#000"/>
+<rect x="0" y="136" width="130" height="40.4" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="12" cy="148" r="6.6" fill="#fff"/>
+<text x="12" y="151.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">2</text>
+<text x="24" y="150.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">End effects, remove</text>
+<text x="24" y="161.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Temporary HP</text>
+<rect x="138" y="136" width="366" height="40.4" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="144" y="150" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Effects that last </tspan><tspan font-weight="700">until the end of the round</tspan><tspan font-weight="400"> end. Any remaining </tspan><tspan font-weight="700">Temporary HP</tspan><tspan font-weight="400"> is removed</tspan></text>
+<text x="144" y="160.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(5.4.2). A combatant loses all Temporary HP earlier if reduced to 0 HP, Knocked Out, or</text>
+<text x="144" y="171.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">removed from the battlefield (5.4.2).</text>
+<line x1="65" y1="176.9" x2="65" y2="178.9" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="65,184.9 61.8,177.9 68.2,177.9" fill="#000"/>
+<rect x="0" y="184.4" width="130" height="29.6" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="12" cy="196.4" r="6.6" fill="#fff"/>
+<text x="12" y="199.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">3</text>
+<text x="24" y="198.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Remove unspent AP</text>
+<rect x="138" y="184.4" width="366" height="29.6" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="144" y="198.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Any unspent AP is removed. Until then it is kept, and Heroes and Hirelings may spend it on</text>
+<text x="144" y="209.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Reactions (3.3.2, 3.3.3). It never carries into the following round (3.3.2).</text>
+<line x1="65" y1="214.5" x2="65" y2="216.5" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="65,222.5 61.8,215.5 68.2,215.5" fill="#000"/>
+<rect x="0" y="222" width="130" height="24" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="12" cy="234" r="6.6" fill="#fff"/>
+<text x="12" y="237.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">4</text>
+<text x="24" y="236.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Scoring and victory</text>
+<rect x="138" y="222" width="366" height="24" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="144" y="237.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Resolve </tspan><tspan font-weight="700">scenario scoring, extraction, round limits, and victory conditions</tspan><tspan font-weight="400">.</tspan></text>
+<line x1="65" y1="247.5" x2="65" y2="251.5" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="65,257.5 61.8,250.5 68.2,250.5" fill="#000"/>
+<rect x="0" y="257" width="246" height="28.1" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="4" y="268.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">The scenario has ended:</tspan><tspan font-weight="400"> no new round begins.</tspan></text>
+<rect x="258" y="257" width="246" height="28.1" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="262" y="268.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">The scenario has not ended:</tspan><tspan font-weight="400"> a new round begins with the</tspan></text>
+<text x="262" y="279.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Initiative Phase</tspan><tspan font-weight="400"> (3.1, 3.2).</tspan></text>
+<line x1="0" y1="292.1" x2="504" y2="292.1" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
+<rect x="0" y="297.1" width="13" height="13" fill="#000"/>
+<text x="6.5" y="307.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
+<text x="18" y="307.5" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Example (assumed values): one Hero through the End of Round</text>
+<text x="0" y="321.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Assumes the Hero starts with 4 Temporary HP, 1 unspent AP, and an effect that lasts until the end of the round, and that an ongoing</text>
+<text x="0" y="331.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">effect deals 2 damage after mitigation at the end of the round.</text>
+<rect x="0" y="343.3" width="504" height="15" fill="#000" stroke="#000" stroke-width="0.8" rx="2"/>
+<text x="5" y="354.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Hero's state</text>
+<text x="155" y="354.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Start</text>
+<text x="225" y="354.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">After step 1</text>
+<text x="295" y="354.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">After step 2</text>
+<text x="365" y="354.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">After step 3</text>
+<text x="435" y="354.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">After step 4</text>
+<rect x="0" y="358.3" width="504" height="15" fill="#fff" stroke="#000" stroke-width="0.6"/>
+<text x="5" y="369.1" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Temporary HP</text>
+<text x="155" y="369.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">4</text>
+<text x="225" y="369.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">2</text>
+<text x="295" y="369.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">0</text>
+<text x="365" y="369.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">0</text>
+<text x="435" y="369.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">0</text>
+<rect x="0" y="373.3" width="504" height="15" fill="#f0f0f0" stroke="#000" stroke-width="0.6"/>
+<text x="5" y="384.1" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Until-end-of-round effect</text>
+<text x="155" y="384.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">active</text>
+<text x="225" y="384.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">active</text>
+<text x="295" y="384.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">ended</text>
+<text x="365" y="384.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">ended</text>
+<text x="435" y="384.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">ended</text>
+<rect x="0" y="388.3" width="504" height="15" fill="#fff" stroke="#000" stroke-width="0.6"/>
+<text x="5" y="399.1" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Unspent AP</text>
+<text x="155" y="399.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">1</text>
+<text x="225" y="399.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">1</text>
+<text x="295" y="399.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">1</text>
+<text x="365" y="399.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">0</text>
+<text x="435" y="399.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">0</text>
+<text x="0" y="414.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Damage at step 1 is subtracted from Temporary HP first (5.4.2), so the Hero loses no HP.</text>
+</svg>

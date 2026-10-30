@@ -12,7 +12,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 OUT = os.path.join(HERE, "..", "out")
 
-MODULES = ["fig_seq", "fig_spatial", "fig_monster", "fig_scen", "fig_misc", "fig_appx", "fig_scenmaps"]
+MODULES = ["fig_seq", "fig_spatial", "fig_monster", "fig_scen", "fig_misc", "fig_appx", "fig_scenmaps",
+           "fig_end_a", "fig_end_b", "fig_end_c"]
 
 
 def registry():
@@ -49,6 +50,10 @@ def build(only=None):
 
 def selfcheck():
     """Geometry and arithmetic assertions backing the manifest's semantic_check claims."""
+    import fig_end_a, fig_end_b, fig_end_c
+    fig_end_a.selfcheck_end_a()
+    fig_end_b.selfcheck_end_b()
+    fig_end_c.selfcheck_end_c()
     import fig_spatial as fs
     import math
     # FIG-04: shortest Grid distance for dx=3, dy=2 with orth 1 and diagonal 1.5

@@ -456,8 +456,10 @@ Owner 2026-10-12: "We should be very careful of how we set up policy and procedu
 
 **Avoiding page bloat**
 8. Every numbered section starts on a fresh page (owner 2026-10-12: "Keep the page breaks so each section starts on a fresh page"). Space left at the end of a short section is never given to the next section; it is handled by rule 9. To keep this from bloating the book, a section is composed to finish cleanly: its two columns are balanced (12a), and its own figures and tables are placed so its last page is as full as the keep rules allow.
-9. Space left at a section end is filled in this order:
-   - the section's own spot art, if approved;
+9. Space left at a section end is filled in this order (owner 2026-10-30: "fill in the white space with either art, diagrams, further figures"):
+   - a source-faithful rules figure for that section (FIG-58 to FIG-77 close twenty short sections of Chapters 1 to 7), sized to the space the section leaves;
+   - the section's own spot art, if approved, or its approved tailpiece (`production/art/END_ART_PLAN.json`), set by `endart` below the text only where the next heading already starts a later page, scaled to fit and omitted below 1.6 in tall;
+   - a Basic Mode Hero's approved portrait closes their B.4 profile the same way;
    - a relevant example or table from that section, if the source places it there;
    - otherwise intentional white space.
 
