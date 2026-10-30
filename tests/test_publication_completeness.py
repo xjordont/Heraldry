@@ -143,12 +143,13 @@ class SectionEndFill(unittest.TestCase):
         self.assertIn('#figure-block("FIG-07", "../figures/out/FIG-07.svg"', out)   # registry id and file unchanged
 
     def test_end_figures_are_registered_with_anchors(self):
-        sys.path.insert(0, str(ROOT / "figures/src"))
-        import figdata
+        # read the generated manifest: importing figdata needs build/blocks.json, absent on a clean checkout
+        manifest = json.loads((ROOT / "figures/manifest.json").read_text())
+        ids = {f["id"] for f in (manifest["figures"] if isinstance(manifest, dict) else manifest)}
         anchors = json.loads((ROOT / "config/content_anchors.json").read_text())
         for n in range(58, 78):
             fid = f"FIG-{n}"
-            self.assertIn(fid, figdata.META)
+            self.assertIn(fid, ids)
             self.assertIn(fid, anchors)
             self.assertTrue((ROOT / "figures/out" / f"{fid}.svg").is_file())
 
