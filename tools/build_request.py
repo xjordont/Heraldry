@@ -46,8 +46,13 @@ def problems():
     if not_ok:
         out.append(f"{len(not_ok)} illustrations are not approved: {', '.join(not_ok[:6])}")
     queue = json.loads((ROOT / "production/art/gpt/QUEUE.json").read_text(encoding="utf-8"))
-    if queue.get("count"):
-        out.append(f"the art queue still holds {queue['count']} items")
+    # Section-end tailpieces are optional fill (owner 2026-10-30): the book leaves their space white
+    # until each is approved, so a pending tailpiece never blocks a build. Every other item does.
+    optional = {e["id"] for e in json.loads((ROOT / "production/art/SPOT_CATALOG.json").read_text(encoding="utf-8"))["entries"]
+                if e.get("end_art")}
+    required = [i for i in queue.get("items", []) if i.get("id") not in optional]
+    if required or (queue.get("count") and not queue.get("items")):
+        out.append(f"the art queue still holds {len(required) or queue['count']} required items")
     r = subprocess.run([sys.executable, "tools/preflight.py"], cwd=ROOT, capture_output=True,
                        text=True, encoding="utf-8", errors="replace")
     if r.returncode:

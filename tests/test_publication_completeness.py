@@ -164,3 +164,10 @@ class SectionEndFill(unittest.TestCase):
         source = (ROOT / "typst/heraldry.typ").read_text()
         self.assertIn("#let endart(", source)
         self.assertIn("next.first().location().page() == at.page()", source)   # only where the next heading starts a later page
+
+
+class OptionalTailpieces(unittest.TestCase):
+    def test_pending_tailpieces_do_not_block_a_build_request(self):
+        import build_request
+        problems = " ".join(build_request.problems())
+        self.assertNotIn("required items", problems)
