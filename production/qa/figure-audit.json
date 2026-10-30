@@ -14,7 +14,7 @@
  {
   "id": "FIG-03",
   "placed": true,
-  "folio": "71",
+  "folio": "70",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
@@ -26,13 +26,13 @@
  {
   "id": "FIG-05",
   "placed": true,
-  "folio": "58",
+  "folio": "57",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-06",
   "placed": true,
-  "folio": "67",
+  "folio": "66",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
@@ -50,295 +50,415 @@
  {
   "id": "FIG-09",
   "placed": true,
-  "folio": "60",
+  "folio": "59",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-10",
   "placed": true,
-  "folio": "243",
+  "folio": "239",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-11",
   "placed": true,
-  "folio": "247",
+  "folio": "243",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-12",
   "placed": true,
-  "folio": "249",
+  "folio": "245",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-13",
   "placed": true,
-  "folio": "358",
+  "folio": "353",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-14",
   "placed": true,
-  "folio": "359",
+  "folio": "354",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-15",
   "placed": true,
-  "folio": "423",
+  "folio": "417",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-16",
   "placed": true,
-  "folio": "392",
+  "folio": "386",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-17",
   "placed": true,
-  "folio": "500",
+  "folio": "492",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-18",
   "placed": true,
-  "folio": "537",
+  "folio": "528",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-19",
   "placed": true,
-  "folio": "579",
+  "folio": "570",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-20",
   "placed": true,
-  "folio": "387",
+  "folio": "381",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-21",
   "placed": true,
-  "folio": "389",
+  "folio": "383",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-22",
   "placed": true,
-  "folio": "391",
+  "folio": "385",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-23",
   "placed": true,
-  "folio": "394",
+  "folio": "388",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-24",
   "placed": true,
-  "folio": "397",
+  "folio": "391",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-25",
   "placed": true,
-  "folio": "400",
+  "folio": "394",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-26",
   "placed": true,
-  "folio": "403",
+  "folio": "397",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-27",
   "placed": true,
-  "folio": "406",
+  "folio": "400",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-28",
   "placed": true,
-  "folio": "408",
+  "folio": "402",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-29",
   "placed": true,
-  "folio": "410",
+  "folio": "404",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-30",
   "placed": true,
-  "folio": "412",
+  "folio": "406",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-31",
   "placed": true,
-  "folio": "414",
+  "folio": "408",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-32",
   "placed": true,
-  "folio": "416",
+  "folio": "410",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-33",
   "placed": true,
-  "folio": "419",
+  "folio": "413",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-34",
   "placed": true,
-  "folio": "422",
+  "folio": "416",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-35",
   "placed": true,
-  "folio": "426",
+  "folio": "420",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-36",
   "placed": true,
-  "folio": "429",
+  "folio": "423",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-37",
   "placed": true,
-  "folio": "431",
+  "folio": "425",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-38",
   "placed": true,
-  "folio": "434",
+  "folio": "428",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-39",
   "placed": true,
-  "folio": "437",
+  "folio": "431",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-40",
   "placed": true,
-  "folio": "439",
+  "folio": "433",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-41",
   "placed": true,
-  "folio": "442",
+  "folio": "435",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-42",
   "placed": true,
-  "folio": "444",
+  "folio": "437",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-43",
   "placed": true,
-  "folio": "447",
+  "folio": "440",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-44",
   "placed": true,
-  "folio": "450",
+  "folio": "443",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-45",
   "placed": true,
-  "folio": "453",
+  "folio": "446",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-46",
   "placed": true,
-  "folio": "455",
+  "folio": "448",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-47",
   "placed": true,
-  "folio": "457",
+  "folio": "450",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-48",
   "placed": true,
-  "folio": "459",
+  "folio": "452",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-49",
   "placed": true,
-  "folio": "462",
+  "folio": "454",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-50",
   "placed": true,
-  "folio": "465",
+  "folio": "457",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-51",
   "placed": true,
-  "folio": "468",
+  "folio": "460",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-52",
   "placed": true,
-  "folio": "470",
+  "folio": "462",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-53",
   "placed": true,
-  "folio": "473",
+  "folio": "465",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-54",
   "placed": true,
-  "folio": "475",
+  "folio": "467",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-55",
   "placed": true,
-  "folio": "478",
+  "folio": "470",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-56",
   "placed": true,
-  "folio": "481",
+  "folio": "473",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-57",
   "placed": true,
-  "folio": "360",
+  "folio": "355",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-58",
+  "placed": true,
+  "folio": "15",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-59",
+  "placed": true,
+  "folio": "16",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-60",
+  "placed": true,
+  "folio": "17",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-61",
+  "placed": true,
+  "folio": "21",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-62",
+  "placed": true,
+  "folio": "22",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-63",
+  "placed": true,
+  "folio": "35",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-64",
+  "placed": true,
+  "folio": "41",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-65",
+  "placed": true,
+  "folio": "44",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-66",
+  "placed": true,
+  "folio": "49",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-67",
+  "placed": true,
+  "folio": "50",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-68",
+  "placed": true,
+  "folio": "63",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-69",
+  "placed": true,
+  "folio": "64",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-70",
+  "placed": true,
+  "folio": "77",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-71",
+  "placed": true,
+  "folio": "78",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-72",
+  "placed": true,
+  "folio": "87",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-73",
+  "placed": true,
+  "folio": "89",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-74",
+  "placed": true,
+  "folio": "130",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-75",
+  "placed": true,
+  "folio": "133",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-76",
+  "placed": true,
+  "folio": "138",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
+ },
+ {
+  "id": "FIG-77",
+  "placed": true,
+  "folio": "139",
   "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  }
 ]
