@@ -13,8 +13,8 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC522](source/Heraldry_RC522.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC522-build-38](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-38), 627 interior pages. Newer source/tooling changes may await a separately requested build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 299 approved of 299; 0 generation-queue items.
-- **Rules figures:** 57; 57/57 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
+- **Illustration records:** 299 approved of 299; 47 generation-queue items.
+- **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
 <!-- END AUTO:status -->
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
-- [`9fbff25a`](https://github.com/xjordont/Heraldry/commit/9fbff25a21c82ae2fc122b10b284b43c436ababb) Build candidate status (20261030T152001Z)
-- [`5f8fffc9`](https://github.com/xjordont/Heraldry/commit/5f8fffc9497ea716d77099b800c7ff02fa10ae90) build: request candidate build 20261030T152001Z
-- [`2cd6f8dd`](https://github.com/xjordont/Heraldry/commit/2cd6f8dd30a08cb9c7d8702c98cdd66d1336cfab) Design review polish: justification, centred openers, Escutcheon Press device
-- [`11207a27`](https://github.com/xjordont/Heraldry/commit/11207a2779d909fcfae21386963a4574751066bd) Record release workflow result
-- [`29c669d1`](https://github.com/xjordont/Heraldry/commit/29c669d18d6cc101108c5b0608389bd4145196f4) Rebuild verified RC522 delivery
-- [`649e1532`](https://github.com/xjordont/Heraldry/commit/649e1532b8bc3702734c28a62f1409bf21786ad4) review: bind the all-page visual review for candidate 20261030T042522Z
+- [`f9397c17`](https://github.com/xjordont/Heraldry/commit/f9397c17d20e26c84a9a9687a45e21c25c77a059) Build candidate status (20261030T175001Z)
+- [`e0d93d26`](https://github.com/xjordont/Heraldry/commit/e0d93d26d2e96fe4b7c95c7c1ee2772e563ccee5) build: request candidate build 20261030T175001Z
+- [`d57241ad`](https://github.com/xjordont/Heraldry/commit/d57241ade43fbde830b490ad4f6da03d64b3634c) Tests: read the figure manifest so the section-end figure test runs on a clean checkout
+- [`b6f9a931`](https://github.com/xjordont/Heraldry/commit/b6f9a93123e538afb01ba3554c7e7ce9f072b519) Build candidate status (20261030T173411Z)
+- [`599f880d`](https://github.com/xjordont/Heraldry/commit/599f880d5b7d916ff16632c6f9b1907edccc729a) build: request candidate build 20261030T173411Z
+- [`c1f9f09d`](https://github.com/xjordont/Heraldry/commit/c1f9f09db3b28ce8e600f8a950f9895f00992b06) Build request: pending section-end tailpieces are optional and do not block a build
 
 <!-- END AUTO:recent -->
 
