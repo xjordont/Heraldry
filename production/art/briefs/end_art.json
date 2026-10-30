@@ -1,0 +1,1308 @@
+{
+  "_meta": {
+    "author": "Claude Code (art director subagent), 2026-10-30",
+    "source": "RC522",
+    "purpose": "Tailpiece briefs for production/art/END_ART_PLAN.json"
+  },
+  "ART-END-WHAT-IS-HERALDRY-SKIRMISH": {
+    "identity": "Two rival adventurers of the Dying Lands who have reached the same iron-bound treasure chest in a monster-haunted ruin at the same moment, while a Monster closes in behind them: the competitive PvPvE race for treasure in miniature.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Low three-quarter view: the chest sits at the centre on cracked flagstones, one rival crouched at each end with a hand on its ring handle; a broken wall stub rises behind the chest, and over its top reaches a single long clawed Monster arm, shape only.",
+    "details": [
+      "Iron-bound wooden treasure chest, lid still shut, corner straps rusted, one ring handle at each end",
+      "Left rival: a Human in a battered ring shirt, shortsword half-drawn, one gauntleted hand on the handle",
+      "Right rival: a lean Elf in a leather coat, dagger reversed in the free hand, the other hand on the opposite handle",
+      "Neither looks at the other's face: both stare at the clawed arm coming over the wall",
+      "Knee-high broken wall stub with moss and a fallen capstone, the clawed arm drawn in solid black",
+      "A few coins spilled from a split seam, hatched dull with no stamps",
+      "Cracked flagstones fading out in a few strokes on all sides"
+    ],
+    "must": [
+      "Exactly two rival figures and one chest; the Monster shows only as one clawed arm and shoulder"
+    ],
+    "activity": [
+      "Both rivals freeze mid-grab, each still gripping their end of the chest",
+      "The clawed arm reaches over the wall top toward them"
+    ],
+    "atmosphere": "Greed and dread in the same breath; the richest party is the one that bleeds.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Do not repeat the chapter 2 sighting across a fog valley or the cover's shrine arch",
+      "No full Monster figure, face or portrait",
+      "No banners or heraldic devices",
+      "No gore"
+    ],
+    "sources": [
+      "Lines 165-187 (1.1): two rival adventuring parties race through monster-haunted ruins for treasure; neutral Monsters stalk the field; the richest party is often the one that bled for every coin",
+      "Lines 3715-3725 (7.10): ring shirt and leather coat are canonical Chest armour"
+    ]
+  },
+  "ART-END-CORE-TERMS": {
+    "identity": "The three kinds of combatant the rules name, met in one crypt passage: a Dwarf Hero, the Guard Hireling at their side, and a Ghoul, the Monster that has come for them.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Side view down a short vaulted crypt passage: the Dwarf Hero and the Guard stand shoulder to shoulder at left, the Ghoul crouched low at right in the passage mouth, the gap of bare floor between them the centre of the picture.",
+    "details": [
+      "Dwarf Hero: very broad, short-limbed, braided beard, mail, lantern raised in one hand and handaxe in the other",
+      "Guard Hireling: human retainer in a padded coat with a heater shield and a mace, a step behind the Dwarf's shoulder",
+      "Ghoul: grey, gaunt and hook-clawed, loping low on all fours with its head thrust forward",
+      "Low barrel vault of rough stone, two niches with old bones",
+      "Lantern light shown by open white paper around the pair, the Ghoul's end of the passage in solid black",
+      "Dust and a dropped bone on the floor between them"
+    ],
+    "must": [
+      "Three combatants only: one Dwarf Hero, one shield-bearing Guard, one Ghoul"
+    ],
+    "activity": [
+      "The Dwarf and the Guard brace side by side",
+      "The Ghoul creeps forward, claws on the flagstones"
+    ],
+    "atmosphere": "Close, cold and about to break.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the Undercroft room (no hidden door, no cloaked figure) and not the Shadowed Under Passage scenario",
+      "Do not draw the Ghoul as a zombie or a skeleton",
+      "No gore"
+    ],
+    "sources": [
+      "Lines 441-449 (2.1): combatant, Hero, Hireling and Monster defined",
+      "Lines 15574 (11.2.5): Guard Hireling with mace and heater shield",
+      "Lines 2241-2250 (6.9): Dwarf build and Darkvision",
+      "Lines 8240-8242 (9.7): Ghoul, grey, gaunt and hook-clawed, lopes in packs through tombs"
+    ]
+  },
+  "ART-END-ADVANTAGES-AND-DISADVANTAGES": {
+    "identity": "The advantage of higher elevation: an archer kneeling on the broken top of a ruined wall, shooting down at a Beastman scrambling up the rubble below.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Low angle from the foot of the rubble slope: the wall stub rises at right with the archer kneeling on its broken top, the Beastman climbing the scree at lower left, a clear diagonal from archer to target.",
+    "details": [
+      "Elf archer in a leather coat kneeling on the wall top, shortbow at full draw aimed steeply downward",
+      "Ruined wall stub with broken coursing and a jagged top edge, about twice a person's height",
+      "Beastman: hunched man-shape with a goat's head and black-clawed hands, clawing up loose rubble",
+      "Loose stones sliding from under the Beastman's feet",
+      "A spent arrow standing in the rubble near the Beastman",
+      "Weeds in the wall joints"
+    ],
+    "must": [
+      "The archer is clearly well above the Beastman"
+    ],
+    "activity": [
+      "The archer looses downward",
+      "The Beastman claws upward, slipping"
+    ],
+    "atmosphere": "Hard, cold advantage taken without mercy.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No longbow, staff or plate armour on the archer",
+      "Not the aqueduct of the chapter 4 opener",
+      "No gore"
+    ],
+    "sources": [
+      "Lines 527-547 (2.4): Advantage and Disadvantage; attacker at a higher elevation gains Advantage",
+      "Lines 7862-7864 (9.7): Beastman, hunched man-shape with goat or boar head and black claws",
+      "Line 3689 (7.9): Shortbow is a two-handed Ranged weapon"
+    ]
+  },
+  "ART-END-ACTION-POINTS-AND-SUMMONS": {
+    "identity": "An Infernal Imp, a Sorcerer's temporary Summon, unravelling into smoke and cinders as it is dispelled from the world.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Eye-level view of a single fallen column drum; the imp crouches on top of it at the centre, its lower body and one wing already coming apart into curling smoke that drifts off to the right and thins to nothing.",
+    "details": [
+      "Knee-high, bat-winged imp with a barbed tail, small clawed hands and a snarling face",
+      "One wing intact and spread, the other shredding into smoke strands and flicked cinder flecks",
+      "Tail and legs dissolving from the tips inward",
+      "Fallen column drum with a cracked fluting, the imp's claws gripping its edge",
+      "A faint scorch ring on the stone where it was called",
+      "Smoke drawn in a few bold broken curves, not as grey haze"
+    ],
+    "must": [
+      "Only the imp and the column drum; no caster in frame"
+    ],
+    "activity": [
+      "The imp twists to look at its own vanishing wing"
+    ],
+    "atmosphere": "Brief, spiteful and borrowed; nothing summoned stays.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the Sun-Drowned Imp bestiary portrait: no tomb setting, no flying pose",
+      "No glow, grey wash or airbrushed smoke",
+      "No summoning circle with symbols"
+    ],
+    "sources": [
+      "Lines 564-588 (2.5): Summons are temporary; a third Summon dispels one; Summons are removed at the end of the adventure",
+      "Lines 3155-3171 (6.13 Sorcerer): Infernal Imp Summon, Small, Fly, Fiend, fire",
+      "Line 9387 (9.7): imp, knee-high and bat-winged with a barbed tail"
+    ]
+  },
+  "ART-END-TERRAIN": {
+    "identity": "A small stretch of Dying Lands ground that holds every kind of terrain a party must read: a shallow ford, a deep channel, a fallen column, a thorn hedge and a rubble field, with no one in it.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Slightly raised three-quarter view: a stream crosses the picture, a broken imperial column lies across it as a footbridge at the centre, stepping stones in the shallows to one side and a dark deep pool to the other; a thorn hedge and rubble frame the near bank.",
+    "details": [
+      "Fallen fluted column lying across the stream, moss on its top, one end resting on a statue base",
+      "Shallow ford with stepping stones and ripples drawn in short broken strokes",
+      "Deep channel below the column drawn as a solid black pool",
+      "Reeds and a thorn hedge on the near bank",
+      "Scatter of rubble blocks and a broken capital",
+      "Mud bank with a single boot print"
+    ],
+    "must": [
+      "No figures and no creatures"
+    ],
+    "atmosphere": "Quiet ground that will cost time, footing or blood to cross.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the chapter 1 pass, the Greenmark climate road or the Mire walkway",
+      "No bridge of planks, no buildings",
+      "No square grid or measured lines"
+    ],
+    "sources": [
+      "Lines 824-860 (2.9.1): Terrain Types and standard assignments: fords and streams Shallow Water, rivers Deep Water, fallen pillars and broken columns Impassable, hedges and thorn barriers Cover, rubble fields Difficult",
+      "Lines 915-934 (2.9.6-2.9.7): Shallow Water and Deep Water"
+    ]
+  },
+  "ART-END-PARTY-PHASE": {
+    "identity": "Two Heroes of one party taking turns at a ruined corner: one dashes across an open gap while the other waits behind cover with a loaded crossbow, holding back for whatever answers.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view of a broken corner of wall: the waiting Hero kneels behind it in the foreground with the crossbow levelled past the edge, the running Hero is mid-stride in the open gap beyond, smaller.",
+    "details": [
+      "Kneeling Hero in a gambeson with a light crossbow braced on the wall edge, finger off the trigger",
+      "Running Hero in a leather coat, low and fast, shortsword in hand, cloak flying",
+      "Corner of a ruined wall with a fallen lintel",
+      "Open gap of cracked paving between the two",
+      "A spent bolt and a dropped glove by the kneeling Hero's knee"
+    ],
+    "must": [
+      "Two Heroes only, clearly on the same side"
+    ],
+    "activity": [
+      "One Hero crosses the gap",
+      "The other holds still, watching for the reply"
+    ],
+    "atmosphere": "Measured, patient, every breath spent with care.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No enemies in frame",
+      "Not the chapter 3 dawn gathering",
+      "No banners"
+    ],
+    "sources": [
+      "Lines 1039-1092 (3.3): sides alternate activations; unspent AP is kept for Reactions",
+      "Lines 1203-1225 (4.2): Wait holds remaining AP for Reactions",
+      "Line 3694 (7.9): Light Crossbow"
+    ]
+  },
+  "ART-END-MONSTER-PHASE": {
+    "identity": "A Goblin mob of the Greenmark waking and pouring over the top of a ruined steading wall at night, the moment a Monster Group activates.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Front view of a low wall top running across the picture: a dense knot of goblins spills over it at the centre, more heads and blades behind, the knot thinning to a few stragglers at each end.",
+    "details": [
+      "Knee-high, green-grey, all elbows and malice: six to eight goblins in a tight mass",
+      "Notched blades raised, two swinging slings of river stones",
+      "Wide eyes and bared teeth catching small white highlights",
+      "Rough stone wall top with a broken thatch edge from the steading behind",
+      "Night shown by solid black behind the mob, white paper below the wall",
+      "One goblin tumbling head first over the wall"
+    ],
+    "must": [
+      "The mob reads as one mass, not as separate portraits"
+    ],
+    "activity": [
+      "The goblins surge over the wall all at once"
+    ],
+    "atmosphere": "Sudden, chittering and overwhelming; singly cowards, in numbers a tide.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the Goblin bestiary portrait: no single isolated goblin",
+      "No goblin shaman, no bugbear",
+      "No gore"
+    ],
+    "sources": [
+      "Lines 1094-1122 (3.4): Monster Groups wake and activate in order during the Monster Phase",
+      "Lines 7845-7847 (9.7): Goblin, knee-high, green-grey, notched blade and sling of river stones, infesting ruined steadings in mobs, a tide in numbers"
+    ]
+  },
+  "ART-END-ACTION-BASICS": {
+    "identity": "A Hero at the foot of a cellar stair letting a lit torch fall to free a hand, drawing a blade as shapes stir in the dark ahead.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Low view at the bottom of a short stone stair: the Hero stands at the centre with the torch tumbling from one hand toward the floor and the other hand pulling a sword from its scabbard; the passage beyond is a block of solid black with two vague shapes.",
+    "details": [
+      "Human Hero in a hooded mantle and leather coat, weight on the back foot",
+      "Torch mid-fall, its flame drawn as a few clean ink tongues",
+      "Shortsword halfway out of a worn scabbard",
+      "Worn cellar stair behind, three or four steps",
+      "Two indistinct hunched shapes in the black passage, no features",
+      "Torchlight as a ring of open paper on the floor"
+    ],
+    "must": [
+      "One Hero only; the shapes stay vague"
+    ],
+    "activity": [
+      "The Hero drops the torch and draws in one movement"
+    ],
+    "atmosphere": "A heartbeat of decision in the dark.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No detailed Monster",
+      "Not the Undercroft or the Shadowed Under Passage",
+      "No glow effect around the torch"
+    ],
+    "sources": [
+      "Lines 1187-1201 (4.1): actions in any order; a combatant may speak, signal, and drop non-objective held items without spending AP",
+      "Line 4648 (7.16): Torch, a carried Light Source"
+    ]
+  },
+  "ART-END-UNIVERSAL-ACTIONS": {
+    "identity": "The Push: a Dwarf Hero driving a shield into an Orc raider and shoving them back toward a broken balustrade.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Side view on a short stretch of ruined terrace: the Dwarf at left with shoulder behind a round shield, the Orc at right rocked backward off balance, their heels at the broken edge, open air beyond.",
+    "details": [
+      "Dwarf: very broad and heavy, braided beard, mail, round shield braced with the shoulder, handaxe held back",
+      "Orc: broad as a doorway, grey-skinned, heavy-jawed, lower tusks jutting, battleaxe and shield flung wide",
+      "Broken stone balustrade with missing balusters behind the Orc",
+      "Terrace paving cracked, one slab tilting",
+      "Dust kicked up at the Dwarf's planted boots"
+    ],
+    "must": [
+      "The Dwarf is pushing, not striking; the Orc is falling back"
+    ],
+    "activity": [
+      "The Dwarf drives forward",
+      "The Orc staggers back toward the edge"
+    ],
+    "atmosphere": "Brute weight against brute weight.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the chapter 5 bridge clash and no undead",
+      "Do not give the Dwarf a greataxe or a horned helm",
+      "No gore"
+    ],
+    "sources": [
+      "Lines 1203-1222 (4.2): Push, a STR Check to Push an adjacent combatant 2 inches directly away",
+      "Lines 7944-7946 (9.7): Orc, broad as a doorway, battleaxe and shield, grey-skinned with lower tusks",
+      "Lines 2241-2250 (6.9): Dwarf"
+    ]
+  },
+  "ART-END-MOVEMENT-RULES": {
+    "identity": "A Human Rogue jumping a gap between two broken rooftops in a ruined town, the street far below.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Side view across the gap: the take-off roof edge at left, the landing ledge at right, the Rogue in mid-air at the centre with legs tucked, the narrow street a dark slot beneath.",
+    "details": [
+      "Rogue in a leather coat with a rapier at the hip, arms flung forward",
+      "Left roof: broken slates and an exposed rafter",
+      "Right roof: a lower, narrow stone ledge with a cracked gutter",
+      "Dark drop between drawn in solid black and hatching",
+      "Loose slate falling from the take-off edge",
+      "Cloak streaming behind"
+    ],
+    "must": [
+      "The landing point is level with or below the take-off point"
+    ],
+    "activity": [
+      "The Rogue is airborne mid-jump"
+    ],
+    "atmosphere": "Nerve and momentum over a long fall.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the chapter 4 aqueduct or a chasm in a cave",
+      "No rope or grappling hook",
+      "No flying or magic"
+    ],
+    "sources": [
+      "Lines 1289-1420 (4.4): Move, Climb, Jump and Falling",
+      "Lines 1397-1407 (4.4.9): a Jump is horizontal, may cross gaps, and cannot raise elevation by more than 1 inch"
+    ]
+  },
+  "ART-END-COMBAT-BASICS": {
+    "identity": "A Bugbear rising out of dead bracken to strike from arm's reach with its spiked morningstar, before its quarry can close.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view: the Bugbear looms at left, long arm fully extended, the morningstar swinging out over the bracken toward a Hero at right who is still a full stride away with shield raised late.",
+    "details": [
+      "Bugbear: seven feet of shaggy, long-armed menace, flat face, fur like dead bracken",
+      "Spiked morningstar at the end of the overlong arm",
+      "Dead bracken and undergrowth parting around the Bugbear's legs",
+      "Hero in a gambeson with a small round targe and a shortsword, one foot sliding back",
+      "Clear gap of ground between the Hero's blade and the Bugbear"
+    ],
+    "must": [
+      "The Bugbear's reach visibly exceeds the Hero's"
+    ],
+    "activity": [
+      "The Bugbear swings from beyond the Hero's reach",
+      "The Hero flinches back behind the targe"
+    ],
+    "atmosphere": "Ambush and the cruelty of a longer arm.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the Bugbear bestiary portrait: this is a two-figure clash",
+      "No goblins",
+      "No gore"
+    ],
+    "sources": [
+      "Lines 1469-1480 (5.1): melee attacks, Engaged, and Reach to 2 inches",
+      "Lines 7964-7983 (9.7): Bugbear, long-armed, fur the colour of dead bracken, strikes from arm's reach with a morningstar; Long-Limbed gives Reach"
+    ]
+  },
+  "ART-END-THE-ATTACK-SEQUENCE": {
+    "identity": "The instant of defence in an attack: two blades locked at the crossguard in a Parry, close enough to see the notches.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Close crop at chest height: two gloved hands and two crossed blades fill the centre, locked near the hilts; the fighters' arms and shoulders fade into white paper at each side.",
+    "details": [
+      "Left blade: a plain longsword with a straight crossguard, held in a mailed glove",
+      "Right blade: a heavy single-edged falchion in a bare scarred fist",
+      "Blades crossed in an X near the guards, a notch biting into one edge",
+      "Sleeves: a mail cuff on one arm, a padded sleeve on the other",
+      "A few flicked sparks as ink flecks at the contact point"
+    ],
+    "must": [
+      "Hands and blades only; no faces"
+    ],
+    "activity": [
+      "Both fighters strain against the locked blades"
+    ],
+    "atmosphere": "Strain, grit and a second that decides everything.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No full figures",
+      "No glow or motion blur",
+      "No gore"
+    ],
+    "sources": [
+      "Lines 1526-1536 (5.2): the Attack Sequence; Reactions declared before damage dice",
+      "Lines 1517-1524 (5.1.2): Block, Dodge and Parry"
+    ]
+  },
+  "ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE": {
+    "identity": "The aftermath of a Critical Hit: a steel breastplate punched clean through by a crossbow bolt, beside a helm crushed flat by a blunt blow.",
+    "composition": "Still life on a scrap of trampled ground at slight elevation: the breastplate lies on its back at the centre with the bolt standing out of it, the dented helm on its side beside it. Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes.",
+    "details": [
+      "Steel cuirass with a crossbow bolt driven through the centre, the hole clean and puckered",
+      "Fletching of the bolt torn and bent",
+      "Open-faced helm caved in on one side, a rivet sprung",
+      "Torn leather strap and a broken buckle",
+      "A split shield rim at the edge of the arrangement",
+      "Trampled grass and mud under the pieces"
+    ],
+    "must": [
+      "No wearer and no body"
+    ],
+    "atmosphere": "Armour that did not matter in the end.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No blood or gore",
+      "Not the Armoury room racks or the armour still life",
+      "No maker's marks"
+    ],
+    "sources": [
+      "Lines 1538-1560 (5.3): Critical Hit riders; piercing ignores AV, blunt halves AV",
+      "Line 3722 (7.10): Breastplate (Steel Cuirass)",
+      "Line 3695 (7.9): Heavy Crossbow"
+    ]
+  },
+  "ART-END-CONDITIONS": {
+    "identity": "A Hero made Frightened: backing away with a shaking torch from the shadow of a Spectre sliding across a ruined wall.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view along a stretch of ruined wall: the Hero at left steps backward with torch held out at arm's length; across the wall at right spreads a huge tattered shadow of a drifting figure, with no Spectre body drawn.",
+    "details": [
+      "Human Hero in a padded coat, shoulders hunched, face turned half away",
+      "Torch flame bent and guttering, the arm visibly trembling",
+      "Spectre shadow: a tall ragged figure with trailing hems and reaching hands, in solid black on the wall",
+      "Plastered ruined wall with cracks and a blind window",
+      "Dropped shield lying face down at the Hero's feet"
+    ],
+    "must": [
+      "The Spectre appears only as a shadow"
+    ],
+    "activity": [
+      "The Hero backs away, stumbling"
+    ],
+    "atmosphere": "Cold, unreasoning fear.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No visible ghost body, face or glow",
+      "Not the chapter 8 library or the Shadowed Under Passage",
+      "No gore"
+    ],
+    "sources": [
+      "Lines 1844-1990 (5.9): the named conditions",
+      "Lines 1878-1882 (5.9): Frightened",
+      "Lines 8313-8315 (9.7): Spectre, grief and rage with the body burned away, drifting the Ashlands"
+    ]
+  },
+  "ART-END-PARTY-STRUCTURE": {
+    "identity": "A Party Leader at the head of a four-Hero file, fist raised to halt the others at the mouth of a ruined colonnade.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter rear view: the Party Leader at centre-left stands one pace ahead with a closed fist raised; the other three Heroes are stopped in a short staggered file behind, smaller; two broken columns frame the way ahead.",
+    "details": [
+      "Party Leader: a Human in a ring shirt with a shortsword at the hip, fist raised at shoulder height",
+      "Behind: a tall lean Elf with a shortbow, a broad Dwarf with a mace and targe, a small Halfling with a pack",
+      "Two broken columns with fallen capitals",
+      "Path of cracked paving leading on into white paper",
+      "Packs, bedrolls and a lantern on the Dwarf's belt"
+    ],
+    "must": [
+      "Four Heroes, one clearly leading"
+    ],
+    "activity": [
+      "The leader signals halt",
+      "The others stop and look past the leader"
+    ],
+    "atmosphere": "Trust, discipline and the weight of one person's call.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the cover party in rain, the postern gate departure or the chapter 1 pass",
+      "No banners",
+      "No monsters"
+    ],
+    "sources": [
+      "Lines 2002-2024 (6.1): party structure; one Hero is nominated Party Leader",
+      "Line 2664 (6.12): Recommended First Party of Human, Elf, Dwarf and Halfling"
+    ]
+  },
+  "ART-END-CORE-HERO-CREATION-RULES": {
+    "identity": "A Halfling Hero standing beside a Greatbow propped upright, the Heavy bow far taller than they are: equipment a Small Hero cannot wield.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Straight-on view at a weapon rack's foot: the Greatbow stands upright at the centre, the Halfling beside it with a hand on the stave, gazing up at its tip.",
+    "details": [
+      "Small Halfling with adult proportions, hood pushed back, sling tucked in the belt",
+      "Greatbow, unstrung, more than twice the Halfling's height",
+      "Bare weathered wooden rack end with pegs",
+      "Quiver of long arrows leaning on the rack",
+      "Packed-earth floor fading out"
+    ],
+    "must": [
+      "The Halfling is child-sized with adult proportions; the bow towers over them"
+    ],
+    "activity": [
+      "The Halfling looks up at the bow with wry resignation"
+    ],
+    "atmosphere": "Dry humour in a hard world.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Do not make the Halfling a cute child or cartoon",
+      "Not the Halfling ancestry figure: no crouch, no sling throw",
+      "No armour"
+    ],
+    "sources": [
+      "Lines 2051-2063 (6.3): equipment eligibility; a Small Hero cannot equip Heavy equipment",
+      "Line 3692 (7.9): Greatbow has the Heavy trait"
+    ]
+  },
+  "ART-END-CHOSEN-AND-RANDOM-CREATION": {
+    "identity": "Three bound starting-kit bundles laid side by side on a hiring-hall bench, a small coin pouch beside them: the choice, or the chance, of a new Hero's first gear.",
+    "composition": "Still life on a worn bench end viewed at slight elevation: three bundles in a row, each tied with cord and each a different shape, the pouch at the near corner. Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes.",
+    "details": [
+      "First bundle: a shortsword in a scabbard rolled with a gambeson",
+      "Second bundle: a shortbow lashed to a quiver and a leather coat",
+      "Third bundle: a quarterstaff tied across a satchel",
+      "Small drawstring coin pouch, a few coins showing, no stamps",
+      "Cord knots and frayed ends",
+      "Worn bench boards with nail heads"
+    ],
+    "must": [
+      "Exactly three bundles"
+    ],
+    "atmosphere": "A whole life packed small.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the chapter 6 hiring hall interior",
+      "No labels or tags",
+      "No figures"
+    ],
+    "sources": [
+      "Lines 2098-2138 (6.5): starting packages A, B or C may be chosen or rolled; a randomly rolled package grants +4c"
+    ]
+  },
+  "ART-END-RANDOM-ANCESTRY-TABLES": {
+    "identity": "Five travellers of different ancestries, Human, Halfling, Dwarf, Elf and Gnome, sharing one small roadside fire at night.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Low view across a small fire at the centre: the five sit or stand around it in a loose ring, their differing heights and builds reading as silhouettes against the light.",
+    "details": [
+      "Tall, lean Elf standing with a long cloak",
+      "Very broad, short-limbed Dwarf seated on a stone, braided beard",
+      "Small hooded Halfling with a cooking pot",
+      "Small Gnome with a tinker's satchel and a lens on a cord",
+      "Plain Human in a road coat feeding the fire",
+      "Small fire of sticks with flames as clean ink tongues and sparks as ink flecks"
+    ],
+    "must": [
+      "Five figures, clearly different in height and build"
+    ],
+    "activity": [
+      "They share the fire in tired silence"
+    ],
+    "atmosphere": "Unlikely company against the cold.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No rare ancestries (no horns, tusks, scales or rat features)",
+      "Not the four-Hero cover party",
+      "No glow halo around the fire"
+    ],
+    "sources": [
+      "Lines 2140-2164 (6.6): Random Ancestry Table of Human, Halfling, Dwarf, Elf, Gnome and Rare Ancestry",
+      "Lines 2203-2300 (6.9): ancestry sizes and builds"
+    ]
+  },
+  "ART-END-COMMON-TRAIT-RULES": {
+    "identity": "Darkvision: a Dwarf and a Gnome advancing through a lightless mine gallery without any lamp, seeing what others could not.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Head-on view into a mine gallery: the gallery is solid black, and the two figures are drawn in white line and sparse highlight within it, the Dwarf leading and the Gnome a step behind; the black shape thins into paper at its ragged edges.",
+    "details": [
+      "Broad Dwarf with a pick on the shoulder and a hand on the timber prop",
+      "Small Gnome with a tinker's satchel, head tilted, peering ahead",
+      "Timber props and a sagging crossbeam",
+      "No lantern, torch or flame anywhere",
+      "Pale glint in both pairs of eyes",
+      "Ore cart rail fading into the dark"
+    ],
+    "must": [
+      "No light source in the picture"
+    ],
+    "activity": [
+      "Both walk steadily forward through total darkness"
+    ],
+    "atmosphere": "The dark as home ground.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No glowing eyes beams or glow effects",
+      "Not the Undermarches climate cutaway or the Quake scenario",
+      "No monsters"
+    ],
+    "sources": [
+      "Lines 2185-2201 (6.8): Darkvision ignores penalties from nonmagical Darkness",
+      "Lines 2241-2250 and 2272-2282 (6.9): Dwarf and Gnome have Darkvision"
+    ]
+  },
+  "ART-END-BACKGROUNDS": {
+    "identity": "The life a Hero walked away from: an abandoned smallholding gate left swinging open, footprints leading out to the road.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view of a field gate at the centre, hanging open on one hinge; the farm track runs from it toward the viewer and away into white paper, a single line of footprints in the mud.",
+    "details": [
+      "Wooden field gate on one hinge, a broken bar",
+      "Leaning gatepost with a rusted hook",
+      "Footprints in the muddy track, heading out",
+      "Sickle hung on the gatepost",
+      "A low drystone wall and a dead tree",
+      "A roofless cottage small in the distance"
+    ],
+    "must": [
+      "No figures"
+    ],
+    "atmosphere": "Departure without farewell.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the Farmer or Vagabond still lifes",
+      "Not the Grim World burnt farmstead",
+      "No banners or smoke"
+    ],
+    "sources": [
+      "Lines 2387-2575 (6.10): backgrounds are the lives Heroes led before the road, from Farmer to Vagabond",
+      "Lines 2416-2422 (6.10): Farmer, callused hands, starting Sickle"
+    ]
+  },
+  "ART-END-RANDOM-CLASS-TABLE": {
+    "identity": "Three callings in three objects: a caster's quarterstaff crossed over a soldier's shortsword, a cleric's holy symbol hanging from the staff.",
+    "composition": "Still life on a flat stone at slight elevation: staff and sword crossed in a low X at the centre, the holy symbol dangling on its chain from the staff's head. Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes.",
+    "details": [
+      "Plain ash quarterstaff, scuffed and iron-free",
+      "Shortsword in a worn scabbard with a wrapped grip",
+      "Holy symbol as a simple disc on a chain, chipped, no readable mark",
+      "Flat stone with a crack and a lichen patch",
+      "A few dry leaves"
+    ],
+    "must": [
+      "Only these three objects"
+    ],
+    "atmosphere": "Different roads into the same dark.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the Magic in the Dying Lands altar still life",
+      "No runes or glyphs",
+      "No glow"
+    ],
+    "sources": [
+      "Lines 2576-2593 (6.11): the twelve classes on the Random Class Table",
+      "Lines 2667-2690 (6.13): Martial, Hybrid and Caster archetypes"
+    ]
+  },
+  "ART-END-GENERAL-TALENTS": {
+    "identity": "The Camouflage talent: a Hero lying hidden in ferns and roots, only the eyes and an arrowhead showing.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Low view at ground level: a tangle of ferns and roots fills the centre, and inside it the Hero's face and bow hand are barely visible among the leaves.",
+    "details": [
+      "Fern fronds and roots drawn in bold shapes",
+      "A pair of watchful eyes and a strip of brow in the leaves",
+      "Shortbow arrowhead and fingers at the string",
+      "Leaf litter and a mossy log",
+      "A beetle on the log for scale"
+    ],
+    "must": [
+      "The Hero is mostly hidden; the cover dominates"
+    ],
+    "activity": [
+      "The Hero waits motionless"
+    ],
+    "atmosphere": "Patient, unseen menace.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No full figure",
+      "Not the Scout background or the Ranger class figure",
+      "No enemies"
+    ],
+    "sources": [
+      "Lines 2595-2665 (6.12): General Talents",
+      "Line 2634 (6.12): Camouflage, Hide distance 0 in Cover Terrain or Difficult Terrain"
+    ]
+  },
+  "ART-END-HERO-CLASSES": {
+    "identity": "A Druid in the Apex Wild Shape of the Stag, charging through a birch stand with a druid's charm cord still tangled in its antlers.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view: the stag bursts from left to right at the centre, head lowered with antlers forward, birch trunks thinning into white paper at both edges.",
+    "details": [
+      "Great red-deer stag with a broad antler crown",
+      "Charm cord of knotted bone and holly beads caught in one antler",
+      "Muscled shoulders mid-bound, forelegs tucked",
+      "A few slim birch trunks with peeling bark",
+      "Torn leaves and soil flung as ink flecks"
+    ],
+    "must": [
+      "An ordinary stag in build, not monstrous"
+    ],
+    "activity": [
+      "The stag charges at full speed"
+    ],
+    "atmosphere": "Wild force with a human will behind it.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No half-human transformation",
+      "Not the Antlered Warden of the Tithe or any Monster",
+      "No glow"
+    ],
+    "sources": [
+      "Lines 3172-3232 (6.13 Druid): Wild Shape Forms",
+      "Line 3231 (6.13): Stag, Apex Form, Antlers, rewarded for a straight charge"
+    ]
+  },
+  "ART-END-HIRELINGS": {
+    "identity": "A Porter Hireling dragging a Knocked Out Hero by the collar out of a fight's edge.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Side view on rough ground: the Porter leans hard backward at left, both hands in the Hero's collar; the unconscious Hero slides behind at right, heels furrowing the dirt.",
+    "details": [
+      "Porter: a lean, unarmed retainer with a big empty pack frame on the back",
+      "Hero in a ring shirt, limp, head lolling, sword left behind",
+      "Two furrows dug by the Hero's heels",
+      "Dropped shortsword and a dented targe left behind",
+      "Scrub and a broken fence post"
+    ],
+    "must": [
+      "The Porter carries no weapon"
+    ],
+    "activity": [
+      "The Porter hauls with gritted teeth"
+    ],
+    "atmosphere": "Unheroic loyalty, bought and paid for.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No gore",
+      "Not the Barracks room or the chapter 6 hall",
+      "No enemies in frame"
+    ],
+    "sources": [
+      "Lines 3246-3271 (6.15): Hirelings follow special rules",
+      "Line 15566 (11.2.5): Porter cannot attack; Drag moves an adjacent Knocked Out Hero 2 inches"
+    ]
+  },
+  "ART-END-HERO-ADVANCEMENT": {
+    "identity": "Advancement bought with coin: a Hero's scarred hand dropping a purse into a trainer's open palm over a practice sword.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Close crop at waist height: two hands meet at the centre, the purse falling from one into the other; a wooden practice sword lies across the trainer's forearm.",
+    "details": [
+      "Hero's hand, scarred knuckles, a worn bracer",
+      "Trainer's broad calloused palm, older, missing a fingertip",
+      "Small leather purse, coins showing at its mouth without stamps",
+      "Wooden practice sword with a dented edge",
+      "Sleeve cuffs: mail on the Hero, a padded sleeve on the trainer"
+    ],
+    "must": [
+      "Hands only; no faces"
+    ],
+    "activity": [
+      "The purse changes hands"
+    ],
+    "atmosphere": "Skill earned in blood and paid for in silver.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the Expedition Hall training yard",
+      "No ledgers or writing",
+      "No full figures"
+    ],
+    "sources": [
+      "Lines 3273-3323 (6.16): Train costs coin from the Treasury; Training Cost rises with level"
+    ]
+  },
+  "ART-END-EQUIPMENT-OVERVIEW": {
+    "identity": "An adventurer's fully loaded pack set down at the end of a day's march, the reasonable load every Hero carries.",
+    "composition": "Still life on a small patch of ground: the pack slumped on its side at the centre with gear lashed all over it. Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes.",
+    "details": [
+      "Heavy canvas and leather pack with worn straps",
+      "Bedroll lashed on top",
+      "Hooded lantern hanging from a side ring",
+      "Waterskin and a tin cup",
+      "Coil of rope and a torch thrust under a strap",
+      "Bandage roll poking from a side pouch"
+    ],
+    "must": [
+      "One pack only"
+    ],
+    "atmosphere": "Weight, wear and readiness.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No weapons in the arrangement",
+      "Not the background still lifes",
+      "No labels"
+    ],
+    "sources": [
+      "Lines 3344-3378 (7.1): no inventory slots or encumbrance; Heroes carry a reasonable load of mundane gear",
+      "Lines 4629-4661 (7.16): Lantern (Hooded), Waterskin, Rope, Torch, Bandages"
+    ]
+  },
+  "ART-END-ITEM-AVAILABILITY": {
+    "identity": "The price of rarity: a Grand Hall broker's balance with a heap of coins on one pan outweighed by a single old ring on the other.",
+    "composition": "Still life on a counter end: the balance scale stands at the centre, the ring pan dipped low and the coin pan high. Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes.",
+    "details": [
+      "Brass balance on an iron post, beam tilted",
+      "Low pan: one heavy old ring set with a dull stone",
+      "High pan: a heap of tarnished coins, no stamps",
+      "Spare weights in a row, one missing",
+      "Counter edge worn smooth, a candle stub"
+    ],
+    "must": [
+      "The single ring outweighs the coins"
+    ],
+    "atmosphere": "Some things cannot simply be bought.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the Treasure Tables still life",
+      "No sparkle effects",
+      "No readable marks"
+    ],
+    "sources": [
+      "Lines 3426-3431 (7.5): Rare, Very Rare and Legendary items are not part of mundane open-market purchasing",
+      "Lines 15474-15481 (11.2.4): the Grand Hall handles trade, brokerage and commissions"
+    ]
+  },
+  "ART-END-RANGED-WEAPONS": {
+    "identity": "The humbler ranged weapons of the Dying Lands laid together: a hand crossbow, a blowgun with darts, a coiled lasso and two javelins.",
+    "composition": "Still life viewed at slight elevation on a scrap of sacking: javelins laid diagonally behind, hand crossbow at the centre, blowgun and lasso in front. Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes.",
+    "details": [
+      "Hand crossbow, small one-handed, with a bolt laid beside it",
+      "Blowgun of hollow reed with three darts",
+      "Coiled rope lasso with a running noose",
+      "Two javelins with leaf-shaped iron heads",
+      "Sacking cloth with a frayed edge"
+    ],
+    "must": [
+      "Only the four named weapons; no bows"
+    ],
+    "atmosphere": "Small tools for close murder.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the Melee Weapons still life",
+      "No shortbow, longbow or greatbow",
+      "No maker's marks"
+    ],
+    "sources": [
+      "Lines 3678-3697 (7.9): Javelin, Lasso, Hand Crossbow and Blowgun profiles"
+    ]
+  },
+  "ART-END-ARMOUR": {
+    "identity": "A Brigandine, a coat of plates, hung on a wooden armour stand over a Gambeson, scarred and ready.",
+    "composition": "Still life of a single cross-shaped wooden stand at the centre wearing the armour, a mail coif draped on its top. Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes.",
+    "details": [
+      "Brigandine with rows of rivet heads over hidden plates, cloth cover torn in places",
+      "Quilted gambeson under it with the sleeves hanging",
+      "Mail coif draped over the stand's head",
+      "Buckles at the side, one strap cut",
+      "Base of the stand on a scrap of floor"
+    ],
+    "must": [
+      "One stand, no wearer"
+    ],
+    "atmosphere": "Protection that has already been tested.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the Armoury room",
+      "No full plate or knight's helm",
+      "No heraldic devices"
+    ],
+    "sources": [
+      "Lines 3699-3730 (7.10): armour list including Gambeson (Padded) and Brigandine (Coat of Plates)"
+    ]
+  },
+  "ART-END-SCROLLS": {
+    "identity": "A scroll destroyed in the reading: one scroll crumbling to ash beside an open leather case of sealed, unused scrolls.",
+    "composition": "Still life on a flat stone: the case lies open at left with three rolled scrolls inside, the spent scroll at right curling and flaking into ash. Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes.",
+    "details": [
+      "Leather scroll case with a strap and a brass cap",
+      "Three rolled scrolls tied with cord, plain wax seals with no device",
+      "Spent scroll curling, its edges blackened, ash flakes drifting",
+      "Unreadable faint lines on the spent sheet only as abstract marks",
+      "Stone surface with a crack"
+    ],
+    "must": [
+      "No legible writing anywhere"
+    ],
+    "atmosphere": "Power used once and gone.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No runes or glyphs",
+      "No glow",
+      "Not the Tier 2 Arcane copying scene"
+    ],
+    "sources": [
+      "Lines 4447-4470 (7.15): scrolls are one-use and destroyed when used"
+    ]
+  },
+  "ART-END-ADVENTURING-EQUIPMENT": {
+    "identity": "The adventurer's breaking-in tools: a grappling hook with coiled rope, iron spikes, a crowbar and a bag of caltrops.",
+    "composition": "Still life on a flagstone: the hook at the centre with rope coiled around it, crowbar laid across the front, spikes and caltrop bag beside. Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes.",
+    "details": [
+      "Three-pronged grappling hook",
+      "Thick coil of rope knotted to the hook",
+      "Crowbar with a split end",
+      "Handful of iron spikes",
+      "Small sack of caltrops, a few spilled"
+    ],
+    "must": [
+      "Only these items"
+    ],
+    "atmosphere": "Practical tools for doors that were not meant to open.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No lantern",
+      "Not the background still lifes",
+      "No labels"
+    ],
+    "sources": [
+      "Lines 4629-4661 (7.16): Grappling Hook, Rope, Spikes Iron (10), Crowbar and Caltrops (Bag)"
+    ]
+  },
+  "ART-END-PERMANENT-SPECIAL-ITEMS": {
+    "identity": "The Bell's Tongue, a clapper torn from a very old bell, lying beside the Bell-Shard Charm.",
+    "composition": "Still life on stone: the heavy clapper lies across the centre, the shard charm on its cord curled beside it. Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes.",
+    "details": [
+      "Long iron bell clapper with a ball end, pitted and frosted with rime",
+      "Bell-shard: a curved fragment of bell bronze on a leather cord",
+      "Stone surface with damp patches",
+      "A few rime crystals"
+    ],
+    "must": [
+      "Only the clapper and the charm"
+    ],
+    "atmosphere": "Cold, old and listening.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No ringing lines or sound effects",
+      "Not the Voice Beneath the Bells boss",
+      "No runes"
+    ],
+    "sources": [
+      "Lines 5150-5155 (7.17): Bell-Shard Charm, a fragment of a bell from a buried tower",
+      "Lines 5187-5190 (7.17): The Bell's Tongue, a clapper cold as iron in a winter river"
+    ]
+  },
+  "ART-END-DIVINE-PRAYERS": {
+    "identity": "Steadfast Word, a Paladin's Tier 0 Orison: a mail-clad Paladin speaks one word over a fallen, Frightened companion and hauls them back to their feet.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Small scene vignette of the tradition's magic at work, densest at the caster and thinning into white paper toward irregular edges. Three-quarter view at knee height: the Paladin stands at the centre, leaning down, one hand locked around the companion's forearm; the companion rises from one knee at right, still half turned toward something off the edge of the picture.",
+    "details": [
+      "Paladin in a ring shirt with a targe on the free arm and a mace at the belt, mouth open on a single word",
+      "Companion in a leather coat, pale and wide-eyed, rising from one knee with a dropped shortsword beside them",
+      "A thin ring of short upright ink strokes rising from the ground around both figures",
+      "Cracked flagstones and a few loose stones",
+      "Forearm-to-forearm grip drawn large and clear as the focal point"
+    ],
+    "must": [
+      "Exactly two figures; the Paladin is lifting, not striking"
+    ],
+    "activity": [
+      "The Paladin speaks and pulls the companion upright",
+      "The companion's fear breaks as they stand"
+    ],
+    "atmosphere": "Plain courage passed from one hand to another.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No halo, sunburst or radiant glow",
+      "Not the Tier 1 lantern-healing priest or the Tier 2 roadside shrine",
+      "No longsword drawn and no enemy in frame"
+    ],
+    "sources": [
+      "Lines 5933-5951 (8.4): Tier 0 Orisons, Paladin; Steadfast Word removes Frightened and lets a Prone target Stand for 0 AP",
+      "Line 2964 (6.13): Paladin, Hybrid class, with Mace, Targe and Ring Shirt packages",
+      "Line 5267 (8.2): Divine Prayers have no metal equipment restriction"
+    ]
+  },
+  "ART-END-SORCERIES": {
+    "identity": "Blood Flicker, a Sorcerer's Tier 0 Sorcery: the Sorcerer blinks two strides through the air, leaving a spray of their own blood hanging where they stood.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Small scene vignette of the tradition's magic at work, densest at the caster and thinning into white paper toward irregular edges. Side view: at left a small cloud of blood droplets hangs in the air above two empty footprints; at right the Sorcerer has just landed mid-step, cloak still settling, one hand pressed to a cut wrist.",
+    "details": [
+      "Gaunt Sorcerer in torn dark cloth layers, quarterstaff in one hand, no metal armour",
+      "Fresh cut on the wrist with a bead of blood",
+      "Hanging droplets drawn as small black teardrops, a few stretched sideways toward the Sorcerer",
+      "Two empty footprints in the dust at the vacated spot",
+      "Cracked flagstones with a single weed"
+    ],
+    "must": [
+      "One Sorcerer only, drawn once (not as a double image)"
+    ],
+    "activity": [
+      "The Sorcerer lands from the blink and glances back at the blood"
+    ],
+    "atmosphere": "Speed bought in blood, cheaply and too often.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No metal Chest armour on the Sorcerer",
+      "No glow, motion blur or ghost image",
+      "Not the Tier 1 cut-palm close-up or the Tier 2 storm between the hands",
+      "No gore"
+    ],
+    "sources": [
+      "Lines 6324-6331 (8.5): Sorceries always resolve; Blood Price is HP loss",
+      "Lines 6341-6345 (8.5): Blood Flicker, Blood 1, teleport up to 2 inches",
+      "Line 5267 (8.2): a Hero cannot cast a Sorcery while metal Chest armour is equipped"
+    ]
+  },
+  "ART-END-DRUIDIC-RITUALS": {
+    "identity": "Vine Lash, a Druid's Tier 0 Minor Ritual: a thorned vine bursts from the soil, snares a Bandit by the ankle and drags them toward the Druid.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Small scene vignette of the tradition's magic at work, densest at the caster and thinning into white paper toward irregular edges. Low side view: the Druid stands at left with one fist pulled back; a single thorned vine snakes across the ground from the Druid's feet to the Bandit at right, who pitches forward with the vine wrapped around one ankle.",
+    "details": [
+      "Druid in a lichen-stained coat, hood back, quarterstaff in the other hand, no metal",
+      "One thick thorned vine with a few leaves, taut like a rope",
+      "Bandit: a hard-faced deserter in a stolen pauldron, dagger flung wide, falling forward",
+      "Torn soil and flung clods as flicked ink flecks along the vine's path",
+      "Tufts of grass and a stone"
+    ],
+    "must": [
+      "The vine visibly links Druid and Bandit"
+    ],
+    "activity": [
+      "The Druid pulls; the vine drags the Bandit off balance toward them"
+    ],
+    "atmosphere": "The ground itself takes a side.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No metal weapon, armour or shield on the Druid",
+      "Not the Tier 1 kneeling root ritual or the Tier 2 bending trees",
+      "No gore"
+    ],
+    "sources": [
+      "Lines 6753-6759 (8.6): Vine Lash, 1d8 + 1 piercing, target Pulled 1 inch toward the caster",
+      "Lines 7876-7878 (9.7): Bandits are deserters and broken tithe-collectors; a good pauldron is reason enough",
+      "Line 5267 (8.2): no Druidic Ritual while metal Chest armour, a metal weapon or a metal shield is equipped"
+    ]
+  },
+  "ART-END-PSYCHIC-ABILITIES": {
+    "identity": "Telekinetic Hand, a Psion's Tier 0 Technique: the Psion lifts an iron door latch from across a cellar with no more than a look.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Small scene vignette of the tradition's magic at work, densest at the caster and thinning into white paper toward irregular edges. Three-quarter view: the Psion stands at left, two fingers raised toward the door; at right a heavy plank door with an iron thumb-latch, the latch bar lifted clear of its keeper with nothing touching it.",
+    "details": [
+      "Psion in a plain hide cuirass with a dagger at the belt, eyes fixed and unblinking",
+      "Heavy plank door with iron strap hinges and a thumb-latch rising on its own",
+      "A few faint concentric ripples drawn around the latch",
+      "Stone cellar floor and a worn step",
+      "A dust trickle falling from the door frame"
+    ],
+    "must": [
+      "The latch moves with no hand touching it"
+    ],
+    "activity": [
+      "The Psion lifts the latch by thought alone"
+    ],
+    "atmosphere": "Quiet, eerie precision.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No glow beams or lightning",
+      "Not the Tier 1 hovering-pebble meditation",
+      "No treasure chest or trap"
+    ],
+    "sources": [
+      "Lines 7156-7170 (8.7): Telekinetic Hand moves a latch or lever, never deals damage, cannot manipulate Treasure Chests or traps",
+      "Line 3040 (6.13): Psion, with Dagger and Hide Cuirass packages"
+    ]
+  },
+  "ART-END-DETERMINING-MONSTERS-FOR-AN-ADVENTURE": {
+    "identity": "A Greythorn gate-warden crouched on the forest road, reading goblin-sign in a scatter of chewed bones to learn what waits ahead.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view at ground level: the warden crouches at centre-left over the sign, one gloved hand turning a bone; the scatter of bones, river stones and a notched blade lies on the road stones at centre-right.",
+    "details": [
+      "Gate-warden in a long patched coat and a dented kettle helm, spear laid across the knees",
+      "Chewed bones with gnaw marks, a split rib and a knuckle",
+      "Small, crude notched goblin blade",
+      "Three smooth river stones left in a little pile",
+      "Old forest road paving with a root lifting one slab",
+      "Fern edge and a tree root at one side"
+    ],
+    "must": [
+      "No goblins in the picture"
+    ],
+    "activity": [
+      "The warden studies the sign, head cocked as if listening"
+    ],
+    "atmosphere": "Grim, practised knowledge of what hunts the road.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No goblins or other Monsters",
+      "Not the Broken Courier road or the Bandit's Toll barricade",
+      "No gore"
+    ],
+    "sources": [
+      "Lines 7582-7586 (9.2): scenarios determine which Monsters appear; generate and group them before deployment",
+      "Line 7847 (9.7): goblins carry notched blades and slings of river stones; Greythorn's gate-wardens read goblin-sign in the chewed bones left along the road"
+    ]
+  },
+  "ART-END-MONSTER-PLACEMENT-AND-INITIAL-STATE": {
+    "identity": "A Resting Monster Group at its Guard Point: a pack of Greenmark dire wolves asleep around an overturned wagon they have claimed.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Low three-quarter view: the overturned wagon lies at the centre with one wheel in the air; three dire wolves lie curled against it and in its shadow, one with its head up and ears half-pricked.",
+    "details": [
+      "Overturned wagon with a cracked bed and a wheel missing spokes",
+      "Three dire wolves, bigger than a pony at the shoulder, scarred, curled nose to tail",
+      "One wolf's yellow eye half-open, drawn as a small white slit",
+      "Spilled crates and a torn sack",
+      "Trampled grass and a broken yoke pole"
+    ],
+    "must": [
+      "The wolves are resting, not attacking"
+    ],
+    "activity": [
+      "The pack sleeps; one wolf stirs"
+    ],
+    "atmosphere": "Stillness that will not last.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the Dire Wolf bestiary portrait and not the Broken Courier race",
+      "No human figures or corpses",
+      "No gore"
+    ],
+    "sources": [
+      "Lines 7588-7608 (9.3): a Monster Group begins Resting within 3 inches of its starting point and has a Guard Point such as a wagon",
+      "Lines 7926-7928 (9.7): Dire Wolf, bigger than a pony at the shoulder, scarred and yellow-eyed, works in packs"
+    ]
+  },
+  "ART-END-THE-BESTIARY": {
+    "identity": "The lair of Vossegar of the Flooded Cathedral: the bell tower of a drowned cathedral standing out of black Mire water, one black coil breaking the surface beside it.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Water-level view: the broken bell tower rises at centre-right from flat black water; a single glossy coil of the wyrm arcs out of the water at left, the ripples between them the only movement.",
+    "details": [
+      "Gothic bell tower with an empty belfry arch and a cracked pinnacle, its lower windows drowned",
+      "Black still water drawn in solid black with a few white ripple lines",
+      "One sleek black coil with pitted scales arcing out of the water",
+      "Dead reeds and the tip of a drowned stone cross",
+      "Water weed hanging from the belfry sill"
+    ],
+    "must": [
+      "Only one coil of the wyrm is visible; no head, wings or full body"
+    ],
+    "atmosphere": "Hushed, heavy dread where the frogs no longer sing.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No full dragon and no breath",
+      "Not the Black Dragon or Vossegar portraits, and not the Serpent's Sunken Hoard sinkhole",
+      "No figures"
+    ],
+    "sources": [
+      "Lines 10510-10512 (9.7 Bosses): Vossegar lairs in a drowned cathedral, a sleek black wyrm coiled among submerged altars; the bells toll underwater and the frogs have not sung there in living memory"
+    ]
+  },
+  "ART-END-RANDOM-MONSTER-GENERATION-TABLES": {
+    "identity": "A Mire mud bank crossed by the tracks of many different Monsters, a record of whatever might come out of the swamp next.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. High-angle view down onto a mud bank at the water's edge: a crossing of different tracks fills the centre, reeds along the top edge and a wedge of black water at one corner.",
+    "details": [
+      "A line of clawed lizardfolk prints",
+      "A broad snake drag-mark curving through the mud",
+      "A crocodile's tail furrow flanked by splayed claw prints",
+      "One huge webbed print, wider than a shield",
+      "Bent and broken reeds and a dropped fish skeleton"
+    ],
+    "must": [
+      "No creatures shown, only their tracks"
+    ],
+    "atmosphere": "Uncertain, layered menace.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No figures",
+      "Not the Mire climate walkway or the Mire Titan's Fen",
+      "No readable symbols in the tracks"
+    ],
+    "sources": [
+      "Lines 10537-11009 (9.8): Random Monster Generation Tables by Climate, ending with The Mire",
+      "Lines 9845-9847, 9883, 9962 and 10107-10109 (9.7 Mire Bestiary): Lizardfolk Warrior, Crocodile, Giant Constrictor and the froglike Mire Titan"
+    ]
+  },
+  "ART-END-READING-A-SCENARIO-BEFORE-SETUP": {
+    "identity": "A party's preparation before an expedition: a sealed Guild of Keys contract and a hand-drawn map of the approaches, weighted down with a dagger and a candle stub.",
+    "composition": "Still life on a table corner at slight elevation: the map lies unrolled at the centre, its corners held by a dagger and a candle stub, the folded contract with its wax seal laid across one edge. Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes.",
+    "details": [
+      "Map drawn only with abstract lines: a river, a cluster of ruin squares and a road, no lettering",
+      "Folded contract with a plain wax seal and no device",
+      "Dagger pinning one corner",
+      "Candle stub in a dish with wax runs",
+      "Stick of chalk and a chalk scuff on the table edge"
+    ],
+    "must": [
+      "No legible writing, numbers or symbols on map or contract"
+    ],
+    "atmosphere": "Studied caution before the danger.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No compass rose or grid on the map",
+      "Not the War Room interior",
+      "No figures"
+    ],
+    "sources": [
+      "Lines 11037-11041 (10): read the selected Core Scenario once before setup",
+      "Lines 15515-15527 (11.2.4): the Guild of Keys manages contracts and maps; Map Room studies the next battlefield's approaches",
+      "Lines 4637-4638 (7.16): Candles and Chalk"
+    ]
+  },
+  "ART-END-ADVENTURE-PREPARATION-SEQUENCE": {
+    "identity": "A Scout Hireling lying on a ridge with a spyglass, surveying the ruin below before the party deploys.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter rear view: the Scout lies flat along the ridge crest in the foreground at left, spyglass to one eye; below and beyond at right, a small ruined chapel and broken walls drawn light and simple.",
+    "details": [
+      "Scout in a hooded leather coat, shortsword at the hip, lying flat",
+      "Extended brass spyglass",
+      "Ridge grass and a boulder for cover",
+      "Distant ruined chapel with a fallen roof and a broken wall circuit",
+      "A thin thread of smoke rising from the ruin"
+    ],
+    "must": [
+      "The ruin stays small and lightly drawn; the Scout is the focal point"
+    ],
+    "activity": [
+      "The Scout watches, motionless"
+    ],
+    "atmosphere": "Calm before commitment.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the chapter 10 crossroads or the chapter 1 pass",
+      "No banners",
+      "No Monsters drawn in detail"
+    ],
+    "sources": [
+      "Lines 11068-11113 (10.1): Adventure Preparation Sequence, from climate and scenario to deployment",
+      "Line 15572 (11.2.5): Scout Hireling with shortsword and Keen Scout",
+      "Line 4659 (7.16): Spyglass"
+    ]
+  },
+  "ART-END-WEATHER-TABLES-BY-CLIMATE": {
+    "identity": "Whiteout Blizzard in the Pale City: two travellers roped together, bent into a storm that has erased the world around them.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view: the two travellers at the centre with the rope between them, leaning into driving snow from the right; around them almost nothing but white paper and slanting strokes.",
+    "details": [
+      "Lead traveller in a fur coat and arctic gear, hood drawn tight, rope in the fist",
+      "Second traveller a few paces behind, one arm raised against the wind",
+      "Rope sagging between them",
+      "Driving snow as long slanting broken strokes",
+      "A half-buried statue head emerging from a drift"
+    ],
+    "must": [
+      "The storm is drawn in line only; the white is the paper"
+    ],
+    "activity": [
+      "The two push forward into the wind"
+    ],
+    "atmosphere": "Erased, isolated, enduring.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No grey wash or tonal fog",
+      "Not the Pale City climate gate",
+      "No Monsters"
+    ],
+    "sources": [
+      "Lines 11925-12001 (10.3): Weather Tables by Climate",
+      "Line 11974 (10.3): Whiteout Blizzard, LOS reduced to 6 inches",
+      "Lines 3715 and 4661 (7.10, 7.16): Fur Coat and Arctic Gear"
+    ]
+  },
+  "ART-END-SOLO-AND-COOPERATIVE-PLAY": {
+    "identity": "A Costly Victory in the Ashlands: one Hero escapes the ruin with the relic while a companion lies Knocked Out beside a collapsed archway behind.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view: the escaping Hero strides toward the viewer at left, relic clutched to the chest, looking back over the shoulder; at right in the middle distance the collapsed archway with the fallen companion beside it.",
+    "details": [
+      "Hero in a soot-stained coat carrying a small cracked reliquary box",
+      "Collapsed archway, its voussoirs fallen in a heap",
+      "Fallen companion lying still beside the rubble",
+      "Ash drifts and soot-blackened stones",
+      "Dust still settling from the collapse as dry-brush drag"
+    ],
+    "must": [
+      "Both the escaping Hero and the fallen companion read clearly"
+    ],
+    "activity": [
+      "The Hero leaves, glancing back"
+    ],
+    "atmosphere": "Victory paid for with someone left behind.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "No gore",
+      "No enemies",
+      "Not the Reliquary of Broken Saints nave"
+    ],
+    "sources": [
+      "Lines 14693-14697 (10.5): in solo and cooperative play the battlefield itself becomes the enemy",
+      "Line 14853 (10.5.12): Costly Victory example; one Hero escapes with the relic in the Ashlands while another is left Knocked Out beside a collapsed archway"
+    ]
+  },
+  "ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING": {
+    "identity": "A Minion swarm: Ratkin Scavengers of the Pale City boiling up out of a broken drain grate in a frozen street.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view: the wrenched grate at the centre, a stream of ratkin pouring out of it and fanning across the frozen cobbles toward the lower edge.",
+    "details": [
+      "Iron drain grate wrenched aside, its bars bent",
+      "Scrawny, twitching ratkin in matted grey fur, a few clutching sacks or crude blades",
+      "Frozen cobbles with frost and an icicle hanging from the kerb",
+      "One ratkin dragging a stolen boot",
+      "Snow scuffed by many small feet"
+    ],
+    "must": [
+      "The ratkin read as one swarm, not separate portraits"
+    ],
+    "activity": [
+      "The swarm pours out of the drain"
+    ],
+    "atmosphere": "Endless, verminous pressure.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the Ratkin ancestry or bestiary portraits",
+      "No gore",
+      "No Heroes in frame"
+    ],
+    "sources": [
+      "Lines 14967-14976 (10.6.8): Minion Swarms add Minions as party size grows",
+      "Line 9025 (9.7): Ratkin Scavengers, scrawny twitching things in matted grey fur that swarm through the Pale City ruins"
+    ]
+  },
+  "ART-END-THE-CAMPAIGN-CYCLE": {
+    "identity": "The Antlered Path Shrine: a cairn of three struck stones beside the old Greenmark trail, Old Wode's mark found on the journey home.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Low view from the trail: the cairn stands at the centre on the trail edge, ferns and roots crowding in on both sides, the trail itself fading into paper.",
+    "details": [
+      "Three rough stones stacked one on another, each bearing a single dented strike mark",
+      "Moss on the lowest stone",
+      "Old earthen trail with roots crossing it",
+      "Fern fronds and a fallen branch",
+      "A shed antler tine laid at the cairn's foot"
+    ],
+    "must": [
+      "Exactly three stones; no figures"
+    ],
+    "atmosphere": "Old, quiet blessing on the long walk home.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the Whispering Grove standing stones",
+      "No carved symbols or runes",
+      "No glow"
+    ],
+    "sources": [
+      "Lines 15237-15300 (11.2): the Campaign Cycle; Journey Home on the Climate's Journey Table",
+      "Line 15309 (11.2.3): Antlered Path Shrine, a cairn of three struck stones on the old trail, Old Wode's mark",
+      "Line 385 (1.3): Old Wode of the Antlered Path struck the ground three times with an iron-shod staff"
+    ]
+  },
+  "ART-END-LEGENDARY-VETERANS": {
+    "identity": "A Legendary Veteran, retired at the height of their craft, keeping watch at the Stronghold's gate as the Warden of the Threshold.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view: the old veteran sits on a bench beside the gate post at the centre, sword across the knees, looking down the empty road that leads away to the right.",
+    "details": [
+      "Grey-bearded, scarred veteran in an old mail shirt under a heavy cloak",
+      "Notched longsword lying across the knees, a hand resting on the pommel",
+      "Thick gate post of the palisade with a lantern hung on a hook",
+      "Bench of a split log",
+      "Muddy road running off past a ditch and stakes"
+    ],
+    "must": [
+      "One figure, plainly old"
+    ],
+    "activity": [
+      "The veteran watches the road, unhurried"
+    ],
+    "atmosphere": "Hard-won rest that never quite lets its guard down.",
+    "avoid": [
+      "No lettering, numbers, dice, game tokens, or rulebook pages",
+      "Not the Expedition Hall yard or the Outer Walls night view",
+      "No banners",
+      "No Monsters"
+    ],
+    "sources": [
+      "Lines 15762-15780 (11.4): a Hero who Retires at Level 10 becomes a Legendary Veteran assigned to one Stronghold Component; Warden of the Threshold serves the Outer Walls",
+      "Lines 15702-15710 (11.3): The Outer Walls: ditch, spiked palisade and stone wall"
+    ]
+  }
+}

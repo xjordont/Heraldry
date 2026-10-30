@@ -16,7 +16,7 @@ This document is the current state; the dated history is in `production/STATE.md
 
 `tools/art_catalog.py` derives the catalog deterministically from the current manuscript. It covers every heading whose first block is flavour text, the cover and the 11 chapter openers, and (since RC512) the 24 Basic Mode Hero profiles of Appendix B.4. It writes `production/art/SPOT_CATALOG.json`.
 
-There are 299 entries:
+There were 299 entries before the tailpieces; `production/art/END_ART_PLAN.json` adds 47 section-end tailpieces (2026-10-30), for 346:
 
 | Family | Count |
 |---|---|
@@ -35,8 +35,13 @@ There are 299 entries:
 | Bastions | 6 |
 | Equipment sections | 2 |
 | Cover | 1 |
+| Section-end tailpieces (`world`, `item`, and `tradition` framing) | 47 |
 
-Flavour text is quoted verbatim in every prompt. Hero profiles have no flavour text: each `hero` entry reads its class, ancestry, background, size and equipment names from the profile, and its brief (`production/art/briefs/heroes.json`) adds the visual identity from the Hero's name. A hero is one alone, full-length figure from head to ground on blank white paper (2:3, 1.9 in wide, `person` references, one generation). Hero art is generated and approved like any other family, but no layout slot is wired yet: approved hero art is not placed until the owner asks for a layout pass.
+Flavour text is quoted verbatim in every prompt. Hero profiles have no flavour text: each `hero` entry reads its class, ancestry, background, size and equipment names from the profile, and its brief (`production/art/briefs/heroes.json`) adds the visual identity from the Hero's name. A hero is one alone, full-length figure from head to ground on blank white paper (2:3, 1.9 in wide, `person` references, one generation). Hero art is generated and approved like any other family. Since 2026-10-30 (owner: fill section-end white space with art) an approved portrait closes its B.4 profile where the profile's last page leaves room (`endart`, at least 1.6 in tall); a profile with no room keeps its white space, and every portrait remains on the Hero records.
+
+## Section-end tailpieces (2026-10-30)
+
+Owner instruction: fill the white space at the end of short sections with art. Each tailpiece names a section heading in `production/art/END_ART_PLAN.json`, takes the `world`, `item`, or `tradition` family's framing, and has a brief in `production/art/briefs/end_art.json` (no lettering, numbers, dice, game tokens, or rulebook pages). They go through the same queue, worker, intake, review, and approval as every other entry. Once approved, the composer sets each one below its section's text with `endart`: only where the next heading already starts a later page, scaled to the space, and omitted when less than 1.6 in tall would fit, so a tailpiece never moves text.
 
 ## Art direction and prompts
 

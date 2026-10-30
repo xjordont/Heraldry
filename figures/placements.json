@@ -450,5 +450,165 @@
       "width": "100%",
       "scope": "column"
     }
+  ],
+  "B00405": [
+    {
+      "id": "FIG-58",
+      "caption": "What you need to play: 1–8 players, a 36\"×36\" battlefield in Tabletop Mode or Grid Mode, a model for every combatant, markers, record sheets, tracking tokens, and at least 4d4, 4d6, 4d8, 4d10, 2d12, and 2d20 (see 1.4).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B00427": [
+    {
+      "id": "FIG-59",
+      "caption": "An adventure is a single game: complete the scenario's objective and satisfy its victory conditions, often by comparing secured wealth in coins (Xc). In campaign play the goal is Triumph, and every Hero eventually meets one of three Fates: Die, Retire, or Triumph (see 1.5).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B00435": [
+    {
+      "id": "FIG-60",
+      "caption": "When two rules conflict, use the more specific rule; if they are equally specific, use the more restrictive rule. Examples, summaries, and reference tables never override the main rules text (see 1.6).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B00508": [
+    {
+      "id": "FIG-61",
+      "caption": "Heroes and Hirelings use the four ability scores (STR, DEX, INT, and SPI), which may be negative and have no maximum unless a rule says otherwise; Monsters never have or use them. A non-Monster combatant's omitted score counts as +0 for that Check only (see 2.2).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B00525": [
+    {
+      "id": "FIG-62",
+      "caption": "A Check is 1d20 plus the listed ability score: 12 or higher succeeds and 11 or lower fails, but a natural 1 always fails and a natural 20 always succeeds. In the example, with an assumed +2, Advantage keeps the higher of two d20 and Disadvantage the lower; Monsters never make a Check, except that they automatically succeed on Terrain Checks (see 2.3 and 2.4).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B00822": [
+    {
+      "id": "FIG-63",
+      "caption": "Concealment climbs from Exposed to Cover to Hidden, and a combatant who loses Cover falls to Exposed. A Light Source creates Light in its Aura (3\" unless a rule lists another size), Darkness gives Cover against nonadjacent enemies, and Hidden and Invisible are separate conditions (see 2.8).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B00981": [
+    {
+      "id": "FIG-64",
+      "caption": "A Hero may spend 1 Luck Point after seeing a d20 Check made by or against that Hero, or a damage roll from or directly affecting that Hero, but before consequences are applied. The entire roll is rerolled once and the new result must be used; if several Heroes could spend Luck, the side that won Initiative decides first (see 2.10).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B01037": [
+    {
+      "id": "FIG-65",
+      "caption": "Competitive Initiative in order, with whose modifier is used, the three tie-breakers, and the solo and cooperative pointer. Source example: the Road Wardens roll 17 to the opposing side's 14, win Initiative, and choose to act second (see 3.2).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B01130": [
+    {
+      "id": "FIG-66",
+      "caption": "The End of Round resolves in four steps once both the Party Phase and Monster Phase have resolved. In the assumed example, 2 damage at step 1 reduces 4 Temporary HP to 2, step 2 removes the rest, and step 3 removes 1 unspent AP (see 3.5).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B01156": [
+    {
+      "id": "FIG-67",
+      "caption": "The five timing terms placed along a round, and the order for effects that resolve at the same time when no rule is more specific. Solo and cooperative play replace the first two steps with the round's phase order (see 3.6).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B01449": [
+    {
+      "id": "FIG-68",
+      "caption": "A Reaction to an attack or damaging effect is declared before any of its source's damage dice are rolled, and each affected combatant has only 1 Reaction that modifies the same action or effect. A Reaction that depends on the roll commits its costs in advance and releases them if its trigger does not occur (see 4.5).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B01463": [
+    {
+      "id": "FIG-69",
+      "caption": "Targets must be legal when an action is declared and when it resolves. An action that becomes illegal before it resolves fails and its AP remains spent, unless it was abandoned during Declared State verification (see 4.6).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B01741": [
+    {
+      "id": "FIG-70",
+      "caption": "Push moves a target 2\" directly away on a successful STR Check with Disadvantage; Trip makes a target of your Sz or smaller Prone on a successful STR or DEX Check with Disadvantage. Neither is an attack, and neither counts toward the multi-attack Disadvantage chain (see 5.6).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B01762": [
+    {
+      "id": "FIG-71",
+      "caption": "The second and each later counted weapon attack a Hero or Hireling makes in one activation rolls its base damage dice with Disadvantage unless a rule says otherwise. Push, Trip, attacks granted by a Reaction, and a Riposte do not count toward the chain (see 5.7).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B02049": [
+    {
+      "id": "FIG-72",
+      "caption": "The ten steps of Hero creation in order, with the formulas for final ability scores and starting Max HP. After each base value is calculated, every applicable ancestry, background, class, Talent, item, and random-generation modifier applies (see 6.2).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B02096": [
+    {
+      "id": "FIG-73",
+      "caption": "What every Hero records, the derived Initiative Bonus and Base Max NRG, and how current values follow their maximums. In the example, Max HP falling to 6 reduces current HP from 7 to 6, and raising Max HP back to 10 does not restore it (see 6.4).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B03244": [
+    {
+      "id": "FIG-74",
+      "caption": "APL adds the Levels of the Heroes in the Active Party, divides by their number, and rounds down; Hirelings, Summons, and Heroes on the Bench do not count. Example: Levels 3, 3, 2, and 2 give 10 ÷ 4 = 2.5, so APL 2 (see 6.14).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B03329": [
+    {
+      "id": "FIG-75",
+      "caption": "The matched one-off party rules: one Hero Level from 1–10 for every Hero, Gaining a Level resolved once per Level above 1 without Training Costs, coins pooled and spent at list price before deployment, and the limits that apply to both sides. Example: a chosen Level 4 means 4 - 1 = 3 resolutions (see 6.17).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B03413": [
+    {
+      "id": "FIG-76",
+      "caption": "Two real entries split into the six elements 7.3 lists in order: Shovel (7.16) uses five and Spidermilk Venom (7.14) uses two, since an entry omits any element that does not apply. Other item tables use other fields (see 7.3).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B03417": [
+    {
+      "id": "FIG-77",
+      "caption": "The eight stacking and precedence rules of 7.4: what stacks, how damage type and damage order resolve, how a target restriction overrides Hidden, Invisible, LOS, and adjacency, and how illegal spaces and duplicated Reactions are handled. The example uses assumed item bonuses of +1 and +2 and item penalties of -1 and -3 (see 7.4).",
+      "width": "100%",
+      "scope": "full"
+    }
   ]
 }

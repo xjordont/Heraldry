@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="308.5pt" viewBox="0 0 504 308.5">
+<title>Goals of the game: coins, Triumph, and the three Fates</title>
+<desc>Show what a player is trying to do in an adventure and in a campaign: earn coins, achieve Triumph, and meet one of three Fates.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="504" height="21.3" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="6" y="13.38" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Adventure:</tspan><tspan font-weight="400"> a single game of Heraldry Skirmish. </tspan><tspan font-weight="700">Your goal:</tspan><tspan font-weight="400"> complete the scenario's objective and satisfy its victory conditions.</tspan></text>
+<rect x="0" y="29.3" width="292" height="19" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="11" cy="38.8" r="6.6" fill="#fff"/>
+<text x="11" y="42" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">1</text>
+<text x="22" y="42.2" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Adventure goal: coins</text>
+<text x="287" y="42.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">1.5</text>
+<text x="5" y="61.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Many competitive scenarios compare secured wealth, measured in </tspan><tspan font-weight="700">coins</tspan><tspan font-weight="400">.</tspan></text>
+<text x="5" y="72.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Parties earn coins by:</text>
+<rect x="5" y="79.5" width="66.75" height="59" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="38.38" y="105.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">looting</text>
+<text x="38.38" y="115.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">treasure</text>
+<line x1="38.38" y1="139.5" x2="38.38" y2="147.5" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="38.38,153.5 35.17,146.5 41.58,146.5" fill="#000"/>
+<rect x="76.75" y="79.5" width="66.75" height="59" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="110.12" y="105.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">completing</text>
+<text x="110.12" y="115.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">objectives</text>
+<line x1="110.12" y1="139.5" x2="110.12" y2="147.5" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="110.12,153.5 106.92,146.5 113.33,146.5" fill="#000"/>
+<rect x="148.5" y="79.5" width="66.75" height="59" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="181.88" y="105.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">defeating</text>
+<text x="181.88" y="115.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Monsters</text>
+<line x1="181.88" y1="139.5" x2="181.88" y2="147.5" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="181.88,153.5 178.68,146.5 185.07,146.5" fill="#000"/>
+<rect x="220.25" y="79.5" width="66.75" height="59" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="253.62" y="89.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">surviving long</text>
+<text x="253.62" y="100" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">enough to</text>
+<text x="253.62" y="110.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">escape the</text>
+<text x="253.62" y="121.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">battlefield with</text>
+<text x="253.62" y="131.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">their spoils</text>
+<line x1="253.62" y1="139.5" x2="253.62" y2="147.5" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="253.62,153.5 250.43,146.5 256.82,146.5" fill="#000"/>
+<rect x="5" y="154.5" width="282" height="34" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="146" y="167.8" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle"><tspan font-weight="700">Coins</tspan><tspan font-weight="400">, written </tspan><tspan font-weight="700">Xc</tspan><tspan font-weight="400">, where </tspan><tspan font-weight="700">X</tspan><tspan font-weight="400"> is the number of coins. </tspan><tspan font-weight="700">CV</tspan><tspan font-weight="400"> (</tspan><tspan font-weight="700">Coin Value</tspan><tspan font-weight="400">) refers</tspan></text>
+<text x="146" y="178.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">to an equivalent value in coins.</text>
+<rect x="0" y="29.3" width="292" height="164.2" fill="none" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="300" y="29.3" width="204" height="19" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="311" cy="38.8" r="6.6" fill="#fff"/>
+<text x="311" y="42" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">2</text>
+<text x="322" y="42.2" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Campaign goal: Triumph</text>
+<text x="499" y="42.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">1.5.1</text>
+<text x="305" y="61.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">In campaign play, the goal is </tspan><tspan font-weight="700">Triumph</tspan><tspan font-weight="400">.</tspan></text>
+<text x="305" y="76.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Competitive campaign</text>
+<rect x="305" y="81.9" width="18" height="18" fill="#fff" stroke="#000" stroke-width="0.9" rx="2"/>
+<text x="314" y="94.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">1</text>
+<rect x="327" y="81.9" width="18" height="18" fill="#fff" stroke="#000" stroke-width="0.9" rx="2"/>
+<text x="336" y="94.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">2</text>
+<rect x="349" y="81.9" width="18" height="18" fill="#fff" stroke="#000" stroke-width="0.9" rx="2"/>
+<text x="358" y="94.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">3</text>
+<rect x="371" y="81.9" width="18" height="18" fill="#fff" stroke="#000" stroke-width="0.9" rx="2"/>
+<text x="380" y="94.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">4</text>
+<rect x="393" y="81.9" width="18" height="18" fill="#fff" stroke="#000" stroke-width="0.9" rx="2"/>
+<text x="402" y="94.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">5</text>
+<line x1="416" y1="90.9" x2="437" y2="90.9" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="443,90.9 436,87.7 436,94.1" fill="#000"/>
+<rect x="445" y="81.9" width="54" height="18" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="472" y="92.5" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle"><tspan font-weight="700">Triumph</tspan></text>
+<text x="305" y="109.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Complete any </tspan><tspan font-weight="700">5</tspan><tspan font-weight="400"> different Stronghold Components.</tspan></text>
+<text x="305" y="124.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Solo or cooperative campaign</text>
+<text x="305" y="137.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Complete the rolled objective and extraction</text>
+<text x="305" y="148.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">requirement in the </tspan><tspan font-weight="700">Triumph Finale</tspan><tspan font-weight="400">.</tspan></text>
+<rect x="300" y="29.3" width="204" height="164.2" fill="none" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="0" y="201.5" width="504" height="19" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="11" cy="211" r="6.6" fill="#fff"/>
+<text x="11" y="214.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">3</text>
+<text x="22" y="214.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Every Hero eventually meets one of three Fates</text>
+<text x="499" y="214.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">1.5.1</text>
+<rect x="5" y="226.5" width="140" height="75" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="5" y="226.5" width="140" height="14" fill="#d9d9d9" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="75" y="236.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Die</text>
+<text x="9" y="250.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">A Hero who dies and is not</text>
+<text x="9" y="261.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">returned to life before the next</text>
+<text x="9" y="272" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">adventure is removed from the</text>
+<text x="9" y="282.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">campaign permanently.</text>
+<rect x="151" y="226.5" width="202" height="75" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="151" y="226.5" width="202" height="14" fill="#d9d9d9" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="252" y="236.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Retire</text>
+<text x="155" y="250.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">A Hero may retire during the Town Phase. A retired</text>
+<text x="155" y="261.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hero is removed from the Roster permanently,</text>
+<text x="155" y="272" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">returns their eligible items to </tspan><tspan font-weight="700">Storage</tspan><tspan font-weight="400">, and adds a</tspan></text>
+<text x="155" y="282.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Retirement Payout to the Treasury. A Hero that</text>
+<text x="155" y="293.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">retires at </tspan><tspan font-weight="700">Level 10</tspan><tspan font-weight="400"> becomes a </tspan><tspan font-weight="700">Legendary Veteran</tspan><tspan font-weight="400">.</tspan></text>
+<rect x="359" y="226.5" width="140" height="75" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="359" y="226.5" width="140" height="14" fill="#d9d9d9" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="429" y="236.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Triumph</text>
+<text x="363" y="250.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">A Hero who remains on the Roster</text>
+<text x="363" y="261.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">when their party achieves</text>
+<text x="363" y="272" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Triumph</tspan><tspan font-weight="400"> shares in that victory</tspan></text>
+<text x="363" y="282.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">unless another rule says otherwise.</text>
+<rect x="0" y="201.5" width="504" height="105" fill="none" stroke="#000" stroke-width="0.9" rx="2.5"/>
+</svg>

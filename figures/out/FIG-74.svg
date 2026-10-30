@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="295.7pt" viewBox="0 0 504 295.7">
+<title>Average Party Level (APL)</title>
+<desc>Show the three-step APL calculation, who counts, which Active Party applies at each time, and a worked example including the Town Phase rule.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="13" height="13" fill="#000"/>
+<text x="6.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">A</text>
+<text x="18" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Calculating APL (6.14)</text>
+<rect x="0" y="19" width="246" height="22" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="13" cy="30" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="13" y="33.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<text x="26" y="32.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Add together the Levels of all Heroes in the Active Party.</text>
+<line x1="13" y1="41" x2="13" y2="47" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="13,53 9.8,46 16.2,46" fill="#000"/>
+<rect x="0" y="53" width="246" height="22" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="13" cy="64" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="13" y="67.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<text x="26" y="66.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Divide by the number of Heroes in the Active Party.</text>
+<line x1="13" y1="75" x2="13" y2="81" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="13,87 9.8,80 16.2,80" fill="#000"/>
+<rect x="0" y="87" width="246" height="22" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="13" cy="98" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="13" y="101.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<text x="26" y="100.9" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Round down.</tspan></text>
+<rect x="0" y="117" width="120" height="46.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="12" cy="128" r="6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="24" y="131.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Counts</text>
+<text x="6" y="144" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Heroes in the Active Party</text>
+<text x="6" y="154.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">selected for that adventure.</text>
+<rect x="126" y="117" width="120" height="46.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<line x1="133.6" y1="123.6" x2="142.4" y2="132.4" stroke="#000" stroke-width="1.7" stroke-linecap="round"/>
+<line x1="133.6" y1="132.4" x2="142.4" y2="123.6" stroke="#000" stroke-width="1.7" stroke-linecap="round"/>
+<text x="150" y="131.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Does not count</text>
+<text x="132" y="144" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hirelings, Summons, and</text>
+<text x="132" y="154.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Heroes on the Bench.</text>
+<text x="0" y="178.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Which Active Party is used</text>
+<rect x="0" y="183.2" width="246" height="29.7" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="5" y="195.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Before the first adventure of a campaign:</tspan><tspan font-weight="400"> use the starting</tspan></text>
+<text x="5" y="206.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Active Party.</text>
+<rect x="0" y="215.9" width="246" height="29.7" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="5" y="228.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">During an adventure:</tspan><tspan font-weight="400"> calculate APL using only the Heroes in</tspan></text>
+<text x="5" y="238.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the Active Party selected for that adventure.</text>
+<rect x="0" y="248.6" width="246" height="40.3" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="5" y="261" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">During the following Town Phase:</tspan><tspan font-weight="400"> continue using the APL of</tspan></text>
+<text x="5" y="271.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the Active Party that completed that adventure; do not</text>
+<text x="5" y="282.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">recalculate it after swapping Heroes.</text>
+<rect x="258" y="0" width="13" height="13" fill="#000"/>
+<text x="264.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
+<text x="276" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Example (assumed values)</text>
+<text x="258" y="27" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Assumes a standard Active Party of 4 Heroes (11.1.2) and that no</text>
+<text x="258" y="37.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hero changes Level during the example. The Level of each Hero is</text>
+<text x="258" y="48.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">shown inside the token.</text>
+<rect x="258" y="55.8" width="246" height="44" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="264" y="67.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Active Party</text>
+<circle cx="280" cy="85.8" r="8.5" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="280" y="89.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<circle cx="314" cy="85.8" r="8.5" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="314" y="89.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<circle cx="348" cy="85.8" r="8.5" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="348" y="89.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<circle cx="382" cy="85.8" r="8.5" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="382" y="89.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<text x="410" y="88.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Levels 3, 3, 2, and 2</text>
+<rect x="258" y="105.8" width="246" height="36" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3 2" rx="2.5"/>
+<text x="264" y="117.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Not counted</text>
+<line x1="267.6" y1="127.4" x2="276.4" y2="136.2" stroke="#000" stroke-width="1.7" stroke-linecap="round"/>
+<line x1="267.6" y1="136.2" x2="276.4" y2="127.4" stroke="#000" stroke-width="1.7" stroke-linecap="round"/>
+<circle cx="289" cy="131.8" r="7.5" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="289" y="135.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">5</text>
+<text x="301" y="134.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Bench Hero</text>
+<line x1="361.6" y1="127.4" x2="370.4" y2="136.2" stroke="#000" stroke-width="1.7" stroke-linecap="round"/>
+<line x1="361.6" y1="136.2" x2="370.4" y2="127.4" stroke="#000" stroke-width="1.7" stroke-linecap="round"/>
+<text x="375" y="134.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hireling</text>
+<line x1="435.6" y1="127.4" x2="444.4" y2="136.2" stroke="#000" stroke-width="1.7" stroke-linecap="round"/>
+<line x1="435.6" y1="136.2" x2="444.4" y2="127.4" stroke="#000" stroke-width="1.7" stroke-linecap="round"/>
+<text x="449" y="134.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Summon</text>
+<rect x="258" y="149.8" width="246" height="20" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="271" cy="159.8" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="271" y="163.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<text x="284" y="162.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Add: 3 + 3 + 2 + 2 = 10.</text>
+<line x1="271" y1="169.8" x2="271" y2="175.8" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="271,181.8 267.8,174.8 274.2,174.8" fill="#000"/>
+<rect x="258" y="181.8" width="246" height="20" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="271" cy="191.8" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="271" y="195.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<text x="284" y="194.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Divide: 10 ÷ 4 = 2.5.</text>
+<line x1="271" y1="201.8" x2="271" y2="207.8" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="271,213.8 267.8,206.8 274.2,206.8" fill="#000"/>
+<rect x="258" y="213.8" width="246" height="20" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="271" cy="223.8" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="271" y="227.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<text x="284" y="226.7" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Round down: </tspan><tspan font-weight="700">APL 2</tspan><tspan font-weight="400">.</tspan></text>
+<rect x="258" y="241.8" width="246" height="50.9" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="263" y="254.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Town Phase:</tspan><tspan font-weight="400"> the Level 5 Bench Hero swaps in for a Level 2</tspan></text>
+<text x="263" y="264.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hero. The Town Phase still uses APL 2; do not recalculate it.</text>
+<text x="263" y="275.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Next adventure:</tspan><tspan font-weight="400"> Levels 3, 3, 2, and 5 give 13 ÷ 4 = 3.25,</tspan></text>
+<text x="263" y="286" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">rounded down to </tspan><tspan font-weight="700">APL 3</tspan><tspan font-weight="400">.</tspan></text>
+</svg>

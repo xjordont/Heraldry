@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="243.5pt" viewBox="0 0 504 243.5">
+<title>Hero attributes, derived values, and current against maximum</title>
+<desc>Show what every Hero records, the derived Initiative Bonus and Base Max NRG formulas, and how current HP, NRG, and Luck follow their maximums.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="13" height="13" fill="#000"/>
+<text x="6.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">A</text>
+<text x="18" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Every Hero records (6.4)</text>
+<rect x="0" y="17" width="198" height="11.8" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="5" y="25.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Name</tspan></text>
+<rect x="0" y="28.8" width="198" height="11.8" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="5" y="37.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Ancestry, Background,</tspan><tspan font-weight="400"> and </tspan><tspan font-weight="700">Class</tspan></text>
+<rect x="0" y="40.6" width="198" height="11.8" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="5" y="49.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Level</tspan></text>
+<rect x="0" y="52.4" width="198" height="11.8" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="5" y="61.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">STR, DEX, INT,</tspan><tspan font-weight="400"> and </tspan><tspan font-weight="700">SPI</tspan></text>
+<rect x="0" y="64.2" width="198" height="11.8" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="5" y="73" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">current and maximum </tspan><tspan font-weight="700">HP</tspan></text>
+<rect x="0" y="76" width="198" height="11.8" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="5" y="84.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">current and maximum </tspan><tspan font-weight="700">NRG</tspan></text>
+<rect x="0" y="87.8" width="198" height="11.8" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="5" y="96.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">SPD</tspan></text>
+<rect x="0" y="99.6" width="198" height="11.8" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="5" y="108.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Sz</tspan></text>
+<rect x="0" y="111.4" width="198" height="11.8" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="5" y="120.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">current and maximum </tspan><tspan font-weight="700">Luck</tspan></text>
+<rect x="0" y="123.2" width="198" height="11.8" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="5" y="132" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Wounds</tspan></text>
+<rect x="0" y="135" width="198" height="11.8" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="5" y="143.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Initiative Bonus</tspan></text>
+<rect x="0" y="146.8" width="198" height="11.8" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="5" y="155.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Known Powers</tspan><tspan font-weight="400">, if any</tspan></text>
+<rect x="0" y="158.6" width="198" height="22.4" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="5" y="167.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">General Talents, Class Talents,</tspan><tspan font-weight="400"> and </tspan><tspan font-weight="700">Special</tspan></text>
+<text x="5" y="178" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Abilities</tspan></text>
+<rect x="0" y="181" width="198" height="11.8" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="5" y="189.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Inventory</tspan><tspan font-weight="400">, including equipped and carried items</tspan></text>
+<rect x="0" y="192.8" width="198" height="11.8" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="5" y="201.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Carried Coins</tspan></text>
+<rect x="210" y="0" width="13" height="13" fill="#000"/>
+<text x="216.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
+<text x="228" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Derived values</text>
+<text x="210" y="24.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Unless a rule says otherwise:</text>
+<rect x="210" y="28" width="156" height="17.1" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="214" y="39.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Initiative Bonus = INT + SPI</tspan></text>
+<rect x="210" y="48.1" width="156" height="101.9" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="214" y="59.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Base Max NRG = Level + (2 × Primary</tspan></text>
+<text x="214" y="70.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Casting Score), minimum 0</tspan><tspan font-weight="400"> for</tspan></text>
+<text x="214" y="80.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">non-Martial classes that cast Powers.</text>
+<text x="214" y="91.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Then apply any background, ancestry,</text>
+<text x="214" y="101.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">talent, item, or class feature that</text>
+<text x="214" y="112.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">modifies </tspan><tspan font-weight="700">Max NRG</tspan><tspan font-weight="400">. Recalculate </tspan><tspan font-weight="700">Max</tspan></text>
+<text x="214" y="123.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">NRG</tspan><tspan font-weight="400"> whenever the Hero's Level,</tspan></text>
+<text x="214" y="133.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Primary Casting Score, or a permanent</text>
+<text x="214" y="144.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Max NRG modifier changes.</text>
+<rect x="210" y="153" width="156" height="38.3" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="214" y="164.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Martial classes always have </tspan><tspan font-weight="700">Max NRG 0</tspan></text>
+<text x="214" y="175" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">and cannot gain </tspan><tspan font-weight="700">Max NRG</tspan><tspan font-weight="400"> unless a rule</tspan></text>
+<text x="214" y="185.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">explicitly grants a replacement benefit.</text>
+<rect x="378" y="0" width="13" height="13" fill="#000"/>
+<text x="384.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">C</text>
+<text x="396" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Current and maximum</text>
+<text x="378" y="24.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Example (HP, assumed values)</text>
+<rect x="378" y="30" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="384.8" y="30" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="391.6" y="30" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="398.4" y="30" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="405.2" y="30" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="412" y="30" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="418.8" y="30" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="425.6" y="30" width="5.2" height="5.2" fill="#fff" stroke="#000" stroke-width="0.8"/>
+<rect x="432.4" y="30" width="5.2" height="5.2" fill="#fff" stroke="#000" stroke-width="0.8"/>
+<rect x="439.2" y="30" width="5.2" height="5.2" fill="#fff" stroke="#000" stroke-width="0.8"/>
+<text x="450.4" y="36.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">HP 7 of 10.</text>
+<rect x="378" y="45" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="384.8" y="45" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="391.6" y="45" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="398.4" y="45" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="405.2" y="45" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="412" y="45" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<text x="378" y="62" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Max HP falls below current HP:</text>
+<text x="378" y="72.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">reduce current HP to the new</text>
+<text x="378" y="83.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">maximum.</text>
+<rect x="378" y="90.8" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="384.8" y="90.8" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="391.6" y="90.8" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="398.4" y="90.8" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="405.2" y="90.8" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="412" y="90.8" width="5.2" height="5.2" fill="#000" stroke="#000" stroke-width="0.6"/>
+<rect x="418.8" y="90.8" width="5.2" height="5.2" fill="#fff" stroke="#000" stroke-width="0.8"/>
+<rect x="425.6" y="90.8" width="5.2" height="5.2" fill="#fff" stroke="#000" stroke-width="0.8"/>
+<rect x="432.4" y="90.8" width="5.2" height="5.2" fill="#fff" stroke="#000" stroke-width="0.8"/>
+<rect x="439.2" y="90.8" width="5.2" height="5.2" fill="#fff" stroke="#000" stroke-width="0.8"/>
+<text x="378" y="107.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Max HP rises: current HP stays 6.</text>
+<text x="378" y="118.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">An increase does not restore HP</text>
+<text x="378" y="129" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">unless a rule says otherwise.</text>
+<text x="378" y="143.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Unless a rule explicitly says</text>
+<text x="378" y="154.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">otherwise, current </tspan><tspan font-weight="700">HP</tspan><tspan font-weight="400">, </tspan><tspan font-weight="700">NRG</tspan><tspan font-weight="400">, and</tspan></text>
+<text x="378" y="164.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Luck</tspan><tspan font-weight="400"> cannot exceed the</tspan></text>
+<text x="378" y="175.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">maximum; excess gained or</text>
+<text x="378" y="186" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">restored is lost. </tspan><tspan font-weight="700">Temporary HP</tspan><tspan font-weight="400"> is</tspan></text>
+<text x="378" y="196.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">separate. </tspan><tspan font-weight="700">Max HP</tspan><tspan font-weight="400"> cannot fall</tspan></text>
+<text x="378" y="207.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">below </tspan><tspan font-weight="700">1</tspan><tspan font-weight="400">.</tspan></text>
+<rect x="0" y="213.8" width="504" height="27.7" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="4" y="225.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Carried Coins</tspan><tspan font-weight="400"> records only coins currently carried on the battlefield. In campaign play, secured coins belong to the party's shared</tspan></text>
+<text x="4" y="235.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Treasury</tspan><tspan font-weight="400">, not to an individual Hero. Record current HP, NRG, and Luck separately from their maximum values.</tspan></text>
+</svg>

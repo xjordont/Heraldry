@@ -255,6 +255,12 @@ RC486_STATUS = "redrawn 2026-10-07 for RC486 and minor review findings, pending 
 import fig_scenmaps
 META.update(fig_scenmaps.meta_entries())
 
+# Section-end figures (owner 2026-10-30: fill the white space a section's last page leaves with
+# diagrams and figures): FIG-58 to FIG-64 (Chapters 1-2), FIG-65 to FIG-71 (3-5), FIG-72 to FIG-77 (6-7).
+import figdata_end_a, figdata_end_b, figdata_end_c
+for _m in (figdata_end_a, figdata_end_b, figdata_end_c):
+    META.update(_m.META_END)
+
 # Resolve placement against the current manuscript, never against inherited line numbers.
 import sys
 sys.path.insert(0, os.path.join(FIG_DIR, "..", "tools"))

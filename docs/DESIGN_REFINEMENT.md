@@ -131,3 +131,11 @@ Owner instructions: "Fix all the issues and add all the polish in the rc522 desi
 - Justification: interword spacing may stretch to 140% and shrink to 85% of normal, with letter spacing adjusted by at most 2% either way, before Typst accepts a loose line. The wider range lets the paragraph builder choose better breaks; book-wide loose lines (a gap over 1.6 times the line's normal space) fell from 430 to 83, and the book is 9 pages shorter.
 - Chapter openers: a short opening flavour that shares its page with nothing else (the first section starts on a fresh page, or the opener page holds no section heading) is optically centred, with slightly more space below than above. Openers followed by their first section on the same page keep the top-aligned layout; opener spreads stay as they were.
 - Publisher device: the owner's Escutcheon Press logo is set as ink on the paper (`tools/brand_ink.py` lifts the scanned paper to transparency and keeps the engraved ink). It sits at the foot of the title page (0.95 in, above the version line, in place of the publisher line), heads the colophon (1.3 in), and replaces the castle mark and publisher line at the foot of the back cover (1.15 in). The castle mark stays the book's own device at the head of the title page and on the player aids and Hero records.
+
+## Section-end fill - 2026-10-30
+
+Owner: keep fresh section pages and whole Monster entries, and fill the white space with art, diagrams, and figures.
+
+- Figures: twenty full-width rules figures close short sections in Chapters 1 to 7, each sized to the space the section's last page leaves (BOOK_DESIGN_PLAN rule 9).
+- `endart`: approved art set below a unit's text only where the next heading already starts a later page; it scales to the space and is omitted below 1.6 in, so it never moves text. Basic Mode Hero portraits use it now; the 47 queued tailpieces will use it once approved.
+- Figure numbers print in book order.

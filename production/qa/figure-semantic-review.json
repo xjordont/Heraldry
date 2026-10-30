@@ -7712,6 +7712,496 @@
      "Physical print NOT TESTED."
     ]
    }
+  },
+  {
+   "id": "FIG-58",
+   "svg_sha256": "f4a32a46b9082b02676191b7ea5f8fe11c970a57fa7016220d66eefa6602c99a",
+   "caption_sha256": "8b19f88f68c47b8c29ade285603d7e69227cfdc111ad900c116bcadf8dc30571",
+   "rules_sha256": "226fe67ca3c10f47b3cc26fbd88e034a2bbe7d0a0a2d35f5768ca756c5c5542f",
+   "verdict": "PASS",
+   "findings": [
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Grid board shows 6x6 squares while the dimension reads 36\" and the 1\" scale bar is drawn beside the board; harmless because it is labelled schematic, but a reader may count 6 squares as 36\".",
+     "resolution": "Schematic label now reads 'Schematic - not to scale; only a few squares drawn'."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "1.4 lines 401-414 (all seven bullets, token list, dice list); 2.6 line 598 (36x36 battlefield, 1\" squares).",
+    "observations": "Rendered at 504 pt; all seven cards legible (9 pt minimum), no overlaps or clipping. Every phrase, number, and dice chip matches 1.4. Tabletop and Grid boards are labelled 'Schematic - not to scale' and only 36\" and 1\" are dimensioned. Marker icons are labelled illustrations only. Caption matches 1.4, uses straight quotes and the multiplication sign, and has the Oxford comma. No style-lock breach found."
+   }
+  },
+  {
+   "id": "FIG-59",
+   "svg_sha256": "1d48a2d834a6876d6d21fd0d968b99a607033407db9554e6434471d3f75a582c",
+   "caption_sha256": "0d585e043f16e1b1f03d745c1828de5a855cbbecdaa6f23475f1e8486d6675f7",
+   "rules_sha256": "63496ca004d65f09ebc86484d6f7abef682e2ac38d4e479a3f1a8de46bd263bd",
+   "verdict": "PASS",
+   "findings": [],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "1.5 lines 415-417; 1.5.1 lines 419-429; 11.1.1 line 15059 (5 of 10 Components) for the Triumph condition.",
+    "observations": "Legible; no overlaps. Adventure goal, four coin sources, Xc and CV definitions, Triumph conditions (5 different Stronghold Components; Triumph Finale for solo and cooperative), and the three Fates all match 1.5 and 1.5.1 verbatim or near-verbatim. 'unless another rule says otherwise' is retained on the Triumph Fate. Numbered Stronghold slots 1-5 are a count only. Caption matches the source and the Oxford comma is present."
+   }
+  },
+  {
+   "id": "FIG-60",
+   "svg_sha256": "697f92470ff18b374b35797a0b2c2feae05cc49449d665af02e5cfbb9de79d57",
+   "caption_sha256": "3a9fcbdda1433ca50f1601c72bdebe00d9be1a107d201217352fa51f66d94f2f",
+   "rules_sha256": "149e2f93030f3ca8dfdcf08394d6ea9f1de042c0e86a1a832b1771e9c0c85ea2",
+   "verdict": "PASS",
+   "findings": [],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "1.6 lines 431-435 (precedence paragraph and must/may/cannot paragraph).",
+    "observations": "Legible; no overlaps. Flow chart (more specific, else more restrictive), the two override pairings, 'examples, summaries, and reference tables never override the main rules text', and the three modal-verb definitions all match. The figure does not stack class features, scenario rules, and so on into a ladder, which is correct because the source does not rank them. Panel 3 says 'procedure above' where the source says 'rule-precedence paragraph above'; same meaning."
+   }
+  },
+  {
+   "id": "FIG-61",
+   "svg_sha256": "164bf619937770b590e1a99b238fc356492062a1e71ab3737c28ae095f0ab7c1",
+   "caption_sha256": "6838a6c705f43a2f13fa86fdbf20bd93e961e252a717cfdcae0db8fd4314f34f",
+   "rules_sha256": "3f263f8a213f15b4d6dd30e78fa06b89d882c3d556f9fc8cdbae9273a6a2adde",
+   "verdict": "PASS",
+   "findings": [
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "The number line shades -1 to +3 with a tick at each end and arrowheads beyond, which can read as a hard range; the source says only 'Most starting Heroes have values between -1 and +3'.",
+     "resolution": "Shaded span now has a dashed outline, reading as 'most starting Heroes' rather than a hard range; bullets state the rule correctly."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "2.2 lines 500-511 (users, omitted-score rule, range, four domains).",
+    "observations": "Legible; no overlaps. Four domain lists match lines 508-511 item for item. 'Monsters never have or use ability scores', the +0-for-that-Check-only rule with 'grants no ability score for any other purpose', 'may be negative', and 'no maximum unless a rule says otherwise' are all stated. Caption is consistent."
+   }
+  },
+  {
+   "id": "FIG-62",
+   "svg_sha256": "696d2ffbe4ece01ba5f0df88b6ea3a34e9e5c58488f3b0e38d631f85ce72aa54",
+   "caption_sha256": "7a337983629300d84256b84aa900db852fe275d4474315df074a352dbe1d01f7",
+   "rules_sha256": "e6c3ba3cbee2d59aaabf58e1f61eacc3d11bef0f53a474ea62a4d6b36e888a3a",
+   "verdict": "PASS_WITH_NOTES",
+   "findings": [
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Caption states flatly 'Monsters never make a Check' without the Terrain Check exception that panel 3 draws and that 2.3 states in its last paragraph.",
+     "resolution": "Caption now ends 'Monsters never make a Check, except that they automatically succeed on Terrain Checks (see 2.3 and 2.4)'; matches line 525."
+    },
+    {
+     "severity": "minor",
+     "status": "accepted",
+     "issue": "Placement: the figure is inserted after B00525 (last paragraph of 2.3, source line 525), so panel 2 (Advantage and Disadvantage, 2.4) appears before the 2.4 heading at line 527.",
+     "resolution": "Placement unchanged (after B00525, end of 2.3). Accepted: the section list assigns this figure to 2.3, the caption cites 2.3 and 2.4, and panel 2 is labelled 2.4. Cosmetic forward reference only; no rule affected."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "2.3 lines 513-525; 2.4 lines 527-539.",
+    "observations": "Legible; no overlaps. Worked example is arithmetically correct: assumed +2 with d20 showing 7 and 15; Advantage keeps 15, 15+2=17 succeeds; Disadvantage keeps 7, 7+2=9 fails. Natural 1 and 20 labels, 12 threshold, 'natural 1 and 20 apply only to d20 Checks unless a rule says otherwise', Monster automatic failed-Check effect (not a Critical Failure, unless Immune), the Terrain Check exception, and the Casting Check Disadvantage clause are all reproduced faithfully."
+   }
+  },
+  {
+   "id": "FIG-63",
+   "svg_sha256": "dc750723096734b13d376919b6caaf535d4bc49b14d88622454830f13cd36471",
+   "caption_sha256": "82edc33c7ca8df7df41b5f7491debc85bcb69db054be4390a0174c5361a4869f",
+   "rules_sha256": "5a1bcd74a5693d08a6394fa2d1088c1436bfc1f432c107d1098fa808d40b3971",
+   "verdict": "PASS_WITH_NOTES",
+   "findings": [
+    {
+     "severity": "major",
+     "status": "resolved",
+     "issue": "Omitted qualifier that changes meaning: panel 1 teaches 'A combatant becomes Hidden only by holding Cover from every enemy that has LOS to them' with no note that Cover granted only by a sight line crossing another combatant does not count toward Hidden. A reader will conclude that a Fighter standing in the sight line gives the Ranger Hidden. The author's ambiguity note admits the sentence was left out 'for space', but panel 1 has free vertical space and the sentence directly limits the bullet it sits under.",
+     "resolution": "Panel 1 has a third bullet: 'Cover granted only by a sight line crossing a combatant does not count toward becoming or remaining Hidden (2.8.4)'; matches line 810."
+    },
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Scene tokens versus callouts: the callout badges a, b, c are black discs the same size and colour as the 'combatant' tokens, so scene (c) reads as three black or white discs in a row (combatant, enemy, badge), and the legend 'black: a combatant' applies to the badges too.",
+     "resolution": "Callouts a, b, c are now outlined squares and the legend reads 'black circle: a combatant; white circle: an enemy'; scene (c) now reads as combatant, enemy, badge."
+    },
+    {
+     "severity": "minor",
+     "status": "accepted",
+     "issue": "Panel 1 states Cover as 'applicable ranged attacks and effects ... suffer Disadvantage' only; source adds in 2.8.4 that Cover never applies to melee weapon attacks. Author notes this and defers to FIG-07.",
+     "resolution": "Cover row still uses the 2.8 table wording ('applicable ranged attacks and effects'); that is the source's own table text at line 757, and the melee and Area detail lives in 2.8.4 and FIG-07. No wrong rule taught."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "2.8 lines 750-762; 2.8.1 764-771; 2.8.2 773-783; 2.8.3 785-789; 2.8.4 791-814 (Cover definition, line 810 Cover vs Hidden, line 812 Disadvantage scope, line 814 Areas); 2.8.5 816-822; 2.1 line 465 (adjacent).",
+    "observations": "Legible at 504 pt; no clipping. Ladder, Visibility State, Light Source Aura 3\", carrier-cannot-be-Hidden, Light removes Darkness but not other Cover, Darkness gives Cover against nonadjacent enemies, Hidden and Invisible separate, Invisible governs targeting when both, Spot removes only Hidden, remove-and-cannot-regain-until-end-of-round, and the three answers to a concealed enemy all match the source. Scene (c) 'Darkness gives no Cover against an adjacent enemy' follows from 2.8.4 bullet 1 (enemy must not be adjacent) and is acceptable. Panel 1 uses the 2.8 table wording 'applicable ranged attacks and effects' without the 2.8.4 detail (never melee weapon attacks; Areas and hazards ignore Cover); the text bullet on Areas of Effect partly covers this."
+   }
+  },
+  {
+   "id": "FIG-64",
+   "svg_sha256": "9ebb48231a13f760fc376914923987e7f932e68569738ce3fe7555955cdd7c57",
+   "caption_sha256": "bf34da58628118e6838bdba222e7d03b9cf8d4846716dace4622250e08903bc1",
+   "rules_sha256": "9c9190a97403efc6ac3023de16e06caf5f905da5dbd84ec00c884415fb765d74",
+   "verdict": "PASS",
+   "findings": [
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Caption narrows the Check trigger: it says 'made by or affecting that Hero' while 2.10 says 'made by or against that Hero' and then defines 'against' as target, directly affected, or would suffer the consequences. Damage rolls are 'whose source is that Hero or that directly affects that Hero'.",
+     "resolution": "Caption now reads 'a d20 Check made by or against that Hero, or a damage roll from or directly affecting that Hero'; matches line 965."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "2.10 lines 961-981; 2.7.3 lines 741-746 (step 3 Luck window); 5.2 step 3 line 1532 (Luck reroll before applying consequences, consistent with 2.10).",
+    "observations": "Legible; no overlaps. All eight 2.10 rules appear: when, who is 'against', entire reroll with same Advantage or Disadvantage, complete damage reroll recalculating Total Misses, Critical Hits, exploding dice, shared roll applies to every combatant, Initiative winner decides first then Party Leader's controller orders, one reroll only, new result must be used, refresh to maximum at the start of each new adventure unless a rule says otherwise. The Luck window closing 'when defence or mitigation begins' is correctly attached to a shared damage roll (2.7.3 step 3)."
+   }
+  },
+  {
+   "id": "FIG-65",
+   "svg_sha256": "54792b8e1783958814965e7a90120d9c8dee7558020a90fbef0779f584bee4c5",
+   "caption_sha256": "475bde347d3b1a01bc760aeaf291ffdcd4bb9c04378206bb1dec9ec4ad31d21c",
+   "rules_sha256": "b25986639d9766338d1a6bd1005f7e3b338232db5da91ef2758fff340fdb4a9b",
+   "verdict": "PASS_WITH_NOTES",
+   "findings": [
+    {
+     "severity": "minor",
+     "status": "accepted",
+     "issue": "Panel D says the PvE roll happens each round without the Triumph Finale exception that Round 1 has no PvE Initiative roll (the Party Phase goes first unless the Triumph Objective says otherwise). Source 10.5.4 itself says 'At the start of each round', so the figure is faithful to 10.5.4.",
+     "resolution": "Unchanged. Accepted: panel D is faithful to 10.5.4 ('At the start of each round'); the Triumph Finale Round 1 exception is a campaign setup rule at line 15834, outside 3.2."
+    },
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Panel E: the 17 is shown as the Road Wardens' total; the source gives the same, but the figure drops 'for 17' as the computed 1d20 + INT + SPI total, so a reader could take 17 as the die.",
+     "resolution": "Bars now labelled 'total 17' and 'total 14'."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "3.2 lines 1019-1037; 3.1 lines 989-1015; 3.3 line 1041; 3.6 lines 1139; 10.5.4 lines 14745-14754; 15834 (Triumph Finale Round 1).",
+    "observations": "Legible; no overlaps. Steps 1-5 follow 3.2 order. Tie-breakers 1st-3rd match lines 1029-1031 including 'if each side used a Hero' and 'Starting in Round 2'. Modifier ladder (Party Leader, any allied Hero on the battlefield, none rolls 1d20 with no modifiers) matches lines 1023-1025. Example 17 versus 14, Road Wardens choose to act second, matches line 1037. Panel D correctly paraphrases 10.5.4 (12 or higher Party first; 11 or lower Monster first; replaces side-based Initiative). Panels read A, B, C, D, E with E on the left under A and D on the right; order is slightly unusual but unambiguous."
+   }
+  },
+  {
+   "id": "FIG-66",
+   "svg_sha256": "8a9af07fd0aacb418c7a8fd1ffe9bbeeb360cc2e96ba3c542dd6e6626417fe41",
+   "caption_sha256": "f050789ed2e4676c3be4792936a31d04c3ff7b53dfbada3ca54e91246c20403b",
+   "rules_sha256": "6c79e862187f19c4f18ca7282ada92374c3c108916674d526c502deae86fd1b9",
+   "verdict": "PASS",
+   "findings": [
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Step 3 says any unspent AP is kept and may be spent on Reactions until removed, without the limit that allied Summons cannot spend AP on Reactions unless a rule grants it and Monsters have no AP.",
+     "resolution": "Step 3 now reads 'Until then it is kept, and Heroes and Hirelings may spend it on Reactions (3.3.2, 3.3.3)'; matches line 1078."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "3.5 lines 1124-1133; 3.1 lines 1008-1017; 3.4.3 line 1122; 3.3.2 lines 1078-1082; 3.3.3 line 1090; 5.4.2 lines 1574-1586.",
+    "observations": "Legible; no overlaps or clipping. Four steps match 3.5 including the list of step 1 effect types, Temporary HP removal at step 2, unspent AP removal at step 3, and step 4 scoring. Example arithmetic is correct: 4 Temporary HP minus 2 damage = 2; step 2 removes the rest; 1 AP removed at step 3; no HP lost. The early-loss clause for Temporary HP (0 HP, Knocked Out, leaves battlefield) matches line 1584. Branch after step 4 draws only 'ended / not ended' from 3.1. Step 1 box has unused black space below the label (polish only)."
+   }
+  },
+  {
+   "id": "FIG-67",
+   "svg_sha256": "296b9c95311890e83c6a040b14739725c31bd61688c960ca75d08ff04e4db08c",
+   "caption_sha256": "4d0b1548173cf850a0001f7148cf27d20b5967f796b2cd70f7bf1528eca448cf",
+   "rules_sha256": "c8d51103195d53d3beabd210f61e36510af06649700824a44a8c3dd08fcf7e2b",
+   "verdict": "PASS",
+   "findings": [
+    {
+     "severity": "major",
+     "status": "resolved",
+     "issue": "The note under the rail states a rule the source does not give: 'The Monster Phase falls between terms 4 and 5 and has no timing term of its own'. Together with the rail (terms 2-4 drawn only inside the Party Phase) this tells the reader that 'start of an activation', 'during an activation', and 'end of an activation' never apply to Monster activations, which 3.6 does not say. 3.4.2 and 3.4.3 use 'activates' and 'activation' for Monsters, and 3.4.1 uses 'At the start of the Monster Phase' as a timing. The author's own ambiguity note says the figure 'says nothing about Monsters'; the note contradicts that.",
+     "resolution": "Unsourced 'no timing term of its own' removed. Panel A is retitled 'Five timing terms, default phase order (3.1, 3.6)' and the note now reads 'Monster Phase: not drawn against the terms', which asserts no rule."
+    },
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Rail shows Party Phase directly followed by End of Round, so the default order looks like three phases; the caption of term 5 mentions both phases.",
+     "resolution": "A dashed 'Monster Phase' block now sits between Party Phase and End of Round on the rail."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "3.6 lines 1135-1156; 3.1 lines 989-1017; 3.3 line 1053; 3.4.1 line 1100; 3.4.3 line 1118.",
+    "observations": "Legible; no overlaps. Five timing definitions match lines 1139-1143 word for word including 'Occurs each time a combatant activates' on terms 2 and 4. The four-step priority list, the solo and cooperative replacement (phase order replaces steps 1 and 2, Monster Groups ascending, terrain/weather/hazard/scenario last), same-side choice by the Party Leader's controller, and the Random Determination fallback all match. The rail places terms 2-4 inside the Party Phase block only and leaves the Monster Phase off the rail."
+   }
+  },
+  {
+   "id": "FIG-68",
+   "svg_sha256": "85145851a87ed70f075484358822229e212e08707aac58564d0c1d346540d053",
+   "caption_sha256": "efe13fbdf0941634a4fcd4e80116dce1285c92d8d27aaee203b97edef16b2b36",
+   "rules_sha256": "931b329d4e5ffed69ac567b96f03e2c8d1113e20813410aabc3a685d3cb0a3ed",
+   "verdict": "PASS_WITH_NOTES",
+   "findings": [
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Panel C and the caption present the limit only as 'only 1 Reaction may modify ... against each affected combatant'. 4.5 also limits each reacting combatant to one Reaction in response to the same action or effect, including Reactions that grant a separate action, and says the declaration of a roll-dependent Reaction immediately uses the normal one-Reaction limit for that source. Neither is drawn, so the figure is incomplete for readers combining a granting Reaction (for example Reflex Attack) with a modifying Reaction.",
+     "resolution": "Panel C adds 'A combatant also takes only 1 Reaction in response to the same action or effect, including one that grants a separate action' (line 1441); panel D adds 'Declaring it uses the one-Reaction limit for that source at once' (line 1429)."
+    },
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Caption says 'A Reaction is declared before any damage die of its source is rolled' as a universal; 4.5 gives this for attacks and damaging effects and says Reactions to non-damaging sources 'use their stated triggers'. Panel A title is correctly scoped; the caption is not.",
+     "resolution": "Caption now scoped: 'A Reaction to an attack or damaging effect is declared before any of its source's damage dice are rolled'."
+    },
+    {
+     "severity": "minor",
+     "status": "accepted",
+     "issue": "Panel A step 1 'Identify' is drawn before 'Redirect', but the identify sentence applies only 'if the source has no declaration step' and the source orders redirection first, then confirm final targets and declare. The step 1 text keeps the 'If the source has no declaration step' condition, so wording is correct; only the numbering implies a universal order.",
+     "resolution": "Step 1 'Identify' still precedes 'Redirect', but its text keeps the source condition 'If the source has no declaration step', so wording is faithful; only numbering is a presentational choice."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "4.5 lines 1421-1449; 3.3.2 lines 1078-1082; 2.7.3 step 1 line 743 (declare before damage).",
+    "observations": "Legible; no overlaps. Panel A declaration window (identify, redirect, declare, then roll with no new window opened by damage roll, Total Miss, Critical Hit, damage application, or Luck reroll), panel B who may react, panel C Ogre/Cleric example with Dodge [1 AP], the controller's choice among legal Reactions with others costing nothing, and the source's-controller exception, and panel D commit/release with the Conviction example all match 4.5. Ogre drawn as a hatched Monster token (source says 'an Ogre'); fine."
+   }
+  },
+  {
+   "id": "FIG-69",
+   "svg_sha256": "2f8843f98e3db395a31e3a87ebc5a6d28d1d29b2823963b2c35604d8de90ee98",
+   "caption_sha256": "945d74c23abc76ed0ea8daf86b8cdb018a3e15cfceef6a93061aaed3fb70f7f8",
+   "rules_sha256": "af1008be0a6d19be1d0c5c333bb569072c09fcad58af5fe27818747c3e613400",
+   "verdict": "PASS",
+   "findings": [
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Panel C row 2 'An action becomes illegal before it resolves -> AP remains spent' drops the 'unless the action was abandoned during Declared State verification' exception, which only panel B step 3 carries; row 1 covers the abandonment case, so no contradiction, but row 2 read alone is incomplete.",
+     "resolution": "Row 2 now reads 'AP remains spent, unless abandoned during Declared State verification'."
+    },
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Steps 3, 4, and 5 are chained with arrows as if they were a sequence of checks; 4.6 lists three independent situations and gives no order. The purpose text calls it an 'order of legality checks'.",
+     "resolution": "Arrows between steps 3 to 5 removed and panel B retitled 'After declaration: three cases'."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "4.6 lines 1451-1463; 2.6.1 lines 631-648 (abandoned declarations, line 640; interrupted movement, line 646).",
+    "observations": "Legible; no overlaps. Target legality text, Climb/Jump rule, rejected-target-stays-ineligible rule, illegal-before-resolution rule with the abandoned-during-Declared-State exception, interruption under 2.6.1, and stop-at-last-legal-position all match. Strip is labelled schematic. AP table rows 1 and 3 agree with 2.6.1 (abandoned declaration costs no AP; do not refund AP)."
+   }
+  },
+  {
+   "id": "FIG-70",
+   "svg_sha256": "4d19a89a5f157797a7de15ac23024b494ff67c9963c584841838554595b8dbe3",
+   "caption_sha256": "7eb2e9eafc16f0d8dc6365cbe242f4dad3602e9445c388da9e2cf2c3b2f4e2fa",
+   "rules_sha256": "b694b985161763fc177110a9e9c294247968654709705e0b6cc7fbed311f5fc9",
+   "verdict": "PASS",
+   "findings": [
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Trip target row omits 'unless a rule says otherwise', which 5.6 line 1723 attaches to both Push and Trip targeting; only the Push row carries it.",
+     "resolution": "Trip target row now begins 'Unless a rule says otherwise, a combatant of your Sz or smaller ...'."
+    },
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Size strip draws S and M as ticked and L and H as crossed for 'you are Sz M', which relies on reading 'Sz or smaller' as the order S, M, L, H. The source lists sizes in that order but never states the ordering in words; the figure marks the actor as an example but not the ordering.",
+     "resolution": "A note 'Sizes listed S, M, L, H (2.6)' now sits under the size strip."
+    },
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Push schematic: the dashed start position of the target is unlabelled, and only the final hatched token carries the label 'target'.",
+     "resolution": "Push schematic now labels 'start' and 'end'."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "5.6 lines 1713-1723; 5.6.1 1725-1731; 5.6.2 1733-1741; 4.2 rows lines 1212-1213; 2.6 size table lines 616-621.",
+    "observations": "Legible; no overlaps. Push (STR Check with Disadvantage, 2\" directly away, failure nothing, edge and hazard resolve after forced movement, never triggers Reflex Attack) and Trip (Trip weapon, Sz or smaller within Range or melee distance, STR or DEX Check with Disadvantage, Prone on success, already Prone no additional effect, may be immune) match. Shared rules box matches 5.6 lines 1715-1721 (not an Attack action or weapon attack, no damage dice, not in the chain, own activation only, no Block/Dodge/Parry trigger, hostile action causes loss of Hidden, Monster use only if told). Caption is accurate."
+   }
+  },
+  {
+   "id": "FIG-71",
+   "svg_sha256": "8bd2f2892ef277c04f9c88e7541c00c0c7374d9b17420a169dcecc1694a5b347",
+   "caption_sha256": "4209fc518c11bb9c425df87f2377532ed48781ce39e9246f6d06e574d7b888bd",
+   "rules_sha256": "198b105e72b368352817fcf34baadc41da1b54a1af71a80ea502bc1d0024abce",
+   "verdict": "PASS",
+   "findings": [
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Caption drops 'unless a rule says otherwise' and 'Hero or Hireling'; both are present in panel A, so the figure body is complete.",
+     "resolution": "Caption now reads '... a Hero or Hireling makes in one activation rolls its base damage dice with Disadvantage unless a rule says otherwise'; matches line 1747."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "5.7 lines 1743-1762; 5.6 line 1715; 2.5 line 568 (Heroes 3 AP); 4.2 lines 1211-1212 (Attack and Push 1 AP).",
+    "observations": "Legible; no overlaps. Chain rule, per-activation reset, counts/does-not-count lists (Push and Trip, Reaction-granted attacks incl. Reflex Attack, Counter Attack, No Escape, Duelist's Riposte; a Riposte; any attack whose rule says so), Light-pair and Sweep count as one attack, Agile/Combat Mastery/War Master exemptions, and 'Monsters and Summons do not use this rule' all match. Assumed examples are correct: Attack, Attack, Attack gives chain positions 1, 2, 3 with Disadvantage from 2; Attack, Push, Attack gives positions 1 and 2 with Push outside the chain. Exemptions note does not claim which attack the Agile exemption lands on, matching the source."
+   }
+  },
+  {
+   "id": "FIG-72",
+   "svg_sha256": "36a63ff185455fd2f7f92888da214d89f1554f4595ffd1281ec855f1a6559b96",
+   "caption_sha256": "14abb5f218eded993a3aa0963739e335f10b4e796a4e9f65610f6648abf118a9",
+   "rules_sha256": "7b17ee02b2a37045fcb48454cc62cd85b6d3145ede87d0f70b9fd0e048eaa5c4",
+   "verdict": "PASS",
+   "findings": [],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "6.2 lines 2026-2049; 6.4 lines 2085-2088 (pointer for Initiative Bonus and Max NRG).",
+    "observations": "Legible; no overlaps; the elbow connector from step 5 to step 6 is clear. All ten steps reproduce lines 2030-2039 in order and wording. Both formulas match lines 2043 and 2047 exactly. Tagging A to step 3 and B to step 7 is a reading and is labelled by step in the figure; it is consistent with the step wording (step 3 'final STR, DEX, INT, and SPI'; step 7 'Calculate Max HP ...'). Closing note matches line 2049."
+   }
+  },
+  {
+   "id": "FIG-73",
+   "svg_sha256": "de8ce35454d6bbed3b6d0170eac0e201aba0f9f76c5efcbbe72a66873bfd0af1",
+   "caption_sha256": "dfab5ea87a46f0e52eb02e6a563819a5e077e545c5f8d7212585e19e464c3b09",
+   "rules_sha256": "7691081049f54957e233d07f556336cfb88243cf72f37362c10dbe4e3066e665",
+   "verdict": "PASS_WITH_NOTES",
+   "findings": [
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Panel C states 'Current HP, NRG, and Luck cannot exceed the maximum; excess gained or restored is lost' without the source's 'Unless a rule explicitly says otherwise', and panel B omits the lead-in 'Use the following derived values unless a rule says otherwise'.",
+     "resolution": "Panel B now opens 'Unless a rule says otherwise:' and panel C opens 'Unless a rule explicitly says otherwise,'."
+    },
+    {
+     "severity": "minor",
+     "status": "accepted",
+     "issue": "Panel B limits the formula to 'non-Martial classes that cast Powers' as the source does, but the Hybrid archetype (Ranger, Paladin, Trickster, own Primary Casting Score) is a separate archetype in 6.x, so a reader may not know where Hybrids fall. Source-faithful; no change needed unless the author wants to flag it.",
+     "resolution": "No change needed: panel B repeats the source wording 'non-Martial classes that cast Powers' (line 2088). Hybrid placement is a source-side terminology question, not a figure error."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "6.4 lines 2065-2096 (list, derived values, current versus maximum, Carried Coins); glossary lines 2688-2713 for Martial and Hybrid.",
+    "observations": "Legible; no overlaps. The 15-item record list matches lines 2069-2083 one for one. Initiative Bonus = INT + SPI and the Base Max NRG formula with minimum 0, recalculation triggers, and the Martial Max NRG 0 rule match lines 2087-2088. HP example arithmetic is consistent: 7 of 10; Max HP falls to 6 so current HP becomes 6; Max HP back to 10 leaves current HP at 6. The 'Max HP cannot fall below 1' statement is correct (line 2092). Footer on Carried Coins and Treasury matches line 2096."
+   }
+  },
+  {
+   "id": "FIG-74",
+   "svg_sha256": "059be642ff27f7cf5fd3f5e1b39784bdf6fbd224969f0c92e81e38b22ae8cb26",
+   "caption_sha256": "b6dbfe3654005ffcd431969545c6e521637253b292084fd9b37628a309f7686b",
+   "rules_sha256": "395eba2adad657338b3d447b6363e5534b41bf3237ecebbaf3345eee378ceb73",
+   "verdict": "PASS",
+   "findings": [],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "6.14 lines 3234-3245; 11.1.2 lines 15061-15069 (normal Active Party of 4).",
+    "observations": "Legible; no overlaps. Three steps, 'round down', 'Hirelings, Summons, and Heroes on the Bench do not count', and the three timing rules (before first adventure, during adventure, following Town Phase) match. Arithmetic checked: 3+3+2+2 = 10; 10 / 4 = 2.5; round down APL 2. Town Phase example: Level 5 Bench Hero swaps in; Town Phase keeps APL 2; next adventure 3+3+2+5 = 13; 13 / 4 = 3.25; APL 3. The next-adventure value follows from line 3236 and the figure flags the values as assumed."
+   }
+  },
+  {
+   "id": "FIG-75",
+   "svg_sha256": "7f988e288312b33a38f3226c49aa62cfa47f480034c5189017db43d58b3b6c5a",
+   "caption_sha256": "25151cd09b266e6b9d61976111144e58a8b2725794199736a007a8c40c512461",
+   "rules_sha256": "21a3a3330c1a6e73d502fe3c032ba970919c83d432fc3caaee64d0d3699461d4",
+   "verdict": "PASS_WITH_NOTES",
+   "findings": [
+    {
+     "severity": "minor",
+     "status": "accepted",
+     "issue": "Panel 2 rule on random creation reproduces 6.5 phrase 'matched competitive play' under a 6.17 'matched one-off play' heading; the author notes the three terms differ in the source. No change to mechanics.",
+     "resolution": "Accepted: the figure quotes each source term as written; unifying 'matched one-off', 'matched play', and 'matched competitive play' is a manuscript decision for a later RC, not a figure defect."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "6.17 lines 3325-3338 (all ten bullets); 6.9 line 2207 (rare ancestry limit); 6.5 line 2138 (matched competitive play ignores random bonuses); 11.2.4 heading at line 15453 (Town Phase, where Buy and Sell Goods is cited).",
+    "observations": "Legible; no overlaps. All ten rules are present: five in panel 1 and five in panel 2, each with its own timing phrase. 'Before creating Heroes', 'first complete creation at Level 1, then Gaining a Level once per additional Level without Training Costs', 'Before deployment pool coins, list price, discard unspent coins when the adventure begins', and 'After completing all ... set current HP, NRG, and Luck' are quoted accurately. Example 4 - 1 = 3 resolutions is correct. The 6.9 and 6.5 wording is quoted as written ('matched play' and 'matched competitive play'). No arrows between rules, which is correct because the source does not order them."
+   }
+  },
+  {
+   "id": "FIG-76",
+   "svg_sha256": "c4b990ed9b37c68579756766bb56e60d9d5250040f8bf2c994f048c42492d068",
+   "caption_sha256": "ba8b786deaa596a95b6002eb41f8a650ea85943ad11bf873a1f72d1149498730",
+   "rules_sha256": "8e8fdbb129459b71973addfa53582f501f412d5aaa1cdf7c569cbb4a848d8ccd",
+   "verdict": "PASS_WITH_NOTES",
+   "findings": [
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Spidermilk Venom shows 'action or cost: not in this entry' while poison application costs [1 AP] under 7.14.1; a reader may infer poisons have no action cost. The author's ambiguity note acknowledges but the figure does not.",
+     "resolution": "Spidermilk action or cost cell now reads 'not in this entry; the cost is set by 7.14.1'."
+    },
+    {
+     "severity": "minor",
+     "status": "accepted",
+     "issue": "The last sentence is a paraphrase of 7.3: the source also says a universal rule is repeated 'only when the local reminder materially reduces lookup burden'; the figure drops it. No mechanical change.",
+     "resolution": "Footer sentence remains a paraphrase of 7.3 that drops the 'materially reduces lookup burden' clause. Accepted: no mechanical effect and the retained text is accurate."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "7.3 lines 3409-3413; 7.16 table header line 4633 and Shovel row line 4656; 7.14 table header line 4324 and Spidermilk Venom row line 4329 (d20 4); 7.10 Armour header line 3713; 7.14.1 line 4310.",
+    "observations": "Legible; no overlaps. Shovel text is quoted verbatim: 'Interact [2 AP]: Choose an origin within 1\" and LOS. Remove Difficult Terrain from the Aura 1\" area around that origin for the remainder of the adventure. This does not remove magical, hazardous, or scenario-locked terrain effects.' Spidermilk Venom text is verbatim. Table headers match the source (Item/Cost (c)/In-Game Effect; d20/Item/Cost (c)/Effect; Armour/Cost (c)/AD/STR Req/DEX Pen/Max Speed/Rule). Six-element order matches line 3413. Element counts in the caption are right: Shovel uses action or cost, range or target, effect, duration, restrictions (five); Spidermilk uses effect and duration (two). The element assignment is a reading, flagged by the author."
+   }
+  },
+  {
+   "id": "FIG-77",
+   "svg_sha256": "1aa8814574541d609dd6141f03cd27a1736c19cbd1e8ee20029cac1e43efa027",
+   "caption_sha256": "9d15d675ec76717e71d28cc6e7745ca1ce9833d338a1781ddfcc701eaac873f1",
+   "rules_sha256": "6f630a1b7e5e085aca28fe08ed3ffb5562caa5f07469c95c1b322ed5a1ead7e5",
+   "verdict": "PASS",
+   "findings": [
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "The worked example says 'bonuses of +1 and +2 to the same Check' and 'penalties of -1 and -3', but bullet 1 applies only to 'item effects' that modify the same statistic; the example omits 'item', so it appears to teach the rule for any source of bonus.",
+     "resolution": "Example now reads 'two item bonuses, +1 and +2, apply +2. Two item penalties, -1 and -3, apply -3'; caption says 'assumed item bonuses ... and item penalties'."
+    },
+    {
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Bullet 5 (Hidden and Invisible: follow 2.8.5) sits under the heading 'Overrides' directly below bullet 6, and appears in 6-then-5 order; it is a cross-reference, not an override, so the heading overstates it. The note 'Circled numbers follow the bullet order of 7.4' only partly offsets the reversed order.",
+     "resolution": "Bullet 5 is now first in panel C, retitled 'Cross-reference and overrides', and numbering follows bullet order."
+    }
+   ],
+   "rc522_section_end_review": {
+    "reviewed_at": "2026-10-30",
+    "reviewer": "Claude (Opus 5.5) publication-auditor subagent, independent of the drawing agents; re-verified after fixes",
+    "source": "source/Heraldry_RC522.md",
+    "checked_source_passages": "7.4 lines 3415-3425 (all eight bullets); 4.4.6 heading line 1353 (forced movement); 2.8.5 line 816.",
+    "observations": "Legible; no overlaps. All eight bullets are present and numbered in source order. Wording matches lines 3417-3424. Both bullet 1 (single highest bonus) and bullet 4 (AV bonuses stack) are shown as written without resolving the tension, which is the conservative reading. Cross-references 2.8.5, 5.4, and 4.4.6 exist."
+   }
   }
  ],
  "summary": {
@@ -8163,5 +8653,11 @@
  },
  "source": "source/Heraldry_RC513.md",
  "source_sha256": "f106082c78fdee60edf0943f3962581290ab5c4127aaa6bd455cbb00ebc118b1",
- "rc513_delta_review": "2026-10-21: FIG-11, FIG-12 and FIG-16 re-reviewed after RC513 changed 9.5 D; all PASS without figure changes."
+ "rc513_delta_review": "2026-10-21: FIG-11, FIG-12 and FIG-16 re-reviewed after RC513 changed 9.5 D; all PASS without figure changes.",
+ "section_end_figures_review": {
+  "reviewed_at": "2026-10-30",
+  "scope": "FIG-58 to FIG-77",
+  "first_round": "2 major and 27 minor findings (FIG-63 and FIG-67 failed)",
+  "after_fixes": "22 resolved, 7 accepted minor; no critical or major finding open"
+ }
 }

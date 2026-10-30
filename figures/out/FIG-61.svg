@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="294.2pt" viewBox="0 0 504 294.2">
+<title>Ability scores</title>
+<desc>Show the four ability scores with their stated domains, which combatants use them, and the stated range of values.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="504" height="19" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="11" cy="9.5" r="6.6" fill="#fff"/>
+<text x="11" y="12.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">1</text>
+<text x="22" y="12.9" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Four ability scores</text>
+<text x="499" y="12.9" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">2.2</text>
+<rect x="5" y="25" width="119" height="108.7" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="5" y="25" width="119" height="16" fill="#d9d9d9" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="64.5" y="36.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Strength (STR)</text>
+<text x="10" y="53.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="19" y="53.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">melee force</text>
+<text x="10" y="65.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="19" y="65.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">physical power</text>
+<text x="10" y="77.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="19" y="77.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">climbing</text>
+<text x="10" y="89.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="19" y="89.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">forcing objects</text>
+<text x="10" y="101.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="19" y="101.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">resisting bodily harm</text>
+<rect x="130" y="25" width="119" height="108.7" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="130" y="25" width="119" height="16" fill="#d9d9d9" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="189.5" y="36.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Dexterity (DEX)</text>
+<text x="135" y="53.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="144" y="53.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">ranged accuracy</text>
+<text x="135" y="65.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="144" y="65.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">speed</text>
+<text x="135" y="77.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="144" y="77.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">balance</text>
+<text x="135" y="89.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="144" y="89.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">stealth</text>
+<text x="135" y="101.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="144" y="101.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">dodging</text>
+<text x="135" y="113.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="144" y="113.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">delicate physical tasks</text>
+<rect x="255" y="25" width="119" height="108.7" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="255" y="25" width="119" height="16" fill="#d9d9d9" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="314.5" y="36.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Intelligence (INT)</text>
+<text x="260" y="53.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="269" y="53.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">perception</text>
+<text x="260" y="65.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="269" y="65.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">reasoning</text>
+<text x="260" y="77.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="269" y="77.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">knowledge</text>
+<text x="260" y="89.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="269" y="89.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">investigation</text>
+<text x="260" y="101.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="269" y="101.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">initiative</text>
+<text x="260" y="113.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="269" y="113.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Arcane Spells</tspan></text>
+<text x="260" y="125.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="269" y="125.9" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Psychic Abilities</tspan></text>
+<rect x="380" y="25" width="119" height="108.7" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="380" y="25" width="119" height="16" fill="#d9d9d9" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="439.5" y="36.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Spirit (SPI)</text>
+<text x="385" y="53.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="394" y="53.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">willpower</text>
+<text x="385" y="65.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="394" y="65.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">faith</text>
+<text x="385" y="77.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="394" y="77.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">resolve</text>
+<text x="385" y="89.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="394" y="89.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">leadership</text>
+<text x="385" y="101.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="394" y="101.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">powers of faith, nature,</text>
+<text x="394" y="112.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">and sorcery</text>
+<rect x="0" y="0" width="504" height="138.7" fill="none" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="0" y="146.7" width="276" height="19" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="11" cy="156.2" r="6.6" fill="#fff"/>
+<text x="11" y="159.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">2</text>
+<text x="22" y="159.6" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Who uses ability scores</text>
+<text x="271" y="159.6" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">2.2</text>
+<rect x="5" y="171.7" width="108" height="16.6" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="59" y="181.6" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle"><tspan font-weight="700">Heroes</tspan><tspan font-weight="400"> and </tspan><tspan font-weight="700">Hirelings</tspan></text>
+<line x1="115" y1="180" x2="121" y2="180" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="127,180 120,176.8 120,183.2" fill="#000"/>
+<rect x="129" y="171.7" width="142" height="16.6" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="133" y="181.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Use ability scores.</text>
+<rect x="5" y="193.3" width="108" height="27.2" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="59" y="203.2" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle"><tspan font-weight="400">A non-Monster </tspan><tspan font-weight="700">Summon</tspan></text>
+<text x="59" y="213.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">or other combatant</text>
+<line x1="115" y1="206.9" x2="121" y2="206.9" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="127,206.9 120,203.7 120,210.1" fill="#000"/>
+<rect x="129" y="193.3" width="142" height="27.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="133" y="203.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Uses the ability scores listed in</text>
+<text x="133" y="213.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">their profile.</text>
+<rect x="5" y="225.5" width="108" height="37.8" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="59" y="235.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Such a combatant with an</text>
+<text x="59" y="246" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle"><tspan font-weight="400">omitted score for a </tspan><tspan font-weight="700">STR</tspan><tspan font-weight="400">,</tspan></text>
+<text x="59" y="256.6" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle"><tspan font-weight="700">DEX</tspan><tspan font-weight="400">, </tspan><tspan font-weight="700">INT</tspan><tspan font-weight="400">, or </tspan><tspan font-weight="700">SPI Check</tspan></text>
+<line x1="115" y1="244.4" x2="121" y2="244.4" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="127,244.4 120,241.2 120,247.6" fill="#000"/>
+<rect x="129" y="225.5" width="142" height="37.8" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="133" y="235.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Treat that score as </tspan><tspan font-weight="700">+0</tspan><tspan font-weight="400"> for that</tspan></text>
+<text x="133" y="246" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Check only. This grants no ability</text>
+<text x="133" y="256.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">score for any other purpose.</text>
+<rect x="5" y="268.3" width="108" height="16.6" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="59" y="278.2" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle"><tspan font-weight="700">Monsters</tspan></text>
+<line x1="115" y1="276.6" x2="121" y2="276.6" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="127,276.6 120,273.4 120,279.8" fill="#000"/>
+<rect x="129" y="268.3" width="142" height="16.6" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="133" y="278.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Never</tspan><tspan font-weight="400"> have or use ability scores.</tspan></text>
+<rect x="0" y="146.7" width="276" height="145.5" fill="none" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="284" y="146.7" width="220" height="19" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="295" cy="156.2" r="6.6" fill="#fff"/>
+<text x="295" y="159.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">3</text>
+<text x="306" y="159.6" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Range of values</text>
+<text x="499" y="159.6" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">2.2</text>
+<text x="289" y="179" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Ability scores are added as modifiers to </tspan><tspan font-weight="700">Checks</tspan><tspan font-weight="400"> and</tspan></text>
+<text x="289" y="189.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">other listed rolls.</text>
+<rect x="327" y="220.9" width="128" height="8" fill="#8c8c8c" stroke="#000" stroke-width="0.9" stroke-dasharray="3 2"/>
+<line x1="327" y1="224.9" x2="299" y2="224.9" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="292,224.9 299,221.5 299,228.3" fill="#000"/>
+<line x1="455" y1="224.9" x2="489" y2="224.9" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="496,224.9 489,228.3 489,221.5" fill="#000"/>
+<line x1="327" y1="217.9" x2="327" y2="231.9" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<text x="327" y="243.9" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">-1</text>
+<line x1="359" y1="217.9" x2="359" y2="231.9" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<text x="359" y="243.9" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">+0</text>
+<line x1="391" y1="217.9" x2="391" y2="231.9" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<text x="391" y="243.9" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">+1</text>
+<line x1="423" y1="217.9" x2="423" y2="231.9" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<text x="423" y="243.9" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">+2</text>
+<line x1="455" y1="217.9" x2="455" y2="231.9" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<text x="455" y="243.9" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">+3</text>
+<text x="391" y="212.9" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">most starting Heroes</text>
+<text x="289" y="258.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="298" y="258.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Most starting Heroes have values between </tspan><tspan font-weight="700">-1</tspan><tspan font-weight="400"> and </tspan><tspan font-weight="700">+3</tspan><tspan font-weight="400">.</tspan></text>
+<text x="289" y="270.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="298" y="270.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Scores may be negative.</text>
+<text x="289" y="282.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="298" y="282.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">No maximum unless a rule says otherwise.</text>
+<rect x="284" y="146.7" width="220" height="145.5" fill="none" stroke="#000" stroke-width="0.9" rx="2.5"/>
+</svg>

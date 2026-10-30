@@ -1,0 +1,340 @@
+{
+  "_meta": {
+    "purpose": "Section-end tailpiece art: one closing vignette at the foot of the last page of each short numbered section, filling the white space left because every numbered section starts on a fresh page. Briefs are in production/art/briefs/end_art.json; images are generated later by the art worker.",
+    "owner_instruction": "Owner 2026-10-30: fill section-end white space with art, figures, and diagrams.",
+    "written_by": "Claude Code (art director subagent), 2026-10-30",
+    "source": "RC522",
+    "placement": "Tailpiece below the section's last text, printed about 2.6 to 3.3 in wide and as short as 1.6 in."
+  },
+  "entries": [
+    {
+      "id": "ART-END-WHAT-IS-HERALDRY-SKIRMISH",
+      "heading_id": "h-11-what-is-heraldry-skirmish",
+      "section": "1.1",
+      "title": "Rivals at the chest",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-CORE-TERMS",
+      "heading_id": "h-21-core-terms",
+      "section": "2.1",
+      "title": "Hero, Hireling, and Monster",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-ADVANTAGES-AND-DISADVANTAGES",
+      "heading_id": "h-24-advantages-and-disadvantages",
+      "section": "2.4",
+      "title": "The higher ground",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-ACTION-POINTS-AND-SUMMONS",
+      "heading_id": "h-25-action-points-and-summons",
+      "section": "2.5",
+      "title": "The imp dispelled",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-TERRAIN",
+      "heading_id": "h-29-terrain",
+      "section": "2.9",
+      "title": "The ford and the fallen column",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-PARTY-PHASE",
+      "heading_id": "h-33-party-phase",
+      "section": "3.3",
+      "title": "One moves, one waits",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-MONSTER-PHASE",
+      "heading_id": "h-34-monster-phase",
+      "section": "3.4",
+      "title": "The goblin tide",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-ACTION-BASICS",
+      "heading_id": "h-41-action-basics",
+      "section": "4.1",
+      "title": "The dropped torch",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-UNIVERSAL-ACTIONS",
+      "heading_id": "h-42-universal-actions",
+      "section": "4.2",
+      "title": "The shield shove",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-MOVEMENT-RULES",
+      "heading_id": "h-44-movement-rules",
+      "section": "4.4",
+      "title": "The leap between roofs",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-COMBAT-BASICS",
+      "heading_id": "h-51-combat-basics",
+      "section": "5.1",
+      "title": "Arm's reach",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-THE-ATTACK-SEQUENCE",
+      "heading_id": "h-52-the-attack-sequence",
+      "section": "5.2",
+      "title": "The bind",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE",
+      "heading_id": "h-53-critical-hits-and-exploding-damage-dice",
+      "section": "5.3",
+      "title": "The pierced breastplate",
+      "family": "item"
+    },
+    {
+      "id": "ART-END-CONDITIONS",
+      "heading_id": "h-59-conditions",
+      "section": "5.9",
+      "title": "Frightened",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-PARTY-STRUCTURE",
+      "heading_id": "h-61-party-structure",
+      "section": "6.1",
+      "title": "The Party Leader's halt",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-CORE-HERO-CREATION-RULES",
+      "heading_id": "h-63-core-hero-creation-rules",
+      "section": "6.3",
+      "title": "The bow too big",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-CHOSEN-AND-RANDOM-CREATION",
+      "heading_id": "h-65-chosen-and-random-creation",
+      "section": "6.5",
+      "title": "Three starting bundles",
+      "family": "item"
+    },
+    {
+      "id": "ART-END-RANDOM-ANCESTRY-TABLES",
+      "heading_id": "h-66-random-ancestry-tables",
+      "section": "6.6",
+      "title": "Travellers of five peoples",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-COMMON-TRAIT-RULES",
+      "heading_id": "h-68-common-trait-rules",
+      "section": "6.8",
+      "title": "Eyes in the dark",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-BACKGROUNDS",
+      "heading_id": "h-610-backgrounds",
+      "section": "6.10",
+      "title": "The life left behind",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-RANDOM-CLASS-TABLE",
+      "heading_id": "h-611-random-class-table",
+      "section": "6.11",
+      "title": "Staff, sword, and symbol",
+      "family": "item"
+    },
+    {
+      "id": "ART-END-GENERAL-TALENTS",
+      "heading_id": "h-612-general-talents",
+      "section": "6.12",
+      "title": "Camouflage",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-HERO-CLASSES",
+      "heading_id": "h-613-hero-classes",
+      "section": "6.13",
+      "title": "Wild Shape: the stag",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-HIRELINGS",
+      "heading_id": "h-615-hirelings",
+      "section": "6.15",
+      "title": "The porter's drag",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-HERO-ADVANCEMENT",
+      "heading_id": "h-616-hero-advancement",
+      "section": "6.16",
+      "title": "Paying for training",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-EQUIPMENT-OVERVIEW",
+      "heading_id": "h-71-equipment-overview",
+      "section": "7.1",
+      "title": "The full pack",
+      "family": "item"
+    },
+    {
+      "id": "ART-END-ITEM-AVAILABILITY",
+      "heading_id": "h-75-item-availability",
+      "section": "7.5",
+      "title": "The broker's scale",
+      "family": "item"
+    },
+    {
+      "id": "ART-END-RANGED-WEAPONS",
+      "heading_id": "h-79-ranged-weapons",
+      "section": "7.9",
+      "title": "Lesser missiles",
+      "family": "item"
+    },
+    {
+      "id": "ART-END-ARMOUR",
+      "heading_id": "h-710-armour",
+      "section": "7.10",
+      "title": "Brigandine on the stand",
+      "family": "item"
+    },
+    {
+      "id": "ART-END-SCROLLS",
+      "heading_id": "h-715-scrolls",
+      "section": "7.15",
+      "title": "The spent scroll",
+      "family": "item"
+    },
+    {
+      "id": "ART-END-ADVENTURING-EQUIPMENT",
+      "heading_id": "h-716-adventuring-equipment",
+      "section": "7.16",
+      "title": "Hook, rope, and spikes",
+      "family": "item"
+    },
+    {
+      "id": "ART-END-PERMANENT-SPECIAL-ITEMS",
+      "heading_id": "h-717-permanent-special-items",
+      "section": "7.17",
+      "title": "The Bell's Tongue",
+      "family": "item"
+    },
+    {
+      "id": "ART-END-DIVINE-PRAYERS",
+      "heading_id": "h-84-divine-prayers",
+      "section": "8.4",
+      "title": "Steadfast Word",
+      "family": "tradition"
+    },
+    {
+      "id": "ART-END-SORCERIES",
+      "heading_id": "h-85-sorceries",
+      "section": "8.5",
+      "title": "Blood Flicker",
+      "family": "tradition"
+    },
+    {
+      "id": "ART-END-DRUIDIC-RITUALS",
+      "heading_id": "h-86-druidic-rituals",
+      "section": "8.6",
+      "title": "Vine Lash",
+      "family": "tradition"
+    },
+    {
+      "id": "ART-END-PSYCHIC-ABILITIES",
+      "heading_id": "h-87-psychic-abilities",
+      "section": "8.7",
+      "title": "Telekinetic Hand",
+      "family": "tradition"
+    },
+    {
+      "id": "ART-END-DETERMINING-MONSTERS-FOR-AN-ADVENTURE",
+      "heading_id": "h-92-determining-monsters-for-an-adventure",
+      "section": "9.2",
+      "title": "Goblin-sign on the road",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-MONSTER-PLACEMENT-AND-INITIAL-STATE",
+      "heading_id": "h-93-monster-placement-and-initial-state",
+      "section": "9.3",
+      "title": "Wolves resting at the wagon",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-THE-BESTIARY",
+      "heading_id": "h-97-the-bestiary",
+      "section": "9.7",
+      "title": "The drowned bell tower",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-RANDOM-MONSTER-GENERATION-TABLES",
+      "heading_id": "h-98-random-monster-generation-tables",
+      "section": "9.8",
+      "title": "Tracks at the water's edge",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-READING-A-SCENARIO-BEFORE-SETUP",
+      "heading_id": "h-reading-a-scenario-before-setup",
+      "section": "10",
+      "title": "The contract and the map",
+      "family": "item"
+    },
+    {
+      "id": "ART-END-ADVENTURE-PREPARATION-SEQUENCE",
+      "heading_id": "h-101-adventure-preparation-sequence",
+      "section": "10.1",
+      "title": "The scout on the ridge",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-WEATHER-TABLES-BY-CLIMATE",
+      "heading_id": "h-103-weather-tables-by-climate",
+      "section": "10.3",
+      "title": "Whiteout",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-SOLO-AND-COOPERATIVE-PLAY",
+      "heading_id": "h-105-solo-and-cooperative-play",
+      "section": "10.5",
+      "title": "The costly escape",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING",
+      "heading_id": "h-106-dynamic-party-and-scenario-scaling",
+      "section": "10.6",
+      "title": "The ratkin swarm",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-THE-CAMPAIGN-CYCLE",
+      "heading_id": "h-112-the-campaign-cycle",
+      "section": "11.2",
+      "title": "The Antlered Path cairn",
+      "family": "world"
+    },
+    {
+      "id": "ART-END-LEGENDARY-VETERANS",
+      "heading_id": "h-114-legendary-veterans",
+      "section": "11.4",
+      "title": "Warden of the Threshold",
+      "family": "world"
+    }
+  ]
+}

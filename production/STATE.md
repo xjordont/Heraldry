@@ -1,5 +1,17 @@
 # Production state - RC522 source, main
 
+## Section-end white space filled: twenty new figures, Hero portraits, and queued tailpieces - 2026-10-30
+
+Owner instruction: "Please polish all the issues that you can and fix all the issues that you can ... I don't want to have sections starting mid-page. We'll continue as is with sections and bestiary entries ... I do think it'd be a good idea to try to fill in the white space with either art ... diagrams ... further figures." Fresh section pages and whole Monster entries are kept. No manuscript text changed.
+
+**Figures.** Twenty new source-faithful figures (registry FIG-58 to FIG-77) close sections 1.4, 1.5, 1.6, 2.2, 2.3, 2.8, 2.10, 3.2, 3.5, 3.6, 4.5, 4.6, 5.6, 5.7, 6.2, 6.4, 6.14, 6.17, 7.3, and 7.4. Each was drawn no taller than the space its section's last page left, so the book stays 618 pages. An independent review found 2 major and 27 minor issues; all majors and 20 minors were fixed and 7 minors accepted with reasons (`production/qa/figure-semantic-review.json`). The figure gate is 77/77.
+
+**Figure numbers.** Printed figure numbers now follow book order (FIG-01 is the first figure a reader meets), with caption and key references relabelled to match. Registry ids, files, and reviews are unchanged; `build/figure_labels.json` maps them.
+
+**Hero portraits.** The 24 approved Basic Mode Hero portraits are now placed in B.4 where a profile's page leaves room (`endart`: never moves text, at least 1.6 in tall); 13 of 24 fit. Every portrait stays on the Hero records.
+
+**Tailpieces.** 47 section-end tailpiece briefs (`production/art/END_ART_PLAN.json`, `production/art/briefs/end_art.json`) are catalogued and queued for the art worker (`production/art/gpt/QUEUE.json`). Each approved tailpiece will be set at its section's end automatically, scaled to the space. They need a Codex art session on the owner's PC; none is generated yet.
+
 ## Design review polish and the Escutcheon Press device - 2026-10-30
 
 Owner instructions: "Fix all the issues and add all the polish in the rc522 design review" and "Also incorporate the attached image in the colophon as the Escutcheon Press company logo. We could also put the logo on the back cover." No manuscript text changed (RC522 stays active).

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="279.1pt" viewBox="0 0 504 279.1">
+<title>Multiple Attacks: the multi-attack Disadvantage chain</title>
+<desc>Show how the chain counts attacks within one activation with two assumed examples, what counts and does not count toward it, the single-attack cases, and the exemptions that lift Disadvantage without removing an attack from the chain.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="13" height="13" fill="#000"/>
+<text x="6.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">A</text>
+<text x="18" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">The chain in one activation (5.7)</text>
+<text x="0" y="27" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">The second and each later weapon attack a Hero or Hireling makes</text>
+<text x="0" y="37.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">during one activation rolls its base damage dice with </tspan><tspan font-weight="700">Disadvantage</tspan></text>
+<text x="0" y="48.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">unless a rule says otherwise. The chain resets at the start of each of</text>
+<text x="0" y="58.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">that combatant's activations.</text>
+<text x="0" y="79.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Examples (assumed): a Hero with 3 AP (2.5). Attack and Push cost 1 AP</text>
+<text x="0" y="90" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">each (4.2), so each example spends all 3 AP. No rule exempts an</text>
+<text x="0" y="100.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">attack.</text>
+<text x="0" y="121.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Example 1:</tspan><tspan font-weight="400"> Attack, Attack, Attack</tspan></text>
+<rect x="0" y="125.2" width="82" height="41" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="5" y="136.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Attack [1 AP]</text>
+<text x="5" y="148.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">chain position 1</text>
+<text x="5" y="159.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">no Disadvantage</text>
+<line x1="82.5" y1="151.2" x2="83.5" y2="151.2" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="89.5,151.2 82.5,148 82.5,154.4" fill="#000"/>
+<rect x="90" y="125.2" width="82" height="41" fill="#d9d9d9" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="95" y="136.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Attack [1 AP]</text>
+<text x="95" y="148.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">chain position 2</text>
+<text x="95" y="159.7" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Disadvantage</tspan></text>
+<line x1="172.5" y1="151.2" x2="173.5" y2="151.2" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="179.5,151.2 172.5,148 172.5,154.4" fill="#000"/>
+<rect x="180" y="125.2" width="82" height="41" fill="#d9d9d9" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="185" y="136.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Attack [1 AP]</text>
+<text x="185" y="148.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">chain position 3</text>
+<text x="185" y="159.7" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Disadvantage</tspan></text>
+<text x="0" y="180.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Example 2:</tspan><tspan font-weight="400"> Attack, Push, Attack</tspan></text>
+<rect x="0" y="184.2" width="82" height="41" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="5" y="195.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Attack [1 AP]</text>
+<text x="5" y="207.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">chain position 1</text>
+<text x="5" y="218.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">no Disadvantage</text>
+<line x1="82.5" y1="210.2" x2="83.5" y2="210.2" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="89.5,210.2 82.5,207 82.5,213.4" fill="#000"/>
+<rect x="90" y="184.2" width="82" height="41" fill="#f0f0f0" stroke="#000" stroke-width="0.8" stroke-dasharray="3 2" rx="2.5"/>
+<text x="95" y="195.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Push [1 AP]</text>
+<text x="95" y="207.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">not in the chain</text>
+<text x="95" y="218.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">no damage dice</text>
+<line x1="172.5" y1="210.2" x2="173.5" y2="210.2" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="179.5,210.2 172.5,207 172.5,213.4" fill="#000"/>
+<rect x="180" y="184.2" width="82" height="41" fill="#d9d9d9" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="185" y="195.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Attack [1 AP]</text>
+<text x="185" y="207.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">chain position 2</text>
+<text x="185" y="218.7" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Disadvantage</tspan></text>
+<rect x="276" y="0" width="13" height="13" fill="#000"/>
+<text x="282.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
+<text x="294" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">What counts toward the chain</text>
+<rect x="276" y="20" width="228" height="29.1" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="280" y="31.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Counts</text>
+<text x="280" y="43.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Any attack, unless a rule says it does not.</text>
+<rect x="276" y="53.1" width="228" height="39.9" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="280" y="64.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Counts as one attack</text>
+<text x="280" y="76.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">An attack made with two </tspan><tspan font-weight="700">Light</tspan><tspan font-weight="400"> weapons. A </tspan><tspan font-weight="700">Sweep</tspan><tspan font-weight="400"> attack</tspan></text>
+<text x="280" y="87.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(7.7).</text>
+<rect x="276" y="97" width="228" height="61.5" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="280" y="108.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Does not count</text>
+<text x="280" y="120.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Push</tspan><tspan font-weight="400"> and </tspan><tspan font-weight="700">Trip</tspan><tspan font-weight="400">, which roll no damage dice (5.6). Attacks</tspan></text>
+<text x="280" y="131" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">granted by a </tspan><tspan font-weight="700">Reaction</tspan><tspan font-weight="400">, such as </tspan><tspan font-weight="700">Reflex Attack</tspan><tspan font-weight="400">, </tspan><tspan font-weight="700">Counter</tspan></text>
+<text x="280" y="141.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Attack</tspan><tspan font-weight="400">, </tspan><tspan font-weight="700">No Escape</tspan><tspan font-weight="400">, and </tspan><tspan font-weight="700">Duelist's Riposte</tspan><tspan font-weight="400">. A </tspan><tspan font-weight="700">Riposte</tspan></text>
+<text x="280" y="152.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(5.5.3). Any attack whose own rule says it does not count.</text>
+<rect x="276" y="162.5" width="228" height="61.5" fill="#fff" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="280" y="173.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Not used by</text>
+<text x="280" y="185.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Monsters and Summons do not use this rule. A Summon</text>
+<text x="280" y="196.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">may make each weapon attack its AP allows unless its own</text>
+<text x="280" y="207.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">entry limits it. A Monster with </tspan><tspan font-weight="700">Multi-Attack</tspan><tspan font-weight="400"> makes the</tspan></text>
+<text x="280" y="218.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">attacks that ability lists (9.6).</text>
+<line x1="0" y1="233.2" x2="504" y2="233.2" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
+<rect x="0" y="239.2" width="504" height="38.9" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="4" y="250.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Exemptions</tspan><tspan font-weight="400"> lift the Disadvantage but leave the attack in the chain. </tspan><tspan font-weight="700">Agile</tspan><tspan font-weight="400"> exempts the second weapon attack made with that</tspan></text>
+<text x="4" y="261.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">weapon. </tspan><tspan font-weight="700">Combat Mastery</tspan><tspan font-weight="400"> exempts a Hero's second weapon attack. </tspan><tspan font-weight="700">War Master</tspan><tspan font-weight="400"> exempts all of that Hero's melee weapon attacks.</tspan></text>
+<text x="4" y="272.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Later attacks resolve normally unless another rule applies.</text>
+</svg>

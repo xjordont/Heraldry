@@ -190,7 +190,8 @@ def main():
     src_stream = " ".join([u.get("text", "") for u in units] + [c for u in units for c in u.get("cells", [])])
     # figures are live vector text and may quote the rules they illustrate
     import html as _html
-    figtxt = norm(" ".join(_html.unescape(x) for f in sorted((ROOT / "figures/out").glob("FIG-*.svg"))
+    # bold runs inside a label are <tspan> children: drop the markup so a quoted rule reads whole
+    figtxt = norm(" ".join(_html.unescape(re.sub(r"<[^>]+>", "", x)) for f in sorted((ROOT / "figures/out").glob("FIG-*.svg"))
                            for x in re.findall(r"<text[^>]*>(.*?)</text>", f.read_text(), re.S)))
     capt = ""
     pl = ROOT / "figures/placements.json"

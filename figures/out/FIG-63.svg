@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="349.6pt" viewBox="0 0 504 349.6">
+<title>Concealment ladder, Visibility State, Light, Hidden, and Invisible</title>
+<desc>Show the Exposed, Cover, Hidden ladder, how Light and Darkness change Cover, and how Hidden and Invisible interact, without repeating the sight-line geometry of FIG-07.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="262" height="19" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="11" cy="9.5" r="6.6" fill="#fff"/>
+<text x="11" y="12.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">1</text>
+<text x="22" y="12.9" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Concealment ladder</text>
+<text x="257" y="12.9" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">2.8</text>
+<rect x="25" y="25" width="232" height="29.2" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="35" cy="39.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="35" y="42.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<text x="47" y="36.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Hidden</tspan><tspan font-weight="400"> cannot be targeted by anything that requires</tspan></text>
+<text x="47" y="46.9" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">LOS</tspan><tspan font-weight="400">.</tspan></text>
+<line x1="35" y1="63.2" x2="35" y2="61.2" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="35,54.2 31.8,61.2 38.2,61.2" fill="#000"/>
+<rect x="15" y="62.2" width="232" height="29.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="25" cy="76.8" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="25" y="80.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<text x="37" y="73.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Cover</tspan><tspan font-weight="400"> still targeted normally, but applicable ranged</tspan></text>
+<text x="37" y="84.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">attacks and effects against them suffer </tspan><tspan font-weight="700">Disadvantage</tspan><tspan font-weight="400">.</tspan></text>
+<line x1="35" y1="100.4" x2="35" y2="98.4" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="35,91.4 31.8,98.4 38.2,98.4" fill="#000"/>
+<rect x="5" y="99.4" width="232" height="29.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="15" cy="114" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="15" y="117.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<text x="27" y="110.7" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Exposed</tspan><tspan font-weight="400"> has no </tspan><tspan font-weight="700">Cover</tspan><tspan font-weight="400">. Attacks and effects target them</tspan></text>
+<text x="27" y="121.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">normally.</text>
+<text x="5" y="140.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="14" y="140.9" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">A combatant becomes </tspan><tspan font-weight="700">Hidden</tspan><tspan font-weight="400"> only by holding </tspan><tspan font-weight="700">Cover</tspan><tspan font-weight="400"> from every</tspan></text>
+<text x="14" y="151.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">enemy that has </tspan><tspan font-weight="700">LOS</tspan><tspan font-weight="400"> to them, or by standing outside every</tspan></text>
+<text x="14" y="162.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">enemy's </tspan><tspan font-weight="700">LOS</tspan><tspan font-weight="400"> entirely.</tspan></text>
+<text x="5" y="174.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="14" y="174.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">A combatant who loses </tspan><tspan font-weight="700">Cover</tspan><tspan font-weight="400"> falls to step 1 and loses </tspan><tspan font-weight="700">Hidden</tspan></text>
+<text x="14" y="184.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">with it.</text>
+<text x="5" y="196.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="14" y="196.9" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Cover</tspan><tspan font-weight="400"> granted only by a sight line crossing a combatant does</tspan></text>
+<text x="14" y="207.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">not count toward becoming or remaining </tspan><tspan font-weight="700">Hidden</tspan><tspan font-weight="400"> (</tspan><tspan font-weight="700">2.8.4</tspan><tspan font-weight="400">).</tspan></text>
+<rect x="0" y="0" width="262" height="217.3" fill="none" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="270" y="0" width="234" height="19" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="281" cy="9.5" r="6.6" fill="#fff"/>
+<text x="281" y="12.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">2</text>
+<text x="292" y="12.9" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Visibility State and Light</text>
+<text x="499" y="12.9" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">2.8.1–2.8.3</text>
+<text x="275" y="32.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">One </tspan><tspan font-weight="700">Visibility State</tspan><tspan font-weight="400"> per battlefield: </tspan><tspan font-weight="700">Light</tspan><tspan font-weight="400"> or </tspan><tspan font-weight="700">Darkness</tspan><tspan font-weight="400">. It is</tspan></text>
+<text x="275" y="42.9" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Light</tspan><tspan font-weight="400"> unless a scenario, weather result, or special rule sets</tspan></text>
+<text x="275" y="53.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">it.</text>
+<rect x="275" y="59.8" width="224" height="67" fill="#bfbfbf" stroke="#000" stroke-width="0.9"/>
+<circle cx="319" cy="93.8" r="30" fill="#fff" stroke="#000" stroke-width="1" stroke-dasharray="4 2.5"/>
+<line x1="324.1" y1="93.8" x2="327.6" y2="93.8" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="322.61" y1="97.41" x2="325.08" y2="99.88" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="319" y1="98.9" x2="319" y2="102.4" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="315.39" y1="97.41" x2="312.92" y2="99.88" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="313.9" y1="93.8" x2="310.4" y2="93.8" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="315.39" y1="90.19" x2="312.92" y2="87.72" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="319" y1="88.7" x2="319" y2="85.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="322.61" y1="90.19" x2="325.08" y2="87.72" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<circle cx="319" cy="93.8" r="3.6" fill="#fff" stroke="#000" stroke-width="1"/>
+<line x1="324" y1="93.8" x2="349" y2="93.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="349" y1="90.8" x2="349" y2="96.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="329.72" y="82.38" width="12.55" height="10.89" fill="#fff"/>
+<text x="331.52" y="90.3" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">3"</text>
+<rect x="444.82" y="62.88" width="40.36" height="10.89" fill="#fff"/>
+<text x="446.62" y="70.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Darkness</text>
+<rect x="282.93" y="62.88" width="24.14" height="10.89" fill="#fff"/>
+<text x="284.73" y="70.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Light</text>
+<circle cx="306" cy="105.8" r="5" fill="#000" stroke="#000" stroke-width="0.75"/>
+<rect x="313" y="108.8" width="12" height="12" fill="#fff" stroke="#000" stroke-width="1" rx="1.5"/>
+<text x="319" y="118.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">a</text>
+<circle cx="407" cy="81.8" r="5" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="475" cy="81.8" r="5" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="475" cy="81.8" r="1.6" fill="#000"/>
+<rect x="401" y="88.8" width="12" height="12" fill="#fff" stroke="#000" stroke-width="1" rx="1.5"/>
+<text x="407" y="98.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">b</text>
+<circle cx="407" cy="107.8" r="5" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="417" cy="107.8" r="5" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="417" cy="107.8" r="1.6" fill="#000"/>
+<rect x="425" y="101.8" width="12" height="12" fill="#fff" stroke="#000" stroke-width="1" rx="1.5"/>
+<text x="431" y="111.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">c</text>
+<text x="495" y="122.8" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="end">Schematic - not to scale</text>
+<text x="275" y="136.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">black circle: a combatant; white circle: an enemy</text>
+<text x="275" y="149.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Light Source:</tspan><tspan font-weight="400"> </tspan><tspan font-weight="700">Aura 3"</tspan><tspan font-weight="400"> unless a rule lists another size. Its</tspan></text>
+<text x="275" y="159.7" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">carrier cannot be </tspan><tspan font-weight="700">Hidden</tspan><tspan font-weight="400"> unless a rule says otherwise.</tspan></text>
+<rect x="275" y="164.6" width="12" height="12" fill="#fff" stroke="#000" stroke-width="1" rx="1.5"/>
+<text x="281" y="173.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">a</text>
+<text x="291" y="172.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Light removes </tspan><tspan font-weight="700">Darkness</tspan><tspan font-weight="400"> in the </tspan><tspan font-weight="700">Aura</tspan><tspan font-weight="400">, but not other</tspan></text>
+<text x="291" y="182.9" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Cover</tspan><tspan font-weight="400">.</tspan></text>
+<rect x="275" y="187.3" width="12" height="12" fill="#fff" stroke="#000" stroke-width="1" rx="1.5"/>
+<text x="281" y="196.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">b</text>
+<text x="291" y="195" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Darkness</tspan><tspan font-weight="400"> gives </tspan><tspan font-weight="700">Cover</tspan><tspan font-weight="400"> against nonadjacent enemies.</tspan></text>
+<rect x="275" y="199.4" width="12" height="12" fill="#fff" stroke="#000" stroke-width="1" rx="1.5"/>
+<text x="281" y="208.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">c</text>
+<text x="291" y="207.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Darkness</tspan><tspan font-weight="400"> gives no </tspan><tspan font-weight="700">Cover</tspan><tspan font-weight="400"> against an adjacent enemy.</tspan></text>
+<rect x="270" y="0" width="234" height="217.3" fill="none" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="0" y="225.3" width="504" height="19" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="11" cy="234.8" r="6.6" fill="#fff"/>
+<text x="11" y="238" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">3</text>
+<text x="22" y="238.2" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Hidden, Invisible, and closing on a concealed enemy</text>
+<text x="499" y="238.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">2.8, 2.8.5</text>
+<text x="5" y="257.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="14" y="257.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Hidden</tspan><tspan font-weight="400"> and </tspan><tspan font-weight="700">Invisible</tspan><tspan font-weight="400"> are separate conditions; a combatant may have either or both. Neither blocks </tspan><tspan font-weight="700">LOS</tspan><tspan font-weight="400"> (</tspan><tspan font-weight="700">5.9</tspan><tspan font-weight="400">).</tspan></text>
+<text x="5" y="269.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="14" y="269.7" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">With both, </tspan><tspan font-weight="700">Invisible</tspan><tspan font-weight="400"> governs targeting and the combatant does not gain the </tspan><tspan font-weight="700">Hidden</tspan><tspan font-weight="400"> benefit in </tspan><tspan font-weight="700">5.9</tspan><tspan font-weight="400"> until </tspan><tspan font-weight="700">Invisible</tspan><tspan font-weight="400"> ends. They</tspan></text>
+<text x="14" y="280.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">remain </tspan><tspan font-weight="700">Hidden</tspan><tspan font-weight="400"> for every other rule.</tspan></text>
+<text x="5" y="292.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="14" y="292.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Spot</tspan><tspan font-weight="400"> removes only </tspan><tspan font-weight="700">Hidden</tspan><tspan font-weight="400"> unless a rule says otherwise.</tspan></text>
+<text x="5" y="304.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="14" y="304.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">A rule that explicitly removes </tspan><tspan font-weight="700">Hidden</tspan><tspan font-weight="400"> or </tspan><tspan font-weight="700">Invisible</tspan><tspan font-weight="400"> bars regaining it until the end of the round unless a more specific rule says</tspan></text>
+<text x="14" y="315.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">otherwise. Ordinary end conditions in </tspan><tspan font-weight="700">5.9</tspan><tspan font-weight="400"> do not trigger this.</tspan></text>
+<text x="5" y="327.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="14" y="327.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">To close on a concealed enemy, move within their </tspan><tspan font-weight="700">Hide distance</tspan><tspan font-weight="400">, use </tspan><tspan font-weight="700">Spot</tspan><tspan font-weight="400">, or break their </tspan><tspan font-weight="700">Cover</tspan><tspan font-weight="400"> by changing the angle of</tspan></text>
+<text x="14" y="337.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">approach. </tspan><tspan font-weight="700">Areas of Effect</tspan><tspan font-weight="400"> are the exception at every step.</tspan></text>
+<rect x="0" y="225.3" width="504" height="122.3" fill="none" stroke="#000" stroke-width="0.9" rx="2.5"/>
+</svg>

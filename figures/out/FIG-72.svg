@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="292.3pt" viewBox="0 0 504 292.3">
+<title>Character creation procedure</title>
+<desc>Show the ten Hero creation steps of 6.2 in order, with the two formulas the section gives (final ability scores, starting Max HP) tied to the steps that calculate them.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="2" width="220" height="30.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="13" cy="17.1" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="13" y="20.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<text x="26" y="14.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Select a miniature, standee, or token to represent</text>
+<text x="26" y="25.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the Hero.</text>
+<line x1="13" y1="32.2" x2="13" y2="36.2" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="13,42.2 9.8,35.2 16.2,35.2" fill="#000"/>
+<rect x="0" y="42.2" width="220" height="30.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="13" cy="57.3" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="13" y="60.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<text x="26" y="54.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Select or roll the Hero's ancestry, background, and</text>
+<text x="26" y="65.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">class, in that order.</text>
+<line x1="13" y1="72.4" x2="13" y2="76.4" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="13,82.4 9.8,75.4 16.2,75.4" fill="#000"/>
+<rect x="0" y="82.4" width="220" height="30.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="13" cy="97.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="13" y="100.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<text x="26" y="95.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Calculate the Hero's final </tspan><tspan font-weight="700">STR</tspan><tspan font-weight="400">, </tspan><tspan font-weight="700">DEX</tspan><tspan font-weight="400">, </tspan><tspan font-weight="700">INT</tspan><tspan font-weight="400">, and</tspan></text>
+<text x="26" y="105.7" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">SPI</tspan><tspan font-weight="400"> scores.</tspan></text>
+<rect x="202" y="86.4" width="13" height="13" fill="#000"/>
+<text x="208.5" y="96.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">A</text>
+<line x1="13" y1="112.6" x2="13" y2="116.6" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="13,122.6 9.8,115.6 16.2,115.6" fill="#000"/>
+<rect x="0" y="122.6" width="220" height="22" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="13" cy="133.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="13" y="136.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
+<text x="26" y="136.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Choose the Hero's starting known Powers, if any.</text>
+<line x1="13" y1="144.6" x2="13" y2="148.6" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="13,154.6 9.8,147.6 16.2,147.6" fill="#000"/>
+<rect x="0" y="154.6" width="220" height="30.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="13" cy="169.7" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="13" y="173" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">5</text>
+<text x="26" y="167.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Choose the </tspan><tspan font-weight="700">General Talent</tspan><tspan font-weight="400"> and </tspan><tspan font-weight="700">Novice Class</tspan></text>
+<text x="26" y="177.9" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Talent</tspan><tspan font-weight="400"> granted at Level 1.</tspan></text>
+<rect x="240" y="2" width="264" height="30.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="253" cy="17.1" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="253" y="20.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">6</text>
+<text x="266" y="14.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Select or roll the Hero's starting equipment package and</text>
+<text x="266" y="25.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">determine which items are equipped or carried.</text>
+<line x1="253" y1="32.2" x2="253" y2="36.2" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="253,42.2 249.8,35.2 256.2,35.2" fill="#000"/>
+<rect x="240" y="42.2" width="264" height="30.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="253" cy="57.3" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="253" y="60.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">7</text>
+<text x="266" y="54.9" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Calculate </tspan><tspan font-weight="700">Max HP</tspan><tspan font-weight="400">, </tspan><tspan font-weight="700">SPD</tspan><tspan font-weight="400">, </tspan><tspan font-weight="700">Max NRG</tspan><tspan font-weight="400">, maximum </tspan><tspan font-weight="700">Luck</tspan><tspan font-weight="400">, and</tspan></text>
+<text x="266" y="65.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Initiative Bonus</tspan><tspan font-weight="400">, including every applicable modifier.</tspan></text>
+<rect x="486" y="46.2" width="13" height="13" fill="#000"/>
+<text x="492.5" y="56.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
+<line x1="253" y1="72.4" x2="253" y2="76.4" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="253,82.4 249.8,75.4 256.2,75.4" fill="#000"/>
+<rect x="240" y="82.4" width="264" height="22" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="253" cy="93.4" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="253" y="96.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">8</text>
+<text x="266" y="96.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Record all abilities, Powers, Talents, and equipment.</text>
+<line x1="253" y1="104.4" x2="253" y2="108.4" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="253,114.4 249.8,107.4 256.2,107.4" fill="#000"/>
+<rect x="240" y="114.4" width="264" height="40.8" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="253" cy="134.8" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="253" y="138.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">9</text>
+<text x="266" y="127.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">In campaign play, add starting coins to the </tspan><tspan font-weight="700">Treasury</tspan><tspan font-weight="400">. Record</tspan></text>
+<text x="266" y="137.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">each starting item as equipped, assigned to that Hero to carry</text>
+<text x="266" y="148.3" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">during the first adventure, or held in </tspan><tspan font-weight="700">Storage</tspan><tspan font-weight="400">.</tspan></text>
+<line x1="253" y1="155.2" x2="253" y2="159.2" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="253,165.2 249.8,158.2 256.2,158.2" fill="#000"/>
+<rect x="240" y="165.2" width="264" height="30.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="253" cy="180.3" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="253" y="183.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">10</text>
+<text x="266" y="177.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Set current HP, NRG, and Luck equal to their final maximum</text>
+<text x="266" y="188.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">values.</text>
+<line x1="220" y1="169.7" x2="230" y2="169.7" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<line x1="230" y1="169.7" x2="230" y2="17.1" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<line x1="229.4" y1="17.1" x2="234" y2="17.1" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="240,17.1 233,13.9 233,20.3" fill="#000"/>
+<line x1="0" y1="203.4" x2="504" y2="203.4" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
+<rect x="0" y="210.4" width="300" height="43.2" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<rect x="4" y="213.4" width="13" height="13" fill="#000"/>
+<text x="10.5" y="223.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">A</text>
+<text x="22" y="223.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Final starting ability scores (step 3)</text>
+<text x="5" y="235.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Final Ability Score = Ancestry Base Score + ancestry trait modifiers +</tspan></text>
+<text x="5" y="246.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Background Bonus + Class Modifier + any Random Background Bonus</tspan></text>
+<rect x="308" y="210.4" width="196" height="43.2" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<rect x="312" y="213.4" width="13" height="13" fill="#000"/>
+<text x="318.5" y="223.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
+<text x="330" y="223.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Starting Max HP (step 7)</text>
+<text x="313" y="235.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Starting Max HP = Ancestry Base HP + Class</tspan></text>
+<text x="313" y="246.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Starting HP Bonus</tspan></text>
+<rect x="0" y="259.6" width="504" height="29.7" fill="#fff" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="5" y="272" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">After calculating each base value, apply every applicable ancestry, background, class, Talent, item, and random-generation</text>
+<text x="5" y="282.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">modifier. Use </tspan><tspan font-weight="700">6.4 Hero Attributes</tspan><tspan font-weight="400"> for </tspan><tspan font-weight="700">Initiative Bonus</tspan><tspan font-weight="400"> and </tspan><tspan font-weight="700">Max NRG</tspan><tspan font-weight="400">.</tspan></text>
+</svg>

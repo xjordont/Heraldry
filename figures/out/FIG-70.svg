@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="234.9pt" viewBox="0 0 504 234.9">
+<title>Push and Trip reference</title>
+<desc>Compare Push and Trip side by side (target, Check, success, failure), show Push's 2" in a straight line and the Sz comparison for Trip, and list the rules the two actions share.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="246" height="18" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="6" y="12.3" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Push [1 AP]</text>
+<text x="241" y="12.3" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">5.6.1</text>
+<rect x="258" y="0" width="246" height="18" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="264" y="12.3" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Trip [1 AP]</text>
+<text x="499" y="12.3" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">5.6.2</text>
+<circle cx="14" cy="44" r="7" fill="#000" stroke="#000" stroke-width="0.75"/>
+<polyline points="41.02,44 37.51,50.08 30.49,50.08 26.98,44 30.49,37.92 37.51,37.92 41.02,44" fill="none" stroke="#000" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="1.6 2"/>
+<polygon points="91.02,44 87.51,50.08 80.49,50.08 76.98,44 80.49,37.92 87.51,37.92" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<line x1="43" y1="44" x2="67.5" y2="44" stroke="#000" stroke-width="1.9" stroke-linecap="round" stroke-dasharray="0.1 3.4"/>
+<polygon points="75,44 67.5,47.8 67.5,40.2" fill="#000"/>
+<line x1="34" y1="58" x2="84" y2="58" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="34" y1="55" x2="34" y2="61" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="84" y1="55" x2="84" y2="61" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="52.72" y="58.08" width="12.55" height="10.89" fill="#fff"/>
+<text x="54.52" y="66" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">2"</text>
+<text x="14" y="33" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">you</text>
+<text x="34" y="33" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">start</text>
+<text x="84" y="33" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">end</text>
+<text x="0" y="78" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#333">Schematic - not to scale</text>
+<text x="112" y="28" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Over an edge or into hazardous</text>
+<text x="112" y="38.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">terrain: resolve that terrain or</text>
+<text x="112" y="48.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Falling</tspan><tspan font-weight="400"> after the forced movement</tspan></text>
+<text x="112" y="59.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">ends. </tspan><tspan font-weight="700">Push</tspan><tspan font-weight="400"> never triggers </tspan><tspan font-weight="700">Reflex</tspan></text>
+<text x="112" y="69.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Attack</tspan><tspan font-weight="400">.</tspan></text>
+<text x="258" y="30" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Example: you are Sz M</text>
+<text x="258" y="81" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#333">Sizes listed S, M, L, H (2.6)</text>
+<circle cx="268" cy="50" r="7" fill="#000" stroke="#000" stroke-width="0.75"/>
+<rect x="292" y="41" width="20" height="18" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="302" y="53.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">S</text>
+<polyline points="297.8,68 300.74,71.36 306.2,64.64" fill="none" stroke="#000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="316" y="41" width="20" height="18" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="326" y="53.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">M</text>
+<polyline points="321.8,68 324.74,71.36 330.2,64.64" fill="none" stroke="#000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="340" y="41" width="20" height="18" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="350" y="53.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">L</text>
+<line x1="346.4" y1="64.4" x2="353.6" y2="71.6" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="346.4" y1="71.6" x2="353.6" y2="64.4" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+<rect x="364" y="41" width="20" height="18" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="374" y="53.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">H</text>
+<line x1="370.4" y1="64.4" x2="377.6" y2="71.6" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="370.4" y1="71.6" x2="377.6" y2="64.4" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+<text x="394" y="28" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Already </tspan><tspan font-weight="700">Prone</tspan><tspan font-weight="400">: no additional</tspan></text>
+<text x="394" y="38.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">effect unless a rule says</text>
+<text x="394" y="48.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">otherwise. A rule may make a</text>
+<text x="394" y="59.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">target fixed, anchored, or</text>
+<text x="394" y="69.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">immune to </tspan><tspan font-weight="700">Trip</tspan><tspan font-weight="400">.</tspan></text>
+<rect x="0" y="88" width="246" height="25.2" fill="#fff" stroke="#000" stroke-width="0.6"/>
+<text x="4" y="98.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Target</text>
+<text x="46" y="98.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">One legal combatant, adjacent to you unless a rule</text>
+<text x="46" y="109.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">says otherwise.</text>
+<rect x="0" y="113.2" width="246" height="14.6" fill="#f0f0f0" stroke="#000" stroke-width="0.6"/>
+<text x="4" y="124" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Check</text>
+<text x="46" y="124" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">STR Check</tspan><tspan font-weight="400"> with </tspan><tspan font-weight="700">Disadvantage</tspan><tspan font-weight="400">.</tspan></text>
+<rect x="0" y="127.8" width="246" height="14.6" fill="#fff" stroke="#000" stroke-width="0.6"/>
+<text x="4" y="138.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Success</text>
+<text x="46" y="138.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Push</tspan><tspan font-weight="400"> the target 2" directly away from you.</tspan></text>
+<rect x="0" y="142.4" width="246" height="14.6" fill="#f0f0f0" stroke="#000" stroke-width="0.6"/>
+<text x="4" y="153.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Failure</text>
+<text x="46" y="153.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Nothing happens.</text>
+<rect x="258" y="88" width="246" height="14.6" fill="#fff" stroke="#000" stroke-width="0.6"/>
+<text x="262" y="98.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Weapon</text>
+<text x="304" y="98.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">You must wield a weapon with the </tspan><tspan font-weight="700">Trip</tspan><tspan font-weight="400"> trait.</tspan></text>
+<rect x="258" y="102.6" width="246" height="35.8" fill="#f0f0f0" stroke="#000" stroke-width="0.6"/>
+<text x="262" y="113.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Target</text>
+<text x="304" y="113.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Unless a rule says otherwise, a combatant of your</text>
+<text x="304" y="124" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Sz</tspan><tspan font-weight="400"> or smaller within that weapon's </tspan><tspan font-weight="700">Range</tspan><tspan font-weight="400"> or melee</tspan></text>
+<text x="304" y="134.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">distance.</text>
+<rect x="258" y="138.4" width="246" height="14.6" fill="#fff" stroke="#000" stroke-width="0.6"/>
+<text x="262" y="149.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Check</text>
+<text x="304" y="149.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">STR or DEX Check</tspan><tspan font-weight="400"> with </tspan><tspan font-weight="700">Disadvantage</tspan><tspan font-weight="400">.</tspan></text>
+<rect x="258" y="153" width="246" height="25.2" fill="#f0f0f0" stroke="#000" stroke-width="0.6"/>
+<text x="262" y="163.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Result</text>
+<text x="304" y="163.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">On a success the target becomes </tspan><tspan font-weight="700">Prone</tspan><tspan font-weight="400">; on a</tspan></text>
+<text x="304" y="174.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">failure nothing happens.</text>
+<rect x="0" y="184.2" width="504" height="49.7" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="4" y="195.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Both actions:</tspan><tspan font-weight="400"> not an Attack action or weapon attack, no damage dice, and not part of the multi-attack Disadvantage chain. Take</tspan></text>
+<text x="4" y="206.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">them only during your own activation. They do not trigger </tspan><tspan font-weight="700">Block</tspan><tspan font-weight="400">, </tspan><tspan font-weight="700">Dodge</tspan><tspan font-weight="400">, </tspan><tspan font-weight="700">Parry</tspan><tspan font-weight="400">, or rules that trigger when an attack targets a</tspan></text>
+<text x="4" y="217.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">combatant. Each is a hostile action: a </tspan><tspan font-weight="700">Hidden</tspan><tspan font-weight="400"> actor loses </tspan><tspan font-weight="700">Hidden</tspan><tspan font-weight="400"> after it resolves. A </tspan><tspan font-weight="700">Monster</tspan><tspan font-weight="400"> uses them only if its profile, AI rule,</tspan></text>
+<text x="4" y="228" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">scenario rule, or Special Ability says so.</text>
+</svg>
