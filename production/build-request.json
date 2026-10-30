@@ -1,6 +1,6 @@
 {
- "request_id": "20261030T173411Z",
- "requested_at": "2026-10-30T17:34:11+00:00",
+ "request_id": "20261030T175001Z",
+ "requested_at": "2026-10-30T17:50:01+00:00",
  "requested_by": "Claude (Opus 5.5) for Jordon: polish, Escutcheon Press device, section-end figures and Hero portraits",
- "base_commit": "c1f9f09db3b28ce8e600f8a950f9895f00992b06"
+ "base_commit": "d57241ade43fbde830b490ad4f6da03d64b3634c"
 }
