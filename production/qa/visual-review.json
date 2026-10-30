@@ -1,12 +1,12 @@
 {
  "pdf": "dist/Heraldry_RC522_inkjet-borderless.pdf",
- "sha256": "dc58f769b4a05adfd95e9841115acbc9da63a412f699472969eb1350c691a616",
- "pages": 627,
- "reviewer": "Claude (Opus 5.5) in the Claude app, image inspection of every contact sheet, detail page, cover, and the calibration sheet of RC522-candidate-7",
- "reviewed_at": "2026-10-30T04:49:40+00:00",
+ "sha256": "ead73ce9b9c62794407b905634da604a420635892faab559a02b780be6780534",
+ "pages": 618,
+ "reviewer": "Claude (Opus 5.5) in the Claude app, image inspection of every contact sheet, every detail page, both covers, and the calibration sheet of candidate 20261030T175001Z",
+ "reviewed_at": "2026-10-30T18:17:29+00:00",
  "all_page_contact_sheets": {
   "scale": "34 dpi, up to 24 pages per sheet",
-  "sheets": 27,
+  "sheets": 26,
   "note": "every page of this exact PDF (the candidate build; the release build reproduces it) viewed on contact sheets"
  },
  "pages_reviewed": [
@@ -627,16 +627,7 @@
   615,
   616,
   617,
-  618,
-  619,
-  620,
-  621,
-  622,
-  623,
-  624,
-  625,
-  626,
-  627
+  618
  ],
  "detailed_pages_viewed_at_100dpi": [
   1,
@@ -645,29 +636,29 @@
   48,
   50,
   57,
-  72,
-  92,
+  71,
+  91,
   100,
-  141,
+  140,
   150,
   200,
-  204,
-  245,
+  202,
+  241,
   250,
   300,
   350,
-  358,
+  353,
   400,
   450,
-  498,
+  490,
   500,
-  530,
-  548,
+  521,
+  539,
   550,
-  588,
+  579,
   600,
-  624,
-  627
+  615,
+  618
  ],
  "covers_viewed": [
   "cover-front.jpg",
@@ -676,12 +667,11 @@
  "calibration_viewed": true,
  "findings_repaired": [],
  "accepted_layout_notes": [
-  "p530: Appendix A introduction (over the 700-character standfirst limit) is set in two justified columns; one line ('Ignore backgrounds, Hirelings, Summons,') shows loose word spacing. Accepted; no content defect.",
-  "Owner imprint, opener spreads (Chapters 8 and 11), back-cover blurb, restored spot art, and balanced index verified on the candidate; no major findings."
+  "Polish round (justification, centred openers), Escutcheon Press logo on title page, colophon, and back cover, twenty section-end figures in book-order numbering, and Basic Mode Hero portraits verified; no major findings."
  ],
  "limits": "Contact-sheet review of every page and 100 dpi detail review of the listed pages, by the named reviewer from images; not glyph-level proofreading, not an independent second review, not a physical printer proof.",
  "status": "PASS (all-page contact-sheet review of this exact PDF by an automated vision reviewer; not glyph-level proofreading)",
  "changes_this_run": [
-  "candidate build 20261030T042522Z from da191be8cb6f547248b65eec6860d0c7a0f4fa78"
+  "candidate build 20261030T175001Z from e0d93d26d2e96fe4b7c95c7c1ee2772e563ccee5"
  ]
 }
