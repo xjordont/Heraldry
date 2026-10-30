@@ -1,12 +1,39 @@
 {
- "request_id": "20261030T173411Z",
- "result": "FAILED",
- "note": "step failed: tests and clean build",
- "failed_checks": [],
- "source_commit": "599f880d5b7d916ff16632c6f9b1907edccc729a",
- "run_url": "https://github.com/xjordont/Heraldry/actions/runs/41100152636",
- "release_url": "",
- "pdfs": {},
+ "request_id": "20261030T175001Z",
+ "result": "CANDIDATE_READY",
+ "note": "all automated checks pass; the all-page visual review of this exact PDF is still pending",
+ "failed_checks": [
+  "visual_review_currency"
+ ],
+ "source_commit": "e0d93d26d2e96fe4b7c95c7c1ee2772e563ccee5",
+ "run_url": "https://github.com/xjordont/Heraldry/actions/runs/41101987952",
+ "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC522-candidate-10",
+ "pdfs": {
+  "Heraldry_RC522_covers-front-back-white.pdf": {
+   "bytes": 4914307,
+   "sha256": "bd5dffee8b890bd2346c3ee62fc34818b8e13e9272b95fb9285adb92f50e6743"
+  },
+  "Heraldry_RC522_covers-front-back.pdf": {
+   "bytes": 4914337,
+   "sha256": "9c2a245d46d1997dc06e41e44a78820e0df1b39b1a422ebe52607650eab6c8e7"
+  },
+  "Heraldry_RC522_digital.pdf": {
+   "bytes": 156951492,
+   "sha256": "ddf122416e79ea7db555d01128ea6ca581bada54b8ca8fb7fdeb1dca3336c1ec"
+  },
+  "Heraldry_RC522_inkjet-borderless-white.pdf": {
+   "bytes": 152121578,
+   "sha256": "d361658d967c194ed9cf3dd8a411d6762c1bf1d7ec39687dc6fea4d7890b5aaf"
+  },
+  "Heraldry_RC522_inkjet-borderless.pdf": {
+   "bytes": 152149614,
+   "sha256": "ead73ce9b9c62794407b905634da604a420635892faab559a02b780be6780534"
+  },
+  "Heraldry_RC522_inkjet-calibration.pdf": {
+   "bytes": 43654,
+   "sha256": "9bc5a846d4f33d23eab631c27edf626bf5650be93b06c2b58dc2530450844710"
+  }
+ },
  "physical_print": "NOT TESTED",
- "next": "Fix the failure; do not release."
+ "next": "The assigned reviewer inspects every review image and binds the exact PDF; pushing production/qa/visual-review.json starts release."
 }

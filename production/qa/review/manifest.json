@@ -12,7 +12,7 @@
    "sha256": "c38d80dc9906731bdef844de389ac8297af55d07dffb27ee653d84c7cd48080a"
   }
  ],
- "pdf_sha256": "798d0d115ddde1c916974ea2c6763e25932fa3f72fee31fe632bb7f452e7da3d",
+ "pdf_sha256": "ead73ce9b9c62794407b905634da604a420635892faab559a02b780be6780534",
  "pages": 618,
  "sheets": [
   {
@@ -21,7 +21,7 @@
     1,
     24
    ],
-   "sha256": "9edc50ebf72edcaeaef0bb2701b636124e01b8dae7fd7c70578910d090ef86d1"
+   "sha256": "3052c8f9b95d6c858b0900873dd4f2355331eab49059edee7fb886adf3f49918"
   },
   {
    "file": "sheet-02.jpg",
@@ -29,7 +29,7 @@
     25,
     48
    ],
-   "sha256": "2bc9d2ecbe89b61f979a9dd4e336fdb249cbfaa7a5da2d4a782b2f4e988741ad"
+   "sha256": "59ded4b4b21c102935da8bd79ae9579d2cf8d497cfc719e23990ff53e5d6159e"
   },
   {
    "file": "sheet-03.jpg",
@@ -37,7 +37,7 @@
     49,
     72
    ],
-   "sha256": "45d5bf0be213a396575c9d7eb18296ea1a9286efd674a40dc2bddd9a3bfb2af0"
+   "sha256": "4a47406f19ce19679bfa46f97945473a985ebe6d14b68f9b5ddb71c948223be1"
   },
   {
    "file": "sheet-04.jpg",
@@ -45,7 +45,7 @@
     73,
     96
    ],
-   "sha256": "1aa25761aebe282cd9aeef17b5d29b1bef1287abe6f808300adcdaf81242f651"
+   "sha256": "ee54478b70e002c9bb08f1a4c59fdf393f7fc4dd987213a919fd28af140a5056"
   },
   {
    "file": "sheet-05.jpg",
@@ -61,7 +61,7 @@
     121,
     144
    ],
-   "sha256": "bb34c19c043a0de93800460dd61c85eaaff23b2d7534bf0bb43ce5f350327285"
+   "sha256": "f80e4ace4d69a77d7cd6dc615abb7928e5d33f4ac583a74f7796c5be4a818094"
   },
   {
    "file": "sheet-07.jpg",
@@ -69,7 +69,7 @@
     145,
     168
    ],
-   "sha256": "e135a416cf72d6ed0f7eb6ded7eee8bdb798961934df03421b6d34029a782d54"
+   "sha256": "6551da43ff07c33084e3dd3be5b2b0d86f0206990a8f44a8eaefff7ca0e5dd0c"
   },
   {
    "file": "sheet-08.jpg",
@@ -101,7 +101,7 @@
     241,
     264
    ],
-   "sha256": "8249a859f2f62b98c0008e3385eddb83406b1c1e9fc32866a921480a246a7133"
+   "sha256": "01aa496d32de1db0fbae06ffbdf34cba63e60734364525a845e42722ff1c1e9c"
   },
   {
    "file": "sheet-12.jpg",
@@ -133,7 +133,7 @@
     337,
     360
    ],
-   "sha256": "0e5c6c109af1959df4d027415dc0ededd5c8f21e1add96b278c83a2bab03c4b1"
+   "sha256": "c6523454173d27ac422c5d8d0bd5868b5ce1ee79c7b62220f29b1e7b4747279a"
   },
   {
    "file": "sheet-16.jpg",
@@ -141,7 +141,7 @@
     361,
     384
    ],
-   "sha256": "0534bcb3e7aefe64f8fd19adcd44bacaeda38a5eb002b8b104d7516ab9f304f7"
+   "sha256": "64b97fe8c49e68847d9d0cdf058d3c2ae917374515f02f6d53852408037cd325"
   },
   {
    "file": "sheet-17.jpg",
@@ -149,7 +149,7 @@
     385,
     408
    ],
-   "sha256": "05ffd4d1a984fe85c5215a405cbf3ec1c39c1040d64c1d727fcadf74a7bb573b"
+   "sha256": "8dc33f97f8d431468c0e44efb4d9d2fd318d0a8d48ec49b5b45d192ae690ddc4"
   },
   {
    "file": "sheet-18.jpg",
@@ -157,7 +157,7 @@
     409,
     432
    ],
-   "sha256": "306b80c2d9d67d555c18f80382b37acaa5e3e374730edfee49d6e5c5114bf2c9"
+   "sha256": "7faa26e55a0ed161ec26194299a1544c2d55a2ffab258e311421d845b6b0c30c"
   },
   {
    "file": "sheet-19.jpg",
@@ -165,7 +165,7 @@
     433,
     456
    ],
-   "sha256": "81964fd794e8047d3603584f35cf714d0ab44dee55855188add8440020b51adc"
+   "sha256": "6374a92f2f4a33fba9b4d0c918a6fdf4c01d972ef1c8877048dc5bc4a0b58f6f"
   },
   {
    "file": "sheet-20.jpg",
@@ -173,7 +173,7 @@
     457,
     480
    ],
-   "sha256": "7b6e79edd0527ec38bb3b80e01f73e574d36af9425a43578b9acbd3025a115a8"
+   "sha256": "f95218dcda2bb4b1a6a501f5a668245d353df02c9f64415e60eb26e5a1d9cc46"
   },
   {
    "file": "sheet-21.jpg",
@@ -181,7 +181,7 @@
     481,
     504
    ],
-   "sha256": "874b3132d886345e38d096ebc1f1e536765e79dc9c08143a86900108ee0befa9"
+   "sha256": "d468acfd6229034c8f70c128b1bafa4e8db32fa6b29ad8e3483ed96ac151dac7"
   },
   {
    "file": "sheet-22.jpg",
@@ -197,7 +197,7 @@
     529,
     552
    ],
-   "sha256": "66e65a1bb4fcd9500d1d72533ef838207f5318f91e03da66caa06e2e248520ea"
+   "sha256": "ebf7826e51b8c74e0390005175eb09dce80081d2b14814fb94fee2e2ab2311b3"
   },
   {
    "file": "sheet-24.jpg",
@@ -205,7 +205,7 @@
     553,
     576
    ],
-   "sha256": "7b063f56e6c65463f0871fd49c73dc610276aecb205cdb7022860e53e5cd3984"
+   "sha256": "5ba26f3cc6bc830558df49c69423db6ccedfcdd3858165384bb0523b5f36c2ff"
   },
   {
    "file": "sheet-25.jpg",
@@ -221,7 +221,7 @@
     601,
     618
    ],
-   "sha256": "4e97fe117354eaf36d2b93bdbd05c05646343f6932babb2495201cfb0de97a60"
+   "sha256": "c6f8193f83f9db4ead2f8a18902a3e1ad776bd09601730b01da5b31afdf78ad7"
   }
  ],
  "details": [
@@ -253,7 +253,7 @@
    "file": "page-0050.jpg",
    "page": 50,
    "reason": "every 50th page",
-   "sha256": "546aac35c1502a47077b5138c190beadf5439b43e564a622d9e15c311626c44b"
+   "sha256": "4e884a9e10313b8da2c7015d5c4af905e940b648c5dc217388072549bb21a6df"
   },
   {
    "file": "page-0057.jpg",
@@ -337,7 +337,7 @@
    "file": "page-0400.jpg",
    "page": 400,
    "reason": "every 50th page",
-   "sha256": "7e6521ef1b061c9bcd44ddbca0a2a88e10e371f8eb42df86345cb32774850e06"
+   "sha256": "5bf140a87b3aa04a4f72b4a7b303ceea44ec408fa4148a3a993965587011bb37"
   },
   {
    "file": "page-0450.jpg",
@@ -373,7 +373,7 @@
    "file": "page-0550.jpg",
    "page": 550,
    "reason": "every 50th page",
-   "sha256": "9c4b0bd817e640133569f977c4043974038a70fb58b593601bef5ee20e7ac604"
+   "sha256": "ee0a4e7c9b356eaebdaeb53be1ebc67b182e611af2057f8db807b3d241d935c1"
   },
   {
    "file": "page-0579.jpg",
@@ -391,7 +391,7 @@
    "file": "page-0615.jpg",
    "page": 615,
    "reason": "chapter opener: Index",
-   "sha256": "79bcb15502005d427453288fa1177542599048c0e4d5af3da203c7ee149268e1"
+   "sha256": "3839aaa9625e1300a8070c63b0b3879ab8aa210e9f9730f1997838e89c8b127a"
   },
   {
    "file": "page-0618.jpg",
