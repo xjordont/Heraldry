@@ -2,343 +2,343 @@
  {
   "id": "FIG-01",
   "placed": true,
-  "folio": "47",
-  "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
+  "folio": "43",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-02",
   "placed": true,
-  "folio": "50",
-  "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
+  "folio": "46",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-03",
   "placed": true,
-  "folio": "75",
-  "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
+  "folio": "71",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-04",
   "placed": true,
-  "folio": "29",
-  "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
+  "folio": "25",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-05",
   "placed": true,
-  "folio": "63",
-  "semantic_status": "revised after audit: major fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
+  "folio": "58",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-06",
   "placed": true,
-  "folio": "71",
-  "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
+  "folio": "67",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-07",
   "placed": true,
-  "folio": "38",
-  "semantic_status": "aligned to editorial patches 2026-10-06"
+  "folio": "34",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-08",
   "placed": true,
-  "folio": "35",
-  "semantic_status": "aligned to editorial patches 2026-10-06"
+  "folio": "31",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-09",
   "placed": true,
-  "folio": "65",
-  "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
+  "folio": "60",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-10",
   "placed": true,
-  "folio": "275",
-  "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
+  "folio": "243",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-11",
   "placed": true,
-  "folio": "278",
-  "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
+  "folio": "247",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-12",
   "placed": true,
-  "folio": "280",
-  "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
+  "folio": "249",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-13",
   "placed": true,
-  "folio": "407",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "358",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-14",
   "placed": true,
-  "folio": "408",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "359",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-15",
   "placed": true,
-  "folio": "477",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "423",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-16",
   "placed": true,
-  "folio": "446",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "392",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-17",
   "placed": true,
-  "folio": "557",
-  "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
+  "folio": "500",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-18",
   "placed": true,
-  "folio": "598",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "537",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-19",
   "placed": true,
-  "folio": "623",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "579",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-20",
   "placed": true,
-  "folio": "441",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "387",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-21",
   "placed": true,
-  "folio": "443",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "389",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-22",
   "placed": true,
-  "folio": "445",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "391",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-23",
   "placed": true,
-  "folio": "448",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "394",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-24",
   "placed": true,
-  "folio": "451",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "397",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-25",
   "placed": true,
-  "folio": "454",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "400",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-26",
   "placed": true,
-  "folio": "457",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "403",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-27",
   "placed": true,
-  "folio": "460",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "406",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-28",
   "placed": true,
-  "folio": "462",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "408",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-29",
   "placed": true,
-  "folio": "465",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "410",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-30",
   "placed": true,
-  "folio": "467",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "412",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-31",
   "placed": true,
-  "folio": "469",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "414",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-32",
   "placed": true,
-  "folio": "472",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "416",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-33",
   "placed": true,
-  "folio": "474",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "419",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-34",
   "placed": true,
-  "folio": "476",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "422",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-35",
   "placed": true,
-  "folio": "480",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "426",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-36",
   "placed": true,
-  "folio": "483",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "429",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-37",
   "placed": true,
-  "folio": "485",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "431",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-38",
   "placed": true,
-  "folio": "488",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "434",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-39",
   "placed": true,
-  "folio": "491",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "437",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-40",
   "placed": true,
-  "folio": "493",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "439",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-41",
   "placed": true,
-  "folio": "495",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "442",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-42",
   "placed": true,
-  "folio": "497",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "444",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-43",
   "placed": true,
-  "folio": "500",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "447",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-44",
   "placed": true,
-  "folio": "503",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "450",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-45",
   "placed": true,
-  "folio": "505",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "453",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-46",
   "placed": true,
-  "folio": "508",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "455",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-47",
   "placed": true,
-  "folio": "510",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "457",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-48",
   "placed": true,
-  "folio": "512",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "459",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-49",
   "placed": true,
-  "folio": "515",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "462",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-50",
   "placed": true,
-  "folio": "518",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "465",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-51",
   "placed": true,
-  "folio": "521",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "468",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-52",
   "placed": true,
-  "folio": "523",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "470",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-53",
   "placed": true,
-  "folio": "526",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "473",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-54",
   "placed": true,
-  "folio": "529",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "475",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-55",
   "placed": true,
-  "folio": "532",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "478",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-56",
   "placed": true,
-  "folio": "535",
-  "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+  "folio": "481",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  },
  {
   "id": "FIG-57",
   "placed": true,
-  "folio": "409",
-  "semantic_status": "unified iconography 2026-10-07, pending independent review"
+  "folio": "360",
+  "semantic_status": "See production/qa/figure-semantic-review.json for current hash-bound review"
  }
 ]
