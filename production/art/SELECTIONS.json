@@ -12452,5 +12452,40 @@
    "max_print_w_in_300ppi": 5.027
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-HERO-CLASSES": {
+  "family": "world",
+  "title": "Wild Shape: the stag",
+  "heading_id": "h-613-hero-classes",
+  "route": "gpt",
+  "spec_sha256": "be5cd6958711be9a71bbf5bcef25d1f9ba6595ee80a64c6f2100a2d065a1e112",
+  "prompt_sha256": "52d8ede89f5aa292c49aef85d2a7ccf42e3e18d1d7732273a58bf3a7430305be",
+  "status": "received",
+  "received_at": "2026-10-31T16:27:40+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Thirteen percent tinted pixels; unusually bulky stag and excessive-looking antler arrangement.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-HERO-CLASSES.png",
+   "sha256": "5a88887bf848e10682447fc0a452d99047d3f02e2b572bcf8a7b7353a5a7518a",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-HERO-CLASSES.png",
+   "sha256": "0c79627b0341d073fd8d880d9e214eb48b0902955f38830a1b130dae60f9aa32",
+   "px": [
+    1510,
+    988
+   ],
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 5.033
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
