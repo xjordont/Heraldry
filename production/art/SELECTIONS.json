@@ -12112,5 +12112,38 @@
    "max_print_w_in_300ppi": 5.033
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-BACKGROUNDS": {
+  "family": "world",
+  "title": "The life left behind",
+  "heading_id": "h-610-backgrounds",
+  "route": "gpt",
+  "spec_sha256": "8978842b6d8cbaca29fb498e7fafdc1fde0ea35517582880bc29a08a30bec040",
+  "prompt_sha256": "b3855137532c8ae7dbfa0e3b66fbc5411c2f8858c41cd0cb13f50f3ea0b527b2",
+  "status": "received",
+  "received_at": "2026-10-31T16:10:17+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of ten percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-BACKGROUNDS.png",
+   "sha256": "150317fe67c8c0104734384f718ddcade23c6841242dd0e33dde2d1884b2fc7f",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-BACKGROUNDS.png",
+   "sha256": "0df5d81d1c14102f4717b3a7236829ba245c2d5cbcdae21c88e732ec5fa843e8",
+   "px": [
+    1478,
+    969
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.927
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
