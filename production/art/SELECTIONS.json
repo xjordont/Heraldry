@@ -11986,7 +11986,7 @@
   "route": "gpt",
   "spec_sha256": "4afb6a8e5da5ac6467d3b4e980523bae059eac67746f1c42f75afcfd22912951",
   "prompt_sha256": "0641ce2d3afcad469b75500fbad8ef5cf2630a4bdfd6f91be6417c2adc823892",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-31T16:04:25+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12010,7 +12010,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.217
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-31T16:05:03+00:00"
  },
  "ART-END-ACTION-POINTS-AND-SUMMONS": {
   "family": "world",
