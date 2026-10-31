@@ -12013,5 +12013,38 @@
    "max_print_w_in_300ppi": 4.88
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-ACTION-POINTS-AND-SUMMONS": {
+  "family": "world",
+  "title": "The imp dispelled",
+  "heading_id": "h-25-action-points-and-summons",
+  "route": "gpt",
+  "spec_sha256": "f459f73385c79fc5cde2d451fd3b0ef3005187fafe71864bc497d278c7a1a9ba",
+  "prompt_sha256": "08e14a721afc55ecebc8aeb5d076f6ff60df0d0cdfab2ed06ef52abe70983de4",
+  "status": "received",
+  "received_at": "2026-10-31T15:41:52+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of six percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-ACTION-POINTS-AND-SUMMONS.png",
+   "sha256": "3c2b00505a8b28b8466f3b513383215ad89fa644d48e889d27ffccf6869e6b6e",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-ACTION-POINTS-AND-SUMMONS.png",
+   "sha256": "b4e29a9a4d4ddec8c2c537639193392ad158f64504338eebafc220779434154b",
+   "px": [
+    1402,
+    991
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.673
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
