@@ -12886,15 +12886,15 @@
   "route": "gpt",
   "spec_sha256": "2678506013bbea5a89a7fba39ba07b8fe19ea1043286779750ab28f1c1bcc2eb",
   "prompt_sha256": "3703300be44e2e82e7c5fe73f20f6ce780633fcb8990455f0c6b44802cd56927",
-  "status": "rejected",
-  "received_at": "2026-10-31T21:01:14+00:00",
+  "status": "received",
+  "received_at": "2026-10-31T21:45:57+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "The blades must cross edge to edge in an X just above both crossguards, touching at the sparks; the falchion must be one continuous blade rising from its own guard. Blade shapes multiply and tips are cropped; colour check warns of tinted ink.",
+  "notes": "Exactly two weapons are shown: one straight longsword and one falchion, each with a single blade rising from its own crossguard. The falchion broad curved blade crosses the longsword; no third or extra straight blade appears. Both blade tips are cropped; automated check warns of tinted ink.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-THE-ATTACK-SEQUENCE.png",
-   "sha256": "d7fabe20c8df3eefa5ad8e36f30b77738a114a5244216dc0be832b6bcf144e6c",
+   "sha256": "7aae2f1d021d00269509085d90764a4abdf5350d7c64677a4d1138aca8d44ab2",
    "px": [
     1536,
     1024
@@ -12902,17 +12902,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-THE-ATTACK-SEQUENCE.png",
-   "sha256": "5832d38443622bee543714656943120c6e8a97d2fca6cbaa336c629136602ab6",
+   "sha256": "9dac91acd0203e465125c11a3f486b49c244b72bb18f25a042aedab84a82cef6",
    "px": [
-    1529,
-    991
+    1487,
+    989
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 5.097
+   "max_print_w_in_300ppi": 4.957
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-31T21:19:43+00:00",
-  "rejected_reason": "Exactly two weapons: one straight longsword and one falchion, each with one blade rising from its own crossguard; the falchion's single broad curved blade is the one that crosses the longsword. No third or extra straight blade anywhere."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-THE-BESTIARY": {
   "family": "world",
