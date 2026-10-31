@@ -13,7 +13,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 323 approved of 327; 23 generation-queue items.
+- **Illustration records:** 317 approved of 327; 29 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`bfb0ab92`](https://github.com/xjordont/Heraldry/commit/bfb0ab9227a0dd5dbc56981f2de31f530808d087) art: intake of ChatGPT Work images
+- [`c507020f`](https://github.com/xjordont/Heraldry/commit/c507020fcb8c3cddf6181d111264115237e0bd32) art(gpt): ART-END-GENERAL-TALENTS .. ART-END-GENERAL-TALENTS
+- [`ef2f2479`](https://github.com/xjordont/Heraldry/commit/ef2f2479faae2f9cc27d97e07a546625aa591313) Art review: redo ART-END-THE-BESTIARY (bell in the belfry the brief keeps empty)
+- [`93e8524a`](https://github.com/xjordont/Heraldry/commit/93e8524a36a50e79bae9a62e161b9b62c76cc47c) Art review: owner-spotted object errors; six more tailpiece redos
 - [`4c02d9dd`](https://github.com/xjordont/Heraldry/commit/4c02d9ddacfb7bfaaaeacadf43f632a9571b764b) art: intake of ChatGPT Work images
 - [`d7acc377`](https://github.com/xjordont/Heraldry/commit/d7acc3771d34e687ff3d5370f9ad35b6f3ce1cd5) art(gpt): ART-END-THE-BESTIARY .. ART-END-THE-BESTIARY
-- [`66aff762`](https://github.com/xjordont/Heraldry/commit/66aff762733f8a2e8bed9fccc400aa4a39287d8b) Art review: approve 22 tailpieces; redo the stag, the hidden archer and the parry
-- [`6d7c1b13`](https://github.com/xjordont/Heraldry/commit/6d7c1b132e029d269a9db91b4ae9a5fa0afb5c65) art: intake of ChatGPT Work images
-- [`cefe31d5`](https://github.com/xjordont/Heraldry/commit/cefe31d5f503ee4bd124cb72e92feaefe0524aee) art(gpt): ART-END-THE-ATTACK-SEQUENCE .. ART-END-THE-ATTACK-SEQUENCE
-- [`f2d326ab`](https://github.com/xjordont/Heraldry/commit/f2d326abd273a1d6aacbc1033b4eafec94bae4f1) art: intake of ChatGPT Work images
 
 <!-- END AUTO:recent -->
 
