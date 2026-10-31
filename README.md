@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`0c1878c9`](https://github.com/xjordont/Heraldry/commit/0c1878c97c6b2c2cf9c399ac2a913e1b47dd6039) RC524 and RC525: comprehensive italic-lore fixes and final Section 1 polish
 - [`10f37214`](https://github.com/xjordont/Heraldry/commit/10f37214c21235892df9a667fa9a0e520918032a) State: the last recorded delivery is RC522-build-39, not build-38
 - [`b47d8932`](https://github.com/xjordont/Heraldry/commit/b47d89323dfeb69d41313923a455db55dc5a2e88) RC523: Section 1 lore review; cohesion with the bestiary, Bosses, and scenarios
 - [`c36eb1dc`](https://github.com/xjordont/Heraldry/commit/c36eb1dcb1a4afca6bfe108349290d21d3286acd) editorial: draft RC522 lore review and proposed RC523 patch batch for owner decision
 - [`1c5897b5`](https://github.com/xjordont/Heraldry/commit/1c5897b54032a2d55bd5cb40a0244ea2b9cc3831) Record release workflow result
 - [`7b6b0e2a`](https://github.com/xjordont/Heraldry/commit/7b6b0e2ab2d31381dc3009db372c9a4d06db3b3a) Rebuild verified RC522 delivery
-- [`1cabee70`](https://github.com/xjordont/Heraldry/commit/1cabee70afb4f4a27ca34342f55e78e41adec391) review: bind the all-page visual review for candidate 20261030T175001Z
 
 <!-- END AUTO:recent -->
 
