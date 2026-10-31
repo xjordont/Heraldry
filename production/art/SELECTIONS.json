@@ -12088,15 +12088,15 @@
   "route": "gpt",
   "spec_sha256": "f1aea8a1a7b8344e75c01a01804099ec03158a51a2e90f0086b7f0dd4ae8ba39",
   "prompt_sha256": "455b0666c17a53514c6ff17ff29480e4d947c74cab50467bfca046d0726e3d6b",
-  "status": "rejected",
-  "received_at": "2026-10-31T16:09:03+00:00",
+  "status": "received",
+  "received_at": "2026-10-31T19:51:18+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Automated check warns of nine percent tinted ink pixels.",
+  "notes": "Correction: the Scout shortsword sits in a scabbard hanging from the belt, with only its hilt showing. Keep the prone scouting pose and the distant ruin. Flag: seven percent tinted pixels.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-ADVENTURE-PREPARATION-SEQUENCE.png",
-   "sha256": "3e10334b5bc17a7e06a0a73daca2fec802c3a5a2a3e506bb8d8229ff01bf4d8f",
+   "sha256": "b414f6f6e8164a85d7279692441262405f83d4fd20183cfc84bb4b1b3bc152c2",
    "px": [
     1536,
     1024
@@ -12104,18 +12104,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-ADVENTURE-PREPARATION-SEQUENCE.png",
-   "sha256": "e14e0b3b3c5389e14d82ec4bda6b01a8bed36d909f2ae2c2ef6cc825b8eddc83",
+   "sha256": "7430b5aea858919044ddbf192c01a779362eb20c388e9428a5fdd1dc78638473",
    "px": [
-    1510,
-    881
+    1516,
+    858
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 5.033
+   "max_print_w_in_300ppi": 5.053
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T19:36:14+00:00",
-  "rejected_at": "2026-10-31T19:45:01+00:00",
-  "rejected_reason": "The Scout's shortsword must sit in a scabbard hanging from the belt, only its hilt showing; no bare blade hangs loose at the hip."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-BACKGROUNDS": {
   "family": "world",
