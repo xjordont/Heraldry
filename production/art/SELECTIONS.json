@@ -12790,5 +12790,38 @@
    "max_print_w_in_300ppi": 5.04
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-SOLO-AND-COOPERATIVE-PLAY": {
+  "family": "world",
+  "title": "The costly escape",
+  "heading_id": "h-105-solo-and-cooperative-play",
+  "route": "gpt",
+  "spec_sha256": "d65c69ee3f1cf3dee8d463b0f33ad17d62042105702272caa12f2021051483aa",
+  "prompt_sha256": "9233489c8091d3f0c7d27c0d85474afe138ce0dae09d8c41ae3eeb4ff27a26ad",
+  "status": "received",
+  "received_at": "2026-10-31T19:24:48+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of nine percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-SOLO-AND-COOPERATIVE-PLAY.png",
+   "sha256": "0322db6cc304d2a7ec318c2e3a41f3d515847b19c32c8d2ab8498318927845e0",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-SOLO-AND-COOPERATIVE-PLAY.png",
+   "sha256": "de1c059b8dd5af2fe65bf01db35323b1235c75a51184716cfe2446f51ad94f3f",
+   "px": [
+    1493,
+    948
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.977
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
