@@ -13324,5 +13324,38 @@
    "max_print_w_in_300ppi": 4.85
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE": {
+  "family": "item",
+  "title": "The pierced breastplate",
+  "heading_id": "h-53-critical-hits-and-exploding-damage-dice",
+  "route": "gpt",
+  "spec_sha256": "eed076fc20a7e6cd6fe1f527b282176ace55d5c8bba1cd830cfa9bedceb6a1e2",
+  "prompt_sha256": "72a01e72cf6d0684a8e5d9dbc9a27d341f116ee7e16816aa5dfcc1e14b94dd94",
+  "status": "received",
+  "received_at": "2026-10-31T21:56:40+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of tinted ink and possible soft shading.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE.png",
+   "sha256": "4bcb9f5e558f7ffefa79f52a873fbbeeaeadc82ffdaaa0c686d64eee7a9a4ab2",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE.png",
+   "sha256": "6c1dfbffab15a954fcd221b58e76e1f89466e75da7e1437bbf38adce14af8a9a",
+   "px": [
+    1464,
+    890
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.88
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
