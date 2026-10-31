@@ -12520,5 +12520,40 @@
    "max_print_w_in_300ppi": 5.04
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-LEGENDARY-VETERANS": {
+  "family": "world",
+  "title": "Warden of the Threshold",
+  "heading_id": "h-114-legendary-veterans",
+  "route": "gpt",
+  "spec_sha256": "6170b6027b4af5547a6f763cab7123a14818c899554f54b9ac0bbcaf58c870bb",
+  "prompt_sha256": "9634e9be6a50a880ec3a1d16db999b894bef345998e125fa2438105cbc354cdd",
+  "status": "received",
+  "received_at": "2026-10-31T16:30:38+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check fails at eighteen percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-LEGENDARY-VETERANS.png",
+   "sha256": "f20ba3bda507a13d74e8c874efe4c9661f1290b876143229fd40a22812c9e73a",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-LEGENDARY-VETERANS.png",
+   "sha256": "5c793d26e00ed07223cd83fdcd8037f5a0e5c51e5a45c8872f9d23662b275559",
+   "px": [
+    1473,
+    974
+   ],
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 4.91
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
