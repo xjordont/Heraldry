@@ -1,13 +1,13 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-31T19:45:01+00:00",
+ "generated_at": "2026-10-31T19:45:23+00:00",
  "max_references": 5,
  "push_every": 1,
  "review_every": 10,
  "receipts_base": 454,
  "target_pixels": 1572864,
- "count": 28,
+ "count": 29,
  "items": [
   {
    "id": "ART-END-ADVENTURE-PREPARATION-SEQUENCE",
@@ -214,6 +214,29 @@
     "No full figures.",
     "No glow or motion blur.",
     "No gore."
+   ]
+  },
+  {
+   "id": "ART-END-THE-BESTIARY",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "none",
+   "title": "The drowned bell tower",
+   "prompt": "production/art/gpt/prompts/ART-END-THE-BESTIARY.txt",
+   "prompt_sha256": "b8f4c97ebbf00229cdf44880991380d5dfcc9fec2d246d63498f7f810b6c6a60",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Only one coil of the wyrm is visible; no head, wings or full body"
+   ],
+   "avoid": [
+    "No lettering, numbers, dice, game tokens, or rulebook pages.",
+    "No full dragon and no breath.",
+    "Not the Black Dragon or Vossegar portraits, and not the Serpent's Sunken Hoard sinkhole.",
+    "No figures."
    ]
   },
   {
