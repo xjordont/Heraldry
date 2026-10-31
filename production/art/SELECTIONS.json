@@ -12398,7 +12398,7 @@
   "route": "gpt",
   "spec_sha256": "599c02bd3b9f47e9eb1870efeba44dc13b49d19639d37bed75ccb5e3dd9d9e4b",
   "prompt_sha256": "e46adcfdfeb940a4e3a323853a9bfe1e8caecfebe9b54ce3192c30c912521c0d",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-31T20:51:49+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12424,7 +12424,8 @@
    ],
    "max_print_w_in_300ppi": 5.01
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-31T21:19:43+00:00"
  },
  "ART-END-HERO-ADVANCEMENT": {
   "family": "world",
@@ -12433,7 +12434,7 @@
   "route": "gpt",
   "spec_sha256": "2c761866776e5016eb01594be7a5806600d09ab0da5da54c1e171875ff038a28",
   "prompt_sha256": "2d4d273c53083cbca498baca9aa182ee5913304ed6e03beb6a4d8e15955b133f",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-31T20:53:37+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12459,7 +12460,8 @@
    ],
    "max_print_w_in_300ppi": 5.06
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-31T21:19:43+00:00"
  },
  "ART-END-HERO-CLASSES": {
   "family": "world",
@@ -12468,7 +12470,7 @@
   "route": "gpt",
   "spec_sha256": "be5cd6958711be9a71bbf5bcef25d1f9ba6595ee80a64c6f2100a2d065a1e112",
   "prompt_sha256": "52d8ede89f5aa292c49aef85d2a7ccf42e3e18d1d7732273a58bf3a7430305be",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-31T20:55:18+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12494,7 +12496,9 @@
    ],
    "max_print_w_in_300ppi": 4.927
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-31T21:19:43+00:00",
+  "rejected_reason": "The stag's body must end in plain hindquarters: rump, short tail and two hind legs pushing off the ground, with nothing at the rear that looks like a second head or muzzle; one head only, at the front, carrying the antlers."
  },
  "ART-END-HIRELINGS": {
   "family": "world",
@@ -12709,7 +12713,7 @@
   "route": "gpt",
   "spec_sha256": "987a2d375838f5e2e89a3e753bca149c843587217755daafd121864d0b635f4d",
   "prompt_sha256": "89b6c2835722ff67b2cef9b9c7ec43875a4001a9272acc9a0b68eae5e7c8dd08",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-31T20:57:34+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12733,7 +12737,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.103
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-31T21:19:43+00:00",
+  "rejected_reason": "The Party Leader's shortsword is sheathed: a scabbard hangs from the belt with only the hilt showing above it; no bare blade hangs at the hip."
  },
  "ART-END-RANDOM-ANCESTRY-TABLES": {
   "family": "world",
@@ -12742,7 +12748,7 @@
   "route": "gpt",
   "spec_sha256": "995c975f9502a94a7aff64e59ddd725824ca9eadff430a4f7c2d143cd90273ac",
   "prompt_sha256": "8c9bb827698fc52d973079044400ae1d6db5cfaf54adedb86549258dce39c387",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-31T20:59:30+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12768,7 +12774,8 @@
    ],
    "max_print_w_in_300ppi": 5.007
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-31T21:19:43+00:00"
  },
  "ART-END-RANDOM-MONSTER-GENERATION-TABLES": {
   "family": "world",
@@ -12883,7 +12890,7 @@
   "route": "gpt",
   "spec_sha256": "2678506013bbea5a89a7fba39ba07b8fe19ea1043286779750ab28f1c1bcc2eb",
   "prompt_sha256": "3703300be44e2e82e7c5fe73f20f6ce780633fcb8990455f0c6b44802cd56927",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-31T21:01:14+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12907,7 +12914,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.097
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-31T21:19:43+00:00",
+  "rejected_reason": "Exactly two weapons: one straight longsword and one falchion, each with one blade rising from its own crossguard; the falchion's single broad curved blade is the one that crosses the longsword. No third or extra straight blade anywhere."
  },
  "ART-END-THE-BESTIARY": {
   "family": "world",
@@ -12916,7 +12925,7 @@
   "route": "gpt",
   "spec_sha256": "df1653fdd8fa87015f8b1f41aeae8c6b75b3e66f81d35d60c22865b2f3de7dc9",
   "prompt_sha256": "b8f4c97ebbf00229cdf44880991380d5dfcc9fec2d246d63498f7f810b6c6a60",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-31T21:02:56+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12942,7 +12951,8 @@
    ],
    "max_print_w_in_300ppi": 4.98
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-31T21:19:43+00:00"
  },
  "ART-END-THE-CAMPAIGN-CYCLE": {
   "family": "world",
@@ -12951,7 +12961,7 @@
   "route": "gpt",
   "spec_sha256": "336883507b895b29e297a2a5ecc091b59c0f0052d8ed63b8c1b31a43e94fe5cd",
   "prompt_sha256": "b943bebc1d8d2eaa1bc67cc6e1d1ff81ba234ebfdb28c64b0166d642175b1f0a",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-31T21:04:31+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12977,7 +12987,8 @@
    ],
    "max_print_w_in_300ppi": 4.953
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-31T21:19:43+00:00"
  },
  "ART-END-UNIVERSAL-ACTIONS": {
   "family": "world",
@@ -12986,7 +12997,7 @@
   "route": "gpt",
   "spec_sha256": "904968f9c164f50f6ea11633cb0ee6209b601e3c9e36ee1e1f86d3175cbbb8e7",
   "prompt_sha256": "c17fbaa664c8b82084b3b75b2ae82752e050849acb6027ec4b80cb2ddbe4a6bc",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-31T21:06:16+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13010,7 +13021,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.03
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-31T21:19:43+00:00"
  },
  "ART-END-WEATHER-TABLES-BY-CLIMATE": {
   "family": "world",
@@ -13019,7 +13031,7 @@
   "route": "gpt",
   "spec_sha256": "c8e99a77a3d7c72c38fbcf5437bb27685172dcadbef1ece68346593edf6d66dd",
   "prompt_sha256": "3465c6fd265717db846a584bf4f7d1a7df93afd9b7274dd4140a4c8ddc8e88e4",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-31T21:08:29+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13043,7 +13055,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.993
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-31T21:19:43+00:00"
  },
  "ART-END-WHAT-IS-HERALDRY-SKIRMISH": {
   "family": "world",
@@ -13052,7 +13065,7 @@
   "route": "gpt",
   "spec_sha256": "8a9a62c8e163536af934724dc114f6afbddd0d959d494356d8c7725b834ff7c7",
   "prompt_sha256": "4bcfe318070d88e22341af6b09e8094764b62242b6ea40cc0dfcd5849cb533ba",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-31T21:10:25+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13078,7 +13091,8 @@
    ],
    "max_print_w_in_300ppi": 5.063
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-31T21:19:43+00:00"
  },
  "ART-END-DIVINE-PRAYERS": {
   "family": "tradition",
@@ -13087,7 +13101,7 @@
   "route": "gpt",
   "spec_sha256": "4ede609415bc134c199cc277476bf3f45a6264e046ff77c4c4b42434eeed1243",
   "prompt_sha256": "82b373b2c967fc01d3582853f8fb8697b83cbb5e83d11bc37cb7a21b15b5d235",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-31T21:12:32+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13111,7 +13125,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.01
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-31T21:19:43+00:00"
  },
  "ART-END-DRUIDIC-RITUALS": {
   "family": "tradition",
@@ -13120,7 +13135,7 @@
   "route": "gpt",
   "spec_sha256": "e7c6fb3c36a99d046b450d7f7487a9c8cee550b5b3068a1a6e0899e7889652ff",
   "prompt_sha256": "4c93f8026293512668358de88ecd409861737775c1925ad7b1de30a80c6d4357",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-31T21:14:19+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13146,6 +13161,7 @@
    ],
    "max_print_w_in_300ppi": 5.113
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-31T21:19:43+00:00"
  }
 }
