@@ -12709,15 +12709,15 @@
   "route": "gpt",
   "spec_sha256": "987a2d375838f5e2e89a3e753bca149c843587217755daafd121864d0b635f4d",
   "prompt_sha256": "89b6c2835722ff67b2cef9b9c7ec43875a4001a9272acc9a0b68eae5e7c8dd08",
-  "status": "rejected",
-  "received_at": "2026-10-31T19:10:41+00:00",
+  "status": "received",
+  "received_at": "2026-10-31T20:57:34+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Automated check warns of eight percent tinted ink pixels.",
+  "notes": "Every item must be whole and separate: the Elf shortbow is held or slung with string attached at both tips and separated from the Dwarf shield. Bow string and lower tip cannot be clearly traced.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-PARTY-STRUCTURE.png",
-   "sha256": "18eb6766edbc040c39b3732ce39c25452c9644d302d2c4196c925cbcaa1c7f86",
+   "sha256": "221b273980e79d45e562f6472fbebaa43cce5445457be336c5a395ac64a8a356",
    "px": [
     1536,
     1024
@@ -12725,18 +12725,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-PARTY-STRUCTURE.png",
-   "sha256": "4cfd783f300a46bc9662cfee5e2eb8b948832627175915445f5c0d8f05106c5f",
+   "sha256": "8677f62dded4d9fbfe778c667c4a04b9e7ca619384b2c1d65999740bdc3109e5",
    "px": [
-    1501,
-    995
+    1531,
+    1003
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 5.003
+   "max_print_w_in_300ppi": 5.103
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T19:36:14+00:00",
-  "rejected_at": "2026-10-31T19:43:20+00:00",
-  "rejected_reason": "Every item must be whole and separate: the Elf's shortbow is either held in one hand or slung on the back with its string attached at both tips, and no bow limb or string touches or merges into the Dwarf's shield."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-RANDOM-ANCESTRY-TABLES": {
   "family": "world",
