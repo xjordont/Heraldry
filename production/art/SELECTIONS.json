@@ -12187,15 +12187,15 @@
   "route": "gpt",
   "spec_sha256": "b16d910cff26e51959b178f27db4f59b4e9c64ce187c41c140903d5363b46598",
   "prompt_sha256": "2d9652dbea9f33e2f9d57a7c5fe85eeec771d2f50030b3e09361d03e2d59bbdb",
-  "status": "rejected",
-  "received_at": "2026-10-31T16:13:24+00:00",
+  "status": "received",
+  "received_at": "2026-10-31T20:08:46+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Automated check warns of four percent tinted ink pixels.",
+  "notes": "Correction: the Dwarf pick is one whole tool with a straight wooden haft from the gripping hand to an iron head with a point on one side and a flat blade on the other, with no stray hanging lines. Keep the lightless gallery and both figures. Flag: seven percent tinted pixels.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-COMMON-TRAIT-RULES.png",
-   "sha256": "059e249aae09f5964b12bc49e0ec065d1483514f531f7c6d8c2a49fb011d8ebe",
+   "sha256": "99a15527d8e04b13eeffb7ebadefb839d781f22711b313e2780038b9a1105662",
    "px": [
     1536,
     1024
@@ -12203,18 +12203,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-COMMON-TRAIT-RULES.png",
-   "sha256": "e916deba97090bee82bee0fae69d8e43cece8e9a64eb69646b9b335b891a4717",
+   "sha256": "9b1e2f8e7263f0dd9bc05ea8e83e69a1864305a04d054698650bc87f808a12c6",
    "px": [
-    1496,
-    995
+    1442,
+    1009
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.987
+   "max_print_w_in_300ppi": 4.807
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T19:36:14+00:00",
-  "rejected_at": "2026-10-31T19:43:19+00:00",
-  "rejected_reason": "The Dwarf's pick must be one whole, believable tool: a straight wooden haft running from his gripping hand to an iron head with a point on one side and a flat blade on the other, both fixed on the haft; no stray lines hanging from the beams."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-CONDITIONS": {
   "family": "world",
