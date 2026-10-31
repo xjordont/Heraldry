@@ -13238,15 +13238,15 @@
   "route": "gpt",
   "spec_sha256": "137a3b8e64793f79a56a649d20c84128319606de7531796688072a89eded6873",
   "prompt_sha256": "3842b1fe3ba8d953dc8c32ff2f81c1ee006f9b8d3a7c4ee36f316a22d13c850c",
-  "status": "rejected",
-  "received_at": "2026-10-31T21:51:00+00:00",
+  "status": "received",
+  "received_at": "2026-10-31T22:18:45+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Automated check warns of 3% tinted-ink pixels.",
+  "notes": "Draw true caltrops, not flat throwing stars: each has four short iron spikes joined at the centre so one points up whichever way it lands, with a few spilled from the sack. Only two hook prongs are visible; automated check warns of tinted ink.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-ADVENTURING-EQUIPMENT.png",
-   "sha256": "a397565848bdcdbda8a3a0fb3f523a9d6ce224f000f6888e0dba2d1beba3d190",
+   "sha256": "d68e7f8ddb207c803e993682ba066f948c428806f3341431b5439c72ac9abd2f",
    "px": [
     1536,
     1024
@@ -13254,17 +13254,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-ADVENTURING-EQUIPMENT.png",
-   "sha256": "a168b4768dec2cedd89e825fe4de95cc0719ebd786ae107bacfda5533bedd6fb",
+   "sha256": "17d7be5e835ef584fe298e9c90a32677cd662e162331fbd8f23928b6b2cedee0",
    "px": [
-    1440,
-    884
+    1452,
+    845
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.8
+   "max_print_w_in_300ppi": 4.84
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-31T22:13:20+00:00",
-  "rejected_reason": "Draw true caltrops, not flat throwing stars: each caltrop is four short iron spikes joined at the centre so one always points up whichever way it lands, a few spilled from the sack."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-ARMOUR": {
   "family": "item",
