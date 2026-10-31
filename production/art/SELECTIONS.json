@@ -13192,5 +13192,38 @@
    "max_print_w_in_300ppi": 5.017
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-SORCERIES": {
+  "family": "tradition",
+  "title": "Blood Flicker",
+  "heading_id": "h-85-sorceries",
+  "route": "gpt",
+  "spec_sha256": "f8867331c6306f5f9df5e7418bf239ee241dbc572851d5b5c4d7be8e1d12ac25",
+  "prompt_sha256": "728dca86bec6172733d469853957b881ee0862221cf2b542cd2a7d908483d8e5",
+  "status": "received",
+  "received_at": "2026-10-31T21:49:22+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "The free hand does not press the cut wrist; automated check warns of tinted ink.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-SORCERIES.png",
+   "sha256": "cf6a108e3ea951fe102bed745d374c9a3c2963d02ecb18ae7e57f9d0526085af",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-SORCERIES.png",
+   "sha256": "e21b16f60a4656f6ffcc698705241b8a83edc7f8c47938c4af15dcc1d5db0fb2",
+   "px": [
+    1481,
+    927
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.937
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
