@@ -13,7 +13,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 301 approved of 319; 45 generation-queue items.
+- **Illustration records:** 301 approved of 320; 45 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`d8e53daa`](https://github.com/xjordont/Heraldry/commit/d8e53daa0f3f2a71743c07dac68210ef758dfbbb) art: intake of ChatGPT Work images
+- [`d0612ad4`](https://github.com/xjordont/Heraldry/commit/d0612ad4d4c53f20a4d18989718fbdfa0f86dd5e) art(gpt): ART-END-PARTY-PHASE .. ART-END-PARTY-PHASE
 - [`ef846474`](https://github.com/xjordont/Heraldry/commit/ef8464743b685e1e6e8600f45d3b508541ef3657) art: intake of ChatGPT Work images
 - [`ccd22920`](https://github.com/xjordont/Heraldry/commit/ccd22920291e7bdefe7df13272523d45eef74222) art(gpt): ART-END-MOVEMENT-RULES .. ART-END-MOVEMENT-RULES
 - [`d7c7b66d`](https://github.com/xjordont/Heraldry/commit/d7c7b66de3e504cbb8a32b39ce6cb3f979bf3736) art: intake of ChatGPT Work images
 - [`c71ee8b6`](https://github.com/xjordont/Heraldry/commit/c71ee8b6119e5bd0f3c24926e3bf61b79f18d555) art(gpt): ART-END-MONSTER-PLACEMENT-AND-INITIAL-STATE .. ART-END-MONSTER-PLACEMENT-AND-INITIAL-STATE
-- [`727fdb51`](https://github.com/xjordont/Heraldry/commit/727fdb5189c6c800d977731efa611dd6e60ac86f) art: intake of ChatGPT Work images
-- [`f2ab917e`](https://github.com/xjordont/Heraldry/commit/f2ab917ec2284f0b6c7e0fb046c131bc0d8d2843) art(gpt): ART-END-MONSTER-PHASE .. ART-END-MONSTER-PHASE
 
 <!-- END AUTO:recent -->
 
