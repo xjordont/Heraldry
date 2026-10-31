@@ -13044,5 +13044,40 @@
    "max_print_w_in_300ppi": 4.993
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-WHAT-IS-HERALDRY-SKIRMISH": {
+  "family": "world",
+  "title": "Rivals at the chest",
+  "heading_id": "h-11-what-is-heraldry-skirmish",
+  "route": "gpt",
+  "spec_sha256": "8a9a62c8e163536af934724dc114f6afbddd0d959d494356d8c7725b834ff7c7",
+  "prompt_sha256": "4bcfe318070d88e22341af6b09e8094764b62242b6ea40cc0dfcd5849cb533ba",
+  "status": "received",
+  "received_at": "2026-10-31T21:10:25+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Colour check reports tinted ink.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-WHAT-IS-HERALDRY-SKIRMISH.png",
+   "sha256": "527623d9ce1048dc4a4b4084930eca66026503f49553de62e52b97026611241d",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-WHAT-IS-HERALDRY-SKIRMISH.png",
+   "sha256": "19110c72a1b241d84a9acee879efde123d6af877057ca53c2f3c558bc4276e7c",
+   "px": [
+    1519,
+    966
+   ],
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 5.063
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
