@@ -13,7 +13,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 316 approved of 327; 28 generation-queue items.
+- **Illustration records:** 320 approved of 327; 26 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`b1c992cb`](https://github.com/xjordont/Heraldry/commit/b1c992cbcf9a11b8ebc0a365e52293c05eb46b19) Art review: approve four tailpiece redos; the hidden archer goes back once more
 - [`eebdb90a`](https://github.com/xjordont/Heraldry/commit/eebdb90a3dc1ecf3f3da17994f9e9a9da201302f) art: intake of ChatGPT Work images
 - [`e6ea390e`](https://github.com/xjordont/Heraldry/commit/e6ea390e3258492beb4beb9826dea24bd438ff5f) art(gpt): ART-END-COMMON-TRAIT-RULES .. ART-END-COMMON-TRAIT-RULES
 - [`81371c70`](https://github.com/xjordont/Heraldry/commit/81371c70ef38d76d0335fc70d340069920e0816a) art: intake of ChatGPT Work images
 - [`23d9789e`](https://github.com/xjordont/Heraldry/commit/23d9789efd2e1330041f6eca3a8f0bd2fe41ef26) art(gpt): ART-END-ACTION-BASICS .. ART-END-ACTION-BASICS
 - [`5488c561`](https://github.com/xjordont/Heraldry/commit/5488c561b99a67e64c4a91cd938a54b9d6ec89ea) art: intake of ChatGPT Work images
-- [`a75ee11d`](https://github.com/xjordont/Heraldry/commit/a75ee11dcd011fb6314cfb3f0077bb2956ef2809) art(gpt): ART-END-COMBAT-BASICS .. ART-END-COMBAT-BASICS
 
 <!-- END AUTO:recent -->
 
