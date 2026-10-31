@@ -13,7 +13,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 330 approved of 346; 16 generation-queue items.
+- **Illustration records:** 345 approved of 346; 1 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`14125c31`](https://github.com/xjordont/Heraldry/commit/14125c3185f91ebd10f1bc2da765ea61bbdb50fd) Art review: approve 15 tailpieces; redo the caltrops
 - [`f6dbef80`](https://github.com/xjordont/Heraldry/commit/f6dbef802180ecc0516ac5a4220cb5aa8e2c013a) art: intake of ChatGPT Work images
 - [`016c0874`](https://github.com/xjordont/Heraldry/commit/016c0874998d626c216dee44dc2af76c99cbc732) art(gpt): ART-END-SCROLLS .. ART-END-SCROLLS
 - [`e972ee7e`](https://github.com/xjordont/Heraldry/commit/e972ee7e600e8a4b32ecc3253383179b5a8206a9) art: intake of ChatGPT Work images
 - [`d5a5cddc`](https://github.com/xjordont/Heraldry/commit/d5a5cddc970d6b56dd985771be0ead0d238fd160) art(gpt): ART-END-READING-A-SCENARIO-BEFORE-SETUP .. ART-END-READING-A-SCENARIO-BEFORE-SETUP
 - [`572add7b`](https://github.com/xjordont/Heraldry/commit/572add7ba3cb1a13babf21d3d34a3879bb12eb11) art: intake of ChatGPT Work images
-- [`1519c6d4`](https://github.com/xjordont/Heraldry/commit/1519c6d4af2d0687902f7ca0be71ea20cdab1531) art(gpt): ART-END-RANGED-WEAPONS .. ART-END-RANGED-WEAPONS
 
 <!-- END AUTO:recent -->
 
