@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`86c09413`](https://github.com/xjordont/Heraldry/commit/86c0941314806680e4f51c0f82cd8290ba8fc19d) art: intake of ChatGPT Work images
+- [`e0b9a333`](https://github.com/xjordont/Heraldry/commit/e0b9a333dfcf8340dffd4422a3eeb907a91b7f8c) art(gpt): ART-END-THE-ATTACK-SEQUENCE .. ART-END-THE-ATTACK-SEQUENCE
 - [`44f5b9f6`](https://github.com/xjordont/Heraldry/commit/44f5b9f671ae24a9d587a33b79483fa0e4adfa56) art: intake of ChatGPT Work images
 - [`a3edbfb1`](https://github.com/xjordont/Heraldry/commit/a3edbfb1a0e3776ff650314c1b258e50ccef6442) art(gpt): ART-END-PARTY-STRUCTURE .. ART-END-PARTY-STRUCTURE
 - [`ded2073a`](https://github.com/xjordont/Heraldry/commit/ded2073aba54c71aca8603f19226f2480859920e) art: intake of ChatGPT Work images
 - [`02a470ed`](https://github.com/xjordont/Heraldry/commit/02a470ed64d1eda83a934a576ddf836f181fe029) art(gpt): ART-END-HERO-CLASSES .. ART-END-HERO-CLASSES
-- [`9ccd5af7`](https://github.com/xjordont/Heraldry/commit/9ccd5af7f0094909045e2bfc67aec780c943f403) Art review: approve ten tailpieces; redo the stag, the colonnade leader's sword and the parry
-- [`2dfda3f3`](https://github.com/xjordont/Heraldry/commit/2dfda3f3c5222a15a652c421cb1406cf3f0b0dc9) art: intake of ChatGPT Work images
 
 <!-- END AUTO:recent -->
 
