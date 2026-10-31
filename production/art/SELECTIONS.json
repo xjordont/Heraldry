@@ -12654,5 +12654,38 @@
    "max_print_w_in_300ppi": 5.01
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-PARTY-PHASE": {
+  "family": "world",
+  "title": "One moves, one waits",
+  "heading_id": "h-33-party-phase",
+  "route": "gpt",
+  "spec_sha256": "2a8d8a3331a428a3b1a0a6ba9c90346e2d3ac43f29254948eb6ad46143429a25",
+  "prompt_sha256": "8d787e6f587e9740a53fea788d575d96fe019c72a0785c008378cb54279dc69c",
+  "status": "received",
+  "received_at": "2026-10-31T19:05:24+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of eight percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-PARTY-PHASE.png",
+   "sha256": "a64de0e2ac3a341e18ee9a7b3f75fbd3b8239148fb5ef0e8c1bae25053f1ddce",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-PARTY-PHASE.png",
+   "sha256": "34455817d5a48b4267d31797587f9d05bff955853c0a7a4048d26899341f6d34",
+   "px": [
+    1499,
+    986
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.997
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
