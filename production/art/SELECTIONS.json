@@ -12281,5 +12281,38 @@
    "max_print_w_in_300ppi": 4.447
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-CORE-TERMS": {
+  "family": "world",
+  "title": "Hero, Hireling, and Monster",
+  "heading_id": "h-21-core-terms",
+  "route": "gpt",
+  "spec_sha256": "687361997849067c44c6dc5411dd1f28657241062d19667f01342b8a479f331f",
+  "prompt_sha256": "956efbdf0fe9ba02a392b41a8baee787aa289a70d388cf12d7da6a98301240a8",
+  "status": "received",
+  "received_at": "2026-10-31T16:17:57+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of eight percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-CORE-TERMS.png",
+   "sha256": "7cc1fb4897719e9ae065650ab22a93025e17ae5c7c8de06dd4da277970139744",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-CORE-TERMS.png",
+   "sha256": "63a30aed044e71d39b2c1424a721ac7cfb1b467cde99da2f39456efc94311c0b",
+   "px": [
+    1526,
+    929
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.087
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
