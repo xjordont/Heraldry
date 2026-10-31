@@ -12621,5 +12621,38 @@
    "max_print_w_in_300ppi": 5.087
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-MOVEMENT-RULES": {
+  "family": "world",
+  "title": "The leap between roofs",
+  "heading_id": "h-44-movement-rules",
+  "route": "gpt",
+  "spec_sha256": "824b171863d892c2a27ff156bf17ef4c12f5a4ecca903082696b9796e64dd560",
+  "prompt_sha256": "2a3d2ee7935686442a6f31e46fdee6eca3f1bf494338b9bb727ac2ae5424c48e",
+  "status": "received",
+  "received_at": "2026-10-31T19:00:11+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of six percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-MOVEMENT-RULES.png",
+   "sha256": "03d3d2f2acf37670abeff6967c6578430d2266f355d899fcff67134c3c6cf012",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-MOVEMENT-RULES.png",
+   "sha256": "2b0750f421183ff8f0bb5108ea4048cd5affedb3aba51599e9fdfa04f3ac3992",
+   "px": [
+    1503,
+    982
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.01
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
