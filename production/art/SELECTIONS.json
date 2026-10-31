@@ -12088,7 +12088,7 @@
   "route": "gpt",
   "spec_sha256": "f1aea8a1a7b8344e75c01a01804099ec03158a51a2e90f0086b7f0dd4ae8ba39",
   "prompt_sha256": "455b0666c17a53514c6ff17ff29480e4d947c74cab50467bfca046d0726e3d6b",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T16:09:03+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12113,7 +12113,9 @@
    "max_print_w_in_300ppi": 5.033
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T19:36:14+00:00"
+  "approved_at": "2026-10-31T19:36:14+00:00",
+  "rejected_at": "2026-10-31T19:45:01+00:00",
+  "rejected_reason": "The Scout's shortsword must sit in a scabbard hanging from the belt, only its hilt showing; no bare blade hangs loose at the hip."
  },
  "ART-END-BACKGROUNDS": {
   "family": "world",
@@ -12156,7 +12158,7 @@
   "route": "gpt",
   "spec_sha256": "1b7fa91070c28bcc4b812583b13f0e71b711036ba25cb64dd6179a67a0faee74",
   "prompt_sha256": "ca2f11a54dbc4324926a137ee2ee960b93ccb798c955c85232aa4f57d81a4297",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T16:11:39+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12183,7 +12185,9 @@
    "max_print_w_in_300ppi": 5.053
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T19:36:14+00:00"
+  "approved_at": "2026-10-31T19:36:14+00:00",
+  "rejected_at": "2026-10-31T19:45:01+00:00",
+  "rejected_reason": "The Hero holds exactly one shortsword, gripped in the right hand with the hand visible on the hilt, and carries no second sword; the targe is strapped to the left forearm."
  },
  "ART-END-COMMON-TRAIT-RULES": {
   "family": "world",
@@ -12192,7 +12196,7 @@
   "route": "gpt",
   "spec_sha256": "b16d910cff26e51959b178f27db4f59b4e9c64ce187c41c140903d5363b46598",
   "prompt_sha256": "2d9652dbea9f33e2f9d57a7c5fe85eeec771d2f50030b3e09361d03e2d59bbdb",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T16:13:24+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12217,7 +12221,9 @@
    "max_print_w_in_300ppi": 4.987
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T19:36:14+00:00"
+  "approved_at": "2026-10-31T19:36:14+00:00",
+  "rejected_at": "2026-10-31T19:43:19+00:00",
+  "rejected_reason": "The Dwarf's pick must be one whole, believable tool: a straight wooden haft running from his gripping hand to an iron head with a point on one side and a flat blade on the other, both fixed on the haft; no stray lines hanging from the beams."
  },
  "ART-END-CONDITIONS": {
   "family": "world",
@@ -12437,7 +12443,7 @@
   "route": "gpt",
   "spec_sha256": "2c761866776e5016eb01594be7a5806600d09ab0da5da54c1e171875ff038a28",
   "prompt_sha256": "2d4d273c53083cbca498baca9aa182ee5913304ed6e03beb6a4d8e15955b133f",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T16:25:45+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12464,7 +12470,9 @@
    "max_print_w_in_300ppi": 5.027
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T19:36:14+00:00"
+  "approved_at": "2026-10-31T19:36:14+00:00",
+  "rejected_at": "2026-10-31T19:43:19+00:00",
+  "rejected_reason": "The wooden practice sword must be one plain, whole object with a single crossguard, one grip and one pommel, a blunt rounded tip and only a dent in its edge, lying flat on a visible table edge beneath the hands so something supports it."
  },
  "ART-END-HERO-CLASSES": {
   "family": "world",
@@ -12716,7 +12724,7 @@
   "route": "gpt",
   "spec_sha256": "987a2d375838f5e2e89a3e753bca149c843587217755daafd121864d0b635f4d",
   "prompt_sha256": "89b6c2835722ff67b2cef9b9c7ec43875a4001a9272acc9a0b68eae5e7c8dd08",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T19:10:41+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12741,7 +12749,9 @@
    "max_print_w_in_300ppi": 5.003
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T19:36:14+00:00"
+  "approved_at": "2026-10-31T19:36:14+00:00",
+  "rejected_at": "2026-10-31T19:43:20+00:00",
+  "rejected_reason": "Every item must be whole and separate: the Elf's shortbow is either held in one hand or slung on the back with its string attached at both tips, and no bow limb or string touches or merges into the Dwarf's shield."
  },
  "ART-END-RANDOM-ANCESTRY-TABLES": {
   "family": "world",
@@ -12750,7 +12760,7 @@
   "route": "gpt",
   "spec_sha256": "995c975f9502a94a7aff64e59ddd725824ca9eadff430a4f7c2d143cd90273ac",
   "prompt_sha256": "8c9bb827698fc52d973079044400ae1d6db5cfaf54adedb86549258dce39c387",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T19:15:03+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12777,7 +12787,9 @@
    "max_print_w_in_300ppi": 5.02
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T19:36:14+00:00"
+  "approved_at": "2026-10-31T19:36:14+00:00",
+  "rejected_at": "2026-10-31T19:43:20+00:00",
+  "rejected_reason": "Objects must be physically whole: the pot hangs by its bail from a chain or hook at the apex of the tripod, with the tripod legs standing outside the pot, and the Dwarf's axe, if shown, is one handle with one head, resting against the stone."
  },
  "ART-END-RANDOM-MONSTER-GENERATION-TABLES": {
   "family": "world",
