@@ -1,5 +1,9 @@
 # Production state - RC527 source, main
 
+## Codex cannot attach references for new images - 2026-10-31
+
+After the clarification above, Codex still declined: its image tool's own instruction ("Omit both `referenced_image_paths` and `num_last_images_to_include` when generating a brand new image") outranks the repository card, and Codex was right to stop rather than generate unanchored art. The card and prompt now say so, and point to the ChatGPT Work fallback, where the owner attaches each set's references. No tailpiece is generated; the queue of 47 is unchanged.
+
 ## Codex reference attachment clarified - 2026-10-31
 
 Codex stopped before ART-END-ACTION-BASICS: its image tool says to omit `referenced_image_paths` "when generating a brand new image", and it read the tailpieces as brand-new images. `production/art/codex/CODEX_PROMPT.md` and `BATCH_CARD.md` now say that every queue item is a new illustration made from its references, so the item references are always passed, in order, as `referenced_image_paths` (with `num_last_images_to_include` left out). No image was generated; the queue of 47 is unchanged.
