@@ -13390,5 +13390,38 @@
    "max_print_w_in_300ppi": 4.433
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-ITEM-AVAILABILITY": {
+  "family": "item",
+  "title": "The broker's scale",
+  "heading_id": "h-75-item-availability",
+  "route": "gpt",
+  "spec_sha256": "af87531b8bcdf62853ec5b0b234dc544f13aa50c71c3e11ba8a95a18d3fc16b6",
+  "prompt_sha256": "024f4fe6293c9258daa312e3c556ed9b50bf528002cddc577710fd3b36550398",
+  "status": "received",
+  "received_at": "2026-10-31T22:01:16+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Coins have stamps and ring has a star-like highlight; automated check warns of tinted ink.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-ITEM-AVAILABILITY.png",
+   "sha256": "8e67f6f5d3714e2b78448b86c0fe7662d86b56442233ba157c8f8282f2d70c90",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-ITEM-AVAILABILITY.png",
+   "sha256": "6237e8185f8b0d44c5cb8429df9964f8d6587b919cfde9a7643b09886f5135a0",
+   "px": [
+    1470,
+    985
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.9
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
