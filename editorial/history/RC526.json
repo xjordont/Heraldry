@@ -1,128 +1,102 @@
 {
-  "base": "source/Heraldry_RC525.md",
   "base_sha256": "9d7df1c0d20843114cd89ee89056b0f3855f75451d037c24ec4a03aea418e60b",
-  "status": "proposed",
-  "note": "Third-round lore findings. Not approved.",
+  "authorization": "Owner instruction 2026-10-31 in Claude Code session: 'Use your best judgement and approve all' (all twelve rc526 findings)",
   "patches": [
     {
       "id": "LORE3-01",
-      "status": "proposed",
-      "where": "1.3 glance box",
+      "status": "approved",
       "find": "Six **Bastions** hold what remains of mortal civilization; everything between them belongs to the dead and to the old powers that waited out the Fall. Adventurers are the few who go out into that country anyway.",
       "replace": "Six **Bastions** hold what remains of mortal civilization. Everything between them is contested ground, and adventurers are the few who are paid to cross it.",
       "expected_count": 1,
-      "note": "The glance box repeats, nearly verbatim, the body paragraph eight lines below it ('belongs to the dead ... the old powers that waited out the Fall. Adventurers are the few who ...'). A summary should compress, not duplicate; the lyrical version stays in the body.",
-      "recommend": "apply"
+      "note": "1.3 glance box"
     },
     {
       "id": "LORE3-02",
-      "status": "proposed",
-      "where": "1.3.2 Ashlands entry",
+      "status": "approved",
       "find": "They sprawl across the eastern heart of the world, where the imperial roads still run out to every climate like spokes from a shattered wheel.",
       "replace": "They are the hub of the world, and the imperial roads still run out from them like spokes from a shattered wheel.",
       "expected_count": 1,
-      "note": "The 1.3.2 introduction already says the dead empire 'sprawl[s] across the eastern heart' and that the roads run 'from the Ashlands to every climate'. The entry repeated both phrases on the same page; the wheel image is kept.",
-      "recommend": "apply"
+      "note": "1.3.2 Ashlands entry"
     },
     {
       "id": "LORE3-03",
-      "status": "proposed",
-      "where": "1.3.5 Khorrun passage",
+      "status": "approved",
       "find": "each recording exactly who has taken what, in handwriting no living scribe would claim. Parties do not hunt the five.",
       "replace": "each recording exactly who has taken what, in a hand that has not been warm since the Fall. Parties do not hunt the five.",
       "expected_count": 1,
-      "note": "'Handwriting that matches no living scribe' is Ysolde Vane's signature (1.3.7 and both of her 7.17.3 items). Khorrun borrowing it dilutes hers; the replacement is the dracolich's own.",
-      "recommend": "apply"
+      "note": "1.3.5 Khorrun passage"
     },
     {
       "id": "LORE3-04",
-      "status": "proposed",
-      "where": "9.7 Khorrun the Dracolich (Boss)",
+      "status": "approved",
       "find": "Their bones hold the shape of greed, draped in the tatters of scale and the cold blue fire of undeath, and ledgers stacked to the vault ceiling record exactly who has taken what.",
       "replace": "Scale hangs in tatters from a frame lit by the cold blue fire of undeath, and every chamber of the vault is a counting-house whose accounts are never closed.",
       "expected_count": 1,
-      "note": "The Boss entry reused three phrases from the Section 1 passage word for word ('hold the shape of greed', 'ledgers stacked to the', 'exactly who has taken what'). A reader meets both; the Boss now says the same thing in its own words.",
-      "recommend": "apply"
+      "note": "9.7 Khorrun the Dracolich (Boss)"
     },
     {
       "id": "LORE3-05",
-      "status": "proposed",
-      "where": "9.7 Green Dragon [Elite]",
+      "status": "approved",
       "find": "*Apex predator of the Greenmark and its oldest liar, the green dragon is a serpentine tyrant",
       "replace": "*Lesser kin to Maelthorn and the Greenmark's most practised liar, the green dragon is a serpentine tyrant",
       "expected_count": 1,
-      "note": "Four Elite dragons each claim to be the sovereign or apex of a climate that has a named Boss dragon. The Frost Wyvern entry already models the fix ('a lesser cousin of the great dragons').",
-      "recommend": "apply"
+      "note": "9.7 Green Dragon [Elite]"
     },
     {
       "id": "LORE3-06",
-      "status": "proposed",
-      "where": "9.7 White Dragon [Elite], first sentence",
+      "status": "approved",
       "find": "*The Pale City's frozen sovereign, the white dragon is a feral, ice-crusted wyrm",
       "replace": "*Visath's feral get, the white dragon is an ice-crusted wyrm",
       "expected_count": 1,
-      "note": "As LORE3-05. Visath 'rule[s] from the highest spire'; the Elite claimed the same spire and the same sovereignty.",
-      "recommend": "apply"
+      "note": "9.7 White Dragon [Elite], first sentence"
     },
     {
       "id": "LORE3-07",
-      "status": "proposed",
-      "where": "9.7 White Dragon [Elite], spire",
+      "status": "approved",
       "find": "They nest in the highest spire and suffer the White Court about them as courtiers.",
       "replace": "They nest in the lesser spires and suffer the White Court about them as courtiers.",
       "expected_count": 1,
-      "note": "As LORE3-06.",
-      "recommend": "apply"
+      "note": "9.7 White Dragon [Elite], spire"
     },
     {
       "id": "LORE3-08",
-      "status": "proposed",
-      "where": "9.7 Blue Dragon [Elite]",
+      "status": "approved",
       "find": "*The Sun-Drowned's apex tyrant, the blue dragon is a horned, sand-scaled wyrm",
       "replace": "*Tyrant of the Sun-Drowned's open dunes, the blue dragon is a horned, sand-scaled wyrm",
       "expected_count": 1,
-      "note": "As LORE3-05. Khorrun holds the tomb-galleries beneath; the blue dragon keeps the dunes above.",
-      "recommend": "apply"
+      "note": "9.7 Blue Dragon [Elite]"
     },
     {
       "id": "LORE3-09",
-      "status": "proposed",
-      "where": "9.7 Black Dragon [Elite]",
+      "status": "approved",
       "find": "*The Mire's sovereign, the black dragon is a sleek, horned wyrm the colour of stagnant water, their breath a hiss of acid. Cruel and patient, they lair in a flooded ruin and rule the fen through terror,",
       "replace": "*Vossegar's lesser kin, the black dragon is a sleek, horned wyrm the colour of stagnant water, their breath a hiss of acid. Cruel and patient, they lair in a flooded ruin and rule their stretch of fen through terror,",
       "expected_count": 1,
-      "note": "As LORE3-05. Vossegar 'takes tribute from every settlement in the mire'; the Elite claimed the whole fen and its tribute too.",
-      "recommend": "apply"
+      "note": "9.7 Black Dragon [Elite]"
     },
     {
       "id": "LORE3-10",
-      "status": "proposed",
-      "where": "9.7 Undead Warrior",
+      "status": "approved",
       "find": "The Ashlands never disbanded its legions; it merely let them die unburied.",
       "replace": "The Ashlands never disbanded their legions; they merely let them die unburied.",
       "expected_count": 1,
-      "note": "Section 1 and every other entry treat the Ashlands as plural ('The Ashlands are the cities', 'The Ashlands bristle'); this is the one singular.",
-      "recommend": "apply"
+      "note": "9.7 Undead Warrior"
     },
     {
       "id": "LORE3-11",
-      "status": "proposed",
-      "where": "9.7 Werewolf",
+      "status": "approved",
       "find": "a hunched grey killer at the turning of need,",
       "replace": "a hunched grey killer at the turning of the moon,",
       "expected_count": 1,
-      "note": "'At the turning of need' has no clear meaning; the moon is the werewolf's turning, and the book already ties lycanthropes to moonlight (Karnessa's line bleeds black under it).",
-      "recommend": "decide"
+      "note": "9.7 Werewolf"
     },
     {
       "id": "LORE3-12",
-      "status": "proposed",
-      "where": "9.7 Lich",
+      "status": "approved",
       "find": "A desiccated sorcerer-king in mouldering finery,",
       "replace": "A desiccated mage-king in mouldering finery,",
       "expected_count": 1,
-      "note": "The entry opens 'a lich is an archmage'. In this setting Sorcery is a bloodline tradition and wizards are the archmages (1.3.4, Chapter 8), so 'sorcerer-king' misfiles the lich.",
-      "recommend": "decide"
+      "note": "9.7 Lich"
     }
   ]
 }

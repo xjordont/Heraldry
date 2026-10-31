@@ -1,4 +1,8 @@
-# Release status - RC525 source / RC522-build-39 delivery
+# Release status - RC526 source / RC522-build-39 delivery
+
+## RC526 manuscript - 2026-10-31
+
+RC526 is the active manuscript: the third lore pass (Elite dragons as lesser kin of the Boss dragons, the Ashlands plural, three same-page repetitions removed, Khorrun's borrowed phrase returned to Ysolde Vane, Werewolf and Lich wording). Hero records match B.4 of RC526; the figure gate is 77/77; the player aids are re-bound to RC526 with no wording change. The book has not been built since **RC522-build-39**; `dist/` and its ledgers describe that delivery, not RC526. A new candidate build and an all-page visual review precede any release. Physical print **NOT TESTED**.
 
 ## RC524 and RC525 manuscripts - 2026-10-31
 
