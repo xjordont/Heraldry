@@ -13,7 +13,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 330 approved of 341; 16 generation-queue items.
+- **Illustration records:** 330 approved of 342; 16 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`8e448522`](https://github.com/xjordont/Heraldry/commit/8e448522dbc3e37fa1c014df4848ea6479252ef9) art: intake of ChatGPT Work images
+- [`26195ad0`](https://github.com/xjordont/Heraldry/commit/26195ad0f69d8155c49e633fe3ac593b9620423a) art(gpt): ART-END-PERMANENT-SPECIAL-ITEMS .. ART-END-PERMANENT-SPECIAL-ITEMS
 - [`16dffb5e`](https://github.com/xjordont/Heraldry/commit/16dffb5e36ebe972b10f4c72fa31583ae4ec4748) art: intake of ChatGPT Work images
 - [`1c6506cf`](https://github.com/xjordont/Heraldry/commit/1c6506cf3ba1af37c382b240425cdd8579250025) art(gpt): ART-END-ITEM-AVAILABILITY .. ART-END-ITEM-AVAILABILITY
 - [`f44bfcae`](https://github.com/xjordont/Heraldry/commit/f44bfcaed5b22787429b53c70b0a37602a396729) art: intake of ChatGPT Work images
 - [`1927dd29`](https://github.com/xjordont/Heraldry/commit/1927dd298a55c0f3b4dc3c505242973ca0e82a35) art(gpt): ART-END-EQUIPMENT-OVERVIEW .. ART-END-EQUIPMENT-OVERVIEW
-- [`1602645a`](https://github.com/xjordont/Heraldry/commit/1602645ad402f6de1269ccfb43b8ed1345ab8ef9) art: intake of ChatGPT Work images
-- [`daa43c6d`](https://github.com/xjordont/Heraldry/commit/daa43c6d2ff0f6dea50885c3f6dae3b39c4c26c3) art(gpt): ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE .. ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE
 
 <!-- END AUTO:recent -->
 
