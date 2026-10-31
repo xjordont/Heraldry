@@ -12687,5 +12687,38 @@
    "max_print_w_in_300ppi": 4.997
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-PARTY-STRUCTURE": {
+  "family": "world",
+  "title": "The Party Leader's halt",
+  "heading_id": "h-61-party-structure",
+  "route": "gpt",
+  "spec_sha256": "987a2d375838f5e2e89a3e753bca149c843587217755daafd121864d0b635f4d",
+  "prompt_sha256": "89b6c2835722ff67b2cef9b9c7ec43875a4001a9272acc9a0b68eae5e7c8dd08",
+  "status": "received",
+  "received_at": "2026-10-31T19:10:41+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of eight percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-PARTY-STRUCTURE.png",
+   "sha256": "18eb6766edbc040c39b3732ce39c25452c9644d302d2c4196c925cbcaa1c7f86",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-PARTY-STRUCTURE.png",
+   "sha256": "4cfd783f300a46bc9662cfee5e2eb8b948832627175915445f5c0d8f05106c5f",
+   "px": [
+    1501,
+    995
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.003
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
