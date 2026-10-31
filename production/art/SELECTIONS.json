@@ -12213,5 +12213,40 @@
    "max_print_w_in_300ppi": 4.987
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-CONDITIONS": {
+  "family": "world",
+  "title": "Frightened",
+  "heading_id": "h-59-conditions",
+  "route": "gpt",
+  "spec_sha256": "eca5031113073ef539c5be990436bb11b786814b13c6eccc47d2c79b80530a3a",
+  "prompt_sha256": "41daf9139fac2d2be2cc856ed25ccb7cd5944df406364f8fba7d8ad4f213ad89",
+  "status": "received",
+  "received_at": "2026-10-31T16:14:45+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check fails at twenty percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-CONDITIONS.png",
+   "sha256": "eae59333853fdc24a7ed0be5ec895ca598fc4968c93c252b82541dc463389d72",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-CONDITIONS.png",
+   "sha256": "337a4c766eedd2ba0dc8007ada05be666bace014bd99c8ae90a5481fb0256d04",
+   "px": [
+    1501,
+    1004
+   ],
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 5.003
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
