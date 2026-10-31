@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`5488c561`](https://github.com/xjordont/Heraldry/commit/5488c561b99a67e64c4a91cd938a54b9d6ec89ea) art: intake of ChatGPT Work images
+- [`a75ee11d`](https://github.com/xjordont/Heraldry/commit/a75ee11dcd011fb6314cfb3f0077bb2956ef2809) art(gpt): ART-END-COMBAT-BASICS .. ART-END-COMBAT-BASICS
 - [`5521d3df`](https://github.com/xjordont/Heraldry/commit/5521d3df1140a0056470790fb1a6c4ec96811d23) Art review: redo ART-END-ACTION-BASICS (owner-spotted backward sword draw)
 - [`7fa13a39`](https://github.com/xjordont/Heraldry/commit/7fa13a39d2574108cb7634f0b1eb0b0d5b2dab35) art: intake of ChatGPT Work images
 - [`50100969`](https://github.com/xjordont/Heraldry/commit/5010096989d5205775abae8472d1ac855d2074cf) art(gpt): ART-END-ADVENTURE-PREPARATION-SEQUENCE .. ART-END-ADVENTURE-PREPARATION-SEQUENCE
 - [`bfb0ab92`](https://github.com/xjordont/Heraldry/commit/bfb0ab9227a0dd5dbc56981f2de31f530808d087) art: intake of ChatGPT Work images
-- [`c507020f`](https://github.com/xjordont/Heraldry/commit/c507020fcb8c3cddf6181d111264115237e0bd32) art(gpt): ART-END-GENERAL-TALENTS .. ART-END-GENERAL-TALENTS
-- [`ef2f2479`](https://github.com/xjordont/Heraldry/commit/ef2f2479faae2f9cc27d97e07a546625aa591313) Art review: redo ART-END-THE-BESTIARY (bell in the belfry the brief keeps empty)
 
 <!-- END AUTO:recent -->
 
