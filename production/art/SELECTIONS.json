@@ -12858,5 +12858,38 @@
    "max_print_w_in_300ppi": 4.98
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-THE-ATTACK-SEQUENCE": {
+  "family": "world",
+  "title": "The bind",
+  "heading_id": "h-52-the-attack-sequence",
+  "route": "gpt",
+  "spec_sha256": "2678506013bbea5a89a7fba39ba07b8fe19ea1043286779750ab28f1c1bcc2eb",
+  "prompt_sha256": "3703300be44e2e82e7c5fe73f20f6ce780633fcb8990455f0c6b44802cd56927",
+  "status": "received",
+  "received_at": "2026-10-31T19:34:21+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Seven percent tinted pixels; both blade tips are cropped at the top edge.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-THE-ATTACK-SEQUENCE.png",
+   "sha256": "32ff373f3c42e18055402d7af2caf1c90b47d2015fef272bb89b8c5bca235e2e",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-THE-ATTACK-SEQUENCE.png",
+   "sha256": "fe58c1f1d4be1aef16c8b83cebf26cac77d0d1e56b4e3232f6ff1411702f3993",
+   "px": [
+    1508,
+    965
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.027
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
