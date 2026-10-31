@@ -12943,5 +12943,40 @@
    "max_print_w_in_300ppi": 4.98
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-THE-CAMPAIGN-CYCLE": {
+  "family": "world",
+  "title": "The Antlered Path cairn",
+  "heading_id": "h-112-the-campaign-cycle",
+  "route": "gpt",
+  "spec_sha256": "336883507b895b29e297a2a5ecc091b59c0f0052d8ed63b8c1b31a43e94fe5cd",
+  "prompt_sha256": "b943bebc1d8d2eaa1bc67cc6e1d1ff81ba234ebfdb28c64b0166d642175b1f0a",
+  "status": "received",
+  "received_at": "2026-10-31T21:04:31+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Colour check reports tinted ink.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-THE-CAMPAIGN-CYCLE.png",
+   "sha256": "f169c624f4e6217ca17be8bc1455a92dc55b08c7ffd4e91a777204cc2d79d9c1",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-THE-CAMPAIGN-CYCLE.png",
+   "sha256": "4e678e535c35f63056265fcc6852279f31e4c132f458aa79ec62212afe4dd08a",
+   "px": [
+    1486,
+    952
+   ],
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 4.953
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
