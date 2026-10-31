@@ -12487,5 +12487,38 @@
    "max_print_w_in_300ppi": 5.033
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-HIRELINGS": {
+  "family": "world",
+  "title": "The porter's drag",
+  "heading_id": "h-615-hirelings",
+  "route": "gpt",
+  "spec_sha256": "16aebc07d017a8062389319febafd3a122ea5e57144c0e431622c48baba536d7",
+  "prompt_sha256": "b0ba5ee4adb7bcae498d7498cc285b762d503b16a572248cb65779ac9942b859",
+  "status": "received",
+  "received_at": "2026-10-31T16:28:56+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of seven percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-HIRELINGS.png",
+   "sha256": "c77d5644d565064cb93d9428bf351a14667b114468dc385ab8f4305ec0d86c2c",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-HIRELINGS.png",
+   "sha256": "f86acd724b7dccbf0187c1f2deaf4f80d245cdfc6aa029c412f6175c9cfcab51",
+   "px": [
+    1512,
+    904
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.04
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
