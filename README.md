@@ -13,7 +13,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 301 approved of 310; 45 generation-queue items.
+- **Illustration records:** 301 approved of 311; 45 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`ed724539`](https://github.com/xjordont/Heraldry/commit/ed724539d62d721ab59d425fbbbab118e53e1f25) art: intake of ChatGPT Work images
+- [`61748438`](https://github.com/xjordont/Heraldry/commit/61748438ede371d1ad3bbb97347690183d105169) art(gpt): ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING .. ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING
 - [`6b0e395e`](https://github.com/xjordont/Heraldry/commit/6b0e395e5978dec102618bc31b158165b0f2f3ad) art: intake of ChatGPT Work images
 - [`899b9541`](https://github.com/xjordont/Heraldry/commit/899b954184fb30dd7b36c986acbf996ee0c79967) art(gpt): ART-END-DETERMINING-MONSTERS-FOR-AN-ADVENTURE .. ART-END-DETERMINING-MONSTERS-FOR-AN-ADVENTURE
 - [`60ceb020`](https://github.com/xjordont/Heraldry/commit/60ceb02042e2db988b67a43372b1b0dfa04e0444) art: intake of ChatGPT Work images
 - [`73f4c615`](https://github.com/xjordont/Heraldry/commit/73f4c6154497499d121b6f2120c3603561fed83e) art(gpt): ART-END-CORE-TERMS .. ART-END-CORE-TERMS
-- [`2162a72f`](https://github.com/xjordont/Heraldry/commit/2162a72f5d869c1f8d51862d006b6530fab34996) art: intake of ChatGPT Work images
-- [`d081251f`](https://github.com/xjordont/Heraldry/commit/d081251f6f4be57f0d35025eec00b47f44abb305) art(gpt): ART-END-CORE-HERO-CREATION-RULES .. ART-END-CORE-HERO-CREATION-RULES
 
 <!-- END AUTO:recent -->
 
