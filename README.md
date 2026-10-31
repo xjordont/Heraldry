@@ -13,7 +13,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 301 approved of 301; 45 generation-queue items.
+- **Illustration records:** 301 approved of 302; 45 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`6e29053a`](https://github.com/xjordont/Heraldry/commit/6e29053ab38b28a0d4d26ec4531e21beca6066d6) art(gpt): ART-END-ADVENTURE-PREPARATION-SEQUENCE .. ART-END-ADVENTURE-PREPARATION-SEQUENCE
+- [`76afb7c8`](https://github.com/xjordont/Heraldry/commit/76afb7c8e3a4adbafdd98c232923c8b38688efb9) art: intake of ChatGPT Work images
+- [`9bee3f4f`](https://github.com/xjordont/Heraldry/commit/9bee3f4f64441e4422d545ea395eec1a238ba371) art(gpt): ART-END-ADVANTAGES-AND-DISADVANTAGES .. ART-END-ADVANTAGES-AND-DISADVANTAGES
 - [`27091a28`](https://github.com/xjordont/Heraldry/commit/27091a28e74d1129563763d60f89ee3fdf4b9c14) Art review: approve the ART-END-ACTION-BASICS redo; Codex runs the batch without pausing
 - [`65ee53b5`](https://github.com/xjordont/Heraldry/commit/65ee53b5948e8b0ab070abfdaa8779537d723caa) art: intake of ChatGPT Work images
 - [`2a36a65a`](https://github.com/xjordont/Heraldry/commit/2a36a65a62f6ec618991a7d1365393c49d5e96b7) art(gpt): ART-END-ACTION-BASICS .. ART-END-ACTION-BASICS
-- [`99d6fe88`](https://github.com/xjordont/Heraldry/commit/99d6fe88bc9e8c2c116635cab633f2a501208be5) Art review: approve ART-END-ACTION-POINTS-AND-SUMMONS; redo ART-END-ACTION-BASICS
-- [`a31fcb60`](https://github.com/xjordont/Heraldry/commit/a31fcb606db76e2ed415950aea282d1db13bdf7e) art: intake of ChatGPT Work images
-- [`abead7c8`](https://github.com/xjordont/Heraldry/commit/abead7c85ca266bf85cd5667dac7445f7edd3d00) art(gpt): ART-END-ACTION-POINTS-AND-SUMMONS .. ART-END-ACTION-POINTS-AND-SUMMONS
 
 <!-- END AUTO:recent -->
 
