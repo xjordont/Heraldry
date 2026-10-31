@@ -12468,15 +12468,15 @@
   "route": "gpt",
   "spec_sha256": "be5cd6958711be9a71bbf5bcef25d1f9ba6595ee80a64c6f2100a2d065a1e112",
   "prompt_sha256": "52d8ede89f5aa292c49aef85d2a7ccf42e3e18d1d7732273a58bf3a7430305be",
-  "status": "rejected",
-  "received_at": "2026-10-31T16:27:40+00:00",
+  "status": "received",
+  "received_at": "2026-10-31T20:55:18+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Thirteen percent tinted pixels; unusually bulky stag and excessive-looking antler arrangement.",
+  "notes": "Draw an ordinary red-deer stag in build: lean, deep-chested deer body with all four legs visible in the bound and a head in proportion, not a bulky bison-like mass; one natural pair of antlers growing from the head, with the charm cord caught in one of them. The stag appears bulky and hind legs are obscured; check reports tinted ink.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-HERO-CLASSES.png",
-   "sha256": "5a88887bf848e10682447fc0a452d99047d3f02e2b572bcf8a7b7353a5a7518a",
+   "sha256": "f25fd6ddae596cc78bcd47c4a4c9677a22ccaf70964bd22d7a606a267d4f5e60",
    "px": [
     1536,
     1024
@@ -12484,19 +12484,17 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-HERO-CLASSES.png",
-   "sha256": "0c79627b0341d073fd8d880d9e214eb48b0902955f38830a1b130dae60f9aa32",
+   "sha256": "4f5245e2703aa79ad7ac4cb96b27a9dfe8d8ff22d9368aa0cf85969264e090a5",
    "px": [
-    1510,
-    988
+    1478,
+    983
    ],
    "flags": [
     "colour"
    ],
-   "max_print_w_in_300ppi": 5.033
+   "max_print_w_in_300ppi": 4.927
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-31T19:36:14+00:00",
-  "rejected_reason": "Draw an ordinary red-deer stag in build: lean, deep-chested deer body with all four legs visible in the bound and a head in proportion, not a bulky bison-like mass; one natural pair of antlers growing from the head, with the charm cord caught in one of them."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-HIRELINGS": {
   "family": "world",
