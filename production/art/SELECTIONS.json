@@ -13258,5 +13258,38 @@
    "max_print_w_in_300ppi": 4.8
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-ARMOUR": {
+  "family": "item",
+  "title": "Brigandine on the stand",
+  "heading_id": "h-710-armour",
+  "route": "gpt",
+  "spec_sha256": "48ad179ec9b15de1165b9a4c46cae039002945ce2ffc64d7b949eac5cf58fe57",
+  "prompt_sha256": "13d0d22e79e7543877ab3041e4112d988eaf30cc3f048e9437341c0843930282",
+  "status": "received",
+  "received_at": "2026-10-31T21:53:05+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "One generation; no flags observed.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-ARMOUR.png",
+   "sha256": "bee9b0bf2df75e75b5b5232918c6459a7b421e7c3b76b7f632df10382f3ed088",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-ARMOUR.png",
+   "sha256": "55a9fa96fbf4a6c961f38b8653a43a2c411fbde6d9c3cf42f1a8c68c78e8fbc3",
+   "px": [
+    669,
+    971
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.23
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
