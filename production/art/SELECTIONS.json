@@ -12248,5 +12248,38 @@
    "max_print_w_in_300ppi": 5.003
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-CORE-HERO-CREATION-RULES": {
+  "family": "world",
+  "title": "The bow too big",
+  "heading_id": "h-63-core-hero-creation-rules",
+  "route": "gpt",
+  "spec_sha256": "33c6c376c5aa27c60357bdf2e277e912f595a7f8419e369720b102d643c55420",
+  "prompt_sha256": "31a34085bec02e23b27ab18df77f8cc77e1222c56b6b62e2bafa921d224e72a9",
+  "status": "received",
+  "received_at": "2026-10-31T16:16:15+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Bow is strung despite the prompt; its tip is very close to the upper edge.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-CORE-HERO-CREATION-RULES.png",
+   "sha256": "ee73367f5da7925917981bf403f83d5fde7d8d96da2998584dfc445d77b8f763",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-CORE-HERO-CREATION-RULES.png",
+   "sha256": "7c36034cefcc67ef209a7aafe923270e91fbbce224f8d56bbcafd9702bed3d52",
+   "px": [
+    1334,
+    1008
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.447
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
