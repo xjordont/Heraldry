@@ -1,6 +1,6 @@
-THE DROWNED BELL TOWER - GRITTY OLD-SCHOOL INK ILLUSTRATION
+THE PARTY LEADER'S HALT - GRITTY OLD-SCHOOL INK ILLUSTRATION
 
-Create a gritty, old-school black-and-white ink illustration of the lair of Vossegar of the Flooded Cathedral: the bell tower of a drowned cathedral standing out of black Mire water, one black coil breaking the surface beside it, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of a Party Leader at the head of a four-Hero file, fist raised to halt the others at the mouth of a ruined colonnade, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 
 FORMAT AND WHITE VIGNETTE
 Wide 3:2 landscape composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing.
@@ -8,25 +8,29 @@ The illustration must have a natural, irregular, hand-drawn white vignette aroun
 Leave approximately 5-8% clean white margin around the perimeter, with an additional organic transition zone. Avoid digital blur, artificial feathering, or hard rectangular cropping. Keep crisp line and strong contrast at the focal point.
 
 COMPOSITION
-Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Water-level view: the broken bell tower rises at centre-right from flat black water; a single glossy coil of the wyrm arcs out of the water at left, the ripples between them the only movement.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter rear view: the Party Leader at centre-left stands one pace ahead with a closed fist raised; the other three Heroes are stopped in a short staggered file behind, smaller; two broken columns frame the way ahead.
 
 SUBJECT DETAILS
-* Gothic bell tower with an empty belfry arch and a cracked pinnacle, its lower windows drowned
-* Black still water drawn in solid black with a few white ripple lines
-* One sleek black coil with pitted scales arcing out of the water
-* Dead reeds and the tip of a drowned stone cross
-* Water weed hanging from the belfry sill
+* Party Leader: a Human in a ring shirt with a shortsword at the hip, fist raised at shoulder height
+* Behind: a tall lean Elf with a shortbow, a broad Dwarf with a mace and targe, a small Halfling with a pack
+* Two broken columns with fallen capitals
+* Path of cracked paving leading on into white paper
+* Packs, bedrolls and a lantern on the Dwarf's belt
 Must be shown exactly:
-* Only one coil of the wyrm is visible; no head, wings or full body
+* Four Heroes, one clearly leading
+
+HUMAN ACTIVITY
+* The leader signals halt
+* The others stop and look past the leader
 
 ARTISTIC STYLE AND ATMOSPHERE
-Hushed, heavy dread where the frogs no longer sing.
+Trust, discipline and the weight of one person's call.
 Ink it gritty and bold, like old-school rulebook art: strong brush contours of uneven weight, large shapes of solid black for shadow, night and depth, and rough, scratchy hatching and dry-brush drag where light turns into shadow, with the bite of a woodcut. High contrast: let solid black and open white paper carry the picture, with few in-between textures. Visible human marks are welcome: broken lines, dry-brush streaks, a few flicked ink spatters. Put the deepest blacks and sharpest contrast at the focal point and let distance thin to simpler, lighter line. No stipple fields, no uniform micro-texture, no tonal haze, no smooth digital rendering. Accurate perspective, believable construction and coherent geography; the world shows withered beauty: once-grand things rusted, cracked, overgrown or hollowed by age. It must look drawn by hand with brush and ink, not generated or rendered.
 
 FINAL VISUAL REQUIREMENTS
 Do not draw:
 * No lettering, numbers, dice, game tokens, or rulebook pages.
-* No full dragon and no breath.
-* Not the Black Dragon or Vossegar portraits, and not the Serpent's Sunken Hoard sinkhole.
-* No figures.
+* Not the cover party in rain, the postern gate departure or the chapter 1 pass.
+* No banners.
+* No monsters.
 Avoid photorealism, digital-render polish, clean vector-like line, uniform machine texture, stipple fields, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, artificial symmetry and competing focal points. The finished artwork should be gritty and high-contrast and print crisply in pure black ink, with an organically fading white vignette, like original ink art in an old-school fantasy rulebook.
