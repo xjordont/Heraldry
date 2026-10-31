@@ -1,98 +1,78 @@
 {
-  "base": "source/Heraldry_RC523.md",
   "base_sha256": "acfa2c2245188933154222909ff3e9b44d855f8f679b605a911f59e8ef793c42",
-  "status": "proposed",
-  "note": "Draft second-round lore copy batch from the comprehensive italic read. Not approved.",
+  "authorization": "Owner instruction 2026-10-31 in Claude Code session: 'Approve all. Is the lore more perfect now? If not make it so.' (approving all nine rc524 findings)",
   "patches": [
     {
       "id": "LORE2-01",
-      "status": "proposed",
-      "where": "6.10 Pauper",
+      "status": "approved",
       "find": "Want made them wiry, stubborn, and stubbornly hard to finish.",
       "replace": "Want made them wiry, stubborn, and hard to finish.",
       "expected_count": 1,
-      "note": "'stubborn, and stubbornly' repeats the word inside one list.",
-      "recommend": "apply"
+      "note": "6.10 Pauper"
     },
     {
       "id": "LORE2-02",
-      "status": "proposed",
-      "where": "7.17.3 The Hollow Crown (item lore)",
+      "status": "approved",
       "find": "Its tomb has never been found. You have found its crown.",
       "replace": "Their tomb has never been found. You have found their crown.",
       "expected_count": 1,
-      "note": "The sovereign is 'they' in 1.3.7 and everywhere else; 'its' here reads as the crown's tomb.",
-      "recommend": "apply"
+      "note": "7.17.3 The Hollow Crown (item lore)"
     },
     {
       "id": "LORE2-03",
-      "status": "proposed",
-      "where": "8. Powers and Traditions opener",
+      "status": "approved",
       "find": "the Five Traditions survived the Fall; each scarred, perilous, and profoundly changed.",
       "replace": "the Five Traditions survived the Fall, each scarred, perilous, and profoundly changed.",
       "expected_count": 1,
-      "note": "A semicolon joins a fragment to the clause; a comma is the correct join.",
-      "recommend": "apply"
+      "note": "8. Powers and Traditions opener"
     },
     {
       "id": "LORE2-04",
-      "status": "proposed",
-      "where": "8. Divine Prayers paragraph",
+      "status": "approved",
       "find": "A priest capable of calling down a true working is a rarity; famous enough to command reverence and terrifying enough to be feared.",
       "replace": "A priest capable of calling down a true working is a rarity, famous enough to command reverence and terrifying enough to be feared.",
       "expected_count": 1,
-      "note": "Same fault: the semicolon introduces a fragment.",
-      "recommend": "apply"
+      "note": "8. Divine Prayers paragraph"
     },
     {
       "id": "LORE2-05",
-      "status": "proposed",
-      "where": "9.7 Satyr Reveler",
+      "status": "approved",
       "find": "Satyrs were fey once, before the long silence soured them,",
       "replace": "Satyrs were fey once, before the Long Silence soured them,",
       "expected_count": 1,
-      "note": "1.3.1 names The Long Silence as one of the common folk's names for the Fall; the bestiary lowercases it.",
-      "recommend": "apply"
+      "note": "9.7 Satyr Reveler"
     },
     {
       "id": "LORE2-06",
-      "status": "proposed",
-      "where": "9.7 White Court Archer",
+      "status": "approved",
       "find": "white court archers loose volleys of ice-fletched arrows,",
       "replace": "White Court archers loose volleys of ice-fletched arrows,",
       "expected_count": 1,
-      "note": "'White Court' is the faction's proper name (capitalized in the Guard entry, the Boss, and Section 1); three Pale City entries lowercase it.",
-      "recommend": "apply"
+      "note": "9.7 White Court Archer"
     },
     {
       "id": "LORE2-07",
-      "status": "proposed",
-      "where": "9.7 White Court Sentinel",
+      "status": "approved",
       "find": "the white court sentinel is the dead nobility's bodyguard,",
       "replace": "the White Court sentinel is the dead nobility's bodyguard,",
       "expected_count": 1,
-      "note": "As LORE2-06.",
-      "recommend": "apply"
+      "note": "9.7 White Court Sentinel"
     },
     {
       "id": "LORE2-08",
-      "status": "proposed",
-      "where": "9.7 White Court Executioner",
+      "status": "approved",
       "find": "*The white court executioner carries out sentences the living court passed centuries ago,",
       "replace": "*The White Court executioner carries out sentences the living court passed centuries ago,",
       "expected_count": 1,
-      "note": "As LORE2-06.",
-      "recommend": "apply"
+      "note": "9.7 White Court Executioner"
     },
     {
       "id": "LORE2-09",
-      "status": "proposed",
-      "where": "9.7 Undead Sentinel",
+      "status": "approved",
       "find": "tall dead men in iron helm and reach-halberd.",
       "replace": "tall dead soldiers in iron helm and reach-halberd.",
       "expected_count": 1,
-      "note": "Judgment call. The book otherwise keeps generic figures ungendered; 'a man's height' as a measure is idiom and left alone, but this names the soldiers themselves.",
-      "recommend": "decide"
+      "note": "9.7 Undead Sentinel"
     }
   ]
 }

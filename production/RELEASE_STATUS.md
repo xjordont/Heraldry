@@ -1,4 +1,8 @@
-# Release status - RC523 source / RC522-build-39 delivery
+# Release status - RC525 source / RC522-build-39 delivery
+
+## RC524 and RC525 manuscripts - 2026-10-31
+
+RC525 is the active manuscript. RC524 applied nine copy fixes from the comprehensive italic-lore read (Chapters 6 to 9), and RC525 five final Section 1 polish replacements. Hero records match B.4 of RC525; the figure gate is 77/77; the player aids remain current. The book has not been built since **RC522-build-39**; `dist/` and its ledgers describe that delivery, not RC525. A new candidate build and an all-page visual review precede any release. Physical print **NOT TESTED**.
 
 ## RC523 manuscript - 2026-10-31
 
