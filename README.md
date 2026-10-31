@@ -13,7 +13,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 299 approved of 299; 47 generation-queue items.
+- **Illustration records:** 299 approved of 300; 47 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`abead7c8`](https://github.com/xjordont/Heraldry/commit/abead7c85ca266bf85cd5667dac7445f7edd3d00) art(gpt): ART-END-ACTION-POINTS-AND-SUMMONS .. ART-END-ACTION-POINTS-AND-SUMMONS
+- [`3ef89c4f`](https://github.com/xjordont/Heraldry/commit/3ef89c4f89fda2adf2018d5dbd7b209b00fc02e2) art: intake of ChatGPT Work images
+- [`e1792668`](https://github.com/xjordont/Heraldry/commit/e1792668ace73c1bc5ae86d994d416c2e56c8233) art(gpt): ART-END-ACTION-BASICS .. ART-END-ACTION-BASICS
 - [`53beb3fd`](https://github.com/xjordont/Heraldry/commit/53beb3fdd77720f67c4916c4e8f4876d2b207ff4) Codex prompt: the reference stop applies only to items that list references
 - [`33d6eb58`](https://github.com/xjordont/Heraldry/commit/33d6eb58cb8f8c4dec38e2494775fa0d7b2dee91) Art: queue the 47 tailpieces without references for Codex
 - [`2c205c41`](https://github.com/xjordont/Heraldry/commit/2c205c417c6a8973aff04bda110ac97ab7523a86) Art: owner sheet for hand-made tailpieces and an upload folder
-- [`3fd25a90`](https://github.com/xjordont/Heraldry/commit/3fd25a908548be09209013e0205875911da5b6ac) Codex card: a tool instruction forbidding references is a stop; use the Work fallback
-- [`107b843b`](https://github.com/xjordont/Heraldry/commit/107b843b8738af84053741b0c1b172e24533fadd) Codex: pass item references as referenced\_image\_paths
-- [`8bb246fe`](https://github.com/xjordont/Heraldry/commit/8bb246fec66399ac82b4ff8dcb1d80c4f4d969bd) Owner: commit straight to main, no pull requests
 
 <!-- END AUTO:recent -->
 
