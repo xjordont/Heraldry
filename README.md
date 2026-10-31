@@ -13,7 +13,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 301 approved of 322; 45 generation-queue items.
+- **Illustration records:** 301 approved of 323; 45 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`bf25aed6`](https://github.com/xjordont/Heraldry/commit/bf25aed6e6e71fe9fd12e49f569d362359272d59) art: intake of ChatGPT Work images
+- [`01768e6a`](https://github.com/xjordont/Heraldry/commit/01768e6a53d6056dffb6989a3de7a84f87896db4) art(gpt): ART-END-RANDOM-MONSTER-GENERATION-TABLES .. ART-END-RANDOM-MONSTER-GENERATION-TABLES
 - [`c09212ca`](https://github.com/xjordont/Heraldry/commit/c09212cac19b267c6405fdd379808ac05239dcb8) art: intake of ChatGPT Work images
 - [`535bb00a`](https://github.com/xjordont/Heraldry/commit/535bb00ab06159bb85dc5e298b6a001663625d98) art(gpt): ART-END-RANDOM-ANCESTRY-TABLES .. ART-END-RANDOM-ANCESTRY-TABLES
 - [`95b873b4`](https://github.com/xjordont/Heraldry/commit/95b873b465fc5e2d4ca2dad4d253b8f666d40760) art: intake of ChatGPT Work images
 - [`596a001a`](https://github.com/xjordont/Heraldry/commit/596a001a38b6fb94d44427371482a4e3785b92e8) art(gpt): ART-END-PARTY-STRUCTURE .. ART-END-PARTY-STRUCTURE
-- [`d8e53daa`](https://github.com/xjordont/Heraldry/commit/d8e53daa0f3f2a71743c07dac68210ef758dfbbb) art: intake of ChatGPT Work images
-- [`d0612ad4`](https://github.com/xjordont/Heraldry/commit/d0612ad4d4c53f20a4d18989718fbdfa0f86dd5e) art(gpt): ART-END-PARTY-PHASE .. ART-END-PARTY-PHASE
 
 <!-- END AUTO:recent -->
 
