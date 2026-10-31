@@ -1,81 +1,35 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-31T19:53:53+00:00",
+ "generated_at": "2026-10-31T20:40:59+00:00",
  "max_references": 5,
  "push_every": 1,
  "review_every": 10,
- "receipts_base": 456,
+ "receipts_base": 459,
  "target_pixels": 1572864,
- "count": 28,
+ "count": 26,
  "items": [
   {
-   "id": "ART-END-ACTION-BASICS",
+   "id": "ART-END-GENERAL-TALENTS",
    "family": "world",
    "register": "scene",
    "ref_set": "none",
-   "title": "The dropped torch",
-   "prompt": "production/art/gpt/prompts/ART-END-ACTION-BASICS.txt",
-   "prompt_sha256": "0641ce2d3afcad469b75500fbad8ef5cf2630a4bdfd6f91be6417c2adc823892",
+   "title": "Camouflage",
+   "prompt": "production/art/gpt/prompts/ART-END-GENERAL-TALENTS.txt",
+   "prompt_sha256": "e46adcfdfeb940a4e3a323853a9bfe1e8caecfebe9b54ce3192c30c912521c0d",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [],
    "max_attempts": 1,
    "size_class": "",
    "must": [
-    "One Hero only; the shapes stay vague"
+    "The Hero is mostly hidden; the cover dominates"
    ],
    "avoid": [
     "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "No detailed Monster.",
-    "Not the Undercroft or the Shadowed Under Passage.",
-    "No glow effect around the torch."
-   ]
-  },
-  {
-   "id": "ART-END-COMBAT-BASICS",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "Arm's reach",
-   "prompt": "production/art/gpt/prompts/ART-END-COMBAT-BASICS.txt",
-   "prompt_sha256": "ca2f11a54dbc4324926a137ee2ee960b93ccb798c955c85232aa4f57d81a4297",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "The Bugbear's reach visibly exceeds the Hero's"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "Not the Bugbear bestiary portrait: this is a two-figure clash.",
-    "No goblins.",
-    "No gore."
-   ]
-  },
-  {
-   "id": "ART-END-COMMON-TRAIT-RULES",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "Eyes in the dark",
-   "prompt": "production/art/gpt/prompts/ART-END-COMMON-TRAIT-RULES.txt",
-   "prompt_sha256": "2d9652dbea9f33e2f9d57a7c5fe85eeec771d2f50030b3e09361d03e2d59bbdb",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "No light source in the picture"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "No glowing eyes beams or glow effects.",
-    "Not the Undermarches climate cutaway or the Quake scenario.",
-    "No monsters."
+    "No full figure.",
+    "Not the Scout background or the Ranger class figure.",
+    "No enemies."
    ]
   },
   {
