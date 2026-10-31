@@ -1,35 +1,35 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-31T19:45:23+00:00",
+ "generated_at": "2026-10-31T19:53:53+00:00",
  "max_references": 5,
  "push_every": 1,
  "review_every": 10,
- "receipts_base": 454,
+ "receipts_base": 456,
  "target_pixels": 1572864,
- "count": 29,
+ "count": 28,
  "items": [
   {
-   "id": "ART-END-ADVENTURE-PREPARATION-SEQUENCE",
+   "id": "ART-END-ACTION-BASICS",
    "family": "world",
    "register": "scene",
    "ref_set": "none",
-   "title": "The scout on the ridge",
-   "prompt": "production/art/gpt/prompts/ART-END-ADVENTURE-PREPARATION-SEQUENCE.txt",
-   "prompt_sha256": "455b0666c17a53514c6ff17ff29480e4d947c74cab50467bfca046d0726e3d6b",
+   "title": "The dropped torch",
+   "prompt": "production/art/gpt/prompts/ART-END-ACTION-BASICS.txt",
+   "prompt_sha256": "0641ce2d3afcad469b75500fbad8ef5cf2630a4bdfd6f91be6417c2adc823892",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [],
    "max_attempts": 1,
    "size_class": "",
    "must": [
-    "The ruin stays small and lightly drawn; the Scout is the focal point"
+    "One Hero only; the shapes stay vague"
    ],
    "avoid": [
     "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "Not the chapter 10 crossroads or the chapter 1 pass.",
-    "No banners.",
-    "No Monsters drawn in detail."
+    "No detailed Monster.",
+    "Not the Undercroft or the Shadowed Under Passage.",
+    "No glow effect around the torch."
    ]
   },
   {
@@ -76,29 +76,6 @@
     "No glowing eyes beams or glow effects.",
     "Not the Undermarches climate cutaway or the Quake scenario.",
     "No monsters."
-   ]
-  },
-  {
-   "id": "ART-END-GENERAL-TALENTS",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "Camouflage",
-   "prompt": "production/art/gpt/prompts/ART-END-GENERAL-TALENTS.txt",
-   "prompt_sha256": "e46adcfdfeb940a4e3a323853a9bfe1e8caecfebe9b54ce3192c30c912521c0d",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "The Hero is mostly hidden; the cover dominates"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "No full figure.",
-    "Not the Scout background or the Ranger class figure.",
-    "No enemies."
    ]
   },
   {

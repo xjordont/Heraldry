@@ -11986,7 +11986,7 @@
   "route": "gpt",
   "spec_sha256": "4afb6a8e5da5ac6467d3b4e980523bae059eac67746f1c42f75afcfd22912951",
   "prompt_sha256": "0641ce2d3afcad469b75500fbad8ef5cf2630a4bdfd6f91be6417c2adc823892",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T16:04:25+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12011,7 +12011,9 @@
    "max_print_w_in_300ppi": 4.217
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T16:05:03+00:00"
+  "approved_at": "2026-10-31T16:05:03+00:00",
+  "rejected_at": "2026-10-31T19:53:01+00:00",
+  "rejected_reason": "Draw the sword the natural way: one shortsword in one scabbard on the left hip, the right hand crossing in front of the body to draw it forward and up, blade coming out of the scabbard mouth; no hand behind the back and no second scabbard."
  },
  "ART-END-ACTION-POINTS-AND-SUMMONS": {
   "family": "world",
