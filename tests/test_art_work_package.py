@@ -94,15 +94,17 @@ class OfflineRun(unittest.TestCase):
     @unittest.skipUnless(QUEUE["items"], "the live queue is empty (all illustrations approved); this check needs queued items")
     def test_tampering_is_caught(self):
         pkg, home, env = self.unpack("tampered")
-        ref = QUEUE["items"][0]["references"][-1]            # works for any queue size
-        (pkg / ref).write_bytes(b"version https://git-lfs.github.com/spec/v1\noid sha256:" + b"0" * 64 + b"\nsize 1\n")
+        ref = next((it["references"][-1] for it in QUEUE["items"] if it["references"]), None)   # any queue size
+        if ref:              # a queue of no-reference items (owner 2026-10-31) has no reference to tamper with
+            (pkg / ref).write_bytes(b"version https://git-lfs.github.com/spec/v1\noid sha256:" + b"0" * 64 + b"\nsize 1\n")
         prompt = pkg / QUEUE["items"][-1]["prompt"]
         prompt.write_text(prompt.read_text() + "extra\n")
         r = self.sh(pkg, env, f"{SCRIPTS}/work_preflight.py", "--repo", ".", "--offline-package")
         d = json.loads(r.stdout)
         self.assertEqual(d["status"], "BLOCKED")
         joined = " ".join(d["errors"])
-        self.assertIn(ref, joined)
+        if ref:
+            self.assertIn(ref, joined)
         self.assertIn("prompt hash mismatch", joined)
 
     @unittest.skipUnless(QUEUE["items"], "the live queue is empty (all illustrations approved); this check needs queued items")

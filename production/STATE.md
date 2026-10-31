@@ -1,5 +1,9 @@
 # Production state - RC527 source, main
 
+## Tailpieces: Codex generates them without references - 2026-10-31
+
+Owner decision, replacing the hand-made route above: "Codex, no references". `config/art_style.json` (`gpt_no_references`) lists the 47 ART-END items; `tools/art_gpt_pack.py` queues them with no references (reference set `none`) and without the prompt's STYLE REFERENCES paragraph, so Codex's built-in image tool can generate them unattended. Every other part of each prompt, including the full ink-style direction, is unchanged. The batch card says how to QA a no-reference item. Style drift is the known risk: the assigned reviewer compares each delivered image with its family's references (scenes, spells, equipment) and sends redos. `OWNER_SHEET.md` and `production/art/owner_upload/` are withdrawn.
+
 ## Tailpieces: owner generates them by hand - 2026-10-31
 
 ChatGPT Work stopped at its capability check too: its image tool (a Codex runtime) cannot attach reference files to a new image. Owner decision: generate the 47 tailpieces in ordinary ChatGPT, attaching each item's references by hand. `production/art/gpt/OWNER_SHEET.md` gives every item's reference set and verbatim prompt; finished images go to `production/art/owner_upload/`, where Claude Code checks them, records QA and receipts (surface: ChatGPT, owner-generated), and packages them for the `Import Work review bundle` workflow. Nothing is generated yet.
