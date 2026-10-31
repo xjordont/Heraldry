@@ -93,7 +93,7 @@
 <text x="291" y="182.9" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Cover</tspan><tspan font-weight="400">.</tspan></text>
 <rect x="275" y="187.3" width="12" height="12" fill="#fff" stroke="#000" stroke-width="1" rx="1.5"/>
 <text x="281" y="196.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">b</text>
-<text x="291" y="195" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Darkness</tspan><tspan font-weight="400"> gives </tspan><tspan font-weight="700">Cover</tspan><tspan font-weight="400"> against nonadjacent enemies.</tspan></text>
+<text x="291" y="195" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Darkness</tspan><tspan font-weight="400"> gives </tspan><tspan font-weight="700">Cover</tspan><tspan font-weight="400"> against non-adjacent enemies.</tspan></text>
 <rect x="275" y="199.4" width="12" height="12" fill="#fff" stroke="#000" stroke-width="1" rx="1.5"/>
 <text x="281" y="208.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">c</text>
 <text x="291" y="207.1" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Darkness</tspan><tspan font-weight="400"> gives no </tspan><tspan font-weight="700">Cover</tspan><tspan font-weight="400"> against an adjacent enemy.</tspan></text>

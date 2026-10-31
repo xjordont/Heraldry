@@ -1,0 +1,979 @@
+{
+  "base": "source/Heraldry_RC526.md",
+  "base_sha256": "040357729080de051fbf8d398240d131ba2e55bdcabe57ac32fefe5cfc09c235",
+  "authorization": "Owner instruction 2026-10-31 in Claude Code session: 'Fix everything to the best of your ability. I accept all your proposed changes.' Approves all findings of editorial/proposals/rc527-rules-text-review.md. COPY-01 (table-of-contents line) is withheld by the editor because deleting a source line renumbers every line-based block id and figure citation for no reader-visible change; RULE-14 to RULE-16 (Buckler enhanced prices, owner decision 6 in the report) are added under the same instruction.",
+  "status": "approved",
+  "note": "RC527 rules-text review: every non-lore line of RC526 read; copy, clarity, consistency, and rules patches. Rules patches follow the recommendation stated in the report for each owner decision (Repeating Crossbow enhanced prices to the 20c base; maximum Luck for the Charm of Epic Luck; 'a combatant that has NRG' for the two NRG-draining weapons; Monster Group targeting measured to any Monster in the Group; 'adjacent to the Lodestone'; Buckler enhanced rows to 4c).",
+  "patches": [
+    {
+      "id": "COPY-02",
+      "status": "approved",
+      "category": "Copy",
+      "where": "2.8.4 example",
+      "find": "*Example: a Ranger has clear **LOS**",
+      "replace": "*Example: A Ranger has clear **LOS**",
+      "expected_count": 1,
+      "note": "Worked examples open with a capital after 'Example:' everywhere else."
+    },
+    {
+      "id": "COPY-03",
+      "status": "approved",
+      "category": "Copy",
+      "where": "4.2 action table",
+      "find": "| **Shift** | 1 AP | **Shift 1\"** without triggering **Reflex Attack**.|",
+      "replace": "| **Shift** | 1 AP | **Shift 1\"** without triggering **Reflex Attack**. |",
+      "expected_count": 1,
+      "note": "Missing space before the closing pipe; every other row of the table has one."
+    },
+    {
+      "id": "COPY-04",
+      "status": "approved",
+      "category": "Copy",
+      "where": "4.5 example",
+      "find": "*Example: an Ogre attacks a Cleric.",
+      "replace": "*Example: An Ogre attacks a Cleric.",
+      "expected_count": 1,
+      "note": "Worked examples open with a capital after 'Example:' everywhere else."
+    },
+    {
+      "id": "COPY-05",
+      "status": "approved",
+      "category": "Copy",
+      "where": "5.1.2 Reaction table",
+      "find": "| **Reaction** | **AP** Cost | Best Use |",
+      "replace": "| Reaction | AP Cost | Best Use |",
+      "expected_count": 1,
+      "note": "The only table in the manuscript with bold header cells; headers are plain text everywhere else."
+    },
+    {
+      "id": "COPY-06",
+      "status": "approved",
+      "category": "Copy",
+      "where": "5.8.1 Lasting Injuries row 14",
+      "find": "**Max Speed 4\"**, **Standing** costs **+1 AP**, and cannot **Jump**.",
+      "replace": "**Max Speed 4\"**, **Stand** costs **+1 AP**, and cannot **Jump**.",
+      "expected_count": 1,
+      "note": "The action is named **Stand** (4.2); 'Standing' is not a defined term."
+    },
+    {
+      "id": "COPY-07",
+      "status": "approved",
+      "category": "Copy",
+      "where": "6.10 Sailor special rule",
+      "find": "caused by wind, rain, ice, shallow water, and **Slippery Terrain** caused by water",
+      "replace": "caused by wind, rain, ice, **Shallow Water**, and **Slippery Terrain** caused by water",
+      "expected_count": 1,
+      "note": "The Terrain Tag is **Shallow Water** (2.9.6); the sentence already bolds the sibling tag **Slippery Terrain**."
+    },
+    {
+      "id": "COPY-08",
+      "status": "approved",
+      "category": "Copy",
+      "where": "6.13 Druid Wild Shape Forms table",
+      "find": "| **Wolf Shape** | Novice |",
+      "replace": "| **Wolf** | Novice |",
+      "expected_count": 1,
+      "note": "The other six Wild Shape forms are named by animal alone (Boar, Great Eagle, Lynx, Bear, Stag, Lion); 'Wolf Shape' breaks the parallel."
+    },
+    {
+      "id": "COPY-09",
+      "status": "approved",
+      "category": "Copy",
+      "where": "B.4 Mossgrave hero card",
+      "find": "  - **Wolf Shape:** Speed **7\"**",
+      "replace": "  - **Wolf:** Speed **7\"**",
+      "expected_count": 1,
+      "note": "Follows COPY-08 so the hero card matches the class table. Requires hero-card re-extraction after promotion."
+    },
+    {
+      "id": "COPY-10",
+      "status": "approved",
+      "category": "Copy",
+      "where": "7.11 Weapon Qualities table",
+      "find": "| Enchanted +1 | This weapon deals",
+      "replace": "| **Enchanted +1** | This weapon deals",
+      "expected_count": 1,
+      "note": "Every other quality name in the 7.11 tables is bold, and **Enchanted +X** is bold wherever else it appears."
+    },
+    {
+      "id": "COPY-11",
+      "status": "approved",
+      "category": "Copy",
+      "where": "7.11 Weapon Qualities table",
+      "find": "| Enchanted +2 | This weapon deals",
+      "replace": "| **Enchanted +2** | This weapon deals",
+      "expected_count": 1,
+      "note": "Every other quality name in the 7.11 tables is bold, and **Enchanted +X** is bold wherever else it appears."
+    },
+    {
+      "id": "COPY-12",
+      "status": "approved",
+      "category": "Copy",
+      "where": "7.11 Weapon Qualities table",
+      "find": "| Enchanted +3 | This weapon deals",
+      "replace": "| **Enchanted +3** | This weapon deals",
+      "expected_count": 1,
+      "note": "Every other quality name in the 7.11 tables is bold, and **Enchanted +X** is bold wherever else it appears."
+    },
+    {
+      "id": "COPY-13",
+      "status": "approved",
+      "category": "Copy",
+      "where": "7.11 Weapon Qualities table",
+      "find": "| Enchanted +4 | This weapon deals",
+      "replace": "| **Enchanted +4** | This weapon deals",
+      "expected_count": 1,
+      "note": "Every other quality name in the 7.11 tables is bold, and **Enchanted +X** is bold wherever else it appears."
+    },
+    {
+      "id": "COPY-14",
+      "status": "approved",
+      "category": "Copy",
+      "where": "7.11 Weapon Qualities table",
+      "find": "| Enchanted +5 | This weapon deals",
+      "replace": "| **Enchanted +5** | This weapon deals",
+      "expected_count": 1,
+      "note": "Every other quality name in the 7.11 tables is bold, and **Enchanted +X** is bold wherever else it appears."
+    },
+    {
+      "id": "COPY-15",
+      "status": "approved",
+      "category": "Copy",
+      "where": "7.11 Armour Qualities table",
+      "find": "| Enchanted +1 | **Chest only:**",
+      "replace": "| **Enchanted +1** | **Chest only:**",
+      "expected_count": 1,
+      "note": "Every other quality name in the 7.11 tables is bold, and **Enchanted +X** is bold wherever else it appears."
+    },
+    {
+      "id": "COPY-16",
+      "status": "approved",
+      "category": "Copy",
+      "where": "7.11 Armour Qualities table",
+      "find": "| Enchanted +2 | **Chest only:**",
+      "replace": "| **Enchanted +2** | **Chest only:**",
+      "expected_count": 1,
+      "note": "Every other quality name in the 7.11 tables is bold, and **Enchanted +X** is bold wherever else it appears."
+    },
+    {
+      "id": "COPY-17",
+      "status": "approved",
+      "category": "Copy",
+      "where": "7.11 Armour Qualities table",
+      "find": "| Enchanted +3 | **Chest only:**",
+      "replace": "| **Enchanted +3** | **Chest only:**",
+      "expected_count": 1,
+      "note": "Every other quality name in the 7.11 tables is bold, and **Enchanted +X** is bold wherever else it appears."
+    },
+    {
+      "id": "COPY-18",
+      "status": "approved",
+      "category": "Copy",
+      "where": "7.11 Armour Qualities table",
+      "find": "| Enchanted +4 | **Chest only:**",
+      "replace": "| **Enchanted +4** | **Chest only:**",
+      "expected_count": 1,
+      "note": "Every other quality name in the 7.11 tables is bold, and **Enchanted +X** is bold wherever else it appears."
+    },
+    {
+      "id": "COPY-19",
+      "status": "approved",
+      "category": "Copy",
+      "where": "7.11 Armour Qualities table",
+      "find": "| Enchanted +5 | **Chest only:**",
+      "replace": "| **Enchanted +5** | **Chest only:**",
+      "expected_count": 1,
+      "note": "Every other quality name in the 7.11 tables is bold, and **Enchanted +X** is bold wherever else it appears."
+    },
+    {
+      "id": "COPY-20",
+      "status": "approved",
+      "category": "Copy",
+      "where": "7.14 Tier 5 poison 3, World Serpent Venom",
+      "find": "target cannot move, heal, or use **Reactions** for the rest of the round.",
+      "replace": "target cannot move, heal, or use **Reactions** until the end of the round.",
+      "expected_count": 1,
+      "note": "'For the rest of the round' is the only use in the manuscript; the timing phrase used everywhere else is 'until the end of the round'."
+    },
+    {
+      "id": "COPY-21",
+      "status": "approved",
+      "category": "Copy",
+      "where": "7.17 Legendary Artifact Armour 6, Archsage Vestments",
+      "find": "This armour is non-metal. Gain **+2** to **Casting Checks**, are **Resistant** to damage from Powers, and gain **+2** on **Checks** made to resist enemy Powers.",
+      "replace": "This armour is non-metal. You gain **+2** to **Casting Checks**, are **Resistant** to damage from Powers, and gain **+2** on **Checks** made to resist enemy Powers.",
+      "expected_count": 1,
+      "note": "Faulty parallelism: 'Gain ..., are Resistant ..., and gain ...' has no subject for 'are'. Adding 'You' repairs it without touching the effect."
+    },
+    {
+      "id": "COPY-22",
+      "status": "approved",
+      "category": "Copy",
+      "where": "7.17 Legendary Artifacts 14, Lenses of Apex Mastery",
+      "find": "**INT Checks** are made with **Advantage**, ignore visual penalties, and gain **+2** to **Casting Checks**.",
+      "replace": "Your **INT Checks** are made with **Advantage**. You ignore visual penalties and gain **+2** to **Casting Checks**.",
+      "expected_count": 1,
+      "note": "Faulty parallelism: as written, the INT Checks 'ignore visual penalties' and 'gain +2 to Casting Checks'. The wearer does. Effects unchanged."
+    },
+    {
+      "id": "COPY-23",
+      "status": "approved",
+      "category": "Copy",
+      "where": "8.6 Druidic Rituals, Summon Burrow Badger",
+      "find": "- **Summon (Badger):**",
+      "replace": "- **Summon (Burrow Badger):**",
+      "expected_count": 1,
+      "note": "The Summon profile label should carry the Summon's full name as used by the Power and its Effect line."
+    },
+    {
+      "id": "COPY-24",
+      "status": "approved",
+      "category": "Copy",
+      "where": "8.6 Druidic Rituals, Summon Great Hawk",
+      "find": "- **Summon (Hawk):**",
+      "replace": "- **Summon (Great Hawk):**",
+      "expected_count": 1,
+      "note": "The Summon profile label should carry the Summon's full name as used by the Power and its Effect line."
+    },
+    {
+      "id": "COPY-25",
+      "status": "approved",
+      "category": "Copy",
+      "where": "8.6 Druidic Rituals, Summon Bear Guardian",
+      "find": "- **Summon (Bear):**",
+      "replace": "- **Summon (Bear Guardian):**",
+      "expected_count": 1,
+      "note": "The Summon profile label should carry the Summon's full name as used by the Power and its Effect line."
+    },
+    {
+      "id": "COPY-26",
+      "status": "approved",
+      "category": "Copy",
+      "where": "8.6 Druidic Rituals, Summon Carrion Hounds",
+      "find": "- **Summon (Hound, Each):**",
+      "replace": "- **Summon (Carrion Hound, Each):**",
+      "expected_count": 1,
+      "note": "The Summon profile label should carry the Summon's full name as used by the Power and its Effect line."
+    },
+    {
+      "id": "COPY-27",
+      "status": "approved",
+      "category": "Copy",
+      "where": "9 Bosses, The Hollow Crown of the Ashlands [Boss]",
+      "find": "if fewer than 3 allied Undead are within **8\"**, place 2 **Forsaken Knight** in legal spaces within **6\"**",
+      "replace": "if fewer than 3 allied Undead are within **8\"**, place 2 **Forsaken Knights** in legal spaces within **6\"**",
+      "expected_count": 1,
+      "note": "Boss placement rules are the only place the manuscript writes 'place 2 **Name**' in the singular; every other count of two or more uses the plural ('4 Dire Wolves', '3 Satchels', '2 Feverwort markers'). All seven Boss rules share the pattern, so apply all seven or none."
+    },
+    {
+      "id": "COPY-28",
+      "status": "approved",
+      "category": "Copy",
+      "where": "9 Bosses, Avatar of the Old Growth [Boss]",
+      "find": "**Awaken the Grove (AI Step 1, on d6 6+):** Once per adventure, place 2 **Briarling** in",
+      "replace": "**Awaken the Grove (AI Step 1, on d6 6+):** Once per adventure, place 2 **Briarlings** in",
+      "expected_count": 1,
+      "note": "Boss placement rules are the only place the manuscript writes 'place 2 **Name**' in the singular; every other count of two or more uses the plural ('4 Dire Wolves', '3 Satchels', '2 Feverwort markers'). All seven Boss rules share the pattern, so apply all seven or none."
+    },
+    {
+      "id": "COPY-29",
+      "status": "approved",
+      "category": "Copy",
+      "where": "9 Bosses, The Broodmother Prime [Boss]",
+      "find": "place 2 **Giant Black Widow** in legal spaces",
+      "replace": "place 2 **Giant Black Widows** in legal spaces",
+      "expected_count": 1,
+      "note": "Boss placement rules are the only place the manuscript writes 'place 2 **Name**' in the singular; every other count of two or more uses the plural ('4 Dire Wolves', '3 Satchels', '2 Feverwort markers'). All seven Boss rules share the pattern, so apply all seven or none."
+    },
+    {
+      "id": "COPY-30",
+      "status": "approved",
+      "category": "Copy",
+      "where": "9 Bosses, Captain Veyr of the Forsaken [Boss]",
+      "find": "Once per adventure, place 2 **Forsaken Knight** in legal spaces within **6\"**, then all",
+      "replace": "Once per adventure, place 2 **Forsaken Knights** in legal spaces within **6\"**, then all",
+      "expected_count": 1,
+      "note": "Boss placement rules are the only place the manuscript writes 'place 2 **Name**' in the singular; every other count of two or more uses the plural ('4 Dire Wolves', '3 Satchels', '2 Feverwort markers'). All seven Boss rules share the pattern, so apply all seven or none."
+    },
+    {
+      "id": "COPY-31",
+      "status": "approved",
+      "category": "Copy",
+      "where": "9 Bosses, The Frost Bailiff Magistrate [Boss]",
+      "find": "place 2 **White Court Guard** in",
+      "replace": "place 2 **White Court Guards** in",
+      "expected_count": 1,
+      "note": "Boss placement rules are the only place the manuscript writes 'place 2 **Name**' in the singular; every other count of two or more uses the plural ('4 Dire Wolves', '3 Satchels', '2 Feverwort markers'). All seven Boss rules share the pattern, so apply all seven or none."
+    },
+    {
+      "id": "COPY-32",
+      "status": "approved",
+      "category": "Copy",
+      "where": "9 Bosses, The Sun-Crowned Prince [Boss]",
+      "find": "place 2 **Skeleton Warrior** in legal spaces",
+      "replace": "place 2 **Skeleton Warriors** in legal spaces",
+      "expected_count": 1,
+      "note": "Boss placement rules are the only place the manuscript writes 'place 2 **Name**' in the singular; every other count of two or more uses the plural ('4 Dire Wolves', '3 Satchels', '2 Feverwort markers'). All seven Boss rules share the pattern, so apply all seven or none."
+    },
+    {
+      "id": "COPY-33",
+      "status": "approved",
+      "category": "Copy",
+      "where": "9 Bosses, The Antlered Warden of the Tithe [Boss]",
+      "find": "**Call the Wild Court (AI Step 1, on d6 6+):** Once per adventure, place 2 **Briarling** in",
+      "replace": "**Call the Wild Court (AI Step 1, on d6 6+):** Once per adventure, place 2 **Briarlings** in",
+      "expected_count": 1,
+      "note": "Boss placement rules are the only place the manuscript writes 'place 2 **Name**' in the singular; every other count of two or more uses the plural ('4 Dire Wolves', '3 Satchels', '2 Feverwort markers'). All seven Boss rules share the pattern, so apply all seven or none."
+    },
+    {
+      "id": "COPY-34",
+      "status": "approved",
+      "category": "Copy",
+      "where": "10.3 Greenmark weather table",
+      "find": "| 6 | Dappled Sunlight | Shifting light and shade play across the forest floor. No adverse weather effects apply. Standard conditions apply. |",
+      "replace": "| 6 | Dappled Sunlight | Shifting light and shade play across the forest floor. No adverse weather effects apply. |",
+      "expected_count": 1,
+      "note": "'Standard conditions apply' repeats 'No adverse weather effects apply'; the other climates' clear-weather rows carry one sentence."
+    },
+    {
+      "id": "COPY-35",
+      "status": "approved",
+      "category": "Copy",
+      "where": "10.1 Setup Roll-off",
+      "find": "The higher result wins the roll-off.",
+      "replace": "The higher result wins the **Setup Roll-off**.",
+      "expected_count": 1,
+      "note": "The paragraph defines and otherwise always writes the full bold term **Setup Roll-off**."
+    },
+    {
+      "id": "COPY-36",
+      "status": "approved",
+      "category": "Copy",
+      "where": "C.3 Conditions quick reference, Hidden row",
+      "find": "use that distance as your **Hide** distance while the rule applies",
+      "replace": "use that distance as your **Hide distance** while the rule applies",
+      "expected_count": 1,
+      "note": "The defined term (5.9 Hidden, 2.8, 4.3.2) is **Hide distance**, bolded as one term."
+    },
+    {
+      "id": "COPY-37",
+      "status": "approved",
+      "category": "Copy",
+      "where": "C.12 Monster Phase worked example",
+      "find": "During the **Monster Phase**, Groups 1, 2, and 4 are **Awake**. They activate in ascending group number order: Group 1 first, then Group 2, then Group 4. When Group 2 activates, no rule sets the order of its individual Monsters, so use **Random Determination** to choose which remaining Monster activates next. Each chosen Monster executes the **first valid instruction** of the **Standard Monster AI Script** and ends their activation before another Monster in the Group is chosen. No player chooses to delay or reorder the Groups or their individual Monsters.",
+      "replace": "*During the **Monster Phase**, Groups 1, 2, and 4 are **Awake**. They activate in ascending group number order: Group 1 first, then Group 2, then Group 4. When Group 2 activates, no rule sets the order of its individual Monsters, so use **Random Determination** to choose which remaining Monster activates next. Each chosen Monster executes the **first valid instruction** of the **Standard Monster AI Script** and ends their activation before another Monster in the Group is chosen. No player chooses to delay or reorder the Groups or their individual Monsters.*",
+      "expected_count": 1,
+      "note": "This worked example in C.12 is the only one in the appendix set in roman type; the sibling examples in C.12 are italic, and the build styles examples by their emphasis."
+    },
+    {
+      "id": "COPY-38",
+      "status": "approved",
+      "category": "Copy",
+      "where": "C.13 Terrain and Cover Snapshot",
+      "find": "- **Dangerous Terrain:** resolve the listed hazard",
+      "replace": "- **Dangerous Terrain:** Resolve the listed hazard",
+      "expected_count": 1,
+      "note": "Every other bullet in the Terrain and Cover Snapshot begins its definition with a capital."
+    },
+    {
+      "id": "SEC-01",
+      "status": "approved",
+      "category": "Copy",
+      "where": "2.5 Action Points",
+      "find": "following the Monster AI rules in **Section 9.5**.",
+      "replace": "following the Monster AI rules in **9.5**.",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "SEC-02",
+      "status": "approved",
+      "category": "Copy",
+      "where": "3.4 Monster Phase",
+      "find": "resolve Monster waking rules in **Section 9.4** and any scenario",
+      "replace": "resolve Monster waking rules in **9.4** and any scenario",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "SEC-03",
+      "status": "approved",
+      "category": "Copy",
+      "where": "3.4.3 Monster activations",
+      "find": "**Standard Monster AI Script** in **Section 9.5** from top to bottom",
+      "replace": "**Standard Monster AI Script** in **9.5** from top to bottom",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "SEC-04",
+      "status": "approved",
+      "category": "Copy",
+      "where": "4.1 Actions",
+      "find": "If a **Monster** is required to make an ability-style **Check**, use **Section 2.3**.",
+      "replace": "If a **Monster** is required to make an ability-style **Check**, use **2.3**.",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "SEC-05",
+      "status": "approved",
+      "category": "Copy",
+      "where": "4.4.7 Terrain and movement",
+      "find": "Terrain types and tags are defined in **Section 2.9**.",
+      "replace": "Terrain types and tags are defined in **2.9**.",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "SEC-06",
+      "status": "approved",
+      "category": "Copy",
+      "where": "5.5.4 Reflex Attack",
+      "find": "**Reflex Attacks** are **Reactions** and follow **Section 4.5**.",
+      "replace": "**Reflex Attacks** are **Reactions** and follow **4.5**.",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "SEC-07",
+      "status": "approved",
+      "category": "Copy",
+      "where": "7.1 Equipment limits",
+      "find": "items from **Section 7.17** and does not count",
+      "replace": "items from **7.17** and does not count",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "SEC-08",
+      "status": "approved",
+      "category": "Copy",
+      "where": "7.11 Item Qualities",
+      "find": "grant that exact trait from **Section 7.7**.",
+      "replace": "grant that exact trait from **7.7**.",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "SEC-09",
+      "status": "approved",
+      "category": "Copy",
+      "where": "8.2 Power durations",
+      "find": "use the condition entry in **Section 5.9** unless the Power explicitly overrides it. A **Summon** uses the duration stated by their rule, or the default Summon duration in **Section 2.5.1**, and",
+      "replace": "use the condition entry in **5.9** unless the Power explicitly overrides it. A **Summon** uses the duration stated by their rule, or the default Summon duration in **2.5.1**, and",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "SEC-10",
+      "status": "approved",
+      "category": "Copy",
+      "where": "9.1 Monster profile",
+      "find": "following the **Monster** AI rules in **Section 9.5**,",
+      "replace": "following the **Monster** AI rules in **9.5**,",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "SEC-11",
+      "status": "approved",
+      "category": "Copy",
+      "where": "9.3 Monster Groups",
+      "find": "as described in **Section 3.4**. Within an activating Group",
+      "replace": "as described in **3.4**. Within an activating Group",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "SEC-12",
+      "status": "approved",
+      "category": "Copy",
+      "where": "9.6 Special Abilities",
+      "find": "targeting priorities from **Section 9.5**.",
+      "replace": "targeting priorities from **9.5**.",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "SEC-13",
+      "status": "approved",
+      "category": "Copy",
+      "where": "10.1 Adventure Preparation Sequence",
+      "find": "APL as described in **Section 6.14**.",
+      "replace": "APL as described in **6.14**.",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "SEC-14",
+      "status": "approved",
+      "category": "Copy",
+      "where": "10.4 Chasm scenario rules",
+      "find": "**Jump** rules in **Section 4.4.9**.",
+      "replace": "**Jump** rules in **4.4.9**.",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "SEC-15",
+      "status": "approved",
+      "category": "Copy",
+      "where": "C.1 Round sequence",
+      "find": "- Activate each **Awake** Monster Group as described in **Section 3.4**.",
+      "replace": "- Activate each **Awake** Monster Group as described in **3.4**.",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "SEC-16",
+      "status": "approved",
+      "category": "Copy",
+      "where": "C.6 and Glossary, Empower",
+      "find": "See **Empower** in **Section 8.2**.",
+      "replace": "See **Empower** in **8.2**.",
+      "expected_count": 2,
+      "note": "Same normalization; this sentence occurs twice (C.6 and the glossary), so the patch replaces both."
+    },
+    {
+      "id": "SEC-17",
+      "status": "approved",
+      "category": "Copy",
+      "where": "C.12 Round sequence",
+      "find": "then activate each **Awake** Monster Group as described in **Section 3.4**.",
+      "replace": "then activate each **Awake** Monster Group as described in **3.4**.",
+      "expected_count": 1,
+      "note": "Subsection cross-references are written as a bare bold number (**9.5**, **3.4.2**) in over a hundred places; these 19 'Section N.N' forms are the outliers. Whole-chapter references ('Section 7') are left as they are."
+    },
+    {
+      "id": "HYPH-01",
+      "status": "approved",
+      "category": "Copy",
+      "where": "Whole manuscript, 16 occurrences",
+      "find": "nonmagical",
+      "replace": "non-magical",
+      "expected_count": 16,
+      "note": "The manuscript hyphenates every other 'non-' compound (non-metal, non-Monster, non-consumable, and non-magical ×12) but closes 'nonmagical' ×16 and 'nonadjacent' ×10. Hyphenating the two closed forms removes the split with the fewest changes; none of the occurrences is in italic lore. The alternative is to close the 12 'non-magical' instead, which would also need its own patch."
+    },
+    {
+      "id": "HYPH-02",
+      "status": "approved",
+      "category": "Copy",
+      "where": "Whole manuscript, 10 occurrences",
+      "find": "nonadjacent",
+      "replace": "non-adjacent",
+      "expected_count": 10,
+      "note": "See HYPH-01. Note that one occurrence sits in 2.9.1, on which the scenario figures depend, so this patch alone re-marks about 40 figures."
+    },
+    {
+      "id": "CLAR-01",
+      "status": "approved",
+      "category": "Clarity",
+      "where": "8.3 Known Powers",
+      "find": "- When a class table says **Learn 1 new Power**, choose one Power from a tier that Hero can currently access.",
+      "replace": "- When a class entry says to learn one additional Power, choose one Power from a tier that Hero can currently access.",
+      "expected_count": 1,
+      "note": "No class table says 'Learn 1 new Power'. The class entries say 'Learn one additional **Arcane Spell** at Levels 3, 5, ...' (eight entries), so the quoted bold label points at text that does not exist."
+    },
+    {
+      "id": "CLAR-02",
+      "status": "approved",
+      "category": "Clarity",
+      "where": "10.3 Ashlands weather table",
+      "find": "| 6 | Clear Skies, Hot Air | No adverse weather effects apply, but the ambient heat is notable (carrying Waterskins remains specified by the scenario). |",
+      "replace": "| 6 | Clear Skies, Hot Air | No adverse weather effects apply beyond any scenario rule that requires water. |",
+      "expected_count": 1,
+      "note": "'The ambient heat is notable' has no rules content and the parenthetical is hard to parse. The Sun-Drowned row 6 already says the same thing cleanly; this mirrors it."
+    },
+    {
+      "id": "CLAR-03",
+      "status": "approved",
+      "category": "Clarity",
+      "where": "8.4/8.6 chain lightning Powers",
+      "find": "Deal **2d6 + INT lightning damage** to the primary target. Then deal",
+      "replace": "Deal **2d6 + INT lightning damage** to the first target. Then deal",
+      "expected_count": 1,
+      "note": "'Primary target' collides with the Monster AI term **Primary Target** (9.5), which has a specific meaning. These chain Powers mean the first target chosen; 'first target' says so and matches the 'additional targets' that follow."
+    },
+    {
+      "id": "CLAR-04",
+      "status": "approved",
+      "category": "Clarity",
+      "where": "8.4/8.6 chain lightning Powers",
+      "find": "Deal **4d6 + INT lightning damage** to the primary target. Then deal",
+      "replace": "Deal **4d6 + INT lightning damage** to the first target. Then deal",
+      "expected_count": 1,
+      "note": "'Primary target' collides with the Monster AI term **Primary Target** (9.5), which has a specific meaning. These chain Powers mean the first target chosen; 'first target' says so and matches the 'additional targets' that follow."
+    },
+    {
+      "id": "CLAR-05",
+      "status": "approved",
+      "category": "Clarity",
+      "where": "8.4/8.6 chain lightning Powers",
+      "find": "Deal **2d6 + SPI lightning damage** to the primary target. Then deal",
+      "replace": "Deal **2d6 + SPI lightning damage** to the first target. Then deal",
+      "expected_count": 1,
+      "note": "'Primary target' collides with the Monster AI term **Primary Target** (9.5), which has a specific meaning. These chain Powers mean the first target chosen; 'first target' says so and matches the 'additional targets' that follow."
+    },
+    {
+      "id": "CLAR-06",
+      "status": "approved",
+      "category": "Clarity",
+      "where": "8.4/8.6 chain lightning Powers",
+      "find": "Deal **4d6 + SPI lightning damage** to the primary target. Then deal",
+      "replace": "Deal **4d6 + SPI lightning damage** to the first target. Then deal",
+      "expected_count": 1,
+      "note": "'Primary target' collides with the Monster AI term **Primary Target** (9.5), which has a specific meaning. These chain Powers mean the first target chosen; 'first target' says so and matches the 'additional targets' that follow."
+    },
+    {
+      "id": "CLAR-07",
+      "status": "approved",
+      "category": "Clarity",
+      "where": "10.4 Core Scenario victory conditions",
+      "find": "The adventure ends when the Pelt is carried off-map,",
+      "replace": "The adventure ends when the Pelt is carried off the battlefield,",
+      "expected_count": 1,
+      "note": "The manuscript's term is 'battlefield' (carried off the battlefield, leave the battlefield, battlefield edge); 'off-map' appears only in these five victory conditions and 'map' is not otherwise a rules term."
+    },
+    {
+      "id": "CLAR-08",
+      "status": "approved",
+      "category": "Clarity",
+      "where": "10.4 Core Scenario victory conditions",
+      "find": "The adventure ends when the Satchel is carried off-map,",
+      "replace": "The adventure ends when the Satchel is carried off the battlefield,",
+      "expected_count": 1,
+      "note": "The manuscript's term is 'battlefield' (carried off the battlefield, leave the battlefield, battlefield edge); 'off-map' appears only in these five victory conditions and 'map' is not otherwise a rules term."
+    },
+    {
+      "id": "CLAR-09",
+      "status": "approved",
+      "category": "Clarity",
+      "where": "10.4 Core Scenario victory conditions",
+      "find": "when the Totem is carried off-map,",
+      "replace": "when the Totem is carried off the battlefield,",
+      "expected_count": 1,
+      "note": "The manuscript's term is 'battlefield' (carried off the battlefield, leave the battlefield, battlefield edge); 'off-map' appears only in these five victory conditions and 'map' is not otherwise a rules term."
+    },
+    {
+      "id": "CLAR-10",
+      "status": "approved",
+      "category": "Clarity",
+      "where": "10.4 Core Scenario victory conditions",
+      "find": "The adventure ends when the Archive Codex is carried off-map,",
+      "replace": "The adventure ends when the Archive Codex is carried off the battlefield,",
+      "expected_count": 1,
+      "note": "The manuscript's term is 'battlefield' (carried off the battlefield, leave the battlefield, battlefield edge); 'off-map' appears only in these five victory conditions and 'map' is not otherwise a rules term."
+    },
+    {
+      "id": "CLAR-11",
+      "status": "approved",
+      "category": "Clarity",
+      "where": "10.4 Core Scenario victory conditions",
+      "find": "The adventure ends when Kest's Reliquary is carried off-map,",
+      "replace": "The adventure ends when Kest's Reliquary is carried off the battlefield,",
+      "expected_count": 1,
+      "note": "The manuscript's term is 'battlefield' (carried off the battlefield, leave the battlefield, battlefield edge); 'off-map' appears only in these five victory conditions and 'map' is not otherwise a rules term."
+    },
+    {
+      "id": "CLAR-12",
+      "status": "approved",
+      "category": "Clarity",
+      "where": "9.1 Monster profile, CV",
+      "find": "until the outcome-grade rules in **10.5.11** secure it",
+      "replace": "until the reward-banking rules in **10.5.11** secure it",
+      "expected_count": 1,
+      "note": "10.5.11 is titled 'Reward Timing and Banking' and contains no 'outcome grade'; the description should match the section it points to."
+    },
+    {
+      "id": "CLAR-13",
+      "status": "approved",
+      "category": "Clarity",
+      "where": "9.6 Swallow Whole",
+      "find": "If the swallowing **Monster** is **Knocked Out**, removed, or killed, place all swallowed targets",
+      "replace": "If the swallowing **Monster** is reduced to **0 HP** or otherwise removed from play, place all swallowed targets",
+      "expected_count": 1,
+      "note": "Monsters are never **Knocked Out** (that state belongs to Heroes in 5.8); a Monster at 0 HP is removed. 'Killed' is also not a defined state. The new wording uses the manuscript's own phrasing for Monster defeat (see 9.1 CV)."
+    },
+    {
+      "id": "CLAR-14",
+      "status": "approved",
+      "category": "Clarity",
+      "where": "7.2 Buying and selling, Sale value",
+      "find": "Round the sale value down to the nearest **1c**, minimum **0c**. An item with a final sale value below **1c** sells for **0c**.",
+      "replace": "Round the sale value down to the nearest **1c**, minimum **0c**.",
+      "expected_count": 1,
+      "note": "The second sentence restates the rounding-and-minimum rule immediately before it."
+    },
+    {
+      "id": "CONS-01",
+      "status": "approved",
+      "category": "Consistency",
+      "where": "7.8 Weapons, abbreviation key",
+      "find": "Damage type abbreviations in weapon tables: **(B)** blunt,",
+      "replace": "Damage type abbreviations in weapon tables: **(Ac)** acid, **(B)** blunt,",
+      "expected_count": 1,
+      "note": "5.4.3 lists acid among the damage types and the item tables use **(Ac)**; the abbreviation key omits it."
+    },
+    {
+      "id": "CONS-02",
+      "status": "approved",
+      "category": "Consistency",
+      "where": "9 Elite Monsters, Terror Aura reminder",
+      "find": "- **Terror Aura (4\"):** An enemy that starts their activation within **4\"** of this Monster must pass a **SPI Check** or become **Frightened**.",
+      "replace": "- **Terror Aura (4\"):** An enemy non-Monster combatant that starts their activation within **4\"** of this Monster must pass a **SPI Check** or become **Frightened**.",
+      "expected_count": 1,
+      "note": "9.6 defines **Terror Aura (X\")** as functioning as **Frightful Presence (X\")**, which applies to 'an enemy non-Monster combatant'. Monsters never make Checks (canon convention), so the reminder text should name the same scope."
+    },
+    {
+      "id": "CONS-03",
+      "status": "approved",
+      "category": "Consistency",
+      "where": "9 Bosses, Terror Aura reminder",
+      "find": "- **Terror Aura (10\"):** An enemy that starts their activation within **10\"** of this Monster must pass a **SPI Check** or become **Frightened**.",
+      "replace": "- **Terror Aura (10\"):** An enemy non-Monster combatant that starts their activation within **10\"** of this Monster must pass a **SPI Check** or become **Frightened**.",
+      "expected_count": 1,
+      "note": "See CONS-02."
+    },
+    {
+      "id": "CONS-04",
+      "status": "approved",
+      "category": "Consistency",
+      "where": "9 Bosses, Broodmother",
+      "find": "- **Web Tyrant:** Allied spiders within **8\"** roll their base damage dice with **Advantage**.\n- **Terror Aura (8\"):** An enemy that starts their activation within **8\"** of this Monster must pass a **SPI Check** or become **Frightened**.",
+      "replace": "- **Web Tyrant:** Allied spiders within **8\"** roll their base damage dice with **Advantage**.\n- **Terror Aura (8\"):** An enemy non-Monster combatant that starts their activation within **8\"** of this Monster must pass a **SPI Check** or become **Frightened**.",
+      "expected_count": 1,
+      "note": "See CONS-02. The 8\" line is duplicated between two Bosses, so the find includes the preceding bullet to stay unique."
+    },
+    {
+      "id": "CONS-05",
+      "status": "approved",
+      "category": "Consistency",
+      "where": "9 Bosses, Captain Veyr",
+      "find": "- **Cursed Command:** An enemy that ends their activation within **8\"** of Captain Veyr becomes **Cursed**.\n- **Terror Aura (8\"):** An enemy that starts their activation within **8\"** of this Monster must pass a **SPI Check** or become **Frightened**.",
+      "replace": "- **Cursed Command:** An enemy that ends their activation within **8\"** of Captain Veyr becomes **Cursed**.\n- **Terror Aura (8\"):** An enemy non-Monster combatant that starts their activation within **8\"** of this Monster must pass a **SPI Check** or become **Frightened**.",
+      "expected_count": 1,
+      "note": "See CONS-02 and CONS-04."
+    },
+    {
+      "id": "CONS-06",
+      "status": "approved",
+      "category": "Consistency",
+      "where": "5.5.3 Parry example",
+      "find": "*Example: A Guard is targeted by a melee attack and declares **Parry** with a shortsword, spending **1 AP** before damage dice are rolled. The attack deals **5 slashing** and **2 fire** damage, **7** in total. The Guard rolls the shortsword's d6 and gets a **6**, rolls an exploding d6 for **2**, then adds **STR +2** for a parry total of **10**. The **Parry** succeeds, so the Guard suffers none of the attack's damage. Because the retained parry base die showed its maximum value, the attacker suffers **10 Riposte damage** and applies **AV** against it normally.*",
+      "replace": "*Example: A Fighter is targeted by a melee attack and declares **Parry** with a shortsword, spending **1 AP** before damage dice are rolled. The attack deals **5 slashing** and **2 fire** damage, **7** in total. The Fighter rolls the shortsword's d6 and gets a **6**, rolls an exploding d6 for **2**, then adds **STR +2** for a parry total of **10**. The **Parry** succeeds, so the Fighter suffers none of the attack's damage. Because the retained parry base die showed its maximum value, the attacker suffers **10 Riposte damage** and applies **AV** against it normally.*",
+      "expected_count": 1,
+      "note": "'Guard' is the 11.2.5 Hireling, who carries a Mace and has no STR score. This example gives the Guard a shortsword and **STR +2**, so it contradicts the profile; a Fighter fits."
+    },
+    {
+      "id": "CONS-07",
+      "status": "approved",
+      "category": "Consistency",
+      "where": "C.12 Parry worked example",
+      "find": "*A Raider attacks a Guard with a hand axe. The Guard declares **Parry** before any damage dice are rolled. The Raider then rolls **1d6 = 5**, adds **+2 STR**, and would deal **7 damage**. The Guard rolls a parry total with a shortsword: **1d6 = 5**, plus **+4 STR**, for **9**. The parry succeeds, so the Guard takes **0 damage**. Because the Guard's parry base die was not a maximum result, no **Riposte** damage is dealt back.*",
+      "replace": "*A Raider attacks a Fighter with a handaxe. The Fighter declares **Parry** before any damage dice are rolled. The Raider then rolls **1d6 = 5**, adds **+2 STR**, and would deal **7 damage**. The Fighter rolls a parry total with a shortsword: **1d6 = 5**, plus **+4 STR**, for **9**. The parry succeeds, so the Fighter takes **0 damage**. Because the Fighter's parry base die was not a maximum result, no **Riposte** damage is dealt back.*",
+      "expected_count": 1,
+      "note": "Same collision with the 11.2.5 Guard Hireling (shortsword, **+4 STR**). The weapon is the Handaxe (7.8), one word; lowercased to match 'shortsword' in the same example."
+    },
+    {
+      "id": "CONS-08",
+      "status": "approved",
+      "category": "Consistency",
+      "where": "Glossary, Adamantine",
+      "find": "**Adamantine** items are metal for rules that care whether an item is metal. See **7.6**.",
+      "replace": "**Adamantine** items are metal for rules that care whether an item is metal. See **7.11**.",
+      "expected_count": 1,
+      "note": "7.6 is Treasure Tables; the Adamantine quality is defined in 7.11 Item Qualities."
+    },
+    {
+      "id": "CONS-09",
+      "status": "approved",
+      "category": "Consistency",
+      "where": "Glossary, Wild Shape",
+      "find": "replacing **SPD**, **Sz**, and other listed values. See **6.12**.",
+      "replace": "replacing **SPD**, **Sz**, and other listed values. See **6.13**.",
+      "expected_count": 1,
+      "note": "6.12 is General Talents; Wild Shape is in the Druid entry of 6.13 Hero Classes."
+    },
+    {
+      "id": "CONS-10",
+      "status": "approved",
+      "category": "Consistency",
+      "where": "Glossary, Blood Surge",
+      "find": "**Blood Surge:** A Sorcery or Sorcerer rule that increases power through blood-fuelled cost or backlash, as defined by the specific rule that grants it.",
+      "replace": "**Blood Surge:** A Novice Sorcerer Talent. Once per round, after a **Sorcery's** damage is rolled but before mitigation, the caster may lose HP up to their current Level, to a maximum of **5 HP**, and add the same amount to the damage applied to one enemy affected by that roll. See **6.13**.",
+      "expected_count": 1,
+      "note": "The glossary entry is a placeholder ('as defined by the specific rule that grants it'); Blood Surge is one specific Novice Sorcerer Talent in 6.13. The new entry summarizes that Talent and points to it."
+    },
+    {
+      "id": "CONS-11",
+      "status": "approved",
+      "category": "Consistency",
+      "where": "C.12 Monster AI worked example",
+      "find": "A **Green Dragon** begins their activation with three Heroes clustered in front of them. They roll **5** for **Poison Breath (AI Step 1, on d6 5+)**, so the AI Step is valid. Place the cone using the Monster area-placement priorities, resolve the listed Checks and damage, and end the Dragon's activation.",
+      "replace": "*A **Green Dragon** begins their activation with three Heroes clustered in front of them. They roll **5** for **Poison Breath (AI Step 1, on d6 5+)**, so the AI Step is valid. Place the cone using the Monster area-placement priorities, resolve the listed damage, and end the Dragon's activation.*",
+      "expected_count": 1,
+      "note": "Poison Breath (Green Dragon, 9) deals **4d8 poison damage** with no Check, so 'the listed Checks' points at nothing. Also italicizes the example to match its siblings (see COPY-37)."
+    },
+    {
+      "id": "RULE-01",
+      "status": "approved",
+      "category": "Rules",
+      "where": "7.9 Tier 5 Enhanced Weapon Table",
+      "find": "| 5 | Enchanted +4 Repeating Crossbow | 58 |",
+      "replace": "| 5 | Enchanted +4 Repeating Crossbow | 56 |",
+      "expected_count": 1,
+      "note": "Repeating Crossbow costs 20c (7.8). Every other enhanced ranged weapon follows base +36 for Enchanted +4, base +50 for Enchanted +5, and base ×4 for Adamantine (Longbow 17 → 53, 67). The three Repeating Crossbow entries (58, 72, 88) all fit a base of 22c instead."
+    },
+    {
+      "id": "RULE-02",
+      "status": "approved",
+      "category": "Rules",
+      "where": "7.9 Tier 5 Enhanced Weapon Table",
+      "find": "| 14 | Enchanted +5 Repeating Crossbow | 72 |",
+      "replace": "| 14 | Enchanted +5 Repeating Crossbow | 70 |",
+      "expected_count": 1,
+      "note": "See RULE-01."
+    },
+    {
+      "id": "RULE-03",
+      "status": "approved",
+      "category": "Rules",
+      "where": "7.9 Tier 5 Enhanced Weapon Table",
+      "find": "| 20 | Adamantine Repeating Crossbow | 88 |",
+      "replace": "| 20 | Adamantine Repeating Crossbow | 80 |",
+      "expected_count": 1,
+      "note": "See RULE-01."
+    },
+    {
+      "id": "RULE-04",
+      "status": "approved",
+      "category": "Rules",
+      "where": "7.17 Legendary Artifacts 15, Charm of Epic Luck",
+      "find": "Gain **+2 Luck**. Rerolls made by spending",
+      "replace": "Increase maximum **Luck** by **2**. Rerolls made by spending",
+      "expected_count": 1,
+      "note": "'Gain +2 Luck' could mean two current Luck Points or a higher maximum. Every other Luck bonus in the manuscript reads 'Increase maximum **Luck** by **N**' (Halfling, Goblin, 6.10 background bonus)."
+    },
+    {
+      "id": "RULE-05",
+      "status": "approved",
+      "category": "Rules",
+      "where": "7.17 Legendary Weapons 8, Magehunter Crossbow",
+      "find": "When this attack damages a caster, the target immediately loses **1 NRG**.",
+      "replace": "When this attack damages a combatant that has **NRG**, the target immediately loses **1 NRG**.",
+      "expected_count": 1,
+      "note": "'A caster' is not a defined combatant category. The effect only does anything to a combatant with NRG, so naming that condition removes the ambiguity (compare Godsbane Distillate, which says 'a target that knows at least one Power')."
+    },
+    {
+      "id": "RULE-06",
+      "status": "approved",
+      "category": "Rules",
+      "where": "7.17 Legendary Weapons 10, Thought-Eater Scourge",
+      "find": "When this attack damages a caster, the target loses **1 NRG** and you regain **1 NRG**.",
+      "replace": "When this attack damages a combatant that has **NRG**, the target loses **1 NRG** and you regain **1 NRG**.",
+      "expected_count": 1,
+      "note": "See RULE-05."
+    },
+    {
+      "id": "RULE-07",
+      "status": "approved",
+      "category": "Rules",
+      "where": "8.6 Druidic Rituals 17, Monster Lure",
+      "find": "- **Target:** 1 neutral Monster Group marker\n- **Effect:** When that group activates this round, replace its **Primary Target** priority with the nearest enemy combatant within **12\"** of the marker.",
+      "replace": "- **Target:** 1 neutral Monster Group (measure range and **LOS** to any **Monster** in that Group)\n- **Effect:** When that group activates this round, replace its **Primary Target** priority with the nearest enemy combatant within **12\"** of any **Monster** in that Group.",
+      "expected_count": 1,
+      "note": "No rule defines a 'Monster Group marker'; Monster Groups are sets of Monster models (9.3), and 8.2 requires range and LOS to each target. As written, the Power has nothing to measure to."
+    },
+    {
+      "id": "RULE-08",
+      "status": "approved",
+      "category": "Rules",
+      "where": "8.6 Druidic Rituals 18, Beast Pacification",
+      "find": "- **Target:** 1 neutral Monster Group marker whose group contains only **Monsters** with **Beast**\n- **Effect:** That group cannot make attacks",
+      "replace": "- **Target:** 1 neutral Monster Group that contains only **Monsters** with **Beast** (measure range and **LOS** to any **Monster** in that Group)\n- **Effect:** That group cannot make attacks",
+      "expected_count": 1,
+      "note": "See RULE-07."
+    },
+    {
+      "id": "RULE-09",
+      "status": "approved",
+      "category": "Rules",
+      "where": "8.6 Druidic Rituals 15, Monster Stampede",
+      "find": "- **Target:** 1 neutral Monster Group marker\n- **Effect:** Resolve each **Monster** in that group separately.",
+      "replace": "- **Target:** 1 neutral Monster Group (measure range and **LOS** to any **Monster** in that Group)\n- **Effect:** Resolve each **Monster** in that group separately.",
+      "expected_count": 1,
+      "note": "See RULE-07."
+    },
+    {
+      "id": "RULE-10",
+      "status": "approved",
+      "category": "Rules",
+      "where": "8.6 Druidic Rituals 16, Beast Commander",
+      "find": "- **Target:** 1 neutral Monster Group marker whose group contains only **Monsters** with **Beast**\n- **Effect:** During that group's next activation",
+      "replace": "- **Target:** 1 neutral Monster Group that contains only **Monsters** with **Beast** (measure range and **LOS** to any **Monster** in that Group)\n- **Effect:** During that group's next activation",
+      "expected_count": 1,
+      "note": "See RULE-07."
+    },
+    {
+      "id": "RULE-11",
+      "status": "approved",
+      "category": "Rules",
+      "where": "10.2 Secondary Objective, Lodestone",
+      "find": "An AP-using non-Monster combatant in base contact with the Lodestone is **Immobilized**",
+      "replace": "An AP-using non-Monster combatant adjacent to the Lodestone is **Immobilized**",
+      "expected_count": 1,
+      "note": "'Base contact' appears only in this Secondary Objective; the game is played on a square grid and every other proximity rule uses 'adjacent'."
+    },
+    {
+      "id": "RULE-12",
+      "status": "approved",
+      "category": "Rules",
+      "where": "10.2 Secondary Objective, Lodestone",
+      "find": "A Monster in base contact is **Immobilized** until the end of their next activation",
+      "replace": "A Monster adjacent to the Lodestone is **Immobilized** until the end of their next activation",
+      "expected_count": 1,
+      "note": "See RULE-11."
+    },
+    {
+      "id": "RULE-13",
+      "status": "approved",
+      "category": "Rules",
+      "where": "10.2 Secondary Objective, Lodestone",
+      "find": "A Hero in base contact with the Lodestone pries loose",
+      "replace": "A Hero adjacent to the Lodestone pries loose",
+      "expected_count": 1,
+      "note": "See RULE-11."
+    },
+    {
+      "id": "RULE-14",
+      "status": "approved",
+      "category": "Rules",
+      "where": "7.9 Tier 1 Enhanced Shield Table (d20)",
+      "find": "| 1 | Masterwork Buckler | 5 |",
+      "replace": "| 1 | Masterwork Buckler | 4 |",
+      "expected_count": 1,
+      "note": "Masterwork, Silvered, and Cold Iron items cost base ×1.5 rounded down (minimum 3c) in every other row of the 7.9 tables (Hide Cuirass and Leather Lamellar 3c → 4c, Gambeson 2c → 3c, Heater Shield 9c → 13c, Steel Scale 11c → 16c, Tower Shield 21c → 31c). The three Buckler rows are the only departures (3c → 5c). Added at promotion under the owner's instruction to fix everything; the review report lists this as owner decision 6."
+    },
+    {
+      "id": "RULE-15",
+      "status": "approved",
+      "category": "Rules",
+      "where": "7.9 Tier 1 Enhanced Shield Table (d20)",
+      "find": "| 8 | Silvered Buckler | 5 |",
+      "replace": "| 8 | Silvered Buckler | 4 |",
+      "expected_count": 1,
+      "note": "Masterwork, Silvered, and Cold Iron items cost base ×1.5 rounded down (minimum 3c) in every other row of the 7.9 tables (Hide Cuirass and Leather Lamellar 3c → 4c, Gambeson 2c → 3c, Heater Shield 9c → 13c, Steel Scale 11c → 16c, Tower Shield 21c → 31c). The three Buckler rows are the only departures (3c → 5c). Added at promotion under the owner's instruction to fix everything; the review report lists this as owner decision 6."
+    },
+    {
+      "id": "RULE-16",
+      "status": "approved",
+      "category": "Rules",
+      "where": "7.9 Tier 1 Enhanced Shield Table (d20)",
+      "find": "| 15 | Cold Iron Buckler | 5 |",
+      "replace": "| 15 | Cold Iron Buckler | 4 |",
+      "expected_count": 1,
+      "note": "Masterwork, Silvered, and Cold Iron items cost base ×1.5 rounded down (minimum 3c) in every other row of the 7.9 tables (Hide Cuirass and Leather Lamellar 3c → 4c, Gambeson 2c → 3c, Heater Shield 9c → 13c, Steel Scale 11c → 16c, Tower Shield 21c → 31c). The three Buckler rows are the only departures (3c → 5c). Added at promotion under the owner's instruction to fix everything; the review report lists this as owner decision 6."
+    }
+  ]
+}

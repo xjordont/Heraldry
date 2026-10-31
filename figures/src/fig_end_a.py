@@ -623,7 +623,7 @@ def fig63():
         yy += 13
         yy = ptxt(s, x, yy, "**Light Source:** **Aura 3\"** unless a rule lists another size. Its carrier cannot be **Hidden** unless a rule says otherwise.", w) + 2
         for tag, txt in (("a", "Light removes **Darkness** in the **Aura**, but not other **Cover**."),
-                         ("b", "**Darkness** gives **Cover** against nonadjacent enemies."),
+                         ("b", "**Darkness** gives **Cover** against non-adjacent enemies."),
                          ("c", "**Darkness** gives no **Cover** against an adjacent enemy.")):
             badge(s, x + 6, yy + 5.6, tag)
             yy = ptxt(s, x + 16, yy, txt, w - 16) + 1.5
@@ -714,38 +714,38 @@ def fig64():
 # =====================================================================
 HMAX = {"FIG-58": 400, "FIG-59": 320, "FIG-60": 450, "FIG-61": 390, "FIG-62": 345, "FIG-63": 350, "FIG-64": 285}
 
-# phrases drawn in each figure that must appear in the cited source lines (RC522; markup stripped, case-insensitive)
+# phrases drawn in each figure that must appear in the cited source lines (active snapshot; markup stripped, case-insensitive)
 _SRC_CHECKS = {
-    "FIG-58": ((401, 414), ["1–8 players", "36\"×36\"", "Tabletop Mode", "Grid Mode", "1\" squares", "tape measure",
+    "FIG-58": ((405, 418), ["1–8 players", "36\"×36\"", "Tabletop Mode", "Grid Mode", "1\" squares", "tape measure",
                             "miniature, standee, or token", "Hero, Hireling, Monster, and Summon", "Treasure Chests", "hazards",
                             "record sheet for each Hero and party", "AP, Activated, Resting, HP, NRG, condition, and Luck tokens",
                             "At least 4d4, 4d6, 4d8, 4d10, 2d12, and 2d20 dice"]),
-    "FIG-59": ((415, 430), ["a single game of Heraldry Skirmish is called an adventure", "complete the scenario's objective and satisfy its victory conditions",
+    "FIG-59": ((419, 434), ["a single game of Heraldry Skirmish is called an adventure", "complete the scenario's objective and satisfy its victory conditions",
                             "compare secured wealth", "Xc", "Coin Value", "looting treasure, completing objectives, defeating Monsters",
                             "escape the battlefield with their spoils", "completes any 5 different Stronghold Components",
                             "rolled objective and extraction requirement in the Triumph Finale", "three Fates", "Die:", "Retire:", "Triumph:",
                             "Legendary Veteran", "Level 10", "Storage", "Retirement Payout"]),
-    "FIG-60": ((431, 436), ["use the more specific rule", "Scenario rules override the core rules for that scenario",
+    "FIG-60": ((435, 440), ["use the more specific rule", "Scenario rules override the core rules for that scenario",
                             "Class features, Powers, Monster rules, terrain rules, and item rules override the general rules they explicitly modify",
                             "use the more restrictive rule", "Examples, summaries, and reference tables never override the main rules text",
                             "marks a required instruction", "marks a permission or choice", "marks a prohibition",
                             "do not create a separate precedence system"]),
-    "FIG-61": ((500, 512), ["Monsters never have or use ability scores", "treat that score as +0 for that Check only", "between -1 and +3",
+    "FIG-61": ((504, 516), ["Monsters never have or use ability scores", "treat that score as +0 for that Check only", "between -1 and +3",
                             "may be negative and have no maximum unless a rule says otherwise", "melee force, physical power, climbing, forcing objects, and resisting bodily harm",
                             "ranged accuracy, speed, balance, stealth, dodging, and delicate physical tasks",
                             "perception, reasoning, knowledge, investigation, initiative, Arcane Spells, and Psychic Abilities",
                             "willpower, faith, resolve, leadership, and powers of faith, nature, and sorcery", "listed in their profile"]),
-    "FIG-62": ((513, 563), ["roll 1d20 and add the listed ability score", "12 or higher", "11 or lower", "natural 1", "Critical Failure", "natural 20",
+    "FIG-62": ((517, 567), ["roll 1d20 and add the listed ability score", "12 or higher", "11 or lower", "natural 1", "Critical Failure", "natural 20",
                             "Critical Success", "always fails", "always succeeds", "only to d20 Checks", "do not roll it", "not a Critical Failure",
                             "Terrain Check", "automatically succeeds", "add one extra die of the affected type, then ignore the lowest single die",
                             "add one extra die of the affected type, then ignore the highest single die", "cancel each other out", "do not stack",
                             "Casting Check is made with Disadvantage"]),
-    "FIG-63": ((750, 823), ["Exposed", "Hidden", "cannot be targeted by anything that requires LOS", "Aura 3\"", "removing Darkness there but not any other source of Cover",
-                            "Darkness provides Cover", "nonadjacent enemies", "cannot be Hidden unless a rule says otherwise", "Visibility State",
+    "FIG-63": ((754, 827), ["Exposed", "Hidden", "cannot be targeted by anything that requires LOS", "Aura 3\"", "removing Darkness there but not any other source of Cover",
+                            "Darkness provides Cover", "non-adjacent enemies", "cannot be Hidden unless a rule says otherwise", "Visibility State",
                             "the battlefield starts in Light", "Hide distance", "use Spot", "Invisible governs targeting", "Spot removes only Hidden",
                             "cannot regain the removed condition until the end of the round", "falls to step 1 and loses Hidden with it",
                             "outside every enemy's LOS entirely"]),
-    "FIG-64": ((961, 982), ["after seeing the result", "before applying consequences", "Reroll the entire Check or damage roll", "same Advantage or Disadvantage",
+    "FIG-64": ((965, 986), ["after seeing the result", "before applying consequences", "Reroll the entire Check or damage roll", "same Advantage or Disadvantage",
                             "Total Misses, Critical Hits, exploding dice, and total damage", "every combatant affected by that roll",
                             "the side that won Initiative decides first", "Party Leader's controller chooses the decision order",
                             "no other Hero can spend Luck on that roll", "only once", "even if it is worse", "refresh to their maximum at the start of each new adventure"]),
@@ -753,10 +753,9 @@ _SRC_CHECKS = {
 
 
 def _source_lines():
-    import os
-    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "source", "Heraldry_RC522.md")
-    with open(path, encoding="utf-8") as f:
-        return f.read().split("\n")
+    """Lines of the active immutable snapshot named in source/versions.json."""
+    from manuscript import source_path
+    return source_path().read_text(encoding="utf-8").split("\n")
 
 
 def selfcheck_end_a():

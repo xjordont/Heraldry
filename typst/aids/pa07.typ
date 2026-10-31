@@ -25,7 +25,7 @@
     #aside-head(seed: 3)[Light and Darkness]
     #dot[The battlefield is in *Light* unless a rule sets Darkness.]
     #dot[*Light Source:* Aura 3" of Light. Its carrier cannot be Hidden.]
-    #dot[*Darkness:* Cover against nonadjacent enemies; does not block LOS. Ordinary Darkvision does not ignore the Cover of *Magical* Darkness.]
+    #dot[*Darkness:* Cover against non-adjacent enemies; does not block LOS. Ordinary Darkvision does not ignore the Cover of *Magical* Darkness.]
   ],
   [
     #aside-head(seed: 2)[Cover]
@@ -51,7 +51,7 @@
 #side(..head, face: "back")[
   #aid-table((92pt, 1fr, 1fr, 1fr), ("key", "c", "c", "c"), ("Terrain type", "Enter?", "Cover?", "LOS?"), (
     ([Open], [Yes], [No], [Clear]),
-    ([Cover], [Yes], [To occupants, against nonadjacent enemies], [See in and out near the edge; blocked across 1"+ of depth]),
+    ([Cover], [Yes], [To occupants, against non-adjacent enemies], [See in and out near the edge; blocked across 1"+ of depth]),
     ([Impassable], [No; may Jump over], [Yes, unless its entry says not (chasms, pits: none)], [Clear]),
     ([Blocking], [No], [-], [Blocked]),
   ), title: [Terrain Types], size: 10pt)

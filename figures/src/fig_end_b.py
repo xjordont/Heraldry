@@ -1,6 +1,6 @@
 """FIG-65 .. FIG-71: end-of-section diagrams for Chapters 3 to 5 (Initiative Phase, End of Round, Timing Rules,
-Reactions, Illegal Actions, Push and Trip, Multiple Attacks).  Every rule shown is stated in source/Heraldry_RC522.md
-(RC522); line numbers are recorded in figdata_end_b.py.  Same visual grammar as fig_seq.py / fig_spatial.py."""
+Reactions, Illegal Actions, Push and Trip, Multiple Attacks).  Every rule shown is stated in the active manuscript snapshot (source/versions.json)
+(active snapshot per source/versions.json); line numbers are recorded in figdata_end_b.py.  Same visual grammar as fig_seq.py / fig_spatial.py."""
 import re
 from svgkit import *
 
@@ -726,10 +726,9 @@ def fig71():
 # self check
 # ---------------------------------------------------------------------------
 def _source_text():
-    import os
-    here = os.path.dirname(os.path.abspath(__file__))
-    with open(os.path.join(here, "..", "..", "source", "Heraldry_RC522.md"), encoding="utf-8") as f:
-        return f.read().split("\n")
+    """Lines of the active immutable snapshot named in source/versions.json."""
+    from manuscript import source_path
+    return source_path().read_text(encoding="utf-8").split("\n")
 
 
 def _svg_texts(svg):
@@ -767,77 +766,77 @@ def selfcheck_end_b():
         for p in phrases:
             assert p in block, "source lines %d-%d lack %r" % (lo, hi, p)
 
-    # ---- every drawn rule appears in its cited lines (RC522)
-    has(1021, 1021, "refreshes AP to their normal maximum")
-    has(1023, 1023, "1d20", "Party Leader's INT and SPI", "higher total wins Initiative", "10.5.4 PvE Initiative")
-    has(1025, 1025, "chooses one allied Hero on the battlefield", "rolls 1d20 with no ability modifiers")
-    has(1027, 1031, "Highest DEX among the Heroes used for the Initiative roll, if each side used a Hero",
+    # ---- every drawn rule appears in its cited lines of the active snapshot
+    has(1025, 1025, "refreshes AP to their normal maximum")
+    has(1027, 1027, "1d20", "Party Leader's INT and SPI", "higher total wins Initiative", "10.5.4 PvE Initiative")
+    has(1029, 1029, "chooses one allied Hero on the battlefield", "rolls 1d20 with no ability modifiers")
+    has(1031, 1035, "Highest DEX among the Heroes used for the Initiative roll, if each side used a Hero",
         "Starting in Round 2, the side that won Initiative in the previous round", "Roll off again")
-    has(1033, 1035, "chooses which side takes the first Party Phase activation", "start of the round", "3.6 Timing Rules")
-    has(1037, 1037, "17", "14", "act second", "until the start of Round 3 ends after Initiative is determined")
-    has(14747, 14752, "Do not add a Party Leader's INT or SPI", "Total 12 or higher", "Party Phase, then the Monster Phase",
+    has(1037, 1039, "chooses which side takes the first Party Phase activation", "start of the round", "3.6 Timing Rules")
+    has(1041, 1041, "17", "14", "act second", "until the start of Round 3 ends after Initiative is determined")
+    has(14751, 14756, "Do not add a Party Leader's INT or SPI", "Total 12 or higher", "Party Phase, then the Monster Phase",
         "Total 11 or lower", "Monster Phase, then the Party Phase", "replaces competitive side-based Initiative")
-    has(1126, 1133, "begins after both the Party Phase and Monster Phase have resolved", "more specific rule says otherwise",
+    has(1130, 1137, "begins after both the Party Phase and Monster Phase have resolved", "more specific rule says otherwise",
         "ongoing damage, conditions, terrain, weather, Power effects, item effects, Monster effects, and scenario effects",
         "until the end of the round", "remove any remaining Temporary HP", "Remove any unspent AP",
         "scenario scoring, extraction, round limits, and victory conditions")
-    has(1015, 1017, "unless the scenario ends first", "Monster Phase before the Party Phase")
-    has(1120, 1122, "If a specific rule placed the Monster Phase before the Party Phase")
-    has(1078, 1082, "Unspent AP may be spent later in the same round on Reactions", "never carries into the following round")
-    has(1090, 1090, "retained until the end of the round and may still be spent on Reactions")
-    has(1580, 1584, "subtract the damage or HP loss from their Temporary HP first", "always expires during step 2",
+    has(1019, 1021, "unless the scenario ends first", "Monster Phase before the Party Phase")
+    has(1124, 1126, "If a specific rule placed the Monster Phase before the Party Phase")
+    has(1082, 1086, "Unspent AP may be spent later in the same round on Reactions", "never carries into the following round")
+    has(1094, 1094, "retained until the end of the round and may still be spent on Reactions")
+    has(1584, 1588, "subtract the damage or HP loss from their Temporary HP first", "always expires during step 2",
         "reduced to 0 HP, become Knocked Out, or leave the battlefield")
-    has(1139, 1143, "After AP is refreshed and Initiative is determined, but before the first activation of the round",
+    has(1143, 1147, "After AP is refreshed and Initiative is determined, but before the first activation of the round",
         "After a combatant is chosen to activate and before they perform actions", "This timing occurs each time a combatant activates",
         "While that combatant is spending AP and resolving actions during that activation",
         "After that combatant finishes acting during that activation",
         "During the distinct End of Round phase, after both the Party Phase and Monster Phase are complete")
-    has(1145, 1156, "the more specific rule takes priority", "Initiative winner's side effects", "Non-Initiative side effects",
+    has(1149, 1160, "the more specific rule takes priority", "Initiative winner's side effects", "Non-Initiative side effects",
         "Monster Group effects in ascending Monster Group number", "Terrain, weather, hazard, and scenario effects in the order listed by the relevant rule",
         "replaces steps 1 and 2", "allied-side effects resolve before Monster Group effects",
         "Monster Group effects resolve before allied-side effects", "remain last", "Party Leader's controller chooses the order",
         "use Random Determination to choose the next effect to resolve, then repeat until no tied effects remain")
-    has(1423, 1425, "Taking a Reaction does not begin or end an activation", "enough unspent AP to pay its cost")
-    has(1427, 1427, "before any of that source's damage dice are rolled", "Resolve target redirection first",
+    has(1427, 1429, "Taking a Reaction does not begin or end an activation", "enough unspent AP to pay its cost")
+    has(1431, 1431, "before any of that source's damage dice are rolled", "Resolve target redirection first",
         "confirm the final targets and declare the remaining Reactions", "pause before its first damage die, or before applying fixed damage or HP loss")
-    has(1429, 1429, "calculated AP and NRG costs, any consumable, and any limited use", "cannot be voluntarily spent or committed elsewhere",
+    has(1433, 1433, "calculated AP and NRG costs, any consumable, and any limited use", "cannot be voluntarily spent or committed elsewhere",
         "AP and NRG remain unspent and are still subject to forced loss", "release the commitments without spending them")
-    has(1431, 1431, "Block, Dodge, Parry, and ranged-triggered Reflex Attack", "pay their costs immediately", "deals no damage, or is cancelled")
-    has(1433, 1433, "never opens a new declaration window for that source")
-    has(1437, 1437, "Conviction", "1 AP", "retained base die shows 1", "release the AP commitment")
-    has(1439, 1439, "Each allied Summon may spend unspent AP on Reactions only if a rule explicitly grants",
+    has(1435, 1435, "Block, Dodge, Parry, and ranged-triggered Reflex Attack", "pay their costs immediately", "deals no damage, or is cancelled")
+    has(1437, 1437, "never opens a new declaration window for that source")
+    has(1441, 1441, "Conviction", "1 AP", "retained base die shows 1", "release the AP commitment")
+    has(1443, 1443, "Each allied Summon may spend unspent AP on Reactions only if a rule explicitly grants",
         "Monsters do not take Reactions unless a rule explicitly allows it")
-    has(1441, 1441, "only one Reaction in response to the same action or effect", "Reactions that grant a separate action")
-    has(1429, 1429, "immediately uses the normal one-Reaction limits for that source")
-    has(1443, 1443, "an Ogre attacks a Cleric", "1 AP to Dodge", "only 1 Reaction may modify a single action or effect against each affected combatant",
+    has(1445, 1445, "only one Reaction in response to the same action or effect", "Reactions that grant a separate action")
+    has(1433, 1433, "immediately uses the normal one-Reaction limits for that source")
+    has(1447, 1447, "An Ogre attacks a Cleric", "1 AP to Dodge", "only 1 Reaction may modify a single action or effect against each affected combatant",
         "different attack later in the round")
-    has(1445, 1445, "the affected combatant's controller chooses which one is declared", "do not spend the costs of the others",
+    has(1449, 1449, "the affected combatant's controller chooses which one is declared", "do not spend the costs of the others",
         "source's controller to modify the source's own roll does not count")
-    has(1453, 1459, "legal when the action is declared and when it resolves", "rejected target remains ineligible",
+    has(1457, 1463, "legal when the action is declared and when it resolves", "rejected target remains ineligible",
         "matches the rule's target description and count", "within the required distance or range", "required LOS or visibility",
         "does not add an LOS or visibility requirement", "cannot attempt it", "it fails and has no effect unless a rule says otherwise",
         "AP remains spent unless the action was abandoned during Declared State verification")
-    has(1461, 1463, "interrupted by a Reaction, resolve that interruption under 2.6.1", "stops at the last legal position",
+    has(1465, 1467, "interrupted by a Reaction, resolve that interruption under 2.6.1", "stops at the last legal position",
         "resolved in Section 5", "resolved in Section 8")
-    has(640, 646, "An abandoned declaration costs no AP", "Do not refund any AP spent on that movement")
-    has(1715, 1723, "Neither action is an Attack action or weapon attack", "neither rolls damage dice", "multi-attack Disadvantage chain",
+    has(644, 650, "An abandoned declaration costs no AP", "Do not refund any AP spent on that movement")
+    has(1719, 1727, "Neither action is an Attack action or weapon attack", "neither rolls damage dice", "multi-attack Disadvantage chain",
         "only during their own activation", "do not trigger Block, Dodge, Parry", "hostile action", "lose Hidden after the action resolves",
         "Push target must be adjacent", "Range or melee distance", "profile, AI rule, scenario rule, or Special Ability")
-    has(1727, 1731, "STR Check with Disadvantage", "2\" directly away", "nothing happens", "over an edge or into hazardous terrain",
+    has(1731, 1735, "STR Check with Disadvantage", "2\" directly away", "nothing happens", "over an edge or into hazardous terrain",
         "Falling after the forced movement ends", "never triggers Reflex Attack")
-    has(1735, 1741, "Trip trait", "Sz or smaller", "STR or DEX Check with Disadvantage", "becomes Prone", "fixed, anchored, or otherwise immune to Trip",
+    has(1739, 1745, "Trip trait", "Sz or smaller", "STR or DEX Check with Disadvantage", "becomes Prone", "fixed, anchored, or otherwise immune to Trip",
         "already Prone, Trip has no additional effect")
-    has(1745, 1762, "costs 1 AP unless a rule says otherwise", "Hero or Hireling may make more than one weapon attack",
+    has(1749, 1766, "costs 1 AP unless a rule says otherwise", "Hero or Hireling may make more than one weapon attack",
         "second and each later weapon attack", "rolls its base damage dice with Disadvantage", "resets at the start of each of that combatant's activations",
         "Push and Trip", "Reflex Attack, Counter Attack, No Escape, and Duelist's Riposte", "a Riposte, which is not an attack (5.5.3)",
         "two Light weapons counts as a single attack", "Sweep attack (7.7)",
         "Agile exempts the second weapon attack made with that weapon", "Combat Mastery exempts a Hero's second weapon attack",
         "War Master exempts all of that Hero's melee weapon attacks", "Later attacks resolve normally unless another rule applies",
         "Monsters do not use AP", "Summons and Monsters do not use this rule", "Multi-Attack makes the attacks listed by that ability, as described in 9.6")
-    has(568, 568, "Heroes begin each round with 3 AP")
-    has(1212, 1213, "Push", "1 AP", "Trip", "1 AP")
-    has(1211, 1211, "Attack", "1 AP")
-    has(614, 621, "Small (S), Medium (M), Large (L), or Huge (H)")
+    has(572, 572, "Heroes begin each round with 3 AP")
+    has(1216, 1217, "Push", "1 AP", "Trip", "1 AP")
+    has(1215, 1215, "Attack", "1 AP")
+    has(618, 625, "Small (S), Medium (M), Large (L), or Huge (H)")
 
     # ---- FIG-65
     assert len(TIE_BREAKERS) == 3 and "DEX" in TIE_BREAKERS[0] and "Round 2" in TIE_BREAKERS[1] and TIE_BREAKERS[2] == "Roll off again."

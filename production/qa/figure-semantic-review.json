@@ -1,6 +1,6 @@
 {
  "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
- "reviewed_at": "2026-10-21",
+ "reviewed_at": "2026-10-31",
  "figures": [
   {
    "id": "FIG-01",
@@ -17,7 +17,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "792cc34c520428af68f0f320c208dc7dc24f105b5fa438e8c0c360af61ce3cc0",
+   "rules_sha256": "5017d1c00b8ed75e38a05cc30e905b1f6d30799088cf493bb987b080a1ef9ab4",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -116,7 +116,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "09c9eb1173b5f698b081fa3ad19a3d617fe15f7e08de2150a6eee602a1e53411",
+   "rules_sha256": "f02fd4aeddcc6f12b87e33042a126c1bd7ef82c112f24bc897289cd501432447",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
@@ -228,7 +228,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "066c1d0c26ec5bba00f607571635bf5019040a8fd6d346729503fea622ba70fc",
+   "rules_sha256": "90138eb459384f9301cab540257bf6de8d3994df436dea5acc2a9b07d2fed8e5",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -365,7 +365,7 @@
      "fix": "Optional: use a neutral hatch. Accepted."
     }
    ],
-   "rules_sha256": "2ef7d61dd0be7b679fb0ae4f46d1bfd808bf43d8fb83921ffd16e95a089dec4f",
+   "rules_sha256": "1726571559f045361474d4a1c71990632d93f42a842541011def61ef5c0e9f79",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -442,7 +442,7 @@
      "fix": "None. Triaged as A-12 NOT_AN_AMBIGUITY."
     }
    ],
-   "rules_sha256": "3264b55898ad06ceb0f45c2e45bed91eb313d6f4d6b2a0d2e50a14656caa49c1",
+   "rules_sha256": "c6d4ad3a46201d336d327329d2e5dc5b807c94ce1414d5ba565afb7afb3f407b",
    "rc493_review": {
     "reviewer": "Codex delegated source-proof/figure reviewer (same model family; drafted source proposals)",
     "date": "2026-10-15",
@@ -543,7 +543,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "5428e3df0dcc9af7df7247885c62d67888bbd7940db3dd188b00e993f051d94a",
+   "rules_sha256": "b04b625c18a694c8b523c79a5d85fede1082a26fb54a8d641a7b9760dce72247",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -638,7 +638,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "00f71fc99238f5fb6f764a90cc32230d76875cc492d954edc8f8c9444574ea25",
+   "rules_sha256": "ce47122cdfbfbb9ad79e7de76a301b2f6b405da080349bd840f4361790c56dd5",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -748,7 +748,7 @@
      "fix": "None. Triaged as A-14."
     }
    ],
-   "rules_sha256": "4c471b73102a7d7e73c9004f4d9ed3eee84faadb73471c5d67dce44359abf2ad",
+   "rules_sha256": "1b3a09b3ef1be788ed30565e037b0794842cebbdc1cf273b9d40923e1ab87f6d",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -927,7 +927,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "fdbb14b717e825dffa01f6256d6401c78db1b570c4f61f45806ee6ec49f4ec24",
+   "rules_sha256": "b12913ac90a540ec1bc84afb36801b9c231ffc8c00117d40ad7a654725fe5fe6",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
@@ -1037,7 +1037,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "4496675c5fabca3ddfb00b73ee086e9bbf84d55c878e04d0e75c35e4b5769c6e",
+   "rules_sha256": "9af574c9ddf6f4d89775865ebe7ad50e1d7afc28ab5cd96b89b3648958c34ba1",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
@@ -1193,7 +1193,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "fed979ffc912421d148e7a226589bad44827976fc7981676933cbdc7e4870ba7",
+   "rules_sha256": "9751e3fa6576f26c872f090fe519f77aa216b1d09aca92270bdbfbf03867232b",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1329,7 +1329,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "b28b4461986e28c7146d3718152f47fe00c994517d04e451e022dabb78c7a979",
+   "rules_sha256": "3eaa283299104db12aeb05eeb20cfbd85f8f54cf65c24735ace75ae40e8dfe3a",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1464,7 +1464,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "d7bec4e4543435d94a0314bf9463c3209d38dae4bdc55ba41be2926bbd74d8fe",
+   "rules_sha256": "3dc7bfdce9a1941c01fbdc49577d62a43f7ec6e7c797219e43e9e20b2b06f20d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1635,7 +1635,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "402acc7434bdf6dfdbb2cf18cd40b11bd95fb3b0e3cd23180209257ea8b9c395",
+   "rules_sha256": "36e04371ade94f728287554742c0f25f5cf3f0a2d005a8bb80e8f3984761ebe0",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2030,7 +2030,7 @@
      "fix": "None; source line references in Appendix B after B.4 shift by +40."
     }
    ],
-   "rules_sha256": "b726cbdec0a6c931c435fac11da987c6b5f26ce7faae7a1588c4baf66c8c8747",
+   "rules_sha256": "84b713d7f417c60b7afd66ef31b2a19a157ffe405c44a0eb1be12511dcecd9aa",
    "reviewed_at": "2026-10-07T10:58:00Z",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2246,7 +2246,7 @@
      "review_report": "production/qa/figure-review-key-template-rc493.md"
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2358,7 +2358,7 @@
      "review_report": "production/qa/figure-review-key-template-rc493.md"
     }
    ],
-   "rules_sha256": "50dc3b5442ed8b4264865d1d0b296ddaf5ab7d905503856445b0661d40731d8d",
+   "rules_sha256": "ee66807e10da5d1ee1aaff098b029c09340c696808593b64fa9b2f46b9df3f09",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex integration owner",
@@ -2424,7 +2424,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2570,7 +2570,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2723,7 +2723,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2877,7 +2877,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3023,7 +3023,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3177,7 +3177,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3333,7 +3333,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3479,7 +3479,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3634,7 +3634,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3779,7 +3779,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3917,7 +3917,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4063,7 +4063,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4209,7 +4209,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4353,7 +4353,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4484,7 +4484,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4645,7 +4645,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4797,7 +4797,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4935,7 +4935,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5082,7 +5082,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5219,7 +5219,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5357,7 +5357,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5510,7 +5510,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5648,7 +5648,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5793,7 +5793,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5932,7 +5932,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -6070,7 +6070,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -6224,7 +6224,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -6377,7 +6377,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -6530,7 +6530,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -6667,7 +6667,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -6831,7 +6831,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -7002,7 +7002,7 @@
      "resolution": "RC488 second follow-up re-review 2026-10-10 (SVG sha256 79c93b40..., stable across two reads one minute apart while make clean all ran): sgo moved to (13.4,21.9), both labels (Shaman·A at x121.6,y171.3; Swamp Goblins·A at x94.9,y183.0) now sit below the encampment, each on its own vertical leader (x=121.5 and x=93.9) that exits only through the encampment bottom edge (y=158). Checked in SVG coordinates and in the Typst render: no label or leader crosses any text, glyph, Party zone boundary (x=49.5 / 193.5), Shallow Water box dashed edge, Encampment edge (other than the leaders exiting the bottom) or the two labels each other. Goblin hex (x 88.9-98.9, y 141.1-149.7) and Shaman hex are inside Encampment rect x 85.5-157.5, y 86-158. Clearances are tight but positive: goblin leader is 2.4 units right of the lower-left Shallow box edge (x=91.5) and the goblin label starts 3.4 units right of it; the label ends ~162 vs lower-right Shallow box at x=169.5."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -7156,7 +7156,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -7301,7 +7301,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -7464,7 +7464,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -7604,7 +7604,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
+   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -7817,9 +7817,9 @@
   },
   {
    "id": "FIG-63",
-   "svg_sha256": "dc750723096734b13d376919b6caaf535d4bc49b14d88622454830f13cd36471",
-   "caption_sha256": "82edc33c7ca8df7df41b5f7491debc85bcb69db054be4390a0174c5361a4869f",
-   "rules_sha256": "5a1bcd74a5693d08a6394fa2d1088c1436bfc1f432c107d1098fa808d40b3971",
+   "svg_sha256": "b83e425d3b04a7854cbf62d308d9a28173e562f2ab45fb6145b786be20d5e1f6",
+   "caption_sha256": "b1963dd7cd39205bdf589885fa233d9f93da29bf3482095cfbbcb4b95be60350",
+   "rules_sha256": "cbe57768ecc4f888a65d546f11a21c2a5b904e82d4ca517f6142559866ed3da1",
    "verdict": "PASS_WITH_NOTES",
    "findings": [
     {
@@ -7839,6 +7839,14 @@
      "status": "accepted",
      "issue": "Panel 1 states Cover as 'applicable ranged attacks and effects ... suffer Disadvantage' only; source adds in 2.8.4 that Cover never applies to melee weapon attacks. Author notes this and defers to FIG-07.",
      "resolution": "Cover row still uses the 2.8 table wording ('applicable ranged attacks and effects'); that is the source's own table text at line 757, and the melee and Area detail lives in 2.8.4 and FIG-07. No wrong rule taught."
+    },
+    {
+     "id": "RC527-FIG-63-HYPHEN",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "RC527 spells 'non-adjacent' (2.8.3, 2.9.1, glossary, C.13) where RC526 had 'nonadjacent'; the figure's panel (b) label and its caption still read 'nonadjacent'.",
+     "fix": "figures/src/fig_end_a.py and figdata_end_a.py updated to 'non-adjacent'; FIG-63 regenerated by make_figures.py (selfcheck_end_a asserts the phrase against the active snapshot); only this SVG changed.",
+     "evidence_source_line": "795; 846; 18045; 18529 (RC527)"
     }
    ],
    "rc522_section_end_review": {
@@ -7903,7 +7911,7 @@
    "id": "FIG-66",
    "svg_sha256": "8a9af07fd0aacb418c7a8fd1ffe9bbeeb360cc2e96ba3c542dd6e6626417fe41",
    "caption_sha256": "f050789ed2e4676c3be4792936a31d04c3ff7b53dfbada3ca54e91246c20403b",
-   "rules_sha256": "6c79e862187f19c4f18ca7282ada92374c3c108916674d526c502deae86fd1b9",
+   "rules_sha256": "faf7324049bc53bec83c6a77d5dad4a4c9cafc3ce481bc0e7bf92e5e19b72b74",
    "verdict": "PASS",
    "findings": [
     {
@@ -7953,7 +7961,7 @@
    "id": "FIG-68",
    "svg_sha256": "85145851a87ed70f075484358822229e212e08707aac58564d0c1d346540d053",
    "caption_sha256": "efe13fbdf0941634a4fcd4e80116dce1285c92d8d27aaee203b97edef16b2b36",
-   "rules_sha256": "931b329d4e5ffed69ac567b96f03e2c8d1113e20813410aabc3a685d3cb0a3ed",
+   "rules_sha256": "75bf4008777e1c08fc89a69a3449b431faa677d7ddb13d7f84285d2d1f35fa30",
    "verdict": "PASS_WITH_NOTES",
    "findings": [
     {
@@ -8015,7 +8023,7 @@
    "id": "FIG-70",
    "svg_sha256": "4d19a89a5f157797a7de15ac23024b494ff67c9963c584841838554595b8dbe3",
    "caption_sha256": "7eb2e9eafc16f0d8dc6365cbe242f4dad3602e9445c388da9e2cf2c3b2f4e2fa",
-   "rules_sha256": "b694b985161763fc177110a9e9c294247968654709705e0b6cc7fbed311f5fc9",
+   "rules_sha256": "6efd1c53a6a077c02431bc2eb818a68e221e0445e9f7a473f69d305117299f65",
    "verdict": "PASS",
    "findings": [
     {
@@ -8049,7 +8057,7 @@
    "id": "FIG-71",
    "svg_sha256": "8bd2f2892ef277c04f9c88e7541c00c0c7374d9b17420a169dcecc1694a5b347",
    "caption_sha256": "4209fc518c11bb9c425df87f2377532ed48781ce39e9246f6d06e574d7b888bd",
-   "rules_sha256": "198b105e72b368352817fcf34baadc41da1b54a1af71a80ea502bc1d0024abce",
+   "rules_sha256": "391f9cd81b6fcc4bc4c097c567dca8e1438841743e7e6ff5f4e685954e71c851",
    "verdict": "PASS",
    "findings": [
     {
@@ -8151,7 +8159,7 @@
    "id": "FIG-76",
    "svg_sha256": "c4b990ed9b37c68579756766bb56e60d9d5250040f8bf2c994f048c42492d068",
    "caption_sha256": "ba8b786deaa596a95b6002eb41f8a650ea85943ad11bf873a1f72d1149498730",
-   "rules_sha256": "8e8fdbb129459b71973addfa53582f501f412d5aaa1cdf7c569cbb4a848d8ccd",
+   "rules_sha256": "ebcb8b9083d67def7b0df09e0d9df67c2c23cc3730c8e99c192406e0add4aae6",
    "verdict": "PASS_WITH_NOTES",
    "findings": [
     {
@@ -8651,13 +8659,145 @@
    }
   }
  },
- "source": "source/Heraldry_RC513.md",
- "source_sha256": "f106082c78fdee60edf0943f3962581290ab5c4127aaa6bd455cbb00ebc118b1",
+ "source": "source/Heraldry_RC527.md",
+ "source_sha256": "d28f5ec8ef438b43d278ec59c8faf195204266606bcfad1cbd8258088f48ec55",
  "rc513_delta_review": "2026-10-21: FIG-11, FIG-12 and FIG-16 re-reviewed after RC513 changed 9.5 D; all PASS without figure changes.",
  "section_end_figures_review": {
   "reviewed_at": "2026-10-30",
   "scope": "FIG-58 to FIG-77",
   "first_round": "2 major and 27 minor findings (FIG-63 and FIG-67 failed)",
   "after_fixes": "22 resolved, 7 accepted minor; no critical or major finding open"
+ },
+ "rc527_delta_review": {
+  "reviewer": "Claude (Fable 5.1), author of the RC527 promotion; model review of the manuscript delta, not an independent human review",
+  "date": "2026-10-31",
+  "manuscript_delta": "RC526 -> RC527: 97 approved exact replacements (editorial/history/RC527.json), 123 changed lines, no line added or removed (the table-of-contents patch COPY-01 was withheld). Copy, clarity, consistency, and owner-decided rules wording: bare-number cross-references, two example capitalizations, bold on the Enchanted quality rows, Summon profile labels, Boss placement plurals, Terror Aura scope, 'non-adjacent' and 'non-magical' spelling, Setup Roll-off, Wolf form name, Repeating Crossbow and Buckler enhanced prices, Charm of Epic Luck, two NRG-draining weapons, four Monster Group Powers, Lodestone adjacency, five 'carried off the battlefield' victory conditions, Chasm Jump reference, glossary pointers.",
+  "figures_rebound": [
+   "FIG-01",
+   "FIG-02",
+   "FIG-03",
+   "FIG-05",
+   "FIG-06",
+   "FIG-07",
+   "FIG-08",
+   "FIG-09",
+   "FIG-11",
+   "FIG-12",
+   "FIG-13",
+   "FIG-14",
+   "FIG-15",
+   "FIG-16",
+   "FIG-19",
+   "FIG-20",
+   "FIG-57",
+   "FIG-21",
+   "FIG-22",
+   "FIG-23",
+   "FIG-24",
+   "FIG-25",
+   "FIG-26",
+   "FIG-27",
+   "FIG-28",
+   "FIG-29",
+   "FIG-30",
+   "FIG-31",
+   "FIG-32",
+   "FIG-33",
+   "FIG-34",
+   "FIG-35",
+   "FIG-36",
+   "FIG-37",
+   "FIG-38",
+   "FIG-39",
+   "FIG-40",
+   "FIG-41",
+   "FIG-42",
+   "FIG-43",
+   "FIG-44",
+   "FIG-45",
+   "FIG-46",
+   "FIG-47",
+   "FIG-48",
+   "FIG-49",
+   "FIG-50",
+   "FIG-51",
+   "FIG-52",
+   "FIG-53",
+   "FIG-54",
+   "FIG-55",
+   "FIG-56",
+   "FIG-63",
+   "FIG-66",
+   "FIG-68",
+   "FIG-70",
+   "FIG-71",
+   "FIG-76"
+  ],
+  "figures_count": 59,
+  "method": "figure_review_gate listed 59 stale figures (rules hash only, except FIG-63). Every changed fragment of the 97 patches was searched for in figures/out/*.svg, figures/placements.json, figures/manifest.json and figures/src/scenario_specs.json: the only drawn or captioned text affected is FIG-63's 'nonadjacent'. All 77 figures were regenerated by figures/src/make_figures.py against RC527 after remapping every source-line citation from RC522 to RC527 coordinates (tools/remap_figure_lines.py for 4-5 digit citations; an exact-map pass for the 3-digit citations in figdata.py, fig_scenmaps.py, fig_end_a.py, fig_end_b.py, figdata_end_a.py and figdata_end_b.py, which the tool does not cover); the three section-end selfchecks now read the active snapshot instead of a pinned RC522 file. make_figures.py completed with selfcheck OK, validation OK and check_scenmaps clean, and 76 of 77 SVGs are byte-identical to the committed files; only FIG-63.svg and its caption changed.",
+  "affected_figures": [
+   "FIG-63"
+  ],
+  "unaffected_figures": [
+   "FIG-01",
+   "FIG-02",
+   "FIG-03",
+   "FIG-05",
+   "FIG-06",
+   "FIG-07",
+   "FIG-08",
+   "FIG-09",
+   "FIG-11",
+   "FIG-12",
+   "FIG-13",
+   "FIG-14",
+   "FIG-15",
+   "FIG-16",
+   "FIG-19",
+   "FIG-20",
+   "FIG-57",
+   "FIG-21",
+   "FIG-22",
+   "FIG-23",
+   "FIG-24",
+   "FIG-25",
+   "FIG-26",
+   "FIG-27",
+   "FIG-28",
+   "FIG-29",
+   "FIG-30",
+   "FIG-31",
+   "FIG-32",
+   "FIG-33",
+   "FIG-34",
+   "FIG-35",
+   "FIG-36",
+   "FIG-37",
+   "FIG-38",
+   "FIG-39",
+   "FIG-40",
+   "FIG-41",
+   "FIG-42",
+   "FIG-43",
+   "FIG-44",
+   "FIG-45",
+   "FIG-46",
+   "FIG-47",
+   "FIG-48",
+   "FIG-49",
+   "FIG-50",
+   "FIG-51",
+   "FIG-52",
+   "FIG-53",
+   "FIG-54",
+   "FIG-55",
+   "FIG-56",
+   "FIG-66",
+   "FIG-68",
+   "FIG-70",
+   "FIG-71",
+   "FIG-76"
+  ],
+  "not_verified": "No placed-PDF or printed inspection; FIG-63 verified by regeneration and selfcheck, not by a rendered view in the book. The citation remap was verified by make_figures.py's own text checks and by byte-identical regeneration, not by reading each cited line by eye."
  }
 }

@@ -28,7 +28,7 @@ Type follows `config/design_tokens.json`: Grenze Gotisch (titles and banners), S
 
 - Heroes with Powers: Powers (Tier, Cost, Range broken out) and Talents & Special Abilities. The blank has 14 rows each; on a Hero the boundary moves so each table gets the rows its entries need, with the spare rows shared for notes.
 - Purely martial Heroes (no Powers): the reverse is titled "Talents & Abilities" and Talents & Special Abilities fill the whole page.
-- Every word of each ancestry trait, background rule, talent, Power and special rule prints at 9 pt, two text lines per ruled row, ruled between entries. Weapon trait rules are universal rules and are not repeated (owner decision 2026-10-26); the Weapons table names every trait. Senses restate a brief rule (for example "Within 12", ignore Cover and visual penalties from nonmagical Darkness. Does not reveal Hidden or Invisible combatants; magical Darkness still applies.").
+- Every word of each ancestry trait, background rule, talent, Power and special rule prints at 9 pt, two text lines per ruled row, ruled between entries. Weapon trait rules are universal rules and are not repeated (owner decision 2026-10-26); the Weapons table names every trait. Senses restate a brief rule (for example "Within 12", ignore Cover and visual penalties from non-magical Darkness. Does not reveal Hidden or Invisible combatants; magical Darkness still applies.").
 - Mossgrave's Wild Shape Form Rules and Novice Beast Forms print on a separate one-third-page card (owner decision 2026-10-26); his sheet points to it.
 
 ## Populated Heroes
