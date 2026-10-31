@@ -11978,5 +11978,40 @@
     "review": "Basic Mode equipment list gained secondary carried items in a later RC; the portrait's primary weapon, armour, ancestry, and class are unchanged, and a portrait need not show every carried item."
    }
   ]
+ },
+ "ART-END-ACTION-BASICS": {
+  "family": "world",
+  "title": "The dropped torch",
+  "heading_id": "h-41-action-basics",
+  "route": "gpt",
+  "spec_sha256": "4afb6a8e5da5ac6467d3b4e980523bae059eac67746f1c42f75afcfd22912951",
+  "prompt_sha256": "0641ce2d3afcad469b75500fbad8ef5cf2630a4bdfd6f91be6417c2adc823892",
+  "status": "received",
+  "received_at": "2026-10-31T15:40:32+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check reports 18 percent tinted-ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-ACTION-BASICS.png",
+   "sha256": "ab223ab630b6672ce673658e1a941374adc4fe694319d56bdb13e13d915d99ce",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-ACTION-BASICS.png",
+   "sha256": "bec28047257c8a9244dd004d26050bdc1af5043dc9baa67e96495f6a81f4e7f8",
+   "px": [
+    1464,
+    974
+   ],
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 4.88
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
