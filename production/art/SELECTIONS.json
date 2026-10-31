@@ -13456,5 +13456,38 @@
    "max_print_w_in_300ppi": 4.763
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-RANDOM-CLASS-TABLE": {
+  "family": "item",
+  "title": "Staff, sword, and symbol",
+  "heading_id": "h-611-random-class-table",
+  "route": "gpt",
+  "spec_sha256": "113d4ee9bec33b52d72dad6b031138f5d03aaa62f742e3e286ce8bbce34dfa4e",
+  "prompt_sha256": "bccd1ef7cedeae7286a761589917762ca5e15b590c7d64d96fce20f3d71ff5b8",
+  "status": "received",
+  "received_at": "2026-10-31T22:04:49+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of tinted ink and possible soft shading.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-RANDOM-CLASS-TABLE.png",
+   "sha256": "4748899c60b6a7aa3228f384e37128056c8aa3d8e05b5d53d3b7f4151adcbe40",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-RANDOM-CLASS-TABLE.png",
+   "sha256": "1c690b0402ce01adb42ae4d66d42c899c4df8a9fa487de4af054b438d74bb778",
+   "px": [
+    1425,
+    936
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.75
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
