@@ -4,9 +4,7 @@ Follow `production/art/gpt/INSTRUCTIONS.md`. Attach each item's own references (
 
 | Set | Reference images |
 |---|---|
-| A | `assets/art/style/STYLE-REF-30-forest-path-stipple.jpg`<br>`assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg`<br>`assets/art/style/STYLE-REF-55-siege-wall-climb.jpg`<br>`assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg` |
-| B | `assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg`<br>`assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg`<br>`assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg`<br>`assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg` |
-| C | `assets/art/style/STYLE-REF-15-sword-mace-items.jpg`<br>`assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg`<br>`assets/art/style/STYLE-REF-27-carved-scroll-case.jpg`<br>`assets/art/style/STYLE-REF-33-bound-bone-cross.jpg`<br>`assets/art/style/STYLE-REF-56-weapons-sheet.jpg` |
+| A |  |
 
 | # | ID | Subject | Size | Set | Tries | Prompt |
 |---|---|---|---|---|---|---|
@@ -42,18 +40,18 @@ Follow `production/art/gpt/INSTRUCTIONS.md`. Attach each item's own references (
 | 30 | `ART-END-UNIVERSAL-ACTIONS` | The shield shove | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-UNIVERSAL-ACTIONS.txt` |
 | 31 | `ART-END-WEATHER-TABLES-BY-CLIMATE` | Whiteout | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-WEATHER-TABLES-BY-CLIMATE.txt` |
 | 32 | `ART-END-WHAT-IS-HERALDRY-SKIRMISH` | Rivals at the chest | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-WHAT-IS-HERALDRY-SKIRMISH.txt` |
-| 33 | `ART-END-DIVINE-PRAYERS` | Steadfast Word | 1536x1024 | B | 1 | `production/art/gpt/prompts/ART-END-DIVINE-PRAYERS.txt` |
-| 34 | `ART-END-DRUIDIC-RITUALS` | Vine Lash | 1536x1024 | B | 1 | `production/art/gpt/prompts/ART-END-DRUIDIC-RITUALS.txt` |
-| 35 | `ART-END-PSYCHIC-ABILITIES` | Telekinetic Hand | 1536x1024 | B | 1 | `production/art/gpt/prompts/ART-END-PSYCHIC-ABILITIES.txt` |
-| 36 | `ART-END-SORCERIES` | Blood Flicker | 1536x1024 | B | 1 | `production/art/gpt/prompts/ART-END-SORCERIES.txt` |
-| 37 | `ART-END-ADVENTURING-EQUIPMENT` | Hook, rope, and spikes | 1536x1024 | C | 1 | `production/art/gpt/prompts/ART-END-ADVENTURING-EQUIPMENT.txt` |
-| 38 | `ART-END-ARMOUR` | Brigandine on the stand | 1536x1024 | C | 1 | `production/art/gpt/prompts/ART-END-ARMOUR.txt` |
-| 39 | `ART-END-CHOSEN-AND-RANDOM-CREATION` | Three starting bundles | 1536x1024 | C | 1 | `production/art/gpt/prompts/ART-END-CHOSEN-AND-RANDOM-CREATION.txt` |
-| 40 | `ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE` | The pierced breastplate | 1536x1024 | C | 1 | `production/art/gpt/prompts/ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE.txt` |
-| 41 | `ART-END-EQUIPMENT-OVERVIEW` | The full pack | 1536x1024 | C | 1 | `production/art/gpt/prompts/ART-END-EQUIPMENT-OVERVIEW.txt` |
-| 42 | `ART-END-ITEM-AVAILABILITY` | The broker's scale | 1536x1024 | C | 1 | `production/art/gpt/prompts/ART-END-ITEM-AVAILABILITY.txt` |
-| 43 | `ART-END-PERMANENT-SPECIAL-ITEMS` | The Bell's Tongue | 1536x1024 | C | 1 | `production/art/gpt/prompts/ART-END-PERMANENT-SPECIAL-ITEMS.txt` |
-| 44 | `ART-END-RANDOM-CLASS-TABLE` | Staff, sword, and symbol | 1536x1024 | C | 1 | `production/art/gpt/prompts/ART-END-RANDOM-CLASS-TABLE.txt` |
-| 45 | `ART-END-RANGED-WEAPONS` | Lesser missiles | 1536x1024 | C | 1 | `production/art/gpt/prompts/ART-END-RANGED-WEAPONS.txt` |
-| 46 | `ART-END-READING-A-SCENARIO-BEFORE-SETUP` | The contract and the map | 1536x1024 | C | 1 | `production/art/gpt/prompts/ART-END-READING-A-SCENARIO-BEFORE-SETUP.txt` |
-| 47 | `ART-END-SCROLLS` | The spent scroll | 1536x1024 | C | 1 | `production/art/gpt/prompts/ART-END-SCROLLS.txt` |
+| 33 | `ART-END-DIVINE-PRAYERS` | Steadfast Word | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-DIVINE-PRAYERS.txt` |
+| 34 | `ART-END-DRUIDIC-RITUALS` | Vine Lash | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-DRUIDIC-RITUALS.txt` |
+| 35 | `ART-END-PSYCHIC-ABILITIES` | Telekinetic Hand | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-PSYCHIC-ABILITIES.txt` |
+| 36 | `ART-END-SORCERIES` | Blood Flicker | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-SORCERIES.txt` |
+| 37 | `ART-END-ADVENTURING-EQUIPMENT` | Hook, rope, and spikes | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-ADVENTURING-EQUIPMENT.txt` |
+| 38 | `ART-END-ARMOUR` | Brigandine on the stand | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-ARMOUR.txt` |
+| 39 | `ART-END-CHOSEN-AND-RANDOM-CREATION` | Three starting bundles | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-CHOSEN-AND-RANDOM-CREATION.txt` |
+| 40 | `ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE` | The pierced breastplate | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE.txt` |
+| 41 | `ART-END-EQUIPMENT-OVERVIEW` | The full pack | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-EQUIPMENT-OVERVIEW.txt` |
+| 42 | `ART-END-ITEM-AVAILABILITY` | The broker's scale | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-ITEM-AVAILABILITY.txt` |
+| 43 | `ART-END-PERMANENT-SPECIAL-ITEMS` | The Bell's Tongue | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-PERMANENT-SPECIAL-ITEMS.txt` |
+| 44 | `ART-END-RANDOM-CLASS-TABLE` | Staff, sword, and symbol | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-RANDOM-CLASS-TABLE.txt` |
+| 45 | `ART-END-RANGED-WEAPONS` | Lesser missiles | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-RANGED-WEAPONS.txt` |
+| 46 | `ART-END-READING-A-SCENARIO-BEFORE-SETUP` | The contract and the map | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-READING-A-SCENARIO-BEFORE-SETUP.txt` |
+| 47 | `ART-END-SCROLLS` | The spent scroll | 1536x1024 | A | 1 | `production/art/gpt/prompts/ART-END-SCROLLS.txt` |

@@ -98,16 +98,16 @@ def references_for(e, sels, root=ROOT, guided=True):
     return out
 
 
-def item_for(e, prompt, sels, root=ROOT):
+def item_for(e, prompt, sels, root=ROOT, bare=False):
     fam = g.CFG["families"][e["family"]]
     b = e.get("brief") or {}
     att = g.CFG["gpt_max_attempts"]
     size_code = (e.get("facts") or {}).get("size_code") or ""
     return {"id": e["id"], "family": e["family"], "register": g.CFG["gpt_reference_sets"]["register_of_family"][e["family"]],
-            "ref_set": ref_set(e)[0],
+            "ref_set": "none" if bare else ref_set(e)[0],
             "title": e["title"], "prompt": f"production/art/gpt/prompts/{e['id']}.txt",
             "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(), "size": SIZES.get(fam["aspect"], "1536x1024"),
-            "print_w_in": fam["print_w_in"], "references": references_for(e, sels, root),
+            "print_w_in": fam["print_w_in"], "references": [] if bare else references_for(e, sels, root),
             "max_attempts": att.get(e["family"], att["default"]),
             "size_class": g.CFG["size_words"].get(size_code, "") if e["family"] in ("monster", "boss") else "",
             "must": list(b.get("must", [])), "avoid": [x.rstrip(".") + "." for x in b.get("avoid", [])]}
@@ -130,9 +130,11 @@ def build_queue(phase, ents, sels, anchors, root=ROOT):
         lead = [i for i in g.CFG.get("gpt_lead_ids", []) if i in ents and i not in done]
         ids = lead + sorted((i for i in ents if i not in done and i not in lead), key=lambda i: (ORDER.index(ents[i]["family"]), i))
     prompts, items = {}, []
+    unreferenced = set(g.CFG.get("gpt_no_references", {}).get("ids", []))
     for i in ids:
-        prompts[i] = g.prompt_for(ents[i], True, guided=True)
-        items.append(item_for(ents[i], prompts[i], sels, root))
+        bare = i in unreferenced   # owner decision: generated from the prompt alone
+        prompts[i] = g.prompt_for(ents[i], not bare, guided=not bare)
+        items.append(item_for(ents[i], prompts[i], sels, root, bare=bare))
     return {"schema": SCHEMA, "phase": phase, "generated_at": g.now(), "max_references": g.CFG["gpt_reference_sets"]["max_refs"],
             "push_every": g.CFG.get("gpt_push_every", 5), "review_every": g.CFG.get("gpt_review_every", 10),
             # drift reviews count only receipts written after this queue was published (the log itself is append-only)

@@ -134,8 +134,14 @@ class ArtPipeline(unittest.TestCase):
         lead = [i for i in g.CFG["gpt_lead_ids"] if i in {x["id"] for x in q["items"]}]
         self.assertEqual([x["id"] for x in q["items"][:len(lead)]], lead, "the mixed lead goes first")
         self.assertEqual(len({x["ref_set"] for x in q["items"][:len(lead)]}), len(lead), "one lead item per reference set")
+        bare = set(g.CFG.get("gpt_no_references", {}).get("ids", []))
         for it in q["items"]:
             refs = it["references"]
+            if it["id"] in bare:     # owner decision 2026-10-31: generated from the prompt alone
+                self.assertEqual((refs, it["ref_set"]), ([], "none"), it["id"])
+                self.assertNotIn("STYLE REFERENCES", prompts[it["id"]], it["id"])
+                self.assertIn("ARTISTIC STYLE AND ATMOSPHERE", prompts[it["id"]], it["id"])
+                continue
             self.assertTrue(1 <= len(refs) <= cfg["max_refs"], it["id"])
             self.assertEqual(len(refs), len(set(refs)), it["id"])
             self.assertNotIn(f"assets/art/incoming/{it['id']}.png", refs, "an entry never references itself")
