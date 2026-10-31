@@ -1,308 +1,206 @@
 {
-  "base": "source/Heraldry_RC522.md",
   "base_sha256": "fad164ee8adf3fb6739d79945773a3283919ae504d731d980f3270ae3304a59e",
-  "status": "proposed",
-  "note": "Draft lore review batch. Not approved. Promote only the owner-approved subset via tools/revise_manuscript.py.",
+  "authorization": "Owner instruction 2026-10-31 in Claude Code session: 'Apply all proposed changes besides in part three: \"Three crows on a gallows mean the hanged lied to the last\" should be rewritten to fit better with the surrounding text.'",
   "patches": [
     {
       "id": "LORE-B01",
-      "status": "proposed",
-      "group": "copy",
-      "title": "1.2 'colder bargains'",
+      "status": "approved",
       "find": "a realm of old faiths, broken kingdoms, hungry roads, and colder bargains.",
       "replace": "a realm of old faiths, broken kingdoms, hungry roads, and cold bargains.",
       "expected_count": 1,
-      "note": "The comparative dangles (colder than what?). 'cold' restores the four-beat parallel: old, broken, hungry, cold. Alternative if preferred: 'and cold hearts.'",
-      "recommend": "apply",
-      "found": 1
+      "note": "1.2 'colder bargains'"
     },
     {
       "id": "LORE-B02",
-      "status": "proposed",
-      "group": "copy",
-      "title": "1.2 'soft men with ledgers'",
+      "status": "approved",
       "find": "Merchants who travel between holdings are not soft men with ledgers.",
       "replace": "Merchants who travel between holdings are not soft clerks with ledgers.",
       "expected_count": 1,
-      "note": "The only gendered generic in the lore; the book otherwise keeps every figure neutral. 'clerks' also sharpens the ledger image.",
-      "recommend": "apply",
-      "found": 1
+      "note": "1.2 'soft men with ledgers'"
     },
     {
       "id": "LORE-B03",
-      "status": "proposed",
-      "group": "copy",
-      "title": "1.3 glance: numeral",
+      "status": "approved",
       "find": "One ruined continent, 6 climates:",
       "replace": "One ruined continent, six climates:",
       "expected_count": 1,
-      "note": "Same sentence spells out 'Six Bastions'. Prose numerals under one hundred are written out elsewhere in Section 1.",
-      "recommend": "apply",
-      "found": 1
+      "note": "1.3 glance: numeral"
     },
     {
       "id": "LORE-B04",
-      "status": "proposed",
-      "group": "copy",
-      "title": "Greenmark: hyphenation",
+      "status": "approved",
       "find": "Roots take a road within a season and make the mile-stones useless.",
       "replace": "Roots take a road within a season and make the milestones useless.",
       "expected_count": 1,
-      "note": "1.2 already uses 'milestones'.",
-      "recommend": "apply",
-      "found": 1
+      "note": "Greenmark: hyphenation"
     },
     {
       "id": "LORE-B05",
-      "status": "proposed",
-      "group": "copy",
-      "title": "Sun-Drowned: stranded preposition",
+      "status": "approved",
       "find": "the dunes have climbed over the wealthiest realms the world ever boasted of.",
       "replace": "the dunes have climbed over the wealthiest realms the world ever boasted.",
       "expected_count": 1,
-      "note": "Cleaner cadence; 'boast' takes a direct object.",
-      "recommend": "apply",
-      "found": 1
+      "note": "Sun-Drowned: stranded preposition"
     },
     {
       "id": "LORE-B06",
-      "status": "proposed",
-      "group": "copy",
-      "title": "Reedmarch: numeral",
+      "status": "approved",
       "find": "It is the only crossing for 30 miles in any direction.",
       "replace": "It is the only crossing for thirty miles in any direction.",
       "expected_count": 1,
-      "note": "Saltspire's paragraph writes 'a hundred miles'.",
-      "recommend": "apply",
-      "found": 1
+      "note": "Reedmarch: numeral"
     },
     {
       "id": "LORE-B07",
-      "status": "proposed",
-      "group": "copy",
-      "title": "1.3.4 Sorceries: double 'and'",
+      "status": "approved",
       "find": "They run in bloodlines, surface in fevers, and answer before they are understood, and they always take their price in blood.",
       "replace": "They run in bloodlines, surface in fevers, and answer before they are understood. They always take their price in blood.",
       "expected_count": 1,
-      "note": "Two coordinated 'and' clauses in one sentence; the full stop gives the price its own beat.",
-      "recommend": "apply",
-      "found": 1
+      "note": "1.3.4 Sorceries: double 'and'"
     },
     {
       "id": "LORE-B08",
-      "status": "proposed",
-      "group": "copy",
-      "title": "1.3.4 items: repeated 'rarer still'",
+      "status": "approved",
       "find": "*Magic-infused items are rarer still. Each one is a wonder,",
       "replace": "*Magic-infused items are rarest of all. Each one is a wonder,",
       "expected_count": 1,
-      "note": "'rarer still' closes the Psychic Abilities paragraph immediately above; the repeat reads as an oversight.",
-      "recommend": "apply",
-      "found": 1
+      "note": "1.3.4 items: repeated 'rarer still'"
     },
     {
       "id": "LORE-B09",
-      "status": "proposed",
-      "group": "copy",
-      "title": "1.3.7 omens: unclear crows line",
+      "status": "approved",
       "find": "Three crows on a gallows mean the hanged person lies at the end.",
-      "replace": "Three crows on a gallows mean the hanged lied to the last.",
+      "replace": "Three crows on a gallows mean the hanged will not stay down.",
       "expected_count": 1,
-      "note": "As written, 'lies at the end' is ambiguous (lies buried? tells lies?). Confirm the intended meaning; this reading keeps the omen about a false confession.",
-      "recommend": "decide",
-      "found": 1
+      "note": "1.3.7 omens: crows line rewritten (owner 2026-10-31: rewrite to fit the surrounding text); echoes 1.2 'The dead do not always stay down.'"
     },
     {
       "id": "LORE-B10",
-      "status": "proposed",
-      "group": "copy",
-      "title": "1.3.6 proverb matches Chapter 11",
+      "status": "approved",
       "find": "What works is a party of four. Small enough to hide. Large enough to fight. Cheap enough to lose.",
       "replace": "What works is a party of four. Small enough to hide. Strong enough to fight. Cheap enough to lose.",
       "expected_count": 1,
-      "note": "Chapter 11 quotes the same Bastion saying as 'Small enough to hide. Strong enough to fight. Cheap enough to lose.' A proverb should be word-stable.",
-      "recommend": "apply",
-      "found": 1
+      "note": "1.3.6 proverb matches Chapter 11"
     },
     {
       "id": "LORE-A01",
-      "status": "proposed",
-      "group": "cohesion",
-      "title": "1.3.2 geography: free the salt-coast",
+      "status": "approved",
       "find": "The great forest spreads west to the salt-coast, the ice locks the north,",
       "replace": "The great forest spreads west to the sea, the ice locks the north,",
       "expected_count": 1,
-      "note": "Section 1 fixes the salt-coast in the WEST, yet Edrava Salttide 'ruled the salt-coast' and now reigns in The Mire (SOUTH-EAST), and Mire Scenario 1 buries the 'salt-coast's last great toll-lord' there. The Sun-Drowned's drowned harbours and the Mire's river mouths already form a southern salt coast. Dropping the western label removes the contradiction with one word.",
-      "recommend": "decide",
-      "found": 1
+      "note": "1.3.2 geography: free the salt-coast"
     },
     {
       "id": "LORE-A02",
-      "status": "proposed",
-      "group": "cohesion",
-      "title": "1.3.7 Edrava: place the coast",
+      "status": "approved",
       "find": "***Edrava Salttide** ruled the salt-coast before the Fall.",
       "replace": "***Edrava Salttide** ruled the southern salt-coast before the Fall.",
       "expected_count": 1,
-      "note": "Pairs with LORE-A01 so the reader can place Edrava's coast next to the fen that inherited them.",
-      "recommend": "decide",
-      "found": 1
+      "note": "1.3.7 Edrava: place the coast"
     },
     {
       "id": "LORE-A03",
-      "status": "proposed",
-      "group": "omission",
-      "title": "Pale City: name the White Court",
+      "status": "approved",
       "find": "Towers crack in the cold. Courts, offices, processions, and taxes continue in forms no living citizen would recognize.",
       "replace": "Towers crack in the cold. The **White Court** still sits, its dead nobility frozen in order of precedence, and its offices, processions, and taxes continue in forms no living citizen would recognize.",
       "expected_count": 1,
-      "note": "The White Court supplies seven Pale City Monsters, a Boss, and a scenario, but Section 1 never names it.",
-      "recommend": "decide",
-      "found": 1
+      "note": "Pale City: name the White Court"
     },
     {
       "id": "LORE-A04",
-      "status": "proposed",
-      "group": "omission",
-      "title": "Sun-Drowned: name the Sun-Crowned Prince",
+      "status": "approved",
       "find": "Under the sand, sealed courts keep their lamps lit.*",
       "replace": "Under the sand, sealed courts keep their lamps lit, and the greatest of the priest-kings, the **Sun-Crowned Prince**, has not yet been told that their reign is over.*",
       "expected_count": 1,
-      "note": "The Sun-Crowned Prince is a Boss with no foreshadowing anywhere in the lore.",
-      "recommend": "decide",
-      "found": 1
+      "note": "Sun-Drowned: name the Sun-Crowned Prince"
     },
     {
       "id": "LORE-A05",
-      "status": "proposed",
-      "group": "omission",
-      "title": "1.3.5 Restless Dead: the Forsaken",
+      "status": "approved",
       "find": "The lich-kings of the Ashlands hold court with the courtesy of rulers and the patience of corpses. Beneath the rubble,",
       "replace": "The lich-kings of the Ashlands hold court with the courtesy of rulers and the patience of corpses. The **Forsaken**, the dead empire's last sworn company, still hold the lines they were given, and their captain has forgotten the war but not the oath. Beneath the rubble,",
       "expected_count": 1,
-      "note": "Three Ashlands Monsters and the Boss Captain Veyr belong to 'the Forsaken'; the lore never explains who they are.",
-      "recommend": "decide",
-      "found": 1
+      "note": "1.3.5 Restless Dead: the Forsaken"
     },
     {
       "id": "LORE-A06",
-      "status": "proposed",
-      "group": "omission",
-      "title": "1.3.5 Dragons: the unnamed sixth, and split the paragraph",
+      "status": "approved",
       "find": "and that nothing winged has laid claim to the ash cities since. Khorrun alone among the five has not drawn breath since the Fall.",
       "replace": "and that nothing winged has laid claim to the ash cities since. The oldest crypt-songs speak of a sixth, older than the Fall and perhaps its cause, which no map dares to mark. The wise do not say its name.*\n\n*Khorrun alone among the five has not drawn breath since the Fall.",
       "expected_count": 1,
-      "note": "The Ancient Void Dragon Boss is 'older than the Fall and perhaps its cause', yet the lore's count of dragons stops at five with no hint of it. Also breaks the book's longest lore paragraph (260 words) at its natural seam.",
-      "recommend": "decide",
-      "found": 1
+      "note": "1.3.5 Dragons: the unnamed sixth, and split the paragraph"
     },
     {
       "id": "LORE-A07",
-      "status": "proposed",
-      "group": "omission",
-      "title": "1.3.1 The Fall: a sixth account",
+      "status": "approved",
       "find": "They say every mind hears one splinter of the blow.*",
       "replace": "They say every mind hears one splinter of the blow. A few scholars, reading the oldest crypt-songs, blame a shape with wings. They are not invited to preach.*",
       "expected_count": 1,
-      "note": "Optional companion to LORE-A06: the Fall section lists one theory per tradition; this seeds the dragon theory without confirming it.",
-      "recommend": "optional",
-      "found": 1
+      "note": "1.3.1 The Fall: a sixth account"
     },
     {
       "id": "LORE-A08",
-      "status": "proposed",
-      "group": "omission",
-      "title": "1.3.7 Hollow Crown: tie to the Boss",
+      "status": "approved",
       "find": "Their statues have no faces. Their tomb has never been found. Some Ashland constructs",
       "replace": "Their statues have no faces. Their tomb has never been found. In the Ashlands the crown itself is said to hold court, black iron above an empty robe, and the legions still answer it. Some Ashland constructs",
       "expected_count": 1,
-      "note": "The Boss entry describes the circlet ruling over an empty regent's robe; the legend never says the crown is anything but a title.",
-      "recommend": "decide",
-      "found": 1
+      "note": "1.3.7 Hollow Crown: tie to the Boss"
     },
     {
       "id": "LORE-A09",
-      "status": "proposed",
-      "group": "omission",
-      "title": "1.3.3 Who lives inside the walls (new paragraph)",
+      "status": "approved",
       "find": "Coin buys food, medicine, forgiveness, silence, and time. It does not buy innocence.*\n\n*For most people, the Bastion",
       "replace": "Coin buys food, medicine, forgiveness, silence, and time. It does not buy innocence.*\n\n*The gates do not ask what a refugee is. They ask whether the refugee can hold a spear. Humans are the most numerous and the least agreed on anything. Dwarves keep the forges, the cisterns, and the grudges. Halflings keep the kitchens, the back stairs, and half the smuggling. Elves and gnomes are suffered for what they remember and what they can repair. Goblins, orcs, and ratkin fill the lower wards, sworn to the gate that admitted them and trusted exactly as far as the last raid allows. Deep elves, demonborn, and drakeblood are rarer, and each carries a rumour heavier than their pack. Every Bastion counts all of them on the wall at night. By daylight it counts them differently.*\n\n*For most people, the Bastion",
       "expected_count": 1,
-      "note": "The largest omission. Eleven playable ancestries (6.9) include orcs, goblins, ratkin, and deep elves, but Section 1 shows those peoples only as raiders beyond the walls. One paragraph reconciles the lore with the Hero roster and matches each 6.9 blurb (dwarf grudges and craft, halfling back stairs, gnome repair, elf memory, ratkin lower wards, demonborn closed doors).",
-      "recommend": "decide",
-      "found": 1
+      "note": "1.3.3 Who lives inside the walls (new paragraph)"
     },
     {
       "id": "LORE-A10",
-      "status": "proposed",
-      "group": "omission",
-      "title": "The Mire: Vossegar's bells",
+      "status": "approved",
       "find": "The hag-courts hold the deep fen, and they keep older bargains than any Bastion will admit to honouring. Everyone there knows",
       "replace": "The hag-courts hold the deep fen, and they keep older bargains than any Bastion will admit to honouring. Bells toll under the black water at the fen's heart, and every stilt-village knows the day its tribute falls due. Everyone there knows",
       "expected_count": 1,
-      "note": "Optional. Vossegar 'takes tribute from every settlement in the mire' and the Flooded Cathedral's bells 'toll underwater'; the climate entry mentions neither.",
-      "recommend": "optional",
-      "found": 1
+      "note": "The Mire: Vossegar's bells"
     },
     {
       "id": "LORE-A11",
-      "status": "proposed",
-      "group": "omission",
-      "title": "Undermarches: the Broodmother's webs",
+      "status": "approved",
       "find": "Surveyors return with maps that disagree with themselves. Wells sour overnight.",
       "replace": "Surveyors return with maps that disagree with themselves. Webs thick as rope choke the lower galleries, and the miners who cut them do not ask what spun them. Wells sour overnight.",
       "expected_count": 1,
-      "note": "Optional. The Broodmother Prime is an Undermarches Boss and Greenmark Scenario 4 calls its spiders 'the Broodmother's daughters, strayed up from the dark'; the Undermarches entry has no spiders.",
-      "recommend": "optional",
-      "found": 1
+      "note": "Undermarches: the Broodmother's webs"
     },
     {
       "id": "LORE-A12",
-      "status": "proposed",
-      "group": "cohesion",
-      "title": "1.3.5 Beasts: use a bestiary creature",
+      "status": "approved",
       "find": "Hydras patrol The Mire's channels. Bog maws and worse rise when the wet months come.",
       "replace": "Hydras patrol The Mire's channels. Shambling mounds and worse rise when the wet months come.",
       "expected_count": 1,
-      "note": "Optional. 'Bog maws' matches nothing in the bestiary; the Shambling Mound 'drifts the deep fen' and 'grows wherever enough has drowned'.",
-      "recommend": "optional",
-      "found": 1
+      "note": "1.3.5 Beasts: use a bestiary creature"
     },
     {
       "id": "LORE-A13",
-      "status": "proposed",
-      "group": "copy",
-      "title": "1.3.3 Bastion types: Reedmarch image",
+      "status": "approved",
       "find": "a walled town, a fortress-chapel, a sealed mining city, a stilt-town behind river-locks.",
       "replace": "a walled town, a fortress-chapel, a sealed mining city, a stilt-town behind its toll-chains.",
       "expected_count": 1,
-      "note": "Optional. Reedmarch is described by barges, ferries, and toll bridges, never locks.",
-      "recommend": "optional",
-      "found": 1
+      "note": "1.3.3 Bastion types: Reedmarch image"
     },
     {
       "id": "LORE-A14",
-      "status": "proposed",
-      "group": "copy",
-      "title": "1.2 duplicate phrase",
+      "status": "approved",
       "find": "Bandits prey on the weak and call it tax. Beasts prowl where settlement failed.",
       "replace": "Bandits prey on the weak and call it tax. Beasts prowl where the ploughs stopped.",
       "expected_count": 1,
-      "note": "Optional. 'Beasts prowl where settlement failed' appears verbatim again in 1.3.5.",
-      "recommend": "optional",
-      "found": 1
+      "note": "1.2 duplicate phrase"
     },
     {
       "id": "LORE-C01",
-      "status": "proposed",
-      "group": "cohesion",
-      "title": "9.7 Captain Veyr: Fall timeline",
+      "status": "approved",
       "find": "a duelist whose paired blades have not slowed in three centuries.",
       "replace": "a duelist whose paired blades have not slowed since the empire fell.",
       "expected_count": 1,
-      "note": "Only hard date in the book that conflicts: Edrava (pre-Fall) was buried 'two hundred years' ago and 1.3.1 counts the Fall in generations, but Veyr has fought for 'three centuries'. The vaguer phrase keeps 1.3.1's deliberate uncertainty.",
-      "recommend": "decide",
-      "found": 1
+      "note": "9.7 Captain Veyr: Fall timeline"
     }
   ]
 }
