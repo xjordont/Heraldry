@@ -12711,15 +12711,15 @@
   "route": "gpt",
   "spec_sha256": "987a2d375838f5e2e89a3e753bca149c843587217755daafd121864d0b635f4d",
   "prompt_sha256": "89b6c2835722ff67b2cef9b9c7ec43875a4001a9272acc9a0b68eae5e7c8dd08",
-  "status": "rejected",
-  "received_at": "2026-10-31T20:57:34+00:00",
+  "status": "received",
+  "received_at": "2026-10-31T21:43:52+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Every item must be whole and separate: the Elf shortbow is held or slung with string attached at both tips and separated from the Dwarf shield. Bow string and lower tip cannot be clearly traced.",
+  "notes": "The Party Leader\\u0027s shortsword is sheathed in a scabbard hanging from the belt, with only the hilt showing above it. No bare blade hangs at the hip. Automated check warns of tinted ink.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-PARTY-STRUCTURE.png",
-   "sha256": "221b273980e79d45e562f6472fbebaa43cce5445457be336c5a395ac64a8a356",
+   "sha256": "265d7e36f5c32e3e95c568163894870334b8d2debbbf5402024981e137078d20",
    "px": [
     1536,
     1024
@@ -12727,17 +12727,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-PARTY-STRUCTURE.png",
-   "sha256": "8677f62dded4d9fbfe778c667c4a04b9e7ca619384b2c1d65999740bdc3109e5",
+   "sha256": "11620a5a8a66c1240d5a870d26e70a5f8f09fb3593e9a31cf91a5941be5bfffc",
    "px": [
-    1531,
-    1003
+    1511,
+    992
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 5.103
+   "max_print_w_in_300ppi": 5.037
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-31T21:19:43+00:00",
-  "rejected_reason": "The Party Leader's shortsword is sheathed: a scabbard hangs from the belt with only the hilt showing above it; no bare blade hangs at the hip."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-RANDOM-ANCESTRY-TABLES": {
   "family": "world",
