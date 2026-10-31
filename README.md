@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`eebdb90a`](https://github.com/xjordont/Heraldry/commit/eebdb90a3dc1ecf3f3da17994f9e9a9da201302f) art: intake of ChatGPT Work images
+- [`e6ea390e`](https://github.com/xjordont/Heraldry/commit/e6ea390e3258492beb4beb9826dea24bd438ff5f) art(gpt): ART-END-COMMON-TRAIT-RULES .. ART-END-COMMON-TRAIT-RULES
 - [`81371c70`](https://github.com/xjordont/Heraldry/commit/81371c70ef38d76d0335fc70d340069920e0816a) art: intake of ChatGPT Work images
 - [`23d9789e`](https://github.com/xjordont/Heraldry/commit/23d9789efd2e1330041f6eca3a8f0bd2fe41ef26) art(gpt): ART-END-ACTION-BASICS .. ART-END-ACTION-BASICS
 - [`5488c561`](https://github.com/xjordont/Heraldry/commit/5488c561b99a67e64c4a91cd938a54b9d6ec89ea) art: intake of ChatGPT Work images
 - [`a75ee11d`](https://github.com/xjordont/Heraldry/commit/a75ee11dcd011fb6314cfb3f0077bb2956ef2809) art(gpt): ART-END-COMBAT-BASICS .. ART-END-COMBAT-BASICS
-- [`5521d3df`](https://github.com/xjordont/Heraldry/commit/5521d3df1140a0056470790fb1a6c4ec96811d23) Art review: redo ART-END-ACTION-BASICS (owner-spotted backward sword draw)
-- [`7fa13a39`](https://github.com/xjordont/Heraldry/commit/7fa13a39d2574108cb7634f0b1eb0b0d5b2dab35) art: intake of ChatGPT Work images
 
 <!-- END AUTO:recent -->
 
