@@ -13112,5 +13112,40 @@
    "max_print_w_in_300ppi": 5.01
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-DRUIDIC-RITUALS": {
+  "family": "tradition",
+  "title": "Vine Lash",
+  "heading_id": "h-86-druidic-rituals",
+  "route": "gpt",
+  "spec_sha256": "e7c6fb3c36a99d046b450d7f7487a9c8cee550b5b3068a1a6e0899e7889652ff",
+  "prompt_sha256": "4c93f8026293512668358de88ecd409861737775c1925ad7b1de30a80c6d4357",
+  "status": "received",
+  "received_at": "2026-10-31T21:14:19+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Bandit dagger floats without support; colour check reports tinted ink.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-DRUIDIC-RITUALS.png",
+   "sha256": "47f6f1af1e2670b89d167686d463480e2677de954a298b9c8efbb699b563b691",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-DRUIDIC-RITUALS.png",
+   "sha256": "2ad538646dfb8b3294ef40c3584c971539b6ae90c36fa3cc7ca01989ef6ebda0",
+   "px": [
+    1534,
+    955
+   ],
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 5.113
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
