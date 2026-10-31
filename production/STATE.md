@@ -1,4 +1,12 @@
-# Production state - RC525 source, main
+# Production state - RC526 source, main
+
+## RC526: third lore pass across all 406 lore passages - 2026-10-31
+
+Owner instruction: "Double check all the lore again to ensure no room for improvement", then "Use your best judgement and approve all." A sweep of every lore passage in RC525 (22,900 words) for repeated phrasing, grammatical number, capitalization drift, spelling, and cross-entry contradictions, followed by a re-read of everything flagged (`editorial/proposals/rc526-lore-third-pass.md`).
+
+**Manuscript.** RC526 applies twelve approved exact replacements (`editorial/history/RC526.json`; SHA-256 `040357729080de051fbf8d398240d131ba2e55bdcabe57ac32fefe5cfc09c235`). The Green, White, Blue, and Black Dragon Elite entries become lesser kin of the named Boss dragons instead of claiming their climates and Visath's spire. The Undead Warrior entry treats the Ashlands as plural, like the rest of the book. The 1.3 glance box compresses instead of repeating the body paragraph beneath it; the Ashlands entry no longer restates the 1.3.2 introduction. Khorrun's Section 1 passage gives up Ysolde Vane's "no living scribe" signature for "a hand that has not been warm since the Fall", and the Khorrun Boss entry no longer shares three phrases with it. The Werewolf turns "at the turning of the moon"; the Lich is a "mage-king", matching the setting's tradition terminology. No rule, number, table cell, or closed list changed.
+
+**Checks.** `make parse` parses RC526; the figure gate stays 77/77 with nothing stale; Hero records match B.4 of RC526; `production/aids/fidelity.json` is re-recorded against RC526 after diffing every sheet's sections (only Khorrun's Boss description changed, which PA-2 does not quote; author review, not independent); `python tools/dev.py check` passes. Derived build ledgers still describe RC522-build-39. No PDF build requested; physical print **NOT TESTED**.
 
 ## RC524 and RC525: comprehensive italic-lore read and final Section 1 polish - 2026-10-31
 

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 525,
+  "current": 526,
   "revisions": [
     {
       "number": 484,
@@ -562,6 +562,32 @@
       ],
       "patch_file": "editorial/history/RC525.json",
       "patch_sha256": "7a3dd713034affcc83c058dae6b2043ac11c1002f0aedc529771afd18f5a9336"
+    },
+    {
+      "number": 526,
+      "path": "source/Heraldry_RC526.md",
+      "sha256": "040357729080de051fbf8d398240d131ba2e55bdcabe57ac32fefe5cfc09c235",
+      "bytes": 1537153,
+      "parent_sha256": "9d7df1c0d20843114cd89ee89056b0f3855f75451d037c24ec4a03aea418e60b",
+      "created_at": "2026-10-31T03:05:13.613955+00:00",
+      "reason": "Third lore pass: the four Elite dragons become lesser kin of the named Boss dragons (Green, White, Blue, Black); the Ashlands are plural in the Undead Warrior entry; the 1.3 glance box and the Ashlands entry stop repeating their page; Khorrun's Section 1 passage and Boss entry stop sharing phrases and Ysolde Vane's signature line; Werewolf turns with the moon; the Lich is a mage-king",
+      "authorization": "Owner instruction 2026-10-31 in Claude Code session: 'Use your best judgement and approve all'",
+      "patch_ids": [
+        "LORE3-01",
+        "LORE3-02",
+        "LORE3-03",
+        "LORE3-04",
+        "LORE3-05",
+        "LORE3-06",
+        "LORE3-07",
+        "LORE3-08",
+        "LORE3-09",
+        "LORE3-10",
+        "LORE3-11",
+        "LORE3-12"
+      ],
+      "patch_file": "editorial/history/RC526.json",
+      "patch_sha256": "2e55a6d45b6ef40cb938308eabe6ae10d443b810fa3abf06bad7dcd75bb19487"
     }
   ]
 }

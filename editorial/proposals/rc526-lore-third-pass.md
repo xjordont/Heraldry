@@ -1,5 +1,7 @@
 # Third lore pass: findings for RC526
 
+**Applied as RC526 on 2026-10-31** (owner: "Use your best judgement and approve all"). The exact patches are archived in `editorial/history/RC526.json`; the draft JSON twin was removed after promotion.
+
 Prepared 2026-10-31 against `source/Heraldry_RC525.md` (SHA-256 `9d7df1c0d208…`). A fresh sweep of all 406 lore passages (22,900 words) for repeated phrasing, number agreement, capitalization drift, spelling, and cross-entry contradictions, followed by a re-read of everything the sweep flagged. The machine-readable twin is `rc526-lore-third-pass.json` (status `proposed`).
 
 ## Verdict
