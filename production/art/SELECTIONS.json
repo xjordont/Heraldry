@@ -11986,15 +11986,15 @@
   "route": "gpt",
   "spec_sha256": "4afb6a8e5da5ac6467d3b4e980523bae059eac67746f1c42f75afcfd22912951",
   "prompt_sha256": "0641ce2d3afcad469b75500fbad8ef5cf2630a4bdfd6f91be6417c2adc823892",
-  "status": "rejected",
-  "received_at": "2026-10-31T15:40:32+00:00",
+  "status": "received",
+  "received_at": "2026-10-31T16:04:25+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Automated check reports 18 percent tinted-ink pixels.",
+  "notes": "Correction: make both vague hunched shapes clearly legible at small print size while keeping the black passage and indistinct features. Leave more open white paper around the scene while keeping the tailpiece composition. Flag: five percent tinted pixels and faint shape outlines may disappear after ink processing.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-ACTION-BASICS.png",
-   "sha256": "ab223ab630b6672ce673658e1a941374adc4fe694319d56bdb13e13d915d99ce",
+   "sha256": "0032d268f56230540de73cff64d34c7f03b100496e3004e3eac109c016da3458",
    "px": [
     1536,
     1024
@@ -12002,19 +12002,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-ACTION-BASICS.png",
-   "sha256": "bec28047257c8a9244dd004d26050bdc1af5043dc9baa67e96495f6a81f4e7f8",
+   "sha256": "ceb16a14b4f8fe3026c100767c78cf434f2b0c805b104e3f67d13ba8b6d16d03",
    "px": [
-    1464,
-    974
+    1265,
+    907
    ],
-   "flags": [
-    "colour"
-   ],
-   "max_print_w_in_300ppi": 4.88
+   "flags": [],
+   "max_print_w_in_300ppi": 4.217
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-31T15:42:55+00:00",
-  "rejected_reason": "The two hunched shapes in the passage vanish into solid black once the image is inked for print; draw them as clear dark silhouettes against a lighter, hatched passage so they read at small size, and leave more open white paper around the scene as a tailpiece."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-ACTION-POINTS-AND-SUMMONS": {
   "family": "world",
