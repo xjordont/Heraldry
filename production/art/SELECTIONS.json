@@ -13291,5 +13291,38 @@
    "max_print_w_in_300ppi": 2.23
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-CHOSEN-AND-RANDOM-CREATION": {
+  "family": "item",
+  "title": "Three starting bundles",
+  "heading_id": "h-65-chosen-and-random-creation",
+  "route": "gpt",
+  "spec_sha256": "26031e264afe4659a861b28f86e2341062b46304a29e6d9f2dccad79def39d58",
+  "prompt_sha256": "6edad2d50b85b4f39d14aa67a5f414886d1bfbe3bf4d9ad55038af4977997bd1",
+  "status": "received",
+  "received_at": "2026-10-31T21:54:50+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Coins appear stamped; automated check warns of tinted ink and possible soft shading.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-CHOSEN-AND-RANDOM-CREATION.png",
+   "sha256": "c458a495130e16480e33d7d93285613e1de4478a73f714e351aa2b39fe02fcd5",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-CHOSEN-AND-RANDOM-CREATION.png",
+   "sha256": "237de120e6da228a4698d85ee6ba92156290b392d584d4259dcba294a31ee68e",
+   "px": [
+    1455,
+    921
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.85
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
