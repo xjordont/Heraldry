@@ -1,60 +1,14 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-31T20:40:59+00:00",
+ "generated_at": "2026-10-31T21:19:43+00:00",
  "max_references": 5,
  "push_every": 1,
  "review_every": 10,
- "receipts_base": 459,
+ "receipts_base": 472,
  "target_pixels": 1572864,
- "count": 26,
+ "count": 16,
  "items": [
-  {
-   "id": "ART-END-GENERAL-TALENTS",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "Camouflage",
-   "prompt": "production/art/gpt/prompts/ART-END-GENERAL-TALENTS.txt",
-   "prompt_sha256": "e46adcfdfeb940a4e3a323853a9bfe1e8caecfebe9b54ce3192c30c912521c0d",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "The Hero is mostly hidden; the cover dominates"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "No full figure.",
-    "Not the Scout background or the Ranger class figure.",
-    "No enemies."
-   ]
-  },
-  {
-   "id": "ART-END-HERO-ADVANCEMENT",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "Paying for training",
-   "prompt": "production/art/gpt/prompts/ART-END-HERO-ADVANCEMENT.txt",
-   "prompt_sha256": "2d4d273c53083cbca498baca9aa182ee5913304ed6e03beb6a4d8e15955b133f",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "Hands only; no faces"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "Not the Expedition Hall training yard.",
-    "No ledgers or writing.",
-    "No full figures."
-   ]
-  },
   {
    "id": "ART-END-HERO-CLASSES",
    "family": "world",
@@ -102,29 +56,6 @@
    ]
   },
   {
-   "id": "ART-END-RANDOM-ANCESTRY-TABLES",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "Travellers of five peoples",
-   "prompt": "production/art/gpt/prompts/ART-END-RANDOM-ANCESTRY-TABLES.txt",
-   "prompt_sha256": "8c9bb827698fc52d973079044400ae1d6db5cfaf54adedb86549258dce39c387",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "Five figures, clearly different in height and build"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "No rare ancestries (no horns, tusks, scales or rat features).",
-    "Not the four-Hero cover party.",
-    "No glow halo around the fire."
-   ]
-  },
-  {
    "id": "ART-END-THE-ATTACK-SEQUENCE",
    "family": "world",
    "register": "scene",
@@ -144,168 +75,6 @@
     "No lettering, numbers, dice, game tokens, or rulebook pages.",
     "No full figures.",
     "No glow or motion blur.",
-    "No gore."
-   ]
-  },
-  {
-   "id": "ART-END-THE-BESTIARY",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "The drowned bell tower",
-   "prompt": "production/art/gpt/prompts/ART-END-THE-BESTIARY.txt",
-   "prompt_sha256": "b8f4c97ebbf00229cdf44880991380d5dfcc9fec2d246d63498f7f810b6c6a60",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "Only one coil of the wyrm is visible; no head, wings or full body"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "No full dragon and no breath.",
-    "Not the Black Dragon or Vossegar portraits, and not the Serpent's Sunken Hoard sinkhole.",
-    "No figures."
-   ]
-  },
-  {
-   "id": "ART-END-THE-CAMPAIGN-CYCLE",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "The Antlered Path cairn",
-   "prompt": "production/art/gpt/prompts/ART-END-THE-CAMPAIGN-CYCLE.txt",
-   "prompt_sha256": "b943bebc1d8d2eaa1bc67cc6e1d1ff81ba234ebfdb28c64b0166d642175b1f0a",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "Exactly three stones; no figures"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "Not the Whispering Grove standing stones.",
-    "No carved symbols or runes.",
-    "No glow."
-   ]
-  },
-  {
-   "id": "ART-END-UNIVERSAL-ACTIONS",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "The shield shove",
-   "prompt": "production/art/gpt/prompts/ART-END-UNIVERSAL-ACTIONS.txt",
-   "prompt_sha256": "c17fbaa664c8b82084b3b75b2ae82752e050849acb6027ec4b80cb2ddbe4a6bc",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "The Dwarf is pushing, not striking; the Orc is falling back"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "Not the chapter 5 bridge clash and no undead.",
-    "Do not give the Dwarf a greataxe or a horned helm.",
-    "No gore."
-   ]
-  },
-  {
-   "id": "ART-END-WEATHER-TABLES-BY-CLIMATE",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "Whiteout",
-   "prompt": "production/art/gpt/prompts/ART-END-WEATHER-TABLES-BY-CLIMATE.txt",
-   "prompt_sha256": "3465c6fd265717db846a584bf4f7d1a7df93afd9b7274dd4140a4c8ddc8e88e4",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "The storm is drawn in line only; the white is the paper"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "No grey wash or tonal fog.",
-    "Not the Pale City climate gate.",
-    "No Monsters."
-   ]
-  },
-  {
-   "id": "ART-END-WHAT-IS-HERALDRY-SKIRMISH",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "Rivals at the chest",
-   "prompt": "production/art/gpt/prompts/ART-END-WHAT-IS-HERALDRY-SKIRMISH.txt",
-   "prompt_sha256": "4bcfe318070d88e22341af6b09e8094764b62242b6ea40cc0dfcd5849cb533ba",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "Exactly two rival figures and one chest; the Monster shows only as one clawed arm and shoulder"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "Do not repeat the chapter 2 sighting across a fog valley or the cover's shrine arch.",
-    "No full Monster figure, face or portrait.",
-    "No banners or heraldic devices.",
-    "No gore."
-   ]
-  },
-  {
-   "id": "ART-END-DIVINE-PRAYERS",
-   "family": "tradition",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "Steadfast Word",
-   "prompt": "production/art/gpt/prompts/ART-END-DIVINE-PRAYERS.txt",
-   "prompt_sha256": "82b373b2c967fc01d3582853f8fb8697b83cbb5e83d11bc37cb7a21b15b5d235",
-   "size": "1536x1024",
-   "print_w_in": 2.6,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "Exactly two figures; the Paladin is lifting, not striking"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "No halo, sunburst or radiant glow.",
-    "Not the Tier 1 lantern-healing priest or the Tier 2 roadside shrine.",
-    "No longsword drawn and no enemy in frame."
-   ]
-  },
-  {
-   "id": "ART-END-DRUIDIC-RITUALS",
-   "family": "tradition",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "Vine Lash",
-   "prompt": "production/art/gpt/prompts/ART-END-DRUIDIC-RITUALS.txt",
-   "prompt_sha256": "4c93f8026293512668358de88ecd409861737775c1925ad7b1de30a80c6d4357",
-   "size": "1536x1024",
-   "print_w_in": 2.6,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "The vine visibly links Druid and Bandit"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "No metal weapon, armour or shield on the Druid.",
-    "Not the Tier 1 kneeling root ritual or the Tier 2 bending trees.",
     "No gore."
    ]
   },
