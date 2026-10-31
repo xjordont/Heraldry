@@ -12920,5 +12920,38 @@
   "approved_at": "2026-10-31T19:36:14+00:00",
   "rejected_at": "2026-10-31T19:36:36+00:00",
   "rejected_reason": "The blades must actually cross: the longsword and the falchion meet edge to edge in an X just above both crossguards, touching at the contact point with the sparks; draw the falchion as one continuous blade rising straight from its own guard."
+ },
+ "ART-END-THE-BESTIARY": {
+  "family": "world",
+  "title": "The drowned bell tower",
+  "heading_id": "h-97-the-bestiary",
+  "route": "gpt",
+  "spec_sha256": "df1653fdd8fa87015f8b1f41aeae8c6b75b3e66f81d35d60c22865b2f3de7dc9",
+  "prompt_sha256": "b8f4c97ebbf00229cdf44880991380d5dfcc9fec2d246d63498f7f810b6c6a60",
+  "status": "received",
+  "received_at": "2026-10-31T19:39:01+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Belfry contains a bell despite the requested empty arch.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-THE-BESTIARY.png",
+   "sha256": "3299ecbce3a863fa6e9d888c7e41aae1b357173eeece8b61e944906ae5716dc0",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-THE-BESTIARY.png",
+   "sha256": "b41b8108d6289f5ade70a966b30f5a5b38a50a893c53e4443bd3bd1163f25759",
+   "px": [
+    1503,
+    997
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.01
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
