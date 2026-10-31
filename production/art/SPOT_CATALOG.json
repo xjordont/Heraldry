@@ -14033,10 +14033,10 @@
     ],
     "sources": [
      "Lines 165-187 (1.1): two rival adventuring parties race through monster-haunted ruins for treasure; neutral Monsters stalk the field; the richest party is often the one that bled for every coin",
-     "Lines 3715-3725 (7.10): ring shirt and leather coat are canonical Chest armour"
+     "Lines 3719-3729 (7.10): ring shirt and leather coat are canonical Chest armour"
     ]
    },
-   "spec_sha256": "e1d1f0d841c63d0cc5deca459f633e6ca86e321bbefa68b387decc6a15b0bfe7"
+   "spec_sha256": "8a9a62c8e163536af934724dc114f6afbddd0d959d494356d8c7725b834ff7c7"
   },
   {
    "id": "ART-END-CORE-TERMS",
@@ -14050,8 +14050,8 @@
    ],
    "facts": {},
    "src_lines": [
-    441,
-    441
+    445,
+    445
    ],
    "brief": {
     "identity": "The three kinds of combatant the rules name, met in one crypt passage: a Dwarf Hero, the Guard Hireling at their side, and a Ghoul, the Monster that has come for them.",
@@ -14079,13 +14079,13 @@
      "No gore"
     ],
     "sources": [
-     "Lines 441-449 (2.1): combatant, Hero, Hireling and Monster defined",
-     "Lines 15574 (11.2.5): Guard Hireling with mace and heater shield",
-     "Lines 2241-2250 (6.9): Dwarf build and Darkvision",
-     "Lines 8240-8242 (9.7): Ghoul, grey, gaunt and hook-clawed, lopes in packs through tombs"
+     "Lines 445-453 (2.1): combatant, Hero, Hireling and Monster defined",
+     "Lines 15578 (11.2.5): Guard Hireling with mace and heater shield",
+     "Lines 2245-2254 (6.9): Dwarf build and Darkvision",
+     "Lines 8244-8246 (9.7): Ghoul, grey, gaunt and hook-clawed, lopes in packs through tombs"
     ]
    },
-   "spec_sha256": "a9702e78b884bd0b02906634746494d7b952a768c22e5f185227efd9fdbf2cf0"
+   "spec_sha256": "687361997849067c44c6dc5411dd1f28657241062d19667f01342b8a479f331f"
   },
   {
    "id": "ART-END-ADVANTAGES-AND-DISADVANTAGES",
@@ -14099,8 +14099,8 @@
    ],
    "facts": {},
    "src_lines": [
-    527,
-    527
+    531,
+    531
    ],
    "brief": {
     "identity": "The advantage of higher elevation: an archer kneeling on the broken top of a ruined wall, shooting down at a Beastman scrambling up the rubble below.",
@@ -14128,12 +14128,12 @@
      "No gore"
     ],
     "sources": [
-     "Lines 527-547 (2.4): Advantage and Disadvantage; attacker at a higher elevation gains Advantage",
-     "Lines 7862-7864 (9.7): Beastman, hunched man-shape with goat or boar head and black claws",
-     "Line 3689 (7.9): Shortbow is a two-handed Ranged weapon"
+     "Lines 531-551 (2.4): Advantage and Disadvantage; attacker at a higher elevation gains Advantage",
+     "Lines 7866-7868 (9.7): Beastman, hunched man-shape with goat or boar head and black claws",
+     "Line 3693 (7.9): Shortbow is a two-handed Ranged weapon"
     ]
    },
-   "spec_sha256": "5f557678a922fbcafee34cb62c6f2875dea667999fe510a60f136d7b7b445e1d"
+   "spec_sha256": "a4c94db20846bba42454e255569802127e927b561cb59f0774f73bf15f30848f"
   },
   {
    "id": "ART-END-ACTION-POINTS-AND-SUMMONS",
@@ -14147,8 +14147,8 @@
    ],
    "facts": {},
    "src_lines": [
-    564,
-    564
+    568,
+    568
    ],
    "brief": {
     "identity": "An Infernal Imp, a Sorcerer's temporary Summon, unravelling into smoke and cinders as it is dispelled from the world.",
@@ -14175,12 +14175,12 @@
      "No summoning circle with symbols"
     ],
     "sources": [
-     "Lines 564-588 (2.5): Summons are temporary; a third Summon dispels one; Summons are removed at the end of the adventure",
-     "Lines 3155-3171 (6.13 Sorcerer): Infernal Imp Summon, Small, Fly, Fiend, fire",
-     "Line 9387 (9.7): imp, knee-high and bat-winged with a barbed tail"
+     "Lines 568-592 (2.5): Summons are temporary; a third Summon dispels one; Summons are removed at the end of the adventure",
+     "Lines 3159-3175 (6.13 Sorcerer): Infernal Imp Summon, Small, Fly, Fiend, fire",
+     "Line 9391 (9.7): imp, knee-high and bat-winged with a barbed tail"
     ]
    },
-   "spec_sha256": "fddd28741f543fe7b019e3c22e2f60d1dd9441ae0dc10d3078c88edaf9ba8ffa"
+   "spec_sha256": "f459f73385c79fc5cde2d451fd3b0ef3005187fafe71864bc497d278c7a1a9ba"
   },
   {
    "id": "ART-END-TERRAIN",
@@ -14194,8 +14194,8 @@
    ],
    "facts": {},
    "src_lines": [
-    824,
-    824
+    828,
+    828
    ],
    "brief": {
     "identity": "A small stretch of Dying Lands ground that holds every kind of terrain a party must read: a shallow ford, a deep channel, a fallen column, a thorn hedge and a rubble field, with no one in it.",
@@ -14219,11 +14219,11 @@
      "No square grid or measured lines"
     ],
     "sources": [
-     "Lines 824-860 (2.9.1): Terrain Types and standard assignments: fords and streams Shallow Water, rivers Deep Water, fallen pillars and broken columns Impassable, hedges and thorn barriers Cover, rubble fields Difficult",
-     "Lines 915-934 (2.9.6-2.9.7): Shallow Water and Deep Water"
+     "Lines 828-864 (2.9.1): Terrain Types and standard assignments: fords and streams Shallow Water, rivers Deep Water, fallen pillars and broken columns Impassable, hedges and thorn barriers Cover, rubble fields Difficult",
+     "Lines 919-938 (2.9.6-2.9.7): Shallow Water and Deep Water"
     ]
    },
-   "spec_sha256": "7af15647171b31df4fc4596a2465c5d6aae819c7382d768e9ef072ddf6b6f023"
+   "spec_sha256": "49ff611234e45c9ae5811ff7339e722e861ba9f16ac31a584154aa705a0c1045"
   },
   {
    "id": "ART-END-PARTY-PHASE",
@@ -14237,8 +14237,8 @@
    ],
    "facts": {},
    "src_lines": [
-    1039,
-    1039
+    1043,
+    1043
    ],
    "brief": {
     "identity": "Two Heroes of one party taking turns at a ruined corner: one dashes across an open gap while the other waits behind cover with a loaded crossbow, holding back for whatever answers.",
@@ -14265,12 +14265,12 @@
      "No banners"
     ],
     "sources": [
-     "Lines 1039-1092 (3.3): sides alternate activations; unspent AP is kept for Reactions",
-     "Lines 1203-1225 (4.2): Wait holds remaining AP for Reactions",
-     "Line 3694 (7.9): Light Crossbow"
+     "Lines 1043-1096 (3.3): sides alternate activations; unspent AP is kept for Reactions",
+     "Lines 1207-1229 (4.2): Wait holds remaining AP for Reactions",
+     "Line 3698 (7.9): Light Crossbow"
     ]
    },
-   "spec_sha256": "bd9c9a1d78b514573fdd2a41201c8692ea2463e7c4b53cf16bdc87b6fa65adc2"
+   "spec_sha256": "2a8d8a3331a428a3b1a0a6ba9c90346e2d3ac43f29254948eb6ad46143429a25"
   },
   {
    "id": "ART-END-MONSTER-PHASE",
@@ -14284,8 +14284,8 @@
    ],
    "facts": {},
    "src_lines": [
-    1094,
-    1094
+    1098,
+    1098
    ],
    "brief": {
     "identity": "A Goblin mob of the Greenmark waking and pouring over the top of a ruined steading wall at night, the moment a Monster Group activates.",
@@ -14312,11 +14312,11 @@
      "No gore"
     ],
     "sources": [
-     "Lines 1094-1122 (3.4): Monster Groups wake and activate in order during the Monster Phase",
-     "Lines 7845-7847 (9.7): Goblin, knee-high, green-grey, notched blade and sling of river stones, infesting ruined steadings in mobs, a tide in numbers"
+     "Lines 1098-1126 (3.4): Monster Groups wake and activate in order during the Monster Phase",
+     "Lines 7849-7851 (9.7): Goblin, knee-high, green-grey, notched blade and sling of river stones, infesting ruined steadings in mobs, a tide in numbers"
     ]
    },
-   "spec_sha256": "a2f86054a7bc5bdd76a0c8cff659a9f76a7658f118cfe580cf451d9b61f40414"
+   "spec_sha256": "0fe9d3c7e55ffbb66c3ac2b649174691af3f85c9165971f47a461e349b13e6b7"
   },
   {
    "id": "ART-END-ACTION-BASICS",
@@ -14330,8 +14330,8 @@
    ],
    "facts": {},
    "src_lines": [
-    1187,
-    1187
+    1191,
+    1191
    ],
    "brief": {
     "identity": "A Hero at the foot of a cellar stair letting a lit torch fall to free a hand, drawing a blade as shapes stir in the dark ahead.",
@@ -14358,11 +14358,11 @@
      "No glow effect around the torch"
     ],
     "sources": [
-     "Lines 1187-1201 (4.1): actions in any order; a combatant may speak, signal, and drop non-objective held items without spending AP",
-     "Line 4648 (7.16): Torch, a carried Light Source"
+     "Lines 1191-1205 (4.1): actions in any order; a combatant may speak, signal, and drop non-objective held items without spending AP",
+     "Line 4652 (7.16): Torch, a carried Light Source"
     ]
    },
-   "spec_sha256": "1b52141dc95df61796c5855d8e78c25b7f142e1c3a5f52095536b7665a619da3"
+   "spec_sha256": "4afb6a8e5da5ac6467d3b4e980523bae059eac67746f1c42f75afcfd22912951"
   },
   {
    "id": "ART-END-UNIVERSAL-ACTIONS",
@@ -14376,8 +14376,8 @@
    ],
    "facts": {},
    "src_lines": [
-    1203,
-    1203
+    1207,
+    1207
    ],
    "brief": {
     "identity": "The Push: a Dwarf Hero driving a shield into an Orc raider and shoving them back toward a broken balustrade.",
@@ -14404,12 +14404,12 @@
      "No gore"
     ],
     "sources": [
-     "Lines 1203-1222 (4.2): Push, a STR Check to Push an adjacent combatant 2 inches directly away",
-     "Lines 7944-7946 (9.7): Orc, broad as a doorway, battleaxe and shield, grey-skinned with lower tusks",
-     "Lines 2241-2250 (6.9): Dwarf"
+     "Lines 1207-1226 (4.2): Push, a STR Check to Push an adjacent combatant 2 inches directly away",
+     "Lines 7948-7950 (9.7): Orc, broad as a doorway, battleaxe and shield, grey-skinned with lower tusks",
+     "Lines 2245-2254 (6.9): Dwarf"
     ]
    },
-   "spec_sha256": "26b1a4c65a0388f66fa60edbe431710336833736b28fabaa2c2b312fe39d05c0"
+   "spec_sha256": "904968f9c164f50f6ea11633cb0ee6209b601e3c9e36ee1e1f86d3175cbbb8e7"
   },
   {
    "id": "ART-END-MOVEMENT-RULES",
@@ -14423,8 +14423,8 @@
    ],
    "facts": {},
    "src_lines": [
-    1289,
-    1289
+    1293,
+    1293
    ],
    "brief": {
     "identity": "A Human Rogue jumping a gap between two broken rooftops in a ruined town, the street far below.",
@@ -14451,11 +14451,11 @@
      "No flying or magic"
     ],
     "sources": [
-     "Lines 1289-1420 (4.4): Move, Climb, Jump and Falling",
-     "Lines 1397-1407 (4.4.9): a Jump is horizontal, may cross gaps, and cannot raise elevation by more than 1 inch"
+     "Lines 1293-1424 (4.4): Move, Climb, Jump and Falling",
+     "Lines 1401-1411 (4.4.9): a Jump is horizontal, may cross gaps, and cannot raise elevation by more than 1 inch"
     ]
    },
-   "spec_sha256": "999fee42d7cc7f6d762fea965e3aeaac35706b555d2fc488d5f09efcb777fdd2"
+   "spec_sha256": "824b171863d892c2a27ff156bf17ef4c12f5a4ecca903082696b9796e64dd560"
   },
   {
    "id": "ART-END-COMBAT-BASICS",
@@ -14469,8 +14469,8 @@
    ],
    "facts": {},
    "src_lines": [
-    1469,
-    1469
+    1473,
+    1473
    ],
    "brief": {
     "identity": "A Bugbear rising out of dead bracken to strike from arm's reach with its spiked morningstar, before its quarry can close.",
@@ -14497,11 +14497,11 @@
      "No gore"
     ],
     "sources": [
-     "Lines 1469-1480 (5.1): melee attacks, Engaged, and Reach to 2 inches",
-     "Lines 7964-7983 (9.7): Bugbear, long-armed, fur the colour of dead bracken, strikes from arm's reach with a morningstar; Long-Limbed gives Reach"
+     "Lines 1473-1484 (5.1): melee attacks, Engaged, and Reach to 2 inches",
+     "Lines 7968-7987 (9.7): Bugbear, long-armed, fur the colour of dead bracken, strikes from arm's reach with a morningstar; Long-Limbed gives Reach"
     ]
    },
-   "spec_sha256": "e403d7cb968fefd9c7e7acb71a27c1b982a37f19a0b8ae51a99940f5f850efde"
+   "spec_sha256": "1b7fa91070c28bcc4b812583b13f0e71b711036ba25cb64dd6179a67a0faee74"
   },
   {
    "id": "ART-END-THE-ATTACK-SEQUENCE",
@@ -14515,8 +14515,8 @@
    ],
    "facts": {},
    "src_lines": [
-    1526,
-    1526
+    1530,
+    1530
    ],
    "brief": {
     "identity": "The instant of defence in an attack: two blades locked at the crossguard in a Parry, close enough to see the notches.",
@@ -14542,11 +14542,11 @@
      "No gore"
     ],
     "sources": [
-     "Lines 1526-1536 (5.2): the Attack Sequence; Reactions declared before damage dice",
-     "Lines 1517-1524 (5.1.2): Block, Dodge and Parry"
+     "Lines 1530-1540 (5.2): the Attack Sequence; Reactions declared before damage dice",
+     "Lines 1521-1528 (5.1.2): Block, Dodge and Parry"
     ]
    },
-   "spec_sha256": "ccb4e22497c28985fefc31ff9de0a7fdbd78ba84353047f4c16585ff9a8de39c"
+   "spec_sha256": "2678506013bbea5a89a7fba39ba07b8fe19ea1043286779750ab28f1c1bcc2eb"
   },
   {
    "id": "ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE",
@@ -14560,8 +14560,8 @@
    ],
    "facts": {},
    "src_lines": [
-    1538,
-    1538
+    1542,
+    1542
    ],
    "brief": {
     "identity": "The aftermath of a Critical Hit: a steel breastplate punched clean through by a crossbow bolt, beside a helm crushed flat by a blunt blow.",
@@ -14585,12 +14585,12 @@
      "No maker's marks"
     ],
     "sources": [
-     "Lines 1538-1560 (5.3): Critical Hit riders; piercing ignores AV, blunt halves AV",
-     "Line 3722 (7.10): Breastplate (Steel Cuirass)",
-     "Line 3695 (7.9): Heavy Crossbow"
+     "Lines 1542-1564 (5.3): Critical Hit riders; piercing ignores AV, blunt halves AV",
+     "Line 3726 (7.10): Breastplate (Steel Cuirass)",
+     "Line 3699 (7.9): Heavy Crossbow"
     ]
    },
-   "spec_sha256": "c95341dec0a3904cbc7b9273e93c09526b36e6a1c41fe42459eaf94dd431d635"
+   "spec_sha256": "eed076fc20a7e6cd6fe1f527b282176ace55d5c8bba1cd830cfa9bedceb6a1e2"
   },
   {
    "id": "ART-END-CONDITIONS",
@@ -14604,8 +14604,8 @@
    ],
    "facts": {},
    "src_lines": [
-    1844,
-    1844
+    1848,
+    1848
    ],
    "brief": {
     "identity": "A Hero made Frightened: backing away with a shaking torch from the shadow of a Spectre sliding across a ruined wall.",
@@ -14631,12 +14631,12 @@
      "No gore"
     ],
     "sources": [
-     "Lines 1844-1990 (5.9): the named conditions",
-     "Lines 1878-1882 (5.9): Frightened",
-     "Lines 8313-8315 (9.7): Spectre, grief and rage with the body burned away, drifting the Ashlands"
+     "Lines 1848-1994 (5.9): the named conditions",
+     "Lines 1882-1886 (5.9): Frightened",
+     "Lines 8317-8319 (9.7): Spectre, grief and rage with the body burned away, drifting the Ashlands"
     ]
    },
-   "spec_sha256": "517f0cf84dcf1d2e5bb7978f174c2b278514f662e486257b1d930e63a24fa87f"
+   "spec_sha256": "eca5031113073ef539c5be990436bb11b786814b13c6eccc47d2c79b80530a3a"
   },
   {
    "id": "ART-END-PARTY-STRUCTURE",
@@ -14650,8 +14650,8 @@
    ],
    "facts": {},
    "src_lines": [
-    2002,
-    2002
+    2006,
+    2006
    ],
    "brief": {
     "identity": "A Party Leader at the head of a four-Hero file, fist raised to halt the others at the mouth of a ruined colonnade.",
@@ -14678,11 +14678,11 @@
      "No monsters"
     ],
     "sources": [
-     "Lines 2002-2024 (6.1): party structure; one Hero is nominated Party Leader",
-     "Line 2664 (6.12): Recommended First Party of Human, Elf, Dwarf and Halfling"
+     "Lines 2006-2028 (6.1): party structure; one Hero is nominated Party Leader",
+     "Line 2668 (6.12): Recommended First Party of Human, Elf, Dwarf and Halfling"
     ]
    },
-   "spec_sha256": "07564d9c4e7d4af435219c37680075e3a6ba5aa911f9733d375aff3ec1c00536"
+   "spec_sha256": "987a2d375838f5e2e89a3e753bca149c843587217755daafd121864d0b635f4d"
   },
   {
    "id": "ART-END-CORE-HERO-CREATION-RULES",
@@ -14696,8 +14696,8 @@
    ],
    "facts": {},
    "src_lines": [
-    2051,
-    2051
+    2055,
+    2055
    ],
    "brief": {
     "identity": "A Halfling Hero standing beside a Greatbow propped upright, the Heavy bow far taller than they are: equipment a Small Hero cannot wield.",
@@ -14723,11 +14723,11 @@
      "No armour"
     ],
     "sources": [
-     "Lines 2051-2063 (6.3): equipment eligibility; a Small Hero cannot equip Heavy equipment",
-     "Line 3692 (7.9): Greatbow has the Heavy trait"
+     "Lines 2055-2067 (6.3): equipment eligibility; a Small Hero cannot equip Heavy equipment",
+     "Line 3696 (7.9): Greatbow has the Heavy trait"
     ]
    },
-   "spec_sha256": "db82872dca4fc348825af1d8227d496aca24dcacdc4923d1bea7ac03bde934e9"
+   "spec_sha256": "33c6c376c5aa27c60357bdf2e277e912f595a7f8419e369720b102d643c55420"
   },
   {
    "id": "ART-END-CHOSEN-AND-RANDOM-CREATION",
@@ -14741,8 +14741,8 @@
    ],
    "facts": {},
    "src_lines": [
-    2098,
-    2098
+    2102,
+    2102
    ],
    "brief": {
     "identity": "Three bound starting-kit bundles laid side by side on a hiring-hall bench, a small coin pouch beside them: the choice, or the chance, of a new Hero's first gear.",
@@ -14766,10 +14766,10 @@
      "No figures"
     ],
     "sources": [
-     "Lines 2098-2138 (6.5): starting packages A, B or C may be chosen or rolled; a randomly rolled package grants +4c"
+     "Lines 2102-2142 (6.5): starting packages A, B or C may be chosen or rolled; a randomly rolled package grants +4c"
     ]
    },
-   "spec_sha256": "d8b2672c7cdbd1a9810718af48b1a71fa5caa36a1e221601e1f3acf41577fac4"
+   "spec_sha256": "26031e264afe4659a861b28f86e2341062b46304a29e6d9f2dccad79def39d58"
   },
   {
    "id": "ART-END-RANDOM-ANCESTRY-TABLES",
@@ -14783,8 +14783,8 @@
    ],
    "facts": {},
    "src_lines": [
-    2140,
-    2140
+    2144,
+    2144
    ],
    "brief": {
     "identity": "Five travellers of different ancestries, Human, Halfling, Dwarf, Elf and Gnome, sharing one small roadside fire at night.",
@@ -14811,11 +14811,11 @@
      "No glow halo around the fire"
     ],
     "sources": [
-     "Lines 2140-2164 (6.6): Random Ancestry Table of Human, Halfling, Dwarf, Elf, Gnome and Rare Ancestry",
-     "Lines 2203-2300 (6.9): ancestry sizes and builds"
+     "Lines 2144-2168 (6.6): Random Ancestry Table of Human, Halfling, Dwarf, Elf, Gnome and Rare Ancestry",
+     "Lines 2207-2304 (6.9): ancestry sizes and builds"
     ]
    },
-   "spec_sha256": "e1c99c47e72951dc50079bf110d1b08df5f7e4b3126dd7b016306a886e31a3aa"
+   "spec_sha256": "995c975f9502a94a7aff64e59ddd725824ca9eadff430a4f7c2d143cd90273ac"
   },
   {
    "id": "ART-END-COMMON-TRAIT-RULES",
@@ -14829,8 +14829,8 @@
    ],
    "facts": {},
    "src_lines": [
-    2185,
-    2185
+    2189,
+    2189
    ],
    "brief": {
     "identity": "Darkvision: a Dwarf and a Gnome advancing through a lightless mine gallery without any lamp, seeing what others could not.",
@@ -14857,11 +14857,11 @@
      "No monsters"
     ],
     "sources": [
-     "Lines 2185-2201 (6.8): Darkvision ignores penalties from nonmagical Darkness",
-     "Lines 2241-2250 and 2272-2282 (6.9): Dwarf and Gnome have Darkvision"
+     "Lines 2189-2205 (6.8): Darkvision ignores penalties from non-magical Darkness",
+     "Lines 2245-2254 and 2276-2286 (6.9): Dwarf and Gnome have Darkvision"
     ]
    },
-   "spec_sha256": "82cc5c72b2d0bc0eb372539ee6146e45569c3d02781c21ceac522616cef9df06"
+   "spec_sha256": "b16d910cff26e51959b178f27db4f59b4e9c64ce187c41c140903d5363b46598"
   },
   {
    "id": "ART-END-BACKGROUNDS",
@@ -14875,8 +14875,8 @@
    ],
    "facts": {},
    "src_lines": [
-    2387,
-    2387
+    2391,
+    2391
    ],
    "brief": {
     "identity": "The life a Hero walked away from: an abandoned smallholding gate left swinging open, footprints leading out to the road.",
@@ -14900,11 +14900,11 @@
      "No banners or smoke"
     ],
     "sources": [
-     "Lines 2387-2575 (6.10): backgrounds are the lives Heroes led before the road, from Farmer to Vagabond",
-     "Lines 2416-2422 (6.10): Farmer, callused hands, starting Sickle"
+     "Lines 2391-2579 (6.10): backgrounds are the lives Heroes led before the road, from Farmer to Vagabond",
+     "Lines 2420-2426 (6.10): Farmer, callused hands, starting Sickle"
     ]
    },
-   "spec_sha256": "aeecb11a6a2316f8c73383d91e7ef576d7583ce2cfae38f3d50ec3bca0cf087c"
+   "spec_sha256": "8978842b6d8cbaca29fb498e7fafdc1fde0ea35517582880bc29a08a30bec040"
   },
   {
    "id": "ART-END-RANDOM-CLASS-TABLE",
@@ -14918,8 +14918,8 @@
    ],
    "facts": {},
    "src_lines": [
-    2576,
-    2576
+    2580,
+    2580
    ],
    "brief": {
     "identity": "Three callings in three objects: a caster's quarterstaff crossed over a soldier's shortsword, a cleric's holy symbol hanging from the staff.",
@@ -14942,11 +14942,11 @@
      "No glow"
     ],
     "sources": [
-     "Lines 2576-2593 (6.11): the twelve classes on the Random Class Table",
-     "Lines 2667-2690 (6.13): Martial, Hybrid and Caster archetypes"
+     "Lines 2580-2597 (6.11): the twelve classes on the Random Class Table",
+     "Lines 2671-2694 (6.13): Martial, Hybrid and Caster archetypes"
     ]
    },
-   "spec_sha256": "868b4af45a41459dc8ea160094dc694c1fbdae8154dc8adf7331773cf3bbaba1"
+   "spec_sha256": "113d4ee9bec33b52d72dad6b031138f5d03aaa62f742e3e286ce8bbce34dfa4e"
   },
   {
    "id": "ART-END-GENERAL-TALENTS",
@@ -14960,8 +14960,8 @@
    ],
    "facts": {},
    "src_lines": [
-    2595,
-    2595
+    2599,
+    2599
    ],
    "brief": {
     "identity": "The Camouflage talent: a Hero lying hidden in ferns and roots, only the eyes and an arrowhead showing.",
@@ -14987,11 +14987,11 @@
      "No enemies"
     ],
     "sources": [
-     "Lines 2595-2665 (6.12): General Talents",
-     "Line 2634 (6.12): Camouflage, Hide distance 0 in Cover Terrain or Difficult Terrain"
+     "Lines 2599-2669 (6.12): General Talents",
+     "Line 2638 (6.12): Camouflage, Hide distance 0 in Cover Terrain or Difficult Terrain"
     ]
    },
-   "spec_sha256": "e64e3615c193416900c27cdb92c6cf5dcb983db7e738d6764ef83a8406c70fdd"
+   "spec_sha256": "599c02bd3b9f47e9eb1870efeba44dc13b49d19639d37bed75ccb5e3dd9d9e4b"
   },
   {
    "id": "ART-END-HERO-CLASSES",
@@ -15005,8 +15005,8 @@
    ],
    "facts": {},
    "src_lines": [
-    2667,
-    2667
+    2671,
+    2671
    ],
    "brief": {
     "identity": "A Druid in the Apex Wild Shape of the Stag, charging through a birch stand with a druid's charm cord still tangled in its antlers.",
@@ -15032,11 +15032,11 @@
      "No glow"
     ],
     "sources": [
-     "Lines 3172-3232 (6.13 Druid): Wild Shape Forms",
-     "Line 3231 (6.13): Stag, Apex Form, Antlers, rewarded for a straight charge"
+     "Lines 3176-3236 (6.13 Druid): Wild Shape Forms",
+     "Line 3235 (6.13): Stag, Apex Form, Antlers, rewarded for a straight charge"
     ]
    },
-   "spec_sha256": "c870ece84575fd77dafd35d92c2ab3bfa26d1adf5aef6e6e17ec86363be07c84"
+   "spec_sha256": "be5cd6958711be9a71bbf5bcef25d1f9ba6595ee80a64c6f2100a2d065a1e112"
   },
   {
    "id": "ART-END-HIRELINGS",
@@ -15050,8 +15050,8 @@
    ],
    "facts": {},
    "src_lines": [
-    3246,
-    3246
+    3250,
+    3250
    ],
    "brief": {
     "identity": "A Porter Hireling dragging a Knocked Out Hero by the collar out of a fight's edge.",
@@ -15077,11 +15077,11 @@
      "No enemies in frame"
     ],
     "sources": [
-     "Lines 3246-3271 (6.15): Hirelings follow special rules",
-     "Line 15566 (11.2.5): Porter cannot attack; Drag moves an adjacent Knocked Out Hero 2 inches"
+     "Lines 3250-3275 (6.15): Hirelings follow special rules",
+     "Line 15570 (11.2.5): Porter cannot attack; Drag moves an adjacent Knocked Out Hero 2 inches"
     ]
    },
-   "spec_sha256": "60211bf428bc9904d3d23d834aebf43568eb9d6cf64186c4be09c6ecf766e9e1"
+   "spec_sha256": "16aebc07d017a8062389319febafd3a122ea5e57144c0e431622c48baba536d7"
   },
   {
    "id": "ART-END-HERO-ADVANCEMENT",
@@ -15095,8 +15095,8 @@
    ],
    "facts": {},
    "src_lines": [
-    3273,
-    3273
+    3277,
+    3277
    ],
    "brief": {
     "identity": "Advancement bought with coin: a Hero's scarred hand dropping a purse into a trainer's open palm over a practice sword.",
@@ -15122,10 +15122,10 @@
      "No full figures"
     ],
     "sources": [
-     "Lines 3273-3323 (6.16): Train costs coin from the Treasury; Training Cost rises with level"
+     "Lines 3277-3327 (6.16): Train costs coin from the Treasury; Training Cost rises with level"
     ]
    },
-   "spec_sha256": "d2c26f04a588afc9b80840f7500d7c495fe40bb2a82e51701ffae92f8e95722c"
+   "spec_sha256": "2c761866776e5016eb01594be7a5806600d09ab0da5da54c1e171875ff038a28"
   },
   {
    "id": "ART-END-EQUIPMENT-OVERVIEW",
@@ -15139,8 +15139,8 @@
    ],
    "facts": {},
    "src_lines": [
-    3344,
-    3344
+    3348,
+    3348
    ],
    "brief": {
     "identity": "An adventurer's fully loaded pack set down at the end of a day's march, the reasonable load every Hero carries.",
@@ -15164,11 +15164,11 @@
      "No labels"
     ],
     "sources": [
-     "Lines 3344-3378 (7.1): no inventory slots or encumbrance; Heroes carry a reasonable load of mundane gear",
-     "Lines 4629-4661 (7.16): Lantern (Hooded), Waterskin, Rope, Torch, Bandages"
+     "Lines 3348-3382 (7.1): no inventory slots or encumbrance; Heroes carry a reasonable load of mundane gear",
+     "Lines 4633-4665 (7.16): Lantern (Hooded), Waterskin, Rope, Torch, Bandages"
     ]
    },
-   "spec_sha256": "a2529f99d4f04d970ed89e16f01c492230e0a35fff1d641b0f7a91829ab25ce1"
+   "spec_sha256": "f3265ad3fe6eb603fb8fc313e272a3c601c3932c59085d65663a6153ec60f25a"
   },
   {
    "id": "ART-END-ITEM-AVAILABILITY",
@@ -15182,8 +15182,8 @@
    ],
    "facts": {},
    "src_lines": [
-    3426,
-    3426
+    3430,
+    3430
    ],
    "brief": {
     "identity": "The price of rarity: a Grand Hall broker's balance with a heap of coins on one pan outweighed by a single old ring on the other.",
@@ -15206,11 +15206,11 @@
      "No readable marks"
     ],
     "sources": [
-     "Lines 3426-3431 (7.5): Rare, Very Rare and Legendary items are not part of mundane open-market purchasing",
-     "Lines 15474-15481 (11.2.4): the Grand Hall handles trade, brokerage and commissions"
+     "Lines 3430-3435 (7.5): Rare, Very Rare and Legendary items are not part of mundane open-market purchasing",
+     "Lines 15478-15485 (11.2.4): the Grand Hall handles trade, brokerage and commissions"
     ]
    },
-   "spec_sha256": "2cd97ba535a7213150bc6e311e515d077213548cdafbde08e6d528a209aee4cc"
+   "spec_sha256": "af87531b8bcdf62853ec5b0b234dc544f13aa50c71c3e11ba8a95a18d3fc16b6"
   },
   {
    "id": "ART-END-RANGED-WEAPONS",
@@ -15224,8 +15224,8 @@
    ],
    "facts": {},
    "src_lines": [
-    3678,
-    3678
+    3682,
+    3682
    ],
    "brief": {
     "identity": "The humbler ranged weapons of the Dying Lands laid together: a hand crossbow, a blowgun with darts, a coiled lasso and two javelins.",
@@ -15248,10 +15248,10 @@
      "No maker's marks"
     ],
     "sources": [
-     "Lines 3678-3697 (7.9): Javelin, Lasso, Hand Crossbow and Blowgun profiles"
+     "Lines 3682-3701 (7.9): Javelin, Lasso, Hand Crossbow and Blowgun profiles"
     ]
    },
-   "spec_sha256": "dcd86528191dd3821fc84fa9475837fb1c147a6ed610e5535db57ebf8c7ef6ba"
+   "spec_sha256": "157093ed1ab5cff23ea07446879f415da08d250c2912640aaf01c9af3b49fcc3"
   },
   {
    "id": "ART-END-ARMOUR",
@@ -15265,8 +15265,8 @@
    ],
    "facts": {},
    "src_lines": [
-    3699,
-    3699
+    3703,
+    3703
    ],
    "brief": {
     "identity": "A Brigandine, a coat of plates, hung on a wooden armour stand over a Gambeson, scarred and ready.",
@@ -15289,10 +15289,10 @@
      "No heraldic devices"
     ],
     "sources": [
-     "Lines 3699-3730 (7.10): armour list including Gambeson (Padded) and Brigandine (Coat of Plates)"
+     "Lines 3703-3734 (7.10): armour list including Gambeson (Padded) and Brigandine (Coat of Plates)"
     ]
    },
-   "spec_sha256": "95556676d37a002a6443d0a52c3f834e29bb69d8d8b6bf01446d75672e74a677"
+   "spec_sha256": "48ad179ec9b15de1165b9a4c46cae039002945ce2ffc64d7b949eac5cf58fe57"
   },
   {
    "id": "ART-END-SCROLLS",
@@ -15306,8 +15306,8 @@
    ],
    "facts": {},
    "src_lines": [
-    4447,
-    4447
+    4451,
+    4451
    ],
    "brief": {
     "identity": "A scroll destroyed in the reading: one scroll crumbling to ash beside an open leather case of sealed, unused scrolls.",
@@ -15330,10 +15330,10 @@
      "Not the Tier 2 Arcane copying scene"
     ],
     "sources": [
-     "Lines 4447-4470 (7.15): scrolls are one-use and destroyed when used"
+     "Lines 4451-4474 (7.15): scrolls are one-use and destroyed when used"
     ]
    },
-   "spec_sha256": "3d72e92e6fd6cbead633429349b4bcf163dac2ee7b5ac3ab2c016f1cfb75c363"
+   "spec_sha256": "1f4117d0b232ad88e00d4175a7f0ce443f347f7cab6aee6a45b3794f675aa24d"
   },
   {
    "id": "ART-END-ADVENTURING-EQUIPMENT",
@@ -15347,8 +15347,8 @@
    ],
    "facts": {},
    "src_lines": [
-    4629,
-    4629
+    4633,
+    4633
    ],
    "brief": {
     "identity": "The adventurer's breaking-in tools: a grappling hook with coiled rope, iron spikes, a crowbar and a bag of caltrops.",
@@ -15371,10 +15371,10 @@
      "No labels"
     ],
     "sources": [
-     "Lines 4629-4661 (7.16): Grappling Hook, Rope, Spikes Iron (10), Crowbar and Caltrops (Bag)"
+     "Lines 4633-4665 (7.16): Grappling Hook, Rope, Spikes Iron (10), Crowbar and Caltrops (Bag)"
     ]
    },
-   "spec_sha256": "f2aa7495a442f357445a12a86aed890420e261e1938676bf4e2173a287859ac7"
+   "spec_sha256": "137a3b8e64793f79a56a649d20c84128319606de7531796688072a89eded6873"
   },
   {
    "id": "ART-END-PERMANENT-SPECIAL-ITEMS",
@@ -15388,8 +15388,8 @@
    ],
    "facts": {},
    "src_lines": [
-    4663,
-    4663
+    4667,
+    4667
    ],
    "brief": {
     "identity": "The Bell's Tongue, a clapper torn from a very old bell, lying beside the Bell-Shard Charm.",
@@ -15411,11 +15411,11 @@
      "No runes"
     ],
     "sources": [
-     "Lines 5150-5155 (7.17): Bell-Shard Charm, a fragment of a bell from a buried tower",
-     "Lines 5187-5190 (7.17): The Bell's Tongue, a clapper cold as iron in a winter river"
+     "Lines 5154-5159 (7.17): Bell-Shard Charm, a fragment of a bell from a buried tower",
+     "Lines 5191-5194 (7.17): The Bell's Tongue, a clapper cold as iron in a winter river"
     ]
    },
-   "spec_sha256": "485422b808e503ac19ce3b5b9ed936a47956c013076cd02a20da8bc009c70d87"
+   "spec_sha256": "f4691f431e973f0a16a38ec04aca23bce24ab0316bc7f9291306839cd940b2c0"
   },
   {
    "id": "ART-END-DIVINE-PRAYERS",
@@ -15429,8 +15429,8 @@
    ],
    "facts": {},
    "src_lines": [
-    5907,
-    5907
+    5911,
+    5911
    ],
    "brief": {
     "identity": "Steadfast Word, a Paladin's Tier 0 Orison: a mail-clad Paladin speaks one word over a fallen, Frightened companion and hauls them back to their feet.",
@@ -15457,12 +15457,12 @@
      "No longsword drawn and no enemy in frame"
     ],
     "sources": [
-     "Lines 5933-5951 (8.4): Tier 0 Orisons, Paladin; Steadfast Word removes Frightened and lets a Prone target Stand for 0 AP",
-     "Line 2964 (6.13): Paladin, Hybrid class, with Mace, Targe and Ring Shirt packages",
-     "Line 5267 (8.2): Divine Prayers have no metal equipment restriction"
+     "Lines 5937-5955 (8.4): Tier 0 Orisons, Paladin; Steadfast Word removes Frightened and lets a Prone target Stand for 0 AP",
+     "Line 2968 (6.13): Paladin, Hybrid class, with Mace, Targe and Ring Shirt packages",
+     "Line 5271 (8.2): Divine Prayers have no metal equipment restriction"
     ]
    },
-   "spec_sha256": "76fec9f1b0daae43ed55ff235589e08be3ac38739216af9aea08d6be2ef67b20"
+   "spec_sha256": "4ede609415bc134c199cc277476bf3f45a6264e046ff77c4c4b42434eeed1243"
   },
   {
    "id": "ART-END-SORCERIES",
@@ -15476,8 +15476,8 @@
    ],
    "facts": {},
    "src_lines": [
-    6324,
-    6324
+    6328,
+    6328
    ],
    "brief": {
     "identity": "Blood Flicker, a Sorcerer's Tier 0 Sorcery: the Sorcerer blinks two strides through the air, leaving a spray of their own blood hanging where they stood.",
@@ -15504,12 +15504,12 @@
      "No gore"
     ],
     "sources": [
-     "Lines 6324-6331 (8.5): Sorceries always resolve; Blood Price is HP loss",
-     "Lines 6341-6345 (8.5): Blood Flicker, Blood 1, teleport up to 2 inches",
-     "Line 5267 (8.2): a Hero cannot cast a Sorcery while metal Chest armour is equipped"
+     "Lines 6328-6335 (8.5): Sorceries always resolve; Blood Price is HP loss",
+     "Lines 6345-6349 (8.5): Blood Flicker, Blood 1, teleport up to 2 inches",
+     "Line 5271 (8.2): a Hero cannot cast a Sorcery while metal Chest armour is equipped"
     ]
    },
-   "spec_sha256": "233ade10f7857a29cbd7582bfe6297011e15d0b826c9edccbec116c143762ab6"
+   "spec_sha256": "f8867331c6306f5f9df5e7418bf239ee241dbc572851d5b5c4d7be8e1d12ac25"
   },
   {
    "id": "ART-END-DRUIDIC-RITUALS",
@@ -15523,8 +15523,8 @@
    ],
    "facts": {},
    "src_lines": [
-    6725,
-    6725
+    6729,
+    6729
    ],
    "brief": {
     "identity": "Vine Lash, a Druid's Tier 0 Minor Ritual: a thorned vine bursts from the soil, snares a Bandit by the ankle and drags them toward the Druid.",
@@ -15550,12 +15550,12 @@
      "No gore"
     ],
     "sources": [
-     "Lines 6753-6759 (8.6): Vine Lash, 1d8 + 1 piercing, target Pulled 1 inch toward the caster",
-     "Lines 7876-7878 (9.7): Bandits are deserters and broken tithe-collectors; a good pauldron is reason enough",
-     "Line 5267 (8.2): no Druidic Ritual while metal Chest armour, a metal weapon or a metal shield is equipped"
+     "Lines 6757-6763 (8.6): Vine Lash, 1d8 + 1 piercing, target Pulled 1 inch toward the caster",
+     "Lines 7880-7882 (9.7): Bandits are deserters and broken tithe-collectors; a good pauldron is reason enough",
+     "Line 5271 (8.2): no Druidic Ritual while metal Chest armour, a metal weapon or a metal shield is equipped"
     ]
    },
-   "spec_sha256": "eebf15083e7d13f8178d508bef4003094c60aa0cbf82d5179dc3360d1f1607a7"
+   "spec_sha256": "e7c6fb3c36a99d046b450d7f7487a9c8cee550b5b3068a1a6e0899e7889652ff"
   },
   {
    "id": "ART-END-PSYCHIC-ABILITIES",
@@ -15569,8 +15569,8 @@
    ],
    "facts": {},
    "src_lines": [
-    7150,
-    7150
+    7154,
+    7154
    ],
    "brief": {
     "identity": "Telekinetic Hand, a Psion's Tier 0 Technique: the Psion lifts an iron door latch from across a cellar with no more than a look.",
@@ -15596,11 +15596,11 @@
      "No treasure chest or trap"
     ],
     "sources": [
-     "Lines 7156-7170 (8.7): Telekinetic Hand moves a latch or lever, never deals damage, cannot manipulate Treasure Chests or traps",
-     "Line 3040 (6.13): Psion, with Dagger and Hide Cuirass packages"
+     "Lines 7160-7174 (8.7): Telekinetic Hand moves a latch or lever, never deals damage, cannot manipulate Treasure Chests or traps",
+     "Line 3044 (6.13): Psion, with Dagger and Hide Cuirass packages"
     ]
    },
-   "spec_sha256": "6508ebbe5ef617f11bc6b74860f87fe7b4e7aea57f2ad54acaa92e2bda726abd"
+   "spec_sha256": "270afa1865450377bc76551a4c7ca68eaa982eb750823a2e747f4ec8dc51253f"
   },
   {
    "id": "ART-END-DETERMINING-MONSTERS-FOR-AN-ADVENTURE",
@@ -15614,8 +15614,8 @@
    ],
    "facts": {},
    "src_lines": [
-    7582,
-    7582
+    7586,
+    7586
    ],
    "brief": {
     "identity": "A Greythorn gate-warden crouched on the forest road, reading goblin-sign in a scatter of chewed bones to learn what waits ahead.",
@@ -15642,11 +15642,11 @@
      "No gore"
     ],
     "sources": [
-     "Lines 7582-7586 (9.2): scenarios determine which Monsters appear; generate and group them before deployment",
-     "Line 7847 (9.7): goblins carry notched blades and slings of river stones; Greythorn's gate-wardens read goblin-sign in the chewed bones left along the road"
+     "Lines 7586-7590 (9.2): scenarios determine which Monsters appear; generate and group them before deployment",
+     "Line 7851 (9.7): goblins carry notched blades and slings of river stones; Greythorn's gate-wardens read goblin-sign in the chewed bones left along the road"
     ]
    },
-   "spec_sha256": "1f7f190494c834215fc272b2aed63ebd72b9e96f1113c94ceeada4f523cea995"
+   "spec_sha256": "94d511c60b269472125e14cd781625131bb11fe8a4c6ff1b53933ebc7486a70b"
   },
   {
    "id": "ART-END-MONSTER-PLACEMENT-AND-INITIAL-STATE",
@@ -15660,8 +15660,8 @@
    ],
    "facts": {},
    "src_lines": [
-    7588,
-    7588
+    7592,
+    7592
    ],
    "brief": {
     "identity": "A Resting Monster Group at its Guard Point: a pack of Greenmark dire wolves asleep around an overturned wagon they have claimed.",
@@ -15687,11 +15687,11 @@
      "No gore"
     ],
     "sources": [
-     "Lines 7588-7608 (9.3): a Monster Group begins Resting within 3 inches of its starting point and has a Guard Point such as a wagon",
-     "Lines 7926-7928 (9.7): Dire Wolf, bigger than a pony at the shoulder, scarred and yellow-eyed, works in packs"
+     "Lines 7592-7612 (9.3): a Monster Group begins Resting within 3 inches of its starting point and has a Guard Point such as a wagon",
+     "Lines 7930-7932 (9.7): Dire Wolf, bigger than a pony at the shoulder, scarred and yellow-eyed, works in packs"
     ]
    },
-   "spec_sha256": "2166ff65469a54ebc4fe2dbae72f06525019f859a0ef333cec989265f164edf0"
+   "spec_sha256": "f05fa606e488afc0a49f5a85d23c5294489c3de4be945dde9c827fa073ad1ae1"
   },
   {
    "id": "ART-END-THE-BESTIARY",
@@ -15705,8 +15705,8 @@
    ],
    "facts": {},
    "src_lines": [
-    7791,
-    7791
+    7795,
+    7795
    ],
    "brief": {
     "identity": "The lair of Vossegar of the Flooded Cathedral: the bell tower of a drowned cathedral standing out of black Mire water, one black coil breaking the surface beside it.",
@@ -15729,10 +15729,10 @@
      "No figures"
     ],
     "sources": [
-     "Lines 10510-10512 (9.7 Bosses): Vossegar lairs in a drowned cathedral, a sleek black wyrm coiled among submerged altars; the bells toll underwater and the frogs have not sung there in living memory"
+     "Lines 10514-10516 (9.7 Bosses): Vossegar lairs in a drowned cathedral, a sleek black wyrm coiled among submerged altars; the bells toll underwater and the frogs have not sung there in living memory"
     ]
    },
-   "spec_sha256": "3affd8cb60333be120b3e49991366e88ec17b8f495184b9b6aeabed99026bd7d"
+   "spec_sha256": "df1653fdd8fa87015f8b1f41aeae8c6b75b3e66f81d35d60c22865b2f3de7dc9"
   },
   {
    "id": "ART-END-RANDOM-MONSTER-GENERATION-TABLES",
@@ -15746,8 +15746,8 @@
    ],
    "facts": {},
    "src_lines": [
-    10537,
-    10537
+    10541,
+    10541
    ],
    "brief": {
     "identity": "A Mire mud bank crossed by the tracks of many different Monsters, a record of whatever might come out of the swamp next.",
@@ -15770,11 +15770,11 @@
      "No readable symbols in the tracks"
     ],
     "sources": [
-     "Lines 10537-11009 (9.8): Random Monster Generation Tables by Climate, ending with The Mire",
-     "Lines 9845-9847, 9883, 9962 and 10107-10109 (9.7 Mire Bestiary): Lizardfolk Warrior, Crocodile, Giant Constrictor and the froglike Mire Titan"
+     "Lines 10541-11013 (9.8): Random Monster Generation Tables by Climate, ending with The Mire",
+     "Lines 9849-9851, 9887, 9966 and 10111-10113 (9.7 Mire Bestiary): Lizardfolk Warrior, Crocodile, Giant Constrictor and the froglike Mire Titan"
     ]
    },
-   "spec_sha256": "85ff0e74e34a4ac26575f7e8e93ef851148d9870ae4b09411f1d5cc5efaf1f11"
+   "spec_sha256": "ea35a56c620ad21c71d8846c04a6526acfcbd2be5c0512ddda00e0363d0055ea"
   },
   {
    "id": "ART-END-READING-A-SCENARIO-BEFORE-SETUP",
@@ -15788,8 +15788,8 @@
    ],
    "facts": {},
    "src_lines": [
-    11037,
-    11037
+    11041,
+    11041
    ],
    "brief": {
     "identity": "A party's preparation before an expedition: a sealed Guild of Keys contract and a hand-drawn map of the approaches, weighted down with a dagger and a candle stub.",
@@ -15812,12 +15812,12 @@
      "No figures"
     ],
     "sources": [
-     "Lines 11037-11041 (10): read the selected Core Scenario once before setup",
-     "Lines 15515-15527 (11.2.4): the Guild of Keys manages contracts and maps; Map Room studies the next battlefield's approaches",
-     "Lines 4637-4638 (7.16): Candles and Chalk"
+     "Lines 11041-11045 (10): read the selected Core Scenario once before setup",
+     "Lines 15519-15531 (11.2.4): the Guild of Keys manages contracts and maps; Map Room studies the next battlefield's approaches",
+     "Lines 4641-4642 (7.16): Candles and Chalk"
     ]
    },
-   "spec_sha256": "fb309a4f0656035e220b989161aefc2fba7d3b4c9f1408b714cb1b8a41058ed9"
+   "spec_sha256": "9eef705ba149506391d4ee2fe6f5a345965b90cfb1b6f15f259ebf110d069d49"
   },
   {
    "id": "ART-END-ADVENTURE-PREPARATION-SEQUENCE",
@@ -15831,8 +15831,8 @@
    ],
    "facts": {},
    "src_lines": [
-    11068,
-    11068
+    11072,
+    11072
    ],
    "brief": {
     "identity": "A Scout Hireling lying on a ridge with a spyglass, surveying the ruin below before the party deploys.",
@@ -15858,12 +15858,12 @@
      "No Monsters drawn in detail"
     ],
     "sources": [
-     "Lines 11068-11113 (10.1): Adventure Preparation Sequence, from climate and scenario to deployment",
-     "Line 15572 (11.2.5): Scout Hireling with shortsword and Keen Scout",
-     "Line 4659 (7.16): Spyglass"
+     "Lines 11072-11117 (10.1): Adventure Preparation Sequence, from climate and scenario to deployment",
+     "Line 15576 (11.2.5): Scout Hireling with shortsword and Keen Scout",
+     "Line 4663 (7.16): Spyglass"
     ]
    },
-   "spec_sha256": "8b73c8800703c8bb3a9de593a7f851a8ba312af02e4539bd9d4824b7328c8e69"
+   "spec_sha256": "f1aea8a1a7b8344e75c01a01804099ec03158a51a2e90f0086b7f0dd4ae8ba39"
   },
   {
    "id": "ART-END-WEATHER-TABLES-BY-CLIMATE",
@@ -15877,8 +15877,8 @@
    ],
    "facts": {},
    "src_lines": [
-    11925,
-    11925
+    11929,
+    11929
    ],
    "brief": {
     "identity": "Whiteout Blizzard in the Pale City: two travellers roped together, bent into a storm that has erased the world around them.",
@@ -15904,12 +15904,12 @@
      "No Monsters"
     ],
     "sources": [
-     "Lines 11925-12001 (10.3): Weather Tables by Climate",
-     "Line 11974 (10.3): Whiteout Blizzard, LOS reduced to 6 inches",
-     "Lines 3715 and 4661 (7.10, 7.16): Fur Coat and Arctic Gear"
+     "Lines 11929-12005 (10.3): Weather Tables by Climate",
+     "Line 11978 (10.3): Whiteout Blizzard, LOS reduced to 6 inches",
+     "Lines 3719 and 4665 (7.10, 7.16): Fur Coat and Arctic Gear"
     ]
    },
-   "spec_sha256": "4ac7df0872dbb27df2bf6d63c48c04dad3513961caea5bb0b43a2b639a2d3907"
+   "spec_sha256": "c8e99a77a3d7c72c38fbcf5437bb27685172dcadbef1ece68346593edf6d66dd"
   },
   {
    "id": "ART-END-SOLO-AND-COOPERATIVE-PLAY",
@@ -15923,8 +15923,8 @@
    ],
    "facts": {},
    "src_lines": [
-    14693,
-    14693
+    14697,
+    14697
    ],
    "brief": {
     "identity": "A Costly Victory in the Ashlands: one Hero escapes the ruin with the relic while a companion lies Knocked Out beside a collapsed archway behind.",
@@ -15950,11 +15950,11 @@
      "Not the Reliquary of Broken Saints nave"
     ],
     "sources": [
-     "Lines 14693-14697 (10.5): in solo and cooperative play the battlefield itself becomes the enemy",
-     "Line 14853 (10.5.12): Costly Victory example; one Hero escapes with the relic in the Ashlands while another is left Knocked Out beside a collapsed archway"
+     "Lines 14697-14701 (10.5): in solo and cooperative play the battlefield itself becomes the enemy",
+     "Line 14857 (10.5.12): Costly Victory example; one Hero escapes with the relic in the Ashlands while another is left Knocked Out beside a collapsed archway"
     ]
    },
-   "spec_sha256": "8713c2139b38f0f60397700fb1819df9ac005b43e0b1c221f0804202479bbbcc"
+   "spec_sha256": "d65c69ee3f1cf3dee8d463b0f33ad17d62042105702272caa12f2021051483aa"
   },
   {
    "id": "ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING",
@@ -15968,8 +15968,8 @@
    ],
    "facts": {},
    "src_lines": [
-    14855,
-    14855
+    14859,
+    14859
    ],
    "brief": {
     "identity": "A Minion swarm: Ratkin Scavengers of the Pale City boiling up out of a broken drain grate in a frozen street.",
@@ -15995,11 +15995,11 @@
      "No Heroes in frame"
     ],
     "sources": [
-     "Lines 14967-14976 (10.6.8): Minion Swarms add Minions as party size grows",
-     "Line 9025 (9.7): Ratkin Scavengers, scrawny twitching things in matted grey fur that swarm through the Pale City ruins"
+     "Lines 14971-14980 (10.6.8): Minion Swarms add Minions as party size grows",
+     "Line 9029 (9.7): Ratkin Scavengers, scrawny twitching things in matted grey fur that swarm through the Pale City ruins"
     ]
    },
-   "spec_sha256": "2764575534a38807146b68b24f1aaa83c57a377beb1b58e7bb5d9e4864d509c1"
+   "spec_sha256": "aaa8fb1ce0ea34193d36b6c0f955fda2169bcf9c161e99899557ed7e721a19b8"
   },
   {
    "id": "ART-END-THE-CAMPAIGN-CYCLE",
@@ -16013,8 +16013,8 @@
    ],
    "facts": {},
    "src_lines": [
-    15237,
-    15237
+    15241,
+    15241
    ],
    "brief": {
     "identity": "The Antlered Path Shrine: a cairn of three struck stones beside the old Greenmark trail, Old Wode's mark found on the journey home.",
@@ -16037,12 +16037,12 @@
      "No glow"
     ],
     "sources": [
-     "Lines 15237-15300 (11.2): the Campaign Cycle; Journey Home on the Climate's Journey Table",
-     "Line 15309 (11.2.3): Antlered Path Shrine, a cairn of three struck stones on the old trail, Old Wode's mark",
-     "Line 385 (1.3): Old Wode of the Antlered Path struck the ground three times with an iron-shod staff"
+     "Lines 15241-15304 (11.2): the Campaign Cycle; Journey Home on the Climate's Journey Table",
+     "Line 15313 (11.2.3): Antlered Path Shrine, a cairn of three struck stones on the old trail, Old Wode's mark",
+     "Line 389 (1.3): Old Wode of the Antlered Path struck the ground three times with an iron-shod staff"
     ]
    },
-   "spec_sha256": "3b55f3240853a8ff94a4383b7316edf040c1748333bf82659c105f91a579d73c"
+   "spec_sha256": "336883507b895b29e297a2a5ecc091b59c0f0052d8ed63b8c1b31a43e94fe5cd"
   },
   {
    "id": "ART-END-LEGENDARY-VETERANS",
@@ -16056,8 +16056,8 @@
    ],
    "facts": {},
    "src_lines": [
-    15762,
-    15762
+    15766,
+    15766
    ],
    "brief": {
     "identity": "A Legendary Veteran, retired at the height of their craft, keeping watch at the Stronghold's gate as the Warden of the Threshold.",
@@ -16083,11 +16083,11 @@
      "No Monsters"
     ],
     "sources": [
-     "Lines 15762-15780 (11.4): a Hero who Retires at Level 10 becomes a Legendary Veteran assigned to one Stronghold Component; Warden of the Threshold serves the Outer Walls",
-     "Lines 15702-15710 (11.3): The Outer Walls: ditch, spiked palisade and stone wall"
+     "Lines 15766-15784 (11.4): a Hero who Retires at Level 10 becomes a Legendary Veteran assigned to one Stronghold Component; Warden of the Threshold serves the Outer Walls",
+     "Lines 15706-15714 (11.3): The Outer Walls: ditch, spiked palisade and stone wall"
     ]
    },
-   "spec_sha256": "cbdbf44ecc8ac822b33843542ca9afc59abb787e8ec7c486dbacf7e2f06cab53"
+   "spec_sha256": "6170b6027b4af5547a6f763cab7123a14818c899554f54b9ac0bbcaf58c870bb"
   }
  ]
 }
