@@ -12555,5 +12555,38 @@
    "max_print_w_in_300ppi": 4.91
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-MONSTER-PHASE": {
+  "family": "world",
+  "title": "The goblin tide",
+  "heading_id": "h-34-monster-phase",
+  "route": "gpt",
+  "spec_sha256": "0fe9d3c7e55ffbb66c3ac2b649174691af3f85c9165971f47a461e349b13e6b7",
+  "prompt_sha256": "a57882e6400053d2f6440c4893ac0d1fcef01f7cf1719f8adaddc1927883cb2a",
+  "status": "received",
+  "received_at": "2026-10-31T16:32:34+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of nine percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-MONSTER-PHASE.png",
+   "sha256": "873052a1068758368c474ca874c505ab98ee03c829be290ad817d0100d457ee3",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-MONSTER-PHASE.png",
+   "sha256": "bf539c046f76d349150b223375ee40e1bb68b66ac9dda1741168c7b6a64558c2",
+   "px": [
+    1515,
+    846
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.05
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
