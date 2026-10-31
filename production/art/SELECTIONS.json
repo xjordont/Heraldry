@@ -12588,5 +12588,38 @@
    "max_print_w_in_300ppi": 5.05
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-MONSTER-PLACEMENT-AND-INITIAL-STATE": {
+  "family": "world",
+  "title": "Wolves resting at the wagon",
+  "heading_id": "h-93-monster-placement-and-initial-state",
+  "route": "gpt",
+  "spec_sha256": "f05fa606e488afc0a49f5a85d23c5294489c3de4be945dde9c827fa073ad1ae1",
+  "prompt_sha256": "63880d6f28243d7ea0c57e0aa1833ed80d7ce60ad15da3ea9a95bc924ccc58fa",
+  "status": "received",
+  "received_at": "2026-10-31T18:56:22+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of seven percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-MONSTER-PLACEMENT-AND-INITIAL-STATE.png",
+   "sha256": "f614671e7b9258c061b3e178fffcb1de4d7b377c49e6c9b5cde69112068059e7",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-MONSTER-PLACEMENT-AND-INITIAL-STATE.png",
+   "sha256": "191c523e23296e7ca4b95cb1794f4c079394916a8f3d6a1d1a75d2b7cd21704e",
+   "px": [
+    1526,
+    902
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.087
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
