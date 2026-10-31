@@ -13357,5 +13357,38 @@
    "max_print_w_in_300ppi": 4.88
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-EQUIPMENT-OVERVIEW": {
+  "family": "item",
+  "title": "The full pack",
+  "heading_id": "h-71-equipment-overview",
+  "route": "gpt",
+  "spec_sha256": "f3265ad3fe6eb603fb8fc313e272a3c601c3932c59085d65663a6153ec60f25a",
+  "prompt_sha256": "74815bde1933a5735d6e302436e2024c5d792d60a38ae431f43a207615de9490",
+  "status": "received",
+  "received_at": "2026-10-31T21:58:55+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of tinted ink and possible soft shading.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-EQUIPMENT-OVERVIEW.png",
+   "sha256": "f8221dc7489acce4a3bc9544981b662116605048e45d6c53640ab0ae997e27a2",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-EQUIPMENT-OVERVIEW.png",
+   "sha256": "c395d8386b341acf7e815c0d39a21c32a1fef5723240b217f91ff45740adc722",
+   "px": [
+    1330,
+    832
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.433
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
