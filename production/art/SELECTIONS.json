@@ -11986,7 +11986,7 @@
   "route": "gpt",
   "spec_sha256": "4afb6a8e5da5ac6467d3b4e980523bae059eac67746f1c42f75afcfd22912951",
   "prompt_sha256": "0641ce2d3afcad469b75500fbad8ef5cf2630a4bdfd6f91be6417c2adc823892",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-31T20:02:41+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12010,7 +12010,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.983
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-31T20:40:58+00:00"
  },
  "ART-END-ACTION-POINTS-AND-SUMMONS": {
   "family": "world",
@@ -12087,7 +12088,7 @@
   "route": "gpt",
   "spec_sha256": "f1aea8a1a7b8344e75c01a01804099ec03158a51a2e90f0086b7f0dd4ae8ba39",
   "prompt_sha256": "455b0666c17a53514c6ff17ff29480e4d947c74cab50467bfca046d0726e3d6b",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-31T19:51:18+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12111,7 +12112,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.053
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-31T20:40:58+00:00"
  },
  "ART-END-BACKGROUNDS": {
   "family": "world",
@@ -12154,7 +12156,7 @@
   "route": "gpt",
   "spec_sha256": "1b7fa91070c28bcc4b812583b13f0e71b711036ba25cb64dd6179a67a0faee74",
   "prompt_sha256": "ca2f11a54dbc4324926a137ee2ee960b93ccb798c955c85232aa4f57d81a4297",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-31T19:56:46+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12178,7 +12180,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.003
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-31T20:40:58+00:00"
  },
  "ART-END-COMMON-TRAIT-RULES": {
   "family": "world",
@@ -12187,7 +12190,7 @@
   "route": "gpt",
   "spec_sha256": "b16d910cff26e51959b178f27db4f59b4e9c64ce187c41c140903d5363b46598",
   "prompt_sha256": "2d9652dbea9f33e2f9d57a7c5fe85eeec771d2f50030b3e09361d03e2d59bbdb",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-31T20:08:46+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12211,7 +12214,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.807
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-31T20:40:58+00:00"
  },
  "ART-END-CONDITIONS": {
   "family": "world",
@@ -12394,7 +12398,7 @@
   "route": "gpt",
   "spec_sha256": "599c02bd3b9f47e9eb1870efeba44dc13b49d19639d37bed75ccb5e3dd9d9e4b",
   "prompt_sha256": "e46adcfdfeb940a4e3a323853a9bfe1e8caecfebe9b54ce3192c30c912521c0d",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-31T19:46:11+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12418,7 +12422,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.057
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-31T20:40:59+00:00",
+  "rejected_reason": "The bowstring must run from the drawing fingers straight to both tips of the bow, upper and lower, forming one triangle with the bow; no string line may lead away from the bow toward the upper left."
  },
  "ART-END-HERO-ADVANCEMENT": {
   "family": "world",
