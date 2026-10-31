@@ -27,7 +27,7 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
-- [`cf07afed`](https://github.com/xjordont/Heraldry/commit/cf07afed7f284da91eb29444fe1476affad1d639) RC527: rules-text review applied; figure citations remapped to the active snapshot
+- [`be331b27`](https://github.com/xjordont/Heraldry/commit/be331b274e37fb5dd55e5182537a2ada7ec5306d) RC527: rules-text review applied; figure citations remapped to the active snapshot
 - [`3b1b2ea9`](https://github.com/xjordont/Heraldry/commit/3b1b2ea95f831c3724bd2f3eb0e5837f3ac0fbe1) editorial: propose the RC527 rules-text review (95 exact patches, nothing applied)
 - [`f3bfece3`](https://github.com/xjordont/Heraldry/commit/f3bfece36ce5cf6e8537ecabadf008ecdd0ba3c8) editorial: prompt for a rigorous pass over the manuscript's non-lore text
 - [`da8fec7a`](https://github.com/xjordont/Heraldry/commit/da8fec7a80fb99099a8f7b6e31bcb2ec33a14e0b) RC526: third lore pass; Elite dragons defer to the Boss dragons
