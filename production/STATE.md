@@ -1,5 +1,11 @@
 # Production state - RC527 source, main
 
+## Tailpiece briefs re-checked against RC527 - 2026-10-31
+
+Owner instruction: "update to ensure match rc527". All 47 section-end tailpiece briefs (`production/art/briefs/end_art.json`) were re-checked against RC527. Every source line cited in the briefs still exists. The changes inside the cited ranges are wording only (bare section numbers, "non-adjacent", "non-magical", "Shallow Water", "Setup Roll-off", the Druid "Wolf" row, the Pale City and Sun-Drowned clear-weather rows), and none changes a depicted subject. Lore the briefs rely on (Vossegar's drowned cathedral, bells and frogs; the Stag Apex form; Whiteout Blizzard; the Costly Victory example; Old Wode's cairn; the goblin, Bandit, Spectre, Dire Wolf and Ratkin entries) reads the same. Citations are remapped to RC527 line numbers and the briefs and plan record RC527. The 47 queued prompts are byte-identical, so `production/art/gpt/QUEUE.json` is unchanged and ready for Codex.
+
+**Existing art kept (owner decision).** A full catalog regeneration from RC527 changes the spec hash of 25 existing approved illustrations whose flavour text changed in RC523 to RC526: the Grim World, the six climates, the Bastions, Reedmarch, Pauper, Satyr Reveler, Werewolf, Undead Warrior and Sentinel, Lich, three White Court entries, four dragons, Captain Veyr, and Khorrun. Owner, 2026-10-31: "I think the old illustrations are fine." `production/art/SPOT_CATALOG.json` is now regenerated in full from RC527, and each of the 25 selections in `production/art/SELECTIONS.json` carries a `spec_rebinds` record of this decision, so `tools/build_book.py` keeps placing the unchanged images. No approved image is stale and nothing joins the queue. Checks: `python tools/dev.py check` passes apart from the Hero-card test, which needs Git LFS image bytes that this container does not have.
+
 ## RC527: rules-text review across every non-lore line - 2026-10-31
 
 Owner instruction, after the rules-text review report (`editorial/proposals/rc527-rules-text-review.md`): "Fix everything to the best of your ability. I accept all your proposed changes."

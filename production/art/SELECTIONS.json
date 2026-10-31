@@ -40,7 +40,7 @@
   "title": "The Ashlands",
   "heading_id": "h-the-ashlands",
   "route": "gpt",
-  "spec_sha256": "742f79f873697ead030177db2203aff2a91be13452ec148b48b169db64686868",
+  "spec_sha256": "af46efec4aa5d4ba1cb1e38b644c743216330482283dffcfbd8b1b057adebd92",
   "prompt_sha256": "acc27bad4bc4f1b80511d5c6f0a10296e219d4a5b51044ffb929406878124597",
   "status": "approved",
   "received_at": "2026-10-12T04:40:49+00:00",
@@ -67,7 +67,16 @@
    "max_print_w_in_300ppi": 5.083
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "742f79f873697ead030177db2203aff2a91be13452ec148b48b169db64686868",
+    "to": "af46efec4aa5d4ba1cb1e38b644c743216330482283dffcfbd8b1b057adebd92",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
+   }
+  ]
  },
  "ART-MON-SKELETON-WARRIOR": {
   "family": "monster",
@@ -502,7 +511,7 @@
   "title": "1.2 The Grim World",
   "heading_id": "h-12-the-grim-world",
   "route": "gpt",
-  "spec_sha256": "0cda2f736fd6774d6e9209b8c983dba4d103254cfdf2baf182581b914387b34d",
+  "spec_sha256": "bbf20b41f125ba49d73532e6fe242841bfd7c4f91211c0479762d7679401fb7b",
   "prompt_sha256": "ef40846ec7ae82894ecb61f80805a413cff311f5ad0df4a166ee41e6bbe15c6e",
   "status": "approved",
   "received_at": "2026-10-12T05:21:14+00:00",
@@ -529,7 +538,16 @@
    "max_print_w_in_300ppi": 5.12
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "0cda2f736fd6774d6e9209b8c983dba4d103254cfdf2baf182581b914387b34d",
+    "to": "bbf20b41f125ba49d73532e6fe242841bfd7c4f91211c0479762d7679401fb7b",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
+   }
+  ]
  },
  "ART-CH01-002": {
   "family": "chapter",
@@ -672,7 +690,7 @@
   "title": "Reedmarch",
   "heading_id": "h-reedmarch",
   "route": "gpt",
-  "spec_sha256": "38daef6436e91090108f33a279f85509234aa147cbf497825e6c55c851031086",
+  "spec_sha256": "ea3f1d82336579afc1ed4ef192764d1835042a935e29059025550811cdabef89",
   "prompt_sha256": "53386db03f04a6e6abede9264831abe7f74a962aba8796510718d415baf4ec45",
   "status": "approved",
   "received_at": "2026-10-12T05:55:13+00:00",
@@ -699,7 +717,16 @@
    "max_print_w_in_300ppi": 5.08
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "38daef6436e91090108f33a279f85509234aa147cbf497825e6c55c851031086",
+    "to": "ea3f1d82336579afc1ed4ef192764d1835042a935e29059025550811cdabef89",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
+   }
+  ]
  },
  "ART-BAS-SABLEKEEP": {
   "family": "bastion",
@@ -774,7 +801,7 @@
   "title": "The Greenmark",
   "heading_id": "h-the-greenmark",
   "route": "gpt",
-  "spec_sha256": "06acc0f3570bd7c61ff5709d3ceeffb4140c46bc4312719aa5d268986dea7f25",
+  "spec_sha256": "69e78f2d1a2439260e26cb1fa4ae2f1f6bb9b48f40f4af90d469f72966d43e36",
   "prompt_sha256": "83115823020828f3aed3ac6b70ca2ee69a15bd940788a12bdab45faff8200029",
   "status": "approved",
   "received_at": "2026-10-12T06:10:22+00:00",
@@ -801,14 +828,23 @@
    "max_print_w_in_300ppi": 5.087
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "06acc0f3570bd7c61ff5709d3ceeffb4140c46bc4312719aa5d268986dea7f25",
+    "to": "69e78f2d1a2439260e26cb1fa4ae2f1f6bb9b48f40f4af90d469f72966d43e36",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
+   }
+  ]
  },
  "ART-CLI-THE-MIRE": {
   "family": "climate",
   "title": "The Mire",
   "heading_id": "h-the-mire",
   "route": "gpt",
-  "spec_sha256": "dd3c3a548ebe274d3c17cb633ca45798e7b1c98d8d5781a3de25887cd247d06a",
+  "spec_sha256": "28e64855b29ceb0110e8c124916ce26d8efb47254a173ba29caecf1195bd4d51",
   "prompt_sha256": "7e61c4d50c3830a292094ec5a91b1afcff154656d7838d23516d449570640342",
   "status": "approved",
   "received_at": "2026-10-12T12:36:04+00:00",
@@ -835,14 +871,23 @@
    "max_print_w_in_300ppi": 5.12
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "dd3c3a548ebe274d3c17cb633ca45798e7b1c98d8d5781a3de25887cd247d06a",
+    "to": "28e64855b29ceb0110e8c124916ce26d8efb47254a173ba29caecf1195bd4d51",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
+   }
+  ]
  },
  "ART-CLI-THE-PALE-CITY": {
   "family": "climate",
   "title": "The Pale City",
   "heading_id": "h-the-pale-city",
   "route": "gpt",
-  "spec_sha256": "36fa276cb69fe044146700beb66a690b9a677b13bfd2b4b635e6725bed5f5210",
+  "spec_sha256": "f4aea4673a4650359e119764d110f903cc2bcd343ddbd2e36e0158c2a03cb8b9",
   "prompt_sha256": "a04c23ffa040545ff71b7254cacf779cd9a8d2ac4953bdb440c9340168441497",
   "status": "approved",
   "received_at": "2026-10-12T06:15:36+00:00",
@@ -869,14 +914,23 @@
    "max_print_w_in_300ppi": 5.11
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "36fa276cb69fe044146700beb66a690b9a677b13bfd2b4b635e6725bed5f5210",
+    "to": "f4aea4673a4650359e119764d110f903cc2bcd343ddbd2e36e0158c2a03cb8b9",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
+   }
+  ]
  },
  "ART-CLI-THE-SUN-DROWNED": {
   "family": "climate",
   "title": "The Sun-Drowned",
   "heading_id": "h-the-sun-drowned",
   "route": "gpt",
-  "spec_sha256": "75b28bfdcc511a4ca1cac029ca3e245fec9c3f839458d30b7f703523568f51a9",
+  "spec_sha256": "bd0d5b41fc7711696cada1aeeaca1aba7b51a069b02e6944e88633000985c044",
   "prompt_sha256": "e46ce11e7c4427dcfe8b1b9680939e863938886055ab13844daf5f9080ea8dd2",
   "status": "approved",
   "received_at": "2026-10-12T06:17:57+00:00",
@@ -903,14 +957,23 @@
    "max_print_w_in_300ppi": 5.08
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "75b28bfdcc511a4ca1cac029ca3e245fec9c3f839458d30b7f703523568f51a9",
+    "to": "bd0d5b41fc7711696cada1aeeaca1aba7b51a069b02e6944e88633000985c044",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
+   }
+  ]
  },
  "ART-CLI-THE-UNDERMARCHES": {
   "family": "climate",
   "title": "The Undermarches",
   "heading_id": "h-the-undermarches",
   "route": "gpt",
-  "spec_sha256": "560eadccbd7a3142eee6d2abe78c3d0572979985879c59b9b10e278d3676e54f",
+  "spec_sha256": "8d29e06ff9ac8d970695018d6c327efdafa415c95e108d17e72432bcd6a29b92",
   "prompt_sha256": "142b0567486bd9d0889da2afbd3089303fed16be4e99e6ae01c84ab83e12e75e",
   "status": "approved",
   "received_at": "2026-10-12T06:20:39+00:00",
@@ -937,7 +1000,16 @@
    "max_print_w_in_300ppi": 5.087
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "spec_rebinds": [
+   {
+    "from": "560eadccbd7a3142eee6d2abe78c3d0572979985879c59b9b10e278d3676e54f",
+    "to": "8d29e06ff9ac8d970695018d6c327efdafa415c95e108d17e72432bcd6a29b92",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
+   }
+  ]
  },
  "ART-MON-ASHEN-REVENANT": {
   "family": "monster",
@@ -1184,7 +1256,7 @@
   "title": "Black Dragon",
   "heading_id": "h-black-dragon-elite",
   "route": "gpt",
-  "spec_sha256": "469cc911aff374946ba5c31003f5bfd4403a87d56f9c672a0e21e536738d1325",
+  "spec_sha256": "5dedef72398ebc0ba83a2b99c50e1066e4ec1e385a1fe8afd2a94393147544e4",
   "prompt_sha256": "63259e608f35922a2da626a936ee039a294450b15fe33ecab2d5e89333a065d2",
   "status": "approved",
   "received_at": "2026-10-12T06:44:07+00:00",
@@ -1219,6 +1291,13 @@
     "at": "2026-10-29T14:57:24+00:00",
     "by": "Claude (Opus 5.5), design review 2026-10-29",
     "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   },
+   {
+    "from": "469cc911aff374946ba5c31003f5bfd4403a87d56f9c672a0e21e536738d1325",
+    "to": "5dedef72398ebc0ba83a2b99c50e1066e4ec1e385a1fe8afd2a94393147544e4",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
    }
   ]
  },
@@ -1356,7 +1435,7 @@
   "title": "Blue Dragon",
   "heading_id": "h-blue-dragon-elite",
   "route": "gpt",
-  "spec_sha256": "285937734bb44dadc27d140d3d2fe0947d6654b553ed6da7c30d756b092aa490",
+  "spec_sha256": "84b7dfb4ad5b6a65316b894f6a189f33337a4a18a0da42cb47e38148abbb8359",
   "prompt_sha256": "18f77f2dccc1dc67c1a3cea057832c9a343b2555b820a5aeae7b3f9fd5847645",
   "status": "approved",
   "received_at": "2026-10-12T06:59:20+00:00",
@@ -1391,6 +1470,13 @@
     "at": "2026-10-29T14:57:24+00:00",
     "by": "Claude (Opus 5.5), design review 2026-10-29",
     "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   },
+   {
+    "from": "285937734bb44dadc27d140d3d2fe0947d6654b553ed6da7c30d756b092aa490",
+    "to": "84b7dfb4ad5b6a65316b894f6a189f33337a4a18a0da42cb47e38148abbb8359",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
    }
   ]
  },
@@ -3212,7 +3298,7 @@
   "title": "Green Dragon",
   "heading_id": "h-green-dragon-elite",
   "route": "gpt",
-  "spec_sha256": "793f18bfc1383984b23ea7c1c6ccf10fed02844524b092050829c85dd1d95bf6",
+  "spec_sha256": "147e62a902e3005297156f09d0408edcbd60503837794b9391b90d0fc4cd569c",
   "prompt_sha256": "9de71ab6b9a4d983028e79385d4e8f0e0a532ef19cea67ca884e2cd758d12ebc",
   "status": "approved",
   "received_at": "2026-10-12T09:32:53+00:00",
@@ -3247,6 +3333,13 @@
     "at": "2026-10-29T14:57:24+00:00",
     "by": "Claude (Opus 5.5), design review 2026-10-29",
     "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   },
+   {
+    "from": "793f18bfc1383984b23ea7c1c6ccf10fed02844524b092050829c85dd1d95bf6",
+    "to": "147e62a902e3005297156f09d0408edcbd60503837794b9391b90d0fc4cd569c",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
    }
   ]
  },
@@ -3513,7 +3606,7 @@
   "title": "Lich",
   "heading_id": "h-lich-elite",
   "route": "gpt",
-  "spec_sha256": "d8a55d4bd7ba27fc1bdf5c9681870b33e25df8ae2b7e3c2885a28d013f8c89dc",
+  "spec_sha256": "a01f7e5db19d5eb4541483fb74d7b80df0996f59430f61a817b3a63338a5b34c",
   "prompt_sha256": "4b573ba16577600860913489a43c6d9f0aad2dcf9ef5645ab7826f8a25c6a666",
   "status": "approved",
   "received_at": "2026-10-12T13:03:23+00:00",
@@ -3540,7 +3633,16 @@
    "max_print_w_in_300ppi": 2.787
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "d8a55d4bd7ba27fc1bdf5c9681870b33e25df8ae2b7e3c2885a28d013f8c89dc",
+    "to": "a01f7e5db19d5eb4541483fb74d7b80df0996f59430f61a817b3a63338a5b34c",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
+   }
+  ]
  },
  "ART-MON-LIZARDFOLK-HUNTER": {
   "family": "monster",
@@ -4208,7 +4310,7 @@
   "title": "Satyr Reveler",
   "heading_id": "h-satyr-reveler-controller",
   "route": "gpt",
-  "spec_sha256": "70b41feda2b3d7109d7e8d24eac0e2d0313bc3df53224a5db0f989c97c6d53f9",
+  "spec_sha256": "017f9a1e216eaedd5fa06919dc792f604ce9c34c8783071d8cc864e7b4b35a8d",
   "prompt_sha256": "e31bd3e38a8688c5a674a30eac08a327ef6a21331eeb7139572431f0a655c8ca",
   "status": "approved",
   "received_at": "2026-10-12T14:00:49+00:00",
@@ -4235,7 +4337,16 @@
    "max_print_w_in_300ppi": 2.577
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T15:24:33+00:00"
+  "approved_at": "2026-10-12T15:24:33+00:00",
+  "spec_rebinds": [
+   {
+    "from": "70b41feda2b3d7109d7e8d24eac0e2d0313bc3df53224a5db0f989c97c6d53f9",
+    "to": "017f9a1e216eaedd5fa06919dc792f604ce9c34c8783071d8cc864e7b4b35a8d",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
+   }
+  ]
  },
  "ART-MON-SHAMBLING-MOUND": {
   "family": "monster",
@@ -5005,7 +5116,7 @@
   "title": "Undead Sentinel",
   "heading_id": "h-undead-sentinel-soldier",
   "route": "gpt",
-  "spec_sha256": "57519433e33e1fcb234267c5c2c15c97ca550935891994cf72db8c0517a9beeb",
+  "spec_sha256": "69bc602b3f7cbc987993a4724b783efa6c78834a8c28217a69b5249b9eb2487f",
   "prompt_sha256": "8be4b80bd91d45057d89f9efa1d09a54ff446a5ff7dced4bdbf2193ba8f04810",
   "status": "approved",
   "received_at": "2026-10-12T15:18:18+00:00",
@@ -5040,6 +5151,13 @@
     "at": "2026-10-29T14:57:24+00:00",
     "by": "Claude (Opus 5.5), design review 2026-10-29",
     "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   },
+   {
+    "from": "57519433e33e1fcb234267c5c2c15c97ca550935891994cf72db8c0517a9beeb",
+    "to": "69bc602b3f7cbc987993a4724b783efa6c78834a8c28217a69b5249b9eb2487f",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
    }
   ]
  },
@@ -5048,7 +5166,7 @@
   "title": "Undead Warrior",
   "heading_id": "h-undead-warrior-minion",
   "route": "gpt",
-  "spec_sha256": "ec539c2b733a54d14ae834eeee407e4e23141f948fd2c0d7a83364fe7eb4d27e",
+  "spec_sha256": "9739c6f8595075d17aee26874e92871e86056177aa790df0a584b8b3151c1e17",
   "prompt_sha256": "c07b40b0f85dcfda25ef5575243cf886d63123d67046a97099c5d7e020838b3d",
   "status": "approved",
   "received_at": "2026-10-12T15:37:33+00:00",
@@ -5083,6 +5201,13 @@
     "at": "2026-10-29T14:57:24+00:00",
     "by": "Claude (Opus 5.5), design review 2026-10-29",
     "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   },
+   {
+    "from": "ec539c2b733a54d14ae834eeee407e4e23141f948fd2c0d7a83364fe7eb4d27e",
+    "to": "9739c6f8595075d17aee26874e92871e86056177aa790df0a584b8b3151c1e17",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
    }
   ]
  },
@@ -5383,7 +5508,7 @@
   "title": "Werewolf",
   "heading_id": "h-werewolf-elite",
   "route": "gpt",
-  "spec_sha256": "22e1f3a26a329f7852aed1ca0ba588dca34cab4cee980f55b629e9d8a03cebf6",
+  "spec_sha256": "5bf7e0bbdacc6cf61653348022b0549527d432c893992c8b6d59a91e455d1d25",
   "prompt_sha256": "b63c8a497a26d9b3bba6d626e488c65853509e72009a2534b32f6cbb988e8094",
   "status": "approved",
   "received_at": "2026-10-12T16:29:43+00:00",
@@ -5418,6 +5543,13 @@
     "at": "2026-10-29T14:57:24+00:00",
     "by": "Claude (Opus 5.5), design review 2026-10-29",
     "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   },
+   {
+    "from": "22e1f3a26a329f7852aed1ca0ba588dca34cab4cee980f55b629e9d8a03cebf6",
+    "to": "5bf7e0bbdacc6cf61653348022b0549527d432c893992c8b6d59a91e455d1d25",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
    }
   ]
  },
@@ -5426,7 +5558,7 @@
   "title": "White Court Archer",
   "heading_id": "h-white-court-archer-cannon",
   "route": "gpt",
-  "spec_sha256": "4fa66185216270ef199dcf81b61648bdc67d7206ed364795ca8cd1e82e1216d9",
+  "spec_sha256": "c08b58e01695dfeb17d784e1a16e9286747429812e9df6ba9aab1eb9445d8687",
   "prompt_sha256": "08e4bc48302c61decb98c81e13c8125c822cc7dd65be71d568de1e6ccc990be2",
   "status": "approved",
   "received_at": "2026-10-12T16:32:37+00:00",
@@ -5453,14 +5585,23 @@
    "max_print_w_in_300ppi": 3.427
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T17:10:42+00:00"
+  "approved_at": "2026-10-12T17:10:42+00:00",
+  "spec_rebinds": [
+   {
+    "from": "4fa66185216270ef199dcf81b61648bdc67d7206ed364795ca8cd1e82e1216d9",
+    "to": "c08b58e01695dfeb17d784e1a16e9286747429812e9df6ba9aab1eb9445d8687",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
+   }
+  ]
  },
  "ART-MON-WHITE-COURT-EXECUTIONER": {
   "family": "monster",
   "title": "White Court Executioner",
   "heading_id": "h-white-court-executioner-elite",
   "route": "gpt",
-  "spec_sha256": "3f32f9740050c3ba22652b30cb092159b9ff1fe2b247db584bc98ad547974ca2",
+  "spec_sha256": "f1e75a92fa2ba93aeda372b0817c6f94b34e78e6ebcd95e2594bfa172f1d763b",
   "prompt_sha256": "1a4384072d7bcbff04cd00a9602dc1a97143242777d9547b8290056ba3859fed",
   "status": "approved",
   "received_at": "2026-10-12T16:35:41+00:00",
@@ -5495,6 +5636,13 @@
     "at": "2026-10-29T14:57:24+00:00",
     "by": "Claude (Opus 5.5), design review 2026-10-29",
     "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   },
+   {
+    "from": "3f32f9740050c3ba22652b30cb092159b9ff1fe2b247db584bc98ad547974ca2",
+    "to": "f1e75a92fa2ba93aeda372b0817c6f94b34e78e6ebcd95e2594bfa172f1d763b",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
    }
   ]
  },
@@ -5537,7 +5685,7 @@
   "title": "White Court Sentinel",
   "heading_id": "h-white-court-sentinel-brute",
   "route": "gpt",
-  "spec_sha256": "3a87338bcd96b2f1fda4626516ad36b83f1e4f869e956460adaac01e7d53c5a8",
+  "spec_sha256": "d876cfcacc5c82fa4315def8149e3842af1ac22e633a9c2970de104ec9ec5a32",
   "prompt_sha256": "edbb83e812f075218318e2a08478c2fac539268f6d4e5f5393ac1a8764c4a690",
   "status": "approved",
   "received_at": "2026-10-12T16:43:26+00:00",
@@ -5572,6 +5720,13 @@
     "at": "2026-10-29T14:57:24+00:00",
     "by": "Claude (Opus 5.5), design review 2026-10-29",
     "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   },
+   {
+    "from": "3a87338bcd96b2f1fda4626516ad36b83f1e4f869e956460adaac01e7d53c5a8",
+    "to": "d876cfcacc5c82fa4315def8149e3842af1ac22e633a9c2970de104ec9ec5a32",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
    }
   ]
  },
@@ -5580,7 +5735,7 @@
   "title": "White Dragon",
   "heading_id": "h-white-dragon-elite",
   "route": "gpt",
-  "spec_sha256": "df875fd049d37b38a9fa0c2ab2e8b4070331f2ba873da867b24156950fc3e458",
+  "spec_sha256": "ec20a7d49326a811251d995baad5acb3f63f8a079fce8fce2dfe831876a3d512",
   "prompt_sha256": "afe4c481e147292ada495f97f859c963b8a6461aedb51efcec713fd80438ebae",
   "status": "approved",
   "received_at": "2026-10-12T16:47:07+00:00",
@@ -5615,6 +5770,13 @@
     "at": "2026-10-29T14:57:24+00:00",
     "by": "Claude (Opus 5.5), design review 2026-10-29",
     "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   },
+   {
+    "from": "df875fd049d37b38a9fa0c2ab2e8b4070331f2ba873da867b24156950fc3e458",
+    "to": "ec20a7d49326a811251d995baad5acb3f63f8a079fce8fce2dfe831876a3d512",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
    }
   ]
  },
@@ -6543,7 +6705,7 @@
   "title": "Captain Veyr of the Forsaken",
   "heading_id": "h-captain-veyr-of-the-forsaken-boss",
   "route": "gpt",
-  "spec_sha256": "4750aca558270fdc25f306ca8ff35463c4d124d6b3177a26e7d331c34e0ad5bd",
+  "spec_sha256": "3b5ed9aa4c85918c4c18fd4459e010e7a5ea00aba9579526100d1d007033186e",
   "prompt_sha256": "e999c44912fcf435a1b890518f3acc220ef1b6e6580a1266e7858b94720d73ce",
   "status": "approved",
   "received_at": "2026-10-12T18:24:08+00:00",
@@ -6570,14 +6732,23 @@
    "max_print_w_in_300ppi": 5.04
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T02:18:39+00:00"
+  "approved_at": "2026-10-13T02:18:39+00:00",
+  "spec_rebinds": [
+   {
+    "from": "4750aca558270fdc25f306ca8ff35463c4d124d6b3177a26e7d331c34e0ad5bd",
+    "to": "3b5ed9aa4c85918c4c18fd4459e010e7a5ea00aba9579526100d1d007033186e",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
+   }
+  ]
  },
  "ART-MON-KHORRUN-THE-DRACOLICH": {
   "family": "boss",
   "title": "Khorrun the Dracolich",
   "heading_id": "h-khorrun-the-dracolich-boss",
   "route": "gpt",
-  "spec_sha256": "119cadc228cd1f4e677745d6037d506fcb1474ac9fcc6ccb382f440b46401d93",
+  "spec_sha256": "ac583e0ea99fdf93220264a4d158efda0f774f1cf1508b0aebc7671385a62255",
   "prompt_sha256": "860f17e03c396273984fa240b3fbf44b3f1e4973be3a8752b8216cb68dd40741",
   "status": "approved",
   "received_at": "2026-10-12T18:28:34+00:00",
@@ -6612,6 +6783,13 @@
     "at": "2026-10-29T14:57:24+00:00",
     "by": "Claude (Opus 5.5), design review 2026-10-29",
     "review": "flavour changed only by the style-lock pronoun normalisation (it to they) and its verb agreement; the depicted subject is unchanged. Every spec difference since the approving catalogue (930c89c) was compared field by field."
+   },
+   {
+    "from": "119cadc228cd1f4e677745d6037d506fcb1474ac9fcc6ccb382f440b46401d93",
+    "to": "ac583e0ea99fdf93220264a4d158efda0f774f1cf1508b0aebc7671385a62255",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
    }
   ]
  },
@@ -8405,7 +8583,7 @@
   "title": "1.3.2 The Six Climates of Ruin",
   "heading_id": "h-132-the-six-climates-of-ruin",
   "route": "gpt",
-  "spec_sha256": "55230f7e21b6612b53086e39ae16306feac0ee858492faa4b78d2c91c9902b98",
+  "spec_sha256": "d54799ae14e838d482f8bfe60629fd28b72a0e8c0e7fe70bf7c358e73ebc6d8b",
   "prompt_sha256": "2b4e67f9148f764e03fdcdb10d8b85645df292dbcf976dd2dc877496ed933cf8",
   "status": "approved",
   "received_at": "2026-10-13T10:34:04+00:00",
@@ -8432,14 +8610,23 @@
    "max_print_w_in_300ppi": 5.12
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T12:42:49+00:00"
+  "approved_at": "2026-10-13T12:42:49+00:00",
+  "spec_rebinds": [
+   {
+    "from": "55230f7e21b6612b53086e39ae16306feac0ee858492faa4b78d2c91c9902b98",
+    "to": "d54799ae14e838d482f8bfe60629fd28b72a0e8c0e7fe70bf7c358e73ebc6d8b",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
+   }
+  ]
  },
  "ART-WOR-1-3-3-THE-SIX-BASTIONS": {
   "family": "world",
   "title": "1.3.3 The Six Bastions",
   "heading_id": "h-133-the-six-bastions",
   "route": "gpt",
-  "spec_sha256": "3f8d3716a9ca397011bdc5c34c8ac3fcbb673fc484467ddfae66535d1c9a7183",
+  "spec_sha256": "29863481c77a6fa4cddd61a12f2c666859f20dbbd9fb67332f04d6180cc78c51",
   "prompt_sha256": "a3fd70bfa948d2b89b9452ade131bf04b6698562fd3656a9fbee04e80c1f9e91",
   "status": "approved",
   "received_at": "2026-10-13T10:40:32+00:00",
@@ -8466,7 +8653,16 @@
    "max_print_w_in_300ppi": 5.12
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T12:42:49+00:00"
+  "approved_at": "2026-10-13T12:42:49+00:00",
+  "spec_rebinds": [
+   {
+    "from": "3f8d3716a9ca397011bdc5c34c8ac3fcbb673fc484467ddfae66535d1c9a7183",
+    "to": "29863481c77a6fa4cddd61a12f2c666859f20dbbd9fb67332f04d6180cc78c51",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
+   }
+  ]
  },
  "ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS": {
   "family": "world",
@@ -9819,7 +10015,7 @@
   "title": "Pauper",
   "heading_id": "h-pauper",
   "route": "gpt",
-  "spec_sha256": "72dd4f7202153f9aa1dab4bcb8a36da8a725ddc741986802ff01b313ba959ffb",
+  "spec_sha256": "2233816143c7f9b675a642785118847ff5bc03b099bd790db3ab5fd1a10312f0",
   "prompt_sha256": "0a01a905cfee08ac4390bcc85419cddb767c401c606e99c6a6ef543f2692f82e",
   "status": "approved",
   "received_at": "2026-10-14T00:51:42+00:00",
@@ -9846,7 +10042,16 @@
    "max_print_w_in_300ppi": 4.15
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-14T02:17:05+00:00"
+  "approved_at": "2026-10-14T02:17:05+00:00",
+  "spec_rebinds": [
+   {
+    "from": "72dd4f7202153f9aa1dab4bcb8a36da8a725ddc741986802ff01b313ba959ffb",
+    "to": "2233816143c7f9b675a642785118847ff5bc03b099bd790db3ab5fd1a10312f0",
+    "at": "2026-10-31T14:06:53+00:00",
+    "by": "Claude Code on owner decision, 2026-10-31",
+    "review": "Flavour text revised in RC523 to RC526 lore passes. Owner, 2026-10-31: \"I think the old illustrations are fine.\" The approved image is kept unchanged for the RC527 specification."
+   }
+  ]
  },
  "ART-BAC-PERFORMER": {
   "family": "background",

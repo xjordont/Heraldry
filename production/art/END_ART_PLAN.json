@@ -3,7 +3,7 @@
     "purpose": "Section-end tailpiece art: one closing vignette at the foot of the last page of each short numbered section, filling the white space left because every numbered section starts on a fresh page. Briefs are in production/art/briefs/end_art.json; images are generated later by the art worker.",
     "owner_instruction": "Owner 2026-10-30: fill section-end white space with art, figures, and diagrams.",
     "written_by": "Claude Code (art director subagent), 2026-10-30",
-    "source": "RC522",
+    "source": "RC527",
     "placement": "Tailpiece below the section's last text, printed about 2.6 to 3.3 in wide and as short as 1.6 in."
   },
   "entries": [
