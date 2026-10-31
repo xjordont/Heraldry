@@ -13157,5 +13157,40 @@
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
   "approved_at": "2026-10-31T21:19:43+00:00"
+ },
+ "ART-END-PSYCHIC-ABILITIES": {
+  "family": "tradition",
+  "title": "Telekinetic Hand",
+  "heading_id": "h-87-psychic-abilities",
+  "route": "gpt",
+  "spec_sha256": "270afa1865450377bc76551a4c7ca68eaa982eb750823a2e747f4ec8dc51253f",
+  "prompt_sha256": "582962acd6e783b88bb63d798948710bddf5a37e6b34d75aa0601a6a049e2551",
+  "status": "received",
+  "received_at": "2026-10-31T21:47:38+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check reports 25% tinted-ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-PSYCHIC-ABILITIES.png",
+   "sha256": "073fb1e283b90c89d0b887dd79678e8c8983eaac5773a345f5810cb39fc3ab75",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-PSYCHIC-ABILITIES.png",
+   "sha256": "6d5412286d3b074a443bcdc6c88abf56bc7d97f92be2f776d935014ce799215f",
+   "px": [
+    1505,
+    987
+   ],
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 5.017
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
