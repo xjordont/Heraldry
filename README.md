@@ -13,7 +13,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 300 approved of 301; 46 generation-queue items.
+- **Illustration records:** 301 approved of 301; 45 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`27091a28`](https://github.com/xjordont/Heraldry/commit/27091a28e74d1129563763d60f89ee3fdf4b9c14) Art review: approve the ART-END-ACTION-BASICS redo; Codex runs the batch without pausing
+- [`65ee53b5`](https://github.com/xjordont/Heraldry/commit/65ee53b5948e8b0ab070abfdaa8779537d723caa) art: intake of ChatGPT Work images
+- [`2a36a65a`](https://github.com/xjordont/Heraldry/commit/2a36a65a62f6ec618991a7d1365393c49d5e96b7) art(gpt): ART-END-ACTION-BASICS .. ART-END-ACTION-BASICS
 - [`99d6fe88`](https://github.com/xjordont/Heraldry/commit/99d6fe88bc9e8c2c116635cab633f2a501208be5) Art review: approve ART-END-ACTION-POINTS-AND-SUMMONS; redo ART-END-ACTION-BASICS
 - [`a31fcb60`](https://github.com/xjordont/Heraldry/commit/a31fcb606db76e2ed415950aea282d1db13bdf7e) art: intake of ChatGPT Work images
 - [`abead7c8`](https://github.com/xjordont/Heraldry/commit/abead7c85ca266bf85cd5667dac7445f7edd3d00) art(gpt): ART-END-ACTION-POINTS-AND-SUMMONS .. ART-END-ACTION-POINTS-AND-SUMMONS
-- [`3ef89c4f`](https://github.com/xjordont/Heraldry/commit/3ef89c4f89fda2adf2018d5dbd7b209b00fc02e2) art: intake of ChatGPT Work images
-- [`e1792668`](https://github.com/xjordont/Heraldry/commit/e1792668ace73c1bc5ae86d994d416c2e56c8233) art(gpt): ART-END-ACTION-BASICS .. ART-END-ACTION-BASICS
-- [`53beb3fd`](https://github.com/xjordont/Heraldry/commit/53beb3fdd77720f67c4916c4e8f4876d2b207ff4) Codex prompt: the reference stop applies only to items that list references
 
 <!-- END AUTO:recent -->
 
