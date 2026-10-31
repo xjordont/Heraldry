@@ -13489,5 +13489,38 @@
    "max_print_w_in_300ppi": 4.75
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-RANGED-WEAPONS": {
+  "family": "item",
+  "title": "Lesser missiles",
+  "heading_id": "h-79-ranged-weapons",
+  "route": "gpt",
+  "spec_sha256": "157093ed1ab5cff23ea07446879f415da08d250c2912640aaf01c9af3b49fcc3",
+  "prompt_sha256": "d073bc2fe2168459f2e695157368654abfc2a13dc2d851149259ab31ccbb19c8",
+  "status": "received",
+  "received_at": "2026-10-31T22:06:33+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of tinted ink and possible soft shading.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-RANGED-WEAPONS.png",
+   "sha256": "b09416e401a9cbb45192c6335bf50c8d79554831eac35f0cf5e4663f47621c94",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-RANGED-WEAPONS.png",
+   "sha256": "30a98ed6b631c1d604ead38685132e694de7842eae9c9215f091722a7cb0fca2",
+   "px": [
+    1493,
+    767
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.977
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
