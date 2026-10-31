@@ -13423,5 +13423,38 @@
    "max_print_w_in_300ppi": 4.9
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-PERMANENT-SPECIAL-ITEMS": {
+  "family": "item",
+  "title": "The Bell's Tongue",
+  "heading_id": "h-717-permanent-special-items",
+  "route": "gpt",
+  "spec_sha256": "f4691f431e973f0a16a38ec04aca23bce24ab0316bc7f9291306839cd940b2c0",
+  "prompt_sha256": "a2b854ae39ba64fa1de172bc3c9c7a41027e6a5972a3fb2a101fc62eebd7ea9e",
+  "status": "received",
+  "received_at": "2026-10-31T22:02:57+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of tinted ink and possible soft shading.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-PERMANENT-SPECIAL-ITEMS.png",
+   "sha256": "9aab1ba9c642414c6b693346d78eb51dcb6a79b537e878cbda345a5d05f5cc2b",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-PERMANENT-SPECIAL-ITEMS.png",
+   "sha256": "82bb0532e64a186918dcf5de9c4c510bdde319558416efc4b3b16b38e04cd528",
+   "px": [
+    1429,
+    675
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.763
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
