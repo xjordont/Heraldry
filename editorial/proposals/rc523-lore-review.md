@@ -1,6 +1,8 @@
 # RC522 lore review: Section 1, The World of Heraldry
 
-Prepared 2026-10-31 for the owner's decision. Nothing here is applied. Each item is an exact replacement against `source/Heraldry_RC522.md` (SHA-256 `fad164ee…4a59e`); the machine-readable twin is `editorial/proposals/rc523-lore-review.json` (status `proposed`). The approved subset becomes **RC523** through `tools/revise_manuscript.py`.
+**Applied as RC523 on 2026-10-31.** The owner approved every item below except LORE-B09's wording; the crows omen was rewritten as "Three crows on a gallows mean the hanged will not stay down." (owner: rewrite to fit the surrounding text). The exact applied patches are archived in `editorial/history/RC523.json`; the draft JSON twin was removed after promotion.
+
+Prepared 2026-10-31 for the owner's decision. Each item is an exact replacement against `source/Heraldry_RC522.md` (SHA-256 `fad164ee…4a59e`); the machine-readable twin is `editorial/proposals/rc523-lore-review.json` (status `proposed`). The approved subset becomes **RC523** through `tools/revise_manuscript.py`.
 
 ## Verdict
 

@@ -29,7 +29,8 @@ class Imprint(unittest.TestCase):
 
     def test_back_cover_blurb_is_not_the_chapter_one_lead(self):
         blurb = json.loads((ROOT / "editorial/back_cover.json").read_text())["blurb"]
-        source = (ROOT / "source/Heraldry_RC522.md").read_text(encoding="utf-8")
+        active = json.loads((ROOT / "source/versions.json").read_text())["revisions"][-1]["path"]
+        source = (ROOT / active).read_text(encoding="utf-8")
         self.assertNotIn(blurb, source)
         for banned in ("—", "’", "“", "…"):
             self.assertNotIn(banned, blurb)

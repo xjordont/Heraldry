@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 522,
+  "current": 523,
   "revisions": [
     {
       "number": 484,
@@ -481,6 +481,45 @@
       ],
       "patch_file": "editorial/history/RC522.json",
       "patch_sha256": "863801be098588506453176288c799b626831c6bb316259bf719e30535d0f16b"
+    },
+    {
+      "number": 523,
+      "path": "source/Heraldry_RC523.md",
+      "sha256": "acfa2c2245188933154222909ff3e9b44d855f8f679b605a911f59e8ef793c42",
+      "bytes": 1537195,
+      "parent_sha256": "fad164ee8adf3fb6739d79945773a3283919ae504d731d980f3270ae3304a59e",
+      "created_at": "2026-10-31T01:31:18.706571+00:00",
+      "reason": "Lore review of Section 1: ten copy fixes (cold bargains, soft clerks, six climates, milestones, boasted, thirty miles, Sorceries sentence, rarest of all, crows omen, Strong enough to fight); salt-coast moved off the western forest edge; new lore naming the White Court, the Forsaken, the Sun-Crowned Prince, the unnamed sixth dragon, the Hollow Crown's court, Vossegar's bells, the Broodmother's webs, and the peoples who live inside the Bastions; Captain Veyr's timeline softened",
+      "authorization": "Owner instruction 2026-10-31 in Claude Code session: 'Apply all proposed changes besides in part three: \"Three crows on a gallows mean the hanged lied to the last\" should be rewritten to fit better with the surrounding text.'",
+      "patch_ids": [
+        "LORE-B01",
+        "LORE-B02",
+        "LORE-B03",
+        "LORE-B04",
+        "LORE-B05",
+        "LORE-B06",
+        "LORE-B07",
+        "LORE-B08",
+        "LORE-B09",
+        "LORE-B10",
+        "LORE-A01",
+        "LORE-A02",
+        "LORE-A03",
+        "LORE-A04",
+        "LORE-A05",
+        "LORE-A06",
+        "LORE-A07",
+        "LORE-A08",
+        "LORE-A09",
+        "LORE-A10",
+        "LORE-A11",
+        "LORE-A12",
+        "LORE-A13",
+        "LORE-A14",
+        "LORE-C01"
+      ],
+      "patch_file": "editorial/history/RC523.json",
+      "patch_sha256": "de5e2b870ec5e74e9b073f5a24623b2e43c46b5be31d16412b11b85e50512468"
     }
   ]
 }

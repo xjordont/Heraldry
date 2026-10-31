@@ -1,8 +1,8 @@
 {
- "rc": 522,
- "source_sha256": "fad164ee8adf3fb6739d79945773a3283919ae504d731d980f3270ae3304a59e",
- "recorded_at": "2026-10-29",
- "reviewer": "Claude (Opus 5.5), 2026-10-29, owner instruction to bring every player aid current with RC522: diffed every RC513 to RC522 change in the sheets' sections (3.3.1, 5.8, 5.8.1, 5.9, 11.2, 11.2.4) and in sections the sheets quote (7.10, 7.12, C.11); rewrote PA-4 (activation ends at 0 HP, Determined Resolve, new Injuries Table, Lingering Injuries, Chapel), and updated PA-1 (activation end), PA-5 (lingering injury), PA-8 (record list), and PA-9 (Cleanse Affliction). PA-7 draws only on 5.9 Hidden, unchanged. Author review, not an independent review.",
+ "rc": 523,
+ "source_sha256": "acfa2c2245188933154222909ff3e9b44d855f8f679b605a911f59e8ef793c42",
+ "recorded_at": "2026-10-31",
+ "reviewer": "Claude (Fable 5.1), 2026-10-31, after RC523: diffed every section the ten sheets draw on between RC522 and RC523. Only \u00a79.7 Bosses changed, and only in Captain Veyr's italic description ('three centuries' to 'since the empire fell'); PA-2 condenses Boss rules and quotes no Boss description, so no sheet wording changed. Earlier RC522 wording review (2026-10-29) stands. Author review, not an independent review.",
  "sheets": {
   "pa01": {
    "2.3": "fb3609d369c04cdddefde65ea6dd0c92d41b5f8f7c60345b879c8909860b6e85",
@@ -26,7 +26,7 @@
    "9.3": "286fbf1fec22b86d779bad8a8bfc091fe0702e3119742ec35b33e057e867da04",
    "9.4": "e6b5c15896713faab1421367fec34f5778f0170567a9f590fff27f35d8da7dc4",
    "9.5": "2a47aad3a20ca6e396c20b67f4b2dac60aad9d6125a0bfa44ed9b28765ab1837",
-   "Bosses": "4effa44ee7774375ea33d66cf6fe98b1acf7f77139c28d3e3cd08e733a714c7d",
+   "Bosses": "da651dbc2e1bb148cd7ab079a433e4820215d9601863d9b09296fc0cd17b4c82",
    "C.3": "27c70f8b707129accf2a313cb7f2e60a79a85e88a573537a7d0246c62c9a6b7d",
    "C.8": "48feeecdddbc9066fec9e54f084b0f5b0f35d474d60c019f2e51146f640ef0b7"
   },
