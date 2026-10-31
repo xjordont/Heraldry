@@ -12417,5 +12417,40 @@
    "max_print_w_in_300ppi": 4.957
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-HERO-ADVANCEMENT": {
+  "family": "world",
+  "title": "Paying for training",
+  "heading_id": "h-616-hero-advancement",
+  "route": "gpt",
+  "spec_sha256": "2c761866776e5016eb01594be7a5806600d09ab0da5da54c1e171875ff038a28",
+  "prompt_sha256": "2d4d273c53083cbca498baca9aa182ee5913304ed6e03beb6a4d8e15955b133f",
+  "status": "received",
+  "received_at": "2026-10-31T16:25:45+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check fails at thirteen percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-HERO-ADVANCEMENT.png",
+   "sha256": "44b41527e26afc4f84db463702becc6d853c891cdbc964c28d36b24866c03778",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-HERO-ADVANCEMENT.png",
+   "sha256": "773ba6c18eda25bd6c1bf0453ae76a438bb30dd793f593816283be617f231159",
+   "px": [
+    1508,
+    993
+   ],
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 5.027
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
