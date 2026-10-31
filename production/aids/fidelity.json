@@ -1,8 +1,8 @@
 {
- "rc": 526,
- "source_sha256": "040357729080de051fbf8d398240d131ba2e55bdcabe57ac32fefe5cfc09c235",
+ "rc": 527,
+ "source_sha256": "d28f5ec8ef438b43d278ec59c8faf195204266606bcfad1cbd8258088f48ec55",
  "recorded_at": "2026-10-31",
- "reviewer": "Claude (Fable 5.1), 2026-10-31, after RC526: diffed every section the ten sheets draw on between RC523 and RC526. Only \u00a79.7 Bosses changed, and only in Khorrun the Dracolich's italic description (reworded so it no longer repeats Section 1); PA-2 condenses Boss rules and quotes no Boss description, so no sheet wording changed. The RC522 wording review (2026-10-29) stands. Author review, not an independent review.",
+ "reviewer": "Claude (Fable 5.1), 2026-10-31, after RC527: diffed every section the ten sheets draw on between RC526 and RC527 (the RC527 batch is the only change: editorial/history/RC527.json). The changed sections are wording-only: bare-number cross-references in 2.5, 3.4, 4.1, 4.4.7, 5.5.4, 9.1, 9.3, 10.1, C.1 and C.12; two example capitalizations (2.8.4, 4.5); the 4.2 Shift row spacing; the 5.1.2 table header; the 5.8.1 row 14 'Stand'; the 5.5.3 Parry example (Guard to Fighter); the 9.1 CV wording; Boss placement plurals and Terror Aura scope in 9; the C.3 Hidden row 'Hide distance'; 'non-adjacent' and 'non-magical' spelling in 2.8 and 2.9; 'Setup Roll-off' in 10.1. Two sheets paraphrased changed wording and were updated to match: pa04 row 14 now reads 'Stand costs +1 AP' and pa07 now spells 'non-adjacent'. No other sheet quotes a changed phrase (grep of every changed fragment against typst/aids). Author review, not an independent review.",
  "sheets": {
   "pa01": {
    "2.3": "fb3609d369c04cdddefde65ea6dd0c92d41b5f8f7c60345b879c8909860b6e85",
@@ -11,39 +11,39 @@
    "3.1": "6a061e577fedf3943152c576a9df62fade5bb7e5b4ad2429342c758f133f4e64",
    "3.2": "c23cf34fbda4d17780d8f051becc99e09c54cd1de6002c69e77c5e8ddd671f2f",
    "3.3": "87315a40f4f7f35fee6db6256e064594e719d017279072d69793c75426cb8e1b",
-   "3.4": "73043a74b47aeccf5cfe3be969c6d42046a27dc09da3601b1a91895000ee8ed9",
+   "3.4": "58d90a0ed894826287d5f2785af20cd04ab4d0e1473aeea7ade34fd4e710cf6a",
    "3.5": "46d9bb8b1cb4cd204e0ec1c4c53ece10d353c89d558a1f37a332f52854ebb299",
    "3.6": "8efec5e8bf54bab83d9e1b3f3966606eee1e7b9e15d01c5d5e46e2f01982434d",
-   "4.2": "43adb0c7d37bfb2a8ee605c443d9613409f3cfe450ecc8f7817e9eab0e63f768",
+   "4.2": "8bfae1ff4b603704b04fe6ef6f5600099acae617a4c1919c9a195a35ff39f384",
    "4.3": "68a1895dbd7312629a586f18b31516e8d2f4a535c8e5ee059a536184c960cb0b",
-   "C.1": "038f77f257fe3cd4f7cc37b030472ff98adcdf682fc84fe34dadc1774684104f",
+   "C.1": "423c674da8990a82f3ff6e400e8166bf0bec2ee0004a5004fbd6dbe5ade545ed",
    "C.4": "cd065d5140afb96ffc9226d3b051c6f27435c406b48fe865726f3a6049f375cb",
    "10.5.4": "e0fb3f4d952fa0b71a8a9c48a4e32d9129e114b92da10adc6a91ff39ee476e6f"
   },
   "pa02": {
-   "3.4": "73043a74b47aeccf5cfe3be969c6d42046a27dc09da3601b1a91895000ee8ed9",
-   "9.1": "102b77d55a78a6f4605a4cf26a6224822f68b7302288c5b93b9d2ce9e9445fd8",
+   "3.4": "58d90a0ed894826287d5f2785af20cd04ab4d0e1473aeea7ade34fd4e710cf6a",
+   "9.1": "de71766f46f6547488c4dd0708d4a4ae63e3320333e0e37ae26f2f3f13ab3adb",
    "9.3": "286fbf1fec22b86d779bad8a8bfc091fe0702e3119742ec35b33e057e867da04",
    "9.4": "e6b5c15896713faab1421367fec34f5778f0170567a9f590fff27f35d8da7dc4",
-   "9.5": "2a47aad3a20ca6e396c20b67f4b2dac60aad9d6125a0bfa44ed9b28765ab1837",
-   "Bosses": "78bb607d4be694bed2ad223da0cecf082851c4938108046dfb2c5e79a870a8b6",
-   "C.3": "27c70f8b707129accf2a313cb7f2e60a79a85e88a573537a7d0246c62c9a6b7d",
+   "9.5": "952736b84d67ba938a962cd1f1ee8be4f47be9a6df5f9b864f9994b43999d25a",
+   "Bosses": "91d203de7eac969ba232daaeb75f8356a012851f333be75ac2dde26ae5745b36",
+   "C.3": "b91fb4a2308f2c81eea25754faef3d7d0acc443bfb06ad85ef8ec918d9aa305f",
    "C.8": "48feeecdddbc9066fec9e54f084b0f5b0f35d474d60c019f2e51146f640ef0b7"
   },
   "pa03": {
    "2.4": "1aa2e2cff038bb4af4a9c44e06ef0efcb817c4e611e75aece4f5e2b2740004d0",
-   "4.5": "6e67b5ea52a29da0494e97ef8ccbd8bd100da271ab0d3a9d04d337e81ae67ad2",
-   "5.1": "c73d8f68032246940a436694b4f64a506901992f57513dd39c8e0eeec0c08307",
+   "4.5": "08e743d7e433bc1bbc525d17b1096f5e7cea0e2f1add05de0932973e86cb9cf4",
+   "5.1": "e4e831f047395951dd634459b8c93f3f488be8b14926e592538ff1809e4cd650",
    "5.2": "c301410dc3b610bd7de481a9c853851a34d8d389c6d90aa2c21d98bcdbbf4033",
    "5.3": "b40c52a3e6e3611eaa04275c169b3e1d1e5c17c3792f2d8eeb879bee7b81c068",
    "5.4": "b4235d0e804b9d864513785b73811bcf59531c10ba322ce4db26685a833a01dc",
-   "5.5": "07959f16450f4f22127730a9c9286f9cb96a38b1d548f9c44f33d0f7bef983b6",
+   "5.5": "9a9037104d2f96163101a2f651fa8227a4777745287337c956e1c4f0c008aab3",
    "5.7": "26619979640467973f3406fab4f3ad5b411fa7fde78ba661859d6b646968fb1d",
    "C.5": "9183075ef62964b8e855bf2f85c317cd5b1c3625fa1cfdf141fbc6318c68d279",
    "C.6": "5166e0f47af3e1c2865b048d95502b24ea4fb7cc8990b3b6b54343e206e6fe77"
   },
   "pa04": {
-   "5.8": "b936365037fbdc4882c4b186659e1ce04079c9b4806bb9e0929ae6b14b1b5db8",
+   "5.8": "105a6f63b4eff1dee0f9edbadbb8149a6e6dd4f23050fe74fc46f6e288b2aad8",
    "5.9": "33fcdf07025cf99e3192c8597381d7954ad8117fe5ec3bacea25b3b4b45757bd",
    "11.1.5": "411904d94c58f0acb041211fe5b0aa7338f105da58421757a439ef989fa20e25",
    "11.2.4": "43c3cc3aba81eff4e778b4b00be3096c425c67a22980b3e9ec0249f8427a47ce",
@@ -52,20 +52,20 @@
   "pa05": {
    "2.8.5": "6fe0c2db6cd05dcf9e32ecbe0bf32aed3e44322dc25fa4b9b549fa610c5eb8d6",
    "5.9": "33fcdf07025cf99e3192c8597381d7954ad8117fe5ec3bacea25b3b4b45757bd",
-   "C.3": "27c70f8b707129accf2a313cb7f2e60a79a85e88a573537a7d0246c62c9a6b7d"
+   "C.3": "b91fb4a2308f2c81eea25754faef3d7d0acc443bfb06ad85ef8ec918d9aa305f"
   },
   "pa06": {
    "2.6": "c04b3b52e36d26f74768367f4750ec310cccc61afb0645bffa3acc5d492135b9",
    "2.9.9": "1ff4a83b0c250349cb669ce02fec5e37c4a4cd95dc049ee0c9b36a8944d0ad03",
-   "4.4": "e73f8cd32e528befe870d11078f2daa8721704a9f26c2dc71dd6d6890fe971c4",
-   "5.1": "c73d8f68032246940a436694b4f64a506901992f57513dd39c8e0eeec0c08307",
-   "5.5.4": "2d88b1f118d62f01a689bdab2ba7f78ac89cf420f3a9b7782646e095a72e4a8b",
+   "4.4": "1a97a3a24ff3a27d8a60f70b7e4905b2930661a7b86d0e85afbe33db7206a3a9",
+   "5.1": "e4e831f047395951dd634459b8c93f3f488be8b14926e592538ff1809e4cd650",
+   "5.5.4": "8af0ff359fb74467f38e462bc749378e7340cb6cc101e78d04210dee1e4c9165",
    "5.6": "0d66426d3138a51c18facdfcac9b97fdb1b7eb6de1ad3ae3914e7b3a59bfba0a"
   },
   "pa07": {
    "2.7": "2e576dcb4d41dac63254a553e45aeb1fcafe5551dd8bcf5efd70e80ad9870bf0",
-   "2.8": "dd386b2df8147816dea45ae4c50ce577605f9c92deb96ee8153a39562b688d31",
-   "2.9": "218c8874bb28d7f1b51a474c0858dab5091c628d4a451bd96ab554133e777937",
+   "2.8": "19bac8e123a8d8084abef9811316da200d9dcb23d3d1ffd3c954b400eda34868",
+   "2.9": "7ba9ea68a4dc4f8dc51f610c8e2950c3f3bd1acc5be64eeb50cf09a9cea90cb8",
    "4.3": "68a1895dbd7312629a586f18b31516e8d2f4a535c8e5ee059a536184c960cb0b",
    "5.9": "33fcdf07025cf99e3192c8597381d7954ad8117fe5ec3bacea25b3b4b45757bd"
   },
@@ -83,7 +83,7 @@
    "C.10": "a7ca692943d5dfc5a1b1dc472e212e2dc9b856f2819d3ad6f418eaca6eedd75c"
   },
   "pa10": {
-   "10.1": "2107d4083930ac4db82530cc9f9e012d32c467c7abfc1508bf6ac18d88024f81",
+   "10.1": "ce52b41bd4cd797ee9533822913e1d9e264967dfeb69ede0f1dbfa88021bd12e",
    "10.5": "003b600800f068a5a4dfe1dde5997a739db6a41c5039a5f3652383cd3a7142f8"
   }
  }

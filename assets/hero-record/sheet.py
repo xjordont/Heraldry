@@ -361,7 +361,7 @@ def natural_weapons(h):
 
 TIER0 = re.compile(r"Cantrips|Orisons|Minor Rituals|Techniques|Tier 0")
 # Senses restated briefly (owner request 2026-10-26); the full reminder is in B.4 and the rulebook.
-SENSES = {"Darkvision": "Within {r}, ignore Cover and visual penalties from nonmagical Darkness. "
+SENSES = {"Darkvision": "Within {r}, ignore Cover and visual penalties from non-magical Darkness. "
                         "Does not reveal Hidden or Invisible combatants; magical Darkness still applies."}
 CARD_POINTER = "Form Rules and the Novice Beast Forms"
 

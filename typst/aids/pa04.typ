@@ -52,7 +52,7 @@
     ([11], [Shattered Collarbone], [1 HP, stays Prone. Weapon attack damage rolls with Disadvantage.]),
     ([12], [Crushed Hand], [1 HP, stays Prone. Weapon attacks cannot score Critical Hits or trigger exploding bonus dice.]),
     ([13], [Crushed Windpipe], [1 HP, stays Prone. -3 Max NRG (minimum 0); at most 1 weapon attack in each of their activations.]),
-    ([14], [Ruptured Hamstring], [1 HP, stays Prone. Max Speed 4"; Standing costs +1 AP; cannot Jump.]),
+    ([14], [Ruptured Hamstring], [1 HP, stays Prone. Max Speed 4"; Stand costs +1 AP; cannot Jump.]),
     ([15], [Lacerated], [1 HP, Stands at once, gains Bleeding. -2 Max HP.]),
     ([16], [Split Brow], [1 HP, Stands at once. LOS 12".]),
     ([17], [Broken Ribs], [1 HP, Stands at once. -1 AV (minimum 0); cannot take the Push action.]),

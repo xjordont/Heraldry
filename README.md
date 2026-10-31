@@ -10,8 +10,8 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 
 <!-- BEGIN AUTO:status -->
 
-- **Manuscript:** [RC526](source/Heraldry_RC526.md) (`source/versions.json`). Earlier snapshots are immutable.
-- **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC526 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
+- **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
+- **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
 - **Illustration records:** 299 approved of 299; 47 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`cf07afed`](https://github.com/xjordont/Heraldry/commit/cf07afed7f284da91eb29444fe1476affad1d639) RC527: rules-text review applied; figure citations remapped to the active snapshot
 - [`3b1b2ea9`](https://github.com/xjordont/Heraldry/commit/3b1b2ea95f831c3724bd2f3eb0e5837f3ac0fbe1) editorial: propose the RC527 rules-text review (95 exact patches, nothing applied)
 - [`f3bfece3`](https://github.com/xjordont/Heraldry/commit/f3bfece36ce5cf6e8537ecabadf008ecdd0ba3c8) editorial: prompt for a rigorous pass over the manuscript's non-lore text
 - [`da8fec7a`](https://github.com/xjordont/Heraldry/commit/da8fec7a80fb99099a8f7b6e31bcb2ec33a14e0b) RC526: third lore pass; Elite dragons defer to the Boss dragons
 - [`92970108`](https://github.com/xjordont/Heraldry/commit/92970108e16e6072f820d081dda2d3bab39fe53d) editorial: draft third lore pass (rc526) for owner decision
 - [`0c1878c9`](https://github.com/xjordont/Heraldry/commit/0c1878c97c6b2c2cf9c399ac2a913e1b47dd6039) RC524 and RC525: comprehensive italic-lore fixes and final Section 1 polish
-- [`10f37214`](https://github.com/xjordont/Heraldry/commit/10f37214c21235892df9a667fa9a0e520918032a) State: the last recorded delivery is RC522-build-39, not build-38
 
 <!-- END AUTO:recent -->
 

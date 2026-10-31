@@ -1,5 +1,5 @@
 {
- "b4_sha256": "93dbcfcee94bda204095c6afe0fc97ebba6b95bb187179cde78147856d6cc402",
+ "b4_sha256": "70f3f582f91088811bd4d263987ad5e75d1084d75f2b681c17a8e818fa0f6b58",
  "reminders": {
   "Darkvision": {
    "head": "Darkvision (12\") Reminder",
@@ -10,7 +10,7 @@
     ["Darkvision", true],
     [" ignores ", false],
     ["Cover", true],
-    [" and visual penalties caused solely by nonmagical ", false],
+    [" and visual penalties caused solely by non-magical ", false],
     ["Darkness", true],
     [" when determining ", false],
     ["LOS", true],
@@ -36,7 +36,7 @@
     ["Superior Darkvision", true],
     [" ignores ", false],
     ["Cover", true],
-    [" and visual penalties caused solely by nonmagical ", false],
+    [" and visual penalties caused solely by non-magical ", false],
     ["Darkness", true],
     [" when determining ", false],
     ["LOS", true],
@@ -1733,7 +1733,7 @@
         ["INT Checks", true],
         [" made to ", false],
         ["Interact", true],
-        [" with, decipher, or investigate nonmagical objects, inscriptions, clues, and hazards are rolled with ", false],
+        [" with, decipher, or investigate non-magical objects, inscriptions, clues, and hazards are rolled with ", false],
         ["Advantage", true],
         [".", false]
        ],
@@ -3942,7 +3942,7 @@
          [" unless the form says otherwise.", false]
         ],
         [
-         ["Wolf Shape:", true],
+         ["Wolf:", true],
          [" Speed ", false],
          ["7\"", true],
          [", ", false],
@@ -4501,7 +4501,7 @@
         ["INT Checks", true],
         [" made to ", false],
         ["Interact", true],
-        [" with, decipher, or investigate nonmagical objects, inscriptions, clues, and hazards are rolled with ", false],
+        [" with, decipher, or investigate non-magical objects, inscriptions, clues, and hazards are rolled with ", false],
         ["Advantage", true],
         [".", false]
        ],

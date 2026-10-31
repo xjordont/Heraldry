@@ -1,4 +1,8 @@
-# Release status - RC526 source / RC522-build-39 delivery
+# Release status - RC527 source / RC522-build-39 delivery
+
+## RC527 manuscript - 2026-10-31
+
+RC527 is the active manuscript: the rules-text review (97 exact replacements across the non-lore text: cross-reference style, hyphenation, table bolding, Summon labels, Boss plurals, Terror Aura scope, clarity fixes, glossary pointers, and the owner-decided rules wordings and prices, including the Repeating Crossbow and Buckler enhanced rows). Hero records match B.4 of RC527; the figure gate is 77/77 after re-binding 59 reviews, regenerating FIG-63, and remapping every figure citation to RC527; the player aids are re-bound to RC527 with two wording syncs (pa04, pa07). The book has not been built since **RC522-build-39**; `dist/` and the visual ledgers predate RC523 to RC527 and must not be relabelled. Physical print **NOT TESTED**.
 
 ## RC526 manuscript - 2026-10-31
 

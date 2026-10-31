@@ -582,77 +582,77 @@ MAX_H = {"72": 310, "73": 245, "74": 330, "75": 305, "76": 285, "77": 285}
 # (phrase, first source line, last source line): each phrase must occur verbatim (bold markup and case ignored)
 # in that source range and in the figure's own text.
 QUOTES = {
-    "72": [(re.sub(r"\*\*", "", st), 2030, 2039) for st in STEPS_72] + [
-        (FORMULA_ABILITY, 2041, 2043), (FORMULA_HP, 2045, 2047),
-        ("After calculating each base value, apply every applicable ancestry, background, class, Talent, item, and random-generation modifier.", 2049, 2049),
-        ("Use 6.4 Hero Attributes for Initiative Bonus and Max NRG.", 2049, 2049),
+    "72": [(re.sub(r"\*\*", "", st), 2034, 2043) for st in STEPS_72] + [
+        (FORMULA_ABILITY, 2045, 2047), (FORMULA_HP, 2049, 2051),
+        ("After calculating each base value, apply every applicable ancestry, background, class, Talent, item, and random-generation modifier.", 2053, 2053),
+        ("Use 6.4 Hero Attributes for Initiative Bonus and Max NRG.", 2053, 2053),
     ],
-    "73": [(re.sub(r"\*\*", "", r), 2067, 2083) for r in RECORDS_73] + [
-        ("Initiative Bonus = INT + SPI", 2087, 2087),
-        ("Base Max NRG = Level + (2 × Primary Casting Score), minimum 0 for non-Martial classes that cast Powers.", 2088, 2088),
-        ("Then apply any background, ancestry, talent, item, or class feature that modifies Max NRG.", 2088, 2088),
-        ("Recalculate Max NRG whenever the Hero's Level, Primary Casting Score, or a permanent Max NRG modifier changes.", 2088, 2088),
-        ("Martial classes always have Max NRG 0 and cannot gain Max NRG unless a rule explicitly grants a replacement benefit.", 2088, 2088),
-        ("Unless a rule explicitly says otherwise", 2094, 2094),
-        ("current HP, NRG, and Luck cannot exceed the", 2094, 2094),
-        ("Unless a rule says otherwise:", 2085, 2085),
-        ("excess gained or restored is lost", 2094, 2094), ("Temporary HP is separate.", 2094, 2094),
-        ("Max HP cannot fall below 1.", 2092, 2092),
-        ("Carried Coins records only coins currently carried on the battlefield.", 2096, 2096),
-        ("In campaign play, secured coins belong to the party's shared Treasury, not to an individual Hero.", 2096, 2096),
-        ("Record current HP, NRG, and Luck separately from their maximum values.", 2096, 2096),
+    "73": [(re.sub(r"\*\*", "", r), 2071, 2087) for r in RECORDS_73] + [
+        ("Initiative Bonus = INT + SPI", 2091, 2091),
+        ("Base Max NRG = Level + (2 × Primary Casting Score), minimum 0 for non-Martial classes that cast Powers.", 2092, 2092),
+        ("Then apply any background, ancestry, talent, item, or class feature that modifies Max NRG.", 2092, 2092),
+        ("Recalculate Max NRG whenever the Hero's Level, Primary Casting Score, or a permanent Max NRG modifier changes.", 2092, 2092),
+        ("Martial classes always have Max NRG 0 and cannot gain Max NRG unless a rule explicitly grants a replacement benefit.", 2092, 2092),
+        ("Unless a rule explicitly says otherwise", 2098, 2098),
+        ("current HP, NRG, and Luck cannot exceed the", 2098, 2098),
+        ("Unless a rule says otherwise:", 2089, 2089),
+        ("excess gained or restored is lost", 2098, 2098), ("Temporary HP is separate.", 2098, 2098),
+        ("Max HP cannot fall below 1.", 2096, 2096),
+        ("Carried Coins records only coins currently carried on the battlefield.", 2100, 2100),
+        ("In campaign play, secured coins belong to the party's shared Treasury, not to an individual Hero.", 2100, 2100),
+        ("Record current HP, NRG, and Luck separately from their maximum values.", 2100, 2100),
     ],
     "74": [
-        ("Add together the Levels of all Heroes in the Active Party.", 3240, 3240),
-        ("Divide by the number of Heroes in the Active Party.", 3241, 3241),
-        ("Round down.", 3242, 3242),
-        ("Heroes in the Active Party selected for that adventure", 3236, 3236),
-        ("Hirelings, Summons, and Heroes on the Bench", 3244, 3244),
+        ("Add together the Levels of all Heroes in the Active Party.", 3244, 3244),
+        ("Divide by the number of Heroes in the Active Party.", 3245, 3245),
+        ("Round down.", 3246, 3246),
+        ("Heroes in the Active Party selected for that adventure", 3240, 3240),
+        ("Hirelings, Summons, and Heroes on the Bench", 3248, 3248),
         ("Before the first adventure of a campaign: use the starting Active Party.", 0, 0),
-        ("calculate APL using only the Heroes in the Active Party selected for that adventure", 3236, 3236),
-        ("continue using the APL of the Active Party that completed that adventure", 3236, 3236),
-        ("do not recalculate it after swapping Heroes", 3236, 3236),
+        ("calculate APL using only the Heroes in the Active Party selected for that adventure", 3240, 3240),
+        ("continue using the APL of the Active Party that completed that adventure", 3240, 3240),
+        ("do not recalculate it after swapping Heroes", 3240, 3240),
     ],
-    "75": [(re.sub(r"\*\*", "", t_), 3329, 3338) for t_ in (LEFT_75[0], RIGHT_75[0], RIGHT_75[1], RIGHT_75[2])] + [
-        ("choose a Hero Level from 1–10. Every Hero begins at that Level unless the scenario says otherwise.", 3330, 3330),
-        ("first complete Hero creation at Level 1. Then resolve Gaining a Level once for each additional Level without paying Training Costs.", 3331, 3331),
+    "75": [(re.sub(r"\*\*", "", t_), 3333, 3342) for t_ in (LEFT_75[0], RIGHT_75[0], RIGHT_75[1], RIGHT_75[2])] + [
+        ("choose a Hero Level from 1–10. Every Hero begins at that Level unless the scenario says otherwise.", 3334, 3334),
+        ("first complete Hero creation at Level 1. Then resolve Gaining a Level once for each additional Level without paying Training Costs.", 3335, 3335),
         ("pool all starting coins. Each party may spend those coins at list price on items or equipment normally available through Buy and Sell Goods in 11.2.4. "
-         "Assign purchased items to Hero inventories and equip them legally. Discard all unspent coins when the adventure begins.", 3332, 3332),
-        ("After completing all creation, advancement, purchases, and equipment choices", 3333, 3333),
-        ("set each Hero's current HP, NRG, and Luck equal to their final maximum values.", 3333, 3333),
-        ("Apply the rare ancestry limit in 6.9 Ancestries", 3337, 3337),
-        ("each party may field no more than 1 Hero with a rare ancestry", 2207, 2207),
-        ("If using random creation, apply the matched-play restrictions in 6.5", 3338, 3338),
+         "Assign purchased items to Hero inventories and equip them legally. Discard all unspent coins when the adventure begins.", 3336, 3336),
+        ("After completing all creation, advancement, purchases, and equipment choices", 3337, 3337),
+        ("set each Hero's current HP, NRG, and Luck equal to their final maximum values.", 3337, 3337),
+        ("Apply the rare ancestry limit in 6.9 Ancestries", 3341, 3341),
+        ("each party may field no more than 1 Hero with a rare ancestry", 2211, 2211),
+        ("If using random creation, apply the matched-play restrictions in 6.5", 3342, 3342),
         ("matched competitive play ignores all Random Ancestry, Random Background, Random Class, and Random Starting Package Bonuses.", 0, 0),
     ],
     "76": [
-        ("Interact [2 AP]:", 4656, 4656),
-        ("Choose an origin within 1\" and LOS.", 4656, 4656),
-        ("Remove Difficult Terrain from the Aura 1\" area around that origin", 4656, 4656),
-        ("for the remainder of the adventure.", 4656, 4656),
-        ("This does not remove magical, hazardous, or scenario-locked terrain effects.", 4656, 4656),
-        ("The weapon attack deals an additional 1d4 poison damage; target's Speed is reduced by 2\"", 4329, 4329),
-        ("until the end of the round.", 4329, 4329),
-        ("action or cost", 3413, 3413), ("range or target", 3413, 3413), ("procedure", 3413, 3413),
-        ("duration", 3413, 3413), ("restrictions or exceptions", 3413, 3413),
-        ("Item entries use the core terminology and procedures in Sections 2, 4, 5, and 7.2", 3411, 3411),
-        ("apply those rules unless an entry gives a specific exception", 3411, 3411),
-        ("include enough operational information to resolve ordinary use without unnecessary reference chains", 3413, 3413),
-        ("In-Game Effect", 4633, 4633), ("Effect", 4324, 4324), ("Spidermilk Venom", 4329, 4329),
-        ("Armour", 3713, 3713), ("Max Speed", 3713, 3713),
+        ("Interact [2 AP]:", 4660, 4660),
+        ("Choose an origin within 1\" and LOS.", 4660, 4660),
+        ("Remove Difficult Terrain from the Aura 1\" area around that origin", 4660, 4660),
+        ("for the remainder of the adventure.", 4660, 4660),
+        ("This does not remove magical, hazardous, or scenario-locked terrain effects.", 4660, 4660),
+        ("The weapon attack deals an additional 1d4 poison damage; target's Speed is reduced by 2\"", 4333, 4333),
+        ("until the end of the round.", 4333, 4333),
+        ("action or cost", 3417, 3417), ("range or target", 3417, 3417), ("procedure", 3417, 3417),
+        ("duration", 3417, 3417), ("restrictions or exceptions", 3417, 3417),
+        ("Item entries use the core terminology and procedures in Sections 2, 4, 5, and 7.2", 3415, 3415),
+        ("apply those rules unless an entry gives a specific exception", 3415, 3415),
+        ("include enough operational information to resolve ordinary use without unnecessary reference chains", 3417, 3417),
+        ("In-Game Effect", 4637, 4637), ("Effect", 4328, 4328), ("Spidermilk Venom", 4333, 4333),
+        ("Armour", 3717, 3717), ("Max Speed", 3717, 3717),
     ],
     "77": [
-        ("If 2 item effects would modify the same statistic, Reaction, Check, or non-damage roll, apply only the single highest bonus and the single worst penalty unless a rule explicitly says the effects stack. Damage dice and damage modifiers stack under 5.4.", 3417, 3417),
-        ("AV bonuses from different equipped locations stack. Two effects from the same named item never stack.", 3420, 3420),
-        ("If two effects would change a weapon's damage type, the most recent effect applies.", 3418, 3418),
-        ("If a rule would both replace and modify damage, resolve the replacement first, then apply modifiers.", 3419, 3419),
-        ("If a rule says a combatant cannot be chosen as the target of attacks, Powers, or Special Abilities", 3422, 3422),
-        ("Hidden", 3422, 3422), ("Invisible", 3422, 3422), ("LOS", 3422, 3422), ("adjacency", 3422, 3422),
-        ("rules that ignore targeting restrictions", 3422, 3422),
-        ("unless another rule explicitly says they can affect untargetable targets", 3422, 3422),
-        ("If a combatant is both Hidden and Invisible, follow 2.8.5.", 3421, 3421),
-        ("If an effect places a combatant in an illegal space, place that combatant in the nearest legal space instead. Forced movement follows 4.4.6.", 3423, 3423),
-        ("If an item duplicates a Reaction such as Block or Parry, follow the item text exactly. If an item does not change the normal Reaction timing or cost, use the core rule.", 3424, 3424),
+        ("If 2 item effects would modify the same statistic, Reaction, Check, or non-damage roll, apply only the single highest bonus and the single worst penalty unless a rule explicitly says the effects stack. Damage dice and damage modifiers stack under 5.4.", 3421, 3421),
+        ("AV bonuses from different equipped locations stack. Two effects from the same named item never stack.", 3424, 3424),
+        ("If two effects would change a weapon's damage type, the most recent effect applies.", 3422, 3422),
+        ("If a rule would both replace and modify damage, resolve the replacement first, then apply modifiers.", 3423, 3423),
+        ("If a rule says a combatant cannot be chosen as the target of attacks, Powers, or Special Abilities", 3426, 3426),
+        ("Hidden", 3426, 3426), ("Invisible", 3426, 3426), ("LOS", 3426, 3426), ("adjacency", 3426, 3426),
+        ("rules that ignore targeting restrictions", 3426, 3426),
+        ("unless another rule explicitly says they can affect untargetable targets", 3426, 3426),
+        ("If a combatant is both Hidden and Invisible, follow 2.8.5.", 3425, 3425),
+        ("If an effect places a combatant in an illegal space, place that combatant in the nearest legal space instead. Forced movement follows 4.4.6.", 3427, 3427),
+        ("If an item duplicates a Reaction such as Block or Parry, follow the item text exactly. If an item does not change the normal Reaction timing or cost, use the core rule.", 3428, 3428),
     ],
 }
 
@@ -673,8 +673,8 @@ def _svg_text(svg_obj, h):
 
 def selfcheck_end_c():
     import os
-    src_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "source", "Heraldry_RC522.md")
-    src = open(src_path, encoding="utf-8").read().split("\n")
+    from manuscript import source_path          # the active immutable snapshot named in source/versions.json
+    src = source_path().read_text(encoding="utf-8").split("\n")
 
     def src_range(lo, hi):
         return _norm(" ".join(src[lo - 1:hi]))
@@ -683,7 +683,7 @@ def selfcheck_end_c():
     assert len(STEPS_72) == 10 and len(RECORDS_73) == 15
     assert len(LEFT_75) + len(RIGHT_75) == 10                      # the ten bullets of 6.17
     assert ORDER_76 == ["action or cost", "range or target", "procedure", "effect", "duration", "restrictions or exceptions"]
-    assert ", ".join(ORDER_76[:-1]) + ", then " + ORDER_76[-1] in src_range(3413, 3413)
+    assert ", ".join(ORDER_76[:-1]) + ", then " + ORDER_76[-1] in src_range(3417, 3417)
     assert set(SHOVEL) <= set(range(6)) and set(SPIDERMILK) <= set(range(6))
     assert 3 in SHOVEL and 3 in SPIDERMILK and 2 not in SHOVEL and 2 not in SPIDERMILK
     # FIG-73 example: a maximum that falls below current HP drags current HP down; a later increase restores nothing
@@ -716,10 +716,10 @@ def selfcheck_end_c():
             if lo:
                 assert ph in src_range(lo, hi), "FIG-%s: phrase not in source lines %d-%d: %r" % (n, lo, hi, phrase)
     # the two figure-only merged phrases: both halves are in the source
-    assert "before the first adventure of a campaign, use the starting active party." in src_range(3236, 3236)
-    assert "matched competitive play may use the random creation tables, but ignores all random ancestry" in src_range(2138, 2138)
-    assert "| item | cost (c) | in-game effect |" in src_range(4633, 4633)
-    assert "| d20 | item | cost (c) | effect |" in src_range(4324, 4324) and "| 4 | spidermilk venom | 2 |" in src_range(4329, 4329)
+    assert "before the first adventure of a campaign, use the starting active party." in src_range(3240, 3240)
+    assert "matched competitive play may use the random creation tables, but ignores all random ancestry" in src_range(2142, 2142)
+    assert "| item | cost (c) | in-game effect |" in src_range(4637, 4637)
+    assert "| d20 | item | cost (c) | effect |" in src_range(4328, 4328) and "| 4 | spidermilk venom | 2 |" in src_range(4333, 4333)
     return True
 
 
