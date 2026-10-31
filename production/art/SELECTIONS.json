@@ -12046,5 +12046,38 @@
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
   "approved_at": "2026-10-31T15:42:55+00:00"
+ },
+ "ART-END-ADVANTAGES-AND-DISADVANTAGES": {
+  "family": "world",
+  "title": "The higher ground",
+  "heading_id": "h-24-advantages-and-disadvantages",
+  "route": "gpt",
+  "spec_sha256": "a4c94db20846bba42454e255569802127e927b561cb59f0774f73bf15f30848f",
+  "prompt_sha256": "87af7271f82f979a53543b4a05bfe97a724d5e63c3df8250798188a319d044e6",
+  "status": "received",
+  "received_at": "2026-10-31T16:07:39+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of four percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-ADVANTAGES-AND-DISADVANTAGES.png",
+   "sha256": "b7da6332af23bcbbafc917978d269123ecfcaaab1cdca8e25161c4c108d9e4dd",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-ADVANTAGES-AND-DISADVANTAGES.png",
+   "sha256": "36f3770dda15b6b7657f2e43e76cc11498a53015c525ddd704d4a6cbd54f0f91",
+   "px": [
+    1466,
+    993
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.887
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
