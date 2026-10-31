@@ -1,5 +1,7 @@
 # Comprehensive italic-lore read: second-round findings (for RC524)
 
+**Applied as RC524 on 2026-10-31** (owner: "Approve all"). The exact patches are archived in `editorial/history/RC524.json`; the draft JSON twin was removed after promotion.
+
 Prepared 2026-10-31 after reading all 318 italic lore paragraphs outside Section 1 (18,400 words: the Chapter 6 to 11 openers, every ancestry, background, and class blurb, the Powers tier intros, all 138 bestiary and 15 Boss descriptions, all 36 scenario intros, the named artifacts, and the Stronghold components), excluding passages marked as rules examples. Exact replacements are against `source/Heraldry_RC523.md` (SHA-256 `acfa2c224518…`); the machine-readable twin is `rc524-italic-lore-review.json` (status `proposed`).
 
 ## Verdict

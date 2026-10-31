@@ -1,0 +1,46 @@
+{
+  "base_sha256": "78b980aa7e0d10c578ebf6fb3b9a16a8bf71a2869c533253d807def8bd4a6130",
+  "authorization": "Owner instruction 2026-10-31 in Claude Code session: 'Approve all. Is the lore more perfect now? If not make it so.' (final polish applied under 'make it so'; each change reported to the owner)",
+  "patches": [
+    {
+      "id": "POLISH-01",
+      "status": "approved",
+      "find": "The great forest spreads west to the sea, the ice locks the north,",
+      "replace": "The great forest spreads west to the coast, the ice locks the north,",
+      "expected_count": 1,
+      "note": "1.3.2 geography: 'the sea' twice in one sentence after RC523's salt-coast repair"
+    },
+    {
+      "id": "POLISH-02",
+      "status": "approved",
+      "find": "a walled town, a fortress-chapel, a sealed mining city, a stilt-town behind its toll-chains.",
+      "replace": "a walled town, a fortress-chapel, a sealed mining city, a tower-city around a well, a stilt-town behind its toll-chains.",
+      "expected_count": 1,
+      "note": "1.3.3 Bastion types: the list named four kinds of holding for six Bastions and omitted Saltspire's tower-city"
+    },
+    {
+      "id": "POLISH-03",
+      "status": "approved",
+      "find": "the registration of every caster beneath its banner.",
+      "replace": "the registration of every caster it suffers to live beneath its banner.",
+      "expected_count": 1,
+      "note": "Sablekeep: 'registration of every caster' sat against 1.3.4, where the Watch hangs sorcerers and druids rather than registering them"
+    },
+    {
+      "id": "POLISH-04",
+      "status": "approved",
+      "find": "dryad ambassadors, deep elves, nagas, gnoll raiders, necromancers, lizardfolk temple-guards,",
+      "replace": "dryad ambassadors, deep elves, nagas, necromancers, lizardfolk temple-guards,",
+      "expected_count": 1,
+      "note": "1.3.5 old peoples: 'gnoll raiders' duplicated the goblinoid paragraph and gnolls are raiders, not an old people or border power"
+    },
+    {
+      "id": "POLISH-05",
+      "status": "approved",
+      "find": "Merchant houses chasing a debt, chapels hungry for relics,",
+      "replace": "Merchant houses chasing a lost cargo, chapels hungry for relics,",
+      "expected_count": 1,
+      "note": "1.3.6 patrons: 'chasing a debt' and 'debt-holders calling in what they are owed' said the same thing twice in one list"
+    }
+  ]
+}

@@ -1,4 +1,14 @@
-# Production state - RC523 source, main
+# Production state - RC525 source, main
+
+## RC524 and RC525: comprehensive italic-lore read and final Section 1 polish - 2026-10-31
+
+Owner instruction: "Approve all. Is the lore more perfect now? If not make it so."
+
+**RC524** applies the nine approved findings from the comprehensive read of all 318 italic lore paragraphs outside Section 1 (`editorial/proposals/rc524-italic-lore-review.md`; archive `editorial/history/RC524.json`; SHA-256 `78b980aa7e0d10c578ebf6fb3b9a16a8bf71a2869c533253d807def8bd4a6130`): the Pauper blurb's repeated word; "their tomb" for the Hollow Crown's sovereign in 7.17.3; two semicolon fragments in the Chapter 8 opener; the Long Silence capitalized in the Satyr Reveler entry; White Court capitalized in the Archer, Sentinel, and Executioner entries; and the Undead Sentinel's "dead soldiers".
+
+**RC525** applies five final Section 1 polish replacements under "make it so" (`editorial/proposals/rc525-lore-polish.md`; archive `editorial/history/RC525.json`; SHA-256 `9d7df1c0d20843114cd89ee89056b0f3855f75451d037c24ec4a03aea418e60b`): "west to the coast" removes a doubled "the sea" from 1.3.2; the Bastion types in 1.3.3 gain Saltspire's tower-city; Sablekeep registers every caster "it suffers to live beneath its banner", reconciling it with 1.3.4; "gnoll raiders" leaves the old-peoples list in 1.3.5; merchant houses in 1.3.6 chase "a lost cargo" rather than a second debt. No rule, number, table cell, or closed list changed in either revision.
+
+**Checks.** `make parse` parses RC525; the figure gate stays 77/77 with nothing stale (no figure depends on a changed section); Hero records match B.4 of RC525 (`tools/hero_cards.py check`); player-aid fidelity passes unchanged, since no sheet draws on a changed section; `python tools/dev.py check` passes. The derived build ledgers (`dist/`, `production/inventory/`, `production/preflight.json`) still describe RC522-build-39 and were not regenerated. No PDF build was requested; physical print **NOT TESTED**.
 
 ## RC523 lore review: Section 1 cohesion, omissions, and copy - 2026-10-31
 

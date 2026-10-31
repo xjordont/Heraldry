@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 523,
+  "current": 525,
   "revisions": [
     {
       "number": 484,
@@ -520,6 +520,48 @@
       ],
       "patch_file": "editorial/history/RC523.json",
       "patch_sha256": "de5e2b870ec5e74e9b073f5a24623b2e43c46b5be31d16412b11b85e50512468"
+    },
+    {
+      "number": 524,
+      "path": "source/Heraldry_RC524.md",
+      "sha256": "78b980aa7e0d10c578ebf6fb3b9a16a8bf71a2869c533253d807def8bd4a6130",
+      "bytes": 1537193,
+      "parent_sha256": "acfa2c2245188933154222909ff3e9b44d855f8f679b605a911f59e8ef793c42",
+      "created_at": "2026-10-31T02:16:38.751423+00:00",
+      "reason": "Comprehensive italic-lore read: Pauper blurb repeated word; the Hollow Crown artifact uses 'their' for the sovereign; two Chapter 8 semicolon fragments; the Long Silence capitalized in the Satyr Reveler entry; White Court capitalized in the Archer, Sentinel, and Executioner entries; Undead Sentinel 'dead soldiers'",
+      "authorization": "Owner instruction 2026-10-31 in Claude Code session: 'Approve all. Is the lore more perfect now? If not make it so.'",
+      "patch_ids": [
+        "LORE2-01",
+        "LORE2-02",
+        "LORE2-03",
+        "LORE2-04",
+        "LORE2-05",
+        "LORE2-06",
+        "LORE2-07",
+        "LORE2-08",
+        "LORE2-09"
+      ],
+      "patch_file": "editorial/history/RC524.json",
+      "patch_sha256": "5ec451eb5bdc2e12a3eb73e47ce9cf4c6ad0f7a61971ae178fbb7b46298a68e7"
+    },
+    {
+      "number": 525,
+      "path": "source/Heraldry_RC525.md",
+      "sha256": "9d7df1c0d20843114cd89ee89056b0f3855f75451d037c24ec4a03aea418e60b",
+      "bytes": 1537233,
+      "parent_sha256": "78b980aa7e0d10c578ebf6fb3b9a16a8bf71a2869c533253d807def8bd4a6130",
+      "created_at": "2026-10-31T02:17:56.940166+00:00",
+      "reason": "Final Section 1 polish: 'west to the coast' (removes a doubled 'the sea'); Bastion types gain Saltspire's tower-city; Sablekeep registers every caster 'it suffers to live beneath its banner'; 'gnoll raiders' dropped from the old-peoples list; merchant houses chase 'a lost cargo' not a second debt",
+      "authorization": "Owner instruction 2026-10-31 in Claude Code session: 'Approve all. Is the lore more perfect now? If not make it so.'",
+      "patch_ids": [
+        "POLISH-01",
+        "POLISH-02",
+        "POLISH-03",
+        "POLISH-04",
+        "POLISH-05"
+      ],
+      "patch_file": "editorial/history/RC525.json",
+      "patch_sha256": "7a3dd713034affcc83c058dae6b2043ac11c1002f0aedc529771afd18f5a9336"
     }
   ]
 }
