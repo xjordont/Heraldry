@@ -13522,5 +13522,38 @@
    "max_print_w_in_300ppi": 4.977
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-READING-A-SCENARIO-BEFORE-SETUP": {
+  "family": "item",
+  "title": "The contract and the map",
+  "heading_id": "h-reading-a-scenario-before-setup",
+  "route": "gpt",
+  "spec_sha256": "9eef705ba149506391d4ee2fe6f5a345965b90cfb1b6f15f259ebf110d069d49",
+  "prompt_sha256": "304d1753262ec8f617e94eeec530c81f20bbf4121704c3c29a0f9afc09f4ba15",
+  "status": "received",
+  "received_at": "2026-10-31T22:08:38+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Faint intersecting lines suggest a map grid; automated check warns of tinted ink and possible soft shading.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-READING-A-SCENARIO-BEFORE-SETUP.png",
+   "sha256": "6194a48f78b9287c21bd79893b31848dc0fea3045fc9a8f62181cf652f0609c6",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-READING-A-SCENARIO-BEFORE-SETUP.png",
+   "sha256": "4a3c384f3fd14d0989454653d6925c8457018eac1d52cd152ab1d23094112f16",
+   "px": [
+    1492,
+    830
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.973
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
