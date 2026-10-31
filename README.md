@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`9de43cc6`](https://github.com/xjordont/Heraldry/commit/9de43cc6f4746ba2c27ea9928056214fd836df0d) art: intake of ChatGPT Work images
+- [`04a40f38`](https://github.com/xjordont/Heraldry/commit/04a40f3877b47f3fa8e5c64f15ea3164c24b440d) art(gpt): ART-END-GENERAL-TALENTS .. ART-END-GENERAL-TALENTS
 - [`b1c992cb`](https://github.com/xjordont/Heraldry/commit/b1c992cbcf9a11b8ebc0a365e52293c05eb46b19) Art review: approve four tailpiece redos; the hidden archer goes back once more
 - [`eebdb90a`](https://github.com/xjordont/Heraldry/commit/eebdb90a3dc1ecf3f3da17994f9e9a9da201302f) art: intake of ChatGPT Work images
 - [`e6ea390e`](https://github.com/xjordont/Heraldry/commit/e6ea390e3258492beb4beb9826dea24bd438ff5f) art(gpt): ART-END-COMMON-TRAIT-RULES .. ART-END-COMMON-TRAIT-RULES
 - [`81371c70`](https://github.com/xjordont/Heraldry/commit/81371c70ef38d76d0335fc70d340069920e0816a) art: intake of ChatGPT Work images
-- [`23d9789e`](https://github.com/xjordont/Heraldry/commit/23d9789efd2e1330041f6eca3a8f0bd2fe41ef26) art(gpt): ART-END-ACTION-BASICS .. ART-END-ACTION-BASICS
-- [`5488c561`](https://github.com/xjordont/Heraldry/commit/5488c561b99a67e64c4a91cd938a54b9d6ec89ea) art: intake of ChatGPT Work images
 
 <!-- END AUTO:recent -->
 
