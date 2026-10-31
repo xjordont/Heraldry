@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`cc425789`](https://github.com/xjordont/Heraldry/commit/cc4257893eb279da467bb853964377bbbf9e49ca) art: intake of ChatGPT Work images
+- [`60756b55`](https://github.com/xjordont/Heraldry/commit/60756b5535abb9a8600f55f0b2673c546ba290b0) art(gpt): ART-END-ADVENTURING-EQUIPMENT .. ART-END-ADVENTURING-EQUIPMENT
 - [`14125c31`](https://github.com/xjordont/Heraldry/commit/14125c3185f91ebd10f1bc2da765ea61bbdb50fd) Art review: approve 15 tailpieces; redo the caltrops
 - [`f6dbef80`](https://github.com/xjordont/Heraldry/commit/f6dbef802180ecc0516ac5a4220cb5aa8e2c013a) art: intake of ChatGPT Work images
 - [`016c0874`](https://github.com/xjordont/Heraldry/commit/016c0874998d626c216dee44dc2af76c99cbc732) art(gpt): ART-END-SCROLLS .. ART-END-SCROLLS
 - [`e972ee7e`](https://github.com/xjordont/Heraldry/commit/e972ee7e600e8a4b32ecc3253383179b5a8206a9) art: intake of ChatGPT Work images
-- [`d5a5cddc`](https://github.com/xjordont/Heraldry/commit/d5a5cddc970d6b56dd985771be0ead0d238fd160) art(gpt): ART-END-READING-A-SCENARIO-BEFORE-SETUP .. ART-END-READING-A-SCENARIO-BEFORE-SETUP
-- [`572add7b`](https://github.com/xjordont/Heraldry/commit/572add7ba3cb1a13babf21d3d34a3879bb12eb11) art: intake of ChatGPT Work images
 
 <!-- END AUTO:recent -->
 
