@@ -12349,5 +12349,38 @@
    "max_print_w_in_300ppi": 5.007
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING": {
+  "family": "world",
+  "title": "The ratkin swarm",
+  "heading_id": "h-106-dynamic-party-and-scenario-scaling",
+  "route": "gpt",
+  "spec_sha256": "aaa8fb1ce0ea34193d36b6c0f955fda2169bcf9c161e99899557ed7e721a19b8",
+  "prompt_sha256": "7dd4dc558dd22f259a1c09b5d0ef864e46362d0f7f20d4b445d67cb781329129",
+  "status": "received",
+  "received_at": "2026-10-31T16:22:24+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check warns of nine percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING.png",
+   "sha256": "00333032f22b347db0c3b04e2a751aa96a491a56b40c9d5fb73f6728f92342b8",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING.png",
+   "sha256": "fdc463b9908b9f312039987a984b461824173e10d54c671e4c748e7f270157fa",
+   "px": [
+    1520,
+    1010
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.067
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
