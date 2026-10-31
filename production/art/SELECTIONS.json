@@ -12978,5 +12978,38 @@
    "max_print_w_in_300ppi": 4.953
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-UNIVERSAL-ACTIONS": {
+  "family": "world",
+  "title": "The shield shove",
+  "heading_id": "h-42-universal-actions",
+  "route": "gpt",
+  "spec_sha256": "904968f9c164f50f6ea11633cb0ee6209b601e3c9e36ee1e1f86d3175cbbb8e7",
+  "prompt_sha256": "c17fbaa664c8b82084b3b75b2ae82752e050849acb6027ec4b80cb2ddbe4a6bc",
+  "status": "received",
+  "received_at": "2026-10-31T21:06:16+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Colour check warns of tinted ink.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-UNIVERSAL-ACTIONS.png",
+   "sha256": "33012d17fe2a30651f7b2cba9666a7a9acd2c1bdc760f6f365b9bd1978291447",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-UNIVERSAL-ACTIONS.png",
+   "sha256": "845259e45ee117a57d66a0593769829a7357bb7ec3b3457f8ce26f54ab5c9c91",
+   "px": [
+    1509,
+    995
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.03
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
