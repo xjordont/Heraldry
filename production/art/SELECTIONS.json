@@ -13079,5 +13079,38 @@
    "max_print_w_in_300ppi": 5.063
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-DIVINE-PRAYERS": {
+  "family": "tradition",
+  "title": "Steadfast Word",
+  "heading_id": "h-84-divine-prayers",
+  "route": "gpt",
+  "spec_sha256": "4ede609415bc134c199cc277476bf3f45a6264e046ff77c4c4b42434eeed1243",
+  "prompt_sha256": "82b373b2c967fc01d3582853f8fb8697b83cbb5e83d11bc37cb7a21b15b5d235",
+  "status": "received",
+  "received_at": "2026-10-31T21:12:32+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Colour check warns of tinted ink.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-DIVINE-PRAYERS.png",
+   "sha256": "29c60a5e682d5916fb5f1697d1dd696ec551b2f2d52daf57ac55c9aa713711df",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-DIVINE-PRAYERS.png",
+   "sha256": "eaac738d7d47f93bd5a13092bd6f8455fd4b9ce0c190da775c18ebf10baec951",
+   "px": [
+    1503,
+    976
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.01
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
