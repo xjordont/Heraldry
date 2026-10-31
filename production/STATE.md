@@ -1,5 +1,9 @@
 # Production state - RC527 source, main
 
+## Codex reference attachment clarified - 2026-10-31
+
+Codex stopped before ART-END-ACTION-BASICS: its image tool says to omit `referenced_image_paths` "when generating a brand new image", and it read the tailpieces as brand-new images. `production/art/codex/CODEX_PROMPT.md` and `BATCH_CARD.md` now say that every queue item is a new illustration made from its references, so the item references are always passed, in order, as `referenced_image_paths` (with `num_last_images_to_include` left out). No image was generated; the queue of 47 is unchanged.
+
 ## Main only, no pull requests - 2026-10-31
 
 Owner instruction: "From now on commit straight to main, no PRs." `CLAUDE.md` now says so for every Claude Code session, including cloud sessions that are assigned a working branch. The session branch `claude/wizardly-gauss-ackw4h` (merged as PR #2) was deleted locally; this cloud session was refused (HTTP 403) when deleting it on GitHub, so the owner deletes it in the GitHub Branches page.
