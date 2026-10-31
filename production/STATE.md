@@ -1,5 +1,9 @@
 # Production state - RC527 source, main
 
+## Main only, no pull requests - 2026-10-31
+
+Owner instruction: "From now on commit straight to main, no PRs." `CLAUDE.md` now says so for every Claude Code session, including cloud sessions that are assigned a working branch. The session branch `claude/wizardly-gauss-ackw4h` (merged as PR #2) was deleted locally; this cloud session was refused (HTTP 403) when deleting it on GitHub, so the owner deletes it in the GitHub Branches page.
+
 ## Tailpiece briefs re-checked against RC527 - 2026-10-31
 
 Owner instruction: "update to ensure match rc527". All 47 section-end tailpiece briefs (`production/art/briefs/end_art.json`) were re-checked against RC527. Every source line cited in the briefs still exists. The changes inside the cited ranges are wording only (bare section numbers, "non-adjacent", "non-magical", "Shallow Water", "Setup Roll-off", the Druid "Wolf" row, the Pale City and Sun-Drowned clear-weather rows), and none changes a depicted subject. Lore the briefs rely on (Vossegar's drowned cathedral, bells and frogs; the Stag Apex form; Whiteout Blizzard; the Costly Victory example; Old Wode's cairn; the goblin, Bandit, Spectre, Dire Wolf and Ratkin entries) reads the same. Citations are remapped to RC527 line numbers and the briefs and plan record RC527. The 47 queued prompts are byte-identical, so `production/art/gpt/QUEUE.json` is unchanged and ready for Codex.
