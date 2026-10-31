@@ -428,7 +428,7 @@ HUMAN ACTIVITY
 * Clerk records the taking
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The world of Heraldry Skirmish is a realm of old faiths, broken kingdoms, hungry roads, and colder bargains. Kings, princes, bishops, and warlords still raise banners over land they can barely hold. They fight over relics, tolls, doctrine, trade roads, salt, iron, and pride. Their victories are measured in burnt farms and new taxes. Their defeats are carried by peasants who never chose a side."
+"The world of Heraldry Skirmish is a realm of old faiths, broken kingdoms, hungry roads, and cold bargains. Kings, princes, bishops, and warlords still raise banners over land they can barely hold. They fight over relics, tolls, doctrine, trade roads, salt, iron, and pride. Their victories are measured in burnt farms and new taxes. Their defeats are carried by peasants who never chose a side."
 Bitter, mundane cruelty of petty war.
 Do not draw:
 * No monsters; the cruelty here is human.
@@ -490,7 +490,7 @@ HUMAN ACTIVITY
 * The surveyor stands at the cairn looking across the lands, one hand raised to shade eyes
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Beyond the walls, land has become allegiance. Expedition ledgers still say forest, city, cavern, ice, desert, and swamp. Survivors know better. They use older names. The shape of the world is plain enough to anyone who has walked it. The broken mountains run down its spine. The dead empire and its ruined cities sprawl across the eastern heart. The great forest spreads west to the salt-coast, the ice locks the north, the dunes burn in the south beyond the mountain passes, and the swamps drown the south-east where the rivers give out at the sea. The old imperial roads still join all of it, straight and patient, running out from the Ashlands to every climate that survived. A dry label cannot warn a traveller that a road has memory, a court still sits without lungs, or a pool of black water may be listening."
+"Beyond the walls, land has become allegiance. Expedition ledgers still say forest, city, cavern, ice, desert, and swamp. Survivors know better. They use older names. The shape of the world is plain enough to anyone who has walked it. The broken mountains run down its spine. The dead empire and its ruined cities sprawl across the eastern heart. The great forest spreads west to the coast, the ice locks the north, the dunes burn in the south beyond the mountain passes, and the swamps drown the south-east where the rivers give out at the sea. The old imperial roads still join all of it, straight and patient, running out from the Ashlands to every climate that survived. A dry label cannot warn a traveller that a road has memory, a court still sits without lungs, or a pool of black water may be listening."
 Immense, quiet and unsettled.
 Do not draw:
 * Not a mountain-pass vista with a party and a single road toward one city.
@@ -522,7 +522,7 @@ HUMAN ACTIVITY
 * A few pikemen hold them back with spear butts
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Each Bastion is a fortified holding: a walled town, a fortress-chapel, a sealed mining city, a stilt-town behind river-locks. None ruled before the Fall. They survived because they were small enough to be missed, lucky enough to be spared, or stubborn enough to close the gate while neighbours screamed outside. Now they are the great powers of what remains."
+"Each Bastion is a fortified holding: a walled town, a fortress-chapel, a sealed mining city, a tower-city around a well, a stilt-town behind its toll-chains. None ruled before the Fall. They survived because they were small enough to be missed, lucky enough to be spared, or stubborn enough to close the gate while neighbours screamed outside. Now they are the great powers of what remains."
 Hard survival bought with others' lives.
 Do not draw:
 * Not a specific Bastion's gate (no Deepwarden great gate, no Greythorn timber).
@@ -1547,7 +1547,7 @@ SUBJECT DETAILS
 * Light shafts as blank paper between trunks
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The Greenmark is the great temperate forest of the surviving world. It is larger than the maps. Roots take a road within a season and make the mile-stones useless. Travellers report trees shifting at the edge of sight, upright hounds between trunks, and grove-circles where moss stays warm after snow. Foresters cut warning signs into bark for those who know how to read them. The most common sign means turn back even if the voice ahead is your own. The forest is no wilderness. It is a country that does not recognize human law."
+"The Greenmark is the great temperate forest of the surviving world. It is larger than the maps. Roots take a road within a season and make the milestones useless. Travellers report trees shifting at the edge of sight, upright hounds between trunks, and grove-circles where moss stays warm after snow. Foresters cut warning signs into bark for those who know how to read them. The most common sign means turn back even if the voice ahead is your own. The forest is no wilderness. It is a country that does not recognize human law."
 Ancient, watchful and indifferent to humans.
 Do not draw:
 * No people; the climate is the subject.
@@ -1577,7 +1577,7 @@ HUMAN ACTIVITY
 * A small file of armoured dead patrols far down the street, tiny
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The Ashlands are the cities of the old empires after fire, law, and death finished with them. They sprawl across the eastern heart of the world, where the imperial roads still run out to every climate like spokes from a shattered wheel. Forums have collapsed into crypts. Temples lean over plazas filled with soot. Streets run black across districts no living guide will enter twice. Lamps still burn in shrines whose gods have no congregation. Patrols still cross boundaries that vanished before the current Bastions had names. The Ashlands are rich because whole treasuries died under stone. They are feared because the city still knows how to count."
+"The Ashlands are the cities of the old empires after fire, law, and death finished with them. They are the hub of the world, and the imperial roads still run out from them like spokes from a shattered wheel. Forums have collapsed into crypts. Temples lean over plazas filled with soot. Streets run black across districts no living guide will enter twice. Lamps still burn in shrines whose gods have no congregation. Patrols still cross boundaries that vanished before the current Bastions had names. The Ashlands are rich because whole treasuries died under stone. They are feared because the city still knows how to count."
 Austere, ordered and dead.
 Do not draw:
 * Not the Hollow Crown throne room or any scenario ruin.
@@ -1607,7 +1607,7 @@ HUMAN ACTIVITY
 * Surveyor crouches, comparing the map to the tunnel, one hand shielding the lantern
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The Undermarches begin under every place that claims to have a foundation, and run deepest beneath the broken mountains at the world's centre. Mines break into older shafts. Older shafts open into tunnels no pick made. Surveyors return with maps that disagree with themselves. Wells sour overnight. Cellars breathe in winter. Borders on the surface mean little below, where passages run under rivers, burial hills, and walls the Bastions call secure. Down in the true dark the deep elves keep their own houses and their own law, older than any empire and crueller than any court that ever sat above. The deep does not need to invade. The surface keeps falling into it."
+"The Undermarches begin under every place that claims to have a foundation, and run deepest beneath the broken mountains at the world's centre. Mines break into older shafts. Older shafts open into tunnels no pick made. Surveyors return with maps that disagree with themselves. Webs thick as rope choke the lower galleries, and the miners who cut them do not ask what spun them. Wells sour overnight. Cellars breathe in winter. Borders on the surface mean little below, where passages run under rivers, burial hills, and walls the Bastions call secure. Down in the true dark the deep elves keep their own houses and their own law, older than any empire and crueller than any court that ever sat above. The deep does not need to invade. The surface keeps falling into it."
 Claustrophobic, uncanny, and too deep.
 Do not draw:
 * Not the Chasm Crossing, Crystal Harvest or Quake scenes.
@@ -1638,7 +1638,7 @@ HUMAN ACTIVITY
 * Frozen citizens stand still in the gate
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"In the north, winter has become government. Cities that once held tens of thousands stand ice-locked, their gates frozen mid-closing. Towers crack in the cold. Courts, offices, processions, and taxes continue in forms no living citizen would recognize. Hearthhold sends parties north with oil, fire-charms, and instructions to leave tribute on the old road. No one agrees who first made that bargain. The snow covers ruin with clean hands. It heals nothing."
+"In the north, winter has become government. Cities that once held tens of thousands stand ice-locked, their gates frozen mid-closing. Towers crack in the cold. The White Court still sits, its dead nobility frozen in order of precedence, and its offices, processions, and taxes continue in forms no living citizen would recognize. Hearthhold sends parties north with oil, fire-charms, and instructions to leave tribute on the old road. No one agrees who first made that bargain. The snow covers ruin with clean hands. It heals nothing."
 Silent, bureaucratic cold.
 Do not draw:
 * Not Visath's spire or the Frost Bailiff avenue (interior street) or Hearthhold.
@@ -1668,7 +1668,7 @@ HUMAN ACTIVITY
 * Three small travellers trudge along a dune crest with a guide leading
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"South of the broken mountains, the dunes have climbed over the wealthiest realms the world ever boasted of. Tomb-cities of the priest-kings break the horizon like teeth. Salt flats glitter where harbours stood. The desert leaves the dead in sight, enthroned, armoured, embalmed, or half-uncovered by wind. Saltspire's ledgers call the southern routes profitable. Its guides call them damned and charge for the difference. Under the sand, sealed courts keep their lamps lit."
+"South of the broken mountains, the dunes have climbed over the wealthiest realms the world ever boasted. Tomb-cities of the priest-kings break the horizon like teeth. Salt flats glitter where harbours stood. The desert leaves the dead in sight, enthroned, armoured, embalmed, or half-uncovered by wind. Saltspire's ledgers call the southern routes profitable. Its guides call them damned and charge for the difference. Under the sand, sealed courts keep their lamps lit, and the greatest of the priest-kings, the Sun-Crowned Prince, has not yet been told that their reign is over."
 Scorched and sepulchral.
 Do not draw:
 * Not the Cursed Colossus, Sunken Kings tomb or Saltspire bastion.
@@ -1698,7 +1698,7 @@ HUMAN ACTIVITY
 * A lone toll-ferryman poles a flat boat in the far distance, tiny
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Where the southern rivers gave out before the sea, the swamps inherited the rest, spreading across the world's south-eastern lowlands. Bogs swallowed roads. Mangroves grew through village roofs. Stilt-houses lean over water that looks shallow until it opens. Reedmarch survives by toll, ferry, leechcraft, and denial. The hag-courts hold the deep fen, and they keep older bargains than any Bastion will admit to honouring. Everyone there knows The Mire is rising. No one profits from saying it aloud. The dead drift below the walkways. Sometimes they drift back."
+"Where the southern rivers gave out before the sea, the swamps inherited the rest, spreading across the world's south-eastern lowlands. Bogs swallowed roads. Mangroves grew through village roofs. Stilt-houses lean over water that looks shallow until it opens. Reedmarch survives by toll, ferry, leechcraft, and denial. The hag-courts hold the deep fen, and they keep older bargains than any Bastion will admit to honouring. Bells toll under the black water at the fen's heart, and every stilt-village knows the day its tribute falls due. Everyone there knows The Mire is rising. No one profits from saying it aloud. The dead drift below the walkways. Sometimes they drift back."
 Damp, patient and quietly rising.
 Do not draw:
 * Not Reedmarch itself (no barges, council hall or toll bridges) and not Vossegar's cathedral.
@@ -1917,7 +1917,7 @@ HUMAN ACTIVITY
 * A toll-keeper counts coin on a bridge
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Reedmarch is a stilt-town raised over log pilings on a network of barges, ferry platforms, and toll bridges. It is the only crossing for 30 miles in any direction. Its people are ferrymen, smugglers, apothecaries, leech-tenders, and corpse-haulers. They know what is buried under their floors. They prefer not to discuss it."
+"Reedmarch is a stilt-town raised over log pilings on a network of barges, ferry platforms, and toll bridges. It is the only crossing for thirty miles in any direction. Its people are ferrymen, smugglers, apothecaries, leech-tenders, and corpse-haulers. They know what is buried under their floors. They prefer not to discuss it."
 Murky commerce above buried secrets.
 Do not draw:
 * Not the Mire climate image (a drowned village, no town).
@@ -2805,7 +2805,7 @@ SUBJECT DETAILS
 * Club leaning against the sack with its lower end on the ground
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A pauper came up from the bottom, where every crust and every coin had to be fought for. Want made them wiry, stubborn, and stubbornly hard to finish."
+"A pauper came up from the bottom, where every crust and every coin had to be fought for. Want made them wiry, stubborn, and hard to finish."
 Bare want and stubborn survival.
 Ink it like old-school rulebook equipment art: a bold, rough contour of uneven weight around each object, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag that follows each material: grain on wood, dents and pits on metal, folds and wear on leather and cloth. High contrast, with few in-between textures. Each object reads as a clear silhouette first and detail second: no stipple fields, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable construction, worn and used. It must look drawn by hand with brush, pen and ink, not generated or rendered.
 Do not draw:
@@ -5158,7 +5158,7 @@ SUBJECT DETAILS
 * Firelight rim on one side; bare trodden earth under the hooves
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Goat-legged and laurel-crowned, the satyr reveler capers at the edge of the firelight, piping on something that was never carved from wood. The music is the weapon: it floods a listener with borrowed terror or walks them gently into the dark. Satyrs were fey once, before the long silence soured them, and their revels end now in shallow graves."
+"Goat-legged and laurel-crowned, the satyr reveler capers at the edge of the firelight, piping on something that was never carved from wood. The music is the weapon: it floods a listener with borrowed terror or walks them gently into the dark. Satyrs were fey once, before the Long Silence soured them, and their revels end now in shallow graves."
 Sour, soured revelry that is not joyful.
 Do not draw:
 * Not the Beastman: no claws, no hunch, no snarl.
@@ -5559,7 +5559,7 @@ SUBJECT DETAILS
 * Moonlight raking one side in sparse lines
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A haunted villager by day, a hunched grey killer at the turning of need, the werewolf carries an old curse in their blood. Mundane steel slides from their hide; only silver and magic bite true. They strike from the treeline and are gone before the screaming stops, then circle back for the wounded. Every bitten survivor is tomorrow's werewolf."
+"A haunted villager by day, a hunched grey killer at the turning of the moon, the werewolf carries an old curse in their blood. Mundane steel slides from their hide; only silver and magic bite true. They strike from the treeline and are gone before the screaming stops, then circle back for the wounded. Every bitten survivor is tomorrow's werewolf."
 Terrible, tragic predator.
 Do not draw:
 * Not the Dire Wolf: this walks upright.
@@ -5587,7 +5587,7 @@ SUBJECT DETAILS
 * Mossy boulder and bare ground with no treasure
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Apex predator of the Greenmark and its oldest liar, the green dragon is a serpentine tyrant the colour of deep moss, spine-crested, their breath a rolling, corrosive poison. They do not rampage; they manipulate, ruling a swathe of forest through fear and bargain. Lesser things bring them tribute in exchange for being spared a while longer."
+"Lesser kin to Maelthorn and the Greenmark's most practised liar, the green dragon is a serpentine tyrant the colour of deep moss, spine-crested, their breath a rolling, corrosive poison. They do not rampage; they manipulate, ruling a swathe of forest through fear and bargain. Lesser things bring them tribute in exchange for being spared a while longer."
 Cunning, ancient patience.
 Do not draw:
 * No lair, no hoard and no tribute.
@@ -5614,7 +5614,7 @@ SUBJECT DETAILS
 * Tattered cloak edge, ash underfoot
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The Ashlands never disbanded its legions; it merely let them die unburied. An undead warrior is a skeleton or half-rotted corpse in the rusted kit of the old empire, still holding the post they were set to generations back. They fight in ragged ranks, shield to shield, mindless but drilled by sheer habit. There are always more of them in the ash."
+"The Ashlands never disbanded their legions; they merely let them die unburied. An undead warrior is a skeleton or half-rotted corpse in the rusted kit of the old empire, still holding the post they were set to generations back. They fight in ragged ranks, shield to shield, mindless but drilled by sheer habit. There are always more of them in the ash."
 Mindless drilled habit.
 Do not draw:
 * Not bare bones: that is the Skeleton Warrior.
@@ -5808,7 +5808,7 @@ SUBJECT DETAILS
 * A few broken stones at its feet
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"They guarded the empire's gates in life and they guard the rubble of them in death, tall dead men in iron helm and reach-halberd. A sentinel plants themselves in a breach and will not be shifted, lending their iron stillness to the lesser dead around them. They do not pursue. They only hold, forever, a line that fell centuries ago."
+"They guarded the empire's gates in life and they guard the rubble of them in death, tall dead soldiers in iron helm and reach-halberd. A sentinel plants themselves in a breach and will not be shifted, lending their iron stillness to the lesser dead around them. They do not pursue. They only hold, forever, a line that fell centuries ago."
 Unmoving stillness.
 Do not draw:
 * Not the White Court Sentinel (no ice, no greatshield).
@@ -6154,7 +6154,7 @@ SUBJECT DETAILS
 * Dust and bone fragments on the floor beneath it
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A lich is an archmage who refused death and paid for the refusal in everything that made them human. A desiccated sorcerer-king in mouldering finery, they command the Ashlands' dead with a gesture and loose blasts of soul-rending necrosis. Destroy the body and they re-form, so long as the hidden phylactery endures. The empire fell. Its worst survivor did not."
+"A lich is an archmage who refused death and paid for the refusal in everything that made them human. A desiccated mage-king in mouldering finery, they command the Ashlands' dead with a gesture and loose blasts of soul-rending necrosis. Destroy the body and they re-form, so long as the hidden phylactery endures. The empire fell. Its worst survivor did not."
 Cold, withered royal pride.
 Do not draw:
 * No phylactery visible (it is hidden).
@@ -6984,7 +6984,7 @@ SUBJECT DETAILS
 * Ice-glazed paving underfoot
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"From the frozen balconies of the dead city, white court archers loose volleys of ice-fletched arrows, dead marksmen whose aim outlasted the flesh that learned it. They mass their fire on whatever the soldiers have pinned. The cold steadies their hands more surely than any living discipline could. Their quivers never empty."
+"From the frozen balconies of the dead city, White Court archers loose volleys of ice-fletched arrows, dead marksmen whose aim outlasted the flesh that learned it. They mass their fire on whatever the soldiers have pinned. The cold steadies their hands more surely than any living discipline could. Their quivers never empty."
 Aimed cold elegance.
 Do not draw:
 * Not the Forsaken Archer (Ashlands) or Skeleton Archer.
@@ -7067,7 +7067,7 @@ SUBJECT DETAILS
 * Snow drifted against the shield
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A greatshield-bearing corpse-knight, the white court sentinel is the dead nobility's bodyguard, planting themselves before their lords and refusing to give ground. They lend their frozen resolve to the soldiers around them and weather blows that would shatter a lesser guardian. They will not pursue and will not break. They only endure, as the court endures."
+"A greatshield-bearing corpse-knight, the White Court sentinel is the dead nobility's bodyguard, planting themselves before their lords and refusing to give ground. They lend their frozen resolve to the soldiers around them and weather blows that would shatter a lesser guardian. They will not pursue and will not break. They only endure, as the court endures."
 Immovable frozen loyalty.
 Do not draw:
 * No polearm; not the Guard's longsword and kite shield.
@@ -7180,7 +7180,7 @@ SUBJECT DETAILS
 * Drifting snow at its feet
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The white court executioner carries out sentences the living court passed centuries ago, a towering headsman whose frost-rimed axe seeks the weakest throat on the field. They stride past the hale to reach the wounded and end them with grim efficiency. The court's justice did not die with the court. It only grew patient."
+"The White Court executioner carries out sentences the living court passed centuries ago, a towering headsman whose frost-rimed axe seeks the weakest throat on the field. They stride past the hale to reach the wounded and end them with grim efficiency. The court's justice did not die with the court. It only grew patient."
 Patient pitiless judgement.
 Do not draw:
 * Not the Guard (no armour finery).
@@ -7291,7 +7291,7 @@ SUBJECT DETAILS
 * Jagged ice outcrop under claws
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The Pale City's frozen sovereign, the white dragon is a feral, ice-crusted wyrm whose breath flash-freezes whatever it touches. Less cunning than their kin but no less lethal, they are pure predatory cold given wings and an appetite. They nest in the highest spire and suffer the White Court about them as courtiers. When they descend, the city's eternal winter only deepens."
+"Visath's feral get, the white dragon is an ice-crusted wyrm whose breath flash-freezes whatever it touches. Less cunning than their kin but no less lethal, they are pure predatory cold given wings and an appetite. They nest in the lesser spires and suffer the White Court about them as courtiers. When they descend, the city's eternal winter only deepens."
 Feral cold sovereignty.
 Do not draw:
 * No city, spire or courtiers.
@@ -7852,7 +7852,7 @@ SUBJECT DETAILS
 * Sand sliding from the broken ground around it
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The Sun-Drowned's apex tyrant, the blue dragon is a horned, sand-scaled wyrm that burrows beneath the dunes and erupts amid their prey in a lance of lightning. Vain and territorial, they rule a swathe of desert and the tomb-courts caught within it. They hoard beneath the sand and surface only to feed or to punish. The static before their breath raises every hair on the body."
+"Tyrant of the Sun-Drowned's open dunes, the blue dragon is a horned, sand-scaled wyrm that burrows beneath the dunes and erupts amid their prey in a lance of lightning. Vain and territorial, they rule a swathe of desert and the tomb-courts caught within it. They hoard beneath the sand and surface only to feed or to punish. The static before their breath raises every hair on the body."
 Territorial vain power.
 Do not draw:
 * Not the Green, White or Black Dragon: horned and sand-scaled.
@@ -8414,7 +8414,7 @@ SUBJECT DETAILS
 * Water streaming and ripples
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The Mire's sovereign, the black dragon is a sleek, horned wyrm the colour of stagnant water, their breath a hiss of acid. Cruel and patient, they lair in a flooded ruin and rule the fen through terror, taking tribute and tearing apart any who refuse to pay. They swim as easily as they fly. When the frogs go silent and the water stills, they are already close."
+"Vossegar's lesser kin, the black dragon is a sleek, horned wyrm the colour of stagnant water, their breath a hiss of acid. Cruel and patient, they lair in a flooded ruin and rule their stretch of fen through terror, taking tribute and tearing apart any who refuse to pay. They swim as easily as they fly. When the frogs go silent and the water stills, they are already close."
 Cruel patient emergence.
 Do not draw:
 * No ruin or architecture.
@@ -8607,7 +8607,7 @@ HUMAN ACTIVITY
 * The dead line braces shields and spears in formation
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Veyr was the empire's greatest captain, who swore their company would never break and held them to it past death itself. Now they lead the Forsaken in spectral plate, a duelist whose paired blades have not slowed in three centuries. They rally their dead soldiers with a voice like a closing tomb. They no longer recall the war they are still fighting. Only the oath."
+"Veyr was the empire's greatest captain, who swore their company would never break and held them to it past death itself. Now they lead the Forsaken in spectral plate, a duelist whose paired blades have not slowed since the empire fell. They rally their dead soldiers with a voice like a closing tomb. They no longer recall the war they are still fighting. Only the oath."
 Doomed discipline, forgotten war.
 Do not draw:
 * Not the Hollow Crown's kneeling legionaries.
@@ -8854,7 +8854,7 @@ SUBJECT DETAILS
 * Torn wings draped like banners from the ceiling
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Khorrun has not drawn breath since the Fall, yet still they coil atop their hoard in the sealed tomb-galleries beneath the Sun-Drowned. Their bones hold the shape of greed, draped in the tatters of scale and the cold blue fire of undeath, and ledgers stacked to the vault ceiling record exactly who has taken what. They rouse only to punish a debt or devour a trespasser. The lightning that pours from their jaws is the same colour as the witchfire in their empty sockets."
+"Khorrun has not drawn breath since the Fall, yet still they coil atop their hoard in the sealed tomb-galleries beneath the Sun-Drowned. Scale hangs in tatters from a frame lit by the cold blue fire of undeath, and every chamber of the vault is a counting-house whose accounts are never closed. They rouse only to punish a debt or devour a trespasser. The lightning that pours from their jaws is the same colour as the witchfire in their empty sockets."
 Cold avarice that outlasts life.
 Do not draw:
 * Not the Sun-Crowned Prince's court or the Sunken Kings scenario.
