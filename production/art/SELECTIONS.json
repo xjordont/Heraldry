@@ -12720,5 +12720,40 @@
    "max_print_w_in_300ppi": 5.003
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-RANDOM-ANCESTRY-TABLES": {
+  "family": "world",
+  "title": "Travellers of five peoples",
+  "heading_id": "h-66-random-ancestry-tables",
+  "route": "gpt",
+  "spec_sha256": "995c975f9502a94a7aff64e59ddd725824ca9eadff430a4f7c2d143cd90273ac",
+  "prompt_sha256": "8c9bb827698fc52d973079044400ae1d6db5cfaf54adedb86549258dce39c387",
+  "status": "received",
+  "received_at": "2026-10-31T19:15:03+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check fails at seventeen percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-RANDOM-ANCESTRY-TABLES.png",
+   "sha256": "951a3861283195cb4982efc22a83a654a3bfd39ce84b1aacb0a61c7e10a7b982",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-RANDOM-ANCESTRY-TABLES.png",
+   "sha256": "33fba70ad8b044d8804e693c843365a2aceddf2a65fdceaceb09b18a9431f1a2",
+   "px": [
+    1506,
+    974
+   ],
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 5.02
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
