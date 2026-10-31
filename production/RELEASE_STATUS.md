@@ -1,8 +1,8 @@
-# Release status - RC523 source / RC522-build-38 delivery
+# Release status - RC523 source / RC522-build-39 delivery
 
 ## RC523 manuscript - 2026-10-31
 
-RC523 is the active manuscript: the Section 1 lore review (ten copy fixes, the salt-coast geography repair, new lore for the White Court, the Forsaken, the Sun-Crowned Prince, the sixth dragon, the Hollow Crown's court, and the peoples inside the Bastions, and Captain Veyr's timeline). Hero records match B.4 of RC523 (`tools/hero_cards.py check`). The figure gate is 77/77. The book has not been built since **RC522-build-38**; `dist/` and its ledgers describe that delivery, not RC523. A new candidate build and an all-page visual review precede any release. Physical print **NOT TESTED**.
+RC523 is the active manuscript: the Section 1 lore review (ten copy fixes, the salt-coast geography repair, new lore for the White Court, the Forsaken, the Sun-Crowned Prince, the sixth dragon, the Hollow Crown's court, and the peoples inside the Bastions, and Captain Veyr's timeline). Hero records match B.4 of RC523 (`tools/hero_cards.py check`). The figure gate is 77/77. The book has not been built since **RC522-build-39**; `dist/` and its ledgers describe that delivery, not RC523. A new candidate build and an all-page visual review precede any release. Physical print **NOT TESTED**.
 
 ## Section-end figures and art - 2026-10-30
 
