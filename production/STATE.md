@@ -1,5 +1,9 @@
 # Production state - RC527 source, main
 
+## Tailpieces: owner generates them by hand - 2026-10-31
+
+ChatGPT Work stopped at its capability check too: its image tool (a Codex runtime) cannot attach reference files to a new image. Owner decision: generate the 47 tailpieces in ordinary ChatGPT, attaching each item's references by hand. `production/art/gpt/OWNER_SHEET.md` gives every item's reference set and verbatim prompt; finished images go to `production/art/owner_upload/`, where Claude Code checks them, records QA and receipts (surface: ChatGPT, owner-generated), and packages them for the `Import Work review bundle` workflow. Nothing is generated yet.
+
 ## Codex cannot attach references for new images - 2026-10-31
 
 After the clarification above, Codex still declined: its image tool's own instruction ("Omit both `referenced_image_paths` and `num_last_images_to_include` when generating a brand new image") outranks the repository card, and Codex was right to stop rather than generate unanchored art. The card and prompt now say so, and point to the ChatGPT Work fallback, where the owner attaches each set's references. No tailpiece is generated; the queue of 47 is unchanged.
