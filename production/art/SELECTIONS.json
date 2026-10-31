@@ -13555,5 +13555,40 @@
    "max_print_w_in_300ppi": 4.973
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-SCROLLS": {
+  "family": "item",
+  "title": "The spent scroll",
+  "heading_id": "h-715-scrolls",
+  "route": "gpt",
+  "spec_sha256": "1f4117d0b232ad88e00d4175a7f0ce443f347f7cab6aee6a45b3794f675aa24d",
+  "prompt_sha256": "bc638ed86046332d26ffa62817e2de3f09c5cb7af2888710095643d97590b340",
+  "status": "received",
+  "received_at": "2026-10-31T22:10:41+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated colour check fails and warns of possible soft shading.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-SCROLLS.png",
+   "sha256": "8eff8d7b57d5678c047cb63713736c7f44f92cd52bea1c114c7c571ab9ed8bf9",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-SCROLLS.png",
+   "sha256": "3329b274969bcb3dd0dbf4bec790bb4990bbe63e50d7e98875d6f04fd6dababa",
+   "px": [
+    1457,
+    720
+   ],
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 4.857
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
