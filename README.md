@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`8bb246fe`](https://github.com/xjordont/Heraldry/commit/8bb246fec66399ac82b4ff8dcb1d80c4f4d969bd) Owner: commit straight to main, no pull requests
 - [`e7e8f798`](https://github.com/xjordont/Heraldry/commit/e7e8f7983833a98621c4e1291bb1d63f8b123c25) Art: tailpiece briefs and art catalog matched to RC527 (#2)
 - [`be331b27`](https://github.com/xjordont/Heraldry/commit/be331b274e37fb5dd55e5182537a2ada7ec5306d) RC527: rules-text review applied; figure citations remapped to the active snapshot
 - [`3b1b2ea9`](https://github.com/xjordont/Heraldry/commit/3b1b2ea95f831c3724bd2f3eb0e5837f3ac0fbe1) editorial: propose the RC527 rules-text review (95 exact patches, nothing applied)
 - [`f3bfece3`](https://github.com/xjordont/Heraldry/commit/f3bfece36ce5cf6e8537ecabadf008ecdd0ba3c8) editorial: prompt for a rigorous pass over the manuscript's non-lore text
 - [`da8fec7a`](https://github.com/xjordont/Heraldry/commit/da8fec7a80fb99099a8f7b6e31bcb2ec33a14e0b) RC526: third lore pass; Elite dragons defer to the Boss dragons
-- [`92970108`](https://github.com/xjordont/Heraldry/commit/92970108e16e6072f820d081dda2d3bab39fe53d) editorial: draft third lore pass (rc526) for owner decision
 
 <!-- END AUTO:recent -->
 
