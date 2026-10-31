@@ -12145,5 +12145,40 @@
    "max_print_w_in_300ppi": 4.927
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-COMBAT-BASICS": {
+  "family": "world",
+  "title": "Arm's reach",
+  "heading_id": "h-51-combat-basics",
+  "route": "gpt",
+  "spec_sha256": "1b7fa91070c28bcc4b812583b13f0e71b711036ba25cb64dd6179a67a0faee74",
+  "prompt_sha256": "ca2f11a54dbc4324926a137ee2ee960b93ccb798c955c85232aa4f57d81a4297",
+  "status": "received",
+  "received_at": "2026-10-31T16:11:39+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated check fails at twelve percent tinted ink pixels.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-COMBAT-BASICS.png",
+   "sha256": "95384757bd1d919a2222ba237d97561d7fa1ae0b7718211ab3fa17b3b11a3fb6",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-COMBAT-BASICS.png",
+   "sha256": "609d5eb159a4f5adbeec45a5d58d499cbd0b736f4e794bf65a617aa499001524",
+   "px": [
+    1516,
+    973
+   ],
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 5.053
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
