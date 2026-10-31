@@ -1,13 +1,13 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-31T15:20:30+00:00",
+ "generated_at": "2026-10-31T15:42:59+00:00",
  "max_references": 5,
  "push_every": 1,
  "review_every": 10,
- "receipts_base": 425,
+ "receipts_base": 427,
  "target_pixels": 1572864,
- "count": 47,
+ "count": 46,
  "items": [
   {
    "id": "ART-END-ACTION-BASICS",
@@ -30,29 +30,6 @@
     "No detailed Monster.",
     "Not the Undercroft or the Shadowed Under Passage.",
     "No glow effect around the torch."
-   ]
-  },
-  {
-   "id": "ART-END-ACTION-POINTS-AND-SUMMONS",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "The imp dispelled",
-   "prompt": "production/art/gpt/prompts/ART-END-ACTION-POINTS-AND-SUMMONS.txt",
-   "prompt_sha256": "08e14a721afc55ecebc8aeb5d076f6ff60df0d0cdfab2ed06ef52abe70983de4",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "Only the imp and the column drum; no caster in frame"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "Not the Sun-Drowned Imp bestiary portrait: no tomb setting, no flying pose.",
-    "No glow, grey wash or airbrushed smoke.",
-    "No summoning circle with symbols."
    ]
   },
   {
