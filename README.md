@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`c36eb1dc`](https://github.com/xjordont/Heraldry/commit/c36eb1dcb1a4afca6bfe108349290d21d3286acd) editorial: draft RC522 lore review and proposed RC523 patch batch for owner decision
 - [`1c5897b5`](https://github.com/xjordont/Heraldry/commit/1c5897b54032a2d55bd5cb40a0244ea2b9cc3831) Record release workflow result
 - [`7b6b0e2a`](https://github.com/xjordont/Heraldry/commit/7b6b0e2ab2d31381dc3009db372c9a4d06db3b3a) Rebuild verified RC522 delivery
 - [`1cabee70`](https://github.com/xjordont/Heraldry/commit/1cabee70afb4f4a27ca34342f55e78e41adec391) review: bind the all-page visual review for candidate 20261030T175001Z
 - [`f9397c17`](https://github.com/xjordont/Heraldry/commit/f9397c17d20e26c84a9a9687a45e21c25c77a059) Build candidate status (20261030T175001Z)
 - [`e0d93d26`](https://github.com/xjordont/Heraldry/commit/e0d93d26d2e96fe4b7c95c7c1ee2772e563ccee5) build: request candidate build 20261030T175001Z
-- [`d57241ad`](https://github.com/xjordont/Heraldry/commit/d57241ade43fbde830b490ad4f6da03d64b3634c) Tests: read the figure manifest so the section-end figure test runs on a clean checkout
 
 <!-- END AUTO:recent -->
 
