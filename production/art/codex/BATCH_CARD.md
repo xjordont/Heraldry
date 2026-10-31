@@ -28,7 +28,7 @@ Read this and `AGENTS.md` only. Open `SKILL.md` or `references/*.md` only when o
 
 ## Stop and report when
 - `next` says nothing pending and status says NOTHING LEFT;
-- the image tool cannot attach reference images at all, or its own instructions forbid passing them for a new image (2026-10-31: Codex's tool says to omit `referenced_image_paths` for a brand-new image; a tool instruction outranks this card). Stop and report; the owner switches to the ChatGPT Work fallback (`production/art/gpt/WORK_PROMPT.md`).
+- for an item that lists references: the image tool cannot attach them, or its own instructions forbid passing them for a new image (2026-10-31: Codex's tool says to omit `referenced_image_paths` for a brand-new image; a tool instruction outranks this card). Stop and report; the owner switches to the ChatGPT Work fallback (`production/art/gpt/WORK_PROMPT.md`).
 
 Not a stop: the image tool refusing one item (a safety or content refusal). Run `H heraldry_art.py refuse ID --reason "<what it said>"`, deliver with ship, and continue with `next`; Claude Code rewrites that prompt.
 - the plan's usage limit is reached (ChatGPT Plus: it resets every 5 hours; everything saved is already delivered, and the owner restarts the same prompt, which resumes from `next`);
