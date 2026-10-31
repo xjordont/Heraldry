@@ -13011,5 +13011,38 @@
    "max_print_w_in_300ppi": 5.03
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-END-WEATHER-TABLES-BY-CLIMATE": {
+  "family": "world",
+  "title": "Whiteout",
+  "heading_id": "h-103-weather-tables-by-climate",
+  "route": "gpt",
+  "spec_sha256": "c8e99a77a3d7c72c38fbcf5437bb27685172dcadbef1ece68346593edf6d66dd",
+  "prompt_sha256": "3465c6fd265717db846a584bf4f7d1a7df93afd9b7274dd4140a4c8ddc8e88e4",
+  "status": "received",
+  "received_at": "2026-10-31T21:08:29+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "No correction sentences.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-END-WEATHER-TABLES-BY-CLIMATE.png",
+   "sha256": "2824e7e3f363e28c2eb4e5e04c6b32f4fd30a1c06eac0926d6f5fd722069758e",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-END-WEATHER-TABLES-BY-CLIMATE.png",
+   "sha256": "3e3edfba62132af6a8b805efa02923652028f3c063dfcd85fea5f014b5052eda",
+   "px": [
+    1498,
+    955
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.993
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
