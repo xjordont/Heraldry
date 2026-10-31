@@ -13,7 +13,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 320 approved of 332; 26 generation-queue items.
+- **Illustration records:** 320 approved of 333; 26 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`2dfda3f3`](https://github.com/xjordont/Heraldry/commit/2dfda3f3c5222a15a652c421cb1406cf3f0b0dc9) art: intake of ChatGPT Work images
+- [`a9e1d682`](https://github.com/xjordont/Heraldry/commit/a9e1d6829046f04508013d0e9d3ed173ab2a9abe) art(gpt): ART-END-DRUIDIC-RITUALS .. ART-END-DRUIDIC-RITUALS
 - [`ca4aa656`](https://github.com/xjordont/Heraldry/commit/ca4aa65620703a6df0ed042756b3f15418389cf7) art: intake of ChatGPT Work images
 - [`117d215e`](https://github.com/xjordont/Heraldry/commit/117d215e2565c64b5edcea826503691981a428b7) art(gpt): ART-END-DIVINE-PRAYERS .. ART-END-DIVINE-PRAYERS
 - [`8ca29da7`](https://github.com/xjordont/Heraldry/commit/8ca29da7f004c36eab6ad7226a78b98a7e223005) art: intake of ChatGPT Work images
 - [`85cec8dc`](https://github.com/xjordont/Heraldry/commit/85cec8dc2fefbf75ffd14065d355f24685383f9f) art(gpt): ART-END-WHAT-IS-HERALDRY-SKIRMISH .. ART-END-WHAT-IS-HERALDRY-SKIRMISH
-- [`9430954b`](https://github.com/xjordont/Heraldry/commit/9430954bc77fe2229456ea69443059321be28a99) art: intake of ChatGPT Work images
-- [`5c3b3c8a`](https://github.com/xjordont/Heraldry/commit/5c3b3c8a53ae813f7f12db3a0c58ed00a6f49457) art(gpt): ART-END-WEATHER-TABLES-BY-CLIMATE .. ART-END-WEATHER-TABLES-BY-CLIMATE
 
 <!-- END AUTO:recent -->
 
