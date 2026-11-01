@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`b9368775`](https://github.com/xjordont/Heraldry/commit/b9368775d91c77f1d59778c87ff64b011e5f2140) art: intake of ChatGPT Work images
+- [`efb2d261`](https://github.com/xjordont/Heraldry/commit/efb2d261919f8903c7f2b05444b4b8b22764b710) art(gpt): ART-END-THE-ATTACK-SEQUENCE .. ART-END-THE-ATTACK-SEQUENCE
 - [`67adbcbd`](https://github.com/xjordont/Heraldry/commit/67adbcbdba52052756d1f2c066b60f905bf2a6a0) art: intake of ChatGPT Work images
 - [`77e1bf90`](https://github.com/xjordont/Heraldry/commit/77e1bf90a512784ca8099e3d15c86e68a1cd5d06) art(gpt): ART-END-PARTY-PHASE .. ART-END-PARTY-PHASE
 - [`72a2a517`](https://github.com/xjordont/Heraldry/commit/72a2a5176d8fe2d1d16215f25ae25fd8886b10cb) art: intake of ChatGPT Work images
 - [`c4b90be3`](https://github.com/xjordont/Heraldry/commit/c4b90be3e5c97389d567b75802319518d2f437fc) art(gpt): ART-END-HERO-ADVANCEMENT .. ART-END-HERO-ADVANCEMENT
-- [`bac4ab7f`](https://github.com/xjordont/Heraldry/commit/bac4ab7fb84c28e71b19087e24754befd238e61e) art: intake of ChatGPT Work images
-- [`a6185880`](https://github.com/xjordont/Heraldry/commit/a61858800e4d868d33ae2dd3b733b1f971d89dbd) art(gpt): ART-END-GENERAL-TALENTS .. ART-END-GENERAL-TALENTS
 
 <!-- END AUTO:recent -->
 
