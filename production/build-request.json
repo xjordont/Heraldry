@@ -1,6 +1,6 @@
 {
- "request_id": "20261030T175001Z",
- "requested_at": "2026-10-30T17:50:01+00:00",
- "requested_by": "Claude (Opus 5.5) for Jordon: polish, Escutcheon Press device, section-end figures and Hero portraits",
- "base_commit": "d57241ade43fbde830b490ad4f6da03d64b3634c"
+ "request_id": "20261101T030611Z",
+ "requested_at": "2026-11-01T03:06:11+00:00",
+ "requested_by": "Claude Code on owner instruction 2026-11-01: build the book with the tailpieces",
+ "base_commit": "c88a96bfde460f542d9c5b6d576481e03bb487b5"
 }
