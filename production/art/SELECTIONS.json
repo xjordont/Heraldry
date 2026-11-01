@@ -12396,17 +12396,17 @@
   "title": "Camouflage",
   "heading_id": "h-612-general-talents",
   "route": "gpt",
-  "spec_sha256": "c540acae663055fc7d8d54ca0070228452fd859366615db758dfbf633181f705",
-  "prompt_sha256": "2dfb0f64559d0aa8de5518d5fd380a2e78f243eb96b361416a192d94a03dc713",
-  "status": "rejected",
-  "received_at": "2026-11-01T01:38:47+00:00",
+  "spec_sha256": "cf544a278cfb1f4f754ba27fb717c443db3c9738ad9920b245d59881f20860b5",
+  "prompt_sha256": "1d05423f363d6fe1a89fd01bc02211b247ff72f7bd4fb6a0de927882c4a9e69e",
+  "status": "received",
+  "received_at": "2026-11-01T02:40:17+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Legs obscured by foliage as requested; tinted ink warning.",
+  "notes": "Legs and portions of both arms are concealed by ferns, so exact limb count and joint construction cannot be verified.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-GENERAL-TALENTS.png",
-   "sha256": "8797205d65cdcc97ada86ad21e03798105662c36f023a09f7d09958301745b68",
+   "sha256": "37fe1d398f4f1ac1517aece6c47baaacd4515387c39866d5a3d48df06276f92e",
    "px": [
     1536,
     1024
@@ -12414,18 +12414,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-GENERAL-TALENTS.png",
-   "sha256": "3935b1a28d4e48c9d50261570fdcac06a11894b2ca5260498941d69f647aa6f4",
+   "sha256": "f79b7a8d1e9c1a9e29c7e53dca0a4d157bc68a10f2b9837a325ba07de052fa3e",
    "px": [
-    1502,
-    986
+    1515,
+    997
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 5.007
+   "max_print_w_in_300ppi": 5.05
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-11-01T02:26:54+00:00",
-  "rejected_at": "2026-11-01T02:30:20+00:00",
-  "rejected_reason": "Regenerate from scratch from the rewritten prompt; the owner circled broken construction (bowstring, sword and scabbard, merged arms, dangling boot, crossbow without a visible bow)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-HERO-ADVANCEMENT": {
   "family": "world",
