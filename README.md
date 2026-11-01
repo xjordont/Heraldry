@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`fb712079`](https://github.com/xjordont/Heraldry/commit/fb7120798807700eca977c34bef7d4edd483172f) art: intake of ChatGPT Work images
+- [`b211cad4`](https://github.com/xjordont/Heraldry/commit/b211cad47d8f950461dd677857884c40d90d770b) art(gpt): ART-END-PARTY-PHASE .. ART-END-PARTY-PHASE
 - [`4abf6379`](https://github.com/xjordont/Heraldry/commit/4abf6379859d215278ea470bed7c2ec6fe8649ff) Art review: approve five rebuilt tailpieces; restage the crossbow from behind
 - [`86ce60ec`](https://github.com/xjordont/Heraldry/commit/86ce60ecf0db08e049a5a10057e61af3ee9944cf) art: intake of ChatGPT Work images
 - [`d86c905c`](https://github.com/xjordont/Heraldry/commit/d86c905c205b6dc501f52503c2f15fcc57cc5f1b) art(gpt): ART-END-RANDOM-CLASS-TABLE .. ART-END-RANDOM-CLASS-TABLE
 - [`a1b810ad`](https://github.com/xjordont/Heraldry/commit/a1b810ada2af69d1873ee77a4f3f6339d89b1df5) art: intake of ChatGPT Work images
-- [`c6c43255`](https://github.com/xjordont/Heraldry/commit/c6c43255fa8c3e4a9b470b5d8150fec588dbf29c) art(gpt): ART-END-DIVINE-PRAYERS .. ART-END-DIVINE-PRAYERS
-- [`875d6c79`](https://github.com/xjordont/Heraldry/commit/875d6c79973964be23053f7013da7195353e9393) art: intake of ChatGPT Work images
 
 <!-- END AUTO:recent -->
 
