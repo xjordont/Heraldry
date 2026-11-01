@@ -1,5 +1,9 @@
 # Production state - RC527 source, main
 
+## Second owner review: five more tailpieces rebuilt - 2026-11-01
+
+The owner circled construction faults the reviewer had passed in five regenerated tailpieces: the Camouflage bowstring not reaching the lower tip, the dropped-torch sword floating out of its scabbard, Steadfast Word's merged forearms, the ratkin's dangling boot, and the One moves crossbow with no visible bow arms. Their briefs now stage the hard parts simply (a fully drawn sword and empty scabbard, a hand on the upper arm, the boot under the arm, a three-quarter view that shows the crossbow's bow, both bowstring halves in clear view) and they are queued with Staff, sword and symbol. The batch card adds a construction trace. 41 of 47 approved.
+
 ## Owner review of the 47 tailpieces: eleven regenerated from rewritten briefs - 2026-11-01
 
 The owner reviewed the approved set and returned eleven for anatomy, physics and object errors: Rivals at the chest (twisted arms), One moves one waits (crossbow), The dropped torch (arms bent backwards), The shield shove (arm count and positions), Steadfast Word (merging arms and hands), The bind (bent swords; now two straight swords), Camouflage (the bow), the ratkin swarm (drawn as rats; now upright Halfling-sized rat-folk in a round sewer, matching Sz S in the manuscript), the broker's scale (ring and weight; now coins against brass weights with the ring in a box), Staff sword and symbol (floating; now lying flat on stone) and Paying for training (the practice sword now rests on a bench). Their briefs in `production/art/briefs/end_art.json` are rewritten with simpler staging and explicit must-show rules for anatomy and support; the eleven are rejected and queued for fresh generation. The batch card adds an anatomy check. The other 36 tailpieces stay approved.
