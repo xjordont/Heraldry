@@ -532,7 +532,8 @@
 // End-of-unit art (owner 2026-10-30: fill section-end white space with art). Placed only where a
 // unit's last page is left empty because the next heading starts a later page, so it never moves
 // text. `aspect` is height / width; the art prints at `w` or smaller to fit, but never below
-// `min-h`, and is omitted when even that does not fit. A zero-height probe keeps the measuring
+// `min-h` (a wide, short piece whose full size is under `min-h` prints at full size), and is
+// omitted when even that does not fit. A zero-height probe keeps the measuring
 // point on this page (a context that yields nothing would report the following page).
 #let endart(id, path, w, aspect, min-h: 1.6in, gap: 16pt) = {
   block(height: 0pt, above: 0pt, below: 0pt, sticky: false)[#metadata(id) <endart-probe>]
@@ -543,7 +544,7 @@
     if next.len() > 0 and next.first().location().page() == at.page() { return }
     let avail = body-bottom - at.position().y - gap - 6pt
     let h = calc.min(w * aspect, avail)
-    if h >= min-h {
+    if h >= calc.min(min-h, w * aspect) {
       v(gap)
       block(width: 100%, above: 0pt, below: 0pt, breakable: false,
         align(center, [#image(path, height: h, alt: id)#metadata((id: id, page: at.page(), h: h.pt())) <endart>]))
