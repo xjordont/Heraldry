@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`1dede3f5`](https://github.com/xjordont/Heraldry/commit/1dede3f52f9f7b4db2e0a3db055dab3be547047b) Build candidate status (20261101T183315Z)
+- [`4112dc4f`](https://github.com/xjordont/Heraldry/commit/4112dc4fd0091a476e551e05d8cb096ce8bb8e80) build: request candidate build 20261101T183315Z
+- [`b448f491`](https://github.com/xjordont/Heraldry/commit/b448f4912959aefd75c66c8e6b9a77f05a3cdfed) layout: implement the approved design audit (full-width heads, hierarchy, opener sharing, run-on reference, tailpieces, tokens)
 - [`0462df79`](https://github.com/xjordont/Heraldry/commit/0462df79b4b28958aacab3f2b5805a14479bf747) reports: update the design audit for the RC527-build-40 tailpiece build
 - [`f441b28d`](https://github.com/xjordont/Heraldry/commit/f441b28d85008470e4c6c23fd117120083840a9f) Record release workflow result
 - [`4f80b7c5`](https://github.com/xjordont/Heraldry/commit/4f80b7c5b4b6f7c8032808daa31610481e9e1981) Rebuild verified RC527 delivery
-- [`3f4ca566`](https://github.com/xjordont/Heraldry/commit/3f4ca5664112d0726051d36793c6ffb3d1ffc2ce) review: bind the all-page visual review for candidate 20261101T035117Z
-- [`c93ff1de`](https://github.com/xjordont/Heraldry/commit/c93ff1dec277d5a157033854fd07781f54354b7b) Build candidate status (20261101T035117Z)
-- [`9700bf59`](https://github.com/xjordont/Heraldry/commit/9700bf59810a1b89355a0e99ef9c5d20e93aa968) build: request candidate build 20261101T035117Z
 
 <!-- END AUTO:recent -->
 

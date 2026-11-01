@@ -885,8 +885,11 @@ class Book:
                 # introduction fits beside the art or needs an opener spread.
                 mark = len(self.out)
                 if "head" in c:
+                    # "auto": the opener centres itself when the first section does not land on its page
+                    # after all (Typst's balanced grid may still move it), so a shared opener never
+                    # prints top-aligned above an empty half page (candidate 20261101T183315Z, p. 75).
                     self.share_opener = self.opener_shares(opener_key, c)
-                    self.out.append("#intro-end(solo: false)\n" if self.share_opener else '#intro-end(solo: "auto")\n')
+                    self.out.append('#intro-end(solo: "auto")\n')
                 else:
                     self.out.append("#intro-end()\n")
                 intro_open = False
@@ -959,7 +962,11 @@ class Book:
             self.flush(cur)
             cur = []
             if x["level"] == 3 and getattr(self, "first_section_pending", False) and getattr(self, "share_opener", False):
-                pass                       # the first section shares the opener page (D-02 b)
+                # The first section shares the opener page (D-02 b). Its first column segment flows
+                # naturally instead of as a balanced grid: the grid's fixed height is decided from a
+                # position that lags one layout iteration, and the fixed point it reached put the whole
+                # section on the next page even though the flow fits (candidate 20261101T183315Z, p. 75).
+                self.flow_next_flush = True
             else:
                 self.out.append("#pagebreak(weak: true)\n")
             after_heading = True
@@ -1200,6 +1207,9 @@ class Book:
         self.seg_sigs[str(sid)] = sig
         entry = self.balance.get(str(sid))
         tail = entry[1] if valid_balance_entry(entry, sig) and entry[1] < len(pieces) and len(pieces) - entry[1] <= 60 else None
+        if getattr(self, "flow_next_flush", False):
+            tail = None                    # the segment that opens a shared opener page: natural flow
+            self.flow_next_flush = False
         parts = []
         for j, (b, s) in enumerate(pieces):
             self.block_map.append((b["id"], b["src"], "column", sid))

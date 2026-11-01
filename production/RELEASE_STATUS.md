@@ -2,7 +2,7 @@
 
 ## Design audit implementation - 2026-11-01
 
-Layout, furniture, tooling, and export changes from the approved design audit (full-width section heads, corrected heading hierarchy, opener sharing, run-on Appendix C, tailpieces sized to their gap, reference bands, role tags, quiet separators, tab halo, imprint lines, tokens, calibration samples, the screen-companion PDF, and the density diagnostic); the manuscript is RC527 unchanged. A local proof composes 626 pages and passes every automated gate but the visual-review currency; a candidate build and an all-page visual review of this exact layout precede any release. Until then the published delivery remains **RC527-build-40** (618 pages) and `dist/` and the visual ledgers describe it. Physical print **NOT TESTED**.
+Layout, furniture, tooling, and export changes from the approved design audit (full-width section heads, corrected heading hierarchy, opener sharing, run-on Appendix C, tailpieces sized to their gap, reference bands, role tags, quiet separators, tab halo, imprint lines, tokens, calibration samples, the screen-companion PDF, and the density diagnostic); the manuscript is RC527 unchanged. A local proof composes 625 pages and passes every automated gate but the visual-review currency; the first candidate (626 pages) was reviewed and two composition faults repaired before the second candidate; a candidate build and an all-page visual review of this exact layout precede any release. Until then the published delivery remains **RC527-build-40** (618 pages) and `dist/` and the visual ledgers describe it. Physical print **NOT TESTED**.
 
 ## RC527-build-40 delivery - 2026-11-01
 
