@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`86ce60ec`](https://github.com/xjordont/Heraldry/commit/86ce60ecf0db08e049a5a10057e61af3ee9944cf) art: intake of ChatGPT Work images
+- [`d86c905c`](https://github.com/xjordont/Heraldry/commit/d86c905c205b6dc501f52503c2f15fcc57cc5f1b) art(gpt): ART-END-RANDOM-CLASS-TABLE .. ART-END-RANDOM-CLASS-TABLE
 - [`a1b810ad`](https://github.com/xjordont/Heraldry/commit/a1b810ada2af69d1873ee77a4f3f6339d89b1df5) art: intake of ChatGPT Work images
 - [`c6c43255`](https://github.com/xjordont/Heraldry/commit/c6c43255fa8c3e4a9b470b5d8150fec588dbf29c) art(gpt): ART-END-DIVINE-PRAYERS .. ART-END-DIVINE-PRAYERS
 - [`875d6c79`](https://github.com/xjordont/Heraldry/commit/875d6c79973964be23053f7013da7195353e9393) art: intake of ChatGPT Work images
 - [`ed01f9a4`](https://github.com/xjordont/Heraldry/commit/ed01f9a43e27bbfd16d06330ed46df336c58548c) art(gpt): ART-END-PARTY-PHASE .. ART-END-PARTY-PHASE
-- [`13bfc19f`](https://github.com/xjordont/Heraldry/commit/13bfc19fac9521f6388ca73ff898ef97748df588) art: intake of ChatGPT Work images
-- [`ff6c2363`](https://github.com/xjordont/Heraldry/commit/ff6c236388e78fef2bb6e3d859ee38cb1996202b) art(gpt): ART-END-GENERAL-TALENTS .. ART-END-GENERAL-TALENTS
 
 <!-- END AUTO:recent -->
 
