@@ -12672,17 +12672,17 @@
   "title": "One moves, one waits",
   "heading_id": "h-33-party-phase",
   "route": "gpt",
-  "spec_sha256": "2a8d8a3331a428a3b1a0a6ba9c90346e2d3ac43f29254948eb6ad46143429a25",
-  "prompt_sha256": "8d787e6f587e9740a53fea788d575d96fe019c72a0785c008378cb54279dc69c",
-  "status": "rejected",
-  "received_at": "2026-10-31T19:05:24+00:00",
+  "spec_sha256": "12402e0a1a4c5732ce3d4d8f1cb8960a66088a412fd9fea90f2f3765f492ffd6",
+  "prompt_sha256": "627ae9b979c83603267cf7e084a5ffdb514d2630452a7de8843b10187b13cbce",
+  "status": "received",
+  "received_at": "2026-11-01T01:42:01+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Automated check warns of eight percent tinted ink pixels.",
+  "notes": "Crossbow string construction unclear; runner arm obscured; colour check fails.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-PARTY-PHASE.png",
-   "sha256": "a64de0e2ac3a341e18ee9a7b3f75fbd3b8239148fb5ef0e8c1bae25053f1ddce",
+   "sha256": "dffee4dad30cbd0a422d55a04d92b4870a204acabe8f6daf79f51370c0421aee",
    "px": [
     1536,
     1024
@@ -12690,18 +12690,17 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-PARTY-PHASE.png",
-   "sha256": "34455817d5a48b4267d31797587f9d05bff955853c0a7a4048d26899341f6d34",
+   "sha256": "36c02d211e4464ec8dad009d2831c81672da5feafa68acf68e869e9f59600dc1",
    "px": [
-    1499,
-    986
+    1507,
+    1006
    ],
-   "flags": [],
-   "max_print_w_in_300ppi": 4.997
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 5.023
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T19:36:14+00:00",
-  "rejected_at": "2026-11-01T01:21:30+00:00",
-  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-PARTY-STRUCTURE": {
   "family": "world",
