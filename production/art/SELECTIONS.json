@@ -12396,17 +12396,17 @@
   "title": "Camouflage",
   "heading_id": "h-612-general-talents",
   "route": "gpt",
-  "spec_sha256": "599c02bd3b9f47e9eb1870efeba44dc13b49d19639d37bed75ccb5e3dd9d9e4b",
-  "prompt_sha256": "e46adcfdfeb940a4e3a323853a9bfe1e8caecfebe9b54ce3192c30c912521c0d",
-  "status": "rejected",
-  "received_at": "2026-10-31T20:51:49+00:00",
+  "spec_sha256": "c540acae663055fc7d8d54ca0070228452fd859366615db758dfbf633181f705",
+  "prompt_sha256": "2dfb0f64559d0aa8de5518d5fd380a2e78f243eb96b361416a192d94a03dc713",
+  "status": "received",
+  "received_at": "2026-11-01T01:38:47+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "The bowstring must run from the drawing fingers straight to both tips of the bow, upper and lower, forming one triangle with the bow; no string line may lead away from the bow toward the upper left. Lower bowstring does not visibly connect to the lower tip; check reports tinted ink.",
+  "notes": "Legs obscured by foliage as requested; tinted ink warning.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-GENERAL-TALENTS.png",
-   "sha256": "777dae5e9ba0a3cad69e576370b758c64b8c7ad163f8cbaa3b67c8b7190ae6ec",
+   "sha256": "8797205d65cdcc97ada86ad21e03798105662c36f023a09f7d09958301745b68",
    "px": [
     1536,
     1024
@@ -12414,20 +12414,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-GENERAL-TALENTS.png",
-   "sha256": "b48452fa36d1f95845b8ec306ca6243d1adb19ff7e6629ab4b7023310cbdbf39",
+   "sha256": "3935b1a28d4e48c9d50261570fdcac06a11894b2ca5260498941d69f647aa6f4",
    "px": [
-    1503,
-    933
+    1502,
+    986
    ],
-   "flags": [
-    "colour"
-   ],
-   "max_print_w_in_300ppi": 5.01
+   "flags": [],
+   "max_print_w_in_300ppi": 5.007
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T21:19:43+00:00",
-  "rejected_at": "2026-11-01T01:21:30+00:00",
-  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-HERO-ADVANCEMENT": {
   "family": "world",
