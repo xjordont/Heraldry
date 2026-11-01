@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`dee4197e`](https://github.com/xjordont/Heraldry/commit/dee4197e116ff0bc34e518150d4d0ef4a7f43a0e) art: intake of ChatGPT Work images
+- [`b4005b2f`](https://github.com/xjordont/Heraldry/commit/b4005b2f3282ae5e1fa5d9e0021ebd219b8dcad3) art(gpt): ART-END-ACTION-BASICS .. ART-END-ACTION-BASICS
 - [`eff28ceb`](https://github.com/xjordont/Heraldry/commit/eff28ceb2d1f292dbf0622f43e22c8fd63291440) Art: regenerate eleven tailpieces from rewritten briefs after owner review
 - [`299503ae`](https://github.com/xjordont/Heraldry/commit/299503ae7e3140b8b7b39887d3796c7cc0bfd2b2) Art review: approve the caltrops redo; all 47 tailpieces approved
 - [`cc425789`](https://github.com/xjordont/Heraldry/commit/cc4257893eb279da467bb853964377bbbf9e49ca) art: intake of ChatGPT Work images
 - [`60756b55`](https://github.com/xjordont/Heraldry/commit/60756b5535abb9a8600f55f0b2673c546ba290b0) art(gpt): ART-END-ADVENTURING-EQUIPMENT .. ART-END-ADVENTURING-EQUIPMENT
-- [`14125c31`](https://github.com/xjordont/Heraldry/commit/14125c3185f91ebd10f1bc2da765ea61bbdb50fd) Art review: approve 15 tailpieces; redo the caltrops
-- [`f6dbef80`](https://github.com/xjordont/Heraldry/commit/f6dbef802180ecc0516ac5a4220cb5aa8e2c013a) art: intake of ChatGPT Work images
 
 <!-- END AUTO:recent -->
 
