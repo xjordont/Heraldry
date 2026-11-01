@@ -1,9 +1,9 @@
 {
- "pdf": "dist/Heraldry_RC522_inkjet-borderless.pdf",
- "sha256": "ead73ce9b9c62794407b905634da604a420635892faab559a02b780be6780534",
+ "pdf": "dist/Heraldry_RC527_inkjet-borderless.pdf",
+ "sha256": "88942e53eea85313c8b7a8c404620596990e8a9d3bcbe089d5785ad47e6b498e",
  "pages": 618,
- "reviewer": "Claude (Opus 5.5) in the Claude app, image inspection of every contact sheet, every detail page, both covers, and the calibration sheet of candidate 20261030T175001Z",
- "reviewed_at": "2026-10-30T18:17:29+00:00",
+ "reviewer": "Claude Code (assigned reviewer), image inspection of every contact sheet, detail page, cover and the calibration sheet for candidate RC527-candidate-12 (owner request 2026-11-01: build the book with the tailpieces)",
+ "reviewed_at": "2026-11-01T04:16:44+00:00",
  "all_page_contact_sheets": {
   "scale": "34 dpi, up to 24 pages per sheet",
   "sheets": 26,
@@ -666,12 +666,10 @@
  ],
  "calibration_viewed": true,
  "findings_repaired": [],
- "accepted_layout_notes": [
-  "Polish round (justification, centred openers), Escutcheon Press logo on title page, colophon, and back cover, twenty section-end figures in book-order numbering, and Basic Mode Hero portraits verified; no major findings."
- ],
+ "accepted_layout_notes": [],
  "limits": "Contact-sheet review of every page and 100 dpi detail review of the listed pages, by the named reviewer from images; not glyph-level proofreading, not an independent second review, not a physical printer proof.",
  "status": "PASS (all-page contact-sheet review of this exact PDF by an automated vision reviewer; not glyph-level proofreading)",
  "changes_this_run": [
-  "candidate build 20261030T175001Z from e0d93d26d2e96fe4b7c95c7c1ee2772e563ccee5"
+  "candidate build 20261101T035117Z from 9700bf59810a1b89355a0e99ef9c5d20e93aa968"
  ]
 }
