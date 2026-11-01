@@ -12361,17 +12361,17 @@
   "title": "The ratkin swarm",
   "heading_id": "h-106-dynamic-party-and-scenario-scaling",
   "route": "gpt",
-  "spec_sha256": "3497554e9d0ecc1530d547da34a07d68ded621e60c708b35d95438284b4efdf7",
-  "prompt_sha256": "182c505019ab1e1f3f57b6b3cb88f5a443ceedd03f81dbc0db38bb5586f9c685",
-  "status": "rejected",
-  "received_at": "2026-11-01T01:37:04+00:00",
+  "spec_sha256": "6cffe264afc6569ebd3a90a7c56e5cec7f9fcde4dcbf6fbc26d91903d0ce9375",
+  "prompt_sha256": "9dacc7b6fc8f4a3453fb270bd0ea132d13fe34095c72bec3e001a56e404ffc64",
+  "status": "received",
+  "received_at": "2026-11-01T02:38:08+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Rear figure anatomy obscured; colour check fails.",
+  "notes": "Crowded background limbs and raised weapons merge or cannot be traced to their holders; complete anatomy and construction cannot be verified. Automated check reports 11% tinted-ink pixels.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING.png",
-   "sha256": "6caedd26c6a01e0a900c95125e175f34351e6d53e77032099180d74374fe0521",
+   "sha256": "67fcea9720131af28eb3989be40f19a15f492d71cb49c42689f6a79d6f1b4bcc",
    "px": [
     1536,
     1024
@@ -12379,20 +12379,17 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING.png",
-   "sha256": "af25e47e0c1a84d14ecec7af310c3c9428a8b97b22524e822863308c4a08480e",
+   "sha256": "9c8594d58b4fb7677c7b68f7505cad3c988dce8142009fe8631871f54d93616d",
    "px": [
-    1525,
-    993
+    1506,
+    1014
    ],
    "flags": [
     "colour"
    ],
-   "max_print_w_in_300ppi": 5.083
+   "max_print_w_in_300ppi": 5.02
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-11-01T02:26:54+00:00",
-  "rejected_at": "2026-11-01T02:30:20+00:00",
-  "rejected_reason": "Regenerate from scratch from the rewritten prompt; the owner circled broken construction (bowstring, sword and scabbard, merged arms, dangling boot, crossbow without a visible bow)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-GENERAL-TALENTS": {
   "family": "world",
