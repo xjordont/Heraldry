@@ -13096,17 +13096,17 @@
   "title": "Steadfast Word",
   "heading_id": "h-84-divine-prayers",
   "route": "gpt",
-  "spec_sha256": "1a477a1a8c1d265dd7c1a0fcf447753b44e31dcd4f68f7bdfbadfe9b3e9dc88b",
-  "prompt_sha256": "4c94e98442a73e7f81ec9003ef6ad8ce628e56cde0cf8fdb8d7b19acffc0aeb3",
-  "status": "rejected",
-  "received_at": "2026-11-01T01:49:06+00:00",
+  "spec_sha256": "73b710bf7d2ec68a9f2c318f0b442f52cf1b5f8e308a8bff417074ed56e777fd",
+  "prompt_sha256": "712b456c354d453179c5f93d375ea2daa0d2a443745f0eceb0eff96d4584f817",
+  "status": "received",
+  "received_at": "2026-11-01T02:44:45+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Shield hand obscured; colour check fails.",
+  "notes": "Shield conceals the Paladin left hand; belt weapon resembles a sheathed sword rather than a mace. Companion left hand hangs free rather than pushing on knee; prompt asks for both. Check reports 14% tinted ink pixels.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-DIVINE-PRAYERS.png",
-   "sha256": "e9c07f135d83b053cd3ec197d4270ef81d9f7ed2285ffd4865ab0499c60604af",
+   "sha256": "92c393f03c6b10aa64630c9320b8aea063a0c5d7efc41ed65e12ee0f37ba9b29",
    "px": [
     1536,
     1024
@@ -13114,20 +13114,17 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-DIVINE-PRAYERS.png",
-   "sha256": "4f894c02b7327dc59a817c0f4a7838fb4388a357530dfd5cb3a7fe31bafd5849",
+   "sha256": "479e634e7b8404f6a7fd1b2bf09bc75cad68dbf1da1803c328086b2d64c1aea7",
    "px": [
-    1519,
-    979
+    1516,
+    981
    ],
    "flags": [
     "colour"
    ],
-   "max_print_w_in_300ppi": 5.063
+   "max_print_w_in_300ppi": 5.053
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-11-01T02:26:54+00:00",
-  "rejected_at": "2026-11-01T02:30:20+00:00",
-  "rejected_reason": "Regenerate from scratch from the rewritten prompt; the owner circled broken construction (bowstring, sword and scabbard, merged arms, dangling boot, crossbow without a visible bow)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-DRUIDIC-RITUALS": {
   "family": "tradition",
