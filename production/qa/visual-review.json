@@ -1,12 +1,12 @@
 {
  "pdf": "dist/Heraldry_RC527_inkjet-borderless.pdf",
- "sha256": "88942e53eea85313c8b7a8c404620596990e8a9d3bcbe089d5785ad47e6b498e",
- "pages": 618,
- "reviewer": "Claude Code (assigned reviewer), image inspection of every contact sheet, detail page, cover and the calibration sheet for candidate RC527-candidate-12 (owner request 2026-11-01: build the book with the tailpieces)",
- "reviewed_at": "2026-11-01T04:16:44+00:00",
+ "sha256": "b406840d5583b5142dd37492f91adc8f1f0f4a16b80e81f9885b85903f90a176",
+ "pages": 625,
+ "reviewer": "Claude Code (assigned reviewer), image inspection of every contact sheet, every detail page, both covers, and the calibration sheet of candidate 20261101T194714Z (owner approval 2026-11-01 of the design audit: Approve everything); second candidate after the all-page review of 20261101T183315Z",
+ "reviewed_at": "2026-11-01T22:11:38+00:00",
  "all_page_contact_sheets": {
   "scale": "34 dpi, up to 24 pages per sheet",
-  "sheets": 26,
+  "sheets": 27,
   "note": "every page of this exact PDF (the candidate build; the release build reproduces it) viewed on contact sheets"
  },
  "pages_reviewed": [
@@ -627,38 +627,44 @@
   615,
   616,
   617,
-  618
+  618,
+  619,
+  620,
+  621,
+  622,
+  623,
+  624,
+  625
  ],
  "detailed_pages_viewed_at_100dpi": [
   1,
   7,
-  24,
-  48,
+  25,
+  49,
   50,
-  57,
-  71,
-  91,
+  59,
+  75,
+  96,
   100,
-  140,
+  149,
   150,
   200,
-  202,
-  241,
+  211,
   250,
   300,
   350,
-  353,
+  363,
   400,
   450,
-  490,
+  499,
   500,
-  521,
-  539,
+  530,
+  548,
   550,
-  579,
+  588,
   600,
-  615,
-  618
+  622,
+  625
  ],
  "covers_viewed": [
   "cover-front.jpg",
@@ -666,10 +672,15 @@
  ],
  "calibration_viewed": true,
  "findings_repaired": [],
- "accepted_layout_notes": [],
+ "accepted_layout_notes": [
+  "p26: 2.1 Core Terms ends with under 1.6 in of full-width band, so its tailpiece is omitted (documented limit of the no-text-moves rule; 44 of 47 tailpieces print).",
+  "p210: 7.17 Permanent Special Items ends with under 1.6 in of full-width band, so its tailpiece is omitted (documented limit).",
+  "p232: 8.4 Divine Prayers ends with a full left column and a short right column, so its tailpiece is omitted (documented limit; column-aware placement is a follow-up).",
+  "Second candidate of the approved design-audit layout, 625 pages. Against the first candidate: the Chapter 5 opener shares its page with 5.1 Combat Basics (opener and lead above the full-width section head and two columns; no empty half page), and Chapter 6 onward shifts back by one page. Full-width section heads, the corrected heading hierarchy, the Appendix C reference bands, role tags, quiet separators, tab halos, Chapter One labels, small-caps version lines, tailpieces sized to their gaps and anchored to the foot, and the run-on reference appendix are as intended. Accepted layout notes: 44 of 47 tailpieces print; 2.1 Core Terms, 7.17 Permanent Special Items, and 8.4 Divine Prayers leave no 1.6 in full-width band on their last pages, so their tailpieces are omitted rather than moving text (documented limit; column-aware placement is a follow-up). Pre-existing deliberate white space remains at section tails, at stranded introductions before full-page tables (7.8, 7.13, 7.14), on the 6.2 creation-figure page, at B.1, and at one-per-column bestiary entries before full-width long entries. No overlap, clipping, blank interior page, missing or wrong art, broken table, text past the safe edge, or wrong page order was seen. Physical print NOT TESTED."
+ ],
  "limits": "Contact-sheet review of every page and 100 dpi detail review of the listed pages, by the named reviewer from images; not glyph-level proofreading, not an independent second review, not a physical printer proof.",
  "status": "PASS (all-page contact-sheet review of this exact PDF by an automated vision reviewer; not glyph-level proofreading)",
  "changes_this_run": [
-  "candidate build 20261101T035117Z from 9700bf59810a1b89355a0e99ef9c5d20e93aa968"
+  "candidate build 20261101T194714Z from 2bccda770806c705f55be3474d6ddf5ee45e7fde"
  ]
 }
