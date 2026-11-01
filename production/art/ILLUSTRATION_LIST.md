@@ -793,7 +793,7 @@ Do not draw:
 * No square grid or measured lines.
 ```
 
-### 14. One moves, one waits ✓
+### 14. One moves, one waits ✗
 
 `ART-END-PARTY-PHASE`
 
@@ -801,18 +801,18 @@ Do not draw:
 ONE MOVES, ONE WAITS - GRITTY OLD-SCHOOL INK ILLUSTRATION
 Create a gritty, old-school black-and-white ink illustration of Two Heroes of one party taking turns at a ruined corner: one runs across an open gap while the other kneels behind the wall with a loaded light crossbow held ready, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Side view: the kneeling Hero in the foreground at the left, in profile behind a ruined wall corner, the crossbow seen side-on so its whole shape reads; the running Hero smaller in the open gap beyond at the right.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view from the front left and a little above: the kneeling Hero in the foreground at the left behind a ruined wall corner, the crossbow aimed past the viewer's right so its bow arms spread out to both sides across the front of the stock; the running Hero smaller in the open gap beyond at the right.
 SUBJECT DETAILS
-* Light crossbow seen in profile: a wooden tiller with a short straight bow (prod) bound across its front end, the bowstring pulled back taut to the trigger nut, the string meeting both tips of the prod, a bolt lying in the groove
+* Light crossbow: a wooden stock with a short bow (the prod) fixed crosswise across its front end, the two bow arms spreading out left and right like a letter T; the bowstring runs from one bow tip back to the trigger catch on the stock and out to the other bow tip in a V; a bolt lies in the groove
 * Kneeling Hero in a gambeson: the butt of the crossbow against the shoulder, one hand under the fore-end, the other at the trigger lever, aiming along it past the wall edge
 * Running Hero in a leather coat, mid-stride, shortsword in the right hand, cloak flying
 * Corner of a ruined wall with a fallen lintel
 * Cracked paving in the open gap
 Must be shown exactly:
 * Two Heroes only, clearly on the same side
-* The crossbow string runs straight from one prod tip to the nut and on to the other prod tip
 * Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure
 * Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
+* The crossbow's bow arms are clearly visible spreading to both sides of the front of the stock, and the string runs from each bow tip back to the trigger catch; it must not look like a rifle
 HUMAN ACTIVITY
 * One Hero crosses the gap
 * The other holds still, aiming, waiting for the reply
@@ -852,7 +852,7 @@ Do not draw:
 * No gore.
 ```
 
-### 16. The dropped torch ✓
+### 16. The dropped torch ✗
 
 `ART-END-ACTION-BASICS`
 
@@ -860,20 +860,20 @@ Do not draw:
 THE DROPPED TORCH - GRITTY OLD-SCHOOL INK ILLUSTRATION
 Create a gritty, old-school black-and-white ink illustration of a Hero at the foot of a cellar stair lets a lit torch fall from one hand while the other hand draws a sword, as shapes stir in the dark ahead, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter front view: the Hero stands at the centre facing the dark passage at the right, the torch falling from the open left hand toward the floor; the right hand reaches across the front of the body to the sword at the left hip; the passage is solid black with two vague hunched shapes.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter front view: the Hero stands at the centre facing the dark passage at the right; the left hand has just opened and the torch falls below it; the right hand holds a fully drawn shortsword point-forward at waist height; the empty scabbard hangs at the left hip; the passage is solid black with two vague hunched shapes.
 SUBJECT DETAILS
 * Human Hero in a hooded mantle and leather coat, weight on the back foot
 * Left arm lowered in front of the body, fingers just opening, the torch half a foot below them, flame drawn as a few clean ink tongues
-* Right hand crossing in front of the waist to draw a shortsword forward and up out of the one scabbard on the left hip, the blade half out
+* Right hand holding a fully drawn shortsword by its grip, the whole blade out and pointing forward toward the passage; the empty scabbard hangs from the belt at the left hip, its mouth open
 * Worn cellar stair behind, three or four steps
 * Two indistinct hunched shapes in the black passage, outlined so they read in print
 Must be shown exactly:
 * One Hero only; the shapes stay vague
-* Both arms stay in front of the body; no hand reaches behind the back
 * Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure
 * Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
+* Both arms stay in front of the body; the sword is entirely out of its scabbard, one straight blade continuing from one crossguard in the hand
 HUMAN ACTIVITY
-* The Hero drops the torch and draws in one movement
+* The Hero lets the torch fall, sword already in hand
 A heartbeat of decision in the dark.
 Do not draw:
 * No lettering, numbers, dice, game tokens, or rulebook pages.
@@ -1161,7 +1161,7 @@ Do not draw:
 * No banners or smoke.
 ```
 
-### 27. Camouflage ✓
+### 27. Camouflage ✗
 
 `ART-END-GENERAL-TALENTS`
 
@@ -1171,13 +1171,14 @@ Create a gritty, old-school black-and-white ink illustration of the Camouflage t
 COMPOSITION
 Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view: a dense mass of ferns and roots fills the centre; through a gap the archer crouches facing right, the bow held upright and in full view from its top tip to its bottom tip.
 SUBJECT DETAILS
-* Shortbow held upright in the left hand at the grip, both curved limbs and both tips visible
-* Bowstring running straight from the top tip to the drawing fingers and on to the bottom tip, drawn back only partway
+* Shortbow held upright in the left hand at the grip, both limbs the same length and the same curve, both tips clear of the ferns
+* Bowstring drawn as two straight taut lines in front of the ferns, never hidden: one from the top tip of the bow to the drawing fingers at the cheek, one from the drawing fingers to the bottom tip of the bow
 * Arrow nocked on the string and resting across the bow hand, pointing right, the archer's eyes looking along it
 * Hood and face half hidden by fern fronds
 * Leaf litter, a mossy log and a beetle for scale
 Must be shown exactly:
 * The archer is mostly hidden; the cover dominates
+* Both halves of the bowstring are fully visible and each ends exactly at a bow tip; no fern covers the string or the lower limb
 * The bow is one whole bow with its string attached at both tips and the arrow on the string
 * Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure
 * Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
@@ -1461,7 +1462,7 @@ Do not draw:
 * Not the Reliquary of Broken Saints nave.
 ```
 
-### 38. The ratkin swarm ✓
+### 38. The ratkin swarm ✗
 
 `ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING`
 
@@ -1474,7 +1475,7 @@ SUBJECT DETAILS
 * Ratkin: upright two-legged rat-folk about the height of a Halfling, rat heads and long naked tails, scrawny bodies in matted grey fur and ragged scavenged cloth
 * A few carry sacks over the shoulder or crude notched blades in their hands
 * Round brick sewer tunnel with a shallow channel of icy water, icicles hanging from the arch
-* One ratkin dragging a stolen boot by its laces
+* One ratkin carrying a stolen boot tucked under one arm, held against the ribs
 * The crowd fading into darkness behind
 Must be shown exactly:
 * The ratkin read as one swarm, not separate portraits
@@ -4932,26 +4933,26 @@ Do not draw:
 * Do not use the Tier 1 pebble ring.
 ```
 
-### 16. Steadfast Word ✓
+### 16. Steadfast Word ✗
 
 `ART-END-DIVINE-PRAYERS`
 
 ```text
 STEADFAST WORD - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Steadfast Word, a Paladin's Tier 0 Orison: a mail-clad Paladin speaks one word and pulls a kneeling, Frightened companion back to their feet by a single clasped forearm, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Steadfast Word, a Paladin's Tier 0 Orison: a mail-clad Paladin speaks one word and hauls a kneeling, Frightened companion to their feet by the upper arm, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Side view at knee height with clear space between the two bodies: the Paladin stands at the left, the companion kneels on one knee at the right; their only contact is one forearm-to-forearm grip in the middle of the picture.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Side view at knee height with clear space between the two bodies: the Paladin stands at the left, the companion kneels on one knee at the right; the only contact is the Paladin's right hand closed around the companion's left upper arm, just above the elbow.
 SUBJECT DETAILS
 * Paladin in a ring shirt, targe strapped on the left forearm held at the side, mace hanging at the belt, mouth open on a single word
-* Paladin's right hand and the companion's right hand gripping each other's forearms, the two arms forming one clear straight line
+* Paladin's right arm reaching forward, the gloved hand gripping the companion's left upper arm above the elbow; the companion's own left hand hangs free below it, open
 * Companion in a leather coat, pale and wide-eyed, rising from one knee, the free left hand pushing on the raised knee
 * Dropped shortsword lying flat on the flagstones beside the companion
 * A thin ring of short upright ink strokes on the ground around both figures
 Must be shown exactly:
 * Exactly two figures; the Paladin is lifting, not striking
-* The two figures touch only at the clasped forearms; their other arms, hands and bodies stay separate
 * Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure
 * Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
+* The only contact is one hand on one upper arm; every hand belongs visibly to one arm and no two arms join or merge
 HUMAN ACTIVITY
 * The Paladin speaks and pulls the companion upright
 Plain courage passed from one hand to another.

@@ -11986,7 +11986,7 @@
   "route": "gpt",
   "spec_sha256": "591f3ee3bc493dde7d96a91d157cd8493c628222c52247ea7dcb87e543f17dfa",
   "prompt_sha256": "36895ffde707d8ab60abf7374a49ba9cfa110d9dfed9705d3ac341b28e46d896",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-11-01T01:35:12+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12011,7 +12011,9 @@
    "max_print_w_in_300ppi": 5.067
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-11-01T02:26:54+00:00"
+  "approved_at": "2026-11-01T02:26:54+00:00",
+  "rejected_at": "2026-11-01T02:30:20+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; the owner circled broken construction (bowstring, sword and scabbard, merged arms, dangling boot, crossbow without a visible bow)."
  },
  "ART-END-ACTION-POINTS-AND-SUMMONS": {
   "family": "world",
@@ -12364,7 +12366,7 @@
   "route": "gpt",
   "spec_sha256": "3497554e9d0ecc1530d547da34a07d68ded621e60c708b35d95438284b4efdf7",
   "prompt_sha256": "182c505019ab1e1f3f57b6b3cb88f5a443ceedd03f81dbc0db38bb5586f9c685",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-11-01T01:37:04+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12391,7 +12393,9 @@
    "max_print_w_in_300ppi": 5.083
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-11-01T02:26:54+00:00"
+  "approved_at": "2026-11-01T02:26:54+00:00",
+  "rejected_at": "2026-11-01T02:30:20+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; the owner circled broken construction (bowstring, sword and scabbard, merged arms, dangling boot, crossbow without a visible bow)."
  },
  "ART-END-GENERAL-TALENTS": {
   "family": "world",
@@ -12400,7 +12404,7 @@
   "route": "gpt",
   "spec_sha256": "c540acae663055fc7d8d54ca0070228452fd859366615db758dfbf633181f705",
   "prompt_sha256": "2dfb0f64559d0aa8de5518d5fd380a2e78f243eb96b361416a192d94a03dc713",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-11-01T01:38:47+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12425,7 +12429,9 @@
    "max_print_w_in_300ppi": 5.007
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-11-01T02:26:54+00:00"
+  "approved_at": "2026-11-01T02:26:54+00:00",
+  "rejected_at": "2026-11-01T02:30:20+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; the owner circled broken construction (bowstring, sword and scabbard, merged arms, dangling boot, crossbow without a visible bow)."
  },
  "ART-END-HERO-ADVANCEMENT": {
   "family": "world",
@@ -12678,7 +12684,7 @@
   "route": "gpt",
   "spec_sha256": "12402e0a1a4c5732ce3d4d8f1cb8960a66088a412fd9fea90f2f3765f492ffd6",
   "prompt_sha256": "627ae9b979c83603267cf7e084a5ffdb514d2630452a7de8843b10187b13cbce",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-11-01T01:42:01+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12705,7 +12711,9 @@
    "max_print_w_in_300ppi": 5.023
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-11-01T02:26:54+00:00"
+  "approved_at": "2026-11-01T02:26:54+00:00",
+  "rejected_at": "2026-11-01T02:30:20+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; the owner circled broken construction (bowstring, sword and scabbard, merged arms, dangling boot, crossbow without a visible bow)."
  },
  "ART-END-PARTY-STRUCTURE": {
   "family": "world",
@@ -13102,7 +13110,7 @@
   "route": "gpt",
   "spec_sha256": "1a477a1a8c1d265dd7c1a0fcf447753b44e31dcd4f68f7bdfbadfe9b3e9dc88b",
   "prompt_sha256": "4c94e98442a73e7f81ec9003ef6ad8ce628e56cde0cf8fdb8d7b19acffc0aeb3",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-11-01T01:49:06+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13129,7 +13137,9 @@
    "max_print_w_in_300ppi": 5.063
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-11-01T02:26:54+00:00"
+  "approved_at": "2026-11-01T02:26:54+00:00",
+  "rejected_at": "2026-11-01T02:30:20+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; the owner circled broken construction (bowstring, sword and scabbard, merged arms, dangling boot, crossbow without a visible bow)."
  },
  "ART-END-DRUIDIC-RITUALS": {
   "family": "tradition",
