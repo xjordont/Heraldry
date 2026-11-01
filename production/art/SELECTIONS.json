@@ -13403,17 +13403,17 @@
   "title": "The broker's scale",
   "heading_id": "h-75-item-availability",
   "route": "gpt",
-  "spec_sha256": "af87531b8bcdf62853ec5b0b234dc544f13aa50c71c3e11ba8a95a18d3fc16b6",
-  "prompt_sha256": "024f4fe6293c9258daa312e3c556ed9b50bf528002cddc577710fd3b36550398",
-  "status": "rejected",
-  "received_at": "2026-10-31T22:01:16+00:00",
+  "spec_sha256": "263b852ecf6298df3b3eb588cf7dd3b002eaf1bf71a57cafd4f5ca33b0afc26a",
+  "prompt_sha256": "962463a7d61ca0b9dda116766cdbca03be0a23656bc56afd9320fe05c5f6e9c0",
+  "status": "received",
+  "received_at": "2026-11-01T01:50:45+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Coins have stamps and ring has a star-like highlight; automated check warns of tinted ink.",
+  "notes": "Tinted ink and possible grey wash warnings.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-ITEM-AVAILABILITY.png",
-   "sha256": "8e67f6f5d3714e2b78448b86c0fe7662d86b56442233ba157c8f8282f2d70c90",
+   "sha256": "755f4374e36b42535fc2e6c19ffff2b30f40772a3d6a66d7498ff6e359c7e587",
    "px": [
     1536,
     1024
@@ -13421,18 +13421,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-ITEM-AVAILABILITY.png",
-   "sha256": "6237e8185f8b0d44c5cb8429df9964f8d6587b919cfde9a7643b09886f5135a0",
+   "sha256": "60f0d00eb79034410a5ad26df65e96a856cfdfe37c8412e427334aca2e99e433",
    "px": [
-    1470,
-    985
+    1448,
+    980
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.9
+   "max_print_w_in_300ppi": 4.827
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T22:13:21+00:00",
-  "rejected_at": "2026-11-01T01:21:30+00:00",
-  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-PERMANENT-SPECIAL-ITEMS": {
   "family": "item",
