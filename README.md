@@ -11,7 +11,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 <!-- BEGIN AUTO:status -->
 
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
-- **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
+- **Last recorded delivery:** [RC527-build-40](https://github.com/xjordont/Heraldry/releases/tag/RC527-build-40), 618 interior pages. Newer source/tooling changes may await a separately requested build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
 - **Illustration records:** 346 approved of 346; 0 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`f441b28d`](https://github.com/xjordont/Heraldry/commit/f441b28d85008470e4c6c23fd117120083840a9f) Record release workflow result
+- [`4f80b7c5`](https://github.com/xjordont/Heraldry/commit/4f80b7c5b4b6f7c8032808daa31610481e9e1981) Rebuild verified RC527 delivery
+- [`3f4ca566`](https://github.com/xjordont/Heraldry/commit/3f4ca5664112d0726051d36793c6ffb3d1ffc2ce) review: bind the all-page visual review for candidate 20261101T035117Z
 - [`c93ff1de`](https://github.com/xjordont/Heraldry/commit/c93ff1dec277d5a157033854fd07781f54354b7b) Build candidate status (20261101T035117Z)
 - [`9700bf59`](https://github.com/xjordont/Heraldry/commit/9700bf59810a1b89355a0e99ef9c5d20e93aa968) build: request candidate build 20261101T035117Z
 - [`23f2ef3c`](https://github.com/xjordont/Heraldry/commit/23f2ef3c8d3f9a2771f1bb7983522c503ad9b14f) Layout: place wide tailpieces whose full height is under the 1.6 in minimum
-- [`44590029`](https://github.com/xjordont/Heraldry/commit/4459002998814845ad6a1769136b21c0bd837a9c) Layout: place end art after one-column units too
-- [`09d42025`](https://github.com/xjordont/Heraldry/commit/09d4202531f6e22d748cede6cb1e3ee1ad000cc2) Build candidate status (20261101T030611Z)
-- [`5c61c23c`](https://github.com/xjordont/Heraldry/commit/5c61c23c7f5dc86bfc857dd641764db9df3f8a06) build: request candidate build 20261101T030611Z
 
 <!-- END AUTO:recent -->
 
