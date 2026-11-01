@@ -38,8 +38,8 @@ null
 {
 "id": "T002",
 "src": [
-479,
-492
+483,
+496
 ],
 "heading": "h-211-core-stats-and-abbreviations",
 "heading_title": "2.1.1 Core Stats and Abbreviations",
@@ -75,8 +75,8 @@ null
 {
 "id": "T003",
 "src": [
-545,
-558
+549,
+562
 ],
 "heading": "h-241-attack-advantage-and-disadvantage",
 "heading_title": "2.4.1 Attack Advantage and Disadvantage",
@@ -116,8 +116,8 @@ null
 {
 "id": "T004",
 "src": [
-616,
-621
+620,
+625
 ],
 "heading": "h-size-and-footprints",
 "heading_title": "Size and Footprints",
@@ -161,8 +161,8 @@ null
 {
 "id": "T005",
 "src": [
-708,
-712
+712,
+716
 ],
 "heading": "h-273-areas-of-effect",
 "heading_title": "2.7.3 Areas of Effect",
@@ -198,8 +198,8 @@ null
 {
 "id": "T006",
 "src": [
-718,
-721
+722,
+725
 ],
 "heading": "h-273-areas-of-effect",
 "heading_title": "2.7.3 Areas of Effect",
@@ -235,8 +235,8 @@ null
 {
 "id": "T007",
 "src": [
-727,
-733
+731,
+737
 ],
 "heading": "h-273-areas-of-effect",
 "heading_title": "2.7.3 Areas of Effect",
@@ -272,8 +272,8 @@ null
 {
 "id": "T008",
 "src": [
-754,
-758
+758,
+762
 ],
 "heading": "h-28-cover-light-hidden-and-visibility",
 "heading_title": "2.8 Cover, Light, Hidden, and Visibility",
@@ -312,8 +312,8 @@ null
 {
 "id": "T009",
 "src": [
-850,
-876
+854,
+880
 ],
 "heading": "h-291-terrain-types",
 "heading_title": "2.9.1 Terrain Types",
@@ -353,8 +353,8 @@ null
 {
 "id": "T010",
 "src": [
-1164,
-1183
+1168,
+1187
 ],
 "heading": "h-battlefield-reference-table",
 "heading_title": "Battlefield Reference Table",
@@ -384,17 +384,17 @@ null
 ],
 "col_avg_chars": [
 10.1,
-100.3,
+100.4,
 6.8
 ],
 "row_lengths_ok": true,
-"cell_sha256": "299702b302369e5cc5a1b9a6f29a39bafa3cee97940e10a4f08d455e9c7672fe"
+"cell_sha256": "2c07c5866dbd9c684c510dd999dabd6cad75350e4dfccb41bc6188a2563a25af"
 },
 {
 "id": "T011",
 "src": [
-1207,
-1222
+1211,
+1226
 ],
 "heading": "h-42-universal-actions",
 "heading_title": "4.2 Universal Actions",
@@ -433,8 +433,8 @@ null
 {
 "id": "T012",
 "src": [
-1295,
-1305
+1299,
+1309
 ],
 "heading": "h-441-movement-type-reference",
 "heading_title": "4.4.1 Movement Type Reference",
@@ -474,8 +474,8 @@ null
 {
 "id": "T013",
 "src": [
-1519,
-1524
+1523,
+1528
 ],
 "heading": "h-512-combat-reaction-guide",
 "heading_title": "5.1.2 Combat Reaction Guide",
@@ -515,8 +515,8 @@ null
 {
 "id": "T014",
 "src": [
-1596,
-1609
+1600,
+1613
 ],
 "heading": "h-543-damage-types",
 "heading_title": "5.4.3 Damage Types",
@@ -552,8 +552,8 @@ null
 {
 "id": "T015",
 "src": [
-1692,
-1697
+1696,
+1701
 ],
 "heading": "h-553-parry-1-ap",
 "heading_title": "5.5.3 Parry [1 AP]",
@@ -589,8 +589,8 @@ null
 {
 "id": "T016",
 "src": [
-1819,
-1840
+1823,
+1844
 ],
 "heading": "h-581-injuries-table",
 "heading_title": "5.8.1 Injuries Table",
@@ -622,16 +622,16 @@ null
 "col_avg_chars": [
 1.6,
 13.3,
-102.0
+101.8
 ],
 "row_lengths_ok": true,
-"cell_sha256": "d0eab157b26162188616bfd131dbcc9b6de37a5860471701f082e9e561c35342"
+"cell_sha256": "e0dbea1df431d42f3926b085848353dddf56825e822bdb6630b957e62eda9b80"
 },
 {
 "id": "T017",
 "src": [
-2144,
-2151
+2148,
+2155
 ],
 "heading": "h-random-ancestry-table-d10",
 "heading_title": "Random Ancestry Table (d10)",
@@ -671,8 +671,8 @@ null
 {
 "id": "T018",
 "src": [
-2157,
-2164
+2161,
+2168
 ],
 "heading": "h-rare-ancestry-table-d10",
 "heading_title": "Rare Ancestry Table (d10)",
@@ -712,8 +712,8 @@ null
 {
 "id": "T019",
 "src": [
-2172,
-2183
+2176,
+2187
 ],
 "heading": "h-67-human-trinket-table",
 "heading_title": "6.7 Human Trinket Table",
@@ -748,16 +748,16 @@ null
 1.1,
 15.3,
 3.0,
-155.7
+155.8
 ],
 "row_lengths_ok": true,
-"cell_sha256": "bda5fb285726338bfcbe13cf113e123ea65746220be9bad6e55a251be0cc80cf"
+"cell_sha256": "b0972c8ed15303816cd3e5af6d7c869ac13005fa76a63d9ac6476f095d9b6bfc"
 },
 {
 "id": "T020",
 "src": [
-2393,
-2414
+2397,
+2418
 ],
 "heading": "h-random-background-table-d20",
 "heading_title": "Random Background Table (d20)",
@@ -793,8 +793,8 @@ null
 {
 "id": "T021",
 "src": [
-2580,
-2593
+2584,
+2597
 ],
 "heading": "h-611-random-class-table",
 "heading_title": "6.11 Random Class Table",
@@ -829,8 +829,8 @@ null
 {
 "id": "T022",
 "src": [
-2671,
-2684
+2675,
+2688
 ],
 "heading": "h-613-hero-classes",
 "heading_title": "6.13 Hero Classes",
@@ -873,8 +873,8 @@ null
 {
 "id": "T023",
 "src": [
-3224,
-3232
+3228,
+3236
 ],
 "heading": "h-wild-shape-forms",
 "heading_title": "Wild Shape Forms",
@@ -917,7 +917,7 @@ null
 269
 ],
 "col_avg_chars": [
-5.9,
+5.0,
 5.1,
 3.6,
 1.0,
@@ -926,13 +926,13 @@ null
 162.3
 ],
 "row_lengths_ok": true,
-"cell_sha256": "eb7cecbec4a487d3cf9c46f480728ce02cf3df61dc9b7ca90a16bede38b16d25"
+"cell_sha256": "e65f551447da7745bd49a024a979e75a8c0d72454b44cc22f5432739cded7bba"
 },
 {
 "id": "T024",
 "src": [
-3313,
-3323
+3317,
+3327
 ],
 "heading": "h-training-cost",
 "heading_title": "Training Cost",
@@ -972,8 +972,8 @@ null
 {
 "id": "T025",
 "src": [
-3364,
-3376
+3368,
+3380
 ],
 "heading": "h-equipment-category-reference",
 "heading_title": "Equipment Category Reference",
@@ -1013,8 +1013,8 @@ null
 {
 "id": "T026",
 "src": [
-3445,
-3450
+3449,
+3454
 ],
 "heading": "h-761-treasure-rolls",
 "heading_title": "7.6.1 Treasure Rolls",
@@ -1050,8 +1050,8 @@ null
 {
 "id": "T027",
 "src": [
-3484,
-3495
+3488,
+3499
 ],
 "heading": "h-tier-1-treasure-table-apl-12",
 "heading_title": "Tier 1 Treasure Table (APL 1–2)",
@@ -1091,8 +1091,8 @@ null,
 {
 "id": "T028",
 "src": [
-3499,
-3513
+3503,
+3517
 ],
 "heading": "h-tier-2-treasure-table-apl-34",
 "heading_title": "Tier 2 Treasure Table (APL 3–4)",
@@ -1132,8 +1132,8 @@ null,
 {
 "id": "T029",
 "src": [
-3517,
-3532
+3521,
+3536
 ],
 "heading": "h-tier-3-treasure-table-apl-56",
 "heading_title": "Tier 3 Treasure Table (APL 5–6)",
@@ -1173,8 +1173,8 @@ null,
 {
 "id": "T030",
 "src": [
-3536,
-3551
+3540,
+3555
 ],
 "heading": "h-tier-4-treasure-table-apl-78",
 "heading_title": "Tier 4 Treasure Table (APL 7–8)",
@@ -1214,8 +1214,8 @@ null,
 {
 "id": "T031",
 "src": [
-3555,
-3570
+3559,
+3574
 ],
 "heading": "h-tier-5-treasure-table-apl-910",
 "heading_title": "Tier 5 Treasure Table (APL 9–10)",
@@ -1255,8 +1255,8 @@ null,
 {
 "id": "T032",
 "src": [
-3576,
-3594
+3580,
+3598
 ],
 "heading": "h-mechanical-traits",
 "heading_title": "Mechanical Traits",
@@ -1292,8 +1292,8 @@ null
 {
 "id": "T033",
 "src": [
-3614,
-3622
+3618,
+3626
 ],
 "heading": "h-material-and-craftsmanship-traits",
 "heading_title": "Material and Craftsmanship Traits",
@@ -1329,8 +1329,8 @@ null
 {
 "id": "T034",
 "src": [
-3632,
-3676
+3636,
+3680
 ],
 "heading": "h-78-melee-weapons",
 "heading_title": "7.8 Melee Weapons",
@@ -1385,8 +1385,8 @@ null
 {
 "id": "T035",
 "src": [
-3682,
-3697
+3686,
+3701
 ],
 "heading": "h-79-ranged-weapons",
 "heading_title": "7.9 Ranged Weapons",
@@ -1445,8 +1445,8 @@ null
 {
 "id": "T036",
 "src": [
-3713,
-3730
+3717,
+3734
 ],
 "heading": "h-710-armour",
 "heading_title": "7.10 Armour",
@@ -1501,8 +1501,8 @@ null
 {
 "id": "T037",
 "src": [
-3744,
-3757
+3748,
+3761
 ],
 "heading": "h-weapon-qualities",
 "heading_title": "Weapon Qualities",
@@ -1538,8 +1538,8 @@ null
 {
 "id": "T038",
 "src": [
-3763,
-3776
+3767,
+3780
 ],
 "heading": "h-armour-and-shield-qualities",
 "heading_title": "Armour and Shield Qualities",
@@ -1575,8 +1575,8 @@ null
 {
 "id": "T039",
 "src": [
-3780,
-3801
+3784,
+3805
 ],
 "heading": "h-tier-1-enhanced-weapon-table-d20",
 "heading_title": "Tier 1 Enhanced Weapon Table (d20)",
@@ -1616,8 +1616,8 @@ null,
 {
 "id": "T040",
 "src": [
-3805,
-3826
+3809,
+3830
 ],
 "heading": "h-tier-1-enhanced-armour-table-d20",
 "heading_title": "Tier 1 Enhanced Armour Table (d20)",
@@ -1657,8 +1657,8 @@ null,
 {
 "id": "T041",
 "src": [
-3830,
-3851
+3834,
+3855
 ],
 "heading": "h-tier-1-enhanced-shield-table-d20",
 "heading_title": "Tier 1 Enhanced Shield Table (d20)",
@@ -1693,13 +1693,13 @@ null,
 1.6
 ],
 "row_lengths_ok": true,
-"cell_sha256": "71d4e7b360ccc051df1db13f52e08c2fb9f523c4c1b28e3fc20e56b8f50a2180"
+"cell_sha256": "c6947b665aa7a4d4fc6cacf591b1127f764b04de10f01cdc10e70b6e660dad06"
 },
 {
 "id": "T042",
 "src": [
-3855,
-3876
+3859,
+3880
 ],
 "heading": "h-tier-2-enhanced-weapon-table-d20",
 "heading_title": "Tier 2 Enhanced Weapon Table (d20)",
@@ -1739,8 +1739,8 @@ null,
 {
 "id": "T043",
 "src": [
-3880,
-3901
+3884,
+3905
 ],
 "heading": "h-tier-2-enhanced-armour-table-d20",
 "heading_title": "Tier 2 Enhanced Armour Table (d20)",
@@ -1780,8 +1780,8 @@ null,
 {
 "id": "T044",
 "src": [
-3905,
-3926
+3909,
+3930
 ],
 "heading": "h-tier-2-enhanced-shield-table-d20",
 "heading_title": "Tier 2 Enhanced Shield Table (d20)",
@@ -1821,8 +1821,8 @@ null,
 {
 "id": "T045",
 "src": [
-3930,
-3951
+3934,
+3955
 ],
 "heading": "h-tier-3-enhanced-weapon-table-d20",
 "heading_title": "Tier 3 Enhanced Weapon Table (d20)",
@@ -1862,8 +1862,8 @@ null,
 {
 "id": "T046",
 "src": [
-3955,
-3976
+3959,
+3980
 ],
 "heading": "h-tier-3-enhanced-armour-table-d20",
 "heading_title": "Tier 3 Enhanced Armour Table (d20)",
@@ -1903,8 +1903,8 @@ null,
 {
 "id": "T047",
 "src": [
-3980,
-4001
+3984,
+4005
 ],
 "heading": "h-tier-3-enhanced-shield-table-d20",
 "heading_title": "Tier 3 Enhanced Shield Table (d20)",
@@ -1944,8 +1944,8 @@ null,
 {
 "id": "T048",
 "src": [
-4005,
-4026
+4009,
+4030
 ],
 "heading": "h-tier-4-enhanced-weapon-table-d20",
 "heading_title": "Tier 4 Enhanced Weapon Table (d20)",
@@ -1985,8 +1985,8 @@ null,
 {
 "id": "T049",
 "src": [
-4030,
-4051
+4034,
+4055
 ],
 "heading": "h-tier-4-enhanced-armour-table-d20",
 "heading_title": "Tier 4 Enhanced Armour Table (d20)",
@@ -2026,8 +2026,8 @@ null,
 {
 "id": "T050",
 "src": [
-4055,
-4070
+4059,
+4074
 ],
 "heading": "h-tier-4-enhanced-shield-table-d20",
 "heading_title": "Tier 4 Enhanced Shield Table (d20)",
@@ -2067,8 +2067,8 @@ null,
 {
 "id": "T051",
 "src": [
-4074,
-4095
+4078,
+4099
 ],
 "heading": "h-tier-5-enhanced-weapon-table-d20",
 "heading_title": "Tier 5 Enhanced Weapon Table (d20)",
@@ -2103,13 +2103,13 @@ null,
 2.1
 ],
 "row_lengths_ok": true,
-"cell_sha256": "d3294903a276fbc1b00fb0d5ab8e0240dc5c398602435a127c21e3dbbcb40443"
+"cell_sha256": "49fc76b8864ca9c7d29832c375c6f5ec13bc013bd87497c8aa1b93cfd08ab5e0"
 },
 {
 "id": "T052",
 "src": [
-4099,
-4120
+4103,
+4124
 ],
 "heading": "h-tier-5-enhanced-armour-table-d20",
 "heading_title": "Tier 5 Enhanced Armour Table (d20)",
@@ -2149,8 +2149,8 @@ null,
 {
 "id": "T053",
 "src": [
-4124,
-4141
+4128,
+4145
 ],
 "heading": "h-tier-5-enhanced-shield-table-d20",
 "heading_title": "Tier 5 Enhanced Shield Table (d20)",
@@ -2190,8 +2190,8 @@ null,
 {
 "id": "T054",
 "src": [
-4151,
-4163
+4155,
+4167
 ],
 "heading": "h-712-shields",
 "heading_title": "7.12 Shields",
@@ -2246,8 +2246,8 @@ null
 {
 "id": "T055",
 "src": [
-4181,
-4202
+4185,
+4206
 ],
 "heading": "h-tier-1-potions",
 "heading_title": "Tier 1 Potions",
@@ -2272,27 +2272,27 @@ null,
 null
 ],
 "cells": 84,
-"max_cell_chars": 309,
+"max_cell_chars": 310,
 "col_max_chars": [
 3,
 23,
 8,
-309
+310
 ],
 "col_avg_chars": [
 1.6,
 15.1,
 1.0,
-111.0
+111.1
 ],
 "row_lengths_ok": true,
-"cell_sha256": "5dbd2b8e6943c52fdff1dfeb68feb02142a799e332b70a21972154cefa5702bb"
+"cell_sha256": "9ed02b4c5f6f10c7d359be203363a5d6dcc67b1bc03be1958e243cbc8cb245ed"
 },
 {
 "id": "T056",
 "src": [
-4206,
-4227
+4210,
+4231
 ],
 "heading": "h-tier-2-potions",
 "heading_title": "Tier 2 Potions",
@@ -2336,8 +2336,8 @@ null
 {
 "id": "T057",
 "src": [
-4231,
-4252
+4235,
+4256
 ],
 "heading": "h-tier-3-potions",
 "heading_title": "Tier 3 Potions",
@@ -2381,8 +2381,8 @@ null
 {
 "id": "T058",
 "src": [
-4256,
-4277
+4260,
+4281
 ],
 "heading": "h-tier-4-potions",
 "heading_title": "Tier 4 Potions",
@@ -2418,16 +2418,16 @@ null
 1.6,
 23.4,
 2.0,
-206.7
+206.8
 ],
 "row_lengths_ok": true,
-"cell_sha256": "8e9df645e37472b462577e713a57da2d36bef92dec8691b54cc47e3c0c539884"
+"cell_sha256": "94a621ff43e405e2d0e35b06c9084396a0484df667cc6ac4f5a99439625dad37"
 },
 {
 "id": "T059",
 "src": [
-4281,
-4302
+4285,
+4306
 ],
 "heading": "h-tier-5-potions",
 "heading_title": "Tier 5 Potions",
@@ -2471,8 +2471,8 @@ null
 {
 "id": "T060",
 "src": [
-4324,
-4345
+4328,
+4349
 ],
 "heading": "h-tier-1-poisons",
 "heading_title": "Tier 1 Poisons",
@@ -2516,8 +2516,8 @@ null
 {
 "id": "T061",
 "src": [
-4349,
-4370
+4353,
+4374
 ],
 "heading": "h-tier-2-poisons",
 "heading_title": "Tier 2 Poisons",
@@ -2561,8 +2561,8 @@ null
 {
 "id": "T062",
 "src": [
-4374,
-4395
+4378,
+4399
 ],
 "heading": "h-tier-3-poisons",
 "heading_title": "Tier 3 Poisons",
@@ -2606,8 +2606,8 @@ null
 {
 "id": "T063",
 "src": [
-4399,
-4420
+4403,
+4424
 ],
 "heading": "h-tier-4-poisons",
 "heading_title": "Tier 4 Poisons",
@@ -2651,8 +2651,8 @@ null
 {
 "id": "T064",
 "src": [
-4424,
-4445
+4428,
+4449
 ],
 "heading": "h-tier-5-poisons",
 "heading_title": "Tier 5 Poisons",
@@ -2688,16 +2688,16 @@ null
 1.6,
 15.9,
 2.2,
-153.7
+153.8
 ],
 "row_lengths_ok": true,
-"cell_sha256": "7297599bdd78f6aabb7f15be83a9a3315387285ae3f3cd2bfc4fc6432a9c8c69"
+"cell_sha256": "bd0618a3258d6017c96bcd23c102fd260509a8dd3934730c1846147ed7f7c008"
 },
 {
 "id": "T065",
 "src": [
-4481,
-4502
+4485,
+4506
 ],
 "heading": "h-tier-1-arcane-scrolls",
 "heading_title": "Tier 1 Arcane Scrolls",
@@ -2741,8 +2741,8 @@ null
 {
 "id": "T066",
 "src": [
-4506,
-4527
+4510,
+4531
 ],
 "heading": "h-tier-2-arcane-scrolls",
 "heading_title": "Tier 2 Arcane Scrolls",
@@ -2767,27 +2767,27 @@ null,
 null
 ],
 "cells": 84,
-"max_cell_chars": 349,
+"max_cell_chars": 350,
 "col_max_chars": [
 3,
 26,
 8,
-349
+350
 ],
 "col_avg_chars": [
 1.6,
 20.4,
 1.8,
-142.5
+142.6
 ],
 "row_lengths_ok": true,
-"cell_sha256": "c6a82650be2c6dda8a6335eeede23e3d5fe8cc3a15052bfe6b19fade5e51670e"
+"cell_sha256": "0484272bcb20dab747bb0d0a41f8511a7057ecb0b104f4d92c102592e62a983e"
 },
 {
 "id": "T067",
 "src": [
-4531,
-4552
+4535,
+4556
 ],
 "heading": "h-tier-3-arcane-scrolls",
 "heading_title": "Tier 3 Arcane Scrolls",
@@ -2831,8 +2831,8 @@ null
 {
 "id": "T068",
 "src": [
-4556,
-4577
+4560,
+4581
 ],
 "heading": "h-tier-1-divine-scrolls",
 "heading_title": "Tier 1 Divine Scrolls",
@@ -2871,13 +2871,13 @@ null
 142.2
 ],
 "row_lengths_ok": true,
-"cell_sha256": "e380bf3c96f2b25033ac6ef762f66d73719fdfd7a8a5670a4e987aa017d89513"
+"cell_sha256": "fbb14fdee0dab620197d772dd86491a5a7cb47613112be2544bb5197e03d5b45"
 },
 {
 "id": "T069",
 "src": [
-4581,
-4602
+4585,
+4606
 ],
 "heading": "h-tier-2-divine-scrolls",
 "heading_title": "Tier 2 Divine Scrolls",
@@ -2921,8 +2921,8 @@ null
 {
 "id": "T070",
 "src": [
-4606,
-4627
+4610,
+4631
 ],
 "heading": "h-tier-3-divine-scrolls",
 "heading_title": "Tier 3 Divine Scrolls",
@@ -2966,8 +2966,8 @@ null
 {
 "id": "T071",
 "src": [
-4633,
-4661
+4637,
+4665
 ],
 "heading": "h-716-adventuring-equipment",
 "heading_title": "7.16 Adventuring Equipment",
@@ -3006,8 +3006,8 @@ null
 {
 "id": "T072",
 "src": [
-4687,
-4691
+4691,
+4695
 ],
 "heading": "h-tier-1-special-armour-and-shields-apl-12",
 "heading_title": "Tier 1 Special Armour and Shields (APL 1–2)",
@@ -3059,8 +3059,8 @@ null
 {
 "id": "T073",
 "src": [
-4695,
-4699
+4699,
+4703
 ],
 "heading": "h-tier-2-special-armour-and-shields-apl-34",
 "heading_title": "Tier 2 Special Armour and Shields (APL 3–4)",
@@ -3112,8 +3112,8 @@ null
 {
 "id": "T074",
 "src": [
-4703,
-4707
+4707,
+4711
 ],
 "heading": "h-tier-3-special-armour-and-shields-apl-56",
 "heading_title": "Tier 3 Special Armour and Shields (APL 5–6)",
@@ -3165,8 +3165,8 @@ null
 {
 "id": "T075",
 "src": [
-4711,
-4715
+4715,
+4719
 ],
 "heading": "h-tier-4-special-armour-and-shields-apl-78",
 "heading_title": "Tier 4 Special Armour and Shields (APL 7–8)",
@@ -3218,8 +3218,8 @@ null
 {
 "id": "T076",
 "src": [
-4719,
-4722
+4723,
+4726
 ],
 "heading": "h-tier-5-legendary-shields-apl-910",
 "heading_title": "Tier 5 Legendary Shields (APL 9–10)",
@@ -3271,8 +3271,8 @@ null
 {
 "id": "T077",
 "src": [
-4726,
-4737
+4730,
+4741
 ],
 "heading": "h-tier-1-special-weapons-apl-12",
 "heading_title": "Tier 1 Special Weapons (APL 1–2)",
@@ -3324,8 +3324,8 @@ null
 {
 "id": "T078",
 "src": [
-4741,
-4752
+4745,
+4756
 ],
 "heading": "h-tier-2-special-weapons-apl-34",
 "heading_title": "Tier 2 Special Weapons (APL 3–4)",
@@ -3369,16 +3369,16 @@ null
 2.0,
 7.8,
 18.2,
-79.0
+80.6
 ],
 "row_lengths_ok": true,
-"cell_sha256": "844cdac21e78923e8ffefad5667152720971de09a584650127902a946707739d"
+"cell_sha256": "c0a6216f927877e27776ff2d2cbb5f74eb830e2d138ca8b6532f78beb8d6439a"
 },
 {
 "id": "T079",
 "src": [
-4756,
-4767
+4760,
+4771
 ],
 "heading": "h-tier-3-special-weapons-apl-56",
 "heading_title": "Tier 3 Special Weapons (APL 5–6)",
@@ -3430,8 +3430,8 @@ null
 {
 "id": "T080",
 "src": [
-4771,
-4782
+4775,
+4786
 ],
 "heading": "h-tier-4-special-weapons-apl-78",
 "heading_title": "Tier 4 Special Weapons (APL 7–8)",
@@ -3475,16 +3475,16 @@ null
 2.0,
 8.9,
 20.8,
-115.0
+116.6
 ],
 "row_lengths_ok": true,
-"cell_sha256": "1fa5699dd5abf98155785308f3341b5fb83a56b156846adbedf5618ee6581658"
+"cell_sha256": "d56e38dc202d5160cee97269bc9eef98950802e21550abef84f50748ea0eb82f"
 },
 {
 "id": "T081",
 "src": [
-4786,
-4797
+4790,
+4801
 ],
 "heading": "h-tier-5-legendary-artifact-weapons-apl-910",
 "heading_title": "Tier 5 Legendary Artifact Weapons (APL 9–10)",
@@ -3536,8 +3536,8 @@ null
 {
 "id": "T082",
 "src": [
-4801,
-4822
+4805,
+4826
 ],
 "heading": "h-tier-5-legendary-artifact-armour-and-shields-d20",
 "heading_title": "Tier 5 Legendary Artifact Armour and Shields (d20)",
@@ -3605,16 +3605,16 @@ null
 1.6,
 1.6,
 3.0,
-119.3
+119.5
 ],
 "row_lengths_ok": true,
-"cell_sha256": "974d53fa004527c568ecd605771390428a9ab97f866f0c6bb627304351517bde"
+"cell_sha256": "c42b1332a0964b02b0861855503ead89e37b5b5be1f45dd775cf1ce20037368e"
 },
 {
 "id": "T083",
 "src": [
-4826,
-4837
+4830,
+4841
 ],
 "heading": "h-tier-1-special-items-apl-12",
 "heading_title": "Tier 1 Special Items (APL 1–2)",
@@ -3678,8 +3678,8 @@ null
 {
 "id": "T084",
 "src": [
-4841,
-4862
+4845,
+4866
 ],
 "heading": "h-tier-5-legendary-artifacts-d20",
 "heading_title": "Tier 5 Legendary Artifacts (d20)",
@@ -3735,16 +3735,16 @@ null
 1.0,
 1.0,
 3.0,
-153.9
+155.0
 ],
 "row_lengths_ok": true,
-"cell_sha256": "0540303d0850fd6c95a23ac6a79abab6a56fdf6ced4814506bcdf1c0b355f102"
+"cell_sha256": "47ac7d5e358815e3070a5f5c84b44e6cdea5bc2a3c39a8e1832b43c439a53134"
 },
 {
 "id": "T085",
 "src": [
-5232,
-5238
+5236,
+5242
 ],
 "heading": "h-tradition-summary",
 "heading_title": "Tradition Summary",
@@ -3792,8 +3792,8 @@ null
 {
 "id": "T086",
 "src": [
-5246,
-5252
+5250,
+5256
 ],
 "heading": "h-power-navigation",
 "heading_title": "Power Navigation",
@@ -3833,8 +3833,8 @@ null
 {
 "id": "T087",
 "src": [
-5254,
-5257
+5258,
+5261
 ],
 "heading": "h-power-navigation",
 "heading_title": "Power Navigation",
@@ -3874,8 +3874,8 @@ null
 {
 "id": "T088",
 "src": [
-7830,
-7832
+7834,
+7836
 ],
 "heading": "h-giant-tarantula-skirmisher",
 "heading_title": "Giant Tarantula [Skirmisher]",
@@ -3928,8 +3928,8 @@ null
 {
 "id": "T089",
 "src": [
-7849,
-7851
+7853,
+7855
 ],
 "heading": "h-goblin-minion",
 "heading_title": "Goblin [Minion]",
@@ -3982,8 +3982,8 @@ null
 {
 "id": "T090",
 "src": [
-7866,
-7868
+7870,
+7872
 ],
 "heading": "h-beastman-minion",
 "heading_title": "Beastman [Minion]",
@@ -4036,8 +4036,8 @@ null
 {
 "id": "T091",
 "src": [
-7880,
-7882
+7884,
+7886
 ],
 "heading": "h-bandit-soldier",
 "heading_title": "Bandit [Soldier]",
@@ -4090,8 +4090,8 @@ null
 {
 "id": "T092",
 "src": [
-7895,
-7897
+7899,
+7901
 ],
 "heading": "h-satyr-reveler-controller",
 "heading_title": "Satyr Reveler [Controller]",
@@ -4144,8 +4144,8 @@ null
 {
 "id": "T093",
 "src": [
-7914,
-7916
+7918,
+7920
 ],
 "heading": "h-briarling-minion",
 "heading_title": "Briarling [Minion]",
@@ -4198,8 +4198,8 @@ null
 {
 "id": "T094",
 "src": [
-7930,
-7932
+7934,
+7936
 ],
 "heading": "h-dire-wolf-skirmisher",
 "heading_title": "Dire Wolf [Skirmisher]",
@@ -4252,8 +4252,8 @@ null
 {
 "id": "T095",
 "src": [
-7948,
-7950
+7952,
+7954
 ],
 "heading": "h-orc-soldier",
 "heading_title": "Orc [Soldier]",
@@ -4306,8 +4306,8 @@ null
 {
 "id": "T096",
 "src": [
-7968,
-7970
+7972,
+7974
 ],
 "heading": "h-bugbear-soldier",
 "heading_title": "Bugbear [Soldier]",
@@ -4360,8 +4360,8 @@ null
 {
 "id": "T097",
 "src": [
-7987,
-7989
+7991,
+7993
 ],
 "heading": "h-harpy-cannon",
 "heading_title": "Harpy [Cannon]",
@@ -4414,8 +4414,8 @@ null
 {
 "id": "T098",
 "src": [
-8004,
-8006
+8008,
+8010
 ],
 "heading": "h-goblin-shaman-controller",
 "heading_title": "Goblin Shaman [Controller]",
@@ -4468,8 +4468,8 @@ null
 {
 "id": "T099",
 "src": [
-8024,
-8026
+8028,
+8030
 ],
 "heading": "h-bandit-captain-elite",
 "heading_title": "Bandit Captain [Elite]",
@@ -4522,8 +4522,8 @@ null
 {
 "id": "T100",
 "src": [
-8043,
-8045
+8047,
+8049
 ],
 "heading": "h-dire-bear-brute",
 "heading_title": "Dire Bear [Brute]",
@@ -4576,8 +4576,8 @@ null
 {
 "id": "T101",
 "src": [
-8065,
-8067
+8069,
+8071
 ],
 "heading": "h-blood-ape-soldier",
 "heading_title": "Blood Ape [Soldier]",
@@ -4630,8 +4630,8 @@ null
 {
 "id": "T102",
 "src": [
-8089,
-8091
+8093,
+8095
 ],
 "heading": "h-gorebeak-bear-brute",
 "heading_title": "Gorebeak Bear [Brute]",
@@ -4684,8 +4684,8 @@ null
 {
 "id": "T103",
 "src": [
-8111,
-8113
+8115,
+8117
 ],
 "heading": "h-ogre-brute",
 "heading_title": "Ogre [Brute]",
@@ -4738,8 +4738,8 @@ null
 {
 "id": "T104",
 "src": [
-8126,
-8128
+8130,
+8132
 ],
 "heading": "h-dryad-grovewarden-controller",
 "heading_title": "Dryad Grovewarden [Controller]",
@@ -4792,8 +4792,8 @@ null
 {
 "id": "T105",
 "src": [
-8145,
-8147
+8149,
+8151
 ],
 "heading": "h-forest-troll-brute",
 "heading_title": "Forest Troll [Brute]",
@@ -4846,8 +4846,8 @@ null
 {
 "id": "T106",
 "src": [
-8163,
-8165
+8167,
+8169
 ],
 "heading": "h-werewolf-elite",
 "heading_title": "Werewolf [Elite]",
@@ -4900,8 +4900,8 @@ null
 {
 "id": "T107",
 "src": [
-8186,
-8188
+8190,
+8192
 ],
 "heading": "h-green-dragon-elite",
 "heading_title": "Green Dragon [Elite]",
@@ -4954,8 +4954,8 @@ null
 {
 "id": "T108",
 "src": [
-8210,
-8212
+8214,
+8216
 ],
 "heading": "h-undead-warrior-minion",
 "heading_title": "Undead Warrior [Minion]",
@@ -5008,8 +5008,8 @@ null
 {
 "id": "T109",
 "src": [
-8227,
-8229
+8231,
+8233
 ],
 "heading": "h-undead-crossbowman-cannon",
 "heading_title": "Undead Crossbowman [Cannon]",
@@ -5062,8 +5062,8 @@ null
 {
 "id": "T110",
 "src": [
-8244,
-8246
+8248,
+8250
 ],
 "heading": "h-ghoul-minion",
 "heading_title": "Ghoul [Minion]",
@@ -5116,8 +5116,8 @@ null
 {
 "id": "T111",
 "src": [
-8262,
-8264
+8266,
+8268
 ],
 "heading": "h-possessed-corpse-minion",
 "heading_title": "Possessed Corpse [Minion]",
@@ -5170,8 +5170,8 @@ null
 {
 "id": "T112",
 "src": [
-8279,
-8281
+8283,
+8285
 ],
 "heading": "h-ember-skull-cannon",
 "heading_title": "Ember Skull [Cannon]",
@@ -5224,8 +5224,8 @@ null
 {
 "id": "T113",
 "src": [
-8299,
-8301
+8303,
+8305
 ],
 "heading": "h-wererat-skirmisher",
 "heading_title": "Wererat [Skirmisher]",
@@ -5278,8 +5278,8 @@ null
 {
 "id": "T114",
 "src": [
-8317,
-8319
+8321,
+8323
 ],
 "heading": "h-spectre-controller",
 "heading_title": "Spectre [Controller]",
@@ -5332,8 +5332,8 @@ null
 {
 "id": "T115",
 "src": [
-8336,
-8338
+8340,
+8342
 ],
 "heading": "h-undead-sentinel-soldier",
 "heading_title": "Undead Sentinel [Soldier]",
@@ -5386,8 +5386,8 @@ null
 {
 "id": "T116",
 "src": [
-8357,
-8359
+8361,
+8363
 ],
 "heading": "h-undead-champion-soldier",
 "heading_title": "Undead Champion [Soldier]",
@@ -5440,8 +5440,8 @@ null
 {
 "id": "T117",
 "src": [
-8375,
-8377
+8379,
+8381
 ],
 "heading": "h-gargoyle-skirmisher",
 "heading_title": "Gargoyle [Skirmisher]",
@@ -5494,8 +5494,8 @@ null
 {
 "id": "T118",
 "src": [
-8396,
-8398
+8400,
+8402
 ],
 "heading": "h-stone-sentinel-brute",
 "heading_title": "Stone Sentinel [Brute]",
@@ -5548,8 +5548,8 @@ null
 {
 "id": "T119",
 "src": [
-8419,
-8421
+8423,
+8425
 ],
 "heading": "h-minotaur-elite",
 "heading_title": "Minotaur [Elite]",
@@ -5602,8 +5602,8 @@ null
 {
 "id": "T120",
 "src": [
-8440,
-8442
+8444,
+8446
 ],
 "heading": "h-night-hag-controller",
 "heading_title": "Night Hag [Controller]",
@@ -5656,8 +5656,8 @@ null
 {
 "id": "T121",
 "src": [
-8458,
-8460
+8462,
+8464
 ],
 "heading": "h-forsaken-archer-cannon",
 "heading_title": "Forsaken Archer [Cannon]",
@@ -5710,8 +5710,8 @@ null
 {
 "id": "T122",
 "src": [
-8478,
-8480
+8482,
+8484
 ],
 "heading": "h-forsaken-knight-soldier",
 "heading_title": "Forsaken Knight [Soldier]",
@@ -5764,8 +5764,8 @@ null
 {
 "id": "T123",
 "src": [
-8495,
-8497
+8499,
+8501
 ],
 "heading": "h-forsaken-duelist-skirmisher",
 "heading_title": "Forsaken Duelist [Skirmisher]",
@@ -5818,8 +5818,8 @@ null
 {
 "id": "T124",
 "src": [
-8516,
-8518
+8520,
+8522
 ],
 "heading": "h-basilisk-elite",
 "heading_title": "Basilisk [Elite]",
@@ -5872,8 +5872,8 @@ null
 {
 "id": "T125",
 "src": [
-8536,
-8538
+8540,
+8542
 ],
 "heading": "h-ashen-revenant-elite",
 "heading_title": "Ashen Revenant [Elite]",
@@ -5926,8 +5926,8 @@ null
 {
 "id": "T126",
 "src": [
-8558,
-8560
+8562,
+8564
 ],
 "heading": "h-iron-golem-brute",
 "heading_title": "Iron Golem [Brute]",
@@ -5980,8 +5980,8 @@ null
 {
 "id": "T127",
 "src": [
-8578,
-8580
+8582,
+8584
 ],
 "heading": "h-lich-elite",
 "heading_title": "Lich [Elite]",
@@ -6034,8 +6034,8 @@ null
 {
 "id": "T128",
 "src": [
-8602,
-8604
+8606,
+8608
 ],
 "heading": "h-kobold-minion",
 "heading_title": "Kobold [Minion]",
@@ -6088,8 +6088,8 @@ null
 {
 "id": "T129",
 "src": [
-8620,
-8622
+8624,
+8626
 ],
 "heading": "h-cave-goblin-minion",
 "heading_title": "Cave Goblin [Minion]",
@@ -6142,8 +6142,8 @@ null
 {
 "id": "T130",
 "src": [
-8637,
-8639
+8641,
+8643
 ],
 "heading": "h-giant-bat-minion",
 "heading_title": "Giant Bat [Minion]",
@@ -6196,8 +6196,8 @@ null
 {
 "id": "T131",
 "src": [
-8653,
-8655
+8657,
+8659
 ],
 "heading": "h-vaultfang-cannon",
 "heading_title": "Vaultfang [Cannon]",
@@ -6250,8 +6250,8 @@ null
 {
 "id": "T132",
 "src": [
-8672,
-8674
+8676,
+8678
 ],
 "heading": "h-giant-centipede-skirmisher",
 "heading_title": "Giant Centipede [Skirmisher]",
@@ -6304,8 +6304,8 @@ null
 {
 "id": "T133",
 "src": [
-8690,
-8692
+8694,
+8696
 ],
 "heading": "h-noxcloth-controller",
 "heading_title": "Noxcloth [Controller]",
@@ -6358,8 +6358,8 @@ null
 {
 "id": "T134",
 "src": [
-8708,
-8710
+8712,
+8714
 ],
 "heading": "h-troglodyte-soldier",
 "heading_title": "Troglodyte [Soldier]",
@@ -6412,8 +6412,8 @@ null
 {
 "id": "T135",
 "src": [
-8729,
-8731
+8733,
+8735
 ],
 "heading": "h-giant-black-widow-controller",
 "heading_title": "Giant Black Widow [Controller]",
@@ -6466,8 +6466,8 @@ null
 {
 "id": "T136",
 "src": [
-8751,
-8753
+8755,
+8757
 ],
 "heading": "h-gloomspore-jelly-brute",
 "heading_title": "Gloomspore Jelly [Brute]",
@@ -6520,8 +6520,8 @@ null
 {
 "id": "T137",
 "src": [
-8771,
-8773
+8775,
+8777
 ],
 "heading": "h-troglodyte-shaman-controller",
 "heading_title": "Troglodyte Shaman [Controller]",
@@ -6574,8 +6574,8 @@ null
 {
 "id": "T138",
 "src": [
-8790,
-8792
+8794,
+8796
 ],
 "heading": "h-vault-ooze-brute",
 "heading_title": "Vault Ooze [Brute]",
@@ -6628,8 +6628,8 @@ null
 {
 "id": "T139",
 "src": [
-8812,
-8814
+8816,
+8818
 ],
 "heading": "h-vrymk-skirmisher",
 "heading_title": "Vrymk [Skirmisher]",
@@ -6682,8 +6682,8 @@ null
 {
 "id": "T140",
 "src": [
-8834,
-8836
+8838,
+8840
 ],
 "heading": "h-deep-elf-warrior-skirmisher",
 "heading_title": "Deep Elf Warrior [Skirmisher]",
@@ -6736,8 +6736,8 @@ null
 {
 "id": "T141",
 "src": [
-8850,
-8852
+8854,
+8856
 ],
 "heading": "h-deep-elf-priest-controller",
 "heading_title": "Deep Elf Priest [Controller]",
@@ -6790,8 +6790,8 @@ null
 {
 "id": "T142",
 "src": [
-8868,
-8870
+8872,
+8874
 ],
 "heading": "h-gloom-hulk-brute",
 "heading_title": "Gloom Hulk [Brute]",
@@ -6844,8 +6844,8 @@ null
 {
 "id": "T143",
 "src": [
-8887,
-8889
+8891,
+8893
 ],
 "heading": "h-cryptstrangler-controller",
 "heading_title": "Cryptstrangler [Controller]",
@@ -6898,8 +6898,8 @@ null
 {
 "id": "T144",
 "src": [
-8905,
-8907
+8909,
+8911
 ],
 "heading": "h-elder-vrymk-elite",
 "heading_title": "Elder Vrymk [Elite]",
@@ -6952,8 +6952,8 @@ null
 {
 "id": "T145",
 "src": [
-8928,
-8930
+8932,
+8934
 ],
 "heading": "h-evil-eye-elite",
 "heading_title": "Evil Eye [Elite]",
@@ -7006,8 +7006,8 @@ null
 {
 "id": "T146",
 "src": [
-8949,
-8951
+8953,
+8955
 ],
 "heading": "h-burrowmaw-brute",
 "heading_title": "Burrowmaw [Brute]",
@@ -7060,8 +7060,8 @@ null
 {
 "id": "T147",
 "src": [
-8967,
-8969
+8971,
+8973
 ],
 "heading": "h-thought-eater-elite",
 "heading_title": "Thought-Eater [Elite]",
@@ -7114,8 +7114,8 @@ null
 {
 "id": "T148",
 "src": [
-8990,
-8992
+8994,
+8996
 ],
 "heading": "h-frozen-skeleton-minion",
 "heading_title": "Frozen Skeleton [Minion]",
@@ -7168,8 +7168,8 @@ null
 {
 "id": "T149",
 "src": [
-9007,
-9009
+9011,
+9013
 ],
 "heading": "h-snow-goblin-minion",
 "heading_title": "Snow Goblin [Minion]",
@@ -7222,8 +7222,8 @@ null
 {
 "id": "T150",
 "src": [
-9027,
-9029
+9031,
+9033
 ],
 "heading": "h-ratkin-scavenger-minion",
 "heading_title": "Ratkin Scavenger [Minion]",
@@ -7276,8 +7276,8 @@ null
 {
 "id": "T151",
 "src": [
-9044,
-9046
+9048,
+9050
 ],
 "heading": "h-tundra-wolf-skirmisher",
 "heading_title": "Tundra Wolf [Skirmisher]",
@@ -7330,8 +7330,8 @@ null
 {
 "id": "T152",
 "src": [
-9063,
-9065
+9067,
+9069
 ],
 "heading": "h-ratkin-warrior-soldier",
 "heading_title": "Ratkin Warrior [Soldier]",
@@ -7384,8 +7384,8 @@ null
 {
 "id": "T153",
 "src": [
-9079,
-9081
+9083,
+9085
 ],
 "heading": "h-white-court-guard-soldier",
 "heading_title": "White Court Guard [Soldier]",
@@ -7438,8 +7438,8 @@ null
 {
 "id": "T154",
 "src": [
-9096,
-9098
+9100,
+9102
 ],
 "heading": "h-ratkin-seer-controller",
 "heading_title": "Ratkin Seer [Controller]",
@@ -7492,8 +7492,8 @@ null
 {
 "id": "T155",
 "src": [
-9115,
-9117
+9119,
+9121
 ],
 "heading": "h-frost-ghoul-minion",
 "heading_title": "Frost Ghoul [Minion]",
@@ -7546,8 +7546,8 @@ null
 {
 "id": "T156",
 "src": [
-9133,
-9135
+9137,
+9139
 ],
 "heading": "h-white-court-archer-cannon",
 "heading_title": "White Court Archer [Cannon]",
@@ -7600,8 +7600,8 @@ null
 {
 "id": "T157",
 "src": [
-9149,
-9151
+9153,
+9155
 ],
 "heading": "h-blackfire-hound-skirmisher",
 "heading_title": "Blackfire Hound [Skirmisher]",
@@ -7654,8 +7654,8 @@ null
 {
 "id": "T158",
 "src": [
-9167,
-9169
+9171,
+9173
 ],
 "heading": "h-ice-wraith-cannon",
 "heading_title": "Ice Wraith [Cannon]",
@@ -7708,8 +7708,8 @@ null
 {
 "id": "T159",
 "src": [
-9186,
-9188
+9190,
+9192
 ],
 "heading": "h-white-court-sentinel-brute",
 "heading_title": "White Court Sentinel [Brute]",
@@ -7762,8 +7762,8 @@ null
 {
 "id": "T160",
 "src": [
-9206,
-9208
+9210,
+9212
 ],
 "heading": "h-ice-elemental-controller",
 "heading_title": "Ice Elemental [Controller]",
@@ -7816,8 +7816,8 @@ null
 {
 "id": "T161",
 "src": [
-9224,
-9226
+9228,
+9230
 ],
 "heading": "h-fallen-paladin-elite",
 "heading_title": "Fallen Paladin [Elite]",
@@ -7870,8 +7870,8 @@ null
 {
 "id": "T162",
 "src": [
-9246,
-9248
+9250,
+9252
 ],
 "heading": "h-werebear-brute",
 "heading_title": "Werebear [Brute]",
@@ -7924,8 +7924,8 @@ null
 {
 "id": "T163",
 "src": [
-9263,
-9265
+9267,
+9269
 ],
 "heading": "h-white-court-executioner-elite",
 "heading_title": "White Court Executioner [Elite]",
@@ -7978,8 +7978,8 @@ null
 {
 "id": "T164",
 "src": [
-9284,
-9286
+9288,
+9290
 ],
 "heading": "h-frost-wyvern-elite",
 "heading_title": "Frost Wyvern [Elite]",
@@ -8032,8 +8032,8 @@ null
 {
 "id": "T165",
 "src": [
-9307,
-9309
+9311,
+9313
 ],
 "heading": "h-gelid-fiend-brute",
 "heading_title": "Gelid Fiend [Brute]",
@@ -8086,8 +8086,8 @@ null
 {
 "id": "T166",
 "src": [
-9327,
-9329
+9331,
+9333
 ],
 "heading": "h-frost-giant-elite",
 "heading_title": "Frost Giant [Elite]",
@@ -8140,8 +8140,8 @@ null
 {
 "id": "T167",
 "src": [
-9346,
-9348
+9350,
+9352
 ],
 "heading": "h-white-dragon-elite",
 "heading_title": "White Dragon [Elite]",
@@ -8194,8 +8194,8 @@ null
 {
 "id": "T168",
 "src": [
-9370,
-9372
+9374,
+9376
 ],
 "heading": "h-fire-beetle-minion",
 "heading_title": "Fire Beetle [Minion]",
@@ -8248,8 +8248,8 @@ null
 {
 "id": "T169",
 "src": [
-9389,
-9391
+9393,
+9395
 ],
 "heading": "h-imp-skirmisher",
 "heading_title": "Imp [Skirmisher]",
@@ -8302,8 +8302,8 @@ null
 {
 "id": "T170",
 "src": [
-9406,
-9408
+9410,
+9412
 ],
 "heading": "h-skeleton-warrior-minion",
 "heading_title": "Skeleton Warrior [Minion]",
@@ -8356,8 +8356,8 @@ null
 {
 "id": "T171",
 "src": [
-9422,
-9424
+9426,
+9428
 ],
 "heading": "h-corpsehound-skirmisher",
 "heading_title": "Corpsehound [Skirmisher]",
@@ -8410,8 +8410,8 @@ null
 {
 "id": "T172",
 "src": [
-9439,
-9441
+9443,
+9445
 ],
 "heading": "h-gnoll-soldier",
 "heading_title": "Gnoll [Soldier]",
@@ -8464,8 +8464,8 @@ null
 {
 "id": "T173",
 "src": [
-9455,
-9457
+9459,
+9461
 ],
 "heading": "h-giant-scorpion-soldier",
 "heading_title": "Giant Scorpion [Soldier]",
@@ -8518,8 +8518,8 @@ null
 {
 "id": "T174",
 "src": [
-9473,
-9475
+9477,
+9479
 ],
 "heading": "h-skeleton-archer-cannon",
 "heading_title": "Skeleton Archer [Cannon]",
@@ -8572,8 +8572,8 @@ null
 {
 "id": "T175",
 "src": [
-9490,
-9492
+9494,
+9496
 ],
 "heading": "h-mummy-controller",
 "heading_title": "Mummy [Controller]",
@@ -8626,8 +8626,8 @@ null
 {
 "id": "T176",
 "src": [
-9510,
-9512
+9514,
+9516
 ],
 "heading": "h-skeletal-beast-skirmisher",
 "heading_title": "Skeletal Beast [Skirmisher]",
@@ -8680,8 +8680,8 @@ null
 {
 "id": "T177",
 "src": [
-9532,
-9534
+9536,
+9538
 ],
 "heading": "h-wind-elemental-skirmisher",
 "heading_title": "Wind Elemental [Skirmisher]",
@@ -8734,8 +8734,8 @@ null
 {
 "id": "T178",
 "src": [
-9550,
-9552
+9554,
+9556
 ],
 "heading": "h-desert-naga-controller",
 "heading_title": "Desert Naga [Controller]",
@@ -8788,8 +8788,8 @@ null
 {
 "id": "T179",
 "src": [
-9568,
-9570
+9572,
+9574
 ],
 "heading": "h-fire-elemental-cannon",
 "heading_title": "Fire Elemental [Cannon]",
@@ -8842,8 +8842,8 @@ null
 {
 "id": "T180",
 "src": [
-9585,
-9587
+9589,
+9591
 ],
 "heading": "h-giant-skeleton-brute",
 "heading_title": "Giant Skeleton [Brute]",
@@ -8896,8 +8896,8 @@ null
 {
 "id": "T181",
 "src": [
-9603,
-9605
+9607,
+9609
 ],
 "heading": "h-medusa-elite",
 "heading_title": "Medusa [Elite]",
@@ -8950,8 +8950,8 @@ null
 {
 "id": "T182",
 "src": [
-9623,
-9625
+9627,
+9629
 ],
 "heading": "h-tomb-necromancer-controller",
 "heading_title": "Tomb Necromancer [Controller]",
@@ -9004,8 +9004,8 @@ null
 {
 "id": "T183",
 "src": [
-9642,
-9644
+9646,
+9648
 ],
 "heading": "h-tomb-guardian-soldier",
 "heading_title": "Tomb Guardian [Soldier]",
@@ -9058,8 +9058,8 @@ null
 {
 "id": "T184",
 "src": [
-9664,
-9666
+9668,
+9670
 ],
 "heading": "h-brass-golem-brute",
 "heading_title": "Brass Golem [Brute]",
@@ -9112,8 +9112,8 @@ null
 {
 "id": "T185",
 "src": [
-9685,
-9687
+9689,
+9691
 ],
 "heading": "h-manticore-elite",
 "heading_title": "Manticore [Elite]",
@@ -9166,8 +9166,8 @@ null
 {
 "id": "T186",
 "src": [
-9707,
-9709
+9711,
+9713
 ],
 "heading": "h-demon-elite",
 "heading_title": "Demon [Elite]",
@@ -9220,8 +9220,8 @@ null
 {
 "id": "T187",
 "src": [
-9730,
-9732
+9734,
+9736
 ],
 "heading": "h-blue-dragon-elite",
 "heading_title": "Blue Dragon [Elite]",
@@ -9274,8 +9274,8 @@ null
 {
 "id": "T188",
 "src": [
-9754,
-9756
+9758,
+9760
 ],
 "heading": "h-bogling-minion",
 "heading_title": "Bogling [Minion]",
@@ -9328,8 +9328,8 @@ null
 {
 "id": "T189",
 "src": [
-9773,
-9775
+9777,
+9779
 ],
 "heading": "h-swamp-goblin-minion",
 "heading_title": "Swamp Goblin [Minion]",
@@ -9382,8 +9382,8 @@ null
 {
 "id": "T190",
 "src": [
-9795,
-9797
+9799,
+9801
 ],
 "heading": "h-zombie-minion",
 "heading_title": "Zombie [Minion]",
@@ -9436,8 +9436,8 @@ null
 {
 "id": "T191",
 "src": [
-9812,
-9814
+9816,
+9818
 ],
 "heading": "h-stirge-minion",
 "heading_title": "Stirge [Minion]",
@@ -9490,8 +9490,8 @@ null
 {
 "id": "T192",
 "src": [
-9830,
-9832
+9834,
+9836
 ],
 "heading": "h-will-o-wisp-cannon",
 "heading_title": "Will-o'-Wisp [Cannon]",
@@ -9544,8 +9544,8 @@ null
 {
 "id": "T193",
 "src": [
-9849,
-9851
+9853,
+9855
 ],
 "heading": "h-lizardfolk-warrior-soldier",
 "heading_title": "Lizardfolk Warrior [Soldier]",
@@ -9598,8 +9598,8 @@ null
 {
 "id": "T194",
 "src": [
-9867,
-9869
+9871,
+9873
 ],
 "heading": "h-lizardfolk-hunter-cannon",
 "heading_title": "Lizardfolk Hunter [Cannon]",
@@ -9652,8 +9652,8 @@ null
 {
 "id": "T195",
 "src": [
-9887,
-9889
+9891,
+9893
 ],
 "heading": "h-crocodile-skirmisher",
 "heading_title": "Crocodile [Skirmisher]",
@@ -9706,8 +9706,8 @@ null
 {
 "id": "T196",
 "src": [
-9905,
-9907
+9909,
+9911
 ],
 "heading": "h-lizardfolk-shaman-controller",
 "heading_title": "Lizardfolk Shaman [Controller]",
@@ -9760,8 +9760,8 @@ null
 {
 "id": "T197",
 "src": [
-9924,
-9926
+9928,
+9930
 ],
 "heading": "h-miasma-serpent-skirmisher",
 "heading_title": "Miasma Serpent [Skirmisher]",
@@ -9814,8 +9814,8 @@ null
 {
 "id": "T198",
 "src": [
-9946,
-9948
+9950,
+9952
 ],
 "heading": "h-swamp-naga-controller",
 "heading_title": "Swamp Naga [Controller]",
@@ -9868,8 +9868,8 @@ null
 {
 "id": "T199",
 "src": [
-9966,
-9968
+9970,
+9972
 ],
 "heading": "h-giant-constrictor-skirmisher",
 "heading_title": "Giant Constrictor [Skirmisher]",
@@ -9922,8 +9922,8 @@ null
 {
 "id": "T200",
 "src": [
-9986,
-9988
+9990,
+9992
 ],
 "heading": "h-shambling-mound-brute",
 "heading_title": "Shambling Mound [Brute]",
@@ -9976,8 +9976,8 @@ null
 {
 "id": "T201",
 "src": [
-10007,
-10009
+10011,
+10013
 ],
 "heading": "h-swamp-hag-controller",
 "heading_title": "Swamp Hag [Controller]",
@@ -10030,8 +10030,8 @@ null
 {
 "id": "T202",
 "src": [
-10026,
-10028
+10030,
+10032
 ],
 "heading": "h-banshee-controller",
 "heading_title": "Banshee [Controller]",
@@ -10084,8 +10084,8 @@ null
 {
 "id": "T203",
 "src": [
-10048,
-10050
+10052,
+10054
 ],
 "heading": "h-swamp-troll-brute",
 "heading_title": "Swamp Troll [Brute]",
@@ -10138,8 +10138,8 @@ null
 {
 "id": "T204",
 "src": [
-10069,
-10071
+10073,
+10075
 ],
 "heading": "h-hydra-elite",
 "heading_title": "Hydra [Elite]",
@@ -10192,8 +10192,8 @@ null
 {
 "id": "T205",
 "src": [
-10089,
-10091
+10093,
+10095
 ],
 "heading": "h-blackwater-wight-elite",
 "heading_title": "Blackwater Wight [Elite]",
@@ -10246,8 +10246,8 @@ null
 {
 "id": "T206",
 "src": [
-10111,
-10113
+10115,
+10117
 ],
 "heading": "h-mire-titan-brute",
 "heading_title": "Mire Titan [Brute]",
@@ -10300,8 +10300,8 @@ null
 {
 "id": "T207",
 "src": [
-10133,
-10135
+10137,
+10139
 ],
 "heading": "h-black-dragon-elite",
 "heading_title": "Black Dragon [Elite]",
@@ -10354,8 +10354,8 @@ null
 {
 "id": "T208",
 "src": [
-10181,
-10183
+10185,
+10187
 ],
 "heading": "h-the-ancient-void-dragon-boss",
 "heading_title": "The Ancient Void Dragon [Boss]",
@@ -10408,8 +10408,8 @@ null
 {
 "id": "T209",
 "src": [
-10205,
-10207
+10209,
+10211
 ],
 "heading": "h-the-hollow-crown-of-the-ashlands-boss",
 "heading_title": "The Hollow Crown of the Ashlands [Boss]",
@@ -10462,8 +10462,8 @@ null
 {
 "id": "T210",
 "src": [
-10227,
-10229
+10231,
+10233
 ],
 "heading": "h-the-last-colossus-boss",
 "heading_title": "The Last Colossus [Boss]",
@@ -10516,8 +10516,8 @@ null
 {
 "id": "T211",
 "src": [
-10249,
-10251
+10253,
+10255
 ],
 "heading": "h-avatar-of-the-old-growth-boss",
 "heading_title": "Avatar of the Old Growth [Boss]",
@@ -10570,8 +10570,8 @@ null
 {
 "id": "T212",
 "src": [
-10272,
-10274
+10276,
+10278
 ],
 "heading": "h-the-broodmother-prime-boss",
 "heading_title": "The Broodmother Prime [Boss]",
@@ -10624,8 +10624,8 @@ null
 {
 "id": "T213",
 "src": [
-10296,
-10298
+10300,
+10302
 ],
 "heading": "h-captain-veyr-of-the-forsaken-boss",
 "heading_title": "Captain Veyr of the Forsaken [Boss]",
@@ -10678,8 +10678,8 @@ null
 {
 "id": "T214",
 "src": [
-10318,
-10320
+10322,
+10324
 ],
 "heading": "h-the-frost-bailiff-magistrate-boss",
 "heading_title": "The Frost Bailiff Magistrate [Boss]",
@@ -10732,8 +10732,8 @@ null
 {
 "id": "T215",
 "src": [
-10340,
-10342
+10344,
+10346
 ],
 "heading": "h-the-sun-crowned-prince-boss",
 "heading_title": "The Sun-Crowned Prince [Boss]",
@@ -10786,8 +10786,8 @@ null
 {
 "id": "T216",
 "src": [
-10362,
-10364
+10366,
+10368
 ],
 "heading": "h-the-antlered-warden-of-the-tithe-boss",
 "heading_title": "The Antlered Warden of the Tithe [Boss]",
@@ -10840,8 +10840,8 @@ null
 {
 "id": "T217",
 "src": [
-10386,
-10388
+10390,
+10392
 ],
 "heading": "h-the-voice-beneath-the-bells-boss",
 "heading_title": "The Voice Beneath the Bells [Boss]",
@@ -10894,8 +10894,8 @@ null
 {
 "id": "T218",
 "src": [
-10409,
-10411
+10413,
+10415
 ],
 "heading": "h-maelthorn-the-verdant-boss",
 "heading_title": "Maelthorn the Verdant [Boss]",
@@ -10948,8 +10948,8 @@ null
 {
 "id": "T219",
 "src": [
-10435,
-10437
+10439,
+10441
 ],
 "heading": "h-sirrach-the-black-boss",
 "heading_title": "Sirrach the Black [Boss]",
@@ -11002,8 +11002,8 @@ null
 {
 "id": "T220",
 "src": [
-10461,
-10463
+10465,
+10467
 ],
 "heading": "h-visath-the-white-boss",
 "heading_title": "Visath the White [Boss]",
@@ -11056,8 +11056,8 @@ null
 {
 "id": "T221",
 "src": [
-10488,
-10490
+10492,
+10494
 ],
 "heading": "h-khorrun-the-dracolich-boss",
 "heading_title": "Khorrun the Dracolich [Boss]",
@@ -11110,8 +11110,8 @@ null
 {
 "id": "T222",
 "src": [
-10514,
-10516
+10518,
+10520
 ],
 "heading": "h-vossegar-of-the-flooded-cathedral-boss",
 "heading_title": "Vossegar of the Flooded Cathedral [Boss]",
@@ -11164,8 +11164,8 @@ null
 {
 "id": "T223",
 "src": [
-10553,
-10564
+10557,
+10568
 ],
 "heading": "h-greenmark-random-monster-table",
 "heading_title": "Greenmark Random Monster Table",
@@ -11213,8 +11213,8 @@ null
 {
 "id": "T224",
 "src": [
-10568,
-10579
+10572,
+10583
 ],
 "heading": "h-greenmark-random-monster-table",
 "heading_title": "Greenmark Random Monster Table",
@@ -11262,8 +11262,8 @@ null
 {
 "id": "T225",
 "src": [
-10583,
-10594
+10587,
+10598
 ],
 "heading": "h-greenmark-random-monster-table",
 "heading_title": "Greenmark Random Monster Table",
@@ -11311,8 +11311,8 @@ null
 {
 "id": "T226",
 "src": [
-10598,
-10609
+10602,
+10613
 ],
 "heading": "h-greenmark-random-monster-table",
 "heading_title": "Greenmark Random Monster Table",
@@ -11360,8 +11360,8 @@ null
 {
 "id": "T227",
 "src": [
-10613,
-10624
+10617,
+10628
 ],
 "heading": "h-greenmark-random-monster-table",
 "heading_title": "Greenmark Random Monster Table",
@@ -11409,8 +11409,8 @@ null
 {
 "id": "T228",
 "src": [
-10630,
-10641
+10634,
+10645
 ],
 "heading": "h-ashlands-random-monster-table",
 "heading_title": "Ashlands Random Monster Table",
@@ -11458,8 +11458,8 @@ null
 {
 "id": "T229",
 "src": [
-10645,
-10656
+10649,
+10660
 ],
 "heading": "h-ashlands-random-monster-table",
 "heading_title": "Ashlands Random Monster Table",
@@ -11507,8 +11507,8 @@ null
 {
 "id": "T230",
 "src": [
-10660,
-10671
+10664,
+10675
 ],
 "heading": "h-ashlands-random-monster-table",
 "heading_title": "Ashlands Random Monster Table",
@@ -11556,8 +11556,8 @@ null
 {
 "id": "T231",
 "src": [
-10675,
-10686
+10679,
+10690
 ],
 "heading": "h-ashlands-random-monster-table",
 "heading_title": "Ashlands Random Monster Table",
@@ -11605,8 +11605,8 @@ null
 {
 "id": "T232",
 "src": [
-10690,
-10701
+10694,
+10705
 ],
 "heading": "h-ashlands-random-monster-table",
 "heading_title": "Ashlands Random Monster Table",
@@ -11654,8 +11654,8 @@ null
 {
 "id": "T233",
 "src": [
-10707,
-10718
+10711,
+10722
 ],
 "heading": "h-undermarches-random-monster-table",
 "heading_title": "Undermarches Random Monster Table",
@@ -11703,8 +11703,8 @@ null
 {
 "id": "T234",
 "src": [
-10722,
-10733
+10726,
+10737
 ],
 "heading": "h-undermarches-random-monster-table",
 "heading_title": "Undermarches Random Monster Table",
@@ -11752,8 +11752,8 @@ null
 {
 "id": "T235",
 "src": [
-10737,
-10748
+10741,
+10752
 ],
 "heading": "h-undermarches-random-monster-table",
 "heading_title": "Undermarches Random Monster Table",
@@ -11801,8 +11801,8 @@ null
 {
 "id": "T236",
 "src": [
-10752,
-10763
+10756,
+10767
 ],
 "heading": "h-undermarches-random-monster-table",
 "heading_title": "Undermarches Random Monster Table",
@@ -11850,8 +11850,8 @@ null
 {
 "id": "T237",
 "src": [
-10767,
-10778
+10771,
+10782
 ],
 "heading": "h-undermarches-random-monster-table",
 "heading_title": "Undermarches Random Monster Table",
@@ -11899,8 +11899,8 @@ null
 {
 "id": "T238",
 "src": [
-10784,
-10795
+10788,
+10799
 ],
 "heading": "h-pale-city-random-monster-table",
 "heading_title": "Pale City Random Monster Table",
@@ -11948,8 +11948,8 @@ null
 {
 "id": "T239",
 "src": [
-10799,
-10810
+10803,
+10814
 ],
 "heading": "h-pale-city-random-monster-table",
 "heading_title": "Pale City Random Monster Table",
@@ -11997,8 +11997,8 @@ null
 {
 "id": "T240",
 "src": [
-10814,
-10825
+10818,
+10829
 ],
 "heading": "h-pale-city-random-monster-table",
 "heading_title": "Pale City Random Monster Table",
@@ -12046,8 +12046,8 @@ null
 {
 "id": "T241",
 "src": [
-10829,
-10840
+10833,
+10844
 ],
 "heading": "h-pale-city-random-monster-table",
 "heading_title": "Pale City Random Monster Table",
@@ -12095,8 +12095,8 @@ null
 {
 "id": "T242",
 "src": [
-10844,
-10855
+10848,
+10859
 ],
 "heading": "h-pale-city-random-monster-table",
 "heading_title": "Pale City Random Monster Table",
@@ -12144,8 +12144,8 @@ null
 {
 "id": "T243",
 "src": [
-10861,
-10872
+10865,
+10876
 ],
 "heading": "h-sun-drowned-random-monster-table",
 "heading_title": "Sun-Drowned Random Monster Table",
@@ -12193,8 +12193,8 @@ null
 {
 "id": "T244",
 "src": [
-10876,
-10887
+10880,
+10891
 ],
 "heading": "h-sun-drowned-random-monster-table",
 "heading_title": "Sun-Drowned Random Monster Table",
@@ -12242,8 +12242,8 @@ null
 {
 "id": "T245",
 "src": [
-10891,
-10902
+10895,
+10906
 ],
 "heading": "h-sun-drowned-random-monster-table",
 "heading_title": "Sun-Drowned Random Monster Table",
@@ -12291,8 +12291,8 @@ null
 {
 "id": "T246",
 "src": [
-10906,
-10917
+10910,
+10921
 ],
 "heading": "h-sun-drowned-random-monster-table",
 "heading_title": "Sun-Drowned Random Monster Table",
@@ -12340,8 +12340,8 @@ null
 {
 "id": "T247",
 "src": [
-10921,
-10932
+10925,
+10936
 ],
 "heading": "h-sun-drowned-random-monster-table",
 "heading_title": "Sun-Drowned Random Monster Table",
@@ -12389,8 +12389,8 @@ null
 {
 "id": "T248",
 "src": [
-10938,
-10949
+10942,
+10953
 ],
 "heading": "h-the-mire-random-monster-table",
 "heading_title": "The Mire Random Monster Table",
@@ -12438,8 +12438,8 @@ null
 {
 "id": "T249",
 "src": [
-10953,
-10964
+10957,
+10968
 ],
 "heading": "h-the-mire-random-monster-table",
 "heading_title": "The Mire Random Monster Table",
@@ -12487,8 +12487,8 @@ null
 {
 "id": "T250",
 "src": [
-10968,
-10979
+10972,
+10983
 ],
 "heading": "h-the-mire-random-monster-table",
 "heading_title": "The Mire Random Monster Table",
@@ -12536,8 +12536,8 @@ null
 {
 "id": "T251",
 "src": [
-10983,
-10994
+10987,
+10998
 ],
 "heading": "h-the-mire-random-monster-table",
 "heading_title": "The Mire Random Monster Table",
@@ -12585,8 +12585,8 @@ null
 {
 "id": "T252",
 "src": [
-10998,
-11009
+11002,
+11013
 ],
 "heading": "h-the-mire-random-monster-table",
 "heading_title": "The Mire Random Monster Table",
@@ -12634,8 +12634,8 @@ null
 {
 "id": "T253",
 "src": [
-11047,
-11066
+11051,
+11070
 ],
 "heading": "h-scenario-scaling-field-reference",
 "heading_title": "Scenario Scaling Field Reference",
@@ -12670,8 +12670,8 @@ null
 {
 "id": "T254",
 "src": [
-11084,
-11093
+11088,
+11097
 ],
 "heading": "h-random-direction",
 "heading_title": "Random Direction",
@@ -12707,8 +12707,8 @@ null
 {
 "id": "T255",
 "src": [
-11122,
-11159
+11126,
+11163
 ],
 "heading": "h-1011-climate-and-core-scenario-selection",
 "heading_title": "10.1.1 Climate and Core Scenario Selection",
@@ -12756,8 +12756,8 @@ null
 {
 "id": "T256",
 "src": [
-11937,
-11944
+11941,
+11948
 ],
 "heading": "h-climate-1-greenmark-weather-table",
 "heading_title": "Climate 1: Greenmark Weather Table",
@@ -12789,16 +12789,16 @@ null
 "col_avg_chars": [
 1.0,
 18.0,
-207.7
+203.2
 ],
 "row_lengths_ok": true,
-"cell_sha256": "0bebd6d00316767d1b90ee86b4d62bbfcf03fc3ecbd57bec02f4880198d2a4e1"
+"cell_sha256": "be79814a42e5acd94cc5b3a9065e18af2f81e28b108f4c2b81eee807c8214443"
 },
 {
 "id": "T257",
 "src": [
-11948,
-11955
+11952,
+11959
 ],
 "heading": "h-climate-2-ashlands-weather-table",
 "heading_title": "Climate 2: Ashlands Weather Table",
@@ -12830,16 +12830,16 @@ null
 "col_avg_chars": [
 1.0,
 16.0,
-209.8
+202.5
 ],
 "row_lengths_ok": true,
-"cell_sha256": "4e52e3104d178d02b9dd6635182a8c95db997f5aa66b86071f108043dcc2676d"
+"cell_sha256": "aef62bc853cb4689334c555e4ab888805abf4098fae8607f46120825cd95690b"
 },
 {
 "id": "T258",
 "src": [
-11961,
-11968
+11965,
+11972
 ],
 "heading": "h-climate-3-undermarches-cavern-conditions-table",
 "heading_title": "Climate 3: Undermarches Cavern Conditions Table",
@@ -12879,8 +12879,8 @@ null
 {
 "id": "T259",
 "src": [
-11972,
-11979
+11976,
+11983
 ],
 "heading": "h-climate-4-pale-city-weather-table",
 "heading_title": "Climate 4: Pale City Weather Table",
@@ -12920,8 +12920,8 @@ null
 {
 "id": "T260",
 "src": [
-11983,
-11990
+11987,
+11994
 ],
 "heading": "h-climate-5-sun-drowned-weather-table",
 "heading_title": "Climate 5: Sun-Drowned Weather Table",
@@ -12961,8 +12961,8 @@ null
 {
 "id": "T261",
 "src": [
-11994,
-12001
+11998,
+12005
 ],
 "heading": "h-climate-6-the-mire-weather-table",
 "heading_title": "Climate 6: The Mire Weather Table",
@@ -13002,8 +13002,8 @@ null
 {
 "id": "T262",
 "src": [
-12043,
-12045
+12047,
+12049
 ],
 "heading": "h-scenario-1-hunt-the-wild-beast-intro",
 "heading_title": "Scenario 1: Hunt the Wild Beast [Intro]",
@@ -13056,8 +13056,8 @@ null
 {
 "id": "T263",
 "src": [
-12113,
-12115
+12117,
+12119
 ],
 "heading": "h-scenario-2-the-whispering-grove",
 "heading_title": "Scenario 2: The Whispering Grove",
@@ -13110,8 +13110,8 @@ null
 {
 "id": "T264",
 "src": [
-12191,
-12193
+12195,
+12197
 ],
 "heading": "h-scenario-3-the-bandits-toll",
 "heading_title": "Scenario 3: The Bandit's Toll",
@@ -13164,8 +13164,8 @@ null
 {
 "id": "T265",
 "src": [
-12258,
-12260
+12262,
+12264
 ],
 "heading": "h-scenario-4-the-spiders-silk-route",
 "heading_title": "Scenario 4: The Spider's Silk Route",
@@ -13218,8 +13218,8 @@ null
 {
 "id": "T266",
 "src": [
-12333,
-12335
+12337,
+12339
 ],
 "heading": "h-scenario-5-the-ambushed-emissary",
 "heading_title": "Scenario 5: The Ambushed Emissary",
@@ -13272,8 +13272,8 @@ null
 {
 "id": "T267",
 "src": [
-12412,
-12414
+12416,
+12418
 ],
 "heading": "h-scenario-6-ritual-of-the-old-growth",
 "heading_title": "Scenario 6: Ritual of the Old Growth",
@@ -13326,8 +13326,8 @@ null
 {
 "id": "T268",
 "src": [
-12500,
-12502
+12504,
+12506
 ],
 "heading": "h-scenario-1-the-fallen-observatory-intro",
 "heading_title": "Scenario 1: The Fallen Observatory [Intro]",
@@ -13380,8 +13380,8 @@ null
 {
 "id": "T269",
 "src": [
-12564,
-12566
+12568,
+12570
 ],
 "heading": "h-scenario-2-the-guardians-test",
 "heading_title": "Scenario 2: The Guardian's Test",
@@ -13434,8 +13434,8 @@ null
 {
 "id": "T270",
 "src": [
-12697,
-12699
+12701,
+12703
 ],
 "heading": "h-scenario-4-the-sealed-archive",
 "heading_title": "Scenario 4: The Sealed Archive",
@@ -13488,8 +13488,8 @@ null
 {
 "id": "T271",
 "src": [
-12782,
-12784
+12786,
+12788
 ],
 "heading": "h-scenario-5-the-reliquary-of-broken-saints",
 "heading_title": "Scenario 5: The Reliquary of Broken Saints",
@@ -13542,8 +13542,8 @@ null
 {
 "id": "T272",
 "src": [
-12863,
-12865
+12867,
+12869
 ],
 "heading": "h-scenario-6-the-iron-vein-vault",
 "heading_title": "Scenario 6: The Iron-Vein Vault",
@@ -13596,8 +13596,8 @@ null
 {
 "id": "T273",
 "src": [
-12948,
-12950
+12952,
+12954
 ],
 "heading": "h-scenario-1-the-crystal-harvest-intro",
 "heading_title": "Scenario 1: The Crystal Harvest [Intro]",
@@ -13650,8 +13650,8 @@ null
 {
 "id": "T274",
 "src": [
-13016,
-13018
+13020,
+13022
 ],
 "heading": "h-scenario-2-the-chasm-crossing",
 "heading_title": "Scenario 2: The Chasm Crossing",
@@ -13704,8 +13704,8 @@ null
 {
 "id": "T275",
 "src": [
-13084,
-13086
+13088,
+13090
 ],
 "heading": "h-scenario-3-the-quake",
 "heading_title": "Scenario 3: The Quake",
@@ -13758,8 +13758,8 @@ null
 {
 "id": "T276",
 "src": [
-13157,
-13159
+13161,
+13163
 ],
 "heading": "h-scenario-4-the-undermarches-outpost-raid",
 "heading_title": "Scenario 4: The Undermarches Outpost Raid",
@@ -13812,8 +13812,8 @@ null
 {
 "id": "T277",
 "src": [
-13177,
-13179
+13181,
+13183
 ],
 "heading": "h-scenario-4-the-undermarches-outpost-raid",
 "heading_title": "Scenario 4: The Undermarches Outpost Raid",
@@ -13866,8 +13866,8 @@ null
 {
 "id": "T278",
 "src": [
-13193,
-13195
+13197,
+13199
 ],
 "heading": "h-scenario-4-the-undermarches-outpost-raid",
 "heading_title": "Scenario 4: The Undermarches Outpost Raid",
@@ -13920,8 +13920,8 @@ null
 {
 "id": "T279",
 "src": [
-13260,
-13262
+13264,
+13266
 ],
 "heading": "h-scenario-5-the-shadowed-under-passage",
 "heading_title": "Scenario 5: The Shadowed Under Passage",
@@ -13974,8 +13974,8 @@ null
 {
 "id": "T280",
 "src": [
-13335,
-13337
+13339,
+13341
 ],
 "heading": "h-scenario-6-the-ritual-of-shadow-binding",
 "heading_title": "Scenario 6: The Ritual of Shadow Binding",
@@ -14028,8 +14028,8 @@ null
 {
 "id": "T281",
 "src": [
-13370,
-13372
+13374,
+13376
 ],
 "heading": "h-scenario-6-the-ritual-of-shadow-binding",
 "heading_title": "Scenario 6: The Ritual of Shadow Binding",
@@ -14082,8 +14082,8 @@ null
 {
 "id": "T282",
 "src": [
-13486,
-13488
+13490,
+13492
 ],
 "heading": "h-scenario-2-the-alchemists-frozen-laboratory",
 "heading_title": "Scenario 2: The Alchemist's Frozen Laboratory",
@@ -14136,8 +14136,8 @@ null
 {
 "id": "T283",
 "src": [
-13556,
-13558
+13560,
+13562
 ],
 "heading": "h-scenario-3-the-haunted-mausoleum",
 "heading_title": "Scenario 3: The Haunted Mausoleum",
@@ -14190,8 +14190,8 @@ null
 {
 "id": "T284",
 "src": [
-13625,
-13627
+13629,
+13631
 ],
 "heading": "h-scenario-4-the-clockwork-menagerie",
 "heading_title": "Scenario 4: The Clockwork Menagerie",
@@ -14244,8 +14244,8 @@ null
 {
 "id": "T285",
 "src": [
-13685,
-13687
+13689,
+13691
 ],
 "heading": "h-scenario-5-the-ice-wyrms-hoard",
 "heading_title": "Scenario 5: The Ice Wyrm's Hoard",
@@ -14298,8 +14298,8 @@ null
 {
 "id": "T286",
 "src": [
-13766,
-13768
+13770,
+13772
 ],
 "heading": "h-scenario-6-the-icebound-court",
 "heading_title": "Scenario 6: The Icebound Court",
@@ -14352,8 +14352,8 @@ null
 {
 "id": "T287",
 "src": [
-13839,
-13841
+13843,
+13845
 ],
 "heading": "h-scenario-1-the-oasis-raiders-intro",
 "heading_title": "Scenario 1: The Oasis Raiders [Intro]",
@@ -14406,8 +14406,8 @@ null
 {
 "id": "T288",
 "src": [
-13906,
-13908
+13910,
+13912
 ],
 "heading": "h-scenario-2-the-cinder-lords-lost-brazier",
 "heading_title": "Scenario 2: The Cinder Lord's Lost Brazier",
@@ -14460,8 +14460,8 @@ null
 {
 "id": "T289",
 "src": [
-13971,
-13973
+13975,
+13977
 ],
 "heading": "h-scenario-3-tomb-of-the-sunken-kings",
 "heading_title": "Scenario 3: Tomb of the Sunken Kings",
@@ -14514,8 +14514,8 @@ null
 {
 "id": "T290",
 "src": [
-14039,
-14041
+14043,
+14045
 ],
 "heading": "h-scenario-4-the-sandwyrms-lair",
 "heading_title": "Scenario 4: The Sandwyrm's Lair",
@@ -14568,8 +14568,8 @@ null
 {
 "id": "T291",
 "src": [
-14103,
-14105
+14107,
+14109
 ],
 "heading": "h-scenario-5-the-cursed-colossus-of-the-waste",
 "heading_title": "Scenario 5: The Cursed Colossus of the Waste",
@@ -14622,8 +14622,8 @@ null
 {
 "id": "T292",
 "src": [
-14183,
-14185
+14187,
+14189
 ],
 "heading": "h-scenario-6-the-cinder-lords-obsidian-prison",
 "heading_title": "Scenario 6: The Cinder Lord's Obsidian Prison",
@@ -14676,8 +14676,8 @@ null
 {
 "id": "T293",
 "src": [
-14269,
-14271
+14273,
+14275
 ],
 "heading": "h-scenario-1-the-reliquary-of-edrava-salttide-intro",
 "heading_title": "Scenario 1: The Reliquary of Edrava Salttide [Intro]",
@@ -14730,8 +14730,8 @@ null
 {
 "id": "T294",
 "src": [
-14346,
-14348
+14350,
+14352
 ],
 "heading": "h-scenario-2-the-lizardfolks-stolen-offerings",
 "heading_title": "Scenario 2: The Lizardfolk's Stolen Offerings",
@@ -14784,8 +14784,8 @@ null
 {
 "id": "T295",
 "src": [
-14418,
-14420
+14422,
+14424
 ],
 "heading": "h-scenario-3-the-mire-titans-fen",
 "heading_title": "Scenario 3: The Mire Titan's Fen",
@@ -14838,8 +14838,8 @@ null
 {
 "id": "T296",
 "src": [
-14493,
-14495
+14497,
+14499
 ],
 "heading": "h-scenario-4-the-blighted-heartwood",
 "heading_title": "Scenario 4: The Blighted Heartwood",
@@ -14892,8 +14892,8 @@ null
 {
 "id": "T297",
 "src": [
-14572,
-14574
+14576,
+14578
 ],
 "heading": "h-scenario-5-salttides-reckoning",
 "heading_title": "Scenario 5: Salttide's Reckoning",
@@ -14946,8 +14946,8 @@ null
 {
 "id": "T298",
 "src": [
-14649,
-14651
+14653,
+14655
 ],
 "heading": "h-scenario-6-the-serpents-sunken-hoard",
 "heading_title": "Scenario 6: The Serpent's Sunken Hoard",
@@ -15000,8 +15000,8 @@ null
 {
 "id": "T299",
 "src": [
-14760,
-14767
+14764,
+14771
 ],
 "heading": "h-1055-solo-and-cooperative-scenario-conversion",
 "heading_title": "10.5.5 Solo and Cooperative Scenario Conversion",
@@ -15041,8 +15041,8 @@ null
 {
 "id": "T300",
 "src": [
-14787,
-14792
+14791,
+14796
 ],
 "heading": "h-1057-pressure-clocks",
 "heading_title": "10.5.7 Pressure Clocks",
@@ -15094,8 +15094,8 @@ null
 {
 "id": "T301",
 "src": [
-14922,
-14928
+14926,
+14932
 ],
 "heading": "h-1064-final-random-monster-groups",
 "heading_title": "10.6.4 Final Random Monster Groups",
@@ -15131,8 +15131,8 @@ null
 {
 "id": "T302",
 "src": [
-14936,
-14941
+14940,
+14945
 ],
 "heading": "h-scenario-specific-monster-coin-value",
 "heading_title": "Scenario-Specific Monster Coin Value",
@@ -15169,8 +15169,8 @@ null
 {
 "id": "T303",
 "src": [
-15004,
-15009
+15008,
+15013
 ],
 "heading": "h-10610-extraction-clauses",
 "heading_title": "10.6.10 Extraction Clauses",
@@ -15206,8 +15206,8 @@ null
 {
 "id": "T304",
 "src": [
-15049,
-15055
+15053,
+15059
 ],
 "heading": "h-campaign-reference",
 "heading_title": "Campaign Reference",
@@ -15247,8 +15247,8 @@ null
 {
 "id": "T305",
 "src": [
-15189,
-15200
+15193,
+15204
 ],
 "heading": "h-retirement-payout",
 "heading_title": "Retirement Payout",
@@ -15285,8 +15285,8 @@ null
 {
 "id": "T306",
 "src": [
-15252,
-15263
+15256,
+15267
 ],
 "heading": "h-1121-phase-1-expedition",
 "heading_title": "11.2.1 Phase 1: Expedition",
@@ -15322,8 +15322,8 @@ null
 {
 "id": "T307",
 "src": [
-15303,
-15324
+15307,
+15328
 ],
 "heading": "h-climate-1-greenmark-journey-table-1d20",
 "heading_title": "Climate 1: Greenmark Journey Table (1d20)",
@@ -15360,8 +15360,8 @@ null
 {
 "id": "T308",
 "src": [
-15328,
-15349
+15332,
+15353
 ],
 "heading": "h-climate-2-ashlands-journey-table-1d20",
 "heading_title": "Climate 2: Ashlands Journey Table (1d20)",
@@ -15398,8 +15398,8 @@ null
 {
 "id": "T309",
 "src": [
-15353,
-15374
+15357,
+15378
 ],
 "heading": "h-climate-3-undermarches-journey-table-1d20",
 "heading_title": "Climate 3: Undermarches Journey Table (1d20)",
@@ -15436,8 +15436,8 @@ null
 {
 "id": "T310",
 "src": [
-15378,
-15399
+15382,
+15403
 ],
 "heading": "h-climate-4-pale-city-journey-table-1d20",
 "heading_title": "Climate 4: Pale City Journey Table (1d20)",
@@ -15474,8 +15474,8 @@ null
 {
 "id": "T311",
 "src": [
-15403,
-15424
+15407,
+15428
 ],
 "heading": "h-climate-5-sun-drowned-journey-table-1d20",
 "heading_title": "Climate 5: Sun-Drowned Journey Table (1d20)",
@@ -15512,8 +15512,8 @@ null
 {
 "id": "T312",
 "src": [
-15428,
-15449
+15432,
+15453
 ],
 "heading": "h-climate-6-the-mire-journey-table-1d20",
 "heading_title": "Climate 6: The Mire Journey Table (1d20)",
@@ -15550,8 +15550,8 @@ null
 {
 "id": "T313",
 "src": [
-15543,
-15548
+15547,
+15552
 ],
 "heading": "h-active-hirelings-and-summon-limits",
 "heading_title": "Active Hirelings and Summon Limits",
@@ -15592,8 +15592,8 @@ null
 {
 "id": "T314",
 "src": [
-15564,
-15580
+15568,
+15584
 ],
 "heading": "h-specialist-hireling-roster",
 "heading_title": "Specialist Hireling Roster",
@@ -15658,8 +15658,8 @@ null
 {
 "id": "T315",
 "src": [
-15617,
-15629
+15621,
+15633
 ],
 "heading": "h-animal-companion-roster",
 "heading_title": "Animal Companion Roster",
@@ -15724,8 +15724,8 @@ null
 {
 "id": "T316",
 "src": [
-15643,
-15650
+15647,
+15654
 ],
 "heading": "h-113-building-the-stronghold",
 "heading_title": "11.3 Building the Stronghold",
@@ -15760,8 +15760,8 @@ null
 {
 "id": "T317",
 "src": [
-15770,
-15781
+15774,
+15785
 ],
 "heading": "h-114-legendary-veterans",
 "heading_title": "11.4 Legendary Veterans",
@@ -15796,8 +15796,8 @@ null
 {
 "id": "T318",
 "src": [
-15846,
-15853
+15850,
+15857
 ],
 "heading": "h-triumph-minions",
 "heading_title": "Triumph Minions",
@@ -15838,8 +15838,8 @@ null
 {
 "id": "T319",
 "src": [
-16099,
-16116
+16103,
+16120
 ],
 "heading": "h-triumph-boss-table",
 "heading_title": "Triumph Boss Table",
@@ -15876,8 +15876,8 @@ null
 {
 "id": "T320",
 "src": [
-16134,
-16142
+16138,
+16146
 ],
 "heading": "h-a1-learn-to-play-at-a-glance",
 "heading_title": "A.1 Learn to Play At a Glance",
@@ -15912,8 +15912,8 @@ null
 {
 "id": "T321",
 "src": [
-16407,
-16418
+16411,
+16422
 ],
 "heading": "h-initial-positions-and-values",
 "heading_title": "Initial Positions and Values",
@@ -15949,8 +15949,8 @@ null
 {
 "id": "T322",
 "src": [
-16574,
-16584
+16578,
+16588
 ],
 "heading": "h-b1-basic-mode-at-a-glance",
 "heading_title": "B.1 Basic Mode At a Glance",
@@ -15985,8 +15985,8 @@ null
 {
 "id": "T323",
 "src": [
-16642,
-16667
+16646,
+16671
 ],
 "heading": "h-b4-basic-mode-hero-profiles",
 "heading_title": "B.4 Basic Mode Hero Profiles",
@@ -16033,8 +16033,8 @@ null
 {
 "id": "T324",
 "src": [
-17691,
-17705
+17695,
+17709
 ],
 "heading": "h-quick-reference-index",
 "heading_title": "Quick Reference Index",
@@ -16069,8 +16069,8 @@ null
 {
 "id": "T325",
 "src": [
-17760,
-17773
+17764,
+17777
 ],
 "heading": "h-c2-core-terms-and-abbreviations",
 "heading_title": "C.2 Core Terms and Abbreviations",
@@ -16105,8 +16105,8 @@ null
 {
 "id": "T326",
 "src": [
-17783,
-17801
+17787,
+17805
 ],
 "heading": "h-c3-conditions-summary",
 "heading_title": "C.3 Conditions Summary",
@@ -16145,8 +16145,8 @@ null
 {
 "id": "T327",
 "src": [
-17809,
-17824
+17813,
+17828
 ],
 "heading": "h-c4-actions-summary",
 "heading_title": "C.4 Actions Summary",
@@ -16185,8 +16185,8 @@ null
 {
 "id": "T328",
 "src": [
-17832,
-17837
+17836,
+17841
 ],
 "heading": "h-c5-reactions-summary",
 "heading_title": "C.5 Reactions Summary",
@@ -16229,8 +16229,8 @@ null
 {
 "id": "T329",
 "src": [
-18399,
-18404
+18403,
+18408
 ],
 "heading": "h-size-and-footprints-summary",
 "heading_title": "Size and Footprints Summary",
@@ -16266,8 +16266,8 @@ null
 {
 "id": "T330",
 "src": [
-18427,
-18439
+18431,
+18443
 ],
 "heading": "h-universal-actions",
 "heading_title": "Universal Actions",
@@ -16308,8 +16308,8 @@ null
 {
 "id": "T331",
 "src": [
-18459,
-18464
+18463,
+18468
 ],
 "heading": "h-combat-reactions",
 "heading_title": "Combat Reactions",
@@ -16354,8 +16354,8 @@ null
 {
 "id": "T332",
 "src": [
-18483,
-18500
+18487,
+18504
 ],
 "heading": "h-conditions",
 "heading_title": "Conditions",
@@ -16392,8 +16392,8 @@ null
 {
 "id": "T333",
 "src": [
-18533,
-18544
+18537,
+18548
 ],
 "heading": "h-c14-equipment-quick-reference",
 "heading_title": "C.14 Equipment Quick Reference",

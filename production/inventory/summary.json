@@ -1,8 +1,8 @@
 {
- "sha256": "fad164ee8adf3fb6739d79945773a3283919ae504d731d980f3270ae3304a59e",
- "bytes": 1535554,
- "lines": 18549,
- "words_whitespace": 254350,
+ "sha256": "d28f5ec8ef438b43d278ec59c8faf195204266606bcfad1cbd8258088f48ec55",
+ "bytes": 1537574,
+ "lines": 18553,
+ "words_whitespace": 254696,
  "headings_by_level": {
   "1": 1,
   "2": 15,
@@ -16,14 +16,14 @@
  "tables_ragged_rows": [],
  "constructs": {
   "heading": 846,
-  "inline_text": 59635,
-  "para": 8079,
-  "inline_strong": 24741,
+  "inline_text": 59675,
+  "para": 8081,
+  "inline_strong": 24767,
   "hr": 42,
   "list": 1579,
   "list_item": 4393,
   "inline_link": 149,
-  "inline_em": 448,
+  "inline_em": 452,
   "table": 333,
   "inline_soft": 672,
   "quote": 1,
@@ -43,7 +43,7 @@
   {
    "id": "h-1-the-world-of-heraldry",
    "title": "1. The World of Heraldry",
-   "blocks": 130
+   "blocks": 132
   },
   {
    "id": "h-2-core-mechanics",
