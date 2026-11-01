@@ -14938,7 +14938,7 @@
    ],
    "brief": {
     "identity": "Three callings in three objects lying on a flat stone: a caster's quarterstaff, a soldier's sheathed shortsword, and a cleric's holy symbol on its chain.",
-    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Seen from slightly above: a broad flat stone at the centre; the shortsword in its scabbard lies flat along it, the quarterstaff lies flat across it at an angle, and the holy symbol lies on the stone with its chain coiled beside them.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Seen from slightly above: a broad flat stone, wider than the staff is long, at the centre; the three objects lie side by side on it, parallel, with a finger's gap between them: the quarterstaff at the back, the sheathed shortsword in the middle, the holy symbol and its coiled chain at the front. No object touches, crosses or rests on another.",
     "details": [
      "Plain ash quarterstaff, scuffed and iron-free, lying flat on the stone and touching it along its length",
      "Shortsword in a worn scabbard with a wrapped grip, lying flat on the stone",
@@ -14948,8 +14948,8 @@
     ],
     "must": [
      "Only these three objects",
-     "All three objects rest flat on the stone with their shadows directly beneath them; nothing is raised or floating",
-     "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air"
+     "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air",
+     "All three objects lie flat on the stone side by side, none crossing or resting on another, each touching the stone along its whole length with its shadow directly beneath it; both ends of the staff are on the stone"
     ],
     "atmosphere": "Different roads into the same dark.",
     "avoid": [
@@ -14964,7 +14964,7 @@
     ],
     "revised": "Owner review 2026-11-01: regenerate from scratch with realistic anatomy, physics and object construction"
    },
-   "spec_sha256": "e9a0f6a1e35f3be470a34c43ee3e665fe56b2419aa32c8d8cdb75c3b27295c74"
+   "spec_sha256": "3fbdb304184756fa7cb4e489f3aba0eac0657269b8a28f27095b4df6c869f4e3"
   },
   {
    "id": "ART-END-GENERAL-TALENTS",

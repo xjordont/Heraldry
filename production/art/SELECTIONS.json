@@ -11986,7 +11986,7 @@
   "route": "gpt",
   "spec_sha256": "591f3ee3bc493dde7d96a91d157cd8493c628222c52247ea7dcb87e543f17dfa",
   "prompt_sha256": "36895ffde707d8ab60abf7374a49ba9cfa110d9dfed9705d3ac341b28e46d896",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T01:35:12+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12010,7 +12010,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.067
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T02:26:54+00:00"
  },
  "ART-END-ACTION-POINTS-AND-SUMMONS": {
   "family": "world",
@@ -12363,7 +12364,7 @@
   "route": "gpt",
   "spec_sha256": "3497554e9d0ecc1530d547da34a07d68ded621e60c708b35d95438284b4efdf7",
   "prompt_sha256": "182c505019ab1e1f3f57b6b3cb88f5a443ceedd03f81dbc0db38bb5586f9c685",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T01:37:04+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12389,7 +12390,8 @@
    ],
    "max_print_w_in_300ppi": 5.083
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T02:26:54+00:00"
  },
  "ART-END-GENERAL-TALENTS": {
   "family": "world",
@@ -12398,7 +12400,7 @@
   "route": "gpt",
   "spec_sha256": "c540acae663055fc7d8d54ca0070228452fd859366615db758dfbf633181f705",
   "prompt_sha256": "2dfb0f64559d0aa8de5518d5fd380a2e78f243eb96b361416a192d94a03dc713",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T01:38:47+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12422,7 +12424,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.007
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T02:26:54+00:00"
  },
  "ART-END-HERO-ADVANCEMENT": {
   "family": "world",
@@ -12431,7 +12434,7 @@
   "route": "gpt",
   "spec_sha256": "cb699a7048aa30e8189519e226af5fdbd6a122a3e88f11782e2af18b164db2bd",
   "prompt_sha256": "337cd6d20da839c7ac64d7b446f70ce410a3e3a7da196866e43bddca1b809d0a",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T01:40:34+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12457,7 +12460,8 @@
    ],
    "max_print_w_in_300ppi": 4.997
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T02:26:54+00:00"
  },
  "ART-END-HERO-CLASSES": {
   "family": "world",
@@ -12674,7 +12678,7 @@
   "route": "gpt",
   "spec_sha256": "12402e0a1a4c5732ce3d4d8f1cb8960a66088a412fd9fea90f2f3765f492ffd6",
   "prompt_sha256": "627ae9b979c83603267cf7e084a5ffdb514d2630452a7de8843b10187b13cbce",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T01:42:01+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12700,7 +12704,8 @@
    ],
    "max_print_w_in_300ppi": 5.023
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T02:26:54+00:00"
  },
  "ART-END-PARTY-STRUCTURE": {
   "family": "world",
@@ -12885,7 +12890,7 @@
   "route": "gpt",
   "spec_sha256": "fc30721ca1dde9f9cc5c9f32ed5a33b98f8870e09253ab6f07354529a31818fb",
   "prompt_sha256": "9e70cb6b2eae930e7bbfcffccf344dd26ab1287b50318a706f8de87eaf76ae1f",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T01:43:44+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12909,7 +12914,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.047
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T02:26:54+00:00"
  },
  "ART-END-THE-BESTIARY": {
   "family": "world",
@@ -12990,7 +12996,7 @@
   "route": "gpt",
   "spec_sha256": "9709a1108cfe7bec83f49afa0dc7be3a8b1a4980559ee2acb9aa82352e241b29",
   "prompt_sha256": "5f0146635dbba90d8e70318589e44d1fe0cb999e999173ee1608a51185786bb1",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T01:45:16+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13016,7 +13022,8 @@
    ],
    "max_print_w_in_300ppi": 5.017
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T02:26:54+00:00"
  },
  "ART-END-WEATHER-TABLES-BY-CLIMATE": {
   "family": "world",
@@ -13059,7 +13066,7 @@
   "route": "gpt",
   "spec_sha256": "0a2aabef23a525071bccef697458136b28a9047bc9542f9e7b16704df5d06165",
   "prompt_sha256": "56ed0b79755f0f8220534d3e79db0e876fe7ea469cef9eda59db97f16c604125",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T01:46:59+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13085,7 +13092,8 @@
    ],
    "max_print_w_in_300ppi": 5.113
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T02:26:54+00:00"
  },
  "ART-END-DIVINE-PRAYERS": {
   "family": "tradition",
@@ -13094,7 +13102,7 @@
   "route": "gpt",
   "spec_sha256": "1a477a1a8c1d265dd7c1a0fcf447753b44e31dcd4f68f7bdfbadfe9b3e9dc88b",
   "prompt_sha256": "4c94e98442a73e7f81ec9003ef6ad8ce628e56cde0cf8fdb8d7b19acffc0aeb3",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T01:49:06+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13120,7 +13128,8 @@
    ],
    "max_print_w_in_300ppi": 5.063
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T02:26:54+00:00"
  },
  "ART-END-DRUIDIC-RITUALS": {
   "family": "tradition",
@@ -13405,7 +13414,7 @@
   "route": "gpt",
   "spec_sha256": "263b852ecf6298df3b3eb588cf7dd3b002eaf1bf71a57cafd4f5ca33b0afc26a",
   "prompt_sha256": "962463a7d61ca0b9dda116766cdbca03be0a23656bc56afd9320fe05c5f6e9c0",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T01:50:45+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13429,7 +13438,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.827
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T02:26:54+00:00"
  },
  "ART-END-PERMANENT-SPECIAL-ITEMS": {
   "family": "item",
@@ -13472,7 +13482,7 @@
   "route": "gpt",
   "spec_sha256": "e9a0f6a1e35f3be470a34c43ee3e665fe56b2419aa32c8d8cdb75c3b27295c74",
   "prompt_sha256": "eae1957bfd133034a1f56f02e8ef9beee15c3f2f1a2f110a0b2560a6e07b5b87",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-11-01T01:52:27+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13498,7 +13508,9 @@
    ],
    "max_print_w_in_300ppi": 4.88
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-11-01T02:26:55+00:00",
+  "rejected_reason": "The staff is propped across the scabbard with most of its length overhanging the stone, so it would tip; regenerate from the rewritten prompt with all three objects lying side by side flat on the stone, none crossing another."
  },
  "ART-END-RANGED-WEAPONS": {
   "family": "item",
