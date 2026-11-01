@@ -801,10 +801,10 @@ Do not draw:
 ONE MOVES, ONE WAITS - GRITTY OLD-SCHOOL INK ILLUSTRATION
 Create a gritty, old-school black-and-white ink illustration of Two Heroes of one party taking turns at a ruined corner: one runs across an open gap while the other kneels behind the wall with a loaded light crossbow held ready, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view from the front left and a little above: the kneeling Hero in the foreground at the left behind a ruined wall corner, the crossbow aimed past the viewer's right so its bow arms spread out to both sides across the front of the stock; the running Hero smaller in the open gap beyond at the right.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. View from just behind and above the kneeling Hero's right shoulder, looking past them toward the open gap: the crossbow points straight away from the viewer, so its bow arms span left and right across the picture like the top of a letter T, resting on the wall top; beyond it the running Hero crosses the gap, smaller, from left to right.
 SUBJECT DETAILS
-* Light crossbow: a wooden stock with a short bow (the prod) fixed crosswise across its front end, the two bow arms spreading out left and right like a letter T; the bowstring runs from one bow tip back to the trigger catch on the stock and out to the other bow tip in a V; a bolt lies in the groove
-* Kneeling Hero in a gambeson: the butt of the crossbow against the shoulder, one hand under the fore-end, the other at the trigger lever, aiming along it past the wall edge
+* Light crossbow seen from behind: the wooden stock runs straight away from the viewer; at its far end a short curved bow spans left to right across the stock like a T; the bowstring is one straight taut line from the left bow tip back to the trigger catch and on to the right bow tip, forming a shallow V; a bolt lies in the groove along the stock
+* Kneeling Hero in a gambeson seen from behind: the butt of the crossbow at the right shoulder, the right hand at the trigger lever under the stock, the left hand under the stock near the wall top
 * Running Hero in a leather coat, mid-stride, shortsword in the right hand, cloak flying
 * Corner of a ruined wall with a fallen lintel
 * Cracked paving in the open gap
@@ -812,7 +812,7 @@ Must be shown exactly:
 * Two Heroes only, clearly on the same side
 * Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure
 * Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
-* The crossbow's bow arms are clearly visible spreading to both sides of the front of the stock, and the string runs from each bow tip back to the trigger catch; it must not look like a rifle
+* The crossbow reads as a crossbow: its bow arms span left and right across the far end of the stock, both tips visible, and the string runs straight from each tip back to the trigger catch; nothing points toward the viewer
 HUMAN ACTIVITY
 * One Hero crosses the gap
 * The other holds still, aiming, waiting for the reply
@@ -852,7 +852,7 @@ Do not draw:
 * No gore.
 ```
 
-### 16. The dropped torch ✗
+### 16. The dropped torch ✓
 
 `ART-END-ACTION-BASICS`
 
@@ -1161,7 +1161,7 @@ Do not draw:
 * No banners or smoke.
 ```
 
-### 27. Camouflage ✗
+### 27. Camouflage ✓
 
 `ART-END-GENERAL-TALENTS`
 
@@ -1462,7 +1462,7 @@ Do not draw:
 * Not the Reliquary of Broken Saints nave.
 ```
 
-### 38. The ratkin swarm ✗
+### 38. The ratkin swarm ✓
 
 `ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING`
 
@@ -4289,7 +4289,7 @@ Do not draw:
 * No figures.
 ```
 
-### 5. Staff, sword, and symbol ✗
+### 5. Staff, sword, and symbol ✓
 
 `ART-END-RANDOM-CLASS-TABLE`
 
@@ -4933,7 +4933,7 @@ Do not draw:
 * Do not use the Tier 1 pebble ring.
 ```
 
-### 16. Steadfast Word ✗
+### 16. Steadfast Word ✓
 
 `ART-END-DIVINE-PRAYERS`
 

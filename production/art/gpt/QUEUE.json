@@ -1,94 +1,14 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-11-01T02:30:21+00:00",
+ "generated_at": "2026-11-01T02:48:40+00:00",
  "max_references": 5,
  "push_every": 1,
  "review_every": 10,
- "receipts_base": 500,
+ "receipts_base": 506,
  "target_pixels": 1572864,
- "count": 6,
+ "count": 1,
  "items": [
-  {
-   "id": "ART-END-ACTION-BASICS",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "The dropped torch",
-   "prompt": "production/art/gpt/prompts/ART-END-ACTION-BASICS.txt",
-   "prompt_sha256": "4aa0370546d51cae26a790be996524bbcccbaba961998c25b9defa454a96dd31",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "One Hero only; the shapes stay vague",
-    "Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure",
-    "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air",
-    "Both arms stay in front of the body; the sword is entirely out of its scabbard, one straight blade continuing from one crossguard in the hand"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "No detailed Monster.",
-    "Not the Undercroft or the Shadowed Under Passage.",
-    "No glow effect around the torch."
-   ]
-  },
-  {
-   "id": "ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "The ratkin swarm",
-   "prompt": "production/art/gpt/prompts/ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING.txt",
-   "prompt_sha256": "9dacc7b6fc8f4a3453fb270bd0ea132d13fe34095c72bec3e001a56e404ffc64",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "The ratkin read as one swarm, not separate portraits",
-    "Ratkin are upright humanoid rat-folk about the size of a Halfling, never ordinary rats on all fours",
-    "Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure",
-    "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "Not the Ratkin ancestry or bestiary portraits.",
-    "No ordinary rats or animals on all fours.",
-    "No gore.",
-    "No Heroes in frame."
-   ]
-  },
-  {
-   "id": "ART-END-GENERAL-TALENTS",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "Camouflage",
-   "prompt": "production/art/gpt/prompts/ART-END-GENERAL-TALENTS.txt",
-   "prompt_sha256": "1d05423f363d6fe1a89fd01bc02211b247ff72f7bd4fb6a0de927882c4a9e69e",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "The archer is mostly hidden; the cover dominates",
-    "Both halves of the bowstring are fully visible and each ends exactly at a bow tip; no fern covers the string or the lower limb",
-    "The bow is one whole bow with its string attached at both tips and the arrow on the string",
-    "Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure",
-    "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "No full figure.",
-    "Not the Scout background or the Ranger class figure.",
-    "No enemies."
-   ]
-  },
   {
    "id": "ART-END-PARTY-PHASE",
    "family": "world",
@@ -96,7 +16,7 @@
    "ref_set": "none",
    "title": "One moves, one waits",
    "prompt": "production/art/gpt/prompts/ART-END-PARTY-PHASE.txt",
-   "prompt_sha256": "5b40304ef6d8bc7c35d11e73b2b7968cf3e6004a61f49743c6feef35956229d0",
+   "prompt_sha256": "e8f9183dcb45763b05dcc636cbc8944b906d91bd2a2e94d2d08bfd1c8a188d59",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [],
@@ -106,64 +26,13 @@
     "Two Heroes only, clearly on the same side",
     "Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure",
     "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air",
-    "The crossbow's bow arms are clearly visible spreading to both sides of the front of the stock, and the string runs from each bow tip back to the trigger catch; it must not look like a rifle"
+    "The crossbow reads as a crossbow: its bow arms span left and right across the far end of the stock, both tips visible, and the string runs straight from each tip back to the trigger catch; nothing points toward the viewer"
    ],
    "avoid": [
     "No lettering, numbers, dice, game tokens, or rulebook pages.",
     "No enemies in frame.",
     "Not the chapter 3 dawn gathering.",
     "No banners."
-   ]
-  },
-  {
-   "id": "ART-END-DIVINE-PRAYERS",
-   "family": "tradition",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "Steadfast Word",
-   "prompt": "production/art/gpt/prompts/ART-END-DIVINE-PRAYERS.txt",
-   "prompt_sha256": "712b456c354d453179c5f93d375ea2daa0d2a443745f0eceb0eff96d4584f817",
-   "size": "1536x1024",
-   "print_w_in": 2.6,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "Exactly two figures; the Paladin is lifting, not striking",
-    "Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure",
-    "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air",
-    "The only contact is one hand on one upper arm; every hand belongs visibly to one arm and no two arms join or merge"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "No halo, sunburst or radiant glow.",
-    "Not the Tier 1 lantern-healing priest or the Tier 2 roadside shrine.",
-    "No longsword drawn and no enemy in frame."
-   ]
-  },
-  {
-   "id": "ART-END-RANDOM-CLASS-TABLE",
-   "family": "item",
-   "register": "still",
-   "ref_set": "none",
-   "title": "Staff, sword, and symbol",
-   "prompt": "production/art/gpt/prompts/ART-END-RANDOM-CLASS-TABLE.txt",
-   "prompt_sha256": "600920ee8b5af474ed24a69f7d264043f1717eeb5bb22b0bff945fccfb93c0e7",
-   "size": "1536x1024",
-   "print_w_in": 2.6,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "Only these three objects",
-    "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air",
-    "All three objects lie flat on the stone side by side, none crossing or resting on another, each touching the stone along its whole length with its shadow directly beneath it; both ends of the staff are on the stone"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "Not the Magic in the Dying Lands altar still life.",
-    "No runes or glyphs.",
-    "No glow."
    ]
   }
  ]

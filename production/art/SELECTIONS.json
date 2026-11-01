@@ -11986,7 +11986,7 @@
   "route": "gpt",
   "spec_sha256": "c68bdd864a2b2edd9323502424e1e7b6718a02bf77fe52486644d1c62473fa4d",
   "prompt_sha256": "4aa0370546d51cae26a790be996524bbcccbaba961998c25b9defa454a96dd31",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T02:35:54+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12010,7 +12010,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.907
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T02:48:39+00:00"
  },
  "ART-END-ACTION-POINTS-AND-SUMMONS": {
   "family": "world",
@@ -12363,7 +12364,7 @@
   "route": "gpt",
   "spec_sha256": "6cffe264afc6569ebd3a90a7c56e5cec7f9fcde4dcbf6fbc26d91903d0ce9375",
   "prompt_sha256": "9dacc7b6fc8f4a3453fb270bd0ea132d13fe34095c72bec3e001a56e404ffc64",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T02:38:08+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12389,7 +12390,8 @@
    ],
    "max_print_w_in_300ppi": 5.02
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T02:48:39+00:00"
  },
  "ART-END-GENERAL-TALENTS": {
   "family": "world",
@@ -12398,7 +12400,7 @@
   "route": "gpt",
   "spec_sha256": "cf544a278cfb1f4f754ba27fb717c443db3c9738ad9920b245d59881f20860b5",
   "prompt_sha256": "1d05423f363d6fe1a89fd01bc02211b247ff72f7bd4fb6a0de927882c4a9e69e",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T02:40:17+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12422,7 +12424,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.05
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T02:48:39+00:00"
  },
  "ART-END-HERO-ADVANCEMENT": {
   "family": "world",
@@ -12675,7 +12678,7 @@
   "route": "gpt",
   "spec_sha256": "432046012181556530f8253d550e99053b7d4c4cfd80cdfdb0172e3946229795",
   "prompt_sha256": "5b40304ef6d8bc7c35d11e73b2b7968cf3e6004a61f49743c6feef35956229d0",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-11-01T02:42:26+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12701,7 +12704,9 @@
    ],
    "max_print_w_in_300ppi": 4.98
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-11-01T02:48:39+00:00",
+  "rejected_reason": "The crossbow still has a bow arm pointing at the viewer and no clear V of string to both bow tips; regenerate from the rewritten prompt, seen from behind the archer so the bow spans the picture like a T."
  },
  "ART-END-PARTY-STRUCTURE": {
   "family": "world",
@@ -13098,7 +13103,7 @@
   "route": "gpt",
   "spec_sha256": "73b710bf7d2ec68a9f2c318f0b442f52cf1b5f8e308a8bff417074ed56e777fd",
   "prompt_sha256": "712b456c354d453179c5f93d375ea2daa0d2a443745f0eceb0eff96d4584f817",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T02:44:45+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13124,7 +13129,8 @@
    ],
    "max_print_w_in_300ppi": 5.053
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T02:48:39+00:00"
  },
  "ART-END-DRUIDIC-RITUALS": {
   "family": "tradition",
@@ -13477,7 +13483,7 @@
   "route": "gpt",
   "spec_sha256": "3fbdb304184756fa7cb4e489f3aba0eac0657269b8a28f27095b4df6c869f4e3",
   "prompt_sha256": "600920ee8b5af474ed24a69f7d264043f1717eeb5bb22b0bff945fccfb93c0e7",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T02:46:47+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13501,7 +13507,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.02
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T02:48:39+00:00"
  },
  "ART-END-RANGED-WEAPONS": {
   "family": "item",
