@@ -13475,17 +13475,17 @@
   "title": "Staff, sword, and symbol",
   "heading_id": "h-611-random-class-table",
   "route": "gpt",
-  "spec_sha256": "e9a0f6a1e35f3be470a34c43ee3e665fe56b2419aa32c8d8cdb75c3b27295c74",
-  "prompt_sha256": "eae1957bfd133034a1f56f02e8ef9beee15c3f2f1a2f110a0b2560a6e07b5b87",
-  "status": "rejected",
-  "received_at": "2026-11-01T01:52:27+00:00",
+  "spec_sha256": "3fbdb304184756fa7cb4e489f3aba0eac0657269b8a28f27095b4df6c869f4e3",
+  "prompt_sha256": "600920ee8b5af474ed24a69f7d264043f1717eeb5bb22b0bff945fccfb93c0e7",
+  "status": "received",
+  "received_at": "2026-11-01T02:46:47+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Staff crosses sword and extends beyond stone; colour and grey wash warnings.",
+  "notes": "Both ends of the staff extend beyond the stone rather than touching it along its whole length. Check warns of 4% tinted ink pixels and 11% midtones.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-RANDOM-CLASS-TABLE.png",
-   "sha256": "09868a3ab22a8de7e3f4f5ec108108ea0b143086c1ae65412b4569fcaffcbd24",
+   "sha256": "53c14c2376a9f2208e6514fc29b641025a712051d90cdbe70e993c5ad63a9ab1",
    "px": [
     1536,
     1024
@@ -13493,19 +13493,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-RANDOM-CLASS-TABLE.png",
-   "sha256": "a9173169a7863d23a9525c56dfb324591cae54928f100d71b9244cb4625232af",
+   "sha256": "cee84dd90c41ee73d0f3d145a92a8a01ff74edb3b27e3fc83d2eb328e911fccb",
    "px": [
-    1464,
-    762
+    1506,
+    650
    ],
-   "flags": [
-    "colour"
-   ],
-   "max_print_w_in_300ppi": 4.88
+   "flags": [],
+   "max_print_w_in_300ppi": 5.02
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-11-01T02:26:55+00:00",
-  "rejected_reason": "The staff is propped across the scabbard with most of its length overhanging the stone, so it would tip; regenerate from the rewritten prompt with all three objects lying side by side flat on the stone, none crossing another."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-RANGED-WEAPONS": {
   "family": "item",
