@@ -11984,17 +11984,17 @@
   "title": "The dropped torch",
   "heading_id": "h-41-action-basics",
   "route": "gpt",
-  "spec_sha256": "4afb6a8e5da5ac6467d3b4e980523bae059eac67746f1c42f75afcfd22912951",
-  "prompt_sha256": "0641ce2d3afcad469b75500fbad8ef5cf2630a4bdfd6f91be6417c2adc823892",
-  "status": "rejected",
-  "received_at": "2026-10-31T20:02:41+00:00",
+  "spec_sha256": "591f3ee3bc493dde7d96a91d157cd8493c628222c52247ea7dcb87e543f17dfa",
+  "prompt_sha256": "36895ffde707d8ab60abf7374a49ba9cfa110d9dfed9705d3ac341b28e46d896",
+  "status": "received",
+  "received_at": "2026-11-01T01:35:12+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Correction: one shortsword emerges from one left-hip scabbard as the right hand crosses the front of the body to draw it forward and up; no hand behind the back or second scabbard. Keep the falling torch and two vague shapes. Flags: nine percent tinted pixels, blade not visibly emerging, and faint shadows.",
+  "notes": "Torch floats unsupported as prompt specifies; tinted ink warning.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-ACTION-BASICS.png",
-   "sha256": "d31d02a3d77643eb5dd06a78f0298cf805f469e951e6809013c614c1233f8d69",
+   "sha256": "212ace4c6a163bbd6bfe5feca08f730248cc6e7a513aaf2c734c83f60bbeec3b",
    "px": [
     1536,
     1024
@@ -12002,18 +12002,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-ACTION-BASICS.png",
-   "sha256": "b0a9f8dea3a6b6ea5785d1aee18f45e47884990ba024e6341eea68736ea9dfd7",
+   "sha256": "629265d39f62f15dee53b3df3e090937f8c7acabb831d20016d7f6991754b26c",
    "px": [
-    1495,
-    1011
+    1520,
+    998
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.983
+   "max_print_w_in_300ppi": 5.067
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T20:40:58+00:00",
-  "rejected_at": "2026-11-01T01:21:30+00:00",
-  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-ACTION-POINTS-AND-SUMMONS": {
   "family": "world",
