@@ -1,5 +1,9 @@
 # Production state - RC527 source, main
 
+## Book build with the 47 tailpieces - 2026-11-01
+
+Owner instruction: "Build the book with the tailpieces." Candidate build 11 (`RC527-candidate-11`) passed every automated check, but a search of its PDF found only 40 of the 47 tailpieces. Two layout faults were fixed: `tools/build_book.py` never emitted end art after a one-column unit, and `typst/heraldry.typ` dropped any tailpiece whose full printed height at its set width is under the 1.6 in minimum, which excluded the seven wide equipment still lifes (Random Class Table, Ranged Weapons, Scrolls, Adventuring Equipment, Permanent Special Items, Critical Hits, Reading a Scenario). A wide piece now prints at its full set size when it fits. A local build places all 47 and stays 618 pages; text never moves. A new candidate build follows.
+
 ## Second owner review: five more tailpieces rebuilt - 2026-11-01
 
 The owner circled construction faults the reviewer had passed in five regenerated tailpieces: the Camouflage bowstring not reaching the lower tip, the dropped-torch sword floating out of its scabbard, Steadfast Word's merged forearms, the ratkin's dangling boot, and the One moves crossbow with no visible bow arms. Their briefs now stage the hard parts simply (a fully drawn sword and empty scabbard, a hand on the upper arm, the boot under the arm, a three-quarter view that shows the crossbow's bow, both bowstring halves in clear view) and they are queued with Staff, sword and symbol. The batch card adds a construction trace. 41 of 47 approved.
