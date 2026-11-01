@@ -1,10 +1,10 @@
 {
   "status": "PASS",
   "pdf": "/home/runner/work/Heraldry/Heraldry/dist/Heraldry_RC527_inkjet-borderless.pdf",
-  "pages": 618,
-  "text_spans_checked": 88964,
+  "pages": 625,
+  "text_spans_checked": 89475,
   "font_resources_checked": 13,
-  "lowest_art_ppi": 336.0,
+  "lowest_art_ppi": 300.0,
   "checks": [
     "Letter portrait boxes/rotation",
     "minimum text size",
