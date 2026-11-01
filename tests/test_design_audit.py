@@ -92,10 +92,11 @@ class CompositionPolicy(unittest.TestCase):
         head = {"id": "h-11", "b": {"level": 3, "src": [1, 1], "title": "1.1 What is Heraldry Skirmish?"}, "s": "#heading(level: 2)[1.1 What is Heraldry Skirmish?]"}
         node = {"level": 3, "id": "h-11", "head": head, "children": [], "title": "1.1 What is Heraldry Skirmish?"}
         for share, expected in ((True, False), (False, True)):
-            book.out, book.first_section_pending, book.share_opener = [], True, share
+            book.out, book.first_section_pending, book.share_opener, book.flow_next_flush = [], True, share, False
             book.emit_x(node, [], False)
             out = "".join(book.out)
             self.assertEqual("#pagebreak(weak: true)" in out, expected)
+            self.assertEqual(book.flow_next_flush, share)      # a shared first section opens in natural flow
             # the head spans the frame: a page-fit unit carries it as its first full-width part,
             # an over-height section emits it in the outer flow
             self.assertTrue("#section-head[" in out or '("f", [#heading(level: 2)' in out, out)
@@ -152,6 +153,20 @@ class CompositionPolicy(unittest.TestCase):
         out = emit([intro, table], {"T1": {"h1": 200.0, "h2": 200.0}})
         self.assertIn("#section-head[", out)
         self.assertNotIn("#full-opening", out)
+
+    def test_shared_opener_segment_ignores_the_balance_plan_once(self):
+        book = Book.__new__(Book)
+        book.out, book.block_map, book.seg_count, book.seg_sigs = [], [], 0, {}
+        book.piece_heads, book.bare_heads = {}, set()
+        pieces = [({"type": "para", "id": f"p{i}", "src": [i, i]}, f"Paragraph {i}.\n\n") for i in range(4)]
+        from build_book import segment_signature
+        plan = {"0": [segment_signature(pieces), 2], "1": [segment_signature(pieces), 2]}
+        book.balance, book.flow_next_flush = plan, True
+        book.flush(list(pieces))
+        self.assertTrue(book.out[-1].startswith("#seg["))          # the plan is set aside for this segment
+        self.assertFalse(book.flow_next_flush)
+        book.flush(list(pieces))
+        self.assertTrue(book.out[-1].startswith("#flowtail(") or "#flowtail(" in book.out[-1])   # later segments balance again
 
     def test_marker_only_tail_is_emitted_raw_so_it_cannot_open_a_blank_page(self):
         book = Book.__new__(Book)
