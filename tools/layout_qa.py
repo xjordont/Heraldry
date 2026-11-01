@@ -5,13 +5,16 @@ Detectors flag pages for visual review; they do not prove good layout."""
 import argparse, json
 from pathlib import Path
 import pymupdf
-from layout_profile import PAGE_WIDTH_PT, PAGE_HEIGHT_PT, MARGIN_TOP_PT, MARGIN_BOTTOM_PT, TOKENS
+from layout_profile import PAGE_WIDTH_PT, PAGE_HEIGHT_PT, MARGIN_TOP_PT, MARGIN_BOTTOM_PT, MARGIN_OUTSIDE_PT, TOKENS
 from layout_diagnostics import page_diagnostics
 
 W, H = PAGE_WIDTH_PT, PAGE_HEIGHT_PT
 SAFE = TOKENS["page"]["essential_edge_safe_pt"]
 TOP, BOT = MARGIN_TOP_PT, H - MARGIN_BOTTOM_PT
-TAB = 0.42 * 72   # design v4 thumb-tab strip
+# The thumb-tab strip: the outer margin plus the pennant's paper halo. The old 0.42 in strip was
+# narrower than the pennant, so its drawing counted as body content on every recto and the
+# near-empty detector never fired there (design audit 2026-11-01).
+TAB = MARGIN_OUTSIDE_PT + TOKENS["ornament"].get("tab_halo_pt", 0)
 
 
 def lines_of(page, fonts=False):
@@ -80,11 +83,14 @@ def main():
         if n >= first_body_page:
             for t in stranded_headings(page):
                 flags.append({"page": n, "code": "stranded_heading", "text": t})
-        body = [r for r, t, s in ls if TOP - 2 < r.y0 and r.y1 < BOT + 2 and TAB < r.x0 < W - TAB]
+        # a body line overlaps the frame: left-column lines start exactly at the margin, so an open test
+        # on x0 would drop them and the page would read as empty (local build 2026-11-01)
+        body = [r for r, t, s in ls if TOP - 2 < r.y0 and r.y1 < BOT + 2 and r.x1 > TAB and r.x0 < W - TAB]
         # furniture (running-head rules, folio shield, tab) draws on every page, so only art or drawings
         # inside the body frame count as content
         body_art = [im for im in page.get_image_info() if im["bbox"][1] > TOP and im["bbox"][3] - im["bbox"][1] > 40]
-        body_drw = [dr for dr in page.get_drawings() if dr["rect"].y0 > TOP + 4 and dr["rect"].y1 < BOT - 4 and TAB < dr["rect"].x0 < W - TAB]
+        body_drw = [dr for dr in page.get_drawings() if dr["rect"].y0 > TOP + 4 and dr["rect"].y1 < BOT - 4
+                    and dr["rect"].x0 < W - TAB and dr["rect"].x1 > TAB and dr["rect"].width > 4]
         # a deliberate blank verso before a chapter opener (Chapter 1 starts on a recto) is book convention
         blank_verso = not body and n % 2 == 0 and n < len(doc) and "Chapter " in doc[n].get_text()[:400]
         if n >= first_body_page and len(body) < 6 and not body_art and not body_drw and not blank_verso:
@@ -92,12 +98,28 @@ def main():
     codes = {}
     for f in flags:
         codes[f["code"]] = codes.get(f["code"], 0) + 1
+    # Sparse pages by chapter (outline level 1): a review list for the white-space programme.
+    chapters = [(page, title) for level, title, page in doc.get_toc(simple=True) if level == 1 and page > 0]
+    def chapter_of(n):
+        current = "front matter"
+        for page, title in chapters:
+            if page <= n:
+                current = title
+        return current
+    opener_pages = {page for page, _ in chapters}
+    sparse_pages = [d["page"] for d in diagnostics if d.get("sparse") and d["page"] not in opener_pages]
+    by_chapter = {}
+    for n in sparse_pages:
+        by_chapter.setdefault(chapter_of(n), []).append(n)
     rep = {"pdf": a.pdf, "pages": len(doc), "counts": codes, "flagged_pages": sorted({f["page"] for f in flags}), "flags": flags[:400],
+           "sparse_pages": {"count": len(sparse_pages), "pages": sparse_pages, "by_chapter": by_chapter,
+                            "method": "vertical fill under 55% and fewer than 50 text lines, chapter openers excluded; page-background furniture (thumb tab, opener frame) is not counted as content"},
            "density_triage": diagnostics,
            "density_method": "Diagnostic only: vertical union of text, raster and vector bounds clipped to body; bounding boxes overestimate occupied ink. Sparse pages, column imbalance and short paragraphs require visual inspection; deliberate starts, blank verso and artwork are not automatic failures."}
     doc.close()
     Path(a.report).write_text(json.dumps(rep, indent=1, ensure_ascii=False))
-    print(json.dumps({"pages": rep["pages"], "counts": codes, "flagged_pages": rep["flagged_pages"][:60]}))
+    print(json.dumps({"pages": rep["pages"], "counts": codes, "flagged_pages": rep["flagged_pages"][:60],
+                      "sparse_pages": len(sparse_pages)}))
 
 
 if __name__ == "__main__":

@@ -28,13 +28,25 @@ def validate_measurement_binding(units, positions_binding, root=ROOT):
     measure_sha = hashlib.sha256((root / "typst/measure.typ").read_bytes()).hexdigest()
     if identity.get("content_sha256") != measure_sha:
         raise ValueError("Stale generated unit measurement source; rebuild")
-    if set(rows) != set(units.get("expected_unit_ids", [])):
+    probes = composition_probes(rows)
+    if set(rows) - set(probes) != set(units.get("expected_unit_ids", [])):
         raise ValueError("Measurement coverage differs from expected source-unit inventory")
     for unit in units["units"]:
         actual = rows.get(unit["id"], {})
         if any(unit.get(k) != actual.get(k) for k in ("h1", "h2")):
             raise ValueError("Keep audit heights differ from measured heights: " + unit["id"])
     return binding
+
+
+PROBE_PREFIXES = ("opener:",)
+
+
+def composition_probes(rows):
+    """Measurement rows that are composition probes, not source units: the chapter opener with its
+    introduction (`opener:<chapter id>`), measured so the composer can decide whether the first
+    section shares the opener page (design audit 2026-11-01, D-02 b). They carry no keep obligation
+    and are set aside before the source-unit coverage check."""
+    return [key for key in rows if key.startswith(PROBE_PREFIXES)]
 
 
 def analyze_units(units, positions, pdf_pages):

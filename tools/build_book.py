@@ -76,24 +76,37 @@ def load_end_art(art_ids):
     """Art set at the end of a unit, in white space its last page would otherwise leave empty
     (owner 2026-10-30). Basic Mode Hero portraits close their profiles; catalogue tailpieces
     (`end_art`, from production/art/END_ART_PLAN.json) close their sections once approved.
-    Returns {heading id: (art id, path, width pt, aspect)}."""
+    Returns {heading id: (art id, path, width pt, aspect, maximum width pt)}. A tailpiece may grow past
+    its family width to the gap it closes, up to its 300 ppi maximum and the design cap (D-02 f); Hero
+    portraits keep their family width."""
     from PIL import Image
     cat = json.loads((ROOT / "production/art/SPOT_CATALOG.json").read_text())["entries"]
-    wanted = {e["heading_id"]: e["id"] for e in cat
+    cap = float(json.loads((ROOT / "config/design_tokens.json").read_text()).get("art", {}).get("tailpiece_max_width_in", 0)) * 72
+    wanted = {e["heading_id"]: (e["id"], bool(e.get("end_art"))) for e in cat
               if (e.get("family") == "hero" or e.get("end_art")) and e.get("heading_id")}
     out = {}
-    for head, aid in wanted.items():
+    for head, (aid, tailpiece) in wanted.items():
         if aid not in art_ids:
             continue                   # not approved yet: the space stays white
         rel, w_in = art_ids[aid]
         with Image.open(ROOT / rel[3:]) as image:
-            aspect = image.size[1] / image.size[0]
-        out[head] = (aid, rel, w_in * 72, aspect)
+            wpx, hpx = image.size
+        aspect = hpx / wpx
+        w = w_in * 72
+        wmax = max(w, min(wpx / 300 * 72, cap)) if tailpiece and cap > 0 else w
+        out[head] = (aid, rel, w, aspect, wmax)
     return out
 
 
 FLOAT_FIGS = set(json.loads((ROOT / "config/design_tokens.json").read_text()).get("layout", {}).get("float_figures", []))
 TABLE_SCOPE_POLICIES = json.loads((ROOT / "config/design_tokens.json").read_text()).get('layout', {}).get('table_scope_policies', {})
+# Composition policy (owner approval 2026-11-01): numbered section heads span the frame, the first section
+# may share the chapter-opener page, reference appendices run on, and short tails pull back.
+LAYOUT_TOKENS = json.loads((ROOT / "config/design_tokens.json").read_text()).get("layout", {})
+SECTION_HEADS_FULL = bool(LAYOUT_TOKENS.get("section_heads_full_width", False))
+RUN_ON_CHAPTERS = set(LAYOUT_TOKENS.get("run_on_chapters", []))
+OPENER_SHARE_FREE = float(LAYOUT_TOKENS.get("opener_share_free_fraction", 0))
+
 BUILD = ROOT / "build"
 MAP = ROOT / "production/mappings"
 
@@ -661,6 +674,11 @@ class Book:
                 art = f"({lit('../' + str(f.relative_to(ROOT)))}, {wpx / 300:.3f}in, {hpx / 300:.3f}in)"
         self.out.append(f"#chapter-opener({numlit}, [#{lit(rest)}], {lit(h['id'])}, lead: {('[' + lead + ']') if lead else 'none'}, art: {art})\n")
         self.out.append(self.tags(h["id"]) + "\n")
+        self.run_on = ch["id"] in RUN_ON_CHAPTERS          # D-02 c: sections of this chapter run on
+        self.first_section_pending = True                   # D-02 b: the first section may share the opener page
+        self.share_opener = False
+        self.opener_id = h["id"]
+        self.opener_src = f"#opener-body({numlit}, [#{lit(rest)}], art: {art}, lead: {('[' + lead + ']') if lead else 'none'})"
         self.emit_chapter_body(blocks[i:])
 
     # ------------------------------------------------------------- keep-unit layout
@@ -699,8 +717,12 @@ class Book:
                 continue
             if b["type"] == "table":
                 introduction = False
-                duplicate_title = bool(items and items[-1]['typ'] == 'heading' and
-                    self.table_titles.get(b['id']) == items[-1]['b'].get('title'))
+                # The visible heading names the table, so the identity line is hidden on the opening page;
+                # a short run-in label between them ("APL 1–2 (d10)") does not change that (D-08).
+                named_by = items[-1]['b'] if items and items[-1]['typ'] == 'heading' else (
+                    items[-2]['b'] if len(items) >= 2 and items[-2]['typ'] == 'heading'
+                    and items[-1]['s'].startswith('#runin[') and items[-1]['kind'] == 'c' else None)
+                duplicate_title = bool(named_by and self.table_titles.get(b['id']) == named_by.get('title'))
                 s, scope = self.table(b, initial_title=not duplicate_title)
                 if items and items[-1]["s"].startswith("#runin[") and items[-1]["kind"] == "c":
                     lab = items.pop()
@@ -772,7 +794,11 @@ class Book:
             tracked = marked and not outer and self.measurable(n)
             prefix = f"#umark({lit(n['id'])}, \"s\")" if tracked else ''
             if "head" in n:
-                add("c", prefix + n["head"]["s"], True)
+                if outer and SECTION_HEADS_FULL and n["head"].get("b", {}).get("level") == 3:
+                    parts.append(("f", [prefix + n["head"]["s"]]))   # the section head spans the frame (D-01)
+                    glue[0] = False
+                else:
+                    add("c", prefix + n["head"]["s"], True)
                 for c in n["children"]:
                     walk(c)
             else:
@@ -840,12 +866,29 @@ class Book:
         prev_heading_only = True     # chapter opener counts as the start of the opening composition
         intro_open = True
         mark = None
+        # The opener and its introduction are measured as one full-width run (the measurement pass
+        # records them like any unit), so the sharing decision is deterministic (D-02 b).
+        intro_items = [c for c in root["children"] if "head" not in c and c["kind"] == "f"]
+        leading = []
+        for c in root["children"]:
+            if "head" in c or c["kind"] != "f":
+                break
+            leading.append(c)
+        opener_key = f"opener:{getattr(self, 'opener_id', 'none')}"
+        if hasattr(self, "opener_src") and opener_key not in self.requested_units:
+            self.requested_units.add(opener_key)
+            parts = [("f", [self.opener_src + "".join(c["s"] for c in leading)])]
+            self.measure_requests.append(f"#munit({lit(opener_key)}, ({self.parts_typst(parts)},))\n")
         for c in root["children"]:
             if intro_open and ("head" in c or c["kind"] != "f"):
                 # End of the chapter's opening flavour: the opener uses this mark to see whether its
                 # introduction fits beside the art or needs an opener spread.
                 mark = len(self.out)
-                self.out.append('#intro-end(solo: "auto")\n' if "head" in c else "#intro-end()\n")
+                if "head" in c:
+                    self.share_opener = self.opener_shares(opener_key, c)
+                    self.out.append("#intro-end(solo: false)\n" if self.share_opener else '#intro-end(solo: "auto")\n')
+                else:
+                    self.out.append("#intro-end()\n")
                 intro_open = False
             cur, prev_heading_only = self.emit_x(c, cur, prev_heading_only)
         self.flush(cur)
@@ -856,12 +899,43 @@ class Book:
             # Nothing but the opener shares its page: the first section starts a fresh page.
             self.out[mark] = "#intro-end(solo: true)\n"
 
+    def first_piece_fits(self, piece):
+        """True when the first column piece after a run-on opening is prose, or a measured unit no
+        taller than half a frame (a subsection counts by its column height)."""
+        if piece is None:
+            return True
+        if "head" in piece or self.measurable(piece):
+            m = getattr(self, "measures", {}).get(piece["id"])
+            return bool(m) and m["h1"] <= FRAME_FIT / 2
+        return piece.get("kind") == "c"
+
+    def opener_shares(self, opener_key, first):
+        """True when the first numbered section starts on the chapter-opener page (owner approval
+        2026-11-01, D-02 b): the measured opener and introduction leave more than the token fraction of
+        the frame free, and a page-fit first section fits in that free space. Decided from the
+        measurement pass, so it never depends on a position read during layout."""
+        if OPENER_SHARE_FREE <= 0 or not SECTION_HEADS_FULL or getattr(self, "run_on", False):
+            return False
+        measures = getattr(self, "measures", {})
+        opener = measures.get(opener_key)
+        if not opener or first.get("level") != 3:
+            return False
+        free = FRAME_FIT - opener["h2"]
+        if free < OPENER_SHARE_FREE * FRAME_H:
+            return False
+        section = measures.get(first["id"])
+        if section and section["h2"] <= FRAME_FIT:
+            return section["h2"] <= free       # a page-fit unit must fit beside the opener, or it moves whole
+        return True
+
     def request_measure(self, u):
         if u['id'] not in self.requested_units:
             self.requested_units.add(u['id'])
             self.measure_requests.append(f"#munit({lit(u['id'])}, ({self.parts_typst(self.flat_parts(u))},))\n")
 
     def is_fresh(self, n):
+        if n["level"] == 3 and getattr(self, "run_on", False):
+            return False        # a reference appendix packs its sections (owner approval 2026-11-01, D-02 c)
         return n["level"] == 3 or bool(re.match(r"^(?:Scenario \d+: |Climate \d+: .* Scenarios$)", n.get("title", "")))
 
     def record(self, x, mode):
@@ -880,12 +954,20 @@ class Book:
         if "head" not in x:
             return self.emit_leaf(x, cur), False
         fresh = self.is_fresh(x)
+        section = x["level"] == 3 and SECTION_HEADS_FULL
         if fresh and not after_heading:
             self.flush(cur)
             cur = []
-            self.out.append("#pagebreak(weak: true)\n")
+            if x["level"] == 3 and getattr(self, "first_section_pending", False) and getattr(self, "share_opener", False):
+                pass                       # the first section shares the opener page (D-02 b)
+            else:
+                self.out.append("#pagebreak(weak: true)\n")
             after_heading = True
+        if x["level"] == 3:
+            self.first_section_pending = False
         cls = self.unit_class(x, fresh)
+        if cls == "col" and section:
+            cls = "page"               # a column-fit section keeps its full-width head (D-01): a page unit
         self.log_unit(x, cls)
         if cls == "col":
             self.record(x, "keep-col")
@@ -904,9 +986,14 @@ class Book:
             self.emit_end_art(x)
             return [], False
         # over-height: heading sticks to its content; children keep their own units
-        self.block_map.append((x["head"]["id"], x["head"]["b"]["src"], "column", None))
+        self.block_map.append((x["head"]["id"], x["head"]["b"]["src"], "full" if section else "column", None))
         head = f"#umark({lit(x['id'])}, \"s\")" + x["head"]["s"]
         kids = x["children"]
+        if section:
+            # The numbered section head spans the frame (D-01): it is emitted in the outer flow ahead of
+            # its columns, sticky to them; a leading full-width element still travels with it below.
+            self.flush(cur)
+            cur = []
         if kids and "head" not in kids[0] and kids[0]["kind"] == "f":
             # heading travels with a leading full-width element
             self.flush(cur)
@@ -919,6 +1006,34 @@ class Book:
             self.out.append(f"#full-opening[{head}{piece}]\n".replace("#pm(", "#pmx("))
             self.record(kids[0], "full")
             kids = kids[1:]
+            after = False
+        elif section and getattr(self, "run_on", False) and not after_heading:
+            # A run-on section (D-02 c). With a short introduction, the head and the introduction open
+            # as one unbreakable full-width composition, the introduction set as a standfirst at the
+            # opener's measure; the opening is sticky, so when the first column piece cannot start on
+            # the page the whole opening moves with it and never strands at a page foot. The section
+            # runs on only when that first piece is prose or a unit no taller than half a frame, which
+            # always fits beside a fresh-page opening; a taller first unit, or an opening without an
+            # introduction, starts a fresh page (local build 2026-11-01, pp. 596 and 602).
+            self.flush(cur)
+            cur = []
+            intro = (kids and "head" not in kids[0] and kids[0]["kind"] == "c" and kids[0]["typ"] == "para"
+                     and kids[0]["s"].startswith("#keep[") and len(first_text_full(kids[0]["b"])) <= STANDFIRST_CHARS)
+            follower = kids[1] if intro and len(kids) > 1 else (kids[0] if kids else None)
+            runs_on = intro and self.first_piece_fits(follower)
+            if not runs_on:
+                self.out.append("#pagebreak(weak: true)\n")
+            if intro:
+                first = kids[0]
+                standfirst = "#chapter-intro[" + first["s"].strip()[len("#keep["):-1] + "]"
+                self.out.append(f"#full-opening(sticky: true)[{head}{standfirst}]\n".replace("#pm(", "#pmx("))
+                self.record(first, "full")
+                kids = kids[1:]
+            else:
+                self.out.append(f"#section-head[{head}]\n".replace("#pm(", "#pmx("))
+            after = False
+        elif section:
+            self.out.append(f"#section-head[{head}]\n".replace("#pm(", "#pmx("))
             after = False
         else:
             # opening group: heading + first leaf (+ the list/table a short lead-in introduces) move as one
@@ -987,8 +1102,8 @@ class Book:
 
     def emit_end_art(self, x):
         if x["id"] in getattr(self, "end_art", {}):
-            aid, rel, w, aspect = self.end_art[x["id"]]
-            self.out.append(f"#endart({lit(aid)}, {lit(rel)}, {w:.1f}pt, {aspect:.4f})\n")
+            aid, rel, w, aspect, wmax = self.end_art[x["id"]]
+            self.out.append(f"#endart({lit(aid)}, {lit(rel)}, {w:.1f}pt, {aspect:.4f}, max-w: {wmax:.1f}pt)\n")
 
     def splits_under_heading(self, kids):
         """True when a node's first child is a fit-capable table too tall to share a column with the heading."""
@@ -1070,6 +1185,15 @@ class Book:
     def flush(self, pieces):
         if not pieces:
             return
+        if all(b.get("type") == "marker" for b, _ in pieces):
+            # Only zero-size end markers remain (the unit ended in a full-width element). Any block
+            # wrapper (columns, flowtail, even a zero-height block) placed after an element that fills
+            # the page lands on a fresh page and keeps it, leaving a blank page before the next fresh
+            # start; raw markers attach to the page they follow (local build 2026-11-01, pages 24, 53).
+            for b, s in pieces:
+                self.block_map.append((b["id"], b["src"], "column", None))
+            self.out.append("".join(s for _, s in pieces) + "\n")
+            return
         sid = self.seg_count
         self.seg_count += 1
         sig = segment_signature(pieces)
@@ -1145,7 +1269,8 @@ def compile_book(variant="cream", out=None, query=True, edition="print"):
 
 STRADDLE_MAX = 250
 MAX_TAIL_CHANGES = 5                     # within the cream build's 8 passes
-TINY_TAIL_PT = 180
+TINY_TAIL_PT = float(LAYOUT_TOKENS.get("tiny_tail_pt", 180))   # D-02 d: a shorter last page pulls back
+STANDFIRST_CHARS = 800                   # a run-on section's introduction set as a standfirst (about eight lines)
 # Room a table split under its heading needs beyond its measured height: the repeated header in the
 # second column and the row group that cannot divide at the column break.
 SPLIT_RESERVE = 120

@@ -23,7 +23,7 @@
     #set align(center)
     #block(width: 5.2in)[#set text(font: fell, size: 14pt); #show emph: it => it.body; #subtitle]
     #v(14pt)
-    #text(font: sans, size: 11pt, weight: 600, tracking: 0.12em, version)
+    #text(font: serif, size: 11pt, weight: 600, tracking: 0.1em, smallcaps(all: true, version))
   ]
 ]
 
@@ -61,9 +61,15 @@
       brush(weight: 1.8pt, seed: 21)
       v(14pt)
     }
-    #set text(font: serif, size: 11pt)
-    #set par(leading: 4pt, spacing: 9pt)
-    #for p in copy.facts [#p #parbreak()]
+    // Game facts: ragged left in a narrower measure under a short brush, so they read as a note while
+    // the centred blurb above keeps its voice (D-10).
+    #block(width: 1.4in, brush(weight: 1.5pt, seed: 23))
+    #v(10pt)
+    #block(width: 4.8in, align(left, {
+      set text(font: serif, size: 11pt)
+      set par(leading: 4pt, spacing: 9pt, justify: false)
+      for p in copy.facts [#p #parbreak()]
+    }))
   ])
   #let pub = json("../build/cover.json").at("publisher", default: none)
   #place(bottom + center, dy: if bart != none { -0.75in } else { -1.05in })[
@@ -72,6 +78,6 @@
     // already carries the castle at its head, and the foot of a back cover is the publisher's place.
     #if pub != none { publisher-logo(1.15in) } else { signature(s: 70pt) }
     #v(8pt)
-    #text(font: sans, size: 10pt, weight: 600, tracking: 0.12em, version)
+    #text(font: serif, size: 10pt, weight: 600, tracking: 0.1em, smallcaps(all: true, version))
   ]
 ]

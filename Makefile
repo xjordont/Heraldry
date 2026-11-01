@@ -32,6 +32,7 @@ release-files: book
 	cp $(B)/covers-cream.pdf $(DIST)/Heraldry_$(VERSION)_covers-front-back.pdf
 	cp $(B)/covers-white.pdf $(DIST)/Heraldry_$(VERSION)_covers-front-back-white.pdf
 	cp $(B)/calibration.pdf $(DIST)/Heraldry_$(VERSION)_inkjet-calibration.pdf
+	$(PY) tools/digital_compact.py $(DIST)/Heraldry_$(VERSION)_digital.pdf $(DIST)/Heraldry_$(VERSION)_digital-compact.pdf --report production/qa/digital-compact.json
 	$(PY) tools/provenance.py
 print print-white digital covers calibration: release-files
 verify:

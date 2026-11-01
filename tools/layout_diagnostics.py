@@ -48,8 +48,12 @@ def page_diagnostics(page, number, *, top, bottom, tab):
             intervals.append((y0, y1))
     for drawing in page.get_drawings():
         rect = drawing["rect"]
-        # Full-sheet substrate and running furniture are not body occupancy.
-        if rect.y0 >= top and rect.y1 <= bottom and rect.x1 > tab and rect.x0 < width - tab:
+        # Full-sheet substrate and running furniture are not body occupancy. A drawing counts only when
+        # at least half of its width lies inside the body frame: the thumb-tab pennant and the opener
+        # frame straddle the outer strip and used to be read as content, which capped the foot-void
+        # measure at the tab's own position (design audit 2026-11-01, P-04).
+        overlap = min(rect.x1, width - tab) - max(rect.x0, tab)
+        if rect.y0 >= top and rect.y1 <= bottom and overlap > 0 and overlap >= 0.5 * max(rect.width, 0.01):
             intervals.append((rect.y0, rect.y1))
     pitches = []
     for (xa, ya, sa), (xb, yb, sb) in zip(baselines, baselines[1:]):
@@ -57,7 +61,11 @@ def page_diagnostics(page, number, *, top, bottom, tab):
             pitches.append(yb - ya)
     left = sum(x1 <= width / 2 + 5 for x0, y0, x1, y1 in text)
     right = sum(x0 >= width / 2 - 5 for x0, y0, x1, y1 in text)
-    return {"page": number, **interval_summary(intervals, top, bottom), "body_lines": len(text),
+    summary = interval_summary(intervals, top, bottom)
+    # A sparse page: under 55% of the frame height occupied and fewer than 50 text lines. The flag is a
+    # review pointer, not a defect: deliberate section starts, tailpiece pages and art pages qualify.
+    sparse = summary["vertical_union_fraction"] < 0.55 and len(text) < 50
+    return {"page": number, **summary, "sparse": sparse, "body_lines": len(text),
             "column_lines": {"left": left, "right": right, "spanning": len(text) - left - right},
             "median_neighbouring_baseline_pt": round(statistics.median(pitches), 3) if pitches else None,
             "short_text_blocks": short[:20],

@@ -218,6 +218,35 @@
   let m = s.match(regex("^((?:\d+|[A-C])(?:\.\d+)+)\s+(.+)$"))
   if m == none { (none, body) } else { (m.captures.at(0), m.captures.at(1)) }
 }
+// Bracketed role or kicker closing an entry heading ("[Elite]", "[2/5 Complexity]", "[Intro]"): set as the
+// banner tag of the design system (D-06 step 2). The brackets stay in the text layer as transparent
+// glyphs inside the tag and the role is small caps, so the extracted heading still reads exactly as
+// the source; nothing is added to or removed from the manuscript's words.
+#let role-tag(s) = box(baseline: 22%, {
+  let inner = s.slice(1, s.len() - 1)
+  let size = tokens.type_pt.tag * 1pt
+  let hidden(c) = text(font: sans, weight: 700, size: size, fill: rgb(0, 0, 0, 0%), c)
+  let t = [#hidden("[")#text(font: sans, weight: 700, size: size, tracking: 0.1em, fill: paper, smallcaps(all: true, inner))#hidden("]")]
+  context {
+    let m = measure(t)
+    let h = m.height + 5pt
+    let w = m.width + 9pt
+    box(width: w, height: h, {
+      place(polygon(fill: ink, (0pt, 0pt), (w - 4.5pt, 0pt), (w, h / 2), (w - 4.5pt, h), (0pt, h)))
+      place(left + horizon, dx: 2.5pt, t)
+    })
+  }
+})
+#let role-pattern = regex("\[[^\]]+\]$")
+// The reference appendix sets its section heads as the iron reference band (BOOK_DESIGN_PLAN 6.19).
+#let reference-band(num) = tokens.layout.reference_band_chapters.len() > 0 and num.match(regex("^C\.\d+$")) != none
+// A numbered section head spans the frame (D-01): the composer emits it in the outer flow ahead of its
+// columns, sticky to them, so a head never ends a page on its own.
+#let section-head(body) = block(width: 100%, above: 0pt, below: 0pt, sticky: true, breakable: false, body)
+// A run-on section head (D-02 c) relies on `sticky` to travel with its columns; the composer decides
+// fresh pages and opener sharing from measured heights, never from a position read during layout,
+// because such reads lag one layout iteration and chained with the opener centring and the tailpiece
+// probes they exceeded Typst's five iterations (first local build, 2026-11-01).
 
 #let book(body) = {
   let meta = publication.verified_publication_metadata
@@ -254,26 +283,42 @@
   show heading.where(level: 2): it => {
     let (num, title) = split-num(it.body)
     block(above: space-token.section_before * 1pt, below: space-token.section_after * 1pt, sticky: true, breakable: false, width: 100%)[
-      #if num != none {
+      #if num != none and reference-band(num) {
+        // Appendix C: the code in a paper shield, the title reversed, and the RULES REFERENCE label
+        // (D-06 step 1); a fine rule closes the band.
+        block(width: 100%, fill: ink, inset: (x: 10pt, y: 6pt), spacing: 0pt,
+          grid(columns: (auto, 1fr, auto), column-gutter: 9pt, align: horizon,
+            shield(w: if num.len() > 3 { 30pt } else { 25pt }, fill: paper, body: text(font: sans, weight: 700, size: 9pt, fill: ink, num)),
+            text(font: goth, weight: 600, size: tokens.type_pt.reference_band * 1pt, fill: paper, title),
+            text(font: sans, weight: 700, size: tokens.type_pt.navigation * 1pt, tracking: 0.12em, fill: paper, smallcaps(all: true, "Rules Reference"))))
+        v(1.5pt)
+        line(length: 100%, stroke: tokens.line_pt.reference_band_rule * 1pt + ink)
+      } else if num != none {
         grid(columns: (auto, 1fr), column-gutter: 9pt, align: horizon,
           shield(w: if num.len() > 3 { 30pt } else { 25pt }, inner: true, body: text(font: sans, weight: 700, size: 9pt, fill: paper, num)),
           text(font: goth, weight: 600, size: tokens.type_pt.section * 1pt, top-edge: "cap-height", bottom-edge: "baseline", title))
       } else { text(font: goth, weight: 600, size: tokens.type_pt.section * 1pt, title) }
-      #v(5pt)
-      #section-rule
+      #if num == none or not reference-band(num) {
+        v(5pt)
+        section-rule
+      }
     ]
   }
   // subsection: lozenge, quiet number, bold serif
   show heading.where(level: 3): it => {
     let (num, title) = split-num(it.body)
+    show role-pattern: m => role-tag(m.text)
     block(above: space-token.subsection_before * 1pt, below: space-token.subsection_after * 1pt, sticky: true, breakable: false)[
       #set par(leading: 2.5pt)
-      #lozenge(size: 5.5pt)#h(5pt)#if num != none [#text(font: sans, weight: 700, size: 9.5pt, fill: ink3, num)#h(5pt)]#text(font: serif, weight: 700, size: tokens.type_pt.subsection * 1pt, title)
+      #lozenge(size: 5.5pt)#h(5pt)#if num != none [#text(font: sans, weight: 700, size: tokens.type_pt.subsection_number * 1pt, fill: ink3, num)#h(5pt)]#text(font: serif, weight: 700, size: tokens.type_pt.subsection * 1pt, title)
     ]
   }
-  // minor named heading: blackletter
-  show heading.where(level: 4): it => block(above: space-token.minor_before * 1pt, below: space-token.minor_after * 1pt, sticky: true, breakable: false,
-    text(font: goth, weight: 600, size: 14.5pt, it.body))
+  // minor named heading: blackletter, one step below the subsection in size (D-04)
+  show heading.where(level: 4): it => {
+    show role-pattern: m => role-tag(m.text)
+    block(above: space-token.minor_before * 1pt, below: space-token.minor_after * 1pt, sticky: true, breakable: false,
+      text(font: goth, weight: 600, size: tokens.type_pt.minor * 1pt, it.body))
+  }
   show link: it => it
   body
 }
@@ -309,30 +354,44 @@
     }
   }
 }
+// The opener's display (art, arms, label, title, flourish). `title-element` is the real level-1
+// heading in the book; the composer measures the same display with a plain title of the same size to
+// decide whether the first section shares the opener page (D-02 b).
+#let opener-display(num, title, art: none, title-element: none) = {
+  let t = tab-of(num)
+  if art != none {
+    let (file, w, h) = art
+    align(center, image(file, width: calc.min(w, frame-w * 0.84)))   // never above native 300 ppi size
+    v(-8pt)
+  } else { v(0.9in) }
+  align(center)[
+    #if t != none { arms(t, w: 52pt) }
+    #v(-2pt)
+    #if num != none {
+      let s = if num.has("text") { num.text } else { "" }
+      let m = s.match(regex("^(\d+)\.$"))
+      // "Chapter One" (D-09). The source's own number token ("1.") stays in the text layer as
+      // transparent glyphs in a zero-width box on the same line, so the extracted heading still
+      // reads "1. The World of Heraldry" for reconciliation.
+      let shown = if m != none { "Chapter " + words.at(int(m.captures.at(0)) - 1) } else { s.trim(".", at: end) }
+      let keep = if m != none { s } else { "." }
+      text(font: sans, weight: 700, size: 10pt)[#smallcaps(all: true, shown)#box(width: 0pt, text(fill: rgb(0, 0, 0, 0%))[ #keep])]
+      v(-6pt)
+    }
+    #if title-element != none { title-element } else { block(text(font: goth, weight: 600, size: tokens.type_pt.chapter * 1pt, hyphenate: false, title)) }
+    #v(-6pt)
+    #flourish(len: 90pt)
+  ]
+}
+// Measurable opener: the display and the lead, as the book sets them, without page breaks or marks.
+#let opener-body(num, title, art: none, lead: none) = {
+  opener-display(num, title, art: art)
+  if lead != none { v4.lead-block(fell-body(lead), width: 82%) }
+}
 #let chapter-opener(num, title, anchor, lead: none, art: none) = {
   pagebreak(weak: true)
   let t = tab-of(num)
-  let display = {
-    if art != none {
-      let (file, w, h) = art
-      align(center, image(file, width: calc.min(w, frame-w * 0.84)))   // never above native 300 ppi size
-      v(-8pt)
-    } else { v(0.9in) }
-    align(center)[
-      #if t != none { arms(t, w: 52pt) }
-      #v(-2pt)
-      #if num != none {
-        let s = if num.has("text") { num.text } else { "" }
-        let m = s.match(regex("^(\d+)\.$"))
-        text(font: sans, weight: 700, size: 10pt,
-          smallcaps(all: true, if m != none { "Chapter " + s } else { s }))
-        v(-6pt)
-      }
-      #heading(level: 1, outlined: true, bookmarked: true, title) #label(anchor)
-      #v(-6pt)
-      #flourish(len: 90pt)
-    ]
-  }
+  let display = opener-display(num, title, art: art, title-element: [#heading(level: 1, outlined: true, bookmarked: true, title) #label(anchor)])
   // An introduction too long to share the opener page would end on a mostly empty page before the
   // first section's fresh page. Such a chapter opens as a spread instead: a display page with the art
   // and title, centred, then the whole introduction on the facing page (design review 2026-10-29).
@@ -450,9 +509,12 @@
 // Escutcheon Press, the publisher's device (owner-supplied 2026-10-30; ink prepared by tools/brand_ink.py).
 #let publisher-logo(w) = image("/assets/art/brand/escutcheon-press-logo.png", width: w, alt: "Escutcheon Press")
 #let full(body) = block(width: 100%, above: 6pt, below: 8pt, body)
-#let full-opening(body) = context {
+// `sticky`: a run-on opening never ends a page alone; when the columns after it cannot start on the
+// page, the opening moves with them (design audit 2026-11-01). Ordinary openings (a head with its
+// leading full-width table or figure) keep their place: moving them cost four pages in a local proof.
+#let full-opening(body, sticky: false) = context {
   let height = measure(block(width: frame-w, body)).height
-  block(width: 100%, above: 6pt, below: 8pt,
+  block(width: 100%, above: 6pt, below: 8pt, sticky: sticky,
     breakable: height > body-bottom - m-top - 12pt, body)
 }
 // Prose balances at line boundaries, preserving its complete physical-page keep.
@@ -535,7 +597,10 @@
 // `min-h` (a wide, short piece whose full size is under `min-h` prints at full size), and is
 // omitted when even that does not fit. A zero-height probe keeps the measuring
 // point on this page (a context that yields nothing would report the following page).
-#let endart(id, path, w, aspect, min-h: 1.6in, gap: 16pt) = {
+// `max-w` (D-02 f): a tailpiece may grow past its family width to the gap it closes, up to its 300 ppi
+// maximum and the design cap the composer passes. When the gap is generous the piece sits at the foot of
+// the frame, so the page reads as text, air, tailpiece (D-02 g); a small gap keeps the piece under the text.
+#let endart(id, path, w, aspect, max-w: none, min-h: tokens.art.tailpiece_min_height_in * 1in, gap: space-token.tailpiece_gap * 1pt) = {
   block(height: 0pt, above: 0pt, below: 0pt, sticky: false)[#metadata(id) <endart-probe>]
   context {
     let probe = query(selector(<endart-probe>).before(here())).last()
@@ -543,9 +608,12 @@
     let next = query(selector(heading).after(at))
     if next.len() > 0 and next.first().location().page() == at.page() { return }
     let avail = body-bottom - at.position().y - gap - 6pt
-    let h = calc.min(w * aspect, avail)
+    let wmax = if max-w == none { w } else { calc.max(w, max-w) }
+    let wfit = calc.min(wmax, avail / aspect)
+    let h = calc.min(wfit * aspect, avail)
     if h >= calc.min(min-h, w * aspect) {
-      v(gap)
+      let spare = avail - h
+      if spare > tokens.art.tailpiece_foot_spare_pt * 1pt { v(1fr) } else { v(gap) }
       block(width: 100%, above: 0pt, below: 0pt, breakable: false,
         align(center, [#image(path, height: h, alt: id)#metadata((id: id, page: at.page(), h: h.pt())) <endart>]))
     }
@@ -565,7 +633,17 @@
 })
 #let note-box(body) = panel(body)
 
-#let hr-ornament(pre: none) = align(center, block(above: 10pt, below: 10pt)[#pre#flourish(len: 40pt)])
+// The source's horizontal rules: a quiet separator (a short hairline with a lozenge) instead of the
+// castle flourish, which stays at chapter and front-matter boundaries; an ordinary page then carries at
+// most the ornament budget of two marks (design audit 2026-11-01, D-03).
+#let hr-ornament(pre: none) = block(width: 100%, above: space-token.separator_above * 1pt, below: space-token.separator_below * 1pt,
+  align(center, box(width: tokens.ornament.separator_width_fraction * 100%, {
+    pre
+    grid(columns: (1fr, auto, 1fr), column-gutter: 5pt, align: horizon,
+      line(length: 100%, stroke: tokens.line_pt.separator * 1pt + ink),
+      lozenge(size: tokens.ornament.separator_lozenge_pt * 1pt),
+      line(length: 100%, stroke: tokens.line_pt.separator * 1pt + ink))
+  })))
 
 // ---------------------------------------------------------------- tables: the ledger
 #let head-cell(h) = text(font: sans, weight: 700, size: table-size, fill: paper,
@@ -661,7 +739,7 @@
       fill: (x, y) => if y == 0 { ink } else { none },
       stroke: (x, y) => (left: if y == 1 and x > 0 { 0.35pt + hair } else { none }),
       table.header(..header.map(h => text(weight: 700, size: table-size, fill: paper, smallcaps(all: true, h)))),
-      ..values.map(v => text(weight: 600, size: 12pt, v)),
+      ..values.map(v => text(weight: 600, size: tokens.type_pt.stat_value * 1pt, v)),
     ), s: 0.8em)
     #v(-2pt)
     #brush(weight: 2pt, seed: 7)

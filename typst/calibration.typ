@@ -59,6 +59,14 @@
       #for w in (0.3pt, 0.45pt, 0.6pt, 0.75pt, 1pt) [
         #box(width: 2.2in, line(length: 100%, stroke: w + ink)) #h(6pt) #text(size: 8.5pt)[#repr(w)] \
       ]
+      #v(8pt)
+      *Tinted hairlines* (table rows: #pt-label(tokens.line_pt.hairline * 1pt) at #str(calc.round(tokens.ink.hairline_alpha * 100))% black; 0.3, 0.35, 0.4, 0.5, 0.6 pt) \
+      #for a in (24%, 30%, 40%) [
+        #for w in (0.3pt, 0.35pt, 0.4pt, 0.5pt, 0.6pt) [#box(width: 0.5in, line(length: 100%, stroke: w + rgb(0, 0, 0, a)))#h(3pt)]#text(size: 8.5pt, repr(a)) \
+      ]
+      #v(6pt)
+      *Tints* (bands #str(calc.round(tokens.ink.band_alpha * 100))%, die column #str(calc.round(tokens.ink.roll_band_alpha * 100))%) \
+      #for t in (5%, 6%, 9%, 12%) [#box(width: 0.55in, height: 0.26in, fill: rgb(0, 0, 0, t), stroke: 0.3pt)[#h(3pt)#text(size: 7pt, repr(t))]#h(4pt)]
     ],
     [
       *Table bands* \

@@ -7,7 +7,7 @@ INPUTS = ["config", "source", "editorial/patches.json", "editorial/how_to_use.js
           "Makefile", "requirements.lock", "docs/PRINT_INSTRUCTIONS_TEMPLATE.md"]
 # generated raw masters are bound by SHA256 in production/art/SELECTIONS.json; builds use only the ink derivatives
 EXCLUDE = {"__pycache__", "test", "private", "masters", "style"}
-SUFFIXES = ["digital", "inkjet-borderless", "inkjet-borderless-white", "covers-front-back", "covers-front-back-white", "inkjet-calibration"]
+SUFFIXES = ["digital", "digital-compact", "inkjet-borderless", "inkjet-borderless-white", "covers-front-back", "covers-front-back-white", "inkjet-calibration"]
 
 
 def inputs(root=ROOT):

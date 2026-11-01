@@ -6,6 +6,7 @@ Files
 * `Heraldry_{{VERSION}}_covers-front-back.pdf` (and `-white`): front cover (page 1) and back cover (page 2), Letter portrait.
 * `Heraldry_{{VERSION}}_inkjet-calibration.pdf`: one diagnostic sheet. Print it first.
 * `Heraldry_{{VERSION}}_digital.pdf`: the screen edition, with covers, bookmarks, and links. Read it on screen; print from the inkjet files.
+* `Heraldry_{{VERSION}}_digital-compact.pdf`: the same screen edition with its pictures reduced to 150 ppi for a far smaller file. Use it on tablets and phones; never print from it.
 * `Heraldry_{{VERSION}}_hero-record-blank.pdf`: the illustrated blank Hero record, one double-sided sheet.
 * `Heraldry_{{VERSION}}_basic-heroes.pdf`: the 24 ready-to-play Basic Mode Heroes, one double-sided sheet each.
 * `Heraldry_{{VERSION}}_player-aids.pdf` (and `-white`): the ten double-sided player aids (round, Monster AI, combat, the fallen, conditions, movement, sight and ground, campaign, town, and setup).

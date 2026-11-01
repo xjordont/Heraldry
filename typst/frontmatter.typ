@@ -30,7 +30,8 @@
     #set align(center)
     #publisher-logo(0.95in)
     #v(8pt)
-    #text(font: sans, size: 9pt, weight: 600, version)
+    // The version line in the title's own face, small caps, so the page keeps one voice (D-10).
+    #text(font: serif, size: tokens.type_pt.imprint * 1pt, weight: 600, tracking: 0.1em, smallcaps(all: true, version))
   ]
 ]
 
@@ -57,7 +58,7 @@
       #let n = toc-tab(it.element.location())
       #link(it.element.location())[#grid(columns: (22pt, 1fr, auto), column-gutter: 7pt, align: horizon,
         if n != none { arms(n, w: 20pt) } else { [] },
-        text(font: goth, weight: 600, size: 14pt, it.element.body),
+        text(font: goth, weight: 600, size: tokens.type_pt.toc_chapter * 1pt, it.element.body),
         text(font: sans, weight: 700, size: 10pt, it.page()))]
       #v(-3pt)
       #line(length: 100%, stroke: 0.6pt + ink)
@@ -65,8 +66,8 @@
   }
   show outline.entry.where(level: 2): it => {
     block(above: 3pt, below: 0pt, inset: (left: 29pt))[
-      #set text(size: 9.5pt)
-      #link(it.element.location())[#it.element.body #box(width: 1fr, repeat(text(fill: ink3)[.#h(3pt)])) #text(font: sans, size: 9.5pt, it.page())]
+      #set text(size: tokens.type_pt.toc_entry * 1pt)
+      #link(it.element.location())[#it.element.body #box(width: 1fr, repeat(text(fill: ink3)[.#h(3pt)])) #text(font: sans, size: tokens.type_pt.toc_entry * 1pt, it.page())]
     ]
   }
   columns(2, gutter: gap, outline(title: none, depth: 2, indent: 0pt))
@@ -130,7 +131,7 @@
       #block(width: 80%)[#set text(font: fell, size: 11pt); #set par(justify: false); #index-data.note]
     ]
   ]
-  set text(font: sans, size: 9.5pt)
+  set text(font: sans, size: tokens.type_pt.index * 1pt)
   set par(leading: 2.4pt, spacing: 2pt, hanging-indent: 10pt, justify: false)
   let pages-for(key) = {
     let hits = query(label("ix-" + key)).map(h => h.location())
@@ -154,7 +155,7 @@
     if l != letter {
       letter = l
       items.push((kind: "h", above: 10pt, below: 4pt, inset: 0pt, body: grid(columns: (auto, 1fr), column-gutter: 5pt, align: horizon,
-        box(fill: ink, inset: (x: 4pt, y: 2.5pt), text(font: goth, weight: 600, size: 13pt, fill: paper, l)), line(length: 100%, stroke: 0.4pt + ink3))))
+        box(fill: ink, inset: (x: 4pt, y: 2.5pt), text(font: goth, weight: 600, size: tokens.type_pt.index_letter * 1pt, fill: paper, l)), line(length: 100%, stroke: 0.4pt + ink3))))
     }
     items.push((kind: "e", above: 2.5pt, below: 0pt, inset: 0pt, body: [
       #text(weight: 600, e.term)#if e.keys.len() > 0 [, #context e.keys.map(k => pages-for(k)).join(", ")]#if e.at("see", default: none) != none [. #emph[See] #e.see]#if e.at("also", default: none) != none [. #emph[See also] #e.also]

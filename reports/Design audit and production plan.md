@@ -24,6 +24,36 @@ The owner built and released RC527-build-40 (618 pages, cream PDF SHA-256 `88942
 
 ---
 
+## Implementation record 2026-11-01 (owner: "Approve everything")
+
+Everything in Phases 0 to 2 was implemented in one pass, then built and inspected locally five times; the evidence is the local proof (626 interior pages) and the composition gates. Items marked "follow-up" are open.
+
+| Item | Done | Where | Notes |
+|---|---|---|---|
+| P-04 density metric and sparse-page report | yes | `tools/layout_diagnostics.py`, `tools/layout_qa.py` | Drawings count as content only when at least half their width lies inside the frame; `sparse_pages` by chapter in `production/qa/layout.json`; the near-empty detector's strip is the outer margin plus the tab halo and its line filter overlaps the frame instead of requiring an inset start |
+| D-07 tokens and one component source | yes | `config/design_tokens.json`, `typst/templates/system.typ`, `typst/heraldry.typ`, `typst/frontmatter.typ` | Inks, tints, rule weights, the remaining sizes, ornament budget, tailpiece limits, and the composition policy are tokens; the specimen components read them. The specimens, aids, and Hero records still import `system.typ`, which now shares the book's values (full unification is a follow-up) |
+| D-03 quiet separator | yes | `heraldry.typ hr-ornament` | Hairline and lozenge at 40% of the measure; the castle flourish stays at chapter and front-matter boundaries |
+| D-05 tab halo | yes | `system.typ thumb-tab` | 3 pt paper halo (token `ornament.tab_halo_pt`) |
+| D-08 identity dedupe across a run-in label | yes | `build_book.py chapter_items` | |
+| D-09 "Chapter One" | yes | `heraldry.typ opener-display` | The source token "1." stays in the text layer as transparent glyphs |
+| D-10 version line and back-cover facts | yes | `frontmatter.typ`, `cover.typ` | Serif small caps; facts ragged left in a 4.8 in measure under a short brush |
+| P-02 calibration samples | yes | `calibration.typ` | Tinted hairlines at 24, 30, and 40% and the 5, 6, 9, and 12% tints |
+| P-03 screen companion | yes | `tools/digital_compact.py`, `Makefile`, `tools/provenance.py`, `tools/check_art_ppi.py`, print instructions | 175 MB to 62 MB at 150 ppi; pages, bookmarks, links, and attachments verified equal |
+| D-01 full-width section heads | yes | `build_book.py flat_parts/emit_x`, `heraldry.typ section-head` | A page-fit section carries the head as its first full-width part; an over-height section emits it in the outer flow, sticky to its columns; a column-fit section becomes a page unit so its head still spans |
+| D-04 hierarchy | yes | tokens `type_pt.subsection 13`, `type_pt.minor 13` | |
+| D-02 b opener sharing | yes | `build_book.py opener_shares`, `heraldry.typ opener-body` | Measured in the measurement pass (probe `opener:<chapter>`); shares when more than 35% of the frame is free and a page-fit first section fits (Chapters 2 and 4 and Appendix C in the proof) |
+| D-02 c Appendix C runs on | yes | tokens `layout.run_on_chapters`, `build_book.py` | Page-fit sections move whole; an over-height section opens as a sticky band plus standfirst and runs on when the next piece is prose or a unit no taller than half a frame; otherwise it starts a fresh page |
+| D-02 d tail pull-back | yes | token `layout.tiny_tail_pt 250` | |
+| D-02 f and g tailpieces | yes | `build_book.py load_end_art`, `heraldry.typ endart` | Grow to the gap up to the 300 ppi maximum and 4.6 in; foot-anchored when more than 60 pt would remain beneath |
+| D-06 reference band and role tags | yes | `heraldry.typ` level-2 and level-3/4 show rules | Brackets kept as transparent glyphs in the text layer |
+| D-02 a end art on tails without a tailpiece, D-11 mini contents, D-12 side-by-side portraits, D-06 steps 3 and 4 (item and power name line, scenario dossier), P-01 physical proof | follow-up | | Need art, an owner choice, or a physical print |
+
+**Faults found in the local proofs and fixed.** A unit ending in a full-width element flushed only zero-size end markers; any block wrapper after a page-filling element opened a blank page (pages 24 and 53 of the first proof), so the composer now emits such markers raw. A run-on reference head followed by a column segment with 66 to 102 pt of room ran its introduction off the frame (page 602); the band-plus-standfirst opening replaced the position probe, which Typst could not converge, and Typst's `layout` callback reports the full region height rather than the remaining room, so no in-layout guard can decide such cases. The keep audit now sets the opener probes aside before its source-coverage check.
+
+**Measured outcome of the local proof.** 626 pages (618 before): full-width heads cost about a head's height of column text per section start; opener sharing and the run-on appendix give some back. Sparse pages by the corrected metric: 74, all in the documented categories (scenario and section tails, introductions before full-page tables, short Learn-to-Play and Basic Mode sections on fresh pages, Chapter 6 portrait pages); none new. Gates: keep audit 0 avoidable splits with full coverage, layout detectors clean after the filter fix, tables 333/333, cross-references and index unchanged. The candidate build and all-page review follow through the repository's release chain.
+
+---
+
 ## 1. Pipeline reconnaissance
 
 | Stage | What it is | Evidence |
