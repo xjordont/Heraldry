@@ -11984,17 +11984,17 @@
   "title": "The dropped torch",
   "heading_id": "h-41-action-basics",
   "route": "gpt",
-  "spec_sha256": "591f3ee3bc493dde7d96a91d157cd8493c628222c52247ea7dcb87e543f17dfa",
-  "prompt_sha256": "36895ffde707d8ab60abf7374a49ba9cfa110d9dfed9705d3ac341b28e46d896",
-  "status": "rejected",
-  "received_at": "2026-11-01T01:35:12+00:00",
+  "spec_sha256": "c68bdd864a2b2edd9323502424e1e7b6718a02bf77fe52486644d1c62473fa4d",
+  "prompt_sha256": "4aa0370546d51cae26a790be996524bbcccbaba961998c25b9defa454a96dd31",
+  "status": "received",
+  "received_at": "2026-11-01T02:35:54+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Torch floats unsupported as prompt specifies; tinted ink warning.",
+  "notes": "Torch is airborne and unsupported, as the falling action specifies, conflicting with the no-floating-tool requirement. Check reports 8% tinted ink pixels.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-ACTION-BASICS.png",
-   "sha256": "212ace4c6a163bbd6bfe5feca08f730248cc6e7a513aaf2c734c83f60bbeec3b",
+   "sha256": "a418c0accc254df1824fd91880778a834b0c6ad8cf7b0afca89767527d23ea5e",
    "px": [
     1536,
     1024
@@ -12002,18 +12002,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-ACTION-BASICS.png",
-   "sha256": "629265d39f62f15dee53b3df3e090937f8c7acabb831d20016d7f6991754b26c",
+   "sha256": "8e56cb6c2c50a6e74ce2739ace53794ce05885e2f3838ef543e83a65e9a15508",
    "px": [
-    1520,
-    998
+    1472,
+    973
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 5.067
+   "max_print_w_in_300ppi": 4.907
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-11-01T02:26:54+00:00",
-  "rejected_at": "2026-11-01T02:30:20+00:00",
-  "rejected_reason": "Regenerate from scratch from the rewritten prompt; the owner circled broken construction (bowstring, sword and scabbard, merged arms, dangling boot, crossbow without a visible bow)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-ACTION-POINTS-AND-SUMMONS": {
   "family": "world",
