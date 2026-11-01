@@ -891,6 +891,11 @@ class Book:
             self.record(x, "keep-col")
             body = "".join(s for _, ss in self.flat_parts(x, marked=True) for s in ss)
             cur.append((x["head"]["b"], f"#keepcol[#umark({lit(x['id'])}, \"s\"){body}#umark({lit(x['id'])}, \"e\")]\n"))
+            if x["id"] in getattr(self, "end_art", {}):
+                # a one-column unit closes with its end art too (it was skipped here before)
+                self.flush(cur)
+                self.emit_end_art(x)
+                return [], False
             return cur, False
         if cls == "page":
             self.record(x, "keep-page")
