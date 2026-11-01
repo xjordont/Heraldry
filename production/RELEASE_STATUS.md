@@ -1,8 +1,12 @@
-# Release status - RC527 source / RC527-build-40 delivery
+# Release status - RC527 source / RC527-build-41 delivery
+
+## RC527-build-41 delivery - 2026-11-01
+
+RC527-build-41 is the verified delivery: the design-audit layout (full-width section heads, corrected heading hierarchy, opener sharing, run-on Appendix C, tailpieces sized to their gap, reference bands, role tags, quiet separators, tab halo, imprint lines, tokens, calibration samples, and the screen-companion PDF) on cream and white at 625 interior pages, the digital edition and its compact companion, covers, calibration, the player aids, the blank Hero record, and the Basic Mode Heroes, after an all-page visual review of candidate 20261101T194714Z. Three section-end tailpieces (2.1, 7.17, 8.4) are omitted by the no-text-moves rule and recorded as a follow-up. `dist/` and the visual ledgers describe this delivery. Physical print **NOT TESTED**.
 
 ## Design audit implementation - 2026-11-01
 
-Layout, furniture, tooling, and export changes from the approved design audit (full-width section heads, corrected heading hierarchy, opener sharing, run-on Appendix C, tailpieces sized to their gap, reference bands, role tags, quiet separators, tab halo, imprint lines, tokens, calibration samples, the screen-companion PDF, and the density diagnostic); the manuscript is RC527 unchanged. A local proof composes 625 pages and passes every automated gate but the visual-review currency; the first candidate (626 pages) was reviewed and two composition faults repaired before the second candidate; a candidate build and an all-page visual review of this exact layout precede any release. Until then the published delivery remains **RC527-build-40** (618 pages) and `dist/` and the visual ledgers describe it. Physical print **NOT TESTED**.
+Layout, furniture, tooling, and export changes from the approved design audit (full-width section heads, corrected heading hierarchy, opener sharing, run-on Appendix C, tailpieces sized to their gap, reference bands, role tags, quiet separators, tab halo, imprint lines, tokens, calibration samples, the screen-companion PDF, and the density diagnostic); the manuscript is RC527 unchanged. The first candidate (626 pages) was reviewed and two composition faults repaired; the second candidate (625 pages) was reviewed in full and released as RC527-build-41 above. Physical print **NOT TESTED**.
 
 ## RC527-build-40 delivery - 2026-11-01
 

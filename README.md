@@ -11,7 +11,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 <!-- BEGIN AUTO:status -->
 
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
-- **Last recorded delivery:** [RC527-build-40](https://github.com/xjordont/Heraldry/releases/tag/RC527-build-40), 618 interior pages. Newer source/tooling changes may await a separately requested build. [Evidence and limits](production/RELEASE_STATUS.md).
+- **Last recorded delivery:** [RC527-build-41](https://github.com/xjordont/Heraldry/releases/tag/RC527-build-41), 625 interior pages. Newer source/tooling changes may await a separately requested build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
 - **Illustration records:** 346 approved of 346; 0 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
-- [`1dede3f5`](https://github.com/xjordont/Heraldry/commit/1dede3f52f9f7b4db2e0a3db055dab3be547047b) Build candidate status (20261101T183315Z)
-- [`4112dc4f`](https://github.com/xjordont/Heraldry/commit/4112dc4fd0091a476e551e05d8cb096ce8bb8e80) build: request candidate build 20261101T183315Z
-- [`b448f491`](https://github.com/xjordont/Heraldry/commit/b448f4912959aefd75c66c8e6b9a77f05a3cdfed) layout: implement the approved design audit (full-width heads, hierarchy, opener sharing, run-on reference, tailpieces, tokens)
-- [`0462df79`](https://github.com/xjordont/Heraldry/commit/0462df79b4b28958aacab3f2b5805a14479bf747) reports: update the design audit for the RC527-build-40 tailpiece build
-- [`f441b28d`](https://github.com/xjordont/Heraldry/commit/f441b28d85008470e4c6c23fd117120083840a9f) Record release workflow result
-- [`4f80b7c5`](https://github.com/xjordont/Heraldry/commit/4f80b7c5b4b6f7c8032808daa31610481e9e1981) Rebuild verified RC527 delivery
+- [`4e2a8dad`](https://github.com/xjordont/Heraldry/commit/4e2a8dad3a5d3d0b5f713f0f21be5e86b225df1c) Record release workflow result
+- [`f7baf809`](https://github.com/xjordont/Heraldry/commit/f7baf80932f9f54dab7bd303f742d65eaffc9a36) Rebuild verified RC527 delivery
+- [`a2903ef7`](https://github.com/xjordont/Heraldry/commit/a2903ef709e66443abcd3a47d0d6b17498094bab) review: bind the all-page visual review for candidate 20261101T194714Z
+- [`8c102c1d`](https://github.com/xjordont/Heraldry/commit/8c102c1d635d33a53aa2717129a1772bb710c612) Build candidate status (20261101T194714Z)
+- [`2bccda77`](https://github.com/xjordont/Heraldry/commit/2bccda770806c705f55be3474d6ddf5ee45e7fde) build: request candidate build 20261101T194714Z
+- [`d5f8798b`](https://github.com/xjordont/Heraldry/commit/d5f8798b5b65dc4ca1ccab43f5af2669c377251b) layout: shared opener pages flow naturally and centre themselves (candidate 20261101T183315Z review)
 
 <!-- END AUTO:recent -->
 

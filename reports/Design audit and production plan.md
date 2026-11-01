@@ -1,6 +1,6 @@
 # Design audit and production plan: non-illustrative graphic design
 
-Date: 2026-11-01, updated the same day for RC527-build-40 (see the update section). Status: **audit and plan only; no design files changed; nothing built.** The original evidence is RC522-build-39 (618 interior pages, cream PDF SHA-256 `ead73ce9…`), inspected through its committed review images (`production/qa/review/`: 26 all-page contact sheets at 34 dpi, 29 detail pages at 100 dpi, both covers, calibration), its QA ledgers (`production/qa/*.json`), and the current source files (RC527 manuscript, `typst/`, `tools/`, `config/`). Limits: no local PDF was built, art masters are Git LFS stubs in this container, and the review images are not glyph-level evidence. Physical printing remains NOT TESTED.
+Date: 2026-11-01, updated the same day for RC527-build-40 and again after implementation. Status: **implemented and released as RC527-build-41** (see the implementation record); the audit below is kept as written. The original evidence is RC522-build-39 (618 interior pages, cream PDF SHA-256 `ead73ce9…`), inspected through its committed review images (`production/qa/review/`: 26 all-page contact sheets at 34 dpi, 29 detail pages at 100 dpi, both covers, calibration), its QA ledgers (`production/qa/*.json`), and the current source files (RC527 manuscript, `typst/`, `tools/`, `config/`). Limits: no local PDF was built, art masters are Git LFS stubs in this container, and the review images are not glyph-level evidence. Physical printing remains NOT TESTED.
 
 Scope follows the owner brief: typography, grid, layout, hierarchy, spacing, contrast, tables, stat blocks, figures and captions, callouts, headers and footers, page furniture, contents and index, cross-references, consistency, and print and digital production. Illustrations, lore, prose, and rules are out of scope and untouched.
 
@@ -26,7 +26,7 @@ The owner built and released RC527-build-40 (618 pages, cream PDF SHA-256 `88942
 
 ## Implementation record 2026-11-01 (owner: "Approve everything")
 
-Everything in Phases 0 to 2 was implemented in one pass, then built and inspected locally six times and once as a GitHub candidate; the evidence is the local proof (625 interior pages) and the composition gates. Items marked "follow-up" are open.
+Everything in Phases 0 to 2 was implemented in one pass, built and inspected locally six times and twice as GitHub candidates, reviewed page by page, and released as `RC527-build-41` (625 interior pages; ledger commit `a2903ef`). Items marked "follow-up" are open.
 
 | Item | Done | Where | Notes |
 |---|---|---|---|
