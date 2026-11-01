@@ -31,7 +31,7 @@ Four intentional roles are Source Serif 4 rules, Source Sans 3 data/navigation, 
 | Body | Serif 10.5 pt / about 13.925 pt baseline pitch | Justified within limits; 4.5 pt paragraph spacing |
 | Chapter title | Display 50 pt | Original ornament/art may accompany it; preserve canonical numbering |
 | Major section | Display 21 pt | Keep with meaningful following content |
-| Subsection | Serif semibold 12.5 pt | Clear vertical separation; no gratuitous box |
+| Subsection | Serif bold 13 pt (12.5 pt before the 2026-11-01 audit) | Clear vertical separation; no gratuitous box |
 | Minor heading | Body-sized bold | Run-in only where source structure permits |
 | Table body | Sans 9 pt / about 11.85 pt | Minimum 9 pt essential text; bold headers |
 | Example | Body family, 10–10.5 pt | Explicit title; subtle outline/left rule; clean substrate |

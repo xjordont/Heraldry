@@ -47,8 +47,8 @@ Four families are used, all under the OFL, with licences in `fonts/licences/`. E
 | Flavour, leads, lore | IM FELL English (roman) | 10.5 pt, near-black (84%), 3.3 pt additive leading | Owner 2026-10-12: easier to read than the italic, and plainly a different voice from the rules |
 | Chapter title | Grenze Gotisch SemiBold | 50 pt | Centred under the opener art and the chapter's arms |
 | Section (x.y) | Grenze Gotisch SemiBold | 21 pt | Number in an engraved black shield; brush rule beneath |
-| Subsection (x.y.z) | Source Serif 4 Bold | 12.5 pt | Lozenge, then a quiet number in Source Sans 3 Bold 9.5 pt, 42% grey |
-| Minor named heading, table titles | Grenze Gotisch SemiBold | 14 to 15.5 pt | |
+| Subsection (x.y.z) | Source Serif 4 Bold | 13 pt | Lozenge, then a quiet number in Source Sans 3 Bold 9.5 pt, 42% grey (13 pt since the 2026-11-01 audit, so the rank order holds) |
+| Minor named heading | Grenze Gotisch SemiBold | 13 pt | One step below the subsection (2026-11-01 audit; was 14.5 pt and read larger than its parent) |
 | Entry names | Grenze Gotisch SemiBold | 15.5 to 36 pt | Power 15.5, monster 21, place 28, scenario 32, class 36 |
 | Tab keywords | Grenze Gotisch Bold | 9 pt | Reversed, centred, rotated to run along the edge |
 | Publication labels and tags | Source Sans 3 Bold | At least 9 pt | Table headers, captions, and essential navigation use the shared size floor; smaller legacy specimen labels are not publication settings |
@@ -122,7 +122,7 @@ The essential rules, table, caption, and navigation size floor is 9 pt. Do not s
 
   Tabs are navigation only. The running head always names the chapter, so a tab trimmed by overscan loses nothing.
 - **Contents:** two columns. Each chapter row has the chapter's arms, its number, the title in blackletter and its page, over a rule. Each section line has a sans number, a serif title and dot leaders to the page. The contents is two levels deep; deeper levels live in the PDF bookmarks.
-- **Index:** three columns. Each initial is reversed in an engraved black block followed by a rule. Entries are sans 8.6 pt with hanging indents and grey page numbers.
+- **Index:** three columns. Each initial is reversed in an engraved black block followed by a rule. Entries are sans 9.5 pt (`type_pt.index`) with hanging indents and grey page numbers.
 - **Digital:** linked contents and index, PDF bookmarks, and clickable cross references ("see 10.6.4"). These are built from the existing anchors.
 
 ## 6. Page-type catalogue
@@ -172,7 +172,7 @@ As in section 5. The contents takes two pages, facing if possible.
 
 ### 6.6 Ordinary rules page (specimen 4)
 
-- Section title full width; prose in two columns.
+- Section title full width (the shield, the 21 pt title, and the brush span the frame; the two columns start together beneath it, 2026-11-01); prose in two columns.
 - Run-in bold labels for definition paragraphs ("Grid Mode:").
 - Subsections in serif bold with quiet numbers.
 - Lists use a lozenge bullet.
@@ -317,7 +317,7 @@ Every named scenario starts a fresh page.
 
 ### 6.19 Rules reference (Appendix C; specimen 12)
 
-- Each C.x opens under an iron reference band: the code in a paper shield and the title in reversed blackletter.
+- Each C.x opens under an iron reference band: the code in a paper shield and the title in reversed blackletter. Adopted 2026-11-01: the sections run on rather than each starting a fresh page; a section that opens with a short introduction sets the band and the introduction as one unbreakable, sticky composition (the introduction as a standfirst at the opener's measure) and runs on when the next piece is prose or a unit no taller than half a frame; otherwise it starts a fresh page.
 - Reference tables use the approved 9 pt size and measured column/full-width placement, with light banding.
 - C.13 retains its source title, "Single-Sheet Rules Summary". The complete current source exceeds one page at the approved size; its title is not permission to omit content or shrink essential text.
 - C.11 (the glossary) uses index-style hanging entries in two columns.
@@ -368,6 +368,8 @@ DESIGN_REFINEMENT's policy stands. This plan adds these rules:
 - Physical printing remains NOT TESTED until real sheets are examined.
 
 ## 10. Adoption into the book build (on the owner's build request)
+
+**Adoption record, 2026-11-01 (design audit, owner approval "Approve everything"):** section heads span the frame; subsection 13 pt and minor 13 pt; the reference band heads Appendix C; bracketed roles and kickers are banner tags; the source's horizontal rules are quiet separators; the first numbered section may share the opener page; Appendix C runs on; tailpieces grow to their gap and sit at the foot; the thumb tab wears a paper halo; the opener label reads "Chapter One"; the version line is serif small caps. Still not adopted (remaining work): the power and item entry grammar (6.13, 6.14), the scenario setup dossier and outcome frame (6.16), the numbered procedure shields (6.9), the gazetteer head (6.11), and the character-entry head (6.12); the book sets those structures as run-in labels and headings. The rationale and evidence are in `reports/Design audit and production plan.md` and `docs/DESIGN_REFINEMENT.md`.
 
 The generator (`tools/build_book.py`) already emits semantic component calls (`chapter-opener`, `htable`, `statstrip`, `statcard`, `cards`, `example`, `note-box`, `figure-block`, `spotart`, `flavour`). Adoption is mostly a reskin of those components, plus a few new wrappers that group entries the generator already recognizes.
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "authority": "Owner-approved compact profile, 2026-10-16; sole effective geometry/type/spacing authority for Typst and Python. Physical proof NOT TESTED.",
+  "authority": "Owner-approved compact profile, 2026-10-16, extended 2026-11-01 (design audit approval: hierarchy sizes, ink and rule tokens, ornament budget, tailpiece sizing, section-head and opener composition); sole effective geometry/type/spacing authority for Typst and Python. Physical proof NOT TESTED.",
   "page": {
     "width_pt": 612,
     "height_pt": 792,
@@ -23,10 +23,13 @@
   },
   "ink": {
     "essential_text_gray": 0,
-    "secondary_text_gray": 0.2,
-    "rule_gray": 0.35,
-    "band_gray": 0.94,
-    "colour_has_rule_meaning": false
+    "secondary_text_gray": 0.16,
+    "furniture_gray": 0.42,
+    "hairline_alpha": 0.24,
+    "band_alpha": 0.05,
+    "roll_band_alpha": 0.09,
+    "colour_has_rule_meaning": false,
+    "note": "Transparent black for hairlines and tints so cream and white substrates share one drawing; values are the ones Typst renders (design audit 2026-11-01, D-07)."
   },
   "fonts": {
     "body": "Source Serif 4",
@@ -40,20 +43,30 @@
     "body": 10.5,
     "chapter": 50,
     "section": 21,
-    "subsection": 12.5,
+    "subsection": 13,
     "table": 9,
     "caption": 9,
     "navigation": 9,
     "minimum_essential": 9,
     "body_leading_additive": 2.9,
-    "table_leading_additive": 2.4
+    "table_leading_additive": 2.4,
+    "minor": 13,
+    "subsection_number": 9.5,
+    "reference_band": 19,
+    "stat_value": 12,
+    "tag": 9,
+    "toc_chapter": 14,
+    "toc_entry": 9.5,
+    "index": 9.5,
+    "index_letter": 13,
+    "imprint": 9.5
   },
   "spacing_pt": {
     "unit": 3,
     "paragraph_after": 4.5,
     "section_before": 12,
     "section_after": 7,
-    "subsection_before": 9,
+    "subsection_before": 10,
     "subsection_after": 4,
     "table_horizontal_padding": 4,
     "table_vertical_padding": 2.2,
@@ -71,30 +84,58 @@
     "flavour_paragraph_after": 6,
     "lead_above": 5,
     "lead_below": 8,
-    "unit_gap": 6
+    "unit_gap": 6,
+    "separator_above": 10,
+    "separator_below": 10,
+    "tailpiece_gap": 16
   },
   "line_pt": {
-    "ordinary_rule": 0.6,
-    "table_header_rule": 0.75,
-    "example_left_rule": 1
+    "hairline": 0.35,
+    "separator": 0.6,
+    "figure_close": 0.6,
+    "running_head_thick": 1.1,
+    "running_head_thin": 0.35,
+    "section_brush": 2.2,
+    "table_brush": 2.2,
+    "stat_brush": 2.0,
+    "panel_spine": 2.6,
+    "reference_band_rule": 0.5
   },
   "ornament": {
     "family": "one original broken-ring and tapered-rule motif",
     "maximum_marks_per_ordinary_page": 2,
     "ordinary_page_perimeter_frame": false,
-    "decorative_watermark": false
+    "decorative_watermark": false,
+    "separator_width_fraction": 0.4,
+    "separator_lozenge_pt": 4,
+    "tab_halo_pt": 3,
+    "note": "Source horizontal rules set as the quiet separator; the castle flourish is reserved for chapter and front-matter boundaries (D-03)."
   },
   "art": {
     "ordinary_page_target_max_area_fraction": 0.25,
     "chapter_opening_target_max_area_fraction": 0.4,
     "full_art_pages_default": false,
-    "ink_style": "economical contour, deliberate hatch, readable silhouette, open negative space"
+    "ink_style": "economical contour, deliberate hatch, readable silhouette, open negative space",
+    "tailpiece_max_width_in": 4.6,
+    "tailpiece_min_height_in": 1.6,
+    "tailpiece_foot_spare_pt": 60,
+    "tailpiece_note": "A tailpiece grows to the gap it closes, up to its 300 ppi maximum and this cap, and sits at the foot of the frame when the gap is generous (D-02 f and g)."
   },
   "layout": {
     "float_figures": [
       "FIG-20"
     ],
     "float_figures_note": "Full-width figures taller than the space left on the page float to the next page top (no half-page void).",
+    "section_heads_full_width": true,
+    "opener_share_free_fraction": 0.35,
+    "run_on_chapters": [
+      "h-appendix-c-rules-reference"
+    ],
+    "reference_band_chapters": [
+      "h-appendix-c-rules-reference"
+    ],
+    "tiny_tail_pt": 250,
+    "composition_note": "Owner approval 2026-11-01: numbered section heads span the frame; the first numbered section shares the chapter-opener page when the measured opener and introduction leave more than opener_share_free_fraction of the frame free (set at 35% after measuring the illustrated openers, which leave 36 to 42% free; decided by the composer from the measurement pass); run_on_chapters do not start every section on a fresh page (heads are sticky to their columns); a tail shorter than tiny_tail_pt pulls back the previous piece.",
     "table_scope_policies": {
       "potions-tier-1": {
         "selector": {

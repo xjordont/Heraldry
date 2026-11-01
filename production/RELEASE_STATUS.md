@@ -1,4 +1,12 @@
-# Release status - RC527 source / RC522-build-39 delivery
+# Release status - RC527 source / RC527-build-40 delivery
+
+## Design audit implementation - 2026-11-01
+
+Layout, furniture, tooling, and export changes from the approved design audit (full-width section heads, corrected heading hierarchy, opener sharing, run-on Appendix C, tailpieces sized to their gap, reference bands, role tags, quiet separators, tab halo, imprint lines, tokens, calibration samples, the screen-companion PDF, and the density diagnostic); the manuscript is RC527 unchanged. A local proof composes 626 pages and passes every automated gate but the visual-review currency; a candidate build and an all-page visual review of this exact layout precede any release. Until then the published delivery remains **RC527-build-40** (618 pages) and `dist/` and the visual ledgers describe it. Physical print **NOT TESTED**.
+
+## RC527-build-40 delivery - 2026-11-01
+
+RC527-build-40 is the verified delivery: the book with all 47 section-end tailpieces placed, on cream and white, the digital edition, covers, calibration, the player aids, the blank Hero record, and the Basic Mode Heroes, after an all-page visual review of candidate 20261101T035117Z. Physical print **NOT TESTED**.
 
 ## RC527 manuscript - 2026-10-31
 

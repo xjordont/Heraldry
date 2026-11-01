@@ -42,6 +42,7 @@ Replace `RC###` with the active version; filenames are generated automatically.
 | File in dist/ | Purpose |
 |---|---|
 | Heraldry_RC###_digital.pdf | Digital reading edition with covers, links and bookmarks |
+| Heraldry_RC###_digital-compact.pdf | The same digital edition with rasters downsampled to 150 ppi for screens (about a third of the size; never a print file) |
 | Heraldry_RC###_inkjet-borderless.pdf | Cream portrait Letter interior |
 | Heraldry_RC###_inkjet-borderless-white.pdf | White interior with matching pagination |
 | Heraldry_RC###_covers-front-back.pdf and -white.pdf | Separate front/back cover sheets |

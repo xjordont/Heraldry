@@ -9,15 +9,16 @@
 // Owner 2026-10-16: compact v5 profile supersedes the earlier 11 pt lock.
 // ================================================================ tokens
 #let substrate-name = sys.inputs.at("substrate", default: "cream")
-#let paper = if substrate-name == "white" { rgb("#FFFFFF") } else { rgb("#FCFAF5") }
-#let ink = rgb(0, 0, 0)
-#let ink2 = luma(16%)                 // flavour text: near-black so it reads as easily as rules
-#let ink3 = luma(42%)                 // furniture labels and quiet numbers
-#let hair = rgb(0, 0, 0, 24%)         // row hairlines
-#let tint = rgb(0, 0, 0, 5%)          // banding, examples, panels (transparent: cream and white)
-#let tint2 = rgb(0, 0, 0, 9%)         // die column of roll tables
-
 #let profile = json("../../config/design_tokens.json")
+#let paper = if substrate-name == "white" { rgb(profile.substrate.paper_white_hex) } else { rgb(profile.substrate.warm_cream_hex) }
+#let ink = rgb(0, 0, 0)
+// Inks and tints come from the token file (design audit 2026-11-01, D-07): these are the values Typst renders.
+#let ink2 = luma(profile.ink.secondary_text_gray * 100%)        // flavour text: near-black so it reads as easily as rules
+#let ink3 = luma(profile.ink.furniture_gray * 100%)             // furniture labels and quiet numbers
+#let hair = rgb(0, 0, 0, profile.ink.hairline_alpha * 100%)     // row hairlines
+#let tint = rgb(0, 0, 0, profile.ink.band_alpha * 100%)         // banding, examples, panels (transparent: cream and white)
+#let tint2 = rgb(0, 0, 0, profile.ink.roll_band_alpha * 100%)   // die column of roll tables
+
 #let type-token = profile.type_pt
 #let space-token = profile.spacing_pt
 #let serif = profile.fonts.body
@@ -186,6 +187,9 @@
   let safe = profile.page.essential_edge_safe_pt * 1pt
   let face = 12.9pt                              // the keyword's line box at 9 pt Grenze Gotisch
   place(top + left, dx: if recto { page-w - w } else { 0pt }, dy: y, box(width: w, height: h, {
+    // A paper halo separates the pennant from whatever it crosses: on chapter openers the frame's
+    // double rule and corner flourish run into it otherwise (design audit 2026-11-01, D-05).
+    place(polygon(fill: paper, stroke: (profile.ornament.tab_halo_pt * 1pt) + paper, ..pts))
     place(polygon(fill: ink, ..pts))
     place(polygon(fill: none, stroke: 0.45pt + paper, ..inner))
     // 1.5 pt outward centres the ink (not the font's tall metric box) between the safe line and
@@ -299,19 +303,19 @@
   #set par(justify: false)
   #grid(columns: (auto, 1fr), column-gutter: 10pt, align: horizon,
     shield(w: 24pt, inner: true, body: text(font: sans, weight: 700, size: if num.len() > 3 { 7.4pt } else { 8.8pt }, fill: paper, num)),
-    text(font: goth, weight: 600, size: 24pt, hyphenate: false, title))
+    text(font: goth, weight: 600, size: type-token.section * 1pt, hyphenate: false, title))
   #v(3pt)
-  #brush(weight: 2.2pt, seed: num.len())
+  #brush(weight: profile.line_pt.section_brush * 1pt, seed: num.len())
 ]
 
 // Subsection (x.y.z): serif bold with a quiet sans number after a small lozenge.
-#let subsection(num, title) = block(above: 14pt, below: 5pt, sticky: true)[
+#let subsection(num, title) = block(above: space-token.subsection_before * 1pt, below: space-token.subsection_after * 1pt, sticky: true)[
   #set par(justify: false)
-  #lozenge(size: 5.5pt)#h(5pt)#if num != none [#text(font: sans, weight: 700, size: 9.5pt, fill: ink3, num)#h(5pt)]#text(font: serif, weight: 700, size: 12.5pt, title)
+  #lozenge(size: 5.5pt)#h(5pt)#if num != none [#text(font: sans, weight: 700, size: type-token.subsection_number * 1pt, fill: ink3, num)#h(5pt)]#text(font: serif, weight: 700, size: type-token.subsection * 1pt, title)
 ]
 
 // Minor named heading inside a subsection.
-#let minor(title) = block(above: 11pt, below: 3pt, sticky: true, text(font: goth, weight: 600, size: 14pt, title))
+#let minor(title) = block(above: space-token.minor_before * 1pt, below: space-token.minor_after * 1pt, sticky: true, text(font: goth, weight: 600, size: type-token.minor * 1pt, title))
 
 // Run-in label for definition-style paragraphs ("Primary Objective:" etc.).
 #let runin(label, body) = par[#text(weight: 700, label)#h(0.3em)#body]
@@ -434,7 +438,7 @@
   text(font: sans, weight: 700, size: 7.2pt, tracking: 0.08em, fill: paper, body))
 
 // Stat bar: black label row, values centred beneath in large sans, brush close.
-#let stat-strip(header, values, size: 12pt) = block(width: 100%, above: 7pt, below: 6pt, breakable: false, {
+#let stat-strip(header, values, size: type-token.stat_value * 1pt) = block(width: 100%, above: 7pt, below: 6pt, breakable: false, {
   set text(font: sans, number-type: "lining", number-width: "tabular")
   set par(justify: false)
   grid(columns: (1fr,) * header.len(), column-gutter: 0pt, row-gutter: 0pt,
@@ -574,13 +578,13 @@
 #let toc-chapter(num, title, page, n: none) = block(above: 10pt, below: 3pt, breakable: false, width: 100%)[
   #grid(columns: (20pt, 1fr, auto), column-gutter: 7pt, align: horizon,
     if n != none { arms(n, w: 22pt) } else { shield(w: 15pt, body: text(font: sans, weight: 700, size: 7.4pt, fill: paper, num)) },
-    [#text(font: sans, weight: 700, size: 8pt, fill: ink3, num)#h(5pt)#text(font: goth, weight: 600, size: 16pt, title)],
+    [#text(font: sans, weight: 700, size: 8pt, fill: ink3, num)#h(5pt)#text(font: goth, weight: 600, size: type-token.toc_chapter * 1pt, title)],
     text(font: sans, weight: 700, size: 10pt, str(page)))
   #v(-4pt)
   #line(length: 100%, stroke: 0.7pt + ink)
 ]
 #let toc-line(num, title, page) = block(above: 2.6pt, below: 2.6pt, {
-  set text(font: serif, size: 9.4pt)
+  set text(font: serif, size: type-token.toc_entry * 1pt)
   grid(columns: (20pt, 1fr, auto), column-gutter: 7pt,
     text(font: sans, size: 8.4pt, weight: 600, fill: ink3, num),
     box(width: 100%)[#title #box(width: 1fr, repeat(gap: 2.4pt)[#text(fill: ink3)[.]])],
@@ -589,10 +593,10 @@
 
 #let index-letter(l) = block(above: 10pt, below: 3pt, sticky: true,
   grid(columns: (auto, 1fr), column-gutter: 6pt, align: horizon,
-    box(fill: ink, inset: 1.4pt, box(stroke: 0.45pt + paper, inset: (x: 4.5pt, top: 1pt, bottom: 3pt), text(font: goth, weight: 600, size: 17pt, fill: paper, l))),
+    box(fill: ink, inset: 1.4pt, box(stroke: 0.45pt + paper, inset: (x: 4.5pt, top: 1pt, bottom: 3pt), text(font: goth, weight: 600, size: type-token.index_letter * 1pt, fill: paper, l))),
     line(length: 100%, stroke: 0.6pt + ink)))
 #let index-entry(term, pages, sub: false) = block(above: 1.4pt, below: 1.4pt, {
-  set text(font: sans, size: 9pt)
+  set text(font: sans, size: type-token.index * 1pt)
   set par(hanging-indent: 10pt, justify: false, leading: 2.3pt)
   if sub { h(8pt) }
   [#term#h(4pt)#text(fill: ink3, pages)]

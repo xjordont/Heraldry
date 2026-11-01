@@ -34,6 +34,9 @@ def main():
     a = ap.parse_args()
     failed = False
     for path in a.pdfs:
+        if path.endswith("_digital-compact.pdf"):
+            print(f"SKIP {path}: screen companion, downsampled by design (tools/digital_compact.py)")
+            continue
         ppi, where = lowest(path)
         if where is None:
             print(f"PASS {path}: no raster art")
