@@ -1,39 +1,12 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-11-01T02:48:40+00:00",
+ "generated_at": "2026-11-01T03:02:33+00:00",
  "max_references": 5,
  "push_every": 1,
  "review_every": 10,
- "receipts_base": 506,
+ "receipts_base": 507,
  "target_pixels": 1572864,
- "count": 1,
- "items": [
-  {
-   "id": "ART-END-PARTY-PHASE",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "none",
-   "title": "One moves, one waits",
-   "prompt": "production/art/gpt/prompts/ART-END-PARTY-PHASE.txt",
-   "prompt_sha256": "e8f9183dcb45763b05dcc636cbc8944b906d91bd2a2e94d2d08bfd1c8a188d59",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "Two Heroes only, clearly on the same side",
-    "Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure",
-    "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air",
-    "The crossbow reads as a crossbow: its bow arms span left and right across the far end of the stock, both tips visible, and the string runs straight from each tip back to the trigger catch; nothing points toward the viewer"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "No enemies in frame.",
-    "Not the chapter 3 dawn gathering.",
-    "No banners."
-   ]
-  }
- ]
+ "count": 0,
+ "items": []
 }

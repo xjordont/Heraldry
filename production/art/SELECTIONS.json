@@ -12678,7 +12678,7 @@
   "route": "gpt",
   "spec_sha256": "9ef727e8bc8156b87b4c417a042362f414ee92110a111d557520b1f5bd4cb43e",
   "prompt_sha256": "e8f9183dcb45763b05dcc636cbc8944b906d91bd2a2e94d2d08bfd1c8a188d59",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-11-01T02:54:53+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12702,7 +12702,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.077
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-11-01T03:02:33+00:00"
  },
  "ART-END-PARTY-STRUCTURE": {
   "family": "world",
