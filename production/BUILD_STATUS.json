@@ -1,13 +1,13 @@
 {
- "request_id": "20261101T183315Z",
+ "request_id": "20261101T194714Z",
  "result": "CANDIDATE_READY",
  "note": "all automated checks pass; the all-page visual review of this exact PDF is still pending",
  "failed_checks": [
   "visual_review_currency"
  ],
- "source_commit": "4112dc4fd0091a476e551e05d8cb096ce8bb8e80",
- "run_url": "https://github.com/xjordont/Heraldry/actions/runs/41337322448",
- "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC527-candidate-13",
+ "source_commit": "2bccda770806c705f55be3474d6ddf5ee45e7fde",
+ "run_url": "https://github.com/xjordont/Heraldry/actions/runs/41343601148",
+ "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC527-candidate-14",
  "pdfs": {
   "Heraldry_RC527_covers-front-back-white.pdf": {
    "bytes": 4914873,
@@ -18,20 +18,20 @@
    "sha256": "2fa04874af9ae77b6a96d7eaf9abe316327035df91dc0c7fd6bc9a2b0e666b64"
   },
   "Heraldry_RC527_digital-compact.pdf": {
-   "bytes": 62258371,
-   "sha256": "12cf906c54bdde82ac4cb50e77c6a522279d647648da24ce20e702713498f536"
+   "bytes": 62239029,
+   "sha256": "66ececa18278983d68e94f6d0697271656f4011fb6375788d9d6b5647b85b0a8"
   },
   "Heraldry_RC527_digital.pdf": {
-   "bytes": 175344180,
-   "sha256": "1387ead5bdca228b7787bcfa5c166cf1c619ddbf7d6789e70e86feabab0dd289"
+   "bytes": 175324209,
+   "sha256": "a655ad0cb2f90390af07d10b674f53062ea174f5196319ead7b5741fe6c05ffe"
   },
   "Heraldry_RC527_inkjet-borderless-white.pdf": {
-   "bytes": 170512407,
-   "sha256": "cb5824781222090de8d54bfa9562ddcb9a8217a204c24a14f0130c7d1eff3be4"
+   "bytes": 170492363,
+   "sha256": "a1669af066bd8590aa819ea1494a832e3a73690212269730777b573ba52d20e7"
   },
   "Heraldry_RC527_inkjet-borderless.pdf": {
-   "bytes": 170540655,
-   "sha256": "3b5b70aeb1be76a90fdca0ac5911bdf07cfa2cc8c40943ddca0dd4c774faadd7"
+   "bytes": 170520610,
+   "sha256": "b406840d5583b5142dd37492f91adc8f1f0f4a16b80e81f9885b85903f90a176"
   },
   "Heraldry_RC527_inkjet-calibration.pdf": {
    "bytes": 45194,
