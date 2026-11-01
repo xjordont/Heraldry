@@ -12988,17 +12988,17 @@
   "title": "The shield shove",
   "heading_id": "h-42-universal-actions",
   "route": "gpt",
-  "spec_sha256": "904968f9c164f50f6ea11633cb0ee6209b601e3c9e36ee1e1f86d3175cbbb8e7",
-  "prompt_sha256": "c17fbaa664c8b82084b3b75b2ae82752e050849acb6027ec4b80cb2ddbe4a6bc",
-  "status": "rejected",
-  "received_at": "2026-10-31T21:06:16+00:00",
+  "spec_sha256": "9709a1108cfe7bec83f49afa0dc7be3a8b1a4980559ee2acb9aa82352e241b29",
+  "prompt_sha256": "5f0146635dbba90d8e70318589e44d1fe0cb999e999173ee1608a51185786bb1",
+  "status": "received",
+  "received_at": "2026-11-01T01:45:16+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Colour check warns of tinted ink.",
+  "notes": "Colour check fails at 20 percent tinted ink pixels.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-UNIVERSAL-ACTIONS.png",
-   "sha256": "33012d17fe2a30651f7b2cba9666a7a9acd2c1bdc760f6f365b9bd1978291447",
+   "sha256": "b932bc7ef5b62db715dd8b3d11bcd51a44314b3b4e0ea36333446ece0410d8d9",
    "px": [
     1536,
     1024
@@ -13006,18 +13006,17 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-UNIVERSAL-ACTIONS.png",
-   "sha256": "845259e45ee117a57d66a0593769829a7357bb7ec3b3457f8ce26f54ab5c9c91",
+   "sha256": "0fd56c9946788dc696cdf1050ce434b13306346b73e10e637c6795774ec9f657",
    "px": [
-    1509,
-    995
+    1505,
+    963
    ],
-   "flags": [],
-   "max_print_w_in_300ppi": 5.03
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 5.017
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T21:19:43+00:00",
-  "rejected_at": "2026-11-01T01:21:30+00:00",
-  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-WEATHER-TABLES-BY-CLIMATE": {
   "family": "world",
