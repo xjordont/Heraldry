@@ -13,7 +13,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 345 approved of 346; 1 generation-queue items.
+- **Illustration records:** 346 approved of 346; 0 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`135c2f6f`](https://github.com/xjordont/Heraldry/commit/135c2f6faef2499b25715fc4ea4d42cc7d8608e9) Art review: approve the crossbow tailpiece; all 47 approved
 - [`fb712079`](https://github.com/xjordont/Heraldry/commit/fb7120798807700eca977c34bef7d4edd483172f) art: intake of ChatGPT Work images
 - [`b211cad4`](https://github.com/xjordont/Heraldry/commit/b211cad47d8f950461dd677857884c40d90d770b) art(gpt): ART-END-PARTY-PHASE .. ART-END-PARTY-PHASE
 - [`4abf6379`](https://github.com/xjordont/Heraldry/commit/4abf6379859d215278ea470bed7c2ec6fe8649ff) Art review: approve five rebuilt tailpieces; restage the crossbow from behind
 - [`86ce60ec`](https://github.com/xjordont/Heraldry/commit/86ce60ecf0db08e049a5a10057e61af3ee9944cf) art: intake of ChatGPT Work images
 - [`d86c905c`](https://github.com/xjordont/Heraldry/commit/d86c905c205b6dc501f52503c2f15fcc57cc5f1b) art(gpt): ART-END-RANDOM-CLASS-TABLE .. ART-END-RANDOM-CLASS-TABLE
-- [`a1b810ad`](https://github.com/xjordont/Heraldry/commit/a1b810ada2af69d1873ee77a4f3f6339d89b1df5) art: intake of ChatGPT Work images
 
 <!-- END AUTO:recent -->
 
