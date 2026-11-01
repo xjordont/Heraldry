@@ -1,6 +1,6 @@
 {
- "request_id": "20261101T035117Z",
- "requested_at": "2026-11-01T03:51:17+00:00",
- "requested_by": "Claude Code on owner instruction 2026-11-01: build the book with the tailpieces (rebuild after tailpiece placement fix)",
- "base_commit": "23f2ef3c8d3f9a2771f1bb7983522c503ad9b14f"
+ "request_id": "20261101T183315Z",
+ "requested_at": "2026-11-01T18:33:15+00:00",
+ "requested_by": "Claude Code (owner approval 2026-11-01 of the design audit: Approve everything)",
+ "base_commit": "b448f4912959aefd75c66c8e6b9a77f05a3cdfed"
 }
