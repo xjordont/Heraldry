@@ -13,7 +13,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 335 approved of 346; 11 generation-queue items.
+- **Illustration records:** 345 approved of 346; 1 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`9e1a4afe`](https://github.com/xjordont/Heraldry/commit/9e1a4afe5d49f13832e50729728b72d0ba525529) Art review: approve ten regenerated tailpieces; restage Staff, sword and symbol
 - [`9b57dbed`](https://github.com/xjordont/Heraldry/commit/9b57dbed73deddb0cf3694a2fe67f8bc1a81c7a5) reports: design audit and production plan for the rulebook layout
 - [`e7f5d888`](https://github.com/xjordont/Heraldry/commit/e7f5d888c0b75d09e762d79f837aed462daa6aba) art: intake of ChatGPT Work images
 - [`ab64bab0`](https://github.com/xjordont/Heraldry/commit/ab64bab05f9a3ba01d4b0a9e9b2ff1c2580ab395) art(gpt): ART-END-RANDOM-CLASS-TABLE .. ART-END-RANDOM-CLASS-TABLE
 - [`42734ef7`](https://github.com/xjordont/Heraldry/commit/42734ef7192ce0683c9f55ba4d226435a421b72b) art: intake of ChatGPT Work images
 - [`f29a7787`](https://github.com/xjordont/Heraldry/commit/f29a7787c1fde4b6d92054dc5b58877fdaad01b6) art(gpt): ART-END-ITEM-AVAILABILITY .. ART-END-ITEM-AVAILABILITY
-- [`ff06698e`](https://github.com/xjordont/Heraldry/commit/ff06698e57332b3e111ffa969e32a325ed5d6bc1) art: intake of ChatGPT Work images
 
 <!-- END AUTO:recent -->
 
