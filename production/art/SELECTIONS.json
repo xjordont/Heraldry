@@ -12429,17 +12429,17 @@
   "title": "Paying for training",
   "heading_id": "h-616-hero-advancement",
   "route": "gpt",
-  "spec_sha256": "2c761866776e5016eb01594be7a5806600d09ab0da5da54c1e171875ff038a28",
-  "prompt_sha256": "2d4d273c53083cbca498baca9aa182ee5913304ed6e03beb6a4d8e15955b133f",
-  "status": "rejected",
-  "received_at": "2026-10-31T20:53:37+00:00",
+  "spec_sha256": "cb699a7048aa30e8189519e226af5fdbd6a122a3e88f11782e2af18b164db2bd",
+  "prompt_sha256": "337cd6d20da839c7ac64d7b446f70ce410a3e3a7da196866e43bddca1b809d0a",
+  "status": "received",
+  "received_at": "2026-11-01T01:40:34+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "The wooden practice sword must be one plain, whole object with a single crossguard, one grip and one pommel, a blunt rounded tip and only a dent in its edge. Redo table placement conflicts with prompt forearm placement; prompt wins. Colour check reports tinted ink; check reports attempt 2 despite fresh redo budget.",
+  "notes": "Colour check fails at 30 percent tinted ink pixels.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-HERO-ADVANCEMENT.png",
-   "sha256": "58846aee2de62888924fb39d42299feb7dfe1fc87d6ae37c72fb095b6ea0942b",
+   "sha256": "68181da21a63a336a5d119fcdd53f073bc5b13f46fb94faf3d41b50e23b39bb1",
    "px": [
     1536,
     1024
@@ -12447,20 +12447,17 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-HERO-ADVANCEMENT.png",
-   "sha256": "863e0c1e50c06cea8138325e4c7dadb33a6796cd13721af81b41c983767036b1",
+   "sha256": "c7bc2d83d2e2e760b87a284f7dfead2a5b293b28ef7ec7e02b6774f66e25ad63",
    "px": [
-    1518,
-    959
+    1499,
+    997
    ],
    "flags": [
     "colour"
    ],
-   "max_print_w_in_300ppi": 5.06
+   "max_print_w_in_300ppi": 4.997
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T21:19:43+00:00",
-  "rejected_at": "2026-11-01T01:21:30+00:00",
-  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-HERO-CLASSES": {
   "family": "world",
