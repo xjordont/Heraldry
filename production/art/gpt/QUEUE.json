@@ -1,36 +1,12 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-31T22:13:21+00:00",
+ "generated_at": "2026-11-01T00:27:59+00:00",
  "max_references": 5,
  "push_every": 1,
  "review_every": 10,
- "receipts_base": 488,
+ "receipts_base": 489,
  "target_pixels": 1572864,
- "count": 1,
- "items": [
-  {
-   "id": "ART-END-ADVENTURING-EQUIPMENT",
-   "family": "item",
-   "register": "still",
-   "ref_set": "none",
-   "title": "Hook, rope, and spikes",
-   "prompt": "production/art/gpt/prompts/ART-END-ADVENTURING-EQUIPMENT.txt",
-   "prompt_sha256": "3842b1fe3ba8d953dc8c32ff2f81c1ee006f9b8d3a7c4ee36f316a22d13c850c",
-   "size": "1536x1024",
-   "print_w_in": 2.6,
-   "references": [],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [
-    "Only these items"
-   ],
-   "avoid": [
-    "No lettering, numbers, dice, game tokens, or rulebook pages.",
-    "No lantern.",
-    "Not the background still lifes.",
-    "No labels."
-   ]
-  }
- ]
+ "count": 0,
+ "items": []
 }
