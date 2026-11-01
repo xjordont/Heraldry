@@ -12361,17 +12361,17 @@
   "title": "The ratkin swarm",
   "heading_id": "h-106-dynamic-party-and-scenario-scaling",
   "route": "gpt",
-  "spec_sha256": "aaa8fb1ce0ea34193d36b6c0f955fda2169bcf9c161e99899557ed7e721a19b8",
-  "prompt_sha256": "7dd4dc558dd22f259a1c09b5d0ef864e46362d0f7f20d4b445d67cb781329129",
-  "status": "rejected",
-  "received_at": "2026-10-31T16:22:24+00:00",
+  "spec_sha256": "3497554e9d0ecc1530d547da34a07d68ded621e60c708b35d95438284b4efdf7",
+  "prompt_sha256": "182c505019ab1e1f3f57b6b3cb88f5a443ceedd03f81dbc0db38bb5586f9c685",
+  "status": "received",
+  "received_at": "2026-11-01T01:37:04+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Automated check warns of nine percent tinted ink pixels.",
+  "notes": "Rear figure anatomy obscured; colour check fails.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING.png",
-   "sha256": "00333032f22b347db0c3b04e2a751aa96a491a56b40c9d5fb73f6728f92342b8",
+   "sha256": "6caedd26c6a01e0a900c95125e175f34351e6d53e77032099180d74374fe0521",
    "px": [
     1536,
     1024
@@ -12379,18 +12379,17 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING.png",
-   "sha256": "fdc463b9908b9f312039987a984b461824173e10d54c671e4c748e7f270157fa",
+   "sha256": "af25e47e0c1a84d14ecec7af310c3c9428a8b97b22524e822863308c4a08480e",
    "px": [
-    1520,
-    1010
+    1525,
+    993
    ],
-   "flags": [],
-   "max_print_w_in_300ppi": 5.067
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 5.083
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T19:36:14+00:00",
-  "rejected_at": "2026-11-01T01:21:30+00:00",
-  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-GENERAL-TALENTS": {
   "family": "world",
