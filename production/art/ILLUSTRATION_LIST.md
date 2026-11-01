@@ -649,7 +649,7 @@ Do not draw:
 * Not the Haunted Mausoleum or crypt interiors.
 ```
 
-### 9. Rivals at the chest ✗
+### 9. Rivals at the chest ✓
 
 `ART-END-WHAT-IS-HERALDRY-SKIRMISH`
 
@@ -793,7 +793,7 @@ Do not draw:
 * No square grid or measured lines.
 ```
 
-### 14. One moves, one waits ✗
+### 14. One moves, one waits ✓
 
 `ART-END-PARTY-PHASE`
 
@@ -852,7 +852,7 @@ Do not draw:
 * No gore.
 ```
 
-### 16. The dropped torch ✗
+### 16. The dropped torch ✓
 
 `ART-END-ACTION-BASICS`
 
@@ -882,7 +882,7 @@ Do not draw:
 * No glow effect around the torch.
 ```
 
-### 17. The shield shove ✗
+### 17. The shield shove ✓
 
 `ART-END-UNIVERSAL-ACTIONS`
 
@@ -968,7 +968,7 @@ Do not draw:
 * No gore.
 ```
 
-### 20. The bind ✗
+### 20. The bind ✓
 
 `ART-END-THE-ATTACK-SEQUENCE`
 
@@ -1161,7 +1161,7 @@ Do not draw:
 * No banners or smoke.
 ```
 
-### 27. Camouflage ✗
+### 27. Camouflage ✓
 
 `ART-END-GENERAL-TALENTS`
 
@@ -1245,7 +1245,7 @@ Do not draw:
 * No enemies in frame.
 ```
 
-### 30. Paying for training ✗
+### 30. Paying for training ✓
 
 `ART-END-HERO-ADVANCEMENT`
 
@@ -1461,7 +1461,7 @@ Do not draw:
 * Not the Reliquary of Broken Saints nave.
 ```
 
-### 38. The ratkin swarm ✗
+### 38. The ratkin swarm ✓
 
 `ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING`
 
@@ -4296,7 +4296,7 @@ Do not draw:
 STAFF, SWORD, AND SYMBOL - GRITTY OLD-SCHOOL INK ILLUSTRATION
 Create a gritty, old-school black-and-white ink illustration of Three callings in three objects lying on a flat stone: a caster's quarterstaff, a soldier's sheathed shortsword, and a cleric's holy symbol on its chain, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Seen from slightly above: a broad flat stone at the centre; the shortsword in its scabbard lies flat along it, the quarterstaff lies flat across it at an angle, and the holy symbol lies on the stone with its chain coiled beside them.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Seen from slightly above: a broad flat stone, wider than the staff is long, at the centre; the three objects lie side by side on it, parallel, with a finger's gap between them: the quarterstaff at the back, the sheathed shortsword in the middle, the holy symbol and its coiled chain at the front. No object touches, crosses or rests on another.
 SUBJECT DETAILS
 * Plain ash quarterstaff, scuffed and iron-free, lying flat on the stone and touching it along its length
 * Shortsword in a worn scabbard with a wrapped grip, lying flat on the stone
@@ -4305,8 +4305,8 @@ SUBJECT DETAILS
 * A few dry leaves
 Must be shown exactly:
 * Only these three objects
-* All three objects rest flat on the stone with their shadows directly beneath them; nothing is raised or floating
 * Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
+* All three objects lie flat on the stone side by side, none crossing or resting on another, each touching the stone along its whole length with its shadow directly beneath it; both ends of the staff are on the stone
 Different roads into the same dark.
 Ink it like old-school rulebook equipment art: a bold, rough contour of uneven weight around each object, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag that follows each material: grain on wood, dents and pits on metal, folds and wear on leather and cloth. High contrast, with few in-between textures. Each object reads as a clear silhouette first and detail second: no stipple fields, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable construction, worn and used. It must look drawn by hand with brush, pen and ink, not generated or rendered.
 Do not draw:
@@ -4343,7 +4343,7 @@ Do not draw:
 * No labels.
 ```
 
-### 7. The broker's scale ✗
+### 7. The broker's scale ✓
 
 `ART-END-ITEM-AVAILABILITY`
 
@@ -4932,7 +4932,7 @@ Do not draw:
 * Do not use the Tier 1 pebble ring.
 ```
 
-### 16. Steadfast Word ✗
+### 16. Steadfast Word ✓
 
 `ART-END-DIVINE-PRAYERS`
 
