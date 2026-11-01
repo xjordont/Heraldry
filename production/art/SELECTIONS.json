@@ -12883,17 +12883,17 @@
   "title": "The bind",
   "heading_id": "h-52-the-attack-sequence",
   "route": "gpt",
-  "spec_sha256": "2678506013bbea5a89a7fba39ba07b8fe19ea1043286779750ab28f1c1bcc2eb",
-  "prompt_sha256": "3703300be44e2e82e7c5fe73f20f6ce780633fcb8990455f0c6b44802cd56927",
-  "status": "rejected",
-  "received_at": "2026-10-31T21:45:57+00:00",
+  "spec_sha256": "fc30721ca1dde9f9cc5c9f32ed5a33b98f8870e09253ab6f07354529a31818fb",
+  "prompt_sha256": "9e70cb6b2eae930e7bbfcffccf344dd26ab1287b50318a706f8de87eaf76ae1f",
+  "status": "received",
+  "received_at": "2026-11-01T01:43:44+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Exactly two weapons are shown: one straight longsword and one falchion, each with a single blade rising from its own crossguard. The falchion broad curved blade crosses the longsword; no third or extra straight blade appears. Both blade tips are cropped; automated check warns of tinted ink.",
+  "notes": "Sword tips cropped at top; tinted ink warning.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-THE-ATTACK-SEQUENCE.png",
-   "sha256": "7aae2f1d021d00269509085d90764a4abdf5350d7c64677a4d1138aca8d44ab2",
+   "sha256": "b1b3c5eb6e39c30502b4e7e6e779758b9ba719024bd3db2e168f0d32270e83b5",
    "px": [
     1536,
     1024
@@ -12901,18 +12901,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-THE-ATTACK-SEQUENCE.png",
-   "sha256": "9dac91acd0203e465125c11a3f486b49c244b72bb18f25a042aedab84a82cef6",
+   "sha256": "6dcd03a978d29fe7a6a3b0f4e4106807da7a4cfd43eea9f514e2bef52ea504bc",
    "px": [
-    1487,
-    989
+    1514,
+    1000
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.957
+   "max_print_w_in_300ppi": 5.047
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T22:13:21+00:00",
-  "rejected_at": "2026-11-01T01:21:30+00:00",
-  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-THE-BESTIARY": {
   "family": "world",
