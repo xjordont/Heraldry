@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`13cff72b`](https://github.com/xjordont/Heraldry/commit/13cff72b3bc52108d4385f390d1259208accde87) art: intake of ChatGPT Work images
+- [`0b331bbb`](https://github.com/xjordont/Heraldry/commit/0b331bbb89b38900ddff1bf56f8223dcf9eeb7de) art(gpt): ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING .. ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING
 - [`87b12f75`](https://github.com/xjordont/Heraldry/commit/87b12f7510473a5ad34129293a41ad9a9ee00dcd) art: intake of ChatGPT Work images
 - [`03b5b8ba`](https://github.com/xjordont/Heraldry/commit/03b5b8bad6a81fdf190aea200d3a6d86172e2ac0) art(gpt): ART-END-ACTION-BASICS .. ART-END-ACTION-BASICS
 - [`549e8c9b`](https://github.com/xjordont/Heraldry/commit/549e8c9b3a00bc931ba3e2da1a2379eca65e2e8b) Art: rebuild five tailpieces the owner circled; add a construction trace
 - [`9e1a4afe`](https://github.com/xjordont/Heraldry/commit/9e1a4afe5d49f13832e50729728b72d0ba525529) Art review: approve ten regenerated tailpieces; restage Staff, sword and symbol
-- [`9b57dbed`](https://github.com/xjordont/Heraldry/commit/9b57dbed73deddb0cf3694a2fe67f8bc1a81c7a5) reports: design audit and production plan for the rulebook layout
-- [`e7f5d888`](https://github.com/xjordont/Heraldry/commit/e7f5d888c0b75d09e762d79f837aed462daa6aba) art: intake of ChatGPT Work images
 
 <!-- END AUTO:recent -->
 
