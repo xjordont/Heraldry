@@ -12676,17 +12676,17 @@
   "title": "One moves, one waits",
   "heading_id": "h-33-party-phase",
   "route": "gpt",
-  "spec_sha256": "432046012181556530f8253d550e99053b7d4c4cfd80cdfdb0172e3946229795",
-  "prompt_sha256": "5b40304ef6d8bc7c35d11e73b2b7968cf3e6004a61f49743c6feef35956229d0",
-  "status": "rejected",
-  "received_at": "2026-11-01T02:42:26+00:00",
+  "spec_sha256": "9ef727e8bc8156b87b4c417a042362f414ee92110a111d557520b1f5bd4cb43e",
+  "prompt_sha256": "e8f9183dcb45763b05dcc636cbc8944b906d91bd2a2e94d2d08bfd1c8a188d59",
+  "status": "received",
+  "received_at": "2026-11-01T02:54:53+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Crossbow prod does not clearly spread across the front of the stock and both string halves cannot be traced from tips to catch. Automated check reports 18% tinted-ink pixels.",
+  "notes": "Left bow tip and part of string obscured by archer head, preventing end-to-end tracing. Kneeling lower legs and runner far arm obscured, preventing full anatomy verification. Automated check warns of 8% tinted ink pixels.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-END-PARTY-PHASE.png",
-   "sha256": "f091af177dd28da5092b059e9965d5a28c6758e63ca048506df5e86e3ee3ca77",
+   "sha256": "16f0faeacd97b2f4e947ea0cc47362f6f8bc8d408ef6d3b68054fd214d2ea9bf",
    "px": [
     1536,
     1024
@@ -12694,19 +12694,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-END-PARTY-PHASE.png",
-   "sha256": "2b26f70413c9c6e47a6a29a72c219c4b865a140b0db59a3a0588b421fd03bcf5",
+   "sha256": "35b58706d5c53bbf481f6b3033454ac047b5aa77aa2485aa6e6f44e9be429f48",
    "px": [
-    1494,
-    1000
+    1523,
+    1017
    ],
-   "flags": [
-    "colour"
-   ],
-   "max_print_w_in_300ppi": 4.98
+   "flags": [],
+   "max_print_w_in_300ppi": 5.077
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-11-01T02:48:39+00:00",
-  "rejected_reason": "The crossbow still has a bow arm pointing at the viewer and no clear V of string to both bow tips; regenerate from the rewritten prompt, seen from behind the archer so the bow spans the picture like a T."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-END-PARTY-STRUCTURE": {
   "family": "world",
