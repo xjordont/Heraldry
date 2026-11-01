@@ -11,9 +11,9 @@
       "check": "source_integrity",
       "status": "PASS",
       "detail": {
-        "sha256": "fad164ee8adf3fb6739d79945773a3283919ae504d731d980f3270ae3304a59e",
-        "bytes": 1535554,
-        "version": "RC522"
+        "sha256": "d28f5ec8ef438b43d278ec59c8faf195204266606bcfad1cbd8258088f48ec55",
+        "bytes": 1537574,
+        "version": "RC527"
       }
     },
     {

@@ -1,14 +1,14 @@
-# Printing HERALDRY SKIRMISH RC522 at home (borderless US Letter)
+# Printing HERALDRY SKIRMISH RC527 at home (borderless US Letter)
 
 Files
-* `Heraldry_RC522_inkjet-borderless.pdf`: interior, warm cream page tone to every edge.
-* `Heraldry_RC522_inkjet-borderless-white.pdf`: identical interior on paper white (use on cream stock or to save ink). Same pages, same page numbers.
-* `Heraldry_RC522_covers-front-back.pdf` (and `-white`): front cover (page 1) and back cover (page 2), Letter portrait.
-* `Heraldry_RC522_inkjet-calibration.pdf`: one diagnostic sheet. Print it first.
-* `Heraldry_RC522_digital.pdf`: the screen edition, with covers, bookmarks, and links. Read it on screen; print from the inkjet files.
-* `Heraldry_RC522_hero-record-blank.pdf`: the illustrated blank Hero record, one double-sided sheet.
-* `Heraldry_RC522_basic-heroes.pdf`: the 24 ready-to-play Basic Mode Heroes, one double-sided sheet each.
-* `Heraldry_RC522_player-aids.pdf` (and `-white`): the ten double-sided player aids (round, Monster AI, combat, the fallen, conditions, movement, sight and ground, campaign, town, and setup).
+* `Heraldry_RC527_inkjet-borderless.pdf`: interior, warm cream page tone to every edge.
+* `Heraldry_RC527_inkjet-borderless-white.pdf`: identical interior on paper white (use on cream stock or to save ink). Same pages, same page numbers.
+* `Heraldry_RC527_covers-front-back.pdf` (and `-white`): front cover (page 1) and back cover (page 2), Letter portrait.
+* `Heraldry_RC527_inkjet-calibration.pdf`: one diagnostic sheet. Print it first.
+* `Heraldry_RC527_digital.pdf`: the screen edition, with covers, bookmarks, and links. Read it on screen; print from the inkjet files.
+* `Heraldry_RC527_hero-record-blank.pdf`: the illustrated blank Hero record, one double-sided sheet.
+* `Heraldry_RC527_basic-heroes.pdf`: the 24 ready-to-play Basic Mode Heroes, one double-sided sheet each.
+* `Heraldry_RC527_player-aids.pdf` (and `-white`): the ten double-sided player aids (round, Monster AI, combat, the fallen, conditions, movement, sight and ground, campaign, town, and setup).
 
 Settings (application print dialog)
 1. Paper size **Letter**, orientation **portrait**, **one PDF page per sheet**.

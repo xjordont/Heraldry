@@ -1,5 +1,5 @@
 {
- "pdf": "/home/runner/work/Heraldry/Heraldry/dist/Heraldry_RC522_inkjet-borderless.pdf",
+ "pdf": "/home/runner/work/Heraldry/Heraldry/dist/Heraldry_RC527_inkjet-borderless.pdf",
  "pages": 618,
  "counts": {},
  "flagged_pages": [],
@@ -40,7 +40,7 @@
     },
     {
      "lines": 1,
-     "text": "Release Candidate 522 (RC522)",
+     "text": "Release Candidate 527 (RC527)",
      "y_pt": 690.53
     }
    ],
@@ -66,7 +66,7 @@
     },
     {
      "lines": 1,
-     "text": "Release Candidate 522 (RC522).",
+     "text": "Release Candidate 527 (RC527).",
      "y_pt": 633.38
     },
     {
@@ -81,7 +81,7 @@
     },
     {
      "lines": 2,
-     "text": "This edition is typeset from the RC522 manuscript. Contents, running heads, page numbers, figures,  ",
+     "text": "This edition is typeset from the RC527 manuscript. Contents, running heads, page numbers, figures,  ",
      "y_pt": 679.73
     },
     {
@@ -267,9 +267,9 @@
   },
   {
    "page": 8,
-   "vertical_union_fraction": 0.6695,
-   "largest_empty_band_pt": 230.91,
-   "bottom_empty_band_pt": 230.91,
+   "vertical_union_fraction": 0.887,
+   "largest_empty_band_pt": 53.07,
+   "bottom_empty_band_pt": 53.07,
    "body_lines": 71,
    "column_lines": {
     "left": 27,
@@ -333,13 +333,13 @@
   },
   {
    "page": 10,
-   "vertical_union_fraction": 0.8401,
-   "largest_empty_band_pt": 54.12,
-   "bottom_empty_band_pt": 54.12,
-   "body_lines": 64,
+   "vertical_union_fraction": 0.8456,
+   "largest_empty_band_pt": 25.47,
+   "bottom_empty_band_pt": 25.47,
+   "body_lines": 65,
    "column_lines": {
-    "left": 32,
-    "right": 32,
+    "left": 31,
+    "right": 34,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 14.325,
@@ -352,20 +352,20 @@
     {
      "lines": 2,
      "text": "The world is not dying gently. It dies like a wounded animal  under a hedge. Slow. Aware. Dangerous ",
-     "y_pt": 667.5
+     "y_pt": 696.15
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 11,
-   "vertical_union_fraction": 0.9646,
-   "largest_empty_band_pt": 10.73,
-   "bottom_empty_band_pt": 10.73,
-   "body_lines": 48,
+   "vertical_union_fraction": 0.9065,
+   "largest_empty_band_pt": 13.82,
+   "bottom_empty_band_pt": 13.82,
+   "body_lines": 35,
    "column_lines": {
     "left": 24,
-    "right": 24,
+    "right": 11,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 14.325,
@@ -374,34 +374,13 @@
   },
   {
    "page": 12,
-   "vertical_union_fraction": 0.8874,
-   "largest_empty_band_pt": 19.22,
-   "bottom_empty_band_pt": 8.74,
-   "body_lines": 41,
+   "vertical_union_fraction": 0.8769,
+   "largest_empty_band_pt": 26.36,
+   "bottom_empty_band_pt": 26.36,
+   "body_lines": 33,
    "column_lines": {
-    "left": 17,
-    "right": 24,
-    "spanning": 0
-   },
-   "median_neighbouring_baseline_pt": 14.325,
-   "short_text_blocks": [
-    {
-     "lines": 1,
-     "text": "1.3.3   The Six Bastions",
-     "y_pt": 414.49
-    }
-   ],
-   "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
-  },
-  {
-   "page": 13,
-   "vertical_union_fraction": 0.6466,
-   "largest_empty_band_pt": 199.11,
-   "bottom_empty_band_pt": 199.11,
-   "body_lines": 54,
-   "column_lines": {
-    "left": 34,
-    "right": 20,
+    "left": 23,
+    "right": 10,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 14.325,
@@ -409,8 +388,44 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
+   "page": 13,
+   "vertical_union_fraction": 0.9293,
+   "largest_empty_band_pt": 9.18,
+   "bottom_empty_band_pt": 9.18,
+   "body_lines": 70,
+   "column_lines": {
+    "left": 23,
+    "right": 47,
+    "spanning": 0
+   },
+   "median_neighbouring_baseline_pt": 14.325,
+   "short_text_blocks": [
+    {
+     "lines": 1,
+     "text": "1.3.3   The Six Bastions",
+     "y_pt": 443.14
+    }
+   ],
+   "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
+  },
+  {
    "page": 14,
-   "vertical_union_fraction": 0.5589,
+   "vertical_union_fraction": 0.6844,
+   "largest_empty_band_pt": 182.46,
+   "bottom_empty_band_pt": 182.46,
+   "body_lines": 41,
+   "column_lines": {
+    "left": 24,
+    "right": 17,
+    "spanning": 0
+   },
+   "median_neighbouring_baseline_pt": 14.325,
+   "short_text_blocks": [],
+   "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
+  },
+  {
+   "page": 15,
+   "vertical_union_fraction": 0.5651,
    "largest_empty_band_pt": 271.49,
    "bottom_empty_band_pt": 271.49,
    "body_lines": 34,
@@ -424,29 +439,14 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 15,
-   "vertical_union_fraction": 0.5352,
-   "largest_empty_band_pt": 273.71,
-   "bottom_empty_band_pt": 273.71,
-   "body_lines": 32,
-   "column_lines": {
-    "left": 17,
-    "right": 15,
-    "spanning": 0
-   },
-   "median_neighbouring_baseline_pt": 14.325,
-   "short_text_blocks": [],
-   "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
-  },
-  {
    "page": 16,
-   "vertical_union_fraction": 0.4935,
+   "vertical_union_fraction": 0.5283,
    "largest_empty_band_pt": 274.29,
    "bottom_empty_band_pt": 274.29,
-   "body_lines": 17,
+   "body_lines": 32,
    "column_lines": {
-    "left": 17,
-    "right": 0,
+    "left": 15,
+    "right": 17,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 14.325,
@@ -476,64 +476,65 @@
   },
   {
    "page": 18,
-   "vertical_union_fraction": 0.9818,
-   "largest_empty_band_pt": 7.5,
-   "bottom_empty_band_pt": 7.5,
-   "body_lines": 83,
+   "vertical_union_fraction": 0.936,
+   "largest_empty_band_pt": 12.63,
+   "bottom_empty_band_pt": 12.63,
+   "body_lines": 76,
    "column_lines": {
     "left": 35,
-    "right": 48,
-    "spanning": 0
-   },
-   "median_neighbouring_baseline_pt": 14.325,
-   "short_text_blocks": [],
-   "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
-  },
-  {
-   "page": 19,
-   "vertical_union_fraction": 0.7165,
-   "largest_empty_band_pt": 166.83,
-   "bottom_empty_band_pt": 166.83,
-   "body_lines": 52,
-   "column_lines": {
-    "left": 17,
-    "right": 35,
+    "right": 41,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 14.325,
    "short_text_blocks": [
     {
      "lines": 2,
-     "text": "who know the correct titles. Most cannot be reasoned with  at all.",
-     "y_pt": 45.61
-    },
+     "text": "The old peoples and border powers  have not vanished.  Were-creatures, satyr cohorts, dryad ambassad",
+     "y_pt": 706.66
+    }
+   ],
+   "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
+  },
+  {
+   "page": 19,
+   "vertical_union_fraction": 0.8037,
+   "largest_empty_band_pt": 73.66,
+   "bottom_empty_band_pt": 73.66,
+   "body_lines": 62,
+   "column_lines": {
+    "left": 22,
+    "right": 40,
+    "spanning": 0
+   },
+   "median_neighbouring_baseline_pt": 14.325,
+   "short_text_blocks": [
     {
      "lines": 1,
      "text": "1.3.6   Adventurers and the Road",
-     "y_pt": 67.4
+     "y_pt": 160.58
     },
     {
      "lines": 2,
      "text": "Adventurers exist because the Bastions need work done  beyond the reach of soldiers.",
-     "y_pt": 250.02
+     "y_pt": 343.2
     },
     {
      "lines": 2,
-     "text": "What works is a party of four. Small enough to hide. Large  enough to fight. Cheap enough to lose.",
-     "y_pt": 429.32
+     "text": "What works is a party of four. Small enough to hide. Strong  enough to fight. Cheap enough to lose.",
+     "y_pt": 522.5
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 20,
-   "vertical_union_fraction": 0.8018,
-   "largest_empty_band_pt": 91.43,
-   "bottom_empty_band_pt": 91.43,
-   "body_lines": 70,
+   "vertical_union_fraction": 0.8273,
+   "largest_empty_band_pt": 62.78,
+   "bottom_empty_band_pt": 62.78,
+   "body_lines": 73,
    "column_lines": {
-    "left": 29,
-    "right": 41,
+    "left": 30,
+    "right": 43,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 14.325,
@@ -546,12 +547,12 @@
     {
      "lines": 1,
      "text": "The omens are smaller and more common.",
-     "y_pt": 418.54
+     "y_pt": 447.19
     },
     {
      "lines": 1,
      "text": "These are not rules. They are warnings.",
-     "y_pt": 569.19
+     "y_pt": 597.84
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -1008,9 +1009,9 @@
   },
   {
    "page": 26,
-   "vertical_union_fraction": 0.3861,
-   "largest_empty_band_pt": 420.71,
-   "bottom_empty_band_pt": 420.71,
+   "vertical_union_fraction": 0.5921,
+   "largest_empty_band_pt": 260.95,
+   "bottom_empty_band_pt": 260.95,
    "body_lines": 20,
    "column_lines": {
     "left": 20,
@@ -1221,9 +1222,9 @@
   },
   {
    "page": 29,
-   "vertical_union_fraction": 0.6828,
-   "largest_empty_band_pt": 222.68,
-   "bottom_empty_band_pt": 222.68,
+   "vertical_union_fraction": 0.9121,
+   "largest_empty_band_pt": 36.62,
+   "bottom_empty_band_pt": 36.62,
    "body_lines": 92,
    "column_lines": {
     "left": 29,
@@ -1277,9 +1278,9 @@
   },
   {
    "page": 30,
-   "vertical_union_fraction": 0.5838,
-   "largest_empty_band_pt": 292.18,
-   "bottom_empty_band_pt": 292.18,
+   "vertical_union_fraction": 0.823,
+   "largest_empty_band_pt": 99.14,
+   "bottom_empty_band_pt": 99.14,
    "body_lines": 52,
    "column_lines": {
     "left": 24,
@@ -1906,7 +1907,7 @@
     },
     {
      "lines": 2,
-     "text": "b Darkness  gives  Cover  against nonadjacent enemies.",
+     "text": "b Darkness  gives  Cover  against non-adjacent enemies.",
      "y_pt": 406.77
     },
     {
@@ -2033,9 +2034,9 @@
   },
   {
    "page": 46,
-   "vertical_union_fraction": 0.5318,
-   "largest_empty_band_pt": 321.63,
-   "bottom_empty_band_pt": 321.63,
+   "vertical_union_fraction": 0.7531,
+   "largest_empty_band_pt": 141.16,
+   "bottom_empty_band_pt": 141.16,
    "body_lines": 49,
    "column_lines": {
     "left": 23,
@@ -2495,9 +2496,9 @@
   },
   {
    "page": 53,
-   "vertical_union_fraction": 0.3134,
-   "largest_empty_band_pt": 469.71,
-   "bottom_empty_band_pt": 469.71,
+   "vertical_union_fraction": 0.5394,
+   "largest_empty_band_pt": 287.93,
+   "bottom_empty_band_pt": 287.93,
    "body_lines": 29,
    "column_lines": {
     "left": 13,
@@ -2516,12 +2517,12 @@
   },
   {
    "page": 54,
-   "vertical_union_fraction": 0.6034,
-   "largest_empty_band_pt": 278.39,
-   "bottom_empty_band_pt": 278.39,
-   "body_lines": 48,
+   "vertical_union_fraction": 0.7689,
+   "largest_empty_band_pt": 134.53,
+   "bottom_empty_band_pt": 134.53,
+   "body_lines": 47,
    "column_lines": {
-    "left": 25,
+    "left": 24,
     "right": 23,
     "spanning": 0
    },
@@ -2544,13 +2545,18 @@
     },
     {
      "lines": 2,
+     "text": "At the start of the Monster Phase, resolve Monster  waking rules in  9.4  and any scenario wake-up r",
+     "y_pt": 156.62
+    },
+    {
+     "lines": 2,
      "text": "A  Resting  Monster Group does not activate. An  Awake  Monster Group activates as described below.",
-     "y_pt": 201.49
+     "y_pt": 187.57
     },
     {
      "lines": 1,
      "text": "3.4.2   Monster Group Activation Order",
-     "y_pt": 234.97
+     "y_pt": 221.04
     },
     {
      "lines": 1,
@@ -2891,9 +2897,9 @@
   },
   {
    "page": 59,
-   "vertical_union_fraction": 0.4205,
-   "largest_empty_band_pt": 406.78,
-   "bottom_empty_band_pt": 406.78,
+   "vertical_union_fraction": 0.6443,
+   "largest_empty_band_pt": 224.62,
+   "bottom_empty_band_pt": 224.62,
    "body_lines": 34,
    "column_lines": {
     "left": 13,
@@ -2912,9 +2918,9 @@
   },
   {
    "page": 60,
-   "vertical_union_fraction": 0.6929,
-   "largest_empty_band_pt": 199.68,
-   "bottom_empty_band_pt": 199.68,
+   "vertical_union_fraction": 0.9095,
+   "largest_empty_band_pt": 25.11,
+   "bottom_empty_band_pt": 22.53,
    "body_lines": 71,
    "column_lines": {
     "left": 3,
@@ -3369,9 +3375,9 @@
   },
   {
    "page": 67,
-   "vertical_union_fraction": 0.5666,
-   "largest_empty_band_pt": 287.08,
-   "bottom_empty_band_pt": 287.08,
+   "vertical_union_fraction": 0.7877,
+   "largest_empty_band_pt": 116.73,
+   "bottom_empty_band_pt": 116.73,
    "body_lines": 29,
    "column_lines": {
     "left": 28,
@@ -3671,9 +3677,9 @@
   },
   {
    "page": 74,
-   "vertical_union_fraction": 0.6417,
-   "largest_empty_band_pt": 227.61,
-   "bottom_empty_band_pt": 227.61,
+   "vertical_union_fraction": 0.8591,
+   "largest_empty_band_pt": 51.91,
+   "bottom_empty_band_pt": 51.91,
    "body_lines": 54,
    "column_lines": {
     "left": 32,
@@ -3723,9 +3729,9 @@
   },
   {
    "page": 76,
-   "vertical_union_fraction": 0.6012,
-   "largest_empty_band_pt": 251.22,
-   "bottom_empty_band_pt": 251.22,
+   "vertical_union_fraction": 0.8247,
+   "largest_empty_band_pt": 70.77,
+   "bottom_empty_band_pt": 70.77,
    "body_lines": 75,
    "column_lines": {
     "left": 33,
@@ -3794,9 +3800,9 @@
   },
   {
    "page": 77,
-   "vertical_union_fraction": 0.5648,
-   "largest_empty_band_pt": 304.39,
-   "bottom_empty_band_pt": 304.39,
+   "vertical_union_fraction": 0.7269,
+   "largest_empty_band_pt": 165.48,
+   "bottom_empty_band_pt": 165.48,
    "body_lines": 51,
    "column_lines": {
     "left": 25,
@@ -4432,9 +4438,9 @@
   },
   {
    "page": 90,
-   "vertical_union_fraction": 0.3982,
-   "largest_empty_band_pt": 411.33,
-   "bottom_empty_band_pt": 411.33,
+   "vertical_union_fraction": 0.6246,
+   "largest_empty_band_pt": 229.29,
+   "bottom_empty_band_pt": 229.29,
    "body_lines": 36,
    "column_lines": {
     "left": 18,
@@ -4509,9 +4515,9 @@
   },
   {
    "page": 92,
-   "vertical_union_fraction": 0.6371,
-   "largest_empty_band_pt": 253.61,
-   "bottom_empty_band_pt": 253.61,
+   "vertical_union_fraction": 0.8593,
+   "largest_empty_band_pt": 72.52,
+   "bottom_empty_band_pt": 72.52,
    "body_lines": 55,
    "column_lines": {
     "left": 24,
@@ -4636,9 +4642,9 @@
   },
   {
    "page": 94,
-   "vertical_union_fraction": 0.3599,
-   "largest_empty_band_pt": 438.72,
-   "bottom_empty_band_pt": 438.72,
+   "vertical_union_fraction": 0.5735,
+   "largest_empty_band_pt": 288.8,
+   "bottom_empty_band_pt": 288.8,
    "body_lines": 22,
    "column_lines": {
     "left": 11,
@@ -4758,9 +4764,9 @@
   },
   {
    "page": 96,
-   "vertical_union_fraction": 0.6093,
-   "largest_empty_band_pt": 274.28,
-   "bottom_empty_band_pt": 274.28,
+   "vertical_union_fraction": 0.7781,
+   "largest_empty_band_pt": 130.68,
+   "bottom_empty_band_pt": 130.68,
    "body_lines": 50,
    "column_lines": {
     "left": 22,
@@ -4819,9 +4825,9 @@
   },
   {
    "page": 97,
-   "vertical_union_fraction": 0.4255,
-   "largest_empty_band_pt": 400.57,
-   "bottom_empty_band_pt": 400.57,
+   "vertical_union_fraction": 0.6398,
+   "largest_empty_band_pt": 226.65,
+   "bottom_empty_band_pt": 226.65,
    "body_lines": 61,
    "column_lines": {
     "left": 26,
@@ -4881,9 +4887,9 @@
   },
   {
    "page": 99,
-   "vertical_union_fraction": 0.3883,
-   "largest_empty_band_pt": 429.41,
-   "bottom_empty_band_pt": 429.41,
+   "vertical_union_fraction": 0.6251,
+   "largest_empty_band_pt": 238.06,
+   "bottom_empty_band_pt": 238.06,
    "body_lines": 34,
    "column_lines": {
     "left": 15,
@@ -5343,9 +5349,9 @@
   },
   {
    "page": 111,
-   "vertical_union_fraction": 0.346,
-   "largest_empty_band_pt": 429.2,
-   "bottom_empty_band_pt": 429.2,
+   "vertical_union_fraction": 0.5679,
+   "largest_empty_band_pt": 258.32,
+   "bottom_empty_band_pt": 258.32,
    "body_lines": 11,
    "column_lines": {
     "left": 10,
@@ -5364,9 +5370,9 @@
   },
   {
    "page": 112,
-   "vertical_union_fraction": 0.335,
-   "largest_empty_band_pt": 438.72,
-   "bottom_empty_band_pt": 438.72,
+   "vertical_union_fraction": 0.3873,
+   "largest_empty_band_pt": 402.7,
+   "bottom_empty_band_pt": 402.7,
    "body_lines": 31,
    "column_lines": {
     "left": 5,
@@ -5518,9 +5524,9 @@
   },
   {
    "page": 116,
-   "vertical_union_fraction": 0.5677,
-   "largest_empty_band_pt": 299.2,
-   "bottom_empty_band_pt": 299.2,
+   "vertical_union_fraction": 0.7905,
+   "largest_empty_band_pt": 116.84,
+   "bottom_empty_band_pt": 116.84,
    "body_lines": 54,
    "column_lines": {
     "left": 27,
@@ -6037,9 +6043,9 @@
   },
   {
    "page": 135,
-   "vertical_union_fraction": 0.2022,
-   "largest_empty_band_pt": 438.72,
-   "bottom_empty_band_pt": 438.72,
+   "vertical_union_fraction": 0.3647,
+   "largest_empty_band_pt": 414.8,
+   "bottom_empty_band_pt": 414.8,
    "body_lines": 11,
    "column_lines": {
     "left": 10,
@@ -6164,9 +6170,9 @@
   },
   {
    "page": 137,
-   "vertical_union_fraction": 0.5952,
-   "largest_empty_band_pt": 284.16,
-   "bottom_empty_band_pt": 284.16,
+   "vertical_union_fraction": 0.7976,
+   "largest_empty_band_pt": 116.99,
+   "bottom_empty_band_pt": 116.99,
    "body_lines": 55,
    "column_lines": {
     "left": 25,
@@ -6185,9 +6191,9 @@
   },
   {
    "page": 138,
-   "vertical_union_fraction": 0.6441,
-   "largest_empty_band_pt": 245.14,
-   "bottom_empty_band_pt": 245.14,
+   "vertical_union_fraction": 0.8692,
+   "largest_empty_band_pt": 62.0,
+   "bottom_empty_band_pt": 62.0,
    "body_lines": 72,
    "column_lines": {
     "left": 27,
@@ -6368,9 +6374,9 @@
   },
   {
    "page": 141,
-   "vertical_union_fraction": 0.7368,
-   "largest_empty_band_pt": 184.79,
-   "bottom_empty_band_pt": 184.79,
+   "vertical_union_fraction": 0.9036,
+   "largest_empty_band_pt": 42.57,
+   "bottom_empty_band_pt": 42.57,
    "body_lines": 90,
    "column_lines": {
     "left": 32,
@@ -6422,10 +6428,10 @@
    "vertical_union_fraction": 0.9978,
    "largest_empty_band_pt": 1.54,
    "bottom_empty_band_pt": 1.54,
-   "body_lines": 95,
+   "body_lines": 96,
    "column_lines": {
     "left": 47,
-    "right": 48,
+    "right": 49,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -6450,12 +6456,12 @@
   },
   {
    "page": 143,
-   "vertical_union_fraction": 0.8986,
-   "largest_empty_band_pt": 64.16,
-   "bottom_empty_band_pt": 64.16,
-   "body_lines": 46,
+   "vertical_union_fraction": 0.8526,
+   "largest_empty_band_pt": 92.01,
+   "bottom_empty_band_pt": 92.01,
+   "body_lines": 44,
    "column_lines": {
-    "left": 45,
+    "left": 43,
     "right": 1,
     "spanning": 0
    },
@@ -6668,9 +6674,9 @@
   },
   {
    "page": 146,
-   "vertical_union_fraction": 0.3849,
-   "largest_empty_band_pt": 391.64,
-   "bottom_empty_band_pt": 391.64,
+   "vertical_union_fraction": 0.5026,
+   "largest_empty_band_pt": 324.08,
+   "bottom_empty_band_pt": 324.08,
    "body_lines": 27,
    "column_lines": {
     "left": 13,
@@ -7032,9 +7038,9 @@
   },
   {
    "page": 155,
-   "vertical_union_fraction": 0.4918,
-   "largest_empty_band_pt": 317.75,
-   "bottom_empty_band_pt": 317.75,
+   "vertical_union_fraction": 0.6288,
+   "largest_empty_band_pt": 198.12,
+   "bottom_empty_band_pt": 198.12,
    "body_lines": 129,
    "column_lines": {
     "left": 83,
@@ -7058,9 +7064,9 @@
   },
   {
    "page": 156,
-   "vertical_union_fraction": 0.6754,
-   "largest_empty_band_pt": 214.84,
-   "bottom_empty_band_pt": 214.84,
+   "vertical_union_fraction": 0.9395,
+   "largest_empty_band_pt": 23.47,
+   "bottom_empty_band_pt": 6.0,
    "body_lines": 147,
    "column_lines": {
     "left": 116,
@@ -7112,7 +7118,7 @@
     },
     {
      "lines": 2,
-     "text": "Weapon qualities that share a name with a weapon  trait grant that exact trait from  Section 7.7 .",
+     "text": "Weapon qualities that share a name with a weapon  trait grant that exact trait from  7.7 .",
      "y_pt": 370.09
     },
     {
@@ -7929,9 +7935,9 @@
   },
   {
    "page": 182,
-   "vertical_union_fraction": 0.6273,
-   "largest_empty_band_pt": 246.42,
-   "bottom_empty_band_pt": 246.42,
+   "vertical_union_fraction": 0.7591,
+   "largest_empty_band_pt": 140.44,
+   "bottom_empty_band_pt": 140.44,
    "body_lines": 67,
    "column_lines": {
     "left": 67,
@@ -8016,9 +8022,9 @@
   },
   {
    "page": 184,
-   "vertical_union_fraction": 0.5268,
-   "largest_empty_band_pt": 317.52,
-   "bottom_empty_band_pt": 317.52,
+   "vertical_union_fraction": 0.682,
+   "largest_empty_band_pt": 195.1,
+   "bottom_empty_band_pt": 195.1,
    "body_lines": 48,
    "column_lines": {
     "left": 48,
@@ -8263,7 +8269,7 @@
     },
     {
      "lines": 2,
-     "text": "Rule:  When this attack damages a caster, the tar­ get immediately loses  1 NRG .",
+     "text": "Rule:  When this attack damages a combatant that  has  NRG , the target immediately loses  1 NRG .",
      "y_pt": 567.32
     },
     {
@@ -8286,13 +8292,13 @@
   },
   {
    "page": 189,
-   "vertical_union_fraction": 0.9012,
-   "largest_empty_band_pt": 48.25,
-   "bottom_empty_band_pt": 48.25,
-   "body_lines": 112,
+   "vertical_union_fraction": 0.9179,
+   "largest_empty_band_pt": 34.33,
+   "bottom_empty_band_pt": 34.33,
+   "body_lines": 113,
    "column_lines": {
     "left": 56,
-    "right": 56,
+    "right": 57,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -8334,18 +8340,13 @@
     },
     {
      "lines": 2,
-     "text": "Rule:  When this attack damages a caster, the tar­ get loses  1 NRG  and you regain  1 NRG .",
-     "y_pt": 495.82
-    },
-    {
-     "lines": 2,
      "text": "Tier 5 Legendary Artifact Weapons  (APL 9–10)",
-     "y_pt": 534.3
+     "y_pt": 548.22
     },
     {
      "lines": 1,
      "text": "Tier 5 Legendary Artifact Weapons (APL 9–10)",
-     "y_pt": 567.98
+     "y_pt": 581.91
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -8853,9 +8854,9 @@
   },
   {
    "page": 201,
-   "vertical_union_fraction": 0.4412,
-   "largest_empty_band_pt": 391.64,
-   "bottom_empty_band_pt": 391.64,
+   "vertical_union_fraction": 0.5515,
+   "largest_empty_band_pt": 314.27,
+   "bottom_empty_band_pt": 314.27,
    "body_lines": 28,
    "column_lines": {
     "left": 8,
@@ -8923,7 +8924,7 @@
     },
     {
      "lines": 2,
-     "text": "Though the empires that once codified magic are ash, the Five Traditions survived the Fall; each  sc",
+     "text": "Though the empires that once codified magic are ash, the Five Traditions survived the Fall, each  sc",
      "y_pt": 205.8
     }
    ],
@@ -9112,9 +9113,9 @@
    "vertical_union_fraction": 0.8693,
    "largest_empty_band_pt": 81.51,
    "bottom_empty_band_pt": 81.51,
-   "body_lines": 68,
+   "body_lines": 67,
    "column_lines": {
-    "left": 24,
+    "left": 23,
     "right": 44,
     "spanning": 0
    },
@@ -9604,7 +9605,7 @@
   },
   {
    "page": 222,
-   "vertical_union_fraction": 0.2825,
+   "vertical_union_fraction": 0.4546,
    "largest_empty_band_pt": 344.56,
    "bottom_empty_band_pt": 344.56,
    "body_lines": 17,
@@ -9740,9 +9741,9 @@
   },
   {
    "page": 228,
-   "vertical_union_fraction": 0.3649,
-   "largest_empty_band_pt": 344.56,
-   "bottom_empty_band_pt": 344.56,
+   "vertical_union_fraction": 0.469,
+   "largest_empty_band_pt": 336.63,
+   "bottom_empty_band_pt": 336.63,
    "body_lines": 26,
    "column_lines": {
     "left": 16,
@@ -9795,10 +9796,10 @@
    "vertical_union_fraction": 0.9755,
    "largest_empty_band_pt": 13.05,
    "bottom_empty_band_pt": 0.0,
-   "body_lines": 94,
+   "body_lines": 95,
    "column_lines": {
     "left": 49,
-    "right": 45,
+    "right": 46,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.825,
@@ -9839,13 +9840,13 @@
   },
   {
    "page": 232,
-   "vertical_union_fraction": 0.9305,
-   "largest_empty_band_pt": 33.53,
-   "bottom_empty_band_pt": 33.53,
-   "body_lines": 80,
+   "vertical_union_fraction": 0.9002,
+   "largest_empty_band_pt": 57.01,
+   "bottom_empty_band_pt": 57.01,
+   "body_lines": 76,
    "column_lines": {
-    "left": 47,
-    "right": 33,
+    "left": 44,
+    "right": 32,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -9858,20 +9859,20 @@
     {
      "lines": 1,
      "text": "Tier 3 Druidic Rituals (d20)",
-     "y_pt": 270.01
+     "y_pt": 370.48
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 233,
-   "vertical_union_fraction": 0.9354,
-   "largest_empty_band_pt": 30.13,
-   "bottom_empty_band_pt": 30.13,
-   "body_lines": 83,
+   "vertical_union_fraction": 0.9388,
+   "largest_empty_band_pt": 29.93,
+   "bottom_empty_band_pt": 29.93,
+   "body_lines": 92,
    "column_lines": {
     "left": 46,
-    "right": 37,
+    "right": 46,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -9886,12 +9887,12 @@
   },
   {
    "page": 234,
-   "vertical_union_fraction": 0.5842,
-   "largest_empty_band_pt": 278.86,
-   "bottom_empty_band_pt": 278.86,
-   "body_lines": 55,
+   "vertical_union_fraction": 0.7899,
+   "largest_empty_band_pt": 111.35,
+   "bottom_empty_band_pt": 111.35,
+   "body_lines": 57,
    "column_lines": {
-    "left": 30,
+    "left": 32,
     "right": 25,
     "spanning": 0
    },
@@ -10042,9 +10043,9 @@
   },
   {
    "page": 240,
-   "vertical_union_fraction": 0.4884,
-   "largest_empty_band_pt": 344.56,
-   "bottom_empty_band_pt": 344.56,
+   "vertical_union_fraction": 0.6313,
+   "largest_empty_band_pt": 244.28,
+   "bottom_empty_band_pt": 244.28,
    "body_lines": 40,
    "column_lines": {
     "left": 22,
@@ -10115,7 +10116,7 @@
   },
   {
    "page": 243,
-   "vertical_union_fraction": 0.1834,
+   "vertical_union_fraction": 0.4027,
    "largest_empty_band_pt": 297.48,
    "bottom_empty_band_pt": 297.48,
    "body_lines": 7,
@@ -10146,7 +10147,7 @@
   },
   {
    "page": 244,
-   "vertical_union_fraction": 0.3988,
+   "vertical_union_fraction": 0.5389,
    "largest_empty_band_pt": 297.48,
    "bottom_empty_band_pt": 297.48,
    "body_lines": 30,
@@ -10651,13 +10652,13 @@
   },
   {
    "page": 254,
-   "vertical_union_fraction": 0.9712,
-   "largest_empty_band_pt": 11.45,
-   "bottom_empty_band_pt": 8.76,
-   "body_lines": 57,
+   "vertical_union_fraction": 0.9578,
+   "largest_empty_band_pt": 22.58,
+   "bottom_empty_band_pt": 22.58,
+   "body_lines": 58,
    "column_lines": {
-    "left": 50,
-    "right": 7,
+    "left": 49,
+    "right": 9,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -11774,12 +11775,12 @@
   },
   {
    "page": 277,
-   "vertical_union_fraction": 0.5555,
+   "vertical_union_fraction": 0.5474,
    "largest_empty_band_pt": 297.48,
    "bottom_empty_band_pt": 297.48,
-   "body_lines": 42,
+   "body_lines": 41,
    "column_lines": {
-    "left": 19,
+    "left": 18,
     "right": 23,
     "spanning": 0
    },
@@ -12698,13 +12699,13 @@
   },
   {
    "page": 296,
-   "vertical_union_fraction": 0.8639,
-   "largest_empty_band_pt": 69.85,
-   "bottom_empty_band_pt": 69.85,
-   "body_lines": 77,
+   "vertical_union_fraction": 0.8862,
+   "largest_empty_band_pt": 55.53,
+   "bottom_empty_band_pt": 55.53,
+   "body_lines": 78,
    "column_lines": {
     "left": 37,
-    "right": 40,
+    "right": 41,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -12727,22 +12728,22 @@
     {
      "lines": 1,
      "text": "AI Steps",
-     "y_pt": 355.13
+     "y_pt": 369.45
     },
     {
      "lines": 1,
      "text": "Attacks",
-     "y_pt": 458.8
+     "y_pt": 473.13
     },
     {
      "lines": 1,
      "text": "Greatshield Bash:  1d8 + 3 blunt damage.",
-     "y_pt": 475.83
+     "y_pt": 490.15
     },
     {
      "lines": 1,
      "text": "Special Abilities",
-     "y_pt": 492.85
+     "y_pt": 507.18
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -12902,13 +12903,13 @@
   },
   {
    "page": 300,
-   "vertical_union_fraction": 0.8112,
-   "largest_empty_band_pt": 107.5,
-   "bottom_empty_band_pt": 107.5,
-   "body_lines": 73,
+   "vertical_union_fraction": 0.7946,
+   "largest_empty_band_pt": 121.82,
+   "bottom_empty_band_pt": 121.82,
+   "body_lines": 72,
    "column_lines": {
     "left": 35,
-    "right": 38,
+    "right": 37,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -12931,17 +12932,17 @@
     {
      "lines": 1,
      "text": "AI Steps",
-     "y_pt": 359.46
+     "y_pt": 345.13
     },
     {
      "lines": 1,
      "text": "Attacks",
-     "y_pt": 449.21
+     "y_pt": 434.88
     },
     {
      "lines": 1,
      "text": "Special Abilities",
-     "y_pt": 524.83
+     "y_pt": 510.51
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -13423,12 +13424,12 @@
   },
   {
    "page": 311,
-   "vertical_union_fraction": 0.8554,
-   "largest_empty_band_pt": 79.66,
-   "bottom_empty_band_pt": 79.66,
-   "body_lines": 80,
+   "vertical_union_fraction": 0.8752,
+   "largest_empty_band_pt": 65.74,
+   "bottom_empty_band_pt": 65.74,
+   "body_lines": 81,
    "column_lines": {
-    "left": 40,
+    "left": 41,
     "right": 40,
     "spanning": 0
    },
@@ -14255,13 +14256,13 @@
   },
   {
    "page": 328,
-   "vertical_union_fraction": 0.6318,
-   "largest_empty_band_pt": 243.61,
-   "bottom_empty_band_pt": 243.61,
-   "body_lines": 50,
+   "vertical_union_fraction": 0.6516,
+   "largest_empty_band_pt": 229.68,
+   "bottom_empty_band_pt": 229.68,
+   "body_lines": 51,
    "column_lines": {
     "left": 19,
-    "right": 31,
+    "right": 32,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -14316,13 +14317,13 @@
   },
   {
    "page": 329,
-   "vertical_union_fraction": 0.5721,
-   "largest_empty_band_pt": 285.18,
-   "bottom_empty_band_pt": 285.18,
-   "body_lines": 47,
+   "vertical_union_fraction": 0.5919,
+   "largest_empty_band_pt": 271.26,
+   "bottom_empty_band_pt": 271.26,
+   "body_lines": 49,
    "column_lines": {
-    "left": 18,
-    "right": 29,
+    "left": 19,
+    "right": 30,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -14335,32 +14336,32 @@
     {
      "lines": 2,
      "text": "HP 104 × Boss Scale",
-     "y_pt": 283.39
+     "y_pt": 297.72
     },
     {
      "lines": 2,
      "text": "AV 7",
-     "y_pt": 300.04
+     "y_pt": 314.37
     },
     {
      "lines": 2,
      "text": "SPD 7\"",
-     "y_pt": 316.69
+     "y_pt": 331.02
     },
     {
      "lines": 2,
      "text": "LVL 10",
-     "y_pt": 333.34
+     "y_pt": 347.67
     },
     {
      "lines": 2,
      "text": "CV 200 c",
-     "y_pt": 349.99
+     "y_pt": 364.32
     },
     {
      "lines": 2,
      "text": "Sz M",
-     "y_pt": 366.64
+     "y_pt": 380.97
     },
     {
      "lines": 1,
@@ -14441,10 +14442,10 @@
    "vertical_union_fraction": 0.5509,
    "largest_empty_band_pt": 297.48,
    "bottom_empty_band_pt": 297.48,
-   "body_lines": 44,
+   "body_lines": 45,
    "column_lines": {
     "left": 20,
-    "right": 24,
+    "right": 25,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -14865,9 +14866,9 @@
   },
   {
    "page": 338,
-   "vertical_union_fraction": 0.7013,
-   "largest_empty_band_pt": 195.17,
-   "bottom_empty_band_pt": 195.17,
+   "vertical_union_fraction": 0.9242,
+   "largest_empty_band_pt": 25.11,
+   "bottom_empty_band_pt": 13.58,
    "body_lines": 59,
    "column_lines": {
     "left": 30,
@@ -15514,9 +15515,9 @@
   },
   {
    "page": 352,
-   "vertical_union_fraction": 0.6712,
-   "largest_empty_band_pt": 197.47,
-   "bottom_empty_band_pt": 197.47,
+   "vertical_union_fraction": 0.8946,
+   "largest_empty_band_pt": 21.47,
+   "bottom_empty_band_pt": 19.16,
    "body_lines": 127,
    "column_lines": {
     "left": 79,
@@ -15597,7 +15598,7 @@
   },
   {
    "page": 355,
-   "vertical_union_fraction": 0.2943,
+   "vertical_union_fraction": 0.4427,
    "largest_empty_band_pt": 250.4,
    "bottom_empty_band_pt": 250.4,
    "body_lines": 18,
@@ -15825,12 +15826,12 @@
   },
   {
    "page": 358,
-   "vertical_union_fraction": 0.7734,
-   "largest_empty_band_pt": 147.61,
-   "bottom_empty_band_pt": 147.61,
-   "body_lines": 64,
+   "vertical_union_fraction": 0.7536,
+   "largest_empty_band_pt": 161.53,
+   "bottom_empty_band_pt": 161.53,
+   "body_lines": 63,
    "column_lines": {
-    "left": 40,
+    "left": 39,
     "right": 24,
     "spanning": 0
    },
@@ -15842,8 +15843,8 @@
      "y_pt": 457.67
     },
     {
-     "lines": 2,
-     "text": "mine each party's APL as described in  Section  6.14 .",
+     "lines": 1,
+     "text": "mine each party's APL as described in  6.14 .",
      "y_pt": 56.45
     },
     {
@@ -16235,7 +16236,7 @@
   },
   {
    "page": 363,
-   "vertical_union_fraction": 0.356,
+   "vertical_union_fraction": 0.5476,
    "largest_empty_band_pt": 250.4,
    "bottom_empty_band_pt": 250.4,
    "body_lines": 29,
@@ -16437,10 +16438,10 @@
    "vertical_union_fraction": 0.9818,
    "largest_empty_band_pt": 11.45,
    "bottom_empty_band_pt": 1.36,
-   "body_lines": 99,
+   "body_lines": 98,
    "column_lines": {
     "left": 50,
-    "right": 49,
+    "right": 48,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -16665,12 +16666,12 @@
   },
   {
    "page": 383,
-   "vertical_union_fraction": 0.9642,
+   "vertical_union_fraction": 0.964,
    "largest_empty_band_pt": 16.22,
    "bottom_empty_band_pt": 16.22,
-   "body_lines": 130,
+   "body_lines": 128,
    "column_lines": {
-    "left": 55,
+    "left": 53,
     "right": 75,
     "spanning": 0
    },
@@ -16690,6 +16691,11 @@
      "lines": 2,
      "text": "3 Blistering Sun",
      "y_pt": 299.46
+    },
+    {
+     "lines": 2,
+     "text": "No adverse weather effects apply beyond  any scenario rule that requires water.",
+     "y_pt": 471.36
     },
     {
      "lines": 1,
@@ -16737,9 +16743,9 @@
   },
   {
    "page": 385,
-   "vertical_union_fraction": 0.652,
-   "largest_empty_band_pt": 223.89,
-   "bottom_empty_band_pt": 223.89,
+   "vertical_union_fraction": 0.8678,
+   "largest_empty_band_pt": 58.95,
+   "bottom_empty_band_pt": 58.95,
    "body_lines": 60,
    "column_lines": {
     "left": 59,
@@ -23042,9 +23048,9 @@
   },
   {
    "page": 485,
-   "vertical_union_fraction": 0.4918,
-   "largest_empty_band_pt": 250.4,
-   "bottom_empty_band_pt": 250.4,
+   "vertical_union_fraction": 0.644,
+   "largest_empty_band_pt": 215.67,
+   "bottom_empty_band_pt": 215.67,
    "body_lines": 34,
    "column_lines": {
     "left": 21,
@@ -23291,9 +23297,9 @@
   },
   {
    "page": 489,
-   "vertical_union_fraction": 0.4454,
-   "largest_empty_band_pt": 250.4,
-   "bottom_empty_band_pt": 250.4,
+   "vertical_union_fraction": 0.6104,
+   "largest_empty_band_pt": 232.45,
+   "bottom_empty_band_pt": 232.45,
    "body_lines": 25,
    "column_lines": {
     "left": 24,
@@ -24522,8 +24528,8 @@
   },
   {
    "page": 510,
-   "vertical_union_fraction": 0.3623,
-   "largest_empty_band_pt": 221.81,
+   "vertical_union_fraction": 0.5792,
+   "largest_empty_band_pt": 203.32,
    "bottom_empty_band_pt": 203.32,
    "body_lines": 16,
    "column_lines": {
@@ -24711,9 +24717,9 @@
   },
   {
    "page": 514,
-   "vertical_union_fraction": 0.6527,
-   "largest_empty_band_pt": 203.32,
-   "bottom_empty_band_pt": 203.32,
+   "vertical_union_fraction": 0.8137,
+   "largest_empty_band_pt": 105.25,
+   "bottom_empty_band_pt": 105.25,
    "body_lines": 68,
    "column_lines": {
     "left": 21,
@@ -26805,10 +26811,10 @@
    "vertical_union_fraction": 0.9877,
    "largest_empty_band_pt": 5.03,
    "bottom_empty_band_pt": 2.71,
-   "body_lines": 95,
+   "body_lines": 94,
    "column_lines": {
     "left": 48,
-    "right": 47,
+    "right": 46,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -28254,7 +28260,7 @@
     },
     {
      "lines": 2,
-     "text": "are metal for rules that care whether an item is  metal. See  7.6 .",
+     "text": "are metal for rules that care whether an item is  metal. See  7.11 .",
      "y_pt": 254.99
     },
     {
@@ -28327,13 +28333,13 @@
   },
   {
    "page": 595,
-   "vertical_union_fraction": 0.9529,
-   "largest_empty_band_pt": 16.71,
-   "bottom_empty_band_pt": 16.71,
-   "body_lines": 94,
+   "vertical_union_fraction": 0.9797,
+   "largest_empty_band_pt": 11.45,
+   "bottom_empty_band_pt": 2.78,
+   "body_lines": 96,
    "column_lines": {
-    "left": 46,
-    "right": 48,
+    "left": 47,
+    "right": 49,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -28410,33 +28416,33 @@
     },
     {
      "lines": 1,
-     "text": "Blood Surge:  A Sorcery or Sorcerer rule that in­",
+     "text": "Blood Surge:  A Novice Sorcerer Talent. Once per ",
      "y_pt": 520.95
     },
     {
      "lines": 1,
      "text": "Blunt:  A damage type.",
-     "y_pt": 578.75
+     "y_pt": 606.6
     },
     {
      "lines": 1,
      "text": "Boss:  A unique LVL 10 Monster used as a capstone ",
-     "y_pt": 594.77
+     "y_pt": 622.62
     },
     {
      "lines": 1,
      "text": "Boss Scale:  The multiplier applied to a Boss's ",
-     "y_pt": 652.57
+     "y_pt": 680.42
     },
     {
-     "lines": 1,
-     "text": "Bestiary .",
+     "lines": 2,
+     "text": "lied combatants never contribute. See  9.7 The  Bestiary .",
      "y_pt": 56.45
     },
     {
      "lines": 1,
      "text": "Burning:  At the end of each round, suffer  1 fire ",
-     "y_pt": 72.47
+     "y_pt": 86.4
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -29424,7 +29430,7 @@
     },
     {
      "lines": 2,
-     "text": "the Druid into a listed form, replacing  SPD ,  Sz ,  and other listed values. See  6.12 .",
+     "text": "the Druid into a listed form, replacing  SPD ,  Sz ,  and other listed values. See  6.13 .",
      "y_pt": 373.3
     },
     {
@@ -29452,13 +29458,13 @@
   },
   {
    "page": 605,
-   "vertical_union_fraction": 0.8998,
+   "vertical_union_fraction": 0.9011,
    "largest_empty_band_pt": 62.08,
    "bottom_empty_band_pt": 62.08,
-   "body_lines": 80,
+   "body_lines": 78,
    "column_lines": {
     "left": 37,
-    "right": 43,
+    "right": 41,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 14.325,
@@ -29467,11 +29473,6 @@
      "lines": 1,
      "text": "Reference",
      "y_pt": 645.71
-    },
-    {
-     "lines": 1,
-     "text": "Hostile AI Step 1 Example",
-     "y_pt": 213.95
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -29917,9 +29918,9 @@
    "bottom_empty_band_pt": 9.08,
    "body_lines": 115,
    "column_lines": {
-    "left": 70,
+    "left": 69,
     "right": 35,
-    "spanning": 10
+    "spanning": 11
    },
    "median_neighbouring_baseline_pt": 12.475,
    "short_text_blocks": [

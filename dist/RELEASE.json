@@ -1,77 +1,77 @@
 {
- "tag": "RC522-build-39",
- "url": "https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39",
- "source_commit": "1cabee70afb4f4a27ca34342f55e78e41adec391",
+ "tag": "RC527-build-40",
+ "url": "https://github.com/xjordont/Heraldry/releases/tag/RC527-build-40",
+ "source_commit": "3f4ca5664112d0726051d36793c6ffb3d1ffc2ce",
  "assets": [
   {
-   "name": "Heraldry_RC522_basic-heroes.pdf",
-   "bytes": 23993723,
-   "sha256": "1c6e6cfc9f97ee3ed986bf940998642c440950f0075cf10cd5f746f00d513a06"
+   "name": "Heraldry_RC527_basic-heroes.pdf",
+   "bytes": 23993368,
+   "sha256": "2319336191cd20415f26f34351e3a8dd7be2ecc1e8682b7c3f6c7b5ff18c3989"
   },
   {
-   "name": "Heraldry_RC522_covers-front-back-white.pdf",
-   "bytes": 4914307,
-   "sha256": "bd5dffee8b890bd2346c3ee62fc34818b8e13e9272b95fb9285adb92f50e6743"
+   "name": "Heraldry_RC527_covers-front-back-white.pdf",
+   "bytes": 4914370,
+   "sha256": "c603bc6c7ab487e805ae4052e15b1c05ff69cfa87859dc0a461b41351c8aa331"
   },
   {
-   "name": "Heraldry_RC522_covers-front-back.pdf",
-   "bytes": 4914337,
-   "sha256": "9c2a245d46d1997dc06e41e44a78820e0df1b39b1a422ebe52607650eab6c8e7"
+   "name": "Heraldry_RC527_covers-front-back.pdf",
+   "bytes": 4914400,
+   "sha256": "895b3d08a83cc71dd44d5ef6559defa453f67070430947d26c1c190b3f5f214f"
   },
   {
-   "name": "Heraldry_RC522_digital.pdf",
-   "bytes": 156951492,
-   "sha256": "ddf122416e79ea7db555d01128ea6ca581bada54b8ca8fb7fdeb1dca3336c1ec"
+   "name": "Heraldry_RC527_digital.pdf",
+   "bytes": 177376787,
+   "sha256": "1af7ecd5b2148f4839126a6f24fdc28c503a198c61a24adb59ae4cae8207d0ee"
   },
   {
-   "name": "Heraldry_RC522_hero-record-blank.pdf",
+   "name": "Heraldry_RC527_hero-record-blank.pdf",
    "bytes": 682307,
-   "sha256": "764b6ff4f42ef3f9255e508fffdd340137b89c1a1503016f9f8fe4cafb5ef6ea"
+   "sha256": "8f2fb1f7b565be0c7b545abcc15e6e9df2cbd3fdb02031b9507062bce231f78a"
   },
   {
-   "name": "Heraldry_RC522_inkjet-borderless-white.pdf",
-   "bytes": 152121578,
-   "sha256": "d361658d967c194ed9cf3dd8a411d6762c1bf1d7ec39687dc6fea4d7890b5aaf"
+   "name": "Heraldry_RC527_inkjet-borderless-white.pdf",
+   "bytes": 172546835,
+   "sha256": "b92453f547512b092b81adf7a4a5923adb0a57872a4ade7670af2345a44b6842"
   },
   {
-   "name": "Heraldry_RC522_inkjet-borderless.pdf",
-   "bytes": 152149614,
-   "sha256": "ead73ce9b9c62794407b905634da604a420635892faab559a02b780be6780534"
+   "name": "Heraldry_RC527_inkjet-borderless.pdf",
+   "bytes": 172574853,
+   "sha256": "88942e53eea85313c8b7a8c404620596990e8a9d3bcbe089d5785ad47e6b498e"
   },
   {
-   "name": "Heraldry_RC522_inkjet-calibration.pdf",
-   "bytes": 43654,
-   "sha256": "9bc5a846d4f33d23eab631c27edf626bf5650be93b06c2b58dc2530450844710"
+   "name": "Heraldry_RC527_inkjet-calibration.pdf",
+   "bytes": 43736,
+   "sha256": "9e4bff6b41bcb9b7a1065a9bd961c13182e53daa46bf7ae30cc7fcbfeb583b6c"
   },
   {
-   "name": "Heraldry_RC522_player-aids-white.pdf",
-   "bytes": 5066329,
-   "sha256": "966757272bf98eac01b9b14e9534d3d55543f21b837ec40f6104735a9ef21e20"
+   "name": "Heraldry_RC527_player-aids-white.pdf",
+   "bytes": 5066342,
+   "sha256": "81378b15ee5f0f95e0908ae888b8f9a529e7a1d4e4ee613709ec23418f326f09"
   },
   {
-   "name": "Heraldry_RC522_player-aids.pdf",
-   "bytes": 5066804,
-   "sha256": "44a08a004c1c415022a2e401c49c3595e55ffea7f425296add9432ca95c05b77"
+   "name": "Heraldry_RC527_player-aids.pdf",
+   "bytes": 5066817,
+   "sha256": "2f11a22475c2448bcc2d41fe86d988449f7b0115f8dcf9cf330c8909c6b4ec58"
   },
   {
-   "name": "Heraldry_RC522_specimen.pdf",
-   "bytes": 4789884,
-   "sha256": "0044fb7798e2e3b3e1522cb358d34db8caff47a29a3b3953e96ad3ee5eba5ca7"
+   "name": "Heraldry_RC527_specimen.pdf",
+   "bytes": 4788161,
+   "sha256": "73066d8da78f8af34c0d7e7e2424677792a7f1cb1f2061187dd0c7fcae2b2eec"
   },
   {
-   "name": "Heraldry_RC522_release.zip",
-   "bytes": 663630033,
-   "sha256": "e429e1c619370d19fef8f852f18f0f5d699404e68bbbf101f5e1a53d7c0ce7d9"
+   "name": "Heraldry_RC527_release.zip",
+   "bytes": 752992664,
+   "sha256": "4da63db5f78f221fd2aa745762001b43b7af9cb46adf95b4695856ab1667821c"
   },
   {
    "name": "SHA256SUMS.txt",
-   "bytes": 99588,
-   "sha256": "8c527d0dbc63968906b45d39c8b288ffc16e773e27b8aae9cf4e3b83732c50a6"
+   "bytes": 100618,
+   "sha256": "6c8cabbd47fa3966b3861dafbee92d8c2a632de50d6a2f9e36bba88e301f4383"
   },
   {
    "name": "PRINT_INSTRUCTIONS.md",
    "bytes": 3307,
-   "sha256": "c359e142ba8dec0dfac24343a270c307f4e4798fb8cbdbfae42eaa500ef00f38"
+   "sha256": "1483a8ac7686845d5aa31148679924e95f58fb5954385f3acb7e65ae8a8732b8"
   }
  ]
 }
