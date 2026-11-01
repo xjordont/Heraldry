@@ -1,5 +1,9 @@
 # Production state - RC527 source, main
 
+## Owner review of the 47 tailpieces: eleven regenerated from rewritten briefs - 2026-11-01
+
+The owner reviewed the approved set and returned eleven for anatomy, physics and object errors: Rivals at the chest (twisted arms), One moves one waits (crossbow), The dropped torch (arms bent backwards), The shield shove (arm count and positions), Steadfast Word (merging arms and hands), The bind (bent swords; now two straight swords), Camouflage (the bow), the ratkin swarm (drawn as rats; now upright Halfling-sized rat-folk in a round sewer, matching Sz S in the manuscript), the broker's scale (ring and weight; now coins against brass weights with the ring in a box), Staff sword and symbol (floating; now lying flat on stone) and Paying for training (the practice sword now rests on a bench). Their briefs in `production/art/briefs/end_art.json` are rewritten with simpler staging and explicit must-show rules for anatomy and support; the eleven are rejected and queued for fresh generation. The batch card adds an anatomy check. The other 36 tailpieces stay approved.
+
 ## Tailpieces: Codex generates them without references - 2026-10-31
 
 Owner decision, replacing the hand-made route above: "Codex, no references". `config/art_style.json` (`gpt_no_references`) lists the 47 ART-END items; `tools/art_gpt_pack.py` queues them with no references (reference set `none`) and without the prompt's STYLE REFERENCES paragraph, so Codex's built-in image tool can generate them unattended. Every other part of each prompt, including the full ink-style direction, is unchanged. The batch card says how to QA a no-reference item. Style drift is the known risk: the assigned reviewer compares each delivered image with its family's references (scenes, spells, equipment) and sends redos. `OWNER_SHEET.md` and `production/art/owner_upload/` are withdrawn.

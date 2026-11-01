@@ -11986,7 +11986,7 @@
   "route": "gpt",
   "spec_sha256": "4afb6a8e5da5ac6467d3b4e980523bae059eac67746f1c42f75afcfd22912951",
   "prompt_sha256": "0641ce2d3afcad469b75500fbad8ef5cf2630a4bdfd6f91be6417c2adc823892",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T20:02:41+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12011,7 +12011,9 @@
    "max_print_w_in_300ppi": 4.983
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T20:40:58+00:00"
+  "approved_at": "2026-10-31T20:40:58+00:00",
+  "rejected_at": "2026-11-01T01:21:30+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
  },
  "ART-END-ACTION-POINTS-AND-SUMMONS": {
   "family": "world",
@@ -12364,7 +12366,7 @@
   "route": "gpt",
   "spec_sha256": "aaa8fb1ce0ea34193d36b6c0f955fda2169bcf9c161e99899557ed7e721a19b8",
   "prompt_sha256": "7dd4dc558dd22f259a1c09b5d0ef864e46362d0f7f20d4b445d67cb781329129",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T16:22:24+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12389,7 +12391,9 @@
    "max_print_w_in_300ppi": 5.067
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T19:36:14+00:00"
+  "approved_at": "2026-10-31T19:36:14+00:00",
+  "rejected_at": "2026-11-01T01:21:30+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
  },
  "ART-END-GENERAL-TALENTS": {
   "family": "world",
@@ -12398,7 +12402,7 @@
   "route": "gpt",
   "spec_sha256": "599c02bd3b9f47e9eb1870efeba44dc13b49d19639d37bed75ccb5e3dd9d9e4b",
   "prompt_sha256": "e46adcfdfeb940a4e3a323853a9bfe1e8caecfebe9b54ce3192c30c912521c0d",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T20:51:49+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12425,7 +12429,9 @@
    "max_print_w_in_300ppi": 5.01
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T21:19:43+00:00"
+  "approved_at": "2026-10-31T21:19:43+00:00",
+  "rejected_at": "2026-11-01T01:21:30+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
  },
  "ART-END-HERO-ADVANCEMENT": {
   "family": "world",
@@ -12434,7 +12440,7 @@
   "route": "gpt",
   "spec_sha256": "2c761866776e5016eb01594be7a5806600d09ab0da5da54c1e171875ff038a28",
   "prompt_sha256": "2d4d273c53083cbca498baca9aa182ee5913304ed6e03beb6a4d8e15955b133f",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T20:53:37+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12461,7 +12467,9 @@
    "max_print_w_in_300ppi": 5.06
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T21:19:43+00:00"
+  "approved_at": "2026-10-31T21:19:43+00:00",
+  "rejected_at": "2026-11-01T01:21:30+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
  },
  "ART-END-HERO-CLASSES": {
   "family": "world",
@@ -12678,7 +12686,7 @@
   "route": "gpt",
   "spec_sha256": "2a8d8a3331a428a3b1a0a6ba9c90346e2d3ac43f29254948eb6ad46143429a25",
   "prompt_sha256": "8d787e6f587e9740a53fea788d575d96fe019c72a0785c008378cb54279dc69c",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T19:05:24+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12703,7 +12711,9 @@
    "max_print_w_in_300ppi": 4.997
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T19:36:14+00:00"
+  "approved_at": "2026-10-31T19:36:14+00:00",
+  "rejected_at": "2026-11-01T01:21:30+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
  },
  "ART-END-PARTY-STRUCTURE": {
   "family": "world",
@@ -12888,7 +12898,7 @@
   "route": "gpt",
   "spec_sha256": "2678506013bbea5a89a7fba39ba07b8fe19ea1043286779750ab28f1c1bcc2eb",
   "prompt_sha256": "3703300be44e2e82e7c5fe73f20f6ce780633fcb8990455f0c6b44802cd56927",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T21:45:57+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -12913,7 +12923,9 @@
    "max_print_w_in_300ppi": 4.957
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T22:13:21+00:00"
+  "approved_at": "2026-10-31T22:13:21+00:00",
+  "rejected_at": "2026-11-01T01:21:30+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
  },
  "ART-END-THE-BESTIARY": {
   "family": "world",
@@ -12994,7 +13006,7 @@
   "route": "gpt",
   "spec_sha256": "904968f9c164f50f6ea11633cb0ee6209b601e3c9e36ee1e1f86d3175cbbb8e7",
   "prompt_sha256": "c17fbaa664c8b82084b3b75b2ae82752e050849acb6027ec4b80cb2ddbe4a6bc",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T21:06:16+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13019,7 +13031,9 @@
    "max_print_w_in_300ppi": 5.03
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T21:19:43+00:00"
+  "approved_at": "2026-10-31T21:19:43+00:00",
+  "rejected_at": "2026-11-01T01:21:30+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
  },
  "ART-END-WEATHER-TABLES-BY-CLIMATE": {
   "family": "world",
@@ -13062,7 +13076,7 @@
   "route": "gpt",
   "spec_sha256": "8a9a62c8e163536af934724dc114f6afbddd0d959d494356d8c7725b834ff7c7",
   "prompt_sha256": "4bcfe318070d88e22341af6b09e8094764b62242b6ea40cc0dfcd5849cb533ba",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T21:10:25+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13089,7 +13103,9 @@
    "max_print_w_in_300ppi": 5.063
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T21:19:43+00:00"
+  "approved_at": "2026-10-31T21:19:43+00:00",
+  "rejected_at": "2026-11-01T01:21:30+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
  },
  "ART-END-DIVINE-PRAYERS": {
   "family": "tradition",
@@ -13098,7 +13114,7 @@
   "route": "gpt",
   "spec_sha256": "4ede609415bc134c199cc277476bf3f45a6264e046ff77c4c4b42434eeed1243",
   "prompt_sha256": "82b373b2c967fc01d3582853f8fb8697b83cbb5e83d11bc37cb7a21b15b5d235",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T21:12:32+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13123,7 +13139,9 @@
    "max_print_w_in_300ppi": 5.01
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T21:19:43+00:00"
+  "approved_at": "2026-10-31T21:19:43+00:00",
+  "rejected_at": "2026-11-01T01:21:30+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
  },
  "ART-END-DRUIDIC-RITUALS": {
   "family": "tradition",
@@ -13408,7 +13426,7 @@
   "route": "gpt",
   "spec_sha256": "af87531b8bcdf62853ec5b0b234dc544f13aa50c71c3e11ba8a95a18d3fc16b6",
   "prompt_sha256": "024f4fe6293c9258daa312e3c556ed9b50bf528002cddc577710fd3b36550398",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T22:01:16+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13433,7 +13451,9 @@
    "max_print_w_in_300ppi": 4.9
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T22:13:21+00:00"
+  "approved_at": "2026-10-31T22:13:21+00:00",
+  "rejected_at": "2026-11-01T01:21:30+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
  },
  "ART-END-PERMANENT-SPECIAL-ITEMS": {
   "family": "item",
@@ -13476,7 +13496,7 @@
   "route": "gpt",
   "spec_sha256": "113d4ee9bec33b52d72dad6b031138f5d03aaa62f742e3e286ce8bbce34dfa4e",
   "prompt_sha256": "bccd1ef7cedeae7286a761589917762ca5e15b590c7d64d96fce20f3d71ff5b8",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-31T22:04:49+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -13501,7 +13521,9 @@
    "max_print_w_in_300ppi": 4.75
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-31T22:13:21+00:00"
+  "approved_at": "2026-10-31T22:13:21+00:00",
+  "rejected_at": "2026-11-01T01:21:30+00:00",
+  "rejected_reason": "Regenerate from scratch from the rewritten prompt; follow its anatomy, physics and object rules exactly."
  },
  "ART-END-RANGED-WEAPONS": {
   "family": "item",

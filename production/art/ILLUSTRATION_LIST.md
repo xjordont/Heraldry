@@ -649,28 +649,29 @@ Do not draw:
 * Not the Haunted Mausoleum or crypt interiors.
 ```
 
-### 9. Rivals at the chest
+### 9. Rivals at the chest ✗
 
 `ART-END-WHAT-IS-HERALDRY-SKIRMISH`
 
 ```text
 RIVALS AT THE CHEST - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Two rival adventurers of the Dying Lands who have reached the same iron-bound treasure chest in a monster-haunted ruin at the same moment, while a Monster closes in behind them: the competitive PvPvE race for treasure in miniature, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Two rival adventurers kneel at either end of the same iron-bound treasure chest in a monster-haunted ruin, each with one hand on its handle, both looking up at a clawed Monster arm reaching over the wall behind it: the competitive race for treasure in miniature, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Low three-quarter view: the chest sits at the centre on cracked flagstones, one rival crouched at each end with a hand on its ring handle; a broken wall stub rises behind the chest, and over its top reaches a single long clawed Monster arm, shape only.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Straight side view at kneeling height, symmetrical and calm: the chest sits at the centre on cracked flagstones; the Human kneels on one knee at its left end facing right, the Elf kneels on one knee at its right end facing left; a knee-high broken wall stub runs behind the chest, and over its top reaches a single long clawed arm, shape only.
 SUBJECT DETAILS
-* Iron-bound wooden treasure chest, lid still shut, corner straps rusted, one ring handle at each end
-* Left rival: a Human in a battered ring shirt, shortsword half-drawn, one gauntleted hand on the handle
-* Right rival: a lean Elf in a leather coat, dagger reversed in the free hand, the other hand on the opposite handle
-* Neither looks at the other's face: both stare at the clawed arm coming over the wall
-* Knee-high broken wall stub with moss and a fallen capstone, the clawed arm drawn in solid black
-* A few coins spilled from a split seam, hatched dull with no stamps
-* Cracked flagstones fading out in a few strokes on all sides
+* Iron-bound wooden treasure chest, lid shut, one ring handle on each short end
+* Human in a battered ring shirt: near hand gripping the left ring handle with the arm straight and relaxed, far hand resting on the hilt of a shortsword still in its scabbard at the hip
+* Elf in a leather coat: near hand gripping the right ring handle with the arm straight and relaxed, far hand holding a dagger low at the side, point down
+* Both heads turned up toward the clawed arm above the wall
+* Broken wall stub with moss; the clawed arm drawn in solid black
+* A few plain coins spilled from a split seam
+* Cracked flagstones fading out in a few strokes
 Must be shown exactly:
 * Exactly two rival figures and one chest; the Monster shows only as one clawed arm and shoulder
+* Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure
+* Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
 HUMAN ACTIVITY
-* Both rivals freeze mid-grab, each still gripping their end of the chest
-* The clawed arm reaches over the wall top toward them
+* Both rivals freeze, each gripping their own handle, and look up at the arm
 Greed and dread in the same breath; the richest party is the one that bleeds.
 Do not draw:
 * No lettering, numbers, dice, game tokens, or rulebook pages.
@@ -680,7 +681,7 @@ Do not draw:
 * No gore.
 ```
 
-### 10. Hero, Hireling, and Monster
+### 10. Hero, Hireling, and Monster ✓
 
 `ART-END-CORE-TERMS`
 
@@ -709,7 +710,7 @@ Do not draw:
 * No gore.
 ```
 
-### 11. The higher ground
+### 11. The higher ground ✓
 
 `ART-END-ADVANTAGES-AND-DISADVANTAGES`
 
@@ -738,7 +739,7 @@ Do not draw:
 * No gore.
 ```
 
-### 12. The imp dispelled
+### 12. The imp dispelled ✓
 
 `ART-END-ACTION-POINTS-AND-SUMMONS`
 
@@ -766,7 +767,7 @@ Do not draw:
 * No summoning circle with symbols.
 ```
 
-### 13. The ford and the fallen column
+### 13. The ford and the fallen column ✓
 
 `ART-END-TERRAIN`
 
@@ -792,26 +793,29 @@ Do not draw:
 * No square grid or measured lines.
 ```
 
-### 14. One moves, one waits
+### 14. One moves, one waits ✗
 
 `ART-END-PARTY-PHASE`
 
 ```text
 ONE MOVES, ONE WAITS - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Two Heroes of one party taking turns at a ruined corner: one dashes across an open gap while the other waits behind cover with a loaded crossbow, holding back for whatever answers, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Two Heroes of one party taking turns at a ruined corner: one runs across an open gap while the other kneels behind the wall with a loaded light crossbow held ready, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view of a broken corner of wall: the waiting Hero kneels behind it in the foreground with the crossbow levelled past the edge, the running Hero is mid-stride in the open gap beyond, smaller.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Side view: the kneeling Hero in the foreground at the left, in profile behind a ruined wall corner, the crossbow seen side-on so its whole shape reads; the running Hero smaller in the open gap beyond at the right.
 SUBJECT DETAILS
-* Kneeling Hero in a gambeson with a light crossbow braced on the wall edge, finger off the trigger
-* Running Hero in a leather coat, low and fast, shortsword in hand, cloak flying
+* Light crossbow seen in profile: a wooden tiller with a short straight bow (prod) bound across its front end, the bowstring pulled back taut to the trigger nut, the string meeting both tips of the prod, a bolt lying in the groove
+* Kneeling Hero in a gambeson: the butt of the crossbow against the shoulder, one hand under the fore-end, the other at the trigger lever, aiming along it past the wall edge
+* Running Hero in a leather coat, mid-stride, shortsword in the right hand, cloak flying
 * Corner of a ruined wall with a fallen lintel
-* Open gap of cracked paving between the two
-* A spent bolt and a dropped glove by the kneeling Hero's knee
+* Cracked paving in the open gap
 Must be shown exactly:
 * Two Heroes only, clearly on the same side
+* The crossbow string runs straight from one prod tip to the nut and on to the other prod tip
+* Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure
+* Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
 HUMAN ACTIVITY
 * One Hero crosses the gap
-* The other holds still, watching for the reply
+* The other holds still, aiming, waiting for the reply
 Measured, patient, every breath spent with care.
 Do not draw:
 * No lettering, numbers, dice, game tokens, or rulebook pages.
@@ -820,7 +824,7 @@ Do not draw:
 * No banners.
 ```
 
-### 15. The goblin tide
+### 15. The goblin tide ✓
 
 `ART-END-MONSTER-PHASE`
 
@@ -848,24 +852,26 @@ Do not draw:
 * No gore.
 ```
 
-### 16. The dropped torch
+### 16. The dropped torch ✗
 
 `ART-END-ACTION-BASICS`
 
 ```text
 THE DROPPED TORCH - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of a Hero at the foot of a cellar stair letting a lit torch fall to free a hand, drawing a blade as shapes stir in the dark ahead, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of a Hero at the foot of a cellar stair lets a lit torch fall from one hand while the other hand draws a sword, as shapes stir in the dark ahead, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Low view at the bottom of a short stone stair: the Hero stands at the centre with the torch tumbling from one hand toward the floor and the other hand pulling a sword from its scabbard; the passage beyond is a block of solid black with two vague shapes.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter front view: the Hero stands at the centre facing the dark passage at the right, the torch falling from the open left hand toward the floor; the right hand reaches across the front of the body to the sword at the left hip; the passage is solid black with two vague hunched shapes.
 SUBJECT DETAILS
 * Human Hero in a hooded mantle and leather coat, weight on the back foot
-* Torch mid-fall, its flame drawn as a few clean ink tongues
-* Shortsword halfway out of a worn scabbard
+* Left arm lowered in front of the body, fingers just opening, the torch half a foot below them, flame drawn as a few clean ink tongues
+* Right hand crossing in front of the waist to draw a shortsword forward and up out of the one scabbard on the left hip, the blade half out
 * Worn cellar stair behind, three or four steps
-* Two indistinct hunched shapes in the black passage, no features
-* Torchlight as a ring of open paper on the floor
+* Two indistinct hunched shapes in the black passage, outlined so they read in print
 Must be shown exactly:
 * One Hero only; the shapes stay vague
+* Both arms stay in front of the body; no hand reaches behind the back
+* Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure
+* Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
 HUMAN ACTIVITY
 * The Hero drops the torch and draws in one movement
 A heartbeat of decision in the dark.
@@ -876,23 +882,25 @@ Do not draw:
 * No glow effect around the torch.
 ```
 
-### 17. The shield shove
+### 17. The shield shove ✗
 
 `ART-END-UNIVERSAL-ACTIONS`
 
 ```text
 THE SHIELD SHOVE - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of the Push: a Dwarf Hero driving a shield into an Orc raider and shoving them back toward a broken balustrade, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of the Push: a Dwarf Hero drives a round shield into an Orc raider and shoves them back toward a broken balustrade, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Side view on a short stretch of ruined terrace: the Dwarf at left with shoulder behind a round shield, the Orc at right rocked backward off balance, their heels at the broken edge, open air beyond.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Straight side view, both figures in profile so every limb reads: the Dwarf at the left leaning forward behind a round shield, the Orc at the right rocked back off balance with their heels at the broken edge of a terrace.
 SUBJECT DETAILS
-* Dwarf: very broad and heavy, braided beard, mail, round shield braced with the shoulder, handaxe held back
-* Orc: broad as a doorway, grey-skinned, heavy-jawed, lower tusks jutting, battleaxe and shield flung wide
+* Dwarf: very broad and short, braided beard, mail; the round shield strapped to the left forearm and pressed flat against the Orc's chest, the left elbow bent behind it; the right hand holding a handaxe low beside the hip
+* Orc: broad, grey-skinned, lower tusks; the right hand still gripping a battleaxe raised up and back for balance, the left forearm wearing a shield flung out to the side
 * Broken stone balustrade with missing balusters behind the Orc
-* Terrace paving cracked, one slab tilting
-* Dust kicked up at the Dwarf's planted boots
+* Terrace paving cracked, dust at the Dwarf's planted boots
 Must be shown exactly:
 * The Dwarf is pushing, not striking; the Orc is falling back
+* The Dwarf has exactly two arms and the Orc exactly two arms, each arm attached at its own shoulder
+* Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure
+* Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
 HUMAN ACTIVITY
 * The Dwarf drives forward
 * The Orc staggers back toward the edge
@@ -904,7 +912,7 @@ Do not draw:
 * No gore.
 ```
 
-### 18. The leap between roofs
+### 18. The leap between roofs ✓
 
 `ART-END-MOVEMENT-RULES`
 
@@ -932,7 +940,7 @@ Do not draw:
 * No flying or magic.
 ```
 
-### 19. Arm's reach
+### 19. Arm's reach ✓
 
 `ART-END-COMBAT-BASICS`
 
@@ -960,23 +968,25 @@ Do not draw:
 * No gore.
 ```
 
-### 20. The bind
+### 20. The bind ✗
 
 `ART-END-THE-ATTACK-SEQUENCE`
 
 ```text
 THE BIND - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of the instant of defence in an attack: two blades locked at the crossguard in a Parry, close enough to see the notches, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of the instant of defence in an attack: two straight swords locked edge to edge in a Parry, close enough to see the notches, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Close crop at chest height: two gloved hands and two crossed blades fill the centre, locked near the hilts; the fighters' arms and shoulders fade into white paper at each side.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Close view: two straight blades cross in a clean X at the centre, meeting a hand's width above both crossguards; each fighter's hand, wrist and sleeve fade into white paper at the lower left and lower right.
 SUBJECT DETAILS
-* Left blade: a plain longsword with a straight crossguard, held in a mailed glove
-* Right blade: a heavy single-edged falchion in a bare scarred fist
-* Blades crossed in an X near the guards, a notch biting into one edge
-* Sleeves: a mail cuff on one arm, a padded sleeve on the other
+* Left: a longsword with a straight crossguard and a round pommel, gripped in a mailed glove
+* Right: a straight arming sword with a straight crossguard and a wheel pommel, gripped in a bare scarred fist
+* Both blades perfectly straight, edges parallel, tapering evenly to the point
+* A notch where the edges meet
 * A few flicked sparks as ink flecks at the contact point
 Must be shown exactly:
 * Hands and blades only; no faces
+* Exactly two swords, both straight and unbent, each one blade with one guard, one grip and one pommel, held by one hand
+* Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
 HUMAN ACTIVITY
 * Both fighters strain against the locked blades
 Strain, grit and a second that decides everything.
@@ -987,7 +997,7 @@ Do not draw:
 * No gore.
 ```
 
-### 21. Frightened
+### 21. Frightened ✓
 
 `ART-END-CONDITIONS`
 
@@ -1014,7 +1024,7 @@ Do not draw:
 * No gore.
 ```
 
-### 22. The Party Leader's halt
+### 22. The Party Leader's halt ✓
 
 `ART-END-PARTY-STRUCTURE`
 
@@ -1042,7 +1052,7 @@ Do not draw:
 * No monsters.
 ```
 
-### 23. The bow too big
+### 23. The bow too big ✓
 
 `ART-END-CORE-HERO-CREATION-RULES`
 
@@ -1069,7 +1079,7 @@ Do not draw:
 * No armour.
 ```
 
-### 24. Travellers of five peoples
+### 24. Travellers of five peoples ✓
 
 `ART-END-RANDOM-ANCESTRY-TABLES`
 
@@ -1097,7 +1107,7 @@ Do not draw:
 * No glow halo around the fire.
 ```
 
-### 25. Eyes in the dark
+### 25. Eyes in the dark ✓
 
 `ART-END-COMMON-TRAIT-RULES`
 
@@ -1125,7 +1135,7 @@ Do not draw:
 * No monsters.
 ```
 
-### 26. The life left behind
+### 26. The life left behind ✓
 
 `ART-END-BACKGROUNDS`
 
@@ -1151,25 +1161,28 @@ Do not draw:
 * No banners or smoke.
 ```
 
-### 27. Camouflage
+### 27. Camouflage ✗
 
 `ART-END-GENERAL-TALENTS`
 
 ```text
 CAMOUFLAGE - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of the Camouflage talent: a Hero lying hidden in ferns and roots, only the eyes and an arrowhead showing, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of the Camouflage talent: an archer crouched low and hidden in ferns, a nocked bow held ready, face and hands barely showing through the fronds, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Low view at ground level: a tangle of ferns and roots fills the centre, and inside it the Hero's face and bow hand are barely visible among the leaves.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view: a dense mass of ferns and roots fills the centre; through a gap the archer crouches facing right, the bow held upright and in full view from its top tip to its bottom tip.
 SUBJECT DETAILS
-* Fern fronds and roots drawn in bold shapes
-* A pair of watchful eyes and a strip of brow in the leaves
-* Shortbow arrowhead and fingers at the string
-* Leaf litter and a mossy log
-* A beetle on the log for scale
+* Shortbow held upright in the left hand at the grip, both curved limbs and both tips visible
+* Bowstring running straight from the top tip to the drawing fingers and on to the bottom tip, drawn back only partway
+* Arrow nocked on the string and resting across the bow hand, pointing right, the archer's eyes looking along it
+* Hood and face half hidden by fern fronds
+* Leaf litter, a mossy log and a beetle for scale
 Must be shown exactly:
-* The Hero is mostly hidden; the cover dominates
+* The archer is mostly hidden; the cover dominates
+* The bow is one whole bow with its string attached at both tips and the arrow on the string
+* Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure
+* Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
 HUMAN ACTIVITY
-* The Hero waits motionless
+* The archer waits motionless, ready to loose
 Patient, unseen menace.
 Do not draw:
 * No lettering, numbers, dice, game tokens, or rulebook pages.
@@ -1178,7 +1191,7 @@ Do not draw:
 * No enemies.
 ```
 
-### 28. Wild Shape: the stag
+### 28. Wild Shape: the stag ✓
 
 `ART-END-HERO-CLASSES`
 
@@ -1205,7 +1218,7 @@ Do not draw:
 * No glow.
 ```
 
-### 29. The porter's drag
+### 29. The porter's drag ✓
 
 `ART-END-HIRELINGS`
 
@@ -1232,23 +1245,26 @@ Do not draw:
 * No enemies in frame.
 ```
 
-### 30. Paying for training
+### 30. Paying for training ✗
 
 `ART-END-HERO-ADVANCEMENT`
 
 ```text
 PAYING FOR TRAINING - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Advancement bought with coin: a Hero's scarred hand dropping a purse into a trainer's open palm over a practice sword, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Advancement bought with coin: a Hero's scarred hand drops a purse into a trainer's open palm above a training-yard bench where a wooden practice sword lies, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Close crop at waist height: two hands meet at the centre, the purse falling from one into the other; a wooden practice sword lies across the trainer's forearm.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Close three-quarter view: a heavy wooden bench top fills the lower part of the picture with the practice sword lying flat on it; above the bench, the Hero's hand from the left lets the purse fall into the trainer's open palm from the right.
 SUBJECT DETAILS
-* Hero's hand, scarred knuckles, a worn bracer
-* Trainer's broad calloused palm, older, missing a fingertip
-* Small leather purse, coins showing at its mouth without stamps
-* Wooden practice sword with a dented edge
-* Sleeve cuffs: mail on the Hero, a padded sleeve on the trainer
+* Hero's hand with scarred knuckles and a worn bracer over a mail cuff
+* Trainer's broad calloused palm, older, missing a fingertip, a padded sleeve
+* Small leather purse with its drawstring cord loose, plain coins showing at its mouth
+* Wooden practice sword: one wooden blade with a rounded tip, one crossguard, one wrapped grip and one pommel, lying flat on the bench boards along its whole length
+* Bench boards with nail heads and a worn edge
 Must be shown exactly:
 * Hands only; no faces
+* Exactly two hands, one from each person, each attached to its own sleeve
+* The practice sword rests flat on the bench, untouched by either hand
+* Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
 HUMAN ACTIVITY
 * The purse changes hands
 Skill earned in blood and paid for in silver.
@@ -1259,7 +1275,7 @@ Do not draw:
 * No full figures.
 ```
 
-### 31. Goblin-sign on the road
+### 31. Goblin-sign on the road ✓
 
 `ART-END-DETERMINING-MONSTERS-FOR-AN-ADVENTURE`
 
@@ -1287,7 +1303,7 @@ Do not draw:
 * No gore.
 ```
 
-### 32. Wolves resting at the wagon
+### 32. Wolves resting at the wagon ✓
 
 `ART-END-MONSTER-PLACEMENT-AND-INITIAL-STATE`
 
@@ -1314,7 +1330,7 @@ Do not draw:
 * No gore.
 ```
 
-### 33. The drowned bell tower
+### 33. The drowned bell tower ✓
 
 `ART-END-THE-BESTIARY`
 
@@ -1339,7 +1355,7 @@ Do not draw:
 * No figures.
 ```
 
-### 34. Tracks at the water's edge
+### 34. Tracks at the water's edge ✓
 
 `ART-END-RANDOM-MONSTER-GENERATION-TABLES`
 
@@ -1364,7 +1380,7 @@ Do not draw:
 * No readable symbols in the tracks.
 ```
 
-### 35. The scout on the ridge
+### 35. The scout on the ridge ✓
 
 `ART-END-ADVENTURE-PREPARATION-SEQUENCE`
 
@@ -1391,7 +1407,7 @@ Do not draw:
 * No Monsters drawn in detail.
 ```
 
-### 36. Whiteout
+### 36. Whiteout ✓
 
 `ART-END-WEATHER-TABLES-BY-CLIMATE`
 
@@ -1418,7 +1434,7 @@ Do not draw:
 * No Monsters.
 ```
 
-### 37. The costly escape
+### 37. The costly escape ✓
 
 `ART-END-SOLO-AND-COOPERATIVE-PLAY`
 
@@ -1445,34 +1461,38 @@ Do not draw:
 * Not the Reliquary of Broken Saints nave.
 ```
 
-### 38. The ratkin swarm
+### 38. The ratkin swarm ✗
 
 `ART-END-DYNAMIC-PARTY-AND-SCENARIO-SCALING`
 
 ```text
 THE RATKIN SWARM - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of a Minion swarm: Ratkin Scavengers of the Pale City boiling up out of a broken drain grate in a frozen street, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of a Minion swarm: Ratkin Scavengers of the Pale City, upright rat-folk the size of a Halfling, crowding toward the viewer down a round brick sewer tunnel, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view: the wrenched grate at the centre, a stream of ratkin pouring out of it and fanning across the frozen cobbles toward the lower edge.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Looking down a round brick sewer: the tunnel mouth frames the centre, a crowd of ratkin walks upright along the shallow channel toward the viewer, the nearest three clear, the rest shrinking into the dark of the tunnel.
 SUBJECT DETAILS
-* Iron drain grate wrenched aside, its bars bent
-* Scrawny, twitching ratkin in matted grey fur, a few clutching sacks or crude blades
-* Frozen cobbles with frost and an icicle hanging from the kerb
-* One ratkin dragging a stolen boot
-* Snow scuffed by many small feet
+* Ratkin: upright two-legged rat-folk about the height of a Halfling, rat heads and long naked tails, scrawny bodies in matted grey fur and ragged scavenged cloth
+* A few carry sacks over the shoulder or crude notched blades in their hands
+* Round brick sewer tunnel with a shallow channel of icy water, icicles hanging from the arch
+* One ratkin dragging a stolen boot by its laces
+* The crowd fading into darkness behind
 Must be shown exactly:
 * The ratkin read as one swarm, not separate portraits
+* Ratkin are upright humanoid rat-folk about the size of a Halfling, never ordinary rats on all fours
+* Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure
+* Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
 HUMAN ACTIVITY
-* The swarm pours out of the drain
+* The swarm presses forward along the sewer
 Endless, verminous pressure.
 Do not draw:
 * No lettering, numbers, dice, game tokens, or rulebook pages.
 * Not the Ratkin ancestry or bestiary portraits.
+* No ordinary rats or animals on all fours.
 * No gore.
 * No Heroes in frame.
 ```
 
-### 39. The Antlered Path cairn
+### 39. The Antlered Path cairn ✓
 
 `ART-END-THE-CAMPAIGN-CYCLE`
 
@@ -1497,7 +1517,7 @@ Do not draw:
 * No glow.
 ```
 
-### 40. Warden of the Threshold
+### 40. Warden of the Threshold ✓
 
 `ART-END-LEGENDARY-VETERANS`
 
@@ -4214,7 +4234,7 @@ Do not draw:
 * No gore or blood.
 ```
 
-### 3. The pierced breastplate
+### 3. The pierced breastplate ✓
 
 `ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE`
 
@@ -4241,7 +4261,7 @@ Do not draw:
 * No maker's marks.
 ```
 
-### 4. Three starting bundles
+### 4. Three starting bundles ✓
 
 `ART-END-CHOSEN-AND-RANDOM-CREATION`
 
@@ -4268,23 +4288,25 @@ Do not draw:
 * No figures.
 ```
 
-### 5. Staff, sword, and symbol
+### 5. Staff, sword, and symbol ✗
 
 `ART-END-RANDOM-CLASS-TABLE`
 
 ```text
 STAFF, SWORD, AND SYMBOL - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Three callings in three objects: a caster's quarterstaff crossed over a soldier's shortsword, a cleric's holy symbol hanging from the staff, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Three callings in three objects lying on a flat stone: a caster's quarterstaff, a soldier's sheathed shortsword, and a cleric's holy symbol on its chain, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Still life on a flat stone at slight elevation: staff and sword crossed in a low X at the centre, the holy symbol dangling on its chain from the staff's head. Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Seen from slightly above: a broad flat stone at the centre; the shortsword in its scabbard lies flat along it, the quarterstaff lies flat across it at an angle, and the holy symbol lies on the stone with its chain coiled beside them.
 SUBJECT DETAILS
-* Plain ash quarterstaff, scuffed and iron-free
-* Shortsword in a worn scabbard with a wrapped grip
-* Holy symbol as a simple disc on a chain, chipped, no readable mark
+* Plain ash quarterstaff, scuffed and iron-free, lying flat on the stone and touching it along its length
+* Shortsword in a worn scabbard with a wrapped grip, lying flat on the stone
+* Holy symbol as a simple chipped disc, lying flat with its chain coiled on the stone, no readable mark
 * Flat stone with a crack and a lichen patch
 * A few dry leaves
 Must be shown exactly:
 * Only these three objects
+* All three objects rest flat on the stone with their shadows directly beneath them; nothing is raised or floating
+* Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
 Different roads into the same dark.
 Ink it like old-school rulebook equipment art: a bold, rough contour of uneven weight around each object, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag that follows each material: grain on wood, dents and pits on metal, folds and wear on leather and cloth. High contrast, with few in-between textures. Each object reads as a clear silhouette first and detail second: no stipple fields, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable construction, worn and used. It must look drawn by hand with brush, pen and ink, not generated or rendered.
 Do not draw:
@@ -4294,7 +4316,7 @@ Do not draw:
 * No glow.
 ```
 
-### 6. The full pack
+### 6. The full pack ✓
 
 `ART-END-EQUIPMENT-OVERVIEW`
 
@@ -4321,33 +4343,35 @@ Do not draw:
 * No labels.
 ```
 
-### 7. The broker's scale
+### 7. The broker's scale ✗
 
 `ART-END-ITEM-AVAILABILITY`
 
 ```text
 THE BROKER'S SCALE - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of the price of rarity: a Grand Hall broker's balance with a heap of coins on one pan outweighed by a single old ring on the other, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of the price of rarity: a Grand Hall broker's balance weighing a tall heap of coins against brass weights, while the single old ring that costs them waits in an open box on the counter, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Still life on a counter end: the balance scale stands at the centre, the ring pan dipped low and the coin pan high. Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view of a worn counter: the balance stands at the centre, its beam level, one pan heaped with coins and the other holding stacked brass weights; in front of it the small open ring box with the ring.
 SUBJECT DETAILS
-* Brass balance on an iron post, beam tilted
-* Low pan: one heavy old ring set with a dull stone
-* High pan: a heap of tarnished coins, no stamps
-* Spare weights in a row, one missing
+* Brass balance on an iron post, the beam level and both pans hanging evenly from chains
+* Left pan: a tall heap of tarnished coins, plain faces
+* Right pan: three stacked brass weights
+* Ring: a plain gold band sized for a finger with one dull stone set in a raised claw setting, standing upright in a small open wooden box
 * Counter edge worn smooth, a candle stub
 Must be shown exactly:
-* The single ring outweighs the coins
+* The ring is a real finger ring, small, resting in its box and not on the scale
+* The balance obeys weight: coins against brass weights, beam level
+* Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
 Some things cannot simply be bought.
 Ink it like old-school rulebook equipment art: a bold, rough contour of uneven weight around each object, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag that follows each material: grain on wood, dents and pits on metal, folds and wear on leather and cloth. High contrast, with few in-between textures. Each object reads as a clear silhouette first and detail second: no stipple fields, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable construction, worn and used. It must look drawn by hand with brush, pen and ink, not generated or rendered.
 Do not draw:
 * No lettering, numbers, dice, game tokens, or rulebook pages.
 * Not the Treasure Tables still life.
 * No sparkle effects.
-* No readable marks.
+* No readable marks or stamps on the coins.
 ```
 
-### 8. Lesser missiles
+### 8. Lesser missiles ✓
 
 `ART-END-RANGED-WEAPONS`
 
@@ -4373,7 +4397,7 @@ Do not draw:
 * No maker's marks.
 ```
 
-### 9. Brigandine on the stand
+### 9. Brigandine on the stand ✓
 
 `ART-END-ARMOUR`
 
@@ -4399,7 +4423,7 @@ Do not draw:
 * No heraldic devices.
 ```
 
-### 10. The spent scroll
+### 10. The spent scroll ✓
 
 `ART-END-SCROLLS`
 
@@ -4425,7 +4449,7 @@ Do not draw:
 * Not the Tier 2 Arcane copying scene.
 ```
 
-### 11. Hook, rope, and spikes
+### 11. Hook, rope, and spikes ✓
 
 `ART-END-ADVENTURING-EQUIPMENT`
 
@@ -4451,7 +4475,7 @@ Do not draw:
 * No labels.
 ```
 
-### 12. The Bell's Tongue
+### 12. The Bell's Tongue ✓
 
 `ART-END-PERMANENT-SPECIAL-ITEMS`
 
@@ -4476,7 +4500,7 @@ Do not draw:
 * No runes.
 ```
 
-### 13. The contract and the map
+### 13. The contract and the map ✓
 
 `ART-END-READING-A-SCENARIO-BEFORE-SETUP`
 
@@ -4908,26 +4932,28 @@ Do not draw:
 * Do not use the Tier 1 pebble ring.
 ```
 
-### 16. Steadfast Word
+### 16. Steadfast Word ✗
 
 `ART-END-DIVINE-PRAYERS`
 
 ```text
 STEADFAST WORD - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Steadfast Word, a Paladin's Tier 0 Orison: a mail-clad Paladin speaks one word over a fallen, Frightened companion and hauls them back to their feet, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Steadfast Word, a Paladin's Tier 0 Orison: a mail-clad Paladin speaks one word and pulls a kneeling, Frightened companion back to their feet by a single clasped forearm, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Small scene vignette of the tradition's magic at work, densest at the caster and thinning into white paper toward irregular edges. Three-quarter view at knee height: the Paladin stands at the centre, leaning down, one hand locked around the companion's forearm; the companion rises from one knee at right, still half turned toward something off the edge of the picture.
+Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Side view at knee height with clear space between the two bodies: the Paladin stands at the left, the companion kneels on one knee at the right; their only contact is one forearm-to-forearm grip in the middle of the picture.
 SUBJECT DETAILS
-* Paladin in a ring shirt with a targe on the free arm and a mace at the belt, mouth open on a single word
-* Companion in a leather coat, pale and wide-eyed, rising from one knee with a dropped shortsword beside them
-* A thin ring of short upright ink strokes rising from the ground around both figures
-* Cracked flagstones and a few loose stones
-* Forearm-to-forearm grip drawn large and clear as the focal point
+* Paladin in a ring shirt, targe strapped on the left forearm held at the side, mace hanging at the belt, mouth open on a single word
+* Paladin's right hand and the companion's right hand gripping each other's forearms, the two arms forming one clear straight line
+* Companion in a leather coat, pale and wide-eyed, rising from one knee, the free left hand pushing on the raised knee
+* Dropped shortsword lying flat on the flagstones beside the companion
+* A thin ring of short upright ink strokes on the ground around both figures
 Must be shown exactly:
 * Exactly two figures; the Paladin is lifting, not striking
+* The two figures touch only at the clasped forearms; their other arms, hands and bodies stay separate
+* Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure
+* Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air
 HUMAN ACTIVITY
 * The Paladin speaks and pulls the companion upright
-* The companion's fear breaks as they stand
 Plain courage passed from one hand to another.
 Do not draw:
 * No lettering, numbers, dice, game tokens, or rulebook pages.
@@ -4936,7 +4962,7 @@ Do not draw:
 * No longsword drawn and no enemy in frame.
 ```
 
-### 17. Blood Flicker
+### 17. Blood Flicker ✓
 
 `ART-END-SORCERIES`
 
@@ -4964,7 +4990,7 @@ Do not draw:
 * No gore.
 ```
 
-### 18. Vine Lash
+### 18. Vine Lash ✓
 
 `ART-END-DRUIDIC-RITUALS`
 
@@ -4991,7 +5017,7 @@ Do not draw:
 * No gore.
 ```
 
-### 19. Telekinetic Hand
+### 19. Telekinetic Hand ✓
 
 `ART-END-PSYCHIC-ABILITIES`
 

@@ -14005,23 +14005,24 @@
     165
    ],
    "brief": {
-    "identity": "Two rival adventurers of the Dying Lands who have reached the same iron-bound treasure chest in a monster-haunted ruin at the same moment, while a Monster closes in behind them: the competitive PvPvE race for treasure in miniature.",
-    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Low three-quarter view: the chest sits at the centre on cracked flagstones, one rival crouched at each end with a hand on its ring handle; a broken wall stub rises behind the chest, and over its top reaches a single long clawed Monster arm, shape only.",
+    "identity": "Two rival adventurers kneel at either end of the same iron-bound treasure chest in a monster-haunted ruin, each with one hand on its handle, both looking up at a clawed Monster arm reaching over the wall behind it: the competitive race for treasure in miniature.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Straight side view at kneeling height, symmetrical and calm: the chest sits at the centre on cracked flagstones; the Human kneels on one knee at its left end facing right, the Elf kneels on one knee at its right end facing left; a knee-high broken wall stub runs behind the chest, and over its top reaches a single long clawed arm, shape only.",
     "details": [
-     "Iron-bound wooden treasure chest, lid still shut, corner straps rusted, one ring handle at each end",
-     "Left rival: a Human in a battered ring shirt, shortsword half-drawn, one gauntleted hand on the handle",
-     "Right rival: a lean Elf in a leather coat, dagger reversed in the free hand, the other hand on the opposite handle",
-     "Neither looks at the other's face: both stare at the clawed arm coming over the wall",
-     "Knee-high broken wall stub with moss and a fallen capstone, the clawed arm drawn in solid black",
-     "A few coins spilled from a split seam, hatched dull with no stamps",
-     "Cracked flagstones fading out in a few strokes on all sides"
+     "Iron-bound wooden treasure chest, lid shut, one ring handle on each short end",
+     "Human in a battered ring shirt: near hand gripping the left ring handle with the arm straight and relaxed, far hand resting on the hilt of a shortsword still in its scabbard at the hip",
+     "Elf in a leather coat: near hand gripping the right ring handle with the arm straight and relaxed, far hand holding a dagger low at the side, point down",
+     "Both heads turned up toward the clawed arm above the wall",
+     "Broken wall stub with moss; the clawed arm drawn in solid black",
+     "A few plain coins spilled from a split seam",
+     "Cracked flagstones fading out in a few strokes"
     ],
     "must": [
-     "Exactly two rival figures and one chest; the Monster shows only as one clawed arm and shoulder"
+     "Exactly two rival figures and one chest; the Monster shows only as one clawed arm and shoulder",
+     "Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure",
+     "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air"
     ],
     "activity": [
-     "Both rivals freeze mid-grab, each still gripping their end of the chest",
-     "The clawed arm reaches over the wall top toward them"
+     "Both rivals freeze, each gripping their own handle, and look up at the arm"
     ],
     "atmosphere": "Greed and dread in the same breath; the richest party is the one that bleeds.",
     "avoid": [
@@ -14034,9 +14035,10 @@
     "sources": [
      "Lines 165-187 (1.1): two rival adventuring parties race through monster-haunted ruins for treasure; neutral Monsters stalk the field; the richest party is often the one that bled for every coin",
      "Lines 3719-3729 (7.10): ring shirt and leather coat are canonical Chest armour"
-    ]
+    ],
+    "revised": "Owner review 2026-11-01: regenerate from scratch with realistic anatomy, physics and object construction"
    },
-   "spec_sha256": "8a9a62c8e163536af934724dc114f6afbddd0d959d494356d8c7725b834ff7c7"
+   "spec_sha256": "0a2aabef23a525071bccef697458136b28a9047bc9542f9e7b16704df5d06165"
   },
   {
    "id": "ART-END-CORE-TERMS",
@@ -14241,21 +14243,24 @@
     1043
    ],
    "brief": {
-    "identity": "Two Heroes of one party taking turns at a ruined corner: one dashes across an open gap while the other waits behind cover with a loaded crossbow, holding back for whatever answers.",
-    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view of a broken corner of wall: the waiting Hero kneels behind it in the foreground with the crossbow levelled past the edge, the running Hero is mid-stride in the open gap beyond, smaller.",
+    "identity": "Two Heroes of one party taking turns at a ruined corner: one runs across an open gap while the other kneels behind the wall with a loaded light crossbow held ready.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Side view: the kneeling Hero in the foreground at the left, in profile behind a ruined wall corner, the crossbow seen side-on so its whole shape reads; the running Hero smaller in the open gap beyond at the right.",
     "details": [
-     "Kneeling Hero in a gambeson with a light crossbow braced on the wall edge, finger off the trigger",
-     "Running Hero in a leather coat, low and fast, shortsword in hand, cloak flying",
+     "Light crossbow seen in profile: a wooden tiller with a short straight bow (prod) bound across its front end, the bowstring pulled back taut to the trigger nut, the string meeting both tips of the prod, a bolt lying in the groove",
+     "Kneeling Hero in a gambeson: the butt of the crossbow against the shoulder, one hand under the fore-end, the other at the trigger lever, aiming along it past the wall edge",
+     "Running Hero in a leather coat, mid-stride, shortsword in the right hand, cloak flying",
      "Corner of a ruined wall with a fallen lintel",
-     "Open gap of cracked paving between the two",
-     "A spent bolt and a dropped glove by the kneeling Hero's knee"
+     "Cracked paving in the open gap"
     ],
     "must": [
-     "Two Heroes only, clearly on the same side"
+     "Two Heroes only, clearly on the same side",
+     "The crossbow string runs straight from one prod tip to the nut and on to the other prod tip",
+     "Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure",
+     "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air"
     ],
     "activity": [
      "One Hero crosses the gap",
-     "The other holds still, watching for the reply"
+     "The other holds still, aiming, waiting for the reply"
     ],
     "atmosphere": "Measured, patient, every breath spent with care.",
     "avoid": [
@@ -14268,9 +14273,10 @@
      "Lines 1043-1096 (3.3): sides alternate activations; unspent AP is kept for Reactions",
      "Lines 1207-1229 (4.2): Wait holds remaining AP for Reactions",
      "Line 3698 (7.9): Light Crossbow"
-    ]
+    ],
+    "revised": "Owner review 2026-11-01: regenerate from scratch with realistic anatomy, physics and object construction"
    },
-   "spec_sha256": "2a8d8a3331a428a3b1a0a6ba9c90346e2d3ac43f29254948eb6ad46143429a25"
+   "spec_sha256": "12402e0a1a4c5732ce3d4d8f1cb8960a66088a412fd9fea90f2f3765f492ffd6"
   },
   {
    "id": "ART-END-MONSTER-PHASE",
@@ -14334,18 +14340,20 @@
     1191
    ],
    "brief": {
-    "identity": "A Hero at the foot of a cellar stair letting a lit torch fall to free a hand, drawing a blade as shapes stir in the dark ahead.",
-    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Low view at the bottom of a short stone stair: the Hero stands at the centre with the torch tumbling from one hand toward the floor and the other hand pulling a sword from its scabbard; the passage beyond is a block of solid black with two vague shapes.",
+    "identity": "A Hero at the foot of a cellar stair lets a lit torch fall from one hand while the other hand draws a sword, as shapes stir in the dark ahead.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter front view: the Hero stands at the centre facing the dark passage at the right, the torch falling from the open left hand toward the floor; the right hand reaches across the front of the body to the sword at the left hip; the passage is solid black with two vague hunched shapes.",
     "details": [
      "Human Hero in a hooded mantle and leather coat, weight on the back foot",
-     "Torch mid-fall, its flame drawn as a few clean ink tongues",
-     "Shortsword halfway out of a worn scabbard",
+     "Left arm lowered in front of the body, fingers just opening, the torch half a foot below them, flame drawn as a few clean ink tongues",
+     "Right hand crossing in front of the waist to draw a shortsword forward and up out of the one scabbard on the left hip, the blade half out",
      "Worn cellar stair behind, three or four steps",
-     "Two indistinct hunched shapes in the black passage, no features",
-     "Torchlight as a ring of open paper on the floor"
+     "Two indistinct hunched shapes in the black passage, outlined so they read in print"
     ],
     "must": [
-     "One Hero only; the shapes stay vague"
+     "One Hero only; the shapes stay vague",
+     "Both arms stay in front of the body; no hand reaches behind the back",
+     "Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure",
+     "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air"
     ],
     "activity": [
      "The Hero drops the torch and draws in one movement"
@@ -14360,9 +14368,10 @@
     "sources": [
      "Lines 1191-1205 (4.1): actions in any order; a combatant may speak, signal, and drop non-objective held items without spending AP",
      "Line 4652 (7.16): Torch, a carried Light Source"
-    ]
+    ],
+    "revised": "Owner review 2026-11-01: regenerate from scratch with realistic anatomy, physics and object construction"
    },
-   "spec_sha256": "4afb6a8e5da5ac6467d3b4e980523bae059eac67746f1c42f75afcfd22912951"
+   "spec_sha256": "591f3ee3bc493dde7d96a91d157cd8493c628222c52247ea7dcb87e543f17dfa"
   },
   {
    "id": "ART-END-UNIVERSAL-ACTIONS",
@@ -14380,17 +14389,19 @@
     1207
    ],
    "brief": {
-    "identity": "The Push: a Dwarf Hero driving a shield into an Orc raider and shoving them back toward a broken balustrade.",
-    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Side view on a short stretch of ruined terrace: the Dwarf at left with shoulder behind a round shield, the Orc at right rocked backward off balance, their heels at the broken edge, open air beyond.",
+    "identity": "The Push: a Dwarf Hero drives a round shield into an Orc raider and shoves them back toward a broken balustrade.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Straight side view, both figures in profile so every limb reads: the Dwarf at the left leaning forward behind a round shield, the Orc at the right rocked back off balance with their heels at the broken edge of a terrace.",
     "details": [
-     "Dwarf: very broad and heavy, braided beard, mail, round shield braced with the shoulder, handaxe held back",
-     "Orc: broad as a doorway, grey-skinned, heavy-jawed, lower tusks jutting, battleaxe and shield flung wide",
+     "Dwarf: very broad and short, braided beard, mail; the round shield strapped to the left forearm and pressed flat against the Orc's chest, the left elbow bent behind it; the right hand holding a handaxe low beside the hip",
+     "Orc: broad, grey-skinned, lower tusks; the right hand still gripping a battleaxe raised up and back for balance, the left forearm wearing a shield flung out to the side",
      "Broken stone balustrade with missing balusters behind the Orc",
-     "Terrace paving cracked, one slab tilting",
-     "Dust kicked up at the Dwarf's planted boots"
+     "Terrace paving cracked, dust at the Dwarf's planted boots"
     ],
     "must": [
-     "The Dwarf is pushing, not striking; the Orc is falling back"
+     "The Dwarf is pushing, not striking; the Orc is falling back",
+     "The Dwarf has exactly two arms and the Orc exactly two arms, each arm attached at its own shoulder",
+     "Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure",
+     "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air"
     ],
     "activity": [
      "The Dwarf drives forward",
@@ -14407,9 +14418,10 @@
      "Lines 1207-1226 (4.2): Push, a STR Check to Push an adjacent combatant 2 inches directly away",
      "Lines 7948-7950 (9.7): Orc, broad as a doorway, battleaxe and shield, grey-skinned with lower tusks",
      "Lines 2245-2254 (6.9): Dwarf"
-    ]
+    ],
+    "revised": "Owner review 2026-11-01: regenerate from scratch with realistic anatomy, physics and object construction"
    },
-   "spec_sha256": "904968f9c164f50f6ea11633cb0ee6209b601e3c9e36ee1e1f86d3175cbbb8e7"
+   "spec_sha256": "9709a1108cfe7bec83f49afa0dc7be3a8b1a4980559ee2acb9aa82352e241b29"
   },
   {
    "id": "ART-END-MOVEMENT-RULES",
@@ -14519,17 +14531,19 @@
     1530
    ],
    "brief": {
-    "identity": "The instant of defence in an attack: two blades locked at the crossguard in a Parry, close enough to see the notches.",
-    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Close crop at chest height: two gloved hands and two crossed blades fill the centre, locked near the hilts; the fighters' arms and shoulders fade into white paper at each side.",
+    "identity": "The instant of defence in an attack: two straight swords locked edge to edge in a Parry, close enough to see the notches.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Close view: two straight blades cross in a clean X at the centre, meeting a hand's width above both crossguards; each fighter's hand, wrist and sleeve fade into white paper at the lower left and lower right.",
     "details": [
-     "Left blade: a plain longsword with a straight crossguard, held in a mailed glove",
-     "Right blade: a heavy single-edged falchion in a bare scarred fist",
-     "Blades crossed in an X near the guards, a notch biting into one edge",
-     "Sleeves: a mail cuff on one arm, a padded sleeve on the other",
+     "Left: a longsword with a straight crossguard and a round pommel, gripped in a mailed glove",
+     "Right: a straight arming sword with a straight crossguard and a wheel pommel, gripped in a bare scarred fist",
+     "Both blades perfectly straight, edges parallel, tapering evenly to the point",
+     "A notch where the edges meet",
      "A few flicked sparks as ink flecks at the contact point"
     ],
     "must": [
-     "Hands and blades only; no faces"
+     "Hands and blades only; no faces",
+     "Exactly two swords, both straight and unbent, each one blade with one guard, one grip and one pommel, held by one hand",
+     "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air"
     ],
     "activity": [
      "Both fighters strain against the locked blades"
@@ -14544,9 +14558,10 @@
     "sources": [
      "Lines 1530-1540 (5.2): the Attack Sequence; Reactions declared before damage dice",
      "Lines 1521-1528 (5.1.2): Block, Dodge and Parry"
-    ]
+    ],
+    "revised": "Owner review 2026-11-01: regenerate from scratch with realistic anatomy, physics and object construction"
    },
-   "spec_sha256": "2678506013bbea5a89a7fba39ba07b8fe19ea1043286779750ab28f1c1bcc2eb"
+   "spec_sha256": "fc30721ca1dde9f9cc5c9f32ed5a33b98f8870e09253ab6f07354529a31818fb"
   },
   {
    "id": "ART-END-CRITICAL-HITS-AND-EXPLODING-DAMAGE-DICE",
@@ -14922,17 +14937,19 @@
     2580
    ],
    "brief": {
-    "identity": "Three callings in three objects: a caster's quarterstaff crossed over a soldier's shortsword, a cleric's holy symbol hanging from the staff.",
-    "composition": "Still life on a flat stone at slight elevation: staff and sword crossed in a low X at the centre, the holy symbol dangling on its chain from the staff's head. Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes.",
+    "identity": "Three callings in three objects lying on a flat stone: a caster's quarterstaff, a soldier's sheathed shortsword, and a cleric's holy symbol on its chain.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Seen from slightly above: a broad flat stone at the centre; the shortsword in its scabbard lies flat along it, the quarterstaff lies flat across it at an angle, and the holy symbol lies on the stone with its chain coiled beside them.",
     "details": [
-     "Plain ash quarterstaff, scuffed and iron-free",
-     "Shortsword in a worn scabbard with a wrapped grip",
-     "Holy symbol as a simple disc on a chain, chipped, no readable mark",
+     "Plain ash quarterstaff, scuffed and iron-free, lying flat on the stone and touching it along its length",
+     "Shortsword in a worn scabbard with a wrapped grip, lying flat on the stone",
+     "Holy symbol as a simple chipped disc, lying flat with its chain coiled on the stone, no readable mark",
      "Flat stone with a crack and a lichen patch",
      "A few dry leaves"
     ],
     "must": [
-     "Only these three objects"
+     "Only these three objects",
+     "All three objects rest flat on the stone with their shadows directly beneath them; nothing is raised or floating",
+     "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air"
     ],
     "atmosphere": "Different roads into the same dark.",
     "avoid": [
@@ -14944,9 +14961,10 @@
     "sources": [
      "Lines 2580-2597 (6.11): the twelve classes on the Random Class Table",
      "Lines 2671-2694 (6.13): Martial, Hybrid and Caster archetypes"
-    ]
+    ],
+    "revised": "Owner review 2026-11-01: regenerate from scratch with realistic anatomy, physics and object construction"
    },
-   "spec_sha256": "113d4ee9bec33b52d72dad6b031138f5d03aaa62f742e3e286ce8bbce34dfa4e"
+   "spec_sha256": "e9a0f6a1e35f3be470a34c43ee3e665fe56b2419aa32c8d8cdb75c3b27295c74"
   },
   {
    "id": "ART-END-GENERAL-TALENTS",
@@ -14964,20 +14982,23 @@
     2599
    ],
    "brief": {
-    "identity": "The Camouflage talent: a Hero lying hidden in ferns and roots, only the eyes and an arrowhead showing.",
-    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Low view at ground level: a tangle of ferns and roots fills the centre, and inside it the Hero's face and bow hand are barely visible among the leaves.",
+    "identity": "The Camouflage talent: an archer crouched low and hidden in ferns, a nocked bow held ready, face and hands barely showing through the fronds.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view: a dense mass of ferns and roots fills the centre; through a gap the archer crouches facing right, the bow held upright and in full view from its top tip to its bottom tip.",
     "details": [
-     "Fern fronds and roots drawn in bold shapes",
-     "A pair of watchful eyes and a strip of brow in the leaves",
-     "Shortbow arrowhead and fingers at the string",
-     "Leaf litter and a mossy log",
-     "A beetle on the log for scale"
+     "Shortbow held upright in the left hand at the grip, both curved limbs and both tips visible",
+     "Bowstring running straight from the top tip to the drawing fingers and on to the bottom tip, drawn back only partway",
+     "Arrow nocked on the string and resting across the bow hand, pointing right, the archer's eyes looking along it",
+     "Hood and face half hidden by fern fronds",
+     "Leaf litter, a mossy log and a beetle for scale"
     ],
     "must": [
-     "The Hero is mostly hidden; the cover dominates"
+     "The archer is mostly hidden; the cover dominates",
+     "The bow is one whole bow with its string attached at both tips and the arrow on the string",
+     "Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure",
+     "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air"
     ],
     "activity": [
-     "The Hero waits motionless"
+     "The archer waits motionless, ready to loose"
     ],
     "atmosphere": "Patient, unseen menace.",
     "avoid": [
@@ -14989,9 +15010,10 @@
     "sources": [
      "Lines 2599-2669 (6.12): General Talents",
      "Line 2638 (6.12): Camouflage, Hide distance 0 in Cover Terrain or Difficult Terrain"
-    ]
+    ],
+    "revised": "Owner review 2026-11-01: regenerate from scratch with realistic anatomy, physics and object construction"
    },
-   "spec_sha256": "599c02bd3b9f47e9eb1870efeba44dc13b49d19639d37bed75ccb5e3dd9d9e4b"
+   "spec_sha256": "c540acae663055fc7d8d54ca0070228452fd859366615db758dfbf633181f705"
   },
   {
    "id": "ART-END-HERO-CLASSES",
@@ -15099,17 +15121,20 @@
     3277
    ],
    "brief": {
-    "identity": "Advancement bought with coin: a Hero's scarred hand dropping a purse into a trainer's open palm over a practice sword.",
-    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Close crop at waist height: two hands meet at the centre, the purse falling from one into the other; a wooden practice sword lies across the trainer's forearm.",
+    "identity": "Advancement bought with coin: a Hero's scarred hand drops a purse into a trainer's open palm above a training-yard bench where a wooden practice sword lies.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Close three-quarter view: a heavy wooden bench top fills the lower part of the picture with the practice sword lying flat on it; above the bench, the Hero's hand from the left lets the purse fall into the trainer's open palm from the right.",
     "details": [
-     "Hero's hand, scarred knuckles, a worn bracer",
-     "Trainer's broad calloused palm, older, missing a fingertip",
-     "Small leather purse, coins showing at its mouth without stamps",
-     "Wooden practice sword with a dented edge",
-     "Sleeve cuffs: mail on the Hero, a padded sleeve on the trainer"
+     "Hero's hand with scarred knuckles and a worn bracer over a mail cuff",
+     "Trainer's broad calloused palm, older, missing a fingertip, a padded sleeve",
+     "Small leather purse with its drawstring cord loose, plain coins showing at its mouth",
+     "Wooden practice sword: one wooden blade with a rounded tip, one crossguard, one wrapped grip and one pommel, lying flat on the bench boards along its whole length",
+     "Bench boards with nail heads and a worn edge"
     ],
     "must": [
-     "Hands only; no faces"
+     "Hands only; no faces",
+     "Exactly two hands, one from each person, each attached to its own sleeve",
+     "The practice sword rests flat on the bench, untouched by either hand",
+     "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air"
     ],
     "activity": [
      "The purse changes hands"
@@ -15123,9 +15148,10 @@
     ],
     "sources": [
      "Lines 3277-3327 (6.16): Train costs coin from the Treasury; Training Cost rises with level"
-    ]
+    ],
+    "revised": "Owner review 2026-11-01: regenerate from scratch with realistic anatomy, physics and object construction"
    },
-   "spec_sha256": "2c761866776e5016eb01594be7a5806600d09ab0da5da54c1e171875ff038a28"
+   "spec_sha256": "cb699a7048aa30e8189519e226af5fdbd6a122a3e88f11782e2af18b164db2bd"
   },
   {
    "id": "ART-END-EQUIPMENT-OVERVIEW",
@@ -15186,31 +15212,34 @@
     3430
    ],
    "brief": {
-    "identity": "The price of rarity: a Grand Hall broker's balance with a heap of coins on one pan outweighed by a single old ring on the other.",
-    "composition": "Still life on a counter end: the balance scale stands at the centre, the ring pan dipped low and the coin pan high. Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes.",
+    "identity": "The price of rarity: a Grand Hall broker's balance weighing a tall heap of coins against brass weights, while the single old ring that costs them waits in an open box on the counter.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view of a worn counter: the balance stands at the centre, its beam level, one pan heaped with coins and the other holding stacked brass weights; in front of it the small open ring box with the ring.",
     "details": [
-     "Brass balance on an iron post, beam tilted",
-     "Low pan: one heavy old ring set with a dull stone",
-     "High pan: a heap of tarnished coins, no stamps",
-     "Spare weights in a row, one missing",
+     "Brass balance on an iron post, the beam level and both pans hanging evenly from chains",
+     "Left pan: a tall heap of tarnished coins, plain faces",
+     "Right pan: three stacked brass weights",
+     "Ring: a plain gold band sized for a finger with one dull stone set in a raised claw setting, standing upright in a small open wooden box",
      "Counter edge worn smooth, a candle stub"
     ],
     "must": [
-     "The single ring outweighs the coins"
+     "The ring is a real finger ring, small, resting in its box and not on the scale",
+     "The balance obeys weight: coins against brass weights, beam level",
+     "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air"
     ],
     "atmosphere": "Some things cannot simply be bought.",
     "avoid": [
      "No lettering, numbers, dice, game tokens, or rulebook pages",
      "Not the Treasure Tables still life",
      "No sparkle effects",
-     "No readable marks"
+     "No readable marks or stamps on the coins"
     ],
     "sources": [
      "Lines 3430-3435 (7.5): Rare, Very Rare and Legendary items are not part of mundane open-market purchasing",
      "Lines 15478-15485 (11.2.4): the Grand Hall handles trade, brokerage and commissions"
-    ]
+    ],
+    "revised": "Owner review 2026-11-01: regenerate from scratch with realistic anatomy, physics and object construction"
    },
-   "spec_sha256": "af87531b8bcdf62853ec5b0b234dc544f13aa50c71c3e11ba8a95a18d3fc16b6"
+   "spec_sha256": "263b852ecf6298df3b3eb588cf7dd3b002eaf1bf71a57cafd4f5ca33b0afc26a"
   },
   {
    "id": "ART-END-RANGED-WEAPONS",
@@ -15433,21 +15462,23 @@
     5911
    ],
    "brief": {
-    "identity": "Steadfast Word, a Paladin's Tier 0 Orison: a mail-clad Paladin speaks one word over a fallen, Frightened companion and hauls them back to their feet.",
-    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Small scene vignette of the tradition's magic at work, densest at the caster and thinning into white paper toward irregular edges. Three-quarter view at knee height: the Paladin stands at the centre, leaning down, one hand locked around the companion's forearm; the companion rises from one knee at right, still half turned toward something off the edge of the picture.",
+    "identity": "Steadfast Word, a Paladin's Tier 0 Orison: a mail-clad Paladin speaks one word and pulls a kneeling, Frightened companion back to their feet by a single clasped forearm.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Side view at knee height with clear space between the two bodies: the Paladin stands at the left, the companion kneels on one knee at the right; their only contact is one forearm-to-forearm grip in the middle of the picture.",
     "details": [
-     "Paladin in a ring shirt with a targe on the free arm and a mace at the belt, mouth open on a single word",
-     "Companion in a leather coat, pale and wide-eyed, rising from one knee with a dropped shortsword beside them",
-     "A thin ring of short upright ink strokes rising from the ground around both figures",
-     "Cracked flagstones and a few loose stones",
-     "Forearm-to-forearm grip drawn large and clear as the focal point"
+     "Paladin in a ring shirt, targe strapped on the left forearm held at the side, mace hanging at the belt, mouth open on a single word",
+     "Paladin's right hand and the companion's right hand gripping each other's forearms, the two arms forming one clear straight line",
+     "Companion in a leather coat, pale and wide-eyed, rising from one knee, the free left hand pushing on the raised knee",
+     "Dropped shortsword lying flat on the flagstones beside the companion",
+     "A thin ring of short upright ink strokes on the ground around both figures"
     ],
     "must": [
-     "Exactly two figures; the Paladin is lifting, not striking"
+     "Exactly two figures; the Paladin is lifting, not striking",
+     "The two figures touch only at the clasped forearms; their other arms, hands and bodies stay separate",
+     "Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure",
+     "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air"
     ],
     "activity": [
-     "The Paladin speaks and pulls the companion upright",
-     "The companion's fear breaks as they stand"
+     "The Paladin speaks and pulls the companion upright"
     ],
     "atmosphere": "Plain courage passed from one hand to another.",
     "avoid": [
@@ -15460,9 +15491,10 @@
      "Lines 5937-5955 (8.4): Tier 0 Orisons, Paladin; Steadfast Word removes Frightened and lets a Prone target Stand for 0 AP",
      "Line 2968 (6.13): Paladin, Hybrid class, with Mace, Targe and Ring Shirt packages",
      "Line 5271 (8.2): Divine Prayers have no metal equipment restriction"
-    ]
+    ],
+    "revised": "Owner review 2026-11-01: regenerate from scratch with realistic anatomy, physics and object construction"
    },
-   "spec_sha256": "4ede609415bc134c199cc277476bf3f45a6264e046ff77c4c4b42434eeed1243"
+   "spec_sha256": "1a477a1a8c1d265dd7c1a0fcf447753b44e31dcd4f68f7bdfbadfe9b3e9dc88b"
   },
   {
    "id": "ART-END-SORCERIES",
@@ -15972,34 +16004,39 @@
     14859
    ],
    "brief": {
-    "identity": "A Minion swarm: Ratkin Scavengers of the Pale City boiling up out of a broken drain grate in a frozen street.",
-    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Three-quarter view: the wrenched grate at the centre, a stream of ratkin pouring out of it and fanning across the frozen cobbles toward the lower edge.",
+    "identity": "A Minion swarm: Ratkin Scavengers of the Pale City, upright rat-folk the size of a Halfling, crowding toward the viewer down a round brick sewer tunnel.",
+    "composition": "Closing tailpiece at the foot of a page, printed about 2.6 to 3.3 in wide and as short as 1.6 in: one clear focal subject with a strong silhouette in the middle of the frame, generous open white paper around it, and every edge dissolving into the paper in sparse broken strokes. Looking down a round brick sewer: the tunnel mouth frames the centre, a crowd of ratkin walks upright along the shallow channel toward the viewer, the nearest three clear, the rest shrinking into the dark of the tunnel.",
     "details": [
-     "Iron drain grate wrenched aside, its bars bent",
-     "Scrawny, twitching ratkin in matted grey fur, a few clutching sacks or crude blades",
-     "Frozen cobbles with frost and an icicle hanging from the kerb",
-     "One ratkin dragging a stolen boot",
-     "Snow scuffed by many small feet"
+     "Ratkin: upright two-legged rat-folk about the height of a Halfling, rat heads and long naked tails, scrawny bodies in matted grey fur and ragged scavenged cloth",
+     "A few carry sacks over the shoulder or crude notched blades in their hands",
+     "Round brick sewer tunnel with a shallow channel of icy water, icicles hanging from the arch",
+     "One ratkin dragging a stolen boot by its laces",
+     "The crowd fading into darkness behind"
     ],
     "must": [
-     "The ratkin read as one swarm, not separate portraits"
+     "The ratkin read as one swarm, not separate portraits",
+     "Ratkin are upright humanoid rat-folk about the size of a Halfling, never ordinary rats on all fours",
+     "Every figure has exactly two arms, two hands and two legs; shoulders, elbows, wrists and knees bend only the natural way, no limb twists behind the body or merges into another figure",
+     "Every weapon and tool is one whole, correctly built object that is gripped by a visible hand, sheathed, or resting on a surface; nothing floats in the air"
     ],
     "activity": [
-     "The swarm pours out of the drain"
+     "The swarm presses forward along the sewer"
     ],
     "atmosphere": "Endless, verminous pressure.",
     "avoid": [
      "No lettering, numbers, dice, game tokens, or rulebook pages",
      "Not the Ratkin ancestry or bestiary portraits",
+     "No ordinary rats or animals on all fours",
      "No gore",
      "No Heroes in frame"
     ],
     "sources": [
      "Lines 14971-14980 (10.6.8): Minion Swarms add Minions as party size grows",
      "Line 9029 (9.7): Ratkin Scavengers, scrawny twitching things in matted grey fur that swarm through the Pale City ruins"
-    ]
+    ],
+    "revised": "Owner review 2026-11-01: regenerate from scratch with realistic anatomy, physics and object construction"
    },
-   "spec_sha256": "aaa8fb1ce0ea34193d36b6c0f955fda2169bcf9c161e99899557ed7e721a19b8"
+   "spec_sha256": "3497554e9d0ecc1530d547da34a07d68ded621e60c708b35d95438284b4efdf7"
   },
   {
    "id": "ART-END-THE-CAMPAIGN-CYCLE",
