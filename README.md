@@ -13,7 +13,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC522-build-39](https://github.com/xjordont/Heraldry/releases/tag/RC522-build-39), 618 interior pages. RC527 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 340 approved of 346; 6 generation-queue items.
+- **Illustration records:** 345 approved of 346; 1 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`4abf6379`](https://github.com/xjordont/Heraldry/commit/4abf6379859d215278ea470bed7c2ec6fe8649ff) Art review: approve five rebuilt tailpieces; restage the crossbow from behind
 - [`86ce60ec`](https://github.com/xjordont/Heraldry/commit/86ce60ecf0db08e049a5a10057e61af3ee9944cf) art: intake of ChatGPT Work images
 - [`d86c905c`](https://github.com/xjordont/Heraldry/commit/d86c905c205b6dc501f52503c2f15fcc57cc5f1b) art(gpt): ART-END-RANDOM-CLASS-TABLE .. ART-END-RANDOM-CLASS-TABLE
 - [`a1b810ad`](https://github.com/xjordont/Heraldry/commit/a1b810ada2af69d1873ee77a4f3f6339d89b1df5) art: intake of ChatGPT Work images
 - [`c6c43255`](https://github.com/xjordont/Heraldry/commit/c6c43255fa8c3e4a9b470b5d8150fec588dbf29c) art(gpt): ART-END-DIVINE-PRAYERS .. ART-END-DIVINE-PRAYERS
 - [`875d6c79`](https://github.com/xjordont/Heraldry/commit/875d6c79973964be23053f7013da7195353e9393) art: intake of ChatGPT Work images
-- [`ed01f9a4`](https://github.com/xjordont/Heraldry/commit/ed01f9a43e27bbfd16d06330ed46df336c58548c) art(gpt): ART-END-PARTY-PHASE .. ART-END-PARTY-PHASE
 
 <!-- END AUTO:recent -->
 
