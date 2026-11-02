@@ -1,5 +1,5 @@
 {
- "source_sha256": "d28f5ec8ef438b43d278ec59c8faf195204266606bcfad1cbd8258088f48ec55",
+ "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
  "counts": {
   "cover": 1,
   "chapter": 11,
@@ -635,7 +635,7 @@
     "1. The World of Heraldry",
     "1.3 The Dying Lands"
    ],
-   "flavour": "Beyond the walls, land has become allegiance. Expedition ledgers still say forest, city, cavern, ice, desert, and swamp. Survivors know better. They use older names. The shape of the world is plain enough to anyone who has walked it. The broken mountains run down its spine. The dead empire and its ruined cities sprawl across the eastern heart. The great forest spreads west to the coast, the ice locks the north, the dunes burn in the south beyond the mountain passes, and the swamps drown the south-east where the rivers give out at the sea. The old imperial roads still join all of it, straight and patient, running out from the Ashlands to every climate that survived. A dry label cannot warn a traveller that a road has memory, a court still sits without lungs, or a pool of black water may be listening.",
+   "flavour": "Beyond the walls, the ground itself has taken sides. Expedition ledgers still say forest, city, cavern, ice, desert, and swamp. Survivors know better. They use older names. The shape of the world is plain enough to anyone who has walked it. The broken mountains run down its spine. The dead empire and its ruined cities sprawl across the eastern heart. The great forest spreads west to the coast, the ice locks the north, the dunes burn in the south beyond the mountain passes, and the swamps drown the south-east where the rivers give out at the sea. The old imperial roads still join all of it, straight and patient, running out from the Ashlands to every climate that survived. A dry label cannot warn a traveller that a road has memory, a court still sits without lungs, or a pool of black water may be listening.",
    "facts": {},
    "src_lines": [
     229,
@@ -670,7 +670,7 @@
      "1.3.2 The Six Climates of Ruin"
     ]
    },
-   "spec_sha256": "d54799ae14e838d482f8bfe60629fd28b72a0e8c0e7fe70bf7c358e73ebc6d8b"
+   "spec_sha256": "15eb6ce4e034fd2edf79b3d9727ef945382b0a5778b7b99eb095d6887964546f"
   },
   {
    "id": "ART-CLI-THE-GREENMARK",
@@ -682,7 +682,7 @@
     "1.3 The Dying Lands",
     "1.3.2 The Six Climates of Ruin"
    ],
-   "flavour": "The Greenmark is the great temperate forest of the surviving world. It is larger than the maps. Roots take a road within a season and make the milestones useless. Travellers report trees shifting at the edge of sight, upright hounds between trunks, and grove-circles where moss stays warm after snow. Foresters cut warning signs into bark for those who know how to read them. The most common sign means turn back even if the voice ahead is your own. The forest is no wilderness. It is a country that does not recognize human law.",
+   "flavour": "The Greenmark is the great temperate forest of the surviving world. It is larger than the maps. Roots take a road within a season and make the milestones useless. Travellers report trees shifting at the edge of sight, upright hounds between trunks, and grove-circles where moss stays warm after snow. Foresters cut warning signs into bark for those who know how to read them. The most common sign means turn back even if the voice ahead is your own. The forest is a country with laws of its own, and none of them are human.",
    "facts": {},
    "src_lines": [
     233,
@@ -712,7 +712,7 @@
      "1.3.2 The Greenmark"
     ]
    },
-   "spec_sha256": "69e78f2d1a2439260e26cb1fa4ae2f1f6bb9b48f40f4af90d469f72966d43e36"
+   "spec_sha256": "73004b528acd44dc03e7030ff5d2285f35c070f3791fb77795416dea8c96726a"
   },
   {
    "id": "ART-CLI-THE-ASHLANDS",
@@ -1150,7 +1150,7 @@
     "1.3 The Dying Lands",
     "1.3.3 The Six Bastions"
    ],
-   "flavour": "Saltspire is a tower-city built around a deep, sacred well at the centre of an oasis ringed by salt-pans and the bones of older cities. It has the only reliable water for a hundred miles. This makes it wealthy. It also makes it hated.",
+   "flavour": "Saltspire is a tower-city built around a deep, sacred well at the centre of an oasis ringed by salt-pans and the bones of older cities. It has the only reliable water for a hundred miles. The water has made it rich, and every neighbour that buys it hates the seller.",
    "facts": {},
    "src_lines": [
     309,
@@ -1185,7 +1185,7 @@
      "1.3.2 The Sun-Drowned"
     ]
    },
-   "spec_sha256": "3cea81c0a77c0012205377cecb26157da6480f8623fd5e6b6e5fbe2eebc8b5c8"
+   "spec_sha256": "4830aa1ddf849dcbf230fa6c88e8cb36af7d8384888f70962455028e729bbab1"
   },
   {
    "id": "ART-BAS-REEDMARCH",
@@ -1286,7 +1286,7 @@
     "1. The World of Heraldry",
     "1.3 The Dying Lands"
    ],
-   "flavour": "The Monsters of the Dying Lands are not scattered obstacles. They hold the world now. They keep roads closed, fields empty, shrines silent, and old borders meaningless. A village may vanish because of hunger, tax, fever, or weather. Outside the walls, those causes often have claws, banners, laws, or names.",
+   "flavour": "The Monsters of the Dying Lands hold the world now. They keep roads closed, fields empty, shrines silent, and old borders meaningless. A village may vanish because of hunger, tax, fever, or weather. Outside the walls, those causes often have claws, banners, laws, or names.",
    "facts": {},
    "src_lines": [
     341,
@@ -1317,7 +1317,7 @@
      "1.3.5 Monstrous Threats"
     ]
    },
-   "spec_sha256": "03b959f31f5425e26b95434850bd228f22038b1751c1f5c27af1303115fcdd2d"
+   "spec_sha256": "f816a32131131474f14e24b272d4245ab7b3a8ef00dd0fae83acc1b4832eb2bc"
   },
   {
    "id": "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD",
@@ -1375,7 +1375,7 @@
     "1. The World of Heraldry",
     "1.3 The Dying Lands"
    ],
-   "flavour": "The Dying Lands remember. They do not remember kindly.",
+   "flavour": "The Dying Lands remember, and not kindly.",
    "facts": {},
    "src_lines": [
     377,
@@ -1409,7 +1409,7 @@
      "1.3.7 Legends and Echoes"
     ]
    },
-   "spec_sha256": "8398e4870429bb243c819f360aeee62c99f1c81ce7168bcf6c0a2ae459914c7e"
+   "spec_sha256": "4d5e81221fa6fcc6ee3de05a5d0ffba50242fa4f579933768b40e4509c316e37"
   },
   {
    "id": "ART-ANC-HUMAN",
@@ -1507,7 +1507,7 @@
     "6. Your Adventuring Party",
     "6.9 Ancestries"
    ],
-   "flavour": "Dwarves are cut from sealed stone halls, old grudges, and craft traditions older than most fallen kingdoms. Hardship did not sour them so much as harden them, and little in this world meets one of them head-on and walks away whole.",
+   "flavour": "Dwarves are cut from sealed stone halls, old grudges, and craft traditions older than most fallen kingdoms. Hardship hardened them more than it soured them, and little in this world meets one of them head-on and walks away whole.",
    "facts": {},
    "src_lines": [
     2244,
@@ -1539,7 +1539,7 @@
      "6.9 Ancestries: Dwarf"
     ]
    },
-   "spec_sha256": "2f92a29ce28708e821d5ee92d8db216e17722f58c4632c5d65be7465c3d011ab"
+   "spec_sha256": "92d79a47b68ffc1926fa5e03f5f62e8d63a207d1bbd67a4b5805459286f35c2c"
   },
   {
    "id": "ART-ANC-ELF",
@@ -1757,7 +1757,7 @@
     "6. Your Adventuring Party",
     "6.9 Ancestries"
    ],
-   "flavour": "Deep elves are a crueller branch of the elder blood, raised on night, venom, and treachery taught as a fine art. They are graceful and dangerous, and far more at ease beneath the dark than beneath the sun.",
+   "flavour": "Deep elves are a crueller branch of the elder blood, raised on night, venom, and treachery taught as a fine art. Graceful and dangerous, they are more at home in the dark than under the sun.",
    "facts": {},
    "src_lines": [
     2341,
@@ -1786,7 +1786,7 @@
      "6.9 Ancestries: Deep Elf"
     ]
    },
-   "spec_sha256": "7b26de522ff71076d207557580558f7412cf2d09217038d4b9acdcea508eaffd"
+   "spec_sha256": "6f3ddf141de7c9732830d87618065a9ef797dbeb9f89b6888346ea228f9e4990"
   },
   {
    "id": "ART-ANC-DEMONBORN",
@@ -2051,7 +2051,7 @@
     "6. Your Adventuring Party",
     "6.10 Backgrounds"
    ],
-   "flavour": "A smuggler lives by false bottoms, whispered routes, and the craft of keeping valuable things out of dangerous hands. Stealth is not a flourish to them. It is the trade that buys supper.",
+   "flavour": "A smuggler lives by false bottoms, whispered routes, and the craft of keeping valuable things out of dangerous hands. To them, stealth is the trade that buys supper.",
    "facts": {},
    "src_lines": [
     2452,
@@ -2082,7 +2082,7 @@
      "6.10 Backgrounds: Smuggler"
     ]
    },
-   "spec_sha256": "da3731453000ec000f24b17648cc437bccf94c9656f693107a773007617ea247"
+   "spec_sha256": "08e48a590a4996033260f76c58614bf194ca0801fa316026fa1b51fd3f0608a0"
   },
   {
    "id": "ART-BAC-COURIER",
@@ -2094,7 +2094,7 @@
     "6. Your Adventuring Party",
     "6.10 Backgrounds"
    ],
-   "flavour": "A courier carried news, coin, or secrets across broken roads and worse weather, for patrons who paid for speed and asked no questions. Speed was never a convenience. It was the difference between arriving and being found later.",
+   "flavour": "A courier carried news, coin, or secrets across broken roads and worse weather, for patrons who paid for speed and asked no questions. Speed was the difference between arriving and being found later.",
    "facts": {},
    "src_lines": [
     2460,
@@ -2124,7 +2124,7 @@
      "6.10 Backgrounds: Courier"
     ]
    },
-   "spec_sha256": "acadcc1e4b8a4db689a9127001457905f8c1837da4faf40fe4c5d1f2aaa7f48c"
+   "spec_sha256": "3a274df90a5a9c106d87c970a4d3bdd4958bd6c126461a4b45df7a8212de6a74"
   },
   {
    "id": "ART-BAC-SCOUT",
@@ -2263,7 +2263,7 @@
     "6. Your Adventuring Party",
     "6.10 Backgrounds"
    ],
-   "flavour": "A scholar lived among books, diagrams, and arguments, and the stubborn belief that knowledge matters even in a dying world. Where others see only rubble, they read the record of how it came to fall.",
+   "flavour": "A scholar lived among books, diagrams, and arguments, stubbornly sure that knowledge matters even in a dying world. Where others see only rubble, they read the record of how it came to fall.",
    "facts": {},
    "src_lines": [
     2492,
@@ -2293,7 +2293,7 @@
      "6.10 Backgrounds: Scholar"
     ]
    },
-   "spec_sha256": "91d4672666f08d52ca0d81ea6f61c71389089231ccb34a0dcded1433b0342f92"
+   "spec_sha256": "4f40ac85dbeacb3fa497ad9797f13dcc11c5c4afa2fe207fed4d1f090f9f4875"
   },
   {
    "id": "ART-BAC-APPRENTICE",
@@ -2389,7 +2389,7 @@
     "6. Your Adventuring Party",
     "6.10 Backgrounds"
    ],
-   "flavour": "A believer kept faith in a world that rewards it rarely, and learned that courage spreads as readily as panic. People stand straighter when they believe something is still watching from above.",
+   "flavour": "A believer kept faith in a world that rewards it rarely, and found that courage spreads as readily as panic. People stand straighter when they believe something is still watching from above.",
    "facts": {},
    "src_lines": [
     2516,
@@ -2419,7 +2419,7 @@
      "6.10 Backgrounds: Believer"
     ]
    },
-   "spec_sha256": "3b8b03fa8c13f0ba5e6b62da2da9f478a0198873abdea1816287f1d66eaf55bd"
+   "spec_sha256": "e1a4752d27af32a22f2692b6fc1a2d08c7554401f6f1d331a1db246a8f04c8af"
   },
   {
    "id": "ART-BAC-HERMIT",
@@ -2556,7 +2556,7 @@
     "6. Your Adventuring Party",
     "6.10 Backgrounds"
    ],
-   "flavour": "A merchant learned value, leverage, and the quiet power of knowing what desperate people will pay. Coin is never only money to them. It is movement, influence, and another season behind the walls.",
+   "flavour": "A merchant learned value, leverage, and the quiet power of knowing what desperate people will pay. To them, coin means movement, influence, and another season behind the walls.",
    "facts": {},
    "src_lines": [
     2548,
@@ -2587,7 +2587,7 @@
      "6.10 Backgrounds: Merchant"
     ]
    },
-   "spec_sha256": "4a264a85e7100b4cf433581b53751f91e9fe6ba20985ff347bff10d669917863"
+   "spec_sha256": "087370e10aa0d5bb4bd34d84352ffb67d6a8dadbe04c9b1c1739e8f2bf8917d6"
   },
   {
    "id": "ART-BAC-NOBLE",
@@ -2727,7 +2727,7 @@
     "6. Your Adventuring Party",
     "6.13 Hero Classes"
    ],
-   "flavour": "A Fighter is forged in places where hesitation gets people killed. Drill, repetition, and hard lessons carve in the instinct to hold ground when holding it is the only thing that matters. They have watched lines collapse, and they know to the heartbeat how long one can stand before it does.",
+   "flavour": "A Fighter is forged in places where hesitation gets people killed. Drill, repetition, and hard lessons carve in the instinct to hold ground when everything depends on holding it. They have watched lines collapse, and they know to the heartbeat how long one can stand before it does.",
    "facts": {},
    "src_lines": [
     2744,
@@ -2756,7 +2756,7 @@
      "6.13 Hero Classes: Fighter"
     ]
    },
-   "spec_sha256": "99a5d97686f6ca5f3d39049228e21890ff3bb26547991bbc102038400bc0975b"
+   "spec_sha256": "7e44bad28c8ae8fe104ece86b947d9e8f419d802ead4d7eb0fa1f64614445876"
   },
   {
    "id": "ART-CLA-BERSERKER",
@@ -2892,7 +2892,7 @@
     "6. Your Adventuring Party",
     "6.13 Hero Classes"
    ],
-   "flavour": "A Ranger is schooled by ground that kills the careless. Tracks, wind, and distance tell them what others miss entirely. They learn to act before danger closes the gap, and to strike from where the enemy cannot answer.",
+   "flavour": "A Ranger is schooled by ground that kills the careless. Tracks, wind, and distance tell them what others miss. They learn to act before danger closes the gap, and to strike from where the enemy cannot answer.",
    "facts": {},
    "src_lines": [
     2892,
@@ -2920,7 +2920,7 @@
      "6.13 Hero Classes: Ranger"
     ]
    },
-   "spec_sha256": "9f21f81c0d9c96bfe6f89234607c9e3c6a1ad8cfe2e4607fcc07d890381b608e"
+   "spec_sha256": "4b7880a72deab2f57d85c5dbf7332d05c13ba6d4386e6233faaf3955ade25af8"
   },
   {
    "id": "ART-CLA-CLERIC",
@@ -3012,7 +3012,7 @@
     "6. Your Adventuring Party",
     "6.13 Hero Classes"
    ],
-   "flavour": "A Wizard is formed through study that most would not endure. Fragments of knowledge, careful notes, and repeated failure shape their craft. Power is taken apart, understood, and rebuilt with precision.",
+   "flavour": "A Wizard is formed through study that most would not endure. Fragments of knowledge, careful notes, and repeated failure shape their craft. They take power apart, learn how it works, and rebuild it with precision.",
    "facts": {},
    "src_lines": [
     3006,
@@ -3040,7 +3040,7 @@
      "6.13 Hero Classes: Wizard"
     ]
    },
-   "spec_sha256": "6d0567e4e2aec2da3d2281687e93036c63bcb6eab3502955d1753ace86eaacd1"
+   "spec_sha256": "26366b0abf0339bae2d8515312ea1e675bad11ee8adde99cc5432ad08d2db7c1"
   },
   {
    "id": "ART-CLA-PSION",
@@ -3503,7 +3503,7 @@
     "8. Powers and Traditions",
     "8.4 Divine Prayers"
    ],
-   "flavour": "At this height a prayer is not asked but demanded, and something always answers. Whether it is the god prayed to is a question the devout do not raise aloud.",
+   "flavour": "At this height a prayer is a demand, and something always answers. Whether it is the god prayed to is a question the devout do not raise aloud.",
    "facts": {},
    "src_lines": [
     6205,
@@ -3532,7 +3532,7 @@
      "8. Powers and Traditions: 8.4 Divine Prayers, Tier 3"
     ]
    },
-   "spec_sha256": "6346b0c64324bd7f6d4c7d6ef211d9abf47a5b6585a727349813ee49ea278890"
+   "spec_sha256": "254b4ef86332c16b9e7075c7d2c12c9e2c0121bbfb843b602fd4b508a0609d01"
   },
   {
    "id": "ART-TRA-TIER-1-SORCERIES-D20",
@@ -3544,7 +3544,7 @@
     "8. Powers and Traditions",
     "8.5 Sorceries"
    ],
-   "flavour": "Sorcery does not study. It bleeds. These first workings cost little blood and never fail, which is how they teach the unwary to want more.",
+   "flavour": "Sorcery has no apprenticeship, only a price in blood. These first workings cost little of it and never fail, which is how they teach the unwary to want more.",
    "facts": {},
    "src_lines": [
     6357,
@@ -3572,7 +3572,7 @@
      "8. Powers and Traditions: 8.5 Sorceries, Tier 1"
     ]
    },
-   "spec_sha256": "136ecd397845022ac2bb8737e227178a079a8827d3bf25e0e91c804c47661c91"
+   "spec_sha256": "48f58f57a6296f0632f15ed5fdf7947ff322560a29885479a4dab429d0e75f2d"
   },
   {
    "id": "ART-TRA-TIER-2-SORCERIES-D20",
@@ -4747,7 +4747,7 @@
     "9.7 The Bestiary",
     "Greenmark Bestiary"
    ],
-   "flavour": "Lesser kin to Maelthorn and the Greenmark's most practised liar, the green dragon is a serpentine tyrant the colour of deep moss, spine-crested, their breath a rolling, corrosive poison. They do not rampage; they manipulate, ruling a swathe of forest through fear and bargain. Lesser things bring them tribute in exchange for being spared a while longer.",
+   "flavour": "Lesser kin to Maelthorn and the Greenmark's most practised liar, the green dragon is a serpentine tyrant the colour of deep moss, spine-crested, their breath a rolling, corrosive poison. Rampage is beneath them; they rule a swathe of forest through fear and bargain. Lesser things bring them tribute in exchange for being spared a while longer.",
    "facts": {
     "role": "Elite",
     "size_code": "H"
@@ -4779,7 +4779,7 @@
      "9.7 The Bestiary, Greenmark Bestiary: Green Dragon [Elite]"
     ]
    },
-   "spec_sha256": "147e62a902e3005297156f09d0408edcbd60503837794b9391b90d0fc4cd569c"
+   "spec_sha256": "298e5ff237be21e46e3a663d5c90c96e771bda5df4dd5ed42c1b5cc6b9d6fbe4"
   },
   {
    "id": "ART-MON-UNDEAD-WARRIOR",
@@ -4920,7 +4920,7 @@
     "9.7 The Bestiary",
     "Ashlands Bestiary"
    ],
-   "flavour": "Not all the Ashlands' dead rose by design. A possessed corpse is a body worn by something that crept in from the dark between worlds, lurching on borrowed legs toward a wrong, jerking purpose. Their grip does not tire, and they burst in a reek of corruption when they finally fall. Whatever rides them does not speak. They only reach.",
+   "flavour": "Not all the Ashlands' dead rose by design. A possessed corpse is a body worn by something that crept in from the dark between worlds, lurching on borrowed legs toward a wrong, jerking purpose. Their grip does not tire, and they burst in a reek of corruption when they finally fall. Whatever rides them does not speak, and the corpse does nothing but reach.",
    "facts": {
     "role": "Minion",
     "size_code": "M"
@@ -4951,7 +4951,7 @@
      "9.7 The Bestiary, Ashlands Bestiary: Possessed Corpse [Minion]"
     ]
    },
-   "spec_sha256": "8c182f0ea42c2d54c8a8ef6c6ba62fd39adf252adb2a4d084934c231b86543ec"
+   "spec_sha256": "96b3585bb220b553e67b820169864d4172ae596bda852df2ef32c86959d13831"
   },
   {
    "id": "ART-MON-EMBER-SKULL",
@@ -5006,7 +5006,7 @@
     "9.7 The Bestiary",
     "Ashlands Bestiary"
    ],
-   "flavour": "Where the Ashlands meet the old sewers and undercrofts, the wererat thrives, a hunched, plague-grey shapeshifter scurrying between man and rat-thing. They bite, then skitter back into the dark, leaving filth-fever in every wound. Mundane blades barely mark them. One wererat is a nuisance; a nest of them is an outbreak.",
+   "flavour": "Where the Ashlands meet the old sewers and undercrofts, the wererat thrives, a hunched, plague-grey shapeshifter scurrying between man and rat-thing. They bite, then skitter back into the dark, leaving filth-fever in every wound. Mundane blades barely mark them. A nest of them is an outbreak.",
    "facts": {
     "role": "Skirmisher",
     "size_code": "S"
@@ -5037,7 +5037,7 @@
      "9.7 The Bestiary, Ashlands Bestiary: Wererat [Skirmisher]"
     ]
    },
-   "spec_sha256": "63a956522f9f25bd6fb77937d544c81b77effc1946f326e371c107251c1f8189"
+   "spec_sha256": "11097cc6b4731d88f82889f958a1c6241dcf0dc070727d4d1cfeed7a064b166f"
   },
   {
    "id": "ART-MON-SPECTRE",
@@ -5664,7 +5664,7 @@
     "9.7 The Bestiary",
     "Undermarches Bestiary"
    ],
-   "flavour": "Knee-high reptilian scavengers with dull scales and dingy picks, kobolds are the Undermarches' scuttling vermin-folk. One alone is nothing; a chittering mob of them, dragging traps and loosing slings from the dark, is a real danger. They know every tunnel and trust not one. Where a single kobold shows themselves, a whole warren is watching.",
+   "flavour": "Knee-high reptilian scavengers with dull scales and dingy picks, kobolds are the Undermarches' scuttling vermin-folk. A chittering mob of them, dragging traps and loosing slings from the dark, is a real danger. They know every tunnel and trust not one. Where a single kobold shows themselves, a whole warren is watching.",
    "facts": {
     "role": "Minion",
     "size_code": "S"
@@ -5696,7 +5696,7 @@
      "9.7 The Bestiary, Undermarches Bestiary: Kobold [Minion]"
     ]
    },
-   "spec_sha256": "c0efb9521377146c76b8a5aeecf89f19ab5d3e0b1867ba842a40488aa3256277"
+   "spec_sha256": "a14d1737f850138b4fb4fbd51accafcd121bd77b59e765e81d4a51509a4bc462"
   },
   {
    "id": "ART-MON-CAVE-GOBLIN",
@@ -6553,7 +6553,7 @@
     "9.7 The Bestiary",
     "Pale City Bestiary"
    ],
-   "flavour": "Rimed in blue frost, a sword welded to their hand by ice, a frozen skeleton is one of the Pale City's countless dead, still standing the post they were given. They guard avenues that have not seen a living census in centuries. The cold preserves them whole; they will hold that post when the last warm thing in the world goes out. There are always more under the snow.",
+   "flavour": "Rimed in blue frost, a sword welded to their hand by ice, a frozen skeleton is one of the Pale City's countless dead, still standing the post they were given. They guard avenues that have not seen a living census in centuries. The cold preserves them whole; they will hold that post when the last warm thing in the world goes out.",
    "facts": {
     "role": "Minion",
     "size_code": "M"
@@ -6584,7 +6584,7 @@
      "9.7 The Bestiary, Pale City Bestiary: Frozen Skeleton [Minion]"
     ]
    },
-   "spec_sha256": "225046d8439825734d9135b1cf8a2349caffb5730740a5ee5130577ecd125fbb"
+   "spec_sha256": "29cb8c1a7f077027f3a59aec9604bc71f96ee13aa44649387c5fcd88accf4433"
   },
   {
    "id": "ART-MON-SNOW-GOBLIN",
@@ -6986,7 +6986,7 @@
     "9.7 The Bestiary",
     "Pale City Bestiary"
    ],
-   "flavour": "A knife of frozen malice given a drifting, translucent shape, the ice wraith is the spirit of someone who froze to death in the Pale City and never forgave it. Their touch saps warmth and thickens the blood to sludge. Steel passes clean through; only magic bites. They haunt the coldest avenues, hungry for the heat of anything still living.",
+   "flavour": "A knife of frozen malice in a drifting, translucent shape, the ice wraith is the spirit of someone who froze to death in the Pale City and never forgave it. Their touch saps warmth and thickens the blood to sludge. Steel passes clean through; only magic bites. They haunt the coldest avenues, hungry for the heat of anything still living.",
    "facts": {
     "role": "Cannon",
     "size_code": "M"
@@ -7017,7 +7017,7 @@
      "9.7 The Bestiary, Pale City Bestiary: Ice Wraith [Cannon]"
     ]
    },
-   "spec_sha256": "8fe01cc5e4c5365487e093232bb917fb9a5f81427dde0b87d8ad9a3788948d56"
+   "spec_sha256": "f68e9b16f22c66c4c9fdcf9e4244ac38c71e6e4787772531699d19c919c7c924"
   },
   {
    "id": "ART-MON-WHITE-COURT-SENTINEL",
@@ -7029,7 +7029,7 @@
     "9.7 The Bestiary",
     "Pale City Bestiary"
    ],
-   "flavour": "A greatshield-bearing corpse-knight, the White Court sentinel is the dead nobility's bodyguard, planting themselves before their lords and refusing to give ground. They lend their frozen resolve to the soldiers around them and weather blows that would shatter a lesser guardian. They will not pursue and will not break. They only endure, as the court endures.",
+   "flavour": "A greatshield-bearing corpse-knight, the White Court sentinel is the dead nobility's bodyguard, planting themselves before their lords and refusing to give ground. They lend their frozen resolve to the soldiers around them and weather blows that would shatter a lesser guardian. They will not pursue and will not break. Enduring is the whole of their duty, as it is the court's.",
    "facts": {
     "role": "Brute",
     "size_code": "M"
@@ -7060,7 +7060,7 @@
      "9.7 The Bestiary, Pale City Bestiary: White Court Sentinel [Brute]"
     ]
    },
-   "spec_sha256": "d876cfcacc5c82fa4315def8149e3842af1ac22e633a9c2970de104ec9ec5a32"
+   "spec_sha256": "f2e74149703a343f913e057047f02522b42c28f1da6bd7b751e4145a13bcbcaf"
   },
   {
    "id": "ART-MON-ICE-ELEMENTAL",
@@ -7203,7 +7203,7 @@
     "9.7 The Bestiary",
     "Pale City Bestiary"
    ],
-   "flavour": "The White Court executioner carries out sentences the living court passed centuries ago, a towering headsman whose frost-rimed axe seeks the weakest throat on the field. They stride past the hale to reach the wounded and end them with grim efficiency. The court's justice did not die with the court. It only grew patient.",
+   "flavour": "The White Court executioner carries out sentences the living court passed centuries ago, a towering headsman whose frost-rimed axe seeks the weakest throat on the field. They stride past the hale to reach the wounded and end them with grim efficiency. The justice outlived the court, and has had centuries to grow patient.",
    "facts": {
     "role": "Elite",
     "size_code": "M"
@@ -7235,7 +7235,7 @@
      "9.7 The Bestiary, Pale City Bestiary: White Court Executioner [Elite]"
     ]
    },
-   "spec_sha256": "f1e75a92fa2ba93aeda372b0817c6f94b34e78e6ebcd95e2594bfa172f1d763b"
+   "spec_sha256": "0c3068aff3e006361ad2656218f6f37b2bf039299bbf486bcf5c02b5822e962b"
   },
   {
    "id": "ART-MON-FROST-WYVERN",
@@ -7247,7 +7247,7 @@
     "9.7 The Bestiary",
     "Pale City Bestiary"
    ],
-   "flavour": "A lesser cousin of the great dragons, the frost wyvern is a winged reptile the colour of dirty ice, a venom-and-frost sting whipping at the end of their tail. They stoop from the white sky to harry and poison, then climb out of reach before the answer comes. They are cunning rather than wise. The Pale City's frozen peaks are crowded with their roosts.",
+   "flavour": "A lesser cousin of the great dragons, the frost wyvern is a winged reptile the colour of dirty ice, a venom-and-frost sting whipping at the end of their tail. They stoop from the white sky to harry and poison, then climb out of reach before a blade or bolt can follow. They are cunning rather than wise. The Pale City's frozen peaks are crowded with their roosts.",
    "facts": {
     "role": "Elite",
     "size_code": "L"
@@ -7281,7 +7281,7 @@
      "9.7 The Bestiary, Pale City Bestiary: Frost Wyvern [Elite]"
     ]
    },
-   "spec_sha256": "6d8e549bd8f16f027c4d35f873887b329b32e0b96ee94df3b205eaed3c9a2d34"
+   "spec_sha256": "c8d6237c005fad1c2cef02f333904614fd06c53a183beff910c06b2fd3172033"
   },
   {
    "id": "ART-MON-GELID-FIEND",
@@ -7378,7 +7378,7 @@
     "9.7 The Bestiary",
     "Pale City Bestiary"
    ],
-   "flavour": "Visath's feral get, the white dragon is an ice-crusted wyrm whose breath flash-freezes whatever it touches. Less cunning than their kin but no less lethal, they are pure predatory cold given wings and an appetite. They nest in the lesser spires and suffer the White Court about them as courtiers. When they descend, the city's eternal winter only deepens.",
+   "flavour": "Visath's feral get, the white dragon is an ice-crusted wyrm whose breath flash-freezes whatever it touches. Less cunning than their kin but no less lethal, they are predatory cold with wings and an appetite. They nest in the lesser spires and suffer the White Court about them as courtiers. When they descend, the city's eternal winter only deepens.",
    "facts": {
     "role": "Elite",
     "size_code": "H"
@@ -7409,7 +7409,7 @@
      "9.7 The Bestiary, Pale City Bestiary: White Dragon [Elite]"
     ]
    },
-   "spec_sha256": "ec20a7d49326a811251d995baad5acb3f63f8a079fce8fce2dfe831876a3d512"
+   "spec_sha256": "741ad6ee83c190fc5622f360650ee380584bb40b424356f6cb71b590a70d73c7"
   },
   {
    "id": "ART-MON-FIRE-BEETLE",
@@ -7467,7 +7467,7 @@
     "9.7 The Bestiary",
     "Sun-Drowned Bestiary"
    ],
-   "flavour": "Knee-high and bat-winged, a barbed venomous tail lashing behind them, the imp flits about the Sun-Drowned tombs as the spiteful servant of darker things. They dart in to sting and wheel away cackling, untroubled by the desert's heat or their own infernal fire. Alone they are more nuisance than threat. They are also a herald of worse to come.",
+   "flavour": "Knee-high and bat-winged, a barbed venomous tail lashing behind them, the imp flits about the Sun-Drowned tombs as the spiteful servant of darker things. They dart in to sting and wheel away cackling, untroubled by the desert's heat or their own infernal fire. Alone they are more nuisance than threat, but worse usually follows them.",
    "facts": {
     "role": "Skirmisher",
     "size_code": "S"
@@ -7498,7 +7498,7 @@
      "9.7 The Bestiary, Sun-Drowned Bestiary: Imp [Skirmisher]"
     ]
    },
-   "spec_sha256": "c8f0d40cb011e9bd115f87ca440b32bde593c9b905b6d025db7e7c4ceb9731d6"
+   "spec_sha256": "c6833b93c2cdb959da0b7ab54e6dd74194849893b647fbd4f22b3fedb485af48"
   },
   {
    "id": "ART-MON-SKELETON-WARRIOR",
@@ -7510,7 +7510,7 @@
     "9.7 The Bestiary",
     "Sun-Drowned Bestiary"
    ],
-   "flavour": "A skeleton warrior stands at the post they were set in the year of their death, a sun-bleached frame in the corroded bronze of a priest-king's guard. They still hold the weapon they carried in life, waiting on an order that has not come in centuries. When intruders breach the sealed courts the order arrives at last, and the bones remember their drill. There are always more, ranked in the dark behind them.",
+   "flavour": "A skeleton warrior stands at the post they were set in the year of their death, a sun-bleached frame in the corroded bronze of a priest-king's guard. They still hold the weapon they carried in life, waiting on an order that has not come in centuries. When intruders breach the sealed courts the order arrives at last, and the bones remember their drill. Behind them, more stand ranked in the dark, waiting on the same order.",
    "facts": {
     "role": "Minion",
     "size_code": "M"
@@ -7544,7 +7544,7 @@
      "9.7 The Bestiary, Sun-Drowned Bestiary: Skeleton Warrior [Minion]"
     ]
    },
-   "spec_sha256": "8a78a4e27ab7830533aa99c0828d198811e344f32e6358d9da8a48a838686c63"
+   "spec_sha256": "7de08cde79c89bbf5e8fe7343f57d7ec590bc16a59d028721ee248827c3de111"
   },
   {
    "id": "ART-MON-CORPSEHOUND",
@@ -7859,7 +7859,7 @@
     "9.7 The Bestiary",
     "Sun-Drowned Bestiary"
    ],
-   "flavour": "A great serpent with an almost-human face and the patient cunning of something very old, the desert naga coils among the tomb-pillars. They spit venom from a distance and crush what comes close, hexing the strong into an unnatural sleep. The priest-kings kept them as guardians and oracles. They guard still. They no longer answer.",
+   "flavour": "A great serpent with an almost-human face and the patient cunning of something very old, the desert naga coils among the tomb-pillars. They spit venom from a distance and crush what comes close, hexing the strong into an unnatural sleep. The priest-kings kept them as guardians and oracles. They still guard, and no one living has had an answer from them.",
    "facts": {
     "role": "Controller",
     "size_code": "L"
@@ -7891,7 +7891,7 @@
      "9.7 The Bestiary, Sun-Drowned Bestiary: Desert Naga [Controller]"
     ]
    },
-   "spec_sha256": "cd086907f36f397ed1e9f5ea77b991aa743ee95d068a1a87db0f473f356577db"
+   "spec_sha256": "c8aad0ea73964c05b19312f792384c6e1079a277d98ff17189f83eb7a55607b2"
   },
   {
    "id": "ART-MON-FIRE-ELEMENTAL",
@@ -7903,7 +7903,7 @@
     "9.7 The Bestiary",
     "Sun-Drowned Bestiary"
    ],
-   "flavour": "A roaring man-shape of living flame, white-hot at the core and shedding embers at the edges, the fire elemental sets alight everything they touch and scorches whatever strikes them. Water and ice are their only checks; the desert sun is their cradle. They draw a trail of cinders across the tomb-floors. To lay hands on them is to burn.",
+   "flavour": "A roaring man-shape of living flame, white-hot at the core and shedding embers at the edges, the fire elemental sets alight everything they touch and scorches whatever strikes them. Water and ice are their only checks; the desert sun is their cradle. They draw a trail of cinders across the tomb-floors.",
    "facts": {
     "role": "Cannon",
     "size_code": "L"
@@ -7933,7 +7933,7 @@
      "9.7 The Bestiary, Sun-Drowned Bestiary: Fire Elemental [Cannon]"
     ]
    },
-   "spec_sha256": "6b88760fe75ac43bbc92e5ccf1e14de90e8476d5757ee83ddcdb4a80eec0e917"
+   "spec_sha256": "bc29c404ca6eb74072244962e16ecb14cc5e75af3575f00b5d2f5183171dabea"
   },
   {
    "id": "ART-MON-GIANT-SKELETON",
@@ -7945,7 +7945,7 @@
     "9.7 The Bestiary",
     "Sun-Drowned Bestiary"
    ],
-   "flavour": "A looming framework of fused bone twice a man's height, the giant skeleton is what remains of something that was never entirely natural and is far less so now. They move with grinding deliberation, sweeping aside anything in their path with fists like falling masonry. Tomb-city carvings show their kind kneeling before the priest-kings; none show them standing. Whatever they were raised to guard, they guard it still.",
+   "flavour": "A looming framework of fused bone twice a man's height, the giant skeleton is what remains of something that was never entirely natural and is far less so now. They move with grinding deliberation, sweeping aside anything in their path with fists like falling masonry. Tomb-city carvings show their kind kneeling before the priest-kings; none show them standing.",
    "facts": {
     "role": "Brute",
     "size_code": "L"
@@ -7975,7 +7975,7 @@
      "9.7 The Bestiary, Sun-Drowned Bestiary: Giant Skeleton [Brute]"
     ]
    },
-   "spec_sha256": "1b22caa6ef310e92f1ae2f948d88e90da157c46ddb906ca1732301b4c62c8685"
+   "spec_sha256": "7280f78c29ffa90d28a6841e27ecd412512319dddf4042e22f10b1806073d9a0"
   },
   {
    "id": "ART-MON-MEDUSA",
@@ -8073,7 +8073,7 @@
     "9.7 The Bestiary",
     "Sun-Drowned Bestiary"
    ],
-   "flavour": "A faceless construct of gilded stone and ritual, the tomb guardian was built to defend the priest-kings' seals and is tireless in that one duty. They plant themselves at a threshold and cannot be hurried or frightened. They have held one doorway for a thousand years. They will hold it for a thousand more.",
+   "flavour": "A faceless construct of gilded stone and ritual, the tomb guardian was built to defend the priest-kings' seals and is tireless in that one duty. They plant themselves at a threshold and cannot be hurried or frightened. They have held one doorway for a thousand years, and nothing in the second thousand will move them.",
    "facts": {
     "role": "Soldier",
     "size_code": "M"
@@ -8104,7 +8104,7 @@
      "9.7 The Bestiary, Sun-Drowned Bestiary: Tomb Guardian [Soldier]"
     ]
    },
-   "spec_sha256": "0b017b6a8c4b859e57ffd40dd98ddcd2ff0a5c540cbd036cb6e038e9897e6a91"
+   "spec_sha256": "fb8f3267171f6a963429fa737bfaa2b8549f50a9b40d5915691c5302258ef05c"
   },
   {
    "id": "ART-MON-BRASS-GOLEM",
@@ -8158,7 +8158,7 @@
     "9.7 The Bestiary",
     "Sun-Drowned Bestiary"
    ],
-   "flavour": "A monstrous fusion of lion's body, bat's wings, and a man's leering face, the manticore flicks volleys of iron spikes from their lashing tail. They wait where the dune-road narrows and rain barbs on whatever they have trapped. They savour a meal that begged first. The Sun-Drowned's loneliest trails are their larder.",
+   "flavour": "A monstrous fusion of lion's body, bat's wings, and a man's leering face, the manticore flicks volleys of iron spikes from their lashing tail. They wait where the dune-road narrows and rain barbs on whatever they have trapped. They savour a meal that begged first.",
    "facts": {
     "role": "Elite",
     "size_code": "L"
@@ -8190,7 +8190,7 @@
      "9.7 The Bestiary, Sun-Drowned Bestiary: Manticore [Elite]"
     ]
    },
-   "spec_sha256": "56a4fe9fdaaa0544145dde2a2322fdb98dbb3550a8ede8b6e3707939caea4602"
+   "spec_sha256": "69db7acaee1e45a8d7d7a2909d51d16fd3a07776762dfad65cb7e1da01e4c62d"
   },
   {
    "id": "ART-MON-DEMON",
@@ -8330,7 +8330,7 @@
     "9.7 The Bestiary",
     "The Mire Bestiary"
    ],
-   "flavour": "Slime-streaked cousins of their forest kin, swamp goblins paddle The Mire's channels and blow poisoned darts from the reeds. They melt into the cover and strike from wherever the water hides them. A nuisance one at a time, a hazard in a swarm. They strip the drowned for trinkets and teeth.",
+   "flavour": "Slime-streaked cousins of their forest kin, swamp goblins paddle The Mire's channels and blow poisoned darts from the reeds. They melt into the cover and strike from wherever the water hides them. Alone they are a nuisance. Twenty of them, darting from twenty reed-beds, is how a party ends up in the water. They strip the drowned for trinkets and teeth.",
    "facts": {
     "role": "Minion",
     "size_code": "S"
@@ -8360,7 +8360,7 @@
      "9.7 The Bestiary, The Mire Bestiary: Swamp Goblin [Minion]"
     ]
    },
-   "spec_sha256": "2a153faa93184003e03c9737bc1308246e08fb80df72be1761683ab4a7ccd984"
+   "spec_sha256": "9b62d33b9a725dedef251a723065e17d17fedfe090067214055bde608fe6a04b"
   },
   {
    "id": "ART-MON-ZOMBIE",
@@ -8415,7 +8415,7 @@
     "9.7 The Bestiary",
     "The Mire Bestiary"
    ],
-   "flavour": "A bloated mosquito-thing the size of a cat, the stirge carries a needle proboscis and a belly that swells red with stolen blood. They dart in, latch on, and drain until they are pried loose. The Mire's dusk air hums with them. One is an itch; a swarm is exsanguination.",
+   "flavour": "A bloated mosquito-thing the size of a cat, the stirge carries a needle proboscis and a belly that swells red with stolen blood. They dart in, latch on, and drain until they are pried loose. The Mire's dusk air hums with them. One leaves a welt. Enough of them leave a body with nothing in it.",
    "facts": {
     "role": "Minion",
     "size_code": "S"
@@ -8449,7 +8449,7 @@
      "9.7 The Bestiary, The Mire Bestiary: Stirge [Minion]"
     ]
    },
-   "spec_sha256": "68622de23029441ccb6d06b4a21b3fce9d40552d1fadbceee8d2f49fe4d671a5"
+   "spec_sha256": "8ffea137f6a886f2dd01011a09c2fe7e08115bbded9fce353eac34b631e5ebcf"
   },
   {
    "id": "ART-MON-WILL-O-WISP",
@@ -8546,7 +8546,7 @@
     "9.7 The Bestiary",
     "The Mire Bestiary"
    ],
-   "flavour": "A barbed harpoon in their claws, the lizardfolk hunter stalks The Mire's margins, dragging prey off the walkways and into the water where every advantage is their own. They strike from cover and the reeds, unseen until the line snaps taut. Patient and silent, they wait out the careless. By the time they move, you are already in the water.",
+   "flavour": "A barbed harpoon in their claws, the lizardfolk hunter stalks The Mire's margins, dragging prey off the walkways and into the water where every advantage is their own. They strike from cover and the reeds, unseen until the line snaps taut. Patient and silent, they wait out the careless, and the first sign that they have moved is the water closing over your head.",
    "facts": {
     "role": "Cannon",
     "size_code": "M"
@@ -8577,7 +8577,7 @@
      "9.7 The Bestiary, The Mire Bestiary: Lizardfolk Hunter [Cannon]"
     ]
    },
-   "spec_sha256": "6a4bb3f5c24b5b84d9b62362020c188cab5882e8c7848c37cd595943ba0129a4"
+   "spec_sha256": "fc0458dedaa11f8c417200f97c18bf36766692368f7f618167df628c88d8102e"
   },
   {
    "id": "ART-MON-CROCODILE",
@@ -8850,7 +8850,7 @@
     "9.7 The Bestiary",
     "The Mire Bestiary"
    ],
-   "flavour": "A warty, weed-haired crone, the swamp hag poles their way through The Mire cursing all they meet, slipping half into the spirit-world when cornered. Their stench chokes out hope. They bargain, they lie, and they feed on misery. The loneliest hut in the mire is theirs, and it is never empty for long.",
+   "flavour": "A warty, weed-haired crone, the swamp hag poles their way through The Mire cursing all they meet, slipping half into the spirit-world when cornered. Their stench chokes out hope. They feed on misery, and every bargain they offer is a lie. The loneliest hut in the mire is theirs, and it is never empty for long.",
    "facts": {
     "role": "Controller",
     "size_code": "M"
@@ -8882,7 +8882,7 @@
      "9.7 The Bestiary, The Mire Bestiary: Swamp Hag [Controller]"
     ]
    },
-   "spec_sha256": "915e2ee467bf48632e8cad8ab97e5c46dcc86d2f0c028c25592d995844359d8b"
+   "spec_sha256": "6aa222a4a969f92dad992252f87a94da92403abebacc7e6dffc4180dc2603011"
   },
   {
    "id": "ART-MON-BANSHEE",
@@ -9302,7 +9302,7 @@
     "9.7 The Bestiary",
     "Bosses"
    ],
-   "flavour": "A towering shape of ancient trunk and grasping root, bark-skinned and crowned with a tangle of antlered branches, the Avatar of the Old Growth is the will of the deep forest given a body to act through. They call the lesser green things to their side and drown intruders in living wood. To kill them is to wound the Greenmark itself. The Greenmark does not forgive.",
+   "flavour": "A towering shape of ancient trunk and grasping root, bark-skinned and crowned with a tangle of antlered branches, the Avatar of the Old Growth is the deep forest's will, walking. They call the lesser green things to their side and drown intruders in living wood. Killing them wounds the Greenmark itself. The Greenmark remembers wounds.",
    "facts": {
     "role": "Boss",
     "size_code": "H"
@@ -9339,7 +9339,7 @@
      "1.3.2 The Greenmark"
     ]
    },
-   "spec_sha256": "56bc3f2895d8311dec74ce60fa7e0be63ae1d3a2e0201252df045fcb8ad61796"
+   "spec_sha256": "6b8097be9e96f5f2a06ef7a78b8cb9d51186b1a1194be01e14547b2d4fa04446"
   },
   {
    "id": "ART-MON-THE-BROODMOTHER-PRIME",
@@ -9351,7 +9351,7 @@
     "9.7 The Bestiary",
     "Bosses"
    ],
-   "flavour": "In the deepest dark of the Undermarches squats the mother of every giant spider that plagues the deep, a bloated horror the size of a cottage, egg-sacs trailing from them that twitch with the unborn. They flood the field with their brood and bind the survivors in webs for later. Their venom stops a heart in a single beat. The deep, in the end, is their nursery.",
+   "flavour": "In the deepest dark of the Undermarches squats the mother of every giant spider that plagues the deep, a bloated horror the size of a cottage, egg-sacs trailing from them that twitch with the unborn. They flood the field with their brood and bind the survivors in webs for later. Their venom stops a heart in a single beat.",
    "facts": {
     "role": "Boss",
     "size_code": "H"
@@ -9388,7 +9388,7 @@
      "1.3.2 The Undermarches"
     ]
    },
-   "spec_sha256": "1f187dadef476c4e99425d632c14792c8bec48d9059bf7449a81d76af8f01848"
+   "spec_sha256": "2147dbb3e0894444027677d1136b08739afc711d0420270806dc4c61fabfe908"
   },
   {
    "id": "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
@@ -9400,7 +9400,7 @@
     "9.7 The Bestiary",
     "Bosses"
    ],
-   "flavour": "Veyr was the empire's greatest captain, who swore their company would never break and held them to it past death itself. Now they lead the Forsaken in spectral plate, a duelist whose paired blades have not slowed since the empire fell. They rally their dead soldiers with a voice like a closing tomb. They no longer recall the war they are still fighting. Only the oath.",
+   "flavour": "Veyr was the empire's greatest captain, who swore their company would never break and held them to it past death itself. Now they lead the Forsaken in spectral plate, a duelist whose paired blades have not slowed since the empire fell. They rally their dead soldiers with a voice like a closing tomb. They no longer recall the war they are still fighting, only the oath that keeps them in it.",
    "facts": {
     "role": "Boss",
     "size_code": "M"
@@ -9440,7 +9440,7 @@
      "9.7 The Bestiary - Captain Veyr of the Forsaken (boss)"
     ]
    },
-   "spec_sha256": "3b5ed9aa4c85918c4c18fd4459e010e7a5ea00aba9579526100d1d007033186e"
+   "spec_sha256": "6c4d956b9d3ade93b0e5f4f0af70e5e1d767f3164a2f8b3e2acd3810e75ad18e"
   },
   {
    "id": "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
@@ -9551,7 +9551,7 @@
     "9.7 The Bestiary",
     "Bosses"
    ],
-   "flavour": "The antlered figure admitted to Greythorn's west gate each winter does not come to bargain when the tithe goes unpaid. They come to collect. A towering shape of bone-antler and living wood, they drag the indebted into their reach and call the wild court to witness. The forest has never broken the agreement, and it does not forgive those who do.",
+   "flavour": "The antlered figure admitted to Greythorn's west gate each winter comes to collect when the tithe goes unpaid, and brings no terms. A towering shape of bone-antler and living wood, they drag the indebted into their reach and call the wild court to witness. The forest has never broken the agreement, and it does not forgive those who do.",
    "facts": {
     "role": "Boss",
     "size_code": "L"
@@ -9592,7 +9592,7 @@
      "1.3.3 Greythorn"
     ]
    },
-   "spec_sha256": "415b5d54b623114f6829a660d20f3acdf4a6c7644eb815b7e97d6c1bb91534ab"
+   "spec_sha256": "4aa191410ac454e55d266e39737eddd1dc7b0b49a53d451ac0daa715bc865a5f"
   },
   {
    "id": "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
@@ -9604,7 +9604,7 @@
     "9.7 The Bestiary",
     "Bosses"
    ],
-   "flavour": "Survivors describe a small figure at the edge of the torchlight, singing in a tongue that sounds like an old lullaby heard through water. Then the torch goes out. The Voice Beneath the Bells is grief given a child's shape and a drowned chapel's patience, and their song hollows out everyone who hears it. The bells they wait beneath have not rung in a very long time.",
+   "flavour": "Survivors describe a small figure at the edge of the torchlight, singing in a tongue that sounds like an old lullaby heard through water. Then the torch goes out. The Voice Beneath the Bells is grief that wears a child's shape and keeps a drowned chapel's patience, and their song hollows out everyone who hears it. The bells they wait beneath have not rung in a very long time.",
    "facts": {
     "role": "Boss",
     "size_code": "S"
@@ -9640,7 +9640,7 @@
      "9.7 The Bestiary - The Voice Beneath the Bells (boss)"
     ]
    },
-   "spec_sha256": "396f99d609e4a96e50f2e063716ced3f3e83185d2f7604f69146ec526d7249a0"
+   "spec_sha256": "50b8719fb1641ded57e8bcb6518342ddc99061abef5a3c4c4b2032a2e0c05e98"
   },
   {
    "id": "ART-MON-MAELTHORN-THE-VERDANT",
@@ -9750,7 +9750,7 @@
     "9.7 The Bestiary",
     "Bosses"
    ],
-   "flavour": "Visath is the Pale City's eternal winter wearing the body of a wyrm, a glacier with wings and a will. Their breath does not merely freeze; it stops time in the flesh, leaving victims locked mid-scream in the ice. They rule from the highest spire and suffer no warmth anywhere in their domain. Where they fly, the snow falls harder, as though the sky itself bows.",
+   "flavour": "Visath is the Pale City's eternal winter wearing the body of a wyrm, a glacier with wings and a will. Their breath stops time in the flesh, leaving victims locked mid-scream in the ice. They rule from the highest spire and suffer no warmth anywhere in their domain. Where they fly, the snow falls harder, as though the sky itself bows.",
    "facts": {
     "role": "Boss",
     "size_code": "H"
@@ -9785,7 +9785,7 @@
      "1.3.2 The Pale City"
     ]
    },
-   "spec_sha256": "06c966d6b272e22cc6ee92a5e3bcc091fcb2b92c5906980c3ad947bff4b0b185"
+   "spec_sha256": "a6544f09a94f0b6cfa697d42bc513e8fa665a93a190b31d0975a5cde856aa73a"
   },
   {
    "id": "ART-MON-KHORRUN-THE-DRACOLICH",
@@ -10355,7 +10355,7 @@
     "10.4 Core Scenario Outlines",
     "Climate 2: Ashlands Scenarios"
    ],
-   "flavour": "Broken statues and smashed reliquaries fill the hall, and sanctified bone and silver remain in the wreckage, too holy to abandon and too valuable to leave. Sablekeep needs the relics to keep its braziers lit and its authority legal, and will pay to register every fragment. The dead here are not confused. They swore to guard these relics, and death has not released them from the oath.",
+   "flavour": "Broken statues and smashed reliquaries fill the hall, and sanctified bone and silver remain in the wreckage, too holy to abandon and too valuable to leave. Sablekeep needs the relics to keep its braziers lit and its authority legal, and will pay to register every fragment. The dead here have not forgotten why they stayed. They swore to guard these relics, and death has not released them from the oath.",
    "facts": {},
    "src_lines": [
     12751,
@@ -10388,7 +10388,7 @@
      "1.3.4 Divine Prayers"
     ]
    },
-   "spec_sha256": "639bc13a58952a85efe01b5f5732fb606e77cb2f7805d0eadededf8cbcc06ac1"
+   "spec_sha256": "11324366c2d3740f909e39c10df40eea26715e64935630b3f25b99fa28a3b70a"
   },
   {
    "id": "ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT",
@@ -10400,7 +10400,7 @@
     "10.4 Core Scenario Outlines",
     "Climate 2: Ashlands Scenarios"
    ],
-   "flavour": "The vault has been sealed for two generations. Karnessa Iron-Vein pressed their blood into the iron door when something inside began to leak through the walls, and the seal has held. Until now. Tremors along the imperial roads have cracked the outer binding, and something below is pushing. Sablekeep sends one party to reinforce the seal before whatever waits finishes their work; a rival patron sends another to open the vault and price what was sealed there. The vault does not care about either contract.",
+   "flavour": "The vault has been sealed for two generations. Karnessa Iron-Vein pressed their blood into the iron door when something inside began to leak through the walls, and the seal held until tremors along the imperial roads cracked the outer binding. Now something below is pushing. Sablekeep sends one party to reinforce the seal before whatever waits finishes their work; a rival patron sends another to open the vault and price what was sealed there. Whatever is inside has signed neither contract.",
    "facts": {},
    "src_lines": [
     12825,
@@ -10433,7 +10433,7 @@
      "10.4 Scenario 6: The Iron-Vein Vault (Ashlands)"
     ]
    },
-   "spec_sha256": "e06fc0a81ed0f3d7595d9beff03bc83d51b56c1da2f310e5c5fd47c9e3172581"
+   "spec_sha256": "de0dcfcb3665e318f1ad891446cfcd4335e0c4c84068e00aaf621aefba602f68"
   },
   {
    "id": "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST",
@@ -10491,7 +10491,7 @@
     "10.4 Core Scenario Outlines",
     "Climate 3: Undermarches Scenarios"
    ],
-   "flavour": "A chasm splits the caverns like a wound in the world, crossed only by narrow ledges in broken pieces. A Survey Map must reach the Lantern Council before Deepwarden's rivals can claim the new diggings. Things cling to the dark stone below the ledges and wait for a hand to shake. The Council wants the map. It does not ask what the things want.",
+   "flavour": "A chasm splits the caverns like a wound in the world, crossed only by narrow ledges in broken pieces. A Survey Map must reach the Lantern Council before Deepwarden's rivals can claim the new diggings. Things cling to the dark stone below the ledges and wait for a hand to shake. The Council wants the map and has not asked what the things want.",
    "facts": {},
    "src_lines": [
     12992,
@@ -10524,7 +10524,7 @@
      "10.4 Scenario 2: The Chasm Crossing (Undermarches)"
     ]
    },
-   "spec_sha256": "c8bca743d444d1fb02de88e8b0d145a88a3ae9292b8592ffe895576d8229ce4d"
+   "spec_sha256": "d7bdd6b41320513a32ddaf1552328faba134ed43e99ed28f47d8a9dbc4c8e18c"
   },
   {
    "id": "ART-SCE-SCENARIO-3-THE-QUAKE",
@@ -10762,7 +10762,7 @@
     "10.4 Core Scenario Outlines",
     "Climate 4: Pale City Scenarios"
    ],
-   "flavour": "In the ice-locked Silent District, north along the road out of Hearthhold, an alchemist's laboratory remains sealed under frost. The formula inside might be worth a village, and Hearthhold burns through everything it owns just to stay warm. The cold has preserved the benches, the bottles, the last mistakes, and the guardians left to watch them. Some things in that laboratory were never meant to thaw.",
+   "flavour": "In the ice-locked Silent District, north along the road out of Hearthhold, an alchemist's laboratory remains sealed under frost. The formula inside might be worth a village, and Hearthhold burns through everything it owns just to stay warm. The cold has preserved the benches, the bottles, the last mistakes, and the guardians left to watch them. The frost is the only thing that has kept the guardians still.",
    "facts": {},
    "src_lines": [
     13464,
@@ -10794,7 +10794,7 @@
      "10.4 Scenario 2: The Alchemist's Frozen Laboratory (Pale City)"
     ]
    },
-   "spec_sha256": "22ebb18727f2783ac58c0fb3d40dab7de69278d285dbb37ec67ee648b04e70f5"
+   "spec_sha256": "efb3e86018698afbbbf205063dda73d6a1fe6c16a8ec8fd2584d156bd977a42e"
   },
   {
    "id": "ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM",
@@ -10896,7 +10896,7 @@
     "10.4 Core Scenario Outlines",
     "Climate 4: Pale City Scenarios"
    ],
-   "flavour": "The old stories put jewels and gold in a frozen cavern beneath the north road out of Hearthhold, and a wyrm coiled on top of them whose breath can stop a heart inside its own armour. Hearthhold needs the gold more than it fears the breath, which is the kind of arithmetic only the poorest Bastion does out loud. The second part of the story has never discouraged the first kind of listener.",
+   "flavour": "The old stories put jewels and gold in a frozen cavern beneath the north road out of Hearthhold, and a wyrm coiled on top of them whose breath can stop a heart inside its own armour. Hearthhold needs the gold more than it fears the breath, which is the kind of arithmetic only the poorest Bastion does out loud.",
    "facts": {},
    "src_lines": [
     13663,
@@ -10929,7 +10929,7 @@
      "1.3.3 Hearthhold"
     ]
    },
-   "spec_sha256": "09c61920ca8f2610ebb0ed555f21b7b1e84c4e360f809d766602279346c748f9"
+   "spec_sha256": "61832fec7c348b06a02dd80269e9c25a148676785b4aab0cffb3af5e6688bee8"
   },
   {
    "id": "ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT",
@@ -10985,7 +10985,7 @@
     "10.4 Core Scenario Outlines",
     "Climate 5: Sun-Drowned Scenarios"
    ],
-   "flavour": "A vital oasis south of the mountain passes has changed hands again, and raiders hold the wells, the shade, and the people too slow to flee. Saltspire sells water as sovereignty, and an oasis it does not control is a debt it cannot collect. One contract from the Well-Keepers says liberation. A rival contract says seizure. The water will not ask which seal is righteous.",
+   "flavour": "A vital oasis south of the mountain passes has changed hands again, and raiders hold the wells, the shade, and the people too slow to flee. Saltspire sells water as sovereignty, and an oasis it does not control is a debt it cannot collect. One contract from the Well-Keepers says liberation, and a rival's says seizure; the water will flow for whichever party holds the wells.",
    "facts": {},
    "src_lines": [
     13817,
@@ -11019,7 +11019,7 @@
      "10.4 Scenario 1: The Oasis Raiders (Sun-Drowned)"
     ]
    },
-   "spec_sha256": "98c41954163070b474011bff5f22d1dedd848f34e9076c0519195e64d8b01c26"
+   "spec_sha256": "5a26a1449192a889be6a656393e8aa15125945eeb6751c7739bffb36dc4308cd"
   },
   {
    "id": "ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE",
@@ -11123,7 +11123,7 @@
     "10.4 Core Scenario Outlines",
     "Climate 5: Sun-Drowned Scenarios"
    ],
-   "flavour": "Nomad legends speak of a vast shape beneath the dunes south of the passes, and a gullet lined with the treasure of everything they have swallowed. The nomads tell it as a warning. Saltspire's patrons hear it as an inventory and pay accordingly. The dunes do not distinguish between the two kinds of listener.",
+   "flavour": "Nomad legends speak of a vast shape beneath the dunes south of the passes, and a gullet lined with the treasure of everything they have swallowed. The nomads tell it as a warning. Saltspire's patrons hear it as an inventory and pay accordingly.",
    "facts": {},
    "src_lines": [
     14017,
@@ -11156,7 +11156,7 @@
      "10.4 Scenario 4: The Sandwyrm's Lair (Sun-Drowned)"
     ]
    },
-   "spec_sha256": "eb97590521e1e33639ba74813860d697fee4d463b1f72b373478143d51b3207b"
+   "spec_sha256": "c1864438cb3d1a1a9536edb9a9801b52434df6cf39f7ec193d2b846097278554"
   },
   {
    "id": "ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA",
@@ -11531,7 +11531,7 @@
    "context": [
     "11. Campaign Play"
    ],
-   "flavour": "A Stronghold is not a castle in the noble sense. No ancient bloodline sanctifies it. No bard remembers its founding. It is a claim driven into a dying world with coin, fear, salvage, and stubborn labour. Its stones come from ruined shrines, abandoned watch-keeps, broken bridges, and walls that failed other people first. Its gates are paid for with burial gold, bounty coin, chapel debt, and the last wages of the dead.",
+   "flavour": "A Stronghold has no ancient bloodline to sanctify it and no bard to remember its founding, and no noble would call it a castle. It is a claim driven into a dying world with coin, fear, salvage, and stubborn labour. Its stones come from ruined shrines, abandoned watch-keeps, broken bridges, and walls that failed other people first. Its gates are paid for with burial gold, bounty coin, chapel debt, and the last wages of the dead.",
    "facts": {},
    "src_lines": [
     15039,
@@ -11566,7 +11566,7 @@
      "11.1 Campaign Overview"
     ]
    },
-   "spec_sha256": "a96d30103ef63b5a2b6c7e00ed9ea2e1e9eba6d79a979a11a030656f5effc601"
+   "spec_sha256": "acdea81135f18ce7fe0081692aa8e65bc24b4fba46a79189935747f638b6d30a"
   },
   {
    "id": "ART-CAM-THE-VAULT",
@@ -11578,7 +11578,7 @@
     "11. Campaign Play",
     "11.3 Building the Stronghold"
    ],
-   "flavour": "The Vault is not a treasury. It is a sealed confession of greed, iron-bound and watched by clerks who sleep in shifts. They count each coin as if the dead might come back to collect.",
+   "flavour": "The Vault is a sealed confession of greed, iron-bound and watched by clerks who sleep in shifts. They count each coin as if the dead might come back to collect.",
    "facts": {},
    "src_lines": [
     15666,
@@ -11612,7 +11612,7 @@
      "11.3 Building the Stronghold - The Vault"
     ]
    },
-   "spec_sha256": "87be7dc487fbcf62abdb7897ae8f60e4d54f0a7be4c3910513872abf42740d42"
+   "spec_sha256": "b55c63a2dc34874828a37da97255e9c5ffe3c9e93a29d848c4e6f8265de489c0"
   },
   {
    "id": "ART-CAM-THE-BARRACKS",
@@ -11845,7 +11845,7 @@
     "11. Campaign Play",
     "11.3 Building the Stronghold"
    ],
-   "flavour": "The Chapel is small, cold, and crowded with votive offerings from those who survived by inches. Its saints are chipped. Its relics are suspect. Its candles burn low even when no wind enters.",
+   "flavour": "The Chapel is small, cold, and crowded with votive offerings from those who survived by inches. Its saints are chipped, its relics suspect. Its candles burn low even when no wind enters.",
    "facts": {},
    "src_lines": [
     15726,
@@ -11879,7 +11879,7 @@
      "11.3 Building the Stronghold - The Stronghold Chapel"
     ]
    },
-   "spec_sha256": "bf73ce354d70b55d7df1958e75dc89007a162c1d90252aa890d5cc509f7cdc8d"
+   "spec_sha256": "113a5346a09c057774c14f5073fe07ccbaa8ed3954e1f34eba4a71ce886ed809"
   },
   {
    "id": "ART-CAM-THE-WAR-ROOM",

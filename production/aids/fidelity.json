@@ -1,8 +1,8 @@
 {
- "rc": 527,
- "source_sha256": "d28f5ec8ef438b43d278ec59c8faf195204266606bcfad1cbd8258088f48ec55",
- "recorded_at": "2026-10-31",
- "reviewer": "Claude (Fable 5.1), 2026-10-31, after RC527: diffed every section the ten sheets draw on between RC526 and RC527 (the RC527 batch is the only change: editorial/history/RC527.json). The changed sections are wording-only: bare-number cross-references in 2.5, 3.4, 4.1, 4.4.7, 5.5.4, 9.1, 9.3, 10.1, C.1 and C.12; two example capitalizations (2.8.4, 4.5); the 4.2 Shift row spacing; the 5.1.2 table header; the 5.8.1 row 14 'Stand'; the 5.5.3 Parry example (Guard to Fighter); the 9.1 CV wording; Boss placement plurals and Terror Aura scope in 9; the C.3 Hidden row 'Hide distance'; 'non-adjacent' and 'non-magical' spelling in 2.8 and 2.9; 'Setup Roll-off' in 10.1. Two sheets paraphrased changed wording and were updated to match: pa04 row 14 now reads 'Stand costs +1 AP' and pa07 now spells 'non-adjacent'. No other sheet quotes a changed phrase (grep of every changed fragment against typst/aids). Author review, not an independent review.",
+ "rc": 528,
+ "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+ "recorded_at": "2026-11-02",
+ "reviewer": "Claude Code, 2026-11-02: diffed RC527 to RC528 in the four stale sections (Bosses, 11.3, 10.5); the changes are the humanizer lore rewrites and the 10.5 introduction sentence, and no sheet quotes any patched wording (checked by searching every tracked file for each patch's text), so the sheets' content is unaffected",
  "sheets": {
   "pa01": {
    "2.3": "fb3609d369c04cdddefde65ea6dd0c92d41b5f8f7c60345b879c8909860b6e85",
@@ -26,7 +26,7 @@
    "9.3": "286fbf1fec22b86d779bad8a8bfc091fe0702e3119742ec35b33e057e867da04",
    "9.4": "e6b5c15896713faab1421367fec34f5778f0170567a9f590fff27f35d8da7dc4",
    "9.5": "952736b84d67ba938a962cd1f1ee8be4f47be9a6df5f9b864f9994b43999d25a",
-   "Bosses": "91d203de7eac969ba232daaeb75f8356a012851f333be75ac2dde26ae5745b36",
+   "Bosses": "710fa280f8a255f7ea891fce7558d5110b9022ded93642eda216038c1b379a23",
    "C.3": "b91fb4a2308f2c81eea25754faef3d7d0acc443bfb06ad85ef8ec918d9aa305f",
    "C.8": "48feeecdddbc9066fec9e54f084b0f5b0f35d474d60c019f2e51146f640ef0b7"
   },
@@ -72,19 +72,19 @@
   "pa08": {
    "11.1.5": "411904d94c58f0acb041211fe5b0aa7338f105da58421757a439ef989fa20e25",
    "11.2": "ba5e7427b715a19012141361f88b7c983fd03277a38931643fa3a7d5dbe1d123",
-   "11.3": "c6d581c1eaa93276a5a0e48d0aa4f27ac6d099fb94124136f1881e059e1860a2",
+   "11.3": "db70e82e18a40997ea0098922a0ae0edebc43b0ffe7420e7ece8a08e0b6a588b",
    "C.10": "a7ca692943d5dfc5a1b1dc472e212e2dc9b856f2819d3ad6f418eaca6eedd75c"
   },
   "pa09": {
    "11.2.4": "43c3cc3aba81eff4e778b4b00be3096c425c67a22980b3e9ec0249f8427a47ce",
    "11.2.5": "759745d2be2b355f171b2cee7289e528eceeb4275f5be2a4f4872731ddccb8fb",
    "11.2.6": "db56b1cc0e073db709992ab68c1979ec9bac20b59e188bcbd990e5bfb530a203",
-   "11.3": "c6d581c1eaa93276a5a0e48d0aa4f27ac6d099fb94124136f1881e059e1860a2",
+   "11.3": "db70e82e18a40997ea0098922a0ae0edebc43b0ffe7420e7ece8a08e0b6a588b",
    "C.10": "a7ca692943d5dfc5a1b1dc472e212e2dc9b856f2819d3ad6f418eaca6eedd75c"
   },
   "pa10": {
    "10.1": "ce52b41bd4cd797ee9533822913e1d9e264967dfeb69ede0f1dbfa88021bd12e",
-   "10.5": "003b600800f068a5a4dfe1dde5997a739db6a41c5039a5f3652383cd3a7142f8"
+   "10.5": "9ff2484d4124a9d61b4e8a704ad0186ed2f2e3ed7a50c2c9dd85bee4d02a444b"
   }
  }
 }
