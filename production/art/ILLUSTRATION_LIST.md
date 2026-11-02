@@ -490,7 +490,7 @@ HUMAN ACTIVITY
 * The surveyor stands at the cairn looking across the lands, one hand raised to shade eyes
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Beyond the walls, land has become allegiance. Expedition ledgers still say forest, city, cavern, ice, desert, and swamp. Survivors know better. They use older names. The shape of the world is plain enough to anyone who has walked it. The broken mountains run down its spine. The dead empire and its ruined cities sprawl across the eastern heart. The great forest spreads west to the coast, the ice locks the north, the dunes burn in the south beyond the mountain passes, and the swamps drown the south-east where the rivers give out at the sea. The old imperial roads still join all of it, straight and patient, running out from the Ashlands to every climate that survived. A dry label cannot warn a traveller that a road has memory, a court still sits without lungs, or a pool of black water may be listening."
+"Beyond the walls, the ground itself has taken sides. Expedition ledgers still say forest, city, cavern, ice, desert, and swamp. Survivors know better. They use older names. The shape of the world is plain enough to anyone who has walked it. The broken mountains run down its spine. The dead empire and its ruined cities sprawl across the eastern heart. The great forest spreads west to the coast, the ice locks the north, the dunes burn in the south beyond the mountain passes, and the swamps drown the south-east where the rivers give out at the sea. The old imperial roads still join all of it, straight and patient, running out from the Ashlands to every climate that survived. A dry label cannot warn a traveller that a road has memory, a court still sits without lungs, or a pool of black water may be listening."
 Immense, quiet and unsettled.
 Do not draw:
 * Not a mountain-pass vista with a party and a single road toward one city.
@@ -578,7 +578,7 @@ SUBJECT DETAILS
 * Totem-like markings of scratches, no letters
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The Monsters of the Dying Lands are not scattered obstacles. They hold the world now. They keep roads closed, fields empty, shrines silent, and old borders meaningless. A village may vanish because of hunger, tax, fever, or weather. Outside the walls, those causes often have claws, banners, laws, or names."
+"The Monsters of the Dying Lands hold the world now. They keep roads closed, fields empty, shrines silent, and old borders meaningless. A village may vanish because of hunger, tax, fever, or weather. Outside the walls, those causes often have claws, banners, laws, or names."
 Hollow, watched and recently emptied.
 Do not draw:
 * No monsters visible in the frame.
@@ -640,7 +640,7 @@ HUMAN ACTIVITY
 * A single traveller watches from a barrow, small
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The Dying Lands remember. They do not remember kindly."
+"The Dying Lands remember, and not kindly."
 Haunted, wistful, unforgiving.
 Do not draw:
 * No gradient or glow on the ghosts: line only.
@@ -793,7 +793,7 @@ Do not draw:
 * No square grid or measured lines.
 ```
 
-### 14. One moves, one waits ✗
+### 14. One moves, one waits ✓
 
 `ART-END-PARTY-PHASE`
 
@@ -1568,7 +1568,7 @@ SUBJECT DETAILS
 * Light shafts as blank paper between trunks
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The Greenmark is the great temperate forest of the surviving world. It is larger than the maps. Roots take a road within a season and make the milestones useless. Travellers report trees shifting at the edge of sight, upright hounds between trunks, and grove-circles where moss stays warm after snow. Foresters cut warning signs into bark for those who know how to read them. The most common sign means turn back even if the voice ahead is your own. The forest is no wilderness. It is a country that does not recognize human law."
+"The Greenmark is the great temperate forest of the surviving world. It is larger than the maps. Roots take a road within a season and make the milestones useless. Travellers report trees shifting at the edge of sight, upright hounds between trunks, and grove-circles where moss stays warm after snow. Foresters cut warning signs into bark for those who know how to read them. The most common sign means turn back even if the voice ahead is your own. The forest is a country with laws of its own, and none of them are human."
 Ancient, watchful and indifferent to humans.
 Do not draw:
 * No people; the climate is the subject.
@@ -1906,7 +1906,7 @@ HUMAN ACTIVITY
 * Water-bearers walk in a line
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Saltspire is a tower-city built around a deep, sacred well at the centre of an oasis ringed by salt-pans and the bones of older cities. It has the only reliable water for a hundred miles. This makes it wealthy. It also makes it hated."
+"Saltspire is a tower-city built around a deep, sacred well at the centre of an oasis ringed by salt-pans and the bones of older cities. It has the only reliable water for a hundred miles. The water has made it rich, and every neighbour that buys it hates the seller."
 Wealthy, parched and resented.
 Do not draw:
 * Not a bare small oasis camp (that is the Oasis Raiders scenario).
@@ -2029,7 +2029,7 @@ Must be shown exactly:
 * Broad and heavy build: shoulders very wide for the height, thick short limbs, no slender lines
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Dwarves are cut from sealed stone halls, old grudges, and craft traditions older than most fallen kingdoms. Hardship did not sour them so much as harden them, and little in this world meets one of them head-on and walks away whole."
+"Dwarves are cut from sealed stone halls, old grudges, and craft traditions older than most fallen kingdoms. Hardship hardened them more than it soured them, and little in this world meets one of them head-on and walks away whole."
 Granite stubbornness, a person built to be struck and remain standing.
 Do not draw:
 * Not a comic dwarf: serious proportions, no oversized hat or cartoon nose.
@@ -2193,7 +2193,7 @@ SUBJECT DETAILS
 * Controlled, wary expression
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Deep elves are a crueller branch of the elder blood, raised on night, venom, and treachery taught as a fine art. They are graceful and dangerous, and far more at ease beneath the dark than beneath the sun."
+"Deep elves are a crueller branch of the elder blood, raised on night, venom, and treachery taught as a fine art. Graceful and dangerous, they are more at home in the dark than under the sun."
 Elegant discomfort, a creature of night enduring the sun.
 Do not draw:
 * Not the Deep Elf Warrior or Priest monster: no ornate court armour, no hand crossbow, no quarterstaff.
@@ -2401,7 +2401,7 @@ SUBJECT DETAILS
 * Knotted purse lying flat on top of the rope-bound crate, its drawstring slack on the crate lid
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A smuggler lives by false bottoms, whispered routes, and the craft of keeping valuable things out of dangerous hands. Stealth is not a flourish to them. It is the trade that buys supper."
+"A smuggler lives by false bottoms, whispered routes, and the craft of keeping valuable things out of dangerous hands. To them, stealth is the trade that buys supper."
 Furtive and well-practised.
 Ink it like old-school rulebook equipment art: a bold, rough contour of uneven weight around each object, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag that follows each material: grain on wood, dents and pits on metal, folds and wear on leather and cloth. High contrast, with few in-between textures. Each object reads as a clear silhouette first and detail second: no stipple fields, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable construction, worn and used. It must look drawn by hand with brush, pen and ink, not generated or rendered.
 Do not draw:
@@ -2433,7 +2433,7 @@ SUBJECT DETAILS
 * Shortbow with its lower tip on the ground and the upper limb leaning against the satchel
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A courier carried news, coin, or secrets across broken roads and worse weather, for patrons who paid for speed and asked no questions. Speed was never a convenience. It was the difference between arriving and being found later."
+"A courier carried news, coin, or secrets across broken roads and worse weather, for patrons who paid for speed and asked no questions. Speed was the difference between arriving and being found later."
 Hurried urgency held still.
 Ink it like old-school rulebook equipment art: a bold, rough contour of uneven weight around each object, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag that follows each material: grain on wood, dents and pits on metal, folds and wear on leather and cloth. High contrast, with few in-between textures. Each object reads as a clear silhouette first and detail second: no stipple fields, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable construction, worn and used. It must look drawn by hand with brush, pen and ink, not generated or rendered.
 Do not draw:
@@ -2554,7 +2554,7 @@ SUBJECT DETAILS
 * Quarterstaff leaning against the desk's side with its foot on the floor
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A scholar lived among books, diagrams, and arguments, and the stubborn belief that knowledge matters even in a dying world. Where others see only rubble, they read the record of how it came to fall."
+"A scholar lived among books, diagrams, and arguments, stubbornly sure that knowledge matters even in a dying world. Where others see only rubble, they read the record of how it came to fall."
 Quiet obsessive study among ruins.
 Ink it like old-school rulebook equipment art: a bold, rough contour of uneven weight around each object, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag that follows each material: grain on wood, dents and pits on metal, folds and wear on leather and cloth. High contrast, with few in-between textures. Each object reads as a clear silhouette first and detail second: no stipple fields, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable construction, worn and used. It must look drawn by hand with brush, pen and ink, not generated or rendered.
 Do not draw:
@@ -2644,7 +2644,7 @@ SUBJECT DETAILS
 * Candle wax pooling only inside the lantern base or on the shelf, never outside closed glass
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A believer kept faith in a world that rewards it rarely, and learned that courage spreads as readily as panic. People stand straighter when they believe something is still watching from above."
+"A believer kept faith in a world that rewards it rarely, and found that courage spreads as readily as panic. People stand straighter when they believe something is still watching from above."
 Quiet steady hope.
 Ink it like old-school rulebook equipment art: a bold, rough contour of uneven weight around each object, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag that follows each material: grain on wood, dents and pits on metal, folds and wear on leather and cloth. High contrast, with few in-between textures. Each object reads as a clear silhouette first and detail second: no stipple fields, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable construction, worn and used. It must look drawn by hand with brush, pen and ink, not generated or rendered.
 Do not draw:
@@ -2762,7 +2762,7 @@ SUBJECT DETAILS
 * Drawn purse strings
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A merchant learned value, leverage, and the quiet power of knowing what desperate people will pay. Coin is never only money to them. It is movement, influence, and another season behind the walls."
+"A merchant learned value, leverage, and the quiet power of knowing what desperate people will pay. To them, coin means movement, influence, and another season behind the walls."
 Calculated mercantile caution.
 Ink it like old-school rulebook equipment art: a bold, rough contour of uneven weight around each object, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag that follows each material: grain on wood, dents and pits on metal, folds and wear on leather and cloth. High contrast, with few in-between textures. Each object reads as a clear silhouette first and detail second: no stipple fields, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable construction, worn and used. It must look drawn by hand with brush, pen and ink, not generated or rendered.
 Do not draw:
@@ -2889,7 +2889,7 @@ SUBJECT DETAILS
 * Scuffs and rust on mail, boots braced on a small patch of cracked flagstone
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A Fighter is forged in places where hesitation gets people killed. Drill, repetition, and hard lessons carve in the instinct to hold ground when holding it is the only thing that matters. They have watched lines collapse, and they know to the heartbeat how long one can stand before it does."
+"A Fighter is forged in places where hesitation gets people killed. Drill, repetition, and hard lessons carve in the instinct to hold ground when everything depends on holding it. They have watched lines collapse, and they know to the heartbeat how long one can stand before it does."
 Stoic resolve, the last thing between the line and collapse.
 Do not draw:
 * Not heavy plate: ring shirt only.
@@ -3002,7 +3002,7 @@ SUBJECT DETAILS
 * A few ferns at its feet
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A Ranger is schooled by ground that kills the careless. Tracks, wind, and distance tell them what others miss entirely. They learn to act before danger closes the gap, and to strike from where the enemy cannot answer."
+"A Ranger is schooled by ground that kills the careless. Tracks, wind, and distance tell them what others miss. They learn to act before danger closes the gap, and to strike from where the enemy cannot answer."
 Focused calm of a hunter at full draw.
 Do not draw:
 * Not the Assassin: no hooded crouch, no dagger-first pose.
@@ -3083,7 +3083,7 @@ SUBJECT DETAILS
 * Thin face, a short beard or cropped grey hair, squinting
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A Wizard is formed through study that most would not endure. Fragments of knowledge, careful notes, and repeated failure shape their craft. Power is taken apart, understood, and rebuilt with precision."
+"A Wizard is formed through study that most would not endure. Fragments of knowledge, careful notes, and repeated failure shape their craft. They take power apart, learn how it works, and rebuild it with precision."
 Intent scholarly obsession.
 Do not draw:
 * Not the Sorcerer or Psion: no spell effects or levitation.
@@ -4684,7 +4684,7 @@ SUBJECT DETAILS
 * Tiny discarded staff at the priest's feet
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"At this height a prayer is not asked but demanded, and something always answers. Whether it is the god prayed to is a question the devout do not raise aloud."
+"At this height a prayer is a demand, and something always answers. Whether it is the god prayed to is a question the devout do not raise aloud."
 Awed, uneasy audacity.
 Do not draw:
 * Do not resolve the cloud shape into a clear god or angel.
@@ -4710,7 +4710,7 @@ SUBJECT DETAILS
 * Plain sleeve rolled to the elbow
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Sorcery does not study. It bleeds. These first workings cost little blood and never fail, which is how they teach the unwary to want more."
+"Sorcery has no apprenticeship, only a price in blood. These first workings cost little of it and never fail, which is how they teach the unwary to want more."
 Hushed, intimate peril.
 Do not draw:
 * No gore pools; the cut is a single fine line.
@@ -5614,7 +5614,7 @@ SUBJECT DETAILS
 * Mossy boulder and bare ground with no treasure
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Lesser kin to Maelthorn and the Greenmark's most practised liar, the green dragon is a serpentine tyrant the colour of deep moss, spine-crested, their breath a rolling, corrosive poison. They do not rampage; they manipulate, ruling a swathe of forest through fear and bargain. Lesser things bring them tribute in exchange for being spared a while longer."
+"Lesser kin to Maelthorn and the Greenmark's most practised liar, the green dragon is a serpentine tyrant the colour of deep moss, spine-crested, their breath a rolling, corrosive poison. Rampage is beneath them; they rule a swathe of forest through fear and bargain. Lesser things bring them tribute in exchange for being spared a while longer."
 Cunning, ancient patience.
 Do not draw:
 * No lair, no hoard and no tribute.
@@ -5725,7 +5725,7 @@ SUBJECT DETAILS
 * Gaping cuts without gore, grey skin
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Not all the Ashlands' dead rose by design. A possessed corpse is a body worn by something that crept in from the dark between worlds, lurching on borrowed legs toward a wrong, jerking purpose. Their grip does not tire, and they burst in a reek of corruption when they finally fall. Whatever rides them does not speak. They only reach."
+"Not all the Ashlands' dead rose by design. A possessed corpse is a body worn by something that crept in from the dark between worlds, lurching on borrowed legs toward a wrong, jerking purpose. Their grip does not tire, and they burst in a reek of corruption when they finally fall. Whatever rides them does not speak, and the corpse does nothing but reach."
 Wrong, jerking, silent.
 Do not draw:
 * Not a Zombie of the Mire: no water, no bog plants.
@@ -5781,7 +5781,7 @@ SUBJECT DETAILS
 * Small, about the size of a crouching child
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Where the Ashlands meet the old sewers and undercrofts, the wererat thrives, a hunched, plague-grey shapeshifter scurrying between man and rat-thing. They bite, then skitter back into the dark, leaving filth-fever in every wound. Mundane blades barely mark them. One wererat is a nuisance; a nest of them is an outbreak."
+"Where the Ashlands meet the old sewers and undercrofts, the wererat thrives, a hunched, plague-grey shapeshifter scurrying between man and rat-thing. They bite, then skitter back into the dark, leaving filth-fever in every wound. Mundane blades barely mark them. A nest of them is an outbreak."
 Skulking disease and stealth.
 Do not draw:
 * Not the Ratkin ancestry hero.
@@ -6209,7 +6209,7 @@ SUBJECT DETAILS
 * A small jury-rigged snare of cord and stakes at its feet
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Knee-high reptilian scavengers with dull scales and dingy picks, kobolds are the Undermarches' scuttling vermin-folk. One alone is nothing; a chittering mob of them, dragging traps and loosing slings from the dark, is a real danger. They know every tunnel and trust not one. Where a single kobold shows themselves, a whole warren is watching."
+"Knee-high reptilian scavengers with dull scales and dingy picks, kobolds are the Undermarches' scuttling vermin-folk. A chittering mob of them, dragging traps and loosing slings from the dark, is a real danger. They know every tunnel and trust not one. Where a single kobold shows themselves, a whole warren is watching."
 Nervous, scuttling cunning.
 Do not draw:
 * Not a goblin: reptilian snout and tail.
@@ -6785,7 +6785,7 @@ SUBJECT DETAILS
 * Rusted helm fragment on the skull
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Rimed in blue frost, a sword welded to their hand by ice, a frozen skeleton is one of the Pale City's countless dead, still standing the post they were given. They guard avenues that have not seen a living census in centuries. The cold preserves them whole; they will hold that post when the last warm thing in the world goes out. There are always more under the snow."
+"Rimed in blue frost, a sword welded to their hand by ice, a frozen skeleton is one of the Pale City's countless dead, still standing the post they were given. They guard avenues that have not seen a living census in centuries. The cold preserves them whole; they will hold that post when the last warm thing in the world goes out."
 Frozen, stoic duty.
 Do not draw:
 * Not the Skeleton Warrior (bronze, sand) or Undead Warrior (flesh, rust).
@@ -7067,7 +7067,7 @@ SUBJECT DETAILS
 * No legs
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A knife of frozen malice given a drifting, translucent shape, the ice wraith is the spirit of someone who froze to death in the Pale City and never forgave it. Their touch saps warmth and thickens the blood to sludge. Steel passes clean through; only magic bites. They haunt the coldest avenues, hungry for the heat of anything still living."
+"A knife of frozen malice in a drifting, translucent shape, the ice wraith is the spirit of someone who froze to death in the Pale City and never forgave it. Their touch saps warmth and thickens the blood to sludge. Steel passes clean through; only magic bites. They haunt the coldest avenues, hungry for the heat of anything still living."
 Cold, grudging hunger.
 Do not draw:
 * Not the Spectre (scorched) or Banshee.
@@ -7094,7 +7094,7 @@ SUBJECT DETAILS
 * Snow drifted against the shield
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A greatshield-bearing corpse-knight, the White Court sentinel is the dead nobility's bodyguard, planting themselves before their lords and refusing to give ground. They lend their frozen resolve to the soldiers around them and weather blows that would shatter a lesser guardian. They will not pursue and will not break. They only endure, as the court endures."
+"A greatshield-bearing corpse-knight, the White Court sentinel is the dead nobility's bodyguard, planting themselves before their lords and refusing to give ground. They lend their frozen resolve to the soldiers around them and weather blows that would shatter a lesser guardian. They will not pursue and will not break. Enduring is the whole of their duty, as it is the court's."
 Immovable frozen loyalty.
 Do not draw:
 * No polearm; not the Guard's longsword and kite shield.
@@ -7207,7 +7207,7 @@ SUBJECT DETAILS
 * Drifting snow at its feet
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The White Court executioner carries out sentences the living court passed centuries ago, a towering headsman whose frost-rimed axe seeks the weakest throat on the field. They stride past the hale to reach the wounded and end them with grim efficiency. The court's justice did not die with the court. It only grew patient."
+"The White Court executioner carries out sentences the living court passed centuries ago, a towering headsman whose frost-rimed axe seeks the weakest throat on the field. They stride past the hale to reach the wounded and end them with grim efficiency. The justice outlived the court, and has had centuries to grow patient."
 Patient pitiless judgement.
 Do not draw:
 * Not the Guard (no armour finery).
@@ -7236,7 +7236,7 @@ Must be shown exactly:
 * Exactly two legs; the wings double as forelimbs
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A lesser cousin of the great dragons, the frost wyvern is a winged reptile the colour of dirty ice, a venom-and-frost sting whipping at the end of their tail. They stoop from the white sky to harry and poison, then climb out of reach before the answer comes. They are cunning rather than wise. The Pale City's frozen peaks are crowded with their roosts."
+"A lesser cousin of the great dragons, the frost wyvern is a winged reptile the colour of dirty ice, a venom-and-frost sting whipping at the end of their tail. They stoop from the white sky to harry and poison, then climb out of reach before a blade or bolt can follow. They are cunning rather than wise. The Pale City's frozen peaks are crowded with their roosts."
 Predatory stoop.
 Do not draw:
 * Not a four-legged dragon.
@@ -7318,7 +7318,7 @@ SUBJECT DETAILS
 * Jagged ice outcrop under claws
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Visath's feral get, the white dragon is an ice-crusted wyrm whose breath flash-freezes whatever it touches. Less cunning than their kin but no less lethal, they are pure predatory cold given wings and an appetite. They nest in the lesser spires and suffer the White Court about them as courtiers. When they descend, the city's eternal winter only deepens."
+"Visath's feral get, the white dragon is an ice-crusted wyrm whose breath flash-freezes whatever it touches. Less cunning than their kin but no less lethal, they are predatory cold with wings and an appetite. They nest in the lesser spires and suffer the White Court about them as courtiers. When they descend, the city's eternal winter only deepens."
 Feral cold sovereignty.
 Do not draw:
 * No city, spire or courtiers.
@@ -7376,7 +7376,7 @@ SUBJECT DETAILS
 * No clothes
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Knee-high and bat-winged, a barbed venomous tail lashing behind them, the imp flits about the Sun-Drowned tombs as the spiteful servant of darker things. They dart in to sting and wheel away cackling, untroubled by the desert's heat or their own infernal fire. Alone they are more nuisance than threat. They are also a herald of worse to come."
+"Knee-high and bat-winged, a barbed venomous tail lashing behind them, the imp flits about the Sun-Drowned tombs as the spiteful servant of darker things. They dart in to sting and wheel away cackling, untroubled by the desert's heat or their own infernal fire. Alone they are more nuisance than threat, but worse usually follows them."
 Spiteful cackling nuisance.
 Do not draw:
 * Not the Demon (huge) or Demonborn ancestry.
@@ -7404,7 +7404,7 @@ SUBJECT DETAILS
 * Hollow eye sockets in solid black
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A skeleton warrior stands at the post they were set in the year of their death, a sun-bleached frame in the corroded bronze of a priest-king's guard. They still hold the weapon they carried in life, waiting on an order that has not come in centuries. When intruders breach the sealed courts the order arrives at last, and the bones remember their drill. There are always more, ranked in the dark behind them."
+"A skeleton warrior stands at the post they were set in the year of their death, a sun-bleached frame in the corroded bronze of a priest-king's guard. They still hold the weapon they carried in life, waiting on an order that has not come in centuries. When intruders breach the sealed courts the order arrives at last, and the bones remember their drill. Behind them, more stand ranked in the dark, waiting on the same order."
 Dry patient loyalty.
 Do not draw:
 * Not the Undead Warrior (flesh, rust, ash, rectangular shield).
@@ -7631,7 +7631,7 @@ SUBJECT DETAILS
 * Drifted sand around the coils
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A great serpent with an almost-human face and the patient cunning of something very old, the desert naga coils among the tomb-pillars. They spit venom from a distance and crush what comes close, hexing the strong into an unnatural sleep. The priest-kings kept them as guardians and oracles. They guard still. They no longer answer."
+"A great serpent with an almost-human face and the patient cunning of something very old, the desert naga coils among the tomb-pillars. They spit venom from a distance and crush what comes close, hexing the strong into an unnatural sleep. The priest-kings kept them as guardians and oracles. They still guard, and no one living has had an answer from them."
 Ancient guardian silence.
 Do not draw:
 * Not the Swamp Naga: no hood, no water, no weeds.
@@ -7659,7 +7659,7 @@ SUBJECT DETAILS
 * Heat distortion lines in the air
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A roaring man-shape of living flame, white-hot at the core and shedding embers at the edges, the fire elemental sets alight everything they touch and scorches whatever strikes them. Water and ice are their only checks; the desert sun is their cradle. They draw a trail of cinders across the tomb-floors. To lay hands on them is to burn."
+"A roaring man-shape of living flame, white-hot at the core and shedding embers at the edges, the fire elemental sets alight everything they touch and scorches whatever strikes them. Water and ice are their only checks; the desert sun is their cradle. They draw a trail of cinders across the tomb-floors."
 Raw scorching presence.
 Do not draw:
 * Not the Brass Golem or Imp.
@@ -7686,7 +7686,7 @@ SUBJECT DETAILS
 * Cracked pieces and bone dust
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A looming framework of fused bone twice a man's height, the giant skeleton is what remains of something that was never entirely natural and is far less so now. They move with grinding deliberation, sweeping aside anything in their path with fists like falling masonry. Tomb-city carvings show their kind kneeling before the priest-kings; none show them standing. Whatever they were raised to guard, they guard it still."
+"A looming framework of fused bone twice a man's height, the giant skeleton is what remains of something that was never entirely natural and is far less so now. They move with grinding deliberation, sweeping aside anything in their path with fists like falling masonry. Tomb-city carvings show their kind kneeling before the priest-kings; none show them standing."
 Grinding deliberation.
 Do not draw:
 * Not the Skeleton Warrior scaled up: no armour.
@@ -7769,7 +7769,7 @@ SUBJECT DETAILS
 * A worn threshold slab with sealing marks under its feet
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A faceless construct of gilded stone and ritual, the tomb guardian was built to defend the priest-kings' seals and is tireless in that one duty. They plant themselves at a threshold and cannot be hurried or frightened. They have held one doorway for a thousand years. They will hold it for a thousand more."
+"A faceless construct of gilded stone and ritual, the tomb guardian was built to defend the priest-kings' seals and is tireless in that one duty. They plant themselves at a threshold and cannot be hurried or frightened. They have held one doorway for a thousand years, and nothing in the second thousand will move them."
 A thousand-year vigil.
 Do not draw:
 * Not the Stone Sentinel (granite, giant sword).
@@ -7826,7 +7826,7 @@ Must be shown exactly:
 * Bat wings: it flies
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A monstrous fusion of lion's body, bat's wings, and a man's leering face, the manticore flicks volleys of iron spikes from their lashing tail. They wait where the dune-road narrows and rain barbs on whatever they have trapped. They savour a meal that begged first. The Sun-Drowned's loneliest trails are their larder."
+"A monstrous fusion of lion's body, bat's wings, and a man's leering face, the manticore flicks volleys of iron spikes from their lashing tail. They wait where the dune-road narrows and rain barbs on whatever they have trapped. They savour a meal that begged first."
 Leering patient cruelty.
 Do not draw:
 * Not a sphinx.
@@ -7934,7 +7934,7 @@ SUBJECT DETAILS
 * Strings of teeth and trinkets stripped from the drowned
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Slime-streaked cousins of their forest kin, swamp goblins paddle The Mire's channels and blow poisoned darts from the reeds. They melt into the cover and strike from wherever the water hides them. A nuisance one at a time, a hazard in a swarm. They strip the drowned for trinkets and teeth."
+"Slime-streaked cousins of their forest kin, swamp goblins paddle The Mire's channels and blow poisoned darts from the reeds. They melt into the cover and strike from wherever the water hides them. Alone they are a nuisance. Twenty of them, darting from twenty reed-beds, is how a party ends up in the water. They strip the drowned for trinkets and teeth."
 Sly damp ambush.
 Do not draw:
 * Not the Greenmark Goblin (no sling, dry land) or Cave Goblin.
@@ -7992,7 +7992,7 @@ Must be shown exactly:
 * Six thin legs
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A bloated mosquito-thing the size of a cat, the stirge carries a needle proboscis and a belly that swells red with stolen blood. They dart in, latch on, and drain until they are pried loose. The Mire's dusk air hums with them. One is an itch; a swarm is exsanguination."
+"A bloated mosquito-thing the size of a cat, the stirge carries a needle proboscis and a belly that swells red with stolen blood. They dart in, latch on, and drain until they are pried loose. The Mire's dusk air hums with them. One leaves a welt. Enough of them leave a body with nothing in it."
 Hungry, darting menace: a blood-swollen pest out of the Mire's humming dusk.
 Do not draw:
 * Not the Giant Bat (mammal).
@@ -8075,7 +8075,7 @@ SUBJECT DETAILS
 * Camouflage mottling in bold broken black patches
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A barbed harpoon in their claws, the lizardfolk hunter stalks The Mire's margins, dragging prey off the walkways and into the water where every advantage is their own. They strike from cover and the reeds, unseen until the line snaps taut. Patient and silent, they wait out the careless. By the time they move, you are already in the water."
+"A barbed harpoon in their claws, the lizardfolk hunter stalks The Mire's margins, dragging prey off the walkways and into the water where every advantage is their own. They strike from cover and the reeds, unseen until the line snaps taut. Patient and silent, they wait out the careless, and the first sign that they have moved is the water closing over your head."
 Unseen until the line snaps taut.
 Do not draw:
 * Not the Warrior (club): this has a harpoon.
@@ -8273,7 +8273,7 @@ SUBJECT DETAILS
 * Low fog curling around its ankles
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A warty, weed-haired crone, the swamp hag poles their way through The Mire cursing all they meet, slipping half into the spirit-world when cornered. Their stench chokes out hope. They bargain, they lie, and they feed on misery. The loneliest hut in the mire is theirs, and it is never empty for long."
+"A warty, weed-haired crone, the swamp hag poles their way through The Mire cursing all they meet, slipping half into the spirit-world when cornered. Their stench chokes out hope. They feed on misery, and every bargain they offer is a lie. The loneliest hut in the mire is theirs, and it is never empty for long."
 Cruel sociable menace.
 Do not draw:
 * Not the Night Hag (ashen, shadowy).
@@ -8569,7 +8569,7 @@ HUMAN ACTIVITY
 * A few tiny animals and one fleeing hare in the foreground; no humans
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A towering shape of ancient trunk and grasping root, bark-skinned and crowned with a tangle of antlered branches, the Avatar of the Old Growth is the will of the deep forest given a body to act through. They call the lesser green things to their side and drown intruders in living wood. To kill them is to wound the Greenmark itself. The Greenmark does not forgive."
+"A towering shape of ancient trunk and grasping root, bark-skinned and crowned with a tangle of antlered branches, the Avatar of the Old Growth is the deep forest's will, walking. They call the lesser green things to their side and drown intruders in living wood. Killing them wounds the Greenmark itself. The Greenmark remembers wounds."
 Ancient, implacable and awake.
 Do not draw:
 * Not Maelthorn (a wyrm) and not the Old Growth Treant scenario with a ritual and Mother Tree.
@@ -8600,7 +8600,7 @@ HUMAN ACTIVITY
 * No living humans except one tiny wrapped cocooned figure moving faintly
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"In the deepest dark of the Undermarches squats the mother of every giant spider that plagues the deep, a bloated horror the size of a cottage, egg-sacs trailing from them that twitch with the unborn. They flood the field with their brood and bind the survivors in webs for later. Their venom stops a heart in a single beat. The deep, in the end, is their nursery."
+"In the deepest dark of the Undermarches squats the mother of every giant spider that plagues the deep, a bloated horror the size of a cottage, egg-sacs trailing from them that twitch with the unborn. They flood the field with their brood and bind the survivors in webs for later. Their venom stops a heart in a single beat."
 Nursery dread: a vast, bloated, patient horror at the heart of its twitching brood.
 Do not draw:
 * Not the Spider's Silk Route ravine in the Greenmark.
@@ -8634,7 +8634,7 @@ HUMAN ACTIVITY
 * The dead line braces shields and spears in formation
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Veyr was the empire's greatest captain, who swore their company would never break and held them to it past death itself. Now they lead the Forsaken in spectral plate, a duelist whose paired blades have not slowed since the empire fell. They rally their dead soldiers with a voice like a closing tomb. They no longer recall the war they are still fighting. Only the oath."
+"Veyr was the empire's greatest captain, who swore their company would never break and held them to it past death itself. Now they lead the Forsaken in spectral plate, a duelist whose paired blades have not slowed since the empire fell. They rally their dead soldiers with a voice like a closing tomb. They no longer recall the war they are still fighting, only the oath that keeps them in it."
 Doomed discipline, forgotten war.
 Do not draw:
 * Not the Hollow Crown's kneeling legionaries.
@@ -8731,7 +8731,7 @@ HUMAN ACTIVITY
 * Watchers on the wall look on, small and frozen in place
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The antlered figure admitted to Greythorn's west gate each winter does not come to bargain when the tithe goes unpaid. They come to collect. A towering shape of bone-antler and living wood, they drag the indebted into their reach and call the wild court to witness. The forest has never broken the agreement, and it does not forgive those who do."
+"The antlered figure admitted to Greythorn's west gate each winter comes to collect when the tithe goes unpaid, and brings no terms. A towering shape of bone-antler and living wood, they drag the indebted into their reach and call the wild court to witness. The forest has never broken the agreement, and it does not forgive those who do."
 Ritual debt collection, inevitable.
 Do not draw:
 * Not the Avatar of the Old Growth or the Whispering Grove Antlered Warden scenario.
@@ -8762,7 +8762,7 @@ HUMAN ACTIVITY
 * The child figure sings; no other people
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Survivors describe a small figure at the edge of the torchlight, singing in a tongue that sounds like an old lullaby heard through water. Then the torch goes out. The Voice Beneath the Bells is grief given a child's shape and a drowned chapel's patience, and their song hollows out everyone who hears it. The bells they wait beneath have not rung in a very long time."
+"Survivors describe a small figure at the edge of the torchlight, singing in a tongue that sounds like an old lullaby heard through water. Then the torch goes out. The Voice Beneath the Bells is grief that wears a child's shape and keeps a drowned chapel's patience, and their song hollows out everyone who hears it. The bells they wait beneath have not rung in a very long time."
 Quiet sorrow edged with horror.
 Do not draw:
 * Not Vossegar's cathedral (that is a huge drowned cathedral with a wyrm).
@@ -8852,7 +8852,7 @@ SUBJECT DETAILS
 * Sky ruled with heavy diagonal strokes
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Visath is the Pale City's eternal winter wearing the body of a wyrm, a glacier with wings and a will. Their breath does not merely freeze; it stops time in the flesh, leaving victims locked mid-scream in the ice. They rule from the highest spire and suffer no warmth anywhere in their domain. Where they fly, the snow falls harder, as though the sky itself bows."
+"Visath is the Pale City's eternal winter wearing the body of a wyrm, a glacier with wings and a will. Their breath stops time in the flesh, leaving victims locked mid-scream in the ice. They rule from the highest spire and suffer no warmth anywhere in their domain. Where they fly, the snow falls harder, as though the sky itself bows."
 Absolute winter, a sky bowing.
 Do not draw:
 * Not the Frost Bailiff avenue or the Ice Wyrm scenario cavern.
@@ -9257,7 +9257,7 @@ HUMAN ACTIVITY
 * A tiny robber party creeps along a side aisle with a sack
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Broken statues and smashed reliquaries fill the hall, and sanctified bone and silver remain in the wreckage, too holy to abandon and too valuable to leave. Sablekeep needs the relics to keep its braziers lit and its authority legal, and will pay to register every fragment. The dead here are not confused. They swore to guard these relics, and death has not released them from the oath."
+"Broken statues and smashed reliquaries fill the hall, and sanctified bone and silver remain in the wreckage, too holy to abandon and too valuable to leave. Sablekeep needs the relics to keep its braziers lit and its authority legal, and will pay to register every fragment. The dead here have not forgotten why they stayed. They swore to guard these relics, and death has not released them from the oath."
 Sacred desecration.
 Do not draw:
 * No attacking revenants: barely visible and still.
@@ -9288,7 +9288,7 @@ HUMAN ACTIVITY
 * A rival pair watches from a corridor
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The vault has been sealed for two generations. Karnessa Iron-Vein pressed their blood into the iron door when something inside began to leak through the walls, and the seal has held. Until now. Tremors along the imperial roads have cracked the outer binding, and something below is pushing. Sablekeep sends one party to reinforce the seal before whatever waits finishes their work; a rival patron sends another to open the vault and price what was sealed there. The vault does not care about either contract."
+"The vault has been sealed for two generations. Karnessa Iron-Vein pressed their blood into the iron door when something inside began to leak through the walls, and the seal held until tremors along the imperial roads cracked the outer binding. Now something below is pushing. Sablekeep sends one party to reinforce the seal before whatever waits finishes their work; a rival patron sends another to open the vault and price what was sealed there. Whatever is inside has signed neither contract."
 Held breath at the point of breaking.
 Do not draw:
 * No creature visible yet (Vault Presence is not placed until the vault opens); only seepage.
@@ -9350,7 +9350,7 @@ HUMAN ACTIVITY
 * Others wait at the near end with a lantern
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A chasm splits the caverns like a wound in the world, crossed only by narrow ledges in broken pieces. A Survey Map must reach the Lantern Council before Deepwarden's rivals can claim the new diggings. Things cling to the dark stone below the ledges and wait for a hand to shake. The Council wants the map. It does not ask what the things want."
+"A chasm splits the caverns like a wound in the world, crossed only by narrow ledges in broken pieces. A Survey Map must reach the Lantern Council before Deepwarden's rivals can claim the new diggings. Things cling to the dark stone below the ledges and wait for a hand to shake. The Council wants the map and has not asked what the things want."
 Vertiginous, hand-shaking dread.
 Do not draw:
 * Not an open-air aqueduct with arches: this is a dark cavern.
@@ -9533,7 +9533,7 @@ HUMAN ACTIVITY
 * One tiny looter reaches toward a reagent chest
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"In the ice-locked Silent District, north along the road out of Hearthhold, an alchemist's laboratory remains sealed under frost. The formula inside might be worth a village, and Hearthhold burns through everything it owns just to stay warm. The cold has preserved the benches, the bottles, the last mistakes, and the guardians left to watch them. Some things in that laboratory were never meant to thaw."
+"In the ice-locked Silent District, north along the road out of Hearthhold, an alchemist's laboratory remains sealed under frost. The formula inside might be worth a village, and Hearthhold burns through everything it owns just to stay warm. The cold has preserved the benches, the bottles, the last mistakes, and the guardians left to watch them. The frost is the only thing that has kept the guardians still."
 Preserved last mistakes.
 Do not draw:
 * Not the stronghold Apothecary (that is warm); here everything is frost-bound.
@@ -9623,7 +9623,7 @@ HUMAN ACTIVITY
 * Two tiny hunters crouch at the tunnel mouth
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The old stories put jewels and gold in a frozen cavern beneath the north road out of Hearthhold, and a wyrm coiled on top of them whose breath can stop a heart inside its own armour. Hearthhold needs the gold more than it fears the breath, which is the kind of arithmetic only the poorest Bastion does out loud. The second part of the story has never discouraged the first kind of listener."
+"The old stories put jewels and gold in a frozen cavern beneath the north road out of Hearthhold, and a wyrm coiled on top of them whose breath can stop a heart inside its own armour. Hearthhold needs the gold more than it fears the breath, which is the kind of arithmetic only the poorest Bastion does out loud."
 Held-breath avarice.
 Do not draw:
 * Not Visath the White (boss) on a spire.
@@ -9685,7 +9685,7 @@ HUMAN ACTIVITY
 * Two tiny scouts on the dune crest
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A vital oasis south of the mountain passes has changed hands again, and raiders hold the wells, the shade, and the people too slow to flee. Saltspire sells water as sovereignty, and an oasis it does not control is a debt it cannot collect. One contract from the Well-Keepers says liberation. A rival contract says seizure. The water will not ask which seal is righteous."
+"A vital oasis south of the mountain passes has changed hands again, and raiders hold the wells, the shade, and the people too slow to flee. Saltspire sells water as sovereignty, and an oasis it does not control is a debt it cannot collect. One contract from the Well-Keepers says liberation, and a rival's says seizure; the water will flow for whichever party holds the wells."
 Oppressive heat and captivity.
 Do not draw:
 * Not Saltspire's tower-city or the Sandwyrm basin.
@@ -9778,7 +9778,7 @@ HUMAN ACTIVITY
 * A nomad storyteller sits at the fire
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Nomad legends speak of a vast shape beneath the dunes south of the passes, and a gullet lined with the treasure of everything they have swallowed. The nomads tell it as a warning. Saltspire's patrons hear it as an inventory and pay accordingly. The dunes do not distinguish between the two kinds of listener."
+"Nomad legends speak of a vast shape beneath the dunes south of the passes, and a gullet lined with the treasure of everything they have swallowed. The nomads tell it as a warning. Saltspire's patrons hear it as an inventory and pay accordingly."
 Waiting and listening.
 Do not draw:
 * Do not show the Sandwyrm: only its trace.
@@ -10092,7 +10092,7 @@ HUMAN ACTIVITY
 * A guard stands on a wall section
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A Stronghold is not a castle in the noble sense. No ancient bloodline sanctifies it. No bard remembers its founding. It is a claim driven into a dying world with coin, fear, salvage, and stubborn labour. Its stones come from ruined shrines, abandoned watch-keeps, broken bridges, and walls that failed other people first. Its gates are paid for with burial gold, bounty coin, chapel debt, and the last wages of the dead."
+"A Stronghold has no ancient bloodline to sanctify it and no bard to remember its founding, and no noble would call it a castle. It is a claim driven into a dying world with coin, fear, salvage, and stubborn labour. Its stones come from ruined shrines, abandoned watch-keeps, broken bridges, and walls that failed other people first. Its gates are paid for with burial gold, bounty coin, chapel debt, and the last wages of the dead."
 Stubborn labour at the edge of ruin.
 Do not draw:
 * Not a finished stronghold at dusk.
@@ -10123,7 +10123,7 @@ HUMAN ACTIVITY
 * One clerk counts coins with a quill beside
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The Vault is not a treasury. It is a sealed confession of greed, iron-bound and watched by clerks who sleep in shifts. They count each coin as if the dead might come back to collect."
+"The Vault is a sealed confession of greed, iron-bound and watched by clerks who sleep in shifts. They count each coin as if the dead might come back to collect."
 Claustrophobic, wary greed.
 Do not draw:
 * Not a dragon's hoard or a crowded hiring hall.
@@ -10299,7 +10299,7 @@ HUMAN ACTIVITY
 * One survivor stands at the altar lighting a votive candle, hood up
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The Chapel is small, cold, and crowded with votive offerings from those who survived by inches. Its saints are chipped. Its relics are suspect. Its candles burn low even when no wind enters."
+"The Chapel is small, cold, and crowded with votive offerings from those who survived by inches. Its saints are chipped, its relics suspect. Its candles burn low even when no wind enters."
 Hushed grief and uneasy faith: a cold, cramped chapel crowded with the offerings of those who survived by inches.
 Do not draw:
 * Not the Sablekeep bastion or Voice Beneath the Bells drowned chapel.

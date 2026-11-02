@@ -1193,7 +1193,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "9751e3fa6576f26c872f090fe519f77aa216b1d09aca92270bdbfbf03867232b",
+   "rules_sha256": "fb93c509b51b3127dcd050a423a4faaf8f62507902b76a9fbd737509e36ee5da",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1284,6 +1284,35 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.1",
+     "10.4"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -1329,7 +1358,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "3eaa283299104db12aeb05eeb20cfbd85f8f54cf65c24735ace75ae40e8dfe3a",
+   "rules_sha256": "1d9865ca4a943b9281a954e0252e77bb273a8cea83d1a647b5ab7b1328ab75ed",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1420,6 +1449,35 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "2.6"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -1464,7 +1522,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "3dc7bfdce9a1941c01fbdc49577d62a43f7ec6e7c797219e43e9e20b2b06f20d",
+   "rules_sha256": "395e1708642f86e0aa915a118b8f64085a1f7f41b6e193ae6e175ff69edc3125",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1591,6 +1649,36 @@
      "SVG and caption bytes unchanged.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "4.4.9",
+     "2.3"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -1635,7 +1723,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "36e04371ade94f728287554742c0f25f5cf3f0a2d005a8bb80e8f3984761ebe0",
+   "rules_sha256": "a6068c310a587f9eafa449a6440f18a53e1c7b26f4975ec59f8d06464a00cb41",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1741,6 +1829,35 @@
     "date": "2026-10-21",
     "note": "RC513 delta review 2026-10-21 (Claude, source comparison and rendered PNG inspection): the only change to the dependent sections is one added sentence in 9.5 D, 'A Monster that continues their activation proceeds to step 2 of the Standard Monster AI Script.' FIG-16's Entangling Roots step still ends the activation, and the scenario text is unchanged. SVG and caption unchanged; no correction required.",
     "rendered_evidence": "Typst-rendered PNGs of figures/out/FIG-11.svg, FIG-12.svg and FIG-16.svg (local build/aids)"
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "9.5"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -1890,7 +2007,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "bc06363e8ad1ed8dbf83c1cdbf567b7e51d45077fc2ab3e05c6f3c82771688aa",
+   "rules_sha256": "ce89fb2c29c3a7090ac5048ed8d31e3fbada51770854ba1405b14be85a6015d5",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
@@ -1952,6 +2069,25 @@
      "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
+    ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "A"
+    ],
+    "patches_in_sections": [
+     "LEARN-01",
+     "LEARN-02"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
     ]
    }
   },
@@ -2246,7 +2382,7 @@
      "review_report": "production/qa/figure-review-key-template-rc493.md"
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2341,6 +2477,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.1",
+     "10.4",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -2424,7 +2591,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2531,6 +2698,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -2570,7 +2768,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2677,6 +2875,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -2723,7 +2952,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2830,6 +3059,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -2877,7 +3137,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2984,6 +3244,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -3023,7 +3314,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3130,6 +3421,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -3177,7 +3499,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3284,6 +3606,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -3333,7 +3686,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3440,6 +3793,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -3479,7 +3863,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3586,6 +3970,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -3634,7 +4049,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3741,6 +4156,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -3779,7 +4225,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3886,6 +4332,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -3917,7 +4394,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4024,6 +4501,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -4063,7 +4571,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4170,6 +4678,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -4209,7 +4748,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4316,6 +4855,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -4353,7 +4923,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4460,6 +5030,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -4484,7 +5085,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4591,6 +5192,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -4645,7 +5277,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4752,6 +5384,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -4797,7 +5460,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4904,6 +5567,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -4935,7 +5629,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5042,6 +5736,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -5082,7 +5807,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5189,6 +5914,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -5219,7 +5975,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5326,6 +6082,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -5357,7 +6144,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5465,6 +6252,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -5510,7 +6328,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5617,6 +6435,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -5648,7 +6497,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5755,6 +6604,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -5793,7 +6673,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5900,6 +6780,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -5932,7 +6843,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -6039,6 +6950,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -6070,7 +7012,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -6177,6 +7119,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -6224,7 +7197,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -6331,6 +7304,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -6377,7 +7381,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -6484,6 +7488,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -6530,7 +7565,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -6637,6 +7672,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -6667,7 +7733,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -6774,6 +7840,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -6831,7 +7928,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -6938,6 +8035,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -7002,7 +8130,7 @@
      "resolution": "RC488 second follow-up re-review 2026-10-10 (SVG sha256 79c93b40..., stable across two reads one minute apart while make clean all ran): sgo moved to (13.4,21.9), both labels (Shaman·A at x121.6,y171.3; Swamp Goblins·A at x94.9,y183.0) now sit below the encampment, each on its own vertical leader (x=121.5 and x=93.9) that exits only through the encampment bottom edge (y=158). Checked in SVG coordinates and in the Typst render: no label or leader crosses any text, glyph, Party zone boundary (x=49.5 / 193.5), Shallow Water box dashed edge, Encampment edge (other than the leaders exiting the bottom) or the two labels each other. Goblin hex (x 88.9-98.9, y 141.1-149.7) and Shaman hex are inside Encampment rect x 85.5-157.5, y 86-158. Clearances are tight but positive: goblin leader is 2.4 units right of the lower-left Shallow box edge (x=91.5) and the goblin label starts 3.4 units right of it; the label ends ~162 vs lower-right Shallow box at x=169.5."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -7116,6 +8244,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -7156,7 +8315,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -7263,6 +8422,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -7301,7 +8491,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -7408,6 +8598,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -7464,7 +8685,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -7572,6 +8793,37 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -7604,7 +8856,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "deef3840ae77b993d01cf6dfc490edd35ad39c464c10bfe7dc04a1943c0afc2e",
+   "rules_sha256": "b163d9f535bcf5c51ccfafd762a4cde7e7a2034ba656f28b49103add5403431d",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -7710,6 +8962,37 @@
      "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
+    ]
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "patches_in_sections": [
+     "SCEN-02",
+     "SCEN-09",
+     "SCEN-12",
+     "SCEN-03",
+     "SCEN-04",
+     "SCEN-05",
+     "SCEN-06",
+     "SCEN-07",
+     "SCEN-08",
+     "SCEN-10",
+     "SCEN-11"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
     ]
    }
   },
@@ -8137,7 +9420,7 @@
    "id": "FIG-75",
    "svg_sha256": "7f988e288312b33a38f3226c49aa62cfa47f480034c5189017db43d58b3b6c5a",
    "caption_sha256": "25151cd09b266e6b9d61976111144e58a8b2725794199736a007a8c40c512461",
-   "rules_sha256": "21a3a3330c1a6e73d502fe3c032ba970919c83d432fc3caaee64d0d3699461d4",
+   "rules_sha256": "e87c86d5fda2ac163dafd2fa0be3e8d23b40a986d76a216297ee9d39575a3840",
    "verdict": "PASS_WITH_NOTES",
    "findings": [
     {
@@ -8153,6 +9436,27 @@
     "source": "source/Heraldry_RC522.md",
     "checked_source_passages": "6.17 lines 3325-3338 (all ten bullets); 6.9 line 2207 (rare ancestry limit); 6.5 line 2138 (matched competitive play ignores random bonuses); 11.2.4 heading at line 15453 (Town Phase, where Buy and Sell Goods is cited).",
     "observations": "Legible; no overlaps. All ten rules are present: five in panel 1 and five in panel 2, each with its own timing phrase. 'Before creating Heroes', 'first complete creation at Level 1, then Gaining a Level once per additional Level without Training Costs', 'Before deployment pool coins, list price, discard unspent coins when the adventure begins', and 'After completing all ... set current HP, NRG, and Luck' are quoted accurately. Example 4 - 1 = 3 resolutions is correct. The 6.9 and 6.5 wording is quoted as written ('matched play' and 'matched competitive play'). No arrows between rules, which is correct because the source does not order them."
+   },
+   "rc528_delta_review": {
+    "reviewed_at": "2026-11-02",
+    "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+    "source": "source/Heraldry_RC528.md",
+    "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+    "checked_source_sections": [
+     "6.17",
+     "6.9",
+     "6.5"
+    ],
+    "patches_in_sections": [
+     "PARTY-08",
+     "PARTY-07"
+    ],
+    "verdict": "PASS",
+    "summary": "Only lore or teaching-prose wording changed in the hashed sections; the figure's drawn elements, labels, inch values, and caption are unaffected, and the regenerated SVG is byte-identical.",
+    "limits": [
+     "SVG and caption bytes unchanged; no re-render required.",
+     "Model review of the delta, not independent human proof."
+    ]
    }
   },
   {
@@ -8659,8 +9963,8 @@
    }
   }
  },
- "source": "source/Heraldry_RC527.md",
- "source_sha256": "d28f5ec8ef438b43d278ec59c8faf195204266606bcfad1cbd8258088f48ec55",
+ "source": "source/Heraldry_RC528.md",
+ "source_sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
  "rc513_delta_review": "2026-10-21: FIG-11, FIG-12 and FIG-16 re-reviewed after RC513 changed 9.5 D; all PASS without figure changes.",
  "section_end_figures_review": {
   "reviewed_at": "2026-10-30",
@@ -8799,5 +10103,104 @@
    "FIG-76"
   ],
   "not_verified": "No placed-PDF or printed inspection; FIG-63 verified by regeneration and selfcheck, not by a rendered view in the book. The citation remap was verified by make_figures.py's own text checks and by byte-identical regeneration, not by reading each cited line by eye."
+ },
+ "rc528_delta_review": {
+  "reviewer": "Claude (Fable 5.1), author of the RC528 promotion; model review of the manuscript delta, not an independent human review",
+  "date": "2026-11-02",
+  "manuscript_delta": "RC527 -> RC528: 131 approved exact replacements (editorial/history/RC528.json), 125 changed lines, no line added or removed. Humanizer rewrites of lore and a few prose lines: staged contrasts, fragment rows, repeated closers and templates, and stock phrases reworded with the lore and rules meaning unchanged; no number, name, distance, or rule changed (checked mechanically at proposal time).",
+  "figures_rebound": [
+   "FIG-13",
+   "FIG-14",
+   "FIG-15",
+   "FIG-16",
+   "FIG-18",
+   "FIG-20",
+   "FIG-21",
+   "FIG-22",
+   "FIG-23",
+   "FIG-24",
+   "FIG-25",
+   "FIG-26",
+   "FIG-27",
+   "FIG-28",
+   "FIG-29",
+   "FIG-30",
+   "FIG-31",
+   "FIG-32",
+   "FIG-33",
+   "FIG-34",
+   "FIG-35",
+   "FIG-36",
+   "FIG-37",
+   "FIG-38",
+   "FIG-39",
+   "FIG-40",
+   "FIG-41",
+   "FIG-42",
+   "FIG-43",
+   "FIG-44",
+   "FIG-45",
+   "FIG-46",
+   "FIG-47",
+   "FIG-48",
+   "FIG-49",
+   "FIG-50",
+   "FIG-51",
+   "FIG-52",
+   "FIG-53",
+   "FIG-54",
+   "FIG-55",
+   "FIG-56",
+   "FIG-75"
+  ],
+  "figures_count": 43,
+  "affected_figures": [],
+  "unaffected_figures": [
+   "FIG-13",
+   "FIG-14",
+   "FIG-15",
+   "FIG-16",
+   "FIG-18",
+   "FIG-20",
+   "FIG-21",
+   "FIG-22",
+   "FIG-23",
+   "FIG-24",
+   "FIG-25",
+   "FIG-26",
+   "FIG-27",
+   "FIG-28",
+   "FIG-29",
+   "FIG-30",
+   "FIG-31",
+   "FIG-32",
+   "FIG-33",
+   "FIG-34",
+   "FIG-35",
+   "FIG-36",
+   "FIG-37",
+   "FIG-38",
+   "FIG-39",
+   "FIG-40",
+   "FIG-41",
+   "FIG-42",
+   "FIG-43",
+   "FIG-44",
+   "FIG-45",
+   "FIG-46",
+   "FIG-47",
+   "FIG-48",
+   "FIG-49",
+   "FIG-50",
+   "FIG-51",
+   "FIG-52",
+   "FIG-53",
+   "FIG-54",
+   "FIG-55",
+   "FIG-56",
+   "FIG-75"
+  ],
+  "method": "figure_review_gate listed 43 stale figures, all for the rules hash only (no SVG or caption changed). The sections those figures hash changed only in scenario-introduction lore (10.4), the Appendix A teaching prose (A.10 and A.11 closing lines), and the 6.9 ancestry lore, none of which any figure draws. Every 6-word fragment of every patched sentence was searched for in figures/out/*.svg, figures/placements.json, figures/manifest.json and figures/src/scenario_specs.json: the only overlap is the generic phrase ['until the end of the round.'] in FIG-76, whose quoted item entries do not contain the patched Bell-Shard Charm sentence. All 77 figures were regenerated by figures/src/make_figures.py against RC528 (no citation remap needed, because no source line moved): selfcheck OK, validation OK, check_scenmaps clean, and all 77 SVGs, the manifest, and the placements are byte-identical to the committed files; only production/qa/scenario-coverage.json changed its source stamp.",
+  "not_verified": "No placed-PDF inspection; the figures were verified by byte-identical regeneration with make_figures.py's own checks, not by a rendered view in the book."
  }
 }
