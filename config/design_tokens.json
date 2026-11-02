@@ -27,7 +27,7 @@
     "band_alpha": 0.05,
     "roll_band_alpha": 0.09,
     "colour_has_rule_meaning": false,
-    "note": "Transparent black for hairlines and tints so cream and white substrates share one drawing; values are the ones Typst renders (design audit 2026-11-01, D-07)."
+    "note": "Transparent black for hairlines and tints, drawn over the cream page colour; values are the ones Typst renders (design audit 2026-11-01, D-07)."
   },
   "fonts": {
     "body": "Source Serif 4",

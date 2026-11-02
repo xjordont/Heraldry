@@ -22,7 +22,7 @@ class Imprint(unittest.TestCase):
 
     def test_colophon_has_no_stale_edition_text_or_illustration_credit(self):
         colophon = " ".join(json.loads((ROOT / "editorial/how_to_use.json").read_text())["colophon"])
-        for stale in ("RC484", "Art-light", "Cinzel", "illustrat", "ISBN", "Rules diagrams"):
+        for stale in ("RC484", "Art-light", "Cinzel", "illustrat", "ISBN", "Rules diagrams", "borderless", "printing"):
             self.assertNotIn(stale, colophon)
         for token in ("{{AUTHOR}}", "{{PUBLISHER}}", "{{VERSION}}"):
             self.assertIn(token, colophon)
