@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`0489ffaf`](https://github.com/xjordont/Heraldry/commit/0489ffaf2681705eba8847c466b6e5ebe33046cb) tests: design-audit fixtures compile inside the project root on a fresh checkout
+- [`1a21b20d`](https://github.com/xjordont/Heraldry/commit/1a21b20ddf253e4721d0030393bc1c538e95c284) hero record: centre table headings, row labels and values in their cells
+- [`a9f29474`](https://github.com/xjordont/Heraldry/commit/a9f29474452f8e5f57b8e2a4f235d3432e3d4937) state: record RC527-build-41, the released design-audit layout
 - [`4e2a8dad`](https://github.com/xjordont/Heraldry/commit/4e2a8dad3a5d3d0b5f713f0f21be5e86b225df1c) Record release workflow result
 - [`f7baf809`](https://github.com/xjordont/Heraldry/commit/f7baf80932f9f54dab7bd303f742d65eaffc9a36) Rebuild verified RC527 delivery
 - [`a2903ef7`](https://github.com/xjordont/Heraldry/commit/a2903ef709e66443abcd3a47d0d6b17498094bab) review: bind the all-page visual review for candidate 20261101T194714Z
-- [`8c102c1d`](https://github.com/xjordont/Heraldry/commit/8c102c1d635d33a53aa2717129a1772bb710c612) Build candidate status (20261101T194714Z)
-- [`2bccda77`](https://github.com/xjordont/Heraldry/commit/2bccda770806c705f55be3474d6ddf5ee45e7fde) build: request candidate build 20261101T194714Z
-- [`d5f8798b`](https://github.com/xjordont/Heraldry/commit/d5f8798b5b65dc4ca1ccab43f5af2669c377251b) layout: shared opener pages flow naturally and centre themselves (candidate 20261101T183315Z review)
 
 <!-- END AUTO:recent -->
 
