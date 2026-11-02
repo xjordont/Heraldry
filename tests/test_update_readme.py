@@ -33,8 +33,8 @@ class ReadmeUpdate(unittest.TestCase):
         self.write('source/versions.json', {'current': 2, 'revisions': [
             {'number': 2, 'path': 'source/RC2.md', 'sha256': hashlib.sha256(source.encode()).hexdigest()}]})
         self.write('dist/RELEASE.json', {'tag': 'RC1-build-3', 'assets': [
-            {'name': 'Heraldry_RC1_inkjet-borderless.pdf', 'sha256': 'pdf-hash'}]})
-        self.write('production/RELEASE_RESULT.json', {'result': 'RELEASED', 'physical_print': 'NOT TESTED'})
+            {'name': 'Heraldry_RC1_digital.pdf', 'sha256': 'pdf-hash'}]})
+        self.write('production/RELEASE_RESULT.json', {'result': 'RELEASED'})
         self.write('production/qa/visual-review.json', {'sha256': 'pdf-hash', 'pages': 12})
         self.write('production/art/SELECTIONS.json', {'one': {'status': 'approved'}, 'two': {'status': 'delivered'}})
         self.write('production/art/gpt/QUEUE.json', {'items': ['two']})
@@ -78,9 +78,10 @@ class ReadmeUpdate(unittest.TestCase):
 
     def test_status_derives_records_without_promoting_delivery_or_art(self):
         text = updater.render(self.runner).decode()
-        for expected in ('[RC2]', 'RC1-build-3', '12 interior pages', 'RC2 source changes await',
-                         '1 approved of 2', '1 generation-queue items', '1/1 current', 'NOT TESTED'):
+        for expected in ('[RC2]', 'RC1-build-3', '12 pages', 'RC2 source changes await',
+                         '1 approved of 2', '1 generation-queue items', '1/1 current'):
             self.assertIn(expected, text)
+        self.assertNotIn('Physical printing', text)
         self.assertIn('Keep this guidance exactly.\n', text)
         self.assertTrue(text.startswith('# Hand-written title\n'))
         self.assertTrue(text.endswith('\nEnd.\n'))
@@ -110,7 +111,7 @@ class ReadmeUpdate(unittest.TestCase):
         self.write('production/qa/visual-review.json', {'sha256': 'another-pdf', 'pages': 999})
         text = updater.render(self.runner).decode()
         self.assertIn('0/1 current', text)
-        self.assertNotIn('interior pages', text)
+        self.assertNotIn(', 999 pages', text)
 
     def test_manuscript_hash_mismatch_fails(self):
         self.write('source/RC2.md', 'unregistered source change')

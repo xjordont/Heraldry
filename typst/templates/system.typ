@@ -10,13 +10,13 @@
 // ================================================================ tokens
 #let substrate-name = sys.inputs.at("substrate", default: "cream")
 #let profile = json("../../config/design_tokens.json")
-#let paper = if substrate-name == "white" { rgb(profile.substrate.paper_white_hex) } else { rgb(profile.substrate.warm_cream_hex) }
+#let paper = rgb(profile.substrate.warm_cream_hex)
 #let ink = rgb(0, 0, 0)
 // Inks and tints come from the token file (design audit 2026-11-01, D-07): these are the values Typst renders.
 #let ink2 = luma(profile.ink.secondary_text_gray * 100%)        // flavour text: near-black so it reads as easily as rules
 #let ink3 = luma(profile.ink.furniture_gray * 100%)             // furniture labels and quiet numbers
 #let hair = rgb(0, 0, 0, profile.ink.hairline_alpha * 100%)     // row hairlines
-#let tint = rgb(0, 0, 0, profile.ink.band_alpha * 100%)         // banding, examples, panels (transparent: cream and white)
+#let tint = rgb(0, 0, 0, profile.ink.band_alpha * 100%)         // banding, examples, panels (transparent over the page colour)
 #let tint2 = rgb(0, 0, 0, profile.ink.roll_band_alpha * 100%)   // die column of roll tables
 
 #let type-token = profile.type_pt

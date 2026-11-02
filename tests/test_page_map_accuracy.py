@@ -80,23 +80,23 @@ class PageMapAccuracy(unittest.TestCase):
         (root / "dist").mkdir()
         content = root / "typst/content.typ"
         content.write_text("current source")
-        pdf = root / "dist/Heraldry_RC999_inkjet-borderless.pdf"
+        pdf = root / "build/book-cream.pdf"
         pdf.write_bytes(b"current pdf")
-        query = {"substrate": "cream", "edition": "print",
+        query = {"substrate": "cream", "edition": "interior",
                  "pdf_sha256": hashlib.sha256(pdf.read_bytes()).hexdigest(),
                  "content_sha256": hashlib.sha256(content.read_bytes()).hexdigest(),
                  "positions": self.positions}
         (root / "build/query.json").write_text(json.dumps(query))
-        with patch.object(verify, "ROOT", root), patch.object(verify, "DIST", root / "dist"), \
+        with patch.object(verify, "ROOT", root), patch.object(verify, "DIST", root / "dist"), patch.object(verify, "INTERIOR", pdf), \
              patch.object(verify, "version", return_value="RC999"), patch.object(verify, "QUERY_CACHE", None):
             # Matching hashes of a fake PDF and later query are insufficient.
             # Real serialized attachment/anchor checks have separate fixtures.
             with self.assertRaisesRegex(RuntimeError, "serialized PDF evidence"):
                 verify.tquery("<tblpos>")
         pdf.write_bytes(b"different pdf")
-        with patch.object(verify, "ROOT", root), patch.object(verify, "DIST", root / "dist"), \
+        with patch.object(verify, "ROOT", root), patch.object(verify, "DIST", root / "dist"), patch.object(verify, "INTERIOR", pdf), \
              patch.object(verify, "version", return_value="RC999"), patch.object(verify, "QUERY_CACHE", None):
-            with self.assertRaisesRegex(RuntimeError, "not bound to the exact cream PDF"):
+            with self.assertRaisesRegex(RuntimeError, "not bound to the exact interior PDF"):
                 verify.tquery("<tblpos>")
 
 

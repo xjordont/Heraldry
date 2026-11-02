@@ -88,7 +88,7 @@ def inspect(root=ROOT, profile="local"):
         add("git_lfs", False, "Git is unavailable")
     return {"status": "PASS" if all(c["status"] == "PASS" for c in checks) else "FAIL",
             "profile": profile, "python": sys.executable, "checks": checks,
-            "scope": "Installed dependencies and executable availability; no book build, credentials, or physical proof"}
+            "scope": "Installed dependencies and executable availability; no book build or credentials"}
 
 
 def main():

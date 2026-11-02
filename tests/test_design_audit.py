@@ -25,7 +25,7 @@ def compile_fixture(source, substrate="cream"):
         path = Path(tmp) / "fixture.typ"
         path.write_text(source, encoding="utf-8")
         compiler = typst.Compiler(str(path), root=str(ROOT), font_paths=[str(ROOT / "fonts/static")],
-                                  ignore_system_fonts=True, sys_inputs={"substrate": substrate, "edition": "print"})
+                                  ignore_system_fonts=True, sys_inputs={"substrate": substrate, "edition": "interior"})
         pdf, warnings = compiler.compile_with_warnings()
         return pdf, [str(w) for w in warnings]
 

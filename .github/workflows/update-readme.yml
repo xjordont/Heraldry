@@ -14,7 +14,6 @@ on:
       - Generate heraldic marks
       - Generate art variants
       - Build art packages
-      - Export editable InDesign project
       - Build Hero records
     types: [completed]
     branches: [main]

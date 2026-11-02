@@ -861,7 +861,7 @@ def main():
     ap.add_argument("--only")
     ap.add_argument("--pdf", type=pathlib.Path)
     ap.add_argument("--png", action="store_true", help="blank: also render previews/")
-    ap.add_argument("--no-png", action="store_true", help="heroes: skip the 300 dpi PNGs")
+    ap.add_argument("--no-png", action="store_true", help="heroes: skip the 2550 x 3300 px PNGs")
     a = ap.parse_args()
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
@@ -898,7 +898,7 @@ def main():
                     raise SystemExit(f"{h['name']}: text missing from the sheet:\n  " + "\n  ".join(miss))
                 pages += files[:2]
             m.file.unlink(missing_ok=True)
-            # cards follow every sheet so duplex front/back pairs stay aligned
+            # cards follow every sheet so each Hero's front and reverse stay paired
             problems = render(b, pages + cards, png=not a.no_png, pdf=a.pdf)
         b.close()
     if problems:

@@ -1,6 +1,6 @@
 # Heraldry publication contract
 
-Product and design requirements for the book, player aids, and Hero records. Agent rules and checks are in `AGENTS.md`; commands are in `docs/AGENT_OPERATIONS.md`. Paths are relative to the repository root.
+Product and design requirements for the book, player aids, and Hero records. Everything ships as digital PDFs. Agent rules and checks are in `AGENTS.md`; commands are in `docs/AGENT_OPERATIONS.md`. Paths are relative to the repository root.
 
 `MASTER_PROMPT.md` is the standing production and design brief. Resume the project from `production/STATE.md` rather than restarting completed work.
 
@@ -21,9 +21,9 @@ Product and design requirements for the book, player aids, and Hero records. Age
 
 ## Design
 
-- Apply `docs/DESIGN_SPEC.md`, `docs/ART_DIRECTION.md`, `docs/INKJET_PRINT.md`, `docs/VISUAL_QA.md`, and `config/design_tokens.json`. `docs/DESIGN_REFINEMENT.md` holds the owner's latest design and pagination decisions.
-- Clean dark fantasy, borderless portrait US Letter, a near-white cream edition and a white companion, with essential content at least 0.375 in inside the edges.
-- Pagination: any complete scenario, section, subsection, table, procedure, or reference entry that fits on one empty usable page stays on one physical page with its heading, diagram, caption, and notes. Move it whole when the remaining space is too small. The keep audit fails the build on an avoidable split. Never shrink type or drop content to make something fit.
+- Apply `docs/DESIGN_SPEC.md`, `docs/ART_DIRECTION.md`, `docs/VISUAL_QA.md`, and `config/design_tokens.json`. `docs/DESIGN_REFINEMENT.md` holds the owner's latest design and pagination decisions.
+- Clean dark fantasy on portrait US Letter pages in a warm cream page colour, with essential content at least 0.375 in inside the edges. The digital edition carries its own front and back covers.
+- Pagination: any complete scenario, section, subsection, table, procedure, or reference entry that fits on one empty usable page stays on one page with its heading, diagram, caption, and notes. Move it whole when the remaining space is too small. The keep audit fails the build on an avoidable split. Never shrink type or drop content to make something fit.
 - Layout iteration follows `docs/LAYOUT_WORKFLOW.md`.
 
 ## Artwork
@@ -36,4 +36,4 @@ Use only the ten owner-selected titles in `references/sample_pdfs.json` (Git LFS
 
 ## Releases
 
-Each requested build is published as a GitHub Release (`docs/BUILD_AUTOMATION.md`). `dist/` and its ledgers describe the last requested build, so never present them as current once the source has moved on. `production/RELEASE_STATUS.md` records release status, including missing art and physical print status. The optional InDesign export (`docs/INDESIGN_EXPORT.md`) runs only when the owner asks.
+Each requested build is published as a GitHub Release (`docs/BUILD_AUTOMATION.md`). `dist/` and its ledgers describe the last requested build, so never present them as current once the source has moved on. `production/RELEASE_STATUS.md` records release status, including missing art.

@@ -82,8 +82,7 @@ def main():
     result, note = evaluate(r, a.ledger_commit, a.job_status, a.failed_step)
     ok = result == "RELEASED"
     out = {"ledger_commit": a.ledger_commit, "result": result, "note": note,
-           "release_url": r.get("url", "") if ok else "", "tag": r.get("tag", "") if ok else "", "run_url": a.run_url,
-           "physical_print": "NOT TESTED"}
+           "release_url": r.get("url", "") if ok else "", "tag": r.get("tag", "") if ok else "", "run_url": a.run_url}
     (ROOT / RESULT).write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
     print(json.dumps({k: out[k] for k in ("result", "note")}))
     if a.push:

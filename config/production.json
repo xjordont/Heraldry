@@ -12,8 +12,7 @@
     "trim_width_inches": 8.5,
     "trim_height_inches": 11,
     "orientation": "portrait",
-    "interior_colour": "black/grayscale content on near-white warm cream; paper-white companion",
-    "interior_bleed": "background to sheet edge; exact Letter canvas; no external bleed",
+    "interior_colour": "black/grayscale content on warm cream",
     "inside_margin_inches": 0.625,
     "outside_margin_inches": 0.5833333333333334,
     "top_margin_inches": 0.625,
@@ -23,7 +22,6 @@
     "body_leading_pt": 13.925,
     "table_font_size_pt": 9,
     "minimum_essential_text_pt": 9,
-    "adjust_gutter_for_final_binding_and_page_count": true,
     "profile_authority": "config/design_tokens.json; mirrored values checked by tools/layout_profile.py",
     "body_leading_semantics": "baseline estimate: 1.05 em font box plus 2.9 pt additive Typst leading; specimen validates actual pitch"
   },
@@ -32,18 +30,8 @@
     "incoming_art_directory": "assets/art/incoming",
     "minimum_grayscale_ppi_starting_target": 300,
     "minimum_one_bit_line_art_ppi_starting_target": 600,
-    "printer_specifications_override_resolution_defaults": true,
     "generation_owner": "ChatGPT Work",
     "external_api_generation": false
-  },
-  "printer": {
-    "name": null,
-    "binding": null,
-    "paper_stock": null,
-    "specification_file": null,
-    "cover_template_file": null,
-    "required_pdf_standard": null,
-    "state": "borderless inkjet file profile specified; physical device/media proof not tested"
   },
   "verified_publication_metadata": {
     "title": "HERALDRY SKIRMISH: THE DYING LANDS",
@@ -58,23 +46,15 @@
     "authority": "Owner instruction 2026-10-29: version is the manuscript version; author Jordon; publisher Escutcheon Press; omit ISBN; no illustration credits.",
     "publisher_logo": "assets/art/brand/escutcheon-press-logo.png (owner-supplied 2026-10-30; source escutcheon-press-logo-source.jpg; ink by tools/brand_ink.py)"
   },
-  "inkjet": {
-    "primary_output": "home inkjet borderless Letter",
-    "borderless": true,
-    "page_width_pt": 612,
-    "page_height_pt": 792,
-    "external_bleed_inches": 0,
-    "crop_marks": false,
+  "page": {
+    "width_pt": 612,
+    "height_pt": 792,
     "landscape_pages_allowed": false,
-    "essential_edge_safe_inches": 0.375,
-    "overscan_test_scale": 1.03,
-    "physical_proof_status": "NOT TESTED",
-    "duplex": "verify device/media; manual if necessary"
+    "essential_edge_safe_inches": 0.375
   },
   "workflow": {
     "working_branch": "main",
     "new_branch_policy": "explicit owner decision with recorded reason",
-    "manuscript_version_policy": "one increment per approved text-patch batch; immutable prior snapshots",
-    "indesign_export": "OPTIONAL, EXPLICIT INVOCATION ONLY - owner decision 2026-10-15; separate editable IDML/INDD project, never an automatic PDF/build dependency"
+    "manuscript_version_policy": "one increment per approved text-patch batch; immutable prior snapshots"
   }
 }

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Render the player-aid sheets (typst/aids/paNN.typ) to build/aids/.
 
-Writes one PDF per sheet and paper (cream, white), a combined PDF per paper, and,
-with --png, page previews. Outputs are build products and are never committed.
+Writes one PDF per sheet (paNN.pdf), the combined set (all.pdf), and, with --png, page previews,
+all on the book's cream page colour. Outputs are build products and are never committed.
 
-usage: python tools/render_aids.py [--paper cream|white|both] [--png] [--only pa02 ...]
+usage: python tools/render_aids.py [--png] [--only pa02 ...]
 """
 import argparse
 from pathlib import Path
@@ -20,11 +20,10 @@ SRC = ROOT / "typst" / "aids"
 OUT = ROOT / "build" / "aids"
 
 
-def compile_one(src, paper, png):
-    kw = dict(root=str(ROOT), font_paths=[str(ROOT / "fonts/static")], ignore_system_fonts=True,
-              sys_inputs={"substrate": paper})
+def compile_one(src, png):
+    kw = dict(root=str(ROOT), font_paths=[str(ROOT / "fonts/static")], ignore_system_fonts=True)
     c = typst.Compiler(str(src), **kw)
-    stem = OUT / f"{src.stem}-{paper}"
+    stem = OUT / src.stem
     for old in OUT.glob(f"{stem.name}-*.png"):
         old.unlink()
     _, warnings = c.compile_with_warnings(output=str(stem) + ".pdf")
@@ -56,20 +55,17 @@ FAILURES = []
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("--paper", choices=["cream", "white", "both"], default="cream")
     ap.add_argument("--png", action="store_true")
     ap.add_argument("--only", nargs="*")
     a = ap.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     sheets = sorted(p for p in SRC.glob("pa[0-9][0-9].typ") if not a.only or p.stem in a.only)
-    papers = ["cream", "white"] if a.paper == "both" else [a.paper]
-    for paper in papers:
-        for s in sheets:
-            print("ok", compile_one(s, paper, a.png).relative_to(ROOT))
-        if not a.only:
-            combined = OUT / "all.typ"
-            combined.write_text("".join(f'#include "/typst/aids/{s.name}"\n' for s in sheets), encoding="utf-8")
-            print("ok", compile_one(combined, paper, False).relative_to(ROOT))
+    for s in sheets:
+        print("ok", compile_one(s, a.png).relative_to(ROOT))
+    if not a.only:
+        combined = OUT / "all.typ"
+        combined.write_text("".join(f'#include "/typst/aids/{s.name}"\n' for s in sheets), encoding="utf-8")
+        print("ok", compile_one(combined, False).relative_to(ROOT))
     if FAILURES:
         sys.exit("FAIL: " + "; ".join(FAILURES))
 

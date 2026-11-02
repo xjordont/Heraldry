@@ -52,7 +52,7 @@
 #let substrate = paper
 #let body-bottom = page-h - m-bot
 
-// Names kept for the front matter, covers and calibration sheet.
+// Names kept for the front matter and covers.
 #let display = goth
 #let band = tint
 #let motif(len: 54pt) = flourish(len: len)

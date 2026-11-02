@@ -29,7 +29,7 @@
     text(size: 9pt, fill: ink3)[Rules #rules-rc · #face])
 }))
 
-// One printed side. `art` is an approved ink file id; it stands on the footer rule at a lower corner.
+// One side of a sheet. `art` is an approved ink file id; it stands on the footer rule at a lower corner.
 #let side(arm, code, title, refs, face: "front", art: none, art-w: 130pt, art-at: right, art-dx: 0pt, art-dy: 9pt, body) = page(
   width: page-w, height: page-h, margin: (x: M, top: M, bottom: MB), fill: paper)[
   #set text(font: sans, size: body-pt, hyphenate: false, lang: "en", region: "CA", fill: ink, top-edge: 0.8em, bottom-edge: -0.25em)

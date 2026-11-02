@@ -32,7 +32,7 @@ def _sha(value):
 def _identity(value):
     return (isinstance(value, dict) and type(value.get("schema")) is int and value["schema"] == 1
             and all(_sha(value.get(k)) for k in ("content_sha256", "input_sha256"))
-            and value.get("variant") == "cream" and value.get("edition") == "print"
+            and value.get("variant") == "cream" and value.get("edition") == "interior"
             and isinstance(value.get("compiler"), str) and bool(value["compiler"])
             and type(value.get("timestamp")) is int and value["timestamp"] >= 0)
 

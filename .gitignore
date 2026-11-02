@@ -26,10 +26,6 @@ dist/SHA256SUMS.txt
 # Large build outputs are never committed (docs/LARGE_FILES.md): PDFs go to a GitHub Release,
 # art packages are built on request.
 dist/**/*.pdf
-*.idml
-*.indd
-*.indb
-*.indt
 production/art/skill/*.zip
 production/art/work/*.zip
 

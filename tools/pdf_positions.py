@@ -23,7 +23,7 @@ def digest(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def compilation_identity(root=ROOT, variant="cream", edition="print", content=None):
+def compilation_identity(root=ROOT, variant="cream", edition="interior", content=None):
     """Fingerprint complete publication inputs plus generated compiler inputs."""
     import typst
     root = Path(root)
@@ -42,7 +42,7 @@ def compilation_identity(root=ROOT, variant="cream", edition="print", content=No
     }
 
 
-def read_positions(pdf, *, root=ROOT, current=True, variant="cream", edition="print", content=None):
+def read_positions(pdf, *, root=ROOT, current=True, variant="cream", edition="interior", content=None):
     """Extract and validate the exact-PDF attachment, including named anchors."""
     pdf = Path(pdf)
     reader = pypdf.PdfReader(pdf)
@@ -112,7 +112,7 @@ def validate_sidecar(data, pdf, *, root=ROOT, current=True):
     """Reject edited, stale or independently queried sidecars, even with a PDF hash."""
     identity = data.get("binding", {}).get("identity", {})
     exact = read_positions(pdf, root=root, current=current,
-                           variant=identity.get("variant", "cream"), edition=identity.get("edition", "print"))
+                           variant=identity.get("variant", "cream"), edition=identity.get("edition", "interior"))
     if data != exact:
         raise ValueError("Position sidecar differs from the exact PDF's serialized position evidence")
     return exact

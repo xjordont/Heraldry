@@ -95,21 +95,19 @@ def status_block(snapshot):
     # Use the repository's recorded release pointer, not an arbitrary metadata URL.
     delivery = f"https://github.com/xjordont/Heraldry/releases/tag/{tag}"
     assets = release.get('assets', [])
-    interior = next((a for a in assets if a['name'].endswith('_inkjet-borderless.pdf')), {})
-    pages = f", {review['pages']} interior pages" if interior.get('sha256') == review.get('sha256') and isinstance(review.get('pages'), int) else ""
+    edition = next((a for a in assets if a['name'].endswith('_digital.pdf')), {})
+    pages = f", {review['pages']} pages" if edition.get('sha256') == review.get('sha256') and isinstance(review.get('pages'), int) else ""
     records = snapshot.json("production/art/SELECTIONS.json")
     approved = sum(r.get('status') == 'approved' for r in records.values())
     queue = len(snapshot.json("production/art/gpt/QUEUE.json")['items'])
     total, current, findings = figure_status(snapshot, source)
     pending = f" RC{number} source changes await a separately requested PDF build." if not tag.startswith(f"RC{number}-") else " Newer source/tooling changes may await a separately requested build."
-    physical = "TESTED" if result.get('physical_print') == 'TESTED' else "NOT TESTED"
     return "\n".join([
         f"- **Manuscript:** [RC{number}]({revision['path']}) (`source/versions.json`). Earlier snapshots are immutable.",
         f"- **Last recorded delivery:** [{tag}]({delivery}){pages}.{pending} [Evidence and limits](production/RELEASE_STATUS.md).",
         f"- **Last release workflow result:** {escape_markdown(str(result.get('result', 'UNAVAILABLE')))}. This records that run, not verification of newer inputs.",
         f"- **Illustration records:** {approved} approved of {len(records)}; {queue} generation-queue items.",
         f"- **Rules figures:** {total}; {current}/{total} current source/SVG/caption review bindings; {findings} open findings. [Review ledger](production/qa/figure-semantic-review.json).",
-        f"- **Physical printing:** {physical}. Automated checks do not replace examination of real sheets.",
     ])
 
 

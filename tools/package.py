@@ -12,7 +12,7 @@ INCLUDE = ["Makefile", "requirements.lock", "README.md", "BUILD.md", "CLAUDE.md"
            "MASTER_PROMPT.md", ".gitignore", ".claude", ".github", "tests", "references",
            "source", "editorial", "typst", "tools", "figures", "fonts", "config", "docs", "assets", "production", "dist"]
 # style = owner-supplied generation references (never packaged); masters = raw generated art (ink derivatives ship)
-EXCLUDE_PARTS = {"__pycache__", "test", "private", ".git", "build", "overscan", "style", "masters",
+EXCLUDE_PARTS = {"__pycache__", "test", "private", ".git", "build", "style", "masters",
                  "candidates",   # heraldic-mark design candidates (LFS working files; the approved marks ship as SVG)
                  "variants",     # Nano Banana comparison images and the guided-Codex alternates (LFS working files)
                  "review"}       # page-review images of the latest candidate (production/qa/review, LFS, replaced every build)
@@ -72,7 +72,7 @@ def main():
     rep = {"zip": archive.relative_to(ROOT).as_posix(), "bytes": archive.stat().st_size,
            "files": len(names), "sha256": hashlib.sha256(archive.read_bytes()).hexdigest(),
            "status": "PASS", "duplicate_entries": [], "checksums_verified": len(fl),
-           "note": "This audit is external to the ZIP to avoid self-reference; PDFs are verified files, visual and physical proof statuses remain separately qualified."}
+           "note": "This audit is external to the ZIP to avoid self-reference; PDFs are verified files; the visual review is recorded separately."}
     (ROOT / "production/qa/package-audit.json").write_text(json.dumps(rep, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(rep))
 

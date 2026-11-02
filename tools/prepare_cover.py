@@ -3,8 +3,8 @@
 
 The picture carries its own lettering (HERALDRY and the subtitle), so it is used as the whole front cover,
 not as a vignette under live type. Deterministic conversion only, no redrawing: the greyscale is upscaled
-3x (Lanczos), paper white is cut to transparent and the ink is pure black, so the paper colour of the
-cream or white edition shows through. build_extras.cover_art() fits it inside the 0.375 in safe edge.
+3x (Lanczos), paper white is cut to transparent and the ink is pure black, so the cream page colour
+shows through. build_extras.cover_art() fits it inside the 0.375 in safe edge.
 
     python3 tools/prepare_cover.py
 """

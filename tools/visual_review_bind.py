@@ -3,8 +3,8 @@
 
 The candidate needs a look at every review image before release.
 Input: a JSON review record written after viewing every file listed in production/qa/review/manifest.json.
-Refuses unless: the candidate is CANDIDATE_READY and matches the manifest's PDF hash; every contact sheet, detail page and the
-calibration sheet has an entry with a note (a short one is fine); the image files on disk match the manifest hashes (real
+Refuses unless: the candidate is CANDIDATE_READY and matches the manifest's PDF hash; every contact sheet, detail page, and cover
+has an entry with a note (a short one is fine); the image files on disk match the manifest hashes (real
 images, not LFS stubs); a reviewer is named; and no finding is marked major. A major finding means the book is NOT released:
 the tool prints it and exits 2.
 
@@ -13,7 +13,6 @@ Review record:
    "sheets":  [{"file": "sheet-01.jpg", "observations": "...", "findings": [{"page": 12, "severity": "minor|major", "text": "..."}]}, ...],
    "details": [{"file": "page-0001.jpg", "observations": "..."}, ...],
    "covers": [{"file": "cover-front.jpg", "observations": "..."}, {"file": "cover-back.jpg", "observations": "..."}],
-   "calibration": {"observations": "..."},
    "summary": "..."}
 Severity major = unintended blank page, overlapping or clipped text, missing or wrong art, broken table, content running past the
 safe edge, wrong page order, anything a reader would call a defect. Minor = cosmetic notes or accepted layout.
@@ -58,10 +57,7 @@ def validate_manifest(man):
         for item in items:
             if not isinstance(item, dict):
                 fail(f"invalid {kind} entry in the review manifest")
-    calibration = man.get("calibration")
-    if not isinstance(calibration, dict):
-        fail("the review manifest has no calibration sheet")
-    for item in man["sheets"] + man["details"] + man["covers"] + [calibration]:
+    for item in man["sheets"] + man["details"] + man["covers"]:
         name = item.get("file")
         if not isinstance(name, str) or not name or "/" in name or "\\" in name or name in {".", ".."}:
             fail("review image filenames must name files inside the review directory")
@@ -106,10 +102,10 @@ def main():
     st = json.loads((ROOT / "production/BUILD_STATUS.json").read_text(encoding="utf-8"))
     rv = json.loads(Path(a.review).read_text(encoding="utf-8"))
     validate_manifest(man)
-    cream = next((v for k, v in st.get("pdfs", {}).items() if k.endswith("_inkjet-borderless.pdf")), None)
-    if st.get("result") != "CANDIDATE_READY" or not cream or cream["sha256"] != man["pdf_sha256"]:
+    digital = next((v for k, v in st.get("pdfs", {}).items() if k.endswith("_digital.pdf")), None)
+    if st.get("result") != "CANDIDATE_READY" or not digital or digital["sha256"] != man["pdf_sha256"]:
         fail("BUILD_STATUS.json does not describe a ready candidate of the PDF these review files belong to")
-    for item in man["sheets"] + man["details"] + man["covers"] + [man["calibration"]]:
+    for item in man["sheets"] + man["details"] + man["covers"]:
         f = REVIEW / item["file"]
         if not f.is_file() or sha(f) != item["sha256"]:
             fail(f"{item['file']} is missing or is a stub (run git lfs pull --include 'production/qa/review/*')")
@@ -135,12 +131,8 @@ def main():
     sheets = entries("sheets", man["sheets"])
     details = entries("details", man["details"])
     covers = entries("covers", man["covers"])
-    calibration = rv.get("calibration")
-    if (not isinstance(calibration, dict) or not isinstance(calibration.get("observations"), str)
-            or len(calibration["observations"].strip()) < MIN_OBS):
-        fail("no note recorded for the calibration sheet")
     major, minor = [], []
-    for name, e in list(sheets.items()) + list(details.items()) + list(covers.items()) + [(man["calibration"]["file"], calibration)]:
+    for name, e in list(sheets.items()) + list(details.items()) + list(covers.items()):
         findings = e.get("findings", [])
         if not isinstance(findings, list):
             fail(f"invalid findings for {name}")
@@ -163,9 +155,9 @@ def main():
                                     "note": "every page of this exact PDF (the candidate build; the release build reproduces it) viewed on contact sheets"},
         "pages_reviewed": list(range(1, man["pages"] + 1)),
         "detailed_pages_viewed_at_100dpi": [d["page"] for d in man["details"]],
-        "covers_viewed": [c["file"] for c in man["covers"]], "calibration_viewed": True,
+        "covers_viewed": [c["file"] for c in man["covers"]],
         "findings_repaired": [], "accepted_layout_notes": minor + ([rv["summary"]] if rv.get("summary") else []),
-        "limits": "Contact-sheet review of every page and 100 dpi detail review of the listed pages, from images; not glyph-level proofreading or a physical printer proof.",
+        "limits": "Contact-sheet review of every page and 100 dpi detail review of the listed pages, from images; not glyph-level proofreading.",
         "status": "PASS (all-page contact-sheet review of this exact PDF by an automated vision reviewer; not glyph-level proofreading)",
         "changes_this_run": [f"candidate build {st.get('request_id')} from {st.get('source_commit')}"],
     }

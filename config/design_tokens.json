@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "authority": "Owner-approved compact profile, 2026-10-16, extended 2026-11-01 (design audit approval: hierarchy sizes, ink and rule tokens, ornament budget, tailpiece sizing, section-head and opener composition); sole effective geometry/type/spacing authority for Typst and Python. Physical proof NOT TESTED.",
+  "authority": "Owner-approved compact profile, 2026-10-16, extended 2026-11-01 (design audit approval: hierarchy sizes, ink and rule tokens, ornament budget, tailpiece sizing, section-head and opener composition); sole effective geometry/type/spacing authority for Typst and Python.",
   "page": {
     "width_pt": 612,
     "height_pt": 792,
     "orientation": "portrait",
     "essential_edge_safe_pt": 27,
-    "overscan_test_scale": 1.03,
     "inside_margin_pt": 45,
     "outside_margin_pt": 42,
     "top_margin_pt": 45,
@@ -17,7 +16,6 @@
   "substrate": {
     "default": "warm_cream",
     "warm_cream_hex": "#FCFAF5",
-    "paper_white_hex": "#FFFFFF",
     "parchment_mode": "light flat tone; no scanned stains, grain, vignette, or repeated texture",
     "cover_to_page_edge": true
   },

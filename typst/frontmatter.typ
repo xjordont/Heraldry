@@ -1,7 +1,7 @@
 // Front and back matter: title page, how-to-use, generated contents, index.
 #import "heraldry.typ": *
 #import "cover.typ": front-cover, back-cover
-#let edition = sys.inputs.at("edition", default: "print")
+#let edition = sys.inputs.at("edition", default: "interior")
 
 #let how-to-use = json("../editorial/how_to_use.json")
 #let index-data = if sys.inputs.at("index", default: "on") == "on" { json("../build/index.json") } else { (entries: ()) }

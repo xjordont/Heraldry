@@ -15,7 +15,7 @@ build_request.py release-wait <--git--   commits production/RELEASE_RESULT.json
 
 ## Review
 
-Look at every contact sheet (all pages), the detail pages (chapter openers and every 50th page), both covers, and the calibration sheet. Write the review JSON outside the checkout with a short note per image and any findings marked `minor` or `major`. A major finding is an unintended blank page, overlapping or clipped text, missing or wrong art, a broken table, content past the safe edge, or wrong page order; it blocks the release. `tools/visual_review_bind.py` checks that the review covers every image in the manifest, that the images on disk are real (not LFS stubs), and that the reviewer is named. `tools/verify.py` then requires the ledger to match the exact PDF hash, so a review of a different PDF fails the release.
+The review covers the digital PDF. Look at every contact sheet (all pages), the detail pages (chapter openers and every 50th page), and both covers (its first and last pages). Write the review JSON outside the checkout with a short note per image and any findings marked `minor` or `major`. A major finding is an unintended blank page, overlapping or clipped text, missing or wrong art, a broken table, content past the safe edge, or wrong page order; it blocks the release. `tools/visual_review_bind.py` checks that the review covers every image in the manifest, that the images on disk are real (not LFS stubs), and that the reviewer is named. `tools/verify.py` then requires the ledger to match the exact PDF hash, so a review of a different PDF fails the release.
 
 ## Pieces
 
@@ -25,7 +25,7 @@ Look at every contact sheet (all pages), the detail pages (chapter openers and e
 | `production/build-request.json` | The trigger: `request_id`, time, and base commit |
 | `.github/workflows/build-candidate.yml` | Runs on a push of the request file (or by hand); builds, verifies, makes the review aids, publishes the pre-release, and commits `BUILD_STATUS.json` (also on failure) and `production/qa/review/` |
 | `tools/build_status.py` | `CANDIDATE_READY` (only `visual_review_currency` failing) or `FAILED`, with PDF hashes |
-| `tools/review_aids.py` | 24-page contact sheets, 100 dpi detail pages, calibration, and `manifest.json` |
+| `tools/review_aids.py` | 24-page contact sheets of the digital PDF, 100 dpi detail pages, both covers, and `manifest.json` |
 | `tools/visual_review_bind.py` | Validates the review and writes the ledger (`--push` commits and pushes it) |
 | `.github/workflows/rebuild-delivery.yml` | The release; also starts when `production/qa/visual-review.json` is pushed to main, and writes `RELEASE_RESULT.json` |
 | `tools/release_result.py` | `RELEASED` or `FAILED` for a ledger commit |
