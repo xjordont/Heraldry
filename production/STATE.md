@@ -1,5 +1,9 @@
 # Production state - RC528 source, main
 
+## Manuscript snapshot protection hook - 2026-11-02
+
+Owner request: add a Claude Code hook that enforces the immutable-snapshot rule. `.claude/settings.json` now runs `.claude/hooks/protect-snapshots.sh` before every Edit, Write, MultiEdit, and NotebookEdit; it refuses any `source/Heraldry_RC*.md` path (POSIX, Windows, or relative) and points to `tools/revise_manuscript.py` and `python tools/dev.py manuscript`, which run through Bash and are unaffected. It uses only bash and grep, so it also runs under Git Bash on Windows. Checked against six sample inputs (three snapshot paths blocked; `source/versions.json`, a proposal, and a lookalike directory allowed); preflight and the agent-workflow, package, and developer-tools tests pass. A shell command such as `sed -i` on a snapshot is not intercepted; `tools/check_history.py` still catches any changed snapshot.
+
 ## context7 MCP server added - 2026-11-02
 
 Owner request: add the context7 MCP server (`claude mcp add context7 -- npx -y @upstash/context7-mcp`). It is registered at project scope in `.mcp.json`, so every Claude Code session on this repository can look up current documentation for Typst, PyMuPDF, pypdf, and the other locked dependencies. No API key is configured (context7 works without one at a lower rate limit). No manuscript, art, layout, or build change.
