@@ -1,14 +1,14 @@
 # Heraldry Skirmish: Classic Ink Art Skill v8.0
 
-**A source-faithful, queue-driven image-generation skill. The Heraldry GitHub repository is the source of truth; Claude Code and the owner approve the artwork independently.**
+**A source-faithful, queue-driven image-generation skill. The Heraldry GitHub repository is the source of truth.**
 
-The skill runs on Codex on the owner's PC (the current route), or in ChatGPT Work with the offline input package as the fallback. It does not claim to guarantee identical generated images or a successful run of an untested image tool. Unit tests and image diagnostics never measure artistic quality.
+The skill runs on Codex on the owner's PC (the current route), or in ChatGPT Work with the offline input package as the fallback.
 
 ## Changes since v7
 
 | Area | v8 |
 |---|---|
-| Generation | **One generation per item** (`max_attempts` 1; owner 2026-10-12: first generations beat retries), in a fresh context. A defect is saved with `--accept-flags --notes`; the reviewer decides on a redo, which is again a single generation with at most two correction sentences (`references/REPAIR.md`) |
+| Generation | **One generation per item** (`max_attempts` 1; owner 2026-10-12: first generations beat retries), in a fresh context. A defect is saved with `--accept-flags --notes`; a rejection brings it back as a redo, which is again a single generation with at most two correction sentences (`references/REPAIR.md`) |
 | Edges | Only a cropped subject, or one touching an edge, is a hard fail; a narrow margin is advisory (the layout trims margins) |
 | References | Mapping v8: up to five per item (the image tool's limit), 66 distinct images (owner samples, including STYLE-REF-45 to 74, plus four public-domain prints). Every figure set (monster kinds, classes and ancestries, backgrounds, items) uses images found in no other set; no scenery reaches an isolated figure except the owner-approved wolf pack |
 | Fresh start | All 275 items are pending (owner 2026-10-12). The queue records `receipts_base`, so drift reviews count only new receipts |
@@ -20,11 +20,8 @@ Carried over from v7: the gritty old-school direction, per-family and per-kind r
 
 ## Production boundary
 
-- **Claude Code and the repository** own the prompts, queue, references, approval decisions, the print intake and publication.
-- **The art worker** (Codex, or ChatGPT Work as the fallback):
-  - follows each item's exact prompt and attaches only the listed references;
-  - generates, checks the native file and print-size preview, and records evidence;
-  - delivers through the guard.
+- **The repository** holds the prompts, queue, references, the print intake and approval (`tools/art_intake.py`).
+- **The art worker** (Codex, or ChatGPT Work as the fallback) follows each item's exact prompt with only the listed references, checks the native file and print-size preview, records evidence, and delivers through the guard. Whoever looked at an image may approve it, the worker included.
 - **GitHub** stores the queue, receipts and the delivered image bytes through Git LFS.
 
 ## Run
@@ -39,7 +36,7 @@ On Codex, `production/art/codex/BATCH_CARD.md` is the whole working contract on 
 
 ## Offline input package
 
-Where the worker cannot authenticate git, Claude Code builds a self-contained input ZIP with `tools/art_work_package.py build`. It holds the queue, prompts, reference bytes, this skill, receipts, selections, a hash manifest and the source commit.
+Where the worker cannot authenticate git, a self-contained input ZIP is built with `tools/art_work_package.py build`. It holds the queue, prompts, reference bytes, this skill, receipts, selections, a hash manifest and the source commit.
 - `work_preflight.py --offline-package` verifies it without Git.
 - Delivery is by `bundle` only.
 - `tools/art_work_package.py verify-bundle` checks the returned ZIP.

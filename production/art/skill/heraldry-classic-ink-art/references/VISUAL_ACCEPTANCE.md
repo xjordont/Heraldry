@@ -1,6 +1,6 @@
 # Visual acceptance and artistic consistency protocol
 
-This is a visual inspection rubric, not a numerical model of artistic merit. Do not claim the automatic diagnostics prove style match or aesthetic quality. The image generation operator submits an evidence-backed native-image review; the independent reviewer approves final artwork.
+This is a visual inspection rubric, not a numerical model of artistic merit: the automatic diagnostics never prove style match or aesthetic quality.
 
 ## Evaluate in three views
 
@@ -30,7 +30,7 @@ Before a passing `save`, complete the QA draft that `qa ID FILE` writes for the 
 - Set `visual_review_at_print_size: true` only after inspecting the physical print-width preview.
 - Set `register_compared` to `scene`, `figure`, `still_life`, `portrait`, `creature`, `interior`, or `other` according to the artwork.
 - Complete all ten `checks` with a true/false decision and specific visible evidence. Avoid boilerplate, vague praise, or generic identical explanations.
-- Record genuine failures in `unresolved_issues`; a failed visual criterion is shipped as a flagged, *unapproved* image (`--accept-flags`), never retried; the reviewer decides on a redo.
+- Record genuine failures in `unresolved_issues`; a failed visual criterion is shipped as a flagged image (`--accept-flags`), never retried; a rejection brings it back as a redo.
 
 ## Batch drift assessment
 
@@ -39,9 +39,9 @@ Every tenth saved image (`status` says DRIFT REVIEW):
 1. Run `heraldry_art.py sheet --recent 10 --refs`.
 2. Run `style_audit.py --repo . --recent 10` (report in the scratch folder) for advisory tone and four-edge statistics by register.
 3. Compare same-register siblings and references together. A single scene's greater ink coverage may be legitimate; the statistics never overrule artistic inspection.
-4. Deliver in every case and continue. If **two or more** siblings show the same serious line, tone or vignette drift, flag it in your report for Claude Code, which reviews the references or prompts upstream and sends redos.
+4. Deliver in every case and continue. If **two or more** siblings show the same serious line, tone or vignette drift, flag it in your report so the references or prompts can be checked upstream and the images sent back as redos.
 5. Never add contact sheets, debug JSON, style reports or print proofs to the repository. Keep them outside the clone or package as explicit scratch handoffs.
 
-## Final approval boundary
+## Approval
 
-The generator confirms *eligibility for review*, not quality acceptance. Claude Code/owner determines whether artwork fits the book, whether it is distinctive, and whether it should be published. There is no 'perfect score' that bypasses independent approval. Exact recreation of an already approved image means replaying the registered bytes, not stochastic regeneration.
+Approve an image only after looking at it against this rubric: whether it fits the book and is distinctive. Exact recreation of an already approved image means replaying the registered bytes, not stochastic regeneration.

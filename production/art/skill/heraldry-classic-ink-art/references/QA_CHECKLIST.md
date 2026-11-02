@@ -20,7 +20,7 @@ Calibrated on the approved Greythorn render, the three owner style samples and s
 | copy | Byte-identical to another delivered image or to one of the item's references. | Looks almost identical to one (a re-encoded or resized copy, within 16 of 256 difference bits): look before saving. |
 | budget | More images checked than the item's attempt budget. | |
 
-The intake's own flags (`colour`, `gray_wash`, `frame_or_box`) are printed as `info`. They go to the reviewer and do not reject anything. Dense, good scenes can approach them: the approved Greythorn render sits at 0.59 on a 0.60 grey-wash flag.
+The intake's own flags (`colour`, `gray_wash`, `frame_or_box`) are printed as `info`. They inform the approval and do not reject anything. Dense, good scenes can approach them: the approved Greythorn render sits at 0.59 on a 0.60 grey-wash flag.
 
 On a WARN, look at the thing it names. A WARN you looked at and judged fine needs no action.
 
@@ -43,7 +43,7 @@ Any failure of 1–10 is a retry (`references/REPAIR.md`).
 
 ## 3. Soft style check
 
-Put the image beside its references. Is the line weight, hatch density, contrast and finish the same hand? Note "heavier", "lighter", "greyer" or "cleaner than the references" in the receipt notes. Do not retry for taste alone: the reviewer decides.
+Put the image beside its references. Is the line weight, hatch density, contrast and finish the same hand? Note "heavier", "lighter", "greyer" or "cleaner than the references" in the receipt notes. Do not retry for taste alone.
 
 ## 4. Batch drift review
 
@@ -64,11 +64,11 @@ Redo the one or two worst if attempts remain. If the whole batch drifted, stop a
 {"id": "ART-MON-GOBLIN", "prompt_sha256": "<the item's prompt_sha256 from QUEUE.json>", "surface": "ChatGPT Work", "model": "<image model if shown, else not shown>", "date_utc": "2026-10-10", "variants_tried": 2, "notes": "<anything unusual, including any correction sentence added>", "must_checked": ["<what you counted for each MUST line>"], "avoid_clear": true}
 ```
 
-`variants_tried` is the total number of generations made for the item, the saved one included. `save` fills it from the images you checked. `must_checked`, `avoid_clear`, `tripwires`, `accepted_flags` and `accepted_at_attempt` are optional extras the reviewer reads; a later receipt for the same ID replaces an earlier one.
+`variants_tried` is the total number of generations made for the item, the saved one included. `save` fills it from the images you checked. `must_checked`, `avoid_clear`, `tripwires`, `accepted_flags` and `accepted_at_attempt` are optional extras for approval; a later receipt for the same ID replaces an earlier one.
 
 A refusal: `{"id": "...", "refused": true, "reason": "<the tool's message>", "surface": "ChatGPT Work", "date_utc": "..."}`.
 
 
 ## Required review record
 
-The ten hard fails above must be checked by inspecting the native image plus the print-size preview. Before saving, create the byte-linked external JSON with `scripts/fidelity_gate.py`, then record all ten pass/fail results with specific evidence. Reference style-match, form-following hatching, paper flatness, four-edge vignette/isolation, and register-specific print legibility are release gates, not optional taste notes. Passing self-review is preliminary only: Claude Code separately approves for publication. See `references/STYLE_CONSISTENCY.md`.
+The ten hard fails above must be checked by inspecting the native image plus the print-size preview. Before saving, create the byte-linked external JSON with `scripts/fidelity_gate.py`, then record all ten pass/fail results with specific evidence. Reference style-match, form-following hatching, paper flatness, four-edge vignette/isolation, and register-specific print legibility are release gates, not optional taste notes. See `references/STYLE_CONSISTENCY.md`.

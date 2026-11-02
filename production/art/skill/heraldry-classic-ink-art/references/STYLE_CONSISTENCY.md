@@ -27,12 +27,12 @@ Inspect the original at normal size and the 150 px/in print proof beside queue-s
 - no prohibited content and no reference subject bleed;
 - no repeated clones of roof modules, hands, textures, or poses.
 
-All comparison statistics are **advisory**; image contents and page density legitimately vary. Do not invent an 8.8/10 score and call it measured. A failing visual criterion requires another variant within budget, or a flagged handoff at exhaustion. Claude Code independently makes the publish/reject decision.
+All comparison statistics are **advisory**; image contents and page density legitimately vary. Do not invent an 8.8/10 score and call it measured. A failing visual criterion requires another variant within budget, or a flagged handoff at exhaustion.
 
 ## Anti-drift batch review
 
-Every tenth saved image (`status` says DRIFT REVIEW), run `sheet --recent 10 --refs` and `style_audit.py --repo . --recent 10`. Compare by register (scene with scene, creature/person with the figure reference, still life with still-life references). Look for creeping grey, heavier/fainter contours, cloned posing, lower contrast, inconsistent paper, or crowding. Deliver in every case and continue. When at least two siblings show the same drift, report the trend to Claude Code; it reviews the reference selection or prompt upstream and sends redos.
+Every tenth saved image (`status` says DRIFT REVIEW), run `sheet --recent 10 --refs` and `style_audit.py --repo . --recent 10`. Compare by register (scene with scene, creature/person with the figure reference, still life with still-life references). Look for creeping grey, heavier/fainter contours, cloned posing, lower contrast, inconsistent paper, or crowding. Deliver in every case and continue. When at least two siblings show the same drift, report the trend so the reference selection or prompt can be checked upstream and the images sent back as redos.
 
 ## Approval
 
-**Neither self-attested checks nor code metrics are editorial approval.** Claude Code reviews every delivered image; only an `anchors` phase, if one is ever published, stops for that review.
+Code metrics are never approval: approve an image only after looking at it (`SKILL.md`, hard rule 7).

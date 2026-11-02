@@ -2,11 +2,11 @@
 
 ## One generation per item
 
-Every item gets exactly one generation per round (`max_attempts` 1; owner 2026-10-12: first generations were far better than any retry). There are no retries. A defective image is saved with `--accept-flags --notes`, and the reviewer decides whether to send it back. An edit through the image tool's own edit or regenerate control counts as a generation. Never open an image in any other editor.
+Every item gets exactly one generation per round (`max_attempts` 1; owner 2026-10-12: first generations were far better than any retry). There are no retries. A defective image is saved with `--accept-flags --notes`, and a rejection sends it back as a redo. An edit through the image tool's own edit or regenerate control counts as a generation. Never open an image in any other editor.
 
 ## Redos
 
-A redo is a fresh round: one new generation in a fresh context (no earlier image of the item in view). Its prompt is the verbatim prompt plus at most two correction sentences at the very end, based on the reviewer's reason. If the reason contradicts the prompt, the prompt wins: say so. Each sentence names what to change and what to keep. Record the sentences in `--notes`. The receipt's `prompt_sha256` stays the queue's value: the corrections are a recorded addition, not a different prompt.
+A redo is a fresh round: one new generation in a fresh context (no earlier image of the item in view). Its prompt is the verbatim prompt plus at most two correction sentences at the very end, based on the rejection reason. If the reason contradicts the prompt, the prompt wins: say so. Each sentence names what to change and what to keep. Record the sentences in `--notes`. The receipt's `prompt_sha256` stays the queue's value: the corrections are a recorded addition, not a different prompt.
 
 ## Correction sentences
 
@@ -38,4 +38,4 @@ A redo is a fresh round: one new generation in a fresh context (no earlier image
 
 A must-show item that looks opposed to a do-not-draw line is almost always about scale or focus, not a contradiction. Satisfy both the narrowest way: draw the required item as small and incidental as the prompt's composition places it, and do not make it the subject. Do not stop, and do not use `--accept-flags`.
 
-If the prompt truly cannot be satisfied, or contradicts the rulebook text it quotes, do not fix it and do not generate it. Record `refuse ID --reason "prompt cannot be satisfied: <what clashes>"`, list it in your report and move on. Claude Code owns the prompts and will republish it.
+If the prompt truly cannot be satisfied, or contradicts the rulebook text it quotes, do not fix it and do not generate it. Record `refuse ID --reason "prompt cannot be satisfied: <what clashes>"`, list it in your report and move on. The prompt is then fixed in the catalogue and republished.

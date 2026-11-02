@@ -1,6 +1,6 @@
 # An illustration that is not in the queue
 
-Do not generate it for the book. A book illustration needs a catalogue entry (a unique subject, a brief, a prompt, a queue slot and a layout slot), and only Claude Code can add one. Ask the owner to have Claude Code do it.
+Do not generate it for the book. A book illustration needs a catalogue entry (a unique subject, a brief, a prompt, a queue slot and a layout slot), added with the repo's catalogue tools (`docs/ART_AUTOMATION.md`).
 
 For an explicit one-off the owner asks for outside the book, use this short method, taken from the earlier v3 skill's scene-planning protocol:
 
