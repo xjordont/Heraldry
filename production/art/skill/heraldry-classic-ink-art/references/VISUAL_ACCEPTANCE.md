@@ -27,7 +27,7 @@ Before a passing `save`, complete the QA draft that `qa ID FILE` writes for the 
 
 - Set `prompt_unchanged: true` only when the actual generation input was the queued prompt, apart from the allowed documented correction sentences.
 - Set `references_attached: true` only when all queue-listed assets were actually attached, in the listed order.
-- Set `visual_review_at_print_size: true` only after inspecting the physical print-width preview.
+- Set `visual_review_at_print_size: true` only after inspecting the print-size preview.
 - Set `register_compared` to `scene`, `figure`, `still_life`, `portrait`, `creature`, `interior`, or `other` according to the artwork.
 - Complete all ten `checks` with a true/false decision and specific visible evidence. Avoid boilerplate, vague praise, or generic identical explanations.
 - Record genuine failures in `unresolved_issues`; a failed visual criterion is shipped as a flagged image (`--accept-flags`), never retried; a rejection brings it back as a redo.
@@ -40,7 +40,7 @@ Every tenth saved image (`status` says DRIFT REVIEW):
 2. Run `style_audit.py --repo . --recent 10` (report in the scratch folder) for advisory tone and four-edge statistics by register.
 3. Compare same-register siblings and references together. A single scene's greater ink coverage may be legitimate; the statistics never overrule artistic inspection.
 4. Deliver in every case and continue. If **two or more** siblings show the same serious line, tone or vignette drift, flag it in your report so the references or prompts can be checked upstream and the images sent back as redos.
-5. Never add contact sheets, debug JSON, style reports or print proofs to the repository. Keep them outside the clone or package as explicit scratch handoffs.
+5. Never add contact sheets, debug JSON, style reports or print-size previews to the repository. Keep them outside the clone or package as explicit scratch handoffs.
 
 ## Approval
 

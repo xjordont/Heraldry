@@ -30,7 +30,7 @@ A redo is a fresh round: one new generation in a fresh context (no earlier image
 | Missing scale figure that was asked for | `Correction: include one small human figure for scale, as described.` |
 | Hands, grips or weapons wrong | `Correction: the <weapon> is held correctly in <both/one> hand<s>. Keep everything else.` |
 | Soft, blurry or hazy | `Correction: crisp, bold ink lines with sharp contrast and no haze.` |
-| Subject too small or too fine to read when printed small | `Correction: draw the subject larger, filling about 70% of the frame, with fewer and bolder forms.` |
+| Subject too small or too fine to read at its placed size | `Correction: draw the subject larger, filling about 70% of the frame, with fewer and bolder forms.` |
 | The tool returned a reference or another item's image (`check` says byte-identical or looks almost identical) | `Correction: draw a new picture of <the subject>; it must not resemble any attached reference image or any other illustration.` |
 | Same pose or composition as a sibling | `Correction: <the pose or camera the prompt describes>, a different composition from the references.` |
 

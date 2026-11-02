@@ -1,6 +1,6 @@
 # Targeted publication checks
 
-Owner instruction, 2026-10-15: "Continue as you suggest", following the publication-improvement report. This authorises the initial authority review, bounded editorial review, calibration correction, and preparation of reader, accessibility, and physical-proof checks. It does not resolve a substantive rules conflict, approve an unseen manuscript patch, commission a person, or request a new book PDF.
+Owner instruction, 2026-10-15: "Continue as you suggest", following the publication-improvement report. This authorises the initial authority review, bounded editorial review, and preparation of reader and accessibility checks. It does not resolve a substantive rules conflict, approve an unseen manuscript patch, commission a person, or request a new book PDF.
 
 Owner approval update, 2026-10-15: "Approve all as proposed." The five canon alignments are recorded in `CANON_AUTHORITY.md`; the ten approved editorial replacements are applied in RC493 and archived in `editorial/history/RC493.json`. No new publication build was requested.
 
@@ -16,7 +16,6 @@ Use these distinct statuses:
 - **PLANNED / NOT RUN:** a procedure exists, but no observation has been made.
 - **SOURCE REVIEW ONLY:** the named source scope was actually examined; no final-format claim follows.
 - **OBSERVED:** record the exact file, task, device, result, and limits. A result applies only to that scope.
-- **PHYSICAL PRINT: NOT TESTED:** retain until real sheets are examined.
 
 Record the file's SHA-256 and byte count against the release manifest before a PDF test. Preserve any existing file with a different hash; do not rename an older PDF to stand in for the release or rebuild the book to obtain evidence without a separate build request. Put downloaded PDFs, page renders, and execution notes in ignored `build/checks/` or an external scratch folder. Keep actual release ledgers intact.
 
@@ -68,18 +67,6 @@ First obtain and hash-check the actual released digital PDF. Existing tags, lang
 Do not claim PDF/UA conformance from a compile flag, extracted text, a validator alone, or this plan. Automated and manual evidence must cover the claimed standard and exact output. No screen-reader or delivered-PDF accessibility result has yet been recorded here.
 
 Technical references: [Typst accessibility](https://typst.app/docs/guides/accessibility/), [Typst PDF export](https://typst.app/docs/reference/pdf/), [W3C reading order](https://www.w3.org/WAI/WCAG22/Techniques/pdf/PDF3), [W3C images](https://www.w3.org/WAI/WCAG22/Techniques/pdf/PDF1), and [W3C tables](https://www.w3.org/WAI/WCAG22/Techniques/pdf/PDF6).
-
-## Physical reproduction and binding
-
-Follow [INKJET_PRINT.md](INKJET_PRINT.md) and the intended printer's actual manual once its model is known. The corrected calibration source is available for the next requested build. Its newly rendered PNGs are diagnostics for source validation, not replacement print PDFs or evidence of a physical proof.
-
-1. Record printer/driver, media, quality, borderless expansion, application scale, duplex/flip direction, and intended binding. Do not guess settings or send a print job without the intended physical setup.
-2. Print the appropriate released calibration and representative dense rules, table, index, small illustration, diagram, dark opener, and cover at actual size. The old release's calibration still contains the documented label mismatch; identify that limitation if using it before a new build.
-3. Measure the calibration inch and edge-safe frame. Inspect fine hatch separation, small text, bands, dark solids, offset, drying, and cream/white reproduction. Note the exact asset and placed size for any art issue.
-4. If binding is intended, inspect front/middle/rear inner columns in a representative bound block or actual proof. Existing 0.75-inch inner margins are not automatically too small. A gutter change requires demonstrated need and downstream pagination review.
-5. Photograph or record actual observations and propose only the smallest evidenced remedy. Upsampled cover pixels do not establish native detail; an approved illustration does not need a redo without an observed defect.
-
-Physical printing remains **NOT TESTED**. Printer, paper, binding, and examined sheets are still required for execution. Commercial manufacturing and cover-wrap work remain separate owner decisions.
 
 ## Execution record
 

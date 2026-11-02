@@ -2,7 +2,7 @@
 
 Status: compact v5 implements the owner's 2026-10-16 approval of the layout review, explicitly allowing **10.5 pt body**, **9 pt tables**, narrower margins, and more assertive refinement. The owner resumed this implementation on 2026-10-20. This supersedes the earlier 11 pt lock and conservative trial values. `config/design_tokens.json` is the single effective geometry/type/spacing authority; Typst imports it and Python uses `tools/layout_profile.py`. `config/production.json` mirrors public format values and is checked for agreement.
 
-The original v4 reference study and component rationale below remain useful where the v5 profile does not supersede them. Ordinary rules use two columns. Chapter/section opening flavour has an explicit, inset single-column region; wide tables and diagrams retain deliberate spanning roles. Fit-capable complete source units, source order, readable figures, the accepted blank verso, and independent visual review remain mandatory. Physical proof is **NOT TESTED**. Local specimens and measured builds are evidence of their stated scope, not a new release approval.
+The original v4 reference study and component rationale below remain useful where the v5 profile does not supersede them. Ordinary rules use two columns. Chapter/section opening flavour has an explicit, inset single-column region; wide tables and diagrams retain deliberate spanning roles. Fit-capable complete source units, source order, readable figures, the accepted blank verso, and independent visual review remain mandatory. Local specimens and measured builds are evidence of their stated scope, not a new release approval.
 
 The evidence is in `docs/design/REFERENCE_STUDY.md`: all ten reference books were mapped page by page, and about 90 pages were inspected closely.
 
@@ -28,10 +28,10 @@ The ordinary rules page is the product. The cover and chapter openers set the mo
 
 | Element | Value |
 |---|---|
-| Trim | US Letter portrait, 612 × 792 pt, borderless inkjet; cream `#FCFAF5` and a white companion with identical pagination |
-| Margins | inside 45 pt (0.625 in), outside 42 pt (0.5833 in), top/bottom 45 pt (0.625 in); final binding requires physical proof |
+| Page | US Letter portrait, 612 × 792 pt; cream `#FCFAF5` to every edge |
+| Margins | inside 45 pt (0.625 in), outside 42 pt (0.5833 in), top/bottom 45 pt (0.625 in) |
 | Text frame | 525 × 702 pt; two 254.4 pt columns with a 16.2 pt (0.225 in) gutter |
-| Edge safety | essential content and navigation lettering at least 27 pt (0.375 in) from trim; decoration may reach the edge |
+| Edge safety | essential content and navigation lettering at least 27 pt (0.375 in) from the page edge; decoration may reach the edge |
 | Full-width regions | section titles, chapter openers, wide tables, wide figures, scenario heads |
 | Column regions | prose, examples, notes, monster entries, powers, dossiers |
 
@@ -120,7 +120,7 @@ The essential rules, table, caption, and navigation size floor is 9 pt. Do not s
   | 14 | Appendix C. Rules Reference | Reference |
   | 15 | Index | Index |
 
-  Tabs are navigation only. The running head always names the chapter, so a tab trimmed by overscan loses nothing.
+  Tabs are navigation only; the running head always names the chapter.
 - **Contents:** two columns. Each chapter row has the chapter's arms, its number, the title in blackletter and its page, over a rule. Each section line has a sans number, a serif title and dot leaders to the page. The contents is two levels deep; deeper levels live in the PDF bookmarks.
 - **Index:** three columns. Each initial is reversed in an engraved black block followed by a rule. Entries are sans 9.5 pt (`type_pt.index`) with hanging indents and grey page numbers.
 - **Digital:** linked contents and index, PDF bookmarks, and clickable cross references ("see 10.6.4"). These are built from the existing anchors.
@@ -151,7 +151,7 @@ Each template lists its components, its pagination rule (in addition to DESIGN_R
 ### 6.3 Credits and colophon (verso of the title)
 
 - Sans 8.5 pt in a single column, set low on the page.
-- Contents: credits, licences for the three typefaces, the art provenance statement (the intake records each image as "AI-generated in Codex from the recorded prompt; not hand-drawn"), the manuscript release and the print notes.
+- Contents: credits, licences for the three typefaces, the art provenance statement (the intake records each image as "AI-generated in Codex from the recorded prompt; not hand-drawn"), the manuscript release and the page format.
 - No ornament beyond one lozenge.
 
 ### 6.4 Contents (specimen 2)
@@ -358,14 +358,12 @@ DESIGN_REFINEMENT's policy stands. This plan adds these rules:
 5. A wide table or figure is placed full width at a column boundary. It never interrupts a column mid-sentence.
 6. Leftover space at the end of a section can take a relevant spot illustration from the same section. It is never filled with unrelated prose or art.
 
-## 9. Print production
+## 9. Ink and fine lines
 
-- **Ink coverage:** solid black is limited to small structural marks. Large black slabs are used only in the art.
-- **Hairlines:** none is thinner than 0.3 pt; the 28% grey hairlines hold on inkjet.
-- **Tints:** transparent black works on cream and white alike; check banding on the physical proof.
-- **Thumb tabs:** they bleed 0.5 in. At the 1.03 overscan test, the number stays fully visible; a tab trimmed by borderless overscan still reads.
-- **Specimens:** `tools/render_template_specimens.py --substrate white` renders the white companion for comparison.
-- Physical printing remains NOT TESTED until real sheets are examined.
+- **Solid black:** limited to small structural marks. Large black slabs are used only in the art.
+- **Hairlines:** none is thinner than 0.3 pt.
+- **Tints:** transparent black over the cream page.
+- **Thumb tabs:** they run from the page edge to 3 pt short of the text frame; the keyword stays inside the 27 pt safe line.
 
 ## 10. Adoption into the book build (on the owner's build request)
 
@@ -397,7 +395,7 @@ The generator (`tools/build_book.py`) already emits semantic component calls (`c
    - reconciliation (every word and cell);
    - the mandatory one-page-unit audit;
    - layout QA;
-   - visual review of every page type at readable size, and the cream/white pair;
+   - visual review of every page type at readable size;
    - specimen pages are re-rendered at each step.
 5. **Release:** `make clean all verify package` and the visual ledger, as BUILD.md describes.
 
@@ -422,9 +420,9 @@ The owner directed on 2026-10-12: "take it further ... more decorations, symbols
 
 | Mark | Form | Where |
 |---|---|---|
-| **Chapter arms** | Owner-approved 2026-10-13 ("Approved. Make sure they are big enough to see."), chosen over five Nano Banana 2.1 rounds (`production/art/marks/APPROVED.json`). Flat black ink on a plain field, with bold interior detail and no grey. Each charge is set by `tools/prepare_marks.py` inside one shared double-rimmed heater shield (the Mechanics candidate's rim) and traced to vector SVG in cream and white variants. World/Lore: raven on a crown broken in two. Mechanics: die. Round: hourglass. Actions: three arrows points down. Combat: bearded axe and notched sword. Party: tattered banner. Equipment: great helm. Powers: open hand with an eye. Monsters: horned wyvern's head. Scenarios: ruined arch. Campaign: war pavilion. Learn: key. Basic: lantern. Reference: open book. Index: quill and ink pot | Chapter opener (52 pt, about 0.72 in), contents rows (22 pt), running head (15 pt), armoury sheet (52 pt). Never below 15 pt |
+| **Chapter arms** | Owner-approved 2026-10-13 ("Approved. Make sure they are big enough to see."), chosen over five Nano Banana 2.1 rounds (`production/art/marks/APPROVED.json`). Flat black ink on a plain field, with bold interior detail and no grey. Each charge is set by `tools/prepare_marks.py` inside one shared double-rimmed heater shield (the Mechanics candidate's rim) and traced to vector SVG on the cream page colour. World/Lore: raven on a crown broken in two. Mechanics: die. Round: hourglass. Actions: three arrows points down. Combat: bearded axe and notched sword. Party: tattered banner. Equipment: great helm. Powers: open hand with an eye. Monsters: horned wyvern's head. Scenarios: ruined arch. Campaign: war pavilion. Learn: key. Basic: lantern. Reference: open book. Index: quill and ink pot | Chapter opener (52 pt, about 0.72 in), contents rows (22 pt), running head (15 pt), armoury sheet (52 pt). Never below 15 pt |
 | **Logo / signature mark** | Owner-approved 2026-10-13: a broken heater shield bearing a three-towered castle, cracked through its portcullis gate, with fragments falling away; "the arms of a fallen realm". It replaces the six earlier signature candidates, which are retired | Opener-frame head (30 pt), flourish centre (22 pt), title page, back cover, armoury sheet (92 pt) |
-| **Brush rule** | A hand-inked stroke with tapered ends and a slightly uneven edge, drawn the same way every printing | Section titles, table edges, stat bars, entry names, folios |
+| **Brush rule** | A hand-inked stroke with tapered ends and a slightly uneven edge, drawn the same way every time | Section titles, table edges, stat bars, entry names, folios |
 | **Engraved shield** | A heater shield with a paper inner line, carrying a number | Section numbers, folios, procedure steps, power numbers |
 | **Corner flourish** | A fine L with an inner hairline and lozenge finials | Scenario dossiers and outcome frames; chapter-opener frame |
 | **Banner tag** | A black strap with a pointed end | EXAMPLE, RULES NOTE, monster roles, scenario number, place kicker |

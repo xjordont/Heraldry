@@ -1,26 +1,26 @@
 # Heraldry publication design specification
 
-> **2026-10-16 compact approval, implemented from 2026-10-20:** 10.5 pt body, 9 pt tables, narrower margins, and the approved refinement report supersede earlier size/geometry proposals. The effective profile is `config/design_tokens.json`, shared by Typst and `tools/layout_profile.py`. Complete-unit keeps and source fidelity remain mandatory. Physical proof is NOT TESTED.
+> **2026-10-16 compact approval, implemented from 2026-10-20:** 10.5 pt body, 9 pt tables, narrower margins, and the approved refinement report supersede earlier size/geometry proposals. The effective profile is `config/design_tokens.json`, shared by Typst and `tools/layout_profile.py`. Complete-unit keeps and source fidelity remain mandatory.
 
-> **2026-10-12:** `docs/BOOK_DESIGN_PLAN.md` (design system v2, "Ink and Iron") supersedes this document's visual identity: display face, heading, furniture and component styling, and the page-type templates. Grid, print, source-fidelity and pagination rules here and in DESIGN_REFINEMENT.md remain in force.
+> **2026-10-12:** `docs/BOOK_DESIGN_PLAN.md` (design system v2, "Ink and Iron") supersedes this document's visual identity: display face, heading, furniture and component styling, and the page-type templates. Grid, page, source-fidelity and pagination rules here and in DESIGN_REFINEMENT.md remain in force.
 
 Status: implementation brief, distilled from the ten owner-selected visual references. `docs/DESIGN_REFINEMENT.md` supplies the latest owner-requested iteration and overrides the earlier specimen freeze. These specifications guide the first stress specimen. Tune optical details once after rendering, then apply the resulting system consistently. MASTER_PROMPT.md governs source preservation and completion. The manuscript governs all mechanics and terminology.
 
 ## 1. Visual identity
 
-Build an original dark medieval fantasy reference book with a light, clean reading field: almost-white cream/parchment tone, black ink, readable serif prose, practical sans-serif tables, restrained display headings, sparse original heraldic ornament, economical ink vignettes, and crisp vector diagrams. The physical output is borderless portrait US Letter for home inkjet printing. Implement starting values from `config/design_tokens.json` and acceptance checks from `docs/VISUAL_QA.md`; refine once on real content, then freeze. High production quality must show in ordinary reference pages, not just a decorative cover.
+Build an original dark medieval fantasy reference book with a light, clean reading field: almost-white cream/parchment tone, black ink, readable serif prose, practical sans-serif tables, restrained display headings, sparse original heraldic ornament, economical ink vignettes, and crisp vector diagrams. The book is a digital PDF of portrait US Letter pages. Implement starting values from `config/design_tokens.json` and acceptance checks from `docs/VISUAL_QA.md`; refine once on real content, then freeze. High production quality must show in ordinary reference pages, not just a decorative cover.
 
 Reference assignments: BlackDeathCity and Deth Wizards for atmosphere and vignette placement; Mythras for calm grayscale prose; Hametsu and Five Leagues for tables, examples, and navigation; Hellcrawl for keyed entries. The Village Hunt informs silhouette/open-space integration; Dread Nights informs hierarchy and labelled entries; TNA Ultimate and TES: Call to Arms inform nearby exact instructional diagrams. Use only the ten titles recorded in `references/sample_pdfs.json`. Do not clone a page, extract source art into the book, or import reference mechanics.
 
-Default substrate: flat `#FCFAF5` warm cream from edge to edge, with a paper-white `#FFFFFF` export using identical pagination for cream stock or lower ink use. Parchment here means a very light restrained tone, not distressed texture. No scanned paper stains, burned edges, gritty noise, repeated texture, decorative watermark, distressed body font, heavy perimeter frame, colour-only coding, or dark ordinary-page background. Use an opaque page background independent of body margins; never place a white rectangle behind every paragraph/table. See `docs/INKJET_PRINT.md` for the file and proof contract.
+Substrate: flat `#FCFAF5` warm cream from edge to edge. Parchment here means a very light restrained tone, not distressed texture. No scanned paper stains, burned edges, gritty noise, repeated texture, decorative watermark, distressed body font, heavy perimeter frame, colour-only coding, or dark ordinary-page background. Use an opaque page background independent of body margins; never place a white rectangle behind every paragraph/table.
 
 ## 2. Page grid
 
-Every primary page is 8.5 × 11 inches (612 × 792 pt), portrait, single pages with facing-page furniture. No landscape fallback or imposed spreads. Use inside 45 pt, outside 42 pt, top 45 pt, and bottom 45 pt. The 525 × 702 pt frame retains a binding allowance and measured safe navigation. Reassess binding against the physical proof; a smaller file is not evidence of binding comfort.
+Every primary page is 8.5 × 11 inches (612 × 792 pt), portrait, single pages with facing-page furniture. No landscape fallback or imposed spreads. Use inside 45 pt, outside 42 pt, top 45 pt, and bottom 45 pt. The 525 × 702 pt frame keeps the wider inside margin and measured safe navigation.
 
 Two columns with a 16.2 pt (0.225-inch) gap for ordinary rules and reference entries; each column is 254.4 pt wide. Permit one continuous full-width region for wide tables/diagrams; avoid repeated full-width islands separated by tiny two-column fragments. Opening chapter/section flavour uses an inset single-column region; substantive scenario/procedure prose follows the same two-column grammar.
 
-Running heads identify chapter and major section, 9 pt. Folios sit at lower outer corners. All essential furniture stays at least 0.375 inch from every sheet edge, in addition to the binding exclusion zone. Borderless backgrounds do not remove text margins. Major chapter titles may occupy more space; normal running navigation stays quiet. Avoid a permanent navigation rail.
+Running heads identify chapter and major section, 9 pt. Folios sit at lower outer corners. All essential furniture stays at least 0.375 inch from every page edge. A background that reaches the page edge does not remove text margins. Major chapter titles may occupy more space; normal running navigation stays quiet. Avoid a permanent navigation rail.
 
 ## 3. Type hierarchy
 
@@ -42,7 +42,7 @@ These are targets, not measurements copied from the books. Optical adjustment is
 
 ## 4. Reading flow
 
-Apply the explicit fresh-page and conditional-keep policy in DESIGN_REFINEMENT.md. Chapters, major numbered sections and named scenarios start on fresh pages, with the first section composed with its chapter opener. Nested headings keep meaningful opening content; all complete fit-capable sections, subsections, scenarios, tables and entries must stay on a single physical page and move whole when remaining space is insufficient, including their headings and necessary associated content. Keep definition, procedure, exceptions, and interpretive table notes together where practical. Keep headings with at least a meaningful paragraph or two complete list items. Prevent single-line widows/orphans without forcing large gaps. Keep ordinary table rows intact; handle over-height rows explicitly.
+Apply the explicit fresh-page and conditional-keep policy in DESIGN_REFINEMENT.md. Chapters, major numbered sections and named scenarios start on fresh pages, with the first section composed with its chapter opener. Nested headings keep meaningful opening content; all complete fit-capable sections, subsections, scenarios, tables and entries must stay on a single page and move whole when remaining space is insufficient, including their headings and necessary associated content. Keep definition, procedure, exceptions, and interpretive table notes together where practical. Keep headings with at least a meaningful paragraph or two complete list items. Prevent single-line widows/orphans without forcing large gaps. Keep ordinary table rows intact; handle over-height rows explicitly.
 
 Use bounded justification, Canadian English hyphenation, and inspect spacing/rivers. Prevent breaks within short dice notation, bracketed costs, modifiers, and values with units, using layout semantics rather than changing canonical text.
 
@@ -50,7 +50,7 @@ Examples attach to their subject rule; art attaches to a relevant entry or chapt
 
 ## 5. Table components
 
-Shared grammar: bold headers, modest cell padding (4 pt horizontal and 2.2 pt vertical), useful column width, consistent alignment, light rules, optional grayscale bands on the chosen clean substrate. Start rules around 0.5–0.7 pt and verify at print size. Start bands around 6% black but treat shading as optional; labels/rules must work without it.
+Shared grammar: bold headers, modest cell padding (4 pt horizontal and 2.2 pt vertical), useful column width, consistent alignment, light rules, optional grayscale bands on the chosen clean substrate. Start rules around 0.5–0.7 pt and verify at actual size. Start bands around 6% black but treat shading as optional; labels/rules must work without it.
 
 | Component | Layout |
 |---|---|
@@ -72,7 +72,7 @@ Use recurring entry templates rather than a unique box for every named ability. 
 
 Monster anatomy follows the canonical order and contains no invented abilities or resources. Scenario pages retain canonical headers and scaling fields. Use repeatable spacing to make setup, timing, special rules, scoring, and source-provided aftermath easy to find without relabelling them.
 
-A scenario may occupy several pages only when its complete measured unit cannot fit one usable page at the approved width. A fit-capable scenario, including its heading, deployment map, setup, rules, scoring and notes, must occupy one physical page. Keep fit-capable child units intact in longer scenarios. Do not force a one-page format by omitting rules. Stronghold/campaign entries may use light cards when the source structure supports them; keep card contents fully reconciled.
+A scenario may occupy several pages only when its complete measured unit cannot fit one usable page at the approved width. A fit-capable scenario, including its heading, deployment map, setup, rules, scoring and notes, must occupy one page. Keep fit-capable child units intact in longer scenarios. Do not force a one-page format by omitting rules. Stronghold/campaign entries may use light cards when the source structure supports them; keep card contents fully reconciled.
 
 ## 7. Original graphics and artwork
 
@@ -102,12 +102,12 @@ Produce an 8–12-page actual-content specimen, allowing an extra page only if n
 - Monster profile, scenario with its canonical scaling fields, and an appendix reference.
 - A vector diagram, ink art treatment or clearly identified production-only art reservation, and index slice.
 
-Inspect at actual print size and enlarged detail. Use a contact sheet only for page rhythm. Confirm hierarchy, optical type size, column balance, table relationships, note attachment, gutter clearance, grayscale diagram distinctions, and art/prose separation. Apply the component rubric in VISUAL_QA.md. Review centred 1.03-scale cropped page stress images and the inkjet calibration proof; actual printer proof remains a separate status. Revise the system once, record it, then produce the full book.
+Inspect at actual size and enlarged detail. Use a contact sheet only for page rhythm. Confirm hierarchy, optical type size, column balance, table relationships, note attachment, gutter clearance, grayscale diagram distinctions, and art/prose separation. Apply the component rubric in VISUAL_QA.md. Revise the system once, record it, then produce the full book.
 
 No PASS based solely on an attractive cover, chapter opening, or successful compilation. The final design gate is usable ordinary pages plus complete source reconciliation and all exceptional table/diagram checks required by MASTER_PROMPT.md.
 
-## 10. Authored finish and delivery variants
+## 10. Authored finish and delivery
 
 Use the type/spacing/rule/palette tokens as one system. Display lettering appears on chapter/major titles, not every subheading. No generic shield badge on every entry, random flourish, ubiquitous skull, imitation occult lettering, dashboard cards, drop shadows, polished fantasy gradient, or busy symmetrical frame. Keep body ink strong and ornaments subordinate. Atmosphere follows specific manuscript subjects and materially convincing ink drawing.
 
-Provide the cream borderless inkjet PDF and paper-white companion with identical content, anchors, pagination and geometry; navigation destinations must still resolve in each export. Match cream to actual stock only after a physical proof. Do not add a texture generator as a substitute for editorial craft. A clean art-light edition uses typography, sparse original marks and accurate diagrams; it never claims missing atmospheric illustrations are complete.
+Deliver the digital PDF, with its front and back covers inside it, and the screen companion `Heraldry_RC###_digital-compact.pdf`, which keeps the same pages, bookmarks, and links; navigation destinations must resolve in both. Do not add a texture generator as a substitute for editorial craft. A clean art-light edition uses typography, sparse original marks and accurate diagrams; it never claims missing atmospheric illustrations are complete.
