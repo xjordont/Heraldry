@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`a92e0177`](https://github.com/xjordont/Heraldry/commit/a92e0177f9a2951092195f74494790b95b93ddb5) editorial: second humanizer pass on the RC528 proposal (140 patches, not applied)
 - [`3a574aaa`](https://github.com/xjordont/Heraldry/commit/3a574aaa559a248c2dd9ce9e8730a83902648b6f) editorial: humanizer review proposal for RC528 (78 patches, not applied)
 - [`0489ffaf`](https://github.com/xjordont/Heraldry/commit/0489ffaf2681705eba8847c466b6e5ebe33046cb) tests: design-audit fixtures compile inside the project root on a fresh checkout
 - [`1a21b20d`](https://github.com/xjordont/Heraldry/commit/1a21b20ddf253e4721d0030393bc1c538e95c284) hero record: centre table headings, row labels and values in their cells
 - [`a9f29474`](https://github.com/xjordont/Heraldry/commit/a9f29474452f8e5f57b8e2a4f235d3432e3d4937) state: record RC527-build-41, the released design-audit layout
 - [`4e2a8dad`](https://github.com/xjordont/Heraldry/commit/4e2a8dad3a5d3d0b5f713f0f21be5e86b225df1c) Record release workflow result
-- [`f7baf809`](https://github.com/xjordont/Heraldry/commit/f7baf80932f9f54dab7bd303f742d65eaffc9a36) Rebuild verified RC527 delivery
 
 <!-- END AUTO:recent -->
 
