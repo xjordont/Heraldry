@@ -72,7 +72,7 @@ class BuildChain(unittest.TestCase):
         self.assertIn("runs-on: ${{ matrix.os }}", checks)
         self.assertIn("fail-fast: false", checks)
         self.assertIn("python tools/check_dependencies.py --ci", checks)
-        self.assertIn("python -m unittest discover -s tests", checks)
+        self.assertIn("python tools/run_tests.py", checks)
         self.assertNotRegex(checks, r"(?m)^\s+run:.*\b(make|build_book\.py|verify\.py)\b")
         for name in ("repository-checks.yml", "build-candidate.yml", "rebuild-delivery.yml"):
             text = workflow(name)

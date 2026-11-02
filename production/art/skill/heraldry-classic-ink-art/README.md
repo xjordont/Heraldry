@@ -44,7 +44,7 @@ Where the worker cannot authenticate git, a self-contained input ZIP is built wi
 ## Offline verification
 
 ```sh
-python -m unittest discover -s tests -v
+python -m unittest discover -s tests -v   # or, from the repository root, `make test` runs this suite too
 python scripts/validate_skill.py --zip /path/to/Heraldry_Classic_Ink_Art_Skill_v8_0.zip --repo /path/to/repo
 ```
 

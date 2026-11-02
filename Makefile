@@ -37,8 +37,9 @@ specimen: verify
 	$(PY) tools/specimen.py
 package: specimen
 	$(PY) tools/package.py
+# Both suites (tests/ and the art skill's), one module per process in parallel: same tests, same result.
 test:
-	$(PY) -m unittest discover -s tests -v
+	$(PY) tools/run_tests.py
 # Installable skill zip and offline Work input package, built on request into build/art/ (never committed).
 art-packages:
 	$(PY) tools/art_skill_build.py
