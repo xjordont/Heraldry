@@ -2,7 +2,9 @@
 // Design v4: the castle logo, the opener-frame border and live type (owner-approved marks 2026-10-13).
 #import "heraldry.typ": *
 
-#let cover-page(body) = page(width: page-w, height: page-h, fill: substrate, margin: 0pt, header: none, footer: none, numbering: none, body)
+// Covers carry no running furniture: no header, footer, folio, opener frame, or thumb tab (the document's
+// page background draws the last two, so the cover clears it).
+#let cover-page(body) = page(width: page-w, height: page-h, fill: substrate, margin: 0pt, header: none, footer: none, numbering: none, background: none, body)
 
 #let front-cover-classic(title, subtitle, version) = cover-page[
   // thin inset frame at a safe distance (decorative, inside the 0.375 in safe edge)

@@ -2,10 +2,16 @@ name: Repository checks
 on:
   push:
     branches: [main]
-    # a Codex delivery (one image and its receipt) changes no code: the intake workflow handles it
     paths-ignore:
+      # a Codex delivery (one image and its receipt) changes no code: the intake workflow handles it
       - 'assets/art/incoming/**'
       - 'production/art/gpt/RECEIPTS.jsonl'
+      # log, status, and proposal-only pushes need no test run (AGENTS.md, Checks)
+      - 'production/STATE.md'
+      - 'production/RELEASE_STATUS.md'
+      - 'editorial/proposals/**'
+      - 'reports/**'
+      - 'research_notes/**'
   pull_request:
   workflow_dispatch:
 permissions:
@@ -41,12 +47,23 @@ jobs:
         run: python -m unittest discover -s production/art/skill/heraldry-classic-ink-art/tests -p 'test_*.py'
       - name: Check immutable manuscript chain and production contracts
         run: python tools/preflight.py --baseline
-      - name: Fetch the Hero portraits the Hero card tests compile
+      - name: List the Hero portraits the Hero card tests compile
         # only the 24 portraits named in basic-heroes.json (about 8 MB), not the full art library
+        id: portraits
         shell: bash
         run: |
           INC=$(python -c "import json; d=json.load(open('typst/heroes/basic-heroes.json')); h=d if isinstance(d, list) else d.get('heroes', d); print(','.join(sorted({'assets/art/ink/' + x['art'] + '.png' for x in h if x.get('art')})))")
-          git lfs pull --include="$INC" --exclude=""
+          echo "include=$INC" >> "$GITHUB_OUTPUT"
+          mkdir -p build
+          git lfs ls-files -l -I "$INC" | cut -d' ' -f1 | sort > build/lfs-portraits.txt
+      - name: Restore cached portraits (saves LFS bandwidth on every push)
+        uses: actions/cache@v4
+        with:
+          path: .git/lfs/objects
+          key: lfs-portraits-${{ runner.os }}-${{ hashFiles('build/lfs-portraits.txt') }}
+      - name: Fetch the portraits (only objects not already cached)
+        shell: bash
+        run: git lfs pull --include="${{ steps.portraits.outputs.include }}" --exclude=""
       - name: Check revision and failure gates
         run: python -m unittest discover -s tests
       - name: Protect prior snapshots and revision records

@@ -21,6 +21,11 @@ jobs:
           python-version: '3.12'
           cache: pip
           cache-dependency-path: requirements.lock
+      - name: Restore the Playwright browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-1.63.0-${{ runner.os }}
       - name: Install locked dependencies and the renderer
         run: |
           python -m pip install -r requirements.lock playwright==1.63.0

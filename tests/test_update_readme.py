@@ -1,6 +1,7 @@
 """README derivation and publication against local Git repositories; no network or book build."""
 import hashlib
 import json
+import re
 from pathlib import Path
 import subprocess
 import sys
@@ -204,24 +205,34 @@ class ReadmeUpdate(unittest.TestCase):
 
 
 class WorkflowWiring(unittest.TestCase):
-    def test_all_other_workflows_have_completion_refresh_and_main_push_is_unfiltered(self):
+    def test_exactly_the_workflows_that_commit_to_main_have_completion_refresh_and_main_push_is_unfiltered(self):
         workflow = (ROOT / '.github/workflows/update-readme.yml').read_text()
         push = workflow.split('  push:\n', 1)[1].split('  workflow_dispatch:', 1)[0]
         self.assertIn('branches: [main]', push)
         self.assertNotIn('paths', push)
         self.assertIn('types: [completed]', workflow)
+        commits = re.compile(r'git push|--push\b|--commit-every')
+        listed = 0
         for path in (ROOT / '.github/workflows').glob('*.yml'):
             if path.name != 'update-readme.yml':
-                name = path.read_text().splitlines()[0].removeprefix('name: ')
-                self.assertIn('      - ' + name + '\n', workflow, f'{path.name} needs a README completion trigger')
+                text = path.read_text()
+                line = '      - ' + text.splitlines()[0].removeprefix('name: ') + '\n'
+                if commits.search(text):
+                    listed += 1
+                    self.assertIn(line, workflow, f'{path.name} commits to main and needs a README completion trigger')
+                else:
+                    self.assertNotIn(line, workflow, f'{path.name} never commits; a README run after it is wasted')
+        self.assertGreater(listed, 0)
         self.assertEqual(workflow.count('      - Update GitHub README'), 0)
 
-    def test_trusted_checkout_pre_push_tests_and_shared_non_cancelling_queue(self):
+    def test_trusted_checkout_light_refresh_and_shared_non_cancelling_queue(self):
         workflow = (ROOT / '.github/workflows/update-readme.yml').read_text()
         for expected in ('ref: main', 'contents: write', 'actions: read', 'head_repository.full_name == github.repository',
-                         "event != 'pull_request'", "event != 'pull_request_target'", 'make PY=python test'):
+                         "event != 'pull_request'", "event != 'pull_request_target'", 'tools/update_readme.py --publish'):
             self.assertIn(expected, workflow)
-        self.assertLess(workflow.index('make PY=python test'), workflow.index('tools/update_readme.py --publish'))
+        # the refresh is standard library only and Repository checks tests every push: nothing heavy runs here
+        for heavy in ('pip install', 'lfs pull', 'make ', 'unittest'):
+            self.assertNotIn(heavy, workflow)
         self.assertNotIn('download-artifact', workflow)
         for filename in ('update-readme.yml', 'build-candidate.yml', 'rebuild-delivery.yml'):
             text = (ROOT / '.github/workflows' / filename).read_text()

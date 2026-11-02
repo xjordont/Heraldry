@@ -4,8 +4,8 @@ on:
     branches: [main]
   workflow_dispatch:
   workflow_run:
+    # only workflows that commit to main: their commits use the workflow token, which starts no push run
     workflows:
-      - Repository checks
       - Build candidate
       - Rebuild verified delivery
       - Intake ChatGPT artwork
@@ -13,8 +13,6 @@ on:
       - Generate pen-and-ink artwork (retired Gemini fallback)
       - Generate heraldic marks
       - Generate art variants
-      - Build art packages
-      - Build Hero records
     types: [completed]
     branches: [main]
 permissions:
@@ -37,27 +35,18 @@ jobs:
         github.event.workflow_run.event != 'pull_request' &&
         github.event.workflow_run.event != 'pull_request_target'))
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
           filter: blob:none
+      # update_readme.py is standard library only, and its commit touches only README.md's generated
+      # blocks: Repository checks already tests every push, so no dependency install, LFS, or test run here.
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install locked dependencies
-        run: python -m pip install -r requirements.lock
-      - name: Fetch the Hero portraits the Hero card tests compile
-        # only the 24 portraits named in basic-heroes.json (about 8 MB), not the full art library
-        run: |
-          INC=$(python -c "import json; d=json.load(open('typst/heroes/basic-heroes.json')); h=d if isinstance(d, list) else d.get('heroes', d); print(','.join(sorted({'assets/art/ink/' + x['art'] + '.png' for x in h if x.get('art')})))")
-          git lfs pull --include="$INC" --exclude=""
-      - name: Check contracts and run required pre-push tests
-        run: |
-          python tools/preflight.py --baseline
-          make PY=python test
       - name: Refresh generated README blocks only
         env:
           GH_TOKEN: ${{ github.token }}
