@@ -1,4 +1,4 @@
-# Production state - RC527 source, main
+# Production state - RC528 source, main
 
 ## Back-cover thumb tab removed; GitHub workflows trimmed - 2026-11-02
 

@@ -1,4 +1,4 @@
-# Release status - RC527 source / RC527-build-41 delivery
+# Release status - RC528 source / RC527-build-41 delivery
 
 ## Digital-only from 2026-11-02 (no new release)
 
