@@ -112,6 +112,25 @@ class BalanceTails(unittest.TestCase):
         self.assertEqual(book.bare_heads, {"0:1"})
         self.assertIn("#bal([#heading[Bare]#keepcol[#pm(0, 2, \"s\")Body.]], [#keepcol[", out)
 
+    def test_bare_runin_label_travels_with_its_next_piece(self):
+        # candidate 20261102T174706Z, p. 446: "AI Steps" closed the flowing run, its content opened the tail
+        pieces = [({"id": "p", "type": "para", "src": [0, 0]}, "Intro."),
+                  ({"id": "l", "type": "para", "src": [1, 1]}, "#runin[#strong[AI Steps]]\n"),
+                  ({"id": "q", "type": "para", "src": [2, 2]}, "#keepcol[Target Priority.]"),
+                  ({"id": "r", "type": "para", "src": [3, 3]}, "#keepcol[More.]")]
+        book, out = self.emit(pieces, 1)
+        self.assertEqual(book.bare_heads, {"0:1"})
+        first_piece = out.split("#bal([", 1)[1].split("], [", 1)[0]
+        self.assertIn("AI Steps", first_piece)
+        self.assertIn("Target Priority.", first_piece)
+
+    def test_label_merged_with_its_list_stays_a_whole_piece(self):
+        pieces = [({"id": "p", "type": "para", "src": [0, 0]}, "Intro."),
+                  ({"id": "a", "type": "list", "src": [1, 1]}, "#runin[#strong[Attacks]]\n#list([Bite.])"),
+                  ({"id": "q", "type": "para", "src": [2, 2]}, "#keepcol[Body.]")]
+        book, _ = self.emit(pieces, 1)
+        self.assertEqual(book.bare_heads, set())
+
     def test_single_whole_unit_tail_stays_in_the_segment_flow(self):
         head = lambda i: {"id": f"h{i}", "type": "heading", "src": [i, i]}
         pieces = [(head(1), "#keepcol[#heading[One] Body one.]\n"),

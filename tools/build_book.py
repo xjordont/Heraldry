@@ -1224,6 +1224,12 @@ class Book:
                 parts.append(s)
             else:
                 parts.append(inject(s, f"#pm({sid}, {j}, \"s\")"))
+                if b.get("type") == "para" and s.lstrip().startswith("#runin["):
+                    # A bare bold run-in label ("AI Steps", "Special Rules:") introduces what follows, like a
+                    # bare heading: the balance split may not fall right after it, and in a balanced tail it
+                    # travels with the next piece. Otherwise it could close the flowing run while its content
+                    # opened the balanced tail, stranded at a column foot (candidate 20261102T174706Z, p. 446).
+                    self.bare_heads.add(f"{sid}:{j}")
         end = f"#place(pm({sid}, {len(pieces)}, \"e\"))"
         tp = []
         if tail is not None and tail < len(pieces):
