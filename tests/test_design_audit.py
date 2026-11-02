@@ -19,7 +19,9 @@ TOKENS = json.loads((ROOT / "config/design_tokens.json").read_text(encoding="utf
 
 
 def compile_fixture(source, substrate="cream"):
-    with tempfile.TemporaryDirectory(dir=ROOT / "build" if (ROOT / "build").is_dir() else None) as tmp:
+    # Typst refuses a file outside its root, and a fresh CI checkout has no build/ yet.
+    (ROOT / "build").mkdir(exist_ok=True)
+    with tempfile.TemporaryDirectory(dir=ROOT / "build") as tmp:
         path = Path(tmp) / "fixture.typ"
         path.write_text(source, encoding="utf-8")
         compiler = typst.Compiler(str(path), root=str(ROOT), font_paths=[str(ROOT / "fonts/static")],
