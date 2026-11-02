@@ -1,5 +1,9 @@
 # Production state - RC528 source, main
 
+## context7 MCP server added - 2026-11-02
+
+Owner request: add the context7 MCP server (`claude mcp add context7 -- npx -y @upstash/context7-mcp`). It is registered at project scope in `.mcp.json`, so every Claude Code session on this repository can look up current documentation for Typst, PyMuPDF, pypdf, and the other locked dependencies. No API key is configured (context7 works without one at a lower rate limit). No manuscript, art, layout, or build change.
+
 ## RC528 art bindings restored; release build requested - 2026-11-02
 
 Owner request: rebuild the latest PDF for release. Candidate 20261102T172918Z failed at its artwork step: 54 approved illustrations were still bound to their pre-RC528 catalogue spec, so the build would have left them out. In every one the only change was the quoted flavour text the RC528 humanizer pass reworded; the owner had said "assume no art is affected or needing regeneration" and approved re-binding all 54. Each now carries a `spec_rebinds` record and the RC528 spec, with the image unchanged; `tools/check_art.py` passes. `tools/build_request.py check` now catches a stale art binding itself, so this fails in seconds locally instead of after a CI run.
