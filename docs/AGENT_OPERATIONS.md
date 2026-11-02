@@ -19,6 +19,10 @@ All three clients use the same commands, catalogued in `config/agent_workflows.j
 | PDF review binding | `agent run visual-review -- bind --review FILE --push` |
 | Verify and package | `agent run verify`, `agent run package` |
 
+## Guards
+
+`tests/test_repository_hygiene.py` fails CI if any PDF, ZIP, key, or `.env` file is tracked, apart from the reference books listed in `references/sample_pdfs.json`. Claude Code also loads `.claude/settings.json`, which refuses direct edits to manuscript snapshots (`.claude/hooks/protect-snapshots.sh`) and refuses a `git push` that carries such files, or that would land while "Build candidate" or "Rebuild verified delivery" is queued or running (`.claude/hooks/git-guard.sh`). Other clients follow the same rules by hand. For Claude, `/build-release` (owner-only) runs the build card.
+
 ## Specialist roles
 
 Five role contracts live in `docs/agents/`: `publication-engineer`, `book-designer`, `publication-auditor`, `rules-illustrator`, and `mechanical-assistant`. Read one with `python tools/dev.py agent role NAME`; `.claude/agents/` loads the same files for Claude. Delegate to native workers when it helps, giving each its own files, or do the roles yourself in sequence.

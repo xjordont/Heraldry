@@ -1,5 +1,16 @@
 # Production state - RC528 source, main
 
+## Commit and push guards; `/build-release` skill - 2026-11-02
+
+Owner request: "Implement all the best fixes you can to streamline things," after today's release run had to be cancelled and re-dispatched because a push landed during it, and after the repository went public with the reference books tracked. Added:
+
+- `.claude/hooks/git-guard.sh` (Claude Code, before any `git push`): refuses a push whose outgoing commits add or change a PDF, ZIP, key, or `.env` file (except the reference books listed in `references/sample_pdfs.json`), and refuses a push while "Build candidate" or "Rebuild verified delivery" is queued or running on `main`. It asks the GitHub API, which needs no token for a public repository and uses `GH_TOKEN` when set; if GitHub can't be asked, it allows the push with a note. Override for one push: prefix it with `HERALDRY_ALLOW_PUSH_DURING_BUILD=1`. Bash, git, grep, and curl only, for Git Bash on Windows. Checked against eight sample cases, including a faked running release.
+- `tests/test_repository_hygiene.py` (CI, every client): fails if any such file is tracked, with the same exception. Confirmed to fail on a staged stray PDF.
+- `.claude/skills/build-release/SKILL.md`: owner-only `/build-release`, which runs `production/codex-build/CODEX_BUILD_CARD.md` with the lessons from today (no pushes during a run, how to recover when `main` moved, and checking that the shipped PDF hash equals the reviewed one).
+- `docs/AGENT_OPERATIONS.md` lists the guards.
+
+Tests: 42 of 43 modules pass locally; `test_hero_cards` fails in this cloud checkout only because the Hero portraits are LFS pointers here (CI fetches them). Open for the owner: the ten reference books under `references/private/pdfs/` are publicly downloadable while the repository is public.
+
 ## RC528 released as RC528-build-43 - 2026-11-02
 
 Candidate 20261102T191639Z (RC528-candidate-17) passed every automated check, and its all-page visual review was bound in `9bfe864`. The release run that review started (run 42) was cancelled: `.claude` tooling commits had been pushed to `main` after it began, so its publish step would have refused. A manual dispatch from `0175c36` (run 43) then released [RC528-build-43](https://github.com/xjordont/Heraldry/releases/tag/RC528-build-43): `RELEASE_RESULT.json` reads `RELEASED`, and the digital PDF's SHA-256 (`a12a95e3a12a...`) equals the reviewed candidate's. Assets: the digital PDF and its compact companion, player aids, basic Heroes, the blank Hero record, the specimen, the release ZIP, and `SHA256SUMS.txt`. `dist/` now describes RC528-build-43.

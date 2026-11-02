@@ -11,6 +11,16 @@
             "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/protect-snapshots.sh\""
           }
         ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/git-guard.sh\"",
+            "timeout": 30
+          }
+        ]
       }
     ]
   }
