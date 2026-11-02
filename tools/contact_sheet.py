@@ -20,7 +20,7 @@ def main():
     ap.add_argument("--dpi", type=float, default=28)
     ap.add_argument("--single", action="store_true", help="write one PNG per page instead of a sheet")
     ap.add_argument("--crop", help="x0,y0,x1,y1 in pt for detail crops")
-    ap.add_argument("--scale", type=float, default=1.0, help="centre scale for overscan stress (e.g. 1.03)")
+    ap.add_argument("--scale", type=float, default=1.0, help="centre scale (e.g. 1.03)")
     a = ap.parse_args()
     doc = pymupdf.open(a.pdf)
     if a.pages and "-" in a.pages:

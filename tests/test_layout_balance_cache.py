@@ -23,7 +23,7 @@ class LayoutBalanceHints(unittest.TestCase):
         self.binding = {
             "origin": "measurement-pdf-attachment", "warnings": [], "units": 2,
             "identity": {"schema": 1, "content_sha256": "b" * 64,
-                         "input_sha256": "c" * 64, "variant": "cream", "edition": "print",
+                         "input_sha256": "c" * 64, "variant": "cream", "edition": "interior",
                          "compiler": "0.15.0", "timestamp": 1792105845},
             "measurement_pdf_sha256": hashlib.sha256(self.pdf_bytes).hexdigest(),
             "measurements_sha256": "d" * 64,

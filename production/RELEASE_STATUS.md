@@ -1,5 +1,9 @@
 # Release status - RC527 source / RC527-build-41 delivery
 
+## Digital-only from 2026-11-02 (no new release)
+
+Owner decision: "Remove any workflow or reference to InDesign. Remove any workflow or reference to physical printing", choosing to go digital-only. From the next requested build, a release holds the digital edition (`Heraldry_RC###_digital.pdf`, with its covers), its compact screen companion, single-version player aids and Hero records, the specimen, and the release ZIP. The cream and white inkjet editions, the separate covers PDFs, the calibration sheet, the print instructions, the inkjet preflight, and the optional InDesign export are gone. The release review and its hash binding now cover the digital PDF. RC527-build-41 below is unchanged and still contains the earlier print files; the entries below record what each release held at the time.
+
 ## RC527-build-41 delivery - 2026-11-01
 
 RC527-build-41 is the verified delivery: the design-audit layout (full-width section heads, corrected heading hierarchy, opener sharing, run-on Appendix C, tailpieces sized to their gap, reference bands, role tags, quiet separators, tab halo, imprint lines, tokens, calibration samples, and the screen-companion PDF) on cream and white at 625 interior pages, the digital edition and its compact companion, covers, calibration, the player aids, the blank Hero record, and the Basic Mode Heroes, after an all-page visual review of candidate 20261101T194714Z. Three section-end tailpieces (2.1, 7.17, 8.4) are omitted by the no-text-moves rule and recorded as a follow-up. `dist/` and the visual ledgers describe this delivery. Physical print **NOT TESTED**.

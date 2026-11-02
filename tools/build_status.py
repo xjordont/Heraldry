@@ -63,7 +63,7 @@ def main():
     pdfs = {p.name: {"bytes": p.stat().st_size, "sha256": sha(p)} for p in sorted((ROOT / "dist").glob("Heraldry_*.pdf"))} if (ROOT / "dist").is_dir() else {}
     out = {"request_id": a.request_id, "result": result, "note": note, "failed_checks": failed, "source_commit": a.source_commit,
            "run_url": a.run_url, "release_url": a.release_url, "pdfs": pdfs,
-           "physical_print": "NOT TESTED", "next": "The assigned reviewer inspects every review image and binds the exact PDF; pushing production/qa/visual-review.json starts release." if result == "CANDIDATE_READY" else "Fix the failure; do not release."}
+           "next": "Look at every review image and bind the exact PDF; pushing production/qa/visual-review.json starts release." if result == "CANDIDATE_READY" else "Fix the failure; do not release."}
     (ROOT / "production/BUILD_STATUS.json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
     print(json.dumps({k: out[k] for k in ("request_id", "result", "note")}))
     return 0

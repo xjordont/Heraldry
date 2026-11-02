@@ -79,12 +79,12 @@ jobs:
         id: gate
         if: steps.build.outcome == 'success'
         run: python tools/build_status.py --check-candidate
-      - name: Page-review aids (contact sheets, detail pages, calibration)
+      - name: Page-review aids (contact sheets, detail pages, covers)
         id: aids
         if: steps.gate.outcome == 'success'
         run: |
           V=$(python tools/manuscript.py --version)
-          python tools/review_aids.py build --pdf dist/Heraldry_"$V"_inkjet-borderless.pdf --calibration dist/Heraldry_"$V"_inkjet-calibration.pdf --covers dist/Heraldry_"$V"_covers-front-back.pdf
+          python tools/review_aids.py build --pdf dist/Heraldry_"$V"_digital.pdf
       - name: Publish a pre-release
         id: release
         if: steps.gate.outcome == 'success' && steps.aids.outcome == 'success'
@@ -98,7 +98,7 @@ jobs:
           (cd dist && sha256sum Heraldry_"$VERSION"_*.pdf > SHA256SUMS-candidate.txt)
           gh release create "$TAG" dist/Heraldry_"$VERSION"_*.pdf dist/SHA256SUMS-candidate.txt --prerelease --target "$GITHUB_SHA" \
             --title "Heraldry $VERSION candidate (build $GITHUB_RUN_NUMBER, visual review pending)" \
-            --notes "Unattended candidate of $VERSION from $GITHUB_SHA. NOT a release: the all-page visual review is pending. Physical printing: NOT TESTED."
+            --notes "Unattended candidate of $VERSION from $GITHUB_SHA. NOT a release: the all-page visual review is pending."
           echo "url=https://github.com/$GITHUB_REPOSITORY/releases/tag/$TAG" >> "$GITHUB_OUTPUT"
       - name: Record the result on main
         if: always()

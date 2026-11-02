@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-"""Cover data (verbatim manuscript text), cover sheets, calibration sheet."""
+"""Cover data (verbatim manuscript text) for the digital edition's front and back covers: build/cover.json."""
 import argparse, json, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from content_anchors import resolve
-from manuscript import version, pdf_epoch
 from parse_source import plain  # noqa: E402
 
 
@@ -82,34 +81,10 @@ def cover_data():
     return data
 
 
-def compile_doc(src, out, variant):
-    import typst
-    compiler = typst.Compiler(str(src), root=str(ROOT), font_paths=[str(ROOT / "fonts/static")],
-                              ignore_system_fonts=True, sys_inputs={"substrate": variant})
-    _, warnings = compiler.compile_with_warnings(output=str(out), timestamp=pdf_epoch())
-    diagnostics = [str(warning) for warning in warnings]
-    if any(any(word in diagnostic.lower() for word in ("converg", "introspection", "stabiliz", "stabilis"))
-           for diagnostic in diagnostics):
-        raise ValueError("Supplementary PDF did not converge: " + "\n".join(diagnostics))
-    for diagnostic in diagnostics:
-        print(diagnostic, file=sys.stderr)
-
-
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--instructions-output', type=Path, default=ROOT / 'dist/PRINT_INSTRUCTIONS.md',
-                        help='local proofs can keep instructions outside the last-delivery directory')
-    args = parser.parse_args()
-    instructions = (ROOT / "docs/PRINT_INSTRUCTIONS_TEMPLATE.md").read_text().replace("{{VERSION}}", version())
-    args.instructions_output.parent.mkdir(parents=True, exist_ok=True)
-    args.instructions_output.write_text(instructions, encoding="utf-8", newline="\n")
+    argparse.ArgumentParser(description=__doc__).parse_args()
     d = cover_data()
     print(json.dumps({k: d[k] for k in ("title", "version")}))
-    out = ROOT / "build"
-    for v in ("cream", "white"):
-        compile_doc(ROOT / "typst/covers-main.typ", out / f"covers-{v}.pdf", v)
-    compile_doc(ROOT / "typst/calibration.typ", out / "calibration.pdf", "cream")
-    print("covers + calibration built")
 
 
 if __name__ == "__main__":

@@ -5,7 +5,7 @@ DIST := dist
 B := build
 
 .NOTPARALLEL:
-.PHONY: all deps doctor check status fonts parse figures book release-files print print-white digital covers calibration specimen verify package clean test art-packages
+.PHONY: all deps doctor check status fonts parse figures book release-files digital specimen verify package clean test art-packages
 all: release-files
 
 deps:
@@ -26,15 +26,10 @@ book: figures
 	$(PY) tools/build_book.py --variants-only
 release-files: book
 	mkdir -p $(DIST)
-	cp $(B)/book-cream.pdf $(DIST)/Heraldry_$(VERSION)_inkjet-borderless.pdf
-	cp $(B)/book-white.pdf $(DIST)/Heraldry_$(VERSION)_inkjet-borderless-white.pdf
 	cp $(B)/book-digital.pdf $(DIST)/Heraldry_$(VERSION)_digital.pdf
-	cp $(B)/covers-cream.pdf $(DIST)/Heraldry_$(VERSION)_covers-front-back.pdf
-	cp $(B)/covers-white.pdf $(DIST)/Heraldry_$(VERSION)_covers-front-back-white.pdf
-	cp $(B)/calibration.pdf $(DIST)/Heraldry_$(VERSION)_inkjet-calibration.pdf
 	$(PY) tools/digital_compact.py $(DIST)/Heraldry_$(VERSION)_digital.pdf $(DIST)/Heraldry_$(VERSION)_digital-compact.pdf --report production/qa/digital-compact.json
 	$(PY) tools/provenance.py
-print print-white digital covers calibration: release-files
+digital: release-files
 verify:
 	$(PY) tools/verify.py
 # Table specimen targets use the freshly verified table page map.

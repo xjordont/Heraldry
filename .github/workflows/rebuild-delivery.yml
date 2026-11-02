@@ -84,14 +84,13 @@ jobs:
           python assets/hero-record/sheet.py heroes --no-png --pdf "dist/Heraldry_${VERSION}_basic-heroes.pdf"
       - name: Player aids for the release
         # The ten double-sided player aids, current with the manuscript (production/aids/fidelity.json),
-        # on cream and on paper white. The renderer fails on any warning or any sheet that is not two sides.
+        # on the cream page colour. The renderer fails on any warning or any sheet that is not two sides.
         id: aids
         run: |
           VERSION=$(python tools/manuscript.py --version)
           python tools/aids_fidelity.py
-          python tools/render_aids.py --paper both
-          cp build/aids/all-cream.pdf "dist/Heraldry_${VERSION}_player-aids.pdf"
-          cp build/aids/all-white.pdf "dist/Heraldry_${VERSION}_player-aids-white.pdf"
+          python tools/render_aids.py
+          cp build/aids/all.pdf "dist/Heraldry_${VERSION}_player-aids.pdf"
       - name: Every placed raster at 300 ppi or more
         run: python tools/check_art_ppi.py dist/Heraldry_*.pdf
       - name: Publish the PDFs as a GitHub Release
@@ -109,9 +108,9 @@ jobs:
           TAG="$VERSION-build-$GITHUB_RUN_NUMBER"
           if [ "${GITHUB_RUN_ATTEMPT:-1}" != "1" ]; then TAG="$TAG-attempt-$GITHUB_RUN_ATTEMPT"; fi
           shopt -s nullglob
-          ASSETS=(dist/Heraldry_"$VERSION"_*.pdf dist/specimen/Heraldry_"$VERSION"_*.pdf dist/Heraldry_"$VERSION"_release.zip dist/SHA256SUMS.txt dist/PRINT_INSTRUCTIONS.md)
+          ASSETS=(dist/Heraldry_"$VERSION"_*.pdf dist/specimen/Heraldry_"$VERSION"_*.pdf dist/Heraldry_"$VERSION"_release.zip dist/SHA256SUMS.txt)
           gh release create "$TAG" "${ASSETS[@]}" --target "$GITHUB_SHA" --title "Heraldry $VERSION (build $GITHUB_RUN_NUMBER)" \
-            --notes "Verified build of $VERSION from $GITHUB_SHA. The verification ledgers on main are bound to these files' SHA-256 (dist/RELEASE.json). Physical printing: NOT TESTED until printed sheets are examined."
+            --notes "Verified build of $VERSION from $GITHUB_SHA. The verification ledgers on main are bound to these files' SHA-256 (dist/RELEASE.json)."
           python - "$TAG" "${ASSETS[@]}" <<'PY'
           import hashlib, json, os, sys
           from pathlib import Path

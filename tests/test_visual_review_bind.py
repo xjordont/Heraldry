@@ -30,14 +30,13 @@ class VisualReviewBinding(unittest.TestCase):
             return {"file": name, "sha256": hashlib.sha256(data).hexdigest(), **fields}
 
         self.manifest = {
-            "pdf": "Heraldry_fixture_inkjet-borderless.pdf", "pdf_sha256": "a" * 64, "pages": 3,
+            "pdf": "Heraldry_fixture_digital.pdf", "pdf_sha256": "a" * 64, "pages": 3,
             "sheets": [image("sheet-01.jpg", pages=[1, 2]), image("sheet-02.jpg", pages=[3, 3])],
             "details": [image("page-0001.jpg", page=1), image("page-0003.jpg", page=3)],
             "covers": [image("cover-front.jpg", role="front"), image("cover-back.jpg", role="back")],
-            "calibration": image("calibration.jpg"),
         }
         observation = "The full image was inspected for clipping, missing content, and overlapping text."
-        self.review = {"reviewer": "Fixture reviewer", "calibration": {"observations": observation}}
+        self.review = {"reviewer": "Fixture reviewer"}
         for kind in ("sheets", "details", "covers"):
             self.review[kind] = [{"file": image["file"], "observations": observation}
                                  for image in self.manifest[kind]]
@@ -62,10 +61,10 @@ class VisualReviewBinding(unittest.TestCase):
         self.assertEqual(self.ledger.read_bytes() if self.ledger.exists() else None, before)
 
     def review_entry(self, review, kind):
-        return review[kind] if kind == "calibration" else review[kind][0]
+        return review[kind][0]
 
     def test_blocks_major_findings_from_every_image_kind_without_writing_ledger(self):
-        for kind in ("sheets", "details", "covers", "calibration"):
+        for kind in ("sheets", "details", "covers"):
             with self.subTest(kind=kind):
                 review = copy.deepcopy(self.review)
                 self.review_entry(review, kind)["findings"] = [
@@ -74,7 +73,7 @@ class VisualReviewBinding(unittest.TestCase):
 
     def test_keeps_minor_notes_from_every_image_kind_and_records_real_coverage(self):
         notes = []
-        for kind in ("sheets", "details", "covers", "calibration"):
+        for kind in ("sheets", "details", "covers"):
             text = f"Accepted cosmetic note for {kind}."
             notes.append(text)
             self.review_entry(self.review, kind)["findings"] = [{"severity": "minor", "text": text}]
@@ -83,12 +82,12 @@ class VisualReviewBinding(unittest.TestCase):
         self.assertTrue(ledger["status"].startswith("PASS"))
         self.assertEqual(ledger["pages_reviewed"], [1, 2, 3])
         self.assertEqual(ledger["detailed_pages_viewed_at_100dpi"], [1, 3])
-        self.assertEqual(len(ledger["accepted_layout_notes"]), 4)
+        self.assertEqual(len(ledger["accepted_layout_notes"]), 3)
         for note in notes:
             self.assertTrue(any(note in recorded for recorded in ledger["accepted_layout_notes"]))
 
     def test_unknown_finding_severity_cannot_be_treated_as_minor(self):
-        for kind in ("sheets", "details", "covers", "calibration"):
+        for kind in ("sheets", "details", "covers"):
             for severity in ("critical", "MAJOR", None, []):
                 with self.subTest(kind=kind, severity=severity):
                     review = copy.deepcopy(self.review)

@@ -23,7 +23,7 @@ REQUIRED = ['MASTER_PROMPT.md', 'CLAUDE.md', 'AGENTS.md', 'README.md',
             'references/reference_manifest.json', 'references/README.md',
             'tools/render_reference_pages.py', 'config/production.json',
             '.claude/settings.json', 'production/STATE.md', 'config/design_tokens.json',
-            'docs/INKJET_PRINT.md', 'docs/VISUAL_QA.md', 'tools/verify_inkjet_pdf.py']
+            'docs/VISUAL_QA.md']
 
 
 def digest(path: Path) -> str:
@@ -81,24 +81,21 @@ def main() -> int:
         require(i['external_api_generation'] is False, 'Artwork generation belongs in ChatGPT Work')
         return 'Configuration reconciles; runtime model access requires live checks'
 
-    def design_print_contract():
+    def design_page_contract():
         c = json.loads((root / 'config/production.json').read_text(encoding='utf-8'))
         t = json.loads((root / 'config/design_tokens.json').read_text(encoding='utf-8'))
-        p = c['inkjet']
+        p = c['page']
         require(c['format']['orientation'] == 'portrait', 'Primary orientation changed')
-        require(p['borderless'] and not p['crop_marks'] and p['external_bleed_inches'] == 0, 'Borderless sheet contract changed')
-        require((p['page_width_pt'], p['page_height_pt']) == (612, 792), 'Inkjet page is not exact Letter')
+        require((p['width_pt'], p['height_pt']) == (612, 792), 'Page is not exact Letter')
         require((t['page']['width_pt'], t['page']['height_pt']) == (612, 792), 'Design token page differs')
         require(not p['landscape_pages_allowed'], 'Landscape fallback contradicts portrait edition')
-        require(p['essential_edge_safe_inches'] >= 0.375, 'Inkjet essential safe area too small')
+        require(p['essential_edge_safe_inches'] >= 0.375, 'Essential safe area too small')
         require(t['page']['essential_edge_safe_pt'] == p['essential_edge_safe_inches'] * 72, 'Safe zones differ')
-        require(1 < p['overscan_test_scale'] <= 1.1 and p['overscan_test_scale'] == t['page']['overscan_test_scale'], 'Overscan design test differs')
-        require(t['substrate']['cover_to_page_edge'] and t['substrate']['default'] in {'warm_cream', 'paper_white'}, 'Substrate contract invalid')
-        for key in ('warm_cream_hex', 'paper_white_hex'):
-            require(re.fullmatch(r'#[0-9A-Fa-f]{6}', t['substrate'][key]) is not None, 'Invalid substrate colour')
+        require(t['substrate']['cover_to_page_edge'] and t['substrate']['default'] == 'warm_cream', 'Page colour contract invalid')
+        require(re.fullmatch(r'#[0-9A-Fa-f]{6}', t['substrate']['warm_cream_hex']) is not None, 'Invalid page colour')
         require(t['type_pt']['minimum_essential'] == c['format']['minimum_essential_text_pt'], 'Type minimum differs')
         require(t['fonts']['max_families'] == 4 and not t['ornament']['ordinary_page_perimeter_frame'] and not t['ornament']['decorative_watermark'], 'Visual restraint contract changed')
-        return 'Portrait Letter borderless/cream tokens, safe area, and print checks reconcile'
+        return 'Portrait Letter page, cream tokens, and safe area reconcile'
 
     def agent_contracts():
         for name, effort in AGENTS.items():
@@ -149,7 +146,7 @@ def main() -> int:
     check('source_integrity', source_integrity)
     check('configuration', configuration)
     check('agent_contracts', agent_contracts)
-    check('design_print_contract', design_print_contract)
+    check('design_page_contract', design_page_contract)
     check('reference_manifest', references)
     check('script_syntax', scripts)
     if args.baseline:
@@ -162,9 +159,7 @@ def main() -> int:
               'runtime_observed': {'python': sys.version.split()[0], 'commands': commands, 'python_modules': modules},
               'external_inputs': {'agent_model_and_tool_access': 'VERIFY_IN_CURRENT_CLIENT',
                                   'cloud_network_and_dependency_provisioning': 'VERIFY_IN_CURRENT_CLIENT',
-                                  'original_illustrations': 'CHATGPT_WORK_GENERATED_MASTERS; INTEGRATE_AND_REVIEW',
-                                  'physical_inkjet_proof': 'NOT TESTED; DOES NOT BLOCK FILE COMPLETION',
-                                  'commercial_cover_wrap': 'NOT APPLICABLE UNLESS SEPARATELY REQUESTED'},
+                                  'original_illustrations': 'CHATGPT_WORK_GENERATED_MASTERS; INTEGRATE_AND_REVIEW'},
               'missing_tools_policy': 'Provision during the capability milestone; availability is not kit integrity'}
     if args.report:
         args.report.parent.mkdir(parents=True, exist_ok=True)

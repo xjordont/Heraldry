@@ -1,8 +1,8 @@
 # Player aids: design and art direction
 
-Status: direction proposed 2026-10-21 and Route A chosen the same day (section 10). All ten sheets, PA-1 to PA-10, were composed on 2026-10-21 from RC513 and brought current with RC522 on 2026-10-29 (section 13). Their wording was checked against the source by the author, not yet by an independent review. Every verified book release attaches the full set on cream and on paper white (`Heraldry_RC###_player-aids.pdf`, `-white`). Built PDFs are not committed. Physical print is **NOT TESTED**.
+Status: direction proposed 2026-10-21 and Route A chosen the same day (section 10). All ten sheets, PA-1 to PA-10, were composed on 2026-10-21 from RC513 and brought current with RC522 on 2026-10-29 (section 13). Their wording was checked against the source by the author, not yet by an independent review. Every verified book release attaches the full set as one digital PDF on the cream page colour (`Heraldry_RC###_player-aids.pdf`). Built PDFs are not committed.
 
-The player aids are a companion series of printable reference sheets for the table. They are not part of the manuscript, and they do not advance the RC number. Adding them, or a pointer to them, inside the book's appendices is a manuscript change that needs its own owner decision.
+The player aids are a companion series of digital reference sheets for the table. They are not part of the manuscript, and they do not advance the RC number. Adding them, or a pointer to them, inside the book's appendices is a manuscript change that needs its own owner decision.
 
 ## 1. The idea: field orders of a fallen realm
 
@@ -16,8 +16,8 @@ Everything below comes from the book's "Grim Heraldry" system (`docs/BOOK_DESIGN
 
 - **Marks:** the owner-approved armoury only (BOOK_DESIGN_PLAN section 12): chapter arms, the broken-castle logo, the engraved shield, the brush rule, the banner tag, the corner flourish, the lozenge, and the coin. No new emblems, skulls, occult glyphs, or clip-art icons.
 - **Type:** the book's four families. Grenze Gotisch for titles and panel heads only, never in all capitals and never for running text or numbers. Source Sans 3 for all diagram text, labels, and numbers. Source Serif 4 for any longer rules note. No flavour face: the sheets carry no flavour or editorial lines (owner, 2026-10-21).
-- **Ink:** black only, with the book's transparent tints: 5% for panels and decision fills, 9% for die columns, 24% for hairlines, 42% and 58% for quiet labels. Colour never carries meaning, so every sheet must read when photocopied in greyscale.
-- **Paper:** cream `#FCFAF5` and a white companion, identical in layout.
+- **Ink:** black only, with the book's transparent tints: 5% for panels and decision fills, 9% for die columns, 24% for hairlines, 42% and 58% for quiet labels. Colour never carries meaning, so every sheet must read in greyscale.
+- **Page colour:** the book's cream, `#FCFAF5`.
 - **Not used:** parchment texture, stains, burned edges, gradients, drop shadows, glows, coloured highlights, or icons that need a legend.
 
 ## 3. Sheet anatomy
@@ -26,11 +26,11 @@ US Letter portrait, 612 × 792 pt. The sheets are unbound, so the margins are sy
 
 | Zone | Specification |
 |---|---|
-| Margins | 36 pt (0.5 in) top and sides; 64 pt at the foot, which holds the footer. Essential content, footer text included, stays at least 27 pt (0.375 in) inside the trim (measured: 30.6 pt). Only art and decoration may reach the edge |
+| Margins | 36 pt (0.5 in) top and sides; 64 pt at the foot, which holds the footer. Essential content, footer text included, stays at least 27 pt (0.375 in) inside the page edge (measured: 30.6 pt). Only art and decoration may reach the edge |
 | Iron header band | Full frame width, about 48 pt tall, solid black. Left: the chapter's arms at 34 pt. Centre-left: the sheet title in Grenze Gotisch SemiBold 30 pt, reversed. Right: "PLAYER AID n" and the § references in Source Sans 3 Bold 9 pt, tracked, reversed. Under the band: a 1.5 pt gap, then a 0.6 pt rule (the book's thick-and-thin) |
 | Body | Two zones. The main diagram takes about 62% of the width on the left. Reference panels (tie-breakers, priorities, short tables) take the right column. A sheet whose subject is one table uses the full width |
 | Art | One approved ink vignette per side at most, inside the text frame at a lower corner (outer edge 4 pt in from the margin line), standing on the footer rule. No more than about 18% of the page area. Never behind or under text (owner 2026-10-21: art moved in from the margin) |
-| Footer | In the bottom margin, its text 30 pt from the trim: a thick-and-thin rule (1.6 pt, 2 pt gap, 0.4 pt). Left: the castle logo at 13 pt and "HERALDRY SKIRMISH · THE DYING LANDS". Right: "Rules RC<n> · front/back" in 42% grey |
+| Footer | In the bottom margin, its text 30 pt from the page edge: a thick-and-thin rule (1.6 pt, 2 pt gap, 0.4 pt). Left: the castle logo at 13 pt and "HERALDRY SKIRMISH · THE DYING LANDS". Right: "Rules RC<n> · front/back" in 42% grey |
 
 Each sheet is double-sided where it needs to be. The front carries the procedure players reach for most. The back carries the supporting lookups (for example wake-up triggers and Group order behind the Monster AI script). A one-sided sheet leaves its back blank rather than padding it.
 
@@ -73,7 +73,7 @@ Flowcharts are laid out by measured kit components (`flow`, `cycle`), never by h
 
 - **Ink style:** gritty old-school black-and-white ink, as in `docs/ART_DIRECTION.md`: bold brush contours, solid black shadow shapes, scratchy hatching and dry-brush, high contrast. No grey wash or stipple.
 - **Art source:** approved illustrations only (`production/art/SELECTIONS.json` status `approved`, ink files in `assets/art/ink/`). The vignette shows the sheet's subject: the threat for Monster AI, a melee for combat, the war camp or road for the campaign, a town building for the Town Phase. No art is generated for the sheets without an owner instruction, and the paid image API is not used.
-- **Black areas stay small and structural:** the header band, the step shields, tags, and the art's own shadows. No large black panels. They waste inkjet ink and cockle the paper.
+- **Black areas stay small and structural:** the header band, the step shields, tags, and the art's own shadows. No large black panels.
 - **Ornament restraint:** at most two ornamental marks per side outside the header and footer (for example one corner-flourished panel and one brush-ruled heading group). Nothing ornamental inside a diagram box or a table cell.
 
 ## 7. The series
@@ -102,11 +102,10 @@ Later sheets (Journey tables by Climate, Weather, hero creation and advancement,
 - Always use the Oxford comma (owner, 2026-10-21).
 - Capitalised game terms keep the manuscript's capitalisation. Canadian spelling, as in the manuscript.
 
-## 9. Print
+## 9. Delivery
 
-- Borderless US Letter, actual size, as in `docs/INKJET_PRINT.md`. A sheet must survive a non-borderless printer: nothing essential sits in the outer 27 pt.
-- Recommended stock: matte card (65 to 110 lb cover) or heavy matte paper. Sheet protectors with a dry-erase marker suit the trackers.
-- Every sheet is checked as a greyscale print and at 1.03 overscan, like the book.
+- One digital PDF, US Letter portrait at actual size, on the cream page colour. Nothing essential sits in the outer 27 pt.
+- Every sheet is checked in greyscale.
 
 ## 10. Production route
 
@@ -118,11 +117,11 @@ The direction is the same on either route. The difference is how faithfully and 
 
 **Route B, Canva.** Canva is a comfortable editing surface, but it cannot read the repository or check text against the manuscript. Before the first sheet:
 
-1. Export an asset kit: the arms, logo, and coin SVGs from `typst/templates/marks/cream/` and `white/`, plus SVG renders of the brush rule, engraved shields 1 to 12, the six-sided plaque, the ENDS and RULES NOTE tags, arrowheads, and corner flourishes. The brush rule and shields exist only as Typst code today.
+1. Export an asset kit: the arms, logo, and coin SVGs from `typst/templates/marks/cream/`, plus SVG renders of the brush rule, engraved shields 1 to 12, the six-sided plaque, the ENDS and RULES NOTE tags, arrowheads, and corner flourishes. The brush rule and shields exist only as Typst code today.
 2. Load the four font families. All are OFL; uploading custom fonts to Canva needs a paid Canva plan.
-3. Build one master Letter template with guides at 27 pt (safe) and 36 pt (margin), the header band, footer, and colour swatches: `#000000`, `#FCFAF5`, `#FFFFFF`, with tints made as black at 5%, 9%, 24%, 42%, and 58% opacity.
+3. Build one master Letter template with guides at 27 pt (safe) and 36 pt (margin), the header band, footer, and colour swatches: `#000000` and `#FCFAF5`, with tints made as black at 5%, 9%, 24%, 42%, and 58% opacity.
 4. Lock the master and duplicate it for each sheet. Do not use Canva's generated layouts, generated images, or stock graphics, because they would break both the style and the art rules.
-5. Export "PDF Print" at Letter size. Keep the wording ledger (section 8) outside Canva, and re-check every sheet by hand after a rules revision.
+5. Export a Letter-size PDF. Keep the wording ledger (section 8) outside Canva, and re-check every sheet by hand after a rules revision.
 
 The Canva account currently shows one brand kit; whether it is the Heraldry kit has not been checked.
 
@@ -140,17 +139,17 @@ The owner asked to try both routes on PA-2 Monster AI (front) and compare. Both 
 
 - The iron band, title, arms, § references, footer, and RC stamp are present and placed as in section 3.
 - Every shape follows the grammar in section 5; no colour, no new symbol.
-- Nothing essential lies within 27 pt of the trim; type is at least 9 pt for essential text; nothing is hyphenated.
+- Nothing essential lies within 27 pt of the page edge; type is at least 9 pt for essential text; nothing is hyphenated.
 - The flow can be traced with a finger without a crossing line.
 - At most one vignette, approved, not behind text, about 18% of the area or less.
 - The wording matches the manuscript sections in the fidelity record, reviewed against the current RC.
-- It reads correctly as a greyscale print and as a cream and a white print.
+- It reads correctly in greyscale and on the cream page.
 
 ## 12. The sheets
 
-Each sheet is `typst/aids/paNN.typ`, built on the shared kit `typst/aids/kit.typ`. The rules RC printed in each footer is read from `source/versions.json`.
+Each sheet is `typst/aids/paNN.typ`, built on the shared kit `typst/aids/kit.typ`. The rules RC shown in each footer is read from `source/versions.json`.
 
-- Render: `python tools/render_aids.py --paper both [--png]` writes each sheet and a combined 20-page set for cream and white paper to `build/aids/`, and fails any sheet that is not exactly two pages. Outputs are never committed.
+- Render: `python tools/render_aids.py [--png] [--only pa02 ...]` writes each sheet (`build/aids/paNN.pdf`) and the combined 20-page set (`build/aids/all.pdf`) on the cream page colour, and fails any sheet that is not exactly two pages. Outputs are never committed.
 - Fidelity: `python tools/aids_fidelity.py` compares each sheet's source sections with those recorded in `production/aids/fidelity.json` and lists the stale sheets after a manuscript revision. After re-reviewing a sheet's wording, run `record` with an honest `--reviewer` note. A hash only shows what was reviewed; it is not a review.
 - Art used (all approved inks): Minotaur, Fighter, Berserker, Ghoul, Night Hag, Ranger, Assassin, the Road, Hearthhold, and Greenmark, at most one per side.
 - Rulebook figures were tried and left out: below 504 pt wide their labels fall under the 9 pt minimum, and no side has room at full width.
@@ -163,4 +162,4 @@ Owner instruction: "Update all the player aids ... to ensure they are not only u
 
 - **Wording:** every RC513 to RC522 change in the sheets' sections was diffed and applied. PA-4 was rewritten for RC516's Injuries Table and Lingering Injuries, the RC517 rule that a Hero's activation ends at 0 HP, and the RC522 clarifications (Determined Resolve, Cleanse Affliction). PA-1 states the new activation ending, PA-5 the lingering-injury exclusion, PA-8 the record list, and PA-9 Cleanse Affliction. `production/aids/fidelity.json` is recorded against RC522.
 - **Typography:** the sheets follow the manuscript's style lock. Smart quotes are off, so apostrophes, quotes, and inch marks are straight (they were curly quotes and double primes). Markup no longer turns "-2" into a Unicode minus, and empty cells use "-", never an em dash.
-- **Release:** `Rebuild verified delivery` renders both papers, fails on any compiler warning or any sheet that is not exactly two sides, checks every placed raster at 300 ppi or more (`tools/check_art_ppi.py`), and attaches the sets. Each PDF carries the book's title and author metadata.
+- **Release:** `Rebuild verified delivery` renders the set, fails on any compiler warning or any sheet that is not exactly two sides, checks every placed raster at 300 ppi or more (`tools/check_art_ppi.py`), and attaches it. Each PDF carries the book's title and author metadata.

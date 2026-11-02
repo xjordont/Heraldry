@@ -23,7 +23,7 @@ CACHE_SCHEMA = 1
 CACHE_DIRECTORY = ".cache/layout-measurements"
 # Include the export options in addition to compilation_identity. A cache entry
 # can only stand in for this exact invocation, never for individual unit rows.
-COMPILER_INPUTS = {"substrate": "cream", "edition": "print", "index": "off"}
+COMPILER_INPUTS = {"substrate": "cream", "edition": "interior", "index": "off"}
 
 
 def canonical(value):
@@ -110,7 +110,7 @@ def measure(source, root=ROOT, *, use_cache=True):
     start = time.monotonic()
     source_bytes = source.read_bytes()
     expected = expected_unit_ids(source_bytes.decode("utf-8"))
-    identity = compilation_identity(root, "cream", "print", source)
+    identity = compilation_identity(root, "cream", "interior", source)
     try:
         source_location = source.resolve().relative_to(root.resolve()).as_posix()
     except ValueError:
@@ -122,7 +122,7 @@ def measure(source, root=ROOT, *, use_cache=True):
              "stored": False}
 
     def require_current():
-        if compilation_identity(root, "cream", "print", source) != identity or source.read_bytes() != source_bytes:
+        if compilation_identity(root, "cream", "interior", source) != identity or source.read_bytes() != source_bytes:
             raise ValueError("Publication inputs changed during unit measurement; rerun")
 
     if use_cache and entry.exists():

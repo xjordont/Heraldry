@@ -1,4 +1,4 @@
-// Front and back cover sheets (portrait US Letter, borderless background).
+// Front and back covers of the digital edition (portrait US Letter, full-page background).
 // Design v4: the castle logo, the opener-frame border and live type (owner-approved marks 2026-10-13).
 #import "heraldry.typ": *
 

@@ -16,10 +16,10 @@ SELECTORS = ("<tblpos>", "<ixpos>", "<hpos>", "<um-pos>")
 def compiled_positions(root=ROOT):
     path = root / "build/query.json"
     q = json.loads(path.read_text(encoding="utf-8"))
-    pdf = root / "dist" / f"Heraldry_{version(root)}_inkjet-borderless.pdf"
+    pdf = root / "build/book-cream.pdf"
     content = root / "typst/content.typ"
-    if q.get("substrate") != "cream" or q.get("edition") != "print":
-        raise ValueError("Positions are not from the compiled cream print edition")
+    if q.get("substrate") != "cream" or q.get("edition") != "interior":
+        raise ValueError("Positions are not from the compiled interior")
     if q.get("content_sha256") != hashlib.sha256(content.read_bytes()).hexdigest():
         raise ValueError("Stale Typst source hash; rebuild")
     if q.get("pdf_sha256") != hashlib.sha256(pdf.read_bytes()).hexdigest():

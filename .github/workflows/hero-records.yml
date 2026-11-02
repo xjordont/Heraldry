@@ -1,5 +1,5 @@
 name: Build Hero records
-# On request: the illustrated blank Hero record and the 24 populated Basic Mode Heroes as print PDFs.
+# On request: the illustrated blank Hero record and the 24 populated Basic Mode Heroes as PDFs.
 # They are build outputs and are never committed (docs/LARGE_FILES.md); they are published as a
 # pre-release tagged RC###-hero-records-N (a Release, not an Actions artifact, so the account's
 # artifact storage quota cannot block delivery). The build fails if the committed blank differs from the generator, or if any Hero's text
@@ -47,5 +47,5 @@ jobs:
           gh release create "$TAG" build/hero-records/basic-heroes.pdf build/hero-records/hero-record-blank.pdf \
             build/hero-records/SHA256SUMS.txt --prerelease --target "$GITHUB_SHA" \
             --title "Hero records from $VERSION (run $GITHUB_RUN_NUMBER)" \
-            --notes "Illustrated blank Hero record and the 24 populated Basic Mode Heroes from $VERSION at $GITHUB_SHA. Not a book release. Print at 100%, Letter, duplex, flip on the long edge. Owner approval and physical printing: NOT TESTED."
+            --notes "Illustrated blank Hero record and the 24 populated Basic Mode Heroes from $VERSION at $GITHUB_SHA. Not a book release; not yet approved by the owner."
           echo "Published https://github.com/$GITHUB_REPOSITORY/releases/tag/$TAG" >> "$GITHUB_STEP_SUMMARY"

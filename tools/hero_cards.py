@@ -5,9 +5,9 @@
 rewording anything: every rule line is kept as text runs (plain or bold). `check` (the default)
 re-extracts and proves two things: the JSON matches the current manuscript, and rebuilding the
 Markdown from the JSON reproduces every profile line for line. `render` compiles the blank hero
-sheet, the party ledger, and the 24 hero cards to ignored build/heroes/.
+sheet, the party ledger, and the 24 hero cards, on the book's cream page colour, to ignored build/heroes/.
 
-usage: python tools/hero_cards.py [check|extract|render] [--paper cream|white|both] [--png] [--only NAME ...]
+usage: python tools/hero_cards.py [check|extract|render] [--png] [--only NAME ...]
 """
 import argparse
 import hashlib
@@ -241,7 +241,7 @@ def card_problems(pdf_path, hero, reminders, notes=None):
     return problems
 
 
-def render(paper, png, only):
+def render(png, only):
     import typst
     from pypdf import PdfReader
     OUT.mkdir(parents=True, exist_ok=True)
@@ -256,8 +256,8 @@ def render(paper, png, only):
         if only and stem not in only and extra.get("hero") not in only:
             continue
         src = SRC / ("ledger.typ" if stem == "party-ledger" else "sheet.typ" if stem == "hero-sheet" else "cards.typ")
-        c = typst.Compiler(str(src), sys_inputs={"substrate": paper, **extra}, **kw)
-        out = OUT / f"{stem}-{paper}"
+        c = typst.Compiler(str(src), sys_inputs=extra, **kw)
+        out = OUT / stem
         for old in OUT.glob(f"{out.name}-*.png"):
             old.unlink()
         _, warnings = c.compile_with_warnings(output=str(out) + ".pdf")
@@ -280,13 +280,11 @@ def render(paper, png, only):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("action", nargs="?", choices=["check", "extract", "render"], default="check")
-    ap.add_argument("--paper", choices=["cream", "white", "both"], default="cream")
     ap.add_argument("--png", action="store_true")
     ap.add_argument("--only", nargs="*")
     a = ap.parse_args()
     if a.action == "render":
-        papers = ["cream", "white"] if a.paper == "both" else [a.paper]
-        sys.exit(1 if sum(render(p, a.png, a.only) for p in papers) else 0)
+        sys.exit(1 if render(a.png, a.only) else 0)
     rc, sha, lines = current_source()
     doc = build_doc(rc, sha, lines)
     text = dumps(doc)

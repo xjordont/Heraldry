@@ -4,10 +4,12 @@ from manuscript import ROOT, sha256, version, check as check_source
 
 INPUTS = ["config", "source", "editorial/patches.json", "editorial/how_to_use.json", "editorial/back_cover.json", "editorial/history", "tools", "typst", "fonts", "figures/src", "figures/out",
           "figures/manifest.json", "figures/placements.json", "assets", "production/art/SELECTIONS.json", "production/art/SPOT_CATALOG.json",
-          "Makefile", "requirements.lock", "docs/PRINT_INSTRUCTIONS_TEMPLATE.md"]
+          "Makefile", "requirements.lock"]
 # generated raw masters are bound by SHA256 in production/art/SELECTIONS.json; builds use only the ink derivatives
 EXCLUDE = {"__pycache__", "test", "private", "masters", "style"}
-SUFFIXES = ["digital", "digital-compact", "inkjet-borderless", "inkjet-borderless-white", "covers-front-back", "covers-front-back-white", "inkjet-calibration"]
+SUFFIXES = ["digital", "digital-compact"]
+# The interior composition that the structural checks read; never delivered.
+INTERIOR = "build/book-cream.pdf"
 
 
 def inputs(root=ROOT):
@@ -21,7 +23,9 @@ def inputs(root=ROOT):
 
 
 def pdfs(root=ROOT):
-    return {f"dist/Heraldry_{version(root)}_{s}.pdf": sha256(root / f"dist/Heraldry_{version(root)}_{s}.pdf") for s in SUFFIXES}
+    out = {f"dist/Heraldry_{version(root)}_{s}.pdf": sha256(root / f"dist/Heraldry_{version(root)}_{s}.pdf") for s in SUFFIXES}
+    out[INTERIOR] = sha256(root / INTERIOR)
+    return out
 
 
 def current(root=ROOT):

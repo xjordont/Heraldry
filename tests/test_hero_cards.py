@@ -43,7 +43,7 @@ class HeroLeaves(unittest.TestCase):
     def compile(self, name, stem, **inputs):
         out = Path(self.tmp.name) / f"{stem}.pdf"
         typst.Compiler(str(ROOT / "typst/heroes" / name), root=str(ROOT), font_paths=[str(ROOT / "fonts/static")],
-                       ignore_system_fonts=True, sys_inputs={"substrate": "cream", **inputs}).compile(output=str(out))
+                       ignore_system_fonts=True, sys_inputs=inputs).compile(output=str(out))
         return out
 
     def compile_pages(self, name, **inputs):

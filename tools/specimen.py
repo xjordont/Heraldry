@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Extract the representative stress specimen (production material, not the book)
-from the cream interior by locating actual-content anchors, plus overscan stress renders."""
+from the interior composition by locating actual-content anchors."""
 import json
 from pathlib import Path
 import pymupdf
@@ -69,19 +69,6 @@ def main():
     manifest = [{"purpose": p, "book_page_index": (i + 1 if i is not None else None),
                  "folio": (labels[i] if i is not None else None)} for p, i in picks]
     (ROOT / "dist/specimen/specimen_pages.json").write_text(json.dumps(manifest, indent=1))
-    # overscan stress renders (1.03 centred scale, clipped to sheet)
-    od = ROOT / "build/overscan"
-    od.mkdir(parents=True, exist_ok=True)
-    from PIL import Image
-    dpi = 80
-    for i in sorted(pages):
-        page = doc[i]
-        s = 1.03
-        pix = page.get_pixmap(matrix=pymupdf.Matrix(s * dpi / 72, s * dpi / 72), alpha=False)
-        im = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
-        W, H = round(page.rect.width * dpi / 72), round(page.rect.height * dpi / 72)
-        x0, y0 = (im.width - W) // 2, (im.height - H) // 2
-        im.crop((x0, y0, x0 + W, y0 + H)).save(od / f"overscan_p{i+1:03d}.png")
     print(json.dumps(manifest, indent=0))
 
 

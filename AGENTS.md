@@ -1,6 +1,6 @@
 # Agents working in this repository
 
-This repository builds the Heraldry Skirmish rulebook, player aids, and Hero records. Claude Code, Codex, and ChatGPT Work share these instructions and have equal authority: any of them may develop, generate, review, approve, integrate, and release work the owner has asked for. Keep going on authorized work without pausing for routine approvals.
+This repository builds the Heraldry Skirmish rulebook, player aids, and Hero records as digital PDFs. Claude Code, Codex, and ChatGPT Work share these instructions and have equal authority: any of them may develop, generate, review, approve, integrate, and release work the owner has asked for. Keep going on authorized work without pausing for routine approvals.
 
 ## Start here
 
@@ -15,7 +15,7 @@ This repository builds the Heraldry Skirmish rulebook, player aids, and Hero rec
 - **Git.** Commit straight to `main`: no branches, pull requests, force-pushes, or history rewrites. Sync with `git pull --ff-only origin main` and keep unrelated local changes. While a build is running, wait for it to finish before pushing, because its publish step aborts if `main` moves.
 - **Files.** Never commit built PDFs, ZIPs, or secrets. Deliveries go to GitHub Releases (`docs/LARGE_FILES.md`).
 - **Art.** Only approved art is placed in the book. Whoever generates an image may review and approve it once they have looked at it. Use the owner's ChatGPT plan, and no paid image API without the owner's say-so.
-- **Honesty.** Report what you actually did and checked. Physical print stays **NOT TESTED** until real sheets are examined.
+- **Honesty.** Report what you actually did and checked.
 - **Style.** Use the Oxford comma in everything you write: docs, player aids, commit messages, and replies.
 
 ## Checks
@@ -33,6 +33,5 @@ This repository builds the Heraldry Skirmish rulebook, player aids, and Hero rec
 | Layout | `docs/LAYOUT_WORKFLOW.md` |
 | Builds and releases | `docs/BUILD_AUTOMATION.md` |
 | Artwork | `production/art/codex/BATCH_CARD.md`, `production/art/skill/heraldry-classic-ink-art/SKILL.md`, `docs/ART_AUTOMATION.md` |
-| InDesign export (only when asked) | `docs/INDESIGN_EXPORT.md` |
 
 Add a short entry to the top of `production/STATE.md` at each milestone.

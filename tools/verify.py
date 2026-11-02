@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Release verification gate. Runs every deterministic check on the final files in dist/
-and writes production/qa/*.json plus production/qa/STATUS.json. Exits non-zero when a
+"""Release verification gate. Runs every deterministic check on the digital edition in dist/ and on the
+interior composition it is built from (build/book-cream.pdf, never delivered), and writes production/qa/*.json plus production/qa/STATUS.json. Exits non-zero when a
 mandatory check fails, so a failed build cannot be labelled an unconditional release."""
 import hashlib, json, subprocess, sys
 from pathlib import Path
@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 QA = ROOT / "production/qa"
 DIST = ROOT / "dist"
+INTERIOR = ROOT / "build/book-cream.pdf"
 PY = sys.executable
 from manuscript import version
 from provenance import check as check_provenance
@@ -71,12 +72,12 @@ def tquery(sel):
         # Compiler.query recompiles too. Require the serialized PDF attachment,
         # and compare its pages with the PDF's independent named destinations.
         q = load_json(ROOT / "build/query.json")
-        pdf = DIST / f"Heraldry_{version()}_inkjet-borderless.pdf"
+        pdf = INTERIOR
         source = ROOT / "typst/content.typ"
-        if not isinstance(q, dict) or q.get("substrate") != "cream" or q.get("edition") != "print":
-            raise RuntimeError("Missing cream-print compiler query; rebuild")
+        if not isinstance(q, dict) or q.get("substrate") != "cream" or q.get("edition") != "interior":
+            raise RuntimeError("Missing interior compiler query; rebuild")
         if q.get("pdf_sha256") != hashlib.sha256(pdf.read_bytes()).hexdigest():
-            raise RuntimeError("Compiler query is not bound to the exact cream PDF; rebuild")
+            raise RuntimeError("Compiler query is not bound to the exact interior PDF; rebuild")
         if q.get("content_sha256") != hashlib.sha256(source.read_bytes()).hexdigest():
             raise RuntimeError("Compiler query does not match the generated Typst source; rebuild")
         QUERY_CACHE = q.get("positions")
@@ -105,10 +106,9 @@ def marker_pair_errors(records):
 
 def main():
     QA.mkdir(parents=True, exist_ok=True)
-    cream = DIST / f"Heraldry_{version()}_inkjet-borderless.pdf"
-    white = DIST / f"Heraldry_{version()}_inkjet-borderless-white.pdf"
+    interior = INTERIOR
     digital = DIST / f"Heraldry_{version()}_digital.pdf"
-    ensure_build_artifacts(cream, white, digital)
+    ensure_build_artifacts(interior, digital)
     st = {}
     provenance = check_provenance()
     st["build_provenance"] = "PASS"
@@ -120,18 +120,15 @@ def main():
             src_ok = c.get("status", "FAIL")
             break
     st["source_integrity"] = src_ok
-    st["reconciliation"], _ = run(["tools/reconcile.py", str(cream), "--report", str(QA / "reconciliation.json")], QA / "reconciliation.json")
+    st["reconciliation"], _ = run(["tools/reconcile.py", str(interior), "--report", str(QA / "reconciliation.json")], QA / "reconciliation.json")
     st["reconciliation_digital"], _ = run(["tools/reconcile.py", str(digital), "--skip-covers", "--report", str(QA / "reconciliation-digital.json")], QA / "reconciliation-digital.json")
-    st["layout_detectors"], _ = layout_check(cream, QA / "layout.json")
+    st["layout_detectors"], _ = layout_check(interior, QA / "layout.json")
     tquery("<um-pos>")
     (ROOT / "build/positions.json").write_text(json.dumps(QUERY_CACHE))
-    st["page_map_accuracy"], _ = run(["tools/page_map_accuracy.py", "--positions", "build/positions.json", "--pdf", str(cream),
+    st["page_map_accuracy"], _ = run(["tools/page_map_accuracy.py", "--positions", "build/positions.json", "--pdf", str(interior),
                                       "--report", str(QA / "page-map-accuracy.json")], QA / "page-map-accuracy.json")
-    st["one_page_keeps"], _ = run(["tools/keep_audit.py", "--positions", "build/positions.json", "--pdf", str(cream),
+    st["one_page_keeps"], _ = run(["tools/keep_audit.py", "--positions", "build/positions.json", "--pdf", str(interior),
                                    "--report", str(QA / "keep-audit.json")], QA / "keep-audit.json")
-    st["inkjet_checker_cream"], _ = run(["tools/verify_inkjet_pdf.py", str(cream), "--report", str(QA / "inkjet-preflight.json")], QA / "inkjet-preflight.json")
-    st["inkjet_checker_white"], _ = run(["tools/verify_inkjet_pdf.py", str(white), "--report", str(QA / "inkjet-preflight-white.json")], QA / "inkjet-preflight-white.json")
-    st["print_supplementary"], _ = run(["tools/print_checks.py", "--cream", str(cream), "--white", str(white), "--report", str(QA / "print-checks.json")], QA / "print-checks.json")
     st["xref_audit"], _ = run(["tools/xref_audit.py"])
     xr = load_json(QA / "xref-audit.json") or {}
     st["xref_audit"] = "PASS" if st["xref_audit"] == "PASS" and not xr.get("unresolved") and not xr.get("duplicate_heading_numbers") else "FAIL"
@@ -139,12 +136,9 @@ def main():
     st["monster_references"], _ = run(["tools/rules_consistency.py"], QA / "rules-consistency.json")
 
     try:
+        from pypdf import PdfReader
         from visual_review_gate import check as check_visual
-        rec = load_json(QA / "reconciliation.json") or {}
-        if isinstance(rec, dict):
-            check_visual(cream, rec.get("pdf_pages", []))
-        else:
-            raise ValueError("visual review input missing")
+        check_visual(digital, len(PdfReader(digital).pages))
         st["visual_review_currency"] = "PASS"
     except (ValueError, OSError, TypeError) as exc:
         st["visual_review_currency"] = "FAIL"
@@ -225,8 +219,7 @@ def main():
     failed = [k for k in MANDATORY_CHECKS if st.get(k) != "PASS"]
     out = {"provenance": provenance, "checks": st, "mandatory_failed": failed, "release_gate": "PASS" if not failed else "FAIL",
            "not_covered_here": ["all-page visual inspection (production/qa/visual-review.json)",
-                               "diagram semantic correctness beyond the hash-bound review record (production/qa/figure-semantic-review.json)",
-                               "physical inkjet proof: NOT TESTED"]}
+                               "diagram semantic correctness beyond the hash-bound review record (production/qa/figure-semantic-review.json)"]}
     (QA / "STATUS.json").write_text(json.dumps(out, indent=1))
     print(json.dumps({k: v for k, v in out.items() if k != "provenance"}, indent=1))
     sys.exit(0 if not failed else 1)

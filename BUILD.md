@@ -4,8 +4,6 @@ Pipeline: active immutable Markdown snapshot â†’ markdown-it-py semantic model â
 
 ## Requirements
 
-The optional editable InDesign route is documented separately in [docs/INDESIGN_EXPORT.md](docs/INDESIGN_EXPORT.md). Run `python tools/dev.py indesign export --output <new-folder>` only when explicitly requested; no normal Make target or PDF build invokes it. Installed InDesign is required to compose and save native INDD. This does not replace the PDF release or its review gates.
-
 Python 3.12+ (tested here with 3.12.14; prior build used 3.13.16), pinned dependencies in `requirements.lock`, bundled OFL fonts. Use a virtual environment if required by your Python installation. System fonts are excluded. `make fonts` optionally regenerates the bundled static instances from the supplied variable fonts; ordinary builds use the already bundled static fonts.
 
 The full local check is `python tools/dev.py check`. It selects `.venv` if present, otherwise the owner's adjacent `art-venv` on Windows, otherwise the invoking Python. Override with `--python <executable>`. It checks dependencies, baseline contracts, prior snapshot history, whitespace, and `make test`, without building PDFs. `python tools/dev.py doctor` checks just the environment; `python tools/dev.py status` shows local Git and last-release state. Reports are written under ignored `build/checks/`, preserving production release evidence. `make doctor`, `make check`, and `make status` are equivalent convenience targets when Make/Python are already configured.
@@ -33,7 +31,7 @@ $heraldryPython = 'C:/Heraldry/art-venv/Scripts/python.exe'
 
 These commands install and verify dependencies and run tests. A publication build still requires an owner request; use `docs/BUILD_AUTOMATION.md` for the GitHub build/review/release chain.
 
-`make all` preflights, parses, indexes, builds covers/calibration, generates figures, balances the cream interior, compiles white/digital variants and exports the six current PDFs with input/PDF provenance. All targets run sequentially to avoid multiple writers and excess compiler memory. `make figures` first parses; it works from a clean checkout. `make verify` requires a current exported build and fails on crashes, missing reports, stale inputs or mandatory defects. New PDF bytes require a fresh visual review ledger before the currency gate passes; render and inspect, record coverage, then run `make verify package`. `make specimen` verifies first and uses the fresh table page map. `make package` verifies, creates the specimen and audits/checksums the archive.
+`make all` preflights, parses, indexes, writes the cover data, generates figures, balances the interior, compiles the digital edition, and exports it with its compact companion and input/PDF provenance. The interior composition (`build/book-cream.pdf`) is what the structural checks read; it is never delivered. All targets run sequentially to avoid multiple writers and excess compiler memory. `make figures` first parses; it works from a clean checkout. `make verify` requires a current exported build and fails on crashes, missing reports, stale inputs or mandatory defects. New PDF bytes require a fresh visual review ledger before the currency gate passes; render and inspect, record coverage, then run `make verify package`. `make specimen` verifies first and uses the fresh table page map. `make package` verifies, creates the specimen and audits/checksums the archive.
 
 ## Outputs
 
@@ -42,12 +40,7 @@ Replace `RC###` with the active version; filenames are generated automatically.
 | File in dist/ | Purpose |
 |---|---|
 | Heraldry_RC###_digital.pdf | Digital reading edition with covers, links and bookmarks |
-| Heraldry_RC###_digital-compact.pdf | The same digital edition with rasters downsampled to 150 ppi for screens (about a third of the size; never a print file) |
-| Heraldry_RC###_inkjet-borderless.pdf | Cream portrait Letter interior |
-| Heraldry_RC###_inkjet-borderless-white.pdf | White interior with matching pagination |
-| Heraldry_RC###_covers-front-back.pdf and -white.pdf | Separate front/back cover sheets |
-| Heraldry_RC###_inkjet-calibration.pdf | Diagnostic test sheet |
-| PRINT_INSTRUCTIONS.md | Device-aware printing instructions |
+| Heraldry_RC###_digital-compact.pdf | The same digital edition with rasters downsampled to 150 ppi for screens (about a third of the size) |
 | specimen/Heraldry_RC###_specimen.pdf | Production sample extracted from the verified interior |
 | Heraldry_RC###_release.zip, SHA256SUMS.txt | Rebuildable delivery archive and checksums |
 

@@ -17,7 +17,6 @@ All three clients use the same commands, catalogued in `config/agent_workflows.j
 | Layout | `agent run layout -- plan`, then `check`; a full proof only in requested layout or build work |
 | Candidate and release | `agent run build -- check`, only when the owner asks for a build |
 | PDF review binding | `agent run visual-review -- bind --review FILE --push` |
-| Editable InDesign | `agent run indesign -- --help`, only when asked |
 | Verify and package | `agent run verify`, `agent run package` |
 
 ## Specialist roles

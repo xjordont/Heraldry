@@ -85,10 +85,6 @@
       "script": "tools/visual_review_bind.py",
       "description": "Bind actual image observations to the exact candidate PDF."
     },
-    "indesign": {
-      "script": "tools/export_indesign.py",
-      "description": "Export or compose an explicitly requested editable InDesign project."
-    },
     "verify": {
       "script": "tools/verify.py",
       "description": "Verify an explicitly requested publication build."

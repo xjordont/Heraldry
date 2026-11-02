@@ -67,17 +67,14 @@ def stage_groups(out, *, checks_only=False):
         [task('index', 'tools/make_index.py', report=False)],
         [task('figures', 'figures/src/make_figures.py', report=False)],
         [task('figure-currency', 'tools/figure_review_gate.py')],
-        [task('extras', 'tools/build_extras.py', '--instructions-output', str(out / 'PRINT_INSTRUCTIONS.md'), report=False)],
+        [task('extras', 'tools/build_extras.py', report=False)],
         [task('cream', 'tools/build_book.py', '--passes', '8', report=False)],
         [task('keeps', 'tools/keep_audit.py', '--positions', 'build/book-cream.positions.json', '--pdf', 'build/book-cream.pdf'),
          task('page-map', 'tools/page_map_accuracy.py', '--positions', 'build/book-cream.positions.json', '--pdf', 'build/book-cream.pdf'),
          task('reconciliation', 'tools/reconcile.py', 'build/book-cream.pdf'),
-         task('layout', 'tools/layout_qa.py', 'build/book-cream.pdf', kind='layout'),
-         task('inkjet-cream', 'tools/verify_inkjet_pdf.py', 'build/book-cream.pdf')],
+         task('layout', 'tools/layout_qa.py', 'build/book-cream.pdf', kind='layout')],
         [task('variants', 'tools/build_book.py', '--variants-only', report=False)],
-        [task('companion-geometry', 'tools/print_checks.py', '--cream', 'build/book-cream.pdf', '--white', 'build/book-white.pdf'),
-         task('digital-reconciliation', 'tools/reconcile.py', 'build/book-digital.pdf', '--skip-covers'),
-         task('inkjet-white', 'tools/verify_inkjet_pdf.py', 'build/book-white.pdf')],
+        [task('digital-reconciliation', 'tools/reconcile.py', 'build/book-digital.pdf', '--skip-covers')],
     ]
     return checks
 
@@ -144,8 +141,7 @@ def run_local(mode, root=ROOT):
     out = root / 'build/checks/layout-runs' / suffix
     out.mkdir(parents=True)
     receipt = {'schema': 1, 'mode': mode, 'status': 'RUNNING', 'source': source,
-               'stages': [], 'limits': ['Local proof only; no publication or visual approval',
-                                        'Physical print NOT TESTED']}
+               'stages': [], 'limits': ['Local proof only; no publication or visual approval']}
     lock = root / 'build/layout-workflow.lock'
     acquired = False
     started = time.monotonic()
@@ -165,25 +161,20 @@ def run_local(mode, root=ROOT):
             frozen = fingerprint(root)
             receipt.update(source=source, frozen_inputs_sha256=frozen)
             execute_groups(groups[first_compile:first_compile + 1], root, out, receipt, frozen=frozen)
-            proof_hashes = {name: digest(root / 'build' / name)
-                            for name in ('book-cream.pdf', 'covers-cream.pdf', 'calibration.pdf')}
+            interior_hash = digest(root / 'build/book-cream.pdf')
             execute_groups(groups[first_compile + 1:], root, out, receipt, frozen=frozen)
-            # Preserve one exact review substrate, not every unsuccessful variant.
+            if digest(root / 'build/book-cream.pdf') != interior_hash:
+                raise ValueError('Proof PDF changed during validation: book-cream.pdf')
+            # Preserve the exact interior and the digital edition the review images are made from.
             receipt['artifacts'] = {}
-            for name in ('book-cream.pdf', 'covers-cream.pdf', 'calibration.pdf'):
-                original = root / 'build' / name
-                if digest(original) != proof_hashes[name]:
-                    raise ValueError('Proof PDF changed during validation: ' + name)
-                shutil.copyfile(original, out / name)
+            for name in ('book-cream.pdf', 'book-digital.pdf'):
+                shutil.copyfile(root / 'build' / name, out / name)
                 receipt['artifacts'][name] = digest(out / name)
-            for name in ('book-white.pdf', 'book-digital.pdf'):
-                receipt['artifacts'][name] = digest(root / 'build' / name)
-            review = Stage('review-images', ('tools/review_aids.py', 'build', '--pdf', str(out / 'book-cream.pdf'),
-                '--covers', str(out / 'covers-cream.pdf'), '--calibration', str(out / 'calibration.pdf'),
+            review = Stage('review-images', ('tools/review_aids.py', 'build', '--pdf', str(out / 'book-digital.pdf'),
                 '--out', str(out / 'review')))
             execute_groups([[review]], root, out, receipt, frozen=frozen)
             manifest = json.loads((out / 'review/manifest.json').read_text(encoding='utf-8'))
-            if manifest.get('pdf_sha256') != receipt['artifacts']['book-cream.pdf']:
+            if manifest.get('pdf_sha256') != receipt['artifacts']['book-digital.pdf']:
                 raise ValueError('Review manifest does not match the archived proof')
             receipt['measurement'] = json.loads((root / 'build/unit_measure.binding.json').read_text(encoding='utf-8'))
             receipt['composition'] = json.loads((root / 'build/layout-build.json').read_text(encoding='utf-8'))

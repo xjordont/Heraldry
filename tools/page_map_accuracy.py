@@ -91,7 +91,7 @@ def main():
     pdf = Path(args.pdf)
     meta = json.loads((ROOT / "build/query.json").read_text())
     content = ROOT / "typst/content.typ"
-    if meta.get("substrate") != "cream" or meta.get("edition") != "print":
+    if meta.get("substrate") != "cream" or meta.get("edition") != "interior":
         raise ValueError("Position query was not compiled as the cream print edition")
     if meta.get("pdf_sha256") != hashlib.sha256(pdf.read_bytes()).hexdigest():
         raise ValueError("Position query belongs to a different PDF; rebuild")

@@ -25,10 +25,10 @@ class CompileBoundQuery(unittest.TestCase):
             (root / "typst").mkdir()
             (root / "dist").mkdir()
             source = root / "typst/content.typ"
-            pdf = root / "dist/Heraldry_RC999_inkjet-borderless.pdf"
+            pdf = root / "build/book-cream.pdf"
             source.write_text("Typst fixture", encoding="utf-8")
             pdf.write_bytes(b"PDF fixture bytes")
-            payload = {"substrate": "cream", "edition": "print",
+            payload = {"substrate": "cream", "edition": "interior",
                        "content_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
                        "pdf_sha256": hashlib.sha256(pdf.read_bytes()).hexdigest(),
                        "positions": {k: [] for k in query_typst.SELECTORS}}

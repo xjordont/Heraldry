@@ -5,7 +5,7 @@ Owner approval 2026-10-13 ("Approved. Make sure they are big enough to see."); t
 production/art/marks/APPROVED.json. For each chapter arm, the charge inside the shield is lifted out
 of its candidate and set inside one shared shield (the rim of the template candidate), so all fifteen
 match exactly. The result is traced to vector paths (potrace; `pip install potracer`) and written as
-cream and white SVG variants to typst/templates/marks/<substrate>/arms-NN.svg; the logo goes to
+SVGs on the cream page colour to typst/templates/marks/cream/arms-NN.svg; the logo goes to
 logo.svg. The paper colour fills the shield field, black ink is everything else. A contact sheet goes
 to build/marks/. Deterministic for a given set of inputs.
 
@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 APPROVED = ROOT / "production/art/marks/APPROVED.json"
 OUT = ROOT / "typst/templates/marks"
 SHEET = ROOT / "build/marks"
-PAPER = {"cream": "#FCFAF5", "white": "#FFFFFF"}
+PAPER = {"cream": "#FCFAF5"}
 
 
 def binary(path):

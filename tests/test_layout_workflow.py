@@ -22,22 +22,13 @@ class LocalWorkflow(unittest.TestCase):
     def tearDown(self):
         self.tmp.cleanup()
 
-    def test_local_extras_preserve_last_delivery_instructions(self):
-        (self.root / 'docs').mkdir()
-        (self.root / 'docs/PRINT_INSTRUCTIONS_TEMPLATE.md').write_text('Proof {{VERSION}}')
-        (self.root / 'dist').mkdir()
-        delivered = self.root / 'dist/PRINT_INSTRUCTIONS.md'
-        delivered.write_text('Historical delivery')
-        proof = self.root / 'proof/PRINT_INSTRUCTIONS.md'
+    def test_extras_write_only_the_cover_data(self):
         with patch.object(build_extras, 'ROOT', self.root), \
-             patch.object(build_extras, 'version', return_value='RC-test'), \
-             patch.object(build_extras, 'cover_data', return_value={'title': 'Test', 'version': 'RC-test'}), \
-             patch.object(build_extras, 'compile_doc') as compile_doc, \
-             patch.object(sys, 'argv', ['build_extras.py', '--instructions-output', str(proof)]):
+             patch.object(build_extras, 'cover_data', return_value={'title': 'Test', 'version': 'RC-test'}) as cover_data, \
+             patch.object(sys, 'argv', ['build_extras.py']):
             build_extras.main()
-        self.assertEqual(proof.read_text(), 'Proof RC-test')
-        self.assertEqual(delivered.read_text(), 'Historical delivery')
-        self.assertEqual(compile_doc.call_count, 3)
+        cover_data.assert_called_once_with()
+        self.assertEqual(list(self.root.rglob('*')), [])
 
     def test_existing_lock_is_preserved_and_no_stages_run(self):
         (self.root / 'build').mkdir()
@@ -132,11 +123,10 @@ class LocalWorkflow(unittest.TestCase):
         batch_of = {s.name:i for i,g in enumerate(groups) for s in g}
         self.assertLess(batch_of['parse'], batch_of['cream'])
         self.assertLess(batch_of['figure-currency'], batch_of['cream'])
-        for name in ('keeps','page-map','reconciliation','layout','inkjet-cream'):
+        for name in ('keeps','page-map','reconciliation','layout'):
             self.assertLess(batch_of[name], batch_of['variants'])
-        self.assertLess(batch_of['variants'], batch_of['companion-geometry'])
-        extras = next(s for g in groups for s in g if s.name == 'extras')
-        self.assertIn(str(self.root / 'PRINT_INSTRUCTIONS.md'), extras.args)
+        self.assertLess(batch_of['variants'], batch_of['digital-reconciliation'])
+        self.assertLess(batch_of['extras'], batch_of['cream'])
         self.assertNotIn('tools/make_fonts.py', [s.args[0] for g in groups for s in g])
 
     def test_developer_front_door_plan_is_read_only(self):

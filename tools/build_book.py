@@ -1258,7 +1258,7 @@ class Book:
                 self.out.append("#bal(" + ", ".join("[" + x + "]" for x in tp) + ")\n")
 
 
-def compile_book(variant="cream", out=None, query=True, edition="print"):
+def compile_book(variant="cream", out=None, query=True, edition="interior"):
     import subprocess
     out = out or BUILD / f"book-{variant}.pdf"
     qf = BUILD / "query.json"
@@ -1443,11 +1443,11 @@ def main():
     ap.add_argument("--no-balance", action="store_true")
     ap.add_argument("--no-measurement-cache", action="store_true",
                     help="bypass measurement reuse and persisted balance hints")
-    ap.add_argument("--variants-only", action="store_true", help="compile white + digital from the current content.typ")
+    ap.add_argument("--variants-only", action="store_true", help="compile the digital edition from the current content.typ")
     ap.add_argument("--allow-nonconverged", action="store_true", help="diagnostic output only; final publication requires convergence")
     a = ap.parse_args()
     if a.variants_only:
-        for v, ed, name in (("white", "print", "book-white.pdf"), ("cream", "digital", "book-digital.pdf")):
+        for v, ed, name in (("cream", "digital", "book-digital.pdf"),):
             out, dt, _ = compile_book(v, BUILD / name, query=False, edition=ed)
             print(f"{name}: {dt:.1f}s")
         return
