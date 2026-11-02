@@ -1,5 +1,9 @@
 # Production state - RC528 source, main
 
+## Reference books: owner holds the rights - 2026-11-02
+
+Owner: "I own the rights to all those PDFs so stop worrying about it." Public access to the reference books is not a concern, so the GitHub Support request and the tag move listed in the purge entry below are optional, not required. The books stay local-only in `references/private/pdfs/` as set up by the purge; returning them to the repository would be an owner decision.
+
 ## Reference PDFs purged from Git history - 2026-11-02
 
 Owner request: "purge the reference PDFs from history," after the repository was made public with the ten reference books (and, deeper in history, an earlier mistaken 22-book set) stored through Git LFS. `git filter-repo` removed `references/private/` from all 1,716 commits on `main` and the eight release and candidate tags, and replaced the 29 full LFS IDs (SHA-256) wherever they appeared with their first 16 hex characters, so the stored files can no longer be requested by ID. Every commit ID changed; the tags were moved to the rewritten commits, and their GitHub Releases are unchanged. Commit IDs recorded in older ledgers and in this log refer to the old history. A bundle of the old history was kept in the cleaning session's scratch space only.
