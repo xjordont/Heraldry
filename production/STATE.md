@@ -1,5 +1,9 @@
 # Production state - RC528 source, main
 
+## RC528 released as RC528-build-43 - 2026-11-02
+
+Candidate 20261102T191639Z (RC528-candidate-17) passed every automated check, and its all-page visual review was bound in `9bfe864`. The release run that review started (run 42) was cancelled: `.claude` tooling commits had been pushed to `main` after it began, so its publish step would have refused. A manual dispatch from `0175c36` (run 43) then released [RC528-build-43](https://github.com/xjordont/Heraldry/releases/tag/RC528-build-43): `RELEASE_RESULT.json` reads `RELEASED`, and the digital PDF's SHA-256 (`a12a95e3a12a...`) equals the reviewed candidate's. Assets: the digital PDF and its compact companion, player aids, basic Heroes, the blank Hero record, the specimen, the release ZIP, and `SHA256SUMS.txt`. `dist/` now describes RC528-build-43.
+
 ## Manuscript snapshot protection hook - 2026-11-02
 
 Owner request: add a Claude Code hook that enforces the immutable-snapshot rule. `.claude/settings.json` now runs `.claude/hooks/protect-snapshots.sh` before every Edit, Write, MultiEdit, and NotebookEdit; it refuses any `source/Heraldry_RC*.md` path (POSIX, Windows, or relative) and points to `tools/revise_manuscript.py` and `python tools/dev.py manuscript`, which run through Bash and are unaffected. It uses only bash and grep, so it also runs under Git Bash on Windows. Checked against six sample inputs (three snapshot paths blocked; `source/versions.json`, a proposal, and a lookalike directory allowed); preflight and the agent-workflow, package, and developer-tools tests pass. A shell command such as `sed -i` on a snapshot is not intercepted; `tools/check_history.py` still catches any changed snapshot.
