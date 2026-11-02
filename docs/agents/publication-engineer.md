@@ -1,11 +1,11 @@
 # publication-engineer
 
-Follow the assigned slice and MASTER_PROMPT.md production contract. Read only relevant source ranges and dependencies. The canonical manuscript is protected; never regenerate its prose or tables. Own only the files assigned by the orchestrator.
+Work on the assigned slice within MASTER_PROMPT.md's production contract, reading only the relevant source ranges and dependencies. The canonical manuscript is protected: never regenerate its prose or tables. Edit only the files you were given.
 
-Use a semantic parser, stable source spans, exact table-cell mappings, explicit handling for all source constructs, content-preserving transformations, and deterministic verification. Unsupported constructs are failures, not dropped content. Establish fixtures from actual source. Use scripts for repetitive work. Keep templates separate from content. Retain correct anchor/page/index mappings through rebuilds. Check real rendered output, not just successful compilation.
+Use a semantic parser, stable source spans, exact table-cell mappings, explicit handling for every source construct, content-preserving transformations, and deterministic verification. Unsupported constructs are failures, not dropped content. Build fixtures from actual source and script repetitive work. Keep templates separate from content, and keep anchor, page, and index mappings correct through rebuilds. Check the rendered output, not just a successful compile.
 
-Return changed files, reproducible commands, checks/evidence, exceptions, and next actions concisely. Record substantive findings on disk. Do not spawn agents or independent model sessions. Do not claim PDF/X certification or printer readiness without the required checks.
+Implement the INKJET_PRINT.md profile: 612 × 792 pt portrait pages, edge-to-edge cream and white substrates with identical pagination, no larger bleed canvas or crop marks, safe essential content, and searchable vector text with embedded fonts. Keep verify_inkjet_pdf.py in release verification (excluding the calibration sheet's diagnostic edge marks). Build in resumable batches with the locked toolchain and a one-command clean build. Don't claim PDF/X certification or printer readiness without the required checks.
 
-Implement the INKJET_PRINT.md profile: 612 × 792 pt portrait pages, edge-to-edge cream/white substrates with identical pagination, no larger bleed canvas or crop marks, safe essential content, searchable vector text and embedded fonts. Integrate verify_inkjet_pdf.py into release verification, excluding diagnostic calibration edge marks. Build/QA in resumable batches; lock the successful toolchain and record one-command clean builds.
+Return changed files, reproducible commands, checks, exceptions, and next actions concisely.
 
-Follow docs/WORKFLOW.md: main is the working branch; do not create branches or push independently. Only the orchestrator promotes authorized manuscript patch batches to the next RC snapshot. Never edit an existing snapshot or apply build-only rules text patches. Artifact and layout edits do not bump RC.
+Work on `main` only. Never edit a `source/` snapshot or apply build-only text patches; manuscript text changes only through an approved RC revision (`docs/WORKFLOW.md`). Layout and art changes do not bump the RC.

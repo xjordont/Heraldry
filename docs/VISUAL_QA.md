@@ -24,34 +24,14 @@ The warm substrate, serif prose, compact sans-serif data, sparse display heading
 | Diagrams | Exact source semantics; visible line types/labels at final size; key geometry stays safe | Atmospheric hatching that obscures measurements, bitmap text, ambiguous arrowheads, false scale, colour-only party/terrain distinctions |
 | Inkjet output | Exact portrait Letter pages; text safe zone; cropped 1.03-scale stress review | Landscape fallback, larger bleed sheet, crop marks, edge-hugging folios, forced grayscale losing the cream, untested device claims |
 
-## Specimen decision gate
+## Specimen
 
-Build the 8–12-page actual-content specimen specified in DESIGN_SPEC.md. Include one chapter opener and enough ordinary, dense and continuation pages to expose monotony, weak hierarchy and table failure. Do not use marketing mockups or invented rules to pass this gate. A two-column page must read down the left column then down the right; full-width components should have an obvious sequence.
+The 8–12-page actual-content specimen in DESIGN_SPEC.md (a chapter opener and enough ordinary, dense, and continuation pages to expose monotony, weak hierarchy, and table failure) is the place to try design changes before bulk layout. Use real content, never marketing mockups or invented rules. A two-column page reads down the left column, then down the right; full-width components need an obvious sequence. Record frozen token changes and the reference lessons behind them in `production/design-decisions.md`. Assess hierarchy, flow, table craft, originality and coherence, art construction, and print behaviour; repair a failed essential component before bulk layout, with bounded repairs rather than repeated wholesale redesigns.
 
-Record in `production/design-decisions.md`:
+Never fill a missing illustration with repeated generic silhouettes, decorative clip art, fake signatures, or prompts rendered as reader-facing placeholders.
 
-1. The frozen substrate/font/spacing/rule tokens and any justified optical changes from `config/design_tokens.json`.
-2. Reference lesson, exact PDF viewer page, abstract principle, original Heraldry implementation, and viewed specimen filename/page.
-3. Findings by component, repairs, and evidence after rebuild. Keep visual-review status separate from successful compilation.
-4. Final-size image/diagram crops and left/right normal-page evidence, plus the 1.03-scale cropped stress images.
-5. Whether available artwork passes the anchor or the clean art-light route is being used.
+## Pagination review
 
-The independent auditor reviews without relying on the designer's assertions. Assess hierarchy, flow, table craft, originality/coherence, art construction, and print behaviour. Mark each PASS/FAIL with evidence; numerical aesthetic scores are optional and cannot override a defect. Any failed essential component receives repair before bulk layout. Bounded repairs should preserve a coherent complete book rather than trigger repeated wholesale redesigns.
+Apply DESIGN_REFINEMENT.md. Review every major-section and scenario start, short fit-capable table, and table or entry continuation. Headings need meaningful following content; short subsections move together where they fit. Tables need an attached caption, intact rows, repeated headers, and an identifying continuation. Inspect wide components with the prose above and below them and reject avoidable isolated rows, detached setups or maps, and unexplained lone-column voids. Genuinely over-height tables and deliberate section-start whitespace are not failures just because they span pages or leave space.
 
-## Art-light acceptance
-
-The twelve atmospheric masters are now supplied. The earlier art-light review is historical; the requested illustrated edition needs final-size placement review on cream and white. Do not fill missing illustrations with repeated generic silhouettes, decorative clip art, fake signatures, or prompts rendered as reader-facing placeholders. Keep the missing atmospheric suite visibly incomplete in the production report, while finishing the rest of the publication.
-
-## Owner-requested refinement, 2026-10-07
-
-Apply DESIGN_REFINEMENT.md before treating the requested visual iteration as complete. An art-light/geometry PASS remains a scoped historical result; it does not satisfy the owner's request for a less plain illustrated product.
-
-Review every major-section/scenario start, short fit-capable table and table/entry continuation. Headings need meaningful following content; short subsections should move together where they fit. Tables require attached caption, intact rows, repeat headers and identifying continuation. Inspect wide components with the prose above/below them and reject avoidable isolated rows, detached setup/maps and unexplained lone-column voids. Keep detailed evidence for T004 and T327 and the Whispering Grove scenario. Do not classify genuinely over-height tables or deliberate section-start whitespace as failures simply because they span pages or leave space.
-
-The requested design/pagination repairs are PENDING until implemented, rendered, reconciled and reviewed. Existing detector reports do not certify those new requirements. Record automated geometry, aesthetic review, artwork completeness and physical proof as separate statuses.
-
-## Mandatory short-unit page audit
-
-**Mandatory one-page keeps:** Every complete scenario, section/subsection, table, example, procedure, stat profile or reference entry that fits within one empty usable page at its approved layout width must occupy exactly one physical page. Include its heading, all nested content belonging to that unit, caption, legend/deployment diagram and necessary notes in the measured group. If insufficient space remains, move the entire unit to the next page; do not split it across pages merely to fill space or balance columns. A column limitation is not proof that a unit cannot fit a page: use the approved full-width layout where appropriate. Preserve legible type, spacing and all content.
-
-The next release requires the exhaustive hash-bound short-unit audit defined in DESIGN_REFINEMENT.md. Check every applicable unit, not a sample; fail on any fit-capable source ID whose rendered content spans multiple physical pages, or missing coverage. Include headings, associated diagrams, legends, captions and interpretive notes. Review near-page-height cases and nested groups; distinguish documented genuinely over-height continuations from avoidable splits. This requirement is pending implementation/review and is not certified by the older draft's geometry PASS.
+**One-page keeps:** every complete scenario, section or subsection, table, example, procedure, stat profile, or reference entry that fits within one empty usable page at its approved width occupies exactly one physical page, with its heading, nested content, caption, legend or deployment diagram, and necessary notes. If the remaining space is insufficient, move the whole unit to the next page; don't split it to fill space or balance columns. A column limit is not proof that a unit cannot fit: use the approved full-width layout where appropriate. Keep type legible and all content present. The build's keep audit checks every applicable unit (DESIGN_REFINEMENT.md) and fails on an avoidable split.
