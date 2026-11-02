@@ -26,12 +26,12 @@ Targeted editorial, reader, and accessibility checks: [publication protocol](doc
 
 <!-- BEGIN AUTO:recent -->
 
+- [`e8da035d`](https://github.com/xjordont/Heraldry/commit/e8da035d724ae31d5e695082e5d8376ed05b2ce8) editorial: third humanizer pass rewrites the rejected patches (131 proposed)
 - [`8330e00a`](https://github.com/xjordont/Heraldry/commit/8330e00ae4c8c6bdc93c6ef024ef4763f1d5967e) docs: remove physical-printing references from the design, QA, and role docs
 - [`446e2ede`](https://github.com/xjordont/Heraldry/commit/446e2ede6c1184e674c5b0f2a9f834ae82700280) build: go digital-only and remove the InDesign export
 - [`82b33d52`](https://github.com/xjordont/Heraldry/commit/82b33d520e05fab6db26ca0f0d831625711bb667) editorial: quality-review the RC528 humanizer proposal (64 kept, 76 withdrawn)
 - [`f691c5e3`](https://github.com/xjordont/Heraldry/commit/f691c5e35c32a67cadac4c240ec5da46914a4a16) art: let the generator approve its own images; trim art-card ceremony
 - [`b0bf04e7`](https://github.com/xjordont/Heraldry/commit/b0bf04e792f3b870a0666578058ca28bbb99f5cc) docs: trim build, QA, role, and master-prompt ceremony
-- [`1909f459`](https://github.com/xjordont/Heraldry/commit/1909f459b31d77e6ff94fcfa5c98ededc90fd52e) docs: trim the agent contract, self-review ban, and per-change checks
 
 <!-- END AUTO:recent -->
 
