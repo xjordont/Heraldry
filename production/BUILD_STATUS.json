@@ -1,43 +1,11 @@
 {
- "request_id": "20261101T194714Z",
- "result": "CANDIDATE_READY",
- "note": "all automated checks pass; the all-page visual review of this exact PDF is still pending",
- "failed_checks": [
-  "visual_review_currency"
- ],
- "source_commit": "2bccda770806c705f55be3474d6ddf5ee45e7fde",
- "run_url": "https://github.com/xjordont/Heraldry/actions/runs/41343601148",
- "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC527-candidate-14",
- "pdfs": {
-  "Heraldry_RC527_covers-front-back-white.pdf": {
-   "bytes": 4914873,
-   "sha256": "58b0e7e1d7481e36e4097a91d0a914bb22f2ce62b0b7dd452e41ef7d669bc0b1"
-  },
-  "Heraldry_RC527_covers-front-back.pdf": {
-   "bytes": 4914902,
-   "sha256": "2fa04874af9ae77b6a96d7eaf9abe316327035df91dc0c7fd6bc9a2b0e666b64"
-  },
-  "Heraldry_RC527_digital-compact.pdf": {
-   "bytes": 62239029,
-   "sha256": "66ececa18278983d68e94f6d0697271656f4011fb6375788d9d6b5647b85b0a8"
-  },
-  "Heraldry_RC527_digital.pdf": {
-   "bytes": 175324209,
-   "sha256": "a655ad0cb2f90390af07d10b674f53062ea174f5196319ead7b5741fe6c05ffe"
-  },
-  "Heraldry_RC527_inkjet-borderless-white.pdf": {
-   "bytes": 170492363,
-   "sha256": "a1669af066bd8590aa819ea1494a832e3a73690212269730777b573ba52d20e7"
-  },
-  "Heraldry_RC527_inkjet-borderless.pdf": {
-   "bytes": 170520610,
-   "sha256": "b406840d5583b5142dd37492f91adc8f1f0f4a16b80e81f9885b85903f90a176"
-  },
-  "Heraldry_RC527_inkjet-calibration.pdf": {
-   "bytes": 45194,
-   "sha256": "185a86262a92b2d22c5b8ee6bb69bfbfa2350c29b29697346e1e711a8c8f6ac5"
-  }
- },
- "physical_print": "NOT TESTED",
- "next": "The assigned reviewer inspects every review image and binds the exact PDF; pushing production/qa/visual-review.json starts release."
+ "request_id": "20261102T172918Z",
+ "result": "FAILED",
+ "note": "step failed: check artwork",
+ "failed_checks": [],
+ "source_commit": "5ea184e9f7e691ddcf4d3c2deb271b5b6b5f97d7",
+ "run_url": "https://github.com/xjordont/Heraldry/actions/runs/41491647709",
+ "release_url": "",
+ "pdfs": {},
+ "next": "Fix the failure; do not release."
 }
