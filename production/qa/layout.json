@@ -1,15 +1,16 @@
 {
- "pdf": "/home/runner/work/Heraldry/Heraldry/dist/Heraldry_RC527_inkjet-borderless.pdf",
+ "pdf": "/home/runner/work/Heraldry/Heraldry/build/book-cream.pdf",
  "pages": 625,
  "counts": {},
  "flagged_pages": [],
  "flags": [],
  "sparse_pages": {
-  "count": 73,
+  "count": 75,
   "pages": [
    1,
    2,
    6,
+   10,
    16,
    21,
    28,
@@ -34,6 +35,7 @@
    162,
    172,
    178,
+   212,
    214,
    252,
    254,
@@ -88,6 +90,7 @@
     6
    ],
    "The World of Heraldry": [
+    10,
     16,
     21
    ],
@@ -126,6 +129,7 @@
     178
    ],
    "Powers and Traditions": [
+    212,
     214
    ],
    "Monsters": [
@@ -225,7 +229,7 @@
     },
     {
      "lines": 1,
-     "text": "Release Candidate 527 (RC527)",
+     "text": "Release Candidate 528 (RC528)",
      "y_pt": 689.78
     }
    ],
@@ -252,7 +256,7 @@
     },
     {
      "lines": 1,
-     "text": "Release Candidate 527 (RC527).",
+     "text": "Release Candidate 528 (RC528).",
      "y_pt": 633.38
     },
     {
@@ -267,7 +271,7 @@
     },
     {
      "lines": 2,
-     "text": "This edition is typeset from the RC527 manuscript. Contents, running heads, page numbers, figures,  ",
+     "text": "This edition is typeset from the RC528 manuscript. Contents, running heads, page numbers, figures,  ",
      "y_pt": 679.73
     },
     {
@@ -277,7 +281,7 @@
     },
     {
      "lines": 1,
-     "text": "Formatted for borderless US Letter (8.5 × 11 in) printing.",
+     "text": "Formatted for US Letter (8.5 × 11 in) pages.",
      "y_pt": 735.53
     }
    ],
@@ -526,13 +530,13 @@
   },
   {
    "page": 10,
-   "vertical_union_fraction": 0.5766,
-   "largest_empty_band_pt": 198.36,
-   "bottom_empty_band_pt": 198.36,
-   "sparse": false,
-   "body_lines": 31,
+   "vertical_union_fraction": 0.541,
+   "largest_empty_band_pt": 226.61,
+   "bottom_empty_band_pt": 226.61,
+   "sparse": true,
+   "body_lines": 29,
    "column_lines": {
-    "left": 31,
+    "left": 29,
     "right": 0,
     "spanning": 0
    },
@@ -561,7 +565,7 @@
     },
     {
      "lines": 2,
-     "text": "The world is not dying gently. It dies like a wounded animal  under a hedge. Slow. Aware. Dangerous ",
+     "text": "The world dies like a wounded animal under a hedge: slow,  aware, and dangerous to touch.",
      "y_pt": 696.67
     }
    ],
@@ -585,44 +589,54 @@
   },
   {
    "page": 13,
-   "vertical_union_fraction": 0.9109,
-   "largest_empty_band_pt": 9.18,
-   "bottom_empty_band_pt": 9.18,
+   "vertical_union_fraction": 0.9202,
+   "largest_empty_band_pt": 9.79,
+   "bottom_empty_band_pt": 9.79,
    "sparse": false,
    "body_lines": 70,
    "column_lines": {
-    "left": 23,
-    "right": 47,
+    "left": 24,
+    "right": 46,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 14.325,
    "short_text_blocks": [
     {
+     "lines": 2,
+     "text": "These six are the world now. The Bastions are the walls mortal  civilization raised against them, an",
+     "y_pt": 400.95
+    },
+    {
      "lines": 1,
      "text": "1.3.3   The Six Bastions",
-     "y_pt": 441.45
+     "y_pt": 427.12
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 14,
-   "vertical_union_fraction": 0.6822,
-   "largest_empty_band_pt": 184.03,
-   "bottom_empty_band_pt": 184.03,
+   "vertical_union_fraction": 0.6655,
+   "largest_empty_band_pt": 198.36,
+   "bottom_empty_band_pt": 198.36,
    "sparse": false,
-   "body_lines": 41,
+   "body_lines": 40,
    "column_lines": {
-    "left": 24,
+    "left": 23,
     "right": 17,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 14.325,
    "short_text_blocks": [
     {
+     "lines": 2,
+     "text": "the part of the war fought with ledgers, knives, prayers, and  closed doors.",
+     "y_pt": 45.61
+    },
+    {
      "lines": 1,
      "text": "Greythorn",
-     "y_pt": 87.78
+     "y_pt": 73.45
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -645,13 +659,13 @@
   },
   {
    "page": 16,
-   "vertical_union_fraction": 0.5283,
+   "vertical_union_fraction": 0.5262,
    "largest_empty_band_pt": 275.87,
    "bottom_empty_band_pt": 275.87,
    "sparse": true,
-   "body_lines": 32,
+   "body_lines": 33,
    "column_lines": {
-    "left": 15,
+    "left": 16,
     "right": 17,
     "spanning": 0
    },
@@ -661,13 +675,13 @@
   },
   {
    "page": 17,
-   "vertical_union_fraction": 0.615,
+   "vertical_union_fraction": 0.6169,
    "largest_empty_band_pt": 249.48,
    "bottom_empty_band_pt": 249.48,
    "sparse": false,
-   "body_lines": 48,
+   "body_lines": 49,
    "column_lines": {
-    "left": 17,
+    "left": 18,
     "right": 31,
     "spanning": 0
    },
@@ -683,24 +697,18 @@
   },
   {
    "page": 18,
-   "vertical_union_fraction": 0.939,
+   "vertical_union_fraction": 0.9344,
    "largest_empty_band_pt": 12.1,
    "bottom_empty_band_pt": 12.1,
    "sparse": false,
-   "body_lines": 76,
+   "body_lines": 75,
    "column_lines": {
     "left": 35,
-    "right": 41,
+    "right": 40,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 14.325,
-   "short_text_blocks": [
-    {
-     "lines": 2,
-     "text": "The old peoples and border powers  have not vanished.  Were-creatures, satyr cohorts, dryad ambassad",
-     "y_pt": 707.19
-    }
-   ],
+   "short_text_blocks": [],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
@@ -729,7 +737,7 @@
     },
     {
      "lines": 2,
-     "text": "What works is a party of four. Small enough to hide. Strong  enough to fight. Cheap enough to lose.",
+     "text": "What works is a party of four: small enough to hide, strong  enough to fight, and cheap enough to lo",
      "y_pt": 523.03
     }
    ],
@@ -751,7 +759,7 @@
    "short_text_blocks": [
     {
      "lines": 1,
-     "text": "The Dying Lands remember. They do not remember kindly.",
+     "text": "The Dying Lands remember, and not kindly.",
      "y_pt": 223.49
     },
     {
@@ -761,7 +769,7 @@
     },
     {
      "lines": 1,
-     "text": "These are not rules. They are warnings.",
+     "text": "They are warnings, and no rule in this book depends on them.",
      "y_pt": 597.84
     }
    ],
@@ -4525,13 +4533,13 @@
   },
   {
    "page": 96,
-   "vertical_union_fraction": 0.8151,
-   "largest_empty_band_pt": 49.3,
-   "bottom_empty_band_pt": 49.3,
+   "vertical_union_fraction": 0.8309,
+   "largest_empty_band_pt": 40.95,
+   "bottom_empty_band_pt": 40.95,
    "sparse": false,
-   "body_lines": 18,
+   "body_lines": 19,
    "column_lines": {
-    "left": 1,
+    "left": 2,
     "right": 0,
     "spanning": 17
    },
@@ -4540,7 +4548,7 @@
     {
      "lines": 2,
      "text": "Chapter Six 6. Your Adventuring Party",
-     "y_pt": 345.56
+     "y_pt": 339.59
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -5252,13 +5260,13 @@
   },
   {
    "page": 115,
-   "vertical_union_fraction": 0.7059,
-   "largest_empty_band_pt": 193.26,
-   "bottom_empty_band_pt": 193.26,
+   "vertical_union_fraction": 0.6855,
+   "largest_empty_band_pt": 207.58,
+   "bottom_empty_band_pt": 207.58,
    "sparse": false,
-   "body_lines": 35,
+   "body_lines": 34,
    "column_lines": {
-    "left": 18,
+    "left": 17,
     "right": 17,
     "spanning": 0
    },
@@ -5333,13 +5341,13 @@
   },
   {
    "page": 118,
-   "vertical_union_fraction": 0.9129,
-   "largest_empty_band_pt": 38.06,
-   "bottom_empty_band_pt": 38.06,
+   "vertical_union_fraction": 0.8971,
+   "largest_empty_band_pt": 52.38,
+   "bottom_empty_band_pt": 52.38,
    "sparse": false,
-   "body_lines": 47,
+   "body_lines": 46,
    "column_lines": {
-    "left": 28,
+    "left": 27,
     "right": 19,
     "spanning": 0
    },
@@ -5517,14 +5525,14 @@
   },
   {
    "page": 124,
-   "vertical_union_fraction": 0.8742,
-   "largest_empty_band_pt": 55.24,
-   "bottom_empty_band_pt": 55.24,
+   "vertical_union_fraction": 0.8544,
+   "largest_empty_band_pt": 95.16,
+   "bottom_empty_band_pt": 0.0,
    "sparse": false,
-   "body_lines": 53,
+   "body_lines": 52,
    "column_lines": {
     "left": 26,
-    "right": 27,
+    "right": 26,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -5537,9 +5545,9 @@
    "largest_empty_band_pt": 101.89,
    "bottom_empty_band_pt": 101.89,
    "sparse": false,
-   "body_lines": 115,
+   "body_lines": 114,
    "column_lines": {
-    "left": 77,
+    "left": 76,
     "right": 38,
     "spanning": 0
    },
@@ -5548,7 +5556,7 @@
     {
      "lines": 1,
      "text": "6.13 Hero Classes",
-     "y_pt": 175.63
+     "y_pt": 161.7
     },
     {
      "lines": 1,
@@ -6570,13 +6578,13 @@
   },
   {
    "page": 156,
-   "vertical_union_fraction": 0.3387,
-   "largest_empty_band_pt": 398.91,
-   "bottom_empty_band_pt": 398.91,
+   "vertical_union_fraction": 0.323,
+   "largest_empty_band_pt": 413.23,
+   "bottom_empty_band_pt": 413.23,
    "sparse": true,
-   "body_lines": 9,
+   "body_lines": 8,
    "column_lines": {
-    "left": 1,
+    "left": 0,
     "right": 0,
     "spanning": 8
    },
@@ -8246,14 +8254,14 @@
   },
   {
    "page": 205,
-   "vertical_union_fraction": 0.9792,
-   "largest_empty_band_pt": 3.72,
-   "bottom_empty_band_pt": 0.0,
+   "vertical_union_fraction": 0.9851,
+   "largest_empty_band_pt": 5.01,
+   "bottom_empty_band_pt": 5.01,
    "sparse": false,
-   "body_lines": 89,
+   "body_lines": 91,
    "column_lines": {
-    "left": 46,
-    "right": 43,
+    "left": 47,
+    "right": 44,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -8265,36 +8273,31 @@
     },
     {
      "lines": 1,
-     "text": "to end  Cursed  on yourself or one ally within  2\" .",
-     "y_pt": 56.45
-    },
-    {
-     "lines": 1,
      "text": "Tier 2 Special Weapon",
-     "y_pt": 91.47
+     "y_pt": 56.52
     },
     {
      "lines": 1,
      "text": "Tier 3 Special Weapon",
-     "y_pt": 317.02
+     "y_pt": 282.07
     },
     {
      "lines": 1,
      "text": "Tier 4 Special Weapon",
-     "y_pt": 528.25
+     "y_pt": 493.3
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 206,
-   "vertical_union_fraction": 0.9557,
-   "largest_empty_band_pt": 11.45,
-   "bottom_empty_band_pt": 0.28,
+   "vertical_union_fraction": 0.9094,
+   "largest_empty_band_pt": 28.12,
+   "bottom_empty_band_pt": 28.12,
    "sparse": false,
-   "body_lines": 83,
+   "body_lines": 81,
    "column_lines": {
-    "left": 44,
+    "left": 42,
     "right": 39,
     "spanning": 0
    },
@@ -8303,12 +8306,12 @@
     {
      "lines": 1,
      "text": "Tier 5 Legendary Weapon",
-     "y_pt": 161.1
+     "y_pt": 133.25
     },
     {
      "lines": 1,
      "text": "Tier 2 Special Item",
-     "y_pt": 556.95
+     "y_pt": 529.1
     },
     {
      "lines": 1,
@@ -8434,14 +8437,14 @@
   },
   {
    "page": 209,
-   "vertical_union_fraction": 0.9285,
+   "vertical_union_fraction": 0.9248,
    "largest_empty_band_pt": 24.83,
    "bottom_empty_band_pt": 24.83,
    "sparse": false,
-   "body_lines": 80,
+   "body_lines": 81,
    "column_lines": {
     "left": 43,
-    "right": 37,
+    "right": 38,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -8464,12 +8467,12 @@
     {
      "lines": 1,
      "text": "Effect:  While wearing Karnessa's Binding:",
-     "y_pt": 178.15
+     "y_pt": 192.47
     },
     {
      "lines": 1,
      "text": "Tier 2 Special Item",
-     "y_pt": 493.07
+     "y_pt": 507.4
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -8540,22 +8543,22 @@
   },
   {
    "page": 212,
-   "vertical_union_fraction": 0.5826,
-   "largest_empty_band_pt": 76.9,
-   "bottom_empty_band_pt": 76.9,
-   "sparse": false,
-   "body_lines": 37,
+   "vertical_union_fraction": 0.5354,
+   "largest_empty_band_pt": 98.38,
+   "bottom_empty_band_pt": 98.38,
+   "sparse": true,
+   "body_lines": 34,
    "column_lines": {
-    "left": 3,
+    "left": 4,
     "right": 0,
-    "spanning": 34
+    "spanning": 30
    },
    "median_neighbouring_baseline_pt": 14.325,
    "short_text_blocks": [
     {
      "lines": 2,
      "text": "Though the empires that once codified magic are ash, the Five Traditions survived the Fall, each  sc",
-     "y_pt": 205.8
+     "y_pt": 212.96
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -9560,22 +9563,22 @@
   },
   {
    "page": 250,
-   "vertical_union_fraction": 0.6579,
-   "largest_empty_band_pt": 128.49,
-   "bottom_empty_band_pt": 128.49,
+   "vertical_union_fraction": 0.6422,
+   "largest_empty_band_pt": 136.84,
+   "bottom_empty_band_pt": 136.84,
    "sparse": false,
-   "body_lines": 10,
+   "body_lines": 9,
    "column_lines": {
     "left": 0,
     "right": 0,
-    "spanning": 10
+    "spanning": 9
    },
    "median_neighbouring_baseline_pt": 14.325,
    "short_text_blocks": [
     {
      "lines": 2,
      "text": "Chapter Nine 9. Monsters",
-     "y_pt": 396.22
+     "y_pt": 402.19
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -10136,13 +10139,13 @@
   },
   {
    "page": 266,
-   "vertical_union_fraction": 0.952,
-   "largest_empty_band_pt": 20.97,
-   "bottom_empty_band_pt": 12.71,
+   "vertical_union_fraction": 0.9237,
+   "largest_empty_band_pt": 32.56,
+   "bottom_empty_band_pt": 32.56,
    "sparse": false,
-   "body_lines": 72,
+   "body_lines": 70,
    "column_lines": {
-    "left": 45,
+    "left": 43,
     "right": 27,
     "spanning": 0
    },
@@ -10152,6 +10155,11 @@
      "lines": 1,
      "text": "Reading a Stat Line",
      "y_pt": 168.68
+    },
+    {
+     "lines": 1,
+     "text": "Monster Roles",
+     "y_pt": 231.7
     },
     {
      "lines": 1,
@@ -10794,13 +10802,13 @@
   },
   {
    "page": 280,
-   "vertical_union_fraction": 0.8666,
+   "vertical_union_fraction": 0.8578,
    "largest_empty_band_pt": 84.28,
    "bottom_empty_band_pt": 84.28,
    "sparse": false,
-   "body_lines": 66,
+   "body_lines": 65,
    "column_lines": {
-    "left": 32,
+    "left": 31,
     "right": 34,
     "spanning": 0
    },
@@ -10809,12 +10817,12 @@
     {
      "lines": 1,
      "text": "Attacks",
-     "y_pt": 319.51
+     "y_pt": 305.19
     },
     {
      "lines": 1,
      "text": "Special Abilities",
-     "y_pt": 395.24
+     "y_pt": 380.91
     },
     {
      "lines": 1,
@@ -12258,32 +12266,32 @@
   },
   {
    "page": 312,
-   "vertical_union_fraction": 0.6443,
+   "vertical_union_fraction": 0.6638,
    "largest_empty_band_pt": 204.98,
    "bottom_empty_band_pt": 204.98,
    "sparse": false,
-   "body_lines": 56,
+   "body_lines": 57,
    "column_lines": {
-    "left": 26,
+    "left": 27,
     "right": 30,
     "spanning": 0
    },
-   "median_neighbouring_baseline_pt": 14.125,
+   "median_neighbouring_baseline_pt": 14.325,
    "short_text_blocks": [
     {
      "lines": 1,
      "text": "Attacks",
-     "y_pt": 365.24
+     "y_pt": 379.57
     },
     {
      "lines": 1,
      "text": "Burial Blade:  1d6 slashing damage.",
-     "y_pt": 382.27
+     "y_pt": 396.59
     },
     {
      "lines": 1,
      "text": "Special Abilities",
-     "y_pt": 399.29
+     "y_pt": 413.62
     },
     {
      "lines": 1,
@@ -12436,14 +12444,14 @@
   },
   {
    "page": 316,
-   "vertical_union_fraction": 0.6812,
+   "vertical_union_fraction": 0.6649,
    "largest_empty_band_pt": 198.82,
    "bottom_empty_band_pt": 198.82,
    "sparse": false,
-   "body_lines": 59,
+   "body_lines": 58,
    "column_lines": {
     "left": 32,
-    "right": 27,
+    "right": 26,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -12471,25 +12479,25 @@
     {
      "lines": 1,
      "text": "Attacks",
-     "y_pt": 353.06
+     "y_pt": 338.74
     },
     {
      "lines": 1,
      "text": "Special Abilities",
-     "y_pt": 414.86
+     "y_pt": 400.54
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 317,
-   "vertical_union_fraction": 0.8496,
+   "vertical_union_fraction": 0.8664,
    "largest_empty_band_pt": 73.56,
    "bottom_empty_band_pt": 73.56,
    "sparse": false,
-   "body_lines": 70,
+   "body_lines": 69,
    "column_lines": {
-    "left": 32,
+    "left": 31,
     "right": 38,
     "spanning": 0
    },
@@ -12498,12 +12506,12 @@
     {
      "lines": 1,
      "text": "Attacks",
-     "y_pt": 381.09
+     "y_pt": 366.77
     },
     {
      "lines": 1,
      "text": "Special Abilities",
-     "y_pt": 442.89
+     "y_pt": 428.57
     },
     {
      "lines": 1,
@@ -12599,14 +12607,14 @@
   },
   {
    "page": 320,
-   "vertical_union_fraction": 0.8321,
+   "vertical_union_fraction": 0.8344,
    "largest_empty_band_pt": 107.88,
    "bottom_empty_band_pt": 107.88,
    "sparse": false,
-   "body_lines": 76,
+   "body_lines": 75,
    "column_lines": {
     "left": 38,
-    "right": 38,
+    "right": 37,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -12629,17 +12637,17 @@
     {
      "lines": 1,
      "text": "AI Steps",
-     "y_pt": 339.46
+     "y_pt": 325.13
     },
     {
      "lines": 1,
      "text": "Attacks",
-     "y_pt": 443.13
+     "y_pt": 428.81
     },
     {
      "lines": 1,
      "text": "Special Abilities",
-     "y_pt": 546.61
+     "y_pt": 532.28
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -12693,14 +12701,14 @@
   },
   {
    "page": 322,
-   "vertical_union_fraction": 0.8423,
-   "largest_empty_band_pt": 95.98,
-   "bottom_empty_band_pt": 95.98,
+   "vertical_union_fraction": 0.8625,
+   "largest_empty_band_pt": 81.66,
+   "bottom_empty_band_pt": 81.66,
    "sparse": false,
-   "body_lines": 71,
+   "body_lines": 72,
    "column_lines": {
     "left": 32,
-    "right": 39,
+    "right": 40,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -12728,17 +12736,17 @@
     {
      "lines": 1,
      "text": "AI Steps",
-     "y_pt": 329.19
+     "y_pt": 343.52
     },
     {
      "lines": 1,
      "text": "Attacks",
-     "y_pt": 405.02
+     "y_pt": 419.34
     },
     {
      "lines": 1,
      "text": "Special Abilities",
-     "y_pt": 480.74
+     "y_pt": 495.07
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -12975,14 +12983,14 @@
   },
   {
    "page": 328,
-   "vertical_union_fraction": 0.8216,
-   "largest_empty_band_pt": 111.77,
-   "bottom_empty_band_pt": 111.77,
+   "vertical_union_fraction": 0.8448,
+   "largest_empty_band_pt": 97.45,
+   "bottom_empty_band_pt": 97.45,
    "sparse": false,
-   "body_lines": 69,
+   "body_lines": 70,
    "column_lines": {
     "left": 32,
-    "right": 37,
+    "right": 38,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -13000,22 +13008,22 @@
     {
      "lines": 1,
      "text": "AI Steps",
-     "y_pt": 340.96
+     "y_pt": 355.28
     },
     {
      "lines": 1,
      "text": "Attacks",
-     "y_pt": 486.31
+     "y_pt": 500.63
     },
     {
      "lines": 2,
      "text": "Claws:  1d8 + 3 slashing damage. When this attack  damages a target, that target becomes  Cursed .",
-     "y_pt": 503.33
+     "y_pt": 517.66
     },
     {
      "lines": 1,
      "text": "Special Abilities",
-     "y_pt": 534.28
+     "y_pt": 548.61
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -13356,9 +13364,9 @@
    "largest_empty_band_pt": 229.58,
    "bottom_empty_band_pt": 229.58,
    "sparse": false,
-   "body_lines": 51,
+   "body_lines": 50,
    "column_lines": {
-    "left": 19,
+    "left": 18,
     "right": 32,
     "spanning": 0
    },
@@ -13367,32 +13375,32 @@
     {
      "lines": 2,
      "text": "HP 102 × Boss Scale",
-     "y_pt": 299.61
+     "y_pt": 285.29
     },
     {
      "lines": 2,
      "text": "AV 7",
-     "y_pt": 316.26
+     "y_pt": 301.94
     },
     {
      "lines": 2,
      "text": "SPD 7\"",
-     "y_pt": 332.91
+     "y_pt": 318.59
     },
     {
      "lines": 2,
      "text": "LVL 10",
-     "y_pt": 349.56
+     "y_pt": 335.24
     },
     {
      "lines": 2,
      "text": "CV 200 c",
-     "y_pt": 366.21
+     "y_pt": 351.89
     },
     {
      "lines": 2,
      "text": "Sz H",
-     "y_pt": 382.86
+     "y_pt": 368.54
     },
     {
      "lines": 1,
@@ -13698,9 +13706,9 @@
    "largest_empty_band_pt": 313.13,
    "bottom_empty_band_pt": 313.13,
    "sparse": false,
-   "body_lines": 44,
+   "body_lines": 45,
    "column_lines": {
-    "left": 18,
+    "left": 19,
     "right": 26,
     "spanning": 0
    },
@@ -13709,32 +13717,32 @@
     {
      "lines": 2,
      "text": "HP 96 × Boss Scale",
-     "y_pt": 282.66
+     "y_pt": 296.98
     },
     {
      "lines": 2,
      "text": "AV 6",
-     "y_pt": 299.31
+     "y_pt": 313.63
     },
     {
      "lines": 2,
      "text": "SPD 7\"",
-     "y_pt": 315.96
+     "y_pt": 330.28
     },
     {
      "lines": 2,
      "text": "LVL 10",
-     "y_pt": 332.61
+     "y_pt": 346.93
     },
     {
      "lines": 2,
      "text": "CV 200 c",
-     "y_pt": 349.26
+     "y_pt": 363.58
     },
     {
      "lines": 2,
      "text": "Sz S",
-     "y_pt": 365.91
+     "y_pt": 380.23
     },
     {
      "lines": 1,
@@ -18731,14 +18739,14 @@
   },
   {
    "page": 444,
-   "vertical_union_fraction": 0.9042,
-   "largest_empty_band_pt": 57.46,
-   "bottom_empty_band_pt": 57.46,
+   "vertical_union_fraction": 0.8837,
+   "largest_empty_band_pt": 76.16,
+   "bottom_empty_band_pt": 76.16,
    "sparse": false,
-   "body_lines": 85,
+   "body_lines": 84,
    "column_lines": {
     "left": 36,
-    "right": 49,
+    "right": 48,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -18848,13 +18856,13 @@
   },
   {
    "page": 445,
-   "vertical_union_fraction": 0.6164,
-   "largest_empty_band_pt": 256.73,
-   "bottom_empty_band_pt": 256.73,
+   "vertical_union_fraction": 0.641,
+   "largest_empty_band_pt": 239.71,
+   "bottom_empty_band_pt": 239.71,
    "sparse": false,
-   "body_lines": 55,
+   "body_lines": 56,
    "column_lines": {
-    "left": 30,
+    "left": 31,
     "right": 25,
     "spanning": 0
    },
@@ -18863,7 +18871,7 @@
     {
      "lines": 2,
      "text": "Umbral Rend:  1d10 + APL/2 necrotic damage. Special Abilities",
-     "y_pt": 116.85
+     "y_pt": 133.87
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -18892,14 +18900,14 @@
   },
   {
    "page": 447,
-   "vertical_union_fraction": 0.5783,
-   "largest_empty_band_pt": 293.78,
-   "bottom_empty_band_pt": 293.78,
+   "vertical_union_fraction": 0.604,
+   "largest_empty_band_pt": 276.76,
+   "bottom_empty_band_pt": 276.76,
    "sparse": false,
    "body_lines": 51,
    "column_lines": {
-    "left": 23,
-    "right": 28,
+    "left": 22,
+    "right": 29,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -18953,11 +18961,6 @@
      "lines": 1,
      "text": "FIG-57",
      "y_pt": 326.76
-    },
-    {
-     "lines": 1,
-     "text": "Special Rules:",
-     "y_pt": 400.15
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -19388,9 +19391,9 @@
    "sparse": false,
    "body_lines": 58,
    "column_lines": {
-    "left": 29,
+    "left": 30,
     "right": 25,
-    "spanning": 4
+    "spanning": 3
    },
    "median_neighbouring_baseline_pt": 13.925,
    "short_text_blocks": [
@@ -20095,9 +20098,9 @@
    "sparse": false,
    "body_lines": 66,
    "column_lines": {
-    "left": 26,
+    "left": 27,
     "right": 37,
-    "spanning": 3
+    "spanning": 2
    },
    "median_neighbouring_baseline_pt": 13.925,
    "short_text_blocks": [
@@ -21852,9 +21855,9 @@
    "sparse": false,
    "body_lines": 45,
    "column_lines": {
-    "left": 17,
+    "left": 18,
     "right": 7,
-    "spanning": 21
+    "spanning": 20
    },
    "median_neighbouring_baseline_pt": 14.325,
    "short_text_blocks": [
@@ -23033,7 +23036,7 @@
    "short_text_blocks": [
     {
      "lines": 2,
-     "text": "A party with an Armoury does not look safe. It looks prepared.  In the Dying Lands, that is close en",
+     "text": "A party with an Armoury looks prepared rather than safe,  and in the Dying Lands that is close enoug",
      "y_pt": 253.55
     },
     {
@@ -23056,13 +23059,13 @@
   },
   {
    "page": 522,
-   "vertical_union_fraction": 0.7655,
+   "vertical_union_fraction": 0.7659,
    "largest_empty_band_pt": 107.16,
    "bottom_empty_band_pt": 107.16,
    "sparse": false,
-   "body_lines": 41,
+   "body_lines": 40,
    "column_lines": {
-    "left": 20,
+    "left": 19,
     "right": 21,
     "spanning": 0
    },
@@ -23071,12 +23074,12 @@
     {
      "lines": 1,
      "text": "The War Room",
-     "y_pt": 355.12
+     "y_pt": 340.79
     },
     {
      "lines": 2,
      "text": "Cost:  See the Component Cost table in  11.3 . Benefit:  Your party gains  +2  on Initiative rolls.",
-     "y_pt": 595.55
+     "y_pt": 581.23
     },
     {
      "lines": 2,
@@ -23803,13 +23806,13 @@
   },
   {
    "page": 541,
-   "vertical_union_fraction": 0.1585,
-   "largest_empty_band_pt": 563.36,
-   "bottom_empty_band_pt": 563.36,
+   "vertical_union_fraction": 0.1387,
+   "largest_empty_band_pt": 577.29,
+   "bottom_empty_band_pt": 577.29,
    "sparse": true,
-   "body_lines": 9,
+   "body_lines": 8,
    "column_lines": {
-    "left": 5,
+    "left": 4,
     "right": 4,
     "spanning": 0
    },
@@ -23817,8 +23820,13 @@
    "short_text_blocks": [
     {
      "lines": 2,
+     "text": "Positioning and objective play decide more games  than trading damage does.",
+     "y_pt": 110.44
+    },
+    {
+     "lines": 2,
      "text": "The  Treasure Chest  provides immediate  Coin Value   and is removed upon opening.",
-     "y_pt": 155.32
+     "y_pt": 141.39
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"

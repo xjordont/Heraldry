@@ -22,7 +22,7 @@
   {
    "id": "h-13-the-dying-lands",
    "kind": "section",
-   "h2_pt": 6016.8,
+   "h2_pt": 6004.0,
    "pages": [
     10,
     11,
@@ -41,7 +41,7 @@
   {
    "id": "h-132-the-six-climates-of-ruin",
    "kind": "section",
-   "h2_pt": 1413.2,
+   "h2_pt": 1398.9,
    "pages": [
     11,
     12,
@@ -52,7 +52,7 @@
   {
    "id": "h-133-the-six-bastions",
    "kind": "section",
-   "h2_pt": 1863.2,
+   "h2_pt": 1869.0,
    "pages": [
     13,
     14,
@@ -64,7 +64,7 @@
   {
    "id": "h-135-monstrous-threats",
    "kind": "section",
-   "h2_pt": 833.2,
+   "h2_pt": 818.9,
    "pages": [
     18,
     19
@@ -466,7 +466,7 @@
   {
    "id": "h-610-backgrounds",
    "kind": "section",
-   "h2_pt": 3011.2,
+   "h2_pt": 2996.9,
    "pages": [
     114,
     115,
@@ -480,7 +480,7 @@
   {
    "id": "h-612-general-talents",
    "kind": "section",
-   "h2_pt": 1692.1,
+   "h2_pt": 1678.2,
    "pages": [
     121,
     122,
@@ -661,7 +661,7 @@
   {
    "id": "h-76-treasure-tables",
    "kind": "section",
-   "h2_pt": 1868.3,
+   "h2_pt": 1853.9,
    "pages": [
     156,
     157,
@@ -1102,7 +1102,7 @@
   {
    "id": "h-7173-named-special-items-and-artifacts",
    "kind": "section",
-   "h2_pt": 4394.3,
+   "h2_pt": 4382.8,
    "pages": [
     204,
     205,
@@ -1437,7 +1437,7 @@
   {
    "id": "h-97-the-bestiary",
    "kind": "section",
-   "h2_pt": 40847.2,
+   "h2_pt": 40813.0,
    "pages": [
     266,
     267,
@@ -1608,7 +1608,7 @@
   {
    "id": "h-sun-drowned-bestiary",
    "kind": "section",
-   "h2_pt": 5406.9,
+   "h2_pt": 5421.2,
    "pages": [
     311,
     312,
@@ -1628,7 +1628,7 @@
   {
    "id": "h-the-mire-bestiary",
    "kind": "section",
-   "h2_pt": 5959.0,
+   "h2_pt": 5973.3,
    "pages": [
     322,
     323,
@@ -1647,7 +1647,7 @@
   {
    "id": "h-bosses",
    "kind": "section",
-   "h2_pt": 6943.5,
+   "h2_pt": 6929.2,
    "pages": [
     332,
     333,
@@ -2763,7 +2763,7 @@
   {
    "id": "h-113-building-the-stronghold",
    "kind": "section",
-   "h2_pt": 1939.2,
+   "h2_pt": 1926.7,
    "pages": [
     520,
     521,
@@ -3196,7 +3196,7 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 6016.8,
+   "h2_pt": 6004.0,
    "fit_capable": false,
    "pages": [
     10,
@@ -3227,8 +3227,8 @@
    "id": "h-132-the-six-climates-of-ruin",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2442.5,
-   "h2_pt": 1413.2,
+   "h1_pt": 2428.2,
+   "h2_pt": 1398.9,
    "fit_capable": false,
    "pages": [
     11,
@@ -3295,7 +3295,7 @@
    "id": "h-the-mire",
    "kind": "section",
    "class": "col",
-   "h1_pt": 395.0,
+   "h1_pt": 380.7,
    "h2_pt": 360.3,
    "fit_capable": true,
    "pages": [
@@ -3306,8 +3306,8 @@
    "id": "h-133-the-six-bastions",
    "kind": "section",
    "class": "over",
-   "h1_pt": 3639.8,
-   "h2_pt": 1863.2,
+   "h1_pt": 3654.2,
+   "h2_pt": 1869.0,
    "fit_capable": false,
    "pages": [
     13,
@@ -3364,8 +3364,8 @@
    "id": "h-saltspire",
    "kind": "section",
    "class": "col",
-   "h1_pt": 395.7,
-   "h2_pt": 242.7,
+   "h1_pt": 410.0,
+   "h2_pt": 257.0,
    "fit_capable": true,
    "pages": [
     16
@@ -3386,7 +3386,7 @@
    "id": "h-134-magic-in-the-dying-lands",
    "kind": "section",
    "class": "page",
-   "h1_pt": 884.4,
+   "h1_pt": 898.7,
    "h2_pt": 463.9,
    "fit_capable": true,
    "pages": [
@@ -3397,8 +3397,8 @@
    "id": "h-135-monstrous-threats",
    "kind": "section",
    "class": "over",
-   "h1_pt": 1493.4,
-   "h2_pt": 833.2,
+   "h1_pt": 1479.1,
+   "h2_pt": 818.9,
    "fit_capable": false,
    "pages": [
     18,
@@ -6318,7 +6318,7 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 3011.2,
+   "h2_pt": 2996.9,
    "fit_capable": false,
    "pages": [
     114,
@@ -6399,8 +6399,8 @@
    "id": "h-smuggler",
    "kind": "section",
    "class": "col",
-   "h1_pt": 240.4,
-   "h2_pt": 192.6,
+   "h1_pt": 226.1,
+   "h2_pt": 178.3,
    "fit_capable": true,
    "pages": [
     115
@@ -6531,8 +6531,8 @@
    "id": "h-merchant",
    "kind": "section",
    "class": "col",
-   "h1_pt": 327.1,
-   "h2_pt": 195.8,
+   "h1_pt": 312.8,
+   "h2_pt": 181.4,
    "fit_capable": true,
    "pages": [
     118
@@ -6598,7 +6598,7 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 1692.1,
+   "h2_pt": 1678.2,
    "fit_capable": false,
    "pages": [
     121,
@@ -6699,8 +6699,8 @@
    "id": "h-spi-general-talents",
    "kind": "section",
    "class": "page",
-   "h1_pt": 781.9,
-   "h2_pt": 414.8,
+   "h1_pt": 768.0,
+   "h2_pt": 400.9,
    "fit_capable": true,
    "pages": [
     124
@@ -6721,8 +6721,8 @@
    "id": "B02669",
    "kind": "quote",
    "class": "contained",
-   "h1_pt": 134.4,
-   "h2_pt": 146.4,
+   "h1_pt": 120.5,
+   "h2_pt": 132.5,
    "fit_capable": true,
    "pages": [
     124
@@ -8362,7 +8362,7 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 1868.3,
+   "h2_pt": 1853.9,
    "fit_capable": false,
    "pages": [
     156,
@@ -10007,7 +10007,7 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 8745.9,
-   "h2_pt": 4394.3,
+   "h2_pt": 4382.8,
    "fit_capable": false,
    "pages": [
     204,
@@ -18463,7 +18463,7 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 40847.2,
+   "h2_pt": 40813.0,
    "fit_capable": false,
    "pages": [
     266,
@@ -18566,8 +18566,8 @@
    "id": "h-monster-roles",
    "kind": "section",
    "class": "col",
-   "h1_pt": 498.6,
-   "h2_pt": 260.4,
+   "h1_pt": 478.8,
+   "h2_pt": 254.4,
    "fit_capable": true,
    "pages": [
     266
@@ -18577,7 +18577,7 @@
    "id": "B07807",
    "kind": "list",
    "class": "contained",
-   "h1_pt": 400.3,
+   "h1_pt": 386.4,
    "h2_pt": 217.7,
    "fit_capable": true,
    "pages": [
@@ -19643,7 +19643,7 @@
    "id": "h-ashlands-bestiary",
    "kind": "section",
    "class": "over",
-   "h1_pt": 11181.4,
+   "h1_pt": 11167.1,
    "h2_pt": 5600.9,
    "fit_capable": false,
    "pages": [
@@ -19885,7 +19885,7 @@
    "id": "h-wererat-skirmisher",
    "kind": "section",
    "class": "col",
-   "h1_pt": 477.9,
+   "h1_pt": 463.6,
    "h2_pt": 264.5,
    "fit_capable": true,
    "pages": [
@@ -22691,8 +22691,8 @@
    "id": "h-sun-drowned-bestiary",
    "kind": "section",
    "class": "over",
-   "h1_pt": 10779.6,
-   "h2_pt": 5406.9,
+   "h1_pt": 10751.0,
+   "h2_pt": 5421.2,
    "fit_capable": false,
    "pages": [
     311,
@@ -22801,8 +22801,8 @@
    "id": "h-skeleton-warrior-minion",
    "kind": "section",
    "class": "col",
-   "h1_pt": 426.4,
-   "h2_pt": 276.2,
+   "h1_pt": 440.7,
+   "h2_pt": 290.5,
    "fit_capable": true,
    "pages": [
     312
@@ -23230,8 +23230,8 @@
    "id": "h-fire-elemental-cannon",
    "kind": "section",
    "class": "col",
-   "h1_pt": 442.0,
-   "h2_pt": 264.0,
+   "h1_pt": 427.6,
+   "h2_pt": 249.7,
    "fit_capable": true,
    "pages": [
     316
@@ -23274,8 +23274,8 @@
    "id": "h-giant-skeleton-brute",
    "kind": "section",
    "class": "col",
-   "h1_pt": 511.7,
-   "h2_pt": 292.0,
+   "h1_pt": 497.3,
+   "h2_pt": 277.7,
    "fit_capable": true,
    "pages": [
     317
@@ -23538,7 +23538,7 @@
    "id": "h-manticore-elite",
    "kind": "section",
    "class": "col",
-   "h1_pt": 587.5,
+   "h1_pt": 573.2,
    "h2_pt": 302.6,
    "fit_capable": true,
    "pages": [
@@ -23703,8 +23703,8 @@
    "id": "h-the-mire-bestiary",
    "kind": "section",
    "class": "over",
-   "h1_pt": 11829.9,
-   "h2_pt": 5959.0,
+   "h1_pt": 11858.5,
+   "h2_pt": 5973.3,
    "fit_capable": false,
    "pages": [
     322,
@@ -23768,7 +23768,7 @@
    "id": "h-swamp-goblin-minion",
    "kind": "section",
    "class": "col",
-   "h1_pt": 605.1,
+   "h1_pt": 619.4,
    "h2_pt": 330.4,
    "fit_capable": true,
    "pages": [
@@ -24351,8 +24351,8 @@
    "id": "h-swamp-hag-controller",
    "kind": "section",
    "class": "col",
-   "h1_pt": 589.3,
-   "h2_pt": 302.9,
+   "h1_pt": 603.7,
+   "h2_pt": 316.8,
    "fit_capable": true,
    "pages": [
     328
@@ -24715,7 +24715,7 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 13761.0,
-   "h2_pt": 6943.5,
+   "h2_pt": 6929.2,
    "fit_capable": false,
    "pages": [
     332,
@@ -24906,7 +24906,7 @@
    "id": "h-avatar-of-the-old-growth-boss",
    "kind": "section",
    "class": "page",
-   "h1_pt": 840.0,
+   "h1_pt": 825.6,
    "h2_pt": 483.5,
    "fit_capable": true,
    "pages": [
@@ -25236,7 +25236,7 @@
    "id": "h-the-voice-beneath-the-bells-boss",
    "kind": "section",
    "class": "page",
-   "h1_pt": 739.4,
+   "h1_pt": 753.8,
    "h2_pt": 400.0,
    "fit_capable": true,
    "pages": [
@@ -31475,7 +31475,7 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 1939.2,
+   "h2_pt": 1926.7,
    "fit_capable": false,
    "pages": [
     520,
@@ -31564,8 +31564,8 @@
    "id": "h-the-stronghold-chapel",
    "kind": "section",
    "class": "col",
-   "h1_pt": 308.7,
-   "h2_pt": 212.6,
+   "h1_pt": 294.4,
+   "h2_pt": 198.3,
    "fit_capable": true,
    "pages": [
     522
@@ -32283,7 +32283,7 @@
    "kind": "section",
    "class": "page",
    "h1_pt": 1000000000.0,
-   "h2_pt": 155.7,
+   "h2_pt": 141.8,
    "fit_capable": true,
    "pages": [
     541
@@ -35166,21 +35166,21 @@
   }
  ],
  "status": "PASS",
- "content_sha256": "cc810ef1ba9cfb2966f1775240e45c037490c49d70e0bdbc3b217f591ccb14e2",
- "pdf": "/home/runner/work/Heraldry/Heraldry/dist/Heraldry_RC527_inkjet-borderless.pdf",
- "pdf_sha256": "b406840d5583b5142dd37492f91adc8f1f0f4a16b80e81f9885b85903f90a176",
+ "content_sha256": "b8378768daf92236fd23a424e0d2456a3b250f2208a63b8796dc2275f70cafaf",
+ "pdf": "/home/runner/work/Heraldry/Heraldry/build/book-cream.pdf",
+ "pdf_sha256": "c12ea33f8780d226f9d44815a6d37dba693cc5270fe2d82392f39f9e0eaa9db2",
  "position_binding": {
   "schema": 1,
   "origin": "pdf-attachment",
-  "pdf_sha256": "b406840d5583b5142dd37492f91adc8f1f0f4a16b80e81f9885b85903f90a176",
+  "pdf_sha256": "c12ea33f8780d226f9d44815a6d37dba693cc5270fe2d82392f39f9e0eaa9db2",
   "pdf_pages": 625,
   "identity": {
    "compiler": "0.15.0",
-   "content_sha256": "cc810ef1ba9cfb2966f1775240e45c037490c49d70e0bdbc3b217f591ccb14e2",
-   "edition": "print",
-   "input_sha256": "857fe6d2befe4443fc285a8b2da7b4cbc6879ede94f795bb909daf7462a09c79",
+   "content_sha256": "b8378768daf92236fd23a424e0d2456a3b250f2208a63b8796dc2275f70cafaf",
+   "edition": "interior",
+   "input_sha256": "63497ead2931fd3c43d8a68b32388048ba8c3fa8cbd84a653dca136a155965d0",
    "schema": 1,
-   "timestamp": 1793420687,
+   "timestamp": 1793633079,
    "variant": "cream"
   },
   "serialized_anchors": {
@@ -35605,27 +35605,27 @@
  "measurement_binding": {
   "identity": {
    "compiler": "0.15.0",
-   "content_sha256": "01a267ac0985e5787c7525ccaa1be58351976d0ef137918a6fbdcc8ef38d507f",
-   "edition": "print",
-   "input_sha256": "857fe6d2befe4443fc285a8b2da7b4cbc6879ede94f795bb909daf7462a09c79",
+   "content_sha256": "c2de6adb283762968676e2740b9b210e723217515e1d2c7bd85146aaeb2b12e2",
+   "edition": "interior",
+   "input_sha256": "63497ead2931fd3c43d8a68b32388048ba8c3fa8cbd84a653dca136a155965d0",
    "schema": 1,
-   "timestamp": 1793420687,
+   "timestamp": 1793633079,
    "variant": "cream"
   },
-  "measurement_pdf_sha256": "231697a2608fb7715ec9df50b74fd0926e42e41c0d23a4509d729f6db1f92ca1",
-  "measurements_sha256": "0ef87cddf7f23d74e781c602caff00835b160210c7911b6f4d0c0fbfe86b14ce",
+  "measurement_pdf_sha256": "50a884e693a65315ad4fa35cb79673cfe304f43732643826bd603128815beaaf",
+  "measurements_sha256": "18c2cde0c3ac64fe761f4dafb813585d16c64cf442d01ac23f013b01478c9570",
   "origin": "measurement-pdf-attachment",
-  "seconds": 0.772,
+  "seconds": 0.785,
   "units": 2845,
   "warnings": [],
   "cache": {
    "status": "hit",
-   "key": "f0b70d55581701a24b06f712cfea97f659d0fa56e9e99f79c4bceee9b1ad1ff0",
-   "path": "/home/runner/work/Heraldry/Heraldry/.cache/layout-measurements/f0b70d55581701a24b06f712cfea97f659d0fa56e9e99f79c4bceee9b1ad1ff0",
+   "key": "043fdd72261b52dd5bc261b46897e69afd8da66421c22500cbb911630786b69e",
+   "path": "/home/runner/work/Heraldry/Heraldry/.cache/layout-measurements/043fdd72261b52dd5bc261b46897e69afd8da66421c22500cbb911630786b69e",
    "reason": "exact PDF and attachment validated",
    "stored": false
   },
   "compile_seconds": 0.0,
-  "cached_compile_seconds": 74.022
+  "cached_compile_seconds": 86.229
  }
 }

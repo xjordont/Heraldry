@@ -14,19 +14,19 @@
   "page_bounds_invalid": [],
   "bookmark_page_mismatches": [],
   "note": "Physical PDF bookmark destinations independently check unique heading pages; all query page numbers must also lie within the PDF.",
-  "pdf_sha256": "b406840d5583b5142dd37492f91adc8f1f0f4a16b80e81f9885b85903f90a176",
+  "pdf_sha256": "c12ea33f8780d226f9d44815a6d37dba693cc5270fe2d82392f39f9e0eaa9db2",
   "serialized_position_binding": {
     "schema": 1,
     "origin": "pdf-attachment",
-    "pdf_sha256": "b406840d5583b5142dd37492f91adc8f1f0f4a16b80e81f9885b85903f90a176",
+    "pdf_sha256": "c12ea33f8780d226f9d44815a6d37dba693cc5270fe2d82392f39f9e0eaa9db2",
     "pdf_pages": 625,
     "identity": {
       "compiler": "0.15.0",
-      "content_sha256": "cc810ef1ba9cfb2966f1775240e45c037490c49d70e0bdbc3b217f591ccb14e2",
-      "edition": "print",
-      "input_sha256": "857fe6d2befe4443fc285a8b2da7b4cbc6879ede94f795bb909daf7462a09c79",
+      "content_sha256": "b8378768daf92236fd23a424e0d2456a3b250f2208a63b8796dc2275f70cafaf",
+      "edition": "interior",
+      "input_sha256": "63497ead2931fd3c43d8a68b32388048ba8c3fa8cbd84a653dca136a155965d0",
       "schema": 1,
-      "timestamp": 1793420687,
+      "timestamp": 1793633079,
       "variant": "cream"
     },
     "serialized_anchors": {

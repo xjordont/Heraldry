@@ -5,15 +5,15 @@
     {
       "check": "required_files",
       "status": "PASS",
-      "detail": "22 required files present"
+      "detail": "20 required files present"
     },
     {
       "check": "source_integrity",
       "status": "PASS",
       "detail": {
-        "sha256": "d28f5ec8ef438b43d278ec59c8faf195204266606bcfad1cbd8258088f48ec55",
-        "bytes": 1537574,
-        "version": "RC527"
+        "sha256": "9b697e4cd5e2af0bbd43cf02fd6520c0dbfbdb0739e37a48c1d50c0874a2c8fc",
+        "bytes": 1536429,
+        "version": "RC528"
       }
     },
     {
@@ -24,12 +24,12 @@
     {
       "check": "agent_contracts",
       "status": "PASS",
-      "detail": "Five Claude-native adapters and 16 shared workflows validated for all three clients; runtime resolution is separate"
+      "detail": "Five Claude-native adapters and 15 shared workflows validated for all three clients; runtime resolution is separate"
     },
     {
-      "check": "design_print_contract",
+      "check": "design_page_contract",
       "status": "PASS",
-      "detail": "Portrait Letter borderless/cream tokens, safe area, and print checks reconcile"
+      "detail": "Portrait Letter page, cream tokens, and safe area reconcile"
     },
     {
       "check": "reference_manifest",
@@ -70,9 +70,7 @@
   "external_inputs": {
     "agent_model_and_tool_access": "VERIFY_IN_CURRENT_CLIENT",
     "cloud_network_and_dependency_provisioning": "VERIFY_IN_CURRENT_CLIENT",
-    "original_illustrations": "CHATGPT_WORK_GENERATED_MASTERS; INTEGRATE_AND_REVIEW",
-    "physical_inkjet_proof": "NOT TESTED; DOES NOT BLOCK FILE COMPLETION",
-    "commercial_cover_wrap": "NOT APPLICABLE UNLESS SEPARATELY REQUESTED"
+    "original_illustrations": "CHATGPT_WORK_GENERATED_MASTERS; INTEGRATE_AND_REVIEW"
   },
   "missing_tools_policy": "Provision during the capability milestone; availability is not kit integrity"
 }
