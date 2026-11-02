@@ -1,9 +1,8 @@
 {
- "ledger_commit": "a2903ef709e66443abcd3a47d0d6b17498094bab",
- "result": "RELEASED",
- "note": "released and verified",
- "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC527-build-41",
- "tag": "RC527-build-41",
- "run_url": "https://github.com/xjordont/Heraldry/actions/runs/41356015407",
- "physical_print": "NOT TESTED"
+ "ledger_commit": "9bfe86427bd9631c9e875b0df6f719a0ce878c62",
+ "result": "FAILED",
+ "note": "workflow did not complete successfully: cancelled",
+ "release_url": "",
+ "tag": "",
+ "run_url": "https://github.com/xjordont/Heraldry/actions/runs/41513080209"
 }
