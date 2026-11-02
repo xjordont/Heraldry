@@ -26,12 +26,12 @@ Targeted editorial, reader, and accessibility checks: [publication protocol](doc
 
 <!-- BEGIN AUTO:recent -->
 
-- [`0fde52cb`](https://github.com/xjordont/Heraldry/commit/0fde52cb7db8bee2fc6fa571a358ffe091a274f0) Guard commits and pushes; add /build-release skill
-- [`1f48ce59`](https://github.com/xjordont/Heraldry/commit/1f48ce594ffdf94237bef35bc5b5cbb3bd13d204) state: RC528 released as RC528-build-43
-- [`fab1e842`](https://github.com/xjordont/Heraldry/commit/fab1e842d7e0874a1ad1d07afac375910c07d5b8) Record release workflow result
-- [`0a64a31f`](https://github.com/xjordont/Heraldry/commit/0a64a31fe558bc60911af9b74b9f0b6f0f8f2941) Rebuild verified RC528 delivery
-- [`ecb570c1`](https://github.com/xjordont/Heraldry/commit/ecb570c1089c6920c19129227adf2ffa4d0034be) Record release workflow result
-- [`0341a8d8`](https://github.com/xjordont/Heraldry/commit/0341a8d887ef1c4f83a60aa92dd6959517c12182) Add a hook that blocks direct edits to manuscript snapshots
+- [`cb08ce21`](https://github.com/xjordont/Heraldry/commit/cb08ce21cc8b166b8edf8f6244699260931edd61) Keep the reference books local only after purging them from history
+- [`2126ecc3`](https://github.com/xjordont/Heraldry/commit/2126ecc331e16eea810a33e21470d93f24250b9a) Guard commits and pushes; add /build-release skill
+- [`57f17e5a`](https://github.com/xjordont/Heraldry/commit/57f17e5a8e46ce56a5ff1db30b88af8537178037) state: RC528 released as RC528-build-43
+- [`53be3a21`](https://github.com/xjordont/Heraldry/commit/53be3a21f00e963944e9c998fe249af3da788533) Record release workflow result
+- [`bdf74bc3`](https://github.com/xjordont/Heraldry/commit/bdf74bc36eb5e6cce587a10dca17b6045b25006b) Rebuild verified RC528 delivery
+- [`48b3ec5f`](https://github.com/xjordont/Heraldry/commit/48b3ec5fbd6fef0414053367124899d474471af5) Record release workflow result
 
 <!-- END AUTO:recent -->
 
