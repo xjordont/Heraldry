@@ -26,12 +26,12 @@ Targeted editorial, reader, and accessibility checks: [publication protocol](doc
 
 <!-- BEGIN AUTO:recent -->
 
+- [`0fde52cb`](https://github.com/xjordont/Heraldry/commit/0fde52cb7db8bee2fc6fa571a358ffe091a274f0) Guard commits and pushes; add /build-release skill
 - [`1f48ce59`](https://github.com/xjordont/Heraldry/commit/1f48ce594ffdf94237bef35bc5b5cbb3bd13d204) state: RC528 released as RC528-build-43
 - [`fab1e842`](https://github.com/xjordont/Heraldry/commit/fab1e842d7e0874a1ad1d07afac375910c07d5b8) Record release workflow result
 - [`0a64a31f`](https://github.com/xjordont/Heraldry/commit/0a64a31fe558bc60911af9b74b9f0b6f0f8f2941) Rebuild verified RC528 delivery
 - [`ecb570c1`](https://github.com/xjordont/Heraldry/commit/ecb570c1089c6920c19129227adf2ffa4d0034be) Record release workflow result
 - [`0341a8d8`](https://github.com/xjordont/Heraldry/commit/0341a8d887ef1c4f83a60aa92dd6959517c12182) Add a hook that blocks direct edits to manuscript snapshots
-- [`9bfe8642`](https://github.com/xjordont/Heraldry/commit/9bfe86427bd9631c9e875b0df6f719a0ce878c62) review: bind the all-page visual review for candidate 20261102T191639Z
 
 <!-- END AUTO:recent -->
 
