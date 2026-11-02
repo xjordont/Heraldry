@@ -12,6 +12,9 @@ on:
       - 'editorial/proposals/**'
       - 'reports/**'
       - 'research_notes/**'
+      # the build trigger and the review ledger start a build, which runs the suite before building
+      - 'production/build-request.json'
+      - 'production/qa/visual-review.json'
   pull_request:
   workflow_dispatch:
 permissions:
@@ -42,9 +45,6 @@ jobs:
         run: python -m pip install -r requirements.lock
       - name: Check locked dependencies and native imports
         run: python tools/check_dependencies.py --ci
-      - name: Test the artwork skill
-        # the skill ZIP and the offline package are build outputs: the repository tests build and validate fresh copies
-        run: python -m unittest discover -s production/art/skill/heraldry-classic-ink-art/tests -p 'test_*.py'
       - name: Check immutable manuscript chain and production contracts
         run: python tools/preflight.py --baseline
       - name: List the Hero portraits the Hero card tests compile
@@ -64,8 +64,8 @@ jobs:
       - name: Fetch the portraits (only objects not already cached)
         shell: bash
         run: git lfs pull --include="${{ steps.portraits.outputs.include }}" --exclude=""
-      - name: Check revision and failure gates
-        run: python -m unittest discover -s tests
+      - name: Run both test suites (repository and art skill), modules in parallel
+        run: python tools/run_tests.py
       - name: Protect prior snapshots and revision records
         shell: bash
         env:

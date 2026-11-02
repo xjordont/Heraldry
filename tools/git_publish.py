@@ -86,11 +86,13 @@ def run_tests(root: Path, python: str = sys.executable) -> None:
 
 def publish_files(root: Path, paths: list[str], message: str, base_commit: str,
                   test_runner=None) -> str:
-    """Test, commit only paths, and normally push main once.
+    """Commit only paths, and normally push main once.
 
-    test_runner(root) is injectable for isolated tests; production callers leave it
-    unset to execute make test. Concurrent changes or a rejected push stop safely
-    and retain the local work. The caller must first use require_clean_main.
+    The callers publish one JSON file (a build request or a review ledger) on a clean main
+    that CI has already tested, and the build it starts runs the suite before building, so
+    no local test run happens here unless test_runner(root) is given. Concurrent changes or a
+    rejected push stop safely and retain the local work. The caller must first use
+    require_clean_main.
     """
     root = Path(root).resolve()
     allowed = set(paths)
@@ -109,10 +111,11 @@ def publish_files(root: Path, paths: list[str], message: str, base_commit: str,
     if not _changed_paths(root):
         raise PublishError("no publication changes to commit")
     before = {p: (root / p).read_bytes() if (root / p).is_file() else None for p in allowed}
-    (test_runner or run_tests)(root)
-    check_scope()
-    if before != {p: (root / p).read_bytes() if (root / p).is_file() else None for p in allowed}:
-        raise PublishError("publication files changed during make test; inspect them and rerun publication")
+    if test_runner:
+        test_runner(root)
+        check_scope()
+        if before != {p: (root / p).read_bytes() if (root / p).is_file() else None for p in allowed}:
+            raise PublishError("publication files changed during make test; inspect them and rerun publication")
     _git(root, "add", "--", *sorted(allowed))
     # --only makes the commit scope explicit even if another process stages a file.
     _git(root, "commit", "--only", "-m", message, "--", *sorted(allowed))

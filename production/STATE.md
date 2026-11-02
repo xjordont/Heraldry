@@ -1,5 +1,9 @@
 # Production state - RC528 source, main
 
+## Test pipeline: same tests, a third of the time, run once where it matters - 2026-11-02
+
+Owner question: are the 397 tests needed, and can the pipeline be faster without losing anything? Nearly every module guards something real (manuscript integrity, revision rollback, release gates, page-position evidence, layout regressions, art delivery), so no protection was cut. Changes: `tools/run_tests.py` runs both suites (tests/ and the art skill's) one module per process in parallel, with the same tests and the same pass/fail result (`tests/test_run_tests.py` proves it reports failures, errors, import problems, and empty modules); `make test`, `dev.py check`, CI, and both build workflows use it. The suite takes about 40 seconds on 4 cores (66 on 2) instead of about 2 minutes 20, and `dev.py check` about 46 seconds. Removed duplicate runs: the build-request and review-ledger helpers no longer run the suite locally before committing their one JSON file, and CI no longer runs on a push of just that file, because the build it starts runs the suite first. Removed `tests/test_manuscript_repairs.py`, which only compared two historical snapshots that the revision engine and the history check already keep immutable. A release cycle now runs the suite about 4 times instead of about 8.
+
 ## Back-cover thumb tab removed; GitHub workflows trimmed - 2026-11-02
 
 Owner request: "Fix the index tab on the back cover and optimize GitHub workflows." `typst/cover.typ`'s cover pages now clear the document's page background, so the Index thumb tab (and any opener frame) no longer prints on the digital back cover. A recompile of the digital edition from the proof's composition changed only the back cover (and page 4, the colophon edited earlier); still 628 pages.
