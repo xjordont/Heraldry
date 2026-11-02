@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`82b33d52`](https://github.com/xjordont/Heraldry/commit/82b33d520e05fab6db26ca0f0d831625711bb667) editorial: quality-review the RC528 humanizer proposal (64 kept, 76 withdrawn)
 - [`f691c5e3`](https://github.com/xjordont/Heraldry/commit/f691c5e35c32a67cadac4c240ec5da46914a4a16) art: let the generator approve its own images; trim art-card ceremony
 - [`b0bf04e7`](https://github.com/xjordont/Heraldry/commit/b0bf04e792f3b870a0666578058ca28bbb99f5cc) docs: trim build, QA, role, and master-prompt ceremony
 - [`1909f459`](https://github.com/xjordont/Heraldry/commit/1909f459b31d77e6ff94fcfa5c98ededc90fd52e) docs: trim the agent contract, self-review ban, and per-change checks
 - [`3695755f`](https://github.com/xjordont/Heraldry/commit/3695755fc77d0a9893fc9d22ce8c2d7542667e73) docs: trim agent start-up reading and keep hard rules in CLAUDE.md
 - [`a92e0177`](https://github.com/xjordont/Heraldry/commit/a92e0177f9a2951092195f74494790b95b93ddb5) editorial: second humanizer pass on the RC528 proposal (140 patches, not applied)
-- [`3a574aaa`](https://github.com/xjordont/Heraldry/commit/3a574aaa559a248c2dd9ce9e8730a83902648b6f) editorial: humanizer review proposal for RC528 (78 patches, not applied)
 
 <!-- END AUTO:recent -->
 
