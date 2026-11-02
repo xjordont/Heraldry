@@ -11,11 +11,10 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 <!-- BEGIN AUTO:status -->
 
 - **Manuscript:** [RC527](source/Heraldry_RC527.md) (`source/versions.json`). Earlier snapshots are immutable.
-- **Last recorded delivery:** [RC527-build-41](https://github.com/xjordont/Heraldry/releases/tag/RC527-build-41), 625 interior pages. Newer source/tooling changes may await a separately requested build. [Evidence and limits](production/RELEASE_STATUS.md).
+- **Last recorded delivery:** [RC527-build-41](https://github.com/xjordont/Heraldry/releases/tag/RC527-build-41). Newer source/tooling changes may await a separately requested build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
 - **Illustration records:** 346 approved of 346; 0 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
-- **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
 <!-- END AUTO:status -->
 
@@ -27,12 +26,12 @@ Targeted editorial, reader, and accessibility checks: [publication protocol](doc
 
 <!-- BEGIN AUTO:recent -->
 
+- [`446e2ede`](https://github.com/xjordont/Heraldry/commit/446e2ede6c1184e674c5b0f2a9f834ae82700280) build: go digital-only and remove the InDesign export
 - [`82b33d52`](https://github.com/xjordont/Heraldry/commit/82b33d520e05fab6db26ca0f0d831625711bb667) editorial: quality-review the RC528 humanizer proposal (64 kept, 76 withdrawn)
 - [`f691c5e3`](https://github.com/xjordont/Heraldry/commit/f691c5e35c32a67cadac4c240ec5da46914a4a16) art: let the generator approve its own images; trim art-card ceremony
 - [`b0bf04e7`](https://github.com/xjordont/Heraldry/commit/b0bf04e792f3b870a0666578058ca28bbb99f5cc) docs: trim build, QA, role, and master-prompt ceremony
 - [`1909f459`](https://github.com/xjordont/Heraldry/commit/1909f459b31d77e6ff94fcfa5c98ededc90fd52e) docs: trim the agent contract, self-review ban, and per-change checks
 - [`3695755f`](https://github.com/xjordont/Heraldry/commit/3695755fc77d0a9893fc9d22ce8c2d7542667e73) docs: trim agent start-up reading and keep hard rules in CLAUDE.md
-- [`a92e0177`](https://github.com/xjordont/Heraldry/commit/a92e0177f9a2951092195f74494790b95b93ddb5) editorial: second humanizer pass on the RC528 proposal (140 patches, not applied)
 
 <!-- END AUTO:recent -->
 
