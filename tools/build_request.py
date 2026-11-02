@@ -45,11 +45,19 @@ def problems():
     not_ok = sorted(k for k, v in sels.items() if v.get("status") not in ("approved", "anchor-approved"))
     if not_ok:
         out.append(f"{len(not_ok)} illustrations are not approved: {', '.join(not_ok[:6])}")
+    catalogue = json.loads((ROOT / "production/art/SPOT_CATALOG.json").read_text(encoding="utf-8"))["entries"]
+    # An approval bound to an older catalogue spec would be left out of the book, and the build's
+    # artwork step (tools/check_art.py) fails on it: catch it here in seconds, not after a CI run.
+    spec = {e["id"]: e["spec_sha256"] for e in catalogue}
+    stale = sorted(k for k, v in sels.items() if v.get("status") in ("approved", "anchor-approved", "auto-selected")
+                   and k in spec and v.get("spec_sha256") != spec[k])
+    if stale:
+        out.append(f"{len(stale)} approved illustrations are bound to an outdated catalogue spec "
+                   f"(re-bind or redo them): {', '.join(stale[:6])}")
     queue = json.loads((ROOT / "production/art/gpt/QUEUE.json").read_text(encoding="utf-8"))
     # Section-end tailpieces are optional fill (owner 2026-10-30): the book leaves their space white
     # until each is approved, so a pending tailpiece never blocks a build. Every other item does.
-    optional = {e["id"] for e in json.loads((ROOT / "production/art/SPOT_CATALOG.json").read_text(encoding="utf-8"))["entries"]
-                if e.get("end_art")}
+    optional = {e["id"] for e in catalogue if e.get("end_art")}
     required = [i for i in queue.get("items", []) if i.get("id") not in optional]
     if required or (queue.get("count") and not queue.get("items")):
         out.append(f"the art queue still holds {len(required) or queue['count']} required items")
