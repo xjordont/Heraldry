@@ -2,37 +2,31 @@
 
 **Not applied.** Three owner requests, 2026-11-02, in a Claude Code session: "humanizer manuscript"; "Use the humanize skill again to ensure nothing is missed that sounds like AI or would trigger AI detection software"; and "Before applying ensure none of the changes create grammar, spelling, or style errors. Also check to ensure the rewritten sections are as well written or better written overall than the text they are proposed to replace by the humanizer." The manuscript changes only through exact replacements the owner approves, promoted once through `tools/revise_manuscript.py` as one new RC. Nothing below has been applied, and no figure, aid, or PDF has been rebuilt.
 
-Prepared 2026-11-02 against `source/Heraldry_RC527.md` (SHA-256 `d28f5ec8ef438b43d278ec59c8faf195204266606bcfad1cbd8258088f48ec55`, 18,552 lines). The 64 patches that survived the quality review are in the JSON twin `editorial/proposals/rc528-humanizer-review.json`, each with status `proposed`; the 76 withdrawn patches are kept there under `withdrawn` as a record and are never applied. Every remaining `find` occurs exactly once in RC527 and still exactly once when the batch is applied in order. No patch adds or removes a line, so block IDs and figure line citations do not move. No patch changes a number or a name; two add a bold game term the book already defines (LEARN-01 **AP**, SCEN-14 **Pressure Clock**). The full candidate passed `python tools/dev.py manuscript prepare` (READY FOR OWNER REVIEW; 83 of 83 content anchors resolve; no blocking finding).
+Prepared 2026-11-02 against `source/Heraldry_RC527.md` (SHA-256 `d28f5ec8ef438b43d278ec59c8faf195204266606bcfad1cbd8258088f48ec55`, 18,552 lines). The 131 patches that survived the quality review are in the JSON twin `editorial/proposals/rc528-humanizer-review.json`, each with status `proposed`; the 9 withdrawn patches are kept there under `withdrawn` as a record and are never applied. Every remaining `find` occurs exactly once in RC527 and still exactly once when the batch is applied in order. No patch adds or removes a line, so block IDs and figure line citations do not move. No patch changes a number or a name; two add a bold game term the book already defines (LEARN-01 **AP**, SCEN-14 **Pressure Clock**). The full candidate passed `python tools/dev.py manuscript prepare` (READY FOR OWNER REVIEW; 83 of 83 content anchors resolve; no blocking finding).
 
 ## Quality review
 
-The two humanizer passes produced 140 patches. Before anything is applied, each was checked for errors and for whether it reads at least as well as the text it replaces.
+The two humanizer passes produced 140 patches. Before anything is applied, each was checked for errors and for whether it reads at least as well as the text it replaces, and the owner then asked for the rejected rewrites to be attempted again so that every identified tell has a patch that clears both bars.
 
-- **Mechanical checks.** Every proposed line was checked for American spellings, unbalanced bold or italic markers, doubled words, stray spaces, and lowercase after a full stop, and every word new to the manuscript was checked by hand. Nothing was found except one style point: the plural 'Fighters' appears nowhere else, because class entries are singular.
+- **Mechanical checks.** Every proposed line was checked for American spellings, unbalanced bold or italic markers, doubled words, stray spaces, and lowercase after a full stop, and every word new to the manuscript was checked by hand.
 - **Author's review.** Each change was reread as a before-and-after pair for grammar, meaning, and quality.
-- **Independent blind review.** A separate reviewer was given all 140 pairs (the whole current line and the whole proposed line) under shuffled keys, with the house style but without the patterns, notes, or reasons, and asked to rate each proposal better, equal, or worse as writing for this book, list every error, and say what meaning changed. It rated 14 better, 45 equal, and 81 worse.
+- **Independent blind review, round one.** A separate reviewer was given all 140 pairs (the whole current line and the whole proposed line) under shuffled keys, with the house style but without the patterns, notes, or reasons, and asked to rate each proposal better, equal, or worse as writing for this book, list every error, and say what meaning changed. It rated 14 better, 45 equal, and 81 worse. The main finding: many first-draft edits merged short fragments or cut dry closing lines that are the book's deliberate voice, which removed a pattern but made the prose worse. Only patches that neither review rated worse were kept; agreed fixes replaced eleven; four flagged errors were corrected; and the sixteen revised wordings passed a second check (one plural corrected, one patch withdrawn). That left 64 patches.
+- **Third pass.** The 76 rejected patches were rewritten from scratch under a stricter brief: remove the tell with a concrete image or a changed rhythm rather than by flattening, keep the lore and rules meaning, and read at least as well as the original. (The owner's note that lines such as 'Sorcery does not study. It bleeds.' and 'One is an itch; a swarm is exsanguination.' are themselves machine habits settled the question the first review had left open.) An independent blind review of the 76 rated 22 better, 28 equal, and 26 worse, and judged which habits were removed. Its fixes were taken for 29 patches, and those went back for a final check: 9 better, 20 equal, and two touches the reviewer asked for were applied (the Oxford 'and' in LORE-17, 'the least of it' in MON-23), leaving no remaining error.
 
-The reviews agree on the main finding. Many humanizer edits merge short fragments or cut dry closing lines that are the book's deliberate voice ('Slow. Aware. Dangerous to touch.', 'Sorcery does not study. It bleeds.', 'One is an itch; a swarm is exsanguination.'). Those edits remove a pattern detectors look for, but they make the prose worse, and the owner's bar is that every rewrite reads at least as well as the original.
+Nine of the 76 could not be rewritten to meet the bar, because the independent reviewer found no machine habit in the original line and every rewrite read worse (MON-14, LORE-22, PARTY-09, PARTY-11, ITEM-13, MON-18, MON-19, MON-30, SCEN-13). They are listed under Withdrawn patches with the reason; the current text stands.
 
-The rule applied:
-
-1. A patch stays only if neither review rates it worse. 76 patches are withdrawn, including two the blind review rated equal that the author judged worse (LORE-20, PARTY-07), one that shares a paragraph with a better patch (MON-02), and one the final check advised against (MON-08).
-2. Where the blind review offered a fix at least as good as the original and the author agreed, the fix replaces the patch (11 patches, marked 'Revised in the quality review' or 'Narrowed').
-3. Every error either review flagged in a kept patch is corrected (4 patches, marked 'Corrected').
-4. The 16 patches whose wording changed in steps 2 and 3 went back to the independent reviewer for a final check. None was worse than the original. It found one error, the plural 'Pressure Clocks' in SCEN-14 (10.5.7 assigns each scenario one), now singular, and advised keeping the current text for MON-08, which is withdrawn. Of the 15 that remain, 8 are better than the original and 7 equal. For POWER-03 and POWER-05 it noted that restoring 'a cold calculus' and 'pulse with an untamed vitality' would rate better still; those are two of the stock phrases this pass exists to remove, and the current versions meet the bar, so they stay as proposed.
-
-Errors found and fixed in the kept patches: an ambiguous 'they' (POWER-03), a comma splitting a predicate (POWER-04), 'the wild' twice in one sentence (POWER-05), an undefined term where 10.5.7 defines the **Pressure Clock** (SCEN-14), two 'it's with different referents (MON-17), 'strikes ... strike back' (MON-20), and the plural 'Pressure Clocks' where each scenario has one (SCEN-14, found on the final check). The withdrawn patches included the errors the reviews found elsewhere: broken parallelism (LORE-06), a scope change in 'Either way' (LORE-21), a dropped comma (CAMP-03), and the plural class name (PARTY-15).
+Result: 131 proposed patches. 64 are from the first two passes as reviewed, and 67 are third-pass rewrites.
 
 ## AI detection
 
-No edit can promise a particular score from AI-detection software. Detectors are unreliable on short and formulaic text and disagree with one another, and rules text is formulaic by design: rewording 'unless a rule says otherwise' to change the statistics would make the rules less precise. The quality review also means this batch keeps much of the book's stylized voice (fragments, paired closers, and contrasts that carry a fact), which a detector may weigh the same way it weighs generated text. That trade was made deliberately in favour of the writing. Residual counts in the italic lore:
+No edit can promise a particular score from AI-detection software. Detectors are unreliable on short and formulaic text and disagree with one another, and rules text is formulaic by design: rewording 'unless a rule says otherwise' to change the statistics would make the rules less precise. The third pass addressed the habits the quality review had earlier left in place, so the residual counts match the full first draft while the writing holds its bar; the remaining contrasts and short sentences are ones both reviews judged to be the writer's own. Residual counts in the italic lore:
 
-| Pattern in the italic lore | RC527 | All 140 drafted patches | This batch |
+| Pattern in the italic lore | RC527 | First draft (140) | This batch |
 | --- | --- | --- | --- |
-| 'X is not Y. It is Z.' contrasts | 47 | 19 | 36 |
+| 'X is not Y. It is Z.' contrasts | 47 | 19 | 19 |
 | 'not just', 'not merely', 'not only' | 1 | 0 | 0 |
-| Sentences of three words or fewer | 50 | 19 | 43 |
-| 'X given a body' or 'given a shape' | 6 | 2 | 4 |
+| Sentences of three words or fewer | 50 | 19 | 22 |
+| 'X given a body' or 'given a shape' | 6 | 2 | 2 |
 | 'before the answer lands' or 'comes' | 2 | 1 | 1 |
 | 'is their larder' or 'nursery' | 3 | 1 | 1 |
 | 'the language of' | 1 | 0 | 1 |
@@ -42,134 +36,181 @@ No edit can promise a particular score from AI-detection software. Detectors are
 - **The Chapter 8 introduction** (POWER-01 to POWER-07), the one passage that reads as generated throughout: 'transcend the swing of a blade', 'pulse with a terrifying, untamed vitality', 'a terrible intimacy with corruption', and 'living conduits of the world's sickness' go, and every claim stays. The independent review rated four of these seven patches better than the original (POWER-01, POWER-04, POWER-06, and POWER-07) and the other three equal.
 - **Stock phrasing in the rules prose:** 'This opening shows why Heraldry Skirmish is not merely a damage race' (LEARN-01), 'is not won only by defeating enemies' (LEARN-02), 'talent ecosystem' (PARTY-13), 'the battlefield itself becomes the enemy' (SCEN-14), 'It is a promise about how the Monster fights' (MON-17), and the item-effect sentences that open 'Additionally' or say 'functions as' (ITEM-07 to ITEM-11).
 - **Contrasts and closers that deny nothing a reader believed:** 'The Town Phase is not peace', 'The Vault is not a treasury', 'The Monsters ... are not scattered obstacles', 'magic is not a gift', and the Smuggler, Courier, and Merchant backgrounds.
-- **Phrases repeated across entries,** where varying one copy reads at least as well: 'X given a body' (three of eight), 'before the answer lands' (two of three), 'There are always more' (one of three), and 'their larder' and 'their nursery'.
+- **Phrases repeated across entries:** 'X given a body' or 'given a shape', 'before the answer lands', 'There are always more', 'One is X; a swarm is Y', 'It is cold. It is always cold.', 'their larder' and 'their nursery'.
+- **The lore's staged pairs and fragment rows,** rewritten in the third pass with their images kept: 'Slow. Aware. Dangerous to touch.' becomes 'slow, aware, and dangerous to touch'; 'Sorcery does not study. It bleeds.' becomes 'Sorcery has no apprenticeship, only a price in blood.'; 'One is an itch; a swarm is exsanguination.' becomes 'One leaves a welt. Enough of them leave a body with nothing in it.'
 
 ## Counts
 
 | Group | Kept | Withdrawn | Figures affected by kept patches |
 | --- | --- | --- | --- |
-| Section 1: the world | 11 | 18 | none |
-| Section 6: parties, ancestries, backgrounds, and classes | 9 | 8 | FIG-75 |
-| Section 7: treasure, item lore, and item wording | 8 | 7 | none |
-| Section 8: Powers | 8 | 1 | none |
-| Section 9: Monsters | 18 | 21 | none |
-| Section 10: objectives, scenarios, and solo play | 4 | 10 | 41 (FIG-13 to FIG-56) |
-| Section 11: campaign | 4 | 11 | none |
+| Section 1: the world | 28 | 1 | none |
+| Section 6: parties, ancestries, backgrounds, and classes | 15 | 2 | FIG-75 |
+| Section 7: treasure, item lore, and item wording | 14 | 1 | none |
+| Section 8: Powers | 9 | 0 | none |
+| Section 9: Monsters | 35 | 4 | none |
+| Section 10: objectives, scenarios, and solo play | 13 | 1 | 41 (FIG-13 to FIG-56) |
+| Section 11: campaign | 15 | 0 | none |
 | Appendix A: Learn to Play | 2 | 0 | FIG-18 |
-| **Total** | **64** | **76** | **43** |
+| **Total** | **131** | **9** | **43** |
 
-63 patches are recommended and 1 optional (ITEM-04). Applied together, they shorten the book by about 221 words.
+130 patches are recommended and 1 optional (ITEM-04). Applied together, they shorten the book by about 158 words.
 
 ## Owner choices
 
-1. **Approve everything except the 10.4 scenario patches** (61 patches). 58 of them affect no figure. LEARN-01 and LEARN-02 stale one figure review (FIG-18, which hashes all of Appendix A), and PARTY-08 stales one more (FIG-75, which hashes 6.9 Ancestries).
-2. **Also approve the 10.4 scenario patches** (3 patches: SCEN-02, SCEN-09, SCEN-12). `tools/figure_dependencies.py` hashes the whole of **10.4 Core Scenario Outlines** for every scenario map and preparation figure, so any edit inside 10.4, however cosmetic, marks 41 figure reviews stale (FIG-13 to FIG-16 and FIG-20 to FIG-56). The re-review is a confirmation, but it has to be recorded before the next release. With only three small patches left in 10.4, leaving them out is reasonable.
+1. **Approve everything except the 10.4 scenario patches** (120 patches). 116 of them affect no figure. LEARN-01 and LEARN-02 stale one figure review (FIG-18, which hashes all of Appendix A), and PARTY-08 stales one more (FIG-75, which hashes 6.9 Ancestries).
+2. **Also approve the 10.4 scenario patches** (11 patches: SCEN-02, SCEN-09, SCEN-12, SCEN-03, SCEN-04, SCEN-05, SCEN-06, SCEN-07, SCEN-08, SCEN-10, SCEN-11). `tools/figure_dependencies.py` hashes the whole of **10.4 Core Scenario Outlines** for every scenario map and preparation figure, so any edit inside 10.4, however cosmetic, marks 41 figure reviews stale (FIG-13 to FIG-16 and FIG-20 to FIG-56). The re-review is a confirmation, but it has to be recorded before the next release. Each is a lore line in a scenario introduction; none changes setup, objectives, or any figure's content.
 3. **Optional patch.** ITEM-04 is a small merge the reviews rated equal.
+4. **Lines you may want to keep as written.** LORE-02 and LORE-17 rework phrases approved in RC523 (both now keep their images), and LORE-20 and LORE-21 touch the 1.1 pitch.
 
 ## Dependency impact
 
 - **Figures.** 2 figures (FIG-18, FIG-75) without the 10.4 patches, 43 with them.
 - **Content anchors.** All 83 resolve on the full candidate; none needs a new prefix. The back cover's quoted facts are unchanged.
-- **Player-aid sheets.** `tools/aids_fidelity.py` will report changed sections for pa02 (MON-13, MON-35); pa08 (CAMP-06, CAMP-13); pa09 (CAMP-06, CAMP-13); pa10 (SCEN-14). No sheet quotes the patched wording, so re-recording after a diff is a confirmation and the sheets do not need rebuilding.
+- **Player-aid sheets.** `tools/aids_fidelity.py` will report changed sections for pa02 (MON-13, MON-35, MON-15, MON-16, MON-27, MON-28, MON-29); pa08 (CAMP-06, CAMP-13, CAMP-07, CAMP-11, CAMP-12, CAMP-14, CAMP-15); pa09 (CAMP-06, CAMP-13, CAMP-07, CAMP-11, CAMP-12, CAMP-14, CAMP-15); pa10 (SCEN-14). No sheet quotes the patched wording, so re-recording after a diff is a confirmation and the sheets do not need rebuilding.
 - **Hero cards, back cover, How to Use, and cover lead.** Unaffected.
-- **Art catalog.** `production/art/SPOT_CATALOG.json` and `production/art/ILLUSTRATION_LIST.md` quote the flavour text above each illustration, and 25 patches change quoted paragraphs. Regenerate both at promotion (`python tools/dev.py agent run art-catalog`, then `tools/art_list.py`). Approved art is unaffected.
+- **Art catalog.** `production/art/SPOT_CATALOG.json` and `production/art/ILLUSTRATION_LIST.md` quote the flavour text above each illustration, and 56 patches change quoted paragraphs. Regenerate both at promotion (`python tools/dev.py agent run art-catalog`, then `tools/art_list.py`). Approved art is unaffected.
 - **Build.** Nothing was built. The last released PDFs (RC527-build-41) are unchanged.
 
 ## Withdrawn patches
 
-Withdrawn because a review rated them worse than the original (the reason is the reviewer's, shortened), or for the reason given. Their find and replace text stays in the JSON twin under `withdrawn`.
+The nine lines where the independent reviewer found no machine habit in the original and every rewrite read worse. The current text stands. Their last attempted wording stays in the JSON twin under `withdrawn`.
 
 | Patch | Where | Reason |
 | --- | --- | --- |
-| LORE-01 | 1.1, third paragraph | The paragraph now opens abruptly and the closing line loses its setup |
-| LORE-02 | 1.2, second paragraph | The image and the closing 'They know... They know...' pair carry the voice |
-| LORE-03 | 1.2, third paragraph | The three 'Some rise' sentences build to the closing image; the colon list with elided verbs is tidier but flatter |
-| LORE-04 | 1.2, fourth paragraph | The 'waits there' litany is the rhythm of the passage; the merge is smooth but flatter |
-| LORE-06 | 1.3.1, last paragraph | The three fragments 'Slow. Aware. Dangerous to touch.' are the point of the line |
-| LORE-07 | 1.3.2, opening paragraph | Drops the opening thesis 'Beyond the walls, land has become allegiance.', which frames why survivors use older names |
-| LORE-08 | 1.3.2, The Greenmark | The two-sentence turn is the dry closing line |
-| LORE-09 | 1.3.2, closing paragraph | Drops 'These six are the world now.', the summary line that closes the climate survey. Calling the six 'climates' is consistent with the at-a-glance box |
-| LORE-13 | 1.3.3, Saltspire | The separate 'It also makes it hated.' is the sting |
-| LORE-14 | 1.3.4, Arcane Spells | The aphorism is the better line |
-| LORE-17 | 1.3.6, third paragraph | The three fragments are the punchline. The same fragments recur verbatim later in the campaign chapter; vary that repeat instead, see CAMP-02 |
-| PARTY-01 | 6, opening paragraph | Loses 'not the heroes sung about in warm halls', a strong image that sets up the rest of the paragraph |
-| ITEM-01 | 7.17.3, The Hollow Crown | Changes the referent: CURRENT contrasts the crown with the tomb that has never been found, while PROPOSED says 'finding them' (the sovereign). It also turns the hedged 'the... |
-| ITEM-03 | 7.17.3, The Three-Strike Staff | The three short declaratives are the payoff |
-| ITEM-05 | 7.17.3, Karnessa's Binding | Loses the 'It is cold. It is always cold.' escalation |
-| ITEM-06 | 7.17.3, The Bell's Tongue | The two separate 'It has always' sentences make the closing beat |
-| POWER-09 | 8.5, Tier 1 Sorceries introduction | 'Is learned' implies study, the opposite of CURRENT's 'does not study'. It also breaks the echo of the Psion line ('do not study their power; they survive it') |
-| MON-02 | 9, introduction | Shares its paragraph with MON-01; the independent review advised applying only one, so the paragraph keeps one contrast |
-| MON-05 | 9.7, Swamp Goblin | Drops 'a nuisance one at a time'. 'Dangerous' is flatter than 'a hazard' |
-| MON-06 | 9.7, Stirge | This is the strongest use of the one-versus-many formula; trim the others instead |
-| MON-08 | 9.7, Skeleton Warrior | The final check found the revised 'Others stand ranked in the dark' weaker than 'There are always more' and advised keeping the current text, since MON-07 already removes one... |
-| MON-10 | 9.7, Desert Naga | The two short sentences are the dry close; 'but' spells the irony out |
-| MON-12 | 9.7, White Court Executioner | The merged version loses the turn, and 'only' becomes vaguer |
-| MON-14 | 9.7, The Ancient Void Dragon | Loses 'neither burns nor freezes', the contrast with the fire and frost dragons |
-| MON-15 | 9.7, Captain Veyr of the Forsaken | The fragment 'Only the oath.' is the closer |
-| MON-16 | 9.7, The Antlered Warden of the Tithe | Loses 'does not come to bargain' (they do not negotiate) |
-| SCEN-01 | 10.2, Ashlands Secondary Objectives, the Reliquary | Colon misuse: the colon makes 'one of Mordain Kest's bindings...' read as the explanation of the warmth, which it is not |
-| SCEN-03 | 10.4, Greenmark Scenario 2, Scenario-Specific Monster: Antlered Warden | The triple 'They do not... They do not... They maintain' is the closing rhythm |
-| SCEN-04 | 10.4, Ashlands Scenario 6, The Iron-Vein Vault | The fragment 'Until now.' is the hook |
-| SCEN-05 | 10.4, Ashlands Scenario 6, The Iron-Vein Vault | Drops the closing 'The vault does not care about either contract.' |
-| SCEN-06 | 10.4, Ashlands Scenario 5, The Reliquary of Broken Saints | Drops 'are not confused', the dry note that these dead guard on purpose |
-| SCEN-07 | 10.4, Pale City Scenario 2, The Alchemist's Frozen Laboratory | Drops 'Some things in that laboratory were never meant to thaw.', the only hint that something there is dangerous |
-| SCEN-08 | 10.4, Sun-Drowned Scenario 1, The Oasis Raiders | Drops the closing line that resolves the liberation/seizure pair |
-| SCEN-10 | 10.4, Mire Scenario 1, Scenario-Specific Monster: Salttide's Shade | The three 'They watch' sentences build |
-| CAMP-01 | 11, first paragraph | The fragments are the ledger rhythm |
-| CAMP-03 | 11, seventh paragraph | The six-item colon list is heavy; the fragment litany reads better |
-| CAMP-04 | 11.1, first lore paragraph | Drops 'not a castle in the noble sense' |
-| CAMP-05 | 11.1, third lore paragraph | Drops 'That is not mercy. It is weight.' and 'more than adventurers with blades and debts'. 'Take on the weight of answering for' is wordier |
-| CAMP-07 | 11.3, The Armoury | Drops 'does not look safe' (prepared is not the same as safe) |
-| LORE-20 | 1.1, first paragraph | Rated equal by the independent review but worse by the author ('treasure and glory and hoping' is clumsier than the original) |
-| LORE-21 | 1.1, fourth paragraph | Unclear reference: 'Either way' now points back to solo versus cooperative play, so competitive play drops out of the summary. 'With the constant risk' is loosely attached |
-| LORE-22 | 1.2, first paragraph | The two parallel sentences make the closing antithesis |
-| LORE-23 | 1.2, fifth paragraph | Drops 'feared' |
-| LORE-24 | 1.2, last paragraph | 'Renewed one Skirmish at a time' (rolled over) becomes 'comes due again every Skirmish' (payment demanded), a different metaphor |
-| LORE-26 | 1.3.4, Divine Prayers | The paired 'Both...' sentences are the closer |
-| LORE-29 | 1.3.7, after the omens | Register clash: 'rule of play' is rules language inside italic lore; the sentence ends on its weakest phrase |
-| PARTY-06 | 6, second paragraph | Shares its line with PARTY-02, the stronger edit of that line |
-| PARTY-07 | 6.9, Dwarf | Rated equal by the independent review but worse by the author ('Hardship hardened' echoes) |
-| PARTY-09 | 6.9, Drakeblood | Drops 'the old language of'; 'is fallen' (a state) becomes 'has fallen' (an event) |
-| PARTY-11 | 6.10, Apprentice | Loses 'marks that never quite fade' |
-| PARTY-15 | 6.13, Fighter | Breaks the house rule that class entries use the singular ('A Fighter ...'). It also breaks the series opener used across class entries ('A Fighter is forged', 'A Rogue is... |
-| PARTY-16 | 6.13, Ranger | Style: breaks the parallel 'A [Class] is [participle]' opener used across the class entries |
-| PARTY-17 | 6.13, Wizard | Style: breaks the parallel class-entry opener; the long second sentence repeats 'the Wizard' |
-| ITEM-13 | 7.17.3, The Hollow Crown's Writ | Loses the dry 'less reassuringly' |
-| ITEM-14 | 7.17.3, Kest's Iron Reliquary | The full stop after 'This one is warm.' is the beat before the reveal |
-| ITEM-15 | 7.17.3, Ysolde Vane's Marginalia | The separate 'They are always in blood.' is the sting |
-| MON-18 | 9.7, Monster Roles, Minion | Loses the 'tide' image |
-| MON-19 | 9.7, Monster Roles, Soldier | Repetition: 'hold a line' echoes 'line-holder' in the same entry |
-| MON-23 | 9.7, Monster Roles, Controller | Loses 'the weight of their arm' and 'the shape of the fight' |
-| MON-27 | 9.7, Avatar of the Old Growth | Unclear pronoun: in 'a body it can act through', 'it' can be the will or the forest |
-| MON-28 | 9.7, The Voice Beneath the Bells | Style: breaks the paired construction ('given a child's shape and a drowned chapel's patience') into an unbalanced 'in ..., with ...' |
-| MON-29 | 9.7, Avatar of the Old Growth | The separate 'The Greenmark does not forgive.' is the closer |
-| MON-30 | 9.7, Forsaken Knight | Drops 'Their honour has curdled into compulsion.' |
-| MON-31 | 9.7, White Court Sentinel | Drops 'only' (they do nothing but endure) |
-| MON-33 | 9.7, Tomb Guardian | The two sentences make the closing beat |
-| MON-36 | 9.7, Lizardfolk Hunter | Drops the second-person closer 'By the time they move, you are already in the water.' |
-| SCEN-11 | 10.4, Undermarches Scenario 2, The Chasm Crossing | Merges away the separate 'It does not ask what the things want.' |
-| SCEN-13 | 10.4, Mire Scenario 5, Salttide's Reckoning | Drops the sensory detail 'The water smells of brine, this far from any sea.' |
-| CAMP-08 | 11, fourth paragraph | Merges away the separate 'Clean things do not last long beyond the gates.' |
-| CAMP-10 | 11.1, Triumph | The 'It means' anaphora and the closing pair 'That is enough to matter. It is not enough to last.' are the passage |
-| CAMP-11 | 11.3, The Apothecary | The repeated 'leave' builds the line |
-| CAMP-12 | 11.3, The Stronghold Chapel | Loses the 'Its... Its... Its...' triple |
-| CAMP-14 | 11.3, The War Room | Folds the staccato close into a colon list |
-| CAMP-15 | 11.3, The Undercroft | Merges the 'Each year' pair |
-| MON-38 | 9.7, Green Dragon | Awkward usage: in 'prefer manipulation to rampage', 'rampage' reads oddly as an uncountable noun |
-| MON-39 | 9.7, Possessed Corpse | 'They only reach' becomes 'the body only reaches'. This settles the referent but flattens the closer |
+| MON-14 | 9.7, The Ancient Void Dragon | 'Neither burns nor freezes but unmakes' is an informational contrast with the fire and frost dragons; both reviews prefer it as written |
+| LORE-22 | 1.2, first paragraph | A plain antithesis, not a staged one; merging it moved 'never chose a side' out of end position |
+| PARTY-09 | 6.9, Drakeblood | 'The old language of flame, storm, and scale' is an image the reviewer judged good; the triad is a literal list |
+| PARTY-11 | 6.10, Apprentice | The original is one plain sentence; the rewrite split it into three clauses and stated as fact what the original left general |
+| ITEM-13 | 7.17.3, The Hollow Crown's Writ | The closer is specific to the item; the echo of the 1.3.7 legend is the same artifact's lore repeating on purpose |
+| MON-18 | 9.7, Monster Roles, Minion | 'A tide of them' is an image, not a habit; a number read flatter |
+| MON-19 | 9.7, Monster Roles, Soldier | 'Neither glass nor wall' is a compact image that points at the Cannon and Brute roles; both reviews prefer it |
+| MON-30 | 9.7, Forsaken Knight | 'Their honour has curdled into compulsion' is a single strong image, not a stock line; every rewrite was longer and weaker |
+| SCEN-13 | 10.4, Mire Scenario 5, Salttide's Reckoning | Both reviews find no machine habit in the two sentences, and the rewrite stated a literal change the original did not |
 
 ## Left alone
 
 - **Procedural rules wording.** Repeated formulas such as 'unless a rule says otherwise' are deliberate rules language.
 - **Headings and bold labels.** House style; they carry anchors, cross-references, and the index.
-- **The book's lore voice.** Fragments, paired closers, anaphora, and contrasts that carry a fact, as the quality review found.
+- **Images the reviews judged to be the writer's own,** not habits: 'a tide of them', 'neither glass nor wall', 'the old language of flame, storm, and scale', 'Their honour has curdled into compulsion'.
 - **Repeated content.** The 1.3.6 climate list returns in the Chapter 11 introduction, and Chapter 8's tradition paragraphs repeat 1.3.4; that is a structure question, not a writing error.
 
 ## Findings
 
-Kept patches only, grouped by section, in manuscript order. Line numbers refer to `source/Heraldry_RC527.md`. 'Current' is the whole line as it stands; 'Proposed' is that line with only this patch applied.
+Proposed patches, grouped by section, in manuscript order. Line numbers refer to `source/Heraldry_RC527.md`. 'Current' is the whole line as it stands; 'Proposed' is that line with only this patch applied.
 
 ## Section 1: the world
+
+### LORE-20: 1.1, first paragraph
+
+**§6 triads. Recommended. Third-pass rewrite; independent review of the revised wording: better.** Three triads in two sentences; the last one changes shape. Reviewer's fix: keeps the list shape, varies its last item.
+
+*Line 167, under "1.1 What is Heraldry Skirmish?".* Dependencies: none.
+
+**Current**
+
+> **Heraldry Skirmish** is a competitive GM-less PvPvE fantasy tabletop miniatures game of desperate expeditions, brutal clashes, and hard-won survival. Most battles pit two rival adventuring parties against one another as they race through monster-haunted ruins, damned wilderness, and blood-soaked strongholds in search of treasure, glory, and escape.
+
+**Proposed**
+
+> **Heraldry Skirmish** is a competitive GM-less PvPvE fantasy tabletop miniatures game of desperate expeditions, brutal clashes, and hard-won survival. Most battles pit two rival adventuring parties against one another as they race through monster-haunted ruins, damned wilderness, and blood-soaked strongholds in search of treasure, glory, and a way back out.
+
+### LORE-01: 1.1, third paragraph
+
+**§2 closer, staged opener. Recommended. Third-pass rewrite; independent review: better.** 'Never passive' and 'Even victory is rarely clean' both stage the sentence after them; the opener now makes a claim of its own and the closer joins the fact it introduced.
+
+*Line 171, under "1.1 What is Heraldry Skirmish?".* Dependencies: none.
+
+**Current**
+
+> The battlefield is never passive. Neutral Monsters stalk the field, hazards punish hesitation, and scenarios place pressure on both sides from the first activation to the last. Even victory is rarely clean. The party that leaves the field richest is often the one that bled for every coin.
+
+**Proposed**
+
+> The battlefield fights back. Neutral Monsters stalk the field, hazards punish hesitation, and scenarios press both sides from the first activation to the last. Winning is rarely clean: the party that leaves the field richest is usually the one that bled for every coin.
+
+### LORE-21: 1.1, fourth paragraph
+
+**§6 triad. Recommended. Third-pass rewrite; independent review: equal.** The promotional triad becomes a sentence with a subject; the scope (competitive and cooperative) is unchanged.
+
+*Line 173, under "1.1 What is Heraldry Skirmish?".* Dependencies: none.
+
+**Current**
+
+> Heraldry Skirmish supports **solo** and **cooperative** play. In those games, **1–4 players** control **1–4 allied Heroes** against scenarios strengthened by additional Monsters, harsher threats, and fixed PvE pressure in place of a rival party. Whether played competitively or cooperatively, Heraldry is built around dangerous choices, concise tactical rules, and the constant risk that boldness will be rewarded before it is punished.
+
+**Proposed**
+
+> Heraldry Skirmish supports **solo** and **cooperative** play. In those games, **1–4 players** control **1–4 allied Heroes** against scenarios strengthened by additional Monsters, harsher threats, and fixed PvE pressure in place of a rival party. Competitive or cooperative, the game turns on dangerous choices under concise tactical rules, with the constant risk that boldness will be rewarded before it is punished.
+
+### LORE-02: 1.2, second paragraph
+
+**§1 contrast. Recommended. Third-pass rewrite; independent review: better.** Keeps the ledger-and-clerk image the owner approved in RC523, with both halves carrying information. The 'They know... They know...' pair stays.
+
+*Line 193, under "1.2 The Grim World".* Dependencies: none.
+
+**Current**
+
+> *Most people live close to a gate. A palisade, a bell, a chapel lamp, and a few armed neighbours are the shape of civilization now. Beyond them lie drowned fields, plague roads, ruined shrines, black forests, dead bridges, and the shattered works of older realms. Merchants who travel between holdings are not soft clerks with ledgers. They bargain, lie, fight, navigate, and plan funerals with equal care. They know which inns change names too often. They know which milestones bleed in rain.*
+
+**Proposed**
+
+> *Most people live close to a gate. A palisade, a bell, a chapel lamp, and a few armed neighbours are the shape of civilization now. Beyond them lie drowned fields, plague roads, ruined shrines, black forests, dead bridges, and the shattered works of older realms. Merchants who travel between holdings keep ledgers, but nobody mistakes them for clerks. They bargain, lie, fight, navigate, and plan funerals with equal care. They know which inns change names too often. They know which milestones bleed in rain.*
+
+### LORE-03: 1.2, third paragraph
+
+**§6 triad, §7 anaphora. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** The three kinds of dead stay, with the strongest image kept for last. Reviewer's fix: 'rise' instead of the idiom 'come up with'.
+
+*Line 195, under "1.2 The Grim World".* Dependencies: none.
+
+**Current**
+
+> *The countryside has teeth. Bandits prey on the weak and call it tax. Beasts prowl where the ploughs stopped. Goblin raiders descend on lonely roads and isolated farms. Orcs, gnolls, and kobolds test the borderlands for weakness and plunder. Haunted crypts and mass graves fill with the failures of earlier expeditions. The dead do not always stay down. Some rise hungry. Some rise bitter. Some rise with orders still clenched behind their teeth.*
+
+**Proposed**
+
+> *The countryside has teeth. Bandits prey on the weak and call it tax. Beasts prowl where the ploughs stopped. Goblin raiders descend on lonely roads and isolated farms. Orcs, gnolls, and kobolds test the borderlands for weakness and plunder. Haunted crypts and mass graves fill with the failures of earlier expeditions. The dead do not always stay down. Hunger raises some and bitterness others, and a few rise with orders still clenched behind their teeth.*
+
+### LORE-04: 1.2, fourth paragraph
+
+**§7 anaphora. Recommended. Third-pass rewrite; independent review: better.** The litany becomes one accumulating sentence.
+
+*Line 197, under "1.2 The Grim World".* Dependencies: none.
+
+**Current**
+
+> *Beneath ruined towers, sunken monasteries, and collapsed fortresses lie the vaults of fallen empires. Coin waits there. Relics wait there. Forbidden lore waits there too, written in dust, iron, blood, and languages that make candles gutter. Dragons still brood in the deep places of the earth and on the high forgotten peaks. Their hoards could ransom kingdoms. Their wrath could end them.*
+
+**Proposed**
+
+> *Beneath ruined towers, sunken monasteries, and collapsed fortresses lie the vaults of fallen empires. Coin waits there, and relics, and forbidden lore written in dust, iron, blood, and languages that make candles gutter. Dragons still brood in the deep places of the earth and on the high forgotten peaks. Their hoards could ransom kingdoms. Their wrath could end them.*
+
+### LORE-23: 1.2, fifth paragraph
+
+**§6 triad. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Keeps 'feared'; the tidy triad becomes an accumulating sentence. Revised after review: varies the 'X and Y and Z' device the set was starting to repeat.
+
+*Line 199, under "1.2 The Grim World".* Dependencies: none.
+
+**Current**
+
+> *Magic is real, feared, and never trusted. It is too common to dismiss and too dangerous to treat as ordinary. Curses, omens, failed workings, and old catastrophes have taught peasants to spit before speaking of it. Wizards dig power from broken observatories, dust-choked books, and stolen manuscripts. Sorcerers pay in blood for gifts they rarely understand. Priests beg miracles from distant powers that answer by silence as often as grace. Druids bargain with roots, rivers, storms, and things that remember the world before walls. Psions return from forbidden disciplines with minds cracked open and something still echoing inside.*
+
+**Proposed**
+
+> *Magic is real and feared, and no one trusts it. It is too common to dismiss and too dangerous to treat as ordinary. Curses, omens, failed workings, and old catastrophes have taught peasants to spit before speaking of it. Wizards dig power from broken observatories, dust-choked books, and stolen manuscripts. Sorcerers pay in blood for gifts they rarely understand. Priests beg miracles from distant powers that answer by silence as often as grace. Druids bargain with roots, rivers, storms, and things that remember the world before walls. Psions return from forbidden disciplines with minds cracked open and something still echoing inside.*
+
+### LORE-24: 1.2, last paragraph
+
+**§3 paired aphorisms. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Keeps the 'renewed' metaphor; the two aphorisms become one sentence. Reviewer's fix: the original four-word phrase kept.
+
+*Line 201, under "1.2 The Grim World".* Dependencies: none.
+
+**Current**
+
+> *Sensible people cling to hearth, habit, and walls. Your **Heroes** do not. They take writs from patrons who will not bleed for their own promises. They cross causeways where relief columns vanished, ford rivers that carry bones in flood season, and pry gold from rooms that should have stayed shut. In Heraldry, glory is a rumour told after the bodies are counted. Survival is a debt renewed one Skirmish at a time.*
+
+**Proposed**
+
+> *Sensible people cling to hearth, habit, and walls. Your **Heroes** do not. They take writs from patrons who will not bleed for their own promises. They cross causeways where relief columns vanished, ford rivers that carry bones in flood season, and pry gold from rooms that should have stayed shut. In Heraldry, glory is a rumour told after the bodies are counted, and survival is a debt renewed one Skirmish at a time.*
 
 ### LORE-25: 1.3, The Dying Lands at a Glance
 
@@ -198,6 +239,62 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 **Proposed**
 
 > *The lands where Heraldry Skirmish is fought are a continent in the oldest sense: a single body of land held together by mountains, rivers, roads, ruins, and grief long after its crowns and borders stopped being useful.*
+
+### LORE-06: 1.3.1, last paragraph
+
+**§1 contrast, §2 fragments. Recommended. Third-pass rewrite; independent review of the revised wording: better.** The image carries 'not gently'; the three qualities stay as one accumulating phrase, all adjectives this time. Reviewer's fix: no repeated verb; three parallel adjectives.
+
+*Line 227, under "1.3.1 The Fall".* Dependencies: none.
+
+**Current**
+
+> *The world is not dying gently. It dies like a wounded animal under a hedge. Slow. Aware. Dangerous to touch.*
+
+**Proposed**
+
+> *The world dies like a wounded animal under a hedge: slow, aware, and dangerous to touch.*
+
+### LORE-07: 1.3.2, opening paragraph
+
+**§3 saying. Recommended. Third-pass rewrite; independent review: equal.** The aphorism becomes the concrete claim it stood for, and still frames why survivors use older names.
+
+*Line 231, under "1.3.2 The Six Climates of Ruin".* Dependencies: art catalog quote.
+
+**Current**
+
+> *Beyond the walls, land has become allegiance. Expedition ledgers still say forest, city, cavern, ice, desert, and swamp. Survivors know better. They use older names. The shape of the world is plain enough to anyone who has walked it. The broken mountains run down its spine. The dead empire and its ruined cities sprawl across the eastern heart. The great forest spreads west to the coast, the ice locks the north, the dunes burn in the south beyond the mountain passes, and the swamps drown the south-east where the rivers give out at the sea. The old imperial roads still join all of it, straight and patient, running out from the Ashlands to every climate that survived. A dry label cannot warn a traveller that a road has memory, a court still sits without lungs, or a pool of black water may be listening.*
+
+**Proposed**
+
+> *Beyond the walls, the ground itself has taken sides. Expedition ledgers still say forest, city, cavern, ice, desert, and swamp. Survivors know better. They use older names. The shape of the world is plain enough to anyone who has walked it. The broken mountains run down its spine. The dead empire and its ruined cities sprawl across the eastern heart. The great forest spreads west to the coast, the ice locks the north, the dunes burn in the south beyond the mountain passes, and the swamps drown the south-east where the rivers give out at the sea. The old imperial roads still join all of it, straight and patient, running out from the Ashlands to every climate that survived. A dry label cannot warn a traveller that a road has memory, a court still sits without lungs, or a pool of black water may be listening.*
+
+### LORE-08: 1.3.2, The Greenmark
+
+**§1 contrast. Recommended. Third-pass rewrite; independent review: equal.** Same turn without the denial.
+
+*Line 235, under "The Greenmark".* Dependencies: art catalog quote.
+
+**Current**
+
+> *The Greenmark is the great temperate forest of the surviving world. It is larger than the maps. Roots take a road within a season and make the milestones useless. Travellers report trees shifting at the edge of sight, upright hounds between trunks, and grove-circles where moss stays warm after snow. Foresters cut warning signs into bark for those who know how to read them. The most common sign means turn back even if the voice ahead is your own. The forest is no wilderness. It is a country that does not recognize human law.*
+
+**Proposed**
+
+> *The Greenmark is the great temperate forest of the surviving world. It is larger than the maps. Roots take a road within a season and make the milestones useless. Travellers report trees shifting at the edge of sight, upright hounds between trunks, and grove-circles where moss stays warm after snow. Foresters cut warning signs into bark for those who know how to read them. The most common sign means turn back even if the voice ahead is your own. The forest is a country with laws of its own, and none of them are human.*
+
+### LORE-09: 1.3.2, closing paragraph
+
+**§2 closer, split pair. Recommended. Third-pass rewrite; independent review: better.** Keeps the summary line; the pair becomes two images in one sentence.
+
+*Line 257, under "The Mire".* Dependencies: none.
+
+**Current**
+
+> *These six are the world now. The Bastions are what mortal civilization built against them. They are also what mortal civilization hides inside.*
+
+**Proposed**
+
+> *These six are the world now. The Bastions are the walls mortal civilization raised against them, and the rooms it hides in.*
 
 ### LORE-10: 1.3.3, fourth paragraph
 
@@ -241,6 +338,48 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 > *For most people, the Bastion is the end of the world made habitable by walls. For adventurers, it is where wounds are priced, contracts are stamped, dead companions are replaced, and the next mistake is made official. The **Town Phase** is the part of the war fought with ledgers, knives, prayers, and closed doors.*
 
+### LORE-13: 1.3.3, Saltspire
+
+**§2 fragments. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** The sting stays, with the reason attached. Reviewer's optional fix taken.
+
+*Line 311, under "Saltspire".* Dependencies: art catalog quote.
+
+**Current**
+
+> ***Saltspire** is a tower-city built around a deep, sacred well at the centre of an oasis ringed by salt-pans and the bones of older cities. It has the only reliable water for a hundred miles. This makes it wealthy. It also makes it hated.*
+
+**Proposed**
+
+> ***Saltspire** is a tower-city built around a deep, sacred well at the centre of an oasis ringed by salt-pans and the bones of older cities. It has the only reliable water for a hundred miles. The water has made it rich, and every neighbour that buys it hates the seller.*
+
+### LORE-14: 1.3.4, Arcane Spells
+
+**§3 saying. Recommended. Third-pass rewrite; independent review: better.** The aphorism becomes the specific claim the next three sentences illustrate.
+
+*Line 329, under "1.3.4 Magic in the Dying Lands".* Dependencies: none.
+
+**Current**
+
+> ***Arcane Spells** are the inheritance of the broken empires. Wizards seek ruined libraries, half-burned grimoires, observatories with cracked lenses, and silent towers where their predecessors are still slumped over their work. Most Bastions tolerate wizards because they are useful. Tolerance is not trust. Sablekeep requires registration. Greythorn pays enough to keep them polite. Deepwarden watches their shadows on tunnel walls. They are blamed whenever blame needs a shape.*
+
+**Proposed**
+
+> ***Arcane Spells** are the inheritance of the broken empires. Wizards seek ruined libraries, half-burned grimoires, observatories with cracked lenses, and silent towers where their predecessors are still slumped over their work. Most Bastions tolerate wizards because they are useful, and watch them for the same reason. Sablekeep requires registration. Greythorn pays enough to keep them polite. Deepwarden watches their shadows on tunnel walls. They are blamed whenever blame needs a shape.*
+
+### LORE-26: 1.3.4, Divine Prayers
+
+**§7 paired fragments. Recommended. Third-pass rewrite; independent review: better.** Same two claims, the second made concrete.
+
+*Line 331, under "1.3.4 Magic in the Dying Lands".* Dependencies: none.
+
+**Current**
+
+> ***Divine Prayers** answer fitfully. The old saints remain in chapel rolls, and a few still seem to listen. Most do not. Priests who can call down a working become famous. Fame makes them useful, feared, and watched. Some teach that prayers fail because the gods withdrew. Others teach that prayers fail because the faithful are not yet worthy. Both teachings recruit. Both can get people killed.*
+
+**Proposed**
+
+> ***Divine Prayers** answer fitfully. The old saints remain in chapel rolls, and a few still seem to listen. Most do not. Priests who can call down a working become famous. Fame makes them useful, feared, and watched. Some teach that prayers fail because the gods withdrew. Others teach that prayers fail because the faithful are not yet worthy. Both teachings recruit well, and both have filled graves.*
+
 ### LORE-15: 1.3.5, opening paragraph
 
 **§1 contrast. Recommended. Independent review: equal.** The negative half denies a claim nobody made. Chapter 9 opens with the same move (MON-01).
@@ -283,6 +422,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 > ***The old peoples and border powers** have not vanished. Were-creatures, satyr cohorts, dryad ambassadors, deep elves, nagas, necromancers, lizardfolk temple-guards, and stranger courts hold places the Bastions still mark as lost. Some bargain, some tithe, and some raid. Some remember treaties humanity has forgotten and punish the breach with perfect sincerity. In the Sun-Drowned, the tomb-cities of the priest-kings are administered by **necromancers** who have outlasted their own deaths: judges, clerks, and tax-collectors preserved in linen, oil, and old authority. They do not acknowledge the Fall. They acknowledge overdue accounts.*
 
+### LORE-17: 1.3.6, third paragraph
+
+**§2 fragments. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Keeps all three qualities and the punch; the last beat gains a concrete image instead of a fragment. The verbatim repeat in Chapter 11 is varied by CAMP-02. Reviewer's fix: the three qualities as one sentence, with the original's last phrase intact.
+
+*Line 367, under "1.3.6 Adventurers and the Road".* Dependencies: none.
+
+**Current**
+
+> *What works is a party of four. Small enough to hide. Strong enough to fight. Cheap enough to lose.*
+
+**Proposed**
+
+> *What works is a party of four: small enough to hide, strong enough to fight, and cheap enough to lose.*
+
 ### LORE-18: 1.3.6, last paragraph
 
 **§2 fragments. Recommended. Independent review: equal.** Three fragments become the end of the sentence they illustrate.
@@ -311,6 +464,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 > *The Dying Lands remember, and not kindly.*
 
+### LORE-29: 1.3.7, after the omens
+
+**§1 contrast. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Keeps the information a rulebook reader needs, in the lore's voice. Reviewer's optional fix taken.
+
+*Line 401, under "1.3.7 Legends and Echoes".* Dependencies: none.
+
+**Current**
+
+> *These are not rules. They are warnings.*
+
+**Proposed**
+
+> *They are warnings, and no rule in this book depends on them.*
+
 ### LORE-19: 1.3.7, last paragraph
 
 **§1 contrast. Recommended. Independent review: better.** Split 'does not need X. It needs only Y.' stated directly.
@@ -327,6 +494,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 ## Section 6: parties, ancestries, backgrounds, and classes
 
+### PARTY-01: 6, opening paragraph
+
+**§1 contrast. Recommended. Third-pass rewrite; independent review: better.** Keeps the warm-halls image without the denial frame.
+
+*Line 1998, under "6. Your Adventuring Party".* Dependencies: none.
+
+**Current**
+
+> *Adventuring parties are not the heroes sung about in warm halls. They are the people the Bastions can send when soldiers would die too loudly. Debtors march with seals burned into their papers. Condemned prisoners carry pardons that become valid only if they return. Chapel agents, guild cutters, ruined heirs, oath-bound hirelings, and free companies with no banner worth saluting all leave by the same gates.*
+
+**Proposed**
+
+> *The songs sung in warm halls are about other people. Adventuring parties are the people the Bastions can send when soldiers would die too loudly. Debtors march with seals burned into their papers. Condemned prisoners carry pardons that become valid only if they return. Chapel agents, guild cutters, ruined heirs, oath-bound hirelings, and free companies with no banner worth saluting all leave by the same gates.*
+
 ### PARTY-02: 6, second paragraph
 
 **§7 repeated openings. Recommended. Independent review: better.** Three parallel sentences become one.
@@ -340,6 +521,34 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 **Proposed**
 
 > *A Bastion blesses these parties when it must, pays them when it can, and denies them when the work turns shameful. Most **Expeditions** begin with a writ: a council mark, chapel order, guild contract, noble warrant, salvage-right, grave-tax exemption, or debt bond. The paper grants legal cause to enter forbidden ground and take what can be carried out. Rival parties may hold different writs for the same ruin. Each seal may be valid under some law, oath, or patronage. The Dying Lands do not care. A contract only matters if someone lives long enough to collect.*
+
+### PARTY-06: 6, second paragraph
+
+**§2 paired closers. Recommended. Third-pass rewrite; independent review: better.** 'Do not care' gains its object, and the two closers become one.
+
+*Line 2000, under "6. Your Adventuring Party".* Dependencies: none.
+
+**Current**
+
+> *A Bastion blesses these parties when it must. It pays them when it can. It denies them when the work turns shameful. Most **Expeditions** begin with a writ: a council mark, chapel order, guild contract, noble warrant, salvage-right, grave-tax exemption, or debt bond. The paper grants legal cause to enter forbidden ground and take what can be carried out. Rival parties may hold different writs for the same ruin. Each seal may be valid under some law, oath, or patronage. The Dying Lands do not care. A contract only matters if someone lives long enough to collect.*
+
+**Proposed**
+
+> *A Bastion blesses these parties when it must. It pays them when it can. It denies them when the work turns shameful. Most **Expeditions** begin with a writ: a council mark, chapel order, guild contract, noble warrant, salvage-right, grave-tax exemption, or debt bond. The paper grants legal cause to enter forbidden ground and take what can be carried out. Rival parties may hold different writs for the same ruin. Each seal may be valid under some law, oath, or patronage. The Dying Lands honour none of them; a contract matters only if someone lives long enough to collect.*
+
+### PARTY-07: 6.9, Dwarf
+
+**§1 'not so much X as Y'. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Same claim without the contrast frame or the 'hardship hardened' echo. Reviewer's fix: keeps the original's claim that hardship mostly did not sour them.
+
+*Line 2246, under "Dwarf".* Dependencies: figures FIG-75; art catalog quote.
+
+**Current**
+
+> *Dwarves are cut from sealed stone halls, old grudges, and craft traditions older than most fallen kingdoms. Hardship did not sour them so much as harden them, and little in this world meets one of them head-on and walks away whole.*
+
+**Proposed**
+
+> *Dwarves are cut from sealed stone halls, old grudges, and craft traditions older than most fallen kingdoms. Hardship hardened them more than it soured them, and little in this world meets one of them head-on and walks away whole.*
 
 ### PARTY-08: 6.9, Deep Elf
 
@@ -453,6 +662,48 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 > Each class has its own battlefield role, resources, and talents. Class talents are mechanically explicit and use the standard timing, action, and reaction rules of **Heraldry Skirmish**.
 
+### PARTY-15: 6.13, Fighter
+
+**§3 'the only thing that matters'. Recommended. Third-pass rewrite; independent review: equal.** Keeps the 'A Fighter is forged' opener the class entries share; only the stock phrase changes.
+
+*Line 2746, under "Fighter [1/5 Complexity]".* Dependencies: art catalog quote.
+
+**Current**
+
+> *A Fighter is forged in places where hesitation gets people killed. Drill, repetition, and hard lessons carve in the instinct to hold ground when holding it is the only thing that matters. They have watched lines collapse, and they know to the heartbeat how long one can stand before it does.*
+
+**Proposed**
+
+> *A Fighter is forged in places where hesitation gets people killed. Drill, repetition, and hard lessons carve in the instinct to hold ground when everything depends on holding it. They have watched lines collapse, and they know to the heartbeat how long one can stand before it does.*
+
+### PARTY-16: 6.13, Ranger
+
+**§7 template. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Keeps the shared opener; varies the entry's rhythm and drops the padding 'entirely'. Reviewer's fix: two sentences kept; only the padding 'entirely' goes.
+
+*Line 2894, under "Ranger [3/5 Complexity]".* Dependencies: art catalog quote.
+
+**Current**
+
+> *A Ranger is schooled by ground that kills the careless. Tracks, wind, and distance tell them what others miss entirely. They learn to act before danger closes the gap, and to strike from where the enemy cannot answer.*
+
+**Proposed**
+
+> *A Ranger is schooled by ground that kills the careless. Tracks, wind, and distance tell them what others miss. They learn to act before danger closes the gap, and to strike from where the enemy cannot answer.*
+
+### PARTY-17: 6.13, Wizard
+
+**§11 passive closer. Recommended. Third-pass rewrite; independent review: better.** Keeps the shared opener and the closing triad's content, with the Wizard as the actor.
+
+*Line 3008, under "Wizard [4/5 Complexity]".* Dependencies: art catalog quote.
+
+**Current**
+
+> *A Wizard is formed through study that most would not endure. Fragments of knowledge, careful notes, and repeated failure shape their craft. Power is taken apart, understood, and rebuilt with precision.*
+
+**Proposed**
+
+> *A Wizard is formed through study that most would not endure. Fragments of knowledge, careful notes, and repeated failure shape their craft. They take power apart, learn how it works, and rebuild it with precision.*
+
 ## Section 7: treasure, item lore, and item wording
 
 ### ITEM-12: 7.6, second paragraph
@@ -468,6 +719,34 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 **Proposed**
 
 > *Adventurers return to the ruins because coin keeps breath in the body. It buys bread, lamp oil, splints, armour, apothecary work, chapel rites, hired blades, and one more season behind a wall. A relic may ransom a village or ruin one. A saint's ring may pay a healer. A king's cup may wake the court buried with it. Wealth is leverage, temptation, and tomorrow's trouble made bright enough to carry home.*
+
+### ITEM-01: 7.17.3, The Hollow Crown
+
+**§2 closer ('the distinction matters'). Recommended. Third-pass rewrite; independent review: better.** Keeps the crown-versus-tomb contrast and the hedge; drops the stock 'the distinction matters'.
+
+*Line 4906, under "7.17.3 Named Special Items and Artifacts".* Dependencies: none.
+
+**Current**
+
+> *The crown of the last sovereign of the fallen empires. No personal name survives. The statues that wore it have no faces. Their tomb has never been found. You have found their crown. This is not the same thing, and the distinction matters, but perhaps not yet.*
+
+**Proposed**
+
+> *The crown of the last sovereign of the fallen empires. No personal name survives. The statues that wore it have no faces. Their tomb has never been found. You have found their crown, which is a different thing, though the difference may not trouble you yet.*
+
+### ITEM-14: 7.17.3, Kest's Iron Reliquary
+
+**§2 fragment beat. Recommended. Third-pass rewrite; independent review: equal.** Keeps the beat after 'warm' and makes the reveal active.
+
+*Line 4921, under "7.17.3 Named Special Items and Artifacts".* Dependencies: none.
+
+**Current**
+
+> *Mordain Kest was a warlord-exorcist who bound Monsters into iron reliquaries and forced ghosts to testify in court. Their reliquaries still surface in Ashland ruins, usually warm to the touch and never empty. This one is warm. Something pushes against the inside of the latch when you hold it in the dark.*
+
+**Proposed**
+
+> *Mordain Kest was a warlord-exorcist who bound Monsters into iron reliquaries and forced ghosts to testify in court. Their reliquaries still surface in Ashland ruins, usually warm to the touch and never empty. This one is warm. Hold it in the dark and something pushes against the inside of the latch.*
 
 ### ITEM-07: 7.17.3, Kest's Iron Reliquary effect
 
@@ -497,6 +776,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 > **Effect:** This weapon deals **holy** damage. While wielding Saint Cael's Burning Seal, once per adventure when you are within **2"** of a scenario-marked threshold, bridge, ford, gate, or archway and you apply **AV** or use **Parry** against an **Undead** or **Fiend**, you may treat each **AD** die or retained **Parry** base die as its maximum natural result instead of rolling it. Roll any exploding **Parry** bonus dice and resolve **Riposte** normally. **Undead** and **Fiends** that attack you while you are within **2"** of such a threshold also suffer **1d6 holy damage** after their attack resolves. While wielding Saint Cael's Burning Seal you may spend **[1 AP]** to end **Cursed** on yourself or one ally within **2"**.
 
+### ITEM-15: 7.17.3, Ysolde Vane's Marginalia
+
+**§2 paired closer. Recommended. Third-pass rewrite; independent review: better.** The sting stays, in one sentence with a concrete noun.
+
+*Line 4975, under "7.17.3 Named Special Items and Artifacts".* Dependencies: none.
+
+**Current**
+
+> *Handwriting that matches no living scribe appears in the margins of scrolls that have been near this document. The notes are always useful. They are always in blood.*
+
+**Proposed**
+
+> *Handwriting that matches no living scribe appears in the margins of scrolls that have been near this document. The notes are always useful, and the ink is always blood.*
+
 ### ITEM-04: 7.17.3, Salttide's Counting Stone
 
 **§2 fragments. Optional. Independent review: equal.** Optional. Merges two of the three closing fragments; the dry last line stays.
@@ -525,6 +818,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 > *An iron-shod walking staff that has been struck three times against standing stones. The strikes are still there: three dents in the iron cap, each one slightly warmer than the rest of the metal.*
 
+### ITEM-03: 7.17.3, The Three-Strike Staff
+
+**§2 fragments. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Keeps the beat 'This is the staff.' and gives the two facts one concrete sentence. Reviewer's fix: no doubled 'still' and no invented placement of the dents.
+
+*Line 5099, under "7.17.3 Named Special Items and Artifacts".* Dependencies: none.
+
+**Current**
+
+> *Old Wode of the Antlered Path struck the standing stones three times at the end of the first post-Fall winter and returned with the agreement under which the Greenmark accepts Greythorn's autumn tithe. The agreement has never been written down. The forest has never broken it. This is the staff. The dents are there. The iron cap is still warm.*
+
+**Proposed**
+
+> *Old Wode of the Antlered Path struck the standing stones three times at the end of the first post-Fall winter and returned with the agreement under which the Greenmark accepts Greythorn's autumn tithe. The agreement has never been written down. The forest has never broken it. This is the staff. The three dents are there, and the iron cap is still warm.*
+
 ### ITEM-09: 7.17.3, Karnessa's Iron Seal effect
 
 **§12 'additionally'. Recommended. Independent review: equal.** Wording only; the effect is unchanged.
@@ -538,6 +845,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 **Proposed**
 
 > **Effect:** Once per adventure, when a Summon you control would be reduced to **0 HP**, you may spend **[0 AP]** to press Karnessa's Seal against them. This is a **Reaction**; declare it before that source's damage dice and commit its once-per-adventure use under **4.5**. That Summon is instead set to **1 HP**. While wearing this Seal, you also gain **+1** on **SPI Checks** made to resist the effects of **Undead** and **Fiend** Special Abilities.
+
+### ITEM-05: 7.17.3, Karnessa's Binding
+
+**§2 repeated closer. Recommended. Third-pass rewrite; independent review of the revised wording: better.** 'It is X. It is always X.' closes four relics; this one keeps the escalation as a concrete claim. Reviewer's fix: shorter, and does not repeat the 'in any hand' device used by SCEN-01.
+
+*Line 5144, under "7.17.3 Named Special Items and Artifacts".* Dependencies: none.
+
+**Current**
+
+> *The thing that leaked through the vault walls when Karnessa Iron-Vein sealed it is not described in any surviving record. The seal held. That is what the records say. The records say it with the tone of people who are very grateful and do not intend to investigate further. Karnessa's Binding is the principle of that seal made portable. It is cold. It is always cold.*
+
+**Proposed**
+
+> *The thing that leaked through the vault walls when Karnessa Iron-Vein sealed it is not described in any surviving record. The seal held. That is what the records say. The records say it with the tone of people who are very grateful and do not intend to investigate further. Karnessa's Binding is the principle of that seal made portable. It has never once been warm.*
 
 ### ITEM-10: 7.17.3, Bell-Shard Charm effect
 
@@ -566,6 +887,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 **Proposed**
 
 > **Effect:** This item functions as an early warning system. When any **Undead** Monster becomes **Awake** within **12"** of you, the Charm chimes. You immediately become aware of that Monster's approximate location and that their Wake-Up condition has been met. You may then take a **[0 AP Reaction]**, even outside your activation, to make an **INT Check** against **12**. This Check does not require the Monster to be **Hidden** or in your **LOS**. On a success, the Monster loses **Hidden**, if applicable, and you know their exact position until the end of the round. You also gain **+1** on **SPI Checks** made to resist **Frightened** from **Undead** sources.
+
+### ITEM-06: 7.17.3, The Bell's Tongue
+
+**§2 repeated closer. Recommended. Third-pass rewrite; independent review of the revised wording: better.** Same closer family as ITEM-05; the two 'always' claims become one sourced sentence. Reviewer's fix: anchors 'already'.
+
+*Line 5193, under "7.17.3 Named Special Items and Artifacts".* Dependencies: none.
+
+**Current**
+
+> *No surviving record describes this item clearly. The accounts that come closest describe a clapper removed from a very old bell, cold as iron left in a winter river, that rings without being struck. The Voice Beneath the Bells is mentioned in all six Bastions' folk songs. No grave has ever been found. The Bell's Tongue has no provenance. It has always existed. It has always been cold.*
+
+**Proposed**
+
+> *No surviving record describes this item clearly. The accounts that come closest describe a clapper removed from a very old bell, cold as iron left in a winter river, that rings without being struck. The Voice Beneath the Bells is mentioned in all six Bastions' folk songs. No grave has ever been found. The Bell's Tongue has no provenance. The oldest accounts already speak of it as old, and already call it cold.*
 
 ## Section 8: Powers
 
@@ -681,6 +1016,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 > *At this height a prayer is a demand, and something always answers. Whether it is the god prayed to is a question the devout do not raise aloud.*
 
+### POWER-09: 8.5, Tier 1 Sorceries introduction
+
+**§1 contrast. Recommended. Third-pass rewrite; independent review: equal.** Keeps the no-study claim and the echo of the Psion line.
+
+*Line 6359, under "Tier 1 Sorceries (d20)".* Dependencies: art catalog quote.
+
+**Current**
+
+> *Sorcery does not study. It bleeds. These first workings cost little blood and never fail, which is how they teach the unwary to want more.*
+
+**Proposed**
+
+> *Sorcery has no apprenticeship, only a price in blood. These first workings cost little of it and never fail, which is how they teach the unwary to want more.*
+
 ## Section 9: Monsters
 
 ### MON-01: 9, introduction
@@ -696,6 +1045,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 **Proposed**
 
 > *Beyond the Bastions, the world is no longer governed by mortal law. Roads, courts, borders, shrines, and markets have been replaced by hunger, territory, instinct, old commands, and powers that survived the Fall better than humankind did. The creatures encountered in the Dying Lands are the present owners of the world. Some are beasts made clever by scarcity, some are the dead still obeying ruined offices, some are mortals remade by pact, curse, rot, or worship, and some are older than the kingdoms whose bones they now inhabit. Each climate teaches its inhabitants a different form of cruelty, and each has produced creatures that use that cruelty as law. To enter the wilds is not to wander into empty land. It is to trespass.*
+
+### MON-02: 9, introduction
+
+**§1 contrast, §2 closer. Recommended. Third-pass rewrite; independent review of the revised wording: better.** The closer keeps 'trespass' and names what it means. Reviewer's fix: the padded 'ground that already has an owner' dropped.
+
+*Line 7552, under "9. Monsters".* Dependencies: none.
+
+**Current**
+
+> *Beyond the Bastions, the world is no longer governed by mortal law. Roads, courts, borders, shrines, and markets have been replaced by hunger, territory, instinct, old commands, and powers that survived the Fall better than humankind did. The creatures encountered in the Dying Lands are not interruptions to an expedition; they are the present owners of the world. Some are beasts made clever by scarcity, some are the dead still obeying ruined offices, some are mortals remade by pact, curse, rot, or worship, and some are older than the kingdoms whose bones they now inhabit. Each climate teaches its inhabitants a different form of cruelty, and each has produced creatures that use that cruelty as law. To enter the wilds is not to wander into empty land. It is to trespass.*
+
+**Proposed**
+
+> *Beyond the Bastions, the world is no longer governed by mortal law. Roads, courts, borders, shrines, and markets have been replaced by hunger, territory, instinct, old commands, and powers that survived the Fall better than humankind did. The creatures encountered in the Dying Lands are not interruptions to an expedition; they are the present owners of the world. Some are beasts made clever by scarcity, some are the dead still obeying ruined offices, some are mortals remade by pact, curse, rot, or worship, and some are older than the kingdoms whose bones they now inhabit. Each climate teaches its inhabitants a different form of cruelty, and each has produced creatures that use that cruelty as law. To enter the wilds is to trespass.*
 
 ### MON-17: 9.7, Monster Roles
 
@@ -739,6 +1102,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 > - **Cannon:** A fragile engine of sudden violence. A Cannon can fell a hero in a single dreadful moment, then shatter the instant a blade reaches them. Strike them first.
 
+### MON-23: 9.7, Monster Roles, Controller
+
+**§1 'rather than', §3 saying. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Keeps the weak arm and the forced fight; drops the abstract 'shape of the fight'. Revised after review: idiomatic, no 'rather than', and no tacked-on closer tag.
+
+*Line 7812, under "Monster Roles".* Dependencies: none.
+
+**Current**
+
+> - **Controller:** A bender of the battlefield, ruling through fear, venom, snare, and summoned horror rather than the weight of their arm. Their danger is the shape of the fight they force upon you.
+
+**Proposed**
+
+> - **Controller:** A Monster that bends the battlefield with fear, venom, snares, and summoned horrors, and whose own arm is the least of it. The danger is the fight they force on you.
+
 ### MON-24: 9.7, Monster Roles, Elite
 
 **'X given a body' template. Recommended. Independent review: equal.** 'X given a body' or 'given a shape' appears eight times in the book; this and MON-25 and MON-26 vary three. Also drops the doubled 'focused, concerted'.
@@ -752,6 +1129,34 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 **Proposed**
 
 > - **Elite:** A whole battle in one body. An Elite duels a seasoned hero as an equal and shrugs off scattered blows; only a concentrated attack will bring one down. Elites are rare and terrible, and seldom seen in numbers.
+
+### MON-38: 9.7, Green Dragon
+
+**§1 contrast. Recommended. Third-pass rewrite; independent review: better.** Same claim, no denial frame.
+
+*Line 8188, under "Green Dragon [Elite]".* Dependencies: art catalog quote.
+
+**Current**
+
+> *Lesser kin to Maelthorn and the Greenmark's most practised liar, the green dragon is a serpentine tyrant the colour of deep moss, spine-crested, their breath a rolling, corrosive poison. They do not rampage; they manipulate, ruling a swathe of forest through fear and bargain. Lesser things bring them tribute in exchange for being spared a while longer.*
+
+**Proposed**
+
+> *Lesser kin to Maelthorn and the Greenmark's most practised liar, the green dragon is a serpentine tyrant the colour of deep moss, spine-crested, their breath a rolling, corrosive poison. Rampage is beneath them; they rule a swathe of forest through fear and bargain. Lesser things bring them tribute in exchange for being spared a while longer.*
+
+### MON-39: 9.7, Possessed Corpse
+
+**§2 fragment. Recommended. Third-pass rewrite; independent review: equal.** Settles the referent and keeps the closer's 'only'.
+
+*Line 8264, under "Possessed Corpse [Minion]".* Dependencies: art catalog quote.
+
+**Current**
+
+> *Not all the Ashlands' dead rose by design. A possessed corpse is a body worn by something that crept in from the dark between worlds, lurching on borrowed legs toward a wrong, jerking purpose. Their grip does not tire, and they burst in a reek of corruption when they finally fall. Whatever rides them does not speak. They only reach.*
+
+**Proposed**
+
+> *Not all the Ashlands' dead rose by design. A possessed corpse is a body worn by something that crept in from the dark between worlds, lurching on borrowed legs toward a wrong, jerking purpose. Their grip does not tire, and they burst in a reek of corruption when they finally fall. Whatever rides them does not speak, and the corpse does nothing but reach.*
 
 ### MON-03: 9.7, Wererat
 
@@ -809,6 +1214,34 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 > *A knife of frozen malice in a drifting, translucent shape, the ice wraith is the spirit of someone who froze to death in the Pale City and never forgave it. Their touch saps warmth and thickens the blood to sludge. Steel passes clean through; only magic bites. They haunt the coldest avenues, hungry for the heat of anything still living.*
 
+### MON-31: 9.7, White Court Sentinel
+
+**§2 repeated closer. Recommended. Third-pass rewrite; independent review: equal.** 'They do not pursue. They only X.' also closes the Undead Sentinel; this keeps 'only' as 'the whole of'.
+
+*Line 9188, under "White Court Sentinel [Brute]".* Dependencies: art catalog quote.
+
+**Current**
+
+> *A greatshield-bearing corpse-knight, the White Court sentinel is the dead nobility's bodyguard, planting themselves before their lords and refusing to give ground. They lend their frozen resolve to the soldiers around them and weather blows that would shatter a lesser guardian. They will not pursue and will not break. They only endure, as the court endures.*
+
+**Proposed**
+
+> *A greatshield-bearing corpse-knight, the White Court sentinel is the dead nobility's bodyguard, planting themselves before their lords and refusing to give ground. They lend their frozen resolve to the soldiers around them and weather blows that would shatter a lesser guardian. They will not pursue and will not break. Enduring is the whole of their duty, as it is the court's.*
+
+### MON-12: 9.7, White Court Executioner
+
+**§1 split contrast. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Same turn, stated rather than staged. Reviewer's fix: no restaged contrast and no second 'centuries ago'.
+
+*Line 9265, under "White Court Executioner [Elite]".* Dependencies: art catalog quote.
+
+**Current**
+
+> *The White Court executioner carries out sentences the living court passed centuries ago, a towering headsman whose frost-rimed axe seeks the weakest throat on the field. They stride past the hale to reach the wounded and end them with grim efficiency. The court's justice did not die with the court. It only grew patient.*
+
+**Proposed**
+
+> *The White Court executioner carries out sentences the living court passed centuries ago, a towering headsman whose frost-rimed axe seeks the weakest throat on the field. They stride past the hale to reach the wounded and end them with grim efficiency. The justice outlived the court, and has had centuries to grow patient.*
+
 ### MON-21: 9.7, Frost Wyvern
 
 **repeated phrase. Recommended. Independent review of the revised wording: equal.** See MON-20. (Revised in the quality review: the first draft's 'again' lost the timing.)
@@ -851,6 +1284,34 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 > *Knee-high and bat-winged, a barbed venomous tail lashing behind them, the imp flits about the Sun-Drowned tombs as the spiteful servant of darker things. They dart in to sting and wheel away cackling, untroubled by the desert's heat or their own infernal fire. Alone they are more nuisance than threat, but worse usually follows them.*
 
+### MON-08: 9.7, Skeleton Warrior
+
+**§2 repeated closer. Recommended. Third-pass rewrite; independent review: equal.** 'There are always more' closes three undead Minion entries; this keeps the reinforcements and ties them to the order in the sentence before.
+
+*Line 9408, under "Skeleton Warrior [Minion]".* Dependencies: art catalog quote.
+
+**Current**
+
+> *A skeleton warrior stands at the post they were set in the year of their death, a sun-bleached frame in the corroded bronze of a priest-king's guard. They still hold the weapon they carried in life, waiting on an order that has not come in centuries. When intruders breach the sealed courts the order arrives at last, and the bones remember their drill. There are always more, ranked in the dark behind them.*
+
+**Proposed**
+
+> *A skeleton warrior stands at the post they were set in the year of their death, a sun-bleached frame in the corroded bronze of a priest-king's guard. They still hold the weapon they carried in life, waiting on an order that has not come in centuries. When intruders breach the sealed courts the order arrives at last, and the bones remember their drill. Behind them, more stand ranked in the dark, waiting on the same order.*
+
+### MON-10: 9.7, Desert Naga
+
+**§2 fragments. Recommended. Third-pass rewrite; independent review of the revised wording: better.** Keeps the dry irony in one sentence. Reviewer's fix: drops the mannered 'kept the guarding'.
+
+*Line 9552, under "Desert Naga [Controller]".* Dependencies: art catalog quote.
+
+**Current**
+
+> *A great serpent with an almost-human face and the patient cunning of something very old, the desert naga coils among the tomb-pillars. They spit venom from a distance and crush what comes close, hexing the strong into an unnatural sleep. The priest-kings kept them as guardians and oracles. They guard still. They no longer answer.*
+
+**Proposed**
+
+> *A great serpent with an almost-human face and the patient cunning of something very old, the desert naga coils among the tomb-pillars. They spit venom from a distance and crush what comes close, hexing the strong into an unnatural sleep. The priest-kings kept them as guardians and oracles. They still guard, and no one living has had an answer from them.*
+
 ### MON-11: 9.7, Fire Elemental
 
 **§2 closer. Recommended. Independent review: equal.** Restates the first sentence ('scorches whatever strikes them').
@@ -879,6 +1340,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 > *A looming framework of fused bone twice a man's height, the giant skeleton is what remains of something that was never entirely natural and is far less so now. They move with grinding deliberation, sweeping aside anything in their path with fists like falling masonry. Tomb-city carvings show their kind kneeling before the priest-kings; none show them standing.*
 
+### MON-33: 9.7, Tomb Guardian
+
+**§2 paired closer. Recommended. Third-pass rewrite; independent review: equal.** Same promise, one sentence, a stronger second half.
+
+*Line 9644, under "Tomb Guardian [Soldier]".* Dependencies: art catalog quote.
+
+**Current**
+
+> *A faceless construct of gilded stone and ritual, the tomb guardian was built to defend the priest-kings' seals and is tireless in that one duty. They plant themselves at a threshold and cannot be hurried or frightened. They have held one doorway for a thousand years. They will hold it for a thousand more.*
+
+**Proposed**
+
+> *A faceless construct of gilded stone and ritual, the tomb guardian was built to defend the priest-kings' seals and is tireless in that one duty. They plant themselves at a threshold and cannot be hurried or frightened. They have held one doorway for a thousand years, and nothing in the second thousand will move them.*
+
 ### MON-34: 9.7, Manticore
 
 **repeated closer. Recommended. Independent review: equal.** 'The X is their larder / barracks / nursery / hunting ground' closes seven entries, two with 'larder'. This and MON-35 trim two; the Elder Vrymk keeps 'larder'.
@@ -892,6 +1367,48 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 **Proposed**
 
 > *A monstrous fusion of lion's body, bat's wings, and a man's leering face, the manticore flicks volleys of iron spikes from their lashing tail. They wait where the dune-road narrows and rain barbs on whatever they have trapped. They savour a meal that begged first.*
+
+### MON-05: 9.7, Swamp Goblin
+
+**§2 repeated closer. Recommended. Third-pass rewrite; independent review of the revised wording: better.** The one-versus-many formula closes seven entries; this one gets its own image. Reviewer's fix: avoids sharing 'One is a nuisance' and 'a dozen' with other entries.
+
+*Line 9775, under "Swamp Goblin [Minion]".* Dependencies: art catalog quote.
+
+**Current**
+
+> *Slime-streaked cousins of their forest kin, swamp goblins paddle The Mire's channels and blow poisoned darts from the reeds. They melt into the cover and strike from wherever the water hides them. A nuisance one at a time, a hazard in a swarm. They strip the drowned for trinkets and teeth.*
+
+**Proposed**
+
+> *Slime-streaked cousins of their forest kin, swamp goblins paddle The Mire's channels and blow poisoned darts from the reeds. They melt into the cover and strike from wherever the water hides them. Alone they are a nuisance. Twenty of them, darting from twenty reed-beds, is how a party ends up in the water. They strip the drowned for trinkets and teeth.*
+
+### MON-06: 9.7, Stirge
+
+**§2 repeated closer. Recommended. Third-pass rewrite; independent review: better.** Same formula; the Latinate punchline becomes a plain one.
+
+*Line 9814, under "Stirge [Minion]".* Dependencies: art catalog quote.
+
+**Current**
+
+> *A bloated mosquito-thing the size of a cat, the stirge carries a needle proboscis and a belly that swells red with stolen blood. They dart in, latch on, and drain until they are pried loose. The Mire's dusk air hums with them. One is an itch; a swarm is exsanguination.*
+
+**Proposed**
+
+> *A bloated mosquito-thing the size of a cat, the stirge carries a needle proboscis and a belly that swells red with stolen blood. They dart in, latch on, and drain until they are pried loose. The Mire's dusk air hums with them. One leaves a welt. Enough of them leave a body with nothing in it.*
+
+### MON-36: 9.7, Lizardfolk Hunter
+
+**§2 repeated closer. Recommended. Third-pass rewrite; independent review: better.** 'By the time X, you are already Y' closes several entries; the second-person image stays, sharper.
+
+*Line 9869, under "Lizardfolk Hunter [Cannon]".* Dependencies: art catalog quote.
+
+**Current**
+
+> *A barbed harpoon in their claws, the lizardfolk hunter stalks The Mire's margins, dragging prey off the walkways and into the water where every advantage is their own. They strike from cover and the reeds, unseen until the line snaps taut. Patient and silent, they wait out the careless. By the time they move, you are already in the water.*
+
+**Proposed**
+
+> *A barbed harpoon in their claws, the lizardfolk hunter stalks The Mire's margins, dragging prey off the walkways and into the water where every advantage is their own. They strike from cover and the reeds, unseen until the line snaps taut. Patient and silent, they wait out the careless, and the first sign that they have moved is the water closing over your head.*
 
 ### MON-37: 9.7, Swamp Hag
 
@@ -907,6 +1424,34 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 > *A warty, weed-haired crone, the swamp hag poles their way through The Mire cursing all they meet, slipping half into the spirit-world when cornered. Their stench chokes out hope. They feed on misery, and every bargain they offer is a lie. The loneliest hut in the mire is theirs, and it is never empty for long.*
 
+### MON-27: 9.7, Avatar of the Old Growth
+
+**'X given a body' template. Recommended. Third-pass rewrite; independent review: better.** 'X given a body' appears eight times; this one becomes a two-word image.
+
+*Line 10251, under "Avatar of the Old Growth [Boss]".* Dependencies: player aid pa02; art catalog quote.
+
+**Current**
+
+> *A towering shape of ancient trunk and grasping root, bark-skinned and crowned with a tangle of antlered branches, the Avatar of the Old Growth is the will of the deep forest given a body to act through. They call the lesser green things to their side and drown intruders in living wood. To kill them is to wound the Greenmark itself. The Greenmark does not forgive.*
+
+**Proposed**
+
+> *A towering shape of ancient trunk and grasping root, bark-skinned and crowned with a tangle of antlered branches, the Avatar of the Old Growth is the deep forest's will, walking. They call the lesser green things to their side and drown intruders in living wood. To kill them is to wound the Greenmark itself. The Greenmark does not forgive.*
+
+### MON-29: 9.7, Avatar of the Old Growth
+
+**'to X is to Y', §2 closer. Recommended. Third-pass rewrite; independent review: equal.** Keeps the separate closer, with a concrete verb.
+
+*Line 10251, under "Avatar of the Old Growth [Boss]".* Dependencies: player aid pa02; art catalog quote.
+
+**Current**
+
+> *A towering shape of ancient trunk and grasping root, bark-skinned and crowned with a tangle of antlered branches, the Avatar of the Old Growth is the will of the deep forest given a body to act through. They call the lesser green things to their side and drown intruders in living wood. To kill them is to wound the Greenmark itself. The Greenmark does not forgive.*
+
+**Proposed**
+
+> *A towering shape of ancient trunk and grasping root, bark-skinned and crowned with a tangle of antlered branches, the Avatar of the Old Growth is the will of the deep forest given a body to act through. They call the lesser green things to their side and drown intruders in living wood. Killing them wounds the Greenmark itself. The Greenmark remembers wounds.*
+
 ### MON-35: 9.7, The Broodmother Prime
 
 **repeated closer. Recommended. Independent review: equal.** See MON-34; the first sentence already calls them the mother of every giant spider.
@@ -920,6 +1465,48 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 **Proposed**
 
 > *In the deepest dark of the Undermarches squats the mother of every giant spider that plagues the deep, a bloated horror the size of a cottage, egg-sacs trailing from them that twitch with the unborn. They flood the field with their brood and bind the survivors in webs for later. Their venom stops a heart in a single beat.*
+
+### MON-15: 9.7, Captain Veyr of the Forsaken
+
+**§2 fragment. Recommended. Third-pass rewrite; independent review of the revised wording: better.** The fragment becomes the second half of a balanced sentence. Reviewer's fix: the oath keeps them in the war; it did not start it.
+
+*Line 10298, under "Captain Veyr of the Forsaken [Boss]".* Dependencies: player aid pa02; art catalog quote.
+
+**Current**
+
+> *Veyr was the empire's greatest captain, who swore their company would never break and held them to it past death itself. Now they lead the Forsaken in spectral plate, a duelist whose paired blades have not slowed since the empire fell. They rally their dead soldiers with a voice like a closing tomb. They no longer recall the war they are still fighting. Only the oath.*
+
+**Proposed**
+
+> *Veyr was the empire's greatest captain, who swore their company would never break and held them to it past death itself. Now they lead the Forsaken in spectral plate, a duelist whose paired blades have not slowed since the empire fell. They rally their dead soldiers with a voice like a closing tomb. They no longer recall the war they are still fighting, only the oath that keeps them in it.*
+
+### MON-16: 9.7, The Antlered Warden of the Tithe
+
+**§1 split contrast. Recommended. Third-pass rewrite; independent review: better.** Keeps 'no bargain' as a fact rather than a denial.
+
+*Line 10364, under "The Antlered Warden of the Tithe [Boss]".* Dependencies: player aid pa02; art catalog quote.
+
+**Current**
+
+> *The antlered figure admitted to Greythorn's west gate each winter does not come to bargain when the tithe goes unpaid. They come to collect. A towering shape of bone-antler and living wood, they drag the indebted into their reach and call the wild court to witness. The forest has never broken the agreement, and it does not forgive those who do.*
+
+**Proposed**
+
+> *The antlered figure admitted to Greythorn's west gate each winter comes to collect when the tithe goes unpaid, and brings no terms. A towering shape of bone-antler and living wood, they drag the indebted into their reach and call the wild court to witness. The forest has never broken the agreement, and it does not forgive those who do.*
+
+### MON-28: 9.7, The Voice Beneath the Bells
+
+**'X given a shape' template. Recommended. Third-pass rewrite; independent review: equal.** Keeps the pairing with two verbs instead of 'given'.
+
+*Line 10388, under "The Voice Beneath the Bells [Boss]".* Dependencies: player aid pa02; art catalog quote.
+
+**Current**
+
+> *Survivors describe a small figure at the edge of the torchlight, singing in a tongue that sounds like an old lullaby heard through water. Then the torch goes out. The Voice Beneath the Bells is grief given a child's shape and a drowned chapel's patience, and their song hollows out everyone who hears it. The bells they wait beneath have not rung in a very long time.*
+
+**Proposed**
+
+> *Survivors describe a small figure at the edge of the torchlight, singing in a tongue that sounds like an old lullaby heard through water. Then the torch goes out. The Voice Beneath the Bells is grief that wears a child's shape and keeps a drowned chapel's patience, and their song hollows out everyone who hears it. The bells they wait beneath have not rung in a very long time.*
 
 ### MON-13: 9.7, Visath the White
 
@@ -937,6 +1524,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 ## Section 10: objectives, scenarios, and solo play
 
+### SCEN-01: 10.2, Ashlands Secondary Objectives, the Reliquary
+
+**§2 repeated closer, verbless fragment. Recommended. Third-pass rewrite; independent review: better.** Keeps the escalation and gives the third sentence a verb.
+
+*Line 11320, under "Climate 2: Ashlands Secondary Objectives (1d20)".* Dependencies: none.
+
+**Current**
+
+> *The Reliquary is warm to the touch. It is always warm. One of Mordain Kest's bindings, never recovered, surfacing again. Heroes who carry it report hearing a voice that does not belong to them.*
+
+**Proposed**
+
+> *The Reliquary is warm to the touch, in any weather and any hand. It is one of Mordain Kest's bindings, never recovered, surfacing again. Heroes who carry it report hearing a voice that does not belong to them.*
+
 ### SCEN-02: 10.4, Greenmark Scenario 2, Scenario-Specific Monster: Antlered Warden
 
 **§1 contrast, §7 repeated openings. Recommended. Independent review: equal.** Keeps the correction (a reader may well expect Old Wode here) without the verbless opener.
@@ -950,6 +1551,90 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 **Proposed**
 
 > *This is not Old Wode, who does not stir for small intrusions. The Antlered Warden is the agreement's enforcement arm: a figure woven from the grove's oldest growth, robed in bark and grey moss, with antlers that have more branches than any natural animal. They do not speak. They do not negotiate. They maintain the terms.*
+
+### SCEN-03: 10.4, Greenmark Scenario 2, Scenario-Specific Monster: Antlered Warden
+
+**§7 anaphora. Recommended. Third-pass rewrite; independent review: better.** The two negatives become one concrete sentence; the closer stays.
+
+*Line 12115, under "Scenario 2: The Whispering Grove".* Dependencies: figures FIG-13 to FIG-56 (41).
+
+**Current**
+
+> *Not Old Wode themselves. Old Wode does not stir for small intrusions. The Antlered Warden is the agreement's enforcement arm: a figure woven from the grove's oldest growth, robed in bark and grey moss, with antlers that have more branches than any natural animal. They do not speak. They do not negotiate. They maintain the terms.*
+
+**Proposed**
+
+> *Not Old Wode themselves. Old Wode does not stir for small intrusions. The Antlered Warden is the agreement's enforcement arm: a figure woven from the grove's oldest growth, robed in bark and grey moss, with antlers that have more branches than any natural animal. They have no words to offer and no interest in yours. They maintain the terms.*
+
+### SCEN-06: 10.4, Ashlands Scenario 5, The Reliquary of Broken Saints
+
+**§1 contrast. Recommended. Third-pass rewrite; independent review of the revised wording: better.** Same claim, stated. Reviewer's fix: replaces the colloquial 'know exactly what they are doing'.
+
+*Line 12753, under "Scenario 5: The Reliquary of Broken Saints".* Dependencies: figures FIG-13 to FIG-56 (41); art catalog quote.
+
+**Current**
+
+> *Broken statues and smashed reliquaries fill the hall, and sanctified bone and silver remain in the wreckage, too holy to abandon and too valuable to leave. Sablekeep needs the relics to keep its braziers lit and its authority legal, and will pay to register every fragment. The dead here are not confused. They swore to guard these relics, and death has not released them from the oath.*
+
+**Proposed**
+
+> *Broken statues and smashed reliquaries fill the hall, and sanctified bone and silver remain in the wreckage, too holy to abandon and too valuable to leave. Sablekeep needs the relics to keep its braziers lit and its authority legal, and will pay to register every fragment. The dead here have not forgotten why they stayed. They swore to guard these relics, and death has not released them from the oath.*
+
+### SCEN-04: 10.4, Ashlands Scenario 6, The Iron-Vein Vault
+
+**§2 fragment. Recommended. Third-pass rewrite; independent review: better.** The 'Until now.' hook becomes the hinge of the sentence, and 'Now' opens the next.
+
+*Line 12827, under "Scenario 6: The Iron-Vein Vault".* Dependencies: figures FIG-13 to FIG-56 (41); art catalog quote.
+
+**Current**
+
+> *The vault has been sealed for two generations. Karnessa Iron-Vein pressed their blood into the iron door when something inside began to leak through the walls, and the seal has held. Until now. Tremors along the imperial roads have cracked the outer binding, and something below is pushing. Sablekeep sends one party to reinforce the seal before whatever waits finishes their work; a rival patron sends another to open the vault and price what was sealed there. The vault does not care about either contract.*
+
+**Proposed**
+
+> *The vault has been sealed for two generations. Karnessa Iron-Vein pressed their blood into the iron door when something inside began to leak through the walls, and the seal held until tremors along the imperial roads cracked the outer binding. Now something below is pushing. Sablekeep sends one party to reinforce the seal before whatever waits finishes their work; a rival patron sends another to open the vault and price what was sealed there. The vault does not care about either contract.*
+
+### SCEN-05: 10.4, Ashlands Scenario 6, The Iron-Vein Vault
+
+**§2 closer. Recommended. Third-pass rewrite; independent review: better.** The closer keeps the joke and adds the thing inside.
+
+*Line 12827, under "Scenario 6: The Iron-Vein Vault".* Dependencies: figures FIG-13 to FIG-56 (41); art catalog quote.
+
+**Current**
+
+> *The vault has been sealed for two generations. Karnessa Iron-Vein pressed their blood into the iron door when something inside began to leak through the walls, and the seal has held. Until now. Tremors along the imperial roads have cracked the outer binding, and something below is pushing. Sablekeep sends one party to reinforce the seal before whatever waits finishes their work; a rival patron sends another to open the vault and price what was sealed there. The vault does not care about either contract.*
+
+**Proposed**
+
+> *The vault has been sealed for two generations. Karnessa Iron-Vein pressed their blood into the iron door when something inside began to leak through the walls, and the seal has held. Until now. Tremors along the imperial roads have cracked the outer binding, and something below is pushing. Sablekeep sends one party to reinforce the seal before whatever waits finishes their work; a rival patron sends another to open the vault and price what was sealed there. Whatever is inside has signed neither contract.*
+
+### SCEN-11: 10.4, Undermarches Scenario 2, The Chasm Crossing
+
+**§2 paired closer. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** One sentence, with the things placed. Reviewer's fix: one sentence without the repeated 'below the ledges'.
+
+*Line 12994, under "Scenario 2: The Chasm Crossing".* Dependencies: figures FIG-13 to FIG-56 (41); art catalog quote.
+
+**Current**
+
+> *A chasm splits the caverns like a wound in the world, crossed only by narrow ledges in broken pieces. A Survey Map must reach the Lantern Council before Deepwarden's rivals can claim the new diggings. Things cling to the dark stone below the ledges and wait for a hand to shake. The Council wants the map. It does not ask what the things want.*
+
+**Proposed**
+
+> *A chasm splits the caverns like a wound in the world, crossed only by narrow ledges in broken pieces. A Survey Map must reach the Lantern Council before Deepwarden's rivals can claim the new diggings. Things cling to the dark stone below the ledges and wait for a hand to shake. The Council wants the map and has not asked what the things want.*
+
+### SCEN-07: 10.4, Pale City Scenario 2, The Alchemist's Frozen Laboratory
+
+**§2 stock closer. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Keeps the menace with an actor instead of the stock 'never meant to'. Reviewer's fix: menace without inventing a deliberate sealer.
+
+*Line 13466, under "Scenario 2: The Alchemist's Frozen Laboratory".* Dependencies: figures FIG-13 to FIG-56 (41); art catalog quote.
+
+**Current**
+
+> *In the ice-locked Silent District, north along the road out of Hearthhold, an alchemist's laboratory remains sealed under frost. The formula inside might be worth a village, and Hearthhold burns through everything it owns just to stay warm. The cold has preserved the benches, the bottles, the last mistakes, and the guardians left to watch them. Some things in that laboratory were never meant to thaw.*
+
+**Proposed**
+
+> *In the ice-locked Silent District, north along the road out of Hearthhold, an alchemist's laboratory remains sealed under frost. The formula inside might be worth a village, and Hearthhold burns through everything it owns just to stay warm. The cold has preserved the benches, the bottles, the last mistakes, and the guardians left to watch them. The frost is the only thing that has kept the guardians still.*
 
 ### SCEN-12: 10.4, Pale City Scenario 5, The Ice Wyrm's Hoard
 
@@ -965,6 +1650,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 > *The old stories put jewels and gold in a frozen cavern beneath the north road out of Hearthhold, and a wyrm coiled on top of them whose breath can stop a heart inside its own armour. Hearthhold needs the gold more than it fears the breath, which is the kind of arithmetic only the poorest Bastion does out loud.*
 
+### SCEN-08: 10.4, Sun-Drowned Scenario 1, The Oasis Raiders
+
+**§2 closer. Recommended. Third-pass rewrite; independent review: equal.** The closer resolves the pair with a fact instead of personifying the water.
+
+*Line 13819, under "Scenario 1: The Oasis Raiders [Intro]".* Dependencies: figures FIG-13 to FIG-56 (41); art catalog quote.
+
+**Current**
+
+> *A vital oasis south of the mountain passes has changed hands again, and raiders hold the wells, the shade, and the people too slow to flee. Saltspire sells water as sovereignty, and an oasis it does not control is a debt it cannot collect. One contract from the Well-Keepers says liberation. A rival contract says seizure. The water will not ask which seal is righteous.*
+
+**Proposed**
+
+> *A vital oasis south of the mountain passes has changed hands again, and raiders hold the wells, the shade, and the people too slow to flee. Saltspire sells water as sovereignty, and an oasis it does not control is a debt it cannot collect. One contract from the Well-Keepers says liberation, and a rival's says seizure; the water will flow for whichever party holds the wells.*
+
 ### SCEN-09: 10.4, Sun-Drowned Scenario 4, The Sandwyrm's Lair
 
 **§2 closer. Recommended. Independent review: equal.** Restates the warning/inventory contrast the two sentences before it already make.
@@ -978,6 +1677,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 **Proposed**
 
 > *Nomad legends speak of a vast shape beneath the dunes south of the passes, and a gullet lined with the treasure of everything they have swallowed. The nomads tell it as a warning. Saltspire's patrons hear it as an inventory and pay accordingly.*
+
+### SCEN-10: 10.4, Mire Scenario 1, Scenario-Specific Monster: Salttide's Shade
+
+**§7 anaphora. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Keeps the build as one accumulating sentence. Reviewer's fix: plain series instead of 'and on... and on'.
+
+*Line 14271, under "Scenario 1: The Reliquary of Edrava Salttide [Intro]".* Dependencies: figures FIG-13 to FIG-56 (41).
+
+**Current**
+
+> *Edrava Salttide has not finished counting. The Mire preserved them, and it is patient. The Shade does not speak. They watch the reliquary. They watch the water. They watch every hand that reaches for what belongs to them.*
+
+**Proposed**
+
+> *Edrava Salttide has not finished counting. The Mire preserved them, and it is patient. The Shade does not speak. Their eyes stay on the reliquary, on the water, and on every hand that reaches for what belongs to them.*
 
 ### SCEN-14: 10.5, introduction
 
@@ -995,6 +1708,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 ## Section 11: campaign
 
+### CAMP-01: 11, first paragraph
+
+**§2 fragments. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Two full sentences keep the ledger rhythm. Reviewer's optional fix taken: 'that' dropped.
+
+*Line 15021, under "11. Campaign Play".* Dependencies: none.
+
+**Current**
+
+> *In the Dying Lands, a single **Skirmish** is a transaction. Blood for coin. Risk for salvage. A name crossed off a roster so another name can eat for a week. A campaign is the longer ledger. It records what the party won, what it spent, who carried the chest, who did not stand up, and which debts waited at the gate.*
+
+**Proposed**
+
+> *In the Dying Lands, a single **Skirmish** is a transaction, blood for coin and risk for salvage. A name is crossed off a roster so another name can eat for a week. A campaign is the longer ledger. It records what the party won, what it spent, who carried the chest, who did not stand up, and which debts waited at the gate.*
+
 ### CAMP-02: 11, third paragraph
 
 **§2 fragments. Recommended. Independent review: equal.** The same 'Small enough to hide. Strong enough to fight. Cheap enough to lose.' row opens 1.3.6, which keeps it as written; this varies the verbatim repeat.
@@ -1008,6 +1735,20 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 **Proposed**
 
 > *Councils, chapels, guilds, and discreet nobles use a smaller tool. They hire parties small enough to hide, strong enough to fight, and cheap enough to lose. Each contract begins as ink on a table inside the walls. It ends in mud, ash, snow, salt, or blood.*
+
+### CAMP-08: 11, fourth paragraph
+
+**§2 paired closer. Recommended. Third-pass rewrite; independent review: equal.** The second sentence was the reason for the first; now it says so.
+
+*Line 15027, under "11. Campaign Play".* Dependencies: none.
+
+**Current**
+
+> *A campaign follows that cycle of contracts, scars, salvage, and attrition. It is played as a sequence of **Expeditions**, **Skirmishes**, **Aftermaths**, and **Town Phases**. The party earns coin, recovers equipment, recruits replacements, improves its **Heroes**, and spends its winnings in pursuit of a final **Stronghold**. Nothing about the process is clean. Clean things do not last long beyond the gates.*
+
+**Proposed**
+
+> *A campaign follows that cycle of contracts, scars, salvage, and attrition. It is played as a sequence of **Expeditions**, **Skirmishes**, **Aftermaths**, and **Town Phases**. The party earns coin, recovers equipment, recruits replacements, improves its **Heroes**, and spends its winnings in pursuit of a final **Stronghold**. Nothing about the process is clean, because clean things do not last long beyond the gates.*
 
 ### CAMP-09: 11, fifth paragraph
 
@@ -1023,6 +1764,62 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 > *Each adventure begins with a promise written by someone who expects not to bleed. A patron may ask the party to recover medicine from a ruined apothecary, extract a relic from a sealed crypt, escort a message through The Mire, burn out a sorcerer's tower, slay a named **Monster**, or confirm that another party failed. The written terms rarely mention the rival company hired under another seal, or the last expedition whose bones still lie within sight of the objective. The Bastions know. The contracts are drafted accordingly.*
 
+### CAMP-03: 11, seventh paragraph
+
+**§2 fragments. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Six fragments become four sentences of varied length; every item and bold term stays. Reviewer's fix adapted: one semicolon list keeps the ledger rhythm, every item, and the comma before 'though not whole'.
+
+*Line 15033, under "11. Campaign Play".* Dependencies: none.
+
+**Current**
+
+> *Between **Skirmishes**, survival is counted in smaller measures. A blade recovered from a corpse. A shield hammered flat and bound with wire. A **Hireling** paid before they desert. A **Hero** carried back breathing, though not whole. A name scratched from the **Roster**. A debt moved from one column to another. The **Treasury** grows by contract pay, salvage, theft, and **Monster** blood. **Storage** fills with gear stripped from the dead and saved for the living. The **Bench** waits behind the walls, healing, drinking, praying, or pretending not to hear the next contract read aloud.*
+
+**Proposed**
+
+> *Between **Skirmishes**, survival is counted in smaller measures: a blade recovered from a corpse; a shield hammered flat and bound with wire; a **Hireling** paid before they desert; a **Hero** carried back breathing, though not whole; a name scratched from the **Roster**; and a debt moved from one column to another. The **Treasury** grows by contract pay, salvage, theft, and **Monster** blood. **Storage** fills with gear stripped from the dead and saved for the living. The **Bench** waits behind the walls, healing, drinking, praying, or pretending not to hear the next contract read aloud.*
+
+### CAMP-04: 11.1, first lore paragraph
+
+**§1 contrast, §7 anaphora. Recommended. Third-pass rewrite; independent review: equal.** All three claims stay in one sentence.
+
+*Line 15041, under "11.1 Campaign Overview".* Dependencies: art catalog quote.
+
+**Current**
+
+> *A **Stronghold** is not a castle in the noble sense. No ancient bloodline sanctifies it. No bard remembers its founding. It is a claim driven into a dying world with coin, fear, salvage, and stubborn labour. Its stones come from ruined shrines, abandoned watch-keeps, broken bridges, and walls that failed other people first. Its gates are paid for with burial gold, bounty coin, chapel debt, and the last wages of the dead.*
+
+**Proposed**
+
+> *A **Stronghold** has no ancient bloodline to sanctify it and no bard to remember its founding, and no noble would call it a castle. It is a claim driven into a dying world with coin, fear, salvage, and stubborn labour. Its stones come from ruined shrines, abandoned watch-keeps, broken bridges, and walls that failed other people first. Its gates are paid for with burial gold, bounty coin, chapel debt, and the last wages of the dead.*
+
+### CAMP-05: 11.1, third lore paragraph
+
+**§1 split contrasts. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Both staged contrasts become statements; weight, mercy, and the blades-and-debts image all stay. Reviewer's fix: the muddled clause replaced.
+
+*Line 15045, under "11.1 Campaign Overview".* Dependencies: none.
+
+**Current**
+
+> *To build a Stronghold is to stop running long enough to answer for other people. That is not mercy. It is weight. A party becomes more than adventurers with blades and debts. It becomes a name in ledgers, a mark on maps, a rumour at gates, and a provocation beyond the watch-fire. Its enemies no longer need to hunt it across the Dying Lands. They know where to come.*
+
+**Proposed**
+
+> *To build a Stronghold is to stop running long enough to answer for other people, and there is more weight than mercy in that. A party with blades and debts becomes a name in ledgers, a mark on maps, a rumour at gates, and a provocation beyond the watch-fire. Its enemies no longer need to hunt it across the Dying Lands. They know where to come.*
+
+### CAMP-10: 11.1, Triumph
+
+**§7 anaphora, §2 paired closer. Recommended. Third-pass rewrite; independent review: better.** Two 'It means' remain, which is rhythm; the third folds in, and the closing pair becomes one sentence with its turn intact.
+
+*Line 15047, under "11.1 Campaign Overview".* Dependencies: none.
+
+**Current**
+
+> ***Triumph** does not mean the world is saved. It means people can sleep behind a door they helped bar. It means a few more fires stay lit when the weather turns. It means a few more children hear the training yard before they hear claws on wood. The dark has been pushed back by the width of a wall. That is enough to matter. It is not enough to last.*
+
+**Proposed**
+
+> ***Triumph** does not mean the world is saved. It means people can sleep behind a door they helped bar. It means a few more fires stay lit when the weather turns, and a few more children hear the training yard before they hear claws on wood. The dark has been pushed back by the width of a wall. That is enough to matter, and not nearly enough to last.*
+
 ### CAMP-06: 11.3, The Vault
 
 **§1 contrast. Recommended. Independent review: equal.** The negative half denies a claim nobody made.
@@ -1037,6 +1834,48 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 
 > *The Vault is a sealed confession of greed, iron-bound and watched by clerks who sleep in shifts. They count each coin as if the dead might come back to collect.*
 
+### CAMP-07: 11.3, The Armoury
+
+**§1 split contrast. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Keeps the safe-versus-prepared distinction. Reviewer's fix: parallel restored; the safe-versus-prepared distinction stays.
+
+*Line 15690, under "The Armoury".* Dependencies: player aid pa08, pa09.
+
+**Current**
+
+> *A party with an Armoury does not look safe. It looks prepared. In the Dying Lands, that is close enough to hope.*
+
+**Proposed**
+
+> *A party with an Armoury looks prepared rather than safe, and in the Dying Lands that is close enough to hope.*
+
+### CAMP-11: 11.3, The Apothecary
+
+**§7 repeated verb. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Keeps 'No one leaves untouched.' as the opener; the two 'leave' sentences get their own verbs. Reviewer's fix: 'carry out something' no longer reads as 'perform'.
+
+*Line 15700, under "The Apothecary".* Dependencies: player aid pa08, pa09.
+
+**Current**
+
+> *No one leaves untouched. The fortunate leave with scars closed. The unlucky leave with something inside them quieted rather than cured.*
+
+**Proposed**
+
+> *No one leaves untouched. The fortunate walk out with their scars closed; the unlucky carry something out with them, quieted rather than cured.*
+
+### CAMP-12: 11.3, The Stronghold Chapel
+
+**§7 anaphora. Recommended. Third-pass rewrite; independent review: equal.** Two beats instead of three identical ones; the candles keep their sentence.
+
+*Line 15728, under "The Stronghold Chapel".* Dependencies: player aid pa08, pa09; art catalog quote.
+
+**Current**
+
+> *The Chapel is small, cold, and crowded with votive offerings from those who survived by inches. Its saints are chipped. Its relics are suspect. Its candles burn low even when no wind enters.*
+
+**Proposed**
+
+> *The Chapel is small, cold, and crowded with votive offerings from those who survived by inches. Its saints are chipped, its relics suspect. Its candles burn low even when no wind enters.*
+
 ### CAMP-13: 11.3, The Stronghold Chapel
 
 **§1 contrast. Recommended. Independent review: better.** Split 'does not X. It Y.' as one sentence.
@@ -1050,6 +1889,34 @@ Kept patches only, grouped by section, in manuscript order. Line numbers refer t
 **Proposed**
 
 > *The Chapel promises no salvation, only a place for the desperate to kneel before they return to the roads that nearly killed them.*
+
+### CAMP-14: 11.3, The War Room
+
+**§2 fragments. Recommended. Third-pass rewrite; independent review: equal.** Keeps 'becomes visible' as its own beat; the three consequences become one sentence.
+
+*Line 15740, under "The War Room".* Dependencies: player aid pa08, pa09.
+
+**Current**
+
+> *A party with a War Room becomes visible. Petitioners arrive. Rivals take note. Every whispered bargain begins to sound like law.*
+
+**Proposed**
+
+> *A party with a War Room becomes visible. Petitioners arrive, rivals take note, and every whispered bargain begins to sound like law.*
+
+### CAMP-15: 11.3, The Undercroft
+
+**§7 anaphora. Recommended. Third-pass rewrite; independent review of the revised wording: equal.** Keeps the repetition as a deliberate beat inside one sentence. Reviewer's fix: the plain joined sentence; the repeated 'each year' reads as a chosen beat inside one sentence.
+
+*Line 15760, under "The Undercroft".* Dependencies: player aid pa08, pa09.
+
+**Current**
+
+> *No one admits how deep it goes. Each year another blocked stair is uncovered. Each year the party decides not to ask who carved it.*
+
+**Proposed**
+
+> *No one admits how deep it goes. Each year another blocked stair is uncovered, and each year the party decides not to ask who carved it.*
 
 ## Appendix A: Learn to Play
 
