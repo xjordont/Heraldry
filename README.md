@@ -52,7 +52,7 @@ Status and recent changes refresh automatically after pushes to `main` and compl
 
 ## Working on it
 
-**With Codex or Claude Code:** select this repository on `main` and describe the change. Codex is the primary developer and integration owner. [CLAUDE.md](CLAUDE.md) is the governing contract; read it with [docs/WORKFLOW.md](docs/WORKFLOW.md) and `production/STATE.md`, then resume the existing work. [MASTER_PROMPT.md](MASTER_PROMPT.md) is the standing design and production contract, not a restart instruction.
+**With Codex, Claude Code, or ChatGPT Work:** select this repository on `main` and describe the change. All three have equal authority under [AGENTS.md](AGENTS.md), the shared agent contract; it points to `production/STATE.md` and the task docs. [MASTER_PROMPT.md](MASTER_PROMPT.md) is the standing design and production contract, not a restart instruction.
 
 **New manuscript:** supply the complete updated UTF-8 Markdown file. Run `python tools/dev.py manuscript prepare --input "path/to/update.md"`, review its exact diff and affected figures, then explicitly approve its `apply` command. It creates one next RC while retaining every prior version. See [the manuscript update guide](docs/MANUSCRIPT_UPDATES.md). PDF builds remain a separate owner request.
 
@@ -62,7 +62,7 @@ Status and recent changes refresh automatically after pushes to `main` and compl
 
 **Illustrations with Codex** (on the owner's PC): give Codex the line in [production/art/codex/CODEX_PROMPT.md](production/art/codex/CODEX_PROMPT.md). Its one-page contract is [BATCH_CARD.md](production/art/codex/BATCH_CARD.md); setup is in [CODEX_RUNBOOK.md](production/art/codex/CODEX_RUNBOOK.md). The pipeline is described in [docs/ART_AUTOMATION.md](docs/ART_AUTOMATION.md).
 
-**Checks** (every change):
+**Checks:** docs and art changes need none; for code changes run the tests that cover them, and CI runs the full suite on every push. The full local check is:
 
 ```sh
 python tools/dev.py check

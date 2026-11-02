@@ -1,34 +1,38 @@
-# Agents working in this repository (Claude Code, Codex, and ChatGPT Work)
+# Agents working in this repository
 
-`docs/PROJECT_CONTRACT.md` is the shared governing contract for every agent. Read it, `docs/AGENT_OPERATIONS.md`, `production/STATE.md`, `docs/WORKFLOW.md`, and `docs/BUILD_AUTOMATION.md` before continuing work.
+This repository builds the Heraldry Skirmish rulebook, player aids, and Hero records. Claude Code, Codex, and ChatGPT Work share these instructions and have equal authority: any of them may develop, generate, review, approve, integrate, and release work the owner has asked for. Keep going on authorized work without pausing for routine approvals.
 
-For layout work, follow [docs/LAYOUT_WORKFLOW.md](docs/LAYOUT_WORKFLOW.md): plan/check first, exact-input measurement caching, semantic table policies, and fail-fast local proof receipts. Tooling changes alone do not authorize full-book builds.
+## Start here
 
-Read [docs/CANON_AUTHORITY.md](docs/CANON_AUTHORITY.md) before rules or editorial work. The owner's 2026-10-15 approval settles five conflicts with older imported briefs in favour of the current-source conventions recorded there. Use `source/versions.json` to locate the active manuscript; preserve all other project instructions and the immutable revision workflow.
+- `production/STATE.md` is a newest-first log. Read the top entries (at least back to the latest release and anything still pending) and search older sections by keyword when you need history.
+- `source/versions.json` names the active manuscript; `config/production.json` must agree.
+- Product and design requirements are in `docs/PROJECT_CONTRACT.md`; commands are in `docs/AGENT_OPERATIONS.md`.
 
-Ordinary development starts with `python tools/dev.py check`; it refreshes the README's generated blocks before checking. `doctor` checks the installed environment, and `status` reports Git and last-release state. These commands do not build the book or publish. GitHub refreshes the README after pushes and repository workflows; see [docs/README_AUTOMATION.md](docs/README_AUTOMATION.md). Use the current build card only when the owner requests a build.
+## Hard rules
 
-Owner-supplied full manuscript updates use [docs/MANUSCRIPT_UPDATES.md](docs/MANUSCRIPT_UPDATES.md): prepare an exact review with `python tools/dev.py manuscript prepare --input <file.md>`, then apply the explicitly approved batch through the revision engine. Review affected anchors/figures and commit any bound companion configuration with the new RC. A manuscript update does not request a publication build.
+- **Manuscript.** Snapshots in `source/` are immutable. Change manuscript text only with the owner's approval, through `tools/revise_manuscript.py` (exact patches) or `python tools/dev.py manuscript` (a full owner upload), one new RC per approved batch. Never regenerate manuscript prose with an LLM. Ask the owner about substantive rules ambiguities, and read `docs/CANON_AUTHORITY.md` before rules or editorial work.
+- **Builds.** Build the book, regenerate PDFs, or release only when the owner asks. A doc, tooling, art, or manuscript change is not a build request; local proofs during requested layout work are fine.
+- **Git.** Commit straight to `main`: no branches, pull requests, force-pushes, or history rewrites. Sync with `git pull --ff-only origin main` and keep unrelated local changes. While a build is running, wait for it to finish before pushing, because its publish step aborts if `main` moves.
+- **Files.** Never commit built PDFs, ZIPs, or secrets. Deliveries go to GitHub Releases (`docs/LARGE_FILES.md`).
+- **Art.** Only approved art is placed in the book. Whoever generates an image may review and approve it once they have looked at it. Use the owner's ChatGPT plan, and no paid image API without the owner's say-so.
+- **Honesty.** Report what you actually did and checked. Physical print stays **NOT TESTED** until real sheets are examined.
+- **Style.** Use the Oxford comma in everything you write: docs, player aids, commit messages, and replies.
 
-InDesign is an optional, explicitly invoked export ([docs/INDESIGN_EXPORT.md](docs/INDESIGN_EXPORT.md)). Use `python tools/dev.py indesign export --output <new-folder>` or the manual-only workflow. Never attach it to ordinary checks, manuscript promotion, artwork intake, or PDF builds. Native INDD composition requires installed InDesign; keep structural validation, native composition, visual review, and physical proof statuses separate. Linked SVG originals remain editable source graphics; do not claim native InDesign paths or a PDF-identical layout.
+## Checks
 
-## Equal agent authority (owner instruction, 2026-10-22)
+- Docs, `production/STATE.md`, editorial proposals, and art intake or approval need no test run.
+- For code, config, or layout changes, run the tests that cover them (for example `python -m unittest discover -s tests -p 'test_hero_cards.py'` with the project Python), or `make test` for broad changes.
+- CI (`.github/workflows/repository-checks.yml`) runs the full suite on every push to `main`; if it goes red, fix it.
+- `python tools/dev.py check` is the full local check (dependencies, preflight, snapshot history, whitespace, and every test). The build-request helpers run the tests themselves.
 
-Claude Code, Codex, and ChatGPT Work may each act as primary developer and integration owner across manuscript tooling, artwork, figures, layout, tests, documentation, and releases. This supersedes the former art-worker-only role and restricted build-orchestrator carve-out. Continue authorized work and repair build failures within the governing contract; substantive rules ambiguities still require an owner decision.
+## By task
 
-## Required safeguards
+| Task | Read |
+|---|---|
+| Manuscript changes | `docs/WORKFLOW.md`, `docs/MANUSCRIPT_UPDATES.md` |
+| Layout | `docs/LAYOUT_WORKFLOW.md` |
+| Builds and releases | `docs/BUILD_AUTOMATION.md` |
+| Artwork | `production/art/codex/BATCH_CARD.md`, `production/art/skill/heraldry-classic-ink-art/SKILL.md`, `docs/ART_AUTOMATION.md` |
+| InDesign export (only when asked) | `docs/INDESIGN_EXPORT.md` |
 
-- Work on `main` only. Preserve unrelated changes. Sync a clean checkout with `git pull --ff-only origin main`. Never force-push or rewrite history.
-- Manuscript snapshots in `source/` are immutable. Apply approved text changes only through `tools/revise_manuscript.py`, with exactly one new RC per approved batch. Never regenerate manuscript prose with an LLM. Read the current RC from `source/versions.json` and keep `config/production.json` consistent.
-- Build only on owner request. Use the GitHub candidate, image-review, and release chain in `docs/BUILD_AUTOMATION.md`; do not treat a documentation or tooling change as a build request.
-- Keep the hash-bound review gate real. Inspect the required images, record actual observations and limits, and bind only the exact reviewed PDF. Automated checks do not replace visual review or a physical proof.
-- Never commit built PDFs or ZIPs. Publish requested deliveries through GitHub Releases. Keep physical print status **NOT TESTED** until actual sheets are examined.
-- Before every push, run `make test`. When touching contracts, also run `python3 tools/preflight.py --baseline`. Run track-specific checks and update the state and release status at milestones.
-- Before pushing during a build, wait for its final result: the publish step aborts if main advances. Check `production/RELEASE_RESULT.json` and `dist/RELEASE.json` on main after release.
-- Never print, log, or commit secrets. Use the owner's existing Git login. Artwork generation uses the owner's ChatGPT plan; do not use a paid image API without an explicit owner instruction.
-
-## Track-specific instructions
-
-For artwork generation and guarded delivery, follow the live `production/art/codex/BATCH_CARD.md`, `production/art/codex/CODEX_RUNBOOK.md`, and `production/art/skill/heraldry-classic-ink-art/SKILL.md`. Delivery is not approval; record an actual visual review before approving artwork. Old worker allowlists apply to the scoped generation/delivery procedure, not to any client's overall developer or review role. Use `python tools/dev.py agent list` for shared workflows and `agent role NAME` for portable specialist instructions.
-
-The build cards and historical prompts describe their scoped runs. Where they retain the former role restriction or require stopping at a repairable build failure, this equal-authority owner instruction supersedes those restrictions for all three clients. Preserve all manuscript, review, release, credential, and physical-proof safeguards.
+Add a short entry to the top of `production/STATE.md` at each milestone.

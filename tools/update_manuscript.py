@@ -324,7 +324,7 @@ def main(argv=None):
         require_current_main(ROOT, allowed_changes=CONFIGS)
         record = apply_review(ROOT, args.review_dir, args.reason, args.authorization, args.approve)
         print(f"Applied RC{record['number']}: {record['path']} ({record['sha256']})")
-        print("Run python tools/dev.py check; update STATE.md and RELEASE_STATUS.md, then commit all four revision files together. No PDF build was requested.")
+        print("Update STATE.md and RELEASE_STATUS.md, then commit all four revision files together. No PDF build was requested.")
         return 0
     except (ValueError, OSError, KeyError, RevisionRecoveryError, PublishError) as exc:
         print("FAILED: " + str(exc), file=sys.stderr)
