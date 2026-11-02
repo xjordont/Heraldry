@@ -14,15 +14,12 @@ On the Windows PC, work in PowerShell from `C:\Heraldry\art-producer` on `main`,
    - Timed out: check the run's status before waiting longer. Don't submit duplicate requests.
 
 ## 2. Review every page (the release gate)
-5. Run `git pull --ff-only origin main`, then `git lfs pull --include="production/qa/review/*"`. `production/qa/review/manifest.json` lists:
+5. Run `git pull --ff-only origin main`, then `git lfs pull --include="production/qa/review/*"`. `production/qa/review/manifest.json` lists, all from the digital PDF:
    - every contact sheet (`sheet-NN.jpg`, 24 pages each, covering all pages)
    - the detail pages (`page-NNNN.jpg` at 100 dpi: the first and last page, every chapter opener, and every 50th page)
-   - the two covers (`cover-front.jpg` and `cover-back.jpg`, from the separate covers PDF)
-   - `calibration.jpg`
-
-   The inkjet book has no covers inside it: page 1 is the title page and the last page ends the index. That is correct, not a defect.
+   - the two covers (`cover-front.jpg` and `cover-back.jpg`): page 1 is the front cover and the last page is the back cover
 6. Look at every listed image. Things to look for:
-   - an unintended blank page (page 6 is a deliberate blank verso before Chapter 1)
+   - an unintended blank page (page 2, the inside front cover, and the verso just before Chapter 1 are deliberate blanks)
    - overlapping or clipped text
    - text or art outside the safe edge
    - missing or wrong art (an empty slot, a stub, or a white rectangle on the cream)
@@ -34,7 +31,6 @@ On the Windows PC, work in PowerShell from `C:\Heraldry\art-producer` on `main`,
    `cover-front.jpg` must be the owner-supplied picture (HERALDRY, the skull-and-thorn frame, and the dragon skeleton), and `cover-back.jpg` must be the back cover with the castle logo. Anything else is a major finding.
 7. Write the review record to `$env:HERALDRY_SCRATCH\review.json` (the schema is in the `tools/visual_review_bind.py` docstring):
    - one `sheets` entry per sheet, one `details` entry per detail page, and one `covers` entry per cover, each with a short note of what you saw and any `findings` (`page`, `severity` = `minor` or `major`, and `text`)
-   - `calibration.observations`
    - your `reviewer` name and a short `summary`
 
    `major` means anything a reader would call a defect. Don't mark a real defect minor to get a release.
@@ -51,4 +47,4 @@ On the Windows PC, work in PowerShell from `C:\Heraldry\art-producer` on `main`,
    If a helper refuses a push because main moved, look at the preserved local work rather than rebasing it automatically.
 
 ## Final report
-Request id and commit, candidate result, the sheets and detail pages reviewed with any minor notes, ledger commit SHA, release result, `release_url`, and tag. Physical print: NOT TESTED.
+Request id and commit, candidate result, the sheets and detail pages reviewed with any minor notes, ledger commit SHA, release result, `release_url`, and tag.

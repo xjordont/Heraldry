@@ -1,6 +1,6 @@
 ---
 name: publication-auditor
-description: Verify source and table fidelity, rules examples, navigation, rendered layout, and print-preflight evidence.
+description: Verify source and table fidelity, rules examples, navigation, and rendered layout.
 model: claude-sonnet-5-5
 effort: high
 tools: Read, Write, Bash, Grep, Glob

@@ -19,11 +19,11 @@ The following 23 selected pages were rendered and inspected for composition. All
 
 ## Combined direction
 
-Retain near-white cream and white variants, readable serif prose, practical sans-serif data and restrained display headings. Make ordinary pages feel designed through grouped information, stronger entry anatomy, distinct examples, readable tables and coherent continuation pages. Darkness comes from specific ink subjects, grounded materials and selective black shapes; it does not require a dark page or a noise texture.
+Retain the near-white cream page, readable serif prose, practical sans-serif data and restrained display headings. Make ordinary pages feel designed through grouped information, stronger entry anatomy, distinct examples, readable tables and coherent continuation pages. Darkness comes from specific ink subjects, grounded materials and selective black shapes; it does not require a dark page or a noise texture.
 
 Use four related page treatments: illustrated chapter opener, normal rules with attached examples, compact reference entries, and scenario opening with setup/map. Keep the same type and spacing system across them. A stronger silhouette or a better title/metadata relationship can add identity without a thick frame, more fonts or arbitrary icons. Repeated ring ornaments alone cannot carry the whole visual identity.
 
-For art, combine the silhouette/line character visible in Deth Wizards with the art/text relationship in BlackDeathCity and The Village Hunt. Generate original source-specific subjects and compositions; do not extract their art or ask for a replica page. Keep a shared original style anchor, controlled contour/hatching and open edges on both cream and white backgrounds. The artwork manifest already covers a cover plus eleven chapter scenes; finish that suite before expanding optional art.
+For art, combine the silhouette/line character visible in Deth Wizards with the art/text relationship in BlackDeathCity and The Village Hunt. Generate original source-specific subjects and compositions; do not extract their art or ask for a replica page. Keep a shared original style anchor, controlled contour/hatching and open edges on the cream page. The artwork manifest already covers a cover plus eleven chapter scenes; finish that suite before expanding optional art.
 
 For scenarios, combine BlackDeathCity's recognizable scenario anatomy with Deth Wizards' map/setup adjacency and Five Leagues' clear figure legends. Existing Heraldry deployment figures remain precise source-bound vectors. Give named scenarios fresh-page starts and repeat identifying context on continuations; avoid starting the next scenario in leftover space from a tall preceding map.
 
@@ -31,7 +31,7 @@ For tables, combine Five Leagues' roll/result allocation, Hametsu's header/align
 
 ## Application and evidence
 
-DESIGN_REFINEMENT.md records the latest draft defects, fresh-page/keep policy, pagination architecture and acceptance work. DESIGN_SPEC.md remains the overall print/type/component contract. ART_DIRECTION.md and ART_AUTOMATION.md govern the original art route. VISUAL_QA.md governs review scope. Record adopted reference principle, PDF page, Heraldry component and rendered before/after evidence in production/design-decisions.md.
+DESIGN_REFINEMENT.md records the latest draft defects, fresh-page/keep policy, pagination architecture and acceptance work. DESIGN_SPEC.md remains the overall page/type/component contract. ART_DIRECTION.md and ART_AUTOMATION.md govern the original art route. VISUAL_QA.md governs review scope. Record adopted reference principle, PDF page, Heraldry component and rendered before/after evidence in production/design-decisions.md.
 
 Use tools/render_reference_pages.py for hash-verified selected-page rendering when useful. Download Git LFS bytes before inspection; a pointer is not a PDF. Preserve reference PDFs/page images outside all publication assets and release archives. Missing local LFS bytes should be resolved by fetching the relevant files rather than pretending the textual style guide was a visual inspection.
 

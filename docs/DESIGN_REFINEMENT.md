@@ -6,7 +6,7 @@ Status: standing refinement requirements with the approved compact implementatio
 
 The owner approved the complete layout review and explicitly authorized 10.5 pt body text, 9 pt tables, narrower margins, and more assertive refinement. This supersedes earlier 11 pt and unchanged-margin trial proposals. Use the effective profile in `config/design_tokens.json` through Typst and `tools/layout_profile.py`; the production format record is a checked mirror. Four font roles remain intentional. Ordinary rules use two columns; opening flavour uses a distinct inset single-column region. Preserve manuscript bytes, complete fit-capable units, source order, all source-bound figures, deliberate wide objects, and the accepted blank verso.
 
-Measured furniture safety takes priority over the smallest margin: the initial outside 36 pt/top 40.5 pt/bottom 40.5 pt trial left rotated navigation, running heads, and folios outside the 27 pt safe line. The corrected profile is inside/outside/top/bottom 45/42/45/45 pt, with a 16.2 pt column gap. A physical binding/device/media proof remains NOT TESTED. Page savings and full-book acceptance must come from the actual same-source builds and their recorded review, not these token changes alone.
+Measured furniture safety takes priority over the smallest margin: the initial outside 36 pt/top 40.5 pt/bottom 40.5 pt trial left rotated navigation, running heads, and folios outside the 27 pt safe line. The corrected profile is inside/outside/top/bottom 45/42/45/45 pt, with a 16.2 pt column gap. Page savings and full-book acceptance must come from the actual same-source builds and their recorded review, not these token changes alone.
 
 ## Historical evidence and diagnosis - 2026-10-07
 
@@ -28,7 +28,7 @@ The table audit lists 64 multi-page tables or transformed entry sets. That count
 
 ## Page treatments to implement
 
-Retain portrait Letter, flat #FCFAF5 cream/white companions, safe margins, four intentional licensed font roles and readable body/table sizes. Distinguish pages through information architecture and composition, not more texture or decorative borders.
+Retain portrait Letter, a flat #FCFAF5 cream page, safe margins, four intentional licensed font roles and readable body/table sizes. Distinguish pages through information architecture and composition, not more texture or decorative borders.
 
 1. Chapter opener: one source-specific horizontal ink scene, substantial title with clear chapter number, short lead and a clean transition into rules. Target roughly one third of the page for art when available. Make the scene asymmetrical and leave useful negative space. No generic hooded skull repeated eleven times. Use ART_MANIFEST subject plans and check each against current source lore.
 2. Ordinary rules: calm two-column prose with clearly different major, subsection and run-in treatments. Use larger major headings when full width allows them; nested headings remain serif. Keep existing emphasis rather than making all text heavier. Use a consistent rhythm of spacing and a small number of horizontal rules.
@@ -54,7 +54,7 @@ The owner's objective is coherent sections, with breaks before significant new h
 | Long table | Split at row or logical group boundaries; repeat headers and identifying continuation label; the first three and last three rows always travel together (a table of five rows or fewer never splits), carried by an invisible zero-width spanning cell |
 | Figure | Keep graphic, legend and caption together; keep deployment figure with the relevant setup rather than an unrelated later scenario |
 
-Do not force every minor heading to a fresh page: it would fragment the reference material and inflate the print stack. Body paragraphs should retain natural flow with a two-line start/end target for widows/orphans. Fit-capable sections, scenarios, tables and entries are mandatory one-page keeps; genuinely over-height parents continue without breaking fit-capable children. A unit taller than the available frame must have a documented continuation path. Do not shrink essential type below 9 pt, omit content, clip a frame or use a landscape fallback.
+Do not force every minor heading to a fresh page: it would fragment the reference material and inflate the page count. Body paragraphs should retain natural flow with a two-line start/end target for widows/orphans. Fit-capable sections, scenarios, tables and entries are mandatory one-page keeps; genuinely over-height parents continue without breaking fit-capable children. A unit taller than the available frame must have a documented continuation path. Do not shrink essential type below 9 pt, omit content, clip a frame or use a landscape fallback.
 
 In two-column material, a page break must occur at the outer page flow, after flushing the prior segment. Do not assume a break inside a nested columns block is equivalent to starting a fresh page. Add the policy before the existing balancer; its split candidates must respect semantic keep groups. Measure a short subsection as a complete unit at the approved destination width; allow approved full-width placement when a column is too narrow; do not split its heading, lead, table or first list group into unrelated balancing pieces. Use stable heading/block/table IDs for exceptions, not frozen PDF page numbers.
 
@@ -68,12 +68,8 @@ First render an actual-content stress specimen covering opener, ordinary facing 
 
 Extend the layout audit to record semantic heading starts and their following content, page/column breaks inside short fit-capable tables/subsections, continuation titles/headers, figure/setup distance, row orphans, and unexplained large voids. Persist findings and reviewed exceptions by stable source IDs and current hashes. Hard failures: stranded headings/captions, missing repeat headers, avoidable split of a fit-capable short table, content overlap/overflow, missing or duplicate text/cells. Subjective whitespace flags need actual inspection, not a universal ban on blank space. Caption and entry-name continuations are publication furniture, not manuscript patches.
 
-Inspect all revised pages at contact-sheet scale for rhythm, every continuation/table exception and all scenario openings at readable size, then the cream/white pairing and overscan crops. Reconcile all text/cells, rebuild navigation and package from the same final input hashes. Record the current design outcome separately from historical geometry PASS. Physical printer proof remains NOT TESTED.
+Inspect all revised pages at contact-sheet scale for rhythm, every continuation/table exception and all scenario openings at readable size. Reconcile all text/cells, rebuild navigation and package from the same final input hashes. Record the current design outcome separately from historical geometry PASS.
 
-
-## Optional InDesign export - separate owner-invoked workflow
-
-The earlier hold was superseded by the owner's explicit 2026-10-15 InDesign request. The optional export now follows `docs/INDESIGN_EXPORT.md`; it remains separate from ordinary development, this PDF refinement, and the candidate/release chain. Do not invoke it automatically. Native composition, native visual review, and physical proof require their own evidence and cannot be inferred from a structural IDML check.
 
 ## Sources consulted 2026-10-07
 
@@ -83,15 +79,14 @@ These support the pagination/API/export methods. Numerical keep thresholds and H
 - Butterick, style-based page starts: https://practicaltypography.com/page-break-before.html
 - Butterick, widow/orphan tradeoffs: https://practicaltypography.com/widow-and-orphan-control.html
 - Adobe, paragraph keep options: https://helpx.adobe.com/incopy/desktop/format-text/paragraph-formatting/formatting-paragraphs.html
-- Adobe, table rows/headers across frames: https://helpx.adobe.com/ca/indesign/desktop/add-tables-and-data/format-tables/break-tables-across-frames.html
 - Typst, sticky/unbreakable blocks: https://typst.app/docs/reference/layout/block/
 - Typst, table continuations: https://typst.app/docs/guides/tables/
 
 ## Owner clarification: mandatory one-page units — 2026-10-07 UTC
 
-**Mandatory one-page keeps:** Every complete scenario, section/subsection, table, example, procedure, stat profile or reference entry that fits within one empty usable page at its approved layout width must occupy exactly one physical page. Include its heading, all nested content belonging to that unit, caption, legend/deployment diagram and necessary notes in the measured group. If insufficient space remains, move the entire unit to the next page; do not split it across pages merely to fill space or balance columns. A column limitation is not proof that a unit cannot fit a page: use the approved full-width layout where appropriate. Preserve legible type, spacing and all content.
+**Mandatory one-page keeps:** Every complete scenario, section/subsection, table, example, procedure, stat profile or reference entry that fits within one empty usable page at its approved layout width must occupy exactly one page. Include its heading, all nested content belonging to that unit, caption, legend/deployment diagram and necessary notes in the measured group. If insufficient space remains, move the entire unit to the next page; do not split it across pages merely to fill space or balance columns. A column limitation is not proof that a unit cannot fit a page: use the approved full-width layout where appropriate. Preserve legible type, spacing and all content.
 
-Measure rendered height, not manuscript length or character counts. A section extends from its heading to the next heading of equal or higher rank; a scenario extends to the next scenario or enclosing-section boundary. Nested fit-capable groups remain protected inside longer parents. Fit uses the empty usable content frame, after margins, running furniture and required spacing, with a small conservative tolerance. Test both facing-page positions and cream/white exports. Artwork must not displace or fragment a fit-capable rules unit; reposition decorative art instead.
+Measure rendered height, not manuscript length or character counts. A section extends from its heading to the next heading of equal or higher rank; a scenario extends to the next scenario or enclosing-section boundary. Nested fit-capable groups remain protected inside longer parents. Fit uses the empty usable content frame, after margins, running furniture and required spacing, with a small conservative tolerance. Test both facing-page positions. Artwork must not displace or fragment a fit-capable rules unit; reposition decorative art instead.
 
 Only genuinely over-height units may continue to another page, with repeat table headers or identifying continuation and intact smaller child units. Record their source IDs, measured dimensions and reason. Never shrink type, omit notes/maps, clip content or artificially enlarge a unit to evade the keep rule. Intentional whitespace left by moving a complete unit is acceptable.
 
@@ -102,7 +97,7 @@ Required release evidence: a current input/PDF-hash-bound audit covering every a
 
 Owner instruction after the RC522 design review: "Fix everything to the best of your ability using your best judgment and best design layout principles." Layout and art repairs only; no manuscript text changed.
 
-- Thumb tabs end 3 pt short of the text frame (`thumb_tab_clearance_pt`). Rotated keywords sit with their glyph ink between the 27 pt safe line and the tab's engraved inner line; the inkjet verifier, layout QA, and tests measure rotated keywords by glyph outlines because Grenze Gotisch's 1.1 em ascender metric is far taller than its letters.
+- Thumb tabs end 3 pt short of the text frame (`thumb_tab_clearance_pt`). Rotated keywords sit with their glyph ink between the 27 pt safe line and the tab's engraved inner line; layout QA and the tests measure rotated keywords by glyph outlines because Grenze Gotisch's 1.1 em ascender metric is far taller than its letters.
 - Tables: a hidden duplicate title no longer leaves a blank line under its heading; `Cost (c)` keeps its coin on one line; numeric ranges never break after the en dash; the closing brush takes no height, so it cannot fall alone onto the next page; column widths go where they remove the most wrapped lines (scope decisions keep the reviewed proportional rule).
 - Basic Mode profiles: a run-in label merged with its list no longer glues the following piece, so profile subsections balance as separate pieces instead of one block. A long profile keeps its name, identification lines ("Class: ... | Level: 1"), and first subsection together, so it never opens at a column foot with only its name and stats.
 - Short chapter introductions (one to three plain paragraphs, at most 700 characters, before the first section) are set as one standfirst at the opener's 82% measure.
@@ -122,7 +117,7 @@ Owner instruction: version is the manuscript version; author Jordon; publisher E
 - Opener spreads: a chapter whose introduction cannot share its opener page opens on a display page (art, arms, number, and title, centred) with the whole introduction on the facing page. A zero-height probe after the opening flavour decides it from the first layout iteration; Chapters 8 and 11 use it.
 - Back cover: an edition blurb replaces the repeated Chapter 1 lead, set to end on a full line.
 - Typography: smart quotes are off in every Typst document, and the player aids and Hero records use the manuscript's hyphen-minus for negatives and empty cells.
-- Art: every placed raster prints at 300 ppi or more; `tools/check_art_ppi.py` gates each release PDF.
+- Art: every placed raster is 300 ppi or more at its placed size; `tools/check_art_ppi.py` gates each release PDF.
 
 ## Design review polish and publisher device - 2026-10-30
 
@@ -156,6 +151,6 @@ Owner instruction on the design audit and plan (`reports/Design audit and produc
 - **Furniture (D-05, D-09, D-10).** The thumb tab wears a paper halo so the opener frame never runs into it; the opener label reads "Chapter One" with the source's "1." kept as transparent glyphs on the same line; the version line on the title page and back cover is serif small caps; the back-cover facts are ragged left in a 4.8 in measure under a short brush.
 - **Tables (D-08).** The identity line stays hidden when the visible heading names the table across a short run-in label such as "APL 1–2 (d10)".
 - **Tokens (D-07).** Inks, tints, rule weights, the remaining type sizes, the ornament budget, the tailpiece limits, and the composition policy are tokens; Typst reads them, and the specimen components use the same values.
-- **Production (P-02, P-03, P-04).** The calibration sheet prints tinted hairlines and the band tints; `tools/digital_compact.py` writes `Heraldry_RC###_digital-compact.pdf`, the screen companion with rasters at 150 ppi (skipped by the 300 ppi gate by name); the density diagnostic no longer counts the thumb tab as content and reports sparse pages by chapter.
+- **Production (P-03, P-04).** `tools/digital_compact.py` writes `Heraldry_RC###_digital-compact.pdf`, the screen companion with rasters at 150 ppi (skipped by the 300 ppi gate by name); the density diagnostic no longer counts the thumb tab as content and reports sparse pages by chapter.
 
-The physical proof remains NOT TESTED; the printing and binding method is still the owner's open decision (P-01).
+The book has since become digital-only, which retires P-01 (printing and binding) and the P-02 calibration samples.

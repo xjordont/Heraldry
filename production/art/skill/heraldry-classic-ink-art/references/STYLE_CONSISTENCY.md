@@ -15,7 +15,7 @@ The approved visual references govern style, not subject. Compare every candidat
 
 ## Side-by-side comparison protocol
 
-Inspect the original at normal size and the 150 px/in print proof beside queue-selected references (at most 3). Complete `fidelity_gate.py create` JSON evidence for all 10 criteria, using the actual visible features. Describe exact failures rather than saying "looks good". The report must include:
+Inspect the original at normal size and the 150 px/in print-size preview beside queue-selected references (at most 3). Complete `fidelity_gate.py create` JSON evidence for all 10 criteria, using the actual visible features. Describe exact failures rather than saying "looks good". The report must include:
 
 - subject and canonical visual facts represented, not invented;
 - legible first-read silhouette appropriate to printed width;

@@ -14,7 +14,7 @@ Only an owner request for a build, PDF, or layout pass starts publication. Follo
 
 Required release evidence includes source/table reconciliation, figure semantic currency, navigation checks, all-page visual coverage, package checksums, and the exact input/PDF hashes. PDFs and ZIPs are GitHub Release assets, not Git commits.
 
-The publication target remains borderless portrait US Letter, cream and white interiors, separate cover sheets, calibration, and print instructions. Physical printer proof stays **NOT TESTED** until actual sheets are examined. Commercial wraps and PDF/X remain outside the requested edition unless the owner asks for them. See `docs/INKJET_PRINT.md` and `docs/VISUAL_QA.md`.
+The publication target is the digital PDF, `Heraldry_RC###_digital.pdf`: portrait US Letter pages on a warm cream page colour, with the front and back covers inside it, plus the screen companion `Heraldry_RC###_digital-compact.pdf`. See `docs/VISUAL_QA.md`.
 
 ## Reference and artwork inputs
 

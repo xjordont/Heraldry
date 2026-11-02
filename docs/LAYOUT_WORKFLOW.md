@@ -12,9 +12,9 @@ python tools/dev.py layout check
 python tools/dev.py layout run
 ```
 
-`plan` reads the active manuscript and prints the stages without generating PDFs. `check` runs dependency and baseline checks plus focused regression tests, including small compiler fixtures. `run` prepares the current manuscript, composes cream, runs core gates, then generates companion variants and review images only after those gates pass. Run focused tests while editing; CI runs the full suite when you push.
+`plan` reads the active manuscript and prints the stages without generating PDFs. `check` runs dependency and baseline checks plus focused regression tests, including small compiler fixtures. `run` prepares the current manuscript, composes the interior, runs core gates, then compiles the digital PDF (with its covers) and makes review images only after those gates pass. Run focused tests while editing; CI runs the full suite when you push.
 
-Each check/run writes commands, durations, logs, report hashes, and status to `build/checks/layout-runs/<run>/run.json`. A successful full local run ends at `LOCAL_QA_PASS_REVIEW_REQUIRED`: look at the review images, covers, calibration, and any suspect pages before calling the layout done. The archived cream PDF is the one the review images were made from.
+Each check/run writes commands, durations, logs, report hashes, and status to `build/checks/layout-runs/<run>/run.json`. A successful full local run ends at `LOCAL_QA_PASS_REVIEW_REQUIRED`: look at the review images, both covers, and any suspect pages before calling the layout done. The archived digital PDF is the one the review images were made from.
 
 Do not run concurrent composition commands in the shared checkout. The runner holds `build/layout-workflow.lock`; after an interrupted process, inspect its receipt and confirm no process is running before removing a stale lock. Do not clean away proof evidence during iteration.
 
@@ -34,8 +34,8 @@ Reviewed table-width preferences in `config/design_tokens.json` use normalized c
 
 ## Lessons retained from the compact-layout pass
 
-Keep the approved 10.5 pt body, 9 pt tables, narrow margins, two-column rules, and full-width introduction flavour in the shared layout profile. Improve components and flow rather than repeatedly shrinking text. Preserve source coverage, substantive heading keeps, fit-capable keep units, continuation identities, and physical page evidence. Cosmetic whitespace alone does not justify violating those constraints.
+Keep the approved 10.5 pt body, 9 pt tables, narrow margins, two-column rules, and full-width introduction flavour in the shared layout profile. Improve components and flow rather than repeatedly shrinking text. Preserve source coverage, substantive heading keeps, fit-capable keep units, continuation identities, and rendered page evidence. Cosmetic whitespace alone does not justify violating those constraints.
 
-Use focused fixtures while editing, then freeze inputs and run the complete checks once. Stop failed cream proofs before paying for variants or all-page images. Local print instructions stay beside the run receipt, leaving last-delivered instructions intact. Use recorded timings to identify the next bottleneck instead of repeating expensive probes blindly.
+Use focused fixtures while editing, then freeze inputs and run the complete checks once. Stop a failed interior proof before paying for the digital PDF or all-page images. Use recorded timings to identify the next bottleneck instead of repeating expensive probes blindly.
 
 Published delivery follows [BUILD_AUTOMATION.md](BUILD_AUTOMATION.md).

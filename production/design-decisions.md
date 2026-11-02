@@ -8,7 +8,7 @@ The full book was generated before the formal specimen because the pipeline rend
 ## Frozen tokens
 | Token | Value | Change from config |
 |---|---|---|
-| Substrate | cream #FCFAF5 / white #FFFFFF, page fill to every edge | none |
+| Substrate | cream #FCFAF5, page fill to every edge | none |
 | Page / margins | 612×792 pt; inside 0.875 in, outside 0.625 in, top 0.65 in, bottom 0.7 in | none |
 | Columns | 2 × 3.375 in, 0.25 in gap; full-width components in flow | none |
 | Body | Source Serif 4 (opsz 11 static instance) 10.5 pt, 13.5 pt baseline-to-baseline, ragged right, en-CA hyphenation | none |
@@ -25,9 +25,9 @@ The full book was generated before the formal specimen because the pipeline rend
 4. Italic flavour text was double-toggled to upright (style italic wrapper + source emphasis) → wrapper removed; emphasis comes only from the source.
 5. Table families (identical header signature in one section, e.g. 28 random-monster tables) now share one representation and one set of column widths; lone bold captions travel with full-width tables.
 6. Hyphenation disabled inside tables (names such as "Briarling" were split).
-7. Main matter starts on a recto (blank verso after contents); folio parity matches physical parity; PDF page labels i–v, 1–n.
+7. Main matter starts on a recto (blank verso after contents); folio parity matches PDF page parity; PDF page labels i–v, 1–n.
 8. Prose-heavy many-column tables (18) are labelled entries; single-row formula stat tables (34) are key/value profiles; monster stat lines (138) are compact six-field strips.
-9. Chapters start on a new page, not forced recto, to avoid extra blank pages in a home-printed stack.
+9. Chapters start on a new page, not forced recto, to avoid extra blank pages.
 
 ## Reference re-review and owner refinement — 2026-10-07
 
