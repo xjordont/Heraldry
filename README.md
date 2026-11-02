@@ -26,12 +26,12 @@ Targeted editorial, reader, and accessibility checks: [publication protocol](doc
 
 <!-- BEGIN AUTO:recent -->
 
+- [`3b8fe009`](https://github.com/xjordont/Heraldry/commit/3b8fe00965609d7fd082f878db28a750a934bd30) Build candidate status (20261102T191639Z)
+- [`6198dbcb`](https://github.com/xjordont/Heraldry/commit/6198dbcbcb6d4abde50fa09889ad008fe6ca9ba9) Add context7 MCP server at project scope
+- [`8df8e0f9`](https://github.com/xjordont/Heraldry/commit/8df8e0f933315a112f6b0885cebe0146da09c130) build: request candidate build 20261102T191639Z
+- [`527aa061`](https://github.com/xjordont/Heraldry/commit/527aa061f17c936fe6afc77cc6af24e4ebab3f24) layout: a bare run-in label never ends a column apart from its content
 - [`60306abe`](https://github.com/xjordont/Heraldry/commit/60306abea109a00308bd5012ed3ffd53a6fa9a1f) Build candidate status (20261102T174706Z)
 - [`73ba130e`](https://github.com/xjordont/Heraldry/commit/73ba130ebb49523caf52148d63b37e48a3d0eaba) build: request candidate build 20261102T174706Z
-- [`fd7aa4d9`](https://github.com/xjordont/Heraldry/commit/fd7aa4d9760bc04a01e8bbd8612f287975023999) build: readiness check catches stale art bindings
-- [`e2c3f1e2`](https://github.com/xjordont/Heraldry/commit/e2c3f1e20ae051b12e553856443f517c5ea6d33d) art: re-bind 54 approvals to the RC528 catalogue spec
-- [`ea429844`](https://github.com/xjordont/Heraldry/commit/ea4298446a4d24808eb5931c6539052ed2a853a2) Build candidate status (20261102T172918Z)
-- [`5ea184e9`](https://github.com/xjordont/Heraldry/commit/5ea184e9f7e691ddcf4d3c2deb271b5b6b5f97d7) build: request candidate build 20261102T172918Z
 
 <!-- END AUTO:recent -->
 
