@@ -181,5 +181,29 @@ class BuildChain(unittest.TestCase):
             self.assertEqual(len(set(tags)), 3)
 
 
+class BuildReadiness(unittest.TestCase):
+    def test_a_stale_art_binding_blocks_the_request_before_any_ci_run(self):
+        import build_request
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "production/art/gpt").mkdir(parents=True)
+            (root / "production/art/SPOT_CATALOG.json").write_text(json.dumps({"entries": [
+                {"id": "ART-A", "spec_sha256": "new"}, {"id": "ART-B", "spec_sha256": "same"}]}))
+            (root / "production/art/gpt/QUEUE.json").write_text(json.dumps({"items": []}))
+            sels = {"ART-A": {"status": "approved", "spec_sha256": "old"}, "ART-B": {"status": "approved", "spec_sha256": "same"}}
+            ok = subprocess.CompletedProcess([], 0, "", "")
+            with patch.object(build_request, "ROOT", root), patch.object(build_request, "require_clean_main", return_value="a" * 40), \
+                    patch.object(build_request.subprocess, "run", return_value=ok):
+                (root / "production/art/SELECTIONS.json").write_text(json.dumps(sels))
+                found = build_request.problems()
+                self.assertEqual(len(found), 1)
+                self.assertIn("outdated catalogue spec", found[0])
+                self.assertIn("ART-A", found[0])
+                sels["ART-A"]["spec_sha256"] = "new"
+                (root / "production/art/SELECTIONS.json").write_text(json.dumps(sels))
+                self.assertEqual(build_request.problems(), [])
+
+
 if __name__ == "__main__":
     unittest.main()
