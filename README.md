@@ -26,12 +26,12 @@ Targeted editorial, reader, and accessibility checks: [publication protocol](doc
 
 <!-- BEGIN AUTO:recent -->
 
+- [`e0407fbf`](https://github.com/xjordont/Heraldry/commit/e0407fbf2d16480910beedf35d900046d0f2b712) state: owner holds the rights to the reference books
 - [`cb08ce21`](https://github.com/xjordont/Heraldry/commit/cb08ce21cc8b166b8edf8f6244699260931edd61) Keep the reference books local only after purging them from history
 - [`2126ecc3`](https://github.com/xjordont/Heraldry/commit/2126ecc331e16eea810a33e21470d93f24250b9a) Guard commits and pushes; add /build-release skill
 - [`57f17e5a`](https://github.com/xjordont/Heraldry/commit/57f17e5a8e46ce56a5ff1db30b88af8537178037) state: RC528 released as RC528-build-43
 - [`53be3a21`](https://github.com/xjordont/Heraldry/commit/53be3a21f00e963944e9c998fe249af3da788533) Record release workflow result
 - [`bdf74bc3`](https://github.com/xjordont/Heraldry/commit/bdf74bc36eb5e6cce587a10dca17b6045b25006b) Rebuild verified RC528 delivery
-- [`48b3ec5f`](https://github.com/xjordont/Heraldry/commit/48b3ec5fbd6fef0414053367124899d474471af5) Record release workflow result
 
 <!-- END AUTO:recent -->
 
