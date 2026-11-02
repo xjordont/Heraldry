@@ -26,12 +26,12 @@ Targeted editorial, reader, and accessibility checks: [publication protocol](doc
 
 <!-- BEGIN AUTO:recent -->
 
+- [`5b4fc62c`](https://github.com/xjordont/Heraldry/commit/5b4fc62cfc45df51075ac8b563876159d86d77be) docs: second CLAUDE.md audit: trim the branch note, clarify refused pushes
 - [`061a2da6`](https://github.com/xjordont/Heraldry/commit/061a2da6efeda1884bfca9a374d1ddf631856dac) build: clear the back-cover thumb tab; trim GitHub workflows
 - [`4d7d8aa2`](https://github.com/xjordont/Heraldry/commit/4d7d8aa2b9c7f240ba559664e2495321cfe56735) RC528: humanizer revision applied (131 approved exact replacements)
 - [`b3150f5a`](https://github.com/xjordont/Heraldry/commit/b3150f5ac4b5822d5aad1acb6a9215f2e348f77f) build: finish digital-only cleanup after the local proof
 - [`e8da035d`](https://github.com/xjordont/Heraldry/commit/e8da035d724ae31d5e695082e5d8376ed05b2ce8) editorial: third humanizer pass rewrites the rejected patches (131 proposed)
 - [`8330e00a`](https://github.com/xjordont/Heraldry/commit/8330e00ae4c8c6bdc93c6ef024ef4763f1d5967e) docs: remove physical-printing references from the design, QA, and role docs
-- [`446e2ede`](https://github.com/xjordont/Heraldry/commit/446e2ede6c1184e674c5b0f2a9f834ae82700280) build: go digital-only and remove the InDesign export
 
 <!-- END AUTO:recent -->
 
