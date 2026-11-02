@@ -10,13 +10,13 @@
         Extract into an empty temporary folder and check the manifest, prompt hashes and reference decoding, then run
         the packaged work_preflight.py --offline-package and helper doctor/status with Git credentials unavailable.
   python3 tools/art_work_package.py verify-bundle BUNDLE.zip
-        The assigned reviewer's first step on a Work review bundle: hashes, receipts, QA reports and references against this repo.
+        First step on a returned Work review bundle: hashes, receipts, QA reports and references against this repo.
         It approves nothing.
   python3 tools/art_work_package.py import-bundle BUNDLE.zip
         verify-bundle, then copy the native images into assets/art/incoming and append receipts_append.jsonl to
         RECEIPTS.jsonl (lines already present are skipped). Used by the 'Import Work review bundle' workflow on bundles
         committed to production/art/work/inbox/, so no Git LFS upload is needed from the delivering machine. It approves
-        nothing: intake and orchestrator review follow.
+        nothing: intake and approval follow.
 
 Work cannot authenticate shell git, and the GitHub connector cannot fetch large binary references, so the package is
 the delivery route for Work's inputs. It is built only from committed files: the manifest names the source commit.
@@ -161,9 +161,9 @@ python {SCRIPTS}/style_audit.py --repo . --limit 10 --out {s}/style.json
 
 `delivery_guard.py` does not apply here (it needs a Git checkout). The bundle carries the native images,
 `receipts_append.jsonl`, every QA report, your evidence and a hash manifest. Give it to the owner as a
-downloadable file and state plainly: nothing was pushed to GitHub; nothing is approved. Bundle at least every
+downloadable file and state plainly: nothing was pushed to GitHub. Bundle at least every
 {q.get('push_every', 5)} saved images (the review bundle should stay under GitHub's 25 MB browser upload). Continue
-until `status` says NOTHING LEFT (anchors phase: stop after the anchors). An assigned reviewer on any supported client reviews the delivered art; generation-only workers do not approve their own delivery.
+until `status` says NOTHING LEFT (anchors phase: stop after the anchors).
 """
 
 
@@ -207,7 +207,7 @@ def build_blobs(allow_dirty=False):
         "delivery": {"route": "bundle", "git_remote_access": "not provided: the package carries no credentials and cannot push",
                      "authenticated_git_lfs": "separate capability: only a real authenticated checkout can use delivery_guard.py ship"},
         "not_certified": ["image tool accepts every listed reference as an attached image (Work smoke test)",
-                          "native output file accessible to Python inside Work (Work smoke test)", "artistic quality: independent review"],
+                          "native output file accessible to Python inside Work (Work smoke test)", "artistic quality: look at the images before approving them"],
     }
     blobs["WORK_PACKAGE.json"] = (json.dumps(manifest, indent=1, ensure_ascii=False) + "\n").encode()
     return q, blobs

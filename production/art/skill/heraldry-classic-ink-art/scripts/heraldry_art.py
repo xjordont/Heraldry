@@ -719,8 +719,8 @@ def cmd_status(a, repo):
         b = jload(scratch_dir(repo) / "bundled.json", {})
         action = (f"STOP. Every saved image is in the review bundle {b.get('bundle')} (sha256 {b.get('bundle_sha256')}). Hand that zip over as a "
                   "downloadable file and say plainly that nothing was pushed to GitHub. "
-                  + ("The anchors are done: wait for Claude Code's independent review and a new queue. Do not start the batch."
-                     if q["phase"] == "anchors" else "Wait for the review and a new queue."))
+                  + ("The anchors are done: they need approval and a new queue before the batch. Do not start the batch."
+                     if q["phase"] == "anchors" else "Wait for the import, approval and a new queue."))
     elif due and not git_ok(repo):
         action = (f"DRIFT REVIEW, THEN BUNDLE: `{helper()} sheet --refs`, then the style audit, then `{helper()} bundle --evidence SHEET "
                   "--evidence STYLE_JSON` and hand the zip to the owner: git is not available here.")
@@ -1168,7 +1168,7 @@ def cmd_bundle(a, repo):
                             f"git commit -m 'art(gpt): {span}'; git pull --rebase origin main; git push origin main\n").encode()
     manifest = {"schema": 1, "kind": "heraldry-work-review-bundle", "created_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "source": source, "queue": {"phase": q["phase"], "sha256": file_sha(repo / QUEUE_REL), "ids": [it["id"] for it in q["items"]]},
-                "delivery": "bundle", "pushed_to_github": False, "approval": "NOT APPROVED: independent Claude Code / owner review required",
+                "delivery": "bundle", "pushed_to_github": False, "approval": "NOT APPROVED: approve after import and intake with tools/art_intake.py",
                 "items": items, "refusals": refused,
                 "files": {k: {"sha256": hashlib.sha256(v).hexdigest(), "bytes": len(v)} for k, v in sorted(files.items())}}
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -1180,7 +1180,7 @@ def cmd_bundle(a, repo):
     (scratch_dir(repo) / "bundled.json").write_text(json.dumps({"bundle": str(out), "bundle_sha256": digest,
                                                                  "images": {it["id"]: it["sha256"] for it in items}}))
     print(f"bundle: {out} ({len(ids)} images, {len(refused)} refusals, {len(a.evidence)} extra evidence files)  sha256 {digest}")
-    print("Nothing was pushed. Hand this zip over as a downloadable file for independent review; it is not approved artwork.")
+    print("Nothing was pushed. Hand this zip over as a downloadable file; its images are approved after import and intake.")
     if git_ok(repo):
         print("note: git is available here. Push instead of handing over a bundle, unless a push has failed.")
     return 0

@@ -1,23 +1,12 @@
 # Codex runbook: Heraldry illustration generation (local Windows PC)
 
-## Shared client authority
-
-Owner instruction, 2026-10-22: Claude Code, Codex, and ChatGPT Work have equal developer, orchestrator, repair, and reviewer authority under `docs/AGENT_OPERATIONS.md`. Client names in the procedure identify the original route, not exclusive permissions. A generation-only worker remains scoped to its assigned image/receipt delivery and does not approve its own work. An assigned reviewer on any client may inspect, approve, reject, and send redos using the existing evidence gates. Use the actual client and reviewer name in provenance. Native model/tool, authentication, file, and transport availability must be checked in the current session.
-
-
 **For production sessions, `BATCH_CARD.md` is the operative one-page contract.** This runbook is background and first-time setup.
 
-Owner decision 2026-10-11: image generation continues in **Codex on the owner's Windows PC**, which has the owner's own GitHub login, Git, Git LFS and Python. GitHub `main` is the primary source and delivery route; ZIP hand-off is reserved for the offline fallback when authenticated inputs or guarded delivery are unavailable. Codex clones `xjordont/Heraldry`, generates the queued images, and pushes them through LFS with the guarded delivery script. GitHub Actions ink-prepares them, and the assigned reviewer reviews and approves them, then publishes the next queue.
+Owner decision 2026-10-11: image generation continues in **Codex on the owner's Windows PC**, which has the owner's own GitHub login, Git, Git LFS and Python. GitHub `main` is the primary source and delivery route; ZIP hand-off is reserved for the offline fallback when authenticated inputs or guarded delivery are unavailable. Codex clones `xjordont/Heraldry`, generates the queued images, and pushes them through LFS with the guarded delivery script. GitHub Actions ink-prepares them; they are then approved or sent back with `tools/art_intake.py` (by Codex itself, after looking at them, or by the owner or another session), and the next queue is published.
 
-## Roles
+## Scope of a generation run
 
-| Who | Owns | Never does |
-|---|---|---|
-| Orchestrator (any supported client) | prompts, queue, references, art direction, review and approval (`tools/art_intake.py`), manuscript, layout, builds, all shared files | generate the final art |
-| Generation worker (any supported client) | generating images, mechanical checks, its own visual QA record, saving to `assets/art/incoming/<ID>.<ext>` plus `production/art/gpt/RECEIPTS.jsonl`, guarded delivery | edit prompts, queue, manuscript, tools, config or the skill; approve art; build PDFs; push anything other than incoming images and receipts; force-push; create branches |
-| Owner | starts Codex sessions, art-direction calls, final say | |
-
-Within a generation-only assignment, the worker has disjoint ownership in the sense of `CLAUDE.md`. Its only writable paths are `assets/art/incoming/ART-*.{png,jpg,webp}` and `production/art/gpt/RECEIPTS.jsonl`, and `delivery_guard.py` enforces this.
+While generating, the run writes only `assets/art/incoming/ART-*.{png,jpg,webp}` and `production/art/gpt/RECEIPTS.jsonl`; `delivery_guard.py` enforces this. Approval afterwards is an ordinary commit of `production/art/SELECTIONS.json` (`BATCH_CARD.md`, "After the run"). The owner starts Codex sessions and has the final say on art direction.
 
 ## One-time setup (PowerShell)
 
@@ -62,7 +51,7 @@ $env:PYTHONUTF8 = "1"
 & $artPython production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py status
 ```
 
-The preflight should say `READY` with `delivery: git_lfs`. Show the complete preflight, doctor, and status outputs. Stop on `BLOCKED` or `NOT READY`; report the output verbatim and repair setup before production. `status` prints the single next action. Obey it only within the owner's current authorization. A readiness-only request stops before generation, production receipts, or artwork delivery.
+The preflight should say `READY` with `delivery: git_lfs`. Stop on `BLOCKED` or `NOT READY` and report the output verbatim. `status` prints the single next action. A readiness-only request stops before generation.
 
 ### Capability check
 
@@ -76,16 +65,9 @@ The first real item proves the capabilities: the image tool must accept every li
 - Size: the queue size is the minimum and fixes the aspect. Target the maximum output resolution (owner 2026-10-12): the largest size and highest quality offered at that aspect, never the default; `check` warns below the queue's `target_pixels`.
 - Art direction (owner, 2026-10-11, later): "closer to the more old school black and white gritty style". That means bold, rough brush contours, heavy solid blacks, scratchy hatching and dry-brush, high contrast and visible human marks, like the samples, in pure black ink. No grey wash, stipple fields, machine-even texture, clean vector-like line or rendered polish. Details are in `production/art/skill/heraldry-classic-ink-art/references/STYLE.md` and `docs/ART_DIRECTION.md`.
 
-## Per item (from `SKILL.md`; the full contract is there)
+## Per item
 
-`BATCH_CARD.md` is the working contract; in short:
-
-1. `heraldry_art.py next --n 1` (redos first), then `show ID`: the verbatim prompt, references, size, MUST and DO NOT DRAW lists.
-2. Generate with the verbatim prompt; at most two correction sentences on retries (`references/REPAIR.md`).
-3. Save the native file to `$env:HERALDRY_SCRATCH`, then `heraldry_art.py check ID FILE`. Look at the image and the print-size preview beside the references.
-4. `heraldry_art.py qa ID FILE` and complete the draft it names: the attestations, `register_compared` and all ten criteria with real, specific evidence.
-5. `heraldry_art.py save ID FILE --must "..." --avoid-clear --model "..."` (the draft is found automatically).
-6. One generation per item, in a fresh context, never a retry; a hard fail is saved with `--accept-flags --notes "..."` and the assigned reviewer decides on a redo.
+Follow `BATCH_CARD.md` ("Per item"); `SKILL.md` has the full procedure.
 
 ## Primary delivery: guarded Git LFS to main
 
@@ -99,13 +81,13 @@ When `status` asks for delivery:
 & $artPython production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .
 ```
 
-`ship` stages only queued images and receipts, verifies every receipt against the native bytes, prompt, references and QA, checks LFS, and pushes to `main` with no force. If `main` advanced only in paths you are not delivering (the intake bot's ink, selection and review commits after every push), `ship` fast-forwards by itself and retries a lost push race up to three times. It undoes only its own unpublished commit and never rebases, merges or forces. If `main` diverged, changed the same files, or the guard blocks on authentication, LFS, QA, or unexpected changes, stop before delivery. Do not force-push, auto-rebase, or pull over unsent artwork or receipts. Preserve the work, create the helper's review bundle, and ask the maintainer to reconcile the blocker. The push triggers the `Intake ChatGPT artwork` workflow.
+`ship` stages only queued images and receipts, verifies every receipt against the native bytes, prompt, references and QA, checks LFS, and pushes to `main` with no force. If `main` advanced only in paths you are not delivering (the intake bot's ink, selection and review commits after every push), `ship` fast-forwards by itself and retries a lost push race up to three times. It undoes only its own unpublished commit and never rebases, merges or forces. If `main` diverged, changed the same files, or the guard blocks on authentication, LFS, QA, or unexpected changes, stop before delivery. Do not force-push, auto-rebase, or pull over unsent artwork or receipts. Preserve the work, create the helper's review bundle, and report the blocker. The push triggers the `Intake ChatGPT artwork` workflow.
 
 Report one line per item (ID, attempts, flags) and the commit SHA of each delivery, and continue until NOTHING LEFT or a stop condition on `BATCH_CARD.md`.
 
 ## ZIP fallback
 
-If guarded Git/LFS delivery fails, use `heraldry_art.py bundle` outside the checkout, with the contact sheet, style audit and saved QA evidence. Report the bundle path and SHA-256 and state that no push succeeded. Bundle creation does not approve art. The independent reviewer verifies and imports it through the existing fallback procedure.
+If guarded Git/LFS delivery fails, use `heraldry_art.py bundle` outside the checkout, with the contact sheet, style audit and saved QA evidence. Report the bundle path and SHA-256 and state that no push succeeded. The `Import Work review bundle` workflow verifies and imports it.
 
 If an authenticated checkout cannot be obtained, use the explicitly selected offline Work input package described in `production/art/gpt/WORK_PROMPT.md`. Follow `START_HERE.md`, use `--offline-package`, never run `git init`, clone, or pull inside the package, and deliver by bundle only with remote access `NOT_ATTEMPTED`.
 
@@ -114,4 +96,4 @@ If an authenticated checkout cannot be obtained, use the explicitly selected off
 - `CLAUDE.md` governs the repository. Work on `main` only, never force-push, never rewrite history.
 - Never print, log or commit a credential. Git uses the owner's existing Windows login.
 - Build on request only: Codex never runs `make all`, builds PDFs or dispatches the delivery rebuild.
-- Generated delivery is not approval. The assigned reviewer inspects every image.
+- Only approved art is placed in the book; approve an image only after looking at it.

@@ -1,10 +1,5 @@
 # Artwork workflow — GPT image pen-and-ink route
 
-## Shared client authority
-
-Owner instruction, 2026-10-22: Claude Code, Codex, and ChatGPT Work have equal developer, orchestrator, repair, and reviewer authority under `docs/AGENT_OPERATIONS.md`. Client names in the procedure identify the original route, not exclusive permissions. A generation-only worker remains scoped to its assigned image/receipt delivery and does not approve its own work. An assigned reviewer on any client may inspect, approve, reject, and send redos using the existing evidence gates. Use the actual client and reviewer name in provenance. Native model/tool, authentication, file, and transport availability must be checked in the current session.
-
-
 Images are generated with GPT image generation within the owner's ChatGPT plan, with no paid image API (owner decisions 2026-10-10 and 2026-10-11).
 - **Current route:** Codex on the owner's Windows PC, following `production/art/codex/BATCH_CARD.md`.
 - **Fallback:** ChatGPT Work with the offline input package.
@@ -75,14 +70,14 @@ Manuscript issues found while briefing are recorded in `production/art/SOURCE_NO
      Each item records its `ref_set`. References are the owner's gritty ink samples and four public-domain prints; generated images are never references, and no isolated figure receives a scenic reference.
    - Order: redos first, then `gpt_lead_ids` (seventeen items, one per set, so the drift reviews at images 10 and 20 test every set), then the rest. The batch phase follows the approved anchors (Greythorn plus four hand-inked images).
 2. **The art worker** (Codex on the owner's PC; ChatGPT Work as the fallback) follows `production/art/codex/BATCH_CARD.md` (or `production/art/gpt/INSTRUCTIONS.md`) and the `heraldry-classic-ink-art` skill (below).
-   - It pastes each prompt verbatim, attaches that item's references only, generates once in a fresh context (never a retry: a defect is saved flagged, and the reviewer decides on a redo), and saves the native image unmodified as `assets/art/incoming/<ID>.<png|jpg|webp>` (all Git LFS).
+   - It pastes each prompt verbatim, attaches that item's references only, generates once in a fresh context (never a retry: a defect is saved flagged and may come back as a redo), and saves the native image unmodified as `assets/art/incoming/<ID>.<png|jpg|webp>` (all Git LFS).
    - `heraldry_art.py save` does the check, copy and receipt (`production/art/gpt/RECEIPTS.jsonl`, recording the saved attempt and how many were generated) in one step, and `delivery_guard.py ship` pushes each image as soon as it is saved.
    - `next` and `status` first fast-forward a clean clone, so a rejection sent back mid-session appears as a redo at once.
 3. **The `Intake ChatGPT artwork` workflow** (on push to `assets/art/incoming/**`) runs `tools/art_intake.py scan`.
    - It writes a transparent pure-black ink derivative to `assets/art/ink/<ID>.png` (Git LFS).
    - It records the image as `received` in `production/art/SELECTIONS.json`, with hashes, pixels, flags and the receipt.
    - It commits no contact sheet (at one image per push that would add about 30 MB of history).
-4. **The orchestrator** runs `tools/art_intake.py pending --sheet` (flagged images first; it fetches just those ink files and writes local sheets to `build/art/review/`), reviews the sheets, plus the full-size image where needed, and then runs one of the following:
+4. **Approval.** Any session with the repo, the generating one included, runs `tools/art_intake.py pending --sheet` (flagged images first; it fetches just those ink files and writes local sheets to `build/art/review/`), looks at the sheets, plus the full-size image where needed, and then runs one of the following:
    - `tools/art_intake.py approve --ids ...`
    - `reject --ids ... --reason "..."`, which returns the entry to the queue; the reason is shown to the operator as a redo, so make it a sentence they can turn into a correction;
    - `approve-anchors`, which makes the received anchors the references for the batch queue.
@@ -96,9 +91,9 @@ Only `approved` and `anchor-approved` art is placed in the book.
 - Chapter openers and the cover use `ART-CHnn-002` and `ART-COVER-002` once approved, and fall back to the original masters until then.
 - Artwork changes never change the manuscript RC number.
 
-## Review and honesty
+## Labelling
 
-- The orchestrator reviews placed pages and updates the hash-bound visual ledger before release.
+- Placed pages are checked in the release review (`docs/BUILD_AUTOMATION.md`).
 - Generated images are recorded as AI-generated, naming the surface the receipt records (Codex or ChatGPT Work), never as hand-drawn.
 - Rules and deployment diagrams remain source-faithful vector figures and are not generated.
 
@@ -119,19 +114,19 @@ Only `approved` and `anchor-approved` art is placed in the book.
   - `validate_skill.py` checks a built ZIP.
 - **`tools/art_skill_build.py`** writes the skill's `references/FAMILIES.md` from the config and builds the ZIP deterministically. The tests build it fresh and validate it.
 
-The assigned orchestrator owns the prompts, queue, references, review and approval. The skill only runs the queue and checks what it delivers.
+The skill runs the queue and checks what it delivers; prompts, queue and references change only through the catalogue tools above.
 
 ## Codex cadence
 
 - **Per image:** `push_every: 1`, so each saved image is delivered at once, and a 5-hour or weekly usage limit never strands work.
-- **Every tenth image:** a drift review (`sheet --recent 10 --refs`, `style_audit.py --recent 10`). Codex reports drift and keeps going (owner 2026-10-12: run the whole list); the assigned reviewer reviews and sends redos.
+- **Every tenth image:** a drift review (`sheet --recent 10 --refs`, `style_audit.py --recent 10`). Codex reports drift and keeps going (owner 2026-10-12: run the whole list).
 - **Usage:** ChatGPT Plus resets every 5 hours. Codex stops at the limit with everything delivered, and the same prompt resumes. Codex's image tool accepts at most five reference images (it refused six on 2026-10-12).
 - **Resumable:** the next session's identical prompt (`CODEX_PROMPT.md`) resumes from `next`.
 - **Lean token use:**
   - The batch card replaces the long docs.
   - References are viewed once per session.
   - Reports are one line per item.
-  - The reviewer works from `art_intake.py pending --sheet`, opening full size only flagged images and spot checks.
+  - Approval works from `art_intake.py pending --sheet`, opening full size only flagged images and spot checks.
 - **LFS bandwidth:** the intake fetches only new images; the build fetches only the art it places, cached (`docs/LARGE_FILES.md`).
 
 ## Offline fallback: ChatGPT Work
