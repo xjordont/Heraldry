@@ -9,7 +9,7 @@ You don't need to do anything to keep the README current: GitHub refreshes it.
 
 ## GitHub
 
-The `Update GitHub README` workflow runs after every push to `main` and after every other repository workflow completes, so it also catches commits made with the workflow token. When you add a workflow, add its exact name to the completion list; a repository test enforces this.
+The `Update GitHub README` workflow runs after every push to `main` and after each workflow that commits to `main` (those commits use the workflow token, which starts no push run). It installs nothing and runs no tests: the refresher is standard library only, and Repository checks already tests each push. When you add a workflow that commits to `main`, add its exact name to the completion list; a repository test enforces the list both ways.
 
 The workflow shares the `publication-main` concurrency group (`queue: max`) with the candidate and release jobs, and defers while a build is queued or running. It commits only `README.md`, with a normal fast-forward push, and makes no commit when nothing changed.
 

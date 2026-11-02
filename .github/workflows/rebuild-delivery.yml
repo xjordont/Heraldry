@@ -71,6 +71,11 @@ jobs:
       - name: Rebuild and verify against the committed review ledger
         id: build
         run: make PY=python test clean all verify package
+      - name: Restore the Playwright browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-1.63.0-${{ runner.os }}
       - name: Hero records for the release
         # The illustrated blank Hero record and the 24 Basic Mode Heroes ship with the book (design
         # review 2026-10-29). Same generator and checks as the Build Hero records workflow.

@@ -22,7 +22,7 @@ This repository builds the Heraldry Skirmish rulebook, player aids, and Hero rec
 
 - Docs, `production/STATE.md`, editorial proposals, and art intake or approval need no test run.
 - For code, config, or layout changes, run the tests that cover them (for example `python -m unittest discover -s tests -p 'test_hero_cards.py'` with the project Python), or `make test` for broad changes.
-- CI (`.github/workflows/repository-checks.yml`) runs the full suite on every push to `main`; if it goes red, fix it.
+- CI (`.github/workflows/repository-checks.yml`) runs the full suite on every push to `main` except log, status, and proposal-only pushes; if it goes red, fix it.
 - `python tools/dev.py check` is the full local check (dependencies, preflight, snapshot history, whitespace, and every test). The build-request helpers run the tests themselves.
 
 ## By task
