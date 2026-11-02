@@ -18,6 +18,10 @@ python3 assets/hero-record/sheet.py heroes --pdf build/hero-records/basic-heroes
 
 Type follows `config/design_tokens.json`: Grenze Gotisch (titles and banners), Source Serif 4 Bold (product line, resource headings, identity values), Source Sans 3 (labels, attribute values, filled text). Every printed label and value is 9 pt or larger.
 
+## Tables
+
+Every column heading, row label (Chest, Shield) and filled value is centred both ways in its cell: horizontally on the visible rule under its column, vertically on the cap height (a wrapped entry is centred as a block, each line in its own row). A heading's cell runs from the bottom of its band's ink to the header rule (`HEAD_ROOM` in `sheet.py`, measured on the band art), and the column bars rise to the headings' cap height.
+
 ## Front
 
 - Identity cartouches (Name, Class, Ancestry, Background), Level, and a portrait field.

@@ -47,8 +47,12 @@ R = lambda v: f"{v:.2f}".rstrip("0").rstrip(".")
 FRAME_BOTTOM = 37.81 + 980.38 - 2          # inner edge of the 2 px page frame
 X0, X1 = 50.87, 763.71                     # ledger edges shared by both sides
 FIRST = 44.0                               # Type and Qty columns
-HEAD_PX, HEAD_ABOVE, BAR_ABOVE, GAP = 13, 16.6, 14.0, 2.6
-TEXT_GAP = 6.05                            # a value's baseline sits this far above its rule, like the labels
+HEAD_PX, GAP = 13, 2.6
+BAR_TO_CAP = 0.6                           # column bars rise to just below the headings' cap height
+# Header cell height: from the bottom of each band's ink (where it falls below half cover, measured on the
+# band art at 4x) down to the header rule. Every heading is centred in it, as every label and value is
+# centred in its own row.
+HEAD_ROOM = {"armour": 21.9, "weapons": 23.65, "inventory": 22.65, "powers": 26.2, "talents": 27.95}
 
 # identity cartouches
 NAME_BOX = (92.0, 161.0, 340.0, 196.0)
@@ -116,13 +120,36 @@ def baseline_in_box(px, lead):
     return (lead - (ASC + DESC) * px) / 2 + ASC * px
 
 
-def ledger(x0, x1, rule0, pitch, rows, cols, rule_rows=None, end_bar=False, bar_to=None, spans=(), full_rules=()):
-    """Column bars and horizontal rules. rule_rows: row boundaries to rule (0 = header rule; default all).
+def cell_span(e, j, end_bar=False):
+    """The visible rule under column j: rules stop GAP short of each bar; the outer edges are open unless
+    the ledger closes on a bar. Centred text is centred on this span."""
+    lo = e[j] + GAP if j > 0 else e[j]
+    hi = e[j + 1] - GAP if (j + 2 < len(e) or end_bar) else e[j + 1]
+    return lo, hi
+
+
+def centred_top(px, lead, cy, lines=1):
+    """Top of a text box (font px, line-height lead, `lines` lines) whose ink, from the first line's cap
+    height to the last line's baseline, is centred on cy."""
+    return cy - baseline_in_box(px, lead) - ((lines - 1) * lead - CAP_H * px) / 2
+
+
+def in_row(cls, x0, x1, cy, inner, center=False, lead=13.0, lines=None, span=None):
+    """Filled text centred vertically on cy, between two column edges (or on `span` when centred)."""
+    style = f" font-size: {R(BODY_PX)}px; line-height: {R(lead)}px;" + (" text-align: center;" if center else "")
+    left, width = (span[0], span[1] - span[0]) if center and span else (x0 + PAD, x1 - x0 - 2 * PAD)
+    return div(cls, left, centred_top(BODY_PX, lead, cy, lines or 1), width, inner, style, lines=lines)
+
+
+def ledger(x0, x1, rule0, pitch, rows, cols, room, rule_rows=None, end_bar=False, bar_to=None, spans=(), full_rules=()):
+    """Column bars and horizontal rules. room: header cell height above the header rule (HEAD_ROOM).
+    rule_rows: row boundaries to rule (0 = header rule; default all).
     spans: (r0, r1) row ranges with no bars (a full-width block); full_rules: boundaries ruled unbroken."""
     e = edges(x0, x1, cols)
     bars = e[1:-1] + ([x1] if end_bar else [])
     rule_rows = range(rows + 1) if rule_rows is None else rule_rows
-    top = rule0 - BAR_ABOVE
+    head_cy = rule0 - room / 2
+    top = head_cy - CAP_H * HEAD_PX / 2 + BAR_TO_CAP
     bottom = bar_to if bar_to is not None else rule0 + pitch * rows
     ox, oy = x0 - 4, top - 2
     w, h = (x1 + 4) - ox, bottom + 2 - oy
@@ -148,9 +175,14 @@ def ledger(x0, x1, rule0, pitch, rows, cols, rule_rows=None, end_bar=False, bar_
            f'style="position: absolute; left: {R(ox)}px; top: {R(oy)}px; overflow: visible">'
            f'<path d="{"".join(segs)}" fill="none" stroke="#000000" stroke-width="1"></path>'
            f'<path d="{barpath}" fill="none" stroke="#000000" stroke-width="2.5"></path></svg>')
-    heads = [f'<div class="hr-l hr-c" style="left: {R(a)}px; top: {R(rule0-HEAD_ABOVE)}px; width: {R(b-a)}px; '
-             f'font-size: {HEAD_PX}px">{label}</div>' for (label, _), a, b in zip(cols, e, e[1:]) if label]
+    heads = [label_div(label, *cell_span(e, j, end_bar), head_cy) for j, (label, _) in enumerate(cols) if label]
     return [svg] + heads, e
+
+
+def label_div(label, lo, hi, cy):
+    """A printed heading or row label, centred both ways in its cell."""
+    return (f'<div class="hr-l hr-c" style="left: {R(lo)}px; top: {R(value_top(HEAD_PX, cy))}px; width: {R(hi-lo)}px; '
+            f'font-size: {HEAD_PX}px">{label}</div>')
 
 
 def wrap_svg(parts, ax, ay, bx, by, attrs='aria-hidden="true"'):
@@ -187,13 +219,6 @@ def lozenges(bottoms, w=22, h=25, sw=3):
              f'stroke="#000000" stroke-width="{sw}" stroke-linejoin="miter"></polygon>' for yb in bottoms]
     return wrap_svg(parts, cx - w / 2 - 3, min(bottoms) - h - 3, cx + w / 2 + 3, max(bottoms) + 3,
                     'role="img" aria-label="Three wound markers"')
-
-
-def on_rule(cls, x0, x1, rule_y, inner, center=False, lead=13.0, gap=TEXT_GAP, lines=None):
-    """One line of filled text whose baseline sits `gap` above a rule, between two column edges."""
-    style = f" font-size: {R(BODY_PX)}px; line-height: {R(lead)}px;" + (" text-align: center;" if center else "")
-    return div(cls, x0 + PAD, rule_y - gap - baseline_in_box(BODY_PX, lead) - (lead * (lines - 1) if lines else 0),
-               x1 - x0 - 2 * PAD, inner, style, lines=lines)
 
 
 def value_top(px, centre):
@@ -472,17 +497,16 @@ def front_body(h=None, m=None):
         for k in ("DEX", "SPD"):
             out.append(field_caption(k, "Base"))
     # armour + wounds
-    arm, ae = ledger(X0, ARM_X1, ARM_RULE, ARM_PITCH, 2, ARM_COLS, end_bar=True)
+    arm, ae = ledger(X0, ARM_X1, ARM_RULE, ARM_PITCH, 2, ARM_COLS, HEAD_ROOM["armour"], end_bar=True)
     arm_ys = [ARM_RULE + ARM_PITCH * i for i in range(3)]
     out += arm
-    for label, y in (("Chest", arm_ys[1]), ("Shield", arm_ys[2])):
-        out.append(f'<div class="hr-l hr-c" style="left: {R(X0)}px; top: {R(y - HEAD_ABOVE)}px; width: {R(FIRST)}px; '
-                   f'font-size: {HEAD_PX}px">{label}</div>')
+    for i, label in enumerate(("Chest", "Shield")):
+        out.append(label_div(label, *cell_span(ae, 0), arm_ys[i] + ARM_PITCH / 2))
     out.append(lozenges(arm_ys))
     out += [f'<div class="hr-rule" style="left: {R(WOUND_X0)}px; top: {R(y - 0.5)}px; width: {R(X1 - WOUND_X0)}px"></div>'
             for y in arm_ys]
-    wpn, we = ledger(X0, X1, WPN_RULE, WPN_PITCH, 3, WPN_COLS)
-    inv, ie = ledger(X0, INV_X1, INV_RULE, INV_PITCH, INV_ROWS, INV_COLS, rule_rows=range(INV_ROWS),
+    wpn, we = ledger(X0, X1, WPN_RULE, WPN_PITCH, 3, WPN_COLS, HEAD_ROOM["weapons"])
+    inv, ie = ledger(X0, INV_X1, INV_RULE, INV_PITCH, INV_ROWS, INV_COLS, HEAD_ROOM["inventory"], rule_rows=range(INV_ROWS),
                      end_bar=True, bar_to=FRAME_BOTTOM + 1)
     out += wpn + inv
     out.append(arc_caption("Start" if h is None else f"Start {esc(h['stats']['Coins'])}"))
@@ -527,23 +551,23 @@ def front_values(h, m, ae, we, ie):
     for i, row in enumerate((chest, shield)):
         if not row:
             continue
-        y = ARM_RULE + ARM_PITCH * (i + 1)
+        cy = ARM_RULE + ARM_PITCH * (i + 0.5)
         cells = [(row["name"], False, "hf nm"), (row["ad"], True, "hf"), (row["av"], True, "hf"),
                  (signed(row["pen"]) if row["pen"] else "0", True, "hf"), (f'{row["spd"]}"' if row["spd"] else "-", True, "hf")]
         for j, (t, c, cls) in enumerate(cells):
-            out.append(on_rule(cls, ae[j + 1], ae[j + 2], y, esc(t), center=c))
+            out.append(in_row(cls, ae[j + 1], ae[j + 2], cy, esc(t), center=c, span=cell_span(ae, j + 1, True)))
         if row["traits"]:
             n = m.lines([(esc(row["traits"]), ae[7] - ae[6] - 2 * PAD, BODY_PX, 13.0, 400)])[0]
-            out.append(on_rule("hf wrap", ae[6], ae[7], y, esc(row["traits"]), lines=n))
+            out.append(in_row("hf wrap", ae[6], ae[7], cy, esc(row["traits"]), lines=n))
     # weapons
     if len(weapons) > 3:
         raise SystemExit(f"{h['name']}: {len(weapons)} weapons do not fit the 3 weapon rows")
     for i, wp in enumerate(weapons):
-        y = WPN_RULE + WPN_PITCH * (i + 1)
+        cy = WPN_RULE + WPN_PITCH * (i + 0.5)
         cells = [(wp["name"], False, "hf nm"), (wp["hands"], True, "hf"), (wp["damage"], False, "hf"),
                  (wp["range"], True, "hf"), (wp["traits"], False, "hf")]
         for j, (t, c, cls) in enumerate(cells):
-            out.append(on_rule(cls, we[j], we[j + 1], y, esc(t), center=c))
+            out.append(in_row(cls, we[j], we[j + 1], cy, esc(t), center=c, span=cell_span(we, j)))
     # inventory: every other item, its effect running line by line on the ledger rules
     eff_w = ie[3] - ie[2] - 2 * PAD
     counts = m.lines([(runs_html(it["runs"]), eff_w, BODY_PX, INV_PITCH, 400) for it in inventory])
@@ -551,13 +575,12 @@ def front_values(h, m, ae, we, ie):
     row = 0
     for it, n, nn in zip(inventory, counts, name_counts):
         n = max(n, nn, 1)
-        first = INV_RULE + INV_PITCH * (row + 1)
-        gap = TEXT_GAP - 1.5     # 16.8 px rows: sit a little lower to clear the rule above
-        out.append(on_rule("hf", ie[0], ie[1], first, str(it["qty"]), center=True, lead=INV_PITCH, gap=gap))
+        cy1 = INV_RULE + INV_PITCH * (row + 0.5)               # the item's first row
+        cyn = INV_RULE + INV_PITCH * (row + n / 2)             # all its rows: each line lands centred in its own row
+        out.append(in_row("hf", ie[0], ie[1], cy1, str(it["qty"]), center=True, lead=INV_PITCH, span=cell_span(ie, 0, True)))
         for cls, a, b, inner in (("hf wrap nm", ie[1], ie[2], esc(it["name"])), ("hf wrap", ie[2], ie[3], runs_html(it["runs"]))):
-            out.append(div(cls, a + PAD, first - gap - baseline_in_box(BODY_PX, INV_PITCH), b - a - 2 * PAD, inner,
-                           f" font-size: {R(BODY_PX)}px; line-height: {R(INV_PITCH)}px;", lines=n))
-        out.append(on_rule("hf", ie[3], ie[4], first, "Carried", center=True, lead=INV_PITCH, gap=gap))
+            out.append(in_row(cls, a, b, cyn, inner, lead=INV_PITCH, lines=n))
+        out.append(in_row("hf", ie[3], ie[4], cy1, "Carried", center=True, lead=INV_PITCH, span=cell_span(ie, 3, True)))
         row += n
     if row > INV_ROWS:
         raise SystemExit(f"{h['name']}: inventory needs {row} rows; the sheet has {INV_ROWS}")
@@ -621,21 +644,20 @@ def back_layout(entries, cols, m, pitch):
     return need, rows
 
 
-def back_table(entries, need, rows, cols, rule0, pitch, n_rows, close_on_frame):
+def back_table(entries, need, rows, cols, rule0, pitch, n_rows, close_on_frame, room):
     e = edges(X0, X1, cols)
     out, row, bounds = [], 0, [0]
     for ent, n_lines, n in zip(entries, need, rows):
-        top = rule0 + pitch * row
-        y = top + (pitch * n - n_lines * BACK_LEAD) / 2 - 0.4
+        cy = rule0 + pitch * (row + n / 2)
         for c, (inner, wt, center) in ent.items():
-            style = f" font-size: {R(BODY_PX)}px; line-height: {R(BACK_LEAD)}px;" + (" text-align: center;" if center else "")
-            out.append(div("hf wrap nm" if wt == 600 else "hf wrap", e[c] + PAD, y, e[c + 1] - e[c] - 2 * PAD, inner, style, lines=n_lines))
+            out.append(in_row("hf wrap nm" if wt == 600 else "hf wrap", e[c], e[c + 1], cy, inner, center=center,
+                              lead=BACK_LEAD, lines=n_lines))
         row += n
         bounds.append(row)
     rule_rows = sorted(set(bounds + list(range(row, n_rows + 1))))
     if close_on_frame:
         rule_rows = [r for r in rule_rows if r < n_rows]
-    svg, _ = ledger(X0, X1, rule0, pitch, n_rows, cols, rule_rows=rule_rows,
+    svg, _ = ledger(X0, X1, rule0, pitch, n_rows, cols, room, rule_rows=rule_rows,
                     bar_to=FRAME_BOTTOM + 1 if close_on_frame else None)
     return svg + out
 
@@ -667,7 +689,7 @@ def reverse_body(h=None, m=None):
         need, rows = back_layout(ents, TAL_COLS, m, pitch)
         if sum(rows) > n_rows:
             raise SystemExit(f"{h['name']}: Talents need {sum(rows)} rows; the page has {n_rows}")
-        out += back_table(ents, need, rows, TAL_COLS, rule0, pitch, n_rows, True)
+        out += back_table(ents, need, rows, TAL_COLS, rule0, pitch, n_rows, True, HEAD_ROOM["talents"])
         return static + "\n".join(out)
     pow_rule = POW_TOP + BAND_TO_RULE
     if h is None:
@@ -688,11 +710,12 @@ def reverse_body(h=None, m=None):
     tal_rule = tal_top + BAND_TO_RULE
     out += band("powers", POW_TOP) + band("talents", tal_top)
     if h is None:
-        out += ledger(X0, X1, pow_rule, BACK_PITCH, BACK_ROWS, POW_COLS)[0]
-        out += ledger(X0, X1, tal_rule, BACK_PITCH, BACK_ROWS, TAL_COLS, rule_rows=range(BACK_ROWS), bar_to=FRAME_BOTTOM + 1)[0]
+        out += ledger(X0, X1, pow_rule, BACK_PITCH, BACK_ROWS, POW_COLS, HEAD_ROOM["powers"])[0]
+        out += ledger(X0, X1, tal_rule, BACK_PITCH, BACK_ROWS, TAL_COLS, HEAD_ROOM["talents"], rule_rows=range(BACK_ROWS),
+                      bar_to=FRAME_BOTTOM + 1)[0]
         return static + "\n".join(out)
-    out += back_table(p_ents, p_need, p_rows, POW_COLS, pow_rule, BACK_PITCH, p_n, False)
-    out += back_table(t_ents, t_need, t_rows, TAL_COLS, tal_rule, BACK_PITCH, t_n, True)
+    out += back_table(p_ents, p_need, p_rows, POW_COLS, pow_rule, BACK_PITCH, p_n, False, HEAD_ROOM["powers"])
+    out += back_table(t_ents, t_need, t_rows, TAL_COLS, tal_rule, BACK_PITCH, t_n, True, HEAD_ROOM["talents"])
     return static + "\n".join(out)
 
 
