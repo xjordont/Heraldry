@@ -15,6 +15,9 @@ def main():
     p.add_argument("--base", required=True)
     a = p.parse_args()
     check()
+    if subprocess.run(["git", "cat-file", "-e", f"{a.base}^{{commit}}"], cwd=ROOT, capture_output=True).returncode:
+        print(f"SKIP: base {a.base[:12]} is not in this history (rewritten, as on 2026-11-02); nothing to compare")
+        return
     current = load()
     listed = subprocess.check_output(["git", "ls-tree", "--name-only", a.base, "source/versions.json"], cwd=ROOT).strip()
     if listed:

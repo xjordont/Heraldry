@@ -4,7 +4,7 @@
   "authorization": "Owner correction 2026-10-06: only TNA Ultimate, FLftB Core, Deth Wizards, Mythras Classic Fantasy, The Village Hunt, Dread Nights, Hellcrawl, TES CTA Core Rules, Hametsu and BlackDeath-City are intended references",
   "purpose": "Visual inspiration only; active Heraldry manuscript governs mechanics and lore",
   "directory": "references/private/pdfs",
-  "storage": "Git LFS; excluded from publication packages",
+  "storage": "Local only: the owner's own copies in references/private/pdfs/ (ignored by Git, never committed or packaged). Purged from repository history 2026-11-02.",
   "file_count": 10,
   "total_bytes": 489181772,
   "files": [
@@ -15,16 +15,16 @@
       "filename": "TNA-Ultimate-Rulebook.pdf",
       "path": "references/private/pdfs/TNA-Ultimate-Rulebook.pdf",
       "bytes": 15038319,
-      "sha256": "e9cf60bc3e022f20"
+      "sha256_prefix": "e9cf60bc3e022f20"
     },
     {
       "id": "REF-FIVELEAGUES",
-      "title": "Five Leagues from the Borderlands \u2014 Core Rules, Third Edition",
+      "title": "Five Leagues from the Borderlands — Core Rules, Third Edition",
       "original_filename": "06-FLftB-Core-Rules-3rd-Edition.pdf",
       "filename": "FLftB-Core-Rules-3rd-Edition.pdf",
       "path": "references/private/pdfs/FLftB-Core-Rules-3rd-Edition.pdf",
       "bytes": 23350619,
-      "sha256": "1cc445a38a44fd3a"
+      "sha256_prefix": "1cc445a38a44fd3a"
     },
     {
       "id": "REF-DETH",
@@ -33,25 +33,25 @@
       "filename": "Deth-Wizards-2024.pdf",
       "path": "references/private/pdfs/Deth-Wizards-2024.pdf",
       "bytes": 53070894,
-      "sha256": "6ef4852bb3ffad11"
+      "sha256_prefix": "6ef4852bb3ffad11"
     },
     {
       "id": "REF-MYTHRAS",
-      "title": "Mythras \u2014 Classic Fantasy Imperative",
+      "title": "Mythras — Classic Fantasy Imperative",
       "original_filename": "Mythras - Classic Fantasy Imperative(1).pdf",
       "filename": "Mythras-Classic-Fantasy-Imperative.pdf",
       "path": "references/private/pdfs/Mythras-Classic-Fantasy-Imperative.pdf",
       "bytes": 13582835,
-      "sha256": "9387747af7cacca1"
+      "sha256_prefix": "9387747af7cacca1"
     },
     {
       "id": "REF-VILLAGEHUNT",
-      "title": "The Village Hunt \u2014 Veil Hollow",
+      "title": "The Village Hunt — Veil Hollow",
       "original_filename": "17-The-Village-Hunt-Veil-Hollow.pdf",
       "filename": "The-Village-Hunt-Veil-Hollow.pdf",
       "path": "references/private/pdfs/The-Village-Hunt-Veil-Hollow.pdf",
       "bytes": 30689553,
-      "sha256": "286e97e5ba48dce6"
+      "sha256_prefix": "286e97e5ba48dce6"
     },
     {
       "id": "REF-DREADNIGHTS",
@@ -60,7 +60,7 @@
       "filename": "DREAD-NIGHTS-11-singles.pdf",
       "path": "references/private/pdfs/DREAD-NIGHTS-11-singles.pdf",
       "bytes": 39426419,
-      "sha256": "356282f2582121d5"
+      "sha256_prefix": "356282f2582121d5"
     },
     {
       "id": "REF-HELLCRAWL",
@@ -69,35 +69,35 @@
       "filename": "Hellcrawl-2026-09-13.pdf",
       "path": "references/private/pdfs/Hellcrawl-2026-09-13.pdf",
       "bytes": 48061361,
-      "sha256": "fe360a0c29916461"
+      "sha256_prefix": "fe360a0c29916461"
     },
     {
       "id": "REF-CALLTOARMS",
-      "title": "The Elder Scrolls \u2014 Call to Arms Core Rules",
+      "title": "The Elder Scrolls — Call to Arms Core Rules",
       "original_filename": "TES_CTA_Core-Rulebook_DIGITAL_v001sk.pdf",
       "filename": "TES-CTA-Core-Rulebook-DIGITAL-v001sk.pdf",
       "path": "references/private/pdfs/TES-CTA-Core-Rulebook-DIGITAL-v001sk.pdf",
       "bytes": 65606433,
-      "sha256": "faf8cd4b45fae190"
+      "sha256_prefix": "faf8cd4b45fae190"
     },
     {
       "id": "REF-HAMETSU",
-      "title": "Hametsu \u2014 Second Printing",
+      "title": "Hametsu — Second Printing",
       "original_filename": "14-Hametsu-3-.pdf",
       "filename": "Hametsu-Second-Printing.pdf",
       "path": "references/private/pdfs/Hametsu-Second-Printing.pdf",
       "bytes": 98162107,
-      "sha256": "0a393f1bdb606799"
+      "sha256_prefix": "0a393f1bdb606799"
     },
     {
       "id": "REF-BLACKDEATH",
-      "title": "BlackDeathCity \u2014 Playtest 101",
+      "title": "BlackDeathCity — Playtest 101",
       "original_filename": "BlackDeathCity-Playtest-101.pdf",
       "filename": "BlackDeathCity-Playtest-101.pdf",
       "path": "references/private/pdfs/BlackDeathCity-Playtest-101.pdf",
       "bytes": 102193232,
-      "sha256": "7d46035bea637078"
+      "sha256_prefix": "7d46035bea637078"
     }
   ],
-  "verification": "All 10 original objects downloaded from GitHub LFS and verified by SHA256 and byte count before committing pointers"
+  "verification": "Each book is identified by the first 16 hex characters of its SHA-256 (sha256_prefix); full hashes are not published."
 }

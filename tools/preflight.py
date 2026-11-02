@@ -124,9 +124,9 @@ def main() -> int:
         m = json.loads((root / 'references/reference_manifest.json').read_text(encoding='utf-8'))
         refs = m['references']
         require(len({x['id'] for x in refs}) == len(refs), 'Duplicate reference IDs')
-        require(len({x['sha256'] for x in refs}) == len(refs), 'Duplicate selected books')
+        require(len({x['sha256_prefix'] for x in refs}) == len(refs), 'Duplicate selected books')
         for x in refs:
-            require(re.fullmatch('[0-9a-f]{64}', x['sha256']) is not None, 'Invalid reference hash')
+            require(re.fullmatch('[0-9a-f]{16}', x['sha256_prefix']) is not None, 'Invalid reference hash prefix')
             require(x['priority'] in {'primary', 'secondary'}, 'Invalid reference priority')
             require(len(set(x['pages'])) == len(x['pages']), 'Duplicate selected pages')
             require(all(isinstance(n, int) and 1 <= n <= x['page_count'] for n in x['pages']), 'Reference page out of range')

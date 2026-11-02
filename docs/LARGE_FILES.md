@@ -18,7 +18,7 @@ Git history is permanent: earlier commits still hold old PDFs and ZIPs (about 49
 | Ink derivatives `assets/art/ink/`, the twelve atmospheric masters, `assets/art/masters/` | Git LFS | the intake workflow; the owner | the build (cached between builds) |
 | Style references `assets/art/style/` (owner samples and public-domain prints) | plain Git, 0.1–4.5 MB each | the owner | every clone: the art worker attaches them and the tests read them |
 | Publisher device `assets/art/brand/` (the owner's Escutcheon Press logo and its ink derivative) | plain Git, under 1 MB | the owner; `tools/brand_ink.py` makes the ink PNG | every clone and every build: the title page, colophon, and back cover place it |
-| Owner reference books `references/private/pdfs/` | Git LFS, private | the owner | only on purpose, one book at a time (`references/README.md`); never by the art worker; never packaged |
+| Owner reference books `references/private/pdfs/` | local only, ignored by Git (purged from history 2026-11-02) | the owner | copied by hand where needed (`references/README.md`); never committed; never packaged |
 | Built PDFs and the release ZIP | a **GitHub Release** per requested build (tag `RC###-build-N`) | the `Rebuild verified delivery` workflow | the owner, from the Releases page |
 | Illustrated Hero record PDFs (blank and 24 Basic Mode Heroes) | a **GitHub pre-release** per run (tag `RC###-hero-records-N`) | the `Build Hero records` workflow, on request | the owner, from the Releases page; not a book release |
 | Build ledgers (`production/qa/`, provenance, inventory) and `dist/RELEASE.json` | plain Git | the same workflow | everyone; the ledgers are bound to the released files' SHA-256 |

@@ -21,7 +21,7 @@ All three clients use the same commands, catalogued in `config/agent_workflows.j
 
 ## Guards
 
-`tests/test_repository_hygiene.py` fails CI if any PDF, ZIP, key, or `.env` file is tracked, apart from the reference books listed in `references/sample_pdfs.json`. Claude Code also loads `.claude/settings.json`, which refuses direct edits to manuscript snapshots (`.claude/hooks/protect-snapshots.sh`) and refuses a `git push` that carries such files, or that would land while "Build candidate" or "Rebuild verified delivery" is queued or running (`.claude/hooks/git-guard.sh`). Other clients follow the same rules by hand. For Claude, `/build-release` (owner-only) runs the build card.
+`tests/test_repository_hygiene.py` fails CI if any PDF, ZIP, key, or `.env` file is tracked; the owner's reference books stay local in `references/private/`. Claude Code also loads `.claude/settings.json`, which refuses direct edits to manuscript snapshots (`.claude/hooks/protect-snapshots.sh`) and refuses a `git push` that carries such files, or that would land while "Build candidate" or "Rebuild verified delivery" is queued or running (`.claude/hooks/git-guard.sh`). Other clients follow the same rules by hand. For Claude, `/build-release` (owner-only) runs the build card.
 
 ## Specialist roles
 

@@ -1,5 +1,13 @@
 # Production state - RC528 source, main
 
+## Reference PDFs purged from Git history - 2026-11-02
+
+Owner request: "purge the reference PDFs from history," after the repository was made public with the ten reference books (and, deeper in history, an earlier mistaken 22-book set) stored through Git LFS. `git filter-repo` removed `references/private/` from all 1,716 commits on `main` and the eight release and candidate tags, and replaced the 29 full LFS IDs (SHA-256) wherever they appeared with their first 16 hex characters, so the stored files can no longer be requested by ID. Every commit ID changed; the tags were moved to the rewritten commits, and their GitHub Releases are unchanged. Commit IDs recorded in older ledgers and in this log refer to the old history. A bundle of the old history was kept in the cleaning session's scratch space only.
+
+Follow-ups in this commit: the books are local-only in `references/private/pdfs/` (already ignored); `.gitattributes` loses its LFS rule for them; the reference JSON files use `sha256_prefix`, which `tools/render_reference_pages.py` and `tools/preflight.py` now match; `references/README.md`, `README.md`, and `docs/LARGE_FILES.md` say so; `tests/test_repository_hygiene.py` and `.claude/hooks/git-guard.sh` allow no tracked PDF at all; `tools/check_history.py` skips, with a note, when its CI base commit no longer exists after a rewrite. Tests: 42 of 43 modules pass (`test_hero_cards` needs the LFS portraits, absent in the cleaning checkout); preflight passes.
+
+**Every existing clone must be replaced** (the owner's PC, the art PC, and any Codex workspace): move any local copies of the books out of `references/private/pdfs/` first, then re-clone, or run `git fetch origin` and `git reset --hard origin/main` once, and put the books back. A `git pull --rebase` from an old clone would replay the old history; the hygiene test and the push guard would refuse the PDFs it brings back. Still open for the owner: GitHub Support must remove pull request refs #1 and #2 (which still contain the PDFs), cached views of the old commits, and the LFS objects themselves.
+
 ## Commit and push guards; `/build-release` skill - 2026-11-02
 
 Owner request: "Implement all the best fixes you can to streamline things," after today's release run had to be cancelled and re-dispatched because a push landed during it, and after the repository went public with the reference books tracked. Added:

@@ -5,7 +5,7 @@
   "files": [
     {
       "filename": "06-FLftB-Core-Rules-3rd-Edition.pdf",
-      "sha256": "1cc445a38a44fd3a",
+      "sha256_prefix": "1cc445a38a44fd3a",
       "page_count": 236,
       "sampled_pdf_pages": [
         6,
@@ -15,7 +15,7 @@
     },
     {
       "filename": "14-Hametsu-3-.pdf",
-      "sha256": "0a393f1bdb606799",
+      "sha256_prefix": "0a393f1bdb606799",
       "page_count": 183,
       "sampled_pdf_pages": [
         11,
@@ -25,7 +25,7 @@
     },
     {
       "filename": "17-The-Village-Hunt-Veil-Hollow.pdf",
-      "sha256": "286e97e5ba48dce6",
+      "sha256_prefix": "286e97e5ba48dce6",
       "page_count": 25,
       "sampled_pdf_pages": [
         6,
@@ -35,7 +35,7 @@
     },
     {
       "filename": "BlackDeathCity-Playtest-101.pdf",
-      "sha256": "7d46035bea637078",
+      "sha256_prefix": "7d46035bea637078",
       "page_count": 134,
       "sampled_pdf_pages": [
         7,
@@ -45,7 +45,7 @@
     },
     {
       "filename": "DREAD_NIGHTS_11_singles.pdf",
-      "sha256": "356282f2582121d5",
+      "sha256_prefix": "356282f2582121d5",
       "page_count": 128,
       "sampled_pdf_pages": [
         10,
@@ -55,7 +55,7 @@
     },
     {
       "filename": "Deth Wizards 2024.pdf",
-      "sha256": "6ef4852bb3ffad11",
+      "sha256_prefix": "6ef4852bb3ffad11",
       "page_count": 108,
       "sampled_pdf_pages": [
         9,
@@ -65,7 +65,7 @@
     },
     {
       "filename": "FLftB - Core Rules 3rd Edition(1).pdf",
-      "sha256": "1cc445a38a44fd3a",
+      "sha256_prefix": "1cc445a38a44fd3a",
       "page_count": 236,
       "sampled_pdf_pages": [
         6,
@@ -75,7 +75,7 @@
     },
     {
       "filename": "Hametsu - Second Printing.pdf",
-      "sha256": "0a393f1bdb606799",
+      "sha256_prefix": "0a393f1bdb606799",
       "page_count": 183,
       "sampled_pdf_pages": [
         11,
@@ -85,7 +85,7 @@
     },
     {
       "filename": "Hellcrawl_2026-09-13.pdf",
-      "sha256": "fe360a0c29916461",
+      "sha256_prefix": "fe360a0c29916461",
       "page_count": 109,
       "sampled_pdf_pages": [
         7,
@@ -95,7 +95,7 @@
     },
     {
       "filename": "Mythras - Classic Fantasy Imperative(1).pdf",
-      "sha256": "9387747af7cacca1",
+      "sha256_prefix": "9387747af7cacca1",
       "page_count": 157,
       "sampled_pdf_pages": [
         7,
@@ -105,7 +105,7 @@
     },
     {
       "filename": "TES_CTA_Core-Rulebook_DIGITAL_v001sk.pdf",
-      "sha256": "faf8cd4b45fae190",
+      "sha256_prefix": "faf8cd4b45fae190",
       "page_count": 136,
       "sampled_pdf_pages": [
         7,
@@ -115,7 +115,7 @@
     },
     {
       "filename": "TNA Ultimate Rulebook.pdf",
-      "sha256": "e9cf60bc3e022f20",
+      "sha256_prefix": "e9cf60bc3e022f20",
       "page_count": 43,
       "sampled_pdf_pages": [
         6,
@@ -125,7 +125,7 @@
     },
     {
       "filename": "The Village Hunt - Veil Hollow(1).pdf",
-      "sha256": "286e97e5ba48dce6",
+      "sha256_prefix": "286e97e5ba48dce6",
       "page_count": 25,
       "sampled_pdf_pages": [
         6,

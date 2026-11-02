@@ -2,7 +2,7 @@
 # PreToolUse hook (Bash): enforces two AGENTS.md rules before Claude pushes to main.
 #   1. Files: never commit built PDFs, ZIPs, or secrets. Every commit about to be pushed is checked, so a
 #      file added by `git add -A`, `git commit -a`, or a force-add is caught before it leaves the machine.
-#      The owner's reference books listed in references/sample_pdfs.json are the one exception.
+#      No exceptions: the owner's reference books stay local in references/private/ (ignored by Git).
 #   2. Builds: don't push while "Build candidate" or "Rebuild verified delivery" is queued or running,
 #      because the release's publish step aborts if main moves.
 # Bash, git, grep, and curl only, so it also runs under Git Bash on Windows. Network or API trouble never
@@ -15,12 +15,9 @@ cd "${CLAUDE_PROJECT_DIR:-.}" 2>/dev/null || exit 0
 # 1. Files in the outgoing commits (added, modified, or renamed in any of them, even if deleted later).
 upstream=$(git rev-parse --verify -q origin/main) || upstream=""
 if [ -n "$upstream" ]; then
-  allowed=$(grep -o '"path"[[:space:]]*:[[:space:]]*"references/private/pdfs/[^"]*"' references/sample_pdfs.json 2>/dev/null \
-            | sed 's/.*"\(references[^"]*\)"$/\1/')
   bad=$(git log --name-only --diff-filter=AMR --format= "$upstream..HEAD" 2>/dev/null | sort -u \
         | grep -Ei '\.(pdf|zip|pem|key|p12|pfx)$|(^|/)\.env(\.[^/]*)?$|(^|/)id_(rsa|ed25519)$' \
-        | grep -Ev '(^|/)\.env\.example$' \
-        | grep -vxF -f <(printf '%s\n' "$allowed") )
+        | grep -Ev '(^|/)\.env\.example$')
   if [ -n "$bad" ]; then
     {
       echo "Blocked: the commits about to be pushed contain files that must never be committed (AGENTS.md, \"Files\"):"

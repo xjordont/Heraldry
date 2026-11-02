@@ -84,7 +84,7 @@ Then inspect the pages and record the visual review, and run the `Rebuild verifi
 - [Visual QA](docs/VISUAL_QA.md).
 - [Reference analysis](docs/REFERENCE_ANALYSIS.md).
 
-The owner's ten reference books are private, kept in Git LFS under `references/private/`, and never packaged (see [references/README.md](references/README.md)). They are visual inspiration only; the active manuscript is the rules authority.
+The owner's ten reference books are private, kept only on the owner's machines in `references/private/` (ignored by Git), never committed, and never packaged (see [references/README.md](references/README.md)). They are visual inspiration only; the active manuscript is the rules authority.
 
 ## Environment notes
 

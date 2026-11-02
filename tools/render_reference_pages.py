@@ -41,14 +41,14 @@ def main() -> int:
         parser.error('Install PyMuPDF before rendering: python3 -m pip install PyMuPDF')
     fitz.TOOLS.mupdf_display_errors(False)
     fitz.TOOLS.mupdf_display_warnings(False)
-    desired = {r['sha256'] for r in refs}
+    desired = {r['sha256_prefix'] for r in refs}
     by_hash = {}
     scan_errors = []
     for path in sorted(args.source_root.rglob('*')):
         if path.is_file() and path.suffix.lower() == '.pdf':
             try:
                 with path.open('rb') as stream:
-                    digest = hashlib.file_digest(stream, 'sha256').hexdigest()
+                    digest = hashlib.file_digest(stream, 'sha256').hexdigest()[:16]
                 if digest in desired:
                     by_hash.setdefault(digest, path)
             except OSError as exc:
@@ -58,7 +58,7 @@ def main() -> int:
     missing = False
     for ref in refs:
         entry = {'id': ref['id'], 'title': ref['title'], 'requested_pages': ref['pages'], 'rendered': []}
-        source = by_hash.get(ref['sha256'])
+        source = by_hash.get(ref['sha256_prefix'])
         if source is None:
             entry['status'] = 'missing_exact_source'
             missing = True

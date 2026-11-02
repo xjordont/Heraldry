@@ -1,10 +1,9 @@
 """AGENTS.md "Files": built PDFs, ZIPs, and secrets are never committed.
 
 CI runs this on every push, so it also covers commits from clients without the Claude Code hook
-(.claude/hooks/git-guard.sh). The owner's reference books listed in references/sample_pdfs.json are the
-one allowed set of tracked PDFs; any other PDF, ZIP, key, or .env file fails.
+(.claude/hooks/git-guard.sh). There are no exceptions: the owner's reference books stay local in
+references/private/ and were purged from history on 2026-11-02.
 """
-import json
 import re
 import subprocess
 import unittest
@@ -27,11 +26,7 @@ class RepositoryHygieneTest(unittest.TestCase):
         files = tracked_files()
         if files is None:
             self.skipTest("not a Git checkout")
-        samples = json.loads((ROOT / "references/sample_pdfs.json").read_text(encoding="utf-8"))
-        allowed = {entry["path"] for entry in samples["files"]
-                   if isinstance(entry, dict) and "path" in entry}
-        bad = sorted(p for p in files
-                     if FORBIDDEN.search(p) and not p.endswith(".env.example") and p not in allowed)
+        bad = sorted(p for p in files if FORBIDDEN.search(p) and not p.endswith(".env.example"))
         self.assertEqual(bad, [], "PDFs, ZIPs, and secrets must not be committed (AGENTS.md, docs/LARGE_FILES.md)")
 
     def test_pattern(self):
