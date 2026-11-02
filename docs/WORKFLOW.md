@@ -2,12 +2,12 @@
 
 ## Shared client authority
 
-Owner instruction, 2026-10-22: Claude Code, Codex, and ChatGPT Work have equal developer, orchestrator, repair, and reviewer authority under `docs/AGENT_OPERATIONS.md`. Client names in the procedure identify the original route, not exclusive permissions. A generation-only worker remains scoped to its assigned image/receipt delivery and does not approve its own work. An assigned reviewer on any client may inspect, approve, reject, and send redos using the existing evidence gates. Use the actual client and reviewer name in provenance. Native model/tool, authentication, file, and transport availability must be checked in the current session.
+Owner instruction, 2026-10-22: Claude Code, Codex, and ChatGPT Work have equal authority under `docs/AGENT_OPERATIONS.md`, which defines worker and reviewer scope. Client names below identify the original route, not exclusive permissions. A generation-only worker never approves its own work; record the actual client and reviewer in provenance.
 
 
 For layout changes, follow [LAYOUT_WORKFLOW.md](LAYOUT_WORKFLOW.md). It captures the compact-layout run's lessons: semantic table selectors, verified measurement reuse, content-bound balancing hints, staged fail-fast checks, and durable timing/evidence receipts.
 
-`main` is the single working and delivery branch. The owner has authorized ordinary verified iterations on main. Create another branch only following an explicit owner decision with a recorded purpose; one project does not require a branch per component. The existing Claude build branch is an archived checkpoint, not a destination for new work.
+`main` is the single working and delivery branch. The owner has authorized ordinary verified iterations on main. Create another branch only following an explicit owner decision with a recorded purpose; one project does not require a branch per component. The former Claude build branch survives only as the RC484 checkpoint commit on `main` (`docs/PROJECT_CONTRACT.md`); it is not a destination for new work.
 
 Before editing, inspect `git status`, the current branch, and the remote main head. Bring an untouched checkout up to date with `git fetch origin` and `git switch main`, then `git pull --ff-only`. Preserve unrelated local work and inspect divergence rather than force-pushing or resetting it. Claude cloud may impose its own branch restrictions; report an actual restriction if encountered. Do not invent an exception to this policy or change account settings.
 

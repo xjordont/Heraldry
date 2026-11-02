@@ -36,3 +36,6 @@ production/art/work/*.zip
 # Player-aid renders belong in build/aids/, never beside the sources
 typst/aids/*.pdf
 typst/aids/*.png
+
+# CLAUDE.md optimizer backups
+.claude-md-backup/

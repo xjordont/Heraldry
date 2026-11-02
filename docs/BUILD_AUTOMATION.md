@@ -2,7 +2,7 @@
 
 ## Shared client authority
 
-Owner instruction, 2026-10-22: Claude Code, Codex, and ChatGPT Work have equal developer, orchestrator, repair, and reviewer authority under `docs/AGENT_OPERATIONS.md`. Client names in the procedure identify the original route, not exclusive permissions. A generation-only worker remains scoped to its assigned image/receipt delivery and does not approve its own work. An assigned reviewer on any client may inspect, approve, reject, and send redos using the existing evidence gates. Use the actual client and reviewer name in provenance. Native model/tool, authentication, file, and transport availability must be checked in the current session.
+Owner instruction, 2026-10-22: Claude Code, Codex, and ChatGPT Work have equal authority under `docs/AGENT_OPERATIONS.md`, which defines worker and reviewer scope. Client names below identify the original route, not exclusive permissions. A generation-only worker never approves its own work; record the actual client and reviewer in provenance.
 
 
 Local layout iteration uses [LAYOUT_WORKFLOW.md](LAYOUT_WORKFLOW.md). Candidate and delivery jobs share the verified measurement cache; restoring it does not skip fresh composition or any publication gate. Local proofs do not dispatch this release chain.
