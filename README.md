@@ -12,7 +12,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 
 - **Manuscript:** [RC528](source/Heraldry_RC528.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC527-build-41](https://github.com/xjordont/Heraldry/releases/tag/RC527-build-41). RC528 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
-- **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
+- **Last release workflow result:** FAILED. This records that run, not verification of newer inputs.
 - **Illustration records:** 346 approved of 346; 0 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 
@@ -26,12 +26,12 @@ Targeted editorial, reader, and accessibility checks: [publication protocol](doc
 
 <!-- BEGIN AUTO:recent -->
 
+- [`ecb570c1`](https://github.com/xjordont/Heraldry/commit/ecb570c1089c6920c19129227adf2ffa4d0034be) Record release workflow result
+- [`0341a8d8`](https://github.com/xjordont/Heraldry/commit/0341a8d887ef1c4f83a60aa92dd6959517c12182) Add a hook that blocks direct edits to manuscript snapshots
+- [`9bfe8642`](https://github.com/xjordont/Heraldry/commit/9bfe86427bd9631c9e875b0df6f719a0ce878c62) review: bind the all-page visual review for candidate 20261102T191639Z
 - [`3b8fe009`](https://github.com/xjordont/Heraldry/commit/3b8fe00965609d7fd082f878db28a750a934bd30) Build candidate status (20261102T191639Z)
 - [`6198dbcb`](https://github.com/xjordont/Heraldry/commit/6198dbcbcb6d4abde50fa09889ad008fe6ca9ba9) Add context7 MCP server at project scope
 - [`8df8e0f9`](https://github.com/xjordont/Heraldry/commit/8df8e0f933315a112f6b0885cebe0146da09c130) build: request candidate build 20261102T191639Z
-- [`527aa061`](https://github.com/xjordont/Heraldry/commit/527aa061f17c936fe6afc77cc6af24e4ebab3f24) layout: a bare run-in label never ends a column apart from its content
-- [`60306abe`](https://github.com/xjordont/Heraldry/commit/60306abea109a00308bd5012ed3ffd53a6fa9a1f) Build candidate status (20261102T174706Z)
-- [`73ba130e`](https://github.com/xjordont/Heraldry/commit/73ba130ebb49523caf52148d63b37e48a3d0eaba) build: request candidate build 20261102T174706Z
 
 <!-- END AUTO:recent -->
 
