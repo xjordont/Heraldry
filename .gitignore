@@ -1,4 +1,4 @@
-# Build caches and local secrets; retain production state and final deliverables.
+# Local secrets, environments, and caches
 .env
 .env.*
 !.env.example
@@ -8,29 +8,25 @@ __pycache__/
 node_modules/
 .cache/
 tmp/
-build/page-renders/
 production/private/
 
-# Optional commercial reference evidence is local by default.
-references/private/
+# The owner's reference books stay on the owner's machines only.
+/references/
+
+# PDFs and ZIPs are never committed (AGENTS.md, docs/LARGE_FILES.md): deliveries go to GitHub Releases,
+# and art packages are built on request.
+*.pdf
+*.zip
 
 # Generated build intermediates (reproducible via `make`)
 build/
 typst/content.typ
+typst/measure.typ
 figures/src/test/
 figures/anchor_proposals.json
-typst/measure.typ
-dist/*.zip
 dist/SHA256SUMS.txt
 
-# Large build outputs are never committed (docs/LARGE_FILES.md): PDFs go to a GitHub Release,
-# art packages are built on request.
-dist/**/*.pdf
-production/art/skill/*.zip
-production/art/work/*.zip
-
 # Player-aid renders belong in build/aids/, never beside the sources
-typst/aids/*.pdf
 typst/aids/*.png
 
 # CLAUDE.md optimizer backups

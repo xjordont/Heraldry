@@ -22,8 +22,7 @@ READ_ONLY_AGENTS = {'blind-editorial-reviewer'}
 REQUIRED = ['MASTER_PROMPT.md', 'CLAUDE.md', 'AGENTS.md', 'README.md',
             'docs/PROJECT_CONTRACT.md', 'docs/AGENT_OPERATIONS.md', 'config/agent_workflows.json',
             'docs/DESIGN_SPEC.md', 'docs/ART_DIRECTION.md', 'docs/REFERENCE_ANALYSIS.md',
-            'docs/LAUNCH_CHECKLIST.md', 'source/source_inventory.json',
-            'tools/render_reference_pages.py', 'config/production.json',
+            'docs/LAUNCH_CHECKLIST.md', 'source/source_inventory.json', 'config/production.json',
             '.claude/settings.json', 'production/STATE.md', 'config/design_tokens.json',
             'docs/VISUAL_QA.md']
 
@@ -125,22 +124,6 @@ def main() -> int:
         shared = catalog(root)
         return f"{len(AGENTS)} Claude-native adapters and {len(shared['workflows'])} shared workflows validated for all three clients; runtime resolution is separate"
 
-    def references():
-        manifest = root / 'references/reference_manifest.json'
-        if not manifest.is_file():   # the owner removed references/ on 2026-11-02; the books are local-only
-            return {'availability': 'optional', 'manifest': 'absent; nothing to validate'}
-        m = json.loads(manifest.read_text(encoding='utf-8'))
-        refs = m['references']
-        require(len({x['id'] for x in refs}) == len(refs), 'Duplicate reference IDs')
-        require(len({x['sha256_prefix'] for x in refs}) == len(refs), 'Duplicate selected books')
-        for x in refs:
-            require(re.fullmatch('[0-9a-f]{16}', x['sha256_prefix']) is not None, 'Invalid reference hash prefix')
-            require(x['priority'] in {'primary', 'secondary'}, 'Invalid reference priority')
-            require(len(set(x['pages'])) == len(x['pages']), 'Duplicate selected pages')
-            require(all(isinstance(n, int) and 1 <= n <= x['page_count'] for n in x['pages']), 'Reference page out of range')
-        return {'primary_pages': sum(len(x['pages']) for x in refs if x['priority'] == 'primary'),
-                'all_selected_pages': sum(len(x['pages']) for x in refs), 'availability': 'optional'}
-
     def scripts():
         for p in sorted((root / 'tools').glob('*.py')):
             ast.parse(p.read_text(encoding='utf-8'), filename=str(p))
@@ -155,7 +138,6 @@ def main() -> int:
     check('configuration', configuration)
     check('agent_contracts', agent_contracts)
     check('design_page_contract', design_page_contract)
-    check('reference_manifest', references)
     check('script_syntax', scripts)
     if args.baseline:
         check('shipped_baseline', baseline)

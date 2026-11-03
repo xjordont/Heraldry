@@ -9,7 +9,7 @@ from provenance import check as check_build
 
 DIST = ROOT / "dist"
 INCLUDE = ["Makefile", "requirements.lock", "README.md", "BUILD.md", "CLAUDE.md", "AGENTS.md",
-           "MASTER_PROMPT.md", ".gitignore", ".claude", ".github", "tests", "references",
+           "MASTER_PROMPT.md", ".gitignore", ".claude", ".github", "tests",
            "source", "editorial", "typst", "tools", "figures", "fonts", "config", "docs", "assets", "production", "dist"]
 # style = owner-supplied generation references (never packaged); masters = raw generated art (ink derivatives ship)
 EXCLUDE_PARTS = {"__pycache__", "test", "private", ".git", "build", "style", "masters",
