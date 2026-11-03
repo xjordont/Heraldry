@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
-import art_generate as g  # noqa: E402
+import art_prompts as g  # noqa: E402
 
 ORDER = [("cover", "Cover"), ("chapter", "Chapter openers"), ("world", "World sections"), ("climate", "Climates"),
          ("bastion", "Bastions"), ("ancestry", "Ancestries"), ("background", "Backgrounds"), ("class", "Classes"), ("hero", "Basic Mode Heroes"),

@@ -31,6 +31,6 @@ Every approved text-patch batch creates exactly one new RC snapshot. Whitespace,
    ```
 
    The tool checks every retained snapshot and match count, writes the next snapshot, archives the batch, and updates `source/versions.json` and `config/production.json`. Commit the new snapshot, its `editorial/history/` archive, and those two files together. If a run is killed, inspect and recover its lock and recovery files before running it again.
-4. Run `make parse`. If a patched phrase is a content anchor, update `config/content_anchors.json`; if a figure's evidence changed, update `config/figure_dependencies.json`, and that figure then needs a fresh look. Note in `production/RELEASE_STATUS.md` that `dist/` predates the new RC, then commit and push.
+4. Run `make parse`. If a patched phrase is a content anchor, update `config/content_anchors.json`; if a figure's evidence changed, update `config/figure_dependencies.json`, and that figure then needs a fresh look. Add a `production/STATE.md` entry noting that `dist/` predates the new RC, then commit and push.
 
 To revert a text change, create the next RC with the inverse patch. A metadata or review fix that leaves the text alone is a normal commit with no RC bump.

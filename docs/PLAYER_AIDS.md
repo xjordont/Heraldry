@@ -1,6 +1,6 @@
 # Player aids: design and art direction
 
-Status: direction proposed 2026-10-21 and Route A chosen the same day (section 10). All ten sheets, PA-1 to PA-10, were composed on 2026-10-21 from RC513 and brought current with RC522 on 2026-10-29 (section 13). Their wording was checked against the source by the author, not yet by an independent review. Every verified book release attaches the full set as one digital PDF on the cream page colour (`Heraldry_RC###_player-aids.pdf`). Built PDFs are not committed.
+Status: direction proposed 2026-10-21 and Route A chosen the same day (section 10). All ten sheets, PA-1 to PA-10, were composed on 2026-10-21 from RC513 and brought current with RC522 on 2026-10-29 (section 13). Each later RC that touches their sections is checked against them before release (`production/aids/fidelity.json` names the RC last checked). Every verified book release attaches the full set as one digital PDF on the cream page colour (`Heraldry_RC###_player-aids.pdf`). Built PDFs are not committed.
 
 The player aids are a companion series of digital reference sheets for the table. They are not part of the manuscript, and they do not advance the RC number. Adding them, or a pointer to them, inside the book's appendices is a manuscript change that needs its own owner decision.
 
@@ -12,9 +12,9 @@ The sheets are the book's design system turned outward, not a new style. A playe
 
 ## 2. Inherit, do not invent
 
-Everything below comes from the book's "Grim Heraldry" system (`docs/BOOK_DESIGN_PLAN.md`, `config/design_tokens.json`, `typst/templates/system.typ`). Where this document is silent, the book's rules apply.
+Everything below comes from the book's "Grim Heraldry" system (`docs/DESIGN.md`, `config/design_tokens.json`, `typst/templates/system.typ`). Where this document is silent, the book's rules apply.
 
-- **Marks:** the owner-approved armoury only (BOOK_DESIGN_PLAN section 12): chapter arms, the broken-castle logo, the engraved shield, the brush rule, the banner tag, the corner flourish, the lozenge, and the coin. No new emblems, skulls, occult glyphs, or clip-art icons.
+- **Marks:** the owner-approved armoury only (`docs/DESIGN.md`, section 12): chapter arms, the broken-castle logo, the engraved shield, the brush rule, the banner tag, the corner flourish, the lozenge, and the coin. No new emblems, skulls, occult glyphs, or clip-art icons.
 - **Type:** the book's four families. Grenze Gotisch for titles and panel heads only, never in all capitals and never for running text or numbers. Source Sans 3 for all diagram text, labels, and numbers. Source Serif 4 for any longer rules note. No flavour face: the sheets carry no flavour or editorial lines (owner, 2026-10-21).
 - **Ink:** black only, with the book's transparent tints: 5% for panels and decision fills, 9% for die columns, 24% for hairlines, 42% and 58% for quiet labels. Colour never carries meaning, so every sheet must read in greyscale.
 - **Page colour:** the book's cream, `#FCFAF5`.
@@ -154,7 +154,7 @@ Each sheet is `typst/aids/paNN.typ`, built on the shared kit `typst/aids/kit.typ
 - Art used (all approved inks): Minotaur, Fighter, Berserker, Ghoul, Night Hag, Ranger, Assassin, the Road, Hearthhold, and Greenmark, at most one per side.
 - Rulebook figures were tried and left out: below 504 pt wide their labels fall under the 9 pt minimum, and no side has room at full width.
 - The true-scale area templates planned for PA-7 are not included: a 6" cone does not fit beside the rules on one side. They would need a sheet of their own.
-- Hero sheets, the party ledger, and the 24 Basic Mode hero cards share this kit and are documented in [HERO_SHEETS.md](HERO_SHEETS.md).
+- The Hero record is a separate design with its own generator (`assets/hero-record/README.md`).
 
 ## 13. RC522 update and release (2026-10-29)
 

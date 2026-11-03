@@ -10,10 +10,7 @@ python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py doc
 python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py status
 ```
 
-No authenticated Git? Use the offline Work input package (`tools/art_work_package.py`):
-1. Unzip it into an empty folder and follow its `START_HERE.md`.
-2. Add `--offline-package` to the preflight. It must report READY, `delivery: bundle` and `remote_access: NOT_ATTEMPTED`.
-3. Deliver with `bundle --evidence ...` and say that nothing was pushed.
+The preflight must report READY with `delivery: git_lfs`. No authenticated Git, or no Git LFS? Then nothing can be delivered: stop and tell the owner.
 
 On the first item, confirm that the image tool accepts the listed references and that you can save the native file; if either fails, stop and report. Repository access alone does not prove either.
 
@@ -32,12 +29,12 @@ On the first item, confirm that the image tool accepts the listed references and
   1. Run `sheet --recent 10 --refs` and `style_audit.py --repo . --recent 10` (both write to the scratch folder).
   2. Look at the sheet once, then deliver in every case.
   3. If two or more images of the same register share a drift, report it and continue.
-- If `ship` says BLOCKED: run `bundle`, report it, and stop. Never pull, rebase or force.
+- If `ship` says BLOCKED: report it and stop; the saved images and receipts stay for a later ship. Never pull, rebase, or force.
 - Resume from `status`. Never regenerate a delivered item unless it is listed as a `redo`.
 - Approval comes after the intake inks the images: look at each, then `tools/art_intake.py approve` or `reject` (`SKILL.md`, hard rule 7). You may approve your own images.
 
 ## Session prompt
 
-Codex uses `production/art/codex/CODEX_PROMPT.md`. For ChatGPT Work:
+Codex uses `production/art/codex/CODEX_PROMPT.md`. For another client with an authenticated Git checkout (ChatGPT Work included):
 
-> Use the Heraldry Skirmish Classic Ink Art v8 skill on xjordont/Heraldry, main. Run the preflight, doctor and status, then generate the queued illustrations in order using the exact repository prompts and each item's listed references. For each native image run check, inspect the image and its print-size preview, complete the ten-criterion QA record, and save. Deliver each image through the guarded process (or a labelled bundle), with a drift review every ten images. Generate once per item, and stop at NOTHING LEFT or any hard blocker. Report completed IDs, failures, commits or bundles, and the next ID. Never edit the queue, prompts, manuscript or code.
+> Use the Heraldry Skirmish Classic Ink Art v8 skill on xjordont/Heraldry, main. Run the preflight, doctor, and status, then generate the queued illustrations in order using the exact repository prompts and each item's listed references. For each native image run check, inspect the image and its print-size preview, complete the ten-criterion QA record, and save. Deliver each image through the guarded process, with a drift review every ten images. Generate once per item, and stop at NOTHING LEFT or any hard blocker, including blocked Git delivery. Report completed IDs, failures, commits, and the next ID. Never edit the queue, prompts, manuscript, or code.

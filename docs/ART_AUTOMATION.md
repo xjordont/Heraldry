@@ -1,11 +1,11 @@
-# Artwork workflow — GPT image pen-and-ink route
+# Artwork workflow: GPT image pen-and-ink route
 
 Images are generated with GPT image generation within the owner's ChatGPT plan, with no paid image API (owner decisions 2026-10-10 and 2026-10-11).
 - **Current route:** Codex on the owner's Windows PC, following `production/art/codex/BATCH_CARD.md`.
-- **Fallback:** ChatGPT Work with the offline input package.
-- **Retired:** the 2026-10-08 Gemini API pipeline (`tools/art_generate.py` generation and the manual-only `Generate pen-and-ink artwork` workflow). It stays in the repository as a fallback and is never run without an owner instruction.
+- **Other workers:** any client with an authenticated Git checkout, Git LFS, Python, and an image tool that accepts the listed references can follow the same skill. Delivery is only by Git push. A worker that cannot push (ChatGPT Work could not authenticate Git when tried on 2026-10-11, and a credential must never be pasted into a chat) stops, keeps its saved images and receipts, and reports to the owner.
+- **Retired:** the Gemini paid-API pipeline of 2026-10-08 (removed 2026-11-03) and the offline ChatGPT Work package route (removed 2026-11-03). Their records stay: `production/art/GENERATION_LEDGER.jsonl`, `ANCHORS.json`, `PROMPTS.json`, `production/art/composition/`, `assets/art/variants/`, and `assets/art/marks/candidates/`.
 
-This document is the current state; the dated history is in `production/STATE.md`.
+This document is the current state; the dated history is in `production/STATE.md` (and `production/history/STATE-2026-10.md`).
 
 ## Scope
 
@@ -32,7 +32,7 @@ There were 299 entries before the tailpieces; `production/art/END_ART_PLAN.json`
 | Cover | 1 |
 | Section-end tailpieces (`world`, `item`, and `tradition` framing) | 47 |
 
-Flavour text is quoted verbatim in every prompt. Hero profiles have no flavour text: each `hero` entry reads its class, ancestry, background, size and equipment names from the profile, and its brief (`production/art/briefs/heroes.json`) adds the visual identity from the Hero's name. A hero is one alone, full-length figure from head to ground on blank white paper (2:3, 1.9 in wide, `person` references, one generation). Hero art is generated and approved like any other family. Since 2026-10-30 (owner: fill section-end white space with art) an approved portrait closes its B.4 profile where the profile's last page leaves room (`endart`, at least 1.6 in tall); a profile with no room keeps its white space, and every portrait remains on the Hero records.
+Flavour text is quoted verbatim in every prompt. Hero profiles have no flavour text: each `hero` entry reads its class, ancestry, background, size, and equipment names from the profile, and its brief (`production/art/briefs/heroes.json`) adds the visual identity from the Hero's name. A hero is one alone, full-length figure from head to ground on blank white paper (2:3, 1.9 in wide, `person` references, one generation). Hero art is generated and approved like any other family. Since 2026-10-30 (owner: fill section-end white space with art) an approved portrait closes its B.4 profile where the profile's last page leaves room (`endart`, at least 1.6 in tall); a profile with no room keeps its white space, and every portrait remains on the Hero records.
 
 ## Section-end tailpieces (2026-10-30)
 
@@ -43,15 +43,15 @@ Owner instruction: fill the white space at the end of short sections with art. E
 These sources feed every prompt:
 
 - **`config/art_style.json`**
-  - `prompt_v2` is the prompt template. Its structure follows the owner's Greythorn prompt: title, introduction, format and white vignette (scenes) or isolation (figures and still lifes), composition, subject details, activity, source text, style and atmosphere, final requirements, style references.
+  - `prompt_v2` is the prompt template. Its structure follows the owner's Greythorn prompt: title, introduction, format and white vignette (scenes) or isolation (figures and still lifes), composition, subject details, activity, source text, style and atmosphere, final requirements, and style references.
   - `families` sets the aspect ratio and printed width for each family.
 - **`production/art/SUBJECT_PLAN.json`**
   - Fresh chapter subjects.
   - A distinct direction for any entry whose flavour text is abstract or whose name collides with another entry.
-- **`production/art/briefs/`** holds one brief per entry, written from the manuscript: identity, composition, details, activity, atmosphere, pitfalls and sources.
+- **`production/art/briefs/`** holds one brief per entry, written from the manuscript: identity, composition, details, activity, atmosphere, pitfalls, and sources.
 - **`production/art/OWNER_PROMPTS.json`** holds owner-authored prompts, used verbatim. The first is Greythorn.
 
-`tools/art_catalog.py` builds each entry's `spec_sha256` from its flavour text, plan, brief and owner prompt. Changing any of these makes the entry pending again. The script also fails on a duplicate subject or an unseparated name collision.
+`tools/art_catalog.py` builds each entry's `spec_sha256` from its flavour text, plan, brief, and owner prompt. Changing any of these makes the entry pending again. The script also fails on a duplicate subject or an unseparated name collision.
 
 `tools/art_list.py` writes `production/art/ILLUSTRATION_LIST.md`, which lists every entry with its prompt.
 
@@ -61,7 +61,7 @@ Manuscript issues found while briefing are recorded in `production/art/SOURCE_NO
 
 1. **`python3 tools/art_gpt_pack.py`**
    - Writes `production/art/gpt/QUEUE.json` (schema 2), `QUEUE.md` and one prompt file per pending entry in `production/art/gpt/prompts/`.
-   - Each queue item carries its register, its own references (at most six, from `gpt_reference_sets` in `config/art_style.json`), its printed width, its attempt budget (`gpt_max_attempts`: 1, one generation per item, owner 2026-10-12) and the brief's must and avoid lists.
+   - Each queue item carries its register, its own references (at most five, from `gpt_reference_sets` in `config/art_style.json`), its printed width, its attempt budget (`gpt_max_attempts`: 1, one generation per item, owner 2026-10-12) and the brief's must and avoid lists.
    - References come from `gpt_reference_sets` (mapping v8, 17 sets of up to five, the image tool's limit; see `docs/ART_DIRECTION.md`). Precedence:
      1. `kind_sets`: five monster kinds, by ID; the pack fails if a monster has no kind or two.
      2. `family_sets`.
@@ -69,13 +69,13 @@ Manuscript issues found while briefing are recorded in `production/art/SOURCE_NO
 
      Each item records its `ref_set`. References are the owner's gritty ink samples and four public-domain prints; generated images are never references, and no isolated figure receives a scenic reference.
    - Order: redos first, then `gpt_lead_ids` (seventeen items, one per set, so the drift reviews at images 10 and 20 test every set), then the rest. The batch phase follows the approved anchors (Greythorn plus four hand-inked images).
-2. **The art worker** (Codex on the owner's PC; ChatGPT Work as the fallback) follows `production/art/codex/BATCH_CARD.md` (or `production/art/gpt/INSTRUCTIONS.md`) and the `heraldry-classic-ink-art` skill (below).
+2. **The art worker** (Codex on the owner's PC, or another client with authenticated Git) follows `production/art/codex/BATCH_CARD.md` (or `production/art/gpt/INSTRUCTIONS.md`) and the `heraldry-classic-ink-art` skill (below).
    - It pastes each prompt verbatim, attaches that item's references only, generates once in a fresh context (never a retry: a defect is saved flagged and may come back as a redo), and saves the native image unmodified as `assets/art/incoming/<ID>.<png|jpg|webp>` (all Git LFS).
-   - `heraldry_art.py save` does the check, copy and receipt (`production/art/gpt/RECEIPTS.jsonl`, recording the saved attempt and how many were generated) in one step, and `delivery_guard.py ship` pushes each image as soon as it is saved.
+   - `heraldry_art.py save` does the check, copy, and receipt (`production/art/gpt/RECEIPTS.jsonl`, recording the saved attempt and how many were generated) in one step, and `delivery_guard.py ship` pushes each image as soon as it is saved. Git push is the only delivery.
    - `next` and `status` first fast-forward a clean clone, so a rejection sent back mid-session appears as a redo at once.
 3. **The `Intake ChatGPT artwork` workflow** (on push to `assets/art/incoming/**`) runs `tools/art_intake.py scan`.
    - It writes a transparent pure-black ink derivative to `assets/art/ink/<ID>.png` (Git LFS).
-   - It records the image as `received` in `production/art/SELECTIONS.json`, with hashes, pixels, flags and the receipt.
+   - It records the image as `received` in `production/art/SELECTIONS.json`, with hashes, pixels, flags, and the receipt.
    - It commits no contact sheet (at one image per push that would add about 30 MB of history).
 4. **Approval.** Any session with the repo, the generating one included, runs `tools/art_intake.py pending --sheet` (flagged images first; it fetches just those ink files and writes local sheets to `build/art/review/`), looks at the sheets, plus the full-size image where needed, and then runs one of the following:
    - `tools/art_intake.py approve --ids ...`
@@ -99,18 +99,18 @@ Only `approved` and `anchor-approved` art is placed in the book.
 
 ## The skill (v8)
 
-`production/art/skill/heraldry-classic-ink-art/` is the skill source, and Codex runs it straight from the clone. The installable ZIP (`Heraldry_Classic_Ink_Art_Skill_v8_0.zip`) is built only when ChatGPT Work needs it: `make art-packages`, or the `Build art packages` workflow (`docs/LARGE_FILES.md`).
+`production/art/skill/heraldry-classic-ink-art/` is the skill source, and Codex runs it straight from the clone. The installable ZIP (`Heraldry_Classic_Ink_Art_Skill_v8_0.zip`) is built only when a client needs to install it: `make art-packages`, or the `Build art packages` workflow (`docs/LARGE_FILES.md`).
 
 - **`SKILL.md`** is the procedure: session start, the per-item loop, ten hard fails, delivery and drift reviews, stop conditions. `BATCH_CARD.md` is the same contract on one page for Codex.
-- **`scripts/heraldry_art.py`**: `doctor`, `status`, `next`, `show`, `check`, `qa`, `save`, `refuse`, `sheet` and `bundle`.
-  - `check` counts attempts and reports mechanical tripwires, using the same colour, mid-tone and border formulas as `tools/art_ink.py` (a test keeps them in step).
+- **`scripts/heraldry_art.py`**: `doctor`, `status`, `next`, `show`, `check`, `qa`, `save`, `refuse`, and `sheet`.
+  - `check` counts attempts and reports mechanical tripwires, using the same colour, mid-tone, and border formulas as `tools/art_ink.py` (a test keeps them in step).
   - `qa` pre-fills the byte-bound ten-criterion QA draft, and `save` uses it.
   - `next` and `status` fast-forward a clean clone first.
 - **The other scripts:**
-  - `delivery_guard.py ship --execute` delivers each image (it validates, fast-forwards over the intake bot, retries a lost race and never forces);
+  - `delivery_guard.py ship --execute` delivers each image (it validates, fast-forwards over the intake bot, retries a lost race, and never forces);
   - `style_audit.py` gives advisory drift statistics;
   - `fidelity_gate.py` checks the QA records;
-  - `work_preflight.py` checks readiness;
+  - `work_preflight.py` checks readiness for Git LFS delivery;
   - `validate_skill.py` checks a built ZIP.
 - **`tools/art_skill_build.py`** writes the skill's `references/FAMILIES.md` from the config and builds the ZIP deterministically. The tests build it fresh and validate it.
 
@@ -129,20 +129,6 @@ The skill runs the queue and checks what it delivers; prompts, queue and referen
   - Approval works from `art_intake.py pending --sheet`, opening full size only flagged images and spot checks.
 - **LFS bandwidth:** the intake fetches only new images; the build fetches only the art it places, cached (`docs/LARGE_FILES.md`).
 
-## Offline fallback: ChatGPT Work
-
-Work cannot authenticate git, and a credential must never be pasted into a chat (a token route was tried on 2026-10-11 and withdrawn). `tools/art_work_package.py` covers this route:
-
-- **`build`** writes `build/art/Heraldry_Work_Input_<phase>.zip` from committed inputs (its manifest names the source commit). It holds the queue, its prompts, every queue-listed reference, the skill (source and ZIP), receipts, selections, the config and `START_HERE.md`, each with SHA-256. It holds no other art and no private PDFs.
-- **`verify ZIP`** runs the packaged preflight, `doctor`, `status` and the guard (which must refuse) with Git credentials stripped.
-- **Delivery** is `heraldry_art.py bundle`. Its ZIP records `pushed_to_github: false` and "not approved". The owner commits it to `production/art/work/inbox/`.
-- **The `Import Work review bundle` workflow:**
-  - re-runs `verify-bundle` (manifest, receipts against native bytes, prompt and reference hashes, bound QA reports);
-  - commits the images through LFS and appends the receipts;
-  - runs the intake;
-  - records the bundle in `IMPORTED.json` and removes the ZIP.
-- **Limits:** ChatGPT's GitHub plugin passes file contents only as inline text (about 1 MB at most), so it cannot carry images or bundles. Whether the image tool accepts the listed references can only be shown by the first real item.
-
 ## Heraldic marks (owner 2026-10-12)
 
-The logo and the fifteen chapter arms are generated with the Gemini image API on an explicit owner instruction. Prompts are in `production/art/marks/PROMPTS.json`; generation runs through `tools/mark_generate.py` in the manual "Generate heraldic marks" workflow. It shares the budget cap and the ledger. Candidates land in `assets/art/marks/candidates/` for review. The book illustrations still go through Codex.
+The logo and the fifteen chapter arms were generated with the retired Gemini route on an explicit owner instruction. Their prompts (`production/art/marks/PROMPTS.json`), approvals (`production/art/marks/APPROVED.json`), and candidates (`assets/art/marks/candidates/`) stay as records; the approved marks ship as SVG.

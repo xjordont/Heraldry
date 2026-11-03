@@ -8,10 +8,8 @@ on:
       - 'production/art/gpt/RECEIPTS.jsonl'
       # log, status, and proposal-only pushes need no test run (AGENTS.md, Checks)
       - 'production/STATE.md'
-      - 'production/RELEASE_STATUS.md'
+      - 'production/history/STATE-*.md'
       - 'editorial/proposals/**'
-      - 'reports/**'
-      - 'research_notes/**'
       # the build trigger and the review ledger start a build, which runs the suite before building
       - 'production/build-request.json'
       - 'production/qa/visual-review.json'
@@ -47,23 +45,6 @@ jobs:
         run: python tools/check_dependencies.py --ci
       - name: Check immutable manuscript chain and production contracts
         run: python tools/preflight.py --baseline
-      - name: List the Hero portraits the Hero card tests compile
-        # only the 24 portraits named in basic-heroes.json (about 8 MB), not the full art library
-        id: portraits
-        shell: bash
-        run: |
-          INC=$(python -c "import json; d=json.load(open('typst/heroes/basic-heroes.json')); h=d if isinstance(d, list) else d.get('heroes', d); print(','.join(sorted({'assets/art/ink/' + x['art'] + '.png' for x in h if x.get('art')})))")
-          echo "include=$INC" >> "$GITHUB_OUTPUT"
-          mkdir -p build
-          git lfs ls-files -l -I "$INC" | cut -d' ' -f1 | sort > build/lfs-portraits.txt
-      - name: Restore cached portraits (saves LFS bandwidth on every push)
-        uses: actions/cache@v4
-        with:
-          path: .git/lfs/objects
-          key: lfs-portraits-${{ runner.os }}-${{ hashFiles('build/lfs-portraits.txt') }}
-      - name: Fetch the portraits (only objects not already cached)
-        shell: bash
-        run: git lfs pull --include="${{ steps.portraits.outputs.include }}" --exclude=""
       - name: Run both test suites (repository and art skill), modules in parallel
         run: python tools/run_tests.py
       - name: Protect prior snapshots and revision records

@@ -1,8 +1,8 @@
 name: Intake ChatGPT artwork
-# Runs when ChatGPT Work (or the owner) commits images to assets/art/incoming/.
+# Runs when an art worker (Codex or ChatGPT Work) or the owner commits images to assets/art/incoming/.
 # Converts each new <catalog id> image to transparent black ink, records it as 'received' in
 # production/art/SELECTIONS.json. The reviewer makes contact sheets locally (`art_intake.py pending --sheet`), so none are
-# committed per run. Approval stays with the orchestrator.
+# committed per run. Approval is a separate, explicit `art_intake.py approve` by whoever reviews the images.
 on:
   push:
     branches: [main]

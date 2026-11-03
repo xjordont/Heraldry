@@ -13,7 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def select_python(root=ROOT, override=None):
     if override:
-        candidate = Path(shutil.which(override) or override).expanduser().resolve()
+        # absolute(), not resolve(): a POSIX venv's python is a symlink to the base interpreter.
+        candidate = Path(shutil.which(override) or override).expanduser().absolute()
         if not candidate.is_file():
             raise ValueError("The selected Python executable does not exist")
         return str(candidate)
@@ -85,13 +86,9 @@ def main():
             return 1
         if git("diff", "--check"):
             return 1
-        from git_publish import PublishError, run_tests
-        try:
-            run_tests(ROOT, python=python)
-        except PublishError as exc:
-            print("FAILED: " + str(exc), file=sys.stderr)
+        if run(python, "tools/run_tests.py"):
             return 1
-        print("PASS: README refreshed; dependencies, contracts, snapshot history, whitespace, and make test. No publication build.")
+        print("PASS: README refreshed; dependencies, contracts, snapshot history, whitespace, and the test suite. No publication build.")
         return 0
     except (ValueError, OSError) as exc:
         print("FAILED: " + str(exc), file=sys.stderr)

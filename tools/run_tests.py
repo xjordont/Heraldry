@@ -19,8 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DIRS = ("tests", "production/art/skill/heraldry-classic-ink-art/tests")
 # Start the slowest modules first so they do not finish last (seconds measured 2026-11-02).
-HEAVY = ("test_hero_cards", "test_workflow", "test_art_skill", "test_delivery_sync", "test_art_work_package",
-         "test_update_manuscript", "test_text_encoding")
+HEAVY = ("test_workflow", "test_art_skill", "test_delivery_sync", "test_update_manuscript", "test_text_encoding")
 
 
 def run_module(directory, path):

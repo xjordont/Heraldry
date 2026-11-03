@@ -21,7 +21,11 @@ class PackagePaths(unittest.TestCase):
             dist = root / "dist"
             dist.mkdir()
             for name, data in {"source/fixture.txt": b"source fixture\n",
-                               "docs/proof-\u00e9.txt": b"print fixture\n"}.items():
+                               "docs/proof-\u00e9.txt": b"print fixture\n",
+                               # attached to the release separately, or describing the previous release: not packaged
+                               "dist/Heraldry_RC999_digital.pdf": b"%PDF fixture\n",
+                               "dist/RELEASE.json": b"{}\n",
+                               "dist/specimen/specimen_pages.json": b"{}\n"}.items():
                 path = root / name
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_bytes(data)
@@ -38,6 +42,8 @@ class PackagePaths(unittest.TestCase):
                 names = archive.namelist()
                 self.assertTrue(all("\\" not in name for name in names))
                 self.assertIn("Heraldry_RC999/SHA256SUMS.txt", names)
+                self.assertIn("Heraldry_RC999/dist/specimen/specimen_pages.json", names)
+                self.assertFalse([n for n in names if n.endswith(".pdf") or n.endswith("dist/RELEASE.json")])
                 sums = archive.read("Heraldry_RC999/SHA256SUMS.txt").decode("utf-8")
                 self.assertEqual(sums, (dist / "SHA256SUMS.txt").read_text(encoding="utf-8"))
                 self.assertNotIn("\\", sums)

@@ -5,10 +5,9 @@
 *.pem
 __pycache__/
 .venv/
-node_modules/
 .cache/
 tmp/
-production/private/
+.claude/settings.local.json
 
 # The owner's reference books stay on the owner's machines only.
 /references/
@@ -22,9 +21,9 @@ production/private/
 build/
 typst/content.typ
 typst/measure.typ
-figures/src/test/
 figures/anchor_proposals.json
 dist/SHA256SUMS.txt
+assets/hero-record/previews/
 
 # Player-aid renders belong in build/aids/, never beside the sources
 typst/aids/*.png

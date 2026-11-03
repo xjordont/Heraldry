@@ -1,66 +1,18 @@
-# Expanded Hero records
+# Hero records
 
-**Current release outputs (2026-10-29):** the illustrated Hero record in `assets/hero-record/` (last section) is the record that ships. Every verified book release attaches its blank (`Heraldry_RC###_hero-record-blank.pdf`) and the 24 Basic Mode Heroes (`Heraldry_RC###_basic-heroes.pdf`), built from B.4 of the active manuscript (RC522: `tools/hero_cards.py check` passes). The Typst records described below are the earlier design and are not released.
+The Hero record that ships is the illustrated two-sided record in `assets/hero-record/` (owner-directed design, 2026-10-26), built by its one generator, `assets/hero-record/sheet.py`. Its layout, fields, typography, commands, and checks are in [assets/hero-record/README.md](../assets/hero-record/README.md).
 
-Owner direction, 2026-10-22: use one consistent expanded record, always two US Letter pages, a front and a reverse. The owner rejected the preceding mixed one-/two-side draft and its detached headings and writing lines. That version is superseded.
+## Outputs
 
-Latest direction: finish the blank record before adapting Basic Mode Heroes. The blank now imports the book's type and marks directly, removes nested frames and grey writing fields, merges equipped and carried possessions into one Inventory, and removes reminders. Basic Mode PDFs and their template remain at the preceding checkpoint.
-
-## Current outputs
-
-| File | Format |
+| Release file | Content |
 | --- | --- |
-| `hero-sheet.pdf` | Blank expanded Hero record, exactly 2 populated sides |
-| `hero-<name>.pdf` | Each of the 24 Basic Mode Heroes, exactly 2 populated sides |
-| `basic-heroes.pdf` | All 24 Heroes, exactly 48 populated pages (24 two-sided records) |
-| `party-ledger.pdf` | Existing 2-side party ledger, unchanged in this iteration |
+| `Heraldry_RC###_hero-record-blank.pdf` | The blank record: front and reverse |
+| `Heraldry_RC###_basic-heroes.pdf` | The 24 Basic Mode Heroes of Appendix B.4, each front paired with its reverse, then the reference cards (Mossgrave's Wild Shape card) |
 
-Every file is on the book's cream page colour. Local PDFs are in ignored `build/heroes/`. There is no current compact one-side output and no padding with empty backs. The retired compact sources have been removed.
+Every verified book release builds both (`Rebuild verified delivery`); there is no separate Hero-record workflow. Built PDFs are never committed.
 
-## Blank record visual system
+## Source data
 
-`typst/heroes/blank-record.typ` imports `typst/aids/kit.typ` and the main rulebook's `typst/templates/system.typ`. Grenze Gotisch headings, Source Serif 4 resource headings, Source Sans 3 labels, the approved signature, shield marks, lozenges, and deterministic brush rules use the book's existing sources. There is no substitute font system or new artwork.
+`typst/heroes/basic-heroes.json` holds B.4 of the active manuscript, extracted without rewording by `python tools/hero_cards.py extract`. `python tools/hero_cards.py check` proves that the JSON matches the manuscript and reproduces every profile line for line; run `extract` again after any RC that changes B.4. `tests/test_hero_record.py` checks every Hero's weapons, armour, and shields against the 7.8 to 7.12 tables.
 
-Identity occupies a compact three-row field grid beside an empty portrait arch. There is no default portrait, crest, or label inside that arch. The book signature appears only in the title. Attribute shields retain legible sans-serif abbreviations; Initiative, Speed, Size, HP, NRG, Luck, and AP use open writing lines. Current, maximum, and Temporary HP remain distinct.
-
-Ornament stays at section boundaries. Black title bands with reversed blackletter and black attribute-shield chiefs restore visual weight, following the owner's feedback that the black boxes were aesthetic. Open ledger rules separate entries without an outer panel, inner frame, tinted label band, or grey-filled writing cell. Coins, Adventures, and Fate remain on open writing surfaces beside the black bands. All writing capacities and row pitches are unchanged. All type is at least 9 pt.
-
-## Blank record
-
-The front contains identity, attributes, resources, Chest and Shield armour parameters, Wounds and lingering injuries, 3 weapon rows at 26 pt, and 12 Inventory rows at 18 pt. The Inventory records quantity, item, equipped status/location, and notes in one list. Coins use a small writing line in the section heading rather than a separate box.
-
-The reverse devotes the full page width to 7 Power entries at 38 pt and 7 talent/special-ability entries at 32 pt. Each entry has a name column and a broad description column with two writing lines. Hero Details provides two additional full-width lines, with small Adventures and Fate fields. These are writing capacities, not mechanical limits.
-
-The duplicated ancestry/background rules panel, separate equipped-slot list, Party Leader checkbox, boxed Carried Coins field, weapon/armour reminders, and entire advancement reference have been removed from the blank. Ancestry and Background remain once in identity; their abilities can be recorded with the other special abilities. Permanent item details can be recorded in Inventory notes. No manuscript or game rule changed.
-
-## Pre-generated Heroes - adaptation deferred
-
-The following describes the previous expanded design. It has not been restyled during the blank-only pass. `typst/heroes/expanded.typ`, the approved portraits, and all 50 individual/pack PDFs retain their previous hashes.
-
-Every front contains identity and portrait, statistics and trackers, every equipment entry, full shared Basic Mode Hands and 0 HP rules, active Hands fields, carried coins, and a bounded carried-item/change area.
-
-Every reverse contains ancestry traits, the background rule, talents, Powers, special rules, weapon trait rules, applicable Senses reminders, and a bounded Notes area. Dense Heroes receive less space on the reverse and retain the front writing area. Both sides are populated for every Hero, including the shortest profiles.
-
-The renderer retains every B.4 word and emphasis run through the exact extractor in `tools/hero_cards.py`. A long sub-paragraph can continue at a sentence boundary between columns. Its existing text runs are sliced without rewording; the complete original paragraph must remain present in the extracted PDF text. Headings stay with their first entry.
-
-## Reproduction and checks
-
-```text
-python tools/hero_cards.py check
-python tools/hero_cards.py render --only hero-sheet
-python tools/hero_sheet_qa.py --only-blank --render-review
-```
-
-The render command rejects anything other than 2 pages for an individual Hero and 48 pages for the full set, and rejects compiler warnings. It audits all profile text, sub-items, statistics, shared notes, front equipment, footer clearance, and the reverse Notes boundary.
-
-Blank-only QA checks Letter geometry, exactly two pages, minimum type size, essential text safety, font embedding, and searchable text. It compares the 50 Basic Mode PDFs against their preceding hashes, without rebuilding them or replacing their review images. The two blank sides are rendered by Poppler. The scoped receipt is `build/hero-redesign/blank/qa.json`; author observations and exact hashes are in `production/qa/blank-hero-sheet-design-review.json`. Use the commands without `--only`/`--only-blank` for a separately authorized complete Hero-set pass.
-
-`tests/test_hero_cards.py` verifies source extraction, required blank fields, absence of redundant sections and grey-filled inner cells, the empty portrait area, exact two-side output, populated pack versos, and complete profile coverage. Run `python tools/dev.py check` before pushing sources.
-
-## Review status
-
-Author review and automated checks do not establish owner aesthetic approval. This iteration remains subject to owner review. This section records the 2026-10-22 iteration; see the note at the top for what currently ships.
-
-## Illustrated Hero record (2026-10-26)
-
-`assets/hero-record/` holds the illustrated Hero record (front and reverse) and its single generator, `assets/hero-record/sheet.py`, which builds both the blank sides and the 24 populated Basic Mode Heroes from one geometry spec (see `assets/hero-record/README.md`). It uses the repository's fonts, signature mark and ink art, keeps all type at 9 pt or larger, and does not replace the Typst blank above. Populated PDFs are build products and are not committed; the on-demand **Build Hero records** workflow publishes both PDFs as a pre-release (tag `RC###-hero-records-N`). Owner approval of this version is **NOT TESTED**.
+The earlier Typst Hero records (2026-10-22) were removed on 2026-11-03; their research and design record is in `docs/history/HERO_SHEET_RESEARCH.md`.

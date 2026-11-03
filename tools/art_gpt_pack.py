@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ChatGPT Work handoff pack: one ready-to-paste prompt file per pending illustration plus an
 ordered queue (production/art/gpt/QUEUE.json and QUEUE.md). The anchors phase runs first; the
-batch phase requires approved anchors. Prompts come from art_generate.prompt_for (owner prompts
+batch phase requires approved anchors. Prompts come from art_prompts.prompt_for (owner prompts
 override). Regenerate after any catalog, brief or style change.
 
 Queue schema 2: every item carries its register, its own short list of reference images
@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
-import art_generate as g  # noqa: E402
+import art_prompts as g  # noqa: E402
 
 GPT = ROOT / "production/art/gpt"
 SCHEMA = 2
@@ -93,7 +93,7 @@ def references_for(e, sels, root=ROOT, guided=True):
     guide = g.guide_path(e["id"]) if guided else None
     if guide:
         if not (root / guide).is_file():
-            raise SystemExit(f"composition guide missing: {guide} (python3 tools/art_composition.py build)")
+            raise SystemExit(f"composition guide missing: {guide} (the guides are committed in production/art/composition/)")
         out = out[:cfg["max_refs"] - 1] + [guide]    # the guide is always the last reference
     return out
 

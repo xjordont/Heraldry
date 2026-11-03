@@ -34,7 +34,8 @@ class SharedAgentWorkflows(unittest.TestCase):
             self.fixture(root)
             data = agent.catalog(root)
             self.assertEqual(set(data["clients"]), agent.CLIENTS)
-            self.assertEqual(len(data["roles"]), 6)
+            # Every shared role contract in docs/agents/ is catalogued.
+            self.assertEqual(len(data["roles"]), len(list((agent.ROOT / "docs/agents").glob("*.md"))))
             self.assertIn("art-intake", data["workflows"])
             self.assertIn("build", data["workflows"])
             self.assertIn("visual-review", data["workflows"])

@@ -4,7 +4,7 @@ name: Rebuild verified delivery
 # verification ledgers and dist/RELEASE.json naming the release and its asset hashes (docs/LARGE_FILES.md).
 on:
   workflow_dispatch:
-  # The release follows the visual review: the reviewer (owner decision 2026-10-14: Codex) pushes production/qa/visual-review.json
+  # The release follows the visual review: the reviewer (any client) pushes production/qa/visual-review.json
   # bound to a candidate's exact PDF (docs/BUILD_AUTOMATION.md). The bot's own commits use GITHUB_TOKEN and never start this again.
   push:
     branches: [main]
@@ -20,7 +20,7 @@ env:
 jobs:
   rebuild:
     if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # pinned: the release must reproduce the reviewed candidate byte for byte
     timeout-minutes: 40
     permissions:
       contents: write
@@ -113,7 +113,10 @@ jobs:
           TAG="$VERSION-build-$GITHUB_RUN_NUMBER"
           if [ "${GITHUB_RUN_ATTEMPT:-1}" != "1" ]; then TAG="$TAG-attempt-$GITHUB_RUN_ATTEMPT"; fi
           shopt -s nullglob
-          ASSETS=(dist/Heraldry_"$VERSION"_*.pdf dist/specimen/Heraldry_"$VERSION"_*.pdf dist/Heraldry_"$VERSION"_release.zip dist/SHA256SUMS.txt)
+          FILES=(dist/Heraldry_"$VERSION"_*.pdf dist/specimen/Heraldry_"$VERSION"_*.pdf dist/Heraldry_"$VERSION"_release.zip)
+          # The attached SHA256SUMS.txt lists every attached file, by its asset name; the ZIP keeps its own list.
+          sha256sum "${FILES[@]}" | sed -E 's#  dist/(specimen/)?#  #' > dist/SHA256SUMS.txt
+          ASSETS=("${FILES[@]}" dist/SHA256SUMS.txt)
           gh release create "$TAG" "${ASSETS[@]}" --target "$GITHUB_SHA" --title "Heraldry $VERSION (build $GITHUB_RUN_NUMBER)" \
             --notes "Verified build of $VERSION from $GITHUB_SHA. The verification ledgers on main are bound to these files' SHA-256 (dist/RELEASE.json)."
           python - "$TAG" "${ASSETS[@]}" <<'PY'

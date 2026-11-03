@@ -12,7 +12,6 @@ All three clients use the same commands, catalogued in `config/agent_workflows.j
 | Art generation | `agent run art-worker -- next --n 1` |
 | Art delivery | `agent run art-delivery -- ship --execute --repo .` |
 | Art review | `agent run art-intake -- pending --sheet`, then `approve --ids ... --by NAME` or `reject --ids ... --reason ...` |
-| Offline art transport | `agent run art-package -- --help` |
 | Rules figures | `agent run figure-generate`, `agent run figure-review` |
 | Layout | `agent run layout -- plan`, then `check`; a full proof only in requested layout or build work |
 | Candidate and release | `agent run build -- check`, only when the owner asks for a build |
@@ -21,7 +20,7 @@ All three clients use the same commands, catalogued in `config/agent_workflows.j
 
 ## Guards
 
-`tests/test_repository_hygiene.py` fails CI if any PDF, ZIP, key, or `.env` file is tracked; the owner's reference books stay local in `references/private/`. Claude Code also loads `.claude/settings.json`, which refuses direct edits to manuscript snapshots (`.claude/hooks/protect-snapshots.sh`) and refuses a `git push` that carries such files, or that would land while "Build candidate" or "Rebuild verified delivery" is queued or running (`.claude/hooks/git-guard.sh`). In Claude Code cloud sessions, `.claude/hooks/session-start.sh` installs `requirements.lock` into `.venv` (first on PATH) and fetches the 24 Hero portraits from LFS, so the full suite runs there. Other clients follow the same rules by hand. For Claude, `/build-release` (owner-only) runs the build card.
+`tests/test_repository_hygiene.py` fails CI if any PDF, ZIP, key, or `.env` file is tracked. Claude Code also loads `.claude/settings.json`, which refuses direct edits to manuscript snapshots (`.claude/hooks/protect-snapshots.sh`) and refuses a `git push` that carries such files, or that would land while "Build candidate" or "Rebuild verified delivery" is requested, pending, waiting, queued, or running (`.claude/hooks/git-guard.sh`). In Claude Code cloud sessions, `.claude/hooks/session-start.sh` installs `requirements.lock` into `.venv` and puts it first on PATH, so the full suite runs there. Other clients follow the same rules by hand. For Claude, `/build-release` (owner-only) runs the build card (`docs/BUILD_CARD.md`).
 
 ## Specialist roles
 
@@ -29,4 +28,4 @@ Six role contracts live in `docs/agents/`: `publication-engineer`, `book-designe
 
 ## Missing capabilities
 
-If a session lacks shell, Git or LFS access, or an image tool that accepts references, say exactly what is missing and use an existing route: the offline art bundle with the GitHub import workflow, or a local executor. Never paste credentials into a conversation.
+If a session lacks shell, Git, or LFS access, or an image tool that accepts references, say exactly what is missing and stop that work; another client with the capability (such as Codex on the owner's PC) can pick it up. Art is delivered only by Git push, so a worker that cannot push keeps its saved images and receipts and reports. Never paste credentials into a conversation.

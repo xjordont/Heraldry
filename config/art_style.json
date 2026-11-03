@@ -1,25 +1,5 @@
 {
- "note": "Single style bible for every generated illustration. Style defined 2026-10-08 from three owner samples (assets/art/style/), classic black-and-white fantasy RPG interior art and Dark Souls' 'withered beauty'. Changing this file changes every prompt hash.",
- "provider": "gemini",
- "image_model_preference": [
-  "gemini-nano-banana-2.1",
-  "gemini-3.1-flash-image",
-  "gemini-3.1-flash-image-preview",
-  "gemini-2.5-flash-image"
- ],
- "judge_model_preference": [
-  "gemini-3.1-flash",
-  "gemini-3-flash",
-  "gemini-3-flash-preview",
-  "gemini-2.5-flash"
- ],
- "budget_usd": 150.0,
- "candidates_per_entry": 3,
- "max_rounds": 2,
- "judge_pass_score": 7,
- "style": "Original black-and-white pen-and-ink illustration for HERALDRY SKIRMISH: THE DYING LANDS, a grim medieval dark-fantasy tabletop rulebook. Every image is drawn by the same single illustrator with one technique: traditional dip pen and fine liner on bright white paper, in the manner of a classic black-and-white fantasy roleplaying-game interior illustration. LINE: a confident, slightly heavier outer contour around each main form; thinner interior lines; line weight thins with distance. TONE: built only from ink marks - parallel hatching that follows the form, crosshatching for deep shade, sparse stippling for grit, ash and dust - plus a few deliberate solid-black shapes (eye sockets, open mouths, doorways, cast shadows, the darkest folds). No grey wash, no gradients, no smudging. LIGHT: one cold overcast light from the upper left; shadows fall lower right. SPACE: generous untouched white paper; skies are white or lightly ruled with sparse horizontal strokes; distance and fog are shown by sparser, finer lines. MOOD: withered beauty and faded grandeur - once-fine armour, cloth, stone and banners now rusted, cracked, tattered, overgrown or hollowed by age; ruined gothic and Romanesque masonry at a scale that dwarfs the living; quiet dread rather than gore. CRAFT: believable anatomy, armour construction, weapon grips, timber framing and masonry coursing; a single readable silhouette that still reads when printed two inches wide; serious, grounded proportions, never cute or cartoonish.",
- "exclusions": "No lettering, captions, labels, numbers, runes that look like text, signature, logo, watermark, border, frame, panel box, colour, sepia, grey wash, airbrush or digital gradient, glow effects, photorealism, 3D render, anime, manga, cartoon or chibi proportions, comic-book speed lines, tiled pattern, faint grid, parchment or paper texture, torn-paper edges. Do not imitate any named artist, game or franchise; do not reproduce the reference images' subjects or compositions.",
- "reference_instruction": "The attached reference images show this illustrator's hand: copy their line weight, hatching density and direction, use of solid black and white paper, and level of finish. Do not copy their subjects, compositions or framing.",
+ "note": "Style and prompt configuration for the book's illustrations. prompt_v2, families, and size_words assemble each image prompt (tools/art_prompts.py), so changing them changes prompt hashes; the gpt_* keys drive the Codex and ChatGPT queue (tools/art_gpt_pack.py). Images are generated through the owner's ChatGPT plan, with no paid API.",
  "families": {
   "cover": {
    "aspect": "3:2",
@@ -123,27 +103,14 @@
   "ART-CLA-FIGHTER",
   "ART-ANC-DWARF"
  ],
- "anchor_candidates": 4,
- "price_per_mtok_usd": {
-  "image_out": 60.0,
-  "image_in": 0.5,
-  "judge_in": 0.5,
-  "judge_out": 3.0,
-  "note": "Estimates from the published Gemini 3.1 Flash Image (Nano Banana 2) rates; Google's billing console is authoritative."
- },
  "size_words": {
   "S": "Small: smaller than a human",
   "M": "Medium: about human-sized",
   "L": "Large: roughly twice a human's height or bulk",
   "H": "Huge: towering many times a human's size"
  },
- "style_refs": [
-  "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-  "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-  "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
- ],
  "prompt_v2": {
-  "note": "Prompt structure modelled on the owner's Greythorn prompt (2026-10-10). Sections are assembled by tools/art_generate.py prompt_for(); owner prompts in production/art/OWNER_PROMPTS.json override an entry entirely. Hand-inked direction (owner, 2026-10-11): economy of line, selective hatching, open white paper; no 'exceptionally detailed' or stippling language, which produced hyper-detailed AI-looking results. Gritty old-school direction (owner, 2026-10-11 later): bold rough brush contours, heavy solid blacks, scratchy hatching and dry-brush texture with woodcut bite, high contrast, visible human imperfection; still pure black ink, no grey wash, no stipple fields or uniform machine texture.",
+  "note": "Prompt structure modelled on the owner's Greythorn prompt (2026-10-10). Sections are assembled by tools/art_prompts.py prompt_for(); owner prompts in production/art/OWNER_PROMPTS.json override an entry entirely. Hand-inked direction (owner, 2026-10-11): economy of line, selective hatching, open white paper; no 'exceptionally detailed' or stippling language, which produced hyper-detailed AI-looking results. Gritty old-school direction (owner, 2026-10-11 later): bold rough brush contours, heavy solid blacks, scratchy hatching and dry-brush texture with woodcut bite, high contrast, visible human imperfection; still pure black ink, no grey wash, no stipple fields or uniform machine texture.",
   "scene_families": [
    "cover",
    "chapter",
@@ -493,13 +460,6 @@
   "default": 1
  },
  "gpt_attempts_note": "Owner 2026-10-12, after the first 8 batch images: the first generation for each prompt was far better than any retry, so every item gets exactly one generation. A defect is recorded with save --accept-flags --notes, and the reviewer sends the item back as a redo (a fresh generation, in a fresh context, with the correction) when it matters.",
- "gpt_image_model": {
-  "preferred": "GPT Image 2.5 Sunburst",
-  "rule": "Owner request 2026-10-11: use this model if the ChatGPT Work image tool offers it; otherwise use the default image model. Record the exact model name shown in every receipt (save --model)."
- },
- "gpt_image_size": {
-  "rule": "The queue size is the minimum and fixes the aspect. Request the largest size the tool offers at that aspect (owner 2026-10-11: avoid low-resolution art). Larger native images at the same aspect pass without an exception."
- },
  "gpt_lead_ids": [
   "ART-BAS-DEEPWARDEN",
   "ART-CLI-THE-ASHLANDS",

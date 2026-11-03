@@ -1,6 +1,6 @@
 name: Build art packages
-# On request: the installable skill ZIP and the offline Work input package (the ChatGPT Work fallback). Both are
-# build outputs and are never committed (docs/LARGE_FILES.md); download them from this run's artifact.
+# On request: the installable art skill ZIP. It is a build output and is never committed (docs/LARGE_FILES.md);
+# download it from this run's artifact.
 on:
   workflow_dispatch:
 permissions:
@@ -23,8 +23,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: heraldry-art-packages
-          path: |
-            build/art/*.zip
-            build/art/WORK_PACKAGE.json
+          path: build/art/*.zip
           retention-days: 30
           if-no-files-found: error

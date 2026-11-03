@@ -238,7 +238,7 @@
   }
 })
 #let role-pattern = regex("\[[^\]]+\]$")
-// The reference appendix sets its section heads as the iron reference band (BOOK_DESIGN_PLAN 6.19).
+// The reference appendix sets its section heads as the iron reference band (docs/DESIGN.md 6.19).
 #let reference-band(num) = tokens.layout.reference_band_chapters.len() > 0 and num.match(regex("^C\.\d+$")) != none
 // A numbered section head spans the frame (D-01): the composer emits it in the outer flow ahead of its
 // columns, sticky to them, so a head never ends a page on its own.

@@ -12,7 +12,6 @@
     "trim_width_inches": 8.5,
     "trim_height_inches": 11,
     "orientation": "portrait",
-    "interior_colour": "black/grayscale content on warm cream",
     "inside_margin_inches": 0.625,
     "outside_margin_inches": 0.5833333333333334,
     "top_margin_inches": 0.625,
@@ -27,11 +26,8 @@
   },
   "image_generation": {
     "route": "chatgpt_builtin",
-    "incoming_art_directory": "assets/art/incoming",
-    "minimum_grayscale_ppi_starting_target": 300,
-    "minimum_one_bit_line_art_ppi_starting_target": 600,
-    "generation_owner": "ChatGPT Work",
-    "external_api_generation": false
+    "external_api_generation": false,
+    "note": "Art is generated with the owner's ChatGPT plan (Codex is the current route); no paid image API without the owner's say-so."
   },
   "verified_publication_metadata": {
     "title": "HERALDRY SKIRMISH: THE DYING LANDS",
@@ -54,7 +50,6 @@
   },
   "workflow": {
     "working_branch": "main",
-    "new_branch_policy": "explicit owner decision with recorded reason",
     "manuscript_version_policy": "one increment per approved text-patch batch; immutable prior snapshots"
   }
 }

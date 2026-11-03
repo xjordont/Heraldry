@@ -9,10 +9,6 @@ on:
       - Build candidate
       - Rebuild verified delivery
       - Intake ChatGPT artwork
-      - Import Work review bundle
-      - Generate pen-and-ink artwork (retired Gemini fallback)
-      - Generate heraldic marks
-      - Generate art variants
     types: [completed]
     branches: [main]
 permissions:

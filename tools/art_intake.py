@@ -17,7 +17,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
-import art_generate as g  # noqa: E402
+import art_prompts as g  # noqa: E402
 from art_ink import prep  # noqa: E402
 
 INCOMING = ROOT / "assets/art/incoming"

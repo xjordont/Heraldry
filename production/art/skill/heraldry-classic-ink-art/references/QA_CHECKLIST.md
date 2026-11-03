@@ -39,7 +39,7 @@ Run it on the image and on the print-size preview. `check` repeats the item's MU
 9. **Scale.** Matches the prompt: a creature's `Size:` line, or the people a scene says it has. No scale figure unless asked.
 10. **Print-size legibility.** In the preview the subject is one unmistakable silhouette.
 
-Any failure of 1–10 is a retry (`references/REPAIR.md`).
+Any failure of 1–10 is still saved, with `--accept-flags` and the failure listed in the QA record; a rejection brings it back as a redo (`references/REPAIR.md`). There is one generation per item, never a retry.
 
 ## 3. Soft style check
 
@@ -54,11 +54,11 @@ After each batch, view `sheet --refs`. Look for:
 - scenery creeping in behind figures;
 - paper tone or finish changing between items.
 
-Redo the one or two worst if attempts remain. If the whole batch drifted, stop and tell the owner; starting a fresh conversation usually resets it.
+Name any drifting image in your report so it can be sent back as a redo, and keep going (owner 2026-10-12: run the whole list). In a long ChatGPT conversation, starting a fresh one usually resets drift.
 
 ## Receipt format
 
-`save` writes it. By hand, append one JSON line per image to `production/art/gpt/RECEIPTS.jsonl`:
+`save` writes one JSON line per image to `production/art/gpt/RECEIPTS.jsonl`. Its core fields:
 
 ```json
 {"id": "ART-MON-GOBLIN", "prompt_sha256": "<the item's prompt_sha256 from QUEUE.json>", "surface": "ChatGPT Work", "model": "<image model if shown, else not shown>", "date_utc": "2026-10-10", "variants_tried": 2, "notes": "<anything unusual, including any correction sentence added>", "must_checked": ["<what you counted for each MUST line>"], "avoid_clear": true}

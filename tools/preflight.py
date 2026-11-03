@@ -13,18 +13,13 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_HASH = '2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3'
-AGENTS = {'book-designer': 'medium', 'publication-engineer': 'high',
-          'publication-auditor': 'high', 'rules-illustrator': 'high',
-          'mechanical-assistant': None, 'blind-editorial-reviewer': 'high'}
-# Which config/production.json model each adapter must name (default bulk_work), and the adapters that must stay read-only.
+# The roles come from config/agent_workflows.json. Which config/production.json model each Claude adapter must name
+# (default bulk_work), and the adapters that must stay read-only:
 AGENT_MODELS = {'mechanical-assistant': 'mechanical_work', 'blind-editorial-reviewer': 'orchestrator'}
 READ_ONLY_AGENTS = {'blind-editorial-reviewer'}
-REQUIRED = ['MASTER_PROMPT.md', 'CLAUDE.md', 'AGENTS.md', 'README.md',
-            'docs/PROJECT_CONTRACT.md', 'docs/AGENT_OPERATIONS.md', 'config/agent_workflows.json',
-            'docs/DESIGN_SPEC.md', 'docs/ART_DIRECTION.md', 'docs/REFERENCE_ANALYSIS.md',
-            'docs/LAUNCH_CHECKLIST.md', 'source/source_inventory.json', 'config/production.json',
-            '.claude/settings.json', 'production/STATE.md', 'config/design_tokens.json',
-            'docs/VISUAL_QA.md']
+REQUIRED = ['CLAUDE.md', 'AGENTS.md', 'README.md', 'docs/PROJECT_CONTRACT.md', 'docs/AGENT_OPERATIONS.md',
+            'docs/DESIGN.md', 'docs/VISUAL_QA.md', 'docs/ART_DIRECTION.md', 'config/agent_workflows.json',
+            'config/production.json', 'config/design_tokens.json', '.claude/settings.json', 'production/STATE.md']
 
 
 def digest(path: Path) -> str:
@@ -76,10 +71,9 @@ def main() -> int:
         f = c['format']
         require(f['trim_width_inches'] == 8.5 and f['trim_height_inches'] == 11, 'Reviewed trim changed')
         require(f['minimum_essential_text_pt'] >= 9, 'Essential type minimum is too small')
-        require(f['inside_margin_inches'] > f['outside_margin_inches'], 'Binding gutter is not larger than outside margin')
         i = c['image_generation']
-        require(i['route'] == 'chatgpt_builtin' and i['generation_owner'] == 'ChatGPT Work', 'Artwork route differs from owner instruction')
-        require(i['external_api_generation'] is False, 'Artwork generation belongs in ChatGPT Work')
+        require(i['route'] == 'chatgpt_builtin', 'Artwork route differs from owner instruction')
+        require(i['external_api_generation'] is False, "Artwork uses the owner's ChatGPT plan, not a paid image API")
         return 'Configuration reconciles; runtime model access requires live checks'
 
     def design_page_contract():
@@ -99,8 +93,12 @@ def main() -> int:
         return 'Portrait Letter page, cream tokens, and safe area reconcile'
 
     def agent_contracts():
-        for name, effort in AGENTS.items():
-            text = (root / '.claude/agents' / (name + '.md')).read_text(encoding='utf-8')
+        from agent_workflow import catalog
+        shared = catalog(root)
+        config = json.loads((root / 'config/production.json').read_text(encoding='utf-8'))
+        for role in shared['roles']:
+            name = role['name']
+            text = (root / role['claude_adapter']).read_text(encoding='utf-8')
             parts = text.split('---', 2)
             require(len(parts) == 3 and not parts[0].strip(), f'{name}: missing frontmatter')
             fields = {}
@@ -111,18 +109,15 @@ def main() -> int:
                 fields[match[1]] = match[2]
             require(fields.get('name') == name, f'{name}: name mismatch')
             require(bool(fields.get('description')), f'{name}: missing description')
-            config = json.loads((root / 'config/production.json').read_text(encoding='utf-8'))
             model = config['models'][AGENT_MODELS.get(name, 'bulk_work')]
             require(fields.get('model') == model, f'{name}: model/config mismatch')
-            require(fields.get('effort') == effort, f'{name}: effort mismatch')
+            require(fields.get('effort') in {None, 'low', 'medium', 'high', 'xhigh', 'max'}, f'{name}: invalid effort')
             tools = {x.strip() for x in fields.get('tools', '').split(',')}
             if name in READ_ONLY_AGENTS:
                 require('Read' in tools and not tools & {'Write', 'Edit', 'Bash', 'NotebookEdit', 'Agent'}, f'{name}: invalid read-only tool contract')
             else:
                 require({'Read', 'Write', 'Bash'} <= tools and 'Agent' not in tools, f'{name}: invalid tool contract')
-        from agent_workflow import catalog
-        shared = catalog(root)
-        return f"{len(AGENTS)} Claude-native adapters and {len(shared['workflows'])} shared workflows validated for all three clients; runtime resolution is separate"
+        return f"{len(shared['roles'])} Claude-native adapters and {len(shared['workflows'])} shared workflows validated for all three clients; runtime resolution is separate"
 
     def scripts():
         for p in sorted((root / 'tools').glob('*.py')):

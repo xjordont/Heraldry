@@ -1,6 +1,6 @@
 # Updating the manuscript
 
-Give Codex the complete updated UTF-8 Markdown file and say: "Prepare this manuscript update for review." After reviewing the exact changes, approve that batch. Codex uses the same commands below. No manuscript prose is generated during import.
+Give any agent (Codex, Claude Code, or ChatGPT Work) the complete updated UTF-8 Markdown file and say: "Prepare this manuscript update for review." After reviewing the exact changes, approve that batch. The agent uses the commands below. No manuscript prose is generated during import.
 
 The active version is always the last record in `source/versions.json`. Each approved update creates exactly one new RC, preserves every previous snapshot, and archives the exact replacements and owner authorization. A manuscript update does not request a PDF build.
 
@@ -54,7 +54,7 @@ Earlier snapshots and archived patches remain byte-for-byte unchanged. Reapplyin
 
 ## 4. Commit the revision
 
-The apply step validates the revision itself; CI runs the full test suite after you push. Add a short `production/STATE.md` entry and note in `production/RELEASE_STATUS.md` that the last PDF release predates the new RC. Commit the four revision files with those notes and any companion changes in one commit, and push to `main`.
+The apply step validates the revision itself; CI runs the full test suite after you push. Add a short `production/STATE.md` entry that notes the last PDF release predates the new RC. Commit the four revision files with that entry and any companion changes in one commit, and push to `main`.
 
 If a publishing build is running, wait for it to finish before pushing. If a push is rejected, keep the local work and reconcile it; don't apply the batch again. To revert an approved text change, create a later revision with its inverse.
 

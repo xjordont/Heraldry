@@ -31,8 +31,8 @@ def catalog(root=ROOT):
     if data.get("schema") != 1 or set(data.get("clients", [])) != CLIENTS:
         raise ValueError("Shared workflows must support all three clients")
     roles = data["roles"]
-    if len(roles) != 6 or len({role["name"] for role in roles}) != len(roles):
-        raise ValueError("Expected six distinct shared specialist roles")
+    if not roles or len({role["name"] for role in roles}) != len(roles):
+        raise ValueError("Shared specialist roles must each be listed once")
     for role in roles:
         repository_file(root, role["instructions"], ("docs/agents/",))
         adapter = repository_file(root, role["claude_adapter"], (".claude/agents/",))

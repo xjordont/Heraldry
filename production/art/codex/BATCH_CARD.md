@@ -19,11 +19,11 @@ Read this and `AGENTS.md` only. Open `SKILL.md` or `references/*.md` only when o
 ## Delivery (after every saved image; then `H heraldry_art.py status`)
 - **status says DELIVER:** `H delivery_guard.py ship --execute --repo .` (it runs every delivery check, fast-forwards over the intake bot's commits and retries a lost race). Give the command at least 10 minutes: the Git LFS upload can be slow. If it prints nothing (your tool timed out), run `H heraldry_art.py status`; `0 saved-not-pushed` means the delivery landed. A ship that reports `UP-TO-DATE` is not a fault: continue with `next`.
 - **status says DRIFT REVIEW** (every 10 images): `H heraldry_art.py sheet --recent 10 --refs` and `H style_audit.py --repo . --recent 10` (both write to the scratch folder; the audit prints any advisories); look at the sheet once. Then ship in every case. One image drifted: name it in your report. Two or more same-register images share a style drift (line weight, grey tone, too clean, scenery behind figures; not margins): name it in your report and keep going. Nothing drifted: say so.
-- **ship says BLOCKED:** `H heraldry_art.py bundle`, report the reason and stop. Never pull, rebase, force or commit by hand.
+- **ship says BLOCKED:** stop and report its reason. Your saved images and receipts stay in the clone for the next ship. Never pull, rebase, force, or commit by hand.
 
 ## Stop and report when
 - `next` says nothing pending and status says NOTHING LEFT;
-- for an item that lists references: the image tool cannot attach them, or its own instructions forbid passing them for a new image (2026-10-31: Codex's tool says to omit `referenced_image_paths` for a brand-new image; a tool instruction outranks this card). Stop and report; the owner switches to the ChatGPT Work fallback (`production/art/gpt/WORK_PROMPT.md`).
+- for an item that lists references: the image tool cannot attach them, or its own instructions forbid passing them for a new image (2026-10-31: Codex's tool says to omit `referenced_image_paths` for a brand-new image; a tool instruction outranks this card). Stop and report it to the owner.
 
 Not a stop: the image tool refusing one item (a safety or content refusal). Run `H heraldry_art.py refuse ID --reason "<what it said>"`, deliver with ship, and continue with `next`; the prompt is then rewritten in the catalogue.
 - the plan's usage limit is reached (ChatGPT Plus: it resets every 5 hours; everything saved is already delivered, and the owner restarts the same prompt, which resumes from `next`);
@@ -40,5 +40,5 @@ Once the intake bot has inked your deliveries (a few minutes after the last ship
 
 ## Never
 - Edit prompts, the queue, the manuscript, tools, config or the skill.
-- Build PDFs, create branches, force-push, or print credentials.
+- Build PDFs during an art run (a build is a separate owner request, `docs/BUILD_CARD.md`), create branches, force-push, or print credentials.
 - During the run, write anything in the clone except `assets/art/incoming/<ID>.<ext>` and `production/art/gpt/RECEIPTS.jsonl`, and those only via `save` and `ship`.

@@ -15,7 +15,7 @@ import update_readme as updater
 from figure_dependencies import hashes_for_text
 
 README = ('# Hand-written title\n\n<!-- BEGIN AUTO:status -->\nold\n<!-- END AUTO:status -->\n'
-          '\nKeep this guidance exactly.\n\n<!-- BEGIN AUTO:recent -->\nold\n<!-- END AUTO:recent -->\n\nEnd.\n')
+          '\nKeep this guidance exactly.\n\nEnd.\n')
 
 
 class ReadmeUpdate(unittest.TestCase):
@@ -86,8 +86,9 @@ class ReadmeUpdate(unittest.TestCase):
         self.assertIn('Keep this guidance exactly.\n', text)
         self.assertTrue(text.startswith('# Hand-written title\n'))
         self.assertTrue(text.endswith('\nEnd.\n'))
-        self.assertIn(r'\<script\>', text)
-        self.assertIn(r'\[link\](evil)', text)
+        # Commit subjects (the fixture's include markup) are no longer copied into the README at all.
+        self.assertNotIn('<script>', text)
+        self.assertNotIn('](evil)', text)
 
     def test_refresh_is_idempotent_and_preserves_crlf_outside_blocks(self):
         self.write('README.md', README.replace('\n', '\r\n'))
@@ -98,8 +99,8 @@ class ReadmeUpdate(unittest.TestCase):
         self.assertEqual(output, updater.render(self.runner))
 
     def test_missing_duplicate_and_overlapping_markers_fail_without_writing(self):
-        for text in (README.replace('<!-- END AUTO:status -->', ''), README + '<!-- BEGIN AUTO:recent -->',
-                     README.replace('<!-- END AUTO:status -->', '').replace('End.', '<!-- END AUTO:status -->')):
+        for text in (README.replace('<!-- END AUTO:status -->', ''), README + '<!-- BEGIN AUTO:status -->',
+                     README.replace('<!-- BEGIN AUTO:status -->', '').replace('End.', '<!-- BEGIN AUTO:status -->')):
             with self.subTest(text=text):
                 self.write('README.md', text)
                 before = (self.runner / 'README.md').read_bytes()
@@ -118,12 +119,6 @@ class ReadmeUpdate(unittest.TestCase):
         self.write('source/RC2.md', 'unregistered source change')
         with self.assertRaisesRegex(ValueError, 'registry'):
             updater.render(self.runner)
-
-    def test_readme_only_commit_is_excluded_from_recent_changes(self):
-        self.write('README.md', README + 'manual note\n')
-        self.git(self.runner, 'add', 'README.md')
-        self.git(self.runner, 'commit', '-m', 'README-only sentinel')
-        self.assertNotIn('README-only sentinel', updater.render(self.runner).decode())
 
     def test_publish_changes_only_readme_and_preserves_worktree_index_and_head(self):
         self.write('dirty.txt', 'staged')
@@ -167,7 +162,6 @@ class ReadmeUpdate(unittest.TestCase):
         text = self.remote('show', 'main:README.md')
         self.assertIn('1 approved of 1', text)
         self.assertIn('Peer guidance.', text)
-        self.assertIn('concurrent update', text)
 
     def test_new_request_during_retry_defers_and_permissions_error_does_not_retry(self):
         real_run, pushes = subprocess.run, []

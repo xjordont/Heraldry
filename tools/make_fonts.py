@@ -2,7 +2,7 @@
 """Derive static font instances from the bundled OFL variable fonts.
 
 Sources: fonts/variable/* downloaded from github.com/google/fonts (ofl/sourceserif4,
-ofl/sourcesans3, ofl/cinzel); licences in fonts/licences/. Static instances are
+and ofl/sourcesans3); licences in fonts/licences/. Static instances are
 renamed so every style shares one family name (Typst groups by family name).
 Source Serif 4 is pinned at optical size 11 (text) for body sizes.
 """
@@ -18,7 +18,6 @@ JOBS = [
     ("SourceSerif4-Italic[opsz,wght].ttf", "Source Serif 4", "SourceSerif4", {"Italic": 400, "SemiboldItalic": 600, "BoldItalic": 700}, True, {"opsz": 11}),
     ("SourceSans3[wght].ttf", "Source Sans 3", "SourceSans3", {"Regular": 400, "Semibold": 600, "Bold": 700}, False, {}),
     ("SourceSans3-Italic[wght].ttf", "Source Sans 3", "SourceSans3", {"Italic": 400, "SemiboldItalic": 600, "BoldItalic": 700}, True, {}),
-    ("Cinzel[wght].ttf", "Cinzel", "Cinzel", {"Regular": 400, "Semibold": 600, "Bold": 700}, False, {}),
 ]
 
 

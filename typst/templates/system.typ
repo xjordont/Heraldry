@@ -1,6 +1,6 @@
 // HERALDRY SKIRMISH — book design system v4 ("Grim Heraldry", refined).
 // Page templates and components for every page type in the book; the plan and rationale are in
-// docs/BOOK_DESIGN_PLAN.md, the reference evidence in docs/design/REFERENCE_STUDY.md.
+// docs/DESIGN.md, the reference evidence in docs/history/REFERENCE_STUDY.md.
 // Self-contained: specimens use it today, and the book build adopts it component by component.
 //
 // Direction (owner 2026-10-12): ornate, grim, medieval heraldry; tasteful; never distracting from
@@ -262,7 +262,7 @@
 }
 
 // ================================================================ base text and typesetting policy
-// Paragraph policy (docs/BOOK_DESIGN_PLAN.md section 13): no widows or orphans, no one-word last
+// Paragraph policy (docs/DESIGN.md section 13): no widows or orphans, no one-word last
 // lines ("runts"), hyphenation discouraged but allowed in narrow columns. Body text is justified
 // within limits (owner 2026-10-12); --body rag in the specimen renderer shows the ragged alternative.
 // Letter spacing may tighten or loosen by up to 2% and word spacing may tighten to 85% before a line

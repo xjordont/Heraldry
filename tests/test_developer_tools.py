@@ -13,7 +13,7 @@ from dev import select_python
 class DeveloperTools(unittest.TestCase):
     def test_explicit_python_command_resolves_through_path(self):
         with patch("dev.shutil.which", return_value=sys.executable):
-            self.assertEqual(select_python(override="fixture-python"), str(Path(sys.executable).resolve()))
+            self.assertEqual(select_python(override="fixture-python"), str(Path(sys.executable).absolute()))
 
     def test_lock_requires_unique_exact_pins(self):
         with tempfile.TemporaryDirectory() as d:
@@ -37,7 +37,7 @@ class DeveloperTools(unittest.TestCase):
             local.parent.mkdir(parents=True)
             local.touch()
             self.assertEqual(Path(select_python(root)), local)
-            self.assertEqual(Path(select_python(root, str(shared))), shared.resolve())
+            self.assertEqual(Path(select_python(root, str(shared))), shared)
             with self.assertRaises(ValueError):
                 select_python(root, str(root / "missing.exe"))
 

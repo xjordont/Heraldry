@@ -34,7 +34,7 @@ printf '%s' "$command" | grep -q 'HERALDRY_ALLOW_PUSH_DURING_BUILD=1' && exit 0 
 repo=$(git remote get-url origin 2>/dev/null | sed -E 's#\.git$##; s#^.*github\.com[:/]+##; s#^.*/git/##')
 case "$repo" in */*) ;; *) exit 0 ;; esac
 token="${GH_TOKEN:-${GITHUB_TOKEN:-}}"
-for status in in_progress queued waiting; do
+for status in in_progress queued pending waiting requested; do
   if [ -n "$token" ]; then
     body=$(curl -sS -m 8 -H "Authorization: Bearer $token" "https://api.github.com/repos/$repo/actions/runs?status=$status&branch=main&per_page=20" 2>/dev/null)
   else

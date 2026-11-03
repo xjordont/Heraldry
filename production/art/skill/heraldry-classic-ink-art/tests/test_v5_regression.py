@@ -83,15 +83,17 @@ class V6Test(unittest.TestCase):
         m['px']=[1254,1200];failures,_,_=ha.evaluate(m,self.it)            # larger but off-aspect fails
         self.assertTrue(any('smaller than or not the aspect' in x for x in failures))
 
-    def test_work_preflight_without_git_lfs_is_fallback(self):
+    def test_work_preflight_without_git_lfs_delivery_is_blocked(self):
         q=self.repo/'production/art/gpt/QUEUE.json';q.parent.mkdir(parents=True)
         prompt=self.repo/'production/art/gpt/prompts/test.txt';prompt.parent.mkdir(parents=True)
         prompt.write_text('an ink drawing\n')
         digest=hashlib.sha256(b'an ink drawing').hexdigest()
         q.write_text(json.dumps({'schema':2,'items':[{'id':self.it['id'],'prompt':prompt.relative_to(self.repo).as_posix(),'prompt_sha256':digest,'references':self.it['references']}]}))
         d=wp.run(self.repo)
-        self.assertEqual(d['status'],'READY')
-        self.assertEqual(d['delivery'],'bundle')
+        # The queue itself is valid; only delivery is missing, and without it nothing should be generated.
+        self.assertEqual(d['status'],'BLOCKED')
+        self.assertEqual(d['delivery'],'blocked')
+        self.assertEqual(d['errors'],['Git LFS delivery is unavailable, so nothing generated here could be delivered: stop and report to the owner'])
         self.assertEqual(d['image_and_reference_tool'],'UNVERIFIED')
         self.assertEqual(wp.run(self.repo,'git_lfs')['status'],'BLOCKED')
 

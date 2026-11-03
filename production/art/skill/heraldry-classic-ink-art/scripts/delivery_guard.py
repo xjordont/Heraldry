@@ -115,13 +115,10 @@ def validate(repo, need_remote=True):
     queue_file = repo/'production/art/gpt/QUEUE.json'
     if not queue_file.is_file():
         raise Error('not a Heraldry queue checkout')
-    if (repo/'WORK_PACKAGE.json').is_file() and not (repo/'.git').exists():
-        raise Error('offline Work input package: there is no Git checkout or credential here, so nothing can be pushed. '
-                    'Run heraldry_art.py bundle and hand over the review ZIP')
     if cmd(repo, 'branch', '--show-current') != 'main':
         raise Error('not on main: current repo uses direct-main delivery')
     if not cmd(repo, 'lfs', 'version', check=False):
-        raise Error('git lfs unavailable; use helper bundle fallback')
+        raise Error('git lfs unavailable: nothing can be delivered from here; keep the saved images and report to the owner')
     if cmd(repo, 'diff', '--cached', '--name-only'):
         raise Error('index already contains staged files; inspect and clear it before ship')
     q = json.loads(queue_file.read_text(encoding='utf-8'))
@@ -317,7 +314,7 @@ def ship(repo, tries=3):
             raise Error('push failed (not a race): ' + err[:400] + '. The images and receipts are preserved uncommitted')
         # Lost a race (usually the intake bot); the next pass fast-forwards again.
     raise Error(f'origin/main kept advancing; no push succeeded after {tries} tries. '
-                'The images and receipts are preserved uncommitted; run ship again or use bundle')
+                'The images and receipts are preserved uncommitted; run ship again, or report to the owner')
 
 
 def main(argv=None):
@@ -328,7 +325,7 @@ def main(argv=None):
     a = ap.parse_args(argv)
     try:
         if a.command == 'ship' and not a.execute:
-            raise Error('ship requires --execute; run audit and use bundle fallback if blocked')
+            raise Error('ship requires --execute; run audit first and report to the owner if it is blocked')
         result = ship(a.repo) if a.command == 'ship' else validate(a.repo)
         print(json.dumps({'status':'PUSHED' if a.command == 'ship' else 'PASS', **result}, indent=2), flush=True)
         return 0

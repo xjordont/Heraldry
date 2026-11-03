@@ -202,8 +202,7 @@ def main():
     res["units"] = len(units)
     res["status"] = "PASS" if not res["duplicated_blocks"] and not res["out_of_order"] and not res["missing"] and not res["table_cells_missing"] and not res["strong_missing"] and not res["em_missing"] else "FAIL"
     res["pdf_pages"] = npages
-    # design v4 faces (owner-approved 2026-10-12): Grenze Gotisch (titles) and IM FELL English (flavour);
-    # Cinzel is retired.
+    # design v4 faces (owner-approved 2026-10-12): Grenze Gotisch (titles) and IM FELL English (flavour).
     allowed = {"SourceSerif4", "SourceSans3", "GrenzeGotisch", "IM_FELL_English_Roman"}
     res["fonts"] = sorted(fonts)
     res["unexpected_fonts"] = sorted(f for f in fonts if f.split("-")[0] not in allowed)

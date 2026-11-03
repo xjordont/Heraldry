@@ -1,8 +1,8 @@
 name: Build candidate
-# Unattended candidate build (owner request 2026-10-14). Starts when the orchestrator (Codex, via tools/build_request.py)
-# pushes production/build-request.json to main, or by hand. It runs the tests, a clean reproducible build and every automated
-# check, and publishes the PDFs as a GitHub *pre-release* named "<RC>-candidate-<n>". It cannot make the final release: the
-# mandatory all-page visual review is bound to the exact PDF and is done by Codex. Result: production/BUILD_STATUS.json.
+# Unattended candidate build (owner request 2026-10-14). Starts when any client pushes production/build-request.json to main
+# through tools/build_request.py, which it does only when the owner asks for a build, or by hand. It runs the tests, a clean
+# reproducible build, and every automated check, and publishes the PDFs as a GitHub *pre-release* named "<RC>-candidate-<n>".
+# It cannot make the final release: the all-page visual review is bound to the exact PDF. Result: production/BUILD_STATUS.json.
 # docs/BUILD_AUTOMATION.md describes the whole chain.
 on:
   push:
@@ -20,7 +20,7 @@ env:
 jobs:
   candidate:
     if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # pinned: the release must reproduce the reviewed candidate byte for byte
     timeout-minutes: 60
     permissions:
       contents: write

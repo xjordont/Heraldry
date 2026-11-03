@@ -1,6 +1,6 @@
 # publication-engineer
 
-Work on the assigned slice within MASTER_PROMPT.md's production contract, reading only the relevant source ranges and dependencies. The canonical manuscript is protected: never regenerate its prose or tables. Edit only the files you were given.
+Work on the assigned slice within the production contract (`docs/PROJECT_CONTRACT.md`), reading only the relevant source ranges and dependencies. The canonical manuscript is protected: never regenerate its prose or tables. Edit only the files you were given.
 
 Use a semantic parser, stable source spans, exact table-cell mappings, explicit handling for every source construct, content-preserving transformations, and deterministic verification. Unsupported constructs are failures, not dropped content. Build fixtures from actual source and script repetitive work. Keep templates separate from content, and keep anchor, page, and index mappings correct through rebuilds. Check the rendered output, not just a successful compile.
 

@@ -7,11 +7,8 @@ and any new local commit available for inspection and recovery.
 """
 from __future__ import annotations
 
-import os
 from pathlib import Path
-import shutil
 import subprocess
-import sys
 
 
 class PublishError(RuntimeError):
@@ -58,30 +55,6 @@ def require_current_main(root: Path, allowed_changes=()) -> str:
 def require_clean_main(root: Path) -> str:
     """Refuse before file mutation unless main is clean and equals fetched origin/main."""
     return require_current_main(root)
-
-
-def find_make(root: Path) -> str:
-    """Find GNU Make on PATH or the documented adjacent Windows tool installation."""
-    executable = shutil.which("make")
-    if executable:
-        return executable
-    windows_make = Path(root).resolve().parent / "tools/gnuwin32/bin/make.exe"
-    if windows_make.is_file():
-        return str(windows_make)
-    raise PublishError("make is unavailable; install GNU Make or use the documented Windows tool path")
-
-
-def run_tests(root: Path, python: str = sys.executable) -> None:
-    """Run the required make test with this interpreter; raise PublishError on failure."""
-    # absolute(), not resolve(): a POSIX venv's python is a symlink, and resolving it
-    # would run the tests on the base interpreter without the venv's packages.
-    executable = str(Path(python).absolute()).replace("\\", "/")
-    # Keep the interpreter quoted in the recipe, including Windows paths with spaces.
-    command = [find_make(root), "test", f'PY="{executable.replace("$", "$$")}"']
-    env = dict(os.environ, PYTHONUTF8="1")
-    result = subprocess.run(command, cwd=root, env=env)
-    if result.returncode:
-        raise PublishError(f"make test failed (exit {result.returncode}); publication files are preserved")
 
 
 def publish_files(root: Path, paths: list[str], message: str, base_commit: str,

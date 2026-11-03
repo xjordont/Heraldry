@@ -1,5 +1,4 @@
 """Regress publication position authority and nonsemantic layout fixes."""
-import hashlib
 import json
 import sys
 import tempfile
@@ -11,40 +10,12 @@ from types import SimpleNamespace
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
-import query_typst
 import verify
 from qa_contract import MANDATORY_CHECKS
 from tables import PT, LEAD, PAD, VPAD
 
 
 class CompileBoundQuery(unittest.TestCase):
-    def test_query_uses_exact_pdf_and_typst_content(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp)
-            (root / "build").mkdir()
-            (root / "typst").mkdir()
-            (root / "dist").mkdir()
-            source = root / "typst/content.typ"
-            pdf = root / "build/book-cream.pdf"
-            source.write_text("Typst fixture", encoding="utf-8")
-            pdf.write_bytes(b"PDF fixture bytes")
-            payload = {"substrate": "cream", "edition": "interior",
-                       "content_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
-                       "pdf_sha256": hashlib.sha256(pdf.read_bytes()).hexdigest(),
-                       "positions": {k: [] for k in query_typst.SELECTORS}}
-            (root / "build/query.json").write_text(json.dumps(payload), encoding="utf-8")
-            with patch.object(query_typst, "version", return_value="RC999"), \
-                 patch.object(query_typst, 'validate_sidecar', return_value=payload['positions']) as validate:
-                self.assertEqual(query_typst.compiled_positions(root), payload["positions"])
-                validate.assert_called_once_with(payload['positions'], pdf, root=root)
-                pdf.write_bytes(b"different PDF")
-                with self.assertRaisesRegex(ValueError, "Stale PDF"):
-                    query_typst.compiled_positions(root)
-                pdf.write_bytes(b"PDF fixture bytes")
-                source.write_text("different source", encoding="utf-8")
-                with self.assertRaisesRegex(ValueError, "Stale Typst"):
-                    query_typst.compiled_positions(root)
-
     def test_page_map_is_mandatory(self):
         self.assertIn("page_map_accuracy", MANDATORY_CHECKS)
 

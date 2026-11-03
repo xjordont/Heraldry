@@ -40,10 +40,8 @@ package: specimen
 # Both suites (tests/ and the art skill's), one module per process in parallel: same tests, same result.
 test:
 	$(PY) tools/run_tests.py
-# Installable skill zip and offline Work input package, built on request into build/art/ (never committed).
+# Installable art skill zip, built on request into build/art/ (never committed).
 art-packages:
 	$(PY) tools/art_skill_build.py
-	$(PY) tools/art_work_package.py build
-	$(PY) tools/art_work_package.py verify $(B)/art/Heraldry_Work_Input_$$($(PY) -c "import json;print(json.load(open('production/art/gpt/QUEUE.json'))['phase'])").zip
 clean:
 	rm -rf $(B) typst/content.typ

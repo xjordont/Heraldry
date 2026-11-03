@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh only the generated README status and recent-change blocks; never build the book."""
+"""Refresh only the generated README status block; never build the book."""
 from __future__ import annotations
 
 import argparse
@@ -104,7 +104,7 @@ def status_block(snapshot):
     pending = f" RC{number} source changes await a separately requested PDF build." if not tag.startswith(f"RC{number}-") else " Newer source/tooling changes may await a separately requested build."
     return "\n".join([
         f"- **Manuscript:** [RC{number}]({revision['path']}) (`source/versions.json`). Earlier snapshots are immutable.",
-        f"- **Last recorded delivery:** [{tag}]({delivery}){pages}.{pending} [Evidence and limits](production/RELEASE_STATUS.md).",
+        f"- **Last recorded delivery:** [{tag}]({delivery}){pages}.{pending} [Evidence and limits](production/STATE.md).",
         f"- **Last release workflow result:** {escape_markdown(str(result.get('result', 'UNAVAILABLE')))}. This records that run, not verification of newer inputs.",
         f"- **Illustration records:** {approved} approved of {len(records)}; {queue} generation-queue items.",
         f"- **Rules figures:** {total}; {current}/{total} current source/SVG/caption review bindings; {findings} open findings. [Review ledger](production/qa/figure-semantic-review.json).",
@@ -120,19 +120,7 @@ def render(root=ROOT, ref=None):
     elif (Path(root) / 'README.md').is_symlink():
         raise ValueError('README must be an ordinary file, not a symlink')
     text = snapshot.read('README.md').decode('utf-8')
-    # Validate both blocks before replacing either; nested/overlapping markers are invalid.
-    for name in ('status', 'recent'):
-        replace_block(text, name, '')
-    if text.index('<!-- END AUTO:status -->') >= text.index('<!-- BEGIN AUTO:recent -->'):
-        raise ValueError('README generated blocks must be separate, ordered status then recent')
-    text = replace_block(text, 'status', status_block(snapshot))
-    # Excluding README-only commits prevents the updater from listing itself forever.
-    output = git(root, 'log', '-6', '--format=%H%x09%s', ref or 'HEAD', '--', '.', ':!README.md').decode('utf-8')
-    recent = []
-    for line in output.splitlines():
-        sha, subject = line.split('\t', 1)
-        recent.append(f"- [`{sha[:8]}`](https://github.com/xjordont/Heraldry/commit/{sha}) {escape_markdown(subject)}")
-    return replace_block(text, 'recent', '\n'.join(recent) or 'No recorded changes yet.').encode('utf-8')
+    return replace_block(text, 'status', status_block(snapshot)).encode('utf-8')
 
 
 def api_json(repository, endpoint, token):

@@ -8,8 +8,7 @@ from manuscript import ROOT, check, version
 from provenance import check as check_build
 
 DIST = ROOT / "dist"
-INCLUDE = ["Makefile", "requirements.lock", "README.md", "BUILD.md", "CLAUDE.md", "AGENTS.md",
-           "MASTER_PROMPT.md", ".gitignore", ".claude", ".github", "tests",
+INCLUDE = ["Makefile", "requirements.lock", "README.md", "BUILD.md", "CLAUDE.md", "AGENTS.md", ".gitignore", ".claude", ".github", "tests",
            "source", "editorial", "typst", "tools", "figures", "fonts", "config", "docs", "assets", "production", "dist"]
 # style = owner-supplied generation references (never packaged); masters = raw generated art (ink derivatives ship)
 EXCLUDE_PARTS = {"__pycache__", "test", "private", ".git", "build", "style", "masters",
@@ -37,7 +36,8 @@ def files():
                 continue
             if f.suffix in {".pyc", ".zip", ".pem"} or f.name.startswith(".env"):
                 continue
-            if rel.parts[0] == "dist" and f.name.startswith("Heraldry_") and not f.name.startswith(f"Heraldry_{version()}_"):
+            # The release attaches its PDFs separately, and dist/RELEASE.json still names the previous release here.
+            if rel.parts[0] == "dist" and (f.suffix == ".pdf" or f.name == "RELEASE.json"):
                 continue
             if rel.parts[:3] == ("assets", "art", "incoming") and f.stem in natives:
                 continue

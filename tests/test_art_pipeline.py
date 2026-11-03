@@ -19,7 +19,7 @@ class ArtPipeline(unittest.TestCase):
             self.assertIn(a, ids)
 
     def test_prompt_quotes_flavour_verbatim(self):
-        import art_generate as g
+        import art_prompts as g
         e = next(x for x in g.entries() if x["family"] == "monster")
         p = g.prompt_for(e, True)
         self.assertIn('"' + e["flavour"] + '"', p)
@@ -48,7 +48,7 @@ class ArtPipeline(unittest.TestCase):
                     self.assertEqual(bool(by_block), approved)
 
     def test_reject_keeps_the_reviewers_reason_until_the_entry_is_approved(self):
-        import art_generate as g, art_intake
+        import art_prompts as g, art_intake
         from unittest.mock import patch
         with tempfile.TemporaryDirectory() as d:
             sel = Path(d) / "SELECTIONS.json"
@@ -79,7 +79,7 @@ class ArtPipeline(unittest.TestCase):
     def _reference_root(self):
         """A temporary repo root holding stand-in reference images, so the tests also pass in a release
         package, which does not ship the owner's style samples."""
-        import art_generate as g
+        import art_prompts as g
         tmp = tempfile.TemporaryDirectory()
         self.addCleanup(tmp.cleanup)
         root = Path(tmp.name)
@@ -94,14 +94,13 @@ class ArtPipeline(unittest.TestCase):
                 path = root / ref["path"]
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_text("version https://git-lfs.github.com/spec/v1\noid sha256:" + ref["sha256"] + "\nsize 1\n", newline="\n")
-        import art_composition
-        for i in art_composition.guides():
-            (root / art_composition.guide_path(i)).parent.mkdir(parents=True, exist_ok=True)
-            (root / art_composition.guide_path(i)).write_bytes(b"stand-in")
+        for i in g.guides():
+            (root / g.guide_path(i)).parent.mkdir(parents=True, exist_ok=True)
+            (root / g.guide_path(i)).write_bytes(b"stand-in")
         return root
 
     def _batch_queue(self):
-        import art_gpt_pack as pack, art_generate as g
+        import art_gpt_pack as pack, art_prompts as g
         ents = {e["id"]: e for e in g.entries()}
         # The full queue as it stood before any approvals: the live selections are all "approved" once the
         # illustrations are complete, which would leave the queue (and so this check) empty.
@@ -157,7 +156,7 @@ class ArtPipeline(unittest.TestCase):
         self.assertEqual({it["max_attempts"] for it in q["items"]}, {1})       # one generation per item (owner 2026-10-12)
 
     def test_hero_pair_references_are_ordered_and_hash_bound(self):
-        import art_gpt_pack as pack, art_generate as g
+        import art_gpt_pack as pack, art_prompts as g
         root = self._reference_root()
         heroes = [e for e in g.entries() if e["family"] == "hero"]
         self.assertEqual(len(heroes), 24)
@@ -204,7 +203,7 @@ class ArtPipeline(unittest.TestCase):
         self.assertIn("| Set | Reference images |", md)
 
     def test_gpt_anchor_queue_excludes_received_owner_anchor_and_lists_references(self):
-        import art_gpt_pack as pack, art_generate as g
+        import art_gpt_pack as pack, art_prompts as g
         ents = {e["id"]: e for e in g.entries()}
         sels = {"ART-BAS-GREYTHORN": {"route": "gpt", "status": "received"}}
         q, prompts = pack.build_queue("anchors", ents, sels, {}, root=self._reference_root())

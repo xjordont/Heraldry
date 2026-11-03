@@ -58,10 +58,6 @@
       "script": "tools/art_intake.py",
       "description": "Scan, review, approve, or reject delivered artwork."
     },
-    "art-package": {
-      "script": "tools/art_work_package.py",
-      "description": "Build, verify, and import offline art bundles."
-    },
     "art-worker": {
       "script": "production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py",
       "description": "Run the scoped image-production queue."

@@ -100,7 +100,7 @@
     "reference_band_rule": 0.5
   },
   "ornament": {
-    "family": "one original broken-ring and tapered-rule motif",
+    "family": "the armoury: castle logo, chapter arms, and shields (docs/DESIGN.md 12), with tapered rules",
     "maximum_marks_per_ordinary_page": 2,
     "ordinary_page_perimeter_frame": false,
     "decorative_watermark": false,
