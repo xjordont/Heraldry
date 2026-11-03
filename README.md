@@ -26,12 +26,12 @@ Targeted editorial, reader, and accessibility checks: [publication protocol](doc
 
 <!-- BEGIN AUTO:recent -->
 
+- [`65e90984`](https://github.com/xjordont/Heraldry/commit/65e90984e7171b705d34fda300fb4d91c544eab0) Remove the references/ tooling; simplify the ignore rules
 - [`16381cba`](https://github.com/xjordont/Heraldry/commit/16381cbabb47467f9e19ef84cf24c92169e623d4) Add cloud session setup and a blind editorial reviewer; fix preflight
 - [`d795a1ee`](https://github.com/xjordont/Heraldry/commit/d795a1eefec044e5a7300aa2341e422ab83f81cd) Delete research\_notes/Rulebook layout and density review directory
 - [`2957b43f`](https://github.com/xjordont/Heraldry/commit/2957b43fc48de8910020bc0ae3a9a35305442ea2) Delete references directory
 - [`e0407fbf`](https://github.com/xjordont/Heraldry/commit/e0407fbf2d16480910beedf35d900046d0f2b712) state: owner holds the rights to the reference books
 - [`cb08ce21`](https://github.com/xjordont/Heraldry/commit/cb08ce21cc8b166b8edf8f6244699260931edd61) Keep the reference books local only after purging them from history
-- [`2126ecc3`](https://github.com/xjordont/Heraldry/commit/2126ecc331e16eea810a33e21470d93f24250b9a) Guard commits and pushes; add /build-release skill
 
 <!-- END AUTO:recent -->
 
