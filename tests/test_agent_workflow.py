@@ -34,7 +34,7 @@ class SharedAgentWorkflows(unittest.TestCase):
             self.fixture(root)
             data = agent.catalog(root)
             self.assertEqual(set(data["clients"]), agent.CLIENTS)
-            self.assertEqual(len(data["roles"]), 5)
+            self.assertEqual(len(data["roles"]), 6)
             self.assertIn("art-intake", data["workflows"])
             self.assertIn("build", data["workflows"])
             self.assertIn("visual-review", data["workflows"])

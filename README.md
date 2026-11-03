@@ -4,7 +4,7 @@ The publication repository for the Heraldry Skirmish rulebook. It holds the manu
 
 ## Agent workflows
 
-Claude Code, Codex, and ChatGPT Work share the same repository workflows and five specialist roles. Start with [shared agent operations](docs/AGENT_OPERATIONS.md), `python tools/dev.py agent list`, and `python tools/dev.py agent check`. Platform tools and credentials must be available in the current session.
+Claude Code, Codex, and ChatGPT Work share the same repository workflows and six specialist roles. Start with [shared agent operations](docs/AGENT_OPERATIONS.md), `python tools/dev.py agent list`, and `python tools/dev.py agent check`. Platform tools and credentials must be available in the current session.
 
 ## Current state
 

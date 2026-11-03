@@ -7,6 +7,11 @@
   ],
   "roles": [
     {
+      "name": "blind-editorial-reviewer",
+      "instructions": "docs/agents/blind-editorial-reviewer.md",
+      "claude_adapter": ".claude/agents/blind-editorial-reviewer.md"
+    },
+    {
       "name": "book-designer",
       "instructions": "docs/agents/book-designer.md",
       "claude_adapter": ".claude/agents/book-designer.md"

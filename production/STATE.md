@@ -1,5 +1,15 @@
 # Production state - RC528 source, main
 
+## Cloud session setup; blind editorial reviewer; preflight after references removal - 2026-11-03
+
+Owner request, from the automation recommendations: add the cloud session setup hook and the blind editorial reviewer, and nothing else.
+
+- `.claude/hooks/session-start.sh` (SessionStart, Claude Code cloud sessions only): installs `requirements.lock` into `.venv` (skipped while the lock and the script are unchanged), puts `.venv` first on PATH, and fetches the 24 Hero portraits named in `basic-heroes.json`, the same list CI pulls. In a fresh pointer-only clone it took 17 seconds and fetched 24 real PNGs, leaving the rest of the art as pointers; a rerun took 0.1 seconds; a changed lock reinstalled; a failed install left no hash, so the next session retries; outside a cloud session it does nothing. With it, `test_hero_cards` passes in a cloud checkout for the first time.
+- `blind-editorial-reviewer`, a sixth shared role (`docs/agents/`, `.claude/agents/`, `config/agent_workflows.json`): read-only (Read, Grep, and Glob), Opus at high effort, and it rates current and proposed lines under shuffled keys without the rationale, as the RC528 humanizer review did. Preflight checks that it stays read-only and names the orchestrator model. Claude Code loads new agents at session start, so it was not run in the session that added it.
+- CI had been red since `2957b43` (the owner removed `references/`): preflight still required `references/reference_manifest.json` and `references/README.md`. It no longer requires them, and the manifest check passes with a note when the manifest is absent (it runs again if the folder returns). Nothing else was changed for the removal; `tools/render_reference_pages.py` and some docs still mention `references/`.
+
+Checks: `python tools/dev.py check` passes (401 tests in 43 modules, preflight 7 of 7); preflight fails, as intended, when the reviewer is given Edit. No manuscript, art, layout, or build change.
+
 ## Reference books: owner holds the rights - 2026-11-02
 
 Owner: "I own the rights to all those PDFs so stop worrying about it." Public access to the reference books is not a concern, so the GitHub Support request and the tag move listed in the purge entry below are optional, not required. The books stay local-only in `references/private/pdfs/` as set up by the purge; returning them to the repository would be an owner decision.
