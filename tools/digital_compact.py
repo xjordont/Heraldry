@@ -12,7 +12,6 @@ a print file (tools/check_art_ppi.py skips it by name).
 import argparse
 import io
 import json
-import sys
 from pathlib import Path
 
 import pymupdf
@@ -37,13 +36,15 @@ def compact(src, dst, ppi=150):
     doc = pymupdf.open(str(src))
     before = {"pages": len(doc), "toc": len(doc.get_toc()), "links": sum(len(p.get_links()) for p in doc),
               "attachments": doc.embfile_count(), "bytes": Path(src).stat().st_size}
-    # Smallest placement of every image xref across the book decides its new size.
-    placed = {}
+    # Smallest placement of every image xref across the book decides its new size; the first page that shows an
+    # image is where it is replaced (one scan of the book, not one per image).
+    placed, first_page = {}, {}
     for page in doc:
         for info in page.get_image_info(xrefs=True):
             xref = info.get("xref")
             if not xref:
                 continue
+            first_page.setdefault(xref, page.number)
             x0, y0, x1, y1 = info["bbox"]
             if x1 - x0 < 2 or y1 - y0 < 2:
                 continue
@@ -62,10 +63,12 @@ def compact(src, dst, ppi=150):
         pil = pixmap_image(doc, xref).resize(new_size, Image.LANCZOS)
         buffer = io.BytesIO()
         pil.save(buffer, format="PNG", optimize=True)
-        page = next(p for p in doc if any(i.get("xref") == xref for i in p.get_image_info(xrefs=True)))
-        page.replace_image(xref, stream=buffer.getvalue())
+        doc[first_page[xref]].replace_image(xref, stream=buffer.getvalue())
         changed.append({"xref": xref, "pixels": [wpx, hpx], "new_pixels": list(new_size), "placed_in": round(w_in, 3)})
-    doc.save(str(dst), garbage=4, deflate=True, deflate_images=True, deflate_fonts=True)
+    # garbage=2 drops the replaced image streams and compacts the xref table; garbage=3/4 also hunt for duplicate
+    # objects, which took over two minutes for 0.4% of the size. no_new_id keeps the file ID, so the same digital PDF
+    # always yields the same companion (candidate and release match byte for byte).
+    doc.save(str(dst), garbage=2, deflate=True, deflate_images=True, deflate_fonts=True, no_new_id=True)
     doc.close()
     with pymupdf.open(str(dst)) as out:
         after = {"pages": len(out), "toc": len(out.get_toc()), "links": sum(len(p.get_links()) for p in out),

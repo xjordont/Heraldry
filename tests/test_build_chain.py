@@ -20,7 +20,11 @@ def verification_status(*failed):
 
 
 def workflow(name):
-    return (ROOT / ".github/workflows" / name).read_text(encoding="utf-8")
+    text = (ROOT / ".github/workflows" / name).read_text(encoding="utf-8")
+    # A build workflow is checked together with the shared setup steps it runs.
+    if "uses: ./.github/actions/build-setup" in text:
+        text = (ROOT / ".github/actions/build-setup/action.yml").read_text(encoding="utf-8") + text
+    return text
 
 
 def step_with_id(text, step_id):
@@ -49,6 +53,7 @@ class BuildChain(unittest.TestCase):
         self.assertIn("tools/review_aids.py", cand)
         self.assertIn("tools/release_result.py", rel)
         for wf in (cand, rel):
+            self.assertIn("uses: ./.github/actions/build-setup", wf, "both builds share one setup")
             self.assertIn("assets/art/cover/front.png", wf, "the cover is an LFS file the build places")
 
     def test_candidate_publication_requires_fresh_automated_verification(self):

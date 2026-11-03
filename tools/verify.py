@@ -2,7 +2,8 @@
 """Release verification gate. Runs every deterministic check on the digital edition in dist/ and on the
 interior composition it is built from (build/book-cream.pdf, never delivered), and writes production/qa/*.json plus production/qa/STATUS.json. Exits non-zero when a
 mandatory check fails, so a failed build cannot be labelled an unconditional release."""
-import hashlib, json, subprocess, sys
+import hashlib, json, os, subprocess, sys
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -112,7 +113,29 @@ def main():
     st = {}
     provenance = check_provenance()
     st["build_provenance"] = "PASS"
-    st["source_preflight"], _ = run(["tools/preflight.py", "--report", "production/preflight.json"])
+    # The checker tools are independent processes, each writing only its own report, so they run side by side;
+    # the two that read build/positions.json start once it is written. Results keep the original key order.
+    with ThreadPoolExecutor(max_workers=max(2, os.cpu_count() or 2)) as pool:
+        jobs = {
+            "source_preflight": pool.submit(run, ["tools/preflight.py", "--report", "production/preflight.json"]),
+            "reconciliation": pool.submit(run, ["tools/reconcile.py", str(interior), "--report", str(QA / "reconciliation.json")],
+                                          QA / "reconciliation.json"),
+            "reconciliation_digital": pool.submit(run, ["tools/reconcile.py", str(digital), "--skip-covers", "--report",
+                                                        str(QA / "reconciliation-digital.json")], QA / "reconciliation-digital.json"),
+            "layout_detectors": pool.submit(layout_check, interior, QA / "layout.json"),
+            "xref_audit": pool.submit(run, ["tools/xref_audit.py"]),
+            "monster_references": pool.submit(run, ["tools/rules_consistency.py"], QA / "rules-consistency.json"),
+            "figure_semantic_review": pool.submit(run, ["tools/figure_review_gate.py", "--report", str(QA / "figure-review-gate.json")],
+                                                  QA / "figure-review-gate.json"),
+        }
+        tquery("<um-pos>")
+        (ROOT / "build/positions.json").write_text(json.dumps(QUERY_CACHE))
+        jobs["page_map_accuracy"] = pool.submit(run, ["tools/page_map_accuracy.py", "--positions", "build/positions.json", "--pdf",
+                                                      str(interior), "--report", str(QA / "page-map-accuracy.json")], QA / "page-map-accuracy.json")
+        jobs["one_page_keeps"] = pool.submit(run, ["tools/keep_audit.py", "--positions", "build/positions.json", "--pdf", str(interior),
+                                                   "--report", str(QA / "keep-audit.json")], QA / "keep-audit.json")
+        result = {name: job.result()[0] for name, job in jobs.items()}
+    st["source_preflight"] = result["source_preflight"]
     pf = load_json(ROOT / "production/preflight.json") or {}
     src_ok = "FAIL"
     for c in pf.get("checks", []):
@@ -120,20 +143,12 @@ def main():
             src_ok = c.get("status", "FAIL")
             break
     st["source_integrity"] = src_ok
-    st["reconciliation"], _ = run(["tools/reconcile.py", str(interior), "--report", str(QA / "reconciliation.json")], QA / "reconciliation.json")
-    st["reconciliation_digital"], _ = run(["tools/reconcile.py", str(digital), "--skip-covers", "--report", str(QA / "reconciliation-digital.json")], QA / "reconciliation-digital.json")
-    st["layout_detectors"], _ = layout_check(interior, QA / "layout.json")
-    tquery("<um-pos>")
-    (ROOT / "build/positions.json").write_text(json.dumps(QUERY_CACHE))
-    st["page_map_accuracy"], _ = run(["tools/page_map_accuracy.py", "--positions", "build/positions.json", "--pdf", str(interior),
-                                      "--report", str(QA / "page-map-accuracy.json")], QA / "page-map-accuracy.json")
-    st["one_page_keeps"], _ = run(["tools/keep_audit.py", "--positions", "build/positions.json", "--pdf", str(interior),
-                                   "--report", str(QA / "keep-audit.json")], QA / "keep-audit.json")
-    st["xref_audit"], _ = run(["tools/xref_audit.py"])
+    for name in ("reconciliation", "reconciliation_digital", "layout_detectors", "page_map_accuracy", "one_page_keeps"):
+        st[name] = result[name]
     xr = load_json(QA / "xref-audit.json") or {}
-    st["xref_audit"] = "PASS" if st["xref_audit"] == "PASS" and not xr.get("unresolved") and not xr.get("duplicate_heading_numbers") else "FAIL"
+    st["xref_audit"] = "PASS" if result["xref_audit"] == "PASS" and not xr.get("unresolved") and not xr.get("duplicate_heading_numbers") else "FAIL"
 
-    st["monster_references"], _ = run(["tools/rules_consistency.py"], QA / "rules-consistency.json")
+    st["monster_references"] = result["monster_references"]
 
     try:
         from pypdf import PdfReader
@@ -210,7 +225,7 @@ def main():
     else:
         st["figures_placed"] = "NOT TESTED"
     # figure semantic review must be current (hash-bound to the SVG and caption) and free of open majors
-    st["figure_semantic_review"], _ = run(["tools/figure_review_gate.py", "--report", str(QA / "figure-review-gate.json")], QA / "figure-review-gate.json")
+    st["figure_semantic_review"] = result["figure_semantic_review"]
 
     declared = [x["id"] for x in json.loads((ROOT / "editorial/patches.json").read_text())["patches"] if x.get("status") == "applied"]
     applied = load_json(ROOT / "build/blocks.json") or {}

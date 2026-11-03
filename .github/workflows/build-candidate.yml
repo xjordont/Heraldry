@@ -29,42 +29,9 @@ jobs:
         with:
           fetch-depth: 0
           filter: blob:none
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: pip
-          cache-dependency-path: requirements.lock
-      - name: Reuse verified unit measurements
-        # Measurement entries self-validate their complete input identity and PDF.
-        # Keep them outside build/ so the required clean build can reuse them.
-        uses: actions/cache@v4
-        with:
-          path: .cache/layout-measurements
-          key: layout-measurements-v1-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
-          restore-keys: layout-measurements-v1-${{ runner.os }}-
-      - name: List the artwork the build places
-        run: |
-          mkdir -p build
-          L='assets/art/incoming/ART-CH*-001.png,assets/art/incoming/ART-COVER-001.png,assets/art/ink/*.png,assets/art/cover/front.png,assets/art/cover/front-owner.jpg'
-          echo "LFS_ART=$L" >> "$GITHUB_ENV"
-          git lfs ls-files -l -I "$L" | cut -d' ' -f1 | sort > build/lfs-art.txt
-      - name: Reuse artwork fetched by earlier builds
-        uses: actions/cache@v4
-        with:
-          path: .git/lfs/objects
-          key: lfs-art-${{ hashFiles('build/lfs-art.txt') }}
-          restore-keys: lfs-art-
-      - name: Fetch that artwork
-        id: lfs
-        run: git lfs pull --include="$LFS_ART" --exclude=""
-      - name: Check reviewed artwork masters
-        id: art
-        run: python tools/check_art.py
-      - name: Install locked publishing dependencies
-        id: deps
-        run: |
-          python -m pip install -r requirements.lock
-          python tools/check_dependencies.py --publish
+      - name: Set up Python, the book's artwork, and the locked dependencies
+        id: setup
+        uses: ./.github/actions/build-setup
       - name: Tests and clean build
         id: build
         run: make PY=python test clean all
@@ -103,7 +70,7 @@ jobs:
       - name: Record the result on main
         if: always()
         env:
-          FAILED_STEP: ${{ steps.lfs.outcome == 'failure' && 'fetch artwork' || steps.art.outcome == 'failure' && 'check artwork' || steps.deps.outcome == 'failure' && 'install dependencies' || steps.build.outcome == 'failure' && 'tests and clean build' || steps.gate.outcome != 'success' && 'candidate verification gate' || steps.aids.outcome != 'success' && 'review aids' || steps.release.outcome != 'success' && 'publish pre-release' || '' }}
+          FAILED_STEP: ${{ steps.setup.outcome == 'failure' && 'set up artwork and dependencies' || steps.build.outcome == 'failure' && 'tests and clean build' || steps.gate.outcome != 'success' && 'candidate verification gate' || steps.aids.outcome != 'success' && 'review aids' || steps.release.outcome != 'success' && 'publish pre-release' || '' }}
         run: |
           RID=$(python -c "import json;print(json.load(open('production/build-request.json'))['request_id'])" 2>/dev/null || echo "manual-$GITHUB_RUN_ID")
           python tools/build_status.py --request-id "$RID" --failed-step "$FAILED_STEP" --source-commit "$GITHUB_SHA" \

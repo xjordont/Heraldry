@@ -8,22 +8,6 @@
     "mechanical_work": "haiku",
     "max_concurrent_subagents": 2
   },
-  "format": {
-    "trim_width_inches": 8.5,
-    "trim_height_inches": 11,
-    "orientation": "portrait",
-    "inside_margin_inches": 0.625,
-    "outside_margin_inches": 0.5833333333333334,
-    "top_margin_inches": 0.625,
-    "bottom_margin_inches": 0.625,
-    "column_gap_inches": 0.225,
-    "body_font_size_pt": 10.5,
-    "body_leading_pt": 13.925,
-    "table_font_size_pt": 9,
-    "minimum_essential_text_pt": 9,
-    "profile_authority": "config/design_tokens.json; mirrored values checked by tools/layout_profile.py",
-    "body_leading_semantics": "baseline estimate: 1.05 em font box plus 2.9 pt additive Typst leading; specimen validates actual pitch"
-  },
   "image_generation": {
     "route": "chatgpt_builtin",
     "external_api_generation": false,
@@ -41,12 +25,6 @@
     "illustration_credit": "None (owner, 2026-10-29)",
     "authority": "Owner instruction 2026-10-29: version is the manuscript version; author Jordon; publisher Escutcheon Press; omit ISBN; no illustration credits.",
     "publisher_logo": "assets/art/brand/escutcheon-press-logo.png (owner-supplied 2026-10-30; source escutcheon-press-logo-source.jpg; ink by tools/brand_ink.py)"
-  },
-  "page": {
-    "width_pt": 612,
-    "height_pt": 792,
-    "landscape_pages_allowed": false,
-    "essential_edge_safe_inches": 0.375
   },
   "workflow": {
     "working_branch": "main",

@@ -80,7 +80,7 @@ def main():
             return 0
         if run(python, "tools/update_readme.py", "--write"):
             return 1
-        if run(python, "tools/preflight.py", "--baseline", "--report", str(report / "preflight.json")):
+        if run(python, "tools/preflight.py", "--report", str(report / "preflight.json")):
             return 1
         if run(python, "tools/check_history.py", "--base", args.base):
             return 1

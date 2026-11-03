@@ -1,0 +1,41 @@
+name: Publication build setup
+description: >-
+  Shared by Build candidate and Rebuild verified delivery, after checkout. Python 3.12 with the locked
+  dependencies, the reusable layout measurements, and only the Git LFS artwork the book places.
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+        cache: pip
+        cache-dependency-path: requirements.lock
+    - name: Reuse verified unit measurements
+      # Measurement entries self-validate their complete input identity and PDF. They live outside build/,
+      # so the required clean build can reuse them, and an exact rebuild converges in one pass.
+      uses: actions/cache@v4
+      with:
+        path: .cache/layout-measurements
+        key: layout-measurements-v1-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
+        restore-keys: layout-measurements-v1-${{ runner.os }}-
+    - name: List the artwork the book places
+      # The twelve atmospheric masters, the ink derivatives, and the cover; generated natives are not build inputs.
+      id: art
+      shell: bash
+      run: |
+        art='assets/art/incoming/ART-CH*-001.png,assets/art/incoming/ART-COVER-001.png,assets/art/ink/*.png,assets/art/cover/front.png,assets/art/cover/front-owner.jpg'
+        echo "LFS_ART=$art" >> "$GITHUB_ENV"
+        echo "key=lfs-art-$(git lfs ls-files -l -I "$art" | cut -d' ' -f1 | sort | sha256sum | cut -c1-64)" >> "$GITHUB_OUTPUT"
+    - name: Reuse artwork fetched by earlier builds
+      uses: actions/cache@v4
+      with:
+        path: .git/lfs/objects
+        key: ${{ steps.art.outputs.key }}
+        restore-keys: lfs-art-
+    - name: Fetch that artwork (only objects not already cached), check it, and install the locked dependencies
+      shell: bash
+      run: |
+        git lfs pull --include="$LFS_ART" --exclude=""
+        python tools/check_art.py
+        python -m pip install -r requirements.lock
+        python tools/check_dependencies.py --publish

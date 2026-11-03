@@ -7,8 +7,8 @@ The workflow answers by committing production/BUILD_STATUS.json, which `wait` re
 
     python tools/build_request.py check                    # is main ready to build? (read-only)
     python tools/build_request.py request                  # check, write and push the request; prints the request id
-    python tools/build_request.py wait --id ID [--timeout-min 100] [--interval-sec 240]
-    python tools/build_request.py release-wait --ledger-commit SHA [--timeout-min 60] [--interval-sec 240]   # after the review is bound and pushed
+    python tools/build_request.py wait --id ID [--timeout-min 100] [--interval-sec 120]
+    python tools/build_request.py release-wait --ledger-commit SHA [--timeout-min 60] [--interval-sec 120]   # after the review is bound and pushed
 
 Exit codes: 0 ok / candidate ready, 2 not ready or build failed, 3 timed out.
 """
@@ -138,12 +138,12 @@ def main():
     w = sub.add_parser("wait")
     w.add_argument("--id", required=True)
     w.add_argument("--timeout-min", type=int, default=100)
-    w.add_argument("--interval-sec", type=int, default=240)
+    w.add_argument("--interval-sec", type=int, default=120)
     w.set_defaults(f=cmd_wait)
     rw = sub.add_parser("release-wait")
     rw.add_argument("--ledger-commit", required=True)
     rw.add_argument("--timeout-min", type=int, default=60)
-    rw.add_argument("--interval-sec", type=int, default=240)
+    rw.add_argument("--interval-sec", type=int, default=120)
     rw.set_defaults(f=cmd_release_wait)
     a = ap.parse_args()
     sys.exit(a.f(a))

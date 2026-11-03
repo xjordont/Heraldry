@@ -2,6 +2,17 @@
 
 Newest first. Entries before 2026-11-01 are in `production/history/STATE-2026-10.md`; search it by keyword.
 
+## Build times: compact companion 12 times faster, verify in parallel, one setup - 2026-11-03
+
+Owner request: "an optimization and simplification pass ... of the codebase and workflow on GitHub. Hopefully, we can get build times down and reduce redundancy." GitHub's step timings showed where the time went: the candidate spent 21.5 of its 27 minutes in `make test clean all`, of which `tools/digital_compact.py` alone took 10.9 minutes, and verify took 4.3; the release spent 12 of its 24 minutes in the same compaction (its rebuild is only about 3 minutes, because the measurement cache hits and the layout converges in one pass, so reusing the candidate's files instead of rebuilding would save little and was not done).
+
+- **`tools/digital_compact.py`.** For each of 334 images it rescanned all 628 pages to find where the image sits; it now records that during its one scan. Its save used `garbage=4`, which hunts for duplicate objects and took over two minutes for 0.4% of the size; it now uses `garbage=2`, and `no_new_id` keeps the file ID. On the released RC528-build-43 digital PDF, here: 18 min 23 s before, 1 min 28 s after; same pages, bookmarks, links, attachments, and lowest raster (149.7 ppi); 62.50 MB instead of 62.24 MB; and the companion is now reproducible (two runs give identical bytes, so the candidate's and the release's will match). The rescan fix alone was checked to give byte-identical output apart from the file ID.
+- **`tools/verify.py`** runs its independent checker tools side by side (each writes only its own report); the two that read `build/positions.json` start once it is written, and `STATUS.json` keeps its key order.
+- **One shared setup.** `.github/actions/build-setup/action.yml` replaces the eight setup steps both build workflows repeated (Python and the lock, the measurement cache, the LFS art list, its cache and fetch, the art check, and the dependency check).
+- **Simpler.** `config/production.json` no longer mirrors page geometry and type from `config/design_tokens.json` (the only source; preflight checks the tokens directly). Preflight drops `--baseline` (it repeated `manuscript.check`) and its machine-specific tool probe, so a local `make` no longer rewrites `production/preflight.json` with this machine's details. The art intake reads its Pillow pin from `requirements.lock`; the unused `make digital` alias is gone; `build_request.py wait` and `release-wait` poll every 120 s instead of 240.
+
+Expected effect, first seen at the next requested build: the candidate falls from about 27 to about 15 minutes and the release from about 24 to about 11. No manuscript, art, or rendered page changed; the tool and config changes alter the PDF's embedded input identity, so the next build re-measures once. Checks: 378 tests in 41 modules pass; preflight passes; every workflow parses.
+
 ## Project audit: retirements, simpler docs, and release fixes - 2026-11-03
 
 Owner request: "broadly audit the entire project to ensure everything is set up as elegantly and simply as possible." Four read-only audits (tools and tests, workflows, docs, data and config) were checked finding by finding; the owner then approved four retirements, three release and README changes, and merging the design documents. No manuscript, art, or build change; nothing alters a rendered page, but tool, config, font, and Typst changes alter the PDF's embedded input identity, so the next build re-measures once.

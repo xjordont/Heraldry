@@ -44,7 +44,7 @@ jobs:
       - name: Check locked dependencies and native imports
         run: python tools/check_dependencies.py --ci
       - name: Check immutable manuscript chain and production contracts
-        run: python tools/preflight.py --baseline
+        run: python tools/preflight.py
       - name: Run both test suites (repository and art skill), modules in parallel
         run: python tools/run_tests.py
       - name: Protect prior snapshots and revision records

@@ -37,6 +37,7 @@ The candidate skips steps 1, 3, 4, and 5, so a candidate can pass and its releas
 |---|---|
 | `tools/build_request.py` | Standard library only: `check`, `request`, `wait`, `release-wait` |
 | `production/build-request.json` | The trigger: `request_id`, time, and base commit |
+| `.github/actions/build-setup/action.yml` | The setup both build workflows share: Python and the locked dependencies, the layout-measurement cache, and only the LFS artwork the book places |
 | `.github/workflows/build-candidate.yml` | Runs on a push of the request file (or by hand); builds, verifies, makes the review aids, publishes the pre-release, and commits `BUILD_STATUS.json` (also on failure) and `production/qa/review/` |
 | `tools/build_status.py` | `CANDIDATE_READY` (only `visual_review_currency` failing) or `FAILED`, with PDF hashes |
 | `tools/review_aids.py` | 24-page contact sheets of the digital PDF, 100 dpi detail pages, both covers, and `manifest.json` |

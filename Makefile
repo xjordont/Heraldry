@@ -5,7 +5,7 @@ DIST := dist
 B := build
 
 .NOTPARALLEL:
-.PHONY: all deps doctor check status fonts parse figures book release-files digital specimen verify package clean test art-packages
+.PHONY: all deps doctor check status fonts parse figures book release-files specimen verify package clean test art-packages
 all: release-files
 
 deps:
@@ -29,7 +29,6 @@ release-files: book
 	cp $(B)/book-digital.pdf $(DIST)/Heraldry_$(VERSION)_digital.pdf
 	$(PY) tools/digital_compact.py $(DIST)/Heraldry_$(VERSION)_digital.pdf $(DIST)/Heraldry_$(VERSION)_digital-compact.pdf --report production/qa/digital-compact.json
 	$(PY) tools/provenance.py
-digital: release-files
 verify:
 	$(PY) tools/verify.py
 # Table specimen targets use the freshly verified table page map.

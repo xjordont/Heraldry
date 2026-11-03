@@ -87,19 +87,14 @@ class LayoutSourceContract(unittest.TestCase):
         self.assertLess(block.index("#line(length: 100%"), block.index('#tmark(id, "e")'))
 
     def test_effective_layout_profile_matches_renderer(self):
-        prod = json.loads((ROOT / "config/production.json").read_text(encoding="utf-8"))
         tokens = json.loads((ROOT / "config/design_tokens.json").read_text(encoding="utf-8"))
         v4 = (ROOT / "typst/templates/system.typ").read_text(encoding="utf-8")
         book = (ROOT / "typst/heraldry.typ").read_text(encoding="utf-8")
-        fmt = prod["format"]
         self.assertIn('json("../../config/design_tokens.json")', v4)
         self.assertIn('#let body-size = type-token.body * 1pt', v4)
-        from layout_profile import validate, MARGIN_INSIDE_PT, MARGIN_OUTSIDE_PT, MARGIN_TOP_PT, COLUMN_GAP_PT
+        from layout_profile import validate, BODY_SIZE_PT, TABLE_SIZE_PT
         self.assertTrue(validate())
-        for key, value in (('inside_margin_inches', MARGIN_INSIDE_PT), ('outside_margin_inches', MARGIN_OUTSIDE_PT),
-                           ('top_margin_inches', MARGIN_TOP_PT), ('column_gap_inches', COLUMN_GAP_PT)):
-            self.assertAlmostEqual(fmt[key], value / 72)
-        self.assertEqual((fmt["body_font_size_pt"], fmt["table_font_size_pt"]), (10.5, 9))
+        self.assertEqual((BODY_SIZE_PT, TABLE_SIZE_PT), (10.5, 9))
         self.assertEqual((tokens["type_pt"]["body"], tokens["type_pt"]["chapter"],
                           tokens["fonts"]["max_families"]), (10.5, 50, 4))
         self.assertIn("#let table-size = v4.table-size", book)

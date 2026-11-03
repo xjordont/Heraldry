@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install image library
-        run: python -m pip install pillow==12.3.0
+        run: python -m pip install "$(grep '^pillow==' requirements.lock)"
       - name: Ink-prepare, record and commit new images
         # Each attempt starts from the newest main, so runs that queue behind each other (one Codex push per
         # image) never re-process or conflict over an image an earlier run already recorded.
@@ -45,7 +45,7 @@ jobs:
             python tools/art_intake.py scan
             git add assets/art/ink production/art/SELECTIONS.json
             if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
-            git commit -q -m "art: intake of ChatGPT Work images"
+            git commit -q -m "art: intake of delivered images"
             if git push -q origin HEAD:main; then exit 0; fi
             echo "main moved during intake; retrying from the new head"
             sleep $((i * 3))

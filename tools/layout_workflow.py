@@ -53,7 +53,7 @@ def stage_groups(out, *, checks_only=False):
         return Stage(name, tuple(args) + (("--report", str(path)) if path else ()), path, kind)
     checks = [
         [task('dependencies', 'tools/check_dependencies.py')],
-        [task('preflight', 'tools/preflight.py', '--baseline', kind='preflight')],
+        [task('preflight', 'tools/preflight.py', kind='preflight')],
     ]
     if checks_only:
         # Fast iteration checks; these do not replace the full pre-push suite.

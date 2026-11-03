@@ -12,7 +12,7 @@ Git follows `AGENTS.md`: sync with `git pull --ff-only origin main`. If a push (
 1. Start from a clean tree (`git status --short` is empty), then run `git pull --ff-only origin main`.
 2. Run `PY tools/build_request.py check` and fix whatever readiness problem it reports.
 3. Run `PY tools/build_request.py request` and note the request id. This push starts the GitHub workflow "Build candidate".
-4. Run `PY tools/build_request.py wait --id <id>`. It polls every 240 seconds for up to 100 minutes (about 25 polls).
+4. Run `PY tools/build_request.py wait --id <id>`. It polls every 120 seconds for up to 100 minutes; a candidate takes about 15 minutes.
    - `CANDIDATE_READY`: continue.
    - `FAILED`: read `note`, `failed_checks`, and `run_url`, fix the cause, push the fix, and request a fresh candidate.
    - Timed out: check the run's status before waiting longer. Don't submit duplicate requests.
@@ -44,7 +44,7 @@ Git follows `AGENTS.md`: sync with `git pull --ff-only origin main`. If a push (
    - Success: it commits and pushes `production/qa/visual-review.json` and prints the ledger commit SHA. That push starts the release workflow. If you had to rebase before the push landed, the ledger commit is the new `HEAD` (`git rev-parse HEAD`).
 
 ## 3. Wait for the release
-9. Run `PY tools/build_request.py release-wait --ledger-commit <SHA>`. It polls every 240 seconds for up to 60 minutes (about 15 polls).
+9. Run `PY tools/build_request.py release-wait --ledger-commit <SHA>`. It polls every 120 seconds for up to 60 minutes; a release takes about 10 minutes.
    - `RELEASED`: print the JSON, and check that the digital PDF's SHA-256 in `dist/RELEASE.json` equals the reviewed one in `production/BUILD_STATUS.json`.
    - `FAILED`: read `note` and `run_url`, fix the cause, and re-dispatch the delivery. A changed PDF needs a fresh candidate review.
 

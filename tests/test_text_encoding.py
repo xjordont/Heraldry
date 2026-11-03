@@ -24,7 +24,7 @@ class TextEncoding(unittest.TestCase):
     def test_preflight_checks_real_utf8_evidence_without_a_locale_override(self):
         with tempfile.TemporaryDirectory() as d:
             report = Path(d) / "preflight.json"
-            self.run_strict("tools/preflight.py", "--baseline", "--report", str(report))
+            self.run_strict("tools/preflight.py", "--report", str(report))
             result = json.loads(report.read_text(encoding="utf-8"))
             self.assertEqual(result["kit_status"], "PASS")
             self.assertTrue(all(c["status"] == "PASS" for c in result["checks"]))
