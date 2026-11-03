@@ -17,26 +17,30 @@ TOP, BOT = MARGIN_TOP_PT, H - MARGIN_BOTTOM_PT
 TAB = MARGIN_OUTSIDE_PT + TOKENS["ornament"].get("tab_halo_pt", 0)
 
 
-def lines_of(page, fonts=False):
+def page_text(page):
+    """The page's text twice: with font metric boxes, and with glyph-ink boxes. Rotated navigation keywords are
+    measured by their ink, not the font's tall metric box. Extracted once per page and shared by every detector."""
+    return (page.get_text("dict"),
+            page.get_text("dict", flags=pymupdf.TEXTFLAGS_DICT | pymupdf.TEXT_ACCURATE_BBOXES))
+
+
+def lines_of(page, fonts=False, text=None):
     out = []
-    flat = page.get_text("dict")
-    # rotated navigation keywords are measured by their glyph ink, not the font's tall metric box
-    ink = page.get_text("dict", flags=pymupdf.TEXTFLAGS_DICT | pymupdf.TEXT_ACCURATE_BBOXES)
+    flat, ink = text if text is not None else page_text(page)
     lines = [l for b in flat["blocks"] for l in b.get("lines", []) if abs(l["dir"][0]) >= 0.5]
     lines += [l for b in ink["blocks"] for l in b.get("lines", []) if abs(l["dir"][0]) < 0.5]
     for l in lines:
-        if True:
-            txt = "".join(s["text"] for s in l["spans"]).strip()
-            if not txt:
-                continue
-            size = max(s["size"] for s in l["spans"])
-            out.append((pymupdf.Rect(l["bbox"]), txt, size) + ((l["spans"][0]["font"],) if fonts else ()))
+        txt = "".join(s["text"] for s in l["spans"]).strip()
+        if not txt:
+            continue
+        size = max(s["size"] for s in l["spans"])
+        out.append((pymupdf.Rect(l["bbox"]), txt, size) + ((l["spans"][0]["font"],) if fonts else ()))
     return out
 
 
-def stranded_headings(page):
+def stranded_headings(page, text=None):
     """Heading-styled line in the last 60 pt of a column with < 2 lines after it in that column."""
-    ls = lines_of(page, fonts=True)
+    ls = lines_of(page, fonts=True, text=text)
     hits = []
     for r, t, sz, f in ls:
         is_head = ("Grenze" in f and sz > 12) or ("Serif4-Semibold" in f and sz > 12) or ("Serif4-Bold" in f and sz > 10.8)
@@ -59,8 +63,9 @@ def main():
     flags, diagnostics = [], []
     for i, page in enumerate(doc):
         n = i + 1
-        diagnostics.append(page_diagnostics(page, n, top=TOP, bottom=BOT, tab=TAB))
-        ls = lines_of(page)
+        text, drawings = page_text(page), page.get_drawings()
+        diagnostics.append(page_diagnostics(page, n, top=TOP, bottom=BOT, tab=TAB, text_dict=text[0], drawings=drawings))
+        ls = lines_of(page, text=text)
         # overlap: shrink boxes slightly (ascender/descender overlap is normal)
         boxes = [(pymupdf.Rect(r.x0 + 1, r.y0 + r.height * 0.3, r.x1 - 1, r.y1 - r.height * 0.3), t, s) for r, t, s in ls]
         for x in range(len(boxes)):
@@ -81,7 +86,7 @@ def main():
             if not furniture and (r.y1 > BOT + 2 or r.y0 < TOP - 14):
                 flags.append({"page": n, "code": "outside_body_frame", "text": t[:50], "bbox": [round(v) for v in r]})
         if n >= first_body_page:
-            for t in stranded_headings(page):
+            for t in stranded_headings(page, text=text):
                 flags.append({"page": n, "code": "stranded_heading", "text": t})
         # a body line overlaps the frame: left-column lines start exactly at the margin, so an open test
         # on x0 would drop them and the page would read as empty (local build 2026-11-01)
@@ -89,7 +94,7 @@ def main():
         # furniture (running-head rules, folio shield, tab) draws on every page, so only art or drawings
         # inside the body frame count as content
         body_art = [im for im in page.get_image_info() if im["bbox"][1] > TOP and im["bbox"][3] - im["bbox"][1] > 40]
-        body_drw = [dr for dr in page.get_drawings() if dr["rect"].y0 > TOP + 4 and dr["rect"].y1 < BOT - 4
+        body_drw = [dr for dr in drawings if dr["rect"].y0 > TOP + 4 and dr["rect"].y1 < BOT - 4
                     and dr["rect"].x0 < W - TAB and dr["rect"].x1 > TAB and dr["rect"].width > 4]
         # a deliberate blank verso before a chapter opener (Chapter 1 starts on a recto) is book convention
         blank_verso = not body and n % 2 == 0 and n < len(doc) and "Chapter " in doc[n].get_text()[:400]

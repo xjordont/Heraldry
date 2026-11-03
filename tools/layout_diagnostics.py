@@ -23,10 +23,11 @@ def interval_summary(intervals, top, bottom):
             "bottom_empty_band_pt": round(bottom - merged[-1][1], 2) if merged else round(bottom - top, 2)}
 
 
-def page_diagnostics(page, number, *, top, bottom, tab):
+def page_diagnostics(page, number, *, top, bottom, tab, text_dict=None, drawings=None):
+    """text_dict and drawings let a caller that already extracted the page pass them in (the same values)."""
     width = page.rect.width
     text, intervals, short, baselines = [], [], [], []
-    for block in page.get_text("dict")["blocks"]:
+    for block in (text_dict if text_dict is not None else page.get_text("dict"))["blocks"]:
         body_lines = []
         for line in block.get("lines", []):
             spans = line["spans"]
@@ -46,7 +47,7 @@ def page_diagnostics(page, number, *, top, bottom, tab):
         x0, y0, x1, y1 = image["bbox"]
         if x1 > tab and x0 < width - tab:
             intervals.append((y0, y1))
-    for drawing in page.get_drawings():
+    for drawing in (drawings if drawings is not None else page.get_drawings()):
         rect = drawing["rect"]
         # Full-sheet substrate and running furniture are not body occupancy. A drawing counts only when
         # at least half of its width lies inside the body frame: the thumb-tab pennant and the opener
