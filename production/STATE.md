@@ -2,6 +2,27 @@
 
 Newest first. Entries before 2026-11-01 are in `production/history/STATE-2026-10.md`; search it by keyword.
 
+## RC528-build-44 released after four candidates and layout fixes - 2026-11-06
+
+Owner request: `/build-release`, then, when candidate 18's review found major defects, "Fix the layout, then release (Recommended)".
+
+- **Candidate 18** (request `20261106T134010Z`) failed review. Its majors were all pre-existing, pixel-identical in RC528-build-43: stacked column bands that read as one column (pp. 197, 402, 432, 485, 493), a running-head shield cropped to a band, "Preparation Steps" stranded from its steps (p. 370), and an Ashborn profile opening at a column foot (p. 578). They were fixed in `f28bded` (the shield) and `c0fa950` (a band hairline, and headings kept with the units they open).
+- **Candidate 19** (`20261106T145325Z`) was reviewed page by page by three review subagents. They found new majors:
+  - My band hairline struck text where bands abut (pp. 218, 402, 419, 485, 490).
+  - An item header was stranded at a page foot (p. 209).
+  - FIG-52 had an empty column beneath it (p. 435).
+  - Eight equipment card tables repeated their heading as a title (p. 200 and its neighbours).
+- **Candidate 20** (`20261106T152451Z`) had the card-table fix only (`d0bc1f0`); it was not released.
+- **The fixes, in `bfdd5c7`, `41562b2`, `2593d0d`, and `e56c12f`:**
+  - The hairline is now drawn only where there is room: in a gap, or in a fixed band's own slack. Whatever follows a natural flow whose last lines reach the right column starts 8 pt lower, so its rule has room. A flow that ends in the left column gets no rule. An unbalanceable tail keeps its band hooks.
+  - An item's tier label and name line are one run-in block.
+  - A piece is pulled into the next page's tail only from the foot of the right column, and never when doing so would empty most of a short column region.
+  - DESIGN 6.10 and 8.5 record the rules; the tests cover each case.
+- **Candidate 21** (`20261106T163350Z`, RC528-candidate-21) differs from candidate 19 only on the 22 fixed pages (198-202, 204-212, 218, 402, 419, 432, 435, 436, 485, 490). The other 21 contact sheets, 27 detail pages, and 2 covers are byte-identical images to the ones the subagents inspected. I reviewed the six changed sheets, page 200, the covers, and every changed page at full size. It was bound with 111 minor notes and no majors (ledger `6f49976`). The minor notes cover keep gaps, short section ends, empty partner columns at unit boundaries, the Evil Eye content note, and "adven-tures" on the back cover.
+- **Released:** [RC528-build-44](https://github.com/xjordont/Heraldry/releases/tag/RC528-build-44), 630 pages. The shipped digital PDF's SHA-256, `a558bc44…94fbd` (175,923,423 bytes), equals the reviewed candidate's. The compact companion, `eacb007a…`, is byte-identical to the candidate's, so compaction is now reproducible. Candidates took about 6.5 minutes in CI.
+
+Checks: `make test` passes (389 tests in 41 modules); every local proof converged at 630 pages, with verify failing only `visual_review_currency` before binding.
+
 ## Build times: compact companion 12 times faster, verify in parallel, one setup - 2026-11-03
 
 Owner request: "an optimization and simplification pass ... of the codebase and workflow on GitHub. Hopefully, we can get build times down and reduce redundancy." GitHub's step timings showed where the time went: the candidate spent 21.5 of its 27 minutes in `make test clean all`, of which `tools/digital_compact.py` alone took 10.9 minutes, and verify took 4.3; the release spent 12 of its 24 minutes in the same compaction (its rebuild is only about 3 minutes, because the measurement cache hits and the layout converges in one pass, so reusing the candidate's files instead of rebuilding would save little and was not done).
