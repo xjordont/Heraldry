@@ -8,7 +8,7 @@ rendered as line breaks, table representations) are recorded in
 production/mappings/.
 """
 from __future__ import annotations
-import argparse, hashlib, json, re, sys
+import argparse, hashlib, json, math, re, sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -329,8 +329,10 @@ def is_example(b) -> bool:
 
 
 class Book:
-    def __init__(self, model, balance):
+    def __init__(self, model, balance, figfit=None):
         self.model = model
+        self.figfit = dict(figfit or {})     # figure id -> width scale that lets it fit where it starts
+        self.full_figs = set()               # full-width figures set alone in the outer flow (#full or a float)
         # Scope continuation events to chapters containing actual numbered scenarios.
         # Scanning every heading body in every running header triples compile time.
         def headings(blocks):
@@ -1146,6 +1148,8 @@ class Book:
             tracked = self.measurable(x)
             body = (f"#umark({lit(mid)}, \"s\"){x['s']}#umark({lit(mid)}, \"e\")"
                     if tracked else x['s'])
+            if x.get("typ") == "figure":
+                self.full_figs.add(mid)
             if x.get("float"):
                 self.out.append(f"#place(auto, float: true, clearance: 12pt)[{body}]\n")
             else:
@@ -1202,6 +1206,10 @@ class Book:
 
     def figure(self, fig, full=False):
         w = fig.get("width", "100%")
+        if fig["id"] in self.figfit and w == "100%":
+            # Figure fit (rulebook-layout skill 1.6): a full-width figure that would leave the page above it
+            # largely bare is set just small enough to close it, never below FIG_FIT_FLOOR of its width.
+            w = f"{self.figfit[fig['id']] * 100:.1f}%"
         cap = fig["caption"]
         return f"#figure-block({lit(fig['id'])}, {lit('../figures/out/' + fig['id'] + '.svg')}, [#{lit(cap)}], width: {w})\n"
 
@@ -1413,6 +1421,78 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None, bare=None):
     return res
 
 
+FIG_FIT_FLOOR = 0.80                     # rulebook-layout skill: a fitted figure keeps at least 80% of its width
+FIG_FIT_SPACE = 14                       # the figure block's own space above it in the outer flow
+
+
+MIN_TYPE_PT = float(json.loads((ROOT / "config/design_tokens.json").read_text())["type_pt"]["minimum_essential"])
+
+
+def figure_geometry(fid):
+    """(aspect, smallest scale) of a full-width figure: its drawn height over width, and the scale at which
+    its smallest text reaches the minimum essential type size. Figures are drawn at 9 pt on a 504 pt
+    measure and set at 525 pt, so they may shrink only to about 96%: below that, their labels fall under
+    the type floor that layout_qa enforces. A figure whose type sizes cannot be read is not scaled."""
+    svg = (ROOT / "figures/out" / f"{fid}.svg").read_text(encoding="utf-8")
+    m = re.search(r'viewBox="[\d.]+ [\d.]+ ([\d.]+) ([\d.]+)"', svg[:600])
+    if not m:
+        return None, None
+    width, height = float(m.group(1)), float(m.group(2))
+    sizes = [float(x) for x in re.findall(r'font-size="([\d.]+)', svg)]
+    type_floor = (MIN_TYPE_PT * width / (FULL_W * min(sizes))) if sizes else 1.0
+    return height / width, max(FIG_FIT_FLOOR, type_floor)
+
+
+def compute_figfit(pdf, positions, previous, candidates, excluded):
+    """Figure fit (rulebook-layout skill 1.6 and 3.2, pass 1). A full-width figure carried whole to the top
+    of a page leaves the page before it short. When the space left there holds the figure at FIG_FIT_FLOOR
+    of its width or more, propose that scale; the figure stays where it was anchored, in its own section.
+    A figure that still does not fit at the floor keeps its full width (excluded)."""
+    import pymupdf
+    import layout_flow
+    tbl = positions.get("<tblpos>", [])
+    spans = {}
+    for t in tbl:
+        if t["id"] in candidates:
+            spans.setdefault(t["id"], {})[t["edge"]] = t
+    out = dict(previous)
+    doc = None
+    for fid, e in spans.items():
+        if fid in excluded or "s" not in e or "e" not in e or e["s"]["page"] != e["e"]["page"]:
+            continue
+        top = e["s"]["y"] < TOP_Y + 4
+        if not top:
+            continue                       # it already shares a page with what precedes it
+        if fid in previous:
+            out.pop(fid, None)             # scaled, yet still carried over: the scale did not help
+            excluded.add(fid)
+            continue
+        page = e["s"]["page"] - 1          # 1-based page before the figure
+        if page < 1:
+            continue
+        doc = doc or pymupdf.open(str(pdf))
+        boxes = layout_flow.body_boxes(doc[page - 1])
+        if not boxes:
+            continue
+        end = max(b[0].y1 for b in boxes)
+        room = BODY_BOTTOM - end - FIG_FIT_SPACE
+        aspect, floor = figure_geometry(fid)
+        if aspect is None:
+            continue
+        height = e["e"]["y"] - e["s"]["y"]
+        image = aspect * FULL_W            # the drawing at full width; the caption below it does not scale
+        caption = height - image
+        need = (room - caption - 2) / image
+        if floor <= need < 1:
+            out[fid] = round(math.floor(need * 200) / 200, 3)
+        elif need < floor:
+            out.pop(fid, None)
+            excluded.add(fid)
+    if doc is not None:
+        doc.close()
+    return out
+
+
 def stabilize_balance(proposed, previous, flips, excluded):
     """Use natural column flow for an oscillating tail, rather than freezing a proposal.
 
@@ -1547,12 +1627,22 @@ def main():
     else:
         balance_cache_diagnostics.append({'status': 'skipped-load', 'reason': 'local balance file present'})
     flips, pass_log, excluded = {}, [], set()
+    fit_file = BUILD / "figfit.json"
+    figfit = {} if a.no_balance or not fit_file.exists() else json.loads(fit_file.read_text())
+    fit_excluded = set()
     converged = False
     compile_warnings = []
     for p in range(a.passes):
-        book = Book(model, balance)
+        book = Book(model, balance, figfit)
         (ROOT / "typst/content.typ").write_text(book.emit(), encoding="utf-8", newline="\n")
         out, dt, (pm, hpos) = compile_book(a.variant)
+        query_file = BUILD / "query.json"
+        positions = json.loads(query_file.read_text()).get("positions", {}) if query_file.exists() else {}
+        new_fit = (compute_figfit(out, positions, figfit, book.full_figs, fit_excluded)
+                   if positions and not a.no_balance else figfit)
+        fit_changed = new_fit != figfit
+        figfit = new_fit
+        fit_file.write_text(json.dumps(figfit, indent=1, sort_keys=True))
         warnings = getattr(compile_book, 'last_warnings', [])
         warnings = list(warnings) if isinstance(warnings, (list, tuple)) else []
         compile_warnings.extend(warnings)
@@ -1564,16 +1654,16 @@ def main():
                          'balanced': len(new), 'changes': changes, 'raw_changes': raw_changes,
                          'warnings': warnings,
                          'natural_flow_segments': sorted(excluded)})
-        print(f"pass {p+1}: {dt:.1f}s, segments={book.seg_count}, balanced={len(new)}, changed={sum(1 for k in set(new)|set(balance) if new.get(k)!=balance.get(k))}")
-        if new == balance or a.no_balance:
+        print(f"pass {p+1}: {dt:.1f}s, segments={book.seg_count}, balanced={len(new)}, changed={sum(1 for k in set(new)|set(balance) if new.get(k)!=balance.get(k))}, fitted figures={len(figfit)}{' (changed)' if fit_changed else ''}")
+        if (new == balance or a.no_balance) and not fit_changed:
             converged = True
             break
         for k, (sig, t) in list(new.items()):
             while t > 0 and f"{k}:{t-1}" in book.bare_heads:
                 t -= 1
             new[k] = [sig, t]
-        if p == a.passes - 1 or new == balance:
-            converged = new == balance
+        if p == a.passes - 1 or (new == balance and not fit_changed):
+            converged = new == balance and not fit_changed
             break
         balance = new
         bal_file.write_text(json.dumps(balance))
