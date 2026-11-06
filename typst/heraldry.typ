@@ -174,8 +174,9 @@
   let label = if scenario != none { scenario-continuation-title(scenario) } else { ordinary-label }
   let tab = current-tab(p)
   set text(font: sans, size: tokens.type_pt.navigation * 1pt, weight: 600, tracking: 0.12em, fill: ink2)
-  // the arms overlay the line (no added height), so the head stays clear of the 0.375 in edge
-  let a = if tab != none { box(width: 15pt, height: 7pt, place(dy: -6pt, arms(tab, w: 15pt))) } else { lozenge(size: 4.4pt) }
+  // The arms overlay the line (no added height), standing on the rule level with the label. Their own 17 pt frame
+  // matters: an image laid out in the 7 pt box fills it with fit "cover" and is cropped to a 7 pt band.
+  let a = if tab != none { box(width: 15pt, height: 7pt, place(dy: 4pt, box(height: 17pt, arms(tab, w: 15pt)))) } else { lozenge(size: 4.4pt) }
   block(width: 100%, below: 0pt, {
     if recto [#h(1fr)#smallcaps(all: true, label)#h(6pt)#a] else [#a#h(6pt)#smallcaps(all: true, label)#h(1fr)]
     v(-1pt)
