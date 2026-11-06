@@ -1368,10 +1368,16 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None, bare=None):
         # Scenario 1 tail). A natural run that merely spills into the second column is not short.
         balanced = pt is not None and pt in byp and byp[pt]["page"] == L
         # A piece straddles onto the last page only from the foot of the previous page's right column. One
-        # starting at the foot of the left column continues in the right column beside it: pulling it back
-        # emptied that whole column (all-page review of candidate 19, p. 435).
+        # starting at the foot of the left column continues in the right column beside it, and pulling back
+        # one from near the top of a short column region (a run that opens below a full-width figure) empties
+        # most of that column: the run then flows naturally (all-page review of candidate 19, p. 435).
         def straddles(m):
-            return m["page"] == L - 1 and m.get("x", 0) >= PAGE_WIDTH_PT / 2 and BODY_BOTTOM - m["y"] < STRADDLE_MAX
+            first = byp.get(0)
+            opens_here = first is not None and first is not m and first["page"] == m["page"] and first.get("x", 0) < PAGE_WIDTH_PT / 2
+            top = first["y"] if opens_here else TOP_Y
+            room = BODY_BOTTOM - m["y"]
+            return (m["page"] == L - 1 and m.get("x", 0) >= PAGE_WIDTH_PT / 2 and room < STRADDLE_MAX
+                    and room < 0.75 * (BODY_BOTTOM - top))
         in_first = end.get('x', 0) < PAGE_WIDTH_PT / 2
         tiny_tail = len(on_last) <= 5 and ((in_first and end['y'] < TOP_Y + TINY_TAIL_PT)
                                            or (balanced and not in_first and end['y'] < TOP_Y + TINY_TAIL_PT / 2))

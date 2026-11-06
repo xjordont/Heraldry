@@ -249,6 +249,9 @@ class LayoutEmitter(unittest.TestCase):
         self.assertEqual(compute_balance(pm,{},{'1':'same'}),{})
         pm[1]['x']=315      # from the foot of the right column it does straddle onto the last page
         self.assertEqual(compute_balance(pm,{},{'1':'same'}),{'1':['same',1]})
+        # but not from near the top of a short column region: the run opens low on the page (below a figure)
+        pm[0]['y']=BODY_BOTTOM-220
+        self.assertEqual(compute_balance(pm,{},{'1':'same'}),{})
 
     def test_short_roll_directive_keeps_the_substantive_explanation(self):
         book=Book.__new__(Book)
