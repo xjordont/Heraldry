@@ -1,21 +1,21 @@
 {
- "request_id": "20261106T134010Z",
+ "request_id": "20261106T145325Z",
  "result": "CANDIDATE_READY",
  "note": "all automated checks pass; the all-page visual review of this exact PDF is still pending",
  "failed_checks": [
   "visual_review_currency"
  ],
- "source_commit": "8f71ea779f48aa79f15c3068ede77e9c7093e0a4",
- "run_url": "https://github.com/xjordont/Heraldry/actions/runs/42227370771",
- "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC528-candidate-18",
+ "source_commit": "ffd1ce1e6d2f2480a5da3e839ec0c0ba08cd002f",
+ "run_url": "https://github.com/xjordont/Heraldry/actions/runs/42237965119",
+ "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC528-candidate-19",
  "pdfs": {
   "Heraldry_RC528_digital-compact.pdf": {
-   "bytes": 62504476,
-   "sha256": "2beefcdd359d3674ea27f2ba522f9a0146275483ea81760c310556a2f802093f"
+   "bytes": 62659939,
+   "sha256": "d374f5f7dee0c231cd77a3c2c135f416ad92d102c402e4f64eb97e8ea09fc253"
   },
   "Heraldry_RC528_digital.pdf": {
-   "bytes": 175320963,
-   "sha256": "77a064099d4bc175edc061009aa9bae967a79b5db4a682bc56e42866bc393dfc"
+   "bytes": 175926521,
+   "sha256": "8b8f8162efbb57d4e9b353d120048636ebbb1c80f06e4e4d0f406f7a00fd29fb"
   }
  },
  "next": "Look at every review image and bind the exact PDF; pushing production/qa/visual-review.json starts release."
