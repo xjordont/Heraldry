@@ -2,6 +2,29 @@
 
 Newest first. Entries before 2026-11-01 are in `production/history/STATE-2026-10.md`; search it by keyword.
 
+## One-flow development round; band-gap made safe - 2026-11-06
+
+The owner chose "Develop further first" for the one-flow model (Chapters 2, 5, and 6). A local proof of the 748-line `trial-c.patch` against `13cfccc` (in the session scratch folder, not in the repository) now works as follows:
+
+- **Waiting figures.** The composer decides how to settle a figure that would float past a heading, from the previous pass's positions, kept in `build/flowplan.json`. There are no page turns and no holes; figure fit shrinks two such figures.
+- **Convergence.** It converges from a clean build in five passes. Two clean builds agree on 604 of 605 pages (p36 differs).
+- **Last pages.** Chapter 6's last page balances (it was uneven by 302 pt), and Combat's last page balances the same way in both builds.
+- **Tailpieces.** 14 of the 19 section tailpieces find homes in their own chapter, each used once:
+  - 2 of 4 in Chapter 2;
+  - 1 of 4 in Combat;
+  - 11 of 11 in Chapter 6, where they sit beneath ancestry, background, and class entries they were not drawn for (pp. 91-93).
+  - Five have no gap at the 1.6 in minimum: 2.1, 2.5, 5.2, 5.3, and Combat's chapter-end piece.
+
+| Chapter | Pages before | Pages after |
+|---|---|---|
+| 2 | 24 | 19 |
+| 5 | 21 | 14 |
+| 6 | 53 | 42 |
+
+The book would fall to 605 pages, with `layout_qa` flag-free. The owner was sent before-and-after sheets but declined the follow-up question, so adoption is not decided. Nothing of the model is in the repository.
+
+**Band-gap (`7372239`).** The trial found that `band-gap` (`41562b2`) read its own position, which its own spacing can move at a page foot, so layout could oscillate. It now reads a zero-height probe placed before it. This is preventive: the book has not met the case, and a fixture sweep did not reproduce it. A clean full build of main with the fix gives 628 pages and differs from the `007d94a` verification build only on pp. 492-493, which come from `6ff78a6`: the Pressure Clocks again split 3 and 1, as in build-44.
+
 ## Rulebook-layout skill trialled: six lessons adopted, art reuse rejected, one-flow still in development - 2026-11-06
 
 Owner request: "I think we should consider implementing all aspects of the skill. Run tests and trails to determine which parts of the skill are helpful and lead to improvements then incorporate that permanently into our design workflow." The owner held off on design-artifact integration. Every trial was a local proof measured against RC528-build-44; no CI build, candidate, or release was requested.
