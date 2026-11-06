@@ -64,10 +64,15 @@
       #line(length: 100%, stroke: 0.6pt + ink)
     ]
   }
+  // The page number has its own right gutter: a long title wraps short of it with a hanging indent, the
+  // leader runs to the end of the title's last line, and the number sits level with that line, so neither
+  // the number nor a lone leader dot falls to a line of its own (rulebook-layout review, 2026-11-06: 2.6).
   show outline.entry.where(level: 2): it => {
     block(above: 3pt, below: 0pt, inset: (left: 29pt))[
       #set text(size: tokens.type_pt.toc_entry * 1pt)
-      #link(it.element.location())[#it.element.body #box(width: 1fr, repeat(text(fill: ink3)[.#h(3pt)])) #text(font: sans, size: tokens.type_pt.toc_entry * 1pt, it.page())]
+      #link(it.element.location())[#grid(columns: (1fr, 16pt), column-gutter: 2pt, align: (left, right + bottom),
+        par(hanging-indent: 12pt)[#it.element.body #box(width: 1fr, repeat(text(fill: ink3)[.#h(3pt)]))],
+        text(font: sans, size: tokens.type_pt.toc_entry * 1pt, it.page()))]
     ]
   }
   columns(2, gutter: gap, outline(title: none, depth: 2, indent: 0pt))
@@ -151,7 +156,7 @@
   let items = ()
   let letter = ""
   for e in index-data.entries {
-    let l = upper(e.term.first())
+    let l = e.at("letter", default: upper(e.term.first()))
     if l != letter {
       letter = l
       items.push((kind: "h", above: 10pt, below: 4pt, inset: 0pt, body: grid(columns: (auto, 1fr), column-gutter: 5pt, align: horizon,

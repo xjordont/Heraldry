@@ -171,7 +171,10 @@ def analyse(doc, measures=None, first_body_page=None):
             continue
         to, page = t[3]["to"], t[2]
         nxt = next((u for u in toc[k + 1:] if u[0] <= t[0]), None)
-        if to.x > MID and BOT - to.y < LOW_START_PT and nxt is not None and nxt[2] > page:
+        # the section turns the page unless the next one opens the following page (then it ended here)
+        ends_here = (nxt is not None and nxt[2] == page + 1 and nxt[3].get("to") is not None
+                     and nxt[3]["to"].y < TOP + 40)
+        if to.x > MID and BOT - to.y < LOW_START_PT and nxt is not None and nxt[2] > page and not ends_here:
             low.append({"page": page, "heading": t[1][:60], "from_foot_pt": round(BOT - to.y)})
     uneven = []
     for n in sorted(chapter_last):

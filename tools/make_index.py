@@ -25,6 +25,12 @@ def slug(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
+
+def filing_key(term):
+    """Index filing order: letters and digits only, ignoring a leading "The", so "The Ancient Void Dragon"
+    files under A (rulebook-layout review, 2026-11-06). The printed term is unchanged."""
+    return re.sub(r"[^a-z0-9 ]", "", re.sub(r"^the\s+", "", term.strip().lower()))
+
 def main():
     model = json.loads((ROOT / "build/blocks.json").read_text())
     heads = json.loads((ROOT / "production/inventory/headings.json").read_text())
@@ -153,7 +159,7 @@ def main():
                 tag(h["id"], key)
                 subs.append({"term": name, "keys": [key]})
                 mapping.append({"term": f"{title} — {name}", "key": key, "locators": [h["id"]], "basis": "named entry heading"})
-        subs.sort(key=lambda s: s["term"].lower())
+        subs.sort(key=lambda s: filing_key(s["term"]))
         return subs
 
     hid = {h["title"]: h["id"] for h in heads}
@@ -171,7 +177,9 @@ def main():
             entries.append({"term": title, "keys": [], "sub": subs})
 
     # merge duplicate terms, sort
-    entries.sort(key=lambda e: re.sub(r"[^a-z0-9 ]", "", e["term"].lower()))
+    entries.sort(key=lambda e: filing_key(e["term"]))
+    for e in entries:
+        e["letter"] = (filing_key(e["term"])[:1] or e["term"][:1]).upper()   # the letter head it files under
     note = ("Main entries follow the terms of C.11 Glossary of Terms and Conditions. "
             "Locators point to the glossary entry, the sections it cites, and sections that define or apply the term.")
     (ROOT / "build/index.json").write_text(json.dumps({"note": note, "entries": entries, "heads": heads_for}, ensure_ascii=False))
