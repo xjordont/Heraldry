@@ -71,7 +71,7 @@
     block(above: 3pt, below: 0pt, inset: (left: 29pt))[
       #set text(size: tokens.type_pt.toc_entry * 1pt)
       #link(it.element.location())[#grid(columns: (1fr, 16pt), column-gutter: 2pt, align: (left, right + bottom),
-        par(hanging-indent: 12pt)[#it.element.body #box(width: 1fr, repeat(text(fill: ink3)[.#h(3pt)]))],
+        par(hanging-indent: 12pt)[#text(hyphenate: false, it.element.body) #box(width: 1fr, repeat(text(fill: ink3)[.#h(3pt)]))],
         text(font: sans, size: tokens.type_pt.toc_entry * 1pt, it.page()))]
     ]
   }
