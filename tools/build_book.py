@@ -1447,7 +1447,7 @@ def compute_figfit(pdf, positions, previous, candidates, excluded):
     """Figure fit (rulebook-layout skill 1.6 and 3.2, pass 1). A full-width figure carried whole to the top
     of a page leaves the page before it short. When the space left there holds the figure at FIG_FIT_FLOOR
     of its width or more, propose that scale; the figure stays where it was anchored, in its own section.
-    A figure that still does not fit at the floor keeps its full width (excluded)."""
+    A figure whose applied scale still left it on the next page keeps its full width (excluded)."""
     import pymupdf
     import layout_flow
     tbl = positions.get("<tblpos>", [])
@@ -1485,9 +1485,9 @@ def compute_figfit(pdf, positions, previous, candidates, excluded):
         need = (room - caption - 2) / image
         if floor <= need < 1:
             out[fid] = round(math.floor(need * 200) / 200, 3)
-        elif need < floor:
-            out.pop(fid, None)
-            excluded.add(fid)
+        # Too short at the floor: no proposal this pass. It is not excluded, because an early pass reads an
+        # unbalanced layout; only a scale that was applied and still failed excludes the figure (a clean build,
+        # as in CI, otherwise excluded FIG-14 and FIG-16 in its first pass).
     if doc is not None:
         doc.close()
     return out

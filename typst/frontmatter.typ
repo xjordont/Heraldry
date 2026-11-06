@@ -162,7 +162,10 @@
       items.push((kind: "h", above: 10pt, below: 4pt, inset: 0pt, body: grid(columns: (auto, 1fr), column-gutter: 5pt, align: horizon,
         box(fill: ink, inset: (x: 4pt, y: 2.5pt), text(font: goth, weight: 600, size: tokens.type_pt.index_letter * 1pt, fill: paper, l)), line(length: 100%, stroke: 0.4pt + ink3))))
     }
-    items.push((kind: "e", above: 2.5pt, below: 0pt, inset: 0pt, body: [
+    // The first entry under a letter head sticks to the next item too, so a head never ends a column
+    // with a single entry under it (rulebook-layout review, 2026-11-06: "M" stood over one line).
+    let first-under-head = items.len() > 0 and items.last().kind == "h"
+    items.push((kind: "e", glue: first-under-head, above: 2.5pt, below: 0pt, inset: 0pt, body: [
       #text(weight: 600, e.term)#if e.keys.len() > 0 [, #context e.keys.map(k => pages-for(k)).join(", ")]#if e.at("see", default: none) != none [. #emph[See] #e.see]#if e.at("also", default: none) != none [. #emph[See also] #e.also]
     ]))
     for s in e.at("sub", default: ()) {
@@ -174,7 +177,7 @@
   let ix-gap = 14pt
   let ix-col = (frame-w - 2 * ix-gap) / 3
   let piece(i, it) = block(above: it.above, below: it.below, inset: (left: it.inset),
-    sticky: it.kind == "h", breakable: false, [#metadata(i) <ix-item>#it.body])
+    sticky: it.kind == "h" or it.at("glue", default: false), breakable: false, [#metadata(i) <ix-item>#it.body])
   // The last index page is balanced: its items are split into three whole-entry columns of near-equal
   // height. A column never starts with a sub-entry or ends with a letter head. Pages before the last
   // fill normally, so the split points depend only on where the previous layout pass began that page.

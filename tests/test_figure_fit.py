@@ -14,7 +14,7 @@ class FigureFit(unittest.TestCase):
     """Rulebook-layout skill 1.6: a figure carried to the next page top is set just small enough to fit
     where it began, but never so small that its labels fall under the minimum type size."""
 
-    def proposal(self, need, previous=None):
+    def proposal(self, need, previous=None, excluded=None):
         fid = "FIG-66"
         aspect, _ = figure_geometry(fid)
         image = aspect * FULL_W
@@ -30,7 +30,7 @@ class FigureFit(unittest.TestCase):
             doc.save(pdf)
             positions = {"<tblpos>": [{"id": fid, "edge": "s", "page": 2, "x": 45, "y": TOP_Y},
                                       {"id": fid, "edge": "e", "page": 2, "x": 45, "y": TOP_Y + image + caption}]}
-            excluded = set()
+            excluded = set() if excluded is None else excluded
             return compute_figfit(pdf, positions, previous or {}, {fid}, excluded), excluded
 
     def test_the_type_floor_sets_how_far_a_figure_may_shrink(self):
@@ -46,7 +46,13 @@ class FigureFit(unittest.TestCase):
     def test_below_the_type_floor_the_figure_keeps_its_width(self):
         fit, excluded = self.proposal(0.9)
         self.assertEqual(fit, {})
-        self.assertEqual(excluded, {"FIG-66"})
+        self.assertEqual(excluded, set())     # not excluded: an early pass reads an unbalanced layout
+
+    def test_a_figure_too_short_in_an_early_pass_can_fit_in_a_later_one(self):
+        # a clean build (as in CI) reads unbalanced columns first; excluding then lost FIG-14 and FIG-16
+        _, excluded = self.proposal(0.9)
+        fit, _ = self.proposal(0.98, excluded=excluded)
+        self.assertAlmostEqual(fit["FIG-66"], 0.98, places=3)
 
     def test_a_scaled_figure_still_carried_over_goes_back_to_full_size(self):
         fit, excluded = self.proposal(0.98, previous={"FIG-66": 0.98})
