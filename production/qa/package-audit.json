@@ -1,10 +1,10 @@
 {
   "zip": "dist/Heraldry_RC528_release.zip",
-  "bytes": 468723336,
-  "files": 956,
-  "sha256": "edd19be023eeb9fc2e0adf9509d46d74f548ac8d1f42ef8a103d98237a4f3e12",
+  "bytes": 242709171,
+  "files": 913,
+  "sha256": "61e63cb59c4473b3a0c92adcf6e6e84cdd8b9c8a6e545d1bc09683c8c6c06c69",
   "status": "PASS",
   "duplicate_entries": [],
-  "checksums_verified": 955,
+  "checksums_verified": 912,
   "note": "This audit is external to the ZIP to avoid self-reference; PDFs are verified files; the visual review is recorded separately."
 }

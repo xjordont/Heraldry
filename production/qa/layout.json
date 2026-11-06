@@ -1,11 +1,11 @@
 {
  "pdf": "/home/runner/work/Heraldry/Heraldry/build/book-cream.pdf",
- "pages": 625,
+ "pages": 627,
  "counts": {},
  "flagged_pages": [],
  "flags": [],
  "sparse_pages": {
-  "count": 75,
+  "count": 77,
   "pages": [
    1,
    2,
@@ -75,13 +75,15 @@
    549,
    550,
    551,
-   583,
-   587,
-   590,
-   595,
+   570,
+   571,
+   585,
+   589,
+   592,
    597,
-   600,
-   625
+   599,
+   602,
+   627
   ],
   "by_chapter": {
    "front matter": [
@@ -177,17 +179,19 @@
     549,
     550,
     551,
-    583,
-    587
+    570,
+    571,
+    585,
+    589
    ],
    "Rules Reference": [
-    590,
-    595,
+    592,
     597,
-    600
+    599,
+    602
    ],
    "Index": [
-    625
+    627
    ]
   },
   "method": "vertical fill under 55% and fewer than 50 text lines, chapter openers excluded; page-background furniture (thumb tab, opener frame) is not counted as content"
@@ -411,12 +415,12 @@
     },
     {
      "lines": 2,
-     "text": "Rules Reference 582",
+     "text": "Rules Reference 584",
      "y_pt": 130.67
     },
     {
      "lines": 2,
-     "text": "Index 616",
+     "text": "Index 618",
      "y_pt": 359.94
     }
    ],
@@ -7791,14 +7795,14 @@
   },
   {
    "page": 196,
-   "vertical_union_fraction": 0.7848,
-   "largest_empty_band_pt": 129.09,
-   "bottom_empty_band_pt": 129.09,
+   "vertical_union_fraction": 0.7436,
+   "largest_empty_band_pt": 153.99,
+   "bottom_empty_band_pt": 153.99,
    "sparse": false,
-   "body_lines": 95,
+   "body_lines": 91,
    "column_lines": {
-    "left": 48,
-    "right": 47,
+    "left": 46,
+    "right": 45,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -7809,24 +7813,14 @@
      "y_pt": 58.08
     },
     {
-     "lines": 1,
-     "text": "Tier 1 Special Armour and Shields (APL 1–2)",
-     "y_pt": 76.78
-    },
-    {
      "lines": 2,
      "text": "Tier 2 Special Armour and Shields  (APL 3–4)",
-     "y_pt": 355.93
-    },
-    {
-     "lines": 1,
-     "text": "Tier 2 Special Armour and Shields (APL 3–4)",
-     "y_pt": 390.78
+     "y_pt": 343.48
     },
     {
      "lines": 2,
      "text": "Rule:   DEX Pen -1 ,  Max Speed 6\" . You are  Resistant   to  fire  damage and cannot gain  Burning ",
-     "y_pt": 433.25
+     "y_pt": 408.35
     },
     {
      "lines": 1,
@@ -7834,172 +7828,142 @@
      "y_pt": 58.08
     },
     {
-     "lines": 1,
-     "text": "Tier 3 Special Armour and Shields (APL 5–6)",
-     "y_pt": 76.78
-    },
-    {
      "lines": 2,
      "text": "Tier 4 Special Armour and Shields  (APL 7–8)",
-     "y_pt": 315.73
-    },
-    {
-     "lines": 1,
-     "text": "Tier 4 Special Armour and Shields (APL 7–8)",
-     "y_pt": 350.58
+     "y_pt": 303.28
     },
     {
      "lines": 2,
      "text": "Rule:  While equipped, attacks against you or al­ lies within  1\"  of you cannot use  Cleave  or  Sw",
-     "y_pt": 555.67
+     "y_pt": 530.77
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 197,
-   "vertical_union_fraction": 0.8347,
-   "largest_empty_band_pt": 65.69,
-   "bottom_empty_band_pt": 65.69,
+   "vertical_union_fraction": 0.8165,
+   "largest_empty_band_pt": 78.14,
+   "bottom_empty_band_pt": 78.14,
    "sparse": false,
-   "body_lines": 81,
+   "body_lines": 79,
    "column_lines": {
-    "left": 21,
-    "right": 60,
+    "left": 20,
+    "right": 59,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
    "short_text_blocks": [
     {
-     "lines": 1,
-     "text": "Tier 5 Legendary Shields (APL 9–10)",
-     "y_pt": 60.63
-    },
-    {
-     "lines": 1,
-     "text": "Tier 1 Special Weapons (APL 1–2)",
-     "y_pt": 60.63
-    },
-    {
      "lines": 2,
      "text": "Rule:  You may reroll any base damage die result  of  1 . You must keep the second result.",
-     "y_pt": 103.1
+     "y_pt": 90.65
     },
     {
      "lines": 2,
      "text": "Rule:  This weapon deals  fire  damage instead of  piercing .",
-     "y_pt": 175.87
+     "y_pt": 163.42
     },
     {
      "lines": 2,
      "text": "Rule:  If you attack with this weapon, you gain  +1   to your next  AD  roll this round.",
-     "y_pt": 236.3
+     "y_pt": 223.85
     },
     {
      "lines": 2,
      "text": "Rule:  When this attack damages a target, the tar­ get is  Pushed 1\"  directly away from you.",
-     "y_pt": 296.72
+     "y_pt": 284.27
     },
     {
      "lines": 2,
      "text": "Rule:  You may use the  Parry   Reaction  against  Ranged  attacks.",
-     "y_pt": 357.15
+     "y_pt": 344.7
     },
     {
      "lines": 2,
      "text": "Rule:  If you attack a target  2\"  away, the attack ig­ nores up to  1 AV .",
-     "y_pt": 417.57
+     "y_pt": 405.12
     },
     {
      "lines": 1,
      "text": "Rule:  This weapon ignores up to  1 AV .",
-     "y_pt": 478.0
+     "y_pt": 465.55
     },
     {
      "lines": 1,
      "text": "Rule:  -",
-     "y_pt": 524.5
+     "y_pt": 512.05
     },
     {
      "lines": 2,
      "text": "Rule:  Add  2  to your  STR or DEX Check  when you  take the  Trip  action with this weapon.",
-     "y_pt": 571.0
+     "y_pt": 558.55
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 198,
-   "vertical_union_fraction": 0.9403,
-   "largest_empty_band_pt": 23.91,
-   "bottom_empty_band_pt": 23.91,
+   "vertical_union_fraction": 0.9221,
+   "largest_empty_band_pt": 36.36,
+   "bottom_empty_band_pt": 36.36,
    "sparse": false,
-   "body_lines": 117,
+   "body_lines": 115,
    "column_lines": {
-    "left": 63,
-    "right": 54,
+    "left": 62,
+    "right": 53,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
    "short_text_blocks": [
     {
-     "lines": 1,
-     "text": "Tier 2 Special Weapons (APL 3–4)",
-     "y_pt": 60.63
-    },
-    {
      "lines": 2,
      "text": "Rule:  On a  Critical Hit , deal an additional  1d4 fire  damage . This die does not explode.",
-     "y_pt": 103.1
+     "y_pt": 90.65
     },
     {
      "lines": 2,
      "text": "Rule:  The  DEX  modifier applied to this weapon ig­ nores the target's  AV  entirely.",
-     "y_pt": 312.22
+     "y_pt": 299.77
     },
     {
      "lines": 2,
      "text": "Rule:  Attacks made with this weapon ignore the  Disadvantage  penalty from  Cover .",
-     "y_pt": 372.65
+     "y_pt": 360.2
     },
     {
      "lines": 2,
      "text": "Rule:  On a  Critical Hit , the target becomes  Immo­ bilized  until the end of the round.",
-     "y_pt": 433.07
+     "y_pt": 420.62
     },
     {
      "lines": 2,
      "text": "Rule:  When this attack damages a combatant that  has  NRG , the target immediately loses  1 NRG .",
-     "y_pt": 567.85
+     "y_pt": 555.4
     },
     {
      "lines": 2,
      "text": "Rule:  Immediately after attacking with this  weapon, you may  Shift 1\" .",
-     "y_pt": 640.62
+     "y_pt": 628.17
     },
     {
      "lines": 1,
      "text": "Rule:  This weapon ignores up to  2 AV .",
-     "y_pt": 701.05
-    },
-    {
-     "lines": 1,
-     "text": "Tier 3 Special Weapons (APL 5–6)",
-     "y_pt": 60.63
+     "y_pt": 688.6
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 199,
-   "vertical_union_fraction": 0.9189,
-   "largest_empty_band_pt": 32.28,
-   "bottom_empty_band_pt": 32.28,
+   "vertical_union_fraction": 0.9011,
+   "largest_empty_band_pt": 44.73,
+   "bottom_empty_band_pt": 44.73,
    "sparse": false,
-   "body_lines": 112,
+   "body_lines": 110,
    "column_lines": {
-    "left": 56,
-    "right": 56,
+    "left": 55,
+    "right": 55,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -8015,14 +7979,9 @@
      "y_pt": 372.56
     },
     {
-     "lines": 1,
-     "text": "Tier 4 Special Weapons (APL 7–8)",
-     "y_pt": 391.26
-    },
-    {
      "lines": 2,
      "text": "Rule:  On a  Critical Hit , roll  2  additional dice of the  same size and add them to the total.",
-     "y_pt": 433.72
+     "y_pt": 421.27
     },
     {
      "lines": 2,
@@ -8038,25 +7997,20 @@
      "lines": 2,
      "text": "Tier 5 Legendary Artifact Weapons  (APL 9–10)",
      "y_pt": 549.11
-    },
-    {
-     "lines": 1,
-     "text": "Tier 5 Legendary Artifact Weapons (APL 9–10)",
-     "y_pt": 583.96
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 200,
-   "vertical_union_fraction": 0.933,
-   "largest_empty_band_pt": 26.23,
-   "bottom_empty_band_pt": 26.23,
+   "vertical_union_fraction": 0.9193,
+   "largest_empty_band_pt": 34.4,
+   "bottom_empty_band_pt": 34.4,
    "sparse": false,
-   "body_lines": 133,
+   "body_lines": 132,
    "column_lines": {
     "left": 56,
-    "right": 77,
+    "right": 76,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -8070,11 +8024,6 @@
      "lines": 2,
      "text": "Tier 5 Legendary Artifact Armour  and Shields (d20)",
      "y_pt": 296.63
-    },
-    {
-     "lines": 1,
-     "text": "Tier 5 Legendary Artifact Armour and Shields (d20)",
-     "y_pt": 331.48
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -8108,14 +8057,14 @@
   },
   {
    "page": 202,
-   "vertical_union_fraction": 0.9319,
-   "largest_empty_band_pt": 29.77,
-   "bottom_empty_band_pt": 29.77,
+   "vertical_union_fraction": 0.9714,
+   "largest_empty_band_pt": 14.1,
+   "bottom_empty_band_pt": 2.03,
    "sparse": false,
-   "body_lines": 161,
+   "body_lines": 170,
    "column_lines": {
-    "left": 88,
-    "right": 73,
+    "left": 87,
+    "right": 83,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -8136,14 +8085,9 @@
      "y_pt": 209.93
     },
     {
-     "lines": 1,
-     "text": "Tier 1 Special Items (APL 1–2)",
-     "y_pt": 228.63
-    },
-    {
      "lines": 2,
      "text": "Description:  Your ranged weapon attacks ignore  Cover  against targets within  8\" .",
-     "y_pt": 271.1
+     "y_pt": 258.65
     },
     {
      "lines": 1,
@@ -8156,28 +8100,23 @@
      "y_pt": 346.28
     },
     {
-     "lines": 1,
-     "text": "Tier 5 Legendary Artifacts (d20)",
-     "y_pt": 364.98
-    },
-    {
      "lines": 2,
      "text": "Description:  +2 to  SPI Checks .  SPI Checks  are made  with  Advantage .",
-     "y_pt": 624.2
+     "y_pt": 611.75
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 203,
-   "vertical_union_fraction": 0.9356,
-   "largest_empty_band_pt": 23.62,
-   "bottom_empty_band_pt": 23.62,
+   "vertical_union_fraction": 0.9714,
+   "largest_empty_band_pt": 14.1,
+   "bottom_empty_band_pt": 2.07,
    "sparse": false,
-   "body_lines": 146,
+   "body_lines": 145,
    "column_lines": {
-    "left": 70,
-    "right": 76,
+    "left": 72,
+    "right": 73,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -8185,26 +8124,26 @@
     {
      "lines": 2,
      "text": "Description:  Melee attacks deal an additional  2  damage of that attack's primary damage type .",
-     "y_pt": 299.05
+     "y_pt": 198.42
     },
     {
      "lines": 2,
      "text": "Description:  You are  Immune  to  Frightened ,  Sleep­ ing , and  psychic  damage.",
-     "y_pt": 690.77
+     "y_pt": 562.3
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 204,
-   "vertical_union_fraction": 0.9465,
-   "largest_empty_band_pt": 21.71,
-   "bottom_empty_band_pt": 21.71,
+   "vertical_union_fraction": 0.9206,
+   "largest_empty_band_pt": 11.45,
+   "bottom_empty_band_pt": 3.93,
    "sparse": false,
-   "body_lines": 101,
+   "body_lines": 90,
    "column_lines": {
-    "left": 60,
-    "right": 41,
+    "left": 57,
+    "right": 33,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -8212,51 +8151,26 @@
     {
      "lines": 1,
      "text": "Description:  At the end of each round, restore 2 HP.",
-     "y_pt": 388.9
+     "y_pt": 302.2
     },
     {
      "lines": 2,
      "text": "7.17.3   Named Special Items and  Artifacts",
-     "y_pt": 414.33
-    },
-    {
-     "lines": 1,
-     "text": "Tier 2 Special Item",
-     "y_pt": 468.72
-    },
-    {
-     "lines": 1,
-     "text": "Tier 3 Special Item",
-     "y_pt": 679.95
-    },
-    {
-     "lines": 2,
-     "text": "Hollow Crown's Sigil  | Cost:  40c  | Req:  INT 3, SPI 2   | Equipment: Neck",
-     "y_pt": 696.97
-    },
-    {
-     "lines": 1,
-     "text": "Tier 4 Special Item",
-     "y_pt": 277.4
-    },
-    {
-     "lines": 1,
-     "text": "Tier 5 Legendary Artifact",
-     "y_pt": 530.4
+     "y_pt": 327.63
     },
     {
      "lines": 2,
      "text": "Effect:  While wearing The Hollow Crown, you gain  the following:",
-     "y_pt": 651.7
+     "y_pt": 550.32
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 205,
-   "vertical_union_fraction": 0.9851,
-   "largest_empty_band_pt": 5.01,
-   "bottom_empty_band_pt": 5.01,
+   "vertical_union_fraction": 0.9804,
+   "largest_empty_band_pt": 4.51,
+   "bottom_empty_band_pt": 4.51,
    "sparse": false,
    "body_lines": 91,
    "column_lines": {
@@ -8265,35 +8179,14 @@
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
-   "short_text_blocks": [
-    {
-     "lines": 1,
-     "text": "Tier 3 Special Item",
-     "y_pt": 467.05
-    },
-    {
-     "lines": 1,
-     "text": "Tier 2 Special Weapon",
-     "y_pt": 56.52
-    },
-    {
-     "lines": 1,
-     "text": "Tier 3 Special Weapon",
-     "y_pt": 282.07
-    },
-    {
-     "lines": 1,
-     "text": "Tier 4 Special Weapon",
-     "y_pt": 493.3
-    }
-   ],
+   "short_text_blocks": [],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 206,
-   "vertical_union_fraction": 0.9094,
-   "largest_empty_band_pt": 28.12,
-   "bottom_empty_band_pt": 28.12,
+   "vertical_union_fraction": 0.9108,
+   "largest_empty_band_pt": 27.12,
+   "bottom_empty_band_pt": 27.12,
    "sparse": false,
    "body_lines": 81,
    "column_lines": {
@@ -8304,142 +8197,82 @@
    "median_neighbouring_baseline_pt": 13.925,
    "short_text_blocks": [
     {
-     "lines": 1,
-     "text": "Tier 5 Legendary Weapon",
-     "y_pt": 133.25
-    },
-    {
-     "lines": 1,
-     "text": "Tier 2 Special Item",
-     "y_pt": 529.1
-    },
-    {
-     "lines": 1,
-     "text": "Tier 4 Special Item",
-     "y_pt": 267.67
-    },
-    {
-     "lines": 1,
-     "text": "Tier 5 Legendary Artifact",
-     "y_pt": 522.27
+     "lines": 2,
+     "text": "Vane's Annotated Grimoire  | Cost:  39c  | Req:  INT 3   | Equipment: Hands",
+     "y_pt": 58.05
     },
     {
      "lines": 2,
      "text": "Effect:  While holding Vane's Iron Cage, you gain  the following:",
-     "y_pt": 643.17
+     "y_pt": 644.67
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 207,
-   "vertical_union_fraction": 0.9587,
-   "largest_empty_band_pt": 16.28,
-   "bottom_empty_band_pt": 16.28,
+   "vertical_union_fraction": 0.9368,
+   "largest_empty_band_pt": 22.17,
+   "bottom_empty_band_pt": 22.17,
    "sparse": false,
-   "body_lines": 86,
+   "body_lines": 82,
    "column_lines": {
-    "left": 41,
-    "right": 45,
-    "spanning": 0
-   },
-   "median_neighbouring_baseline_pt": 13.925,
-   "short_text_blocks": [
-    {
-     "lines": 1,
-     "text": "Tier 2 Special Item",
-     "y_pt": 272.2
-    },
-    {
-     "lines": 1,
-     "text": "Tier 3 Special Item",
-     "y_pt": 469.5
-    },
-    {
-     "lines": 1,
-     "text": "Tier 4 Special Item",
-     "y_pt": 667.2
-    },
-    {
-     "lines": 2,
-     "text": "Salttide's Tide-Curse  | Cost:  70c  | Req:  DEX 4, SPI 3   | Equipment: Neck",
-     "y_pt": 684.22
-    },
-    {
-     "lines": 1,
-     "text": "Tier 5 Legendary Artifact",
-     "y_pt": 207.77
-    },
-    {
-     "lines": 1,
-     "text": "Effect:  While wearing Salttide's Counting Stone:",
-     "y_pt": 314.75
-    },
-    {
-     "lines": 1,
-     "text": "Tier 2 Special Item",
-     "y_pt": 685.37
-    },
-    {
-     "lines": 2,
-     "text": "Old Wode's Tithe-Bundle  | Cost:  20c  | Req:  SPI 2  |  Equipment: Hands (Consumable)",
-     "y_pt": 702.4
-    }
-   ],
-   "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
-  },
-  {
-   "page": 208,
-   "vertical_union_fraction": 0.928,
-   "largest_empty_band_pt": 18.73,
-   "bottom_empty_band_pt": 18.73,
-   "sparse": false,
-   "body_lines": 80,
-   "column_lines": {
-    "left": 36,
+    "left": 38,
     "right": 44,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
    "short_text_blocks": [
     {
-     "lines": 1,
-     "text": "Tier 3 Special Weapon",
-     "y_pt": 207.77
+     "lines": 2,
+     "text": "Salttide's Tide-Curse  | Cost:  70c  | Req:  DEX 4, SPI 3   | Equipment: Neck",
+     "y_pt": 58.05
     },
     {
      "lines": 1,
-     "text": "Tier 4 Special Item",
-     "y_pt": 475.1
+     "text": "Effect:  While wearing Salttide's Counting Stone:",
+     "y_pt": 361.72
+    }
+   ],
+   "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
+  },
+  {
+   "page": 208,
+   "vertical_union_fraction": 0.9432,
+   "largest_empty_band_pt": 17.73,
+   "bottom_empty_band_pt": 17.73,
+   "sparse": false,
+   "body_lines": 82,
+   "column_lines": {
+    "left": 38,
+    "right": 44,
+    "spanning": 0
+   },
+   "median_neighbouring_baseline_pt": 13.925,
+   "short_text_blocks": [
+    {
+     "lines": 2,
+     "text": "Old Wode's Tithe-Bundle  | Cost:  20c  | Req:  SPI 2  |  Equipment: Hands (Consumable)",
+     "y_pt": 58.05
     },
     {
      "lines": 1,
      "text": "Effect:  While wearing the Antlered Path Seal:",
-     "y_pt": 596.4
-    },
-    {
-     "lines": 1,
-     "text": "Tier 5 Legendary Artifact",
-     "y_pt": 230.62
+     "y_pt": 643.87
     },
     {
      "lines": 1,
      "text": "Effect:  This weapon deals  blunt  damage.",
-     "y_pt": 394.1
-    },
-    {
-     "lines": 1,
-     "text": "Tier 2 Special Item",
-     "y_pt": 639.5
+     "y_pt": 394.6
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 209,
-   "vertical_union_fraction": 0.9248,
-   "largest_empty_band_pt": 24.83,
-   "bottom_empty_band_pt": 24.83,
+   "vertical_union_fraction": 0.9261,
+   "largest_empty_band_pt": 23.83,
+   "bottom_empty_band_pt": 23.83,
    "sparse": false,
    "body_lines": 81,
    "column_lines": {
@@ -8455,33 +8288,23 @@
      "y_pt": 45.61
     },
     {
-     "lines": 1,
-     "text": "Tier 3 Special Item",
-     "y_pt": 179.52
-    },
-    {
-     "lines": 1,
-     "text": "Tier 4 Special Weapon",
-     "y_pt": 432.92
+     "lines": 2,
+     "text": "Karnessa's Binding  | Cost:  126c  | Req:  SPI 7, INT 4  |  Equipment: Neck",
+     "y_pt": 58.05
     },
     {
      "lines": 1,
      "text": "Effect:  While wearing Karnessa's Binding:",
-     "y_pt": 192.47
-    },
-    {
-     "lines": 1,
-     "text": "Tier 2 Special Item",
-     "y_pt": 507.4
+     "y_pt": 192.97
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 210,
-   "vertical_union_fraction": 0.8542,
-   "largest_empty_band_pt": 84.21,
-   "bottom_empty_band_pt": 84.21,
+   "vertical_union_fraction": 0.8556,
+   "largest_empty_band_pt": 83.21,
+   "bottom_empty_band_pt": 83.21,
    "sparse": false,
    "body_lines": 79,
    "column_lines": {
@@ -8492,29 +8315,14 @@
    "median_neighbouring_baseline_pt": 13.925,
    "short_text_blocks": [
     {
-     "lines": 1,
-     "text": "Tier 3 Special Weapon",
-     "y_pt": 244.65
-    },
-    {
-     "lines": 1,
-     "text": "Tier 4 Special Item",
-     "y_pt": 513.57
-    },
-    {
      "lines": 2,
      "text": "Effect:  This shield functions as a standard shield  with  d8 AD .",
-     "y_pt": 634.47
-    },
-    {
-     "lines": 1,
-     "text": "Tier 5 Legendary Artifact",
-     "y_pt": 202.87
+     "y_pt": 635.47
     },
     {
      "lines": 1,
      "text": "Effect:  While holding The Bell's Tongue:",
-     "y_pt": 352.82
+     "y_pt": 353.32
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -14748,14 +14556,14 @@
   },
   {
    "page": 367,
-   "vertical_union_fraction": 0.682,
-   "largest_empty_band_pt": 196.12,
-   "bottom_empty_band_pt": 196.12,
+   "vertical_union_fraction": 0.6566,
+   "largest_empty_band_pt": 219.99,
+   "bottom_empty_band_pt": 219.99,
    "sparse": false,
-   "body_lines": 66,
+   "body_lines": 65,
    "column_lines": {
     "left": 27,
-    "right": 39,
+    "right": 38,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -14819,33 +14627,28 @@
      "lines": 2,
      "text": "8 Northwest",
      "y_pt": 292.88
-    },
-    {
-     "lines": 1,
-     "text": "Preparation Steps",
-     "y_pt": 533.05
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
    "page": 368,
-   "vertical_union_fraction": 0.7536,
-   "largest_empty_band_pt": 161.53,
-   "bottom_empty_band_pt": 161.53,
+   "vertical_union_fraction": 0.7787,
+   "largest_empty_band_pt": 143.88,
+   "bottom_empty_band_pt": 143.88,
    "sparse": false,
-   "body_lines": 62,
+   "body_lines": 63,
    "column_lines": {
-    "left": 38,
+    "left": 39,
     "right": 24,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
    "short_text_blocks": [
     {
-     "lines": 1,
-     "text": "mine each party's APL as described in  6.14 .",
-     "y_pt": 56.45
+     "lines": 2,
+     "text": "1.   Determine Average Party Level (APL).  Deter­ mine each party's APL as described in  6.14 .",
+     "y_pt": 60.17
     },
     {
      "lines": 2,
@@ -15864,9 +15667,9 @@
   },
   {
    "page": 400,
-   "vertical_union_fraction": 0.9385,
-   "largest_empty_band_pt": 41.93,
-   "bottom_empty_band_pt": 41.93,
+   "vertical_union_fraction": 0.9433,
+   "largest_empty_band_pt": 33.93,
+   "bottom_empty_band_pt": 33.93,
    "sparse": false,
    "body_lines": 89,
    "column_lines": {
@@ -17819,8 +17622,8 @@
   {
    "page": 430,
    "vertical_union_fraction": 0.9246,
-   "largest_empty_band_pt": 50.69,
-   "bottom_empty_band_pt": 50.69,
+   "largest_empty_band_pt": 47.19,
+   "bottom_empty_band_pt": 47.19,
    "sparse": false,
    "body_lines": 88,
    "column_lines": {
@@ -18064,17 +17867,17 @@
   },
   {
    "page": 433,
-   "vertical_union_fraction": 0.7373,
-   "largest_empty_band_pt": 130.92,
-   "bottom_empty_band_pt": 130.92,
+   "vertical_union_fraction": 0.9037,
+   "largest_empty_band_pt": 17.92,
+   "bottom_empty_band_pt": 17.92,
    "sparse": false,
-   "body_lines": 69,
+   "body_lines": 88,
    "column_lines": {
-    "left": 36,
-    "right": 8,
+    "left": 44,
+    "right": 19,
     "spanning": 25
    },
-   "median_neighbouring_baseline_pt": 10.938,
+   "median_neighbouring_baseline_pt": 13.925,
    "short_text_blocks": [
     {
      "lines": 2,
@@ -18156,14 +17959,14 @@
   },
   {
    "page": 434,
-   "vertical_union_fraction": 0.3203,
-   "largest_empty_band_pt": 465.68,
-   "bottom_empty_band_pt": 465.68,
+   "vertical_union_fraction": 0.1204,
+   "largest_empty_band_pt": 604.93,
+   "bottom_empty_band_pt": 604.93,
    "sparse": true,
-   "body_lines": 28,
+   "body_lines": 9,
    "column_lines": {
-    "left": 16,
-    "right": 12,
+    "left": 6,
+    "right": 3,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -20956,9 +20759,9 @@
   },
   {
    "page": 483,
-   "vertical_union_fraction": 0.96,
-   "largest_empty_band_pt": 25.74,
-   "bottom_empty_band_pt": 25.74,
+   "vertical_union_fraction": 0.9648,
+   "largest_empty_band_pt": 17.74,
+   "bottom_empty_band_pt": 17.74,
    "sparse": false,
    "body_lines": 87,
    "column_lines": {
@@ -21210,9 +21013,9 @@
   },
   {
    "page": 488,
-   "vertical_union_fraction": 0.9796,
-   "largest_empty_band_pt": 10.96,
-   "bottom_empty_band_pt": 10.96,
+   "vertical_union_fraction": 0.9844,
+   "largest_empty_band_pt": 4.63,
+   "bottom_empty_band_pt": 2.96,
    "sparse": false,
    "body_lines": 79,
    "column_lines": {
@@ -21280,7 +21083,7 @@
     {
      "lines": 1,
      "text": "Tiebreaker:  Most total damage dealt to the Serpent.",
-     "y_pt": 638.3
+     "y_pt": 646.3
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
@@ -25026,14 +24829,30 @@
   },
   {
    "page": 570,
-   "vertical_union_fraction": 0.608,
-   "largest_empty_band_pt": 260.63,
-   "bottom_empty_band_pt": 260.63,
-   "sparse": false,
-   "body_lines": 53,
+   "vertical_union_fraction": 0.384,
+   "largest_empty_band_pt": 417.85,
+   "bottom_empty_band_pt": 0.0,
+   "sparse": true,
+   "body_lines": 4,
    "column_lines": {
-    "left": 29,
-    "right": 24,
+    "left": 4,
+    "right": 0,
+    "spanning": 0
+   },
+   "median_neighbouring_baseline_pt": 13.925,
+   "short_text_blocks": [],
+   "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
+  },
+  {
+   "page": 571,
+   "vertical_union_fraction": 0.5165,
+   "largest_empty_band_pt": 330.36,
+   "bottom_empty_band_pt": 330.36,
+   "sparse": true,
+   "body_lines": 47,
+   "column_lines": {
+    "left": 24,
+    "right": 23,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -25041,23 +24860,18 @@
     {
      "lines": 2,
      "text": "Class:  Druid |  Ancestry and Background:  Halfling  Farmer |  Level:  1",
-     "y_pt": 131.9
+     "y_pt": 62.17
     },
     {
      "lines": 1,
      "text": "Ancestry Traits",
-     "y_pt": 209.32
-    },
-    {
-     "lines": 1,
-     "text": "Talents, Powers, and Special Rules",
-     "y_pt": 112.25
+     "y_pt": 139.6
     }
    ],
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 571,
+   "page": 572,
    "vertical_union_fraction": 0.8611,
    "largest_empty_band_pt": 82.99,
    "bottom_empty_band_pt": 0.0,
@@ -25073,8 +24887,8 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 572,
-   "vertical_union_fraction": 0.7749,
+   "page": 573,
+   "vertical_union_fraction": 0.7827,
    "largest_empty_band_pt": 138.21,
    "bottom_empty_band_pt": 138.21,
    "sparse": false,
@@ -25115,8 +24929,8 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 573,
-   "vertical_union_fraction": 0.6824,
+   "page": 574,
+   "vertical_union_fraction": 0.6745,
    "largest_empty_band_pt": 213.93,
    "bottom_empty_band_pt": 213.93,
    "sparse": false,
@@ -25142,42 +24956,15 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 574,
-   "vertical_union_fraction": 0.8984,
-   "largest_empty_band_pt": 37.83,
-   "bottom_empty_band_pt": 37.83,
-   "sparse": false,
-   "body_lines": 45,
-   "column_lines": {
-    "left": 45,
-    "right": 0,
-    "spanning": 0
-   },
-   "median_neighbouring_baseline_pt": 13.925,
-   "short_text_blocks": [
-    {
-     "lines": 2,
-     "text": "Class:  Sorcerer |  Ancestry and Background:  De­ monborn Cultist |  Level:  1",
-     "y_pt": 354.6
-    },
-    {
-     "lines": 1,
-     "text": "Ancestry Traits",
-     "y_pt": 432.02
-    }
-   ],
-   "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
-  },
-  {
    "page": 575,
-   "vertical_union_fraction": 0.9378,
-   "largest_empty_band_pt": 23.11,
-   "bottom_empty_band_pt": 6.0,
+   "vertical_union_fraction": 0.6639,
+   "largest_empty_band_pt": 221.36,
+   "bottom_empty_band_pt": 0.0,
    "sparse": false,
-   "body_lines": 54,
+   "body_lines": 20,
    "column_lines": {
-    "left": 34,
-    "right": 20,
+    "left": 20,
+    "right": 0,
     "spanning": 0
    },
    "median_neighbouring_baseline_pt": 13.925,
@@ -25186,6 +24973,49 @@
   },
   {
    "page": 576,
+   "vertical_union_fraction": 0.6744,
+   "largest_empty_band_pt": 214.03,
+   "bottom_empty_band_pt": 214.03,
+   "sparse": false,
+   "body_lines": 58,
+   "column_lines": {
+    "left": 24,
+    "right": 34,
+    "spanning": 0
+   },
+   "median_neighbouring_baseline_pt": 13.925,
+   "short_text_blocks": [
+    {
+     "lines": 2,
+     "text": "Class:  Sorcerer |  Ancestry and Background:  De­ monborn Cultist |  Level:  1",
+     "y_pt": 62.17
+    },
+    {
+     "lines": 1,
+     "text": "Ancestry Traits",
+     "y_pt": 139.6
+    }
+   ],
+   "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
+  },
+  {
+   "page": 577,
+   "vertical_union_fraction": 0.7311,
+   "largest_empty_band_pt": 174.23,
+   "bottom_empty_band_pt": 0.0,
+   "sparse": false,
+   "body_lines": 20,
+   "column_lines": {
+    "left": 20,
+    "right": 0,
+    "spanning": 0
+   },
+   "median_neighbouring_baseline_pt": 13.925,
+   "short_text_blocks": [],
+   "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
+  },
+  {
+   "page": 578,
    "vertical_union_fraction": 0.9207,
    "largest_empty_band_pt": 41.13,
    "bottom_empty_band_pt": 41.13,
@@ -25227,7 +25057,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 577,
+   "page": 579,
    "vertical_union_fraction": 0.8102,
    "largest_empty_band_pt": 124.18,
    "bottom_empty_band_pt": 124.18,
@@ -25269,7 +25099,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 578,
+   "page": 580,
    "vertical_union_fraction": 0.6214,
    "largest_empty_band_pt": 251.21,
    "bottom_empty_band_pt": 251.21,
@@ -25301,7 +25131,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 579,
+   "page": 581,
    "vertical_union_fraction": 0.7281,
    "largest_empty_band_pt": 176.29,
    "bottom_empty_band_pt": 0.0,
@@ -25317,7 +25147,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 580,
+   "page": 582,
    "vertical_union_fraction": 0.9207,
    "largest_empty_band_pt": 25.11,
    "bottom_empty_band_pt": 16.04,
@@ -25359,7 +25189,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 581,
+   "page": 583,
    "vertical_union_fraction": 0.6752,
    "largest_empty_band_pt": 218.96,
    "bottom_empty_band_pt": 218.96,
@@ -25386,7 +25216,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 582,
+   "page": 584,
    "vertical_union_fraction": 0.7419,
    "largest_empty_band_pt": 166.61,
    "bottom_empty_band_pt": 0.0,
@@ -25402,7 +25232,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 583,
+   "page": 585,
    "vertical_union_fraction": 0.5331,
    "largest_empty_band_pt": 296.21,
    "bottom_empty_band_pt": 296.21,
@@ -25519,7 +25349,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 584,
+   "page": 586,
    "vertical_union_fraction": 0.5735,
    "largest_empty_band_pt": 278.44,
    "bottom_empty_band_pt": 278.44,
@@ -25541,7 +25371,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 585,
+   "page": 587,
    "vertical_union_fraction": 0.6666,
    "largest_empty_band_pt": 191.21,
    "bottom_empty_band_pt": 191.21,
@@ -25658,7 +25488,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 586,
+   "page": 588,
    "vertical_union_fraction": 0.9415,
    "largest_empty_band_pt": 20.97,
    "bottom_empty_band_pt": 18.96,
@@ -25674,7 +25504,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 587,
+   "page": 589,
    "vertical_union_fraction": 0.2608,
    "largest_empty_band_pt": 507.46,
    "bottom_empty_band_pt": 507.46,
@@ -25690,7 +25520,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 588,
+   "page": 590,
    "vertical_union_fraction": 0.592,
    "largest_empty_band_pt": 170.5,
    "bottom_empty_band_pt": 170.5,
@@ -25782,7 +25612,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 589,
+   "page": 591,
    "vertical_union_fraction": 0.7847,
    "largest_empty_band_pt": 129.61,
    "bottom_empty_band_pt": 129.61,
@@ -25829,7 +25659,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 590,
+   "page": 592,
    "vertical_union_fraction": 0.3216,
    "largest_empty_band_pt": 449.3,
    "bottom_empty_band_pt": 449.3,
@@ -25916,7 +25746,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 591,
+   "page": 593,
    "vertical_union_fraction": 0.9248,
    "largest_empty_band_pt": 38.68,
    "bottom_empty_band_pt": 38.68,
@@ -25988,7 +25818,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 592,
+   "page": 594,
    "vertical_union_fraction": 0.9687,
    "largest_empty_band_pt": 12.45,
    "bottom_empty_band_pt": 5.42,
@@ -26040,7 +25870,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 593,
+   "page": 595,
    "vertical_union_fraction": 0.6102,
    "largest_empty_band_pt": 247.25,
    "bottom_empty_band_pt": 247.25,
@@ -26077,7 +25907,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 594,
+   "page": 596,
    "vertical_union_fraction": 0.635,
    "largest_empty_band_pt": 242.06,
    "bottom_empty_band_pt": 242.06,
@@ -26099,7 +25929,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 595,
+   "page": 597,
    "vertical_union_fraction": 0.4034,
    "largest_empty_band_pt": 404.47,
    "bottom_empty_band_pt": 404.47,
@@ -26136,7 +25966,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 596,
+   "page": 598,
    "vertical_union_fraction": 0.9539,
    "largest_empty_band_pt": 21.14,
    "bottom_empty_band_pt": 4.36,
@@ -26168,7 +25998,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 597,
+   "page": 599,
    "vertical_union_fraction": 0.2472,
    "largest_empty_band_pt": 517.66,
    "bottom_empty_band_pt": 517.66,
@@ -26184,7 +26014,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 598,
+   "page": 600,
    "vertical_union_fraction": 0.9113,
    "largest_empty_band_pt": 40.11,
    "bottom_empty_band_pt": 40.11,
@@ -26206,7 +26036,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 599,
+   "page": 601,
    "vertical_union_fraction": 0.9711,
    "largest_empty_band_pt": 14.14,
    "bottom_empty_band_pt": 6.14,
@@ -26228,7 +26058,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 600,
+   "page": 602,
    "vertical_union_fraction": 0.4562,
    "largest_empty_band_pt": 359.59,
    "bottom_empty_band_pt": 359.59,
@@ -26250,7 +26080,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 601,
+   "page": 603,
    "vertical_union_fraction": 0.8221,
    "largest_empty_band_pt": 102.74,
    "bottom_empty_band_pt": 102.74,
@@ -26287,7 +26117,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 602,
+   "page": 604,
    "vertical_union_fraction": 0.9562,
    "largest_empty_band_pt": 21.14,
    "bottom_empty_band_pt": 4.69,
@@ -26404,7 +26234,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 603,
+   "page": 605,
    "vertical_union_fraction": 0.9797,
    "largest_empty_band_pt": 11.45,
    "bottom_empty_band_pt": 2.78,
@@ -26521,7 +26351,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 604,
+   "page": 606,
    "vertical_union_fraction": 0.9797,
    "largest_empty_band_pt": 11.45,
    "bottom_empty_band_pt": 2.78,
@@ -26638,7 +26468,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 605,
+   "page": 607,
    "vertical_union_fraction": 0.9774,
    "largest_empty_band_pt": 11.45,
    "bottom_empty_band_pt": 2.78,
@@ -26755,7 +26585,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 606,
+   "page": 608,
    "vertical_union_fraction": 0.9797,
    "largest_empty_band_pt": 11.45,
    "bottom_empty_band_pt": 2.78,
@@ -26872,7 +26702,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 607,
+   "page": 609,
    "vertical_union_fraction": 0.9804,
    "largest_empty_band_pt": 11.45,
    "bottom_empty_band_pt": 0.68,
@@ -26989,7 +26819,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 608,
+   "page": 610,
    "vertical_union_fraction": 0.9804,
    "largest_empty_band_pt": 11.45,
    "bottom_empty_band_pt": 0.68,
@@ -27106,7 +26936,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 609,
+   "page": 611,
    "vertical_union_fraction": 0.9797,
    "largest_empty_band_pt": 11.45,
    "bottom_empty_band_pt": 2.78,
@@ -27223,7 +27053,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 610,
+   "page": 612,
    "vertical_union_fraction": 0.9781,
    "largest_empty_band_pt": 11.45,
    "bottom_empty_band_pt": 0.68,
@@ -27340,7 +27170,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 611,
+   "page": 613,
    "vertical_union_fraction": 0.9837,
    "largest_empty_band_pt": 11.45,
    "bottom_empty_band_pt": 0.0,
@@ -27437,7 +27267,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 612,
+   "page": 614,
    "vertical_union_fraction": 0.6504,
    "largest_empty_band_pt": 233.98,
    "bottom_empty_band_pt": 233.98,
@@ -27539,7 +27369,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 613,
+   "page": 615,
    "vertical_union_fraction": 0.789,
    "largest_empty_band_pt": 89.19,
    "bottom_empty_band_pt": 89.19,
@@ -27555,7 +27385,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 614,
+   "page": 616,
    "vertical_union_fraction": 0.8795,
    "largest_empty_band_pt": 27.49,
    "bottom_empty_band_pt": 27.49,
@@ -27627,7 +27457,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 615,
+   "page": 617,
    "vertical_union_fraction": 0.5662,
    "largest_empty_band_pt": 268.71,
    "bottom_empty_band_pt": 268.71,
@@ -27654,7 +27484,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 616,
+   "page": 618,
    "vertical_union_fraction": 0.52,
    "largest_empty_band_pt": 325.51,
    "bottom_empty_band_pt": 325.51,
@@ -27670,7 +27500,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 617,
+   "page": 619,
    "vertical_union_fraction": 0.9154,
    "largest_empty_band_pt": 28.98,
    "bottom_empty_band_pt": 28.98,
@@ -27727,7 +27557,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 618,
+   "page": 620,
    "vertical_union_fraction": 0.8354,
    "largest_empty_band_pt": 98.75,
    "bottom_empty_band_pt": 98.75,
@@ -27824,7 +27654,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 619,
+   "page": 621,
    "vertical_union_fraction": 0.8525,
    "largest_empty_band_pt": 89.38,
    "bottom_empty_band_pt": 89.38,
@@ -27851,7 +27681,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 620,
+   "page": 622,
    "vertical_union_fraction": 0.7045,
    "largest_empty_band_pt": 200.38,
    "bottom_empty_band_pt": 200.38,
@@ -27867,7 +27697,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 621,
+   "page": 623,
    "vertical_union_fraction": 0.7161,
    "largest_empty_band_pt": 161.26,
    "bottom_empty_band_pt": 161.26,
@@ -27934,7 +27764,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 622,
+   "page": 624,
    "vertical_union_fraction": 0.934,
    "largest_empty_band_pt": 13.26,
    "bottom_empty_band_pt": 9.08,
@@ -27996,7 +27826,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 623,
+   "page": 625,
    "vertical_union_fraction": 1.0,
    "largest_empty_band_pt": 0,
    "bottom_empty_band_pt": 0.0,
@@ -28016,7 +27846,7 @@
     },
     {
      "lines": 2,
-     "text": "General Talents , 115 Guard Point , 599",
+     "text": "General Talents , 115 Guard Point , 601",
      "y_pt": 65.52
     },
     {
@@ -28036,7 +27866,7 @@
     },
     {
      "lines": 2,
-     "text": "Journey Table , 502, 600 Jump , 64, 600",
+     "text": "Journey Table , 502, 602 Jump , 64, 602",
      "y_pt": 455.37
     },
     {
@@ -28046,7 +27876,7 @@
     },
     {
      "lines": 1,
-     "text": "Knocked Out , 84, 88, 600",
+     "text": "Knocked Out , 84, 88, 602",
      "y_pt": 510.47
     },
     {
@@ -28063,7 +27893,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 624,
+   "page": 626,
    "vertical_union_fraction": 0.9867,
    "largest_empty_band_pt": 9.35,
    "bottom_empty_band_pt": 0.0,
@@ -28088,7 +27918,7 @@
     },
     {
      "lines": 2,
-     "text": "Off-Hand Weapon , 119, 602 Open Terrain , 37, 602",
+     "text": "Off-Hand Weapon , 119, 604 Open Terrain , 37, 604",
      "y_pt": 522.27
     },
     {
@@ -28110,7 +27940,7 @@
    "interpretation": "review context: complete-unit keep, fresh start, artwork, content end or excess composition gap"
   },
   {
-   "page": 625,
+   "page": 627,
    "vertical_union_fraction": 0.2118,
    "largest_empty_band_pt": 542.98,
    "bottom_empty_band_pt": 542.98,
@@ -28125,7 +27955,7 @@
    "short_text_blocks": [
     {
      "lines": 2,
-     "text": "Sunder , 120, 605 Swim (X\") , 40, 258, 605",
+     "text": "Sunder , 120, 607 Swim (X\") , 40, 258, 607",
      "y_pt": 55.35
     },
     {
@@ -28150,12 +27980,12 @@
     },
     {
      "lines": 1,
-     "text": "Vault Reserve , 514, 606",
+     "text": "Vault Reserve , 514, 608",
      "y_pt": 190.5
     },
     {
      "lines": 1,
-     "text": "Vulnerable , 76, 269, 270, 606",
+     "text": "Vulnerable , 76, 269, 270, 608",
      "y_pt": 55.35
     },
     {

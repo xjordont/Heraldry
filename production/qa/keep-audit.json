@@ -958,7 +958,7 @@
   {
    "id": "h-717-permanent-special-items",
    "kind": "section",
-   "h2_pt": 10824.2,
+   "h2_pt": 10826.3,
    "pages": [
     195,
     196,
@@ -982,7 +982,7 @@
   {
    "id": "h-tier-3-special-weapons-apl-56",
    "kind": "section",
-   "h2_pt": 974.3,
+   "h2_pt": 961.8,
    "pages": [
     198,
     199
@@ -992,7 +992,7 @@
   {
    "id": "T079",
    "kind": "table",
-   "h2_pt": 956.6,
+   "h2_pt": 944.2,
    "pages": [
     198,
     199
@@ -1002,7 +1002,7 @@
   {
    "id": "h-tier-4-special-weapons-apl-78",
    "kind": "section",
-   "h2_pt": 810.3,
+   "h2_pt": 797.9,
    "pages": [
     199
    ],
@@ -1011,7 +1011,7 @@
   {
    "id": "T080",
    "kind": "table",
-   "h2_pt": 792.7,
+   "h2_pt": 780.2,
    "pages": [
     199
    ],
@@ -1020,7 +1020,7 @@
   {
    "id": "h-tier-5-legendary-artifact-weapons-apl-910",
    "kind": "section",
-   "h2_pt": 1061.6,
+   "h2_pt": 1049.2,
    "pages": [
     199,
     200
@@ -1030,7 +1030,7 @@
   {
    "id": "T081",
    "kind": "table",
-   "h2_pt": 1027.8,
+   "h2_pt": 1015.4,
    "pages": [
     199,
     200
@@ -1040,7 +1040,7 @@
   {
    "id": "h-tier-5-legendary-artifact-armour-and-shields-d20",
    "kind": "section",
-   "h2_pt": 1847.9,
+   "h2_pt": 1835.5,
    "pages": [
     200,
     201,
@@ -1051,7 +1051,7 @@
   {
    "id": "T082",
    "kind": "table",
-   "h2_pt": 1814.1,
+   "h2_pt": 1801.7,
    "pages": [
     200,
     201,
@@ -1062,7 +1062,7 @@
   {
    "id": "h-tier-1-special-items-apl-12",
    "kind": "section",
-   "h2_pt": 797.9,
+   "h2_pt": 785.5,
    "pages": [
     202
    ],
@@ -1071,7 +1071,7 @@
   {
    "id": "T083",
    "kind": "table",
-   "h2_pt": 780.3,
+   "h2_pt": 767.8,
    "pages": [
     202
    ],
@@ -1080,7 +1080,7 @@
   {
    "id": "h-tier-5-legendary-artifacts-d20",
    "kind": "section",
-   "h2_pt": 1994.4,
+   "h2_pt": 1982.0,
    "pages": [
     202,
     203,
@@ -1091,7 +1091,7 @@
   {
    "id": "T084",
    "kind": "table",
-   "h2_pt": 1976.8,
+   "h2_pt": 1964.3,
    "pages": [
     202,
     203,
@@ -1102,7 +1102,7 @@
   {
    "id": "h-7173-named-special-items-and-artifacts",
    "kind": "section",
-   "h2_pt": 4382.8,
+   "h2_pt": 4389.3,
    "pages": [
     204,
     205,
@@ -1778,7 +1778,6 @@
    "kind": "section",
    "h2_pt": 2297.7,
    "pages": [
-    367,
     368,
     369,
     370,
@@ -2900,7 +2899,9 @@
     579,
     580,
     581,
-    582
+    582,
+    583,
+    584
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -2939,8 +2940,8 @@
    "kind": "section",
    "h2_pt": 725.8,
    "pages": [
-    570,
-    571
+    571,
+    572
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -2949,8 +2950,8 @@
    "kind": "section",
    "h2_pt": 797.6,
    "pages": [
-    573,
-    574
+    574,
+    575
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -2959,8 +2960,8 @@
    "kind": "section",
    "h2_pt": 797.5,
    "pages": [
-    574,
-    575
+    576,
+    577
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -2969,8 +2970,8 @@
    "kind": "section",
    "h2_pt": 775.5,
    "pages": [
-    578,
-    579
+    580,
+    581
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -2979,8 +2980,8 @@
    "kind": "section",
    "h2_pt": 769.4,
    "pages": [
-    581,
-    582
+    583,
+    584
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -2989,8 +2990,8 @@
    "kind": "section",
    "h2_pt": 977.1,
    "pages": [
-    584,
-    585
+    586,
+    587
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -2999,8 +3000,8 @@
    "kind": "section",
    "h2_pt": 818.2,
    "pages": [
-    586,
-    587
+    588,
+    589
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -3009,8 +3010,8 @@
    "kind": "section",
    "h2_pt": 1625.7,
    "pages": [
-    591,
-    592
+    593,
+    594
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -3019,8 +3020,8 @@
    "kind": "table",
    "h2_pt": 1553.5,
    "pages": [
-    591,
-    592
+    593,
+    594
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -3029,8 +3030,8 @@
    "kind": "section",
    "h2_pt": 792.3,
    "pages": [
-    594,
-    595
+    596,
+    597
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -3039,8 +3040,8 @@
    "kind": "section",
    "h2_pt": 767.7,
    "pages": [
-    596,
-    597
+    598,
+    599
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -3049,8 +3050,8 @@
    "kind": "section",
    "h2_pt": 721.0,
    "pages": [
-    599,
-    600
+    601,
+    602
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -3059,8 +3060,6 @@
    "kind": "section",
    "h2_pt": 7459.8,
    "pages": [
-    602,
-    603,
     604,
     605,
     606,
@@ -3069,7 +3068,9 @@
     609,
     610,
     611,
-    612
+    612,
+    613,
+    614
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -3078,8 +3079,8 @@
    "kind": "section",
    "h2_pt": 827.8,
    "pages": [
-    613,
-    614
+    615,
+    616
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -3088,14 +3089,14 @@
    "kind": "section",
    "h2_pt": 2851.4,
    "pages": [
-    614,
-    615,
     616,
     617,
     618,
     619,
     620,
-    621
+    621,
+    622,
+    623
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -3104,10 +3105,10 @@
    "kind": "section",
    "h2_pt": 1322.9,
    "pages": [
-    614,
-    615,
     616,
-    617
+    617,
+    618,
+    619
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -3116,11 +3117,11 @@
    "kind": "section",
    "h2_pt": 1296.7,
    "pages": [
-    617,
-    618,
     619,
     620,
-    621
+    621,
+    622,
+    623
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -3129,9 +3130,9 @@
    "kind": "section",
    "h2_pt": 863.6,
    "pages": [
-    617,
-    618,
-    619
+    619,
+    620,
+    621
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   },
@@ -3140,8 +3141,8 @@
    "kind": "table",
    "h2_pt": 844.0,
    "pages": [
-    617,
-    618
+    619,
+    620
    ],
    "reason": "taller than one empty usable page at approved widths; child units audited separately"
   }
@@ -9650,7 +9651,7 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 10824.2,
+   "h2_pt": 10826.3,
    "fit_capable": false,
    "pages": [
     195,
@@ -9708,8 +9709,8 @@
    "id": "h-tier-1-special-armour-and-shields-apl-12",
    "kind": "section",
    "class": "col",
-   "h1_pt": 309.5,
-   "h2_pt": 321.5,
+   "h1_pt": 297.1,
+   "h2_pt": 309.1,
    "fit_capable": true,
    "pages": [
     196
@@ -9719,8 +9720,8 @@
    "id": "T072",
    "kind": "table",
    "class": "contained",
-   "h1_pt": 275.7,
-   "h2_pt": 287.7,
+   "h1_pt": 263.3,
+   "h2_pt": 275.3,
    "fit_capable": true,
    "pages": [
     196
@@ -9730,8 +9731,8 @@
    "id": "h-tier-2-special-armour-and-shields-apl-34",
    "kind": "section",
    "class": "col",
-   "h1_pt": 255.4,
-   "h2_pt": 267.4,
+   "h1_pt": 242.9,
+   "h2_pt": 254.9,
    "fit_capable": true,
    "pages": [
     196
@@ -9741,8 +9742,8 @@
    "id": "T073",
    "kind": "table",
    "class": "contained",
-   "h1_pt": 221.6,
-   "h2_pt": 233.6,
+   "h1_pt": 209.1,
+   "h2_pt": 221.1,
    "fit_capable": true,
    "pages": [
     196
@@ -9752,8 +9753,8 @@
    "id": "h-tier-3-special-armour-and-shields-apl-56",
    "kind": "section",
    "class": "col",
-   "h1_pt": 269.3,
-   "h2_pt": 281.3,
+   "h1_pt": 256.9,
+   "h2_pt": 268.9,
    "fit_capable": true,
    "pages": [
     196
@@ -9763,8 +9764,8 @@
    "id": "T074",
    "kind": "table",
    "class": "contained",
-   "h1_pt": 235.5,
-   "h2_pt": 247.5,
+   "h1_pt": 223.1,
+   "h2_pt": 235.1,
    "fit_capable": true,
    "pages": [
     196
@@ -9774,8 +9775,8 @@
    "id": "h-tier-4-special-armour-and-shields-apl-78",
    "kind": "section",
    "class": "col",
-   "h1_pt": 269.3,
-   "h2_pt": 281.3,
+   "h1_pt": 256.8,
+   "h2_pt": 268.8,
    "fit_capable": true,
    "pages": [
     196
@@ -9785,8 +9786,8 @@
    "id": "T075",
    "kind": "table",
    "class": "contained",
-   "h1_pt": 235.5,
-   "h2_pt": 247.5,
+   "h1_pt": 223.0,
+   "h2_pt": 235.0,
    "fit_capable": true,
    "pages": [
     196
@@ -9796,8 +9797,8 @@
    "id": "h-tier-5-legendary-shields-apl-910",
    "kind": "section",
    "class": "col",
-   "h1_pt": 262.4,
-   "h2_pt": 274.4,
+   "h1_pt": 249.9,
+   "h2_pt": 261.9,
    "fit_capable": true,
    "pages": [
     197
@@ -9807,8 +9808,8 @@
    "id": "T076",
    "kind": "table",
    "class": "contained",
-   "h1_pt": 244.7,
-   "h2_pt": 256.7,
+   "h1_pt": 232.2,
+   "h2_pt": 244.2,
    "fit_capable": true,
    "pages": [
     197
@@ -9818,8 +9819,8 @@
    "id": "h-tier-1-special-weapons-apl-12",
    "kind": "section",
    "class": "col",
-   "h1_pt": 632.8,
-   "h2_pt": 644.8,
+   "h1_pt": 620.3,
+   "h2_pt": 632.3,
    "fit_capable": true,
    "pages": [
     197
@@ -9829,8 +9830,8 @@
    "id": "T077",
    "kind": "table",
    "class": "contained",
-   "h1_pt": 615.1,
-   "h2_pt": 627.1,
+   "h1_pt": 602.7,
+   "h2_pt": 614.7,
    "fit_capable": true,
    "pages": [
     197
@@ -9840,8 +9841,8 @@
    "id": "h-tier-2-special-weapons-apl-34",
    "kind": "section",
    "class": "col",
-   "h1_pt": 674.6,
-   "h2_pt": 686.6,
+   "h1_pt": 662.1,
+   "h2_pt": 674.1,
    "fit_capable": true,
    "pages": [
     198
@@ -9851,8 +9852,8 @@
    "id": "T078",
    "kind": "table",
    "class": "contained",
-   "h1_pt": 656.9,
-   "h2_pt": 668.9,
+   "h1_pt": 644.5,
+   "h2_pt": 656.5,
    "fit_capable": true,
    "pages": [
     198
@@ -9862,8 +9863,8 @@
    "id": "h-tier-3-special-weapons-apl-56",
    "kind": "section",
    "class": "over",
-   "h1_pt": 962.3,
-   "h2_pt": 974.3,
+   "h1_pt": 949.8,
+   "h2_pt": 961.8,
    "fit_capable": false,
    "pages": [
     198,
@@ -9874,8 +9875,8 @@
    "id": "T079",
    "kind": "table",
    "class": "over",
-   "h1_pt": 944.6,
-   "h2_pt": 956.6,
+   "h1_pt": 932.2,
+   "h2_pt": 944.2,
    "fit_capable": false,
    "pages": [
     198,
@@ -9886,8 +9887,8 @@
    "id": "h-tier-4-special-weapons-apl-78",
    "kind": "section",
    "class": "over",
-   "h1_pt": 798.3,
-   "h2_pt": 810.3,
+   "h1_pt": 785.9,
+   "h2_pt": 797.9,
    "fit_capable": false,
    "pages": [
     199
@@ -9897,8 +9898,8 @@
    "id": "T080",
    "kind": "table",
    "class": "over",
-   "h1_pt": 780.7,
-   "h2_pt": 792.7,
+   "h1_pt": 768.2,
+   "h2_pt": 780.2,
    "fit_capable": false,
    "pages": [
     199
@@ -9908,8 +9909,8 @@
    "id": "h-tier-5-legendary-artifact-weapons-apl-910",
    "kind": "section",
    "class": "over",
-   "h1_pt": 1049.6,
-   "h2_pt": 1061.6,
+   "h1_pt": 1037.2,
+   "h2_pt": 1049.2,
    "fit_capable": false,
    "pages": [
     199,
@@ -9920,8 +9921,8 @@
    "id": "T081",
    "kind": "table",
    "class": "over",
-   "h1_pt": 1015.8,
-   "h2_pt": 1027.8,
+   "h1_pt": 1003.4,
+   "h2_pt": 1015.4,
    "fit_capable": false,
    "pages": [
     199,
@@ -9932,8 +9933,8 @@
    "id": "h-tier-5-legendary-artifact-armour-and-shields-d20",
    "kind": "section",
    "class": "over",
-   "h1_pt": 1835.9,
-   "h2_pt": 1847.9,
+   "h1_pt": 1823.5,
+   "h2_pt": 1835.5,
    "fit_capable": false,
    "pages": [
     200,
@@ -9945,8 +9946,8 @@
    "id": "T082",
    "kind": "table",
    "class": "over",
-   "h1_pt": 1802.1,
-   "h2_pt": 1814.1,
+   "h1_pt": 1789.7,
+   "h2_pt": 1801.7,
    "fit_capable": false,
    "pages": [
     200,
@@ -9958,8 +9959,8 @@
    "id": "h-tier-1-special-items-apl-12",
    "kind": "section",
    "class": "over",
-   "h1_pt": 785.9,
-   "h2_pt": 797.9,
+   "h1_pt": 773.5,
+   "h2_pt": 785.5,
    "fit_capable": false,
    "pages": [
     202
@@ -9969,8 +9970,8 @@
    "id": "T083",
    "kind": "table",
    "class": "over",
-   "h1_pt": 768.3,
-   "h2_pt": 780.3,
+   "h1_pt": 755.8,
+   "h2_pt": 767.8,
    "fit_capable": false,
    "pages": [
     202
@@ -9980,8 +9981,8 @@
    "id": "h-tier-5-legendary-artifacts-d20",
    "kind": "section",
    "class": "over",
-   "h1_pt": 1982.4,
-   "h2_pt": 1994.4,
+   "h1_pt": 1970.0,
+   "h2_pt": 1982.0,
    "fit_capable": false,
    "pages": [
     202,
@@ -9993,8 +9994,8 @@
    "id": "T084",
    "kind": "table",
    "class": "over",
-   "h1_pt": 1964.8,
-   "h2_pt": 1976.8,
+   "h1_pt": 1952.3,
+   "h2_pt": 1964.3,
    "fit_capable": false,
    "pages": [
     202,
@@ -10006,8 +10007,8 @@
    "id": "h-7173-named-special-items-and-artifacts",
    "kind": "section",
    "class": "over",
-   "h1_pt": 8745.9,
-   "h2_pt": 4382.8,
+   "h1_pt": 8760.4,
+   "h2_pt": 4389.3,
    "fit_capable": false,
    "pages": [
     204,
@@ -26097,7 +26098,6 @@
    "h2_pt": 2297.7,
    "fit_capable": false,
    "pages": [
-    367,
     368,
     369,
     370,
@@ -32511,7 +32511,9 @@
     579,
     580,
     581,
-    582
+    582,
+    583,
+    584
    ]
   },
   {
@@ -33526,8 +33528,8 @@
    "h2_pt": 725.8,
    "fit_capable": false,
    "pages": [
-    570,
-    571
+    571,
+    572
    ]
   },
   {
@@ -33538,7 +33540,7 @@
    "h2_pt": 81.6,
    "fit_capable": true,
    "pages": [
-    570
+    571
    ]
   },
   {
@@ -33549,7 +33551,7 @@
    "h2_pt": 54.0,
    "fit_capable": true,
    "pages": [
-    570
+    571
    ]
   },
   {
@@ -33560,7 +33562,7 @@
    "h2_pt": 165.1,
    "fit_capable": true,
    "pages": [
-    570
+    571
    ]
   },
   {
@@ -33571,7 +33573,7 @@
    "h2_pt": 346.0,
    "fit_capable": true,
    "pages": [
-    570
+    571
    ]
   },
   {
@@ -33582,7 +33584,7 @@
    "h2_pt": 415.6,
    "fit_capable": true,
    "pages": [
-    571
+    572
    ]
   },
   {
@@ -33593,7 +33595,7 @@
    "h2_pt": 574.9,
    "fit_capable": true,
    "pages": [
-    572
+    573
    ]
   },
   {
@@ -33604,7 +33606,7 @@
    "h2_pt": 207.0,
    "fit_capable": true,
    "pages": [
-    572
+    573
    ]
   },
   {
@@ -33615,7 +33617,7 @@
    "h2_pt": 81.8,
    "fit_capable": true,
    "pages": [
-    572
+    573
    ]
   },
   {
@@ -33626,7 +33628,7 @@
    "h2_pt": 109.5,
    "fit_capable": true,
    "pages": [
-    572
+    573
    ]
   },
   {
@@ -33637,7 +33639,7 @@
    "h2_pt": 499.2,
    "fit_capable": true,
    "pages": [
-    572
+    573
    ]
   },
   {
@@ -33648,7 +33650,7 @@
    "h2_pt": 81.7,
    "fit_capable": true,
    "pages": [
-    572
+    573
    ]
   },
   {
@@ -33659,8 +33661,8 @@
    "h2_pt": 797.6,
    "fit_capable": false,
    "pages": [
-    573,
-    574
+    574,
+    575
    ]
   },
   {
@@ -33671,7 +33673,7 @@
    "h2_pt": 179.1,
    "fit_capable": true,
    "pages": [
-    573
+    574
    ]
   },
   {
@@ -33682,7 +33684,7 @@
    "h2_pt": 67.9,
    "fit_capable": true,
    "pages": [
-    573
+    574
    ]
   },
   {
@@ -33693,7 +33695,7 @@
    "h2_pt": 165.1,
    "fit_capable": true,
    "pages": [
-    573
+    574
    ]
   },
   {
@@ -33704,7 +33706,7 @@
    "h2_pt": 499.2,
    "fit_capable": true,
    "pages": [
-    573
+    574
    ]
   },
   {
@@ -33715,7 +33717,7 @@
    "h2_pt": 304.4,
    "fit_capable": true,
    "pages": [
-    574
+    575
    ]
   },
   {
@@ -33726,8 +33728,8 @@
    "h2_pt": 797.5,
    "fit_capable": false,
    "pages": [
-    574,
-    575
+    576,
+    577
    ]
   },
   {
@@ -33738,7 +33740,7 @@
    "h2_pt": 95.6,
    "fit_capable": true,
    "pages": [
-    574
+    576
    ]
   },
   {
@@ -33749,7 +33751,7 @@
    "h2_pt": 67.9,
    "fit_capable": true,
    "pages": [
-    574
+    576
    ]
   },
   {
@@ -33760,7 +33762,7 @@
    "h2_pt": 137.2,
    "fit_capable": true,
    "pages": [
-    574
+    576
    ]
   },
   {
@@ -33771,7 +33773,7 @@
    "h2_pt": 499.1,
    "fit_capable": true,
    "pages": [
-    575
+    576
    ]
   },
   {
@@ -33782,7 +33784,7 @@
    "h2_pt": 304.4,
    "fit_capable": true,
    "pages": [
-    575
+    577
    ]
   },
   {
@@ -33793,7 +33795,7 @@
    "h2_pt": 672.0,
    "fit_capable": true,
    "pages": [
-    576
+    578
    ]
   },
   {
@@ -33804,7 +33806,7 @@
    "h2_pt": 123.5,
    "fit_capable": true,
    "pages": [
-    576
+    578
    ]
   },
   {
@@ -33815,7 +33817,7 @@
    "h2_pt": 123.6,
    "fit_capable": true,
    "pages": [
-    576
+    578
    ]
   },
   {
@@ -33826,7 +33828,7 @@
    "h2_pt": 151.2,
    "fit_capable": true,
    "pages": [
-    576
+    578
    ]
   },
   {
@@ -33837,7 +33839,7 @@
    "h2_pt": 443.4,
    "fit_capable": true,
    "pages": [
-    576
+    578
    ]
   },
   {
@@ -33848,7 +33850,7 @@
    "h2_pt": 234.6,
    "fit_capable": true,
    "pages": [
-    576
+    578
    ]
   },
   {
@@ -33859,7 +33861,7 @@
    "h2_pt": 588.9,
    "fit_capable": true,
    "pages": [
-    577
+    579
    ]
   },
   {
@@ -33870,7 +33872,7 @@
    "h2_pt": 207.0,
    "fit_capable": true,
    "pages": [
-    577
+    579
    ]
   },
   {
@@ -33881,7 +33883,7 @@
    "h2_pt": 81.8,
    "fit_capable": true,
    "pages": [
-    577
+    579
    ]
   },
   {
@@ -33892,7 +33894,7 @@
    "h2_pt": 192.9,
    "fit_capable": true,
    "pages": [
-    577
+    579
    ]
   },
   {
@@ -33903,7 +33905,7 @@
    "h2_pt": 165.3,
    "fit_capable": true,
    "pages": [
-    577
+    579
    ]
   },
   {
@@ -33914,7 +33916,7 @@
    "h2_pt": 429.6,
    "fit_capable": true,
    "pages": [
-    577
+    579
    ]
   },
   {
@@ -33925,8 +33927,8 @@
    "h2_pt": 775.5,
    "fit_capable": false,
    "pages": [
-    578,
-    579
+    580,
+    581
    ]
   },
   {
@@ -33937,7 +33939,7 @@
    "h2_pt": 262.7,
    "fit_capable": true,
    "pages": [
-    578
+    580
    ]
   },
   {
@@ -33948,7 +33950,7 @@
    "h2_pt": 54.0,
    "fit_capable": true,
    "pages": [
-    578
+    580
    ]
   },
   {
@@ -33959,7 +33961,7 @@
    "h2_pt": 359.8,
    "fit_capable": true,
    "pages": [
-    578
+    580
    ]
   },
   {
@@ -33970,7 +33972,7 @@
    "h2_pt": 109.6,
    "fit_capable": true,
    "pages": [
-    578
+    580
    ]
   },
   {
@@ -33981,7 +33983,7 @@
    "h2_pt": 332.2,
    "fit_capable": true,
    "pages": [
-    579
+    581
    ]
   },
   {
@@ -33992,7 +33994,7 @@
    "h2_pt": 469.4,
    "fit_capable": true,
    "pages": [
-    580
+    582
    ]
   },
   {
@@ -34003,7 +34005,7 @@
    "h2_pt": 81.6,
    "fit_capable": true,
    "pages": [
-    580
+    582
    ]
   },
   {
@@ -34014,7 +34016,7 @@
    "h2_pt": 54.0,
    "fit_capable": true,
    "pages": [
-    580
+    582
    ]
   },
   {
@@ -34025,7 +34027,7 @@
    "h2_pt": 248.7,
    "fit_capable": true,
    "pages": [
-    580
+    582
    ]
   },
   {
@@ -34036,7 +34038,7 @@
    "h2_pt": 429.5,
    "fit_capable": true,
    "pages": [
-    580
+    582
    ]
   },
   {
@@ -34047,8 +34049,8 @@
    "h2_pt": 769.4,
    "fit_capable": false,
    "pages": [
-    581,
-    582
+    583,
+    584
    ]
   },
   {
@@ -34059,7 +34061,7 @@
    "h2_pt": 151.2,
    "fit_capable": true,
    "pages": [
-    581
+    583
    ]
   },
   {
@@ -34070,7 +34072,7 @@
    "h2_pt": 81.8,
    "fit_capable": true,
    "pages": [
-    581
+    583
    ]
   },
   {
@@ -34081,7 +34083,7 @@
    "h2_pt": 179.0,
    "fit_capable": true,
    "pages": [
-    581
+    583
    ]
   },
   {
@@ -34092,7 +34094,7 @@
    "h2_pt": 415.5,
    "fit_capable": true,
    "pages": [
-    581
+    583
    ]
   },
   {
@@ -34103,7 +34105,7 @@
    "h2_pt": 359.9,
    "fit_capable": true,
    "pages": [
-    582
+    584
    ]
   },
   {
@@ -34114,7 +34116,7 @@
    "h2_pt": 422.9,
    "fit_capable": true,
    "pages": [
-    583
+    585
    ]
   },
   {
@@ -34125,7 +34127,7 @@
    "h2_pt": 53.9,
    "fit_capable": true,
    "pages": [
-    583
+    585
    ]
   },
   {
@@ -34136,7 +34138,7 @@
    "h2_pt": 81.7,
    "fit_capable": true,
    "pages": [
-    583
+    585
    ]
   },
   {
@@ -34147,7 +34149,7 @@
    "h2_pt": 90.5,
    "fit_capable": true,
    "pages": [
-    583
+    585
    ]
   },
   {
@@ -34158,7 +34160,7 @@
    "h2_pt": 40.1,
    "fit_capable": true,
    "pages": [
-    583
+    585
    ]
   },
   {
@@ -34169,7 +34171,7 @@
    "h2_pt": 54.0,
    "fit_capable": true,
    "pages": [
-    583
+    585
    ]
   },
   {
@@ -34180,7 +34182,7 @@
    "h2_pt": 76.7,
    "fit_capable": true,
    "pages": [
-    583
+    585
    ]
   },
   {
@@ -34191,7 +34193,7 @@
    "h2_pt": 53.9,
    "fit_capable": true,
    "pages": [
-    583
+    585
    ]
   },
   {
@@ -34202,7 +34204,7 @@
    "h2_pt": 67.9,
    "fit_capable": true,
    "pages": [
-    583
+    585
    ]
   },
   {
@@ -34213,7 +34215,7 @@
    "h2_pt": 90.5,
    "fit_capable": true,
    "pages": [
-    583
+    585
    ]
   },
   {
@@ -34224,7 +34226,7 @@
    "h2_pt": 40.1,
    "fit_capable": true,
    "pages": [
-    583
+    585
    ]
   },
   {
@@ -34235,7 +34237,7 @@
    "h2_pt": 81.7,
    "fit_capable": true,
    "pages": [
-    583
+    585
    ]
   },
   {
@@ -34246,7 +34248,7 @@
    "h2_pt": 81.7,
    "fit_capable": true,
    "pages": [
-    583
+    585
    ]
   },
   {
@@ -34257,8 +34259,8 @@
    "h2_pt": 977.1,
    "fit_capable": false,
    "pages": [
-    584,
-    585
+    586,
+    587
    ]
   },
   {
@@ -34269,7 +34271,7 @@
    "h2_pt": 528.4,
    "fit_capable": true,
    "pages": [
-    585
+    587
    ]
   },
   {
@@ -34280,8 +34282,8 @@
    "h2_pt": 818.2,
    "fit_capable": false,
    "pages": [
-    586,
-    587
+    588,
+    589
    ]
   },
   {
@@ -34292,7 +34294,7 @@
    "h2_pt": 148.2,
    "fit_capable": true,
    "pages": [
-    586
+    588
    ]
   },
   {
@@ -34303,7 +34305,7 @@
    "h2_pt": 134.3,
    "fit_capable": true,
    "pages": [
-    586
+    588
    ]
   },
   {
@@ -34314,7 +34316,7 @@
    "h2_pt": 23.0,
    "fit_capable": true,
    "pages": [
-    589
+    591
    ]
   },
   {
@@ -34325,7 +34327,7 @@
    "h2_pt": 23.0,
    "fit_capable": true,
    "pages": [
-    589
+    591
    ]
   },
   {
@@ -34336,7 +34338,7 @@
    "h2_pt": 23.0,
    "fit_capable": true,
    "pages": [
-    589
+    591
    ]
   },
   {
@@ -34347,7 +34349,7 @@
    "h2_pt": 23.0,
    "fit_capable": true,
    "pages": [
-    589
+    591
    ]
   },
   {
@@ -34358,7 +34360,7 @@
    "h2_pt": 270.5,
    "fit_capable": true,
    "pages": [
-    588
+    590
    ]
   },
   {
@@ -34369,7 +34371,7 @@
    "h2_pt": 209.9,
    "fit_capable": true,
    "pages": [
-    588
+    590
    ]
   },
   {
@@ -34380,7 +34382,7 @@
    "h2_pt": 589.5,
    "fit_capable": true,
    "pages": [
-    589
+    591
    ]
   },
   {
@@ -34391,7 +34393,7 @@
    "h2_pt": 66.2,
    "fit_capable": true,
    "pages": [
-    589
+    591
    ]
   },
   {
@@ -34402,7 +34404,7 @@
    "h2_pt": 191.3,
    "fit_capable": true,
    "pages": [
-    589
+    591
    ]
   },
   {
@@ -34413,7 +34415,7 @@
    "h2_pt": 66.3,
    "fit_capable": true,
    "pages": [
-    589
+    591
    ]
   },
   {
@@ -34424,7 +34426,7 @@
    "h2_pt": 121.8,
    "fit_capable": true,
    "pages": [
-    589
+    591
    ]
   },
   {
@@ -34435,7 +34437,7 @@
    "h2_pt": 92.5,
    "fit_capable": true,
    "pages": [
-    589
+    591
    ]
   },
   {
@@ -34446,7 +34448,7 @@
    "h2_pt": 64.6,
    "fit_capable": true,
    "pages": [
-    589
+    591
    ]
   },
   {
@@ -34457,7 +34459,7 @@
    "h2_pt": 273.8,
    "fit_capable": true,
    "pages": [
-    589
+    591
    ]
   },
   {
@@ -34468,7 +34470,7 @@
    "h2_pt": 268.2,
    "fit_capable": true,
    "pages": [
-    590
+    592
    ]
   },
   {
@@ -34479,7 +34481,7 @@
    "h2_pt": 196.1,
    "fit_capable": true,
    "pages": [
-    590
+    592
    ]
   },
   {
@@ -34490,8 +34492,8 @@
    "h2_pt": 1625.7,
    "fit_capable": false,
    "pages": [
-    591,
-    592
+    593,
+    594
    ]
   },
   {
@@ -34502,8 +34504,8 @@
    "h2_pt": 1553.5,
    "fit_capable": false,
    "pages": [
-    591,
-    592
+    593,
+    594
    ]
   },
   {
@@ -34514,7 +34516,7 @@
    "h2_pt": 470.2,
    "fit_capable": true,
    "pages": [
-    593
+    595
    ]
   },
   {
@@ -34525,7 +34527,7 @@
    "h2_pt": 398.1,
    "fit_capable": true,
    "pages": [
-    593
+    595
    ]
   },
   {
@@ -34536,8 +34538,8 @@
    "h2_pt": 792.3,
    "fit_capable": false,
    "pages": [
-    594,
-    595
+    596,
+    597
    ]
   },
   {
@@ -34548,7 +34550,7 @@
    "h2_pt": 309.0,
    "fit_capable": true,
    "pages": [
-    595
+    597
    ]
   },
   {
@@ -34559,8 +34561,8 @@
    "h2_pt": 767.7,
    "fit_capable": false,
    "pages": [
-    596,
-    597
+    598,
+    599
    ]
   },
   {
@@ -34571,7 +34573,7 @@
    "h2_pt": 301.3,
    "fit_capable": true,
    "pages": [
-    596
+    598
    ]
   },
   {
@@ -34582,7 +34584,7 @@
    "h2_pt": 182.1,
    "fit_capable": true,
    "pages": [
-    596
+    598
    ]
   },
   {
@@ -34593,7 +34595,7 @@
    "h2_pt": 106.5,
    "fit_capable": true,
    "pages": [
-    596
+    598
    ]
   },
   {
@@ -34604,7 +34606,7 @@
    "h2_pt": 127.6,
    "fit_capable": true,
    "pages": [
-    597
+    599
    ]
   },
   {
@@ -34615,7 +34617,7 @@
    "h2_pt": 98.9,
    "fit_capable": true,
    "pages": [
-    597
+    599
    ]
   },
   {
@@ -34626,7 +34628,7 @@
    "h2_pt": 679.0,
    "fit_capable": true,
    "pages": [
-    598
+    600
    ]
   },
   {
@@ -34637,7 +34639,7 @@
    "h2_pt": 606.9,
    "fit_capable": true,
    "pages": [
-    598
+    600
    ]
   },
   {
@@ -34648,8 +34650,8 @@
    "h2_pt": 721.0,
    "fit_capable": false,
    "pages": [
-    599,
-    600
+    601,
+    602
    ]
   },
   {
@@ -34660,7 +34662,7 @@
    "h2_pt": 648.8,
    "fit_capable": true,
    "pages": [
-    599
+    601
    ]
   },
   {
@@ -34671,7 +34673,7 @@
    "h2_pt": 359.5,
    "fit_capable": true,
    "pages": [
-    600
+    602
    ]
   },
   {
@@ -34682,7 +34684,7 @@
    "h2_pt": 287.4,
    "fit_capable": true,
    "pages": [
-    600
+    602
    ]
   },
   {
@@ -34693,7 +34695,7 @@
    "h2_pt": 616.4,
    "fit_capable": true,
    "pages": [
-    601
+    603
    ]
   },
   {
@@ -34704,7 +34706,7 @@
    "h2_pt": 36.8,
    "fit_capable": true,
    "pages": [
-    601
+    603
    ]
   },
   {
@@ -34715,7 +34717,7 @@
    "h2_pt": 197.2,
    "fit_capable": true,
    "pages": [
-    601
+    603
    ]
   },
   {
@@ -34726,8 +34728,6 @@
    "h2_pt": 7459.8,
    "fit_capable": false,
    "pages": [
-    602,
-    603,
     604,
     605,
     606,
@@ -34736,7 +34736,9 @@
     609,
     610,
     611,
-    612
+    612,
+    613,
+    614
    ]
   },
   {
@@ -34747,8 +34749,8 @@
    "h2_pt": 827.8,
    "fit_capable": false,
    "pages": [
-    613,
-    614
+    615,
+    616
    ]
   },
   {
@@ -34759,7 +34761,7 @@
    "h2_pt": 126.6,
    "fit_capable": true,
    "pages": [
-    613
+    615
    ]
   },
   {
@@ -34770,7 +34772,7 @@
    "h2_pt": 126.6,
    "fit_capable": true,
    "pages": [
-    613
+    615
    ]
   },
   {
@@ -34781,7 +34783,7 @@
    "h2_pt": 126.6,
    "fit_capable": true,
    "pages": [
-    613
+    615
    ]
   },
   {
@@ -34792,7 +34794,7 @@
    "h2_pt": 112.3,
    "fit_capable": true,
    "pages": [
-    613
+    615
    ]
   },
   {
@@ -34803,7 +34805,7 @@
    "h2_pt": 98.0,
    "fit_capable": true,
    "pages": [
-    613
+    615
    ]
   },
   {
@@ -34814,7 +34816,7 @@
    "h2_pt": 169.6,
    "fit_capable": true,
    "pages": [
-    613
+    615
    ]
   },
   {
@@ -34825,7 +34827,7 @@
    "h2_pt": 98.0,
    "fit_capable": true,
    "pages": [
-    613
+    615
    ]
   },
   {
@@ -34836,7 +34838,7 @@
    "h2_pt": 171.4,
    "fit_capable": true,
    "pages": [
-    613
+    615
    ]
   },
   {
@@ -34847,7 +34849,7 @@
    "h2_pt": 198.2,
    "fit_capable": true,
    "pages": [
-    614
+    616
    ]
   },
   {
@@ -34858,7 +34860,7 @@
    "h2_pt": 140.9,
    "fit_capable": true,
    "pages": [
-    614
+    616
    ]
   },
   {
@@ -34869,14 +34871,14 @@
    "h2_pt": 2851.4,
    "fit_capable": false,
    "pages": [
-    614,
-    615,
     616,
     617,
     618,
     619,
     620,
-    621
+    621,
+    622,
+    623
    ]
   },
   {
@@ -34887,7 +34889,7 @@
    "h2_pt": 104.9,
    "fit_capable": true,
    "pages": [
-    614
+    616
    ]
   },
   {
@@ -34898,7 +34900,7 @@
    "h2_pt": 85.3,
    "fit_capable": true,
    "pages": [
-    614
+    616
    ]
   },
   {
@@ -34909,10 +34911,10 @@
    "h2_pt": 1322.9,
    "fit_capable": false,
    "pages": [
-    614,
-    615,
     616,
-    617
+    617,
+    618,
+    619
    ]
   },
   {
@@ -34923,7 +34925,7 @@
    "h2_pt": 84.5,
    "fit_capable": true,
    "pages": [
-    614
+    616
    ]
   },
   {
@@ -34934,7 +34936,7 @@
    "h2_pt": 217.8,
    "fit_capable": true,
    "pages": [
-    614
+    616
    ]
   },
   {
@@ -34945,7 +34947,7 @@
    "h2_pt": 162.2,
    "fit_capable": true,
    "pages": [
-    614
+    616
    ]
   },
   {
@@ -34956,7 +34958,7 @@
    "h2_pt": 379.6,
    "fit_capable": true,
    "pages": [
-    615
+    617
    ]
   },
   {
@@ -34967,7 +34969,7 @@
    "h2_pt": 360.0,
    "fit_capable": true,
    "pages": [
-    615
+    617
    ]
   },
   {
@@ -34978,7 +34980,7 @@
    "h2_pt": 387.6,
    "fit_capable": true,
    "pages": [
-    616
+    618
    ]
   },
   {
@@ -34989,7 +34991,7 @@
    "h2_pt": 301.3,
    "fit_capable": true,
    "pages": [
-    616
+    618
    ]
   },
   {
@@ -35000,7 +35002,7 @@
    "h2_pt": 350.2,
    "fit_capable": true,
    "pages": [
-    617
+    619
    ]
   },
   {
@@ -35011,7 +35013,7 @@
    "h2_pt": 237.9,
    "fit_capable": true,
    "pages": [
-    617
+    619
    ]
   },
   {
@@ -35022,7 +35024,7 @@
    "h2_pt": 151.0,
    "fit_capable": true,
    "pages": [
-    617
+    619
    ]
   },
   {
@@ -35033,7 +35035,7 @@
    "h2_pt": 134.3,
    "fit_capable": true,
    "pages": [
-    617
+    619
    ]
   },
   {
@@ -35044,11 +35046,11 @@
    "h2_pt": 1296.7,
    "fit_capable": false,
    "pages": [
-    617,
-    618,
     619,
     620,
-    621
+    621,
+    622,
+    623
    ]
   },
   {
@@ -35059,7 +35061,7 @@
    "h2_pt": 92.5,
    "fit_capable": true,
    "pages": [
-    617
+    619
    ]
   },
   {
@@ -35070,7 +35072,7 @@
    "h2_pt": 78.6,
    "fit_capable": true,
    "pages": [
-    617
+    619
    ]
   },
   {
@@ -35081,9 +35083,9 @@
    "h2_pt": 863.6,
    "fit_capable": false,
    "pages": [
-    617,
-    618,
-    619
+    619,
+    620,
+    621
    ]
   },
   {
@@ -35094,8 +35096,8 @@
    "h2_pt": 844.0,
    "fit_capable": false,
    "pages": [
-    617,
-    618
+    619,
+    620
    ]
   },
   {
@@ -35106,7 +35108,7 @@
    "h2_pt": 329.1,
    "fit_capable": true,
    "pages": [
-    619
+    621
    ]
   },
   {
@@ -35117,7 +35119,7 @@
    "h2_pt": 259.4,
    "fit_capable": true,
    "pages": [
-    619
+    621
    ]
   },
   {
@@ -35128,7 +35130,7 @@
    "h2_pt": 512.7,
    "fit_capable": true,
    "pages": [
-    620
+    622
    ]
   },
   {
@@ -35139,7 +35141,7 @@
    "h2_pt": 496.1,
    "fit_capable": true,
    "pages": [
-    620
+    622
    ]
   },
   {
@@ -35150,7 +35152,7 @@
    "h2_pt": 571.5,
    "fit_capable": true,
    "pages": [
-    621
+    623
    ]
   },
   {
@@ -35161,24 +35163,24 @@
    "h2_pt": 344.7,
    "fit_capable": true,
    "pages": [
-    621
+    623
    ]
   }
  ],
  "status": "PASS",
- "content_sha256": "b8378768daf92236fd23a424e0d2456a3b250f2208a63b8796dc2275f70cafaf",
+ "content_sha256": "cef16f539e36fe848e7ec3099bd574e4178293b69dc5f71d9d334b30923319b0",
  "pdf": "/home/runner/work/Heraldry/Heraldry/build/book-cream.pdf",
- "pdf_sha256": "c12ea33f8780d226f9d44815a6d37dba693cc5270fe2d82392f39f9e0eaa9db2",
+ "pdf_sha256": "1853413fbf2726ebef31f460528f61ddc906b9555e470d33effc22fd2deaca1c",
  "position_binding": {
   "schema": 1,
   "origin": "pdf-attachment",
-  "pdf_sha256": "c12ea33f8780d226f9d44815a6d37dba693cc5270fe2d82392f39f9e0eaa9db2",
-  "pdf_pages": 625,
+  "pdf_sha256": "1853413fbf2726ebef31f460528f61ddc906b9555e470d33effc22fd2deaca1c",
+  "pdf_pages": 627,
   "identity": {
    "compiler": "0.15.0",
-   "content_sha256": "b8378768daf92236fd23a424e0d2456a3b250f2208a63b8796dc2275f70cafaf",
+   "content_sha256": "cef16f539e36fe848e7ec3099bd574e4178293b69dc5f71d9d334b30923319b0",
    "edition": "interior",
-   "input_sha256": "63497ead2931fd3c43d8a68b32388048ba8c3fa8cbd84a653dca136a155965d0",
+   "input_sha256": "e552908a265da781c689dd46f33a8d6bacc70931de7658813aac4ff7afb864de",
    "schema": 1,
    "timestamp": 1793633079,
    "variant": "cream"
@@ -35605,27 +35607,27 @@
  "measurement_binding": {
   "identity": {
    "compiler": "0.15.0",
-   "content_sha256": "c2de6adb283762968676e2740b9b210e723217515e1d2c7bd85146aaeb2b12e2",
+   "content_sha256": "46093337706ea685ffa5d217cc3e1d4f379341a57314c0c02125a83126d4e371",
    "edition": "interior",
-   "input_sha256": "63497ead2931fd3c43d8a68b32388048ba8c3fa8cbd84a653dca136a155965d0",
+   "input_sha256": "e552908a265da781c689dd46f33a8d6bacc70931de7658813aac4ff7afb864de",
    "schema": 1,
    "timestamp": 1793633079,
    "variant": "cream"
   },
-  "measurement_pdf_sha256": "50a884e693a65315ad4fa35cb79673cfe304f43732643826bd603128815beaaf",
-  "measurements_sha256": "18c2cde0c3ac64fe761f4dafb813585d16c64cf442d01ac23f013b01478c9570",
+  "measurement_pdf_sha256": "ad825a67ba72184367a4ec28ce95db2bc23e54eefd247b48850986a1353525fb",
+  "measurements_sha256": "6cd228609b42b7524817c64416b41b63519f62951feaaacc18b1de2525112252",
   "origin": "measurement-pdf-attachment",
-  "seconds": 0.785,
+  "seconds": 0.589,
   "units": 2845,
   "warnings": [],
   "cache": {
    "status": "hit",
-   "key": "043fdd72261b52dd5bc261b46897e69afd8da66421c22500cbb911630786b69e",
-   "path": "/home/runner/work/Heraldry/Heraldry/.cache/layout-measurements/043fdd72261b52dd5bc261b46897e69afd8da66421c22500cbb911630786b69e",
+   "key": "47767ed13c8129ec33bf347a6382a3bd08cad945753d9fd0bf43c05f39c8f7fb",
+   "path": "/home/runner/work/Heraldry/Heraldry/.cache/layout-measurements/47767ed13c8129ec33bf347a6382a3bd08cad945753d9fd0bf43c05f39c8f7fb",
    "reason": "exact PDF and attachment validated",
    "stored": false
   },
   "compile_seconds": 0.0,
-  "cached_compile_seconds": 86.229
+  "cached_compile_seconds": 27.231
  }
 }

@@ -1,7 +1,7 @@
 {
- "tag": "RC528-build-43",
- "url": "https://github.com/xjordont/Heraldry/releases/tag/RC528-build-43",
- "source_commit": "0175c36a8ff40982611f35a1c0032ecdd0f0c9c9",
+ "tag": "RC528-build-44",
+ "url": "https://github.com/xjordont/Heraldry/releases/tag/RC528-build-44",
+ "source_commit": "6f4997671b444c8891580e9c6a773cc7b2c6d662",
  "assets": [
   {
    "name": "Heraldry_RC528_basic-heroes.pdf",
@@ -10,13 +10,13 @@
   },
   {
    "name": "Heraldry_RC528_digital-compact.pdf",
-   "bytes": 62235783,
-   "sha256": "abb0c49c6f9a62bfc24075433789c2e4357251a50099849fd66666eedf7a6193"
+   "bytes": 62656867,
+   "sha256": "eacb007aa71c5f21ddfb79e59574c410fc56bb9454072cd39f1544ff33191e56"
   },
   {
    "name": "Heraldry_RC528_digital.pdf",
-   "bytes": 175320960,
-   "sha256": "a12a95e3a12a9687d2489ac1127316fe09ed42c4f2f7064d1770a9d273bbffa0"
+   "bytes": 175923423,
+   "sha256": "a558bc440a250a0620f6869a9f8a0d49ec0e18e08373417487e05963eca94fbd"
   },
   {
    "name": "Heraldry_RC528_hero-record-blank.pdf",
@@ -26,22 +26,22 @@
   {
    "name": "Heraldry_RC528_player-aids.pdf",
    "bytes": 5066816,
-   "sha256": "29ea3267225c011baf2925dd131e4ebb8ddf82cbff05454dc4fd3305a6dbac2f"
+   "sha256": "ad769d2f0bd8a8d137c4ac87d91697ebdb96e08cb843a12b033e455ec631053e"
   },
   {
    "name": "Heraldry_RC528_specimen.pdf",
-   "bytes": 5349135,
-   "sha256": "973b6cb64a8940232c1e4997afc619a43d86109a7abb9caf5e15b86e3f58bc48"
+   "bytes": 5348952,
+   "sha256": "547367e4708d4997ca147128e67985b54f432b6d71db55173de7ca0a6ce1772d"
   },
   {
    "name": "Heraldry_RC528_release.zip",
-   "bytes": 468723336,
-   "sha256": "edd19be023eeb9fc2e0adf9509d46d74f548ac8d1f42ef8a103d98237a4f3e12"
+   "bytes": 242709171,
+   "sha256": "61e63cb59c4473b3a0c92adcf6e6e84cdd8b9c8a6e545d1bc09683c8c6c06c69"
   },
   {
    "name": "SHA256SUMS.txt",
-   "bytes": 97471,
-   "sha256": "57fd397a7d8ceed232efb2c01280d1d614fe81e85bbf5a068a9885ac1663b436"
+   "bytes": 679,
+   "sha256": "00900cc7821a501d9b903c9e7d407fde298b6364207f4ad0fd43430f0601cae9"
   }
  ]
 }

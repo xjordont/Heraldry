@@ -5,7 +5,7 @@
     {
       "check": "required_files",
       "status": "PASS",
-      "detail": "20 required files present"
+      "detail": "13 required files present"
     },
     {
       "check": "source_integrity",
@@ -24,53 +24,17 @@
     {
       "check": "agent_contracts",
       "status": "PASS",
-      "detail": "Five Claude-native adapters and 15 shared workflows validated for all three clients; runtime resolution is separate"
+      "detail": "6 Claude-native adapters and 14 shared workflows validated for all three clients; runtime resolution is separate"
     },
     {
       "check": "design_page_contract",
       "status": "PASS",
-      "detail": "Portrait Letter page, cream tokens, and safe area reconcile"
-    },
-    {
-      "check": "reference_manifest",
-      "status": "PASS",
-      "detail": {
-        "primary_pages": 14,
-        "all_selected_pages": 23,
-        "availability": "optional"
-      }
+      "detail": "Portrait Letter page, cream tokens, and safe area are valid"
     },
     {
       "check": "script_syntax",
       "status": "PASS",
       "detail": "Python scripts parse successfully"
     }
-  ],
-  "runtime_observed": {
-    "python": "3.12.15",
-    "commands": {
-      "git": true,
-      "python3": true,
-      "typst": false,
-      "pandoc": false,
-      "pdfinfo": false,
-      "pdftoppm": false,
-      "qpdf": false,
-      "gs": false
-    },
-    "python_modules": {
-      "typst": true,
-      "fitz": true,
-      "pypdf": true,
-      "markdown_it": true,
-      "fontTools": true,
-      "PIL": true
-    }
-  },
-  "external_inputs": {
-    "agent_model_and_tool_access": "VERIFY_IN_CURRENT_CLIENT",
-    "cloud_network_and_dependency_provisioning": "VERIFY_IN_CURRENT_CLIENT",
-    "original_illustrations": "CHATGPT_WORK_GENERATED_MASTERS; INTEGRATE_AND_REVIEW"
-  },
-  "missing_tools_policy": "Provision during the capability milestone; availability is not kit integrity"
+  ]
 }
