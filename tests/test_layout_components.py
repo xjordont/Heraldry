@@ -230,12 +230,12 @@ Following rules.
         self.assertLess(words["Upper"], rules[0].y0)
         self.assertLess(rules[0].y0, words["Lower"])
 
-    def _flow_then_tail(self, flow):
+    def _flow_then_tail(self, flow, between="#band-gap"):
         source = Path(self.tmp.name) / "flow-tail.typ"
         source.write_text(f'''#import "/typst/heraldry.typ": *
 #show: book
 #seg[{flow}]
-#tail-gap
+{between}
 #bal([Tailleft opens the balanced tail.], [Tailright closes it.])
 ''', encoding="utf-8")
         compiler = typst.Compiler(str(source), root=str(ROOT),
@@ -256,6 +256,10 @@ Following rules.
         above, (below, size) = lines["Flowright"][0], lines["Tailleft"]
         self.assertGreaterEqual(rules[0] - above, 4, "clear of the descenders above")
         self.assertGreaterEqual(below - 0.7 * size - rules[0], 3, "clear of the capitals below")
+
+    def test_a_band_that_abuts_a_natural_flow_is_never_ruled_through_its_text(self):
+        rules, lines = self._flow_then_tail("Flowleft ends the left column.#colbreak()Flowright ends the flow.", between="")
+        self.assertEqual(rules, [], "no gap to hold a rule")
 
     def test_a_tail_that_continues_the_left_column_gets_no_rule_or_gap(self):
         rules, lines = self._flow_then_tail("Flowleft is all the flow there is.")

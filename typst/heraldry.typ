@@ -453,26 +453,28 @@
     let e = prev.last().location().position()
     let p = here().position()
     let gap = p.y - e.y
-    // The rule is centred in the gap and needs one to sit in. Bands that abut (a natural flow whose last
-    // lines stand in the left column only, or an end marker carried to the top of the next page) get none:
-    // there the columns already read straight down (all-page review of candidate 19, pp. 218, 419, 593).
-    if e.page == p.page and gap >= 4pt and gap < 14pt {
-      place(dy: -gap / 2, line(length: 100%, stroke: 0.5pt + v4.hair))
+    // A fixed band's end marker sits at the foot of its block, below the block's own slack: where the next
+    // band abuts it, the rule goes in that slack. A natural flow's marker sits on its last line, so its rule
+    // needs the gap `band-gap` leaves; with none (the flow ends in the left column) the next band continues
+    // that column and takes no rule (all-page review of candidate 19, pp. 218, 402, 419, 485, 490).
+    let fixed = prev.last().value == "fixed"
+    let dy = if gap > 1pt and (fixed or gap >= 4pt) { -gap / 2 } else if fixed { -6.5pt } else { none }
+    if e.page == p.page and gap >= 0pt and gap < 14pt and dy != none {
+      place(dy: dy, line(length: 100%, stroke: 0.5pt + v4.hair))
     }
   }
 })
-// The end marker sits at the bottom of a fixed band's block, or in the flow just after a natural flow's columns.
-#let band-end = place(bottom + left, [#metadata("band") <band-end>])
-#let flow-end = place[#metadata("band") <band-end>]
+#let band-end = place(bottom + left, [#metadata("fixed") <band-end>])
+#let flow-end = place[#metadata("flow") <band-end>]
 // `seg-last` records where a natural flow's text ends: in which column, and on which page.
 #let seg(body) = block(width: 100%, breakable: true, {
   band-top; columns(2, gutter: gap, { body; [#metadata("seg") <seg-last>] }); flow-end
 })
-// Between a natural flow and its balanced tail. When the flow's last lines stand in the right column of
-// the tail's page, the tail is a second band beneath both columns: it starts the band gap lower, so the
-// hairline has room between them (candidate 19, pp. 402, 485, 490). Otherwise the tail continues the
-// left column directly and nothing is added. Weak spacing, so it vanishes at the top of a page.
-#let tail-gap = context {
+// After a natural flow. When its last lines stand in the right column of the page that follows on, whatever
+// comes next is a second band beneath both columns: it starts the band gap lower (as after a fixed band), so
+// a hairline has room between them. Otherwise the next band continues the left column directly and nothing
+// is added. Weak spacing, so it merges with a heading's own space and vanishes at the top of a page.
+#let band-gap = context {
   let ends = query(selector(<seg-last>).before(here()))
   if ends.len() > 0 {
     let e = ends.last().location().position()
@@ -528,10 +530,11 @@
 #let bal(..pieces) = context {
   let ps = pieces.pos()
   let avail = body-bottom - here().position().y
-  if ps.len() < 2 { columns(2, gutter: gap, { for p in ps { p } }); return }
+  // A tail that cannot be balanced flows as a natural band, with the band hooks (candidate 19, p. 490).
+  if ps.len() < 2 { seg({ for p in ps { p } }); return }
   let (h, k) = bal-split(ps)
   if h + 6pt > avail {
-    columns(2, gutter: gap, { for p in ps { p } })
+    seg({ for p in ps { p } })
   } else {
     block(width: 100%, above: 0pt, below: 8pt, breakable: false, {
       band-top

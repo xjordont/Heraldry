@@ -1283,10 +1283,10 @@ class Book:
             # (design review 2026-10-29: Drakeblood fell to its own page beside an empty column).
             tp = []
         if not tp:
-            self.out.append("#seg[" + "".join(parts) + end + "]\n")
+            self.out.append("#seg[" + "".join(parts) + end + "]\n#band-gap\n")
         else:
             if tail > 0:
-                self.out.append("#seg[" + "".join(parts[:tail]) + "]\n#tail-gap\n")
+                self.out.append("#seg[" + "".join(parts[:tail]) + "]\n#band-gap\n")
             tp[-1] = tp[-1] + end
             if all(not is_rigid(piece) for piece in tp):
                 # Zero-size terminal markers do not turn a prose tail into a
