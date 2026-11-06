@@ -562,7 +562,7 @@ class Book:
             else:
                 s = self._plain_table(b, c, hdr, rows, initial_title=initial_title)
         elif rep == "cards":
-            s = self._cards(b, c, hdr, rows, mapping)
+            s = self._cards(b, c, hdr, rows, mapping, initial_title=initial_title)
         else:
             s = self._plain_table(b, c, hdr, rows, initial_title=initial_title)
         mapping["scope"] = c["scope"]
@@ -597,7 +597,7 @@ class Book:
         als = ", ".join(aligns)
         return f"#htable({lit(b['id'])}, ({ws},), ({als},), ({hs},), ({rs},), title: [#{lit(self.table_titles.get(b['id'], b['id']))}], initial-title: {str(initial_title).lower()})"
 
-    def _cards(self, b, c, hdr, rows, mapping):
+    def _cards(self, b, c, hdr, rows, mapping, initial_title=True):
         heads = c["header"]
         desc = set(c["desc_cols"])
         die = DIE_HEADERS.match(heads[0]) is not None
@@ -615,7 +615,8 @@ class Book:
         for i, h in enumerate(heads):
             fmap[h] = "entry.title.roll" if (die and i == 0) else "entry.title.name" if i == name_col else ("entry.desc" if i in desc else "entry.field")
         mapping["field_map"] = fmap
-        return f"#cards({lit(b['id'])}, ({', '.join(entries)},), title-label: [#{lit(self.table_titles.get(b['id'], b['id']))}])"
+        hidden = "" if initial_title else ", initial-title: false"
+        return f"#cards({lit(b['id'])}, ({', '.join(entries)},), title-label: [#{lit(self.table_titles.get(b['id'], b['id']))}]{hidden})"
 
     def emit(self):
         o = self.out

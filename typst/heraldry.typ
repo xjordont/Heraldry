@@ -795,7 +795,7 @@
 }
 
 // Prose-heavy many-column tables: one labelled entry per source row.
-#let cards(id, entries, title-label: none, pre: none) = layout(size => {
+#let cards(id, entries, title-label: none, initial-title: true, pre: none) = layout(size => {
   let entry(e) = block(width: 100%, above: 0pt, below: 0pt, inset: (top: 4pt, bottom: 5pt),
     stroke: (bottom: 0.35pt + hair))[
     #set par(leading: body-lead, spacing: 3pt, justify: false)
@@ -809,10 +809,16 @@
     }
   ]
   let continuation-height = measure(block(width: size.width, table-identity(id, title-label, continued: true))).height + 3pt
+  // As in the ledger (6.10): when the heading above names the table, its identity line is hidden on the
+  // opening page and the entries rise by that line, so no blank line separates heading and first entry.
+  let lift = if initial-title { 0pt } else {
+    measure(block(width: size.width, table-identity(id, title-label, initial-title: false))).height + 3pt
+  }
   block(width: 100%, above: space-token.table_above * 1pt, below: space-token.table_below * 1pt + 4pt, breakable: true)[
     #pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")
+    #v(-lift)
     #coin-text(table(columns: (1fr,), inset: 0pt, stroke: none,
-      table.header(repeat: true, table.cell(inset: (bottom: 3pt), table-identity(id, title-label))),
+      table.header(repeat: true, table.cell(inset: (bottom: 3pt), table-identity(id, title-label, initial-title: initial-title))),
       ..entries.map(e => table.cell(
         // A genuinely over-height entry may continue; fit-capable entries remain intact.
         breakable: measure(block(width: size.width, entry(e))).height > page-h - m-top - m-bot - continuation-height, entry(e))),

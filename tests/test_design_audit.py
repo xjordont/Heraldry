@@ -120,6 +120,17 @@ class CompositionPolicy(unittest.TestCase):
         ])
         self.assertIn("initial-title: false", items[-1]["s"])
 
+    def test_card_table_receives_the_hidden_title(self):
+        book = Book.__new__(Book)
+        book.table_titles = {"T9": "Tier 1 Special Items"}
+        book.table_map = []
+        book.em = type("Em", (), {"inl": staticmethod(lambda c: c)})()
+        book.tclass = {"T9": {"rep": "cards", "scope": "column", "columns": 2, "rows": 1, "header": ["Name", "Rule"],
+                              "desc_cols": [1]}}
+        b = {"id": "T9", "src": [1, 1], "header": ["Name", "Rule"], "rows": [["Ring", "Glows."]]}
+        self.assertIn("initial-title: false", book.table(b, initial_title=False)[0])
+        self.assertNotIn("initial-title", book.table(b)[0])
+
 
     def test_run_on_section_opens_as_a_sticky_band_and_standfirst_when_its_first_piece_can_follow(self):
         book = Book.__new__(Book)

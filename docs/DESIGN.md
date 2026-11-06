@@ -165,7 +165,7 @@ Numbered steps hang black shields carrying the step number at the left of the co
 
 One grammar (owner, 2026-10-12) serves all 332 tables, built on the Deth Wizards (page 22) and Black Death City (page 66) lessons: centred values, calm rules, and no boxes. Every table has the black header band; the body stays light.
 
-1. **Title:** the source heading keeps its semantic rank. The repeated identity line is 9 pt sans bold. Its duplicate opening text is suppressed when the preceding heading already names the table, including across a short run-in label such as "APL 1–2 (d10)", leaving no blank line, and its fixed continuation geometry is kept.
+1. **Title:** the source heading keeps its semantic rank. The repeated identity line is 9 pt sans bold. Its duplicate opening text is suppressed when the preceding heading already names the table, including across a short run-in label such as "APL 1–2 (d10)", leaving no blank line, and its fixed continuation geometry is kept. The same holds for a table set as entries (`cards`).
 2. **Edges:** a hand-inked 2.2 pt brush below the last row, taking no height so it can never fall alone onto the next page. No top brush (it crossed the identity text), no outer box, and no vertical rule unless a matrix needs one.
 3. **Header band:** solid black, reversed 9 pt bold small capitals, each label aligned like its column, repeated on every continuation page.
 4. **Columns:** key bold and left; text left; values (numbers, dice, damage, short codes) centred; roll centred bold on the 9% tinted column.

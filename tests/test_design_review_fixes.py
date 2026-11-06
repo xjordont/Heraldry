@@ -230,6 +230,25 @@ class TypstComponents(unittest.TestCase):
         self.assertLessEqual(band - heading["bbox"][3], 10)   # was about 17 pt with the hidden row
         self.assertGreaterEqual(band - heading["bbox"][3], 2)
 
+    def test_card_table_hides_a_title_its_heading_already_names(self):
+        def gap(initial):
+            pdf = compile_fixture(f'''#import "/typst/heraldry.typ": *
+#show: book
+#heading(level: 3)[Tier 3 Potions] <h-t3>
+#cards("T3", ((title: [#strong[Elixir]], fields: (([Cost], [5]),), desc: (([Rule:], [Heal 1.]),)),), title-label: [Tier 3 Potions], initial-title: {initial})
+''')
+            with pymupdf.open(stream=pdf, filetype="pdf") as doc:
+                page = doc[0]
+                spans = [s for b in page.get_text("dict")["blocks"] for l in b.get("lines", []) for s in l["spans"]]
+                titles = [s for s in spans if s["text"] == "Tier 3 Potions"]
+                entry = next(s for s in spans if s["text"] == "Elixir")
+            return len(titles), entry["bbox"][1] - titles[0]["bbox"][3]
+        shown, shown_gap = gap("true")
+        hidden, hidden_gap = gap("false")
+        self.assertEqual((shown, hidden), (2, 1))           # heading and identity line, then the heading alone
+        self.assertLess(hidden_gap, shown_gap - 8)          # the entries rise by the hidden line
+        self.assertGreaterEqual(hidden_gap, 2)
+
 
 if __name__ == "__main__":
     unittest.main()
