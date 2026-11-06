@@ -2,6 +2,58 @@
 
 Newest first. Entries before 2026-11-01 are in `production/history/STATE-2026-10.md`; search it by keyword.
 
+## Rulebook-layout skill trialled: six lessons adopted, art reuse rejected, one-flow still in development - 2026-11-06
+
+Owner request: "I think we should consider implementing all aspects of the skill. Run tests and trails to determine which parts of the skill are helpful and lead to improvements then incorporate that permanently into our design workflow." The owner held off on design-artifact integration. Every trial was a local proof measured against RC528-build-44; no CI build, candidate, or release was requested.
+
+**The yardstick (`4351fc7`).** `tools/layout_flow.py` measures every column foot and classifies each one left over 60 pt short by what tops the next column, read from the positions the build embeds: a section end, a keep gap (with what was carried whole), or an interior void. It also compares two PDFs. `layout_qa` now fails the gate on a hairline drawn through text; on candidates 19 and 20 it finds exactly the five pages the all-page review found, and build-44 is clean.
+
+Build-44 baseline:
+
+| Bare column-foot space | Total |
+|---|---|
+| Before a heading carried whole | 93,737 pt |
+| Section ends | 34,209 pt |
+| Before a flow piece carried whole | 21,095 pt |
+| Before a figure kept whole | 17,678 pt |
+| Before a table kept whole | 7,270 pt |
+| Interior voids | 1,939 pt |
+
+**Adopted:**
+- **Figure fit** (Trial A; `2ee8af0`, `007d94a`): a full-width figure carried to the next page is scaled to close the page above it. The floor is its own 9 pt label scale, about 96%; the skill's 80% gave 7.9 pt labels and 282 small-type flags. FIG-14 and FIG-16 are fitted and the book falls from 630 to 628 pages. The second commit makes it work from a clean build, as in CI.
+- **Card-table pairs** (`a071a8c`, `6ff78a6`): in tables of six or more entries, the first two and the last two entries travel together, so Wild Shape Forms no longer leaves Lion alone overleaf. Shorter tables keep free breaks, because the four Pressure Clocks otherwise split only in the middle and left 195 pt bare.
+- **Contents gutter** (`6330937`, `9092c12`): page numbers get their own right gutter, and titles wrap at a word with a hanging indent, never hyphenated. "2.6 ... Rounding" no longer drops its number to a line of its own.
+- **Index** (`6330937`, `007d94a`): terms file ignoring a leading "The", so the seven bosses file under their names, and a letter head keeps two entries with it.
+- **Docs** (`de5fbd4`): `docs/LAYOUT_WORKFLOW.md` gains how to measure a layout change, the trial method, and these lessons; `docs/VISUAL_QA.md` uses the flow report as its pointer list; DESIGN records the rules.
+
+**Rejected:**
+- **Reusing approved art in short columns** (Trial B). It cut keep gaps by 34% and section-end space by 72%, but every reusable piece appeared twice, 86 placements came from another chapter, and subjects mismatched: weapons under Potions (p174), armour under Poisons (p180), and sewer rats under the Icebound Court (p462). Purpose-made gap art, commissioned through the owner's art workflow, is the route if gaps are to carry art. No overlay code was kept.
+- **Moving a figure within its section.** It would mean redesigning the column bands, and reading order would change.
+- **The low right-column start rule.** It has one real case, and moving it only trades a low start for a bare foot.
+- **Capping index entries at three references.** The owner's locator design deliberately cites more.
+
+**Confirmed already in place:** a median of 49 characters per line; ledger rows that never split, with repeated headers; split panels that keep their tint and rule; two editions that paginate identically; no painting repeated on a spread; and sorted, deduplicated index references.
+
+**Verification.** A clean full build of main at `007d94a` gave 628 pages and 2,419 pt less keep-gap space. Figure fit placed both figures, `layout_qa` was flag-free, and verify failed only `visual_review_currency`. `6ff78a6`, which restores the Pressure Clocks layout, came after that build and is covered by tests only. The book differs from build-44 on the Contents, pp. 58 and 67 (and everything after them shifts back two pages), Wild Shape Forms, and the index, so the next candidate needs the full all-page review.
+
+**One continuous flow per chapter** (Trial C; owner-gated, not adopted). The prototype covers Chapters 2, 5, and 6:
+
+| Chapter | Pages before | Pages after |
+|---|---|---|
+| 2 | 24 | 18 |
+| 5 | 21 | 15 |
+| 6 | 53 | 42 |
+
+The book would fall to 605 pages, with section-end space near zero in Chapters 2 and 5 and no stacked bands there. The costs:
+- it reverses the 2026-10-12 fresh-page rule, D-01, and 12a for each chapter adopted;
+- 13 section tailpieces lose their place;
+- a 360 pt hole remains on Combat p78;
+- the figure barrier does not always converge.
+
+The owner chose "Develop further first": make the page turn converge, give the lost tailpieces homes, fix Chapter 6's uneven end, then show the result again. The patch (504 lines, `trial-c.patch`) is in the session's scratch folder, not in the repository.
+
+**Build note:** one full book compile peaks at about 7.5 GB, so parallel builds on this 15 GB machine were killed. Run one at a time.
+
 ## RC528-build-44 released after four candidates and layout fixes - 2026-11-06
 
 Owner request: `/build-release`, then, when candidate 18's review found major defects, "Fix the layout, then release (Recommended)".
