@@ -839,12 +839,13 @@
     #v(-lift)
     #coin-text(table(columns: (1fr,), inset: 0pt, stroke: none,
       table.header(repeat: true, table.cell(inset: (bottom: 3pt), table-identity(id, title-label, initial-title: initial-title))),
-      // No entry stands alone on either side of a break (as the ledger's row groups, 6.10): with four or more
+      // No entry stands alone on either side of a break (as the ledger's row groups, 6.10): with six or more
       // entries the first two and the last two travel together (rulebook-layout skill 1.7; Wild Shape Forms
-      // left Lion alone overleaf). A genuinely over-height group may continue; fit-capable ones stay intact.
+      // left Lion alone overleaf). A shorter table keeps free breaks: grouped, four entries could only split
+      // in the middle, which left 195 pt bare beside the Pressure Clocks. Over-height groups may continue.
       ..{
         let n = entries.len()
-        let groups = if n < 4 { entries.map(e => (e,)) } else {
+        let groups = if n < 6 { entries.map(e => (e,)) } else {
           ((entries.at(0), entries.at(1)),) + entries.slice(2, n - 2).map(e => (e,)) + ((entries.at(n - 2), entries.at(n - 1)),)
         }
         groups.map(g => {
