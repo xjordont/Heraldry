@@ -839,9 +839,19 @@
     #v(-lift)
     #coin-text(table(columns: (1fr,), inset: 0pt, stroke: none,
       table.header(repeat: true, table.cell(inset: (bottom: 3pt), table-identity(id, title-label, initial-title: initial-title))),
-      ..entries.map(e => table.cell(
-        // A genuinely over-height entry may continue; fit-capable entries remain intact.
-        breakable: measure(block(width: size.width, entry(e))).height > page-h - m-top - m-bot - continuation-height, entry(e))),
+      // No entry stands alone on either side of a break (as the ledger's row groups, 6.10): with four or more
+      // entries the first two and the last two travel together (rulebook-layout skill 1.7; Wild Shape Forms
+      // left Lion alone overleaf). A genuinely over-height group may continue; fit-capable ones stay intact.
+      ..{
+        let n = entries.len()
+        let groups = if n < 4 { entries.map(e => (e,)) } else {
+          ((entries.at(0), entries.at(1)),) + entries.slice(2, n - 2).map(e => (e,)) + ((entries.at(n - 2), entries.at(n - 1)),)
+        }
+        groups.map(g => {
+          let body = { for e in g { entry(e) } }
+          table.cell(breakable: measure(block(width: size.width, body)).height > page-h - m-top - m-bot - continuation-height, body)
+        })
+      },
     ))
     #block(height: 0pt, above: 0pt, below: 0pt)[#brush(weight: 2.2pt, seed: 13)]
     #tmark(id, "e")

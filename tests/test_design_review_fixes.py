@@ -230,6 +230,21 @@ class TypstComponents(unittest.TestCase):
         self.assertLessEqual(band - heading["bbox"][3], 10)   # was about 17 pt with the hidden row
         self.assertGreaterEqual(band - heading["bbox"][3], 2)
 
+    def test_card_table_never_leaves_one_entry_alone_at_a_break(self):
+        entries = ", ".join(f'(title: [#strong[Beast{i}]], fields: (([Cost], [5]),), desc: (([Rule:], [{"Words run on. " * 12}]),))'
+                            for i in range(7))
+        for filler in (180, 260, 340, 420, 500, 580):
+            pdf = compile_fixture(f'''#import "/typst/heraldry.typ": *
+#show: book
+#block(height: {filler}pt)
+#cards("T9", ({entries},), title-label: [Forms])
+''')
+            with pymupdf.open(stream=pdf, filetype="pdf") as doc:
+                counts = [sum(1 for w in page.get_text("words") if w[4].startswith("Beast")) for page in doc]
+            counts = [c for c in counts if c]
+            self.assertEqual(sum(counts), 7)
+            self.assertTrue(all(c >= 2 for c in counts), (filler, counts))
+
     def test_card_table_hides_a_title_its_heading_already_names(self):
         def gap(initial):
             pdf = compile_fixture(f'''#import "/typst/heraldry.typ": *
