@@ -208,6 +208,28 @@ Following rules.
             self.assertGreaterEqual(title['bbox'][0], 42)
             self.assertLessEqual(title['bbox'][2], 570)
 
+    def test_stacked_column_bands_are_ruled_apart(self):
+        """A band directly beneath another gets a full-width hairline; one after a full-width block does not."""
+        source = Path(self.tmp.name) / "stacked-bands.typ"
+        source.write_text('''#import "/typst/heraldry.typ": *
+#show: book
+#full[A full-width opening line.]
+#bal([Upper band, left piece.], [Upper band, right piece.])
+#bal([Lower band, left piece.], [Lower band, right piece.])
+''', encoding="utf-8")
+        compiler = typst.Compiler(str(source), root=str(ROOT),
+                                  font_paths=[str(ROOT / "fonts/static")], ignore_system_fonts=True)
+        pdf, warnings = compiler.compile_with_warnings()
+        self.assertFalse(warnings, [str(w) for w in warnings])
+        with pymupdf.open(stream=pdf, filetype='pdf') as doc:
+            page = doc[0]
+            rules = [d["rect"] for d in page.get_drawings()
+                     if d["rect"].height < 1 and d["rect"].width > 500 and abs((d.get("width") or 0) - 0.5) < 0.01]
+            words = {w[4]: w[1] for w in page.get_text("words")}
+        self.assertEqual(len(rules), 1, "exactly one rule, between the two stacked bands")
+        self.assertLess(words["Upper"], rules[0].y0)
+        self.assertLess(rules[0].y0, words["Lower"])
+
     def test_table_identity_geometry_is_independent_of_queried_page(self):
         source = Path(self.tmp.name) / "identity-geometry.typ"
         source.write_text('''#import "/typst/heraldry.typ": *

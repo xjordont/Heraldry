@@ -444,7 +444,25 @@
     ),
   ))), mime-type: "application/json", relationship: "supplement")
 }
-#let seg(body) = columns(2, gutter: gap, body)
+// Stacked column bands (all-page review 2026-11-06): where a two-column band starts directly beneath another
+// on the same page, a full-width hairline in the gap between them marks the boundary, so the columns read band
+// by band. Both hooks sit inside the band's own block and are placed, so they take no height and move nothing.
+#let band-top = place(top + left, context {
+  let prev = query(selector(<band-end>).before(here()))
+  if prev.len() > 0 {
+    let e = prev.last().location().position()
+    let p = here().position()
+    let gap = p.y - e.y
+    // A natural flow's end marker sits where the next band begins (no gap of its own to centre in).
+    if e.page == p.page and gap >= 0pt and gap < 14pt {
+      place(dy: if gap > 1pt { -gap / 2 } else { -6.5pt }, line(length: 100%, stroke: 0.5pt + v4.hair))
+    }
+  }
+})
+// The end marker sits at the bottom of a fixed band's block, or in the flow just after a natural flow's columns.
+#let band-end = place(bottom + left, [#metadata("band") <band-end>])
+#let flow-end = place[#metadata("band") <band-end>]
+#let seg(body) = block(width: 100%, breakable: true, { band-top; columns(2, gutter: gap, body); flow-end })
 
 // Balanced tail: pieces are top-level blocks that sat on one page in the previous pass.
 // Height = min over split points k of max(stack(0..k), stack(k..n)): a guaranteed fit,
@@ -483,9 +501,12 @@
 // Balanced two-column run built from whole pieces: no flow, so it can never overflow.
 #let balcols(ps) = context {
   let (h, k) = bal-split(ps)
-  block(width: 100%, above: 0pt, below: 8pt, breakable: false,
+  block(width: 100%, above: 0pt, below: 8pt, breakable: false, {
+    band-top
     grid(columns: (col-w, col-w), column-gutter: gap,
-      { for p in ps.slice(0, k) { p } }, { for p in ps.slice(k) { p } }))
+      { for p in ps.slice(0, k) { p } }, { for p in ps.slice(k) { p } })
+    band-end
+  })
 }
 #let bal(..pieces) = context {
   let ps = pieces.pos()
@@ -495,9 +516,12 @@
   if h + 6pt > avail {
     columns(2, gutter: gap, { for p in ps { p } })
   } else {
-    block(width: 100%, above: 0pt, below: 8pt, breakable: false,
+    block(width: 100%, above: 0pt, below: 8pt, breakable: false, {
+      band-top
       grid(columns: (col-w, col-w), column-gutter: gap,
-        { for p in ps.slice(0, k) { p } }, { for p in ps.slice(k) { p } }))
+        { for p in ps.slice(0, k) { p } }, { for p in ps.slice(k) { p } })
+      band-end
+    })
   }
 }
 
@@ -542,8 +566,11 @@
 #let flowcols(ps) = context {
   let height = flow-height(ps)
   if height < 1pt { for p in ps { p } }
-  else { block(width: 100%, height: height, above: 0pt, below: 8pt, breakable: false,
-    columns(2, gutter: gap, { for p in ps { p } })) }
+  else { block(width: 100%, height: height, above: 0pt, below: 8pt, breakable: false, {
+    band-top
+    columns(2, gutter: gap, { for p in ps { p } })
+    band-end
+  }) }
 }
 #let flowtail(ps) = layout(size => {
   if flow-height(ps) <= size.height { flowcols(ps) }

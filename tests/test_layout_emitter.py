@@ -254,6 +254,48 @@ class LayoutEmitter(unittest.TestCase):
         self.assertIn('These objectives',pieces[0][1])
         self.assertIn('Roll 1d10.',pieces[0][1])
 
+    def _page_unit_book(self, h2):
+        book = Book.__new__(Book)
+        book.out, book.block_map, book.flushed = [], [], []
+        book.measures = {'steps': {'h1': FRAME_FIT * 1.5, 'h2': h2}}     # too tall for a column: a page unit
+        book.flush = lambda pieces: book.flushed.append(list(pieces))
+        book.record = book.log_unit = lambda *_: None
+        steps = {'id': 'steps', 'typ': 'list', 'kind': 'c', 's': '#steps[Step one. Step two.]',
+                 'b': {'type': 'list', 'id': 'steps', 'src': [3, 3]}}
+        head = ({'type': 'heading', 'id': 'h-prep', 'src': [2, 2]}, '#heading[Preparation Steps]\n')
+        return book, steps, head
+
+    def test_bare_heading_opens_the_page_unit_it_introduces(self):
+        book, steps, head = self._page_unit_book(FRAME_FIT - 40)
+        self.assertEqual(book.emit_leaf(steps, [({'type': 'para'}, 'Earlier text.'), head]), [])
+        self.assertEqual(book.flushed, [[({'type': 'para'}, 'Earlier text.')]], 'the heading leaves the segment')
+        unit = book.out[-1]
+        self.assertTrue(unit.startswith('#keeppage(id: "steps"'))
+        self.assertLess(unit.index('Preparation Steps'), unit.index('Step one.'))
+        self.assertIn(('h-prep', [2, 2], 'keep-page', None), book.block_map)
+
+    def test_heading_stays_when_it_would_not_fit_the_page_unit(self):
+        book, steps, head = self._page_unit_book(FRAME_FIT - 10)
+        book.emit_leaf(steps, [head])
+        self.assertEqual(book.flushed, [[head]])
+        self.assertNotIn('Preparation Steps', book.out[-1])
+
+    def test_over_height_profile_starts_a_fresh_page(self):
+        book = Book.__new__(Book)
+        book.out, book.block_map, book.flushed = [], [], []
+        book.measures = {'h-hero': {'h1': FRAME_FIT * 3, 'h2': FRAME_FIT * 2}}
+        book.flush = lambda pieces: book.flushed.append(list(pieces))
+        book.log_unit = book.record = lambda *_: None
+        head = {'id': 'h-hero', 'b': {'type': 'heading', 'level': 4, 'title': 'Ashborn', 'src': [1, 1]}, 's': '#heading[Ashborn]'}
+        def para(uid, text):
+            return {'id': uid, 'typ': 'para', 'kind': 'c', 's': text, 'b': {'type': 'para', 'id': uid, 'c': [{'t': 'text', 'v': text}], 'src': [2, 2]}}
+        node = {'id': 'h-hero', 'level': 4, 'title': 'Ashborn', 'head': head,
+                'children': [para('class', 'Class: Sorcerer | Level: 1'), para('rest', 'Talents follow.')]}
+        earlier = [({'type': 'para'}, 'The previous Hero ends here.')]
+        book.emit_x(node, list(earlier), False)
+        self.assertEqual(book.flushed[0], earlier)
+        self.assertEqual(book.out[0], '#pagebreak(weak: true)\n')
+
     def test_climate_and_scenario_starts_are_semantic_fresh_boundaries(self):
         book=Book.__new__(Book)
         self.assertTrue(book.is_fresh({'level':4,'title':'Climate 1: Greenmark Scenarios'}))

@@ -975,6 +975,14 @@ class Book:
         cls = self.unit_class(x, fresh)
         if cls == "col" and section:
             cls = "page"               # a column-fit section keeps its full-width head (D-01): a page unit
+        if cls == "over" and not after_heading and x["children"] and is_statline(x["children"][0]):
+            # An entry profile taller than a page (a Basic Mode Hero) starts a fresh page. Begun mid-page, its
+            # whole-unit subsections could not fit the short column beside it, which stayed empty while they
+            # moved to the next page (all-page review 2026-11-06, Ashborn).
+            self.flush(cur)
+            cur = []
+            self.out.append("#pagebreak(weak: true)\n")
+            after_heading = True
         self.log_unit(x, cls)
         if cls == "col":
             self.record(x, "keep-col")
@@ -1142,9 +1150,23 @@ class Book:
         cls = self.unit_class(x, False)
         self.log_unit(x, cls)
         if cls == "page":
+            head = None
+            if (cur and cur[-1][0].get("type") == "heading" and not is_unit_piece(cur[-1][1])
+                    and self.measures.get(mid, {}).get("h2", 1e9) + HEADING_ALLOWANCE <= FRAME_FIT):
+                # A bare heading never ends the segment before the page unit it introduces: it opens that
+                # unit, glued to its first piece, so it cannot strand at a column foot while the unit moves
+                # to the next page (all-page review 2026-11-06, "Preparation Steps").
+                head = cur.pop()
             self.flush(cur)
             self.record(x, "keep-page")
-            self.out.append(f"#keeppage(id: {lit(mid)}, {self.parts_typst(self.flat_parts(x))})\n")
+            parts = self.flat_parts(x)
+            if head is not None:
+                self.block_map.append((head[0]["id"], head[0]["src"], "keep-page", None))
+                if parts and parts[0][0] == "c":
+                    parts[0][1][0] = head[1].rstrip("\n") + "\n" + parts[0][1][0]
+                else:
+                    parts.insert(0, ("c", [head[1]]))
+            self.out.append(f"#keeppage(id: {lit(mid)}, {self.parts_typst(parts)})\n")
             return []
         s = x["s"].rstrip("\n")
         body = f"#umark({lit(mid)}, \"s\"){s}#umark({lit(mid)}, \"e\")"
