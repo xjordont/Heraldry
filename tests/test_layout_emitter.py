@@ -240,6 +240,16 @@ class LayoutEmitter(unittest.TestCase):
         pm[-1]['y']=500
         self.assertEqual(compute_balance(pm,{'1':['same',1]},{'1':'same'}),{'1':['same',1]})
 
+    def test_a_piece_at_the_foot_of_the_left_column_is_not_pulled_into_the_tail(self):
+        # it continues in the right column beside it; pulling it back emptied that column (p. 435)
+        pm=[{'seg':1,'piece':0,'edge':'s','page':1,'x':42,'y':45},
+            {'seg':1,'piece':1,'edge':'s','page':1,'x':42,'y':BODY_BOTTOM-180},
+            {'seg':1,'piece':2,'edge':'s','page':2,'x':42,'y':300},
+            {'seg':1,'piece':3,'edge':'e','page':2,'x':315,'y':500}]
+        self.assertEqual(compute_balance(pm,{},{'1':'same'}),{})
+        pm[1]['x']=315      # from the foot of the right column it does straddle onto the last page
+        self.assertEqual(compute_balance(pm,{},{'1':'same'}),{'1':['same',1]})
+
     def test_short_roll_directive_keeps_the_substantive_explanation(self):
         book=Book.__new__(Book)
         book.measures={}

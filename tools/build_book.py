@@ -1367,6 +1367,11 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None, bare=None):
         # either fits that page or gives the last page a fuller close (design review 2026-10-29,
         # Scenario 1 tail). A natural run that merely spills into the second column is not short.
         balanced = pt is not None and pt in byp and byp[pt]["page"] == L
+        # A piece straddles onto the last page only from the foot of the previous page's right column. One
+        # starting at the foot of the left column continues in the right column beside it: pulling it back
+        # emptied that whole column (all-page review of candidate 19, p. 435).
+        def straddles(m):
+            return m["page"] == L - 1 and m.get("x", 0) >= PAGE_WIDTH_PT / 2 and BODY_BOTTOM - m["y"] < STRADDLE_MAX
         in_first = end.get('x', 0) < PAGE_WIDTH_PT / 2
         tiny_tail = len(on_last) <= 5 and ((in_first and end['y'] < TOP_Y + TINY_TAIL_PT)
                                            or (balanced and not in_first and end['y'] < TOP_Y + TINY_TAIL_PT / 2))
@@ -1375,7 +1380,7 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None, bare=None):
             continue
         if not on_last:
             lastp = starts[-1] if starts else None
-            if lastp and lastp["page"] == L - 1 and BODY_BOTTOM - lastp["y"] < STRADDLE_MAX:
+            if lastp and straddles(lastp):
                 res[str(sid)] = [sigs[str(sid)], lastp["piece"]]
             continue
         t = on_last[0]["piece"]
@@ -1387,10 +1392,10 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None, bare=None):
             prevp = prevs[-1]
             first = on_last[0]
             at_top = abs(first["y"] - TOP_Y) < 20 and first["x"] < 300
-            if tiny_tail and prevp['page'] == L - 1 and BODY_BOTTOM - prevp['y'] < STRADDLE_MAX:
+            if tiny_tail and straddles(prevp):
                 t = prevp['piece']
             elif not at_top:
-                if BODY_BOTTOM - prevp["y"] < STRADDLE_MAX or prevp["page"] == L:
+                if straddles(prevp) or prevp["page"] == L:
                     t = prevp["piece"]
                 else:
                     continue
