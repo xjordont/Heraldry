@@ -32,6 +32,45 @@ Always parse the active RC before composition. The runner verifies the parsed mo
 
 Reviewed table-width preferences in `config/design_tokens.json` use normalized complete heading paths and exact plain header cells. They do not use sequential T-numbers. Renumbered sections and inserted tables therefore retain their intended selectors. A changed table is freshly measured and allocated, with changed-content diagnostics. Removed targets produce warnings and remain unapplied; ambiguous or overlapping selectors fail before compilation. Inspect `production/mappings/table_scope_policies.json` and the run's composition diagnostics whenever a manuscript changes.
 
+## Measuring a layout change
+
+`python tools/layout_flow.py BASE.pdf TRIAL.pdf` compares two digital PDFs; use the last release as BASE. It reports the page count and chapter spans, low right-column section starts, uneven chapter ends, rules through text, and every column foot left more than 60 pt short. It classifies each short column by what tops the next column, read from the positions the build embeds:
+
+- **section end:** a numbered section starts there (the fresh-page rule);
+- **keep gap:** a heading, figure, table, or flow piece was carried there whole;
+- **interior void:** nothing; the text simply continues. These need repair (DESIGN 8.5).
+
+`layout_qa` (run by verify) carries the same measures in `production/qa/layout.json` as advisory notes, and fails the gate on a composition hairline drawn through text.
+
+Trial a layout idea in a scratch clone, one change at a time, as a full local proof:
+
+1. Compare it with `layout_flow.py`.
+2. Look at every page that changed.
+3. Keep it only if the book reads better, no page is added without reason, and no type falls below the 9 pt essential minimum.
+
+A full book compile peaks at about 7.5 GB, so run one build at a time on a 15 GB machine.
+
+## Lessons retained from the rulebook-layout review (2026-11-06)
+
+Every part of the rulebook-layout skill was trialled against RC528-build-44 (owner request).
+
+**Adopted:**
+- the column-flow report and the rule-through-text gate;
+- figure fit: a full-width figure carried to the next page is scaled to close the page above it, but only as far as its labels stay at 9 pt (about 96%; the skill's 80% would set them at 7.9 pt);
+- card tables keep their first two and last two entries together;
+- a Contents page-number gutter, so a long title wraps short of its number;
+- index filing that ignores a leading "The";
+- index letter heads keep two entries.
+
+**Rejected:**
+- **Reusing approved art in short columns.** It cleared space, but every piece appeared twice, most under unrelated content (weapons under Potions, armour under Poisons), and art at a column foot decorates a void rather than closing it. Purpose-made gap art, commissioned through the owner's art workflow, is the route if gaps are to carry art.
+- **Moving a figure within its section.** The composer's column bands would need redesigning, and reading order would change.
+- **The low right-column start rule.** It has one real case, and moving it only trades a low start for a bare column foot.
+
+**Confirmed already in place:** a readable measure (a median of 49 characters a line in two columns); tables whose rows never split and whose headers repeat; split example panels that keep their tint and rule; two editions that paginate identically; and no painting repeated on a spread.
+
+**Pending the owner:** one continuous flow per chapter (sections run on, in-column heads, only the chapter's last page balanced). It cut Combat from 21 pages to 14 and its bare column space by 86%. It reverses the fresh-page rule, D-01, and 12a, and drops most section tailpieces. It is being trialled on two more chapters before the owner decides.
+
 ## Lessons retained from the compact-layout pass
 
 Keep the approved 10.5 pt body, 9 pt tables, narrow margins, two-column rules, and full-width introduction flavour in the shared layout profile. Improve components and flow rather than repeatedly shrinking text. Preserve source coverage, substantive heading keeps, fit-capable keep units, continuation identities, and rendered page evidence. Cosmetic whitespace alone does not justify violating those constraints.
