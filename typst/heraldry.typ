@@ -453,16 +453,33 @@
     let e = prev.last().location().position()
     let p = here().position()
     let gap = p.y - e.y
-    // A natural flow's end marker sits where the next band begins (no gap of its own to centre in).
-    if e.page == p.page and gap >= 0pt and gap < 14pt {
-      place(dy: if gap > 1pt { -gap / 2 } else { -6.5pt }, line(length: 100%, stroke: 0.5pt + v4.hair))
+    // The rule is centred in the gap and needs one to sit in. Bands that abut (a natural flow whose last
+    // lines stand in the left column only, or an end marker carried to the top of the next page) get none:
+    // there the columns already read straight down (all-page review of candidate 19, pp. 218, 419, 593).
+    if e.page == p.page and gap >= 4pt and gap < 14pt {
+      place(dy: -gap / 2, line(length: 100%, stroke: 0.5pt + v4.hair))
     }
   }
 })
 // The end marker sits at the bottom of a fixed band's block, or in the flow just after a natural flow's columns.
 #let band-end = place(bottom + left, [#metadata("band") <band-end>])
 #let flow-end = place[#metadata("band") <band-end>]
-#let seg(body) = block(width: 100%, breakable: true, { band-top; columns(2, gutter: gap, body); flow-end })
+// `seg-last` records where a natural flow's text ends: in which column, and on which page.
+#let seg(body) = block(width: 100%, breakable: true, {
+  band-top; columns(2, gutter: gap, { body; [#metadata("seg") <seg-last>] }); flow-end
+})
+// Between a natural flow and its balanced tail. When the flow's last lines stand in the right column of
+// the tail's page, the tail is a second band beneath both columns: it starts the band gap lower, so the
+// hairline has room between them (candidate 19, pp. 402, 485, 490). Otherwise the tail continues the
+// left column directly and nothing is added. Weak spacing, so it vanishes at the top of a page.
+#let tail-gap = context {
+  let ends = query(selector(<seg-last>).before(here()))
+  if ends.len() > 0 {
+    let e = ends.last().location().position()
+    let p = here().position()
+    if e.page == p.page and e.x > p.x + col-w / 2 { v(8pt, weak: true) }
+  }
+}
 
 // Balanced tail: pieces are top-level blocks that sat on one page in the previous pass.
 // Height = min over split points k of max(stack(0..k), stack(k..n)): a guaranteed fit,

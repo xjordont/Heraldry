@@ -120,6 +120,29 @@ class CompositionPolicy(unittest.TestCase):
         ])
         self.assertIn("initial-title: false", items[-1]["s"])
 
+    def test_item_label_and_name_line_head_the_entry_as_one_run_in(self):
+        book = Book.__new__(Book)
+        book.block_map, book.table_titles = [], {}
+        book.para = lambda b, role=None: ("#runin[Tier 2 Special Item]\n" if b["id"] == "lab"
+                                          else "#flavour[A bundle of twigs.]" if b["id"] == "fl" else "Name | Cost: 20c\n\n")
+        book.render = lambda b: book.para(b)
+        book.figs_for = lambda b: []
+        book.tags = lambda bid: ""
+        book.contained = lambda b, s: s
+        em = lambda v: {"t": "em", "c": [{"t": "text", "v": v}]}
+        items = book.chapter_items([
+            {"id": "h", "type": "heading", "title": "Named Items", "level": 4},
+            {"id": "lead", "type": "para", "src": [1, 0], "c": [{"t": "text", "v": "Items follow."}]},
+            {"id": "lab", "type": "para", "src": [1, 1], "c": [{"t": "strong", "c": [{"t": "text", "v": "Tier 2 Special Item"}]}]},
+            {"id": "nm", "type": "para", "src": [1, 2], "c": [{"t": "strong", "c": [{"t": "text", "v": "Name"}]},
+                                                               {"t": "text", "v": " | Cost: 20c"}]},
+            {"id": "fl", "type": "para", "src": [1, 3], "c": [em("A bundle of twigs.")]},
+        ])
+        head = next(i for i in items if i["id"] == "nm")
+        self.assertEqual(head["s"], "#runin[Tier 2 Special Item#parbreak()Name | Cost: 20c]\n")
+        self.assertNotIn("lab", [i["id"] for i in items])
+        self.assertIn(("lab", [1, 1], "label-with-entry-head", None), book.block_map)
+
     def test_card_table_receives_the_hidden_title(self):
         book = Book.__new__(Book)
         book.table_titles = {"T9": "Tier 1 Special Items"}

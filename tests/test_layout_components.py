@@ -230,6 +230,38 @@ Following rules.
         self.assertLess(words["Upper"], rules[0].y0)
         self.assertLess(rules[0].y0, words["Lower"])
 
+    def _flow_then_tail(self, flow):
+        source = Path(self.tmp.name) / "flow-tail.typ"
+        source.write_text(f'''#import "/typst/heraldry.typ": *
+#show: book
+#seg[{flow}]
+#tail-gap
+#bal([Tailleft opens the balanced tail.], [Tailright closes it.])
+''', encoding="utf-8")
+        compiler = typst.Compiler(str(source), root=str(ROOT),
+                                  font_paths=[str(ROOT / "fonts/static")], ignore_system_fonts=True)
+        pdf, warnings = compiler.compile_with_warnings()
+        self.assertFalse(warnings, [str(w) for w in warnings])
+        with pymupdf.open(stream=pdf, filetype='pdf') as doc:
+            page = doc[0]
+            rules = [d["rect"].y0 for d in page.get_drawings()
+                     if d["rect"].height < 1 and d["rect"].width > 500 and abs((d.get("width") or 0) - 0.5) < 0.01]
+            lines = {s["text"].split()[0]: (s["origin"][1], s["size"]) for b in page.get_text("dict")["blocks"]
+                     for l in b.get("lines", []) for s in l["spans"] if s["text"].strip()}
+        return rules, lines
+
+    def test_a_tail_under_a_flow_that_reached_the_right_column_is_ruled_clear_of_both(self):
+        rules, lines = self._flow_then_tail("Flowleft ends the left column.#colbreak()Flowright ends the flow.")
+        self.assertEqual(len(rules), 1)
+        above, (below, size) = lines["Flowright"][0], lines["Tailleft"]
+        self.assertGreaterEqual(rules[0] - above, 4, "clear of the descenders above")
+        self.assertGreaterEqual(below - 0.7 * size - rules[0], 3, "clear of the capitals below")
+
+    def test_a_tail_that_continues_the_left_column_gets_no_rule_or_gap(self):
+        rules, lines = self._flow_then_tail("Flowleft is all the flow there is.")
+        self.assertEqual(rules, [])
+        self.assertLess(lines["Tailleft"][0] - lines["Flowleft"][0], 20, "the tail follows on like the next line")
+
     def test_table_identity_geometry_is_independent_of_queried_page(self):
         source = Path(self.tmp.name) / "identity-geometry.typ"
         source.write_text('''#import "/typst/heraldry.typ": *

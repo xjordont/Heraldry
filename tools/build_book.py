@@ -737,6 +737,15 @@ class Book:
             introduction = opening or (b['type'] == 'heading' and
                 (b['level'] <= 3 or bool(re.match(r'^Scenario \d+: ', b.get('title', '')))))
             r = self.para(b, role='section-lead') if opening else self.render(b)
+            if (b["type"] == "para" and r.endswith("\n\n") and nxt is not None and is_flavour(nxt)
+                    and items and items[-1]["s"].startswith("#runin[") and items[-1]["kind"] == "c"
+                    and items[-1]["typ"] == "para" and len(first_text_full(b)) < 300):
+                # An item's label and name line ("Tier 2 Special Item", then "Old Wode's Tithe-Bundle | Cost: 20c
+                # | ...") head its entry: one run-in block, so they never end a column or page without the
+                # flavour that follows (all-page review of candidate 19, p. 209).
+                lab = items.pop()
+                self.block_map.append((lab["id"], lab["b"]["src"], "label-with-entry-head", None))
+                r = lab["s"].rstrip()[:-1] + "#parbreak()" + r.rstrip() + "]\n"
             if (b["type"] == "para" and items and items[-1]["typ"] == "heading" and r.endswith("\n\n")
                     and len(first_text_full(b)) < 300 and not r.startswith(("#example[", "#flavour[", "#runin["))):
                 r = f"#keep[{r.rstrip()}]\n"
@@ -1277,7 +1286,7 @@ class Book:
             self.out.append("#seg[" + "".join(parts) + end + "]\n")
         else:
             if tail > 0:
-                self.out.append("#seg[" + "".join(parts[:tail]) + "]\n")
+                self.out.append("#seg[" + "".join(parts[:tail]) + "]\n#tail-gap\n")
             tp[-1] = tp[-1] + end
             if all(not is_rigid(piece) for piece in tp):
                 # Zero-size terminal markers do not turn a prose tail into a
