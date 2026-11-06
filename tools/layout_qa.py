@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """Geometry detectors for every page: text overlap, text outside the body frame
-(other than running furniture), unsafe edges, tiny type, near-empty pages.
-Detectors flag pages for visual review; they do not prove good layout."""
+(other than running furniture), unsafe edges, tiny type, near-empty pages, and a composition rule drawn
+through text. Detectors flag pages for visual review; they do not prove good layout. The report also
+carries the advisory column-flow measures of tools/layout_flow.py (short columns by cause, low
+right-column starts, uneven chapter ends, chapter spans), which are not flags."""
 import argparse, json
 from pathlib import Path
 import pymupdf
 from layout_profile import PAGE_WIDTH_PT, PAGE_HEIGHT_PT, MARGIN_TOP_PT, MARGIN_BOTTOM_PT, MARGIN_OUTSIDE_PT, TOKENS
 from layout_diagnostics import page_diagnostics
+import layout_flow
 
 W, H = PAGE_WIDTH_PT, PAGE_HEIGHT_PT
 SAFE = TOKENS["page"]["essential_edge_safe_pt"]
@@ -60,11 +63,14 @@ def main():
     doc = pymupdf.open(a.pdf)
     body_starts = [page for level, _, page in doc.get_toc(simple=True) if level == 1 and page > 0]
     first_body_page = a.first_body_page if a.first_body_page is not None else min(body_starts, default=1)
-    flags, diagnostics = [], []
+    flags, diagnostics, measures = [], [], {}
     for i, page in enumerate(doc):
         n = i + 1
         text, drawings = page_text(page), page.get_drawings()
         diagnostics.append(page_diagnostics(page, n, top=TOP, bottom=BOT, tab=TAB, text_dict=text[0], drawings=drawings))
+        measures[n] = layout_flow.page_measures(page, text[0], drawings)
+        for hit in measures[n]["strikes"]:
+            flags.append({"page": n, "code": "rule_through_text", "text": hit["text"], "rule_y": hit["rule_y"]})
         ls = lines_of(page, text=text)
         # overlap: shrink boxes slightly (ascender/descender overlap is normal)
         boxes = [(pymupdf.Rect(r.x0 + 1, r.y0 + r.height * 0.3, r.x1 - 1, r.y1 - r.height * 0.3), t, s) for r, t, s in ls]
@@ -116,7 +122,10 @@ def main():
     by_chapter = {}
     for n in sparse_pages:
         by_chapter.setdefault(chapter_of(n), []).append(n)
+    flow = layout_flow.analyse(doc, measures, first_body_page)
+    flow.pop("rule_strikes")                         # already flagged above
     rep = {"pdf": a.pdf, "pages": len(doc), "counts": codes, "flagged_pages": sorted({f["page"] for f in flags}), "flags": flags[:400],
+           "flow": flow, "flow_summary": layout_flow.summary({**flow, "rule_strikes": {}}),
            "sparse_pages": {"count": len(sparse_pages), "pages": sparse_pages, "by_chapter": by_chapter,
                             "method": "vertical fill under 55% and fewer than 50 text lines, chapter openers excluded; page-background furniture (thumb tab, opener frame) is not counted as content"},
            "density_triage": diagnostics,
@@ -124,7 +133,7 @@ def main():
     doc.close()
     Path(a.report).write_text(json.dumps(rep, indent=1, ensure_ascii=False))
     print(json.dumps({"pages": rep["pages"], "counts": codes, "flagged_pages": rep["flagged_pages"][:60],
-                      "sparse_pages": len(sparse_pages)}))
+                      "sparse_pages": len(sparse_pages), "flow": rep["flow_summary"]}))
 
 
 if __name__ == "__main__":
