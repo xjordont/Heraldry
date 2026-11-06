@@ -474,12 +474,19 @@
 // comes next is a second band beneath both columns: it starts the band gap lower (as after a fixed band), so
 // a hairline has room between them. Otherwise the next band continues the left column directly and nothing
 // is added. Weak spacing, so it merges with a heading's own space and vanishes at the top of a page.
-#let band-gap = context {
-  let ends = query(selector(<seg-last>).before(here()))
-  if ends.len() > 0 {
-    let e = ends.last().location().position()
-    let p = here().position()
-    if e.page == p.page and e.x > p.x + col-w / 2 { v(8pt, weak: true) }
+// It reads a zero-height probe placed before it, never its own position: where a flow ends at a page foot,
+// its own spacing would move it to the next page, so its position could flip between layout iterations
+// (seen in the one-flow trial, 2026-11-06; not yet met in the book).
+#let band-gap = {
+  block(height: 0pt, above: 0pt, below: 0pt, sticky: false)[#metadata("band-gap") <band-gap-probe>]
+  context {
+    let ends = query(selector(<seg-last>).before(here()))
+    let probe = query(selector(<band-gap-probe>).before(here()))
+    if ends.len() > 0 and probe.len() > 0 {
+      let e = ends.last().location().position()
+      let p = probe.last().location().position()
+      if e.page == p.page and e.x > p.x + col-w / 2 { v(8pt, weak: true) }
+    }
   }
 }
 
