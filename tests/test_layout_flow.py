@@ -23,6 +23,13 @@ class RuleStrikes(unittest.TestCase):
     def test_a_hairline_through_the_letters_is_found(self):
         self.assertEqual(len(lf.rule_strikes(self.page, [rule(307)])), 1)
 
+    def test_a_hairline_resting_on_the_letter_tops_is_found(self):
+        # candidate 24, C.3: the band rule at 103.1 over a line boxed 100.6 to 115.0
+        self.assertEqual(len(lf.rule_strikes(self.page, [rule(302.9)])), 1)
+
+    def test_a_hairline_in_the_gap_above_is_not(self):
+        self.assertEqual(lf.rule_strikes(self.page, [rule(301.5)]), [])
+
     def test_a_hairline_in_the_gap_below_is_not(self):
         self.assertEqual(lf.rule_strikes(self.page, [rule(318)]), [])
 

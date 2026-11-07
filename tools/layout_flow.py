@@ -58,8 +58,10 @@ def column_feet(boxes):
 
 def rule_strikes(text_dict, drawings):
     """Page-composition rules (hairlines up to 0.8 pt, over 150 pt long: band rules, separators, table rules)
-    through the core of a text line. Figures draw heavier strokes and label their own lines by design
-    (FIG-11, FIG-18, the Chapter 11 cycle), so they are not tested."""
+    through a text line, from its letter tops (15% down its box) to 30% above its foot: a rule resting on the
+    letters reads as an overline (candidate 24, the C.3 band rule 0.4 pt above its first line). Figures draw
+    heavier strokes and label their own lines by design (FIG-11, FIG-18, the Chapter 11 cycle), so they are
+    not tested."""
     rules = [d["rect"] for d in drawings if d["rect"].height < 1.5 and d["rect"].width > 150
              and (d.get("width") or 0) <= 0.8 and TOP < d["rect"].y0 < BOT]
     hits = []
@@ -69,7 +71,7 @@ def rule_strikes(text_dict, drawings):
             if not txt or abs(line["dir"][0]) < 0.5:
                 continue
             x0, y0, x1, y1 = line["bbox"]
-            core = (y0 + 0.3 * (y1 - y0), y1 - 0.3 * (y1 - y0))
+            core = (y0 + 0.15 * (y1 - y0), y1 - 0.3 * (y1 - y0))
             for r in rules:
                 if core[0] < (r.y0 + r.y1) / 2 < core[1] and min(x1, r.x1) - max(x0, r.x0) > 10:
                     hits.append({"text": txt[:50], "rule_y": round(r.y0, 1)})

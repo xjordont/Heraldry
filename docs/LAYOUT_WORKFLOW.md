@@ -40,7 +40,7 @@ Reviewed table-width preferences in `config/design_tokens.json` use normalized c
 - **keep gap:** a heading, figure, table, or flow piece was carried there whole;
 - **interior void:** nothing; the text simply continues. These need repair (DESIGN 8.5).
 
-`layout_qa` (run by verify) carries the same measures in `production/qa/layout.json` as advisory notes, and fails the gate on a composition hairline drawn through text, and on a page whose body holds only its heading (`head_alone`: a head stranded while its content went overleaf).
+`layout_qa` (run by verify) carries the same measures in `production/qa/layout.json` as advisory notes, and fails the gate on a composition hairline drawn through text or resting on its letter tops (candidate 24's Appendix C band rules), and on a page whose body holds only its heading (`head_alone`: a head stranded while its content went overleaf).
 
 Trial a layout idea in a scratch clone, one change at a time, as a full local proof:
 
