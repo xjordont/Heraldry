@@ -176,6 +176,10 @@ def analyse(doc, measures=None, first_body_page=None):
                      and nxt[3]["to"].y < TOP + 40)
         if to.x > MID and BOT - to.y < LOW_START_PT and nxt is not None and nxt[2] > page and not ends_here:
             low.append({"page": page, "heading": t[1][:60], "from_foot_pt": round(BOT - to.y)})
+    # Every numbered section starts a page or a column (DESIGN 13 rule 8); a chapter opener's shared first
+    # section is composed with the opener, and Appendix C runs on by design, so it is listed here.
+    mid_starts = [{"page": t[2], "heading": t[1][:60], "y": round(t[3]["to"].y)} for t in toc
+                  if t[0] == 2 and t[3].get("to") is not None and t[2] not in chapters and t[3]["to"].y >= TOP + 40]
     uneven = []
     for n in sorted(chapter_last):
         f = feet.get(n, {})
@@ -197,7 +201,8 @@ def analyse(doc, measures=None, first_body_page=None):
     return {"pages": len(doc), "short_columns": by_class, "keep_gaps_by_carried": by_carried,
             "interior_pages": sorted({s["page"] for s in short if s["class"] == "interior"}),
             "keep_gap_pages": sorted({s["page"] for s in short if s["class"] == "keep_gap"}),
-            "low_right_starts": low, "uneven_chapter_ends": uneven, "chapter_spans": spans,
+            "low_right_starts": low, "mid_column_section_starts": mid_starts,
+            "uneven_chapter_ends": uneven, "chapter_spans": spans,
             "rule_strikes": strikes, "short_detail": short,
             "method": f"column foot more than {FOOT_GAP_PT} pt above the frame foot; classified by what tops the next "
                       "column (a numbered section: section_end; a heading, figure, table, or flow piece carried whole: "
@@ -212,7 +217,9 @@ def summary(rep):
             **{f"{c}_bare_pt": sc.get(c, {}).get("bare_pt", 0) for c in ("interior", "keep_gap", "section_end")},
             **{f"keep_gap_{k}_pt": rep.get("keep_gaps_by_carried", {}).get(k, {}).get("bare_pt", 0)
                for k in ("figure", "table", "heading", "piece")},
-            "low_right_starts": len(rep["low_right_starts"]), "uneven_chapter_ends": len(rep["uneven_chapter_ends"]),
+            "low_right_starts": len(rep["low_right_starts"]),
+            "mid_column_section_starts": len(rep.get("mid_column_section_starts", [])),
+            "uneven_chapter_ends": len(rep["uneven_chapter_ends"]),
             "rule_strikes": sum(len(v) for v in rep["rule_strikes"].values())}
 
 

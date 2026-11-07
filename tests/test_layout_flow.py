@@ -59,6 +59,18 @@ class Classify(unittest.TestCase):
         self.assertFalse(lf.opens_with_kept_block(text_first))
 
 
+class SectionStarts(unittest.TestCase):
+    def test_a_numbered_section_off_a_page_or_column_top_is_listed(self):
+        doc = pymupdf.open()
+        for _ in range(5):
+            doc.new_page()
+        go = lambda x, y: {"kind": pymupdf.LINK_GOTO, "to": pymupdf.Point(x, y)}
+        doc.set_toc([[1, "Chapter", 1, go(45, 50)], [2, "1.1 Shares the opener", 1, go(45, 480)],
+                     [2, "1.2 Page top", 2, go(45, 50)], [2, "1.3 Right column top", 3, go(320, 50)],
+                     [2, "1.4 Mid column", 4, go(45, 400)], [3, "1.4.1 Subsection", 5, go(45, 400)]])
+        self.assertEqual([s["heading"] for s in lf.analyse(doc)["mid_column_section_starts"]], ["1.4 Mid column"])
+
+
 class ClassifyFromTheBuildRecord(unittest.TestCase):
     def doc(self, positions):
         import json

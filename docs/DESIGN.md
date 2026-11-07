@@ -386,7 +386,7 @@ The owner asked (2026-10-12) for typesetting that is easy to read, avoids page b
 3. No runts: a paragraph's last line carries at least two words where possible (runt cost 160%).
 4. A paragraph that fits a column never splits across a page turn. When a paragraph must split, it splits within a spread (verso to recto), never recto to verso, wherever the layout engine can achieve that by moving a whole unit.
 
-12a. **Balanced columns.** Wherever a two-column run ends on a page (a section close, lore, a chapter opener's first section), the two columns are balanced to equal depth (`balanced` in `typst/templates/system.typ`), so no column stands half empty beside a full one. Lore and gazetteer text set in columns fills the full frame in two balanced columns, never a narrow single measure with a blank margin (owner 2026-10-12: the Deepwarden introduction).
+12a. **Balanced columns.** Wherever a two-column run ends on a page (a section close, lore, a chapter opener's first section), the two columns are balanced to equal depth (`balanced` in `typst/templates/system.typ`), so no column stands half empty beside a full one. Lore and gazetteer text set in columns fills the full frame in two balanced columns, never a narrow single measure with a blank margin (owner 2026-10-12: the Deepwarden introduction). A section's short introduction (at most 2,400 characters of prose) that is followed by a whole column unit too tall for a column under the section head, and that can't split, closes its own run: it is balanced on the opening page, and the unit starts the next page, as it would anyway (candidate 23, 1.3 The Dying Lands; `lead_run` in `tools/build_book.py`).
 
 **Units (what reads as one thing stays on one page)**
 

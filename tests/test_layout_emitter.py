@@ -300,6 +300,36 @@ class LayoutEmitter(unittest.TestCase):
         self.assertTrue(run_fits_one_page(roomy, 2, 100))
         self.assertFalse(run_fits_one_page(tall, 2, 100))
 
+    def _lead_run_book(self, follower_h1):
+        book = Book.__new__(Book)
+        book.measures = {'h-sub': {'h1': follower_h1, 'h2': follower_h1 / 2}}
+        book.log_unit = book.record = lambda *_: None
+        return book
+
+    @staticmethod
+    def _section_kids(intro_chars=600, art=True):
+        def leaf(uid, s, typ='para'):
+            return {'id': uid, 'typ': typ, 'kind': 'c', 's': s,
+                    'b': {'type': typ, 'id': uid, 'c': [{'t': 'text', 'v': s}], 'src': [2, 2]}}
+        head = {'id': 'h-sub', 'b': {'type': 'heading', 'level': 4, 'title': 'The Fall', 'src': [3, 3]}, 's': '#heading[The Fall]'}
+        body = [leaf('art', '#spotart("fall.png", 3.3in)')] if art else []
+        sub = {'id': 'h-sub', 'level': 4, 'title': 'The Fall', 'head': head,
+               'children': body + [leaf('p1', 'No one agrees.'), leaf('p2', 'Priests preach.')]}
+        return [leaf('i1', 'x' * (intro_chars // 2)), leaf('i2', 'y' * (intro_chars // 2)), sub]
+
+    def test_a_short_introduction_before_a_unit_too_tall_for_its_page_closes_its_own_run(self):
+        from build_book import SECTION_HEAD_PT
+        tall = FRAME_H - SECTION_HEAD_PT + 20       # 1.3.1 The Fall: 676 pt against 648 pt under the head
+        self.assertEqual(self._lead_run_book(tall).lead_run(self._section_kids()), 2)
+
+    def test_the_introduction_flows_on_when_the_unit_fits_split_or_the_introduction_is_long(self):
+        from build_book import SECTION_HEAD_PT, LEAD_RUN_CHARS
+        tall = FRAME_H - SECTION_HEAD_PT + 20
+        self.assertEqual(self._lead_run_book(FRAME_H - SECTION_HEAD_PT - 20).lead_run(self._section_kids()), 0)
+        self.assertEqual(self._lead_run_book(tall).lead_run(self._section_kids(art=False)), 0)   # prose splits
+        self.assertEqual(self._lead_run_book(tall).lead_run(self._section_kids(LEAD_RUN_CHARS + 2)), 0)
+        self.assertEqual(self._lead_run_book(tall).lead_run(self._section_kids()[2:]), 0)      # no introduction
+
     def test_short_roll_directive_keeps_the_substantive_explanation(self):
         book=Book.__new__(Book)
         book.measures={}

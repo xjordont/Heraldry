@@ -1084,6 +1084,18 @@ class Book:
         elif section:
             self.out.append(f"#section-head[{head}]\n".replace("#pm(", "#pmx("))
             after = False
+            n = self.lead_run(kids)
+            if n:
+                # The introduction closes its own run, which the tail rule balances on the opening page; the
+                # first subsection, too tall for a column under the section head, starts the next page as it
+                # would anyway (candidate 23, p. 12: 1.3 The Dying Lands in one column beside an empty one).
+                for c in kids[:n]:
+                    cur, after = self.emit_x(c, cur, after)
+                self.flush(cur)
+                cur = []
+                self.out.append("#pagebreak(weak: true)\n")
+                self.__dict__.setdefault("lead_runs", []).append(x["id"])
+                kids = kids[n:]
         else:
             # opening group: heading + first leaf (+ the list/table a short lead-in introduces) move as one
             lead = []
@@ -1153,6 +1165,26 @@ class Book:
         if x["id"] in getattr(self, "end_art", {}):
             aid, rel, w, aspect, wmax = self.end_art[x["id"]]
             self.out.append(f"#endart({lit(aid)}, {lit(rel)}, {w:.1f}pt, {aspect:.4f}, max-w: {wmax:.1f}pt)\n")
+
+    def lead_run(self, kids):
+        """Number of prose paragraphs opening a numbered section that close their own balanced run: a short
+        introduction followed by a whole column unit that cannot split and is too tall for a column under the
+        section head, so it can only start the next page. 0 when the section opens any other way."""
+        n = 0
+        while n < len(kids) and "head" not in kids[n] and kids[n]["kind"] == "c" and kids[n]["typ"] == "para":
+            n += 1
+        if not n or n == len(kids) or "head" not in kids[n]:
+            return 0
+        if sum(len(first_text_full(k["b"])) for k in kids[:n]) > LEAD_RUN_CHARS:
+            return 0
+        follower = kids[n]
+        m = self.measures.get(follower["id"])
+        if not m or self.unit_class(follower, False) != "col" or m["h1"] <= FRAME_H - SECTION_HEAD_PT:
+            return 0
+        parts = self.flat_parts(follower)      # unmarked: a marked walk logs the unit's contents
+        if all(k == "c" for k, _ in parts) and splittable([s for _, ss in parts for s in ss]):
+            return 0
+        return n
 
     def splits_under_heading(self, kids):
         """True when a node's first child is a fit-capable table too tall to share a column with the heading."""
@@ -1365,6 +1397,8 @@ STANDFIRST_CHARS = 800                   # a run-on section's introduction set a
 # second column and the row group that cannot divide at the column break.
 SPLIT_RESERVE = 120
 HEADING_ALLOWANCE = 24                   # a run-in section heading and its spacing (measured 21.2 pt at level 4)
+SECTION_HEAD_PT = 54                     # a full-width numbered section head: its columns start 54 pt down (1.3, p. 12)
+LEAD_RUN_CHARS = 2400                    # a section introduction short enough to balance on its opening page
 TOP_Y = MARGIN_TOP_PT
 FRAME_H = BODY_HEIGHT_PT
 FRAME_FIT = FRAME_H - 12                 # measured component overhead and a documented boundary tolerance
@@ -1768,6 +1802,7 @@ def main():
     from source_units import source_unit_manifest
     manifest = source_unit_manifest(model, book.fig_slots)
     (BUILD / "units.json").write_text(json.dumps({"frame_fit_pt": FRAME_FIT, "units": book.unit_log,
+        "balanced_leads": book.__dict__.get("lead_runs", []),
         "expected_unit_ids": [u['id'] for u in manifest], 'source_unit_manifest': manifest,
         "content_sha256": hashlib.sha256((ROOT / "typst/content.typ").read_bytes()).hexdigest()}))
     (BUILD / 'layout-build.json').write_text(json.dumps({'profile': profile_dict(), 'passes': pass_log,

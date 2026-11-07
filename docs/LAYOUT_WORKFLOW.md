@@ -34,7 +34,7 @@ Reviewed table-width preferences in `config/design_tokens.json` use normalized c
 
 ## Measuring a layout change
 
-`python tools/layout_flow.py BASE.pdf TRIAL.pdf` compares two digital PDFs; use the last release as BASE. It reports the page count and chapter spans, low right-column section starts, uneven chapter ends, rules through text, and every column foot left more than 60 pt short. It classifies each short column by what tops the next column, read from the positions the build embeds:
+`python tools/layout_flow.py BASE.pdf TRIAL.pdf` compares two digital PDFs; use the last release as BASE. It reports the page count and chapter spans, low right-column section starts, numbered sections that start mid-column, uneven chapter ends, rules through text, and every column foot left more than 60 pt short. It classifies each short column by what tops the next column, read from the positions the build embeds:
 
 - **section end:** a numbered section starts there (the fresh-page rule);
 - **keep gap:** a heading, figure, table, or flow piece was carried there whole;
@@ -76,6 +76,12 @@ Every part of the rulebook-layout skill was trialled against RC528-build-44 (own
 The costs were mid-column section starts, five tailpieces with no home, and section art beside entries it was not drawn for. The owner keeps every numbered section starting on a new page, or at least at the top of a column. A section could start at the top of a right column only where the previous section's last page fits in its left column. In RC528 that is 7 of 128 section starts, so the fallback is not built.
 
 Two lessons from the trial stay: an in-layout decision that reads its own position (a page turn, `band-gap`) can oscillate, so make such a decision in the composer from the previous pass and persist it; and a converging build must converge from `make clean all`, as CI builds clean.
+
+**From the candidate 22 and 23 reviews (2026-11-07).** Every numbered section now starts a page or a column, and the flow report lists any that doesn't. Four composer rules close the one-column pages those reviews found, each decided from measured heights or the previous pass and covered by tests in `tests/test_layout_emitter.py`:
+- a tiny last page flows back into the page before when its right column has room;
+- inside a balanced run, prose and list units may split between their pieces;
+- a short run that opens near a page top balances on that page when it fits there;
+- a short section introduction followed by a unit too tall for a column under the section head is balanced on its own page.
 
 ## Lessons retained from the compact-layout pass
 

@@ -45,7 +45,7 @@ Git follows `AGENTS.md`: sync with `git pull --ff-only origin main`. If a push (
    - a running-head shield cropped;
    - a page of art with no text where text is expected.
 
-   Start with the pages `production/qa/layout.json` points to under `flow`: interior voids, the largest keep gaps, low right-column starts, and uneven chapter ends.
+   Start with the pages `production/qa/layout.json` points to under `flow`: interior voids, the largest keep gaps, low right-column starts, uneven chapter ends, and numbered sections that start mid-column (each must start a page or a column; the only accepted one is the Appendix C run-on).
 
    `cover-front.jpg` must be the owner-supplied picture (HERALDRY, the skull-and-thorn frame, and the dragon skeleton), and `cover-back.jpg` must be the back cover with the castle logo. Anything else is a major finding.
 7. Write the review record to a file in the scratch folder, such as `$env:HERALDRY_SCRATCH\review.json` (the schema is in the `tools/visual_review_bind.py` docstring):
