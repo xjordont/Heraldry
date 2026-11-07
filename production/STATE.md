@@ -2,6 +2,33 @@
 
 Newest first. Entries before 2026-11-01 are in `production/history/STATE-2026-10.md`; search it by keyword.
 
+## Final product: RC528-build-45 released, with the section-start rule checked on every build - 2026-11-07
+
+Owner request: "I would like to keep it so each section heading starts on a new page, if possible, or at least at the top of a column. Please integrate all of what we've learned here to finalize our workflow and then build a final product."
+
+**Released:** [RC528-build-45](https://github.com/xjordont/Heraldry/releases/tag/RC528-build-45), 618 pages, review ledger `25b8c04`. The shipped digital PDF's SHA-256 (`8852d240...`) equals the reviewed candidate 26's.
+
+**Section starts.** Every numbered section starts a page or a column top, apart from the opener shares (pp. 26, 59, 72, and 580) and the Appendix C run-on (C.13). The flow report now lists any section that starts mid-column (`mid_column_section_starts`), and the build card points the review at that list.
+
+**Candidates.**
+- **23** (`20261107T052704Z`) matched the local proof byte for byte. p. 12 set the 1.3 introduction in one column beside an empty column. A short introduction before a unit too tall for a column under its head now balances on its own page (`ccd26d8`).
+- **24** (`20261107T055134Z`) got a full three-reviewer pass, which found five majors:
+  - p. 100: 6.7's head alone on its page. The short-run rule had balanced a 675 pt table under a 648 pt column (`91f83de`).
+  - The Appendix C band rule resting on the first line of C.3, C.5, C.8, and C.12. Build-44 had the same fault. Fixed in `4220bc0`, `bfbf95a`, and `27c1c6a`: 5 pt below the band.
+  - Vaultfang's stat bar heading the right column of its balanced profile (p. 282) was ruled minor.
+- **25** (`20261107T062208Z`) was superseded before review.
+- **26** (`20261107T070155Z`) was reviewed and released. Its renders match candidate 24 except the six fixed pages. The four images that changed (sheets 5, 25, and 26, and page-0100) were re-reviewed. The rest carry candidate 24's review forward, as the build card allows.
+
+**Gates added (layout_qa fails on them):**
+- `head_alone`: a page whose body is only its heading. It flagged p. 100 on candidate 24, and it caught C.8 alone on its page in a local proof that used 8 pt below the band.
+- The rule test now runs from a line's letter tops, so a rule resting on the letters fails. On candidate 24 it flagged exactly the four Appendix C pages.
+
+**Minor notes accepted (139):**
+- keep gaps where the carried unit could not fit;
+- tail pull-backs under D-02 d (pp. 588 and 605);
+- the Appendix C band gap: 5 pt after a section head against 8 pt inside page units;
+- the back cover's "adven-tures".
+
 ## One-flow development round; band-gap made safe - 2026-11-06
 
 The owner chose "Develop further first" for the one-flow model (Chapters 2, 5, and 6). A local proof of the 748-line `trial-c.patch` against `13cfccc` (in the session scratch folder, not in the repository) now works as follows:
