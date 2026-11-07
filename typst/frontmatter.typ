@@ -106,7 +106,9 @@
   // How to use this book
   pagebreak(weak: true)
   align(center)[#v(0.1in) #text(font: goth, weight: 600, size: 34pt, how-to-use.title) #v(-6pt) #flourish(len: 70pt) #v(10pt)]
-  columns(2, gutter: gap)[
+  // Balanced (DESIGN 13 rule 12a): set in plain columns, the page filled the left column and left the right one
+  // empty (all-page review of candidate 22, p. 5).
+  v4.balanced[
     #for s in how-to-use.sections [
       #heading(level: 4, outlined: false, bookmarked: false, s.heading)
       #for p in s.paras [#edition-text(p) #parbreak()]
