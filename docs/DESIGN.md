@@ -396,7 +396,7 @@ The owner asked (2026-10-12) for typesetting that is easy to read, avoids page b
 
 **Avoiding page bloat**
 
-8. Every numbered section starts on a fresh page (owner, 2026-10-12), except that the first section may share its chapter-opener page (6.5) and Appendix C runs on (6.19), both approved 2026-11-01. Space left at the end of a short section is never given to the next section; rule 9 handles it. To keep this from bloating the book, a section is composed to finish cleanly: its columns are balanced (12a), and its own figures and tables are placed so its last page is as full as the keep rules allow.
+8. Every numbered section starts on a fresh page (owner, 2026-10-12; reaffirmed 2026-11-07 after the one-flow trial, "on a new page, if possible, or at least at the top of a column"), except that the first section may share its chapter-opener page (6.5) and Appendix C runs on (6.19), both approved 2026-11-01. A section never starts mid-column in the rules chapters. Space left at the end of a short section is never given to the next section; rule 9 handles it. To keep this from bloating the book, a section is composed to finish cleanly: its columns are balanced (12a), and its own figures and tables are placed so its last page is as full as the keep rules allow.
 9. Space left at a section end is filled in this order (owner, 2026-10-30):
    - a source-faithful rules figure for that section (registry FIG-58 to FIG-77 close twenty short sections of Chapters 1 to 7), sized to the space the section leaves;
    - the section's own approved spot art or tailpiece (`production/art/END_ART_PLAN.json`), set by `endart` below the text only where the next heading already starts a later page, sized as section 7 describes, and omitted below 1.6 in tall;

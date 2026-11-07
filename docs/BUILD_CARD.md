@@ -9,6 +9,13 @@ You may repair code, layout, or tooling and re-dispatch the requested build. Man
 Git follows `AGENTS.md`: sync with `git pull --ff-only origin main`. If a push (yours or a helper's) is refused because `main` moved, replay your unpushed commits with `git pull --rebase origin main` and push again. Never force-push, rewrite pushed history, or create a branch.
 
 ## 1. Request the candidate build
+0. After layout, tooling, or Typst changes since the last release, prove them locally first (see [LAYOUT_WORKFLOW.md](LAYOUT_WORKFLOW.md)):
+   - run one full build (`make clean all`, then `PY tools/verify.py`);
+   - check that `production/qa/layout.json` has no flags;
+   - compare the digital PDF with the last release using `PY tools/layout_flow.py LAST.pdf NEW.pdf`;
+   - look at every page that changed.
+
+   A compile peaks at about 7.5 GB, so run one build at a time on a 15 GB machine.
 1. Start from a clean tree (`git status --short` is empty), then run `git pull --ff-only origin main`.
 2. Run `PY tools/build_request.py check` and fix whatever readiness problem it reports.
 3. Run `PY tools/build_request.py request` and note the request id. This push starts the GitHub workflow "Build candidate".
@@ -30,7 +37,15 @@ Git follows `AGENTS.md`: sync with `git pull --ff-only origin main`. If a push (
    - a table or figure broken or stranded from its heading;
    - wrong page order;
    - a heading, or an entry name, alone at the bottom of a column with its content on the next page;
+   - an item's label and name line at a column or page foot without its text;
+   - a column left empty in the middle of a section while the text continues overleaf;
+   - stacked column bands that read as one column, or a hairline through text (the layout gate also fails on the latter);
+   - a heading printed twice (a table title repeating the heading above it);
+   - a single table row or card entry alone overleaf;
+   - a running-head shield cropped;
    - a page of art with no text where text is expected.
+
+   Start with the pages `production/qa/layout.json` points to under `flow`: interior voids, the largest keep gaps, low right-column starts, and uneven chapter ends.
 
    `cover-front.jpg` must be the owner-supplied picture (HERALDRY, the skull-and-thorn frame, and the dragon skeleton), and `cover-back.jpg` must be the back cover with the castle logo. Anything else is a major finding.
 7. Write the review record to a file in the scratch folder, such as `$env:HERALDRY_SCRATCH\review.json` (the schema is in the `tools/visual_review_bind.py` docstring):
@@ -38,6 +53,10 @@ Git follows `AGENTS.md`: sync with `git pull --ff-only origin main`. If a push (
    - your `reviewer` name and a short `summary`.
 
    `major` means anything a reader would call a defect. Don't mark a real defect minor to get a release.
+
+   **Splitting the review.** Three reviewers work well: sheets 1 to 14, sheets 15 to 27, and the detail pages with the covers. Give each the layout intent and the defect list above, and have each write its part in this schema; a finding's note goes in `text`. The lead looks at the covers and at every page with a major finding before binding.
+
+   **Later candidates.** If a candidate was rebuilt after an earlier review, compare `manifest.json` hashes with that candidate's. An image whose hash is unchanged may carry its review forward, noted as such. Every changed image, and every changed page at full size, gets a fresh look.
 8. Run `PY tools/visual_review_bind.py bind --review <review file> --push`.
    - `REFUSED`: fix the record (missing entries or LFS stubs) and run it again.
    - `REVIEW FAILED` (major findings): the release stays blocked. Fix the defect, request a fresh candidate, and review that one. Ask the owner only about a real design or rules decision.

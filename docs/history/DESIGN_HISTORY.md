@@ -352,3 +352,23 @@ Two other moves in the merge:
 
 - The one-page keep rule, with its measurement and audit, is stated once in `docs/PROJECT_CONTRACT.md` ("Pagination: the one-page keep rule"). `docs/DESIGN.md` 8.4 adds only how the composer applies it, and the owner's original 2026-10-07 wording is quoted above.
 - The old files told agents to record each adopted reference lesson and frozen token change in `production/design-decisions.md`. That log moved to `docs/history/design-decisions.md` the same day as a closed record, so new lessons are recorded in the section of `docs/DESIGN.md` they change and noted in `production/STATE.md`.
+
+## 2026-11-06 to 2026-11-07: the rulebook-layout review
+
+The owner asked for every part of the rulebook-layout skill to be trialled and the helpful parts kept. Each idea was proved locally against RC528-build-44 and measured with the new `tools/layout_flow.py`.
+
+**Kept:**
+- the column-flow report and a gate on rules drawn through text;
+- figure fit, with each figure's own 9 pt label floor (the skill's 80% would have set labels at 7.9 pt);
+- card-table entry pairs in tables of six or more;
+- a Contents page-number gutter;
+- index filing that ignores "The";
+- index letter heads that keep two entries.
+
+**Rejected:**
+- reusing approved art in short columns, because every piece appeared twice, under unrelated rules;
+- moving figures within their sections;
+- the low right-column start rule;
+- capping index references at three.
+
+**Prototyped, then not adopted:** one continuous flow per chapter, with run-on sections, in-column heads, and balance only at the chapter end. Chapters 2, 5, and 6 fell from 98 pages to 75, and the composer learned to settle waiting figures from persisted positions. On 2026-11-07 the owner kept sections on new pages, or at least at the top of a column. The column-top fallback would apply to 7 of 128 section starts, so it was not built. The full account is in `docs/LAYOUT_WORKFLOW.md` and `production/STATE.md`.

@@ -69,7 +69,13 @@ Every part of the rulebook-layout skill was trialled against RC528-build-44 (own
 
 **Confirmed already in place:** a readable measure (a median of 49 characters a line in two columns); tables whose rows never split and whose headers repeat; split example panels that keep their tint and rule; two editions that paginate identically; and no painting repeated on a spread.
 
-**Pending the owner:** one continuous flow per chapter (sections run on, in-column heads, only the chapter's last page balanced). It cut Combat from 21 pages to 14 and its bare column space by 86%. It reverses the fresh-page rule, D-01, and 12a, and drops most section tailpieces. It is being trialled on two more chapters before the owner decides.
+**Not adopted, by owner decision (2026-11-07): one continuous flow per chapter.** In this model sections run on, with in-column heads, and only a chapter's last page is balanced. A three-chapter trial made it work mechanically:
+- Chapter 2 went from 24 pages to 19, Chapter 5 from 21 to 14, and Chapter 6 from 53 to 42;
+- the composer settled waiting figures from the previous pass's positions, which converged.
+
+The costs were mid-column section starts, five tailpieces with no home, and section art beside entries it was not drawn for. The owner keeps every numbered section starting on a new page, or at least at the top of a column. A section could start at the top of a right column only where the previous section's last page fits in its left column. In RC528 that is 7 of 128 section starts, so the fallback is not built.
+
+Two lessons from the trial stay: an in-layout decision that reads its own position (a page turn, `band-gap`) can oscillate, so make such a decision in the composer from the previous pass and persist it; and a converging build must converge from `make clean all`, as CI builds clean.
 
 ## Lessons retained from the compact-layout pass
 
