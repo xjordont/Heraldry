@@ -243,7 +243,11 @@
 #let reference-band(num) = tokens.layout.reference_band_chapters.len() > 0 and num.match(regex("^C\.\d+$")) != none
 // A numbered section head spans the frame (D-01): the composer emits it in the outer flow ahead of its
 // columns, sticky to them, so a head never ends a page on its own.
-#let section-head(body) = block(width: 100%, above: 0pt, below: 0pt, sticky: true, breakable: false, body)
+// A reference band (Appendix C) keeps below it the 8 pt that a page unit's full-width part leaves: the heading's
+// own `below` is dropped where it ends its container, so without this the columns started on the band's
+// closing rule (candidate 24: C.3, C.5, C.8, and C.12).
+#let section-head(body, band: false) = block(width: 100%, above: 0pt, below: if band { 8pt } else { 0pt },
+  sticky: true, breakable: false, body)
 // A run-on section head (D-02 c) relies on `sticky` to travel with its columns; the composer decides
 // fresh pages and opener sharing from measured heights, never from a position read during layout,
 // because such reads lag one layout iteration and chained with the opener centring and the tailpiece
@@ -283,12 +287,7 @@
   // numbered section: the number in an engraved shield, blackletter title, brush rule beneath
   show heading.where(level: 2): it => {
     let (num, title) = split-num(it.body)
-    // The reference band carries its space below inside itself: a block's own `below` is dropped when it ends
-    // its container, so after `section-head` the columns started on the band's closing rule (candidate 24,
-    // C.3, C.5, C.8, C.12). Inside a page unit the gap is unchanged.
-    let ref-band = num != none and reference-band(num)
-    block(above: space-token.section_before * 1pt, below: if ref-band { 0pt } else { space-token.section_after * 1pt },
-      sticky: true, breakable: false, width: 100%)[
+    block(above: space-token.section_before * 1pt, below: space-token.section_after * 1pt, sticky: true, breakable: false, width: 100%)[
       #if num != none and reference-band(num) {
         // Appendix C: the code in a paper shield, the title reversed, and the RULES REFERENCE label
         // (D-06 step 1); a fine rule closes the band.
@@ -299,7 +298,6 @@
             text(font: sans, weight: 700, size: tokens.type_pt.navigation * 1pt, tracking: 0.12em, fill: paper, smallcaps(all: true, "Rules Reference"))))
         v(1.5pt)
         line(length: 100%, stroke: tokens.line_pt.reference_band_rule * 1pt + ink)
-        v(space-token.section_after * 1pt)
       } else if num != none {
         grid(columns: (auto, 1fr), column-gutter: 9pt, align: horizon,
           shield(w: if num.len() > 3 { 30pt } else { 25pt }, inner: true, body: text(font: sans, weight: 700, size: 9pt, fill: paper, num)),

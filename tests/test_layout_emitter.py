@@ -346,6 +346,14 @@ class LayoutEmitter(unittest.TestCase):
                  'b': {'type': 'table', 'id': 'h-sub', 'src': [4, 4]}}
         self.assertEqual(book.lead_run(kids + [table]), 2)
 
+    def test_an_appendix_c_head_keeps_its_band_space_and_a_rules_head_does_not(self):
+        from build_book import REFERENCE_BANDS
+        self.assertTrue(REFERENCE_BANDS)
+        self.assertTrue(Book.section_head({'title': 'C.3 Conditions Summary'}, '#heading[C.3]')
+                        .startswith('#section-head(band: true)['))
+        self.assertTrue(Book.section_head({'title': '1.3 The Dying Lands'}, '#heading[1.3]')
+                        .startswith('#section-head['))
+
     def test_short_roll_directive_keeps_the_substantive_explanation(self):
         book=Book.__new__(Book)
         book.measures={}

@@ -105,6 +105,7 @@ TABLE_SCOPE_POLICIES = json.loads((ROOT / "config/design_tokens.json").read_text
 LAYOUT_TOKENS = json.loads((ROOT / "config/design_tokens.json").read_text()).get("layout", {})
 SECTION_HEADS_FULL = bool(LAYOUT_TOKENS.get("section_heads_full_width", False))
 RUN_ON_CHAPTERS = set(LAYOUT_TOKENS.get("run_on_chapters", []))
+REFERENCE_BANDS = bool(LAYOUT_TOKENS.get("reference_band_chapters"))   # Appendix C heads set as iron bands
 OPENER_SHARE_FREE = float(LAYOUT_TOKENS.get("opener_share_free_fraction", 0))
 
 BUILD = ROOT / "build"
@@ -1079,10 +1080,10 @@ class Book:
                 self.record(first, "full")
                 kids = kids[1:]
             else:
-                self.out.append(f"#section-head[{head}]\n".replace("#pm(", "#pmx("))
+                self.out.append(self.section_head(x, head))
             after = False
         elif section:
-            self.out.append(f"#section-head[{head}]\n".replace("#pm(", "#pmx("))
+            self.out.append(self.section_head(x, head))
             after = False
             n = self.lead_run(kids)
             if n:
@@ -1165,6 +1166,12 @@ class Book:
         if x["id"] in getattr(self, "end_art", {}):
             aid, rel, w, aspect, wmax = self.end_art[x["id"]]
             self.out.append(f"#endart({lit(aid)}, {lit(rel)}, {w:.1f}pt, {aspect:.4f}, max-w: {wmax:.1f}pt)\n")
+
+    @staticmethod
+    def section_head(x, head):
+        """A numbered section head in the outer flow; an Appendix C reference band keeps its space below."""
+        band = REFERENCE_BANDS and re.match(r"^C\.\d+ ", x.get("title", "")) is not None
+        return f"#section-head{'(band: true)' if band else ''}[{head}]\n".replace("#pm(", "#pmx(")
 
     def lead_run(self, kids):
         """Number of prose paragraphs opening a numbered section that close their own balanced run: a short
