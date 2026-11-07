@@ -73,5 +73,14 @@ class DensityDiagnostics(unittest.TestCase):
         self.assertTrue(result["short_text_blocks"])
 
 
+class HeadAlone(unittest.TestCase):
+    def test_a_page_holding_only_its_section_head_is_flagged(self):
+        heads = ["6.7 Human Trinket Table"]
+        self.assertTrue(layout_qa.head_alone(["6.7", "Human Trinket Table"], heads))
+        self.assertFalse(layout_qa.head_alone(["6.7", "Human Trinket Table", "If a Hero randomly generates",
+                                               "Human ancestry, roll 1d10 on the table below."], heads))
+        self.assertFalse(layout_qa.head_alone(["Any text"], []))      # no outline heading on the page
+
+
 if __name__ == "__main__":
     unittest.main()

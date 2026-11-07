@@ -1168,12 +1168,13 @@ class Book:
 
     def lead_run(self, kids):
         """Number of prose paragraphs opening a numbered section that close their own balanced run: a short
-        introduction followed by a whole column unit that cannot split and is too tall for a column under the
-        section head, so it can only start the next page. 0 when the section opens any other way."""
+        introduction followed by a whole column unit (a subsection, table, or list) that cannot split and is too
+        tall for a column under the section head, so it can only start the next page. 0 when the section opens
+        any other way (candidate 24, p. 100: 6.7's introduction, then its d10 table)."""
         n = 0
         while n < len(kids) and "head" not in kids[n] and kids[n]["kind"] == "c" and kids[n]["typ"] == "para":
             n += 1
-        if not n or n == len(kids) or "head" not in kids[n]:
+        if not n or n == len(kids) or not self.measurable(kids[n]):
             return 0
         if sum(len(first_text_full(k["b"])) for k in kids[:n]) > LEAD_RUN_CHARS:
             return 0
@@ -1305,6 +1306,9 @@ class Book:
         self.seg_count += 1
         sig = segment_signature(pieces)
         self.seg_sigs[str(sid)] = sig
+        expansions = self.__dict__.get("expansions", {})
+        if any(b in s for _, s in pieces if s not in expansions for b in SPLIT_BLOCKERS):
+            self.__dict__.setdefault("rigid_segs", set()).add(str(sid))
         entry = self.balance.get(str(sid))
         tail = entry[1] if valid_balance_entry(entry, sig) and entry[1] < len(pieces) and len(pieces) - entry[1] <= 60 else None
         if getattr(self, "flow_next_flush", False):
@@ -1418,9 +1422,10 @@ def is_unit_piece(s):
     return s.lstrip().startswith(("#keepcol[", "#keepfigure["))
 
 
-def compute_balance(pm, prev, sigs, heads=None, hpos=None, bare=None, feet=None):
+def compute_balance(pm, prev, sigs, heads=None, hpos=None, bare=None, feet=None, rigid=()):
     """feet: optional callable, page -> {"left": y, "right": y} column feet measured from this pass's PDF
-    (pages as the pm marks count them). It lets a tiny last page flow back into the page before it."""
+    (pages as the pm marks count them). It lets a tiny last page flow back into the page before it.
+    rigid: ids of segments holding a piece that cannot split."""
     bare = set(heads or {}) if bare is None else bare
     segs = {}
     for m in pm:
@@ -1468,11 +1473,13 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None, bare=None, feet=None)
             continue
         first = byp.get(0)
         if (feet is not None and first is not None and first["page"] == L - 1 and first.get("x", 0) < PAGE_WIDTH_PT / 2
-                and first["y"] < TOP_Y + 120 and run_fits_one_page(feet, L, first["y"])):
+                and first["y"] < TOP_Y + 120 and run_fits_one_page(feet, L, first["y"], str(sid) in rigid)):
             # A short run that opens near the top of a page, whose unit was carried whole to the next page
             # (7.14 Poisons: the head and two lines, then 7.14.1 alone overleaf), is balanced from its first
             # piece on that first page when the whole of it fits there in two columns. Its units may split
-            # between their pieces inside the balanced run, which stays on one page.
+            # between their pieces inside the balanced run, which stays on one page. A piece that cannot split
+            # must fit a column below the run's start, or the balanced run moves whole to the next page and
+            # leaves the head alone (candidate 24, p. 100).
             res[str(sid)] = [sigs[str(sid)], 0]
             continue
         if pt is not None and pt in byp and byp[pt]["page"] == L and not tiny_tail:
@@ -1606,12 +1613,16 @@ def fits_back(feet, last):
     return 0 < need and need + 12 <= free
 
 
-def run_fits_one_page(feet, last, y0):
+def run_fits_one_page(feet, last, y0, rigid=False):
     """True when a run's content on the page before `last` (from y0 down) and on `last` would fit, balanced,
-    in the two columns of that page below y0."""
+    in the two columns of that page below y0. With a piece that cannot split (rigid), each column carried to
+    `last` must also fit in one column below y0."""
     before, here = feet(last - 1) or {}, feet(last) or {}
     need = sum(before[s] - y0 for s in ("left", "right") if before.get(s) and before[s] > y0)
-    need += sum(here[s] - TOP_Y for s in ("left", "right") if here.get(s))
+    carried = [here[s] - TOP_Y for s in ("left", "right") if here.get(s)]
+    need += sum(carried)
+    if rigid and any(h + 6 > BODY_BOTTOM - y0 for h in carried):
+        return False
     return 0 < need and need + 30 <= 2 * (BODY_BOTTOM - y0)
 
 
@@ -1768,7 +1779,8 @@ def main():
         warnings = getattr(compile_book, 'last_warnings', [])
         warnings = list(warnings) if isinstance(warnings, (list, tuple)) else []
         compile_warnings.extend(warnings)
-        new = (compute_balance(pm, balance, book.seg_sigs, book.piece_heads, hpos, book.bare_heads, feet=page_feet(out))
+        new = (compute_balance(pm, balance, book.seg_sigs, book.piece_heads, hpos, book.bare_heads, feet=page_feet(out),
+                               rigid=book.__dict__.get("rigid_segs", set()))
                if not a.no_balance else {})
         raw_changes = sum(1 for k in set(new) | set(balance) if new.get(k) != balance.get(k))
         new = stabilize_balance(new, balance, flips, excluded)

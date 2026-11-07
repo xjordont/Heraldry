@@ -300,6 +300,14 @@ class LayoutEmitter(unittest.TestCase):
         self.assertTrue(run_fits_one_page(roomy, 2, 100))
         self.assertFalse(run_fits_one_page(tall, 2, 100))
 
+    def test_a_run_with_a_rigid_piece_balances_on_its_first_page_only_if_the_piece_fits_a_column_there(self):
+        from build_book import run_fits_one_page
+        table_overleaf = {1: {'left': 220, 'right': None}, 2: {'left': 720, 'right': None}}.get   # 6.7: 675 pt table
+        self.assertTrue(run_fits_one_page(table_overleaf, 2, 99))
+        self.assertFalse(run_fits_one_page(table_overleaf, 2, 99, rigid=True))
+        short_table = {1: {'left': 220, 'right': None}, 2: {'left': 400, 'right': None}}.get
+        self.assertTrue(run_fits_one_page(short_table, 2, 99, rigid=True))
+
     def _lead_run_book(self, follower_h1):
         book = Book.__new__(Book)
         book.measures = {'h-sub': {'h1': follower_h1, 'h2': follower_h1 / 2}}
@@ -329,6 +337,14 @@ class LayoutEmitter(unittest.TestCase):
         self.assertEqual(self._lead_run_book(tall).lead_run(self._section_kids(art=False)), 0)   # prose splits
         self.assertEqual(self._lead_run_book(tall).lead_run(self._section_kids(LEAD_RUN_CHARS + 2)), 0)
         self.assertEqual(self._lead_run_book(tall).lead_run(self._section_kids()[2:]), 0)      # no introduction
+
+    def test_a_short_introduction_before_a_table_too_tall_for_its_page_closes_its_own_run(self):
+        from build_book import SECTION_HEAD_PT
+        book = self._lead_run_book(FRAME_H - SECTION_HEAD_PT + 27)     # 6.7: a d10 table of about 675 pt
+        kids = self._section_kids()[:2]
+        table = {'id': 'h-sub', 'typ': 'table', 'kind': 'c', 's': '#htable(columns: 3)[d10 rows]',
+                 'b': {'type': 'table', 'id': 'h-sub', 'src': [4, 4]}}
+        self.assertEqual(book.lead_run(kids + [table]), 2)
 
     def test_short_roll_directive_keeps_the_substantive_explanation(self):
         book=Book.__new__(Book)

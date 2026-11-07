@@ -36,7 +36,7 @@ Git follows `AGENTS.md`: sync with `git pull --ff-only origin main`. If a push (
    - missing or wrong art (an empty slot, a stub, or a white rectangle on the cream);
    - a table or figure broken or stranded from its heading;
    - wrong page order;
-   - a heading, or an entry name, alone at the bottom of a column with its content on the next page;
+   - a heading, or an entry name, alone at the bottom of a column with its content on the next page, or alone on a page (the layout gate fails on the latter);
    - an item's label and name line at a column or page foot without its text;
    - a column left empty in the middle of a section while the text simply continues overleaf (an interior void). Space left before a unit carried whole to the next column or page is a keep gap under the one-page keep rule (`docs/PROJECT_CONTRACT.md`): a minor note, unless the unit would have fitted where it started;
    - stacked column bands that read as one column, or a hairline through text (the layout gate also fails on the latter);

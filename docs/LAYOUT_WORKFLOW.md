@@ -40,7 +40,7 @@ Reviewed table-width preferences in `config/design_tokens.json` use normalized c
 - **keep gap:** a heading, figure, table, or flow piece was carried there whole;
 - **interior void:** nothing; the text simply continues. These need repair (DESIGN 8.5).
 
-`layout_qa` (run by verify) carries the same measures in `production/qa/layout.json` as advisory notes, and fails the gate on a composition hairline drawn through text.
+`layout_qa` (run by verify) carries the same measures in `production/qa/layout.json` as advisory notes, and fails the gate on a composition hairline drawn through text, and on a page whose body holds only its heading (`head_alone`: a head stranded while its content went overleaf).
 
 Trial a layout idea in a scratch clone, one change at a time, as a full local proof:
 
@@ -80,8 +80,8 @@ Two lessons from the trial stay: an in-layout decision that reads its own positi
 **From the candidate 22 and 23 reviews (2026-11-07).** Every numbered section now starts a page or a column, and the flow report lists any that doesn't. Four composer rules close the one-column pages those reviews found, each decided from measured heights or the previous pass and covered by tests in `tests/test_layout_emitter.py`:
 - a tiny last page flows back into the page before when its right column has room;
 - inside a balanced run, prose and list units may split between their pieces;
-- a short run that opens near a page top balances on that page when it fits there;
-- a short section introduction followed by a unit too tall for a column under the section head is balanced on its own page.
+- a short run that opens near a page top balances on that page when it fits there, and every piece that can't split fits a column below its start (candidate 24 stranded the 6.7 head when a 675 pt table could not);
+- a short section introduction followed by a subsection, table, or list too tall for a column under the section head is balanced on its own page.
 
 ## Lessons retained from the compact-layout pass
 

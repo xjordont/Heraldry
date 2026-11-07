@@ -54,6 +54,16 @@ def stranded_headings(page, text=None):
     return hits
 
 
+def head_alone(body_lines, heads):
+    """True when a page's body text is only the headings the outline lists for it: a head stranded on a page of
+    its own while its content went overleaf (candidate 24, p. 100: 6.7 Human Trinket Table). Its rule and band
+    are drawings, so near_empty does not see it."""
+    if not heads:
+        return False
+    other = [t for t in body_lines if t.strip() and not any(t.strip() in h for h in heads)]
+    return len(other) < 2
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("pdf")
@@ -64,6 +74,8 @@ def main():
     body_starts = [page for level, _, page in doc.get_toc(simple=True) if level == 1 and page > 0]
     first_body_page = a.first_body_page if a.first_body_page is not None else min(body_starts, default=1)
     flags, diagnostics, measures = [], [], {}
+    outline = doc.get_toc(simple=True)
+    opener_pages = {page for level, _, page in outline if level == 1 and page > 0}
     for i, page in enumerate(doc):
         n = i + 1
         text, drawings = page_text(page), page.get_drawings()
@@ -106,6 +118,10 @@ def main():
         blank_verso = not body and n % 2 == 0 and n < len(doc) and "Chapter " in doc[n].get_text()[:400]
         if n >= first_body_page and len(body) < 6 and not body_art and not body_drw and not blank_verso:
             flags.append({"page": n, "code": "near_empty", "lines": len(body)})
+        heads = [title for level, title, page in outline if page == n and level >= 2]
+        body_text = [t for r, t, s in ls if TOP - 2 < r.y0 and r.y1 < BOT + 2 and r.x1 > TAB and r.x0 < W - TAB]
+        if n >= first_body_page and n not in opener_pages and not body_art and head_alone(body_text, heads):
+            flags.append({"page": n, "code": "head_alone", "text": heads[0][:50]})
     codes = {}
     for f in flags:
         codes[f["code"]] = codes.get(f["code"], 0) + 1
@@ -117,7 +133,6 @@ def main():
             if page <= n:
                 current = title
         return current
-    opener_pages = {page for page, _ in chapters}
     sparse_pages = [d["page"] for d in diagnostics if d.get("sparse") and d["page"] not in opener_pages]
     by_chapter = {}
     for n in sparse_pages:
