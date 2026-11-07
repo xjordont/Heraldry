@@ -253,6 +253,19 @@ class LayoutEmitter(unittest.TestCase):
         pm[0]['y']=BODY_BOTTOM-220
         self.assertEqual(compute_balance(pm,{},{'1':'same'}),{})
 
+    def test_a_tiny_last_page_flows_back_when_the_page_before_has_room(self):
+        # Objective 20 sat alone atop a page while the page before had ~300 pt free in its right column
+        pm=[{'seg':1,'piece':0,'edge':'s','page':1,'x':42,'y':45},
+            {'seg':1,'piece':1,'edge':'s','page':1,'x':315,'y':200},
+            {'seg':1,'piece':2,'edge':'s','page':2,'x':42,'y':45},
+            {'seg':1,'piece':3,'edge':'e','page':2,'x':315,'y':100}]
+        sig = 'v2:' + 'a' * 64
+        roomy = {1: {'left': BODY_BOTTOM - 5, 'right': 400}, 2: {'left': 175, 'right': 120}}
+        full = {1: {'left': BODY_BOTTOM - 5, 'right': BODY_BOTTOM - 20}, 2: roomy[2]}
+        self.assertEqual(compute_balance(pm,{'1':[sig,2]},{'1':sig},feet=roomy.get),{})
+        self.assertEqual(compute_balance(pm,{'1':[sig,2]},{'1':sig},feet=full.get),{'1':[sig,2]})
+        self.assertEqual(compute_balance(pm,{'1':[sig,2]},{'1':sig}),{'1':[sig,2]})   # no measures: as before
+
     def test_short_roll_directive_keeps_the_substantive_explanation(self):
         book=Book.__new__(Book)
         book.measures={}

@@ -179,7 +179,8 @@
   let piece(i, it) = block(above: it.above, below: it.below, inset: (left: it.inset),
     sticky: it.kind == "h" or it.at("glue", default: false), breakable: false, [#metadata(i) <ix-item>#it.body])
   // The last index page is balanced: its items are split into three whole-entry columns of near-equal
-  // height. A column never starts with a sub-entry or ends with a letter head. Pages before the last
+  // height. A column never starts with a sub-entry or ends with a letter head, or with a letter head and a
+  // single entry. Pages before the last
   // fill normally, so the split points depend only on where the previous layout pass began that page.
   context {
     let marks = query(<ix-item>)
@@ -195,7 +196,8 @@
         let pre = (0pt,)
         for j in range(s, n) { pre.push(pre.last() + h.at(j) + if j > s { gap-before(j) } else { 0pt }) }
         let run(a, b) = pre.at(b - s) - pre.at(a - s) - if a > s { gap-before(a) } else { 0pt }
-        let ok(j) = items.at(j).kind != "s" and items.at(j - 1).kind != "h"
+        // nor ends with a letter head and its first entry alone (the V head over "Vault Reserve", candidate 22)
+        let ok(j) = items.at(j).kind != "s" and items.at(j - 1).kind != "h" and not items.at(j - 1).at("glue", default: false)
         let avail = body-bottom - marks.at(s).location().position().y - 2pt
         let best = (pre.last(), none, none)
         for k1 in range(s + 1, n - 1) {

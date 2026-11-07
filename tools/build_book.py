@@ -1350,7 +1350,9 @@ def is_unit_piece(s):
     return s.lstrip().startswith(("#keepcol[", "#keepfigure["))
 
 
-def compute_balance(pm, prev, sigs, heads=None, hpos=None, bare=None):
+def compute_balance(pm, prev, sigs, heads=None, hpos=None, bare=None, feet=None):
+    """feet: optional callable, page -> {"left": y, "right": y} column feet measured from this pass's PDF
+    (pages as the pm marks count them). It lets a tiny last page flow back into the page before it."""
     bare = set(heads or {}) if bare is None else bare
     segs = {}
     for m in pm:
@@ -1389,6 +1391,13 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None, bare=None):
         in_first = end.get('x', 0) < PAGE_WIDTH_PT / 2
         tiny_tail = len(on_last) <= 5 and ((in_first and end['y'] < TOP_Y + TINY_TAIL_PT)
                                            or (balanced and not in_first and end['y'] < TOP_Y + TINY_TAIL_PT / 2))
+        if (feet is not None and tiny_tail and on_last and on_last[0]["y"] < TOP_Y + 20
+                and on_last[0].get("x", 0) < PAGE_WIDTH_PT / 2 and fits_back(feet, L)):
+            # A tiny last page that opens with its own piece (nothing straddles onto it) flows back into the
+            # right column of the page before when that column has room. A planned tail can never flow back,
+            # so the plan kept the content on a page of its own (candidate 22, p. 392: Objective 20 alone,
+            # under about 300 pt free). With no plan the run flows naturally, and the next pass balances it.
+            continue
         if pt is not None and pt in byp and byp[pt]["page"] == L and not tiny_tail:
             res[str(sid)] = [sigs[str(sid)], pt]
             continue
@@ -1443,6 +1452,25 @@ def figure_geometry(fid):
     return height / width, max(FIG_FIT_FLOOR, type_floor)
 
 
+def page_feet(pdf):
+    """Column feet of a compiled pass, measured on demand, page by page (1-based, as the pm marks count).
+    Without a readable PDF every page reads as unmeasured, which leaves the plan as it would be without."""
+    cache, state = {}, {}
+    def feet(page):
+        if "doc" not in state:
+            try:
+                import pymupdf
+                state["doc"] = pymupdf.open(str(pdf))
+            except Exception:
+                state["doc"] = None
+        doc = state["doc"]
+        if page not in cache:
+            import layout_flow
+            cache[page] = layout_flow.page_measures(doc[page - 1])["feet"] if doc is not None and 1 <= page <= len(doc) else {}
+        return cache[page]
+    return feet
+
+
 def compute_figfit(pdf, positions, previous, candidates, excluded):
     """Figure fit (rulebook-layout skill 1.6 and 3.2, pass 1). A full-width figure carried whole to the top
     of a page leaves the page before it short. When the space left there holds the figure at FIG_FIT_FLOOR
@@ -1491,6 +1519,14 @@ def compute_figfit(pdf, positions, previous, candidates, excluded):
     if doc is not None:
         doc.close()
     return out
+
+
+def fits_back(feet, last):
+    """True when the content of page `last`, set in one column, fits the free right column of the page before."""
+    here, before = feet(last) or {}, feet(last - 1) or {}
+    need = sum(here[s] - TOP_Y for s in ("left", "right") if here.get(s))
+    free = BODY_BOTTOM - (before.get("right") or TOP_Y)
+    return 0 < need and need + 12 <= free
 
 
 def stabilize_balance(proposed, previous, flips, excluded):
@@ -1646,7 +1682,8 @@ def main():
         warnings = getattr(compile_book, 'last_warnings', [])
         warnings = list(warnings) if isinstance(warnings, (list, tuple)) else []
         compile_warnings.extend(warnings)
-        new = compute_balance(pm, balance, book.seg_sigs, book.piece_heads, hpos, book.bare_heads) if not a.no_balance else {}
+        new = (compute_balance(pm, balance, book.seg_sigs, book.piece_heads, hpos, book.bare_heads, feet=page_feet(out))
+               if not a.no_balance else {})
         raw_changes = sum(1 for k in set(new) | set(balance) if new.get(k) != balance.get(k))
         new = stabilize_balance(new, balance, flips, excluded)
         changes = sum(1 for k in set(new) | set(balance) if new.get(k) != balance.get(k))
