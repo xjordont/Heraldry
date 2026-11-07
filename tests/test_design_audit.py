@@ -183,11 +183,11 @@ class CompositionPolicy(unittest.TestCase):
         self.assertIn("#full-opening(sticky: true)[", out)
         out = emit([table], {"T1": {"h1": 200.0, "h2": 200.0}})             # no introduction: fresh page, band only
         self.assertIn("#pagebreak(weak: true)", out)
-        self.assertIn("#section-head[", out)
+        self.assertIn("#section-head(band: true)[", out)                  # a C.x head: the reference band's space
         self.assertNotIn("#full-opening", out)
         book.run_on = False                                                  # an ordinary chapter keeps the sticky head in the flow
         out = emit([intro, table], {"T1": {"h1": 200.0, "h2": 200.0}})
-        self.assertIn("#section-head[", out)
+        self.assertIn("#section-head(band: true)[", out)
         self.assertNotIn("#full-opening", out)
 
     def test_shared_opener_segment_ignores_the_balance_plan_once(self):
