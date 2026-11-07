@@ -12,7 +12,7 @@
    "sha256": "9180968fda9f07b012a0c450472eb2f2d4e370905a14bd81e1356c21fe3949ae"
   }
  ],
- "pdf_sha256": "8560817fc78f5dcb711b0214bf9ac73b7e2230100df3d50cdef8dba7229bf54f",
+ "pdf_sha256": "33380ae63aee604d8413958f7f92b6a96bdae6b20b054f8c10ac62c910e2a29c",
  "pages": 618,
  "sheets": [
   {
@@ -53,7 +53,7 @@
     97,
     120
    ],
-   "sha256": "7ae0897280499d70c332495789394fc0d78d0951db1d18635effbe8b1ca547a3"
+   "sha256": "ecf69196c032606fd50b5222cbf9ca14fba72c43232128a7bdb27b7601a4ffc1"
   },
   {
    "file": "sheet-06.jpg",
@@ -271,7 +271,7 @@
    "file": "page-0100.jpg",
    "page": 100,
    "reason": "every 50th page",
-   "sha256": "d3ef36b779ded8463f01b50256f2947752d8afd04f5cd5432dc29a1835a32e15"
+   "sha256": "e715118646b96af9b90c7e66610e324ba75bd4ed5ee7a17376374abb9790275d"
   },
   {
    "file": "page-0143.jpg",
