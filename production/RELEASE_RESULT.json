@@ -1,8 +1,8 @@
 {
- "ledger_commit": "6f4997671b444c8891580e9c6a773cc7b2c6d662",
+ "ledger_commit": "25b8c044246ad4b9fe97139a440a96c0d437c140",
  "result": "RELEASED",
  "note": "released and verified",
- "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC528-build-44",
- "tag": "RC528-build-44",
- "run_url": "https://github.com/xjordont/Heraldry/actions/runs/42254940377"
+ "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC528-build-45",
+ "tag": "RC528-build-45",
+ "run_url": "https://github.com/xjordont/Heraldry/actions/runs/42350279344"
 }
