@@ -243,10 +243,11 @@
 #let reference-band(num) = tokens.layout.reference_band_chapters.len() > 0 and num.match(regex("^C\.\d+$")) != none
 // A numbered section head spans the frame (D-01): the composer emits it in the outer flow ahead of its
 // columns, sticky to them, so a head never ends a page on its own.
-// A reference band (Appendix C) keeps below it the 8 pt that a page unit's full-width part leaves: the heading's
-// own `below` is dropped where it ends its container, so without this the columns started on the band's
-// closing rule (candidate 24: C.3, C.5, C.8, and C.12).
-#let section-head(body, band: false) = block(width: 100%, above: 0pt, below: if band { 8pt } else { 0pt },
+// A reference band (Appendix C) keeps 5 pt below it: the heading's own `below` is dropped where it ends its
+// container, so without this the columns started on the band's closing rule (candidate 24: C.3, C.5, C.8, and
+// C.12). A page unit's full-width part leaves 8 pt, but C.8's Monster AI list has only about 6 pt to spare
+// under its head; 5 pt keeps it on the head's page with the letters 5 pt clear of the rule.
+#let section-head(body, band: false) = block(width: 100%, above: 0pt, below: if band { 5pt } else { 0pt },
   sticky: true, breakable: false, body)
 // A run-on section head (D-02 c) relies on `sticky` to travel with its columns; the composer decides
 // fresh pages and opener sharing from measured heights, never from a position read during layout,
