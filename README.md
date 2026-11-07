@@ -11,7 +11,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and six
 <!-- BEGIN AUTO:status -->
 
 - **Manuscript:** [RC528](source/Heraldry_RC528.md) (`source/versions.json`). Earlier snapshots are immutable.
-- **Last recorded delivery:** [RC528-build-44](https://github.com/xjordont/Heraldry/releases/tag/RC528-build-44), 630 pages. Newer source/tooling changes may await a separately requested build. [Evidence and limits](production/STATE.md).
+- **Last recorded delivery:** [RC528-build-45](https://github.com/xjordont/Heraldry/releases/tag/RC528-build-45), 618 pages. Newer source/tooling changes may await a separately requested build. [Evidence and limits](production/STATE.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
 - **Illustration records:** 346 approved of 346; 0 generation-queue items.
 - **Rules figures:** 77; 77/77 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
