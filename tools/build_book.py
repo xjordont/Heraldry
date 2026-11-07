@@ -277,6 +277,18 @@ def first_text(b) -> str:
     return s.strip()
 
 
+# A column unit made only of headings, paragraphs, run-in labels, list items, and examples may be split
+# between those pieces inside a balanced run, which always sits on one page: the one-page keep rule asks for
+# one page, not one column ("A column limit is not proof that a unit cannot fit", PROJECT_CONTRACT). Units with
+# tables, figures, art, stat blocks, cards, nested whole units, or power-style numbered entries stay whole.
+SPLIT_BLOCKERS = ("#htable(", "#statstrip(", "#statcard(", "#cards(", "#figure-block(", "#keepfigure[", "#keepcol[",
+                  "#spotart(", "#endart(", "image(", "#keep[#enum(", "#keep[#list(", "#keeppage(", "#full")
+
+
+def splittable(pieces):
+    return len(pieces) > 1 and not any(b in p for p in pieces for b in SPLIT_BLOCKERS)
+
+
 RIGID = ("#htable(", "#statstrip(", "#statcard(", "#cards(", "#keepcol[", "#keepfigure[", "#figure-block(", "#list(", "#enum(",
          "#list-fragment(", "#example[", "#keep[", "#runin[", "#note-box[", "#gloss[", "#flavour[")
 
@@ -300,6 +312,9 @@ def inject(s: str, mark: str) -> str:
     if s.startswith("#list([") or s.startswith("#enum("):
         i = s.index("[")
         return s[:i + 1] + mark + s[i + 1:]
+    if s.startswith("#list-fragment(") and ")[" in s:
+        i = s.index(")[") + 2
+        return s[:i] + mark + s[i:]
     return mark + s
 
 
@@ -332,6 +347,7 @@ class Book:
     def __init__(self, model, balance, figfit=None):
         self.model = model
         self.figfit = dict(figfit or {})     # figure id -> width scale that lets it fit where it starts
+        self.expansions = {}                 # a column unit's string -> its pieces, for use inside a balanced run
         self.full_figs = set()               # full-width figures set alone in the outer flow (#full or a float)
         # Scope continuation events to chapters containing actual numbered scenarios.
         # Scanning every heading body in every running header triples compile time.
@@ -998,8 +1014,14 @@ class Book:
         self.log_unit(x, cls)
         if cls == "col":
             self.record(x, "keep-col")
-            body = "".join(s for _, ss in self.flat_parts(x, marked=True) for s in ss)
-            cur.append((x["head"]["b"], f"#keepcol[#umark({lit(x['id'])}, \"s\"){body}#umark({lit(x['id'])}, \"e\")]\n"))
+            unit_parts = self.flat_parts(x, marked=True)
+            pieces = [s for _, ss in unit_parts for s in ss]
+            body = "".join(pieces)
+            whole = f"#keepcol[#umark({lit(x['id'])}, \"s\"){body}#umark({lit(x['id'])}, \"e\")]\n"
+            cur.append((x["head"]["b"], whole))
+            if all(k == "c" for k, _ in unit_parts) and splittable(pieces):
+                self.__dict__.setdefault("expansions", {})[whole] = ([inject(pieces[0], f"#umark({lit(x['id'])}, \"s\")")] + pieces[1:-1]
+                                          + [pieces[-1] + f"#umark({lit(x['id'])}, \"e\")"])
             if x["id"] in getattr(self, "end_art", {}):
                 # a one-column unit closes with its end art too (it was skipped here before)
                 self.flush(cur)
@@ -1185,7 +1207,13 @@ class Book:
         s = x["s"].rstrip("\n")
         body = f"#umark({lit(mid)}, \"s\"){s}#umark({lit(mid)}, \"e\")"
         wrapper = '#keepfigure' if x['typ'] == 'figure' else '#keepcol'
-        cur.append((x["b"], (f"{wrapper}[{body}]" if cls == "col" and not split else body) + "\n"))
+        piece = (f"{wrapper}[{body}]" if cls == "col" and not split else body) + "\n"
+        cur.append((x["b"], piece))
+        if cls == "col" and not split and x["typ"] == "list" and s.startswith(("#list(", "#enum(")):
+            frags = list(self.list_fragments(x["b"]))
+            if splittable(frags):
+                self.__dict__.setdefault("expansions", {})[piece] = ([inject(frags[0], f"#umark({lit(mid)}, \"s\")")] + frags[1:-1]
+                                          + [frags[-1] + f"#umark({lit(mid)}, \"e\")"])
         return cur
 
     def figs_for(self, b):
@@ -1281,7 +1309,13 @@ class Book:
                 if pieces[j][0].get("type") == "marker" and tp and not carry:
                     tp[-1] += parts[j]           # a zero-size end marker is never a balancing piece
                     continue
-                tp.append(carry + parts[j])
+                sub = getattr(self, "expansions", {}).get(pieces[j][1])
+                if sub:
+                    # inside the balanced run the unit may split between its pieces; it stays on one page
+                    tp.append(carry + inject(sub[0], f"#pm({sid}, {j}, \"s\")"))
+                    tp.extend(sub[1:])
+                else:
+                    tp.append(carry + parts[j])
                 carry = ""
             if carry:
                 tp.append(carry)
@@ -1397,6 +1431,15 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None, bare=None, feet=None)
             # right column of the page before when that column has room. A planned tail can never flow back,
             # so the plan kept the content on a page of its own (candidate 22, p. 392: Objective 20 alone,
             # under about 300 pt free). With no plan the run flows naturally, and the next pass balances it.
+            continue
+        first = byp.get(0)
+        if (feet is not None and first is not None and first["page"] == L - 1 and first.get("x", 0) < PAGE_WIDTH_PT / 2
+                and first["y"] < TOP_Y + 120 and run_fits_one_page(feet, L, first["y"])):
+            # A short run that opens near the top of a page, whose unit was carried whole to the next page
+            # (7.14 Poisons: the head and two lines, then 7.14.1 alone overleaf), is balanced from its first
+            # piece on that first page when the whole of it fits there in two columns. Its units may split
+            # between their pieces inside the balanced run, which stays on one page.
+            res[str(sid)] = [sigs[str(sid)], 0]
             continue
         if pt is not None and pt in byp and byp[pt]["page"] == L and not tiny_tail:
             res[str(sid)] = [sigs[str(sid)], pt]
@@ -1527,6 +1570,15 @@ def fits_back(feet, last):
     need = sum(here[s] - TOP_Y for s in ("left", "right") if here.get(s))
     free = BODY_BOTTOM - (before.get("right") or TOP_Y)
     return 0 < need and need + 12 <= free
+
+
+def run_fits_one_page(feet, last, y0):
+    """True when a run's content on the page before `last` (from y0 down) and on `last` would fit, balanced,
+    in the two columns of that page below y0."""
+    before, here = feet(last - 1) or {}, feet(last) or {}
+    need = sum(before[s] - y0 for s in ("left", "right") if before.get(s) and before[s] > y0)
+    need += sum(here[s] - TOP_Y for s in ("left", "right") if here.get(s))
+    return 0 < need and need + 30 <= 2 * (BODY_BOTTOM - y0)
 
 
 def stabilize_balance(proposed, previous, flips, excluded):

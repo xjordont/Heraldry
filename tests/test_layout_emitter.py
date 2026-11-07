@@ -266,6 +266,40 @@ class LayoutEmitter(unittest.TestCase):
         self.assertEqual(compute_balance(pm,{'1':[sig,2]},{'1':sig},feet=full.get),{'1':[sig,2]})
         self.assertEqual(compute_balance(pm,{'1':[sig,2]},{'1':sig}),{'1':[sig,2]})   # no measures: as before
 
+    def test_only_prose_and_list_units_may_split_inside_a_balanced_run(self):
+        from build_book import splittable
+        self.assertTrue(splittable(['#heading[x]#keep[Lead]', '#list-fragment(number: none)[One]']))
+        for blocker in ('#htable("T1")', '#statstrip("T2")', '#spotart("A", 2in)', '#keep[#enum((title))]', '#keepcol[x]'):
+            self.assertFalse(splittable(['#keep[Lead]', blocker]), blocker)
+        self.assertFalse(splittable(['#keep[Only one piece]']))
+
+    def test_a_balanced_tail_splits_a_list_unit_between_items_and_keeps_its_marks(self):
+        book = Book.__new__(Book)
+        book.out, book.block_map, book.seg_sigs, book.piece_heads, book.bare_heads = [], [], {}, {}, set()
+        book.seg_count, book.flow_next_flush = 0, False
+        whole = '#keepcol[#umark("L", "s")#list([a], [b], [c])#umark("L", "e")]\n'
+        book.expansions = {whole: ['#list-fragment(number: none)[#umark("L", "s")a]', '#list-fragment(number: none)[b]',
+                                   '#list-fragment(number: none)[c]#umark("L", "e")']}
+        pieces = [({"id": "p0", "type": "para", "src": [1, 1]}, "#keep[Lead]\n"),
+                  ({"id": "L", "type": "list", "src": [1, 2]}, whole)]
+        from build_book import segment_signature
+        sig = segment_signature(pieces)
+        book.balance = {"0": [sig, 0]}
+        book.flush(pieces)
+        out = "".join(book.out)
+        self.assertNotIn("#keepcol[", out)                                  # split between its items
+        self.assertEqual(out.count('#list-fragment('), 3)
+        self.assertIn('#list-fragment(number: none)[#pm(0, 1, "s")#umark("L", "s")a]', out)  # marks ride inside item one
+        self.assertIn('#umark("L", "s")', out)
+        self.assertIn('#umark("L", "e")', out)
+
+    def test_a_short_run_balances_on_its_first_page_when_it_fits_there(self):
+        from build_book import run_fits_one_page
+        roomy = {1: {'left': 120, 'right': None}, 2: {'left': 600, 'right': None}}.get   # head and two lines; unit overleaf
+        tall = {1: {'left': 120, 'right': None}, 2: {'left': 740, 'right': 740}}.get
+        self.assertTrue(run_fits_one_page(roomy, 2, 100))
+        self.assertFalse(run_fits_one_page(tall, 2, 100))
+
     def test_short_roll_directive_keeps_the_substantive_explanation(self):
         book=Book.__new__(Book)
         book.measures={}
