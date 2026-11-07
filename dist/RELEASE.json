@@ -1,7 +1,7 @@
 {
- "tag": "RC528-build-44",
- "url": "https://github.com/xjordont/Heraldry/releases/tag/RC528-build-44",
- "source_commit": "6f4997671b444c8891580e9c6a773cc7b2c6d662",
+ "tag": "RC528-build-45",
+ "url": "https://github.com/xjordont/Heraldry/releases/tag/RC528-build-45",
+ "source_commit": "25b8c044246ad4b9fe97139a440a96c0d437c140",
  "assets": [
   {
    "name": "Heraldry_RC528_basic-heroes.pdf",
@@ -10,13 +10,13 @@
   },
   {
    "name": "Heraldry_RC528_digital-compact.pdf",
-   "bytes": 62656867,
-   "sha256": "eacb007aa71c5f21ddfb79e59574c410fc56bb9454072cd39f1544ff33191e56"
+   "bytes": 62124789,
+   "sha256": "13fdcf511b6600af27a191dc4ec7738e0dd2943bf0bb6bbd7a1496e3ea65f311"
   },
   {
    "name": "Heraldry_RC528_digital.pdf",
-   "bytes": 175923423,
-   "sha256": "a558bc440a250a0620f6869a9f8a0d49ec0e18e08373417487e05963eca94fbd"
+   "bytes": 174768439,
+   "sha256": "8852d2406d57260d8f3798818c65f7dd9f4024ef60689d394486a21141b2c127"
   },
   {
    "name": "Heraldry_RC528_hero-record-blank.pdf",
@@ -26,22 +26,22 @@
   {
    "name": "Heraldry_RC528_player-aids.pdf",
    "bytes": 5066816,
-   "sha256": "ad769d2f0bd8a8d137c4ac87d91697ebdb96e08cb843a12b033e455ec631053e"
+   "sha256": "b554120fa567b7d2b2c97f71f5da3558d102c6a57d683dd93b6855b72d2b8371"
   },
   {
    "name": "Heraldry_RC528_specimen.pdf",
-   "bytes": 5348952,
-   "sha256": "547367e4708d4997ca147128e67985b54f432b6d71db55173de7ca0a6ce1772d"
+   "bytes": 5337187,
+   "sha256": "455ffe90f19ad3f9d3540c6d472eb1466b6031dcdeb7c27a23d654f3c11c8614"
   },
   {
    "name": "Heraldry_RC528_release.zip",
-   "bytes": 242709171,
-   "sha256": "61e63cb59c4473b3a0c92adcf6e6e84cdd8b9c8a6e545d1bc09683c8c6c06c69"
+   "bytes": 242747710,
+   "sha256": "e9ccceee9e6c7fbcc127c409c20649b1374619534ef089e22383f57a356c4e63"
   },
   {
    "name": "SHA256SUMS.txt",
    "bytes": 679,
-   "sha256": "00900cc7821a501d9b903c9e7d407fde298b6364207f4ad0fd43430f0601cae9"
+   "sha256": "97b9aa86ad2c50d96b300df4fd61c2574d2f2fa22b06cec04faea641f77bdd60"
   }
  ]
 }

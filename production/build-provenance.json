@@ -1339,7 +1339,7 @@
     "tools/art_prompts.py": "5d4a782e614c088a9db4a5df44ecb126f5ae19e2e312f10be9b11f6fd2687301",
     "tools/art_skill_build.py": "4e911d740e66c5142ef07eeee3c8a50e5bfcf720d292da1fca6c287856215a11",
     "tools/brand_ink.py": "93d0bb2dbba71f26e29fa78369611d0f8edaa3cfd6ab05d4a03596eec55f4100",
-    "tools/build_book.py": "edbc987355ba1ab328912bf0d4dff9a82e8208a3db0444875d294f919ef6785b",
+    "tools/build_book.py": "4d8baa1b1ca1b67b10506b57b311656cdeab41002869df88b3dbdd0bbb566f5e",
     "tools/build_extras.py": "3aee032438d358a02127caa77ce5f6618bacee664ef6dad0d45c19b3657d39da",
     "tools/build_request.py": "992918fca7d6dbd4692f655902b836e484e4f98e4daa5ab9fc787150a5f7314b",
     "tools/build_status.py": "cfd42d58db972ab819a0c92faeb846467f1a3dc851ae19dea2f8fc2d265bc31b",
@@ -1357,11 +1357,12 @@
     "tools/keep_audit.py": "f79862eb39f0189ef3d89074709b0c3e29d5d81f82c639e403859e46ede7d8c0",
     "tools/layout_balance_cache.py": "fd923c5c3bbc611e88fb16861ec9114837ee3920f0e96166a8a6ccfbd6e5f9af",
     "tools/layout_diagnostics.py": "8193a2160b075bb35158c2a88abfa938af088d356f1db66fac665842b90f7d86",
+    "tools/layout_flow.py": "843e70c75769c4460dcbb6124c761bfae2c0508df3b2d49a81f5326dd0183ef5",
     "tools/layout_profile.py": "09ff004a83e974ef5213e0b85a39dba10c7b695a0d0dd6f9eac7b6cbed04dc8e",
-    "tools/layout_qa.py": "5328efab4e1de009053aa7cc3869c1bf26f31bd6dc32fc0b6707f40a4cc7fd3e",
+    "tools/layout_qa.py": "8080bc1bfc17db83c5e2925fd5565a31da46eb61c46b6fb950b4549b4679b777",
     "tools/layout_workflow.py": "71fe135a2a7a18c592f61249e69c301cffd22daaeb889f5aa670f12737c96a2c",
     "tools/make_fonts.py": "4476096efd8ba45ef3708e9c4fa0cf765c2fba10ea0823cd491e0e13d856694d",
-    "tools/make_index.py": "ef5ed0a2891d7c09d5365aa12b9f830c653e5cb6e160ce0e485d4c040f379a15",
+    "tools/make_index.py": "6c74587fd520c738b9319a1679ebe417acc0b92b5d2b037272a30cac59333465",
     "tools/manuscript.py": "815d38dc099dd006c674c34397257411071c1d953238c38cdb1258e7fb755282",
     "tools/measure_units.py": "89915bbc5c0261846b5b607627cc38462d7c398daeee54610cfc105b092d3b9e",
     "tools/metrics.py": "85f88257e804216968f8a75dd69360c59fc8c325320e7a524b9e1a47678ef4ed",
@@ -1405,8 +1406,8 @@
     "typst/aids/pa09.typ": "bce1bd5fe3a296aaf37e434b9f2c5129dca1dd5b191356e3d8ecf826e4007ebb",
     "typst/aids/pa10.typ": "ae59aaec100b65b4d017244b858331fc04a797d03a8f99dcf894ea376586c4f6",
     "typst/cover.typ": "3da5ff3241fb344bdcc2a6925144c0a3c1e726bfc6db92ecf3461548a018768b",
-    "typst/frontmatter.typ": "a640ff2b99dc3c6ed9fb9df2aa77c5c18c91f4211009a025af59c3d37cf45063",
-    "typst/heraldry.typ": "e7d27eff5d6c0d87f7cd9c8ab00577330d6357f31baf4f25b74c0b1458b3e0d3",
+    "typst/frontmatter.typ": "fb3798466bc5ea7082ce9bcd6b41c7a3a1f7105c943fe6e8f652a18d42ecd75c",
+    "typst/heraldry.typ": "aa686a329ec53b68b7b86754062f6e3d4dfe9397bcfff98d5976a21dbc93ee5c",
     "typst/heroes/basic-heroes.json": "a57a311052ea422a650dfbe78d57b3534e6532bdc5f9dcb6f2f27d6adbe5f0fa",
     "typst/measure.typ": "46093337706ea685ffa5d217cc3e1d4f379341a57314c0c02125a83126d4e371",
     "typst/templates/marks/cream/arms-01.svg": "f3932a3b1ddb5df9dbee4742f4eeaca6c7d1e7b78857de7a747dac45af60821e",
@@ -1439,12 +1440,12 @@
   },
   "generated": {
     "build/blocks.json": "c36951b746fc8294ea5157e99d2b23e7ff4d2ec8192e551c4b1c4a298ce0caf4",
-    "build/index.json": "e709cbe5850eb443f07afa9f4ec6e5d6253f65db1bf494f70cdcad0d6cb79155",
-    "typst/content.typ": "cef16f539e36fe848e7ec3099bd574e4178293b69dc5f71d9d334b30923319b0"
+    "build/index.json": "aaf7ab4f77f1e03cf2d5774ed5f22bab0193701c229b869bf456a3d75c73da83",
+    "typst/content.typ": "3848ac753ebed8ed35ba25d04bba6f405fb3307b59dbe4fdfd583636c89f7427"
   },
   "pdfs": {
-    "dist/Heraldry_RC528_digital.pdf": "a558bc440a250a0620f6869a9f8a0d49ec0e18e08373417487e05963eca94fbd",
-    "dist/Heraldry_RC528_digital-compact.pdf": "eacb007aa71c5f21ddfb79e59574c410fc56bb9454072cd39f1544ff33191e56",
-    "build/book-cream.pdf": "1853413fbf2726ebef31f460528f61ddc906b9555e470d33effc22fd2deaca1c"
+    "dist/Heraldry_RC528_digital.pdf": "8852d2406d57260d8f3798818c65f7dd9f4024ef60689d394486a21141b2c127",
+    "dist/Heraldry_RC528_digital-compact.pdf": "13fdcf511b6600af27a191dc4ec7738e0dd2943bf0bb6bbd7a1496e3ea65f311",
+    "build/book-cream.pdf": "53bd11f2a74bcd09360d083e864ccad89e12909ac9f42960c4094d8f4c207671"
   }
 }

@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "pdf_pages": 627,
+  "pdf_pages": 615,
   "query_records": {
     "<tblpos>": 820,
     "<ixpos>": 341,
@@ -14,17 +14,17 @@
   "page_bounds_invalid": [],
   "bookmark_page_mismatches": [],
   "note": "Physical PDF bookmark destinations independently check unique heading pages; all query page numbers must also lie within the PDF.",
-  "pdf_sha256": "1853413fbf2726ebef31f460528f61ddc906b9555e470d33effc22fd2deaca1c",
+  "pdf_sha256": "53bd11f2a74bcd09360d083e864ccad89e12909ac9f42960c4094d8f4c207671",
   "serialized_position_binding": {
     "schema": 1,
     "origin": "pdf-attachment",
-    "pdf_sha256": "1853413fbf2726ebef31f460528f61ddc906b9555e470d33effc22fd2deaca1c",
-    "pdf_pages": 627,
+    "pdf_sha256": "53bd11f2a74bcd09360d083e864ccad89e12909ac9f42960c4094d8f4c207671",
+    "pdf_pages": 615,
     "identity": {
       "compiler": "0.15.0",
-      "content_sha256": "cef16f539e36fe848e7ec3099bd574e4178293b69dc5f71d9d334b30923319b0",
+      "content_sha256": "3848ac753ebed8ed35ba25d04bba6f405fb3307b59dbe4fdfd583636c89f7427",
       "edition": "interior",
-      "input_sha256": "e552908a265da781c689dd46f33a8d6bacc70931de7658813aac4ff7afb864de",
+      "input_sha256": "e641e0e161b638e307da15aa333607c6884450e1159f27353547535a4d332a45",
       "schema": 1,
       "timestamp": 1793633079,
       "variant": "cream"
